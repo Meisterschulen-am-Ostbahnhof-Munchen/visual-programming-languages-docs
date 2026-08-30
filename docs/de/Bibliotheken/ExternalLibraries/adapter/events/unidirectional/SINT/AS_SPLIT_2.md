@@ -29,7 +29,7 @@ Keine vorhanden. Die Ausgangsdaten werden über die Adapter `OUT1` und `OUT2` be
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AS` | Eingangsadapter, dessen Daten auf beide Ausgänge verteilt werden. |
 | Plug | `OUT1` | `adapter::types::unidirectional::AS` | Erster Ausgangsadapter – erhält eine Kopie der eingehenden Daten. |
 | Plug | `OUT2` | `adapter::types::unidirectional::AS` | Zweiter Ausgangsadapter – erhält ebenfalls eine Kopie der eingehenden Daten. |
@@ -70,4 +70,4 @@ Der **AS_SPLIT_2** ist ein einfacher, aber nützlicher Baustein zur Vervielfält
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

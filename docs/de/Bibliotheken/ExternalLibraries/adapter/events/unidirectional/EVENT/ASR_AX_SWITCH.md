@@ -19,7 +19,7 @@ Der FB besitzt keine klassischen Ereignis-Eingänge über *EventInputs* – die 
 Die Ereignis-Ausgänge werden über die **Plug-Adapter `EO0`** und **`EO1`** (beide Typ `ASR`) bereitgestellt. Jeder dieser Adapter verfügt über die Ausgänge `SET` und `RESET`:
 
 | Adapter | Ereignis | Beschreibung |
-|---------|----------|--------------|
+| --------- | ---------- | -------------- |
 | `EO0.SET` | SET | Wird ausgelöst, wenn ein `EI.SET`-Ereignis eintrifft und `G.D1 == 0` |
 | `EO0.RESET` | RESET | Wird ausgelöst, wenn ein `EI.RESET`-Ereignis eintrifft und `G.D1 == 0` |
 | `EO1.SET` | SET | Wird ausgelöst, wenn ein `EI.SET`-Ereignis eintrifft und `G.D1 == 1` |
@@ -36,7 +36,7 @@ Es sind keine expliziten Daten-Ausgänge vorhanden. Steuerinformationen werden a
 ### **Adapter**
 
 | Name | Richtung | Typ | Beschreibung |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | `EI` | Socket (Eingang) | `adapter::types::unidirectional::ASR` | Empfängt die zu verteilenden SET-/RESET-Ereignisse |
 | `G` | Socket (Eingang) | `adapter::types::unidirectional::AX` | Liefert das binäre Umschaltsignal über `D1` (0 → Kanal 0, 1 → Kanal 1) |
 | `EO0` | Plug (Ausgang) | `adapter::types::unidirectional::ASR` | Ausgang für Kanal 0 (bei `G.D1 = 0`) |
@@ -67,7 +67,7 @@ Die Verarbeitung erfolgt deterministisch ohne Zwischenspeicherung der Ereignisse
 ## Zustandsübersicht
 
 | Zustand | Beschreibung | Aktion |
-|---------|--------------|--------|
+| --------- | -------------- | -------- |
 | **START** | Warte auf eingehendes SET/RESET-Ereignis | – |
 | **G0_SET** | `EI.SET` bei `G.D1=0` empfangen | `EO0.SET` ausgeben |
 | **G1_SET** | `EI.SET` bei `G.D1=1` empfangen | `EO1.SET` ausgeben |
@@ -86,7 +86,7 @@ Die Zustandsübergänge erfolgen nach dem ECC-Schema: Bedingung führt von START
 ## Vergleich mit ähnlichen Bausteinen
 
 | Eigenschaft | ASR_AX_SWITCH | Einfacher Event-Multiplexer (z.B. SELECT) |
-|-------------|---------------|--------------------------------------------|
+| ------------- | --------------- | -------------------------------------------- |
 | Ereignistyp | SET/RESET (ASR-Adapter) | Beliebige Einzelereignisse |
 | Steuerung | Binär über AX-Adapter (mit `D1`) | Boolescher Dateneingang |
 | Ausgangstyp | Zwei ASR-Adapter | Je nach Typ Einzelereignis oder mehrere |
@@ -103,4 +103,4 @@ Der **ASR_AX_SWITCH** ist ein kompakter, effizienter Demultiplexer für die geri
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

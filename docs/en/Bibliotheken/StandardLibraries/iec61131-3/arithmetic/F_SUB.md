@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_SUB](F_SUB.svg)
+
 ## Introduction
 
 The **F_SUB** is a standards-compliant function block for subtracting numeric values, developed under the EPL-2.0 license. Version 1.0 enables type-safe subtraction of various numeric data types according to the IEC 61131-3 standard.
@@ -30,16 +31,19 @@ The **F_SUB** is a standards-compliant function block for subtracting numeric va
 ## Operating Principle
 
 1. **Calculation Trigger**:
+
 - `REQ` event with values for IN1 and IN2
 - Both inputs must be of type ANY_MAGNITUDE
-2. **Subtraction**:
+1. **Subtraction**:
+
 - Type-preserving calculation (IN1 - IN2)
 - Supported types:
 - Integers (INT, DINT)
 - Floating-point numbers (REAL, LREAL)
 - Time values (TIME, DATE)
 - Mixed types (automatic conversion)
-3. **Result output**:
+1. **Result output**:
+
 - `CNF` event with calculated difference
 - Result in the "largest" input type
 
@@ -70,18 +74,18 @@ The **F_SUB** is a standards-compliant function block for subtracting numeric va
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_SUB | F_ADD | F_MUL |
-|---------------|--------|--------|--------|
+| --------------- | -------- | -------- | -------- |
 | Operation | Subtraction | Addition | Multiplication |
 | Inputs | 2 | 2 | 2 |
 | Type Support | ANY_MAGNITUDE | ANY_NUM | ANY_NUM |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_040](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Exercise_040_2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Exercise_040_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Exercise_041](../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
-* [Exercise_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_040](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Exercise_040_2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Exercise_040_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Exercise_041](../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Exercise_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

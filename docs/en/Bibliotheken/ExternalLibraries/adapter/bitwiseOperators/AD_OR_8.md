@@ -3,6 +3,7 @@
 ![AD_OR_8](./AD_OR_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AD_OR_8** is a generic function block for the bitwise OR operation across 8 input values of type `DWORD` (32-bit bit pattern (double word)). Unlike the Boolean operation on single truth values (as in the `AX_OR` blocks), every bit of the data word is combined independently here.

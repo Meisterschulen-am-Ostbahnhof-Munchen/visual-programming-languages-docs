@@ -47,13 +47,13 @@ Der Funktionsblock **INI_ALR** dient dem Lesen und Speichern von Gleitkommawerte
 
 ## Funktionsweise
 
-1. **Initialisierung und erstes Lesen**  
+1. **Initialisierung und erstes Lesen**
    Ein Ereignis am Eingang `INIT` triggert die Initialisierung des internen `INI`-Bausteins. Die Parameter `QI`, `SECTION`, `KEY` und `DEFAULT_VALUE` werden an den `INI`‑Baustein weitergeleitet. Nach dessen Quittierung (`INITO`) wird automatisch der GET‑Vorgang des `INI`-Bausteins ausgelöst. Der gelesene Wert erscheint am Datenausgang des Adapters `ALR_OUT.D1` und wird gleichzeitig über das Ereignis `ALR_OUT.E1` signalisiert. Die Ausgänge `QO` und `STATUS` des `INI`-Bausteins werden direkt an die gleichnamigen Ausgänge des `INI_ALR` durchgereicht.
 
-2. **Schreiben über ALR-IN**  
+2. **Schreiben über ALR-IN**
    Ein Set‑Ereignis am Adapter‑Socket `ALR_IN.E1` wird an den SET-Eingang des internen `INI`-Bausteins weitergeleitet. Der zu speichernde Wert liegt an `ALR_IN.D1` und wird über `INI.VALUE` gesetzt. Nach erfolgreichem Schreiben quittiert der `INI`-Baustein mit `SETO`, was wiederum `ALR_OUT.E1` auslöst.
 
-3. **Lesen über ALR-IN** (implizit)  
+3. **Lesen über ALR-IN** (implizit)
    Über die initiale GET‑Sequenz und die Weiterleitung von `GETO` steht stets der aktuell gelesene Wert am Ausgang `ALR_OUT` zur Verfügung. Ein erneutes Lesen kann durch einen erneuten `INIT`‑Impuls angestoßen werden.
 
 ## Technische Besonderheiten
@@ -97,4 +97,4 @@ Der `INI_ALR` ist ein praxisorientierter Funktionsblock, der den Zugriff auf `se
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

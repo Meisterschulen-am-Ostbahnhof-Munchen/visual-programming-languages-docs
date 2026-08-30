@@ -3,7 +3,7 @@
 ![OR_2](https://user-images.githubusercontent.com/116869307/214144026-378fb776-128a-41b0-ad4c-4d23d70d12d0.png)
 A common use case is a soft AI and an AUX button.
 TRUE dominates, so as soon as an input is TRUE, the output is set to TRUE.
-![](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
+![OR_2 logic circuit with two inputs](https://user-images.githubusercontent.com/113907580/227976949-e73303db-993f-431e-b679-477dd9ad877e.png)
 
 * * * * * * * * * *
 
@@ -68,20 +68,20 @@ Compared to other Boolean operations like AND or XOR, OR_2 offers the specific p
 
 ## 🛠️ Related exercises
 
-* [Uebung_002a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a3.md)
-* [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
-* [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_035a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
-* [Uebung_035a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
-* [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
-* [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
-* [Exercise_035a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
-* [Exercise_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Exercise_089](../../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
-* [Exercise_160_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
-* [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
-* [Exercise_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+- [Uebung_002a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a3.md)
+- [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
+- [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_035a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a.md)
+- [Uebung_035a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
+- [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+- [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Exercise_035a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+- [Exercise_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Exercise_089](../../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
+- [Exercise_160_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
+- [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Exercise_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
 ## Conclusion
 

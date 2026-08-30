@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_004b_AX_ASR_X`.
+
 # Exercise_004b_AX_ASR_X: Toggle Flip-Flop with IE / E_SWITCH + E_SR
 
 ![Uebung_004b_AX_ASR_X_network](./Uebung_004b_AX_ASR_X_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **toggle flip-flop**, but using a very specific approach with adapter components (`AX`). The circuit's goal is to change the output state (On -> Off -> On) upon receiving an input signal (button press).
@@ -14,7 +16,7 @@ A special feature of this exercise is the note in the source code stating that t
 
 This sub-application uses various function blocks from the `logiBUS` library for I/O connectivity and function blocks from the `adapter` library for logical processing.
 
-### Main Function Blocks:
+### Main Function Blocks
 
 #### **DigitalInput_CLK_I1**
 
@@ -66,15 +68,17 @@ The logic of this exercise is based on feedback of the current state to determin
 1. **Input Signal**: A click on `DigitalInput_CLK_I1` triggers an event (`IND`), which activates the converter `AX_BOOL_TO_X` (`REQ`).
 2. **Decision Logic (Switching)**: The signal reaches `AX_SWITCH` (input `G`).
 3. **State Change**:
-* `AX_SWITCH` is connected to `AX_SR` (memory).
-* The memory is set via `EO0` (`S`).
-* The memory is reset via `EO1` (`R`).
-* The path taken depends on the current state of the feedback.
-4. **Output and Feedback**:
-* The output of memory `AX_SR` goes to splitter `AX_SPLIT_2`.
-* **Branch 1 (`OUT1`)**: Goes directly to `DigitalOutput_Q1` to switch the lamp.
-* **Branch 2 (`OUT2`)**: Is fed back. It runs via `AX_X_TO_BOOL` (conversion) back to `AX_BOOL_TO_X`.
-5. **The Cycle**: This feedback loop allows the system to "know" its current state upon the next click, and the `AX_SWITCH` switches to the opposite state accordingly.
+
+- `AX_SWITCH` is connected to `AX_SR` (memory).
+- The memory is set via `EO0` (`S`).
+- The memory is reset via `EO1` (`R`).
+- The path taken depends on the current state of the feedback.
+1. **Output and Feedback**:
+
+- The output of memory `AX_SR` goes to splitter `AX_SPLIT_2`.
+- **Branch 1 (`OUT1`)**: Goes directly to `DigitalOutput_Q1` to switch the lamp.
+- **Branch 2 (`OUT2`)**: Is fed back. It runs via `AX_X_TO_BOOL` (conversion) back to `AX_BOOL_TO_X`.
+1. **The Cycle**: This feedback loop allows the system to "know" its current state upon the next click, and the `AX_SWITCH` switches to the opposite state accordingly.
 
 ## Summary
 
@@ -86,4 +90,4 @@ Although the functionality (press button -> light on, press button -> light off)
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

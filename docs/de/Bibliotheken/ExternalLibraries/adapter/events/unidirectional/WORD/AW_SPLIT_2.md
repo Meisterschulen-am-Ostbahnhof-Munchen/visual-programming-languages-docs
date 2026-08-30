@@ -31,7 +31,7 @@ Kein Daten‑Ausgang vorhanden.
 ### **Adapter**
 
 | Bezeichnung | Richtung | Typ | Beschreibung |
-|-------------|----------|-----|--------------|
+| ------------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AW` | Eingangs‑Adapter – der zu teilende unidirektionale AW. |
 | `OUT1` | Plug | `adapter::types::unidirectional::AW` | Erster Ausgang – erhält eine identische Kopie des eingehenden Adapters. |
 | `OUT2` | Plug | `adapter::types::unidirectional::AW` | Zweiter Ausgang – erhält ebenfalls eine identische Kopie des eingehenden Adapters. |

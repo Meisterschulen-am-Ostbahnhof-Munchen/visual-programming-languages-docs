@@ -3,6 +3,7 @@
 ![AR_TO_AX](./AR_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AR_TO_AX wandelt einen REAL-Wert, der über einen AR-Adapter empfangen wird, in einen BOOL-Wert um und gibt diesen über einen AX-Adapter aus. Die Umwandlung erfolgt durch einen Vergleich des REAL-Werts mit 0,0. Ist der Wert ungleich Null, wird TRUE ausgegeben, ansonsten FALSE. Der Baustein dient als Brücke zwischen analogen und digitalen Adapterschnittstellen.
@@ -73,4 +74,4 @@ Der AR_TO_AX-Funktionsblock bietet eine kompakte Lösung zur Umwandlung eines RE
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

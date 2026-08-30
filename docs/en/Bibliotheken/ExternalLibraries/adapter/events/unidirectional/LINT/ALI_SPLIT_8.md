@@ -3,9 +3,11 @@
 ![ALI_SPLIT_8](./ALI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_SPLIT_8` serves as a generic splitter for the **Agricultural Light Interface (ALI)**. It distributes an incoming ALI signal unchanged to eight parallel outputs. This allows multiple downstream devices or controllers to be supplied with the same signal without compromising signal integrity.
+
 ## Interface Structure
 
 ### **Event Inputs**

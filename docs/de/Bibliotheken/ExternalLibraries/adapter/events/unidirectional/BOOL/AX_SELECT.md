@@ -3,6 +3,7 @@
 ![AX_SELECT_ecc](./AX_SELECT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SELECT ist ein Funktionsblock, der basierend auf einem booleschen Eingang einen von zwei AX-Adapter-Eingängen auf den Ausgang schaltet.
@@ -49,7 +50,7 @@ Auswahl von Signalen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)
+- [Uebung_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)
 
 ## Fazit
 

@@ -1,8 +1,9 @@
 # Exercise_004c2: Toggle Flip-Flop with IE using BUTTON_LONG_PRESS_START
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004c2`.
+This article describes the logiBUS® exercise `Uebung_004c2`
 ----
+
 ## Objective of the Exercise
 
 Using the event `BUTTON_LONG_PRESS_START`.

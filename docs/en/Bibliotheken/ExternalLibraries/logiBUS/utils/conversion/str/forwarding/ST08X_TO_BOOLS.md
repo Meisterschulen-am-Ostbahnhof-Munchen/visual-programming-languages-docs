@@ -4,33 +4,35 @@
 ![ST08X_TO_BOOLS](./ST08X_TO_BOOLS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block extracts eight individual BOOL values from a single input structure of type `ST08X`. It allows for the easy decomposition of a bundled 8-BOOL structure into its individual components.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
-* **REQ**: An event at this input requests conversion. It signals the function block to process the data from input `IN`.
+- **REQ**: An event at this input requests conversion. It signals the function block to process the data from input `IN`.
 
 ### **Event Outputs**
 
-* **CNF**: This event is output once the conversion is complete and all output BOOL values (`OUT_00` to `OUT_07`) have been updated.
+- **CNF**: This event is output once the conversion is complete and all output BOOL values (`OUT_00` to `OUT_07`) have been updated.
 
 ### **Data Inputs**
 
-* **IN** (Type: `logiBUS::utils::conversion::types::ST08X`): The input structure containing the eight BOOL values to be extracted.
+- **IN** (Type: `logiBUS::utils::conversion::types::ST08X`): The input structure containing the eight BOOL values to be extracted.
 
 ### **Data Outputs**
 
-* **OUT_00** (Type: `BOOL`): The first extracted BOOL value (bit 00).
-* **OUT_01** (Type: `BOOL`): The second extracted BOOL value (bit 01).
-* **OUT_02** (Type: `BOOL`): The third extracted BOOL value (Bit 02).
-* **OUT_03** (Type: `BOOL`): The fourth extracted BOOL value (Bit 03).
-* **OUT_04** (Type: `BOOL`): The fifth extracted BOOL value (Bit 04).
-* **OUT_05** (Type: `BOOL`): The sixth extracted BOOL value (Bit 05).
-* **OUT_06** (Type: `BOOL`): The seventh extracted BOOL value (Bit 06).
-* **OUT_07** (Type: `BOOL`): The eighth extracted BOOL value (Bit 7).
+- **OUT_00** (Type: `BOOL`): The first extracted BOOL value (bit 00).
+- **OUT_01** (Type: `BOOL`): The second extracted BOOL value (bit 01).
+- **OUT_02** (Type: `BOOL`): The third extracted BOOL value (Bit 02).
+- **OUT_03** (Type: `BOOL`): The fourth extracted BOOL value (Bit 03).
+- **OUT_04** (Type: `BOOL`): The fifth extracted BOOL value (Bit 04).
+- **OUT_05** (Type: `BOOL`): The sixth extracted BOOL value (Bit 05).
+- **OUT_06** (Type: `BOOL`): The seventh extracted BOOL value (Bit 06).
+- **OUT_07** (Type: `BOOL`): The eighth extracted BOOL value (Bit 7).
 
 ### **Adapter**
 
@@ -42,20 +44,21 @@ As soon as an event is received at input `REQ`, the function block directly assi
 
 ## Technical Features
 
-* **Direct Mapping:** The function block implements a simple and direct 1:1 mapping from the fields of the `ST08X` structure to the individual BOOL outputs.
-* **Type Safety:** The use of the specific type `ST08X` ensures a clear and type-safe interface.
-* **Efficiency:** The conversion is highly efficient because no complex logic or calculations are required.
+- **Direct Mapping:** The function block implements a simple and direct 1:1 mapping from the fields of the `ST08X` structure to the individual BOOL outputs.
+- **Type Safety:** The use of the specific type `ST08X` ensures a clear and type-safe interface.
+- **Efficiency:** The conversion is highly efficient because no complex logic or calculations are required.
 
 ## State Overview
 
 This function block is stateless. It does not store any internal data between calls, and its output depends solely on the current input values. Each execution is independent of previous executions.
 
-*
+-
+
 ## Application Scenarios
 
-* **Decomposition of Combined Signals:** Ideal for splitting a logically grouped 8-bit structure into its individual, independent BOOL signals.
-* **Interface Adaptation:** Enables connection to other function blocks or systems that expect individual BOOL inputs instead of a structure.
-* **Visualization and Diagnostics:** Simplifies the separate display or monitoring of each individual bit of a `ST08X` structure.
+- **Decomposition of Combined Signals:** Ideal for splitting a logically grouped 8-bit structure into its individual, independent BOOL signals.
+- **Interface Adaptation:** Enables connection to other function blocks or systems that expect individual BOOL inputs instead of a structure.
+- **Visualization and Diagnostics:** Simplifies the separate display or monitoring of each individual bit of a `ST08X` structure.
 
 ## ⚖️ Comparison with Similar Blocks
 
@@ -69,6 +72,6 @@ The function block `ST08X_TO_BOOLS` is a useful tool for decomposing `ST08X` str
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

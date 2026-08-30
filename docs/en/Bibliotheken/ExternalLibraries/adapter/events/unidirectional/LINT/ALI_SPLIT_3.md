@@ -3,9 +3,11 @@
 ![ALI_SPLIT_3](./ALI_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_SPLIT_3** is used to distribute an incoming unidirectional adapter of type **ALI** (Application Layer Interface) to three identical output adapters of the same type. It is designed as a generic component and enables signal multiplication without data modification.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -26,7 +28,7 @@ The function block **ALI_SPLIT_3** is used to distribute an incoming unidirectio
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | `IN` | `adapter::types::unidirectional::ALI` | Receives the incoming ALI signal. |
 | Plug (Output) | `OUT1` | `adapter::types::unidirectional::ALI` | First output copy of the signal. |
 | Plug (Output) | `OUT2` | `adapter::types::unidirectional::ALI` | Second output copy of the signal. |
@@ -73,6 +75,6 @@ ALI_SPLIT_3 is a simple yet useful function block for multiplying ALI adapter co
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

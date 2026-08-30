@@ -3,6 +3,7 @@
 ![VALUES2ARRAY_8_BYTE](VALUES2ARRAY_8_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `VALUES2ARRAY_8_BYTE` combines 8 individual `BYTE` scalar variables `IN_1`…`IN_8` into a `BYTE` array of size 8. It is the reverse of `ARRAY2VALUES_8_BYTE` and belongs to the generic `GEN_ARRAY2ARRAY` family (cf. [VALUES2ARRAY_2_LREAL](VALUES2ARRAY_2_LREAL.md)).

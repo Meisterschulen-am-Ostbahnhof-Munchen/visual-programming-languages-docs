@@ -3,6 +3,7 @@
 ![AR2_REAL_TO_R](./AR2_REAL_TO_R.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AR2_REAL_TO_R` ist ein zusammengesetzter Baustein (Composite FB) zur Konvertierung eines REAL-Wertes in ein AR2-Format. Er kapselt einen bidirektionalen Adapter des Typs `adapter::types::bidirectional::AR2` und fungiert als transparente Schnittstelle zwischen einer einfachen REAL-Variable und dem komplexeren AR2-Datentyp. Die Konvertierungslogik liegt vollständig im verwendeten Adapter, während der FB lediglich die Signal- und Datenweiterleitung übernimmt.

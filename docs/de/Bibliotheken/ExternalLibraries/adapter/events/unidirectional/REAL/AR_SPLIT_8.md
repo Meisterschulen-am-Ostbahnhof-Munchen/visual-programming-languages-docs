@@ -3,6 +3,7 @@
 ![AR_SPLIT_8](./AR_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AR_SPLIT_8 dient zur Aufteilung eines einzelnen unidirektionalen AR-Adapter-Signals auf acht identische AR-Ausgänge. Er ist als generischer Baustein implementiert und ermöglicht eine einfache Signalverteilung ohne zusätzliche Logik.
@@ -12,15 +13,19 @@ Der Funktionsblock AR_SPLIT_8 dient zur Aufteilung eines einzelnen unidirektiona
 ### **Ereignis-Eingänge**
 
 Keine.
+
 ### **Ereignis-Ausgänge**
 
 Keine.
+
 ### **Daten-Eingänge**
 
 Keine.
+
 ### **Daten-Ausgänge**
 
 Keine.
+
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung |
@@ -34,7 +39,7 @@ Der Baustein empfängt über den Socket **IN** die vollständige Schnittstelle e
 
 ## Technische Besonderheiten
 
-- Der Baustein ist generisch (generic FB) und wird durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AR_SPLIT'` als solcher gekennzeichnet.  
+- Der Baustein ist generisch (generic FB) und wird durch das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_AR_SPLIT'` als solcher gekennzeichnet.
 - Es ist kein internes Zustandsdiagramm (ECC) vorhanden – die Weiterleitung erfolgt direkt und zu jedem Zeitpunkt zustandslos.
 - Die Implementierung ist auf unidirektionale AR‑Adapter ausgelegt; eine Verwendung mit bidirektionalen Adaptern ist nicht vorgesehen.
 
@@ -50,8 +55,8 @@ Der Funktionsblock besitzt kein explizites Zustandsdiagramm und arbeitet zustand
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AR_SPLIT_2, AR_SPLIT_4**: Analoge Bausteine mit 2 bzw. 4 Ausgängen; AR_SPLIT_8 erweitert die Anzahl auf acht Ausgänge.  
-- **AR_MERGE_X**: Führt mehrere AR-Signale zu einem zusammen – gegensätzliche Funktion.  
+- **AR_SPLIT_2, AR_SPLIT_4**: Analoge Bausteine mit 2 bzw. 4 Ausgängen; AR_SPLIT_8 erweitert die Anzahl auf acht Ausgänge.
+- **AR_MERGE_X**: Führt mehrere AR-Signale zu einem zusammen – gegensätzliche Funktion.
 - **SPLIT_* für andere Adaptertypen**: Es existieren Split-Bausteine für andere unidirektionale bzw. bidirektionale Adapterdefinitionen, die eine ähnliche Aufteilungslogik umsetzen.
 
 ## Änderungserkennung
@@ -66,4 +71,4 @@ Der AR_SPLIT_8 ist ein einfacher, aber äußerst nützlicher Baustein zum Vertei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

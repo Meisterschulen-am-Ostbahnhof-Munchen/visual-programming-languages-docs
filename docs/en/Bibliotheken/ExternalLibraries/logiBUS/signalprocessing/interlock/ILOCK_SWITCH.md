@@ -3,36 +3,38 @@
 ![ILOCK_SWITCH](./ILOCK_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_SWITCH** serves as a priority-controlled switch with an interlock function. It evaluates two event signals (**EI_UP** and **EI_DOWN**) in combination with associated Boolean data values and sets the outputs **DO_UP** and **DO_DOWN** accordingly. The last active input is always prioritized – simultaneous activation of both outputs is impossible. The logic prevents oscillations and ensures a defined state even with invalid or conflicting input assignments.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | with Data | Description |
-|----------|------------|--------------|
+| ---------- | ------------ | -------------- |
 | **EI_UP** | DI_UP | Event for requesting the up/forward direction. |
 | **EI_DOWN** | DI_DOWN | Event for requesting the down/backward direction. |
 
 ### **Event Outputs**
 
 | Event | with data | Description |
-|----------|-----------|--------------|
+| ---------- | ----------- | -------------- |
 | **EO_UP** | DO_UP | Triggered when the up direction is activated or when exiting the UP state. |
 | **EO_DOWN** | DO_DOWN | Triggered when the down direction is activated or when exiting the DOWN state. |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | **DI_UP** | BOOL | TRUE = forward, up, right, clockwise |
 | **DI_DOWN** | BOOL | TRUE = backward, down, left, counterclockwise |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | **DO_UP** | BOOL | TRUE = forward, up, right, clockwise |
 | **DO_DOWN** | BOOL | TRUE = backward, down, left, counterclockwise |
 
@@ -75,7 +77,7 @@ This logic ensures that only one direction is active at any given time and that 
 ## State Overview
 
 | State | DO_UP | DO_DOWN | Achieved by |
-|---------|-------|---------|----------------|
+| --------- | ------- | --------- | ---------------- |
 | STOP | FALSE | FALSE | Start / after UP_STOP and DOWN_STOP |
 | UP | TRUE | FALSE | EI_UP with DI_UP=TRUE from STOP or DOWN |
 | DOWN | FALSE | TRUE | EI_DOWN with DI_DOWN=TRUE from STOP or UP |

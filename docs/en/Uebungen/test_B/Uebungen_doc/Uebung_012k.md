@@ -1,9 +1,11 @@
 # Exercise_012k: String Input and Saving to INI with Subapp
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates reading a string value from an input source (e.g., a touch input field) and permanently saving this value to an INI file. All functionality is encapsulated in a subapp, which is available as a reusable building block. The saved value is available as an output after each read or save operation and is simultaneously transmitted to an output component (e.g., a display).
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Block: `Uebung_012k_sub`
@@ -22,6 +24,7 @@ This exercise demonstrates reading a string value from an input source (e.g., a 
 - Parameters: none (parameters are set via data connections)
 - Description: This function block converts the binary string provided by `INI` into an output format and sends it to the output location identified by `u16ObjId` (e.g., display).
 - **Functionality**:
+
 1. **Initialization**: Upon startup, the `INIT` event of the `INI` function block is triggered. This internally triggers a `GET` event, which loads the last saved value from the INI file.
 2. **Saving a New Value**: When the `StringValue_IS` function block detects a new input value, it sends an event to the `SET` input of `INI`. `INI` then saves the current value under the specified `KEY` and `SECTION` and outputs the event `SETO`.
 
@@ -61,6 +64,6 @@ This exercise demonstrates how to handle string input, persistent storage in INI
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

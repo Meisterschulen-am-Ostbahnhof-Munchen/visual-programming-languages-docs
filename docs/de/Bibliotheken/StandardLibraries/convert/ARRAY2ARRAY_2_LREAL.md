@@ -3,6 +3,7 @@
 <img width="1219" height="160" alt="image" src="https://github.com/user-attachments/assets/57ce3ad0-2da9-4075-8d37-abf71840b469" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock (FB) `ARRAY2ARRAY_2_LREAL` ist ein Service-Interface-Funktionsblock, der darauf ausgelegt ist, Werte von einem Eingangs-Array auf ein Ausgangs-Array zu kopieren. Er dient als einfache und ereignisgesteuerte Schnittstelle für die Übertragung von Daten zwischen Arrays innerhalb einer 4diac-Anwendung.
@@ -13,21 +14,21 @@ Der Funktionsblock (FB) `ARRAY2ARRAY_2_LREAL` ist ein Service-Interface-Funktion
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Event): Löst den Kopierprozess aus. Dieses Ereignis signalisiert dem Funktionsblock, die Datenübertragung zu starten.
-    *   Verbunden mit Datenvariable: `IN`
+-   **REQ** (Event): Löst den Kopierprozess aus. Dieses Ereignis signalisiert dem Funktionsblock, die Datenübertragung zu starten.
+    -   Verbunden mit Datenvariable: `IN`
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Event): Bestätigt den Abschluss des Kopierprozesses. Dieses Ereignis wird nach erfolgreicher Datenübertragung ausgelöst.
-    *   Verbunden mit Datenvariable: `OUT`
+-   **CNF** (Event): Bestätigt den Abschluss des Kopierprozesses. Dieses Ereignis wird nach erfolgreicher Datenübertragung ausgelöst.
+    -   Verbunden mit Datenvariable: `OUT`
 
 ### **Daten-Eingänge**
 
-*   **IN** (Typ: `LREAL`, Array-Größe: `2`): Das Quell-Array, dessen Werte kopiert werden sollen. Es handelt sich um ein Array von Langen Reellen Zahlen (Double-Precision Floating Point).
+-   **IN** (Typ: `LREAL`, Array-Größe: `2`): Das Quell-Array, dessen Werte kopiert werden sollen. Es handelt sich um ein Array von Langen Reellen Zahlen (Double-Precision Floating Point).
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (Typ: `LREAL`, Array-Größe: `2`): Das Ziel-Array, in das die kopierten Werte geschrieben werden. Ebenfalls ein Array von Langen Reellen Zahlen.
+-   **OUT** (Typ: `LREAL`, Array-Größe: `2`): Das Ziel-Array, in das die kopierten Werte geschrieben werden. Ebenfalls ein Array von Langen Reellen Zahlen.
 
 ### **Adapter**
 
@@ -39,10 +40,10 @@ Der Funktionsblock `ARRAY2ARRAY_2_LREAL` arbeitet ereignisgesteuert. Sobald das 
 
 ## Technische Besonderheiten
 
-*   **Service-Interface:** Der Baustein ist als "Service Interface Function Block Type" konzipiert, was auf eine Standard-Schnittstelle für spezifische Dienste hinweist.
-*   **Generische Implementierung:** Intern verwendet dieser Funktionsblock wahrscheinlich eine generische Implementierung, wie durch den Attributwert `'GEN_ARRAY2ARRAY'` angedeutet. Dies ermöglicht eine flexible Erstellung ähnlicher Bausteine für verschiedene Array-Größen und Datentypen.
-*   **Feste Array-Größe:** Die Array-Größe für `IN` und `OUT` ist fest auf `2` definiert, was den Anwendungsbereich auf spezifische Szenarien mit dieser Array-Dimension begrenzt.
-*   **Datentyp `LREAL`:** Der Baustein ist auf den Datentyp `LREAL` (Lange Reelle Zahl) spezialisiert, was ihn ideal für die Verarbeitung von hochpräzisen Gleitkommazahlen macht.
+-   **Service-Interface:** Der Baustein ist als "Service Interface Function Block Type" konzipiert, was auf eine Standard-Schnittstelle für spezifische Dienste hinweist.
+-   **Generische Implementierung:** Intern verwendet dieser Funktionsblock wahrscheinlich eine generische Implementierung, wie durch den Attributwert `'GEN_ARRAY2ARRAY'` angedeutet. Dies ermöglicht eine flexible Erstellung ähnlicher Bausteine für verschiedene Array-Größen und Datentypen.
+-   **Feste Array-Größe:** Die Array-Größe für `IN` und `OUT` ist fest auf `2` definiert, was den Anwendungsbereich auf spezifische Szenarien mit dieser Array-Dimension begrenzt.
+-   **Datentyp `LREAL`:** Der Baustein ist auf den Datentyp `LREAL` (Lange Reelle Zahl) spezialisiert, was ihn ideal für die Verarbeitung von hochpräzisen Gleitkommazahlen macht.
 
 ## Zustandsübersicht
 
@@ -53,10 +54,10 @@ Der Funktionsblock befindet sich typischerweise in zwei Hauptzuständen:
 
 ## Anwendungsszenarien
 
-*   **Datenrouting:** Weiterleitung von `LREAL`-Datenpaketen der Größe 2 zwischen verschiedenen Teilen eines Steuerungssystems.
-*   **Datenpufferung:** Kurzfristiges Speichern oder Übertragen von Messwerten oder Sollwerten.
-*   **Schnittstellenanpassung:** Wenn ein Baustein ein `LREAL`-Array der Größe 2 als Ausgabe liefert und ein anderer Baustein dasselbe Array als Eingabe benötigt, kann dieser FB als Brücke dienen.
-*   **Konstante Datenweitergabe:** Übertragen von statischen oder selten aktualisierten `LREAL`-Arrays von einem Punkt zu einem anderen.
+-   **Datenrouting:** Weiterleitung von `LREAL`-Datenpaketen der Größe 2 zwischen verschiedenen Teilen eines Steuerungssystems.
+-   **Datenpufferung:** Kurzfristiges Speichern oder Übertragen von Messwerten oder Sollwerten.
+-   **Schnittstellenanpassung:** Wenn ein Baustein ein `LREAL`-Array der Größe 2 als Ausgabe liefert und ein anderer Baustein dasselbe Array als Eingabe benötigt, kann dieser FB als Brücke dienen.
+-   **Konstante Datenweitergabe:** Übertragen von statischen oder selten aktualisierten `LREAL`-Arrays von einem Punkt zu einem anderen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -79,4 +80,4 @@ Der `ARRAY2ARRAY_2_LREAL` Funktionsblock bietet eine unkomplizierte und ereignis
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

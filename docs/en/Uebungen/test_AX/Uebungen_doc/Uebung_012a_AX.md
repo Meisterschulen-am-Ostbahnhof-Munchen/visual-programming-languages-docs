@@ -1,6 +1,7 @@
 # Exercise_012a_AX: Numeric Value Input and Storage (Adapter Version)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise teaches how to use adapters for numeric value input and persistent storage in non-volatile memory (NVS). The function block `Uebung_012a_AX` encapsulates all the logic in a sub-app that receives a numeric value via an adapter and stores it under a defined key. The adapter version allows for flexible connection to various input sources.
@@ -60,6 +61,6 @@ The exercise `Uebung_012a_AX` demonstrates the efficient use of adapters for num
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

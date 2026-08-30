@@ -3,9 +3,11 @@
 ![SPLIT_AL_INTO_AD](./SPLIT_AL_INTO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_AL_INTO_AD` splits an incoming **AL (LWORD)** adapter into two separate **AD (DWORD)** adapters. It thus implements the necessary interface conversion for applications where a large data word (LWORD) needs to be split into two smaller DWORDs and made available via unidirectional adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -32,7 +34,7 @@ Output events occur via the PLUG adapters `DWORD_00.E1` and `DWORD_01.E1` as soo
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-|-------|------------|----------|------------------------------------|
+| ------- | ------------ | ---------- | ------------------------------------ |
 | SOCKET | `IN` | Input | AL (LWORD) – Source Adapter |
 | PLUG | `DWORD_00` | Output | AD (DWORD) – First Destination Adapter |
 | PLUG | `DWORD_01` | Output | AD (DWORD) – Second Destination Adapter |

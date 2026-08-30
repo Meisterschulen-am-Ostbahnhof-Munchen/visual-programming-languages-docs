@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_MUL_2` ist ein generischer arithmetischer Funktionsbaustein für die 4diac-IDE, der der Norm IEC 61131-3 entspricht. Seine Hauptaufgabe ist die Multiplikation von zwei Eingangswerten, die über unidirektionale Adapter bereitgestellt werden. Das Ergebnis dieser Multiplikation wird ebenfalls über einen unidirektionalen Adapter ausgegeben.
@@ -46,28 +47,29 @@ Der Funktionsbaustein realisiert die mathematische Multiplikation:
 
 $$\text{OUT} = \text{IN1} \times \text{IN2}$$
 
-Da der Baustein als generischer Funktionsbaustein (`GEN_AI_MUL`) definiert ist, kann er je nach Instanziierung und Typisierung der verwendeten Adapter unterschiedliche numerische Datentypen (z. B. `REAL`, `LREAL`, `INT` etc.) verarbeiten. 
+Da der Baustein als generischer Funktionsbaustein (`GEN_AI_MUL`) definiert ist, kann er je nach Instanziierung und Typisierung der verwendeten Adapter unterschiedliche numerische Datentypen (z. B. `REAL`, `LREAL`, `INT` etc.) verarbeiten.
 
 Sobald über die Eingangs-Adapter (`IN1` und/oder `IN2`) ein Aktualisierungsereignis empfangen wird, führt der Baustein intern die Multiplikation aus und signalisiert die Aktualisierung des Ergebnisses über den Ausgangs-Adapter `OUT`.
 
 ## Technische Besonderheiten
 
-* **Generische Implementierung:** Der Baustein nutzt die Klasse `GEN_AI_MUL`. Dies ermöglicht eine hohe Flexibilität, da der konkrete Datentyp erst bei der Verwendung im System bestimmt wird.
-* **Unidirektionale Adapter:** Die Schnittstellen nutzen den Typ `adapter::types::unidirectional::AI`. Das bedeutet, dass der Informationsfluss strikt in eine Richtung verläuft, was die Systemstabilität und die Performance erhöht.
-* **Kapselung:** Durch das Fehlen einzelner Signal-Pins bleibt das Anwendungsdiagramm auch bei vielen mathematischen Operationen übersichtlich und aufgeräumt.
+- **Generische Implementierung:** Der Baustein nutzt die Klasse `GEN_AI_MUL`. Dies ermöglicht eine hohe Flexibilität, da der konkrete Datentyp erst bei der Verwendung im System bestimmt wird.
+- **Unidirektionale Adapter:** Die Schnittstellen nutzen den Typ `adapter::types::unidirectional::AI`. Das bedeutet, dass der Informationsfluss strikt in eine Richtung verläuft, was die Systemstabilität und die Performance erhöht.
+- **Kapselung:** Durch das Fehlen einzelner Signal-Pins bleibt das Anwendungsdiagramm auch bei vielen mathematischen Operationen übersichtlich und aufgeräumt.
 
 ## Zustandsübersicht
 
 Der Baustein verhält sich im Wesentlichen zustandslos (analogen Charakter aufweisend):
-* **Initialisierung / Ruhezustand:** Der Baustein wartet auf eingehende Werte über die Adapter `IN1` und `IN2`.
-* **Berechnung:** Bei Eintreffen eines neuen Wertes oder Triggersignals an den Sockets wird das Produkt neu berechnet.
-* **Ausgabe:** Das Ergebnis wird unmittelbar an den Plug `OUT` übergeben und ein entsprechendes Ausgangsereignis im Adapter getriggert.
+
+- **Initialisierung / Ruhezustand:** Der Baustein wartet auf eingehende Werte über die Adapter `IN1` und `IN2`.
+- **Berechnung:** Bei Eintreffen eines neuen Wertes oder Triggersignals an den Sockets wird das Produkt neu berechnet.
+- **Ausgabe:** Das Ergebnis wird unmittelbar an den Plug `OUT` übergeben und ein entsprechendes Ausgangsereignis im Adapter getriggert.
 
 ## Anwendungsszenarien
 
-* **Skalierung von Sensorwerten:** Multiplikation eines analogen Rohwertes (z. B. von einem Stromeingang 4–20 mA) mit einem Skalierungsfaktor zur Umrechnung in eine physikalische Größe.
-* **Berechnung physikalischer Größen:** Berechnung von Leistung ($P = U \times I$) aus gemessener Spannung und Stromstärke, sofern diese über entsprechende Adapterstrukturen geliefert werden.
-* **Verstärkungsglieder in Regelkreisen:** Einsatz als proportionaler Verstärkungsfaktor (P-Glied) in einer softwarebasierten Regelung.
+- **Skalierung von Sensorwerten:** Multiplikation eines analogen Rohwertes (z. B. von einem Stromeingang 4–20 mA) mit einem Skalierungsfaktor zur Umrechnung in eine physikalische Größe.
+- **Berechnung physikalischer Größen:** Berechnung von Leistung ($P = U \times I$) aus gemessener Spannung und Stromstärke, sofern diese über entsprechende Adapterstrukturen geliefert werden.
+- **Verstärkungsglieder in Regelkreisen:** Einsatz als proportionaler Verstärkungsfaktor (P-Glied) in einer softwarebasierten Regelung.
 
 ## Vergleich mit ähnlichen Bausteinen
 

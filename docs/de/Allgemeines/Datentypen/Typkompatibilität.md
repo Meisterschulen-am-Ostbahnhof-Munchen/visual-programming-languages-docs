@@ -6,7 +6,7 @@ Die Regeln für erlaubte Datenverbindungen basieren auf dem Prinzip
 ## Zentrale Dateien in der Codebasis
 
 | Datei | Zweck |
-|-------|-------|
+| ------- | ------- |
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/data/impl/DataTypeAnnotations.java` | Definiert `isAssignableFrom(DataType other)` für jeden IEC 61131-3 Typ |
 | `plugins/org.eclipse.fordiac.ide.model/src/org/eclipse/fordiac/ide/model/validation/LinkConstraints.java:200` | Prüft Verbindungen mit `targetType.isAssignableFrom(sourceType)` |
 | `tests/.../datatype/helper/ElementaryDataTypeCompatibilityTest.java` | Vollständige Test-Matrix aller impliziten Zuweisungen |
@@ -26,7 +26,7 @@ Das bedeutet: der Target-Typ muss gleich oder *größer/allgemeiner* sein als de
 ### Signed
 
 | Source → | SINT | INT | DINT | LINT |
-|----------|:----:|:---:|:----:|:----:|
+| ---------- | :----: | :---: | :----: | :----: |
 | **SINT** | ✓ | ✓ | ✓ | ✓ |
 | **INT** | ✗ | ✓ | ✓ | ✓ |
 | **DINT** | ✗ | ✗ | ✓ | ✓ |
@@ -35,7 +35,7 @@ Das bedeutet: der Target-Typ muss gleich oder *größer/allgemeiner* sein als de
 ### Unsigned
 
 | Source → | USINT | UINT | UDINT | ULINT |
-|----------|:-----:|:----:|:-----:|:-----:|
+| ---------- | :-----: | :----: | :-----: | :-----: |
 | **USINT** | ✓ | ✓ | ✓ | ✓ |
 | **UINT** | ✗ | ✓ | ✓ | ✓ |
 | **UDINT** | ✗ | ✗ | ✓ | ✓ |
@@ -59,12 +59,12 @@ REAL und LREAL akzeptieren außerdem bestimmte Ganzzahl-Typen:
 ## Bit-Typen
 
 | Source → | BOOL | BYTE | WORD | DWORD | LWORD |
-|----------|:----:|:----:|:----:|:-----:|:-----:|
+| ---------- | :----: | :----: | :----: | :-----: | :-----: |
 | **BOOL** | ✓ | ✓ | ✓ | ✓ | ✓ |
 | **BYTE** | ✗ | ✓ | ✓ | ✓ | ✓ |
 | **WORD** | ✗ | ✗ | ✓ | ✓ | ✓ |
-| **DWORD**| ✗ | ✗ | ✗ | ✓ | ✓ |
-| **LWORD**| ✗ | ✗ | ✗ | ✗ | ✓ |
+| **DWORD** | ✗ | ✗ | ✗ | ✓ | ✓ |
+| **LWORD** | ✗ | ✗ | ✗ | ✗ | ✓ |
 
 ## Zeichen und Strings
 
@@ -101,9 +101,10 @@ Für das Kopieren bzw. Weiterleiten von Werten desselben Typs muss stattdessen d
 
 ### 3. Konfiguration von `F_MOVE`
 
-Da `F_MOVE` generisch ist, muss er in XML-Netzwerkdateien über das Attribut `DataType` auf den gewünschten Zieldatentyp konfiguriert werden. 
+Da `F_MOVE` generisch ist, muss er in XML-Netzwerkdateien über das Attribut `DataType` auf den gewünschten Zieldatentyp konfiguriert werden.
 
 **Beispiel-Konfiguration in der XML:**
+
 ```xml
 <FB Name="MeinFMove" Type="iec61131::selection::F_MOVE">
     <Attribute Name="DataType" Value="BOOL"/> <!-- Hier Datentyp konfigurieren -->
@@ -116,8 +117,8 @@ Ohne dieses Attribut oder mit leerem Wert ist der Baustein ungültig und schläg
 
 Wenn eine Zuweisung (in ST) oder eine Verbindung (im FB-Netzwerk) nicht implizit erlaubt ist (siehe Matrix oben), muss eine explizite Konvertierung durchgeführt werden:
 
-* **In Structured Text (ST):** Verwendung einer Konvertierungsfunktion der Form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` (z. B. `DINT_TO_UDINT`).
-* **Im grafischen FB-Netzwerk:** Einfügen des entsprechenden Konvertierungs-Funktionsbausteins (z. B. des Bausteins `DINT_TO_UDINT`) zwischen Ausgang und Eingang.
+- **In Structured Text (ST):** Verwendung einer Konvertierungsfunktion der Form `[SOURCE_TYPE]_TO_[TARGET_TYPE]` (z. B. `DINT_TO_UDINT`).
+- **Im grafischen FB-Netzwerk:** Einfügen des entsprechenden Konvertierungs-Funktionsbausteins (z. B. des Bausteins `DINT_TO_UDINT`) zwischen Ausgang und Eingang.
 
 ### ⚠️ Wichtiger Sonderfall: Bit-Strings zu Numerischen Typen (reinterpret_cast)
 
@@ -127,29 +128,30 @@ In FORTE / 4diac werden Konvertierungen von Bit-Strings (wie `DWORD`, `WORD`, `B
 
 Wenn in einem `DWORD` ein numerischer Ganzzahlwert (z. B. 123) abgelegt ist und dieser als Fließkommazahl (`REAL`) ausgegeben werden soll:
 
-* **Falsch:**
-  * *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
-  * *Im FB-Netzwerk:* Direkte Verbindung über den Konvertierungsbaustein `DWORD_TO_REAL`.
-  * *Erklärung:* Dies kopiert die Bits von 123 direkt in das Float-Bitmuster. Nach IEEE-754 wird dies als eine extrem kleine, fast unendlich nahe Null interpretiert, was mathematisch falsch ist.
-* **Richtig (doppelte Konvertierung):**
-  * *In ST:*
+- **Falsch:**
+  - *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
+  - *Im FB-Netzwerk:* Direkte Verbindung über den Konvertierungsbaustein `DWORD_TO_REAL`.
+  - *Erklärung:* Dies kopiert die Bits von 123 direkt in das Float-Bitmuster. Nach IEEE-754 wird dies als eine extrem kleine, fast unendlich nahe Null interpretiert, was mathematisch falsch ist.
+- **Richtig (doppelte Konvertierung):**
+  - *In ST:*
+
     ```pascal
     real_var := UDINT_TO_REAL(DWORD_TO_UDINT(dword_var));
     ```
 
-  * *Im FB-Netzwerk:* Nacheinanderfolgendes Einfügen zweier Konvertierungsbausteine in Serie:
+  - *Im FB-Netzwerk:* Nacheinanderfolgendes Einfügen zweier Konvertierungsbausteine in Serie:
     `[DWORD-Ausgang]` $\rightarrow$ `[DWORD_TO_UDINT]` $\rightarrow$ `[UDINT_TO_REAL]` $\rightarrow$ `[REAL-Eingang]`.
 
-  * *Erklärung:* `DWORD_TO_UDINT` kopiert das Bitmuster (123 bleibt 123 als UDINT). `UDINT_TO_REAL` führt dann die echte mathematische Umwandlung in die Fließkommazahl `123.0` durch.
+  - *Erklärung:* `DWORD_TO_UDINT` kopiert das Bitmuster (123 bleibt 123 als UDINT). `UDINT_TO_REAL` führt dann die echte mathematische Umwandlung in die Fließkommazahl `123.0` durch.
 
 #### Szenario B: Im DWORD ist bereits ein IEEE-754 Float-Bitmuster gespeichert
 
 Wenn das `DWORD` direkt das Roh-Bitmuster einer Fließkommazahl enthält (z. B. eingelesen über ein Modbus-Register oder eine Netzwerk-Verbindung):
 
-* **Richtig:**
-  * *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
-  * *Im FB-Netzwerk:* Einfügen des Konvertierungsbausteins `DWORD_TO_REAL`.
-  * *Erklärung:* Hier ist der Direkt-Cast per `reinterpret_cast` genau das Gewünschte, um die Roh-Bits direkt als Fließkommazahl zu interpretieren.
+- **Richtig:**
+  - *In ST:* `real_var := DWORD_TO_REAL(dword_var);`
+  - *Im FB-Netzwerk:* Einfügen des Konvertierungsbausteins `DWORD_TO_REAL`.
+  - *Erklärung:* Hier ist der Direkt-Cast per `reinterpret_cast` genau das Gewünschte, um die Roh-Bits direkt als Fließkommazahl zu interpretieren.
 
 ## Typ-Umwandlungen (Casting)
 
@@ -163,7 +165,7 @@ In IEC 61131-3 / IEC 61499 sind folgende direkten Konvertierungen **nicht defini
 Stattdessen müssen Sie über den passenden vorzeichenlosen Integer-Typen konvertieren:
 
 | Quelle | Ziel | Korrekte Umwandlung |
-|--------|------|---------------------|
+| -------- | ------ | --------------------- |
 | BYTE | REAL | `BYTE` → `USINT` → `REAL` |
 | WORD | REAL | `WORD` → `UINT` → `REAL` |
 | DWORD | REAL | `DWORD` → `UDINT` → `REAL` |
@@ -207,4 +209,4 @@ Dies betrifft insbesondere:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

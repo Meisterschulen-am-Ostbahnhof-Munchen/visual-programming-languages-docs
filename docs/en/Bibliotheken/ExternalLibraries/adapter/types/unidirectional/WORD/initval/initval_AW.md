@@ -3,6 +3,7 @@
 ![initval_AW](initval_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AW` is the configurable initialization block for the [AW](../AW.md) adapter (data type `WORD`, 16-bit bit pattern): it accepts a start value as a data input at initialization time and writes it to a `AW` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

@@ -3,9 +3,11 @@
 ![GET_REAL](./GET_REAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_REAL** function block is used to read a REAL value from an **InOut variable** and make it available in a buffered output. The read value is obtained from the InOut variable `IN` when an event is received at input `REQ` and output at output `OUT`. After execution, the acknowledgment event `CNF` is sent.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -45,8 +47,8 @@ No adapters available.
 
 OUT := IN;
 
-3. The confirmation event `CNF` is then sent. The outputs `OUT` and `IN` are associated with the event, so they are valid simultaneously.
-4. The output value is retained until another `REQ` event arrives and `OUT` is rewritten.
+1. The confirmation event `CNF` is then sent. The outputs `OUT` and `IN` are associated with the event, so they are valid simultaneously.
+2. The output value is retained until another `REQ` event arrives and `OUT` is rewritten.
 
 ## Technical Features
 
@@ -76,7 +78,7 @@ There are no further states or branches – the function block is deterministic 
 Similar function blocks exist for other data types, e.g., `GET_BOOL`, `GET_INT`, `GET_LREAL`, etc. They all share the same principle: reading an InOut variable and providing it as a buffered output. The difference lies solely in the data type and the associated precision or value range.
 
 | Function Block | Data Type | Application Area |
-|------------|----------|----------------|
+| ------------ | ---------- | ---------------- |
 | GET_BOOL | BOOL | Binary Signals |
 | GET_INT | INT | Integers (16 bits) |
 | GET_REAL | REAL | Floating-Point Numbers (32 bits) |
@@ -92,6 +94,6 @@ The `GET_REAL` function block is a lean and reliable block for reading a REAL In
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

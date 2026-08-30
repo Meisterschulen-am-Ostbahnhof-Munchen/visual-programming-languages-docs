@@ -20,7 +20,7 @@ Verständnis der Reset-Priorität.
 
 ![Uebung_006b_network](./Uebung_006b_network.svg)
 
-  * **`E_RS`**: Ein ereignisbasiertes RS-Flip-Flop (Reset dominant).
+  - **`E_RS`**: Ein ereignisbasiertes RS-Flip-Flop (Reset dominant).
 
 -----
 

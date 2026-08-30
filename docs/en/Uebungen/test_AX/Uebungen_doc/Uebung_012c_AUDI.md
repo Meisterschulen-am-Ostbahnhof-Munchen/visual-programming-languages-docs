@@ -1,9 +1,11 @@
 # Exercise_012c_AUDI: Numeric Value Input and Storage INI with Subapp (Adapter Version)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of numeric value input followed by storage in non-volatile memory (NVS) using a SubApp. The unique aspect is the use of a SubApp in the **Adapter Version**, which allows the inputs and outputs to be encapsulated via an adapter mechanism. The SubApp **Exercise_012c_AUDI** contains a pre-built sub-module that handles the entire input and storage process.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Exercise_012c_sub_AUDI
@@ -12,10 +14,10 @@ This exercise demonstrates the implementation of numeric value input followed by
 - **Internal FBs Used**: The internal FBs of this block are not visible in detail, as it is a predefined block from the library `MyLib::sys`. It likely consists of a chain of blocks for value acquisition, conversion, and NVS storage.
 - **Functionality**: The block reads a numeric value from `DefaultPool` under object ID `InputNumber_I1` (imported from `Uebungen::const::UT::DefaultPool`). This value is stored in non-volatile memory (NVS) under the key `KEY_I1_STORE` in the section `SECTION_I1_STORE` (both imported from `Uebungen::const::NVS::NVS_Keys`). The parameters `KEY`, `SECTION`, and `u16ObjId` are passed to the subapp during insertion.
 
-#### Sub-module parameters:
+#### Sub-module parameters
 
 | Parameter | Value | Source / Meaning |
-|--------------|-----------------------|----------------------------------------------------------|
+| -------------- | ----------------------- | ---------------------------------------------------------- |
 | `KEY` | `KEY_I1_STORE` | Constant: Key for the NVS entry |
 | `SECTION` | `SECTION_I1_STORE` | Constant: Section in the NVS structure |
 | `u16ObjId` | `InputNumber_I1` | Object ID from the DefaultPool that provides the input value |
@@ -37,6 +39,6 @@ Exercise *Exercise_012c_AUDI* demonstrates how to read a numeric value via a pre
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

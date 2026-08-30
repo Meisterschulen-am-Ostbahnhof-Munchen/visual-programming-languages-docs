@@ -1,6 +1,7 @@
 # E_REND_3
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_REND_3` is the generic 3-input variant of the rendezvous block `E_REND` (2 inputs). It only triggers `EO` once it has received at least one event since the last reset from **all** 3 inputs (`EI1`, `EI2`, `EI3`) — a logical AND across 3 asynchronous event streams.

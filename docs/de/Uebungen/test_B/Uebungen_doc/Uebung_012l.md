@@ -25,9 +25,9 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
   - `QI` = `TRUE`
   - `KEY` = `KEY_S1_STORE`
   - `DEFAULT_VALUE` = `STRING#'Test'`
-- **Funktionsweise**: Der Baustein verwaltet den nichtflüchtigen Speicher auf dem ESP32.  
-  - Bei einem Ereignis an `SET` speichert er den an `VALUE` anliegenden String unter dem Schlüssel `KEY_S1_STORE` ab.  
-  - Bei einem Ereignis an `GET` lädt er den gespeicherten String und stellt ihn am Datenausgang `VALUEO` bereit.  
+- **Funktionsweise**: Der Baustein verwaltet den nichtflüchtigen Speicher auf dem ESP32.
+  - Bei einem Ereignis an `SET` speichert er den an `VALUE` anliegenden String unter dem Schlüssel `KEY_S1_STORE` ab.
+  - Bei einem Ereignis an `GET` lädt er den gespeicherten String und stellt ihn am Datenausgang `VALUEO` bereit.
   - Nach der Initialisierung (`INITO`) löst er automatisch einen `GET` aus.
 
 ### Q_StringValue
@@ -66,7 +66,7 @@ Diese Übung demonstriert das Einlesen eines Strings von einer ISOBUS-Variablen 
 
 ### Wichtige Konstanten
 
-- **`KEY_S1_STORE`**: Der NVS‑Schlüssel, unter dem der String gespeichert wird.  
+- **`KEY_S1_STORE`**: Der NVS‑Schlüssel, unter dem der String gespeichert wird.
 - **`InputString_S1`**: Die ID der ISOBUS‑Stringvariablen, die als Quelle und Ziel dient.
 
 ## Lernziele
@@ -90,5 +90,5 @@ Die Übung `Uebung_012l` zeigt, wie ein ISOBUS‑String in den NVS‑Speicher de
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

@@ -4,6 +4,7 @@
 
 The `Q_NumericValue_AUDI` is a special ISOBUS function block that allows numeric values (`UDINT`) to be sent from a controller to a Universal Terminal (UT) for display or modification. It uses the `AUDI` adapter for transferring new and old values, ensuring a modern and type-safe connection.
 ![Q_NumericValue_AUDI](Q_NumericValue_AUDI.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,5 +57,5 @@ The function block is initialized via the `INIT` event with the object ID `u16Ob
 
 ## 🛠️ Related exercises
 
-* [Exercise_009_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Exercise_083_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
+- [Exercise_009_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Exercise_083_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)

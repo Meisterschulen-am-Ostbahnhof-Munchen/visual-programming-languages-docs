@@ -3,6 +3,7 @@
 ![StringValue_AIS](./StringValue_AIS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **StringValue_AIS** ist ein Dienstschnittstellen-Baustein (Service Interface Function Block) zur Bereitstellung von Zeichenketten-Eingabedaten (String). Er dient als Schnittstelle zwischen einer externen Ressource (z. B. ISOBUS Universal Terminal) und der Steuerungslogik. Der Baustein initialisiert die Kommunikation, verarbeitet Anforderungen und gibt Statusinformationen an die Applikation weiter.
@@ -25,7 +26,7 @@ Der Funktionsblock **StringValue_AIS** ist ein Dienstschnittstellen-Baustein (Se
 ### **Daten-Eingänge**
 
 | Variable | Typ | Initialwert | Beschreibung |
-|----------|-----|-------------|--------------|
+| ---------- | ----- | ------------- | -------------- |
 | QI | BOOL | – | Qualifier für Ereignisse (TRUE = aktiv). |
 | PARAMS | STRING | – | Dienstparameter (z. B. Konfigurationsdaten). |
 | u16ObjId | UINT | ID_NULL | Objekt-ID, die im Protokoll referenziert wird. |
@@ -93,4 +94,4 @@ Der **StringValue_AIS** ist ein spezialisierter Dienstschnittstellen-Baustein f�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

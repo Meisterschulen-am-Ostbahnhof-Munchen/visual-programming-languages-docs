@@ -3,9 +3,11 @@
 ![iSTATES](./iSTATES.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **iSTATES** block is a special GlobalConstants block in the 4diac IDE. It defines a set of named constants that represent the possible states of a (slider) actuator. The constants are stored as `USINT` values and enable a uniform, human-readable reference to the states in the control logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ None.
 The **iSTATES** function block provides five symbolic constants that can be used throughout the application. Each constant represents a discrete state of a slider or similar actuator. The values are defined as `USINT` (unsigned short integer) and are assigned as follows:
 
 | Constant | Value (USINT) | Meaning |
-|------------|---------------|------------------|
+| ------------ | --------------- | ------------------ |
 | Unknown | 0 | Unknown state |
 | Closed | 1 | Closed |
 | Opening | 2 | Opens |
@@ -77,6 +79,6 @@ The **iSTATES** block is a simple yet useful tool for the consistent definition 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

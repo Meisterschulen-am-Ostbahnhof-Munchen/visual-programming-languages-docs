@@ -3,6 +3,7 @@
 <img width="1389" height="295" alt="image" src="https://github.com/user-attachments/assets/18618829-225f-479f-a034-f9c8d20b8b0c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SchieberVerriegelungComposite` ist ein Composite-FB, der als Wrapper für andere Funktionsblöcke dient. Sein Hauptzweck ist die Verwaltung und Koordination der Verriegelungslogik für mehrere Schieber (Hauptschieber, Schieber links, Schieber rechts). Er kapselt die interne Logik und bietet eine vereinheitlichte Schnittstelle für die Initialisierung und den Datenaustausch mit den angeschlossenen Aktoren und Sensoren.
@@ -13,21 +14,21 @@ Der Funktionsblock `SchieberVerriegelungComposite` ist ein Composite-FB, der als
 
 ### **Ereignis-Eingänge**
 
-*   **`INIT`**: Initialisierungsanforderung. Löst den Initialisierungsvorgang des internen `SchieberVerriegelung`-FB und damit des gesamten Composite-Blocks aus. Wird mit den Daten `QI`, `DI_LINKS_GESPERRT` und `DI_RECHTS_GESPERRT` verknüpft.
+-   **`INIT`**: Initialisierungsanforderung. Löst den Initialisierungsvorgang des internen `SchieberVerriegelung`-FB und damit des gesamten Composite-Blocks aus. Wird mit den Daten `QI`, `DI_LINKS_GESPERRT` und `DI_RECHTS_GESPERRT` verknüpft.
 
 ### **Ereignis-Ausgänge**
 
-*   **`INITO`**: Initialisierungsbestätigung. Wird vom internen `SchieberVerriegelung`-FB ausgelöst und signalisiert den erfolgreichen Abschluss der Initialisierung. Ist mit dem Datenausgang `QO` verknüpft.
+-   **`INITO`**: Initialisierungsbestätigung. Wird vom internen `SchieberVerriegelung`-FB ausgelöst und signalisiert den erfolgreichen Abschluss der Initialisierung. Ist mit dem Datenausgang `QO` verknüpft.
 
 ### **Daten-Eingänge**
 
-*   **`QI` (BOOL)**: Qualifizierer für das INIT-Ereignis. Steuert die Initialisierung.
-*   **`DI_LINKS_GESPERRT` (BOOL)**: Status-Eingang, der anzeigt, ob der linke Schieber verriegelt (gesperrt) ist.
-*   **`DI_RECHTS_GESPERRT` (BOOL)**: Status-Eingang, der anzeigt, ob der rechte Schieber verriegelt (gesperrt) ist.
+-   **`QI` (BOOL)**: Qualifizierer für das INIT-Ereignis. Steuert die Initialisierung.
+-   **`DI_LINKS_GESPERRT` (BOOL)**: Status-Eingang, der anzeigt, ob der linke Schieber verriegelt (gesperrt) ist.
+-   **`DI_RECHTS_GESPERRT` (BOOL)**: Status-Eingang, der anzeigt, ob der rechte Schieber verriegelt (gesperrt) ist.
 
 ### **Daten-Ausgänge**
 
-*   **`QO` (BOOL)**: Qualifizierer für das INITO-Ereignis. Gibt den Status der Initialisierung zurück.
+-   **`QO` (BOOL)**: Qualifizierer für das INITO-Ereignis. Gibt den Status der Initialisierung zurück.
 
 ### **Adapter**
 
@@ -45,24 +46,24 @@ Die zentrale Logik zur Steuerung der Schieber und zur Verriegelung liegt vollst�
 
 ## Technische Besonderheiten
 
-*   **Kapselung**: Die komplexe Verriegelungslogik ist in einem separaten FB (`SchieberVerriegelung`) implementiert, was Wiederverwendbarkeit und Testbarkeit fördert.
-*   **Adapter-basierte Kommunikation**: Die Anbindung an die Aktoren erfolgt ausschließlich über standardisierte Adapter-Schnittstellen (`ASR2`). Dies abstrahiert die konkrete Aktorik und erhöht die Flexibilität.
-*   **Pass-Through-Design**: Bis auf die Übersetzung der Adapter-Ereignisnamen besitzt dieser Composite-FB keine eigene Logik. Er dient der strukturierten Organisation des FBNetworks.
+-   **Kapselung**: Die komplexe Verriegelungslogik ist in einem separaten FB (`SchieberVerriegelung`) implementiert, was Wiederverwendbarkeit und Testbarkeit fördert.
+-   **Adapter-basierte Kommunikation**: Die Anbindung an die Aktoren erfolgt ausschließlich über standardisierte Adapter-Schnittstellen (`ASR2`). Dies abstrahiert die konkrete Aktorik und erhöht die Flexibilität.
+-   **Pass-Through-Design**: Bis auf die Übersetzung der Adapter-Ereignisnamen besitzt dieser Composite-FB keine eigene Logik. Er dient der strukturierten Organisation des FBNetworks.
 
 ## Zustandsübersicht
 
 Als Composite-FB besitzt `SchieberVerriegelungComposite` selbst keinen expliziten Zustandsautomaten. Der Systemzustand wird vollständig durch den internen `SchieberVerriegelung`-FB verwaltet. Der Composite-Block kann sich in einem der beiden folgenden Makrozustände befinden:
 
-*   **Nicht initialisiert**: Vor dem Eintreffen eines gültigen `INIT`-Ereignisses.
-*   **Initialisiert und betriebsbereit**: Nachdem der interne FB die Initialisierung via `INITO` quittiert hat. In diesem Zustand werden alle Adapter-Ereignisse durchgeleitet.
+-   **Nicht initialisiert**: Vor dem Eintreffen eines gültigen `INIT`-Ereignisses.
+-   **Initialisiert und betriebsbereit**: Nachdem der interne FB die Initialisierung via `INITO` quittiert hat. In diesem Zustand werden alle Adapter-Ereignisse durchgeleitet.
 
 ## Anwendungsszenarien
 
 Dieser Funktionsblock ist für Steuerungsanwendungen konzipiert, in denen mehrere mechanisch oder logisch verknüpfte Schieber oder Verschlüsse koordiniert werden müssen, z.B.:
 
-*   Verriegelungssysteme in Förderanlagen oder Silos.
-*   Sicherheitssteuerungen für Tore oder Klappen, die nur unter bestimmten Bedingungen geöffnet werden dürfen.
-*   Prozesssteuerungen, in denen die Reihenfolge von Schaltvorgängen eingehalten werden muss (z.B. Hauptschieber nur öffnen, wenn Seitenverschlüsse geschlossen sind).
+-   Verriegelungssysteme in Förderanlagen oder Silos.
+-   Sicherheitssteuerungen für Tore oder Klappen, die nur unter bestimmten Bedingungen geöffnet werden dürfen.
+-   Prozesssteuerungen, in denen die Reihenfolge von Schaltvorgängen eingehalten werden muss (z.B. Hauptschieber nur öffnen, wenn Seitenverschlüsse geschlossen sind).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -76,4 +77,4 @@ Der `SchieberVerriegelungComposite` ist ein gut strukturierter Wrapper-Baustein,
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -26,13 +26,13 @@ Der **logiBUS_PI_IDA** ist ein Composite Funktionsblock (FB) zur Verarbeitung vo
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Kommentar |
-|------|-----|-------------|-----------|
-| QI            | BOOL   | – | Event Input Qualifier (freigeben/sperren) |
-| PARAMS        | STRING | – | Service Parameters (z. B. Busadresse, Kanalkonfiguration) |
-| Input         | logiBUS::io::PI::logiBUS_PI_S | `Invalid` | Identifiziert den physikalischen Eingang (Input_I1..I8) |
-| ImpulseDelta  | DWORD  | – | Anzahl der Impulse, nach denen eine Indikation (IND) ausgelöst wird |
-| TimeDelta     | DWORD  | `250` | Zeit in ms, nach der eine periodische Indikation (IND) ausgelöst wird |
-| TimeRateLimit | DWORD  | `100` | Minimaler Abstand in ms zwischen zwei Indikationen (Rate Limiting) |
+| ------ | ----- | ------------- | ----------- |
+| QI | BOOL | – | Event Input Qualifier (freigeben/sperren) |
+| PARAMS | STRING | – | Service Parameters (z. B. Busadresse, Kanalkonfiguration) |
+| Input | logiBUS::io::PI::logiBUS_PI_S | `Invalid` | Identifiziert den physikalischen Eingang (Input_I1..I8) |
+| ImpulseDelta | DWORD | – | Anzahl der Impulse, nach denen eine Indikation (IND) ausgelöst wird |
+| TimeDelta | DWORD | `250` | Zeit in ms, nach der eine periodische Indikation (IND) ausgelöst wird |
+| TimeRateLimit | DWORD | `100` | Minimaler Abstand in ms zwischen zwei Indikationen (Rate Limiting) |
 
 ### **Daten-Ausgänge**
 
@@ -94,7 +94,7 @@ Da der FB ein Composite ist und die Zustandslogik vollständig im internen FB `l
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
-|----------|-------------|
+| ---------- | ------------- |
 | `logiBUS_PI` | Einfacherer Eingangsbaustein ohne Impuls- und Zeit-Delta-Filter; nur rohe Wertänderungen. |
 | `logiBUS_PI_ID` | Vorgänger ohne Composite-Struktur und ohne Adapter-Schnittstelle; direkte Ereignisausgänge. |
 | `logiBUS_PI_IDA` (dieser FB) | Bietet zusätzlich einen **Adapter** für eine flexible Weiterverarbeitung und kombiniert Impuls-, Zeit- und Ratenlogik in einem Composite. |

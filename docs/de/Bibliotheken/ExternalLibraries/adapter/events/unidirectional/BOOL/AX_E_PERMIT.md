@@ -3,6 +3,7 @@
 ![AX_E_PERMIT](./AX_E_PERMIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AX_E_PERMIT** realisiert eine bedingte Ereignisweitergabe (permissive propagation). Ein eingehendes Ereignis wird nur dann an den Ausgang weitergeleitet, wenn ein über einen Adapter bereitgestelltes Freigabesignal (Permit) den Wert `TRUE` besitzt. Der Baustein dient als Gate, das die Verarbeitungskette in Abhängigkeit von externen Bedingungen unterbrechen oder freigeben kann.

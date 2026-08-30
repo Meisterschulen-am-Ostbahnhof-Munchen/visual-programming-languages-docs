@@ -3,15 +3,17 @@
 ![StringValue_AIWS](./StringValue_AIWS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **StringValue_AIWS** is an input-service interface block for processing wide-string data (UTF-16) in an ISOBUS context. It provides an adapter-based interface through which external resources can input strings. The block acts as a wrapper for the internal block *StringValue_IWS* and offers a standardized initialization and request interface.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `INIT` | EInit | `QI`, `PARAMS`, `u16ObjId` | Service Initialization |
 | `REQ` | Event | `QI` | Service Request (Query) |
 
@@ -24,7 +26,7 @@ The function block **StringValue_AIWS** is an input-service interface block for 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `QI` | BOOL | – | Event Qualifier (Share) |
 | `PARAMS` | STRING | – | Service Parameter (e.g., Configuration String) |
 | `u16ObjId` | UINT | `ID_NULL` | Object ID (e.g., ISOBUS Object Identifier) |
@@ -32,7 +34,7 @@ The function block **StringValue_AIWS** is an input-service interface block for 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|---|---|---|
+| --- | --- | --- |
 | `QO` | BOOL | Output Qualifier (Status of Last Operation) |
 | `STATUS` | STRING | Status message (e.g., error message or success message) |
 
@@ -77,7 +79,7 @@ The function block does not have an explicit state machine; its behavior is cont
 ## Comparison with Similar Modules
 
 | Module | Interface | Special Feature |
-|---|---|---|
+| --- | --- | --- |
 | `StringValue_AIWS` | Adapter (Input) | Receives wide-strings via the adapter `AIWS` |
 | `StringValue_IWS` | Direct Events/Data | Internal logic, no adapter interface |
 | `StringValue` (Standard) | Events/Data | Simple Wide-String Input (without adapter) |

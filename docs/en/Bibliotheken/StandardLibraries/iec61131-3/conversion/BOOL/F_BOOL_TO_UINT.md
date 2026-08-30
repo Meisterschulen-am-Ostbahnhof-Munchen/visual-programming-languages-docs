@@ -6,6 +6,7 @@
 
 The function block `F_BOOL_TO_UINT` converts a Boolean value (`BOOL`) into an unsigned integer value (`UINT`). This conversion is particularly useful when Boolean signals need to be converted into numerical values, for example, for further calculations or control purposes.
 ![F_BOOL_TO_UINT](F_BOOL_TO_UINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -57,12 +58,12 @@ The function block has no internal states. The conversion is performed anew with
 
 ## 🛠️ Related Exercises
 
-* [Exercise_087](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
-* [Exercise_087a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
-* [Exercise_090a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
-* [Exercise_090a1_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
-* [Exercise_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
-* [Exercise_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
+- [Exercise_087](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Exercise_087a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Exercise_090a1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
+- [Exercise_090a1_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a1_AX.md)
+- [Exercise_090a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
+- [Exercise_090a2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_090a2_AX.md)
 
 ## Conclusion
 

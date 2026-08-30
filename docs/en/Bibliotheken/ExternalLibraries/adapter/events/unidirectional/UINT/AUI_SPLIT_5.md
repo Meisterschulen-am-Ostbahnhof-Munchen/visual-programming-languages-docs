@@ -3,9 +3,11 @@
 ![AUI_SPLIT_5](./AUI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_SPLIT_5** is a generic building block for splitting an incoming AUI adapter (Automation Unit Interface) into five separate, identical AUI outputs. It implements a 1:5 distribution in a unidirectional data direction. Designed for use in automation technology, it enables the redundant or distributed forwarding of AUI signals.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -73,4 +75,4 @@ The **AUI_SPLIT_5** is a simple yet essential component for multiplying AUI sign
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

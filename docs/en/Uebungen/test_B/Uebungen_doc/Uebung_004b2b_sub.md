@@ -3,6 +3,7 @@
 ![Uebung_004b2b_sub_network](./Uebung_004b2b_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **toggle flip-flop** (also known as a switching element) using the function blocks `E_SWITCH` and `E_SR`. The goal is to toggle the Boolean output `Q` on each incoming event `IND`. The implementation is a sub-application that can be integrated as a reusable component into higher-level applications.
@@ -85,6 +86,6 @@ Exercise 004b2b demonstrates the simple implementation of a toggle flip-flop by 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

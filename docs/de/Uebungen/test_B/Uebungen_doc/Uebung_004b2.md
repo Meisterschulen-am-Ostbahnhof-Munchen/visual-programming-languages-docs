@@ -20,8 +20,8 @@ Vertiefung des Verständnisses für parallele, rückgekoppelte Logikstrukturen. 
 
 ![Uebung_004b2_network](./Uebung_004b2_network.svg)
 
-  * **Kanal 1**: Taster `I1`, Weiche `E_SWITCH_I1`, Speicher `E_SR_I1`, Ausgang `Q1`.
-  * **Kanal 2**: Taster `I2`, Weiche `E_SWITCH_I2`, Speicher `E_SR_I2`, Ausgang `Q2`.
+  - **Kanal 1**: Taster `I1`, Weiche `E_SWITCH_I1`, Speicher `E_SR_I1`, Ausgang `Q1`.
+  - **Kanal 2**: Taster `I2`, Weiche `E_SWITCH_I2`, Speicher `E_SR_I2`, Ausgang `Q2`.
 
 -----
 

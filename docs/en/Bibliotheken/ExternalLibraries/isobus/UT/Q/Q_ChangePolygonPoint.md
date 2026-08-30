@@ -3,6 +3,7 @@
 ![Q_ChangePolygonPoint](https://user-images.githubusercontent.com/116869307/214147060-065896ae-60b6-4a01-a8d2-b2b95a424b74.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ChangePolygonPoint** is a standards-compliant function block for modifying polygon points in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.52) specification for agricultural tax systems.
@@ -38,13 +39,16 @@ The **Q_ChangePolygonPoint** is a standards-compliant function block for modifyi
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with polygon object ID
 - `INITO` confirms operational readiness
-2. **Point Change**:
+1. **Point Change**:
+
 - `REQ` with index and new coordinates
 - Coordinates relative to the upper left corner
 - `CNF` returns result and old values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -59,14 +63,14 @@ The **Q_ChangePolygonPoint** is a standards-compliant function block for modifyi
 ## Coordinate Range
 
 | Parameter | Range | Description |
-|-----------|------------|----------------------------|
+| ----------- | ------------ | ---------------------------- |
 | X-value | 0 - 65535 | Horizontal position (px) |
 | Y-value | 0 - 65535 | Vertical Position (px) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Invalid Point Index |
 | -128 | VT_E_HANDLE_INVALID | Invalid Polygon ID |
@@ -81,7 +85,7 @@ The **Q_ChangePolygonPoint** is a standards-compliant function block for modifyi
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_ChangePolygonPoint | VtGeometryEditor | VtDynamicShape |
----------------|----------------------|------------------|----------------|
+--------------- | ---------------------- | ------------------ | ---------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Accuracy | 16-bit Coordinates | 8-bit | 16-bit |
 | Point Count | Up to 255 | Unlimited | Limited |

@@ -70,11 +70,11 @@ Der **F_SUB_DT_TIME** ist ein standardkonformer Funktionsbaustein zur Subtraktio
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | F_SUB_DT_TIME | F_ADD_DT_TIME | F_SUB_DT_DT |
-|---------------|---------------|---------------|-------------|
-| Operation     | Zeitpunkt - Intervall | Zeitpunkt + Intervall | Zeitpunkt - Zeitpunkt |
-| Ergebnis      | DATE_AND_TIME | DATE_AND_TIME | TIME        |
-| Genauigkeit   | Mikrosekunden | Mikrosekunden | Mikrosekunden |
+| Feature | F_SUB_DT_TIME | F_ADD_DT_TIME | F_SUB_DT_DT |
+| --------------- | --------------- | --------------- | ------------- |
+| Operation | Zeitpunkt - Intervall | Zeitpunkt + Intervall | Zeitpunkt - Zeitpunkt |
+| Ergebnis | DATE_AND_TIME | DATE_AND_TIME | TIME |
+| Genauigkeit | Mikrosekunden | Mikrosekunden | Mikrosekunden |
 
 ## Fazit
 

@@ -3,9 +3,11 @@
 ![AUI_TO_AL](./AUI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_TO_AL** is a composite function block that enables the conversion of an AUI adapter (based on the UINT data type) to an AL adapter (based on the LWORD data type). It encapsulates the standardized conversion function `F_UINT_TO_LWORD` and provides a simple, event-driven interface for unidirectional data transfer.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -20,18 +22,18 @@ The function block outputs the event **E1** via the **AL_OUT** plug after the co
 
 The data input is provided exclusively via the socket:
 
-* **AUI_IN.D1** (Type: UINT) – The value to be converted.
+- **AUI_IN.D1** (Type: UINT) – The value to be converted.
 
 ### **Data Outputs**
 
 The data output is provided via the plug:
 
-* **AL_OUT.D1** (Type: LWORD) – The converted value (LWORD).
+- **AL_OUT.D1** (Type: LWORD) – The converted value (LWORD).
 
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `AUI` | **AUI_IN** | Input (Socket) | Input adapter for the UINT value and the trigger event. |
 | `AL` | **AL_OUT** | Output (Plug) | Output adapter for the converted LWORD value and the acknowledgment event. |
 
@@ -80,6 +82,6 @@ The **AUI_TO_AL** function block provides a clean, standardized solution for con
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

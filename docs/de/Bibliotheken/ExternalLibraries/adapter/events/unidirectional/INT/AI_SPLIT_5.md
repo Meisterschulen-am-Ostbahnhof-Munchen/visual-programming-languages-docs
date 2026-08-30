@@ -3,6 +3,7 @@
 ![AI_SPLIT_5](./AI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_SPLIT_5** dient dazu, ein eingehendes analogen Signal (AI) auf fünf identische Ausgänge zu verteilen. Es handelt sich um einen generischen Baustein, der speziell für die Aufteilung eines Analogwerts in mehrere parallele Pfade ausgelegt ist. Die Anwendung erfolgt über unidirektionale Adapter vom Typ `AI`.
@@ -75,4 +76,4 @@ Der AI_SPLIT_5 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfä
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

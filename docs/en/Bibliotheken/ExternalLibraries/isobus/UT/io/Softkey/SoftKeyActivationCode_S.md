@@ -1,12 +1,15 @@
 # SoftKeyActivationCode_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `SoftKeyActivationCode_S` is a structured data structure (struct) used to configure the activation of a softkey in an ISOBUS-compliant system. It defines the specific activation code and a control flag for the key press repetition frequency.
+
 ## Interface Structure
 
 This is a data type and therefore does not have event or adapter interfaces in the conventional sense of a function block. The structure consists of the following data fields:
+
 ### **Data Inputs**
 
 *(Not applicable – this is a data type)*
@@ -20,7 +23,7 @@ This is a data type and therefore does not have event or adapter interfaces in t
 | Name | Data Type | Initial Value | Comment |
 | :------- | :------- | :---------- | :-------- |
 | `code` | `USINT` | 255 | Defines the numeric code that identifies the specific softkey. |
-| `bCyclic`| `BOOL` | TRUE | Controls the cyclic sending of the key code. With `FALSE`, the key is not repeatedly sent every 200ms. |
+| `bCyclic` | `BOOL` | TRUE | Controls the cyclic sending of the key code. With `FALSE`, the key is not repeatedly sent every 200ms. |
 
 ## Functionality
 
@@ -28,9 +31,9 @@ The structure `SoftKeyActivationCode_S` serves as a container for configuration 
 
 ## Technical Features
 
-* **Initial Values:** Both fields have predefined initial values. The default value `255` for `code` can be interpreted as "invalid" or "unconfigured" code.
-* **ISOBUS Context:** This data type is part of the `isobus::UT::io::Softkey` package, indicating its use in ISOBUS Virtual Terminal (VT) or similar I/O contexts.
-* **Cycle Control:** Precise control of the repetition rate via `bCyclic` is crucial for user-friendly and reliable keyboard input, especially with long data fields or list controls.
+- **Initial Values:** Both fields have predefined initial values. The default value `255` for `code` can be interpreted as "invalid" or "unconfigured" code.
+- **ISOBUS Context:** This data type is part of the `isobus::UT::io::Softkey` package, indicating its use in ISOBUS Virtual Terminal (VT) or similar I/O contexts.
+- **Cycle Control:** Precise control of the repetition rate via `bCyclic` is crucial for user-friendly and reliable keyboard input, especially with long data fields or list controls.
 
 ## State Overview
 
@@ -48,8 +51,8 @@ This data structure is typically used as an input or configuration parameter for
 
 Unlike a function block (FB), `SoftKeyActivationCode_S` is a pure **data type** (struct). It does not contain any algorithms or event-driven logic.
 
-* **Similarity to `E_SR` or `E_RS`:** These are function blocks with memory functionality and internal state logic. `SoftKeyActivationCode_S`, on the other hand, is a pure data carrier.
-* **Comparison with simple data types:** Unlike atomic types such as `INT` or `BOOL`, this struct combines two logically related pieces of information (`code` and behavior `bCyclic`) into a single, reusable unit.
+- **Similarity to `E_SR` or `E_RS`:** These are function blocks with memory functionality and internal state logic. `SoftKeyActivationCode_S`, on the other hand, is a pure data carrier.
+- **Comparison with simple data types:** Unlike atomic types such as `INT` or `BOOL`, this struct combines two logically related pieces of information (`code` and behavior `bCyclic`) into a single, reusable unit.
 
 ## Conclusion
 

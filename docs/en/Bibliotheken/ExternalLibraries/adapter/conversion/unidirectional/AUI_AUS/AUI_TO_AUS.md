@@ -28,7 +28,7 @@ No separate data outputs. Data output is via the connected adapters.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-------------------------------------|----------------------------------|-------------------------------------------|
+| ---------- | ------------------------------------- | ---------------------------------- | ------------------------------------------- |
 | Socket | **AUI_IN** | adapter::types::unidirectional::AUI | UINT input adapter (source) |
 | Plug | **AUS_OUT** | adapter::types::unidirectional::AUS | USINT output adapter (destination) |
 
@@ -66,7 +66,7 @@ Other conversion function blocks exist in the 4diac library, e.g., `F_UINT_TO_US
 
 The **AUI_TO_AUS** is a compact and focused function block for adapter-based conversion from UINT to USINT. Its composite structure facilitates integration into existing 4diac projects, reduces wiring effort, and improves clarity. Its simple functionality and clear interface make it a useful tool for all applications requiring type conversion at the adapter level.
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

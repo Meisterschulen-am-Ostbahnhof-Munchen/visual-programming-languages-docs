@@ -3,9 +3,11 @@
 ![AUDI_FB_CTUD](./AUDI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUDI_FB_CTUD** is an up/down counter with a value range for unsigned 32-bit integers (UDINT). It is implemented as a pure adapter version, meaning all inputs and outputs are provided via adapter interfaces. The function block encapsulates the standardized IEC 61131 function block `FB_CTUD_UDINT` and extends its functionality with an adapter-based interface. All output adapters are cyclically updated upon each triggering event (CU, CD, R, LD, or PV). If change-triggered (edge-sensitive) triggering is required, the use of a `AX_D_FF` as a filter block is recommended.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ There are no direct data outputs at the top level. The result data is output via
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | **Socket (Input)** | `CU` | `adapter::types::unidirectional::AX` | Count up – Event and data (BOOL) for counting up |
 | **Socket (Input)** | `CD` | `adapter::types::unidirectional::AX` | Count down – Event and data (BOOL) for counting down |
 | **Socket (Input)** | `R` | `adapter::types::unidirectional::AX` | Reset – Event and data (BOOL) for resetting the counter |
@@ -59,7 +61,7 @@ The internal function block processes the request and updates its outputs. **Imp
 The internal `FB_CTUD_UDINT` cycles through the following states, depending on the incoming commands:
 
 | Condition | Action |
-|-----------|--------|
+| ----------- | -------- |
 | `CU` = TRUE (rising edge) and `CD` = FALSE | Counter increments by 1 |
 | `CD` = TRUE (rising edge) and `CU` = FALSE | Counter decreases by 1 |
 | `R` = TRUE (rising edge) | Counter is reset to 0 |
@@ -78,7 +80,7 @@ The internal `FB_CTUD_UDINT` cycles through the following states, depending on t
 ## Comparison with similar components
 
 | Feature | `AUDI_FB_CTUD` | Standard `CTUD` (IEC 61131) |
----------|----------------|----------------------------|
+--------- | ---------------- | ---------------------------- |
 | **Interface** | Pure adapters (sockets/plugs) | Direct event and data inputs/outputs |
 | **Data format** | UDINT (via AUDI adapter) | UDINT (direct) |
 | **Event behavior** | Every incoming event triggers all outputs | Event is only output when relevant changes occur |
@@ -93,4 +95,4 @@ The `AUDI_FB_CTUD`is a high-performance up/down counter whose adapter-based inte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

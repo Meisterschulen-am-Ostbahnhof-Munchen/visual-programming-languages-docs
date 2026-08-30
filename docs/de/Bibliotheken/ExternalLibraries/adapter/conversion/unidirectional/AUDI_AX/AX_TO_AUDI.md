@@ -3,6 +3,7 @@
 ![AX_TO_AUDI](./AX_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_TO_AUDI** ist ein zusammengesetzter Baustein (Composite FB), der einen Booleschen Wert (BOOL), der über einen AX‑Adapter bereitgestellt wird, in einen vorzeichenlosen Doppelwort‑Wert (UDINT) umwandelt und über einen AUDI‑Adapter ausgibt. Er wird eingesetzt, um Signale zwischen Adapter‑Schnittstellen zu konvertieren, wobei die eigentliche Umwandlung durch einen internen IEC‑61131‑Konvertierungsbaustein erfolgt.

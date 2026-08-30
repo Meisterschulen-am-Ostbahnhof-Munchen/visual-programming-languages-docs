@@ -3,9 +3,11 @@
 ![ALR_TO_AUDI](./ALR_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ALR_TO_AUDI function block is a composite function block (FB) that converts an **ALR adapter** (LREAL) into an **AUDI adapter** (UDINT). It serves as an interface between an analog LREAL source and a digital UDINT sink in unidirectional communication paths.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -72,6 +74,6 @@ The ALR_TO_AUDI is a specialized yet simple component for converting LREAL to UD
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

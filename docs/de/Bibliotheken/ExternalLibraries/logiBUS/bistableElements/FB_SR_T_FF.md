@@ -3,6 +3,7 @@
 ![FB_SR_T_FF](./FB_SR_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `FB_SR_T_FF` realisiert ein bistabiles, set-dominantes RS-Flipflop mit zusätzlicher Toggle-Funktion. Die Schaltung kombiniert das Verhalten eines SR-Latches (Set-Dominant) mit einem flankengesteuerten T-Flipflop, das bei jedem Taktzyklus den Ausgangszustand wechselt, wenn weder Set noch Reset aktiv sind.
@@ -24,7 +25,7 @@ Der Funktionsbaustein `FB_SR_T_FF` realisiert ein bistabiles, set-dominantes RS-
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Kommentar |
-|------|-----|-------------|-----------|
+| ------ | ----- | ------------- | ----------- |
 | S1 | BOOL | - | Set-Eingang (dominant) |
 | R | BOOL | - | Reset-Eingang |
 | CLK | BOOL | - | Taktsignal (steigende Flanke löst Toggle aus) |

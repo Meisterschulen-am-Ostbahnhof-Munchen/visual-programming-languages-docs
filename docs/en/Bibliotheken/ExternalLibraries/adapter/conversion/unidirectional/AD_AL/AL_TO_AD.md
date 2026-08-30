@@ -3,9 +3,11 @@
 ![AL_TO_AD](./AL_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AL_TO_AD** function block is a composite function block that converts a unidirectional LWORD adapter (AL) into a unidirectional DWORD adapter (AD). It enables data conversion between two different adapter types within the 4diac IDE, based on the IEC 61499 standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -76,6 +78,6 @@ The **AL_TO_AD** function block provides a lean and standards-compliant solution
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![ALR_TO_AUS](./ALR_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite-Funktionsblock **ALR_TO_AUS** dient als universeller Konverter zwischen zwei unidirektionalen Adapterprotokollen. Er wandelt einen LREAL-Wert (64‑Bit Gleitkomma) in einen USINT-Wert (8‑Bit vorzeichenlose Ganzzahl) um. Der Block wurde für den Einsatz in IEC 61499‑basierten Automatisierungssystemen entwickelt und nutzt intern den Standard-Funktionsblock `F_LREAL_TO_USINT` aus der Bibliothek `iec61131::conversion`.

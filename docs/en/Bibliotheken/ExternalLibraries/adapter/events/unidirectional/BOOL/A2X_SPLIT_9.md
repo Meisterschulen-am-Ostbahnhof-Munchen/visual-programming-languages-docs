@@ -3,9 +3,11 @@
 ![A2X_SPLIT_9](./A2X_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **A2X_SPLIT_9** is a generic function block that splits one incoming A2X adapter (socket) into nine separate A2X output adapters (plugs). It enables the star topology distribution of an A2X signal to up to nine independent receivers without requiring any dedicated logic or state machines.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 #### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | Socket | IN | Input | Incoming A2X adapter, whose signals are distributed to the nine outputs. |
 | Plug | OUT1 … OUT9 | Output | Nine identical A2X output adapters that forward the input data. |
 
@@ -65,6 +67,6 @@ The **A2X_SPLIT_9** is a simple yet effective function block for distributing an
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

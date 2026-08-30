@@ -3,6 +3,7 @@
 ![AQ_XOR_3](./AQ_XOR_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AQ_XOR_3** is a generic function block for the bitwise XOR (exclusive OR) operation across 3 input values of type `BYTE` (2-bit value (quarter byte, transmitted as a byte)). Unlike the Boolean operation on single truth values (as in the `AX_XOR` blocks), every bit of the data word is combined independently here.

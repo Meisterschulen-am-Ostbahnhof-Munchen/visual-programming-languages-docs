@@ -3,6 +3,7 @@
 ![ATM_IN_MS_TO_ADI](ATM_IN_MS_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_IN_MS_TO_ADI** is a composite block that converts a `TIME` value (carried via the [ATM](../../../types/unidirectional/TIME/ATM.md) adapter) expressed in milliseconds into a `DINT` value (32-bit signed integer), output via the [ADI](../../../types/unidirectional/DINT/ADI.md) adapter. It belongs to the `ATM_IN_<UNIT>_TO_<TARGET>` block family, which provides the same conversion for all four time units (MS, NS, S, US) and all five target integer/floating-point types.
@@ -28,7 +29,7 @@ The function block **ATM_IN_MS_TO_ADI** is a composite block that converts a `TI
 ### **Adapters**
 
 | Adapter | Role | Type | Description |
-|---------|-------|-----|--------------|
+| --------- | ------- | ----- | -------------- |
 | IN | Socket | adapter::types::unidirectional::ATM | Unidirectional `TIME` adapter as input interface. |
 | OUT | Plug | adapter::types::unidirectional::ADI | Unidirectional `DINT` adapter as output interface, value of `IN` expressed in milliseconds. |
 
@@ -56,7 +57,7 @@ The entire process is synchronous and without intermediate storage – each succ
 The function block does not have its own state machine. The process can be described as a simple step:
 
 | Step | Action |
-|---------|--------|
+| --------- | -------- |
 | 1 | Wait for event at **IN.E1** |
 | 2 | Convert the data value from `TIME` (milliseconds) to `DINT` via `F_TIME_IN_MS_TO_DINT` |
 | 3 | Output the converted value to **OUT.D1** and event to **OUT.E1** |

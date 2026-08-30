@@ -20,8 +20,8 @@ Nutzung von Bibliotheken ("Don't reinvent the wheel").
 
 ![Uebung_006a4_AX_network](./Uebung_006a4_AX_network.svg)
 
-  * **`LinksRechts`**: Typ `logiBUS::utils::sequence::verteiler::LinksRechts_AX`. Dieser Baustein kapselt die komplette Logik für die Richtungssteuerung und Verriegelung.
-  * **`AX_T_FF_SR`**: Liefert weiterhin das "Ein/Aus" Signal an den Eingang `EIN` des Verteilers.
+  - **`LinksRechts`**: Typ `logiBUS::utils::sequence::verteiler::LinksRechts_AX`. Dieser Baustein kapselt die komplette Logik für die Richtungssteuerung und Verriegelung.
+  - **`AX_T_FF_SR`**: Liefert weiterhin das "Ein/Aus" Signal an den Eingang `EIN` des Verteilers.
 
 -----
 

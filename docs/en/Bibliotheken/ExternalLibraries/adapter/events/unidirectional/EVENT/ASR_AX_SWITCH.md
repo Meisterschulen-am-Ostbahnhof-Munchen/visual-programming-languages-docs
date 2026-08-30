@@ -3,9 +3,11 @@
 ![ASR_AX_SWITCH](./ASR_AX_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_AX_SWITCH** serves as a demultiplexer for asynchronous set/reset events (ASR). It forwards an incoming SET or RESET event, based on the state of a binary control input **G**, to either one of two outputs (**EO0** or **EO1**). This block enables demand-based distribution of control signals in automation applications.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The function block does not have traditional event inputs via *EventInputs* – 
 The event outputs are provided via the **plug adapters `EO0`** and **`EO1`** (both type `ASR`). Each of these adapters has the outputs `SET` and `RESET`:
 
 | Adapter | Event | Description |
-|---------|----------|--------------|
+| --------- | ---------- | -------------- |
 | `EO0.SET` | SET | Triggered when a `EI.SET` event occurs and `G.D1 == 0` |
 | `EO0.RESET` | RESET | Triggered when a `EI.RESET` event occurs and `G.D1 == 0` |
 | `EO1.SET` | SET | Triggered when a `EI.SET` event occurs and `G.D1 == 1` |
@@ -34,7 +36,7 @@ There are no explicit data outputs. Control information is transmitted exclusive
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | `EI` | Socket (Input) | `adapter::types::unidirectional::ASR` | Receives the SET/RESET events to be distributed |
 | `G` | Socket (Input) | `adapter::types::unidirectional::AX` | Provides the binary toggle signal via `D1` (0 → Channel 0, 1 → Channel 1) |
 | `EO0` | Plug (Output) | `adapter::types::unidirectional::ASR` | Output for Channel 0 (with `G.D1 = 0`) |
@@ -65,7 +67,7 @@ Processing is deterministic without intermediate event storage.
 ## Status Overview
 
 | Status | Description | Action |
-|---------|--------------|--------|
+| --------- | -------------- | -------- |
 | **START** | Waiting for incoming SET/RESET event | – |
 | **G0_SET** | Receive `EI.SET` at `G.D1=0` | Output `EO0.SET` |
 | **G1_SET** | Receive `EI.SET` at `G.D1=1` | Output `EO1.SET` |
@@ -84,7 +86,7 @@ State transitions follow the ECC scheme: A condition leads from START to the act
 ## Comparison with Similar Function Blocks
 
 | Property | ASR_AX_SWITCH | Simple event multiplexer (e.g., SELECT) |
-|-------------|----------------|----------------------------------------------|
+| ------------- | ---------------- | ---------------------------------------------- |
 | Event Type | SET/RESET (ASR Adapter) | Any single event |
 | Control | Binary via AX adapter (with `D1`) | Boolean data input |
 | Output Type | Two ASR adapters | Depending on the type, single or multiple events |
@@ -101,6 +103,6 @@ The **ASR_AX_SWITCH** is a compact, efficient demultiplexer for the directed rou
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

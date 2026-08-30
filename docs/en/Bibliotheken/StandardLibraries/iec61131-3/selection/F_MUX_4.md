@@ -42,9 +42,11 @@ Upon receiving the event `REQ`, the function block evaluates the value of `K` an
 - Supports any data type (`ANY`) for the inputs and output.
 - The control input `K` must be an integer value (`ANY_INT`).
 - The initial values of the inputs are empty; no default values are provided.
+
 1. **Idle State**: Waits for the event `REQ`.
 2. **Selection State**: Evaluates `K` and selects the corresponding input.
 3. **Output State**: Sets `OUT` to the selected value and triggers `CNF`.
+
 - Selection between different sensor data based on control logic.
 - Switching between different operating modes in a controller.
 - Dynamic selection of data sources depending on external conditions.

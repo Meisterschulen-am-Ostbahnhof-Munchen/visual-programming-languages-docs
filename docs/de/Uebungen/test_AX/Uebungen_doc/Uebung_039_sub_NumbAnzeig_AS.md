@@ -31,9 +31,9 @@ Innerhalb der SubApp sind zwei Funktionsbausteine enthalten, die die Signalverar
 
 Die SubApp verfügt über einen Adapter-Socket `STATE_NR` vom Typ `unidirectional::AS`. Dieser Socket wird mit einem übergeordneten Steuerungsnetzwerk verbunden, das die aktuellen Zustandsinformationen (z. B. einen Zahlenwert aus einer Schrittkette) bereitstellt.
 
-1. Der über `STATE_NR` eingehende AS-Adaptersignal wird an den FB `AS_TO_AUDI` weitergeleitet.  
-2. `AS_TO_AUDI` konvertiert die Daten (z. B. einen Zahlenwert) in eine AUDI-konforme Repräsentation und gibt diese über den Ausgang `AUDI_OUT` aus.  
-3. Der Ausgang `AUDI_OUT` wird mit dem Eingang `u32NewValue` des FBs `Q_NumericValue` verbunden.  
+1. Der über `STATE_NR` eingehende AS-Adaptersignal wird an den FB `AS_TO_AUDI` weitergeleitet.
+2. `AS_TO_AUDI` konvertiert die Daten (z. B. einen Zahlenwert) in eine AUDI-konforme Repräsentation und gibt diese über den Ausgang `AUDI_OUT` aus.
+3. Der Ausgang `AUDI_OUT` wird mit dem Eingang `u32NewValue` des FBs `Q_NumericValue` verbunden.
 4. `Q_NumericValue` aktualisiert daraufhin die Anzeige auf dem ISOBUS-Terminal unter der vordefinierten Objekt-ID `OutputNumber_N1`.
 
 Die gesamte Verarbeitung erfolgt ereignisgesteuert: Sobald sich der AS-Adatper-Eingang ändert, wird der Wert konvertiert und die Terminalanzeige aktualisiert.
@@ -59,4 +59,4 @@ Die Übung kann direkt in der 4diac-IDE geladen und mit einem entsprechenden üb
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

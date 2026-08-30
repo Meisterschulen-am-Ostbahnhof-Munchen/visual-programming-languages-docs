@@ -3,9 +3,11 @@
 ![AB_TO_AX](./AB_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_TO_AX** is a composite function block (FB) for converting a BYTE signal (via the AB adapter) into a BOOL signal (via the AX adapter). It serves as a converter between two different adapter types of the unidirectional adapter family.
+
 ## Interface Structure
 
 ### **Adapter (Input)**
@@ -58,6 +60,6 @@ The **AB_TO_AX** function block provides a clean and simple method for convertin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

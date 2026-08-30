@@ -3,9 +3,11 @@
 ![AI_TO_AB](./AI_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AI_TO_AB` converts an **INT** value, provided via a unidirectional **AI** adapter, into a **BYTE** value and forwards it via a unidirectional **AB** adapter. The actual conversion is performed by the internally used function block `F_INT_TO_BYTE`. This function block is part of an adapter conversion library and enables the seamless integration of components with different data types in IEC 61499 systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No standalone data outputs. The converted BYTE value is output via the AB_OUT ad
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | `AI_IN` | `adapter::types::unidirectional::AI` | Provides the INT input value (D1) and the triggering event (E1). |
 | Plug (Output) | `AB_OUT` | `adapter::types::unidirectional::AB` | Outputs the converted BYTE value (D1) and the associated event (E1). |
 

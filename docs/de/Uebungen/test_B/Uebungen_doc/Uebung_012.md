@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_012`. Hier wird gezeigt, 
 
 ![Uebung_012_network](./Uebung_012_network.svg)
 
-* [Amazon Pizza-Regel bis IKEA-Effekt: 12 verblüffend einfache Ideen hinter riesigem Geschäftserfolg](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Amazon-Pizza-Regel-bis-IKEA-Effekt-12-verblffend-einfache-Ideen-hinter-riesigem-Geschftserfolg-e39kmmc)
+- [Amazon Pizza-Regel bis IKEA-Effekt: 12 verblüffend einfache Ideen hinter riesigem Geschäftserfolg](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Amazon-Pizza-Regel-bis-IKEA-Effekt-12-verblffend-einfache-Ideen-hinter-riesigem-Geschftserfolg-e39kmmc)
 
 ----
 
@@ -24,10 +24,10 @@ Erlernen der persistenten Datenspeicherung. Es wird demonstriert, wie ein am Ter
 
 ### Funktionsbausteine (FBs)
 
-  * **`InputNumber_I1`**: Numerisches Eingabefeld am Terminal.
-  * **`NVS`**: Typ `logiBUS::storage::esp32_nvs::NVS`. [cite_start]Dieser Baustein verwaltet den Zugriff auf den nicht-flüchtigen Speicher. Er speichert Werte unter einem eindeutigen `KEY` ab[cite: 1].
-  * **`CbVtStatus`**: Ein Statusbaustein des Terminals. [cite_start]Er feuert ein Ereignis (`IND`), wenn das Terminal neu startet oder die Verbindung wiederhergestellt wird[cite: 1].
-  * **`Q_NumericValue`**: Die numerische Anzeige am Terminal.
+  - **`InputNumber_I1`**: Numerisches Eingabefeld am Terminal.
+  - **`NVS`**: Typ `logiBUS::storage::esp32_nvs::NVS`. [cite_start]Dieser Baustein verwaltet den Zugriff auf den nicht-flüchtigen Speicher. Er speichert Werte unter einem eindeutigen `KEY` ab[cite: 1].
+  - **`CbVtStatus`**: Ein Statusbaustein des Terminals. [cite_start]Er feuert ein Ereignis (`IND`), wenn das Terminal neu startet oder die Verbindung wiederhergestellt wird[cite: 1].
+  - **`Q_NumericValue`**: Die numerische Anzeige am Terminal.
 
 -----
 

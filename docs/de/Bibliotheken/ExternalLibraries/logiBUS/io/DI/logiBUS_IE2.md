@@ -84,10 +84,10 @@ Im Vergleich zu einfachen digitalen Eingabeblöcken bietet logiBUS_IE2 erweitert
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004c6](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c6.md)
-* [Uebung_004c6_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c6_AX.md)
-* [Uebung_004c7](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c7.md)
-* [Uebung_004c7_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c7_AX.md)
+- [Uebung_004c6](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c6.md)
+- [Uebung_004c6_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c6_AX.md)
+- [Uebung_004c7](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_004c7.md)
+- [Uebung_004c7_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004c7_AX.md)
 
 ## Fazit
 

@@ -3,9 +3,11 @@
 ![AULI_TO_AUI](./AULI_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_TO_AUI** is a composite function block (FB) that converts an **AULI** adapter (based on the data type `ULINT`) into an **AUI** adapter (based on the data type `UINT`). It is used when a 64-bit unsigned integer interface (`ULINT`) needs to be mapped to a 16-bit unsigned integer interface (`UINT`), for example, when connecting different sensor or actuator components in automation technology.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The adapter plug `AUI_OUT` outputs a data value of type `D1` (equivalent to `UIN
 ### **Adapter**
 
 | Name | Direction | Type |
-|----------|----------|----------------------------|
+| ---------- | ---------- | ---------------------------- |
 | AULI_IN | Socket | `adapter::types::unidirectional::AULI` |
 | AUI_OUT | Plug | `adapter::types::unidirectional::AUI` |
 
@@ -62,7 +64,7 @@ The function block does not have its own finite state machine. The internal conv
 ## Comparison with similar components
 
 | Component | Input type | Output type | Special feature |
-|---------------|-------------|-------------|-------------|
+| --------------- | ------------- | ------------- | ------------- |
 | `AULI_TO_AUI` | `ULINT` | `UINT` | Adapter Wrapper, Event-Driven |
 | `F_ULINT_TO_UINT` | `ULINT` | `UINT` | Pure Function, No Adapter |
 | `AUI_TO_AULI` | `UINT` | `ULINT` | Reverse Direction (Not Available) |
@@ -77,6 +79,6 @@ The **AULI_TO_AUI** block is a practical solution for mapping 64-bit UINT data t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

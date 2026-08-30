@@ -11,7 +11,7 @@ Diese Übung realisiert einen standardkonformen IEC 61131-3 Vor-/Rückwärtszäh
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter | Beschreibung |
-|--------------|-----|-----------|--------------|
+| -------------- | ----- | ----------- | -------------- |
 | `FB_CTUD_LINT` | `iec61131::counters::FB_CTUD_LINT` | PV = `LINT#10` | Vor-/Rückwärtszähler (LINT). Zählt bei CU-Ereignissen hoch, bei CD-Ereignissen runter. Ein R-Ereignis setzt den Zähler auf 0, ein LD-Ereignis lädt den Presetwert PV. |
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I1` | Digitaler Eingang (logiBUS) – Signal zum Hochzählen. |
 | `Input_CD` | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = `Input_I2` | Digitaler Eingang – Signal zum Herunterzählen. |
@@ -24,40 +24,40 @@ Diese Übung realisiert einen standardkonformen IEC 61131-3 Vor-/Rückwärtszäh
 
 ## Programmablauf und Verbindungen
 
-1. **Ereignisverkettung**  
-   - Jeder Tastendruck an einem der vier Eingänge (Input_CU, Input_CD, Input_R, Input_LD) löst das Ereignis `IND` aus.  
-   - Diese Ereignisse werden alle an den Ereigniseingang `REQ` des Zählers `FB_CTUD_LINT` geleitet.  
-   - Nach der Abarbeitung (Ereignisausgang `CNF`) wird der Folgebaustein `Output_QU` und `Output_QD` sowie der Konverter `F_LINT_TO_LREAL` angestoßen.  
+1. **Ereignisverkettung**
+   - Jeder Tastendruck an einem der vier Eingänge (Input_CU, Input_CD, Input_R, Input_LD) löst das Ereignis `IND` aus.
+   - Diese Ereignisse werden alle an den Ereigniseingang `REQ` des Zählers `FB_CTUD_LINT` geleitet.
+   - Nach der Abarbeitung (Ereignisausgang `CNF`) wird der Folgebaustein `Output_QU` und `Output_QD` sowie der Konverter `F_LINT_TO_LREAL` angestoßen.
    - Nach der Konvertierung wird das Terminal-Objekt `Q_NumericValue_PHYS_LREAL` aktualisiert.
 
-2. **Datenverkettung**  
-   - Die digitalen Eingangssignale (IN) werden direkt an die entsprechenden Zählereingänge gelegt:  
-     * Input_CU.IN → FB_CTUD_LINT.CU  
-     * Input_CD.IN → FB_CTUD_LINT.CD  
-     * Input_R.IN  → FB_CTUD_LINT.R  
-     * Input_LD.IN → FB_CTUD_LINT.LD  
-   - Die Zählerausgänge:  
-     * FB_CTUD_LINT.QU → Output_QU.OUT (Schaltet Ausgang Q1)  
-     * FB_CTUD_LINT.QD → Output_QD.OUT (Schaltet Ausgang Q2)  
-   - Der aktuelle Zählerstand (CV, LINT) wird über den Konverter in LREAL umgewandelt:  
-     * FB_CTUD_LINT.CV → F_LINT_TO_LREAL.IN  
-     * F_LINT_TO_LREAL.OUT → Q_NumericValue_PHYS_LREAL.lrPhys  
+2. **Datenverkettung**
+   - Die digitalen Eingangssignale (IN) werden direkt an die entsprechenden Zählereingänge gelegt:
+     - Input_CU.IN → FB_CTUD_LINT.CU
+     - Input_CD.IN → FB_CTUD_LINT.CD
+     - Input_R.IN  → FB_CTUD_LINT.R
+     - Input_LD.IN → FB_CTUD_LINT.LD
+   - Die Zählerausgänge:
+     - FB_CTUD_LINT.QU → Output_QU.OUT (Schaltet Ausgang Q1)
+     - FB_CTUD_LINT.QD → Output_QD.OUT (Schaltet Ausgang Q2)
+   - Der aktuelle Zählerstand (CV, LINT) wird über den Konverter in LREAL umgewandelt:
+     - FB_CTUD_LINT.CV → F_LINT_TO_LREAL.IN
+     - F_LINT_TO_LREAL.OUT → Q_NumericValue_PHYS_LREAL.lrPhys
    - Das Terminal zeigt somit den Zählerstand als Dezimalzahl mit Gleitkomma an.
 
-3. **Lernziele**  
-   - Verständnis des IEC 61131-3 CTUD-Funktionsbausteins (LINT).  
-   - Umgang mit digitalen Ein-/Ausgängen im logiBUS-System.  
-   - Datentypkonvertierung von LINT nach LREAL.  
+3. **Lernziele**
+   - Verständnis des IEC 61131-3 CTUD-Funktionsbausteins (LINT).
+   - Umgang mit digitalen Ein-/Ausgängen im logiBUS-System.
+   - Datentypkonvertierung von LINT nach LREAL.
    - Visualisierung von Prozesswerten über ein Terminal-Objekt.
 
-4. **Schwierigkeitsgrad & Vorkenntnisse**  
-   - **Schwierigkeit:** Mittel.  
+4. **Schwierigkeitsgrad & Vorkenntnisse**
+   - **Schwierigkeit:** Mittel.
    - **Vorkenntnisse:** Grundlagen der 4diac-IDE, Umgang mit SubApp-Typen, Ereignis- und Datenverbindungen, einfache IEC 61131-3 Kenntnisse.
 
-5. **Ausführung**  
-   - Laden Sie die Übung in die 4diac-IDE.  
-   - Weisen Sie die entsprechenden logiBUS-Kanäle zu (Input_I1 … I4, Output_Q1, Q2).  
-   - Starten Sie die Simulation oder übertragen Sie sie auf die Zielhardware.  
+5. **Ausführung**
+   - Laden Sie die Übung in die 4diac-IDE.
+   - Weisen Sie die entsprechenden logiBUS-Kanäle zu (Input_I1 … I4, Output_Q1, Q2).
+   - Starten Sie die Simulation oder übertragen Sie sie auf die Zielhardware.
    - Beobachten Sie die Zählerstände auf dem Terminal (OutputNumber_N3) und die Ausgänge Q1, Q2.
 
 ## Zusammenfassung
@@ -68,4 +68,4 @@ Die Übung „Uebung_222b“ demonstriert einen vollständigen IEC 61131-3 konfo
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

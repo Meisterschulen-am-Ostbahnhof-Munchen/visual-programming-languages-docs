@@ -6,6 +6,7 @@
 
 The function block `F_DINT_TO_UDINT` converts a 32-bit signed integer value (DINT) to a 32-bit unsigned integer value (UDINT). This conversion is useful when exchanging data between systems that use different data types.
 ![F_DINT_TO_UDINT](F_DINT_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,7 +55,7 @@ The function block has no internal states. The conversion occurs immediately upo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_009a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
+- [Exercise_009a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
 
 ## Conclusion
 

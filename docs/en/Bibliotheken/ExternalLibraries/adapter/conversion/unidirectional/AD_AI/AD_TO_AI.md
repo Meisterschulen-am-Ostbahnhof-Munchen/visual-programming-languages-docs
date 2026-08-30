@@ -3,9 +3,11 @@
 ![AD_TO_AI](./AD_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_TO_AI** acts as a converter between two different adapter interfaces: It converts an **AD adapter (DWORD)** into an **AI adapter (INT)**. The block is implemented as a composite function block and internally uses the IEC 61131-3 function `F_DWORD_TO_INT` to perform the actual type conversion. The goal is to facilitate the integration of components based on different data types while ensuring event-driven data transfer within the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ These are also provided exclusively via the adapters:
 ### **Adapters**
 
 | Adapter Type | Direction | Type | Description |
-|-----------|----------|-----|--------------|
+| ----------- | ---------- | ----- | -------------- |
 | Socket | Input | `adapter::types::unidirectional::AD` | Receives a DWORD value (via event E1 and data D1). |
 | Plug | Output | `adapter::types::unidirectional::AI` | Provides the converted INT value (event E1, data D1). |
 
@@ -87,6 +89,6 @@ The composite function block **AD_TO_AI** is a useful tool for type conversion b
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,11 @@
 ![AD_SPLIT_2](./AD_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AD_SPLIT_2 function block is used to split an incoming unidirectional adapter (AD) into two identical output adapters. It is implemented as a generic function block and allows for the simple branching of an adapter signal into two parallel paths.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapter**
 
 | Name | Type | Direction |
-|------|-----|----------|
+| ------ | ----- | ---------- |
 | IN | adapter::types::unidirectional::AD | Socket (Input) |
 | OUT1 | adapter::types::unidirectional::AD | Plug (Output) |
 | OUT2 | adapter::types::unidirectional::AD | Plug (Output) |
@@ -71,6 +73,6 @@ The AD_SPLIT_2 is a simple yet effective function block for signal distribution 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

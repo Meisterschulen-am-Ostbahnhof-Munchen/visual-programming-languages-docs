@@ -3,6 +3,7 @@
 ![Q_Size](https://user-images.githubusercontent.com/116869307/214153095-72c9e230-b193-4843-be85-33038f6bd44d.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_Size** is a standards-compliant function block for resizing objects in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.18) specification for VT objects.
@@ -43,13 +44,16 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Resize**:
+1. **Resize**:
+
 - `REQ` with new dimensions
 - Dynamically adjusts the object geometry
 - `CNF` provides operational status and previous dimensions
-3. **Unit of measurement**:
+1. **Unit of measurement**:
+
 - All values in screen pixels
 
 ## Technical Features
@@ -62,14 +66,14 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Size reference
 
 | Parameter | Value range | Description |
-|-----------|---------------|--------------------|
+| ----------- | --------------- | -------------------- |
 | Width | 1-65535 pixels | Horizontal extent |
 | Height | 1-65535 pixels | Vertical extent |
 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful change |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT Not Ready |
@@ -87,7 +91,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_Size | VtResizeObject | VtGeometryManager |
-|---------------|--------|----------------|-------------------|
+| --------------- | -------- | ---------------- | ------------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Real-time Update | ✔ | ✔ | ✖ |
 | 2D Control | ✔ | ✔ | ✔ |

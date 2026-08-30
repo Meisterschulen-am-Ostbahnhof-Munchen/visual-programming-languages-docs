@@ -3,6 +3,7 @@
 ![Uebung_217_ALI_network](./Uebung_217_ALI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an **IEC 61131-3 compliant down counter (CTD) in adapter version** for the LINT (Long Integer) data type. The current counter value is displayed on a terminal. The counter is decremented via a digital input signal **CD** (Count Down). Another digital signal **LD** (Load) loads the counter with a predefined preset value. Once the counter value reaches 0, the output **Q** is set.
@@ -115,4 +116,4 @@ The difficulty level is **medium**. Prior knowledge of the 4diac IDE and a basic
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

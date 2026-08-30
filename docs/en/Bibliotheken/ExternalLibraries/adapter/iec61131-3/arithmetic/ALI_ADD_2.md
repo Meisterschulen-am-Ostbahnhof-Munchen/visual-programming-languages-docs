@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_ADD_2` is a generic arithmetic block for performing addition (ADD) based on the IEC 61131-3 standard. It is classified as a standard arithmetic function and serves to add two input values via an adapter interface and output the result.
@@ -31,9 +32,9 @@ By using adapters, this block enables highly modular and clear wiring within the
 
 ### **Adapters**
 
-* **IN1 (Socket)**: Input adapter type `adapter::types::unidirectional::ALI`. Represents the first addend of the addition.
-* **IN2 (Socket)**: Input adapter type `adapter::types::unidirectional::ALI`. Represents the second addend of the addition.
-* **OUT (Plug)**: Output adapter type `adapter::types::unidirectional::ALI`. Provides the mathematical result of the addition (`IN1 + IN2`).
+- **IN1 (Socket)**: Input adapter type `adapter::types::unidirectional::ALI`. Represents the first addend of the addition.
+- **IN2 (Socket)**: Input adapter type `adapter::types::unidirectional::ALI`. Represents the second addend of the addition.
+- **OUT (Plug)**: Output adapter type `adapter::types::unidirectional::ALI`. Provides the mathematical result of the addition (`IN1 + IN2`).
 
 ## Functionality
 
@@ -45,8 +46,8 @@ The result is immediately available via the output adapter `OUT`. Since the bloc
 
 ## Technical Features
 
-* **Generic Implementation**: The attribute `GenericClassName` with the value `'GEN_ALI_ADD'` allows the function block to be flexibly instantiated for different data types (e.g., INT, REAL, LREAL).
-* **Adapter Coupling**: Unlike traditional function blocks that use discrete pins for data and events, this function block bundles the signals in unidirectional `ALI` adapters. This significantly reduces the number of wires in the function block diagram.
+- **Generic Implementation**: The attribute `GenericClassName` with the value `'GEN_ALI_ADD'` allows the function block to be flexibly instantiated for different data types (e.g., INT, REAL, LREAL).
+- **Adapter Coupling**: Unlike traditional function blocks that use discrete pins for data and events, this function block bundles the signals in unidirectional `ALI` adapters. This significantly reduces the number of wires in the function block diagram.
 
 ## State Overview
 
@@ -54,9 +55,9 @@ The function block is stateless (combinatorial behavior). It does not have an in
 
 ## Application Scenarios
 
-* **Signal Processing**: Summing two sensor values or physical quantities that are already distributed within the application via an adapter system.
-* **Setpoint Generation**: Adding a base setpoint and a correction offset.
-* **Modular Plant Engineering**: Use in systems where interfaces are consistently mapped via adapters to maximize code reusability and readability.
+- **Signal Processing**: Summing two sensor values or physical quantities that are already distributed within the application via an adapter system.
+- **Setpoint Generation**: Adding a base setpoint and a correction offset.
+- **Modular Plant Engineering**: Use in systems where interfaces are consistently mapped via adapters to maximize code reusability and readability.
 
 ## Comparison with Similar Components
 

@@ -1,10 +1,12 @@
 # AX_BLINK_TRAIN
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_BLINK_TRAIN is a function block that outputs a train flashing signal (alternating two lights) via an AX adapter.
 ![AX_BLINK_TRAIN](AX_BLINK_TRAIN.svg)
+
 ## Interface Structure
 
 ### **Data Inputs**
@@ -40,7 +42,7 @@ Railway crossings, warning signals.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035a3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+- [Exercise_035a3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
 
 ## Conclusion
 

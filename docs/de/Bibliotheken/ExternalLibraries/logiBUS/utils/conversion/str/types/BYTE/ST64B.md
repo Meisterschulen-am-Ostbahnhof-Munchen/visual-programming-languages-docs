@@ -1,6 +1,7 @@
 # ST64B
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `ST64B` ist ein strukturierter Datentyp, der zur Kapselung von 64 einzelnen Byte-Werten dient. Er wurde entwickelt, um eine feste Datenstruktur von 64 Bytes bereitzustellen, die für verschiedene Anwendungsfälle genutzt werden kann, bei denen eine exakt definierte Größe und direkter Zugriff auf einzelne Bytes erforderlich ist. Die ursprüngliche XML-Definition enthielt einen Kommentar, der fälschlicherweise 16 Bytes angab; korrekt sind 64 Bytes.
@@ -112,17 +113,17 @@ Als reiner Datentyp besitzt `ST64B` keine Zustände im Sinne einer Zustandsmasch
 
 `ST64B` eignet sich hervorragend für folgende Anwendungsszenarien:
 
-*   **Kommunikationspuffer:** Als Standardpuffer für Nachrichten oder Pakete mit einer festen Größe von 64 Bytes, z.B. in CAN-Bus-Nachrichten (wenn mehrere Frames benötigt werden), serieller Kommunikation oder anderen Protokollen.
-*   **Hardware-Registerabbild:** Abbildung eines 64 Byte großen Bereichs von Hardware-Registern, bei dem jeder Byte-Variable einem spezifischen Register entspricht.
-*   **Daten-Serialisierung:** Speicherung von Rohdaten vor der Serialisierung oder nach der Deserialisierung, insbesondere wenn Daten ohne explizite Typinformationen übertragen werden.
-*   **Generische Datenblöcke:** Handhabung von generischen Datenblöcken fester Größe, die flexibel interpretiert werden können, z.B. als Teil größerer Protokolle oder Datenstrukturen.
+-   **Kommunikationspuffer:** Als Standardpuffer für Nachrichten oder Pakete mit einer festen Größe von 64 Bytes, z.B. in CAN-Bus-Nachrichten (wenn mehrere Frames benötigt werden), serieller Kommunikation oder anderen Protokollen.
+-   **Hardware-Registerabbild:** Abbildung eines 64 Byte großen Bereichs von Hardware-Registern, bei dem jeder Byte-Variable einem spezifischen Register entspricht.
+-   **Daten-Serialisierung:** Speicherung von Rohdaten vor der Serialisierung oder nach der Deserialisierung, insbesondere wenn Daten ohne explizite Typinformationen übertragen werden.
+-   **Generische Datenblöcke:** Handhabung von generischen Datenblöcken fester Größe, die flexibel interpretiert werden können, z.B. als Teil größerer Protokolle oder Datenstrukturen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 `ST64B` ist ein grundlegender Datentyp und kann nicht direkt mit Funktionsblöcken verglichen werden. Innerhalb der Datentypen ist er vergleichbar mit:
 
-*   **Anderen strukturierten Datentypen:** `ST64B` ist eine spezifische Instanz eines `StructuredType`. Es gibt ähnliche Strukturen mit unterschiedlicher Anzahl oder Art von Elementen (z.B. Strukturen mit 8, 16, 32 Bytes oder solche, die Integers, Booleans usw. enthalten). `ST64B` zeichnet sich durch seine rein byteweise Aufteilung aus.
-*   **Arrays von BYTE:** Ein Array vom Typ `ARRAY[0..63] OF BYTE` würde ebenfalls 64 Bytes speichern. Der Unterschied besteht in der Zugriffsweise: Bei `ST64B` erfolgt der Zugriff über benannte Member (z.B. `myST64B.B_10`), während bei einem Array der Zugriff über einen Index erfolgt (z.B. `myArray[10]`). Die benannten Member können in bestimmten Kontexten für eine klarere Lesbarkeit des Codes oder für die direkte Adressierung spezifischer Byte-Positionen vorteilhaft sein.
+-   **Anderen strukturierten Datentypen:** `ST64B` ist eine spezifische Instanz eines `StructuredType`. Es gibt ähnliche Strukturen mit unterschiedlicher Anzahl oder Art von Elementen (z.B. Strukturen mit 8, 16, 32 Bytes oder solche, die Integers, Booleans usw. enthalten). `ST64B` zeichnet sich durch seine rein byteweise Aufteilung aus.
+-   **Arrays von BYTE:** Ein Array vom Typ `ARRAY[0..63] OF BYTE` würde ebenfalls 64 Bytes speichern. Der Unterschied besteht in der Zugriffsweise: Bei `ST64B` erfolgt der Zugriff über benannte Member (z.B. `myST64B.B_10`), während bei einem Array der Zugriff über einen Index erfolgt (z.B. `myArray[10]`). Die benannten Member können in bestimmten Kontexten für eine klarere Lesbarkeit des Codes oder für die direkte Adressierung spezifischer Byte-Positionen vorteilhaft sein.
 
 ## Fazit
 

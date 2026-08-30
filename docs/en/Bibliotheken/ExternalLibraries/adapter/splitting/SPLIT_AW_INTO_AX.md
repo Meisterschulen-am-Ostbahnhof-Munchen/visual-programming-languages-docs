@@ -3,9 +3,11 @@
 ![SPLIT_AW_INTO_AX](./SPLIT_AW_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_AW_INTO_AX` is used to split a 16-bit word (type `AW`) into 16 individual binary signals (type `AX`). Each of the 16 outputs represents one bit of the incoming word and is provided as an independent adapter with event and data lines. The splitting occurs synchronously upon the arrival of an event at the input adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ This module does not have any independent data outputs on the interface. The 16 
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AW` | 16-bit word as input, event input `E1`, data input `D1` |
 | **Plug** (Output) | `BIT_00` … `BIT_15` | `adapter::types::unidirectional::AX` | One bit of each word, event output `E1`, data output `D1` |
 
@@ -76,6 +78,6 @@ SPLIT_AW_INTO_AX` is a compact yet powerful converter that reliably and event-sy
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

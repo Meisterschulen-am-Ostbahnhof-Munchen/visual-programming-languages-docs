@@ -6,6 +6,7 @@
 
 The function block (FB) `STRUCT_MUX` is a generic multiplexer for structured data types. It functions as the counterpart to `STRUCT_DEMUX` and is responsible for combining individual data values from multiple inputs into a single data structure at the output.
 ![STRUCT_MUX](STRUCT_MUX.svg)
+
 ## Interface Structure
 
 The interface of the `STRUCT_MUX` function block is defined generically. The actual data inputs are only determined during the instantiation of the block.
@@ -38,6 +39,7 @@ The image above illustrates this exact case.
 
 
 ...
+
 ### **Data Outputs**
 
 - **OUT** (Type: `ANY_STRUCT`): The output data structure, which is assembled from the values of the inputs.
@@ -82,11 +84,11 @@ The `STRUCT_MUX` is a stateless block that operates according to a simple reques
 
 ## 🛠️ Related Exercises
 
-* [Exercise_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)
-* [Exercise_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
-* [Exercise_121](../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
-* [Exercise_126b2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
-* [Exercise_126b_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+- [Exercise_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)
+- [Exercise_052](../../../Uebungen/test_B/Uebungen_doc/Uebung_052.md)
+- [Exercise_121](../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+- [Exercise_126b2_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+- [Exercise_126b_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
 
 ## Conclusion
 
@@ -96,6 +98,6 @@ STRUCT_MUX` is a fundamental and very practical building block for working with 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

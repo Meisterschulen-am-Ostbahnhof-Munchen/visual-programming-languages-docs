@@ -6,6 +6,7 @@
 
 The function block `F_UDINT_TO_LINT` converts a 32-bit unsigned integer value (UDINT) to a 64-bit signed integer value (LINT). This block is part of the `iec61131::conversion` package and enables simple and efficient type conversion between these two data types.
 ![F_UDINT_TO_LINT](F_UDINT_TO_LINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,7 +55,7 @@ The function block has no internal states. The conversion occurs immediately upo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

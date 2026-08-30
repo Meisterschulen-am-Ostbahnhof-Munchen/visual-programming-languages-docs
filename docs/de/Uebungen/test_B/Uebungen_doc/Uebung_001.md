@@ -8,13 +8,13 @@ Dieser Artikel beschreibt die grundlegende logiBUS®-Übung `Uebung_001`. Hier w
 
 ![Uebung_001_network](./Uebung_001_network.svg)
 
-* [Analyse der Novellierung der Meisterprüfungsverordnung im Land- und Baumaschinenmechatroniker-Handwerk: Ein Detaillierter Vergleich der Verordnungen von 2024 und 2001](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Analyse-der-Novellierung-der-Meisterprfungsverordnung-im-Land--und-Baumaschinenmechatroniker-Handwerk-Ein-Detaillierter-Vergleich-der-Verordnungen-von-2024-und-2001-e37aejv)
+- [Analyse der Novellierung der Meisterprüfungsverordnung im Land- und Baumaschinenmechatroniker-Handwerk: Ein Detaillierter Vergleich der Verordnungen von 2024 und 2001](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Analyse-der-Novellierung-der-Meisterprfungsverordnung-im-Land--und-Baumaschinenmechatroniker-Handwerk-Ein-Detaillierter-Vergleich-der-Verordnungen-von-2024-und-2001-e37aejv)
 
 ----
 
-![](Uebung_001_Gemini.jpg)
+![Aufbau der Übung 001 Digital Input auf Output](Uebung_001_Gemini.jpg)
 
-![](Uebung_001.png)
+![Netzwerkschaltplan der Übung 001](Uebung_001.png)
 
 ## Ziel der Übung
 
@@ -28,8 +28,8 @@ Das Ziel dieser Einstiegsübung ist es, ein Signal von einem physischen digitale
 
 ### Funktionsbausteine (FBs)
 
-  * **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein repräsentiert den physischen Eingang `Input_I1`[cite: 1]. Er stellt sowohl den logischen Zustand (`IN`) als auch ein Benachrichtigungs-Ereignis (`IND`) zur Verfügung.
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein steuert den physischen Ausgang `Output_Q1`[cite: 1]. Er benötigt einen Datenwert (`OUT`) und einen Auslöse-Befehl (`REQ`).
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein repräsentiert den physischen Eingang `Input_I1`[cite: 1]. Er stellt sowohl den logischen Zustand (`IN`) als auch ein Benachrichtigungs-Ereignis (`IND`) zur Verfügung.
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QX`. [cite_start]Dieser Baustein steuert den physischen Ausgang `Output_Q1`[cite: 1]. Er benötigt einen Datenwert (`OUT`) und einen Auslöse-Befehl (`REQ`).
 
 -----
 

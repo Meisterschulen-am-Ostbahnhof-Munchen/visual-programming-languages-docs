@@ -3,9 +3,11 @@
 ![BasicOne_AX](./BasicOne_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `BasicOne_AX` is a basic IEC 61499 block of type *Basic Function Block*, serving as a template for simple control tasks. It implements an initializable switching of a Boolean signal using unidirectional adapter interfaces of type `AX`. The block is suitable for scenarios in which an input signal needs to be copied to an output and the initialization state needs to be monitored.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block `BasicOne_AX` is a basic IEC 61499 block of type *Basic Funct
 #### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Plug (Output) | `DO1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for data transmission (AX interface) |
 | Socket (input) | `DI1` | `adapter::types::unidirectional::AX` | Unidirectional adapter for receiving data (AX interface) |
 
@@ -64,7 +66,7 @@ In summary, the function block operates as a *triggered passthrough*: The adapte
 The ECC (Execution Control Chart) of the module comprises five states:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | `START` | Waiting for the first `INIT` event with `QI=TRUE`. |
 | `Init` | Executes initialization algorithm, sets `QO=QI`, and sends `INITO`. |
 | `Initialized` | Idle state after successful initialization; waits for `DI1.E1` or another `INIT` (with `QI=FALSE`). |

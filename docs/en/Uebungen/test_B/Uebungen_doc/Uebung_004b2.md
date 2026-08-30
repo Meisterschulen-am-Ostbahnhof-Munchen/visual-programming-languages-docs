@@ -1,8 +1,9 @@
 # Exercise_004b2: Toggle Flip-Flop with IE / Split / Dual
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004b2`. Here, the manual toggle logic from exercise 004b is extended to two independent channels.
+This article describes the logiBUS® exercise `Uebung_004b2`. Here, the manual toggle logic from exercise 004b is extended to two independent channels
 ----
+
 ## Objective of the Exercise
 
 To deepen the understanding of parallel, feedback logic structures. Each channel must correctly manage its own state to be independently switchable.
@@ -17,8 +18,8 @@ To deepen the understanding of parallel, feedback logic structures. Each channel
 
 ![Uebung_004b2_network](./Uebung_004b2_network.svg)
 
-* **Channel 1**: Pushbutton `I1`, Switch `E_SWITCH_I1`, Memory `E_SR_I1`, Output `Q1`.
-* **Channel 2**: Pushbutton `I2`, Switch `E_SWITCH_I2`, Memory `E_SR_I2`, Output `Q2`.
+- **Channel 1**: Pushbutton `I1`, Switch `E_SWITCH_I1`, Memory `E_SR_I1`, Output `Q1`.
+- **Channel 2**: Pushbutton `I2`, Switch `E_SWITCH_I2`, Memory `E_SR_I2`, Output `Q2`.
 
 -----
 

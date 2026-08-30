@@ -3,9 +3,11 @@
 ![SPLIT_AL_INTO_AB](./SPLIT_AL_INTO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AL_INTO_AB** is used to split a 64-bit value (LWORD) received via an **AL adapter** (Long Word) into its eight individual bytes and to provide these bytes via eight separate **AB adapters** (Bytes). The splitting occurs synchronously with an event at the input adapter, and each byte is temporarily stored in its own flip-flop (E_D_FF_ANY) before being delivered to the corresponding output adapter. The block is designed as an **adapter splitting component** and is particularly suitable for structured data decomposition in IEC 61499 systems.
+
 ## Interface Structure
 
 ### Event Inputs
@@ -87,6 +89,6 @@ The function block itself does not have its own visible state machine. The inter
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

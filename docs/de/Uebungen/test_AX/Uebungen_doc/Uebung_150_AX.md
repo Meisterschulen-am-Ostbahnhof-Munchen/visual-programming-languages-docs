@@ -20,9 +20,9 @@ Erfassung von schnellen Impulsen (z.B. Drehzahl, Durchfluss).
 
 ![Uebung_150_AX_network](./Uebung_150_AX_network.svg)
 
-  * **`logiBUS_PI_ID`**: Typ `PulseInput_ID`. Erfasst Impulse am Hardware-Eingang `I8`.
-  * **`DigitalInput_I1`**: Taster für die Lampe.
-  * **`AX_T_FF`**: Toggle für die Lampe.
+  - **`logiBUS_PI_ID`**: Typ `PulseInput_ID`. Erfasst Impulse am Hardware-Eingang `I8`.
+  - **`DigitalInput_I1`**: Taster für die Lampe.
+  - **`AX_T_FF`**: Toggle für die Lampe.
 
 -----
 
@@ -30,8 +30,8 @@ Erfassung von schnellen Impulsen (z.B. Drehzahl, Durchfluss).
 
 Der Baustein `logiBUS_PI_ID` arbeitet im Hintergrund. Er zählt die Impulse am Eingang `I8`.
 
-*   `ImpulseDelta = 100`: Der Baustein meldet sich (sendet ein Event), wenn 100 neue Impulse gezählt wurden.
-*   `TimeDelta = 50000` (µs): Oder wenn 50ms vergangen sind.
+-   `ImpulseDelta = 100`: Der Baustein meldet sich (sendet ein Event), wenn 100 neue Impulse gezählt wurden.
+-   `TimeDelta = 50000` (µs): Oder wenn 50ms vergangen sind.
 
 Dies ermöglicht die Erfassung von Hochgeschwindigkeitssignalen, die für normale digitale Eingänge zu schnell wären. Die restliche Schaltung (`I1` auf `Q1`) läuft völlig unabhängig davon weiter.
 

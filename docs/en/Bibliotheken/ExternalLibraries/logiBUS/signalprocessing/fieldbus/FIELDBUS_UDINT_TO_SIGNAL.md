@@ -3,9 +3,11 @@
 ![FIELDBUS_UDINT_TO_SIGNAL](./FIELDBUS_UDINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_UDINT_TO_SIGNAL** is used to check the validity of an incoming UDINT value and, if the check is successful, forward it unchanged to the output. If the value is invalid, the output is set to a defined error value (0) and the validity indicator is deactivated. This function block is typically used in fieldbus signal processing to ensure that only valid measurement or control values are passed on to subsequent logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The function block **FIELDBUS_UDINT_TO_SIGNAL** is used to check the validity of
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-|-------|-------|--------------|--------------|
+| ------- | ------- | -------------- | -------------- |
 | OUT | UDINT | `16#00000000` | The filtered output value. With a valid signal, it corresponds to IN; otherwise, it's 0. |
 | VALID | BOOL | FALSE | TRUE if the signal is valid, i.e., IN is within the valid range. |
 
@@ -86,6 +88,6 @@ This function block is specifically designed for the UDINT data type and uses a 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

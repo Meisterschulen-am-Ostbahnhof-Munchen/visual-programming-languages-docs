@@ -3,6 +3,7 @@
 ![logiBUS_IBA](./logiBUS_IBA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **logiBUS_IBA** ist ein zusammengesetzter Baustein (Composite FB) zur Verarbeitung von Byte-Eingabedaten über das logiBUS-Protokoll. Er kapselt die Initialisierung, Konfiguration und Ereignissteuerung eines logiBUS-Eingangsbausteins und stellt die Daten über einen Adapter zur Verfügung. Der Baustein ist für den Einsatz in Steuerungssystemen der Agrartechnik konzipiert.
@@ -25,7 +26,7 @@ Der Funktionsblock **logiBUS_IBA** ist ein zusammengesetzter Baustein (Composite
 ### **Daten-Eingänge**
 
 | Variable | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QI | BOOL | Qualifizierer für Ereigniseingänge; steuert die Aktivierung der Ereignisverarbeitung |
 | PARAMS | STRING | Service-Parameter (z. B. Konfigurationsdaten für den logiBUS-Treiber) |
 | Input | logiBUS::io::DI::logiBUS_DI_S | Auswahl des physischen Eingangs (z. B. Input_I1..I8); Standardwert: `logiBUS_DI::Invalid` |

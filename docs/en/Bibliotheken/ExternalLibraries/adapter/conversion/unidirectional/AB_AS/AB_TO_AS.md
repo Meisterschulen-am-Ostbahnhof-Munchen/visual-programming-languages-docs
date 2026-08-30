@@ -3,9 +3,11 @@
 ![AB_TO_AS](./AB_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AB_TO_AS** is a composite function block (FB) that converts a unidirectional AB adapter (BYTE) into a unidirectional AS adapter (SINT). It serves as a conversion bridge between two different data types in an IEC 61499-based control application.
+
 ## Interface Structure
 
 The FB does not have its own top-level event or data ports. All communication takes place via two adapter interfaces:
@@ -37,7 +39,7 @@ Provides the converted SINT value. It becomes valid at the output after the conv
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **AB_IN** | Socket (Input) | `adapter::types::unidirectional::AB` | Receives BYTE data and a trigger event from the source system. |
 | **AS_OUT** | Plug (Output) | `adapter::types::unidirectional::AS` | Provides the converted SINT data with an acknowledgment event to the target system. |
 
@@ -76,6 +78,7 @@ The **AB_TO_AS** module does not have its own state machine. Processing is purel
 - **Custom Implementation**: The composite design allows for easy extension, e.g., by adding plausibility checks or scaling, without changing the basic functionality.
 
 **Company Implementation**
+
 ## Conclusion
 
 The **AB_TO_AS** is a specialized yet simple composite function block that offers a clean and reusable solution for adapter-based data type conversion from BYTE to SINT. By utilizing a standardized converter block and clear event control, it integrates seamlessly into IEC 61499 networks. Its licensing under EPL 2.0 promotes open use and further development.

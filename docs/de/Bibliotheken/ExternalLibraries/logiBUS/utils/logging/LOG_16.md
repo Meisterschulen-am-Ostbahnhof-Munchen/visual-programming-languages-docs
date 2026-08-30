@@ -3,6 +3,7 @@
 <img width="971" height="474" alt="image" src="https://github.com/user-attachments/assets/768789e5-7784-41c2-9d5c-c9492d64a38b" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `LOG_16` ist ein Ring-Logger, der für den zyklischen Aufzeichnung von Daten beliebigen Typs (`ANY`) konzipiert ist. Er dient dazu, eingehende Werte in einem Puffer mit 16 Speicherplätzen zu halten, wobei ältere Einträge bei neuen Aufrufen überschrieben werden (Ringpuffer-Prinzip). Dieser Baustein ist besonders für die Protokollierung von Prozessdaten oder Zuständen in Echtzeitsteuerungen geeignet.
@@ -13,19 +14,19 @@ Der Funktionsblock `LOG_16` ist ein Ring-Logger, der für den zyklischen Aufzeic
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Service Request)**: Löst einen Log-Vorgang aus. Bei Eintreten dieses Ereignisses wird der aktuelle Wert am Daten-Eingang `IN` in den Ringpuffer übernommen.
+-   **REQ (Service Request)**: Löst einen Log-Vorgang aus. Bei Eintreten dieses Ereignisses wird der aktuelle Wert am Daten-Eingang `IN` in den Ringpuffer übernommen.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Confirmation of Requested Service)**: Wird nach erfolgreicher Verarbeitung des `REQ`-Ereignisses ausgelöst. Dieses Ereignis bestätigt den Log-Vorgang und stellt gleichzeitig alle 16 gespeicherten Werte an den Datenausgängen bereit.
+-   **CNF (Confirmation of Requested Service)**: Wird nach erfolgreicher Verarbeitung des `REQ`-Ereignisses ausgelöst. Dieses Ereignis bestätigt den Log-Vorgang und stellt gleichzeitig alle 16 gespeicherten Werte an den Datenausgängen bereit.
 
 ### **Daten-Eingänge**
 
-*   **IN (ANY)**: Der Datenwert, der bei einem `REQ`-Ereignis in den Ringpuffer geschrieben werden soll. Der Datentyp ist beliebig (`ANY`).
+-   **IN (ANY)**: Der Datenwert, der bei einem `REQ`-Ereignis in den Ringpuffer geschrieben werden soll. Der Datentyp ist beliebig (`ANY`).
 
 ### **Daten-Ausgänge**
 
-*   **OUT1 bis OUT16 (ANY)**: Die 16 Ausgänge, die den gesamten aktuellen Inhalt des Ringpuffers repräsentieren. `OUT1` enthält dabei den jüngsten Eintrag (das letzte geloggte `IN`), `OUT16` den ältesten. Bei jedem neuen Log-Vorgang (`REQ`) werden alle Werte im Puffer um eine Position verschoben.
+-   **OUT1 bis OUT16 (ANY)**: Die 16 Ausgänge, die den gesamten aktuellen Inhalt des Ringpuffers repräsentieren. `OUT1` enthält dabei den jüngsten Eintrag (das letzte geloggte `IN`), `OUT16` den ältesten. Bei jedem neuen Log-Vorgang (`REQ`) werden alle Werte im Puffer um eine Position verschoben.
 
 ### **Adapter**
 
@@ -43,9 +44,9 @@ Der `LOG_16` implementiert einen Ringpuffer (First-In-First-Out mit fester Grö�
 
 ## Technische Besonderheiten
 
-*   **Generischer Datentyp**: Die Verwendung des `ANY`-Datentyps für Ein- und Ausgänge macht den Baustein extrem flexibel. Er kann mit beliebigen Datentypen (z.B. `BOOL`, `INT`, `REAL`, `STRING` oder sogar strukturierten Typen) instanziiert und verwendet werden.
-*   **Feste Puffergröße**: Die Puffergröße ist auf 16 Einträge festgelegt und nicht konfigurierbar.
-*   **Sofortige Ausgabe**: Bei jedem Log-Vorgang wird der gesamte Pufferinhalt an den Ausgängen aktualisiert und mit dem `CNF`-Ereignis bestätigt.
+-   **Generischer Datentyp**: Die Verwendung des `ANY`-Datentyps für Ein- und Ausgänge macht den Baustein extrem flexibel. Er kann mit beliebigen Datentypen (z.B. `BOOL`, `INT`, `REAL`, `STRING` oder sogar strukturierten Typen) instanziiert und verwendet werden.
+-   **Feste Puffergröße**: Die Puffergröße ist auf 16 Einträge festgelegt und nicht konfigurierbar.
+-   **Sofortige Ausgabe**: Bei jedem Log-Vorgang wird der gesamte Pufferinhalt an den Ausgängen aktualisiert und mit dem `CNF`-Ereignis bestätigt.
 
 ## Zustandsübersicht
 
@@ -53,21 +54,21 @@ Der Baustein besitzt keinen persistenten internen Zustand im Sinne einer Zustand
 
 ## Anwendungsszenarien
 
-*   **Protokollierung von Prozesswerten**: Kurzfristige Aufzeichnung von Sensordaten (z.B. Temperaturverlauf der letzten 16 Zyklen).
-*   **Fehlerhistorie**: Speicherung der letzten 16 Fehlercodes oder Alarmmeldungen.
-*   **Datenvorverarbeitung**: Bereitstellung eines gleitenden Fensters über die letzten 16 Werte für nachfolgende Berechnungen (z.B. in einem weiteren FB).
-*   **Debugging**: Einfache Überwachung von Variablenverläufen während der Entwicklung und Inbetriebnahme.
+-   **Protokollierung von Prozesswerten**: Kurzfristige Aufzeichnung von Sensordaten (z.B. Temperaturverlauf der letzten 16 Zyklen).
+-   **Fehlerhistorie**: Speicherung der letzten 16 Fehlercodes oder Alarmmeldungen.
+-   **Datenvorverarbeitung**: Bereitstellung eines gleitenden Fensters über die letzten 16 Werte für nachfolgende Berechnungen (z.B. in einem weiteren FB).
+-   **Debugging**: Einfache Überwachung von Variablenverläufen während der Entwicklung und Inbetriebnahme.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`E_DELAY` / Verzögerungsbausteine**: Diese Bausteine geben einen Eingangswert erst nach einer definierten Zeit verzögert wieder aus. Der `LOG_16` hingegen speichert eine Historie mehrerer Werte und gibt sie sofort, aber geordnet nach Aktualität, aus.
-*   **`FIFO`-Bausteine**: Klassische FIFO-Speicher (First-In-First-Out) haben oft variable Längen und ein separates Lese-/Schreib-Interface. Der `LOG_16` ist ein spezieller FIFO mit fester Länge (16), der bei jedem Schreibvorgang automatisch den gesamten Inhalt ausgibt und überschreibt.
-*   **Einfache `LOG`-Bausteine**: Einfache Logger ohne Puffer schreiben typischerweise nur einen einzelnen Wert. Die Stärke des `LOG_16` liegt in der ringförmigen Historie.
+-   **`E_DELAY` / Verzögerungsbausteine**: Diese Bausteine geben einen Eingangswert erst nach einer definierten Zeit verzögert wieder aus. Der `LOG_16` hingegen speichert eine Historie mehrerer Werte und gibt sie sofort, aber geordnet nach Aktualität, aus.
+-   **`FIFO`-Bausteine**: Klassische FIFO-Speicher (First-In-First-Out) haben oft variable Längen und ein separates Lese-/Schreib-Interface. Der `LOG_16` ist ein spezieller FIFO mit fester Länge (16), der bei jedem Schreibvorgang automatisch den gesamten Inhalt ausgibt und überschreibt.
+-   **Einfache `LOG`-Bausteine**: Einfache Logger ohne Puffer schreiben typischerweise nur einen einzelnen Wert. Die Stärke des `LOG_16` liegt in der ringförmigen Historie.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_122](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
-* [Uebung_122b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
+- [Uebung_122](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+- [Uebung_122b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
 
 ## Fazit
 
@@ -77,4 +78,4 @@ Der `LOG_16` ist ein nützlicher und generischer Funktionsblock für grundlegend
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

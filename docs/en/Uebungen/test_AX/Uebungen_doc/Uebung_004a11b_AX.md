@@ -3,6 +3,7 @@
 ![Uebung_004a11b_AX_network](./Uebung_004a11b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **toggle flip-flop** (T-FF) with a digital input (logiBUS DI) triggered by the event `BUTTON_SINGLE_CLICK`. The flip-flop's current state is stored in non-volatile memory (NVS) and restored upon startup. This ensures the initial state is retained even after a restart.
@@ -51,15 +52,15 @@ The connections between the components define the flow:
 
 When a key is pressed at input I1, `DigitalInput_CLK_I1` generates an event at its output `IND`.
 
-2. **Toggle Flip-Flop**
+1. **Toggle Flip-Flop**
 
 This event is forwarded directly to the input `CLK` of the toggle flip-flop `AX_T_FF` via an **event connection**. Each event toggles the internal state of the flip-flop.
 
-3. **Output**
+1. **Output**
 
 The current output state of the toggle flip-flop (`Q`) is transferred to the input `OUT` of the digital output `DigitalOutput_Q1` via an **adapter connection**. Thus, the toggled state becomes visible on the physical output Q1.
 
-4. **Storage and Initialization**
+1. **Storage and Initialization**
 
 At startup, the function block `INI_AX2` reads the stored value from the NVS and makes it available at its adapter output `VAL`.
 
@@ -68,6 +69,7 @@ This value is passed via an adapter connection to the initialization input `Q_IN
 *Note:* The storage of the current state back into the NVS is likely handled internally by the T-FF or another function block; in the network diagram shown, the storage is not visible as a separate function block.
 
 *Note:*
+
 ## Summary
 
 This exercise illustrates:

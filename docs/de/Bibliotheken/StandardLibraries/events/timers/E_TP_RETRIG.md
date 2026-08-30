@@ -1,6 +1,7 @@
 # E_TP_RETRIG
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_TP_RETRIG` ist die retriggerbare Variante des Standard-Timers `E_TP`: Er erzeugt bei jeder steigenden Flanke von `IN` einen `TRUE`-Impuls der Dauer `PT` an `Q` — anders als `E_TP` startet eine erneute steigende Flanke während eines laufenden Impulses diesen jedoch neu, statt ignoriert zu werden.

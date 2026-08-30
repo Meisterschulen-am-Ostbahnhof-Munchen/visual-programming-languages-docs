@@ -3,6 +3,7 @@
 ![ADI_SPLIT_7](./ADI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_SPLIT_7** dient der Aufteilung eines eingehenden **ADI**-Adapter-Signals auf sieben identische Ausgänge. Er ist als generischer Baustein (Generic FB) implementiert und ermöglicht die unidirektionale Verteilung von Daten über einen Adapter-Socket an sieben Adapter-Plugs.
@@ -62,11 +63,11 @@ Der Baustein besitzt **keine Zustandsmaschine** (ECC). Er ist stateless, d.h. er
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Eigenschaften |
-|----------|-----------------|---------------|
+| ---------- | ----------------- | --------------- |
 | ADI_SPLIT_2 | 2 | Verteilt 1 ADI auf 2 Ausgänge |
 | ADI_SPLIT_4 | 4 | Verteilt 1 ADI auf 4 Ausgänge |
 | ADI_SPLIT_7 | 7 | Verteilt 1 ADI auf 7 Ausgänge |
-| ADI_MERGE    | 1 (Eingang: mehrere) | Fasst mehrere ADI-Eingänge zu einem Ausgang zusammen |
+| ADI_MERGE | 1 (Eingang: mehrere) | Fasst mehrere ADI-Eingänge zu einem Ausgang zusammen |
 
 Gegenüber einer manuellen Parallelschaltung mehrerer ADI_Split-Bausteine reduziert der `ADI_SPLIT_7` den Konfigurationsaufwand und verbessert die Übersicht im Netzwerk.
 
@@ -82,4 +83,4 @@ Der `ADI_SPLIT_7` ist ein einfacher, aber leistungsfähiger Baustein zur Verteil
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

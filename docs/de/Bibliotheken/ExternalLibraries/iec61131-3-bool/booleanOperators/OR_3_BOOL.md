@@ -3,6 +3,7 @@
 <img width="1370" height="281" alt="image" src="https://github.com/user-attachments/assets/b7317e35-c6b5-4925-bc67-76e89bd63323" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_3_BOOL` ist ein standardisierter Baustein gemäß IEC 61131-3 zur Durchführung der logischen ODER-Verknüpfung. Er berechnet das logische ODER (Disjunktion) von drei booleschen Eingangssignalen. Der Baustein ist als generische Funktion realisiert und wird bei jedem Auslöseereignis ausgeführt.
@@ -15,21 +16,21 @@ Der Funktionsblock verfügt über einen Ereigniseingang, einen Ereignisausgang, 
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der ODER-Funktion aus. Beim Eintreffen von `REQ` werden die aktuellen Werte an den Eingängen `IN1`, `IN2` und `IN3` gelesen und das Ergebnis berechnet.
+-   **REQ** (Normal Execution Request): Dieses Ereignis löst die Berechnung der ODER-Funktion aus. Beim Eintreffen von `REQ` werden die aktuellen Werte an den Eingängen `IN1`, `IN2` und `IN3` gelesen und das Ergebnis berechnet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Ausgang `OUT` ausgegeben.
+-   **CNF** (Execution Confirmation): Dieses Ereignis signalisiert den Abschluss der Berechnung. Es wird zusammen mit dem berechneten Ergebnis am Ausgang `OUT` ausgegeben.
 
 ### **Daten-Eingänge**
 
-*   **IN1** (BOOL): Erstes ODER-Eingangssignal.
-*   **IN2** (BOOL): Zweites ODER-Eingangssignal.
-*   **IN3** (BOOL): Drittes ODER-Eingangssignal.
+-   **IN1** (BOOL): Erstes ODER-Eingangssignal.
+-   **IN2** (BOOL): Zweites ODER-Eingangssignal.
+-   **IN3** (BOOL): Drittes ODER-Eingangssignal.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (BOOL): Ergebnis der ODER-Verknüpfung (`IN1` ODER `IN2` ODER `IN3`).
+-   **OUT** (BOOL): Ergebnis der ODER-Verknüpfung (`IN1` ODER `IN2` ODER `IN3`).
 
 ### **Adapter**
 
@@ -56,9 +57,9 @@ Der Ausgang `OUT` ist genau dann `TRUE` (1), wenn mindestens einer der drei Eing
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist als Instanz eines generischen ODER-Bausteins (`GEN_OR`) implementiert, was eine konsistente Integration in Bibliotheken ermöglicht.
-*   **Ereignisgesteuerte Ausführung:** Die Funktionsausführung ist strikt an das Eintreffen des `REQ`-Ereignisses gekoppelt, was eine deterministische Ablaufsteuerung im Echtzeitsystem gewährleistet.
-*   **Standardkonformität:** Entspricht der Klassifikation "standard boolean function" nach IEC 61131-3.
+-   **Generischer Baustein:** Der Block ist als Instanz eines generischen ODER-Bausteins (`GEN_OR`) implementiert, was eine konsistente Integration in Bibliotheken ermöglicht.
+-   **Ereignisgesteuerte Ausführung:** Die Funktionsausführung ist strikt an das Eintreffen des `REQ`-Ereignisses gekoppelt, was eine deterministische Ablaufsteuerung im Echtzeitsystem gewährleistet.
+-   **Standardkonformität:** Entspricht der Klassifikation "standard boolean function" nach IEC 61131-3.
 
 ## Zustandsübersicht
 
@@ -66,19 +67,19 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei, kombinatorisch
 
 ## Anwendungsszenarien
 
-*   **Sicherheits- und Überwachungslogik:** Kombination mehrerer Fehlersensoren (z.B. Temperatur zu hoch, Druck zu niedrig, Füllstand kritisch), wobei jeder Sensor einen Alarm auslösen kann.
-*   **Steuerungslogik:** Aktivierung eines Aktors (z.B. einer Pumpe oder eines Motors), wenn mindestens eine von mehreren Bedingungen erfüllt ist (z.B. manueller Startbefehl ODER automatischer Sollwert erreicht ODER Notstart aktiv).
-*   **Verkettung von Logikoperationen:** Als Teil komplexerer logischer Ausdrücke in Verbindung mit UND- und NOT-Bausteinen.
+-   **Sicherheits- und Überwachungslogik:** Kombination mehrerer Fehlersensoren (z.B. Temperatur zu hoch, Druck zu niedrig, Füllstand kritisch), wobei jeder Sensor einen Alarm auslösen kann.
+-   **Steuerungslogik:** Aktivierung eines Aktors (z.B. einer Pumpe oder eines Motors), wenn mindestens eine von mehreren Bedingungen erfüllt ist (z.B. manueller Startbefehl ODER automatischer Sollwert erreicht ODER Notstart aktiv).
+-   **Verkettung von Logikoperationen:** Als Teil komplexerer logischer Ausdrücke in Verbindung mit UND- und NOT-Bausteinen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **OR_2_BOOL:** Verknüpft nur zwei Eingänge. `OR_3_BOOL` erweitert diese Funktionalität um einen dritten Eingang. Siehe auch: [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
-*   **GEN_OR:** Der zugrundeliegende generische Baustein, der für eine variable Anzahl von Eingängen konfiguriert werden kann. `OR_3_BOOL` ist eine spezifische, auf drei Eingänge festgelegte Instanz davon.
-*   **AND_n_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **alle** Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits **ein** `TRUE`-Eingang ausreicht.
+-   **OR_2_BOOL:** Verknüpft nur zwei Eingänge. `OR_3_BOOL` erweitert diese Funktionalität um einen dritten Eingang. Siehe auch: [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
+-   **GEN_OR:** Der zugrundeliegende generische Baustein, der für eine variable Anzahl von Eingängen konfiguriert werden kann. `OR_3_BOOL` ist eine spezifische, auf drei Eingänge festgelegte Instanz davon.
+-   **AND_n_BOOL:** Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur dann `TRUE`, wenn **alle** Eingänge `TRUE` sind, während bei der ODER-Verknüpfung bereits **ein** `TRUE`-Eingang ausreicht.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a5b.md)
+- [Uebung_002a5b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a5b.md)
 
 ## Fazit
 

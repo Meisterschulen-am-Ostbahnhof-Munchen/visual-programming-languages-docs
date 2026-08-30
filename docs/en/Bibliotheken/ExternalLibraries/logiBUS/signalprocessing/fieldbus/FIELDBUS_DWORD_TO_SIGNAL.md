@@ -3,9 +3,11 @@
 ![FIELDBUS_DWORD_TO_SIGNAL](./FIELDBUS_DWORD_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `FIELDBUS_DWORD_TO_SIGNAL` mirrors and validates a DWORD input signal. If the input value is valid, it is passed unchanged to the output, and the `VALID` signal is set. Otherwise, the block returns a zero value, indicating invalidity.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The function block `FIELDBUS_DWORD_TO_SIGNAL` mirrors and validates a DWORD inpu
 ### **Data Outputs**
 
 | Variable | Type | Initial Value | Comment |
-|----------|--------|---------------|------------------------------------|
+| ---------- | -------- | --------------- | ------------------------------------ |
 | OUT | DWORD | `16#00000000` | Filtered output value |
 | VALID | BOOL | `FALSE` | `TRUE`, if the signal is valid |
 
@@ -87,4 +89,4 @@ FIELDBUS_DWORD_TO_SIGNAL` is a compact yet essential function block for robust f
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

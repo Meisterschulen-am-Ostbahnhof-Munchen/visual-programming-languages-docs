@@ -3,6 +3,7 @@
 ![initval_AIS](initval_AIS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AIS` ist der konfigurierbare Initialisierungsbaustein für den [AIS](../AIS.md)-Adapter (Datentyp `STRING`, Zeichenkette): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AIS`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

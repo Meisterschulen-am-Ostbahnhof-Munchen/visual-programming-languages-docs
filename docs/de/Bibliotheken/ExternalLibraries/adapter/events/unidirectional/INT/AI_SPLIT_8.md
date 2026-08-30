@@ -3,6 +3,7 @@
 ![AI_SPLIT_8](./AI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_SPLIT_8** dient dazu, ein analoges Eingangssignal (Typ *AI*) auf acht identische analoge Ausgangssignale zu verteilen. Der Baustein ist als generischer FB (GenericClassName: `GEN_AI_SPLIT`) implementiert und wird in der 4diac-IDE verwendet, um ein einzelnes analoges Signal mehrfach nutzbar zu machen.
@@ -69,4 +70,4 @@ Der **AI_SPLIT_8** ist ein einfacher, generischer Funktionsblock zur Vervielfach
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

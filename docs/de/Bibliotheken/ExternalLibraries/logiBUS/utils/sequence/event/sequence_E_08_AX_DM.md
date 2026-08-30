@@ -3,6 +3,7 @@
 ![sequence_E_08_AX_DM](./sequence_E_08_AX_DM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Ablaufsteuerung mit acht sequenziell zu schaltenden Ausgängen. Er basiert auf einem endlichen Automaten mit neun Zuständen und ermöglicht den Wechsel zwischen den Zuständen durch explizite Ereignisse. Ein integrierter Totmannschalter (Deadman, DM) erlaubt die Überwachung und das kontrollierte Zurücksetzen der Ausgänge. Der FB ist speziell für den Einsatz in sicherheitskritischen oder überwachten Steuerungsabläufen in der Agrartechnik konzipiert.
@@ -12,7 +13,7 @@ Der Funktionsblock `sequence_E_08_AX_DM` realisiert eine ereignisgesteuerte Abla
 ### **Ereignis-Eingänge**
 
 | Ereignis | Beschreibung |
-|----------|--------------|
+| ---------- | -------------- |
 | `START_S1` | Wechsel vom Startzustand zu Zustand 1 (State_01) |
 | `S1_S2` | Wechsel von Zustand 1 zu Zustand 2 (State_02) |
 | `S2_S3` | Wechsel von Zustand 2 zu Zustand 3 (State_03) |
@@ -43,7 +44,7 @@ Keine Daten-Eingänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Plug | `DO_S1` | unidirectional::AX | Ausgang für Zustand 1 (State_01 aktiv) |
 | Plug | `DO_S2` | unidirectional::AX | Ausgang für Zustand 2 (State_02 aktiv) |
 | Plug | `DO_S3` | unidirectional::AX | Ausgang für Zustand 3 (State_03 aktiv) |
@@ -74,7 +75,7 @@ Der Funktionsblock arbeitet als endlicher Automat mit folgenden Zuständen: `xST
 ## Zustandsübersicht
 
 | Zustand | Bezeichnung | Ausgang aktiv | Transitionen |
-|---------|-------------|---------------|--------------|
+| --------- | ------------- | --------------- | -------------- |
 | `xSTART` | Initialzustand | keiner | → `sState_01` bei `START_S1`; Selbsttransition bei `DM.E1` |
 | `sState_01` | Sequenzschritt 1 | `DO_S1` | → `sState_02` bei `S1_S2`; Selbsttrans. bei `DM.E1`; → `sRESET` bei `RESET` |
 | `sState_02` | Sequenzschritt 2 | `DO_S2` | → `sState_03` bei `S2_S3`; Selbsttrans. bei `DM.E1`; → `sRESET` bei `RESET` |

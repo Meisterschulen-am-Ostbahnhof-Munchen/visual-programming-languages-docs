@@ -4,6 +4,7 @@
 ![E_MERGE_ecc](./E_MERGE_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **E_MERGE** is a fundamental function block of the IEC 61499 standard that combines multiple event streams into a single output. This logical OR operation of events is essential for control logic in industrial automation systems.
@@ -26,12 +27,15 @@ The **E_MERGE** is a fundamental function block of the IEC 61499 standard that c
 ## Functionality
 
 1. **Event Merging:**
+
 - Each event at `EI1` or `EI2` triggers an output event at `EO`
 - The inputs are logically ORed
-2. **Independent Processing:**
+1. **Independent Processing:**
+
 - Events at both inputs are Equal treatment
 - No prioritization of specific inputs
-3. **Immediate forwarding:**
+1. **Immediate forwarding:**
+
 - No delay between input and output events
 - No memory behavior or state maintenance
 
@@ -52,7 +56,7 @@ The **E_MERGE** is a fundamental function block of the IEC 61499 standard that c
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_MERGE | E_DEMUX | E_SWITCH |
-|---------------|---------|---------|---------|
+| --------------- | --------- | --------- | --------- |
 | Functional principle | OR operation | Distribution | Conditional forwarding |
 | Direction | n:1 | 1:n | 1:1 |
 | Event flow | Combination | Splitting | Selection |
@@ -70,8 +74,8 @@ These building blocks allow for the easy merging of up to four event sources int
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
-* [Exercise_004a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
+- [Exercise_004a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2.md)
+- [Exercise_004a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a2_AX.md)
 
 ## Conclusion
 

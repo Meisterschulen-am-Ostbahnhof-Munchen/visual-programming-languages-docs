@@ -48,24 +48,28 @@ $$OUT = IN1 - IN2$
 
 The result is passed to the output adapter `OUT`, and the corresponding output event of the adapter is triggered to inform subsequent function blocks of the new value.
 
-* **Generic Type:** The function block is defined as a generic type (`eclipse4diac::core::GenericClassName` with the value `'GEN_ADI_SUB'`). This allows for flexible adaptation to different data types within the `ADI` adapter.
-* **Unidirectional Adapters:** By using the unidirectional adapter structure (`adapter::types::unidirectional::ADI`), the data flow remains directed and cyclic dependencies are avoided.
+- **Generic Type:** The function block is defined as a generic type (`eclipse4diac::core::GenericClassName` with the value `'GEN_ADI_SUB'`). This allows for flexible adaptation to different data types within the `ADI` adapter.
+- **Unidirectional Adapters:** By using the unidirectional adapter structure (`adapter::types::unidirectional::ADI`), the data flow remains directed and cyclic dependencies are avoided.
 
 Since this is a mathematical calculation function block, its behavior is essentially stateless and event-driven:
 
 1. **Waiting:** The function block waits for a trigger event at one of the input adapters (`IN1` or `IN2`).
 2. **Calculation:** Upon event input, the data values are read and subtracted.
 3. **Output:** The calculated value is written to the adapter `OUT`, triggering the corresponding send event.
-* **Control Engineering:** Calculation of a control deviation ($e = w - x$), where the setpoint ($w$) and actual value ($x$) are transmitted via standardized ADI interfaces.
-* **Measurement Processing:** Differential pressure measurement or offset correction of sensor values integrated into the application via adapters.
-* **Signal Preprocessing:** Reduction of signal values by fixed or variable limits before forwarding them to actuators.
-* ## Comparison with Similar Blocks
+
+- **Control Engineering:** Calculation of a control deviation ($e = w - x$), where the setpoint ($w$) and actual value ($x$) are transmitted via standardized ADI interfaces.
+- **Measurement Processing:** Differential pressure measurement or offset correction of sensor values integrated into the application via adapters.
+- **Signal Preprocessing:** Reduction of signal values by fixed or variable limits before forwarding them to actuators.
+
+- ## Comparison with Similar Blocks
 
 Compared to a standard subtraction block (such as the classic `SUB` block according to IEC 61131-3), which uses direct data and event pins, `ADI_SUB_2` offers the following advantages:
-* **Fewer connection lines:** Data and events are bundled in the `ADI` adapter, making the application diagram in 4diac clearer.
-* **Standardized interfaces:** Facilitates the exchange of calculation and processing blocks, as only the adapters need to be connected.
+
+- **Fewer connection lines:** Data and events are bundled in the `ADI` adapter, making the application diagram in 4diac clearer.
+- **Standardized interfaces:** Facilitates the exchange of calculation and processing blocks, as only the adapters need to be connected.
 
 The `ADI_SUB_2` is an efficient auxiliary block for structured IEC 61499 control applications. It is ideally suited for demanding architectures where clarity and standardized adapter interfaces are paramount.
+
 ## Technical Features
 
 ## State Overview

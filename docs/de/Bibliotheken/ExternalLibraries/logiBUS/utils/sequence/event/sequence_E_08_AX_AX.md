@@ -38,7 +38,7 @@ Keine (die Zustandsübergänge werden ausschließlich über Ereignisse gesteuert
 **Plugs (Ausgänge – unidirektionaler AX-Adapter)**
 
 | Name | Type | Kommentar |
-|------|------|-----------|
+| ------ | ------ | ----------- |
 | `DO_S1` | adapter::types::unidirectional::AX | Ausgang aktiv, wenn `State_01` aktiv ist |
 | `DO_S2` | adapter::types::unidirectional::AX | Ausgang aktiv, wenn `State_02` aktiv ist |
 | `DO_S3` | adapter::types::unidirectional::AX | Ausgang aktiv, wenn `State_03` aktiv ist |
@@ -51,7 +51,7 @@ Keine (die Zustandsübergänge werden ausschließlich über Ereignisse gesteuert
 **Sockets (Eingänge – unidirektionaler AX-Adapter)**
 
 | Name | Type | Kommentar |
-|------|------|-----------|
+| ------ | ------ | ----------- |
 | `DI_S1` | adapter::types::unidirectional::AX | Springt von `START` nach `State_01` |
 | `DI_S2` | adapter::types::unidirectional::AX | Springt von `State_01` nach `State_02` |
 | `DI_S3` | adapter::types::unidirectional::AX | Springt von `State_02` nach `State_03` |
@@ -75,7 +75,7 @@ Der Baustein arbeitet nach dem Prinzip einer ereignisgesteuerten Schrittkette. N
 ## Zustandsübersicht
 
 | Zustand (ECC) | Bedeutung | Aktionen |
-|---------------|-----------|----------|
+| --------------- | ----------- | ---------- |
 | `xSTART` | Initialer Ruhezustand nach Aktivierung | Keine Ausgabe, erwartet `DI_S1` |
 | `sState_01` | Erster Schritt der Sequenz | Setzt `DO_S1.D1` auf `DI_S1.D1`; Ausgabe `STATE_NR=1` |
 | `sState_02` | Zweiter Schritt | Setzt `DO_S2.D1` auf `DI_S2.D1`; `STATE_NR=2` |

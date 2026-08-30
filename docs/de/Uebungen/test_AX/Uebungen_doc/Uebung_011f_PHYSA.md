@@ -42,7 +42,7 @@ Die Verbindung zwischen den beiden Bausteinen erfolgt über eine einzige **Adapt
 
 Der Datenfluss ist geradlinig: Sobald `NumericValue_PHYSA` aktiv ist (QI=TRUE), stellt es den aktuellen physikalischen Wert von `I3` bereit. Dieser Wert wird direkt an `Q_NumericValue_PHYSA` weitergeleitet, der ihn auf `N3` ausgibt. Es findet keine Umwandlung oder Verarbeitung statt – ein reines Durchschleifen.
 
-**Einordnung:**  
+**Einordnung:**
 Die Übung ist für Einsteiger geeignet, die die Grundlagen der ISO‑BUS‑Bausteinverwendung und des Signalflusses in 4diac‑IDE erlernen möchten. Sie zeigt die direkte Kopplung von Ein‑ und Ausgabebausteinen über physikalische Adapter.
 
 ## Zusammenfassung
@@ -53,4 +53,4 @@ Die Übung **Uebung_011f_PHYSA** realisiert eine einfache Durchschleifung eines 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

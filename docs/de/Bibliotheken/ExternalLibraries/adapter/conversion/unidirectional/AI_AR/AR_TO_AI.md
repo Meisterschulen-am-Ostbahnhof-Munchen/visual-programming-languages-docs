@@ -3,6 +3,7 @@
 ![AR_TO_AI](./AR_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_TO_AI** ist ein Composite-Baustein, der einen unidirektionalen AR‑Adapter (Eingang mit dem Datentyp REAL) in einen unidirektionalen AI‑Adapter (Ausgang mit dem Datentyp INT) umwandelt. Er dient zur numerischen Typkonvertierung innerhalb von 4diac‑Netzwerken und kapselt einen IEC‑61131‑Konvertierungsbaustein.
@@ -34,7 +35,7 @@ Der Daten-Ausgang wird über den Plug **AI_OUT** bereitgestellt. Der Ausgangswer
 
 ## Funktionsweise
 
-Der FB ist als Composite realisiert und enthält einen einzelnen **F_REAL_TO_INT**‑Baustein aus der IEC‑61131‑Bibliothek (`iec61131::conversion::F_REAL_TO_INT`).  
+Der FB ist als Composite realisiert und enthält einen einzelnen **F_REAL_TO_INT**‑Baustein aus der IEC‑61131‑Bibliothek (`iec61131::conversion::F_REAL_TO_INT`).
 Sobald am Socket **AR_IN.E1** ein Ereignis eintrifft, wird der Wert von **AR_IN.D1** (REAL) an den Eingang `IN` des Konverters übergeben und dessen Verarbeitung gestartet (`REQ`). Nach Abschluss der Konvertierung signalisiert der Konverter über `CNF`, dass das Ergebnis am Ausgang `OUT` (INT) anliegt. Dieses Ergebnis wird unverzüglich an den Plug‑Ausgang **AI_OUT.D1** (INT) weitergeleitet und das Ereignis **AI_OUT.E1** ausgelöst.
 
 ## Technische Besonderheiten
@@ -48,7 +49,7 @@ Sobald am Socket **AR_IN.E1** ein Ereignis eintrifft, wird der Wert von **AR_IN.
 
 Der **AR_TO_AI** besitzt keine interne Zustandsmaschine. Die Funktionsweise ist rein kombinatorisch in Abhängigkeit vom eingehenden Ereignis:
 
-- **Warten:** Es liegt kein Ereignis an AR_IN.E1 an.  
+- **Warten:** Es liegt kein Ereignis an AR_IN.E1 an.
 - **Konvertieren:** Bei Ereignis wird der REAL‑Wert unverzögert konvertiert und das Ergebnis als INT ausgegeben.
 
 ## Anwendungsszenarien
@@ -59,7 +60,7 @@ Der **AR_TO_AI** besitzt keine interne Zustandsmaschine. Die Funktionsweise ist 
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AI_TO_AR:** Führt die umgekehrte Konvertierung durch (INT → REAL).  
+- **AI_TO_AR:** Führt die umgekehrte Konvertierung durch (INT → REAL).
 - **F_REAL_TO_INT (direkt):** Der eingekapselte Basisbaustein ist für Punkt‑zu‑Punkt‑Verbindungen ohne Adapter gedacht. Der AR_TO_AI bietet eine adapterbasierte Schnittstelle, die in Adapter‑orientierten Netzwerken besser eingebunden werden kann.
 - **Eigene Composite‑Bausteine:** Andere Projekte könnten ähnliche Adapter-Konvertierungen für andere Datentypen (z.B. LREAL, DINT) erstellen.
 
@@ -71,4 +72,4 @@ Der **AR_TO_AI** ist ein kompakter, adapterbasierter Konvertierungsbaustein, der
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

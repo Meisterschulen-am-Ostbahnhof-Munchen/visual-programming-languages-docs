@@ -97,9 +97,9 @@ Der Befehl F.10 adressiert direkt das **Audiogerät** des VT — er referenziert
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
-* [Uebung_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
-* [Uebung_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
+- [Uebung_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
+- [Uebung_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+- [Uebung_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Fazit
 

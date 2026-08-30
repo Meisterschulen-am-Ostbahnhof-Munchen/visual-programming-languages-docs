@@ -32,9 +32,11 @@ The function block performs the conversion as soon as the event `REQ` is trigger
 
 - The function block uses the function `DWORD_AS_STRING` for conversion.
 - The conversion occurs synchronously with the triggering of the `REQ` event.
+
 1. **Idle**: Waits for the `REQ` event.
 2. **Processing**: Performs the conversion.
 3. **Complete**: Signals completion with `CNF` and outputs the result to `OUT`.
+
 - Conversion of numeric IDs or status values into readable text format.
 - Preparation of data for logging or user display.
 - Integration into systems that require string-based communication.

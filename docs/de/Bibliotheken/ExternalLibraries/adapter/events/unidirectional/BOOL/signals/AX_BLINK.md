@@ -1,6 +1,7 @@
 # AX_BLINK
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_BLINK ist ein Funktionsblock, der ein blinkendes Signal über einen AX-Adapter ausgibt.
@@ -41,7 +42,7 @@ Blinkende Anzeigen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
+- [Uebung_020f3_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f3_AX.md)
 
 ## Fazit
 

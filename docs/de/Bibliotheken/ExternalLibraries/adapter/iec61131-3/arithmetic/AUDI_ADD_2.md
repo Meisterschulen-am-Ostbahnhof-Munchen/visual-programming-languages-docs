@@ -3,6 +3,7 @@
 ![AUDI_ADD_2](./AUDI_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_ADD_2** führt eine arithmetische Addition zweier Eingangswerte durch und stellt das Ergebnis am Ausgang bereit. Der Baustein ist generisch ausgelegt und arbeitet über eine einheitliche Adapter-Schnittstelle vom Typ `AUDI`. Dadurch kann er für unterschiedliche Datentypen (z. B. Ganzzahlen, Gleitkommazahlen) eingesetzt werden, ohne dass der FB selbst angepasst werden muss.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Richtung | Name | Kommentar |
-|-----|----------|------|-----------|
+| ----- | ---------- | ------ | ----------- |
 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | **IN1** | ADD input 1 |
 | `adapter::types::unidirectional::AUDI` | Socket (Eingang) | **IN2** | ADD input 2 |
 | `adapter::types::unidirectional::AUDI` | Plug (Ausgang) | **OUT** | ADD result |
@@ -75,4 +76,4 @@ Der **AUDI_ADD_2** ist ein spezialisierter, generischer Additions-FB für adapte
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

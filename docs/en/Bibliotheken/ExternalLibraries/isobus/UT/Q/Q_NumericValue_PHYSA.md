@@ -3,9 +3,11 @@
 ![Q_NumericValue_PHYSA](./Q_NumericValue_PHYSA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function block `Q_NumericValue_PHYS`. It allows setting a numeric value, which is received as a physical value (`REAL`) via an AR adapter (socket `rPhys`). The function block is designed according to the ISO 11783-6 standard and is suitable for ISOBUS applications that require a physical value input.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 ### **Event Outputs**
 
 | Name | Type | Description |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `INITO` | `EInit` | Confirmation of successful initialization |
 | `CNF` | `Event` | Confirmation of value change performed; Output together with `STATUS` and `s16result` |
 
@@ -37,7 +39,7 @@ The function block `Q_NumericValue_PHYSA` serves as a wrapper for the function b
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AR` | `rPhys` | Socket (Input) | Receives the physical value `REAL` for processing |
 | `adapter::types::unidirectional::AX` | `xOver` | Plug (Output) | Signals that the physical value exceeds the upper ISOBUS limit |
 | `adapter::types::unidirectional::AX` | `xUnder` | Plug (Output) | Signals that the physical value falls below the lower ISOBUS limit |
@@ -77,7 +79,7 @@ The function block itself does not have an explicit state machine. The initializ
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference |
-|----------|--------------|-------------|
+| ---------- | -------------- | ------------- |
 | `Q_NumericValue_PHYS` | Direct function block for physical values | `Q_NumericValue_PHYSA` wraps this function block and adds explicit adapter outputs (`xOver`, `xUnder`) for limit signals |
 | `Q_NumericValue` | Basic Function Block for Numeric Values (No Physical Conversion) | `Q_NumericValue_PHYSA` is specifically designed for real-world physical values and includes scaling/offset functionality.
 

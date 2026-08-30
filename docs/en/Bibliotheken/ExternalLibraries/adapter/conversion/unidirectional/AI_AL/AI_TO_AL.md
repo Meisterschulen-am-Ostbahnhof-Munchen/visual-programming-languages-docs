@@ -3,9 +3,11 @@
 ![AI_TO_AL](./AI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block **AI_TO_AL** converts an INT value provided via the unidirectional AI adapter (type `adapter::types::unidirectional::AI`) into an LWORD value output via the unidirectional AL adapter (type `adapter::types::unidirectional::AL`). The block encapsulates the conversion logic, thus enabling a clean separation between INT- and LWORD-based adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No independent data outputs on the block. The converted LWORD value is output vi
 ### **Adapter**
 
 | Label | Type | Direction | Comment |
-|-------------|-----|-----------|-----------|
+| ------------- | ----- | ----------- | ----------- |
 | `AI_IN` | `adapter::types::unidirectional::AI` | Socket (Input) | INT Adapter Input |
 | `AL_OUT` | `adapter::types::unidirectional::AL` | Plug (Output) | LWORD Adapter Output |
 

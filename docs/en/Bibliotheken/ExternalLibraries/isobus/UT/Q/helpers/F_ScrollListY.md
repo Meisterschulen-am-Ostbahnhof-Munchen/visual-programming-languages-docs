@@ -3,6 +3,7 @@
 ![F_ScrollListY](F_ScrollListY.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `F_ScrollListY` function computes, from the current scroll position (in rows) and the row

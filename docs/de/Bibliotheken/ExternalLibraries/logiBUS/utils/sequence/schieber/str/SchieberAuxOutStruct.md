@@ -1,6 +1,7 @@
 # SchieberAuxOutStruct
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datenbaustein `SchieberAuxOutStruct` definiert eine Struktur zur Konfiguration der visuellen Darstellung eines AUX-Ausgabeelements. Er wird verwendet, um sowohl das anzuzeigende Bild als auch dessen Hintergrundfarbe festzulegen. Dieser Baustein ist Teil einer Funktionalität zur Steuerung von Bildschirmanzeigen, typischerweise in landwirtschaftlichen oder mobilen Arbeitsmaschinen.
@@ -28,9 +29,9 @@ Die `SchieberAuxOutStruct` ist eine reine Datenhaltungsstruktur. Sie kapselt die
 
 ## Technische Besonderheiten
 
-*   **Initialisierung:** Die Struktur verwendet vordefinierte Konstanten (`ID_NULL`, `COLOR_WHITE`) aus importierten Namensräumen für die Initialwerte. Dies gewährleistet Konsistenz und vereinfacht die Wartung.
-*   **Typisierung:** Die explizite Typisierung (`UINT` für die Bild-ID, `USINT` für die Farbe) ermöglicht eine strenge Prüfung durch den Compiler und erhöht die Zuverlässigkeit.
-*   **Verwendung:** Dieser STRUCT wird typischerweise als Datentyp für Ein- oder Ausgänge von Funktionsblöcken (FBs) verwendet, die mit grafischen Benutzeroberflächen oder Anzeigegeräten interagieren.
+-   **Initialisierung:** Die Struktur verwendet vordefinierte Konstanten (`ID_NULL`, `COLOR_WHITE`) aus importierten Namensräumen für die Initialwerte. Dies gewährleistet Konsistenz und vereinfacht die Wartung.
+-   **Typisierung:** Die explizite Typisierung (`UINT` für die Bild-ID, `USINT` für die Farbe) ermöglicht eine strenge Prüfung durch den Compiler und erhöht die Zuverlässigkeit.
+-   **Verwendung:** Dieser STRUCT wird typischerweise als Datentyp für Ein- oder Ausgänge von Funktionsblöcken (FBs) verwendet, die mit grafischen Benutzeroberflächen oder Anzeigegeräten interagieren.
 
 ## Zustandsübersicht
 
@@ -40,9 +41,9 @@ Da es sich um einen passiven Datentyp handelt, besitzt die `SchieberAuxOutStruct
 
 Primär dient dieser Baustein zur Parametrierung von Anzeigeelementen in ISOBUS-kompatiblen Terminals (UT). Konkrete Anwendungen sind:
 
-*   Konfiguration von Schiebereglern oder Statusanzeigen in einer Bedienoberfläche.
-*   Dynamische Änderung von Symbolen und deren Hintergrund in Abhängigkeit vom Maschinenzustand (z.B. Warnung, Aktivität, Fehler).
-*   Standardisierung des Datenaustauschs zwischen Steuerungslogik und Visualisierungs-Funktionsblöcken.
+-   Konfiguration von Schiebereglern oder Statusanzeigen in einer Bedienoberfläche.
+-   Dynamische Änderung von Symbolen und deren Hintergrund in Abhängigkeit vom Maschinenzustand (z.B. Warnung, Aktivität, Fehler).
+-   Standardisierung des Datenaustauschs zwischen Steuerungslogik und Visualisierungs-Funktionsblöcken.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -56,4 +57,4 @@ Die `SchieberAuxOutStruct` ist eine essentielle, wiederverwendbare Datenkomponen
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

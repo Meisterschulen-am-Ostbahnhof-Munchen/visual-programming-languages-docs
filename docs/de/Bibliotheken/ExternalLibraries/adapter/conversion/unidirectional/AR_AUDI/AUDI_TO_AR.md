@@ -3,6 +3,7 @@
 ![AUDI_TO_AR](./AUDI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_TO_AR` ist ein zusammengesetzter Baustein (Composite FB), der eine UDINT-große Ganzzahl, die über einen unidirektionalen AUDI‑Adapter empfangen wird, in einen REAL‑Wert umwandelt und über einen unidirektionalen AR‑Adapter ausgibt. Er kapselt die Konvertierungslogik und ermöglicht so eine saubere Schnittstellenanpassung zwischen unterschiedlichen Adaptertypen.

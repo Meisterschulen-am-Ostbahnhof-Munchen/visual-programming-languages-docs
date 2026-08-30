@@ -3,6 +3,7 @@
 ![Q_BackgroundColour_AUS](./Q_BackgroundColour_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_BackgroundColour_AUS** is used to change the background color of an object in the ISOBUS Virtual Terminal (VT). It encapsulates the corresponding command interface according to ISO 11783-6 (Part 6 – F.20).
@@ -19,7 +20,7 @@ The block is supplied with the new color via a socket and returns the previous c
 ### **Event Outputs**
 
 | Name | Type | Comment | With Variables |
-|---------|-------|----------------------------------------|-----------------------------|
+| --------- | ------- | ---------------------------------------- | ----------------------------- |
 | `INITO` | EInit | Initialization Acknowledgement | – |
 | `CNF` | Event | Acknowledgement of Requested Service | `STATUS`, `s16result` |
 
@@ -32,13 +33,13 @@ The block is supplied with the new color via a socket and returns the previous c
 ### **Data Outputs**
 
 | Name | Data Type | Comment |
-|-------------|----------|---------------------------------------------------------|
+| ------------- | ---------- | --------------------------------------------------------- |
 | `STATUS` | STRING | Service status (e.g., error message or "OK") |
 | `s16result` | INT | Return value (see description – error codes) |
 
 ### **Adapter**
 
-* **Socket** `u8Colour`
+- **Socket** `u8Colour`
 
 Type: `adapter::types::unidirectional::AUS`
 
@@ -46,7 +47,7 @@ Returns the new background color (according to ISO 11783-6, A.3 VT standard colo
 
 The adapter provides both the event `E1` (to trigger the color change) and the data value `D1` (color value).
 
-* **Plug** `u8OldColour`
+- **Plug** `u8OldColour`
 
 
 Returns the previous background color after the change command has been executed.
@@ -65,32 +66,33 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 
 An event `INIT` starts the function block. The passed object ID (`u16ObjId`) is forwarded to the internal function block `Q_BackgroundColour` and initialized there. After successful initialization, `INITO` is output.
 
-2. **Triggering a Color Change**
+1. **Triggering a Color Change**
 
 As soon as an event arrives at socket `u8Colour` (via the adapter path `E1`), the internal function block is triggered with `REQ`. The color value (`u8Colour.D1`) is passed to `Q_BackgroundColour.u8Colour`.
 
-3. **Feedback**
+1. **Feedback**
 
 After the command is completed, the internal module sends a `CNF` event.
 
-* The outputs `STATUS` and `s16result` are set accordingly and are valid at the event output `CNF`.
-* Simultaneously, the previous color value (data `D1`) and an acknowledgment event (`E1`) are output via the plug `u8OldColour`.
-*
+- The outputs `STATUS` and `s16result` are set accordingly and are valid at the event output `CNF`.
+- Simultaneously, the previous color value (data `D1`) and an acknowledgment event (`E1`) are output via the plug `u8OldColour`.
+-
+
 ## Technical Features
 
-* The module implements the "Change Background Colour" command according to ISO 11783-6, section F.20.
-* The color values correspond to the VT standard color palette from Annex A.3 of the standard.
+- The module implements the "Change Background Colour" command according to ISO 11783-6, section F.20.
+- The color values correspond to the VT standard color palette from Annex A.3 of the standard.
 
-* Possible return values (`s16result`) are:
+- Possible return values (`s16result`) are:
 
-* `VT_E_NO_ERR (0)` – Success
-* `VT_E_OVERFLOW (-6)` – Buffer overflow
-* `VT_E_NOACT (-8)` – Command not possible in the current state
-* `VT_E_NO_INSTANCE (-21)` – No VT client available
-* `VT_E_ISO_INSTANCE_INVALID (-129)` – Invalid connection identifier
-* `VT_E_HANDLE_INVALID (-128)` – Invalid handle
-* `VT_E_NOT_ALIVE (-130)` – VT not reachable
-* The function block uses a unidirectional adapter (`AUS`) that combines the event and data channels – this reduces the number of interfaces.
+- `VT_E_NO_ERR (0)` – Success
+- `VT_E_OVERFLOW (-6)` – Buffer overflow
+- `VT_E_NOACT (-8)` – Command not possible in the current state
+- `VT_E_NO_INSTANCE (-21)` – No VT client available
+- `VT_E_ISO_INSTANCE_INVALID (-129)` – Invalid connection identifier
+- `VT_E_HANDLE_INVALID (-128)` – Invalid handle
+- `VT_E_NOT_ALIVE (-130)` – VT not reachable
+- The function block uses a unidirectional adapter (`AUS`) that combines the event and data channels – this reduces the number of interfaces.
 
 ## State Overview
 
@@ -103,30 +105,31 @@ The function block (FB) does not have an explicit state machine at the top level
 
 ## Application Scenarios
 
-* **ISOBUS Virtual Terminal**
+- **ISOBUS Virtual Terminal**
 
 Changing the background color of a graphical object (e.g., button, group, softkey) on the VT screen in an agricultural control system.
 
-* **HMI Customization**
+- **HMI Customization**
 
 Responding to user input or system states to dynamically adjust the visual display (e.g., alarm colors, highlighting active elements).
 
-* **Recovering the Previous Color**
+- **Recovering the Previous Color**
 
 The `u8OldColour` plugin allows you to save the previous color value or use it for later restoration.
 
-*
+-
+
 ## Comparison with Similar Function Blocks
 
-* **`Q_BackgroundColour`** (without `_AUS`):
+- **`Q_BackgroundColour`** (without `_AUS`):
 
 Offers the same core functionality, but usually with individual event/data ports instead of encapsulated adapters. The `_AUS` function block simplifies the connection to other function blocks that also use AUS adapters.
 
-* **`Q_Colour`** or **`Q_ForegroundColour`**:
+- **`Q_Colour`** or **`Q_ForegroundColour`**:
 
 Modify different color properties (foreground, full color) and use similar return values and status mechanisms.
 
-* **`Command_ChangeColour`** (more general):
+- **`Command_ChangeColour`** (more general):
 
 Could modify multiple color parameters simultaneously, while `Q_BackgroundColour_AUS` specializes in background colors.
 

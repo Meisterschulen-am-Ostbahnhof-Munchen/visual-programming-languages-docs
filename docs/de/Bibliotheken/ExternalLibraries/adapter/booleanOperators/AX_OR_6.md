@@ -3,6 +3,7 @@
 <img width="963" height="403" alt="image" src="https://github.com/user-attachments/assets/69d7eff1-3373-49b6-877a-d54f351451e1" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_OR_6 ist ein generischer Funktionsblock zur Berechnung einer logischen ODER-Verknüpfung mit sechs Eingängen. Der Baustein dient zur Verarbeitung von booleschen Signalen in Automatisierungssystemen und gibt das Ergebnis der ODER-Operation über einen Adapterausgang aus.

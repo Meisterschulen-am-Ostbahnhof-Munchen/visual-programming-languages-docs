@@ -59,7 +59,7 @@ Keine eigenen Datenausgänge – die Ausgabe des Impulszustands erfolgt über de
 Der Baustein durchläuft folgende Zustände (basierend auf dem internen Timer‑Baustein):
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Kein Impuls aktiv; **Q.D1** = `FALSE`. |
 | **RUNNING** | Impuls aktiv; **Q.D1** = `TRUE`. Der Timer läuft für die Dauer **PT**. Bei erneutem Trigger wird der Timer zurückgesetzt (bleibt im Zustand RUNNING). |
 | **TIMEOUT** | Impuls beendet; Wechsel zurück zu IDLE. |
@@ -76,7 +76,7 @@ Hinweis: Der Reset (Ereignis **R**) führt immer sofort in den Zustand IDLE.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | **AX_TP_RETRIG** | Retriggerbarer Puls-Timer mit AX‑Adapter. |
 | **E_TP** (Standard IEC 61499) | Einfacher Puls-Timer, nicht retriggerbar – ein erneuter Start während des Impulses wird ignoriert. |
 | **E_TP_RETRIG** | Retriggerbare Version ohne Adapter (reine Event/Daten‑Schnittstelle). |

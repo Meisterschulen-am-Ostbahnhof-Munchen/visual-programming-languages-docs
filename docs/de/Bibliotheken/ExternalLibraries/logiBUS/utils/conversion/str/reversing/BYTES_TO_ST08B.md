@@ -5,6 +5,7 @@
 ![BYTES_TO_ST08B](./BYTES_TO_ST08B.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Funktionsbaustein dient dazu, acht individuelle BYTE-Werte zu einer einzigen 8-BYTE-Struktur vom Typ `ST08B` zusammenzuführen. Er ermöglicht eine geordnete Überführung von diskreten Byte-Werten in ein strukturiertes Datenformat.
@@ -13,40 +14,40 @@ Dieser Funktionsbaustein dient dazu, acht individuelle BYTE-Werte zu einer einzi
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Typ: `Event`)
-    *   Verbindet die Aktivierung des Bausteins mit den Daten-Eingängen: `IN_00`, `IN_01`, `IN_02`, `IN_03`, `IN_04`, `IN_05`, `IN_06`, `IN_07`.
-    *   Löst die Konvertierung der Eingangs-BYTES in die `ST08B`-Struktur aus.
+-   **REQ** (Typ: `Event`)
+    -   Verbindet die Aktivierung des Bausteins mit den Daten-Eingängen: `IN_00`, `IN_01`, `IN_02`, `IN_03`, `IN_04`, `IN_05`, `IN_06`, `IN_07`.
+    -   Löst die Konvertierung der Eingangs-BYTES in die `ST08B`-Struktur aus.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Typ: `Event`)
-    *   Wird nach erfolgreicher Konvertierung ausgelöst.
-    *   Signalisiert die Verfügbarkeit des konvertierten Werts am Daten-Ausgang `OUT`.
+-   **CNF** (Typ: `Event`)
+    -   Wird nach erfolgreicher Konvertierung ausgelöst.
+    -   Signalisiert die Verfügbarkeit des konvertierten Werts am Daten-Ausgang `OUT`.
 
 ### **Daten-Eingänge**
 
-*   **IN_00** (Typ: `BYTE`)
-    *   Kommentar: BYTE 00
-*   **IN_01** (Typ: `BYTE`)
-    *   Kommentar: BYTE 01
-*   **IN_02** (Typ: `BYTE`)
-    *   Kommentar: BYTE 02
-*   **IN_03** (Typ: `BYTE`)
-    *   Kommentar: BYTE 03
-*   **IN_04** (Typ: `BYTE`)
-    *   Kommentar: BYTE 04
-*   **IN_05** (Typ: `BYTE`)
-    *   Kommentar: BYTE 05
-*   **IN_06** (Typ: `BYTE`)
-    *   Kommentar: BYTE 06
-*   **IN_07** (Typ: `BYTE`)
-    *   Kommentar: BYTE 07
+-   **IN_00** (Typ: `BYTE`)
+    -   Kommentar: BYTE 00
+-   **IN_01** (Typ: `BYTE`)
+    -   Kommentar: BYTE 01
+-   **IN_02** (Typ: `BYTE`)
+    -   Kommentar: BYTE 02
+-   **IN_03** (Typ: `BYTE`)
+    -   Kommentar: BYTE 03
+-   **IN_04** (Typ: `BYTE`)
+    -   Kommentar: BYTE 04
+-   **IN_05** (Typ: `BYTE`)
+    -   Kommentar: BYTE 05
+-   **IN_06** (Typ: `BYTE`)
+    -   Kommentar: BYTE 06
+-   **IN_07** (Typ: `BYTE`)
+    -   Kommentar: BYTE 07
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (Typ: `logiBUS::utils::conversion::types::ST08B`)
-    *   Kommentar: ST08B Output
-    *   Gibt die aus den acht Eingangs-Bytes erstellte 8-Byte-Struktur aus.
+-   **OUT** (Typ: `logiBUS::utils::conversion::types::ST08B`)
+    -   Kommentar: ST08B Output
+    -   Gibt die aus den acht Eingangs-Bytes erstellte 8-Byte-Struktur aus.
 
 ### **Adapter**
 
@@ -66,10 +67,10 @@ Der `BYTES_TO_ST08B`-Baustein ist ein rein kombinatorischer Funktionsbaustein. E
 
 ## Anwendungsszenarien
 
-*   **Datenpaket-Assemblierung:** Zusammenfügen von einzelnen Byte-Komponenten zu einem fest definierten Datenpaket, z.B. für die Kommunikation über serielle Schnittstellen oder Netzwerke.
-*   **Interfacing mit Protokollen:** Anpassung von Daten an Kommunikationsprotokolle, die spezifische 8-Byte-Strukturen erwarten.
-*   **Datentyp-Konvertierung:** Umwandlung von Raw-Byte-Daten in einen höherwertigen, strukturierten Datentyp zur besseren Handhabung und Lesbarkeit innerhalb der Applikation.
-*   **Hardware-Anbindung:** Wenn Daten von Sensoren oder Aktoren byteweise gelesen werden und zu einer festen Struktur aggregiert werden müssen.
+-   **Datenpaket-Assemblierung:** Zusammenfügen von einzelnen Byte-Komponenten zu einem fest definierten Datenpaket, z.B. für die Kommunikation über serielle Schnittstellen oder Netzwerke.
+-   **Interfacing mit Protokollen:** Anpassung von Daten an Kommunikationsprotokolle, die spezifische 8-Byte-Strukturen erwarten.
+-   **Datentyp-Konvertierung:** Umwandlung von Raw-Byte-Daten in einen höherwertigen, strukturierten Datentyp zur besseren Handhabung und Lesbarkeit innerhalb der Applikation.
+-   **Hardware-Anbindung:** Wenn Daten von Sensoren oder Aktoren byteweise gelesen werden und zu einer festen Struktur aggregiert werden müssen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

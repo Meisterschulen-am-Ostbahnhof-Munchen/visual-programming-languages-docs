@@ -3,9 +3,11 @@
 ![Uebung_014_AXb_network](./Uebung_014_AXb_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of softkeys in combination with an SR flip-flop to show and hide a graphical object (Container_B). The function block monitors the key presses of the softkeys F1 (Set) and F2 (Reset) and controls the container's visibility via an SR gate. The associated constants *Container_B*, *SoftKey_F1*, and *SoftKey_F2* are imported from a global pool.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Exercise_014_AXb
@@ -53,6 +55,6 @@ This exercise implements a simple yet practical control pattern for visualizatio
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

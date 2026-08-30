@@ -3,6 +3,7 @@
 ![ADI_TO_ALR](./ADI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_ALR** ist ein zusammengesetzter Baustein (Composite FB), der einen ADI‑Adapter (Datentyp DINT) in einen ALR‑Adapter (Datentyp LREAL) umwandelt. Er dient als unidirektionaler Konverter zwischen zwei standardisierten Adapter‑Schnittstellen und ermöglicht die nahtlose Integration von ganzzahligen Werten in Systeme, die Gleitkommazahlen benötigen.
@@ -11,22 +12,22 @@ Der Funktionsblock **ADI_TO_ALR** ist ein zusammengesetzter Baustein (Composite 
 
 ### **Ereignis-Eingänge**
 
-- Keine dedizierten Ereignis-Eingänge vorhanden.  
+- Keine dedizierten Ereignis-Eingänge vorhanden.
   Die Ereignisweiterleitung erfolgt über den Adapter **ADI_IN** (siehe Adapter‑Abschnitt).
 
 ### **Ereignis-Ausgänge**
 
-- Keine dedizierten Ereignis-Ausgänge vorhanden.  
+- Keine dedizierten Ereignis-Ausgänge vorhanden.
   Das Ereignis wird über den Adapter **ALR_OUT** ausgegeben (siehe Adapter‑Abschnitt).
 
 ### **Daten-Eingänge**
 
-- Keine dedizierten Daten-Eingänge vorhanden.  
+- Keine dedizierten Daten-Eingänge vorhanden.
   Der zu konvertierende Wert wird über den Adapter **ADI_IN** bereitgestellt (siehe Adapter‑Abschnitt).
 
 ### **Daten-Ausgänge**
 
-- Keine dedizierten Daten-Ausgänge vorhanden.  
+- Keine dedizierten Daten-Ausgänge vorhanden.
   Der konvertierte Wert wird über den Adapter **ALR_OUT** ausgegeben (siehe Adapter‑Abschnitt).
 
 ### **Adapter**
@@ -82,4 +83,4 @@ Der vorliegende Baustein zeichnet sich durch seine **einfache Adapter‑orientie
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

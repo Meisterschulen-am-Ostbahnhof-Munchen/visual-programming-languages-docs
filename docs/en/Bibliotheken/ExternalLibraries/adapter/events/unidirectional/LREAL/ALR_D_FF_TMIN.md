@@ -3,9 +3,11 @@
 ![ALR_D_FF_TMIN](./ALR_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALR_D_FF_TMIN** implements a clock-edge-triggered data latch flip-flop (D flip-flop) with a minimum inter-disposal time (MIT) between two consecutive event outputs. It enables the latching of a data value upon receiving an event and ensures that the output event pulse does not occur faster than a definable time interval. This is particularly useful for protecting downstream systems from overload or for maintaining minimum time intervals in event communication.
+
 ## Interface Structure
 
 ### **Event Inputs**

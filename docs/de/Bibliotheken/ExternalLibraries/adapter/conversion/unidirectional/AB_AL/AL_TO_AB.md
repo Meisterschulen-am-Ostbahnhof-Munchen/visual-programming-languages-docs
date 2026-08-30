@@ -3,6 +3,7 @@
 ![AL_TO_AB](./AL_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_TO_AB** ist ein Composite-FB, der eine unidirektionale Konvertierung von einem LWORD-Adapter (AL) zu einem BYTE-Adapter (AB) ermöglicht. Er wird eingesetzt, um Daten eines LWORD-basierten Adapters in das Format eines BYTE-Adapters zu überführen, wobei die Konvertierung intern durch den IEC‑61131‑3-Baustein `F_LWORD_TO_BYTE` realisiert wird.
@@ -51,7 +52,7 @@ Der Funktionsblock besitzt keinen eigenen Zustandsautomaten. Die gesamte Ablaufs
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | `LWORD_TO_BYTE` | Reine Datentypkonvertierung ohne Adapter | Keine Adapter‑Schnittstelle; direkte Daten‑ und Ereignisports |
 | `AB_TO_AL` | Umgekehrte Konvertierung (BYTE → LWORD) | Gegensätzliche Richtung; ebenfalls Composite mit Adaptern |
 | `WORD_TO_BYTE` | Konvertierung von WORD (16 Bit) zu BYTE | Anderer Datentyp; ähnliche Struktur, aber andere Adaptertypen |

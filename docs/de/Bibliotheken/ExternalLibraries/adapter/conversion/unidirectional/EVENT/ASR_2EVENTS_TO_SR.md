@@ -3,6 +3,7 @@
 <img width="1224" height="249" alt="image" src="https://github.com/user-attachments/assets/67d010cb-b034-4855-bc18-d9a6b1015a81" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ASR_2EVENTS_TO_SR ist ein Composite-Funktionsblock, der zwei separate Ereignisse in ein ASR-Signal (Set-Reset) umwandelt. Er dient als Brücke zwischen ereignisbasierten Steuerungssignalen und dem ASR-Adapterformat.
@@ -58,7 +59,7 @@ Im Vergleich zu einfachen Ereignis-Funktionsblöcken bietet ASR_2EVENTS_TO_SR ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
+- [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
 

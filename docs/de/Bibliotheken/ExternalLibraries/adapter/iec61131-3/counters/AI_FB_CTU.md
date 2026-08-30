@@ -3,6 +3,7 @@
 ![AI_FB_CTU](./AI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AI_FB_CTU** ist ein Aufwärtszähler (Up Counter) für Ganzzahlen (INT), der die IEC 61131-3 Funktionalität eines CTU (Counter Up) in einer adapterbasierten Bauform kapselt. Er ist speziell für die Verwendung in der 4diac-IDE konzipiert und erlaubt eine modulare Anbindung über unidirektionale Adapter-Schnittstellen. Der Baustein feuert bei jeder Aktualisierung seiner Eingänge (CU, R, PV) ein Bestätigungsereignis, wodurch er sich für zeitgesteuerte oder ereignisgesteuerte Zählaufgaben eignet.
@@ -44,12 +45,12 @@ Alle Dateneingänge werden über die Adapter-Sockets bereitgestellt:
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
-| CU   | adapter::types::unidirectional::AX | Socket (Eingang) | Ereignis- und Datenadapter für den Zählimpuls |
-| R    | adapter::types::unidirectional::AX | Socket (Eingang) | Ereignis- und Datenadapter für das Rücksetzen |
-| PV   | adapter::types::unidirectional::AI | Socket (Eingang) | Datenadapter (nur Wert, kein Ereignis) für den Preset-Wert |
-| Q    | adapter::types::unidirectional::AX | Plug (Ausgang) | Ereignis- und Datenadapter für den Zählerausgang |
-| CV   | adapter::types::unidirectional::AI | Plug (Ausgang) | Datenadapter (nur Wert) für den aktuellen Zählerstand |
+| ------ | ----- | ---------- | -------------- |
+| CU | adapter::types::unidirectional::AX | Socket (Eingang) | Ereignis- und Datenadapter für den Zählimpuls |
+| R | adapter::types::unidirectional::AX | Socket (Eingang) | Ereignis- und Datenadapter für das Rücksetzen |
+| PV | adapter::types::unidirectional::AI | Socket (Eingang) | Datenadapter (nur Wert, kein Ereignis) für den Preset-Wert |
+| Q | adapter::types::unidirectional::AX | Plug (Ausgang) | Ereignis- und Datenadapter für den Zählerausgang |
+| CV | adapter::types::unidirectional::AI | Plug (Ausgang) | Datenadapter (nur Wert) für den aktuellen Zählerstand |
 
 ## Funktionsweise
 
@@ -85,7 +86,7 @@ Der Baustein hat keine eigenen sequentiellen Zustände jenseits dieser Datenabh�
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | **AI_FB_CTU** | Adapter-basiert, verwendet IEC 61131-3 CTU, löst bei jedem Eingang aus |
 | **Standard CTU (IEC 61131)** | Eingänge als Events + Daten, kein Adapterkonzept, oft direkt an Hardware gebunden |
 | **CTUD (Auf-/Abwärtszähler)** | Bietet zusätzlich Abwärtszählen, hat komplexere Schnittstelle |
@@ -101,4 +102,4 @@ Der **AI_FB_CTU** ist ein praktischer Zählerbaustein für die adapterbasierte A
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

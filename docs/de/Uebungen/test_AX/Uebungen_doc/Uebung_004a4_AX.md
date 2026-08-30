@@ -20,10 +20,10 @@ Das Ziel ist das Verständnis der sequenziellen Event-Verarbeitung. In IEC 61499
 
 ![Uebung_004a4_AX_network](./Uebung_004a4_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Der Event-Generator (Taster).
-  * **`E_SPLIT`**: Ein Event-Verteiler. Er hat einen Eingang `EI` und zwei Ausgänge `EO1` und `EO2`.
-  * **`E_T_FF_Q1` & `Q2`**: Zwei unabhängige Flip-Flops.
-  * **`DigitalOutput_Q1` & `Q2`**: Zwei Lampen.
+  - **`DigitalInput_CLK_I1`**: Der Event-Generator (Taster).
+  - **`E_SPLIT`**: Ein Event-Verteiler. Er hat einen Eingang `EI` und zwei Ausgänge `EO1` und `EO2`.
+  - **`E_T_FF_Q1` & `Q2`**: Zwei unabhängige Flip-Flops.
+  - **`DigitalOutput_Q1` & `Q2`**: Zwei Lampen.
 
 -----
 

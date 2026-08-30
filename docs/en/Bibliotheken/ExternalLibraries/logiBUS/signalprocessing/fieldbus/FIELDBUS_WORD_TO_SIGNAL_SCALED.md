@@ -3,29 +3,31 @@
 ![FIELDBUS_WORD_TO_SIGNAL_SCALED](./FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_WORD_TO_SIGNAL_SCALED** is used to convert a digital fieldbus raw value (16-bit WORD) into a scaled physical signal value (REAL). A valid output is only provided if the incoming value is recognized as a valid signal. The block checks the validity against a predefined constant (`VALID_SIGNAL_W`) and can reliably suppress unsafe or "unavailable" values.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Description |
-|----------|-------------|
+| ---------- | ------------- |
 | `INIT` | Initialization request; sets the scaling factors (`SCALE`, `OFFSET`). |
 | `REQ` | Normal processing request; evaluates the current input `IN`. |
 
 ### **Event Outputs**
 
 | Event | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | `INITO` | Initialization confirmation. |
 | `CNF` | Processing confirmation; signals that outputs `OUT` and `VALID` have been updated. |
 
 ### **Data Inputs**
 
 | Name | Data Type | Default Value | Description |
-|---------|----------|-----------------|-------------|
+| --------- | ---------- | ----------------- | ------------- |
 | `IN` | WORD | `NOT_AVAILABLE_WM` | Raw value from the fieldbus (e.g., 0…65535). The constant `NOT_AVAILABLE_WM` indicates an invalid starting value. |
 | `SCALE` | REAL | `1.0` | Scaling factor (multiplied by the read value). |
 | `OFFSET` | DINT | `0` | Integer offset added after scaling (converted to REAL). |
@@ -33,7 +35,7 @@ The function block **FIELDBUS_WORD_TO_SIGNAL_SCALED** is used to convert a digit
 ### **Data Outputs**
 
 | Name | Data Type | Default Value | Description |
-|---------|----------|-------------|-------------|
+| --------- | ---------- | ------------- | ------------- |
 | `OUT` | REAL | `0.0` | Scaled signal value. Valid only if `VALID = TRUE`. |
 | `VALID` | BOOL | `FALSE` | Validation flag – `TRUE`, if the incoming raw value is recognized as a valid signal. |
 
@@ -49,7 +51,7 @@ The module operates in a state-controlled manner:
 
 After the `INIT` event occurs, the initialization algorithm (empty) is executed and the `INITO` event is output. The scaling factors are then applied to the inputs `SCALE` and `OFFSET` (the values are already present at the inputs).
 
-2. **REQ State** (Main Logic):
+1. **REQ State** (Main Logic):
 
 For each `REQ` event, the following algorithm is executed:
 
@@ -81,7 +83,7 @@ The comparison value `VALID_SIGNAL_W` and the default input value `NOT_AVAILABLE
 ## State Overview
 
 | State | Content | Action | Output Event |
-|---------|--------|--------|-----------------|
+| --------- | -------- | -------- | ----------------- |
 | `INIT` | Initialization (empty algorithm) | – | `INITO` |
 | `REQ` | Signal Processing | Calculation of `OUT` and `VALID` | `CNF` |
 
@@ -96,7 +98,7 @@ The function block (FB) has no further states; after each event, it returns to t
 ## Comparison with Similar Function Blocks
 
 | Function Block | Differences |
-|----------|-------------|
+| ---------- | ------------- |
 | **FIELDBUS_WORD_TO_SIGNAL** (without scaling) | Maps the raw value 1:1, without multiplication/addition. |
 | **WORD_TO_REAL** (standard IEC function block) | Pure type conversion without validation or scaling. |
 | **SCALING_FB** | Usually with separate validation and scaling branches; this function block combines both in one step. |
@@ -111,6 +113,6 @@ This function block offers a compact and robust solution for processing fieldbus
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -28,10 +28,10 @@ Die Konstanten werden beim Kompilieren des Projekts definiert. Jede Konstante er
 
 ## Technische Besonderheiten
 
-*   **Typ:** Alle Konstanten sind vom Typ `WSTRING`, der Unicode-Zeichenketten unterstützt.
-*   **Gültigkeitsbereich:** Als globale Konstanten sind sie innerhalb des deklarierten Pakets (`logiBUS::stations`) verfügbar.
-*   **Initialisierung:** Die Werte werden direkt bei der Deklaration zugewiesen und sind zur Laufzeit schreibgeschützt.
-*   **Verwendung:** Sie sind typischerweise für die Konfiguration von Kommunikationsbausteinen (z.B. `PUBLISH`, `SUBSCRIBE`, `CLIENT`, `SERVER`) vorgesehen, wo die Adresse des Kommunikationspartners benötigt wird.
+-   **Typ:** Alle Konstanten sind vom Typ `WSTRING`, der Unicode-Zeichenketten unterstützt.
+-   **Gültigkeitsbereich:** Als globale Konstanten sind sie innerhalb des deklarierten Pakets (`logiBUS::stations`) verfügbar.
+-   **Initialisierung:** Die Werte werden direkt bei der Deklaration zugewiesen und sind zur Laufzeit schreibgeschützt.
+-   **Verwendung:** Sie sind typischerweise für die Konfiguration von Kommunikationsbausteinen (z.B. `PUBLISH`, `SUBSCRIBE`, `CLIENT`, `SERVER`) vorgesehen, wo die Adresse des Kommunikationspartners benötigt wird.
 
 ## Zustandsübersicht
 
@@ -45,9 +45,9 @@ Die Konstanten werden beim Kompilieren des Projekts definiert. Jede Konstante er
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`VAR_GLOBAL` (Globale Variablen):** Im Gegensatz zu globalen Variablen können Konstanten (`CONSTANT`) nach der Initialisierung nicht mehr verändert werden. Sie bieten somit höhere Programmsicherheit.
-*   **`VAR_CONFIG` (Konfigurationsvariablen):** Konfigurationsvariablen sind ebenfalls Konstanten, die jedoch pro Ressource konfiguriert werden können. Die hier definierten globalen Konstanten haben einen festen, projekteinheitlichen Wert.
-*   **Direkte Wertangabe:** Der direkte Einsatz von Zeichenketten-Literalen im Code ist möglich, führt aber zu schlechterer Wartbarkeit und höherer Fehleranfälligkeit im Vergleich zur Verwendung zentraler Konstanten.
+-   **`VAR_GLOBAL` (Globale Variablen):** Im Gegensatz zu globalen Variablen können Konstanten (`CONSTANT`) nach der Initialisierung nicht mehr verändert werden. Sie bieten somit höhere Programmsicherheit.
+-   **`VAR_CONFIG` (Konfigurationsvariablen):** Konfigurationsvariablen sind ebenfalls Konstanten, die jedoch pro Ressource konfiguriert werden können. Die hier definierten globalen Konstanten haben einen festen, projekteinheitlichen Wert.
+-   **Direkte Wertangabe:** Der direkte Einsatz von Zeichenketten-Literalen im Code ist möglich, führt aber zu schlechterer Wartbarkeit und höherer Fehleranfälligkeit im Vergleich zur Verwendung zentraler Konstanten.
 
 ## Fazit
 
@@ -57,4 +57,4 @@ Die Globalkonstanten `Computers` sind ein einfaches, aber äußerst nützliches 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

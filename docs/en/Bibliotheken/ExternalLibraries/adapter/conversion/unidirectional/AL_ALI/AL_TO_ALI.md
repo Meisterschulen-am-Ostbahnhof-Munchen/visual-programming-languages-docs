@@ -3,9 +3,11 @@
 ![AL_TO_ALI](./AL_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AL_TO_ALI` is a composite function block (FB) for converting an AL adapter (LWORD) to an ALI adapter (LINT). It serves as an interface between LWORD-based and LINT-based data communication within the control logic. Internally, the block uses the conversion block `F_LWORD_TO_LINT` to perform the actual type conversion.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block `AL_TO_ALI` is a composite function block (FB) for converting
 ### **Adapters**
 
 | Type | Name | Direction | Data Type | Description |
-|-----|------|----------|-----------|-------------|
+| ----- | ------ | ---------- | ----------- | ------------- |
 | `adapter::types::unidirectional::AL` | `AL_IN` | Socket (Input) | LWORD | LWORD adapter as input interface. Provides the data to be converted. |
 | `adapter::types::unidirectional::ALI` | `ALI_OUT` | Plug (Output) | LINT | LINT adapter as output interface. Delivers the converted data. |
 
@@ -73,4 +75,4 @@ The `AL_TO_ALI` function block is a simple yet important converter that bridges 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

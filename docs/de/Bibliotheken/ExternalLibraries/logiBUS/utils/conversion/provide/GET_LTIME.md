@@ -3,6 +3,7 @@
 ![GET_LTIME](./GET_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **GET_LTIME** dient dazu, den aktuellen Wert einer LTIME-Variablen auszulesen und als gepufferten Ausgangswert bereitzustellen. Er greift über eine InOut-Schnittstelle auf die Quelle zu und stellt den gelesenen Wert am Ausgang zur Verfügung, sobald ein Ereignis eintrifft. Dies ermöglicht ein kontrolliertes, einmaliges Auslesen einer Zeitvariablen.

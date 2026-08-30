@@ -3,6 +3,7 @@
 ![AL_TO_AULI](./AL_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_TO_AULI** is a composite function block (FB) that performs a data type conversion from an **AL adapter** (type `LWORD`) to an **AULI adapter** (type `ULINT`).
@@ -77,6 +78,6 @@ The **AL_TO_AULI** function block offers a simple and robust way to convert LWOR
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

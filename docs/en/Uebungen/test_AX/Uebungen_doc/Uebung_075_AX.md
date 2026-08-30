@@ -3,12 +3,14 @@
 ![Uebung_075_AX_network](./Uebung_075_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the control of digital outputs via an ISOBUS lighting adapter. The sub-app element "Exercise_075_AX" processes the turn signal signals (right/left) of a vehicle and forwards them to corresponding digital outputs (e.g., logiBUS outputs). The comment "LD to Q" indicates the transmission of lighting data (LD) to the outputs (Q).
+
 ## Function Blocks (FBs) Used
 
-### Sub-Blocks:
+### Sub-Blocks
 
 #### IA_Lighting
 
@@ -37,11 +39,12 @@ Wiring within the SubApp network is done exclusively via **adapter connections**
 
 1. The module `IA_Lighting` receives the turn signal commands (from a higher-level application) and makes them available at its adapter outputs.
 2. The connection
+
 - **`IA_Lighting.RIGHT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q1.OUT`**
 routes the signal for the right turn signal to digital output Q1.
 
 - **`IA_Lighting.LEFT_TURN_SIGNAL_LIGHTS` → `DigitalOutput_Q2.OUT`** routes the signal for the left turn signal to digital output Q2.
-3. The third output module, `DigitalOutput_Q3`, remains unused in this exercise (it can be used as a spare or for future expansion).
+1. The third output module, `DigitalOutput_Q3`, remains unused in this exercise (it can be used as a spare or for future expansion).
 
 Thanks to the adapter technology, complex parameter transfer is eliminated – signal propagation is standardized and automatic.
 
@@ -62,6 +65,6 @@ Exercise "Exercise_075_AX" demonstrates how an ISOBUS lighting adapter controls 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

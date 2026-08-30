@@ -3,9 +3,11 @@
 ![FIELDBUS_LWORD_TO_SIGNAL](./FIELDBUS_LWORD_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_LWORD_TO_SIGNAL** converts an LWORD value from a fieldbus system into a valid signal. It accepts an input value and passes it on unchanged only if its value lies within a defined valid range. Otherwise, a zero value is output, and the validity is signaled as `FALSE`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ The function block **FIELDBUS_LWORD_TO_SIGNAL** converts an LWORD value from a f
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Comment |
-|-------|--------|----------------------------------|-----------|
+| ------- | -------- | ---------------------------------- | ----------- |
 | OUT | LWORD | `LWORD#16#0000000000000000` | Filtered output value (0 for invalid signal) |
 | VALID | BOOL | `FALSE` | Validation flag (`TRUE` if signal is valid) |
 
@@ -45,13 +47,14 @@ The function block is activated by an event at the input `REQ`. The current valu
 
 1. The incoming LWORD value is converted into an unsigned integer (ULINT).
 2. This value is compared to a constant `VALID_SIGNAL_LW`, also interpreted as a ULINT.
+
 - If the input value is **less than or equal to** this threshold, the signal is considered valid:
 - `OUT` receives the value of `IN`.
 - `VALID` is set to `TRUE`.
 - Otherwise (value greater than threshold), the signal is considered invalid:
 - `OUT` is set to zero (`LWORD#16#0000000000000000`).
 - `VALID` is set to `FALSE`.
-3. After processing is complete, the event `CNF` is output to confirm completion.
+1. After processing is complete, the event `CNF` is output to confirm completion.
 
 The constant `VALID_SIGNAL_LW` defines the upper limit of the valid value range. Common values are, for example, `LWORD#16#0000FFFFFFFFFFFF` or similar ranges specified by the fieldbus protocol.
 

@@ -3,6 +3,7 @@
 ![ALR_ADD_2](./ALR_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_ADD_2` is a generic, arithmetic addition block for the 4diac IDE, compliant with the IEC 61131-3 standard. It is used to mathematically add two input values. The special feature of this block lies in the use of unidirectional adapters (`ALR`), which encapsulate both the data and the associated control logic to enable clean and modular signal processing.
@@ -29,12 +30,12 @@ The function block `ALR_ADD_2` is a generic, arithmetic addition block for the 4
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALR`): The first addend of the addition operation.
-* **IN2** (Type: `adapter::types::unidirectional::ALR`): The second addend of the addition operation.
+- **IN1** (Type: `adapter::types::unidirectional::ALR`): The first addend of the addition operation.
+- **IN2** (Type: `adapter::types::unidirectional::ALR`): The second addend of the addition operation.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALR`): The result of the addition ($OUT = IN1 + IN2$).
+- **OUT** (Type: `adapter::types::unidirectional::ALR`): The result of the addition ($OUT = IN1 + IN2$).
 
 ---
 
@@ -50,10 +51,11 @@ The calculated result is then forwarded via the output adapter `OUT`, along with
 
 ## Technical Features
 
-* **Generic Type (`GEN_ALR_ADD`):** The function block is implemented in a data-type-independent manner and adapts to the data types defined in the ALR adapter.
-* **Adapter Encapsulation:** By using unidirectional adapters, the number of visible connections in the 4diac IDE's control flow diagram is drastically reduced, thus improving the clarity and maintainability of the overall system.
-* **Compliance:** Complies with the mathematical standards according to IEC 61131-3 for standard arithmetic functions.
-* ---
+- **Generic Type (`GEN_ALR_ADD`):** The function block is implemented in a data-type-independent manner and adapts to the data types defined in the ALR adapter.
+- **Adapter Encapsulation:** By using unidirectional adapters, the number of visible connections in the 4diac IDE's control flow diagram is drastically reduced, thus improving the clarity and maintainability of the overall system.
+- **Compliance:** Complies with the mathematical standards according to IEC 61131-3 for standard arithmetic functions.
+
+- ---
 
 ## State Overview
 
@@ -63,9 +65,9 @@ Since the logic of this function block operates purely data- and event-driven vi
 
 ## Application Scenarios
 
-* **Signal Combining:** Addition of two analog sensor values (e.g., determining a total volume flow rate from two individual flow meters).
-* **Setpoint Offset Calculation:** Applying a correction offset to a base setpoint in process engineering plants.
-* **Compact Programming:** Use in complex control loops where clear routing via adapters is preferred.
+- **Signal Combining:** Addition of two analog sensor values (e.g., determining a total volume flow rate from two individual flow meters).
+- **Setpoint Offset Calculation:** Applying a correction offset to a base setpoint in process engineering plants.
+- **Compact Programming:** Use in complex control loops where clear routing via adapters is preferred.
 
 ---
 

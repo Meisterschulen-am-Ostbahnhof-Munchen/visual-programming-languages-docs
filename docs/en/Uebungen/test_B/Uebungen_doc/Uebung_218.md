@@ -3,6 +3,7 @@
 ![Uebung_218_network](./Uebung_218_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a downcounter according to IEC 61131-3 (type `FB_CTD_UDINT`). The function block counts down on each falling edge at the input `CD` (Count Down), starting from the preset value `PV` (Preset Value). The counter can be reset to the starting value via a load input (`LD`). The current counter reading (`CV`) is output to a terminal, and the output `Q` is set as soon as the counter reading reaches zero.
@@ -11,7 +12,7 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 ## Function Blocks (FBs) Used
 
 | FB Name | Type | Description |
-|---------|-----|---------------|
+| --------- | ----- | --------------- |
 | `FB_CTD_UDINT` | `iec61131::counters::FB_CTD_UDINT` | IEC 61131-3 reverse counter with inputs `CD`, `LD`, `PV` and outputs `Q` and `CV`. Parameter: `PV = UDINT#10` (start value 10). |
 | `Input_CD` | `logiBUS::io::DI::logiBUS_IX` | Digital input for the counting signal (pushbutton I1). Parameters: `QI=TRUE`, `Input=Input_I1`. |
 | `Input_LD` | `logiBUS::io::DI::logiBUS_IX` | Digital input for charging the counter (button I2). Parameters: `QI=TRUE`, `Input=Input_I2`. |
@@ -25,9 +26,11 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 ### Event Control
 
 1. **Event Source:**
+
 - `Input_CD.IND` (signal from button I1) is connected to `FB_CTD_UDINT.REQ`.
 - `Input_LD.IND` (signal from button I2) is also connected to `FB_CTD_UDINT.REQ`.
-2. **Event Sink:**
+1. **Event Sink:**
+
 - `FB_CTD_UDINT.CNF` (counter confirmation) triggers two actions:
 - `Output_Q1.REQ` (digital output Q1 is updated).
 - `Q_NumericValue.REQ` (Terminal display update).
@@ -35,7 +38,7 @@ The hardware connection is established via two digital inputs (I1, I2) and one d
 ### Data Flows
 
 | Source | Destination | Meaning |
-|--------|------|-----------|
+| -------- | ------ | ----------- |
 | `Input_CD.IN` | `FB_CTD_UDINT.CD` | Button I1 as a counting pulse (count down). |
 | `Input_LD.IN` | `FB_CTD_UDINT.LD` | Button I2 as a charging signal (set to PV). |
 | `FB_CTD_UDINT.Q` | `Output_Q1.OUT` | Output Q1 becomes active as soon as the counter reading is 0. |
@@ -65,6 +68,6 @@ Exercise 218 implements a complete down counter using the IEC 61131-3 standard m
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

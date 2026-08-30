@@ -3,9 +3,10 @@
 ![AD_SPLIT_7](./AD_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
-The function block **AD_SPLIT_7** is a generic function block for splitting an incoming adapter of type `AD` (unidirectional) into seven separate output adapters. It allows a single adapter signal to be forwarded in parallel to multiple downstream components without modifying or buffering the data. The function block is specifically designed for use in control engineering (e.g., agricultural machinery) and is licensed under the Eclipse Public License 2.0.
+The function block **AD_SPLIT_7** is a generic function block for splitting an incoming adapter of type `AD` (unidirectional) into seven separate output adapters. It allows a single adapter signal to be forwarded in parallel to multiple downstream components without modifying or buffering the data. The function block is specifically designed for use in control engineering (e.g., agricultural machinery) and is licensed under the Eclipse Public License 2.0
 ---
 
 ## Interface Structure
@@ -29,7 +30,7 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AD` | Receives the adapter signal to be distributed. |
 | Plug (Output) 1 | `OUT1` | `adapter::types::unidirectional::AD` | First output – identical copy of the input signal. |
 | Plug (Output) 2 | `OUT2` | `adapter::types::unidirectional::AD` | Second output. |
@@ -74,7 +75,7 @@ The function block has no states or state machines. Its behavior is purely combi
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Special Feature |
-----------|-----------------|--------------|
+---------- | ----------------- | -------------- |
 | `AD_SPLIT_2` | 2 | Simple 1:2 distribution |
 | `AD_SPLIT_4` | 4 | Typical for 4-channel systems |
 | **`AD_SPLIT_7`** | **7** | Extended distribution for seven parallel paths |
@@ -97,6 +98,6 @@ AD_SPLIT_7` is a simple yet useful function block for passive signal duplication
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

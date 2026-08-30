@@ -3,6 +3,7 @@
 ![initval_ALI](initval_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_ALI` ist der konfigurierbare Initialisierungsbaustein für den [ALI](../ALI.md)-Adapter (Datentyp `LINT`, 64-Bit-Ganzzahl (vorzeichenbehaftet)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `ALI`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

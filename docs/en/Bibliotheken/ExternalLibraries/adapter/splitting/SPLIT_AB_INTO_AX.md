@@ -3,9 +3,11 @@
 ![SPLIT_AB_INTO_AX](./SPLIT_AB_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AB_INTO_AX** splits a byte received via a unidirectional AB adapter into its eight individual bits and provides these via separate AX adapters. The bits are transferred using clock-controlled D flip-flops, ensuring that the output values remain stable until a new byte is processed.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ This function block does not have explicit event outputs at the top level. Resul
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|------------------------------|----------|--------------------------------------------|
+| --------- | ------------------------------ | ---------- | -------------------------------------------- |
 | IN | adapter::types::unidirectional::AB | Socket (Input) | BYTE value, decomposed into individual bits |
 | BIT_00 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 0 (LSB) |
 | BIT_01 | adapter::types::unidirectional::AX | Plug (Output) | Boolean value of bit 1 |

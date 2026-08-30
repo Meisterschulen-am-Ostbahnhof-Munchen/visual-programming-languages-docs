@@ -3,6 +3,7 @@
 ![Uebung_074_AUI_network](./Uebung_074_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Ausgabe der Drehzahl der hinteren Zapfwelle (Rear PTO) auf ein User Terminal (UT) unter Verwendung von Adaptern. Sie implementiert eine sogenannte „Fendt-Schaltung“, die bei einem Timeout des PTO-Signals auf dem UT den Wert 0 anzeigt. Dadurch wird ein sicheres Verhalten bei Sensorausfall oder Kommunikationsstörungen erreicht.
@@ -78,10 +79,10 @@ Die Übung wird als SubApp in einer größeren Anwendung eingesetzt, typischerwe
 - Umgang mit ISOBUS‑TECU‑Befehlen und UT‑Anzeigebausteinen in 4diac.
 - Erkennen und Behandeln von Timeout‑Situationen in der Feldbuskommunikation.
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlagen der 4diac‑IDE, Aufbau von SubApp‑Typen, Verständnis von Adapter‑Schnittstellen und ereignisgesteuerter Programmierung.
 
-**Hinweise zur Einrichtung**:  
+**Hinweise zur Einrichtung**:
 Die Übung benötigt die Projekt‑Bibliotheken mit den verwendeten FPGA‑Bausteinen (z.B. `isobus`, `adapter`). Die Symbol‑ und Objekt‑ID (`NumberVariable_Rear_PTO_output_shaft_speed`) muss im verwendeten ISOBUS‑System definiert sein.
 
 ## Zusammenfassung
@@ -92,4 +93,4 @@ Die Übung `Uebung_074_AUI` realisiert eine sichere Anzeige der Zapfwellendrehza
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

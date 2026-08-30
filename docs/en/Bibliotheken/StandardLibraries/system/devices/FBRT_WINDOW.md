@@ -1,9 +1,11 @@
 # FBRT_WINDOW
 
 * * * * * * * * * *
+
 ## Introduction
 
 This device represents an FBRT (Function Block RunTime) window application.
+
 ## Metadata
 
 | Attribute | Value |
@@ -16,6 +18,6 @@ This device represents an FBRT (Function Block RunTime) window application.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

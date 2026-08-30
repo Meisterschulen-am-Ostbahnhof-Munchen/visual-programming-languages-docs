@@ -1,9 +1,11 @@
 # tactile_TON_5s
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of a time-delay relay (timer on-delay) with a fixed time setting of 5 seconds. The sub-application serves as a reusable component for time-delayed signal processing.
+
 ## Function Blocks Used (FBs)
 
 ### Sub-Blocks: tastend_TON_5s
@@ -64,13 +66,13 @@ The sub-application tastend_TON_5s provides a compact solution for time-delayed 
 
 # Summary of the sub-application ## 🛠️ Related Exercises
 
-* [Exercise_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
+- [Exercise_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Exercise_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 
 ---
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

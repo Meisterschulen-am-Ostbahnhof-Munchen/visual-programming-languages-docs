@@ -3,6 +3,7 @@
 ![initval_AUDI](initval_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AUDI` is the configurable initialization block for the [AUDI](../AUDI.md) adapter (data type `UDINT`, 32-bit unsigned integer): it accepts a start value as a data input at initialization time and writes it to a `AUDI` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

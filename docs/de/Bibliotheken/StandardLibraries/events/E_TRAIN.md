@@ -56,17 +56,17 @@ Der `E_TRAIN` (Event Train) ist ein Funktionsbaustein nach IEC 61499, der eine e
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Merkmal       | E_TRAIN | E_CYCLE | E_TABLE |
-|--------------|-----------|---------|-----------|
+| Merkmal | E_TRAIN | E_CYCLE | E_TABLE |
+| -------------- | ----------- | --------- | ----------- |
 | Ereignisabstand | Fix (`DT`) | Fix (`DT`) | Variabel (Array `DT`) |
 | Ereignisanzahl | Endlich (`N`) | Unendlich | Endlich (`N`) |
 | Zähler-Ausgang (`CV`) | Ja | Nein | Ja |
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
-* [Uebung_035a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
-* [Uebung_091](../../../Uebungen/test_B/Uebungen_doc/Uebung_091.md)
+- [Uebung_035a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_035a2.md)
+- [Uebung_035a2_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+- [Uebung_091](../../../Uebungen/test_B/Uebungen_doc/Uebung_091.md)
 
 ## Fazit
 
@@ -76,4 +76,4 @@ Der `E_TRAIN`-Baustein ist ideal für Anwendungen, die eine feste Anzahl von Ere
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

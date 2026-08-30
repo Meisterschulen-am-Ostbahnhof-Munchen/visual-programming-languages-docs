@@ -18,8 +18,8 @@ Verwendung des Bausteins `E_SELECT`. Dieser fungiert als Weiche für eintreffend
 
 ![Uebung_095_network](./Uebung_095_network.svg)
 
-*   Schalter **I1** dient als Selektor (`G`).
-*   Ist **I1** auf `FALSE`, wird nur das Ereignis von Taster **I2** (`EI0`) zum Ausgang durchgelassen.
-*   Ist **I1** auf `TRUE`, wird nur das Ereignis von Taster **I3** (`EI1`) zum Ausgang durchgelassen.
+-   Schalter **I1** dient als Selektor (`G`).
+-   Ist **I1** auf `FALSE`, wird nur das Ereignis von Taster **I2** (`EI0`) zum Ausgang durchgelassen.
+-   Ist **I1** auf `TRUE`, wird nur das Ereignis von Taster **I3** (`EI1`) zum Ausgang durchgelassen.
 
 Dies ermöglicht es, eine gemeinsame Funktion (hier das Umschalten von `Q1`) wahlweise von verschiedenen Quellen auslösen zu lassen, wobei die Steuerung aktiv festlegt, welche Quelle gerade "hörbereitschaft" hat.

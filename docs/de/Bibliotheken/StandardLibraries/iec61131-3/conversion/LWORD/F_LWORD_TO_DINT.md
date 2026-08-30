@@ -3,6 +3,7 @@
 <img width="1451" height="216" alt="F_LWORD_TO_DINT" src="https://github.com/user-attachments/assets/c7eaf578-dbd9-4dc8-95f4-7f9b31394843" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_LWORD_TO_DINT` dient der Konvertierung eines `LWORD`-Datentyps in einen `DINT`-Datentyp. Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist, beispielsweise bei der Verarbeitung von großen binären Daten oder bei der Kommunikation zwischen Systemen mit unterschiedlichen Datentypanforderungen.
@@ -62,4 +63,4 @@ Der `F_LWORD_TO_DINT`-Funktionsblock ist ein einfaches und effizientes Werkzeug 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

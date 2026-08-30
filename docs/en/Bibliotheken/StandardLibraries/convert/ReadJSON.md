@@ -3,6 +3,7 @@
 ![ReadJSON](ReadJSON.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `ReadJSON` function block extracts the value of a named field from a JSON string. It serves as a simple, event-driven JSON decoder for use cases where a single field needs to be read from a JSON structure, without having to map the entire structure to dedicated IEC 61131-3 data types.

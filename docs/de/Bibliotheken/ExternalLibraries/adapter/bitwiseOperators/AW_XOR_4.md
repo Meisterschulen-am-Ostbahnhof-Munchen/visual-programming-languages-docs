@@ -3,6 +3,7 @@
 ![AW_XOR_4](./AW_XOR_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AW_XOR_4** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 4 Eingangswerten vom Typ `WORD` (16-Bit-Bitmuster (Wort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

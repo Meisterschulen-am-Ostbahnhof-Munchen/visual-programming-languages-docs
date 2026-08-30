@@ -3,6 +3,7 @@
 ![NVS_AR](./NVS_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `NVS_AR` dient zum Laden und Speichern von REAL-Daten in einem nichtflüchtigen Speicher (Non-Volatile Storage, NVS) anhand eines Schlüssels (Key). Er stellt über zwei AR-Adapter-Schnittstellen eine unidirektionale Kommunikation mit anderen IEC‑61499-Bausteinen bereit. Der Baustein kapselt den internen `NVS`-Baustein und erweitert dessen Funktionalität um eine standardisierte Adapter-Anbindung.
@@ -66,7 +67,7 @@ Der `NVS_AR`-Baustein verfügt über keine explizite Zustandsmaschine in der XML
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | `NVS_AR` | Direkter `NVS`-Baustein |
-|---------|-----------|-------------------------|
+| --------- | ----------- | ------------------------- |
 | Schnittstelle | AR-Adapter (unidirektional) | Standard‑Ereignis-/Dateneingänge |
 | Einsatzzweck | Einfache Einbindung in adapterbasierte Netzwerke | Flexibel, aber aufwändigere Verdrahtung |
 | Datentyp | REAL | Mehrere Typen (über generischen Parameter) |
@@ -81,4 +82,4 @@ Der `NVS_AR`-Funktionsblock bietet eine kompakte und adapterbasierte Lösung zum
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

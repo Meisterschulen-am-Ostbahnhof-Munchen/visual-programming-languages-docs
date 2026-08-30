@@ -3,6 +3,7 @@
 ![F_LEN_ARRAY](F_LEN_ARRAY.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_LEN_ARRAY` is a simple function block that returns the length (element count) of a selected dimension of an array of arbitrary type. It complements the standard functions `UPPER_BOUND`/`LOWER_BOUND` with a directly usable length calculation.

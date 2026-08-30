@@ -1,6 +1,7 @@
 # CAN_MSG
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `CAN_MSG` ist eine strukturierte Typdefinition (Struct) zur Repräsentation eines klassischen CAN-Nachrichtenrahmens (ohne Transportprotokoll, TP). Er dient als Container für die wesentlichen Attribute einer CAN-Nachricht, einschließlich Priorität, Nutzdatenlänge und dem eigentlichen Datenpuffer. Dieser Typ ist für den Einsatz in Funktionsblöcken vorgesehen, die CAN-Kommunikation in einem IEC 61499-System implementieren.
@@ -41,9 +42,9 @@ Diese Struktur kann als Eingabe- oder Ausgabedatentyp für Funktionsblöcke verw
 
 ## Technische Besonderheiten
 
-*   **Feste Puffergröße**: Das Datenarray ist statisch auf eine Länge von 8 Bytes dimensioniert, was der maximalen Nutzdatenlänge eines klassischen CAN-Frames entspricht.
-*   **Initialisierung**: Das Datenarray wird standardmäßig mit dem Hexadezimalwert `16#FF` (dezimal 255) in allen 8 Positionen vorbelegt. Die Datenlänge `u16DaSize` ist standardmäßig `0`, und die Priorität `u8Priority` ist standardmäßig `7` (niedrigste Priorität).
-*   **Typensicherheit**: Die Verwendung eines strukturierten Typs anstelle einzelner Variablen erhöht die Wartbarkeit und Klarheit in der Funktionsblock-Verbindungsansicht.
+-   **Feste Puffergröße**: Das Datenarray ist statisch auf eine Länge von 8 Bytes dimensioniert, was der maximalen Nutzdatenlänge eines klassischen CAN-Frames entspricht.
+-   **Initialisierung**: Das Datenarray wird standardmäßig mit dem Hexadezimalwert `16#FF` (dezimal 255) in allen 8 Positionen vorbelegt. Die Datenlänge `u16DaSize` ist standardmäßig `0`, und die Priorität `u8Priority` ist standardmäßig `7` (niedrigste Priorität).
+-   **Typensicherheit**: Die Verwendung eines strukturierten Typs anstelle einzelner Variablen erhöht die Wartbarkeit und Klarheit in der Funktionsblock-Verbindungsansicht.
 
 ## Zustandsübersicht
 
@@ -53,10 +54,10 @@ Diese Struktur kann als Eingabe- oder Ausgabedatentyp für Funktionsblöcke verw
 
 Der `CAN_MSG`-Typ ist grundlegend für:
 
-*   **CAN-Sender-FBs**: Ein FB, der einen `CAN_MSG`-Typ als Eingang erhält und dessen Inhalt als physikalischen CAN-Frame auf den Bus sendet.
-*   **CAN-Empfänger-FBs**: Ein FB, der empfangene CAN-Frames in eine Variable vom Typ `CAN_MSG` packt und an nachgelagerte Logik weiterreicht.
-*   **Nachrichten-Konstruktion**: FBs, die aus einzelnen Werten (z.B. aus Sensor-FBs) eine gültige `CAN_MSG`-Struktur für die spätere Übertragung aufbauen.
-*   **Nachrichten-Filterung/Verarbeitung**: FBs, die eingehende `CAN_MSG`-Strukturen basierend auf Priorität, Dateninhalt oder Länge analysieren und verarbeiten.
+-   **CAN-Sender-FBs**: Ein FB, der einen `CAN_MSG`-Typ als Eingang erhält und dessen Inhalt als physikalischen CAN-Frame auf den Bus sendet.
+-   **CAN-Empfänger-FBs**: Ein FB, der empfangene CAN-Frames in eine Variable vom Typ `CAN_MSG` packt und an nachgelagerte Logik weiterreicht.
+-   **Nachrichten-Konstruktion**: FBs, die aus einzelnen Werten (z.B. aus Sensor-FBs) eine gültige `CAN_MSG`-Struktur für die spätere Übertragung aufbauen.
+-   **Nachrichten-Filterung/Verarbeitung**: FBs, die eingehende `CAN_MSG`-Strukturen basierend auf Priorität, Dateninhalt oder Länge analysieren und verarbeiten.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -70,4 +71,4 @@ Der `CAN_MSG`-Datentyp stellt eine essentielle und gut strukturierte Grundlage f
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

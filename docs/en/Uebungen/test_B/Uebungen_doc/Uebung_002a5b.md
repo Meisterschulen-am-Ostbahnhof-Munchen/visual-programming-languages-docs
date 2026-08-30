@@ -1,8 +1,9 @@
 # Exercise_002a5b: DigitalInput_I1-3 with OR on DigitalOutput_Q1-3
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_002a5b`. This exercise combines two concepts: a logical OR operation with three inputs and the simultaneous distribution (fan-out) of the result to three digital outputs.
+This article describes the logiBUS® exercise `Uebung_002a5b`. This exercise combines two concepts: a logical OR operation with three inputs and the simultaneous distribution (fan-out) of the result to three digital outputs
 ----
+
 ## Objective of the Exercise
 
 The objective is to model a complex I/O structure. It demonstrates how information is collected from multiple sensors, logically evaluated, and the result distributed to a group of actuators. The scalability of event connections is illustrated on both the input (fan-in) and output (fan-out) sides.
@@ -15,9 +16,9 @@ The objective is to model a complex I/O structure. It demonstrates how informati
 
 ![Uebung_002a5b_network](./Uebung_002a5b_network.svg)
 
-* **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They monitor the hardware inputs `Input_I1`, `Input_I2`, and `Input_I3`[cite: 1].
-* **`OR_3_BOOL`**: An instance of type `OR_3_BOOL` (from the IEC 61131 library). This function block performs an OR operation on three Boolean inputs. It responds to `REQ` and acknowledges with `CNF`.
-* **`DigitalOutput_Q1` to `Q3`**: Three instances of type `logiBUS_QX`. They control the physical outputs `Output_Q1`, `Output_Q2`, and `Output_Q3`.
+- **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They monitor the hardware inputs `Input_I1`, `Input_I2`, and `Input_I3`[cite: 1].
+- **`OR_3_BOOL`**: An instance of type `OR_3_BOOL` (from the IEC 61131 library). This function block performs an OR operation on three Boolean inputs. It responds to `REQ` and acknowledges with `CNF`.
+- **`DigitalOutput_Q1` to `Q3`**: Three instances of type `logiBUS_QX`. They control the physical outputs `Output_Q1`, `Output_Q2`, and `Output_Q3`.
 
 -----
 

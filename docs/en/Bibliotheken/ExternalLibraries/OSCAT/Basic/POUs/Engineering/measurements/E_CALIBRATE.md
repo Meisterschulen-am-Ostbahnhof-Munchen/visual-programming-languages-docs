@@ -5,6 +5,7 @@
 ![E_CALIBRATE](E_CALIBRATE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_CALIBRATE` is the event-driven counterpart to [CALIBRATE](CALIBRATE.md): the two-point calibration (`Y = (X + OFFSET) * SCALE`) is triggered not by Boolean data values but by its own events `EICO`/`EICS`, each with its own confirmation event. Ordering (offset before scale) is still not enforced here -- for that, see [E_CALIBRATE_SQ](E_CALIBRATE_SQ.md).
@@ -51,7 +52,7 @@ Since both `EICO` and `EICS` are reachable from `REQ` at any time, the ECC does 
 **Example** (4-20 mA pressure sensor via logiBUS, normalized to `0.0..1.0`, desired output range `0.0..500.0`):
 
 | Step | Action | Result |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Apply 4 mA (`X=0.0`), `Y_Offset=0.0`, fire `EICO` | `OFFSET = 0` |
 | 2 | Apply 20 mA (`X=1.0`), `Y_Scale=500.0`, fire `EICS` | `SCALE = 500` |
 

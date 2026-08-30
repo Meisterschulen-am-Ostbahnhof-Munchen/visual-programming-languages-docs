@@ -3,6 +3,7 @@
 ![AB_SPLIT_7](./AB_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AB_SPLIT_7** dient dazu, einen einzelnen eingehenden Adapter vom Typ `adapter::types::unidirectional::AB` auf sieben identische Ausgangsadapter aufzuteilen. Er ist als generischer Baustein (`GEN_AB_SPLIT`) realisiert und kann daher für verschiedene konkrete Adaptertypen instanziiert werden, die dem unidirektionalen AB-Protokoll entsprechen. Entwickelt wurde er unter der Eclipse Public License 2.0.
@@ -28,8 +29,8 @@ Keine vorhanden.
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
-| IN   | `adapter::types::unidirectional::AB` | Socket (Eingang) | Eingehender Adapter, der auf die Ausgänge verteilt wird. |
+| ------ | ----- | ---------- | -------------- |
+| IN | `adapter::types::unidirectional::AB` | Socket (Eingang) | Eingehender Adapter, der auf die Ausgänge verteilt wird. |
 | OUT1 | `adapter::types::unidirectional::AB` | Plug (Ausgang) | Erster ausgehender Adapter, identisch mit dem Eingang. |
 | OUT2 | `adapter::types::unidirectional::AB` | Plug (Ausgang) | Zweiter ausgehender Adapter. |
 | OUT3 | `adapter::types::unidirectional::AB` | Plug (Ausgang) | Dritter ausgehender Adapter. |
@@ -80,4 +81,4 @@ Der **AB_SPLIT_7** ist ein einfacher, aber nützlicher Baustein zur Vervielfachu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

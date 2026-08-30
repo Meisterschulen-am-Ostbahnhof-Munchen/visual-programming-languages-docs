@@ -6,6 +6,7 @@
 *(Symbolische Darstellung des Funktionsbausteins)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALR_MUL_3` ist ein generischer Baustein aus der Bibliothek `adapter::iec61131::arithmetic`, der für die arithmetische Multiplikation von drei Eingangswerten entwickelt wurde. Anstelle von klassischen, diskreten Dateneingängen nutzt dieser Baustein unidirektionale Adapter des Typs `ALR` zur Kapselung und Übertragung der Daten und Steuerungsereignisse. Dies ermöglicht eine strukturierte, modulare und übersichtliche Verdrahtung innerhalb der 4diac-IDE.
@@ -32,13 +33,13 @@ Der Funktionsbaustein `ALR_MUL_3` ist ein generischer Baustein aus der Bibliothe
 
 #### **Sockets (Eingangsschnittstellen)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::ALR`): Der erste Faktor für die Multiplikation.
-* **IN2** (Typ: `adapter::types::unidirectional::ALR`): Der zweite Faktor für die Multiplikation.
-* **IN3** (Typ: `adapter::types::unidirectional::ALR`): Der dritte Faktor für die Multiplikation.
+- **IN1** (Typ: `adapter::types::unidirectional::ALR`): Der erste Faktor für die Multiplikation.
+- **IN2** (Typ: `adapter::types::unidirectional::ALR`): Der zweite Faktor für die Multiplikation.
+- **IN3** (Typ: `adapter::types::unidirectional::ALR`): Der dritte Faktor für die Multiplikation.
 
 #### **Plugs (Ausgangsschnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das berechnete Produkt der drei Eingangswerte.
+- **OUT** (Typ: `adapter::types::unidirectional::ALR`): Das berechnete Produkt der drei Eingangswerte.
 
 ---
 
@@ -48,7 +49,7 @@ Der Baustein `ALR_MUL_3` realisiert die mathematische Multiplikation von drei Ei
 
 $$\text{OUT} = \text{IN1} \times \text{IN2} \times \text{IN3}$$
 
-Das Ergebnis der Berechnung sowie das zugehörige Aktualisierungsereignis werden über den Plug `OUT` ausgegeben. 
+Das Ergebnis der Berechnung sowie das zugehörige Aktualisierungsereignis werden über den Plug `OUT` ausgegeben.
 
 Da es sich um einen generischen Baustein (Generic-Klasse: `GEN_ALR_MUL`) handelt, hängt der tatsächliche Datentyp (z. B. `REAL`, `LREAL`, `INT`) von der Definition des verwendeten `ALR`-Adapters ab.
 
@@ -56,9 +57,9 @@ Da es sich um einen generischen Baustein (Generic-Klasse: `GEN_ALR_MUL`) handelt
 
 ## Technische Besonderheiten
 
-* **Generisches Design:** Durch die Zuweisung des Attributs `GenericClassName = 'GEN_ALR_MUL'` ist der Baustein flexibel für verschiedene Datentypen einsetzbar, sofern die verwendeten Adapter diese unterstützen.
-* **Adapterbasierte Kopplung:** Die Verwendung von Adaptern statt loser Event-/Data-Verbindungen reduziert den Verdrahtungsaufwand (Routing) innerhalb der 4diac-Anwendung drastisch und erhöht die Übersichtlichkeit.
-* **Unidirektionalität:** Die verwendeten `ALR`-Adapter sind als unidirektional definiert, was einen klaren und rückwirkungsfreien Datenfluss von den Quellen (Sockets) zur Senke (Plug) gewährleistet.
+- **Generisches Design:** Durch die Zuweisung des Attributs `GenericClassName = 'GEN_ALR_MUL'` ist der Baustein flexibel für verschiedene Datentypen einsetzbar, sofern die verwendeten Adapter diese unterstützen.
+- **Adapterbasierte Kopplung:** Die Verwendung von Adaptern statt loser Event-/Data-Verbindungen reduziert den Verdrahtungsaufwand (Routing) innerhalb der 4diac-Anwendung drastisch und erhöht die Übersichtlichkeit.
+- **Unidirektionalität:** Die verwendeten `ALR`-Adapter sind als unidirektional definiert, was einen klaren und rückwirkungsfreien Datenfluss von den Quellen (Sockets) zur Senke (Plug) gewährleistet.
 
 ---
 
@@ -70,16 +71,16 @@ Der Baustein besitzt keine komplexe interne Zustandsmaschine (ECC). Er arbeitet 
 
 ## Anwendungsszenarien
 
-* **Sensorskalierung und -korrektur:** Multiplikation eines Rohwerts (IN1) mit einem Kalibrierungsfaktor (IN2) und einem anwendungsbezogenen Gewichtungsfaktor (IN3).
-* **Dreidimensionale Berechnungen:** Berechnung von Volumen oder Durchsätzen, bei denen drei physikalische Einflussgrößen miteinander multipliziert werden müssen.
-* **Kaskadierte Verstärkungsglieder:** Berechnung von kombinierten Verstärkungen in Regelungskreisen.
+- **Sensorskalierung und -korrektur:** Multiplikation eines Rohwerts (IN1) mit einem Kalibrierungsfaktor (IN2) und einem anwendungsbezogenen Gewichtungsfaktor (IN3).
+- **Dreidimensionale Berechnungen:** Berechnung von Volumen oder Durchsätzen, bei denen drei physikalische Einflussgrößen miteinander multipliziert werden müssen.
+- **Kaskadierte Verstärkungsglieder:** Berechnung von kombinierten Verstärkungen in Regelungskreisen.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Standard MUL-Baustein (IEC 61131-3):** Klassische Multiplizierer arbeiten mit direkten Elementardatentypen (z. B. `REAL`). `ALR_MUL_3` hingegen bündelt Daten und Ereignisse in Adaptern, was die Modularität und Wiederverwendbarkeit in verteilten Systemen nach IEC 61499 verbessert.
-* **ALR_MUL_2 (2-fach Multiplizierer):** Für die Multiplikation von nur zwei Werten wird ein entsprechender 2-fach-Baustein bevorzugt. `ALR_MUL_3` spart bei drei Faktoren die zusätzliche Kaskadierung von zwei separaten Bausteinen ein.
+- **Standard MUL-Baustein (IEC 61131-3):** Klassische Multiplizierer arbeiten mit direkten Elementardatentypen (z. B. `REAL`). `ALR_MUL_3` hingegen bündelt Daten und Ereignisse in Adaptern, was die Modularität und Wiederverwendbarkeit in verteilten Systemen nach IEC 61499 verbessert.
+- **ALR_MUL_2 (2-fach Multiplizierer):** Für die Multiplikation von nur zwei Werten wird ein entsprechender 2-fach-Baustein bevorzugt. `ALR_MUL_3` spart bei drei Faktoren die zusätzliche Kaskadierung von zwei separaten Bausteinen ein.
 
 ---
 

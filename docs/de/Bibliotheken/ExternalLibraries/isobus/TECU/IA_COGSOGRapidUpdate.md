@@ -3,6 +3,7 @@
 ![IA_COGSOGRapidUpdate](./IA_COGSOGRapidUpdate.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NMEA 2000 PGN 129026 Messages „Course Over Ground (COG)“ und „Speed Over Ground (SOG)“ mit Unterstützung für schnelle Aktualisierungen (Rapid Update). Er entkoppelt die ISOBUS-Kommunikation und stellt die empfangenen Navigationsdaten sowie einen Timeout-Status über standardisierte Adapter-Schnittstellen bereit. Der Baustein wurde auf Basis der Eclipse Public License 2.0 entwickelt und ist für den Einsatz in landwirtschaftlichen Steuerungssystemen (TECU) optimiert.
@@ -37,7 +38,7 @@ Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NM
 ### **Adapter**
 
 | Adapter-Name | Typ | Kommentar |
-|--------------|-----|-----------|
+| -------------- | ----- | ----------- |
 | COG | adapter::types::unidirectional::AUI | Kurs über Grund (Course Over Ground) |
 | SOG | adapter::types::unidirectional::AUI | Geschwindigkeit über Grund (Speed Over Ground) |
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout-Status (aktiv bei fehlender Aktualisierung) |
@@ -75,7 +76,7 @@ Der Funktionsblock **IA_COGSOGRapidUpdate** dient als ISOBUS-Adapter für die NM
 Der Funktionsblock besitzt keine explizit modellierten Zustände, dennoch lassen sich folgende Betriebsphasen ableiten:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **Inaktiv** | INIT noch nicht ausgelöst oder QI = FALSE |
 | **Initialisierend** | Nach INIT, bis INITO mit QO gemeldet wird |
 | **Aktiv (Daten empfangen)** | Regelmäßiger Empfang von PGN 129026, Aktualisierung der Adapter |

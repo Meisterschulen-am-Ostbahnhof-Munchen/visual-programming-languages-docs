@@ -3,6 +3,7 @@
 ![ASSEMBLE_WORD_FROM_BOOLS](https://github.com/user-attachments/assets/0f9e88ae-3645-4364-a8e7-183caf4f1bb0)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_WORD_FROM_BOOLS` kombiniert 16 boolesche Eingangswerte zu einem einzigen WORD-Ausgangswert. Jeder boolesche Eingang repräsentiert dabei ein einzelnes Bit im resultierenden WORD.

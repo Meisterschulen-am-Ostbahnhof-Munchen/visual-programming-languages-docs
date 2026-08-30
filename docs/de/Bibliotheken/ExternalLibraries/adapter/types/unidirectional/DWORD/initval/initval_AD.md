@@ -3,6 +3,7 @@
 ![initval_AD](initval_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AD` ist der konfigurierbare Initialisierungsbaustein für den [AD](../AD.md)-Adapter (Datentyp `DWORD`, 32-Bit-Bitmuster): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AD`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

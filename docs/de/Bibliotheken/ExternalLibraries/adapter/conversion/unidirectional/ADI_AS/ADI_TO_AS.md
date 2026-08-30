@@ -3,6 +3,7 @@
 ![ADI_TO_AS](./ADI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite‑Funktionsblock **ADI_TO_AS** dient der Konvertierung eines **DINT‑Adapter‑Signals** (Typ `ADI`) in ein **SINT‑Adapter‑Signal** (Typ `AS`). Er wird eingesetzt, wenn ein Daten‑ und Ereignisaustausch über unidirektionale Adapter erfolgen soll und eine Anpassung des Datentyps von DINT (32‑Bit Signed Integer) auf SINT (8‑Bit Signed Integer) erforderlich ist.
@@ -75,4 +76,4 @@ Der **ADI_TO_AS** ist ein kompakter, fertig vorgefertigter Composite‑Baustein,
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![AUI_SPLIT_6](./AUI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_SPLIT_6** dient dazu, einen eingehenden **AUI-Adapter** (Application Universal Interface) auf sechs ausgehende AUI-Adapter aufzuteilen. Er ist als generischer Baustein konzipiert, der in der Lage ist, das eingehende AUI-Signal ohne Datenverarbeitung oder Logik auf alle sechs Ausgänge zu verteilen.
@@ -30,7 +31,7 @@ Keine Daten-Ausgänge vorhanden.
 Der Baustein verwendet ausschließlich Adapter für die Kommunikation:
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang | **IN** | `adapter::types::unidirectional::AUI` | Eingehender AUI-Adapter, der aufgeteilt wird. |
 | Ausgang | **OUT1** | `adapter::types::unidirectional::AUI` | Erster ausgehender AUI-Adapter. |
 | Ausgang | **OUT2** | `adapter::types::unidirectional::AUI` | Zweiter ausgehender AUI-Adapter. |
@@ -77,4 +78,4 @@ Der **AUI_SPLIT_6** ist ein einfacher, aber effektiver Verteilerbaustein für AU
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

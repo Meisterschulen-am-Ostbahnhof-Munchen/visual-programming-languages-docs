@@ -74,8 +74,8 @@ Compared to simple digital input blocks, Button_IX offers extended functionaliti
 
 ## 🛠️ Related Exercises
 
-* [Exercise_010a2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a2.md)
-* [Exercise_010a3](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a3.md)
+- [Exercise_010a2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a2.md)
+- [Exercise_010a3](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a3.md)
 
 ## Conclusion
 
@@ -85,4 +85,4 @@ The Button_IX function block provides a robust and flexible solution for integra
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

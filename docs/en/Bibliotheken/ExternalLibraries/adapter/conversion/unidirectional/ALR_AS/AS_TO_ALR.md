@@ -4,6 +4,7 @@
 *No image available.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_TO_ALR** is a composite function block (FB) that converts an **AS adapter** (data type SINT) into an **ALR adapter** (data type LREAL). It serves as a simple interface conversion between these two unidirectional adapter types and is located in the package `adapter::conversion::unidirectional`.
@@ -37,9 +38,9 @@ The function block **AS_TO_ALR** is a composite function block (FB) that convert
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|--------|---------------------------------------|----------------------------|
+| ---------- | -------- | --------------------------------------- | ---------------------------- |
 | Socket | AS_IN | `adapter::types::unidirectional::AS` | Input Adapter (SINT) |
-| Plug | ALR_OUT| `adapter::types::unidirectional::ALR` | Output Adapter (LREAL) |
+| Plug | ALR_OUT | `adapter::types::unidirectional::ALR` | Output Adapter (LREAL) |
 
 ## Functionality
 

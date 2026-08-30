@@ -3,6 +3,7 @@
 ![A2X_SPLIT_5](./A2X_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **A2X_SPLIT_5** dient dazu, einen eingehenden A2X-Adapter in fünf identische A2X-Ausgänge aufzuteilen. Er wird als generischer Baustein bereitgestellt, der über Attribute konfiguriert werden kann.
@@ -70,4 +71,4 @@ Der `A2X_SPLIT_5` ist ein einfacher, aber nützlicher Adapter-Splitter für A2X-
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

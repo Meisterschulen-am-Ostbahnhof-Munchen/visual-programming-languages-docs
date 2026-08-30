@@ -1,10 +1,12 @@
 # POWERLINK_MN
 
 * * * * * * * * * *
+
 ## Introduction
 
 The POWERLINK_MN function block is used to configure the openPOWERLINK fieldbus. It acts as a Managing Node (MN) and initializes the network.
 ![POWERLINK_MN](POWERLINK_MN.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -49,6 +51,6 @@ This block initializes the openPOWERLINK stack on the specified Ethernet interfa
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

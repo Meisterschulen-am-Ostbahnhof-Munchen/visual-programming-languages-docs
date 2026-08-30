@@ -3,9 +3,11 @@
 ![Uebung_071b_AUI_network](./Uebung_071b_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the output of Wheel-Based Speed (WBSD) and Wheel-Based Distance (WBD) to a Universal Terminal (UT). Additionally, a position-dependent pulse is generated: Every 10 meters (5 meters HIGH, 5 meters LOW), a digital output switches. This is implemented using adapter interfaces and illustrates the typical data processing chain from ISOBUS sensor acquisition to UT display and logiBUS output.
+
 ## Function Blocks (FBs) Used
 
 - **IA_WBSD** (`isobus::tecu::IA_WBSD`)
@@ -36,7 +38,7 @@ IA_WBSD.SPEED` → `CONV_SPEED.AUI_IN` → `CONV_SPEED.AUDI_OUT` → `Q_Speed.u3
 
 The wheel-based speed is converted into an audio signal via an adapter converter and displayed directly on the UT (Universal Display).
 
-2. **Distance**
+1. **Distance**
 
 IA_WBSD.DISTANCE` → `AUDI_SPLIT_2.IN`
 
@@ -69,6 +71,6 @@ This exercise demonstrates a complete chain from ISOBUS sensor data acquisition 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

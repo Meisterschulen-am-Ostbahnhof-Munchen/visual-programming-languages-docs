@@ -14,47 +14,47 @@ Der Netzwerk-Editor der Subapplikation enthält sechs Funktionsbausteine. Nachfo
 
 ### DigitalInput\_CLK\_I1
 
-- **Typ**: `logiBUS::io::DI::logiBUS_IE`  
-- **Parameter**:  
-  - `QI` = `TRUE`  
-  - `Input` = `Input_I1`  
-  - `InputEvent` = `BUTTON_SINGLE_CLICK`  
+- **Typ**: `logiBUS::io::DI::logiBUS_IE`
+- **Parameter**:
+  - `QI` = `TRUE`
+  - `Input` = `Input_I1`
+  - `InputEvent` = `BUTTON_SINGLE_CLICK`
 - **Funktion**: Dieser Baustein reagiert auf einen einzelnen Tastendruck am physikalischen Eingang `Input_I1` und erzeugt das Ereignis `IND` am Ausgang.
 
 ### DigitalInput\_CLK\_I2
 
-- **Typ**: `logiBUS::io::DI::logiBUS_IE`  
-- **Parameter**:  
-  - `QI` = `TRUE`  
-  - `Input` = `Input_I2`  
-  - `InputEvent` = `BUTTON_SINGLE_CLICK`  
+- **Typ**: `logiBUS::io::DI::logiBUS_IE`
+- **Parameter**:
+  - `QI` = `TRUE`
+  - `Input` = `Input_I2`
+  - `InputEvent` = `BUTTON_SINGLE_CLICK`
 - **Funktion**: Analog zu `DigitalInput_CLK_I1`, jedoch für den Reset-Taster an `Input_I2`.
 
 ### AUI\_CTU
 
-- **Typ**: `adapter::events::unidirectional::AUI_CTU`  
-- **Parameter**: Keine konfigurierten Parameter im XML.  
+- **Typ**: `adapter::events::unidirectional::AUI_CTU`
+- **Parameter**: Keine konfigurierten Parameter im XML.
 - **Funktion**: Dies ist ein Adapter-Funktionsbaustein, der einen Aufwärtszähler (Counter Up) realisiert. Er verfügt über die Ereigniseingänge `CU` (Inkrement) und `R` (Reset) sowie die Ereignisausgänge `Q` (Zählerstand erreicht) und `CV` (aktueller Zählwert als Adapter-Ausgang). Die Zählschwelle (PV) ist standardmäßig auf einen vorgegebenen Wert gesetzt.
 
 ### AUI\_TO\_AUDI
 
-- **Typ**: `adapter::conversion::unidirectional::AUI_TO_AUDI`  
-- **Parameter**: Keine konfigurierten Parameter.  
+- **Typ**: `adapter::conversion::unidirectional::AUI_TO_AUDI`
+- **Parameter**: Keine konfigurierten Parameter.
 - **Funktion**: Dieser Baustein wandelt einen AUI-Adapterausgang (Ereignis mit Wert) in einen reinen Datenwert (AUDI) um. Er erhält am Adaptereingang `AUI_IN` das Signal `CV` und liefert am Datenausgang `AUDI_OUT` den aktuellen Zählwert als `UINT`-Wert.
 
 ### Q\_NumericValue\_AUDI
 
-- **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`  
-- **Parameter**:  
-  - `u16ObjId` = `OutputNumber_N1`  
+- **Typ**: `isobus::UT::Q::Q_NumericValue_AUDI`
+- **Parameter**:
+  - `u16ObjId` = `OutputNumber_N1`
 - **Funktion**: Dieser Baustein empfängt einen numerischen Wert (über den Adaptereingang `u32NewValue`) und stellt ihn als Ausgabe auf dem Terminal dar. Der Parameter `u16ObjId` legt die Objektkennung für die Terminalausgabe fest.
 
 ### DigitalOutput\_Q1
 
-- **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
-- **Parameter**:  
-  - `QI` = `TRUE`  
-  - `Output` = `Output_Q1`  
+- **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+- **Parameter**:
+  - `QI` = `TRUE`
+  - `Output` = `Output_Q1`
 - **Funktion**: Dieser Baustein setzt den physikalischen Ausgang `Output_Q1` auf `TRUE`, sobald am Ereigniseingang `OUT` ein Ereignis eintrifft. Er dient dazu, den Zählerstand (z.B. Erreichen einer Schwelle) als binäres Signal anzuzeigen.
 
 ## Programmablauf und Verbindungen
@@ -76,9 +76,9 @@ Die Übung ist als Subapplikation (`Uebung_080_AUI`) angelegt und benötigt kein
 
 1. Nach dem Start der Applikation ist der Zählerstand 0.
 2. Jeder Druck auf `Input_I1` erhöht den Zähler um
-1. Der neue Wert wird sofort auf dem Terminal angezeigt.
-3. Wird der voreingestellte Schwellwert (PV) erreicht, wird `Output_Q1` auf `TRUE` gesetzt.
-4. Ein Druck auf `Input_I2` setzt den Zähler zurück auf 0 (auch der Ausgang wird wieder `FALSE`).
+3. Der neue Wert wird sofort auf dem Terminal angezeigt.
+4. Wird der voreingestellte Schwellwert (PV) erreicht, wird `Output_Q1` auf `TRUE` gesetzt.
+5. Ein Druck auf `Input_I2` setzt den Zähler zurück auf 0 (auch der Ausgang wird wieder `FALSE`).
 
 ## Zusammenfassung
 
@@ -95,5 +95,5 @@ Die Übung zeigt, wie ein Adapter-basierter Zähler (AUI_CTU) in 4diac mit Hardw
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

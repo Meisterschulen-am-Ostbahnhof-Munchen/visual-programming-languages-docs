@@ -3,9 +3,11 @@
 ![SPLIT_AL_INTO_AW](./SPLIT_AL_INTO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AL_INTO_AW** is used to split a 64-bit integer received via an AL adapter (LWORD) into four separate 16-bit values and output them via four individual AW adapters. It implements a hard-coded split that is triggered by an incoming event.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,10 +55,11 @@ Each output is provided by an edge-triggered memory (E_D_FF_ANY) and remains sta
 
 **** 2. Simultaneously, the data **IN.D1** is transferred to the data input **IN** of the split function block.
 
-3. **SPLIT_LWORD_INTO_WORDS** splits the LWORD into four word parts (**WORD_00**…**WORD_03**) and generates a termination event at **CNF**.
-4. This termination event is forwarded to all four edge-triggered flip-flops (**E_D_FF_ANY**). Each flip-flop receives its assigned subword at its data input **D** and places it at its output **Q**.
-5. Simultaneously, the event outputs **WORD_00.E1** … **WORD_03.E1** are activated so that the downstream adapters can receive the new data together.
+1. **SPLIT_LWORD_INTO_WORDS** splits the LWORD into four word parts (**WORD_00**…**WORD_03**) and generates a termination event at **CNF**.
+2. This termination event is forwarded to all four edge-triggered flip-flops (**E_D_FF_ANY**). Each flip-flop receives its assigned subword at its data input **D** and places it at its output **Q**.
+3. Simultaneously, the event outputs **WORD_00.E1** … **WORD_03.E1** are activated so that the downstream adapters can receive the new data together.
 4. This termination event is forwarded to all four edge-triggered flip-flops (**E_D_FF_ANY**).
+
 ## Technical Features
 
 - **Use of E_D_FF_ANY**: Each partial value is temporarily stored in an edge-triggered flip-flop. This ensures that the output value is retained even if no new event is present at the input. The values are only updated during the next splitting operation.

@@ -3,6 +3,7 @@
 <img width="1454" height="214" alt="F_USINT_TO_BYTE" src="https://github.com/user-attachments/assets/c086c1af-bc1b-492e-87cb-d7c3a52dd7a0" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_USINT_TO_BYTE` dient der Konvertierung eines vorzeichenlosen 8-Bit-Integer-Werts (USINT) in einen Byte-Wertyp (BYTE). Diese Konvertierung ist insbesondere in Szenarien erforderlich, wo Daten zwischen unterschiedlichen Formaten oder Systemen ausgetauscht werden müssen.
@@ -59,7 +60,7 @@ Der Funktionsblock führt die Konvertierung durch, sobald das Ereignis `REQ` emp
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+- [Uebung_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
 
 ## Fazit
 

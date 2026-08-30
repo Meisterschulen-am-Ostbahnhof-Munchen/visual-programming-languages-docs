@@ -3,6 +3,7 @@
 ![Q_NumericValue_PHYSA](./Q_NumericValue_PHYSA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `Q_NumericValue_PHYSA` dient als **Wrapper** für den Baustein `Q_NumericValue_PHYS`. Er ermöglicht das Setzen eines numerischen Werts, der als physischer `REAL`-Wert über einen **AR-Adapter** (Socket `rPhys`) empfangen wird. Der FB ist nach dem Standard ISO 11783-6 ausgelegt und eignet sich für ISOBUS-Anwendungen, die eine physikalische Wertvorgabe benötigen.
@@ -38,7 +39,7 @@ Der Funktionsblock `Q_NumericValue_PHYSA` dient als **Wrapper** für den Baustei
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AR` | `rPhys` | Socket (Eingang) | Empfängt den physikalischen `REAL`-Wert zur Verarbeitung |
 | `adapter::types::unidirectional::AX` | `xOver` | Plug (Ausgang) | Signalisiert, dass der physikalische Wert den oberen ISOBUS-Grenzwert überschreitet |
 | `adapter::types::unidirectional::AX` | `xUnder` | Plug (Ausgang) | Signalisiert, dass der physikalische Wert den unteren ISOBUS-Grenzwert unterschreitet |

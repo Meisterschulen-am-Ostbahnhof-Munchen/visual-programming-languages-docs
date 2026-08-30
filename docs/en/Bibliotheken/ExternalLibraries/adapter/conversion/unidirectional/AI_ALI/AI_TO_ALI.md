@@ -3,9 +3,11 @@
 ![AI_TO_ALI](./AI_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AI_TO_ALI function block is a composite function block that converts an AI (INT) input adapter into an ALI (LINT) output adapter. It serves as a simple conversion interface between different adapter types for unidirectional communication.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -55,6 +57,7 @@ The function block operates as a simple pass-through: The event and data signal 
 The FB does not have its own state machine, as its functionality is limited to the pure transmission of events and data. The internal state is irrelevant; the behavior is deterministic and reacts instantaneously to incoming events.
 
 -
+
 ## Application Scenarios
 
 - **Interface Adaptation:** One module returns an INT value via an AI adapter, while a subsequent module expects a LINT value via an ALI adapter.

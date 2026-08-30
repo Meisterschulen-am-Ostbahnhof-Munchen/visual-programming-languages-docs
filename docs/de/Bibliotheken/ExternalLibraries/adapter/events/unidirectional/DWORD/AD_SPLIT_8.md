@@ -29,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | **IN** | `adapter::types::unidirectional::AD` | Eingangsadapter – aufzuteilendes Signal |
 | Plug | **OUT1** | `adapter::types::unidirectional::AD` | Erster Ausgang |
 | Plug | **OUT2** | `adapter::types::unidirectional::AD` | Zweiter Ausgang |
@@ -81,4 +81,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![AW_AND_2](./AW_AND_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AW_AND_2** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 2 Eingangswerten vom Typ `WORD` (16-Bit-Bitmuster (Wort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

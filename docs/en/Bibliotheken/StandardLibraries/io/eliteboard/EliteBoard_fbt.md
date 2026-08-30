@@ -5,6 +5,7 @@
 ## Introduction
 
 The EliteBoard function block is a Service Interface Function Block Type that serves as an interface for the EliteBoard hardware. This block enables the connection and control of up to 11 different ports via standardized adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -67,6 +68,6 @@ The EliteBoard function block provides a flexible and scalable solution for conn
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

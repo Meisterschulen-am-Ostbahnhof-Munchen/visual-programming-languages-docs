@@ -3,6 +3,7 @@
 ![ScrollFS_PHYS](ScrollFS_PHYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ScrollFS_PHYS` is the finished, drop-in block for a scrollable VT list operated via softkeys:
@@ -105,7 +106,7 @@ just on the actual limit transition.
 
 ## 🛠️ Related Exercises
 
-* No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
+- No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
   `4diac_training1`).
 
 ## Conclusion

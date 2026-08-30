@@ -3,9 +3,11 @@
 ![Funk_DI](./Funk_DI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Radio_DI is a GlobalConstants package for the 4diac IDE that defines constants for digital inputs in radio systems. The package provides predefined pin configurations for various digital input signals that can be used in control applications.
+
 ## Interface Structure
 
 Because Radio_DI is a GlobalConstants package, it does not have traditional function block interfaces. Instead, it provides global constants.
@@ -71,6 +73,6 @@ The Funk_DI GlobalConstants package provides a convenient collection of predefin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Diese Dokumentation beschreibt die Sub-Applikation `Uebung_039_sub_Outputs_AX`. Dieser Baustein ist Teil einer komplexeren Steuerung (vermutlich "Spiegelabfolge V2 mit Schrittkette") und dient als Schnittstelle zwischen der Steuerungslogik, der Hardware und der Benutzeroberfläche (ISOBUS VT). 
+Diese Dokumentation beschreibt die Sub-Applikation `Uebung_039_sub_Outputs_AX`. Dieser Baustein ist Teil einer komplexeren Steuerung (vermutlich "Spiegelabfolge V2 mit Schrittkette") und dient als Schnittstelle zwischen der Steuerungslogik, der Hardware und der Benutzeroberfläche (ISOBUS VT).
 
 Der Hauptzweck dieses Moduls ist die Ansteuerung eines digitalen Ausgangs, wobei zwei Quellen das Signal aktivieren können: ein automatisches Signal aus dem Programm (via AX-Adapter) oder eine manuelle Betätigung über einen Softkey auf dem Terminal. Zusätzlich wird der Status visuell zurückgemeldet.
 
@@ -24,7 +24,7 @@ Dieser Baustein kapselt die Logik für einen einzelnen Aktor/Ausgang unter Verwe
     - **QX**: `logiBUS::io::DQ::logiBUS_QXA`
         - **Beschreibung**: Treiberbaustein für einen physikalischen digitalen Ausgang am logiBUS.
         - **Parameter**: `QI` = `TRUE` (Baustein ist aktiviert).
-        - **Dateneingang**: 
+        - **Dateneingang**:
             - `Output`: Verbunden mit dem externen Eingang `Output` (definiert die Hardware-Adresse).
         - **Adapteranschluss**:
             - `OUT`: Erhält das Schaltsignal (Event + Daten) vom `AX_OR`-Baustein.
@@ -38,7 +38,7 @@ Dieser Baustein kapselt die Logik für einen einzelnen Aktor/Ausgang unter Verwe
 
     - **AX_OR**: `adapter::logic::unidirectional::AX_OR_2`
         - **Beschreibung**: Logisches ODER-Gatter für AX-Adapter.
-        - **Adapteranschlüsse**: 
+        - **Adapteranschlüsse**:
             - `IN1`: Verbunden mit `IX.IN` (Softkey-Status).
             - `IN2`: Verbunden mit dem externen Adapter-Eingang `OUT` (Steuersignal).
         - **Funktionsweise**: Der Ausgang wird aktiv, wenn entweder der Softkey gedrückt wird ODER das externe Steuersignal anliegt.
@@ -58,17 +58,17 @@ Dieser Baustein kapselt die Logik für einen einzelnen Aktor/Ausgang unter Verwe
 Der Fluss innerhalb der Sub-Applikation ist durch die AX-Adapterverbindungen stark vereinfacht:
 
 1.  **Initialisierung**:
-    *   Die Objekt-ID für den Softkey (`u16ObjId`) und die Hardware-Adresse (`Output`) werden an die entsprechenden Bausteine durchgereicht.
+    -   Die Objekt-ID für den Softkey (`u16ObjId`) und die Hardware-Adresse (`Output`) werden an die entsprechenden Bausteine durchgereicht.
 
 2.  **Logische Verknüpfung (AX_OR)**:
-    *   Der Baustein `AX_OR` bündelt die Logik:
-        *   `IN1`: Status des Softkeys.
-        *   `IN2`: Externer Adapter-Eingang `OUT` (z.B. von einer Schrittkette).
-    *   Ein `REQ`-Ereignis von außen kann zusätzlich die Logik triggern.
+    -   Der Baustein `AX_OR` bündelt die Logik:
+        -   `IN1`: Status des Softkeys.
+        -   `IN2`: Externer Adapter-Eingang `OUT` (z.B. von einer Schrittkette).
+    -   Ein `REQ`-Ereignis von außen kann zusätzlich die Logik triggern.
 
 3.  **Ausgabe und Feedback**:
-    *   Der Ausgang des `AX_OR` ist direkt mit dem Hardware-Ausgang `QX` verbunden.
-    *   Parallel dazu steuert er den Hintergrund des Softkeys über `GreenWhiteBackground`.
+    -   Der Ausgang des `AX_OR` ist direkt mit dem Hardware-Ausgang `QX` verbunden.
+    -   Parallel dazu steuert er den Hintergrund des Softkeys über `GreenWhiteBackground`.
 
 ## Zusammenfassung
 
@@ -76,4 +76,4 @@ Der Fluss innerhalb der Sub-Applikation ist durch die AX-Adapterverbindungen sta
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039_AX](Uebung_039_AX.md)
+- [Uebung_039_AX](Uebung_039_AX.md)

@@ -3,9 +3,11 @@
 ![AR2_R_TO_REAL](./AR2_R_TO_REAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR2_R_TO_REAL** function block is a composite module that acts as a bridge between an AR2 adapter interface and REAL values. It enables bidirectional data transfer and conversion, with the actual conversion being performed by an external adapter of type `adapter::types::bidirectional::AR2`.
+
 ## Interface Structure
 
 ### **Event Inputs**

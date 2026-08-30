@@ -3,6 +3,7 @@
 ![VALUES2ARRAY_16_BYTE](VALUES2ARRAY_16_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `VALUES2ARRAY_16_BYTE` fasst 16 einzelne `BYTE`-Skalarvariablen `IN_1`…`IN_16` zu einem `BYTE`-Array der Größe 16 zusammen. Er ist die Umkehrung von `ARRAY2VALUES_16_BYTE` und gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [VALUES2ARRAY_2_LREAL](VALUES2ARRAY_2_LREAL.md)).

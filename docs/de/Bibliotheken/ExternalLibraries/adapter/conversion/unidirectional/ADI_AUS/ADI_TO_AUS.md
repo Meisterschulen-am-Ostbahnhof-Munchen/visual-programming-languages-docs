@@ -3,6 +3,7 @@
 ![ADI_TO_AUS](./ADI_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ADI_TO_AUS dient als Adapter-Konverter von einem DINT-Adapter (ADI) zu einem USINT-Adapter (AUS). Er wandelt einen DINT-Wert in einen USINT-Wert um und ermöglicht die nahtlose Integration von Komponenten mit unterschiedlichen Datentypen in der 4diac-IDE.
@@ -64,4 +65,4 @@ Der ADI_TO_AUS ist ein praktischer Hilfsbaustein für die nahtlose Integration v
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

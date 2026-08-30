@@ -64,8 +64,8 @@ Die Subapplikation tastend_TON_5s stellt eine kompakte Lösung für zeitverzöge
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
+- [Uebung_103](../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Uebung_103c](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_103c.md)
 
 
 
@@ -73,4 +73,4 @@ Die Subapplikation tastend_TON_5s stellt eine kompakte Lösung für zeitverzöge
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

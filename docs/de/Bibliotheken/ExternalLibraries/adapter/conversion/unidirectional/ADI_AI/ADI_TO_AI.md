@@ -3,6 +3,7 @@
 ![ADI_TO_AI](./ADI_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **ADI_TO_AI** ist ein Composite FB, der einen DINT-Adapter (ADI) in einen INT-Adapter (AI) umwandelt. Er dient als unidirektionale Konvertierungsschnittstelle zwischen zwei Adapter-Typen und nutzt intern den Baustein `F_DINT_TO_INT` zur Typumwandlung der Datenwerte.

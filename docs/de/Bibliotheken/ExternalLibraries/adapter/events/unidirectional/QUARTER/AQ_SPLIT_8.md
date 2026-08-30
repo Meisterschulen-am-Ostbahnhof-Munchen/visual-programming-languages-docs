@@ -3,6 +3,7 @@
 ![AQ_SPLIT_8](./AQ_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AQ_SPLIT_8** ist ein Fan-Out-Baustein, der einen einzigen AQ-Adapter-Eingang auf acht identische AQ-Adapter-Ausgänge verteilt. Er dient der Signalvervielfachung in Analogausgangs-Pfaden und ermöglicht so die parallele Ansteuerung mehrerer gleichartiger Aktoren oder Subsysteme. Die Implementierung basiert auf dem generischen Mechanismus `GEN_AQ_SPLIT` und ist für unidirektionale AQ-Schnittstellen ausgelegt.

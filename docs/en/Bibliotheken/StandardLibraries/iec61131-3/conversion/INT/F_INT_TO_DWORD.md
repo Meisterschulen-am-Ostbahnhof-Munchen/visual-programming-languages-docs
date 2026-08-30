@@ -6,6 +6,7 @@
 
 The function block `F_INT_TO_DWORD` converts an integer value (INT) to a double-word value (DWORD). This conversion is particularly useful when exchanging data between systems that use different data types.
 ![F_INT_TO_DWORD](F_INT_TO_DWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

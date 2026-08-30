@@ -3,6 +3,7 @@
 ![AW_AND_4](./AW_AND_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AW_AND_4** is a generic function block for the bitwise AND operation across 4 input values of type `WORD` (16-bit bit pattern (word)). Unlike the Boolean operation on single truth values (as in the `AX_AND` blocks), every bit of the data word is combined independently here.

@@ -1,6 +1,7 @@
 # CF_INFO_T
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `CF_INFO_T` (Control Function Information Type) ist eine strukturierte Datenkomponente, die innerhalb der ISO 11783 (ISOBUS)-Kommunikation verwendet wird. Er dient der standardisierten Abbildung und Verwaltung von Informationen über einen Teilnehmer (Control Function oder User) im ISOBUS-Netzwerk. Dieser Typedef fasst alle wesentlichen Merkmale und Zustände eines Netzwerkteilnehmers in einer einzigen Datenstruktur zusammen.
@@ -38,25 +39,25 @@ Der Datentyp `CF_INFO_T` ist eine passive Datenhaltungsstruktur. Er wird verwend
 
 ## Technische Besonderheiten
 
-*   **Typedef für ISOBUS:** Speziell für die Anwendung in ISO 11783-Umgebungen (Landtechnik) konzipiert.
-*   **Zustandsflags:** Enthält mehrere boolesche Flags (`bIsAnnounced`, `bIsActive`), die den Lebenszyklus und Betriebszustand einer CF abbilden.
-*   **Initialwerte:** Kritische Identifikatoren wie `s16Handle` und `u8SourceAddress` werden mit definierten Konstanten (`UNVALID`, `NULL_A`) initialisiert, um einen ungültigen Ausgangszustand sicherzustellen.
-*   **Integration:** Verwendet den benutzerdefinierten Typ `isobus::pgn::CF_NAME_T` für die Abbildung des 64-bit ISOBUS-NAMEN.
+-   **Typedef für ISOBUS:** Speziell für die Anwendung in ISO 11783-Umgebungen (Landtechnik) konzipiert.
+-   **Zustandsflags:** Enthält mehrere boolesche Flags (`bIsAnnounced`, `bIsActive`), die den Lebenszyklus und Betriebszustand einer CF abbilden.
+-   **Initialwerte:** Kritische Identifikatoren wie `s16Handle` und `u8SourceAddress` werden mit definierten Konstanten (`UNVALID`, `NULL_A`) initialisiert, um einen ungültigen Ausgangszustand sicherzustellen.
+-   **Integration:** Verwendet den benutzerdefinierten Typ `isobus::pgn::CF_NAME_T` für die Abbildung des 64-bit ISOBUS-NAMEN.
 
 ## Zustandsübersicht
 
 Da es sich um einen Datentyp und keinen aktiven Baustein handelt, existiert keine Zustandsmaschine. Der "Zustand" wird durch die Kombination der enthaltenen Datenfelder beschrieben, insbesondere durch die Flags:
 
-*   **Ungültig/Inaktiv:** `s16Handle == UNVALID`, `bIsAnnounced == FALSE`
-*   **Gültig & Aktiv:** `s16Handle != UNVALID`, `bIsAnnounced == TRUE`, `bIsActive == TRUE`
-*   **Gültig & Fehlerhaft/Inaktiv:** `s16Handle != UNVALID`, `bIsActive == FALSE`
+-   **Ungültig/Inaktiv:** `s16Handle == UNVALID`, `bIsAnnounced == FALSE`
+-   **Gültig & Aktiv:** `s16Handle != UNVALID`, `bIsAnnounced == TRUE`, `bIsActive == TRUE`
+-   **Gültig & Fehlerhaft/Inaktiv:** `s16Handle != UNVALID`, `bIsActive == FALSE`
 
 ## Anwendungsszenarien
 
-*   **Teilnehmerverwaltung:** In einem ISOBUS-Manager-Baustein, der eine Liste aller bekannten Netzwerkteilnehmer (`CF_INFO_T[]`) verwaltet.
-*   **Diagnose und Anzeige:** Weitergabe von Teilnehmerinformationen an ein Diagnose- oder Display-System, um den Netzwerkstatus anzuzeigen.
-*   **Kommando-Weiterleitung:** Als Parameter für Kommunikationsbausteine, um Nachrichten gezielt an eine bestimmte CF (identifiziert durch `u8SourceAddress` und `au8Name`) zu adressieren.
-*   **Filterung:** Logikbausteine können anhand der Felder `eIsoUserFunct` oder `bExternalCf` entscheiden, ob Nachrichten einer bestimmten CF verarbeitet werden sollen.
+-   **Teilnehmerverwaltung:** In einem ISOBUS-Manager-Baustein, der eine Liste aller bekannten Netzwerkteilnehmer (`CF_INFO_T[]`) verwaltet.
+-   **Diagnose und Anzeige:** Weitergabe von Teilnehmerinformationen an ein Diagnose- oder Display-System, um den Netzwerkstatus anzuzeigen.
+-   **Kommando-Weiterleitung:** Als Parameter für Kommunikationsbausteine, um Nachrichten gezielt an eine bestimmte CF (identifiziert durch `u8SourceAddress` und `au8Name`) zu adressieren.
+-   **Filterung:** Logikbausteine können anhand der Felder `eIsoUserFunct` oder `bExternalCf` entscheiden, ob Nachrichten einer bestimmten CF verarbeitet werden sollen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -70,4 +71,4 @@ Der Datentyp `CF_INFO_T` ist ein grundlegender und wesentlicher Bestandteil für
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

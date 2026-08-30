@@ -3,15 +3,17 @@
 ![logiBUS_AI_IDA](./logiBUS_AI_IDA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `logiBUS_AI_IDA` is a composite function block (FB) for processing analog double-word input data. It serves as an interface between a logiBUS resource and the application by providing uniform analog input values via an adapter and returning status information (QO, STATUS) to the calling instance. The function block supports both initialization-driven and event-driven processing.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | With | Description |
-|----------|--------|-------|--------------|
+| ---------- | -------- | ------- | -------------- |
 | INIT | EInit | QI, PARAMS, Input, AnalogInput_hysteresis, TimeDelta, TimeRateLimit | Service Initialization: Configuration of the analog input and start of data provisioning. |
 | REQ | Event | QI | Service Request: Triggers immediate processing or a status update. |
 
@@ -24,11 +26,11 @@ The function block `logiBUS_AI_IDA` is a composite function block (FB) for proce
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|-----------------------|--------|-------------|--------------|
+| ----------------------- | -------- | ------------- | -------------- |
 | QI | BOOL | – | Qualifier for events (e.g., enabling processing). |
 | PARAMS | STRING | – | Service parameters (e.g., configuration strings). |
 | Input | logiBUS::io::AI::logiBUS_AI_S | Invalid | Selection of the analog input (e.g., Input_I1…I8). |
-| AnalogInput_hysteresis| DWORD | – | Hysteresis for change detection. A value of 0 requires TimeDelta to be non-zero. |
+| AnalogInput_hysteresis | DWORD | – | Hysteresis for change detection. A value of 0 requires TimeDelta to be non-zero. |
 | TimeDelta | DWORD | 250 | Cycle time in ms for cyclic processing (16#FFFFFFFF = only on change). |
 | TimeRateLimit | DWORD | 100 | Minimum interval in ms between two events (IND) (< TimeDelta). |
 
@@ -72,10 +74,13 @@ Die zyklische Verarbeitung erfolgt gemäß `TimeDelta`. Wenn `TimeDelta = 16#FFF
 The block itself does not have an explicit state machine, as its behavior is determined by the internal FB `logiBUS_AI_ID`. The following basic processes can be identified:
 
 1. **Initialization Phase**
+
 - Event `INIT` → Internal function block is configured → Confirmation `INITO` with QO/STATUS.
-2. **Data Provisioning (Cyclical / Change-Based)**
+1. **Data Provisioning (Cyclical / Change-Based)**
+
 - After INIT, the internal function block regularly sends events via `IND` (or `CNF`) to the plug `IN`, or upon value change.
-3. **Manual Request**
+1. **Manual Request**
+
 - The current processing is triggered by `REQ` or `SREQ`; results are also output via `IN`.
 
 ## Application Scenarios

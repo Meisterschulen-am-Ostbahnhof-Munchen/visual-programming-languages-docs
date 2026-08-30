@@ -3,6 +3,7 @@
 ![AND_3](https://user-images.githubusercontent.com/116869307/214143860-e43fc5ba-af8d-4a77-8d0b-04d1481ad370.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AND_3 function block is a generic function block for calculating the bitwise logical AND operation with three inputs. It performs a bitwise AND operation on three input values and outputs the result. The function block supports all ANY_BIT data types and is therefore flexible for use with different bit widths.
@@ -64,7 +65,7 @@ Compared to Compared to standard two-input AND gates, AND_3 offers the ability t
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
+- [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Conclusion
 

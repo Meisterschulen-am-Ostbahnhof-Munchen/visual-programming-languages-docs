@@ -1,7 +1,9 @@
 Here is the documentation for exercise `Uebung_010b4_sub_AX`, based on the provided XML data.
+
 # Exercise_010b4_sub_AX: IX to QX (generic)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise covers the creation of a **sub-application** (SubApp) that establishes a generic link between an ISOBUS input element (softkey) and a logiBUS output. The goal is to map a softkey input (`IX`) directly to a digital output (`QX`). By using interface variables, this function block is reusable for different object IDs and outputs.
@@ -40,17 +42,19 @@ Within the network, the softkey status is captured via the `IXA` block. Instead 
 The network within the sub-application is kept minimal and relies on abstraction through adapters.
 
 1. **Interface Inputs**:
-* **u16ObjId (UINT)**: The ID of the softkey is passed here (initial value: `ID_NULL`). This variable is passed internally to `IXA.u16ObjId`.
-* **Output (logiBUS_DO_S)**: The target output is defined here (e.g., Output_Q1..Q8). This variable is passed internally to `QXA.Output`.
-2. **Internal Logic**:
-* The function block `IXA` initializes communication with the softkey under the specified ID.
-* The function block `QXA` initializes the control of the selected digital output.
-* The connection between input and output is not made via classic `AND`/`OR` logic or event triggers (`INIT`, `REQ`, `CNF`), but via the **adapter connection** (`Connection Source="IXA.IN" Destination="QXA.OUT"`). This abstracts the signal flow and ensures that the output follows the logical state of the input adapter.
+
+- **u16ObjId (UINT)**: The ID of the softkey is passed here (initial value: `ID_NULL`). This variable is passed internally to `IXA.u16ObjId`.
+- **Output (logiBUS_DO_S)**: The target output is defined here (e.g., Output_Q1..Q8). This variable is passed internally to `QXA.Output`.
+1. **Internal Logic**:
+
+- The function block `IXA` initializes communication with the softkey under the specified ID.
+- The function block `QXA` initializes the control of the selected digital output.
+- The connection between input and output is not made via classic `AND`/`OR` logic or event triggers (`INIT`, `REQ`, `CNF`), but via the **adapter connection** (`Connection Source="IXA.IN" Destination="QXA.OUT"`). This abstracts the signal flow and ensures that the output follows the logical state of the input adapter.
 
 **Application Notes:**
 
-* This function block is intended as a generic module. It can be instantiated multiple times in the main program to assign different buttons to different outputs without having to reprogram the internal logic.
-* No explicit events are passed externally; Control is handled entirely internally via the bus drivers.
+- This function block is intended as a generic module. It can be instantiated multiple times in the main program to assign different buttons to different outputs without having to reprogram the internal logic.
+- No explicit events are passed externally; Control is handled entirely internally via the bus drivers.
 
 ## Summary
 

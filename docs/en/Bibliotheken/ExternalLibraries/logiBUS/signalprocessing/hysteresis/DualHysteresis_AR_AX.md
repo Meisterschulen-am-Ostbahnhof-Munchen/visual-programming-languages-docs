@@ -3,6 +3,7 @@
 ![DualHysteresis_AR_AX](./DualHysteresis_AR_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **DualHysteresis_AR_AX** performs a two-way analog-to-digital conversion with adjustable hysteresis.
@@ -52,7 +53,7 @@ This ensures reliable switching behavior with a reduced switching frequency, typ
 **Sockets (Input Adapters):**
 
 | Adapter | Type | Description |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `INPUT` | adapter::types::unidirectional::AR | Analog input value (e.g., 0…1 or other range) |
 | `MI` | adapter::types::unidirectional::AR | Center point (e.g., 0.5 for 50%) |
 | `DEAD` | adapter::types::unidirectional::AR | Deadband (absolute value) – determines the turn-off points |
@@ -61,7 +62,7 @@ This ensures reliable switching behavior with a reduced switching frequency, typ
 **Plugs (Output Adapters):**
 
 | Adapter | Type | Description |
-|---------|-----|---------------|
+| --------- | ----- | --------------- |
 | `DO_UP` | adapter::types::unidirectional::AX | Binary output for the **UP** state (switches on when the upper threshold is exceeded) |
 | `DO_DOWN` | adapter::types::unidirectional::AX | Binary output for the **DOWN** state (switches on when the lower threshold is not reached) |
 
@@ -74,6 +75,7 @@ As soon as a new value arrives via the adapter `INPUT` (event `E1`), the hystere
 1. **Turn on UP**: When `INPUT.D1 >= MI.D1 + ABS(DEAD.D1) + ABS(HYSTERESIS.D1)`, the **UP** state becomes active. Then, the following applies: `DO_UP = TRUE`, `DO_DOWN = FALSE`.
 2. **Turn on DOWN**: When `INPUT.D1 <= MI.D1 - ABS(DEAD.D1) - ABS(HYSTERESIS.D1)`, the **DOWN** state becomes active. Then the following applies: `DO_UP = FALSE`, `DO_DOWN = TRUE`.
 3. **Return to Neutral**:
+
 - From **UP**, the return occurs at `INPUT.D1 < MI.D1 + ABS(DEAD.D1)` (strict condition).
 - From **DOWN**, the return occurs at `INPUT.D1 > MI.D1 - ABS(DEAD.D1)` (strict condition).
 
@@ -89,7 +91,7 @@ If `QI = FALSE` occurs during a `INIT` event, the function block is deinitialize
 ## State Overview
 
 | State | Description |
-|-----------|--------------|
+| ----------- | -------------- |
 | `START` | Initial sleep state after system startup. |
 | `Init` | Initialization at `INIT` with `QI = TRUE`. Resets outputs and returns `INITO`. |
 | `Neutral` | Normal state: both outputs are `FALSE`. Waiting for a new input value. |

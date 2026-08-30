@@ -3,6 +3,7 @@
 ![Uebung_004a2_3b_AX_network](./Uebung_004a2_3b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a toggle flip-flop controlled by three buttons (BUTTON_SINGLE_CLICK). The button events are combined into a single clock signal using E_MERGE_3. The flip-flop toggles its initial state with each button press and outputs the result to a digital output.
@@ -100,4 +101,4 @@ Exercise `Uebung_004a2_3b_AX` demonstrates the construction of a toggle flip-flo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

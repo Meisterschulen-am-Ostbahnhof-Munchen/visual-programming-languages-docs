@@ -3,6 +3,7 @@
 ![Q_EndPoint](https://user-images.githubusercontent.com/116869307/214147340-866900ae-dc9c-4cbd-a9e8-c8755d833674.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_EndPoint** is a standards-compliant function block for controlling line endpoints in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.26) specification for agricultural tax systems.
@@ -45,13 +46,16 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with Line Object ID
 - `INITO` confirms operational readiness
-2. **Endpoint Change**:
+1. **Endpoint Change**:
+
 - `REQ` with new position and direction parameters
 - Changes the endpoint and orientation of the line
 - `CNF` returns the result and the old values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -75,7 +79,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Invalid position values |
 | -128 | VT_E_HANDLE_INVALID | Invalid line object ID |
@@ -91,7 +95,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_EndPoint | VtLineEditor | VtDynamicLine |
-|----------------|---------------|---------------|---------------|
+| ---------------- | --------------- | --------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Control | Endpoint | Full | Position Only |
 | Directions | 4 Options | 8 Options | None |

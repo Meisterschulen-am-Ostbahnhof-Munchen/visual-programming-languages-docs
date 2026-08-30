@@ -3,6 +3,7 @@
 ![AX_SR_SYM_INIT](./AX_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_SR_SYM_INIT** realisiert ein ereignisgesteuertes, bistabiles Flipflop (Set-Reset) mit symmetrischem Start‑up‑Verhalten und einer speziellen Initialisierungslogik. Er erweitert das klassische SR‑Flipflop um einen qualifizierten Initialisierungs- und Deinitialisierungsablauf, bei dem der Ausgangszustand über den Eingang `Q_INIT` vorgegeben wird und die gesamte Logik nur dann aktiv ist, wenn der Qualifier `QI` den Wert `TRUE` besitzt.

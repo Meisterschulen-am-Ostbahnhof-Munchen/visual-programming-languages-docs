@@ -3,6 +3,7 @@
 ![CommunicationPartners](./CommunicationPartners.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `CommunicationPartners` ist ein globaler Konstanten-Datensatz, der im Kontext der ISOBUS PGN-Kommunikation (Parameter Group Number) verwendet wird. Er dient dazu, einen vordefinierten Kommunikationspartner, in diesem Fall die globale Adresse, als konstante Konfiguration für andere Funktionsblöcke bereitzustellen. Dies vereinfacht die Konfiguration von ISOBUS-Netzwerkkomponenten, indem häufig benötigte Adressen zentral und wiederverwendbar definiert werden.
@@ -39,10 +40,10 @@ Bei der Kompilierung und Ausführung der Applikation wird diese Konstante im Spe
 
 ## Technische Besonderheiten
 
-*   **Datentyp:** Die Konstante ist vom Typ `isobus::pgn::CF_INFO_T`. Dies ist vermutlich eine strukturierte (STRUCT) oder Aufzählungstyp (ENUM), die speziell für die ISOBUS-Kommunikationskonfiguration definiert ist.
-*   **Initialisierung:** Die Initialisierung erfolgt direkt in der Deklaration mittels Strukturinitialisierung `(s16Handle := GLOBAL_A)`.
-*   **Import:** Der Datensatz importiert eine externe Konstante (`GLOBAL_A`) aus dem Paket `isobus::pgn::ADDRESS`. Dies zeigt eine modulare Architektur, bei der Adressdefinitionen an einer zentralen Stelle gepflegt werden.
-*   **Kompilierung:** Das `CompilerInfo`-Tag weist darauf hin, dass dieses Element Teil des Pakets `isobus::pgn` ist und für die Codegenerierung relevant ist.
+-   **Datentyp:** Die Konstante ist vom Typ `isobus::pgn::CF_INFO_T`. Dies ist vermutlich eine strukturierte (STRUCT) oder Aufzählungstyp (ENUM), die speziell für die ISOBUS-Kommunikationskonfiguration definiert ist.
+-   **Initialisierung:** Die Initialisierung erfolgt direkt in der Deklaration mittels Strukturinitialisierung `(s16Handle := GLOBAL_A)`.
+-   **Import:** Der Datensatz importiert eine externe Konstante (`GLOBAL_A`) aus dem Paket `isobus::pgn::ADDRESS`. Dies zeigt eine modulare Architektur, bei der Adressdefinitionen an einer zentralen Stelle gepflegt werden.
+-   **Kompilierung:** Das `CompilerInfo`-Tag weist darauf hin, dass dieses Element Teil des Pakets `isobus::pgn` ist und für die Codegenerierung relevant ist.
 
 ## Zustandsübersicht
 
@@ -50,15 +51,15 @@ Da es sich um eine statische, konstante Definition handelt, gibt es keine Zustan
 
 ## Anwendungsszenarien
 
-*   **ISOBUS-Netzwerkkonfiguration:** Wird verwendet, wenn ein Funktionsblock eine Nachricht an alle Teilnehmer im ISOBUS-Netzwerk (Broadcast) senden soll. Die Konstante `GLOBAL` repräsentiert diese Broadcast-Adresse.
-*   **Vereinfachung der Parametrierung:** In komplexen Applikationen mit vielen kommunizierenden Blöcken ersetzt die Verwendung von `CommunicationPartners.GLOBAL` die wiederholte, hartkodierte Eingabe der globalen Adresse und erhöht so die Wartbarkeit.
-*   **Referenz für andere Konstanten:** Kann als Basis für die Definition weiterer, spezifischerer Kommunikationspartner-Konstanten dienen (z.B. `IMPLEMENT`, `TOOL`).
+-   **ISOBUS-Netzwerkkonfiguration:** Wird verwendet, wenn ein Funktionsblock eine Nachricht an alle Teilnehmer im ISOBUS-Netzwerk (Broadcast) senden soll. Die Konstante `GLOBAL` repräsentiert diese Broadcast-Adresse.
+-   **Vereinfachung der Parametrierung:** In komplexen Applikationen mit vielen kommunizierenden Blöcken ersetzt die Verwendung von `CommunicationPartners.GLOBAL` die wiederholte, hartkodierte Eingabe der globalen Adresse und erhöht so die Wartbarkeit.
+-   **Referenz für andere Konstanten:** Kann als Basis für die Definition weiterer, spezifischerer Kommunikationspartner-Konstanten dienen (z.B. `IMPLEMENT`, `TOOL`).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Direkte Wertzuweisung:** Anstatt `CommunicationPartners.GLOBAL` zu verwenden, könnte ein Entwickler den Wert `GLOBAL_A` auch direkt in jedem Daten-Eingang eines Funktionsblocks eintragen. Die Verwendung der Konstanten ist jedoch sauberer, typsicherer und änderungsfreundlicher.
-*   **Andere Adresskonstanten:** Innerhalb des gleichen Pakets (`isobus::pgn::ADDRESS`) existieren vermutlich ähnliche Konstanten für andere Adressen (z.B. `NULL_A`, `TOOL_A`). `CommunicationPartners` kapselt eine spezifische Auswahl oder Kombination dieser Adressen in einem für die Applikation sinnvollen Kontext.
-*   **Parameter-FBs vs. Globale Konstanten:** Ein alternativer Ansatz wäre ein Funktionsblock, der seine Zieladresse als konfigurierbaren Parameter erhält. Globale Konstanten sind hingegen einfacher und direkter, wenn der Wert für die gesamte Laufzeit der Applikation unveränderlich ist.
+-   **Direkte Wertzuweisung:** Anstatt `CommunicationPartners.GLOBAL` zu verwenden, könnte ein Entwickler den Wert `GLOBAL_A` auch direkt in jedem Daten-Eingang eines Funktionsblocks eintragen. Die Verwendung der Konstanten ist jedoch sauberer, typsicherer und änderungsfreundlicher.
+-   **Andere Adresskonstanten:** Innerhalb des gleichen Pakets (`isobus::pgn::ADDRESS`) existieren vermutlich ähnliche Konstanten für andere Adressen (z.B. `NULL_A`, `TOOL_A`). `CommunicationPartners` kapselt eine spezifische Auswahl oder Kombination dieser Adressen in einem für die Applikation sinnvollen Kontext.
+-   **Parameter-FBs vs. Globale Konstanten:** Ein alternativer Ansatz wäre ein Funktionsblock, der seine Zieladresse als konfigurierbaren Parameter erhält. Globale Konstanten sind hingegen einfacher und direkter, wenn der Wert für die gesamte Laufzeit der Applikation unveränderlich ist.
 
 ## Fazit
 
@@ -68,4 +69,4 @@ Der globale Konstanten-Datensatz `CommunicationPartners` ist ein einfaches, aber
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

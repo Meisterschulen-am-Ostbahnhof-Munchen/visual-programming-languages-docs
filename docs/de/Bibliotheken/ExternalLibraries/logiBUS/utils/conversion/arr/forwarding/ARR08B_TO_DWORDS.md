@@ -5,6 +5,7 @@ Dieser Funktionsbaustein konvertiert ein Byte-Array der Länge 8 (8 Bytes) in zw
 ![ARR08B_TO_DWORDS](./ARR08B_TO_DWORDS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ARR08B_TO_DWORDS** ist ein reiner Konvertierungsbaustein, der aus einem eingehenden 8‑Byte-Array zwei separate DWORD-Werte erzeugt. Die Umwandlung erfolgt byteweise, wobei die ersten vier Bytes dem ersten Ausgang (OUT_00) und die letzten vier Bytes dem zweiten Ausgang (OUT_01) zugeordnet werden. Der Baustein wird über ein Ereignis (REQ) angestoßen und gibt nach Abschluss der Konvertierung ein Bestätigungsereignis (CNF) aus.

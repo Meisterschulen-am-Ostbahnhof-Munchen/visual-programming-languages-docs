@@ -3,9 +3,11 @@
 ![SET_ANY](./SET_ANY.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_ANY** is used to write any value from input `IN` to a variable `OUT`, declared as an InOut parameter. The operation is triggered by an event at input `REQ` and acknowledged with the output event `CNF` after successful assignment. The function block is generic and can work with any data type, as long as the types of `IN` and `OUT` are compatible.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **SET_ANY** is used to write any value from input `IN` to a v
 ### **Data Inputs**
 
 | Name | Data Type | Comment |
-|------|----------|-----------|
+| ------ | ---------- | ----------- |
 | IN | ANY | Value written to the target variable. |
 | OUT | ANY | **InOut Parameter** – used as both an input and an output (see Data Outputs). |
 
@@ -69,7 +71,7 @@ There are no other states, no branches, and no time monitoring.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-|----------|-------------|
+| ---------- | ------------- |
 | **SET** | Is fixed to a specific data type (e.g., SET_BOOL, SET_INT). `SET_ANY` is generic. |
 | **MOVE** | Also copies a value from an input to an output, but uses standard outputs. `SET_ANY` uses an InOut parameter that references a persistent variable. |
 | **SELECT** | Selects between two input values and requires a control signal. `SET_ANY` operates without a condition. |
@@ -82,6 +84,6 @@ SET_ANY` is a simple yet flexible function block for selectively overwriting var
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,11 @@
 ![AUS_TO_AUDI](./AUS_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block **AUS_TO_AUDI** converts a unidirectional adapter of type **AUS** (based on USINT values) into an adapter of type **AUDI** (based on UDINT values). It is used to translate data between two different adapter interfaces without altering the underlying data logic. The block is implemented as a pure pass-through component, forwarding events and data directly from the input to the output side.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ This function block does not have its own data outputs. Data is output via the *
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AUS` | `AUS_IN` | Socket (Input) | Unidirectional adapter that provides data in USINT format (8 bits) and an event. |
 | `adapter::types::unidirectional::AUDI` | `AUDI_OUT` | Plug (Output) | Unidirectional adapter that expects data in UDINT format (32 bits) and an event. |
 

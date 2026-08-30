@@ -3,9 +3,11 @@
 ![AW_TO_AUI](./AW_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_TO_AUI** is a composite function block (FB) that converts an **AW (WORD)** adapter into an **AUI (UINT)** adapter. It enables the seamless integration of components that use different data types via unidirectional adapters. Internally, it uses the standard conversion block `F_WORD_TO_UINT` for type conversion.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,18 +29,20 @@ The FB does not have any standalone data outputs. The date `D1` of type `UINT` i
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|----------|----------|-----------------------------------------|----------------------------------|
+| ---------- | ---------- | ----------------------------------------- | ---------------------------------- |
 | `AW_IN` | Input | `adapter::types::unidirectional::AW` | WORD Adapter Input (Socket) |
-| `AUI_OUT`| Output | `adapter::types::unidirectional::AUI` | UINT Adapter Output (Plug) |
+| `AUI_OUT` | Output | `adapter::types::unidirectional::AUI` | UINT Adapter Output (Plug) |
 
 ## Functionality
 
 This function block acts as a conversion layer between two different adapter types. Internally, a single function block, `F_WORD_TO_UINT`, is embedded:
 
 1. **Event Control**:
+
 - An incoming event at socket `AW_IN.E1` triggers the conversion process (`Convert.REQ`).
 - After the conversion is complete, the internal block generates an acknowledgment event (`Convert.CNF`), which is forwarded to plug `AUI_OUT.E1`.
-2. **Data Flow**:
+1. **Data Flow**:
+
 - The value `WORD`, provided by socket `AW_IN.D1`, is passed to input `Convert.IN`.
 - The output `Convert.OUT` returns the converted `UINT` value, which is then passed to the plug `AUI_OUT.D1`.
 
@@ -72,6 +76,6 @@ The `AW_TO_AUI` function block offers a compact and reliable solution for adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

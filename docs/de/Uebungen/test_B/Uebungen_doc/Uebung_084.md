@@ -18,11 +18,11 @@ Kombination von Zeitbasis (`E_CYCLE`) und Ereignis-Zähler (`E_CTU`).
 
 ![Uebung_084_network](./Uebung_084_network.svg)
 
-*   Taster **I1** startet den Taktgeber.
-*   Jedes Sekunde-Event vom `E_CYCLE` erreicht den `CU`-Eingang des Zählers.
-*   Nach 5 Sekunden erreicht der Zähler den Wert 5 und die Lampe `Q1` geht an.
-*   Taster **I2** stoppt den Taktgeber (Pause).
-*   Taster **I3** setzt den Zähler auf Null zurück.
+-   Taster **I1** startet den Taktgeber.
+-   Jedes Sekunde-Event vom `E_CYCLE` erreicht den `CU`-Eingang des Zählers.
+-   Nach 5 Sekunden erreicht der Zähler den Wert 5 und die Lampe `Q1` geht an.
+-   Taster **I2** stoppt den Taktgeber (Pause).
+-   Taster **I3** setzt den Zähler auf Null zurück.
 
 Dies ist die Basis für die Implementierung von Zeit-Grenzwerten oder verzögerten Abschaltungen über längere Zeiträume.
 
@@ -30,4 +30,4 @@ Dies ist die Basis für die Implementierung von Zeit-Grenzwerten oder verzögert
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

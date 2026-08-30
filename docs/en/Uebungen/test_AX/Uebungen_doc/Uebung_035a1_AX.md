@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_035a1_AX` based on the provided data.
+
 # Exercise_035a1_AX: Traffic Light Control with Pattern Sequencer (AX)
 
 ![Uebung_035a1_AX_network](./Uebung_035a1_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements **traffic light control** using a **pattern sequencer**. The goal is to control a classic traffic light sequence (red -> red/yellow -> green -> yellow -> red) using defined time intervals and bit patterns. The exercise utilizes adapter technology (AX) for connecting the outputs and timing.
@@ -69,14 +71,16 @@ The traffic light control process is as follows:
 
 The `PatternSeq` block controls the traffic light phases based on the configured parameters. The outputs are controlled using binary code (Q3, Q2, Q1):
 
-* **Phase 1 (Red)**: Duration 3s (`DT_S1_S2`). Parameter `P_S1 = 1` (Binary `001`) activates adapter output `Q1` -> **Red Light**.
-* **Phase 2 (Red-Yellow)**: Duration 1s (`DT_S2_S3`). Parameter `P_S2 = 3` (binary `011`) activates `Q1` and `Q2` -> **Red and Yellow Lights**.
-* **Phase 3 (Green)**: Duration 3s (`DT_S3_S4`). Parameter `P_S3 = 4` (binary `100`) activates `Q3` -> **Green Light**.
-* **Phase 4 (Yellow)**: Duration 1s (`DT_S4_S1`). Parameter `P_S4 = 2` (binary `010`) activates `Q2` -> **Yellow Light**.
-3. **Connections**:
-* The logic uses **adapter connections** (recognizable by the `logiBUS_QXA` type and the nested connections), which makes the wiring in the diagram clearer, as data and events are transmitted in bundles.
-* The `E_TimeOut` block is connected to the sequencer via the `timeOut` adapter to process the timer events (`T#3s`, `T#1s`, etc.) internally.
-*
+- **Phase 1 (Red)**: Duration 3s (`DT_S1_S2`). Parameter `P_S1 = 1` (Binary `001`) activates adapter output `Q1` -> **Red Light**.
+- **Phase 2 (Red-Yellow)**: Duration 1s (`DT_S2_S3`). Parameter `P_S2 = 3` (binary `011`) activates `Q1` and `Q2` -> **Red and Yellow Lights**.
+- **Phase 3 (Green)**: Duration 3s (`DT_S3_S4`). Parameter `P_S3 = 4` (binary `100`) activates `Q3` -> **Green Light**.
+- **Phase 4 (Yellow)**: Duration 1s (`DT_S4_S1`). Parameter `P_S4 = 2` (binary `010`) activates `Q2` -> **Yellow Light**.
+1. **Connections**:
+
+- The logic uses **adapter connections** (recognizable by the `logiBUS_QXA` type and the nested connections), which makes the wiring in the diagram clearer, as data and events are transmitted in bundles.
+- The `E_TimeOut` block is connected to the sequencer via the `timeOut` adapter to process the timer events (`T#3s`, `T#1s`, etc.) internally.
+-
+
 ## Summary
 
 The exercise `Uebung_035a1_AX` efficiently demonstrates how complex state machines, such as a traffic light controller, can be simplified using a **pattern sequencer**. Instead of programming each state transition individually, phase times and output patterns are parameterized. The use of `logiBUS` adapters (AX/QXA) also showcases a modern method of block communication in 4diac.
@@ -85,4 +89,4 @@ The exercise `Uebung_035a1_AX` efficiently demonstrates how complex state machin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

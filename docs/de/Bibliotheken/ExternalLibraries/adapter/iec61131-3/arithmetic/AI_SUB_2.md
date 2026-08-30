@@ -4,6 +4,7 @@
 ![AI_SUB_2](./AI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AI_SUB_2` ist ein generischer, arithmetischer Funktionsbaustein zur Durchführung einer Subtraktion. Er ist speziell für den Einsatz mit analogen Schnittstellen-Adaptern konzipiert. Der Baustein berechnet die Differenz zwischen zwei analogen Eingangswerten und stellt das Ergebnis an einem analogen Ausgangs-Adapter zur Verfügung. Durch die Verwendung von Adaptern wird das Schnittstellendesign in der 4diac-ide übersichtlich gehalten.
@@ -32,12 +33,12 @@ Da dieser Funktionsbaustein vollständig auf einer Adapter-Architektur basiert, 
 
 #### Sockets (Eingangs-Adapter)
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AI`): Der erste analoge Eingangswert (Minuend) für die Subtraktionsoperation.
-*   **IN2** (Typ: `adapter::types::unidirectional::AI`): Der zweite analoge Eingangswert (Subtrahend), der von `IN1` abgezogen wird.
+-   **IN1** (Typ: `adapter::types::unidirectional::AI`): Der erste analoge Eingangswert (Minuend) für die Subtraktionsoperation.
+-   **IN2** (Typ: `adapter::types::unidirectional::AI`): Der zweite analoge Eingangswert (Subtrahend), der von `IN1` abgezogen wird.
 
 #### Plugs (Ausgangs-Adapter)
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AI`): Das Ergebnis der Subtraktion (Differenz: `IN1 - IN2`).
+-   **OUT** (Typ: `adapter::types::unidirectional::AI`): Das Ergebnis der Subtraktion (Differenz: `IN1 - IN2`).
 
 ## Funktionsweise
 
@@ -49,8 +50,8 @@ Sobald sich die Eingangswerte an den Sockets `IN1` oder `IN2` ändern bzw. ein e
 
 ## Technische Besonderheiten
 
-*   **Generischer Bausteintyp (`GEN_AI_SUB`)**: Der Baustein ist intern als generischer Typ definiert. Dies ermöglicht eine flexible Anpassung an die im System verwendeten analogen Datentypen der Adapter.
-*   **Adapter-Kapselung**: Die Verwendung von unidirektionalen analogen Adaptern (`unidirectional::AI`) bündelt Daten- und Eventleitungen. Dies minimiert den Verdrahtungsaufwand im FBD (Function Block Diagram) und erhöht die Übersichtlichkeit signifikant.
+-   **Generischer Bausteintyp (`GEN_AI_SUB`)**: Der Baustein ist intern als generischer Typ definiert. Dies ermöglicht eine flexible Anpassung an die im System verwendeten analogen Datentypen der Adapter.
+-   **Adapter-Kapselung**: Die Verwendung von unidirektionalen analogen Adaptern (`unidirectional::AI`) bündelt Daten- und Eventleitungen. Dies minimiert den Verdrahtungsaufwand im FBD (Function Block Diagram) und erhöht die Übersichtlichkeit signifikant.
 
 ## Zustandsübersicht
 
@@ -58,9 +59,9 @@ Der Baustein verhält sich wie ein rein funktionaler Baustein ohne internen Spei
 
 ## Anwendungsszenarien
 
-*   **Differenzdruck- und Differenztemperaturmessung**: Berechnung von physikalischen Differenzwerten in der Prozesstechnik (z. B. Ermittlung des Druckabfalls über einem Filter oder der Temperaturdifferenz zwischen Vor- und Rücklauf).
-*   **Regelungsabweichung**: Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen Soll- und Istwert als Adapterstrukturen vorliegen.
-*   **Nullpunktkorrektur / Offset-Abzug**: Subtraktion eines Kalibrier- oder Offset-Wertes von einem kontinuierlichen Messsignal.
+-   **Differenzdruck- und Differenztemperaturmessung**: Berechnung von physikalischen Differenzwerten in der Prozesstechnik (z. B. Ermittlung des Druckabfalls über einem Filter oder der Temperaturdifferenz zwischen Vor- und Rücklauf).
+-   **Regelungsabweichung**: Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen Soll- und Istwert als Adapterstrukturen vorliegen.
+-   **Nullpunktkorrektur / Offset-Abzug**: Subtraktion eines Kalibrier- oder Offset-Wertes von einem kontinuierlichen Messsignal.
 
 ## Vergleich mit ähnlichen Bausteinen
 

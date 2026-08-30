@@ -5,6 +5,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_ADD_2` is a generic function block (Generic FB) designed to perform arithmetic addition. It uses unidirectional adapters of type `AUI` (Adapter Unidirectional Interface) to add two input values and output the result. Because it is a generic block based on the class `GEN_AUI_ADD`, it can be flexibly used for various data types supported by the corresponding adapters.
@@ -31,11 +32,11 @@ Since this function block is entirely based on adapters, it has no direct, discr
 
 ### **Adapters**
 
-* **Sockets (Input Adapters):**
-* **IN1** (Type: `adapter::types::unidirectional::AUI`): First input (addend) for arithmetic addition.
-* **IN2** (Type: `adapter::types::unidirectional::AUI`): Second input (addend) for arithmetic addition.
-* **Plugs (Output Adapters):**
-* **OUT** (Type: `adapter::types::unidirectional::AUI`): Output for the result of the addition (`IN1 + IN2`).
+- **Sockets (Input Adapters):**
+- **IN1** (Type: `adapter::types::unidirectional::AUI`): First input (addend) for arithmetic addition.
+- **IN2** (Type: `adapter::types::unidirectional::AUI`): Second input (addend) for arithmetic addition.
+- **Plugs (Output Adapters):**
+- **OUT** (Type: `adapter::types::unidirectional::AUI`): Output for the result of the addition (`IN1 + IN2`).
 
 ## Functionality
 
@@ -51,9 +52,9 @@ By defining it as a generic building block (`GEN_AUI_ADD`), the internal additio
 
 ## Technical Features
 
-* **Generic Design:** The building block is classified as `GEN_AUI_ADD` via the attribute `eclipse4diac::core::GenericClassName`. This enables high reusability for different numeric data types.
-* **Adapter Encapsulation:** The use of the unidirectional adapter `AUI` ensures a very clean design in the 4diac application editor, as event and data flows are bundled in a single connection.
-* **Unidirectional Flow:** The interfaces are designed as purely unidirectional connections, which dictates a clear direction of signal and data flow from the sockets (`IN1`, `IN2`) to the plug (`OUT`).
+- **Generic Design:** The building block is classified as `GEN_AUI_ADD` via the attribute `eclipse4diac::core::GenericClassName`. This enables high reusability for different numeric data types.
+- **Adapter Encapsulation:** The use of the unidirectional adapter `AUI` ensures a very clean design in the 4diac application editor, as event and data flows are bundled in a single connection.
+- **Unidirectional Flow:** The interfaces are designed as purely unidirectional connections, which dictates a clear direction of signal and data flow from the sockets (`IN1`, `IN2`) to the plug (`OUT`).
 
 ## State Overview
 
@@ -61,9 +62,9 @@ The module does not have a complex internal state machine (ECC). Processing is e
 
 ## Application Scenarios
 
-* **Signal Addition:** Combining two sensor values (e.g., to calculate a total volumetric flow rate from two individual flow meters).
-* **Setpoint Offset:** Applying a constant or variable correction value (offset) to an existing control parameter.
-* **Structured Signal Processing:** For use in more complex control loops within IEC 61499 where a clean, adapter-based wiring style is preferred.
+- **Signal Addition:** Combining two sensor values (e.g., to calculate a total volumetric flow rate from two individual flow meters).
+- **Setpoint Offset:** Applying a constant or variable correction value (offset) to an existing control parameter.
+- **Structured Signal Processing:** For use in more complex control loops within IEC 61499 where a clean, adapter-based wiring style is preferred.
 
 ## Comparison with Similar Components
 

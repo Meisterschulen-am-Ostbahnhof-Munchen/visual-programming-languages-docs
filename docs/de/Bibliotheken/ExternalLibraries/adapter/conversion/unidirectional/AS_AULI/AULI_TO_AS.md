@@ -3,6 +3,7 @@
 ![AULI_TO_AS](./AULI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_AS** ist ein Composite-Baustein zur Konvertierung eines unidirektionalen **AULI**-Adapters (ULINT) in einen unidirektionalen **AS**-Adapter (SINT). Er kapselt die Typumwandlung von vorzeichenlosen 64‑Bit‑Ganzzahlen in vorzeichenbehaftete 8‑Bit‑Ganzzahlen und stellt eine nahtlose Verbindung zwischen Komponenten mit unterschiedlichen Datentypanforderungen im 4diac‑Framework bereit.
@@ -70,4 +71,4 @@ Der **AULI_TO_AS** ist ein schlanker, zweckgebundener Konverter für unidirektio
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

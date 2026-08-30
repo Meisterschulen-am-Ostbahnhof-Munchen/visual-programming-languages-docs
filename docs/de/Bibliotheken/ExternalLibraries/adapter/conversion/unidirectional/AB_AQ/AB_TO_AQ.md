@@ -3,6 +3,7 @@
 ![AB_TO_AQ](./AB_TO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AB_TO_AQ** dient der Konvertierung eines unidirektionalen Adapters vom Typ **AB (BYTE)** in einen Adapter vom Typ **AQ (Quarter Byte)**. Er übernimmt die direkte Durchleitung eines Ereignisses und eines Datenwerts von der Eingangsschnittstelle zur Ausgangsschnittstelle, wobei die Datenbreite implizit von 8 Bit auf 2 Bit reduziert wird.

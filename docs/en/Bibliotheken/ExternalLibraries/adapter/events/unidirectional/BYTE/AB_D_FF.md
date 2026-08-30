@@ -4,6 +4,7 @@ No image available.
 ![AB_D_FF](./AB_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_D_FF** implements an asynchronous data latch (D flip-flop) based on an adapter concept according to IEC 61499. It receives a data value via the input adapter **I** as soon as an event occurs and outputs this value via the output adapter **Q**. The internal state of the flip-flop is represented by a standardized `E_D_FF_ANY` function block.
@@ -63,7 +64,7 @@ The function block does not have an explicit internal state machine but relies o
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | **AB_SR_FF** | Set-Reset Flip-Flop, stores two states (Set/Reset) without a data value. |
 | **AB_T_FF** | Toggle Flip-Flop, changes the output state with each event. |
 | **E_D_FF** | Standard D Flip-Flop without an adapter interface, direct event and data pins. |

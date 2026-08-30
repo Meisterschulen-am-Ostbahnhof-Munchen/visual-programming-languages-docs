@@ -52,6 +52,7 @@ The AX_AND_3 block performs a logical AND operation on the three input signals. 
 
 The function block does not have an internal state machine, as it operates as a combinational logic circuit. The output is calculated directly from the current combination of input values.
 ...
+
 ## Application Scenarios
 
 - Safety controllers where multiple conditions must be met simultaneously
@@ -72,7 +73,7 @@ Comparison with [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/A
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
+- [Exercise_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)
 
 ## Change Detection
 

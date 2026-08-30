@@ -56,7 +56,7 @@ Die Initialisierung (`INIT`) übergibt den Parameter `Tmin` an den internen FB, 
 Der FB besitzt keinen expliziten öffentlichen Zustandsautomaten. Sein Verhalten wird durch den internen FB `E_D_FF_ANY_TMIN` bestimmt, der als Zustand den letzten gelatchten Wert und eine Wartezeitlogik aufweist. Vereinfacht dargestellt:
 
 | Zustand | Bedeutung |
-|---------|-----------|
+| --------- | ----------- |
 | Initialisiert | Nach INIT bereit, Tmin ist gesetzt |
 | Bereit | Wartet auf Takt (I.E1) |
 | Gelatcht | Datenwert wurde übernommen, Ausgangsereignis wird nach Ablauf von Tmin ausgegeben |
@@ -74,7 +74,7 @@ Eine detaillierte Zustandsdarstellung ist im Quellcode des internen FBs ersichtl
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Besonderheit |
-|----------|--------------|
+| ---------- | -------------- |
 | `AQ_D_FF` / `E_D_FF` | Einfaches D‑Flipflop ohne zeitliche Einschränkung des Ausgangs. |
 | `AQ_D_FF_TMIN` (dieser FB) | Erweitert um minimale Zwischenzeit Tmin zwischen Ausgangsereignissen. |
 | `AQ_D_FF_TMAX` (hypothetisch) | Begrenzung der maximalen Zeit zwischen zwei Ausgangsereignissen. |

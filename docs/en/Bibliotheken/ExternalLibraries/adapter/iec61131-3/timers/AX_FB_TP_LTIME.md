@@ -3,9 +3,11 @@
 ![AX_FB_TP_LTIME](./AX_FB_TP_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_FB_TP_LTIME** is a standardized pulse timer function block (timer pulse) according to IEC 61131-3, extended by a unidirectional **AX adapter**. It is used in the 4diac IDE to generate time-limited pulses and pass the output signals to the application via an adapter. Its behavior is similar to a **TP** timer, which sets the output to TRUE for a predefined time on a rising edge at the input.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -72,7 +74,7 @@ The function block consists of two internal components:
 Since the functional block consists of two parts, the following state behavior results for the complete module:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | No pulse active. The adapter output `Q.D1` is FALSE. |
 | **TIMING** | A pulse is running – the internal timer is counting up. `ET` is increasing, `Q.D1` is TRUE (as soon as the flip-flop was clocked at startup or after the first CNF). |
 | **DONE** | The pulse is complete. `CNF` was output, `ET` is equal to `PT`, `Q.D1` will be set to FALSE with the next `CNF`. The cycle starts again with a new `REQ` or `IN.E1`. |
@@ -86,7 +88,7 @@ Since the functional block consists of two parts, the following state behavior r
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Feature |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | **FB_TP_LTIME** (Standard) | TP Timer | No adapter, only standard events and signals. |
 | **AX_FB_TP_LTIME** (this FB) | TP Timer with AX Adapter | Enables integration into adapter-based architectures, includes a D flip-flop for signal stabilization. |
 | **FB_TON_LTIME** | Turn-On Delay | Delays the activation of an output. |
@@ -102,6 +104,6 @@ The **AX_FB_TP_LTIME** is a robust and precise pulse timer for the 4diac IDE. Th
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

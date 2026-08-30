@@ -3,6 +3,7 @@
 ![SPLIT_AW_INTO_AX](./SPLIT_AW_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_AW_INTO_AX` dient dazu, ein 16‑Bit Wort (Typ `AW`) in 16 einzelne Binärsignale (Typ `AX`) aufzuteilen. Jeder der 16 Ausgänge repräsentiert ein Bit des eingehenden Wortes und wird als eigenständiger Adapter mit Ereignis- und Datenleitung bereitgestellt. Die Aufteilung erfolgt synchron bei Eintreffen eines Ereignisses am Eingangsadapter.
@@ -77,4 +78,4 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten auf oberster Ebene. Der in
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

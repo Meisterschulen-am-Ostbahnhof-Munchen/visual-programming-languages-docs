@@ -3,6 +3,7 @@
 ![AS_D_FF](./AS_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AS_D_FF** realisiert ein einfaches Datenlatch (D-Flipflop) auf Basis von Adaptern. Er speichert einen eingehenden Datenwert bei jedem eingehenden Ereignis und gibt den gespeicherten Wert als Ausgangssignal weiter. Der Baustein kapselt die Logik des 4diac-Standardbausteins `E_D_FF_ANY` und stellt seine Schnittstellen ausschließlich über unidirektionale Adapter vom Typ `adapter::types::unidirectional::AS` bereit. Dies ermöglicht eine modulare und standardisierte Einbindung in komplexere Systeme.
@@ -34,13 +35,13 @@ Keine direkten Datenausgänge. Der gespeicherte Datenwert wird über den Adapter
 
 ## Funktionsweise
 
-Der Baustein **AS_D_FF** arbeitet als asynchroner Datenlatch.  
-Bei jedem positiven Ereignis auf `I.E1` wird der aktuelle Wert von `I.D1` im internen Speicher des Bausteins übernommen. Unmittelbar danach wird ein Ereignis auf `Q.E1` ausgelöst, und der gespeicherte Wert steht auf `Q.D1` zur Verfügung.  
+Der Baustein **AS_D_FF** arbeitet als asynchroner Datenlatch.
+Bei jedem positiven Ereignis auf `I.E1` wird der aktuelle Wert von `I.D1` im internen Speicher des Bausteins übernommen. Unmittelbar danach wird ein Ereignis auf `Q.E1` ausgelöst, und der gespeicherte Wert steht auf `Q.D1` zur Verfügung.
 Diese Logik wird durch den intern verwendeten Baustein `E_D_FF_ANY` realisiert:
 
-- `I.E1` → `E_D_FF_ANY.CLK`  
-- `I.D1` → `E_D_FF_ANY.D`  
-- `E_D_FF_ANY.EO` → `Q.E1`  
+- `I.E1` → `E_D_FF_ANY.CLK`
+- `I.D1` → `E_D_FF_ANY.D`
+- `E_D_FF_ANY.EO` → `Q.E1`
 - `E_D_FF_ANY.Q` → `Q.D1`
 
 Der Baustein verhält sich somit wie ein klassisches D-Flipflop, jedoch mit einer standardisierten Adapter-Schnittstelle anstelle von direkten Ein-/Ausgängen.
@@ -71,7 +72,7 @@ Der Zustand wird durch ein Ereignis auf `I.E1` umgeschaltet (sofern sich der Dat
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied zu AS_D_FF |
-|----------|-------------|------------------------|
+| ---------- | ------------- | ------------------------ |
 | **SR_FF** | Set-Reset-Flipflop | Hat separate Set- und Reset-Eingänge, kein Taktsignal. |
 | **E_D_FF_ANY** | Reines D-Flipflop mit direkten E/A | Bietet keine Adapter-Schnittstelle; erfordert direkte Verbindungen. |
 | **AS_FF_RS** (hypothetisch) | RS-Flipflop mit Adaptern | Verwendet zwei Adapter für Set und Reset, kein Taktsignal. |
@@ -86,4 +87,4 @@ Der Funktionsbaustein **AS_D_FF** stellt eine praktische Kapselung eines D-Flipf
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

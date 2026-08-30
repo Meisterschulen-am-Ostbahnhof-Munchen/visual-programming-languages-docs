@@ -3,6 +3,7 @@
 ![AIS_SPLIT_8](./AIS_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIS_SPLIT_8** dient der Verteilung eines eingehenden AIS (Application Interface Socket) auf acht identische Ausgangsadapter. Er ist als generischer Baustein konzipiert und erlaubt die gleichzeitige Weitergabe eines AIS-Signals an mehrere nachfolgende Funktionsblöcke ohne Datenverlust oder Verzögerung.

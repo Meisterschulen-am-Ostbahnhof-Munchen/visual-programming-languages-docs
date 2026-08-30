@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_ADD_DT_TIME](F_ADD_DT_TIME.svg)
+
 ## Introduction
 
 The **F_ADD_DT_TIME** function block is a specialized function module for adding time values to date/time values, developed under the EPL 2.0 license. Version 1.0 enables precise time calculations using DATE_AND_TIME and TIME data types.
@@ -30,15 +31,18 @@ The **F_ADD_DT_TIME** function block is a specialized function module for adding
 ## Functionality
 
 1. **Activation**:
+
 - Triggered by the `REQ` event
 - Processes DATE_AND_TIME and TIME values
-2. **Calculation**:
+1. **Calculation**:
+
 - Adds time duration (IN2) to timestamp (IN1)
 - Automatically takes into account:
 - Leap years
 - Month lengths
 - Time zones (if configured)
-3. **Result output**:
+1. **Result output**:
+
 - `CNF` event with new DATE_AND_TIME
 - Format: DT#2023-12-31-23:59:59
 
@@ -69,7 +73,7 @@ The **F_ADD_DT_TIME** function block is a specialized function module for adding
 ## ⚖️ Comparison with standard F_ADD
 
 | Feature | F_ADD_DT_TIME | F_ADD |
-|----------------|---------------|-------------|
+| ---------------- | --------------- | ------------- |
 | Input type 1 | DATE_AND_TIME | ANY_MAGNITUDE |
 | Input type 2 | TIME | ANY_MAGNITUDE |
 | Operation | Specialized time addition | Generic addition |

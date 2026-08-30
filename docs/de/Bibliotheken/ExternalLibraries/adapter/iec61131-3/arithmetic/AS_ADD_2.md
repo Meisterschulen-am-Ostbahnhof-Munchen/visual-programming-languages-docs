@@ -6,6 +6,7 @@
 ![AS_ADD_2](./AS_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_ADD_2` ist ein generischer arithmetischer Baustein, der für die Addition zweier Werte konzipiert ist. Im Gegensatz zu klassischen mathematischen Funktionsbausteinen nutzt dieser Baustein ein adapterbasiertes Schnittstellenkonzept. Durch die Verwendung von unidirektionalen Adaptern werden Daten und die dazugehörigen Steuerungsereignisse gekapselt übertragen, was zu einem aufgeräumten und modularen Anwendungsdesign in der IEC 61499 Entwicklungsumgebung (wie 4diac IDE) beiträgt.
@@ -30,12 +31,12 @@ Der Funktionsbaustein `AS_ADD_2` ist ein generischer arithmetischer Baustein, de
 
 ### **Adapter**
 
-*   **IN1 (Socket / Buchse):** Typ `adapter::types::unidirectional::AS`
-    *   Schnittstelle für den ersten Summanden der Addition.
-*   **IN2 (Socket / Buchse):** Typ `adapter::types::unidirectional::AS`
-    *   Schnittstelle für den zweiten Summanden der Addition.
-*   **OUT (Plug / Stecker):** Typ `adapter::types::unidirectional::AS`
-    *   Schnittstelle zur Ausgabe des berechneten Additionsergebnisses.
+-   **IN1 (Socket / Buchse):** Typ `adapter::types::unidirectional::AS`
+    -   Schnittstelle für den ersten Summanden der Addition.
+-   **IN2 (Socket / Buchse):** Typ `adapter::types::unidirectional::AS`
+    -   Schnittstelle für den zweiten Summanden der Addition.
+-   **OUT (Plug / Stecker):** Typ `adapter::types::unidirectional::AS`
+    -   Schnittstelle zur Ausgabe des berechneten Additionsergebnisses.
 
 ## Funktionsweise
 
@@ -48,27 +49,28 @@ Aufgrund seiner generischen Natur (`GEN_AS_ADD`) kann der Baustein flexibel mit 
 
 ## Technische Besonderheiten
 
-*   **Generische Implementierung:** Der Baustein basiert auf der generischen Klasse `GEN_AS_ADD`, wodurch er für unterschiedliche Datentypen wiederverwendbar ist.
-*   **Adapter-Kopplung:** Die Kapselung von Signalen in Adaptern reduziert die Anzahl der sichtbaren Verbindungslinien im Funktionsbausteindiagramm (FBD) drastisch und verbessert die Lesbarkeit komplexer Anwendungen.
-*   **Unidirektionaler Datenfluss:** Die Verwendung des Typs `unidirectional::AS` stellt sicher, dass der Informationsfluss klar definiert von den Signalquellen (Sockets) zur Signalsenke (Plug) verläuft.
+-   **Generische Implementierung:** Der Baustein basiert auf der generischen Klasse `GEN_AS_ADD`, wodurch er für unterschiedliche Datentypen wiederverwendbar ist.
+-   **Adapter-Kopplung:** Die Kapselung von Signalen in Adaptern reduziert die Anzahl der sichtbaren Verbindungslinien im Funktionsbausteindiagramm (FBD) drastisch und verbessert die Lesbarkeit komplexer Anwendungen.
+-   **Unidirektionaler Datenfluss:** Die Verwendung des Typs `unidirectional::AS` stellt sicher, dass der Informationsfluss klar definiert von den Signalquellen (Sockets) zur Signalsenke (Plug) verläuft.
 
 ## Zustandsübersicht
 
 Als rein mathematischer Kombinationsbaustein besitzt `AS_ADD_2` kein komplexes internes Zustandsdiagramm (ECC). Sein Verhalten lässt sich in drei zyklische Schritte unterteilen:
+
 1.  **Warten (Idle):** Der Baustein wartet auf ein Ereignis an einem der Eingangs-Adapter (`IN1` oder `IN2`).
 2.  **Berechnen:** Bei Event-Eingang werden die aktuellen Werte aus beiden Adaptern gelesen und addiert.
 3.  **Senden:** Das Additionsergebnis wird in den Ausgangs-Adapter `OUT` geschrieben und ein Ausgangsereignis getriggert.
 
 ## Anwendungsszenarien
 
-*   **Messwert-Offset-Berechnung:** Aufaddieren eines Kalibrierungs- oder Korrekturwerts (Offset) auf einen analogen Sensorwert innerhalb einer adapterbasierten Signalverarbeitungskette.
-*   **Signalzusammenführung:** Summierung von zwei unabhängig voneinander erfassten physikalischen Größen (z. B. zwei Teilströme zur Ermittlung des Gesamtstroms).
-*   **Kaskadierte Berechnungen:** Einfache Erweiterung für mehr als zwei Summanden durch kaskadiertes Hintereinanderschalten mehrerer `AS_ADD_2`-Bausteine.
+-   **Messwert-Offset-Berechnung:** Aufaddieren eines Kalibrierungs- oder Korrekturwerts (Offset) auf einen analogen Sensorwert innerhalb einer adapterbasierten Signalverarbeitungskette.
+-   **Signalzusammenführung:** Summierung von zwei unabhängig voneinander erfassten physikalischen Größen (z. B. zwei Teilströme zur Ermittlung des Gesamtstroms).
+-   **Kaskadierte Berechnungen:** Einfache Erweiterung für mehr als zwei Summanden durch kaskadiertes Hintereinanderschalten mehrerer `AS_ADD_2`-Bausteine.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard ADD (z. B. F_ADD):** Der klassische IEC 61131-3 bzw. IEC 61499 ADD-Baustein arbeitet mit diskreten Variablen (z. B. `ANY_NUM`) und separaten Event-Ports (`REQ` / `CNF`). `AS_ADD_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung vereinfacht, jedoch die Verwendung des spezifischen Adaptertyps `AS` voraussetzt.
-*   **Multi-Addierer (z. B. ADD_3):** Ermöglicht die Addition von drei oder mehr Werten in einem einzigen Baustein, ist jedoch oft unhandlicher, wenn Datenstrukturen konsistent über Adapter transportiert werden sollen.
+-   **Standard ADD (z. B. F_ADD):** Der klassische IEC 61131-3 bzw. IEC 61499 ADD-Baustein arbeitet mit diskreten Variablen (z. B. `ANY_NUM`) und separaten Event-Ports (`REQ` / `CNF`). `AS_ADD_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung vereinfacht, jedoch die Verwendung des spezifischen Adaptertyps `AS` voraussetzt.
+-   **Multi-Addierer (z. B. ADD_3):** Ermöglicht die Addition von drei oder mehr Werten in einem einzigen Baustein, ist jedoch oft unhandlicher, wenn Datenstrukturen konsistent über Adapter transportiert werden sollen.
 
 ## Änderungserkennung
 

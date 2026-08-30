@@ -3,6 +3,7 @@
 ![SERVER_0_1](SERVER_0_1.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `SERVER_0_1` function block is the generic server variant with 0 send and 1 receive data fields for communicating with a matching [CLIENT_1_0](CLIENT_1_0.md) block. It receives 1 data values (`RD_1`) from the client without sending any payload itself. Like all `SERVER_*` blocks, it is based on the generic `GEN_SERVER` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

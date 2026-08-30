@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_MOD](F_MOD.svg)
+
 ## Introduction
 
 The **F_MOD** is an arithmetic function block for calculating the remainder of a division, developed under the EPL-2.0 license. Version 1.0 enables the modulo operation for integer data types according to the IEC 61131-3 standard.
@@ -30,13 +31,16 @@ The **F_MOD** is an arithmetic function block for calculating the remainder of a
 ## Functionality
 
 1. **Activation**:
+
 - Triggered by the `REQ` event
 - Processes two integer values
-2. **Modulo Operation**:
+1. **Modulo Operation**:
+
 - Calculates IN1 modulo IN2
 - Formula: OUT = IN1 - (IN1 / IN2) * IN2
 - Supported types: INT, DINT, UINT, UDINT
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with residual value
 - Sign corresponds to dividend (IN1)
 
@@ -76,10 +80,10 @@ The **F_MOD** is an arithmetic function block for calculating the remainder of a
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_MOD | F_DIV | F_REM |
-|----------------|--------|---------|---------|
+| ---------------- | -------- | --------- | --------- |
 | Operation | Modulo | Division | Remainder |
-| Input types | ANY_INT| ANY_NUM | ANY_NUM |
-| Output type | ANY_NUM| ANY_NUM | ANY_NUM |
+| Input types | ANY_INT | ANY_NUM | ANY_NUM |
+| Output type | ANY_NUM | ANY_NUM | ANY_NUM |
 
 ## Conclusion
 

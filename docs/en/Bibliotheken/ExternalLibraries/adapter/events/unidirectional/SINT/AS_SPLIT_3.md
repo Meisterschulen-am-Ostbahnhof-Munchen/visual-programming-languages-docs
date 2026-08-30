@@ -3,9 +3,11 @@
 ![AS_SPLIT_3](./AS_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AS_SPLIT_3 function block distributes an incoming adapter data stream to three identical outputs. It is implemented as a generic function block and designed for use with the `adapter::types::unidirectional::AS` adapter type.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|-----------|--------------|
+| ------------- | ----- | ----------- | -------------- |
 | IN | `adapter::types::unidirectional::AS` | Socket | Input adapter – Data source distributed to three outputs. |
 | OUT1 | `adapter::types::unidirectional::AS` | Plug | First output – receives the unchanged data from IN. |
 | OUT2 | `adapter::types::unidirectional::AS` | Plug | Second output – receives the unchanged data from IN. |
@@ -72,6 +74,6 @@ AS_SPLIT_3 is a simple yet useful function block for duplicating adapter data in
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

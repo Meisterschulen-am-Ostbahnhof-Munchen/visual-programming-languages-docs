@@ -5,6 +5,7 @@
 ![E_CALIBRATE_3P](E_CALIBRATE_3P.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_CALIBRATE_3P` is the event-driven counterpart to [CALIBRATE_3P](CALIBRATE_3P.md): the three-point calibration with piecewise linear interpolation (Min/Mid/Max) is triggered by its own events `EI_MIN`/`EI_MID`/`EI_MAX`, each with its own confirmation event.
@@ -54,7 +55,7 @@ Each of these four states returns immediately to `START`, from which all four ev
 **Example** (joystick with center drift, raw range `0..1000`, desired output range `-100..0..100`):
 
 | Step | Action | Result |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Move joystick to **minimum**, fire `EI_MIN` | `X_MIN = 50` (drift from ideal `0`) |
 | 2 | Move joystick to **center**, fire `EI_MID` | `X_MID = 520` (drift from ideal `500`) |
 | 3 | Move joystick to **maximum**, fire `EI_MAX` | `X_MAX = 980` (drift from ideal `1000`) |

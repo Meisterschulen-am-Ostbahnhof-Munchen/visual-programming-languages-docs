@@ -5,6 +5,7 @@
 ## Introduction
 
 The "GreenWhiteBackground" exercise demonstrates the use of background colors in an ISOBUS-compliant system. The sub-application allows switching between a green and white background color for a specific object based on a selector signal.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: GreenWhiteBackground
@@ -59,9 +60,9 @@ The GreenWhiteBackground exercise demonstrates a practical application for dynam
 
 ## 🛠️ Related exercises
 
-* [Uebung_010c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
-* [Uebung_010c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c3_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Uebung_010c4_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Uebung_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Uebung_039a_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_010c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
+- [Uebung_010c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+- [Uebung_010c3_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+- [Uebung_010c4_sub](../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+- [Uebung_039_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Uebung_039a_sub_Outputs](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)

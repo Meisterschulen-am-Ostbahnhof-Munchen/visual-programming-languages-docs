@@ -3,6 +3,7 @@
 ![Uebung_012f_sub_network](./Uebung_012f_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung eines numerischen Eingangswertes (Rohwert) in einen physikalischen Wert, dessen dauerhafte Speicherung im nichtflüchtigen Speicher (NVS) sowie das anschließende Auslesen und die Ausgabe des gespeicherten Wertes. Die Funktionalität ist in einer Subapplikation (SubApp) gekapselt.
@@ -97,5 +98,5 @@ Die Subapp `Uebung_012f_sub` realisiert eine kompakte Einheit zum Einlesen, Umre
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

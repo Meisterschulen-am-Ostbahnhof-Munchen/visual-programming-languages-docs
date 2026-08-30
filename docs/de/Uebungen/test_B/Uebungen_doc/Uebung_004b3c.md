@@ -5,6 +5,7 @@
 ![Uebung_004b3c_network](./Uebung_004b3c_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung wird eine Schaltung aus zwei verriegelten Toggle-Flip-Flops realisiert. Jedes Flip-Flop wird über einen eigenen Taster (Eingang I1 bzw. I2) umgeschaltet. Die Besonderheit liegt in der gegenseitigen Verriegelung: Immer nur eines der beiden Flip-Flops kann den logischen Zustand `TRUE` annehmen. Sobald ein Flip-Flop auf `TRUE` gesetzt wird, setzt es automatisch das andere zurück. Die Kommunikation zwischen den beiden Sub-Applikationen erfolgt über einen einzigen bidirektionalen Adapter (Typ AE2), wodurch eine sehr kompakte Verbindungsstruktur entsteht.
@@ -15,54 +16,54 @@ Die Übung demonstriert den Einsatz von bidirektionalen Adaptern zur Signalüber
 
 Auf der obersten Ebene der Sub-Applikation `Uebung_004b3c` werden folgende Funktionsbausteine eingesetzt:
 
-- **DigitalInput_CLK_I1** (Typ: `logiBUS::io::DI::logiBUS_IE`)  
-  - Eingang: `Input_I1`  
-  - Ereignis: `BUTTON_SINGLE_CLICK`  
+- **DigitalInput_CLK_I1** (Typ: `logiBUS::io::DI::logiBUS_IE`)
+  - Eingang: `Input_I1`
+  - Ereignis: `BUTTON_SINGLE_CLICK`
   - Gibt bei einem Tastendruck ein Ereignis an `IND` aus.
 
-- **DigitalInput_CLK_I2** (Typ: `logiBUS::io::DI::logiBUS_IE`)  
-  - Eingang: `Input_I2`  
+- **DigitalInput_CLK_I2** (Typ: `logiBUS::io::DI::logiBUS_IE`)
+  - Eingang: `Input_I2`
   - Ereignis: `BUTTON_SINGLE_CLICK`
 
-- **DigitalOutput_Q1** (Typ: `logiBUS::io::DQ::logiBUS_QX`)  
-  - Ausgang: `Output_Q1`  
+- **DigitalOutput_Q1** (Typ: `logiBUS::io::DQ::logiBUS_QX`)
+  - Ausgang: `Output_Q1`
   - Schaltet den physikalischen Ausgang Q1.
 
-- **DigitalOutput_Q2** (Typ: `logiBUS::io::DQ::logiBUS_QX`)  
+- **DigitalOutput_Q2** (Typ: `logiBUS::io::DQ::logiBUS_QX`)
   - Ausgang: `Output_Q2`
 
-- **Uebung_004b3b_sub1** (Typ: `Uebungen::Uebung_004b3c_sub`)  
+- **Uebung_004b3b_sub1** (Typ: `Uebungen::Uebung_004b3c_sub`)
   - Erste Instanz des verriegelbaren Toggle-Flip-Flops.
 
-- **Uebung_004b3b_sub2** (Typ: `Uebungen::Uebung_004b3c_sub`)  
+- **Uebung_004b3b_sub2** (Typ: `Uebungen::Uebung_004b3c_sub`)
   - Zweite Instanz des verriegelbaren Toggle-Flip-Flops.
 
 ### Sub-Bausteine: `Uebung_004b3c_sub`
 
 Diese Sub-Applikation realisiert ein verriegelbares Toggle-Flip-Flop mit einer bidirektionalen Adapterschnittstelle (AE2).
 
-- **Typ**: SubApp  
-- **Verwendete interne FBs**:  
+- **Typ**: SubApp
+- **Verwendete interne FBs**:
 
-  - **E_SWITCH_I1** (Typ: `iec61499::events::E_SWITCH`)  
-    - Ereigniseingang: `EI`  
-    - Dateneingang: `G` (Gate)  
-    - Ereignisausgänge: `EO0` (bei G=FALSE), `EO1` (bei G=TRUE)  
+  - **E_SWITCH_I1** (Typ: `iec61499::events::E_SWITCH`)
+    - Ereigniseingang: `EI`
+    - Dateneingang: `G` (Gate)
+    - Ereignisausgänge: `EO0` (bei G=FALSE), `EO1` (bei G=TRUE)
     - Funktion: Leitet das eingehende Ereignis abhängig vom Wert `G` entweder an `EO0` oder `EO1`.
 
-  - **E_SR_I1** (Typ: `iec61499::events::E_SR`)  
-    - Ereigniseingänge: `S` (Set), `R` (Reset)  
-    - Ereignisausgang: `EO` (nach Änderung des Ausgangs Q)  
-    - Datenausgang: `Q` (BOOL)  
+  - **E_SR_I1** (Typ: `iec61499::events::E_SR`)
+    - Ereigniseingänge: `S` (Set), `R` (Reset)
+    - Ereignisausgang: `EO` (nach Änderung des Ausgangs Q)
+    - Datenausgang: `Q` (BOOL)
     - Funktion: Set-Reset-Flip-Flop. Bei Set-Ereignis wird `Q = TRUE`, bei Reset-Ereignis `Q = FALSE`.
 
-  - **AE2_EVENT_TO_E** (Typ: `adapter::conversion::bidirectional::AE2_EVENT_TO_E`)  
+  - **AE2_EVENT_TO_E** (Typ: `adapter::conversion::bidirectional::AE2_EVENT_TO_E`)
     - Konvertiert ein Ereignis, das über den Adapter empfangen wird, in ein normales Ereignissignal.
 
-  - **AE2_E_TO_EVENT** (Typ: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`)  
+  - **AE2_E_TO_EVENT** (Typ: `adapter::conversion::bidirectional::AE2_E_TO_EVENT`)
     - Konvertiert ein normales Ereignissignal in ein Ereignis, das über den Adapter gesendet wird.
 
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der interne Toggle-Mechanismus wird durch das Set-Reset-Flip-Flop `E_SR` realisiert. Beim Eintreffen eines Ereignisses am Eingang `IND` wird durch `E_SWITCH` abhängig vom aktuellen Zustand `Q` (das auf `G` zurückgeführt ist) entschieden, ob gesetzt oder zurückgesetzt werden soll:
 
   - Ist `Q = FALSE` → Ereignis über `EO0` zum Set-Eingang `S` → Flip-Flop wird gesetzt.
@@ -87,7 +88,7 @@ Die äußere Verschaltung der Haupt-Sub-Applikation ist wie folgt aufgebaut:
 - Zusammenspiel von Ereignis- und Datenflüssen in IEC 61499.
 - Praktischer Umgang mit Hardware-Ein-/Ausgängen (logiBUS).
 
-**Start der Übung:**  
+**Start der Übung:**
 Die Übung kann direkt in der 4diac‑IDE geöffnet und auf die Zielhardware (z. B. logiBUS) übertragen werden. Voraussetzung ist eine korrekte Konfiguration der Ein- und Ausgangsadressen entsprechend der Hardware.
 
 ## Zusammenfassung
@@ -98,4 +99,4 @@ In dieser Übung wurde eine gegenseitig verriegelte Steuerung mit zwei Toggle-Fl
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

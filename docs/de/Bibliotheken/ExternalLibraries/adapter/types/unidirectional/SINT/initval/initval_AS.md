@@ -3,6 +3,7 @@
 ![initval_AS](initval_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AS` ist der konfigurierbare Initialisierungsbaustein für den [AS](../AS.md)-Adapter (Datentyp `SINT`, 8-Bit-Ganzzahl (vorzeichenbehaftet)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AS`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

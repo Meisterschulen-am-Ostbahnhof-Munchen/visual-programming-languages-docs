@@ -3,9 +3,11 @@
 ![AD_SPLIT_8](./AD_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_SPLIT_8** is a generic function block for splitting an incoming unidirectional AD adapter signal into eight separate outputs. It enables the distribution of an analog or digital signal to multiple downstream components without altering the signal.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | Socket | **IN** | `adapter::types::unidirectional::AD` | Input Adapter – Signal to be Split |
 | Plug | **OUT1** | `adapter::types::unidirectional::AD` | First Output |
 | Plug | **OUT2** | `adapter::types::unidirectional::AD` | Second Output |
@@ -80,6 +82,6 @@ Each output plug is updated independently: the incoming value is written to a gi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

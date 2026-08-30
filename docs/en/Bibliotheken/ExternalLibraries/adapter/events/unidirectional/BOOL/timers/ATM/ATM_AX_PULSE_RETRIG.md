@@ -3,15 +3,17 @@
 ![ATM_AX_PULSE_RETRIG](./ATM_AX_PULSE_RETRIG.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_AX_PULSE_RETRIG** generates a pulse of defined duration at its output. It is designed as a retriggerable version, meaning that a new start command during a running pulse resets the pulse duration. Control and parameter transfer are handled exclusively via two standardized adapter interfaces (ATM / AX), so the block does not require direct data inputs/outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|------|-------|--------------------------------------------|
+| ------ | ------- | -------------------------------------------- |
 | REQ | Event | Start command – triggers a new pulse and restarts the timer |
 | R | Event | Reset – immediately terminates a running pulse |
 
@@ -62,7 +64,7 @@ The module has two states:
 ## Comparison with Similar Components
 
 | Component | Retriggerable | Interface | Application Area |
-|-------------------------|---------------|----------------------|-----------------------------------|
+| ------------------------- | --------------- | ---------------------- | ----------------------------------- |
 | **ATM_AX_PULSE_RETRIG** | Yes | Adapter (ATM/AX) | Modular Controllers with Adapter Concept |
 | ATM_AX_PULSE | No | Adapter (ATM/AX) | Single pulses, no retriggering |
 | Standard E_PULSE_RETRIG | Yes | Direct inputs/outputs | More flexible, but without adapter encapsulation |

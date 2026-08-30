@@ -1,6 +1,7 @@
 # E_TLIM
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_TLIM` (time-limiting) limits how long `Q` can stay `TRUE` at most: as soon as `IN` switches to `TRUE`, `Q` also becomes `TRUE`; if `IN` stays `TRUE` longer than `PT`, `Q` automatically switches to `FALSE` once `PT` elapses (timeout). If `IN` already falls back to `FALSE` before `PT` elapses, `Q` follows immediately.
@@ -38,7 +39,7 @@
 ## State Overview
 
 | State (implicit via `E_SR`/`E_DELAY`) | Meaning |
-|---|---|
+| --- | --- |
 | Q = FALSE, timer inactive | Idle, `IN = FALSE` |
 | Q = TRUE, timer running | `IN` is `TRUE`, `PT` not yet elapsed |
 | Q = FALSE (timeout) | `IN` was `TRUE` longer than `PT`, automatically reset |

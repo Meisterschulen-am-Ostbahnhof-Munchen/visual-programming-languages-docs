@@ -1,12 +1,15 @@
 # AuxiliaryState_S
 
 * * * * * * * * * *
+
 ## Introduction
 
 The data type `AuxiliaryState_S` is a structured data structure (struct) that represents the state of an auxiliary input. It is used in the context of the ISOBUS interface (ISO 11783) for communication in agricultural and forestry machinery. This data type encapsulates both the actual value of the input and control information for its cyclic transmission.
+
 ## Interface Structure
 
 AuxiliaryState_S` is a structured data type (struct) and therefore does not have event or adapter interfaces in the conventional sense of a function block. Its structure consists of the following two data fields:
+
 ### **Data Inputs**
 
 *(Not applicable – This is a data type, not a function block)*
@@ -28,9 +31,9 @@ This data type serves as a container for information about an auxiliary input. T
 
 ## Technical Features
 
-* **ISOBUS Context:** This data type is specifically designed for ISOBUS communication (package `isobus::UT::io::Auxiliary::IN`).
-* **Cycle Control:** The integrated cyclic control (`bCyclic`) is a characteristic feature that takes bus communication efficiency into account.
-* **Initial Values:** Both fields have defined initial values (`value=255`, `bCyclic=TRUE`), ensuring deterministic initialization.
+- **ISOBUS Context:** This data type is specifically designed for ISOBUS communication (package `isobus::UT::io::Auxiliary::IN`).
+- **Cycle Control:** The integrated cyclic control (`bCyclic`) is a characteristic feature that takes bus communication efficiency into account.
+- **Initial Values:** Both fields have defined initial values (`value=255`, `bCyclic=TRUE`), ensuring deterministic initialization.
 
 ## State Overview
 
@@ -40,9 +43,9 @@ This data type serves as a container for information about an auxiliary input. T
 
 This struct is typically used as a data input or output in function blocks (FBs) that process or control ISOBUS auxiliary inputs. Examples include:
 
-* Function blocks (FBs) for reading the state of switches, potentiometers, or sensors configured as auxiliary inputs.
-* FBs that process auxiliary input values and forward them to other system components.
-* FBs that determine whether a value needs to be updated and sent based on the `bCyclic` flag.
+- Function blocks (FBs) for reading the state of switches, potentiometers, or sensors configured as auxiliary inputs.
+- FBs that process auxiliary input values and forward them to other system components.
+- FBs that determine whether a value needs to be updated and sent based on the `bCyclic` flag.
 
 ## ⚖️ Comparison with similar function blocks
 

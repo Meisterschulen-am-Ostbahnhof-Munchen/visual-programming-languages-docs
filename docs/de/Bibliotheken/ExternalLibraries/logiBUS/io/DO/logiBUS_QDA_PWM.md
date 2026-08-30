@@ -3,6 +3,7 @@
 ![logiBUS_QDA_PWM](./logiBUS_QDA_PWM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **logiBUS_QDA_PWM** ist ein Composite-Baustein zur Ansteuerung eines PWM-Ausgangs (Double Word) über ein logiBUS-System. Er kapselt die Initialisierung und die Triggerung eines internen PWM-Ausgangsbausteins und stellt eine Adapter-Schnittstelle zur Verfügung, um von außerhalb Aufträge (Ereignis und Daten) zu empfangen. Der Baustein wurde für den Einsatz in der Agrartechnik entwickelt und ist unter der EPL 2.0 lizenziert.
@@ -26,7 +27,7 @@ Der Funktionsblock **logiBUS_QDA_PWM** ist ein Composite-Baustein zur Ansteuerun
 ### **Daten-Eingänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QI | BOOL | Eingangs-Qualifier (Initialisierung freigeben) |
 | PARAMS | STRING | Service-Parameter (z. B. Adressierung, Konfiguration) |
 | Output | logiBUS::io::DQ::logiBUS_DO_S | Identifikation des Ausgangs (z. B. Output_Q1..Q8); Initialwert: *Invalid* |
@@ -48,10 +49,10 @@ Der Funktionsblock **logiBUS_QDA_PWM** ist ein Composite-Baustein zur Ansteuerun
 
 Der Funktionsblock ist als Composite realisiert und enthält eine interne Instanz des Bausteins `logiBUS::io::DQ::logiBUS_QD_PWM` (hier als *QX* bezeichnet). Die Logik lässt sich wie folgt beschreiben:
 
-1. **Initialisierung:**  
+1. **Initialisierung:**
    Ein INIT-Ereignis am Eingang löst die Initialisierung des internen Bausteins aus. Dabei werden die Daten-Eingänge *QI*, *PARAMS* und *Output* an den internen Baustein weitergeleitet. Nach erfolgreicher Initialisierung wird das Ereignis *INITO* ausgegeben, zusammen mit den Ausgangsdaten *QO* und *STATUS*.
 
-2. **Triggerung über Adapter:**  
+2. **Triggerung über Adapter:**
    Der Adapter *OUT* nimmt von außen ein Ereignis *E1* und einen Datenwert *D1* entgegen. Das Ereignis wird als *REQ* (Request) an den internen Baustein weitergegeben, die Daten *D1* als *OUT*-Wert. Der interne Baustein verarbeitet diese Anforderung und quittiert mit dem Ereignis *CNF*, das über den Ausgang *CNF* nach außen geleitet wird. Die zugehörigen Ausgangsdaten *QO* und *STATUS* werden aktualisiert.
 
 Damit ermöglicht der Baustein eine saubere Trennung von Initialisierung und zyklischer Ausgabe: Die Konfiguration erfolgt einmalig über INIT, die eigentliche PWM-Ausgabe wird über den Adapter getriggert.
@@ -83,7 +84,7 @@ Der interne FB wechselt zwischen diesen Zuständen abhängig von den Ereignissen
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | logiBUS_QD_PWM | Composite/ Basic | Direkt ansteuerbar über INIT, REQ, CNF; ohne Adapter-Schnittstelle. |
 | **logiBUS_QDA_PWM** | Composite | Wie logiBUS_QD_PWM, aber mit Adapter für externe Triggerung und Datenversorgung. |
 | logiBUS_DO (einfach) | Basic | Einfacher digitaler Ausgang, keine PWM-Funktion. |
@@ -98,4 +99,4 @@ Der Funktionsblock **logiBUS_QDA_PWM** ist eine praktische Kapselung eines PWM-A
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

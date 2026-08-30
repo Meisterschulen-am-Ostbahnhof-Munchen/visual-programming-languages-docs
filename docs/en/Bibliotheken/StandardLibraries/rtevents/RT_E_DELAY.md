@@ -1,10 +1,12 @@
 # RT_E_DELAY
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_E_DELAY function block delays an event by a defined time (DT) while adhering to real-time requirements.
 ![RT_E_DELAY](RT_E_DELAY.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,6 +45,6 @@ The RT_E_DELAY function block delays an event by a defined time (DT) while adher
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

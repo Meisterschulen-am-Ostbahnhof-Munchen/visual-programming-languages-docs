@@ -3,10 +3,12 @@
 ![Uebung_212_network](./Uebung_212_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
-This exercise demonstrates the use of the IEC 61131-3 function block **FB_CTU_LINT** (Upward Counter for Large Integer Values) in a 4diac IDE subapplication. The counter value is converted and output to a terminal. Additionally, a digital output is set as soon as the counter reaches the predefined maximum value.
+This exercise demonstrates the use of the IEC 61131-3 function block **FB_CTU_LINT** (Upward Counter for Large Integer Values) in a 4diac IDE subapplication. The counter value is converted and output to a terminal. Additionally, a digital output is set as soon as the counter reaches the predefined maximum value
 ---
+
 ## Function Blocks Used
 
 Only predefined library blocks are used; no other sub-blocks are included.
@@ -42,24 +44,28 @@ Only predefined library blocks are used; no other sub-blocks are included.
 ## Program Flow and Connections
 
 1. **Event Control**
+
 - Each rising edge at `Input_I1` (connected to `Input_CU`) generates an event `IND`, which activates the counter block via the event input `REQ`.
 - Each rising edge at `Input_I2` (connected to `Input_R`) also generates an event `IND` and activates the counter block via the same `REQ` input.
 - After the counter operation is complete, the counter signals this via `CNF`. This event is forwarded to three function blocks:
 - **Output_Q1.REQ** (sets the digital output according to the counter Q signal)
 - **F_LINT_TO_UDINT.REQ** (starts the conversion of the counter reading)
 - **Q_NumericValue.REQ** (is triggered after successful conversion via the chain `F_LINT_TO_UDINT.CNF → Q_NumericValue.REQ`).
-2. **Data Connections**
+1. **Data Connections**
+
 - `Input_CU.IN` → `FB_CTU_LINT.CU` (Count pulse)
 - `Input_R.IN` → `FB_CTU_LINT.R` (Reset)
 - `FB_CTU_LINT.Q` → `Output_Q1.OUT` (Output signal when preset value is reached)
 - `FB_CTU_LINT.CV` (Current counter reading) → `F_LINT_TO_UDINT.IN`
 - `F_LINT_TO_UDINT.OUT` (Converted value) → `Q_NumericValue.u32NewValue` (Display on terminal)
-3. **Operating the Counter**
+1. **Operating the Counter**
+
 - The counter increments on each rising edge of the CU input, as long as no reset occurs.
 - If the reset input is set to TRUE, the counter reading is reset to zero.
 - As soon as the counter reading reaches the value **PV = 5**, the output `Q` is set to TRUE (active high).
 - The current counter reading is continuously sent to the terminal as soon as the value changes.
-4. **Learning Objectives / Difficulty**
+1. **Learning Objectives / Difficulty**
+
 - Introduction to the IEC 61131-3 counter family
 - Combining digital inputs/outputs with a counter
 - Data conversion and terminal output
@@ -74,6 +80,6 @@ Exercise **Exercise_212** implements a forward counter (`FB_CTU_LINT`) with a pr
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

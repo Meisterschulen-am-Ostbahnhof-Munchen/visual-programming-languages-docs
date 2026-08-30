@@ -3,9 +3,11 @@
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL](./AULI_FIELDBUS_ULINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL** serves as a composite module for processing a ULINT value from a fieldbus. It mirrors the incoming value to the output if the signal is recognized as valid and also outputs a synchronized validity signal. The module combines an internal fieldbus converter with a D flip-flop to ensure clocked, reliable signal transmission.
+
 ## Interface Structure
 
 The module does not have traditional top-level event or data ports, but communicates exclusively via adapters. These are implemented as sockets (inputs) and plugs (outputs).
@@ -19,7 +21,7 @@ The module does not have traditional top-level event or data ports, but communic
 ### **Event Outputs**
 
 | Port | Label | Description |
-|------|-------------|--------------|
+| ------ | ------------- | -------------- |
 | `OUT.E1` | Event Output (via Plug OUT) | Signals completion of the output of the mirrored value. |
 | `VALID.E1` | Event Output (via Plug VALID) | Indicates that the validity signal has been updated. |
 
@@ -32,14 +34,14 @@ The module does not have traditional top-level event or data ports, but communic
 ### **Data Outputs**
 
 | Port | Label | Data Type | Description |
-|------|-------------|-----------|-------------|
+| ------ | ------------- | ----------- | ------------- |
 | `OUT.D1` | Data Output (via Plug OUT) | ULINT | The mirrored input value (if valid). |
 | `VALID.D1` | Data Output (via Plug VALID) | BOOL | Validation signal (TRUE = value is valid). |
 
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket (Input) | `adapter::types::unidirectional::AULI` | Receives the ULINT value and the associated event. |
 | `OUT` | Plug (Output) | `adapter::types::unidirectional::AULI` | Outputs the processed ULINT value and an event. |
 | `VALID` | Plug (Output) | `adapter::types::unidirectional::AX` | Provides the validity signal (BOOL) and an event. |
@@ -98,6 +100,6 @@ AULI_FIELDBUS_ULINT_TO_SIGNAL` is a robust, adapter-based function block for the
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

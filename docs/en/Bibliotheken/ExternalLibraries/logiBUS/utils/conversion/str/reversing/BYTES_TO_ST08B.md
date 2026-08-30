@@ -4,6 +4,7 @@
 ![BYTES_TO_ST08B](./BYTES_TO_ST08B.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block combines eight individual byte values into a single 8-byte structure of type `ST08B`. It enables the orderly conversion of discrete byte values into a structured data format.
@@ -12,40 +13,40 @@ This function block combines eight individual byte values into a single 8-byte s
 
 ### **Event Inputs**
 
-* **REQ** (Type: `Event`)
-* Connects the activation of the function block to the data inputs: `IN_00`, `IN_01`, `IN_02`, `IN_03`, `IN_04`, `IN_05`, `IN_06`, `IN_07`.
-* Triggers the conversion of the input bytes to the `ST08B` structure.
+- **REQ** (Type: `Event`)
+- Connects the activation of the function block to the data inputs: `IN_00`, `IN_01`, `IN_02`, `IN_03`, `IN_04`, `IN_05`, `IN_06`, `IN_07`.
+- Triggers the conversion of the input bytes to the `ST08B` structure.
 
 ### **Event Outputs**
 
-* **CNF** (Type: `Event`)
-* Triggered after successful conversion.
-* Signals the availability of the converted value at data output `OUT`.
+- **CNF** (Type: `Event`)
+- Triggered after successful conversion.
+- Signals the availability of the converted value at data output `OUT`.
 
 ### **Data Inputs**
 
-* **IN_00** (Type: `BYTE`)
-* Comment: BYTE 00
-* **IN_01** (Type: `BYTE`)
-* Comment: BYTE 01
-* **IN_02** (Type: `BYTE`)
-* Comment: BYTE 02
-* **IN_03** (Type: `BYTE`)
-* Comment: BYTE 03
-* **IN_04** (Type: `BYTE`)
-* Comment: BYTE 04
-* **IN_05** (Type: `BYTE`)
-* Comment: BYTE 05
-* **IN_06** (Type: `BYTE`)
-* Comment: BYTE 06
-* **IN_07** (Type: `BYTE`)
-* Comment: BYTE 07
+- **IN_00** (Type: `BYTE`)
+- Comment: BYTE 00
+- **IN_01** (Type: `BYTE`)
+- Comment: BYTE 01
+- **IN_02** (Type: `BYTE`)
+- Comment: BYTE 02
+- **IN_03** (Type: `BYTE`)
+- Comment: BYTE 03
+- **IN_04** (Type: `BYTE`)
+- Comment: BYTE 04
+- **IN_05** (Type: `BYTE`)
+- Comment: BYTE 05
+- **IN_06** (Type: `BYTE`)
+- Comment: BYTE 06
+- **IN_07** (Type: `BYTE`)
+- Comment: BYTE 07
 
 ### **Data Outputs**
 
-* **OUT** (Type: `logiBUS::utils::conversion::types::ST08B`)
-* Comment: ST08B Output
-* Outputs the 8-byte structure created from the eight input bytes.
+- **OUT** (Type: `logiBUS::utils::conversion::types::ST08B`)
+- Comment: ST08B Output
+- Outputs the 8-byte structure created from the eight input bytes.
 
 ### **Adapters**
 
@@ -65,10 +66,10 @@ The `BYTES_TO_ST08B` function block is a purely combinational function block. It
 
 ## Application Scenarios
 
-* **Data Packet Assembly:** Combining individual byte components into a predefined data packet, e.g., for communication via serial interfaces or networks.
-* **Interfacing with Protocols:** Adapting data to communication protocols that expect specific 8-byte structures.
-* **Data Type Conversion:** Converting raw byte data into a higher-level, structured data type for improved handling and readability within the application.
-* **Hardware Interconnection:** When data from sensors or actuators is read byte by byte and needs to be aggregated into a fixed structure.
+- **Data Packet Assembly:** Combining individual byte components into a predefined data packet, e.g., for communication via serial interfaces or networks.
+- **Interfacing with Protocols:** Adapting data to communication protocols that expect specific 8-byte structures.
+- **Data Type Conversion:** Converting raw byte data into a higher-level, structured data type for improved handling and readability within the application.
+- **Hardware Interconnection:** When data from sensors or actuators is read byte by byte and needs to be aggregated into a fixed structure.
 
 ## ⚖️ Comparison with Similar Blocks
 

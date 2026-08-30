@@ -3,9 +3,11 @@
 ![Uebung_012b_AUDI_network](./Uebung_012b_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the acquisition of a numeric value via an ISOBUS input, its conversion into a storable format, and its persistent storage using an INI-based storage mechanism. The stored value is then read back and provided as an ISOBUS output value. The function blocks communicate via adapter interfaces (AUDI), which enable standardized data transfer.
+
 ## Function Blocks Used
 
 The exercise consists of a sub-application network containing four function blocks and their adapter connections. No further sub-blocks (nested sub-applications) are used.
@@ -66,6 +68,6 @@ Exercise **Exercise_012b_AUDI** demonstrates a complete data path from ISOBUS in
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

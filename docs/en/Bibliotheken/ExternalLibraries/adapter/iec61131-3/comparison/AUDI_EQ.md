@@ -3,9 +3,11 @@
 ![AUDI_EQ](./AUDI_EQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_EQ** compares two analog values for equality. It is implemented as a composite function block (FB) and uses adapters to communicate with the environment. The result is a Boolean value, which is output via another adapter. The function block complies with the IEC 61131-3 classification "Standard comparison function".
+
 ## Interface Structure
 
 The FB has only adapter interfaces. No direct event or data inputs/outputs are defined. The actual inputs/outputs are implemented via the adapter types.
@@ -31,7 +33,7 @@ The FB has only adapter interfaces. No direct event or data inputs/outputs are d
 ### **Adapters**
 
 | Adapter | Direction | Type | Short Description |
-|---------|----------|-----|------------------|
+| --------- | ---------- | ----- | ------------------ |
 | `IN1` | Socket | `adapter::types::unidirectional::AUDI` | Returns the first analog value including event. |
 | `IN2` | Socket | `adapter::types::unidirectional::AUDI` | Returns the second analog value including event. |
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Outputs the comparison result (Boolean) with an event. |

@@ -3,10 +3,12 @@
 ![AB_SPLIT_9](./AB_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_SPLIT_9** is used to split a single incoming adapter of type **AB** into nine identical outgoing adapters (**OUT1** to **OUT9**). It is implemented as a generic block (GenericClassName = `'GEN_AB_SPLIT'`) and can be used in any 4diac project to establish a point-to-multipoint connection via the adapter interface.
 The block has no event-driven or data-driven inputs/outputs – all communication takes place exclusively via the adapter interfaces. This enables clean, task-oriented coupling of modules.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +30,7 @@ None available.
 ### **Adapters**
 
 | Interface | Direction | Type | Description |
-|--------------|----------|-----|--------------|
+| -------------- | ---------- | ----- | -------------- |
 | IN | Socket | `adapter::types::unidirectional::AB` | Incoming adapter (source) |
 | OUT1 – OUT9 | Plug | `adapter::types::unidirectional::AB` | Nine identical outgoing adapters (sinks) |
 
@@ -57,7 +59,7 @@ The function block has **no** states of its own. Its behavior is purely combinat
 ## Comparison with Similar Components
 
 | Component | Outputs | Special Feature |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `AB_SPLIT_9` | 9 | Standard split for 1→9, generic |
 | `AB_SPLIT_4` | 4 | Same functionality, fewer outputs |
 | `AB_MERGE` | – | Combines multiple inputs into one output (opposite direction) |
@@ -77,6 +79,6 @@ The **AB_SPLIT_9** offers a simple yet powerful way to split a single adapter-ba
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

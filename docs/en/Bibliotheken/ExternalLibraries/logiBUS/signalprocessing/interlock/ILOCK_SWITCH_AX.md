@@ -4,6 +4,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_SWITCH_AX** implements interlocking switch control for bidirectional axes. It prioritizes the last active input and ensures that both directions are never activated simultaneously. Communication occurs exclusively via adapter interfaces of type `adapter::types::unidirectional::AX`. This version is specifically designed for use in modular control systems with standardized adapters.
@@ -29,7 +30,7 @@ None (all data is transmitted via the adapter plugs).
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | UP_IN | `adapter::types::unidirectional::AX` | Socket | Input for forward/upward direction |
 | DOWN_IN | `adapter::types::unidirectional::AX` | Socket | Input for reverse/downward direction |
 | UP_OUT | `adapter::types::unidirectional::AX` | Plug | Output for forward/upward direction |
@@ -63,7 +64,7 @@ If the active input is lost without the other becoming active, an intermediate s
 ## State Overview
 
 | State | UP_OUT.D1 | DOWN_OUT.D1 | Description |
-|---------|-----------|-------------|--------------|
+| --------- | ----------- | ------------- | -------------- |
 | `STOP` | FALSE | FALSE | Idle state, no direction active |
 | `UP` | TRUE | FALSE | Forward/Upward Direction Active |
 | DOWN` | FALSE | TRUE | Backward/Downward Direction Active |

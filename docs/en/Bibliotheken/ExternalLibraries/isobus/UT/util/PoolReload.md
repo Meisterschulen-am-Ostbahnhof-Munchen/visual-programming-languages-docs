@@ -3,36 +3,38 @@
 ![PoolReload](./PoolReload.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `PoolReload` is a service interface block according to ISO 11783-6 (ISOBUS). It enables the reloading or updating of the object pool of a Virtual Terminal (VT) during application runtime. This block is typically used, for example, to switch between different language variants or to dynamically load modified pool files without requiring a system restart.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `INIT` | `EInit` | Service initialization (with parameters `QI` and `poolFileName`) |
 | `REQ` | `Event` | Service request – performs pool reloading (with `QI`) |
 
 ### **Event Outputs**
 
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `INITO` | `EInit` | Initialization confirmation (outputs `QO` and `STATUS`) |
 | `CNF` | `Event` | Confirmation – Pool reload complete (outputs `QO`, `STATUS`, and `s16Result`) |
 
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `QI` | `BOOL` | Quality Input: `TRUE` activates the service |
 | `poolFileName` | `STRING` | Path to the pool file (e.g., `pools/pool_de.iop`) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `QO` | `BOOL` | Quality Output: `TRUE`, if the reload was successful |
 | `STATUS` | `STRING` | Service status (e.g., error message or success message) |
 | `s16Result` | `INT` | Return value: `0` = `E_NO_ERR` (success), negative values correspond to error codes |
@@ -46,10 +48,12 @@ No adapters available.
 This function block encapsulates the ISOBUS function `VTC_PoolReload()`. The process is divided into the following steps:
 
 1. **Initialization (`INIT`)**
+
 - The pool data is loaded from the file specified in `poolFileName`.
 - The pool is opened for the configured color depth.
 - After successful loading, the function block returns a confirmation message via `INITO`.
-2. **Service Execution (`REQ`)**
+1. **Service Execution (`REQ`)**
+
 - This function block calls `IsoVtcPoolUpdate()` to update the pool on the VT.
 - Optionally, ID range modes can be applied for pool manipulation.
 - Upon completion of the operation, a `CNF` event is triggered, reporting success or failure (via `s16Result`).
@@ -66,7 +70,7 @@ This function block encapsulates the ISOBUS function `VTC_PoolReload()`. The pro
 The function block can go through the following basic states:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Waiting for an INIT event. |
 | **INIT_PENDING** | Initialization is being performed; upon completion, `INITO` is sent. |
 | **READY** | Ready for `REQ` after successful initialization. |
@@ -82,7 +86,7 @@ The function block can go through the following basic states:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | PoolLoader` | Loads the pool only at system startup; no reloading at runtime. |
 | PoolActivate` | Switches between already loaded pools, but requires prior loading. |
 | PoolReload` | Combines loading and updating in one step and enables dynamic reloading during runtime. |

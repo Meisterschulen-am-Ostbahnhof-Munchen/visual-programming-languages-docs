@@ -52,7 +52,7 @@ Befindet sich der Baustein bereits in einem der aktiven Zustände (SET oder RESE
 ## Zustandsübersicht
 
 | Zustand | Bedeutung | Aktion beim Eintritt | Auslöser für Transitionen |
-|---------|-----------|----------------------|---------------------------|
+| --------- | ----------- | ---------------------- | --------------------------- |
 | **START** | Initialzustand | Keine (Warten auf erstes Ereignis) | S → SET, R → RESET |
 | **SET** | Ausgang \( Q \) ist `TRUE` | Führe Algorithmus SET aus (\( Q := \text{TRUE} \)), sende EO | R → RESET |
 | **RESET** | Ausgang \( Q \) ist `FALSE` | Führe Algorithmus RESET aus (\( Q := \text{FALSE} \)), sende EO | S → SET |

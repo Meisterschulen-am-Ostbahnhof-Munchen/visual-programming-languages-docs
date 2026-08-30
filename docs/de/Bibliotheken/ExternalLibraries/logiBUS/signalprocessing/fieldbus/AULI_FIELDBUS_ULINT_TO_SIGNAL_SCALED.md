@@ -3,6 +3,7 @@
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED](./AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** dient der skalierenden Spiegelung eines vorzeichenlosen Ganzzahlwertes (ULINT) in einen skalierten Signalwert (LREAL) unter Berücksichtigung einer Gültigkeitsinformation. Er ist als Composite-Baustein realisiert und kombiniert die eigentliche Skalierungslogik mit einer synchronisierten Valid-Ausgabe. Der Baustein ist für den Einsatz in Feldbus-Umgebungen konzipiert, wo Rohdaten (z. B. Sensorwerte) mit einem linearen Faktor und Offset umgerechnet werden müssen und die Gültigkeit des Signals zuverlässig weitergereicht werden soll.

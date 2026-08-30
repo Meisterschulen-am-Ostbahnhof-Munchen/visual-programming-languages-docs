@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Diese Übung demonstriert die Realisierung eines **Tickers** auf Basis von **AX-Adaptern** (Adapter-Ereignis-Schnittstellen) in der 4diac-IDE.  
+Diese Übung demonstriert die Realisierung eines **Tickers** auf Basis von **AX-Adaptern** (Adapter-Ereignis-Schnittstellen) in der 4diac-IDE.
 Ziel ist es, einen Zähler (up/down) zu implementieren, der über einen Schalter (AX_SWITCH), ein Set-Reset-Glied (AX_SR) und ein Erlaubnissignal (AX_PERMIT) gesteuert wird. Der aktuelle Zählerstand wird auf einem digitalen Ausgang und einem numerischen Anzeigeblock ausgegeben.
 
 Die Übung ist Teil der **Uebungen**-Bibliothek und nutzt vordefinierte Adapterbausteine sowie einen CTUD-Zähler. Sie eignet sich für Fortgeschrittene, die das Zusammenspiel von Ereignissen und Adaptern verstehen möchten.
@@ -51,49 +51,49 @@ Die Übung besteht aus einer **SubApp** (Uebung_009_AUDI), die mehrere interne F
 
 Der Ablauf der Übung lässt sich wie folgt beschreiben:
 
-1. **Taktgenerierung**  
+1. **Taktgenerierung**
    `AE_CYCLE` erzeugt alle 1 Sekunde ein Ereignis (EO).
 
-2. **Ereignisvereinigung**  
+2. **Ereignisvereinigung**
    Dieses Ereignis wird zusammen mit dem Signal von `AX_SPLIT_3.OUT1` (siehe Schritt 4) über `AX_AE_MERGE` zusammengeführt. Das Ergebnis wird an `AX_SWITCH.G` (Gate-Eingang) weitergeleitet.
 
-3. **Schalterbetrieb**  
+3. **Schalterbetrieb**
    `AX_SWITCH` reagiert auf das eingehende Ereignis und schaltet zwischen seinen beiden Ausgängen `EO0` und `EO1` um. Dies simuliert ein manuelles oder logisches Umschalten.
 
-4. **Set-Reset-Glied**  
+4. **Set-Reset-Glied**
    `EO0` geht an `AX_SR.S` (Set), `EO1` an `AX_SR.R` (Reset). Der Ausgang `Q` des SR-Glieds wird aktiv, solange gesetzt, und deaktiviert bei Reset.
 
-5. **Signalverteilung**  
+5. **Signalverteilung**
    Das Signal von `AX_SR.Q` wird auf `AX_SPLIT_3.IN` gegeben und auf drei Ausgänge verteilt:
 
    - `OUT1` → zurück zur Ereignisvereinigung `AX_AE_MERGE.IN_AX`.
    - `OUT2` → an den **digitalen Ausgang** `DigitalOutput_Q1.OUT`. Damit wird der Ausgang `Output_Q1` gesetzt, solange das SR-Glied gesetzt ist.
    - `OUT3` → an `AX_PERMIT.PERMIT`.
 
-6. **Erlaubnis und Zähler**  
+6. **Erlaubnis und Zähler**
    `AX_PERMIT` gibt das Ereignis nur dann an `EO` weiter, wenn am `PERMIT`-Eingang ein Ereignis anliegt. Dieses wird an den Zähler `AUDI_CTUD_UDINT.CU` gesendet. Der Zähler erhöht seinen Wert bei jedem Ereignis.
 
-7. **Numerische Ausgabe**  
+7. **Numerische Ausgabe**
    Der aktuelle Zählerstand (`CV`) wird an den `Q_NumericValue_AUDI`-Block übergeben und als numerischer Wert auf dem isobus-Netzwerk (Objekt-ID `OutputNumber_N1`) ausgegeben.
 
-**Lernziele**:  
+**Lernziele**:
 
-- Verständnis von AX- und AE-Adaptern (Ereignis- und Adapter-Schnittstellen)  
-- Anwendung eines SR-Speichers, eines Schalters und eines Erlaubnisglieds  
-- Verknüpfung von zyklischen Ereignissen mit manueller Steuerung  
+- Verständnis von AX- und AE-Adaptern (Ereignis- und Adapter-Schnittstellen)
+- Anwendung eines SR-Speichers, eines Schalters und eines Erlaubnisglieds
+- Verknüpfung von zyklischen Ereignissen mit manueller Steuerung
 - Ausgabe auf digitalen und numerischen Kanälen
 
-**Schwierigkeitsgrad**: Fortgeschritten  
+**Schwierigkeitsgrad**: Fortgeschritten
 **Vorkenntnisse**: Grundlagen der 4diac-IDE, Ereignisgesteuerte Abläufe, Arbeit mit Adaptern
 
 ## Zusammenfassung
 
-Die Übung `Uebung_009_AUDI` implementiert einen tickergesteuerten Zähler mit Hilfe von AX-Adapter-Bausteinen.  
-Ein zyklischer Timer (`AE_CYCLE`) liefert den Takt, der über einen Schalter (`AX_SWITCH`) und ein Set-Reset-Glied (`AX_SR`) den Zähler freigibt. Der Zählerstand wird gleichzeitig als digitales Signal auf einem logiBUS-Ausgang und als numerischer Wert auf einem isobus-Netzwerk ausgegeben.  
+Die Übung `Uebung_009_AUDI` implementiert einen tickergesteuerten Zähler mit Hilfe von AX-Adapter-Bausteinen.
+Ein zyklischer Timer (`AE_CYCLE`) liefert den Takt, der über einen Schalter (`AX_SWITCH`) und ein Set-Reset-Glied (`AX_SR`) den Zähler freigibt. Der Zählerstand wird gleichzeitig als digitales Signal auf einem logiBUS-Ausgang und als numerischer Wert auf einem isobus-Netzwerk ausgegeben.
 Die Verwendung von Adaptern erlaubt eine flexible, ereignisorientierte Verkettung und demonstriert die modulare Struktur der 4diac-IDE.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

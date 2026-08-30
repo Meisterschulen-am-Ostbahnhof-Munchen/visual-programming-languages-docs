@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_MUL_2` dient zur Durchführung einer arithmetischen Multiplikation zweier Werte. Es handelt sich um einen generischen Funktionsbaustein, der für eine saubere und modulare Architektur in IEC 61499-Systemen konzipiert ist. Anstelle von klassisch diskreten Daten- und Ereignisports nutzt dieser Baustein unidirektionale Adapter, um Steuerungsereignisse und Datenwerte gebündelt zu übertragen.
@@ -30,11 +31,11 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Die Datenübertragung erfolgt 
 
 ### **Adapter**
 
-*   **Sockets (Eingangs-Adapter):**
-    *   `IN1` (Typ: `adapter::types::unidirectional::ALI`): Erster Eingang für die Multiplikation (Multiplikand).
-    *   `IN2` (Typ: `adapter::types::unidirectional::ALI`): Zweiter Eingang für die Multiplikation (Multiplikator).
-*   **Plugs (Ausgangs-Adapter):**
-    *   `OUT` (Typ: `adapter::types::unidirectional::ALI`): Ausgang für das Ergebnis der Multiplikation (Produkt).
+-   **Sockets (Eingangs-Adapter):**
+    -   `IN1` (Typ: `adapter::types::unidirectional::ALI`): Erster Eingang für die Multiplikation (Multiplikand).
+    -   `IN2` (Typ: `adapter::types::unidirectional::ALI`): Zweiter Eingang für die Multiplikation (Multiplikator).
+-   **Plugs (Ausgangs-Adapter):**
+    -   `OUT` (Typ: `adapter::types::unidirectional::ALI`): Ausgang für das Ergebnis der Multiplikation (Produkt).
 
 ## Funktionsweise
 
@@ -46,8 +47,8 @@ Das berechnete Ergebnis sowie das zugehörige Ausgangs-Ereignis werden anschlie�
 
 ## Technische Besonderheiten
 
-*   **Generischer Charakter:** Der Baustein ist über das Attribut `GenericClassName` als `GEN_ALI_MUL` deklariert. Dies ermöglicht eine flexible Handhabung verschiedener Datentypen, die durch das übergeordnete System oder den verwendeten Adaptertyp spezifiziert werden.
-*   **Adapter-Kopplung:** Durch die Verwendung des unidirektionalen Adaptertyps `ALI` werden Daten und Trigger-Events in einer einzigen Verbindung gebündelt, was den Verdrahtungsaufwand in der Entwicklungsumgebung erheblich minimiert.
+-   **Generischer Charakter:** Der Baustein ist über das Attribut `GenericClassName` als `GEN_ALI_MUL` deklariert. Dies ermöglicht eine flexible Handhabung verschiedener Datentypen, die durch das übergeordnete System oder den verwendeten Adaptertyp spezifiziert werden.
+-   **Adapter-Kopplung:** Durch die Verwendung des unidirektionalen Adaptertyps `ALI` werden Daten und Trigger-Events in einer einzigen Verbindung gebündelt, was den Verdrahtungsaufwand in der Entwicklungsumgebung erheblich minimiert.
 
 ## Zustandsübersicht
 
@@ -55,9 +56,9 @@ Da es sich um einen rein datenfluss- und adapterbasierten Funktionsbaustein hand
 
 ## Anwendungsszenarien
 
-*   **Messwertskalierung:** Multiplikation von Sensorwerten mit Kalibrierungs- oder Skalierungsfaktoren.
-*   **Leistungsberechnung:** Ermittlung von physikalischen Größen wie der elektrischen Leistung ($P = U \times I$) in adapterbasierten Steuerungsnetzwerken.
-*   **Kompakte Berechnungsnetzwerke:** Einsatz in komplexen mathematischen Berechnungen, bei denen die visuelle Übersichtlichkeit des Steuerungsdiagramms durch den Einsatz von Adaptern gewahrt bleiben soll.
+-   **Messwertskalierung:** Multiplikation von Sensorwerten mit Kalibrierungs- oder Skalierungsfaktoren.
+-   **Leistungsberechnung:** Ermittlung von physikalischen Größen wie der elektrischen Leistung ($P = U \times I$) in adapterbasierten Steuerungsnetzwerken.
+-   **Kompakte Berechnungsnetzwerke:** Einsatz in komplexen mathematischen Berechnungen, bei denen die visuelle Übersichtlichkeit des Steuerungsdiagramms durch den Einsatz von Adaptern gewahrt bleiben soll.
 
 ## Vergleich mit ähnlichen Bausteinen
 

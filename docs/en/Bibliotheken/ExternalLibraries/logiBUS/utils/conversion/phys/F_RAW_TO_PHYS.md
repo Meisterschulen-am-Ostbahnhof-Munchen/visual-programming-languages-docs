@@ -3,6 +3,7 @@
 ![F_RAW_TO_PHYS](./F_RAW_TO_PHYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **F_RAW_TO_PHYS** converts an ISOBUS raw value of type `UDINT` into a physical value of type `REAL`. The conversion is performed according to the standardized ISOBUS formula:
@@ -27,7 +28,7 @@ It is typically used in agricultural control systems to convert sensor data or a
 ### **Data Inputs**
 
 | Name | Type | Description |
-|--------|-------|--------------|
+| -------- | ------- | -------------- |
 | u32Raw | UDINT | The raw integer value (e.g., from an ISOBUS message object). |
 | stObj | `NumericObjectPool_S` | Structure containing the offset (`i32Offset : DINT`) and the scaling factor (`r32Scale : REAL`). |
 
@@ -98,4 +99,4 @@ The **F_RAW_TO_PHYS** function block is a useful and cleanly implemented compone
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

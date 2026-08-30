@@ -40,6 +40,7 @@ The function block has no internal states. Execution occurs immediately upon tri
 - **F_BOOL_TO_WORD**: Similar to `F_BOOL_TO_BYTE`, but designed for larger data formats (Word).
 
 The function block `F_BOOL_TO_BYTE` is a simple and efficient tool for converting Boolean values to byte data. It is particularly suitable for applications that require a compact representation of Boolean signals in byte format. Its simple interface and direct functionality make it easy to integrate into existing systems.
+
 ## Technical Features
 
 ## State Overview

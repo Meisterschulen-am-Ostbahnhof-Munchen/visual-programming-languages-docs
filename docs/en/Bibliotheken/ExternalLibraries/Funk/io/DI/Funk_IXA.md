@@ -38,6 +38,7 @@ The **Funk_IXA** function block is a composite function block for processing Boo
 The The Funk_IXA block acts as a wrapper for the underlying Funk_IX block. During INIT initialization, the parameters QI, PARAMS, and Input are passed to the internal IX block. The REQ request triggers a query of the current input state. The IN adapter enables communication with external systems.
 
 Funk_IXA acts as a wrapper for the underlying Funk_IX block.
+
 ## Technical Features
 
 - Uses the specific data type Funk_DI_S to identify digital inputs
@@ -72,8 +73,8 @@ Compared to simple digital input blocks, Funk_IXA offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
-* [Exercise_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
+- [Exercise_003b2_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
+- [Exercise_003b3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
 
 ## Conclusion
 

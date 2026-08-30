@@ -15,5 +15,4 @@ Er stellt Parameter für die Wahl des Eingangs-Buttons (`Input`), der Farbe (`Co
 
 ![Uebung_033_sub_network](./Uebung_033_sub_network.svg)
 
-* [Uebung_033](Uebung_033.md)
-
+- [Uebung_033](Uebung_033.md)

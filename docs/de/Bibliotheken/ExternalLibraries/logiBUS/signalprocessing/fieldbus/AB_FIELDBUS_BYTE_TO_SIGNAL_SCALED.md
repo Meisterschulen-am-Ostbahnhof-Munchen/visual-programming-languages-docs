@@ -3,6 +3,7 @@
 ![AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED](./AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` dient dazu, ein eingehendes BYTE-förmiges Signal über einen Adapter zu empfangen, es mit einem konfigurierbaren Skalierungsfaktor und Offset zu verarbeiten und das Ergebnis über einen Ausgangs-Adapter bereitzustellen. Gleichzeitig wird über einen separaten Adapter die Gültigkeit (Validität) des Signals signalisiert. Der Baustein ist speziell für den Einsatz in Feldbus-Umgebungen konzipiert, in denen Rohdaten in physikalische oder normierte Werte umgerechnet werden müssen.
@@ -35,7 +36,7 @@ Der Baustein besitzt keine eigenständigen Daten-Eingänge oder -Ausgänge – d
 ### **Adapter**
 
 | Adapter | Typ | Richtung | Beschreibung |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `IN` | AB (Adapter Typ A→B) | Socket | Empfang des rohen BYTE-Signals |
 | `OUT` | AR (Adapter Typ A→R) | Plug | Ausgabe des skalierten Signals |
 | `VALID` | AX (Adapter Typ A→X) | Plug | Signalisiert, ob der aktuelle Ausgabewert gültig ist (TRUE = gültig) |

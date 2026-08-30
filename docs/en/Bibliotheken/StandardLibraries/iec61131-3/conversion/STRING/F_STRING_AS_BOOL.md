@@ -6,6 +6,7 @@
 
 The function block `F_STRING_AS_BOOL` converts a `STRING` value to a `BOOL` value. This block is particularly useful when strings need to be converted into Boolean values, for example, when processing user input or interpreting text data.
 ![F_STRING_AS_BOOL](F_STRING_AS_BOOL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

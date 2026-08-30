@@ -3,6 +3,7 @@
 ![SPLIT_WORD_INTO_BOOLS](https://github.com/user-attachments/assets/dc1abe89-3f91-409f-815b-858dcd48d035)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_WORD_INTO_BOOLS` dient dazu, ein 16-Bit-Wort in seine einzelnen Bits zu zerlegen. Jedes Bit des Eingangswortes wird auf einen separaten BOOL-Ausgang abgebildet. Dies ist besonders nützlich, wenn einzelne Bits eines Wortes weiterverarbeitet oder überwacht werden müssen.

@@ -3,9 +3,11 @@
 ![ASSEMBLE_AD_FROM_AQ](./ASSEMBLE_AD_FROM_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_AD_FROM_AQ` is used to combine sixteen separate `AQ` adapters (quarters) into a single `AD` output adapter (DWORD). The term "quarter" indicates that each `AQ` adapter represents part of a 32-bit word—specifically, one byte (8 bits). The block combines these 16 bytes into a complete DWORD and makes it available via a `AD` plug. It is particularly suitable for applications where data arrives in smaller units and only needs to be combined into a larger data type at the receiving end.
+
 ## Interface Structure
 
 The function block has no independent event or data inputs/outputs. All input and output is handled exclusively via adapters.
@@ -29,7 +31,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|------|-------------|
+| ---------- | ------ | ------ | ------------- |
 | **Sockets** (Inputs) | QUARTER_BYTE_00 … QUARTER_BYTE_15 | `adapter::types::unidirectional::AQ` | 16 identical adapters, each providing an 8-bit data value (quarter/byte) and a corresponding event (`E1`). |
 | **Plug** (Output) | OUT | `adapter::types::unidirectional::AD` | Output adapter providing the DWORD (`D1`) composed of the 16 quarter values and an event (`E1`). |
 
@@ -67,7 +69,7 @@ In the idle state (no event at a quarter socket), the output value of the `OUT` 
 ## Comparison with Similar Components
 
 | Component | Number of Inputs | Output | Synchronization | Properties |
-|----------|-----------------|---------|----------------|--------------|
+| ---------- | ----------------- | --------- | ---------------- | -------------- |
 | `ASSEMBLE_AD_FROM_AQ` | 16 (AQ adapter) | 1 (AD adapter) | Yes (flip-flop) | For event-driven byte collection. |
 | `ASSEMBLE_DWORD_FROM_QUARTERS` (internal) | 16 data inputs (no adapters) | 1 DWORD output | No | Pure data assembly without event synchronization. |
 | Simple `MERGE` component (fictional) | 2 … n data inputs | 1 Data Output | Often no | Data concatenation only, no adapter structure. |
@@ -82,6 +84,6 @@ ASSEMBLE_AD_FROM_AQ` is a specialized adapter component for concatenating 16-byt
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

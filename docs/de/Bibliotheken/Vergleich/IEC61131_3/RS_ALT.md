@@ -37,4 +37,4 @@ Wenn `R1` TRUE ist, wird der Ausdruck `NOT R1` zu FALSE, und somit wird `Q1` zwa
 
 ## Siehe auch
 
-*   [E_RS (IEC 61499)](../../StandardLibraries/events/E_RS.md): Das ereignisgesteuerte Äquivalent in der IEC 61499. Beachten Sie, dass dort keine garantierte "Dominanz" bei gleichzeitigen Ereignissen existiert.
+-   [E_RS (IEC 61499)](../../StandardLibraries/events/E_RS.md): Das ereignisgesteuerte Äquivalent in der IEC 61499. Beachten Sie, dass dort keine garantierte "Dominanz" bei gleichzeitigen Ereignissen existiert.

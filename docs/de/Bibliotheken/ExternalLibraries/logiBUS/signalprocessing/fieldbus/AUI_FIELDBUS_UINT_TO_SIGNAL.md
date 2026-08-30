@@ -45,8 +45,8 @@ Der Funktionsblock besitzt keine separaten Daten-Ausgänge. Ausgangsdaten werden
 
 ## Technische Besonderheiten
 
-- Der Baustein ist als **Composite FB** realisiert; seine Funktionalität setzt sich aus zwei internen FBs zusammen:  
-  - `FIELDBUS_UINT_TO_SIGNAL` (Datenumsetzer)  
+- Der Baustein ist als **Composite FB** realisiert; seine Funktionalität setzt sich aus zwei internen FBs zusammen:
+  - `FIELDBUS_UINT_TO_SIGNAL` (Datenumsetzer)
   - `E_D_FF` (flankengesteuertes D‑Flip‑Flop)
 - Die Gültigkeitsanzeige ist **ereignisgetaktet** und wird über ein Flip‑Flop zwischengespeichert. Dadurch ist sie auch dann stabil, wenn das Eingangssignal für mehrere Zyklen ausbleibt.
 - Die Signal‑ und Gültigkeitsausgabe erfolgen **quasi‑parallel** (beide über dasselbe Ereignis des internen FB).
@@ -87,4 +87,4 @@ Der Funktionsblock `AUI_FIELDBUS_UINT_TO_SIGNAL` ist ein kompakter, adapterbasie
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

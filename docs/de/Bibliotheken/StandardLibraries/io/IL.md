@@ -2,19 +2,19 @@
 
 ## 📺 Video
 
-* [The silent failure](https://www.youtube.com/watch?v=KBMog5sdWtA)
+- [The silent failure](https://www.youtube.com/watch?v=KBMog5sdWtA)
 
 ## 🎧 Podcast
 
-* [4diac IDE: Dein Open-Source-Werkzeugkasten für verteilte Industrieautomatisierung nach IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
-* [Eclipse 4diac 3.0: ST-Interpreter, FBE und 7200 Commits – Der Turbo für verteilte Automatisierung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
-* [Eclipse 4diac: Ihr Fahrrad für die Industrie 4.0 – Software-Aufwand meistern und verteilte Systeme steuern](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Ihr-Fahrrad-fr-die-Industrie-4-0--Software-Aufwand-meistern-und-verteilte-Systeme-steuern-e368lq9)
-* [IEC 61499: Die Zukunft der industriellen Automatisierung und verteilten Systeme](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/IEC-61499-Die-Zukunft-der-industriellen-Automatisierung-und-verteilten-Systeme-e369739)
-* [Schritt 2 - 4diac Anwendungen verteilen](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Schritt-2---4diac-Anwendungen-verteilen-e36974b)
+- [4diac IDE: Dein Open-Source-Werkzeugkasten für verteilte Industrieautomatisierung nach IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/4diac-IDE-Dein-Open-Source-Werkzeugkasten-fr-verteilte-Industrieautomatisierung-nach-IEC-61499-e36821e)
+- [Eclipse 4diac 3.0: ST-Interpreter, FBE und 7200 Commits – Der Turbo für verteilte Automatisierung](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-3-0-ST-Interpreter--FBE-und-7200-Commits--Der-Turbo-fr-verteilte-Automatisierung-e3a5cpl)
+- [Eclipse 4diac: Ihr Fahrrad für die Industrie 4.0 – Software-Aufwand meistern und verteilte Systeme steuern](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Eclipse-4diac-Ihr-Fahrrad-fr-die-Industrie-4-0--Software-Aufwand-meistern-und-verteilte-Systeme-steuern-e368lq9)
+- [IEC 61499: Die Zukunft der industriellen Automatisierung und verteilten Systeme](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/IEC-61499-Die-Zukunft-der-industriellen-Automatisierung-und-verteilten-Systeme-e369739)
+- [Schritt 2 - 4diac Anwendungen verteilen](https://podcasters.spotify.com/pod/show/eclipse-4diac-de/episodes/Schritt-2---4diac-Anwendungen-verteilen-e36974b)
 
----- 
+----
 
-![](https://user-images.githubusercontent.com/69573151/210780439-a6842673-058d-48f2-8cb7-135c6a960116.png)
+![IL (Input Long Word) Funktionsbaustein Schnittstelle](https://user-images.githubusercontent.com/69573151/210780439-a6842673-058d-48f2-8cb7-135c6a960116.png)
 
 * * * * * * * * * *
 
@@ -90,4 +90,4 @@ Der IL-Funktionsblock bietet eine robuste und flexible Schnittstelle für die Ve
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

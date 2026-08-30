@@ -3,6 +3,7 @@
 ![Q_SetAudioVolume_AUS](./Q_SetAudioVolume_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock Q_SetAudioVolume_AUS ist ein zusammengesetzter Baustein (Composite FB), der den Befehl „SetAudioVolume“ gemäß ISO 11783‑6 auf einem Virtual Terminal (VT) ausführt. Er kapselt den Basisbaustein Q_SetAudioVolume und stellt eine adapterbasierte Schnittstelle zur Verfügung, um die Lautstärke zu setzen und den alten Wert zurückzulesen. Der FB initialisiert sich über den Ereigniseingang INIT und bestätigt dies mit INITO. Anschließend kann über den u8Volume-Adapter eine neue Lautstärke übergeben werden, woraufhin der Befehl ausgelöst und das Ergebnis über CNF mit STATUS und s16result ausgegeben wird.

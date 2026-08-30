@@ -3,6 +3,7 @@
 ![Uebung_104_AX_network](./Uebung_104_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **state-based step sequence with power fail recovery** for the AX variant (adapter-based).
@@ -149,11 +150,12 @@ Medium – Basic knowledge of 4diac and step sequences is required.
 
 1. Open the exercise `Uebung_104_AX` in the 4diac IDE.
 2. Connect the physical inputs/outputs:
+
 - `Input_I1`, `I2`, `I3` – e.g., limit switches or sensors
 - `Input_I4` – reset button
 - `Output_Q1`, `Q2`, `Q3` – e.g., valves or motors
-3. Upload the application to the target hardware (e.g., logiBUS controller).
-4. Test the power failure recovery: Interrupt and restore the power supply – the machine should return to the state defined by the sensors.
+1. Upload the application to the target hardware (e.g., logiBUS controller).
+2. Test the power failure recovery: Interrupt and restore the power supply – the machine should return to the state defined by the sensors.
 
 ## Summary
 
@@ -167,6 +169,6 @@ The recovery behavior ensures that the controller automatically assumes the appr
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

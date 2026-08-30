@@ -3,6 +3,7 @@
 ![Uebung_014_AXa_network](./Uebung_014_AXa_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Steuerung der Sichtbarkeit eines Containers (Objekts) durch zwei Softkeys. Mit SoftKey_F1 wird der Container eingeblendet, mit SoftKey_F2 ausgeblendet. Dabei wird ein Set-Reset-Flipflop (AX_SR) verwendet, um den Zustand zu speichern und an einen Hide/Show-Baustein weiterzugeben.
@@ -63,7 +64,7 @@ Der Zustandsausgang `Q` von **AX_SR** wird über den Adapter `qVisible` an den B
 - Verwendung eines Set-Reset-Flipflops (AX_SR) zur Zustandspeicherung.
 - Verbindung von Ereignis- und Datenadaptern in einer Subapplikation.
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Benötigte Vorkenntnisse**: Grundlagen der Ereignisverarbeitung und Adapterverbindungen in 4diac.
 
 ## Zusammenfassung
@@ -74,4 +75,4 @@ Die Übung zeigt eine typische Anwendung zur Ein-/Ausblendung eines Containers m
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

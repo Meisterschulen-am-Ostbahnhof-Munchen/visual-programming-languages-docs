@@ -3,9 +3,11 @@
 ![AB_SPLIT_5](./AB_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AB_SPLIT_5` is used to distribute one unidirectional AB adapter input (socket) to five identical AB adapter outputs (plugs). It is a generic function block designed for signal distribution in automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AB` | Unidirectional AB adapter providing the input signal. |
 | **Plug** (Output) | `OUT1` | `adapter::types::unidirectional::AB` | First unidirectional AB adapter output. |
 | **Plug** (Output) | `OUT2` | `adapter::types::unidirectional::AB` | Second unidirectional AB adapter output. |
@@ -60,7 +62,7 @@ There is no state machine. The function block operates continuously and permanen
 ## Comparison with Similar Function Blocks
 
 | Function Block | Number of Outputs | Special Features |
-|----------|-----------------|--------------|
+| ---------- | ----------------- | -------------- |
 | `AB_SPLIT_2` | 2 | Simple 1:2 distribution |
 | `AB_SPLIT_3` | 3 | 1:3 distribution |
 | `AB_SPLIT_5` | 5 | 1:5 distribution (this block) |
@@ -81,6 +83,6 @@ AB_SPLIT_5` is a lean, specialized function block for the 1:5 distribution of un
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

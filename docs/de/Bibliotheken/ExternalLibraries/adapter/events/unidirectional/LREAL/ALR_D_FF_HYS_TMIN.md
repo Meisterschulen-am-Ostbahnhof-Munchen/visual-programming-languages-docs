@@ -3,6 +3,7 @@
 ![ALR_D_FF_HYS_TMIN](./ALR_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_D_FF_HYS_TMIN** realisiert ein taktgesteuertes D‑Latch (Flipflop) mit einer einstellbaren Hysterese für die Datenübernahme und einer minimalen Zeitverzögerung zwischen aufeinanderfolgenden Ausgangsereignissen. Er verarbeitet einen analogen oder booleschen Wert über einen Adapter-Eingang und gibt den zwischengespeicherten Wert über einen Adapter-Ausgang aus. Die Hysterese verhindert ein ungewolltes Umschalten bei schwankenden Eingangswerten, während die Mindestzeit (Tmin) die Ereignisfrequenz am Ausgang begrenzt.

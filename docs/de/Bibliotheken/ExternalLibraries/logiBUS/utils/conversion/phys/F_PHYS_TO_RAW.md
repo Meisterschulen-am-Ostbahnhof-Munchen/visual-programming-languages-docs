@@ -32,7 +32,7 @@ Der Funktionsblock **F_PHYS_TO_RAW** wandelt einen physikalischen REAL-Wert in e
 ### **Daten-Ausgänge**
 
 | Variable | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | * | UDINT | Der berechnete ISOBUS-Rohwert (Rückgabewert der Funktion). Gesättigt auf den Bereich 0 bis 4294967295. |
 | xOver | BOOL | TRUE, wenn der physikalische Wert den oberen Grenzwert überschreitet. |
 | xUnder | BOOL | TRUE, wenn der physikalische Wert den unteren Grenzwert unterschreitet. |

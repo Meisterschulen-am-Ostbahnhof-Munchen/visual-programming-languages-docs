@@ -4,9 +4,11 @@ No image available
 ![AUDI_D_FF_HYS_TMIN](./AUDI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_D_FF_HYS_TMIN** implements a clock-edge-triggered data latch (D flip-flop) with a hysteresis function and a minimum dwell time between output events (EO). It serves to reliably and cleanly acquire a data value while simultaneously suppressing noise and undesirably fast switching operations. The function block encapsulates the logic of an internal component `E_D_FF_ANY_HYS_TMIN` and provides the inputs/outputs via standardized adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **AUDI_D_FF_HYS_TMIN** implements a clock-edge-triggered data
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|--------------|-------|-----------------------------------------------------------|
+| -------------- | ------- | ----------------------------------------------------------- |
 | HYSTERESIS | UDINT | Hysteresis band (width of the dead zone for noise suppression) |
 | Tmin | TIME | Minimum time between two consecutive output events |
 
@@ -34,7 +36,7 @@ No direct data outputs – the output data is provided via the **Q** adapter.
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|-------------|------------------------------------|----------|----------------------------|
+| ------------- | ------------------------------------ | ---------- | ---------------------------- |
 | I | `adapter::types::unidirectional::AUDI` | Input | Data value to be received |
 | Q | `adapter::types::unidirectional::AUDI` | Output | Latched value |
 

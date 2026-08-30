@@ -3,6 +3,7 @@
 <img width="1528" height="212" alt="F_TIME_IN_NS_TO_DINT" src="https://github.com/user-attachments/assets/1bf1ef7f-a9cc-4407-a8c7-72c2401edce4" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_TIME_IN_NS_TO_DINT` dient zur Konvertierung eines TIME-Werts in Nanosekunden in einen DINT-Wert. Diese Konvertierung ist nützlich, wenn Zeitwerte in numerischen Berechnungen oder für weitere Verarbeitungsschritte benötigt werden.
@@ -57,9 +58,9 @@ Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen We
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
 
-*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
-*   **Beispiel:** `500 * T#1ms = T#500ms`
-*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+-   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+-   **Beispiel:** `500 * T#1ms = T#500ms`
+-   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

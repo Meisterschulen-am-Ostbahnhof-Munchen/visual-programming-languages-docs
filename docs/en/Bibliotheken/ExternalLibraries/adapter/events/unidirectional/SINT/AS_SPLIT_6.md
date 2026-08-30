@@ -3,9 +3,11 @@
 ![AS_SPLIT_6](./AS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_SPLIT_6** is used to split a single incoming AS adapter signal into six separate AS adapter outputs. It is implemented as a generic block and can be used with various unidirectional AS adapter types (e.g., sensor or actuator adapters).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **AS_SPLIT_6** is used to split a single incoming AS adapter 
 ### **Adapter**
 
 | Direction | Name | Type |
-|----------|------|-----|
+| ---------- | ------ | ----- |
 | SOCKET | IN | unidirectional::AS (generic) |
 | PLUG | OUT1 | unidirectional::AS (generic) |
 | PLUG | OUT2 | unidirectional::AS (generic) |

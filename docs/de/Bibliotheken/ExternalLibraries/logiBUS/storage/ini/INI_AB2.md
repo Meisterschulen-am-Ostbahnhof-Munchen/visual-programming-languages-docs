@@ -3,6 +3,7 @@
 ![INI_AB2](./INI_AB2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `INI_AB2` dient zum Lesen und Schreiben von REAL-Werten aus oder in eine `settings.ini`-Datei. Der Zugriff erfolgt über eine Kombination aus Abschnittsnamen (Section) und Schlüsselnamen (Key). Die Kommunikation mit der Außenwelt erfolgt über einen bidirektionalen **AB2-Adapter**, der es ermöglicht, Werte aus der INI-Datei an andere Bausteine weiterzugeben oder Werte von anderen Bausteinen entgegenzunehmen und in der Datei zu speichern. Der Baustein wurde gemäß der Norm IEC 61499-2 entwickelt.
@@ -24,7 +25,7 @@ Der Funktionsblock `INI_AB2` dient zum Lesen und Schreiben von REAL-Werten aus o
 ### **Daten-Eingänge**
 
 | Variable | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QI | BOOL | Qualifizierer für den Ereigniseingang; steuert die Ausführung. |
 | SECTION | STRING | Name des Abschnitts (Section) in der `settings.ini`. |
 | KEY | STRING | Name des Schlüssels (Key) innerhalb des Abschnitts. |
@@ -92,4 +93,4 @@ Der `INI_AB2`-Funktionsblock ist eine praktische Erweiterung für IEC 61499-basi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

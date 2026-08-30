@@ -3,6 +3,7 @@
 ![USERFUNC_e](./USERFUNC_e.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die globale Konstante `USERFUNC_e` definiert eine Aufzählung (Enumeration) von numerischen Werten, die spezifische Gerätefunktionen oder Rollen innerhalb eines ISOBUS-Netzwerks repräsentieren. Sie dient der standardisierten und lesbaren Identifikation verschiedener ISOBUS-Gerätetypen und -Funktionen in Steuerungsanwendungen.
@@ -29,12 +30,12 @@ Bei `USERFUNC_e` handelt es sich um eine Sammlung globaler Konstanten und nicht 
 
 ## Technische Besonderheiten
 
-*   **Datentyp:** Alle Konstanten sind vom Typ `SINT` (8-Bit vorzeichenbehaftete Ganzzahl).
-*   **Bereich:** Die definierten Werte liegen im Bereich von `-1` (`undefined`) bis `21`.
-*   **ISOBUS-Konformität:** Die Bezeichnungen und Werte orientieren sich an den im ISOBUS-Standard (ISO 11783) definierten Gerätefunktionen.
-*   **Spezielle Werte:**
-    *   `undefined` (-1): Kennzeichnet eine undefinierte oder unbekannte Funktion.
-    *   `all_clients` (20) & `all_server` (21): Werte für Broadcast- oder Gruppenadressierung.
+-   **Datentyp:** Alle Konstanten sind vom Typ `SINT` (8-Bit vorzeichenbehaftete Ganzzahl).
+-   **Bereich:** Die definierten Werte liegen im Bereich von `-1` (`undefined`) bis `21`.
+-   **ISOBUS-Konformität:** Die Bezeichnungen und Werte orientieren sich an den im ISOBUS-Standard (ISO 11783) definierten Gerätefunktionen.
+-   **Spezielle Werte:**
+    -   `undefined` (-1): Kennzeichnet eine undefinierte oder unbekannte Funktion.
+    -   `all_clients` (20) & `all_server` (21): Werte für Broadcast- oder Gruppenadressierung.
 
 ## Zustandsübersicht
 
@@ -42,10 +43,10 @@ Bei `USERFUNC_e` handelt es sich um eine Sammlung globaler Konstanten und nicht 
 
 ## Anwendungsszenarien
 
-*   **Geräteidentifikation:** In einem Task-Controller kann mit `IF device_function = USERFUNC_e.virtual_terminal THEN ...` geprüft werden, ob eine Verbindung zu einem Terminal besteht.
-*   **Nachrichtenfilterung:** Filterung von ISOBUS-Nachrichten (PGNs) basierend auf der Quell- oder Zielgerätefunktion.
-*   **Konfiguration:** Parametrierung von Netzwerkdiensten, die nur für bestimmte Geräterollen (z.B. `file_server`) verfügbar sein sollen.
-*   **Diagnose:** Lesbare Ausgabe von Geräterollen in Diagnoseprotokollen oder auf Benutzeroberflächen.
+-   **Geräteidentifikation:** In einem Task-Controller kann mit `IF device_function = USERFUNC_e.virtual_terminal THEN ...` geprüft werden, ob eine Verbindung zu einem Terminal besteht.
+-   **Nachrichtenfilterung:** Filterung von ISOBUS-Nachrichten (PGNs) basierend auf der Quell- oder Zielgerätefunktion.
+-   **Konfiguration:** Parametrierung von Netzwerkdiensten, die nur für bestimmte Geräterollen (z.B. `file_server`) verfügbar sein sollen.
+-   **Diagnose:** Lesbare Ausgabe von Geräterollen in Diagnoseprotokollen oder auf Benutzeroberflächen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -59,4 +60,4 @@ Die globale Konstante `USERFUNC_e` ist ein essentielles Hilfsmittel für die Ent
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

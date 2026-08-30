@@ -3,6 +3,7 @@
 ![AL_SPLIT_3](./AL_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_SPLIT_3** dient der Aufteilung eines eingehenden unidirektionalen Adapter-Signals (AL – Adapter Label) auf drei gleichartige Ausgangs-Adapter. Er ist als generischer Baustein konzipiert und ermöglicht die mehrfache Weiterleitung eines Adapter-basierten Daten- oder Ereignisflusses innerhalb einer IEC 61499 Anwendung.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AL` | IN | Socket | Eingangs-Adapter, der das zu verteilende Signal bereitstellt. |
 | `adapter::types::unidirectional::AL` | OUT1 | Plug | Erster Ausgangs-Adapter – identische Kopie des Eingangssignals. |
 | `adapter::types::unidirectional::AL` | OUT2 | Plug | Zweiter Ausgangs-Adapter – identische Kopie des Eingangssignals. |
@@ -72,4 +73,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

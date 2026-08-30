@@ -28,18 +28,18 @@ Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
 
-| Bezeichnung | Typ                 | Richtung | Beschreibung                                        |
-|-------------|----------------------|----------|-----------------------------------------------------|
-| **IN**      | AIS (unidirectional) | Socket   | Eingangsadapter – das zu verteilende AIS-Signal.    |
-| **OUT1**    | AIS (unidirectional) | Plug     | Erster Ausgang – identische Kopie des Eingangssignals. |
-| **OUT2**    | AIS (unidirectional) | Plug     | Zweiter Ausgang – identische Kopie des Eingangssignals. |
-| **OUT3**    | AIS (unidirectional) | Plug     | Dritter Ausgang – identische Kopie des Eingangssignals. |
-| **OUT4**    | AIS (unidirectional) | Plug     | Vierter Ausgang – identische Kopie des Eingangssignals. |
-| **OUT5**    | AIS (unidirectional) | Plug     | Fünfter Ausgang – identische Kopie des Eingangssignals. |
-| **OUT6**    | AIS (unidirectional) | Plug     | Sechster Ausgang – identische Kopie des Eingangssignals. |
-| **OUT7**    | AIS (unidirectional) | Plug     | Siebter Ausgang – identische Kopie des Eingangssignals. |
-| **OUT8**    | AIS (unidirectional) | Plug     | Achter Ausgang – identische Kopie des Eingangssignals. |
-| **OUT9**    | AIS (unidirectional) | Plug     | Neunter Ausgang – identische Kopie des Eingangssignals. |
+| Bezeichnung | Typ | Richtung | Beschreibung |
+| ------------- | ---------------------- | ---------- | ----------------------------------------------------- |
+| **IN** | AIS (unidirectional) | Socket | Eingangsadapter – das zu verteilende AIS-Signal. |
+| **OUT1** | AIS (unidirectional) | Plug | Erster Ausgang – identische Kopie des Eingangssignals. |
+| **OUT2** | AIS (unidirectional) | Plug | Zweiter Ausgang – identische Kopie des Eingangssignals. |
+| **OUT3** | AIS (unidirectional) | Plug | Dritter Ausgang – identische Kopie des Eingangssignals. |
+| **OUT4** | AIS (unidirectional) | Plug | Vierter Ausgang – identische Kopie des Eingangssignals. |
+| **OUT5** | AIS (unidirectional) | Plug | Fünfter Ausgang – identische Kopie des Eingangssignals. |
+| **OUT6** | AIS (unidirectional) | Plug | Sechster Ausgang – identische Kopie des Eingangssignals. |
+| **OUT7** | AIS (unidirectional) | Plug | Siebter Ausgang – identische Kopie des Eingangssignals. |
+| **OUT8** | AIS (unidirectional) | Plug | Achter Ausgang – identische Kopie des Eingangssignals. |
+| **OUT9** | AIS (unidirectional) | Plug | Neunter Ausgang – identische Kopie des Eingangssignals. |
 
 ## Funktionsweise
 
@@ -80,4 +80,4 @@ Der **AIS_SPLIT_9** ist ein einfacher, aber äußerst nützlicher Funktionsblock
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,6 +4,7 @@
 ![sequence_E_05_ecc](./sequence_E_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_05` is a sequential state machine that cycles through a fixed sequence of five states. The transition between individual states occurs exclusively through external events. This block is designed for control tasks requiring the step-by-step execution of a process sequence, such as in handling or packaging systems. Each active state sets its own binary output and confirms execution.
@@ -15,22 +16,22 @@ The function block has a pure event-based interface. State transitions are trigg
 
 ### **Event Inputs**
 
-* `START_S1`: Changes from the initial START state or from state `sState_00` to the first state `State_01`.
-* `S1_S2`: Changes from `State_01` to `State_02`.
-* `S2_S3`: Changes from `State_02` to `State_03`.
-* `S3_S4`: Changes from `State_03` to `State_04`.
-* `S4_S5`: Changes from `State_04` to `State_05`.
-* `S5_START`: Changes from `State_05` back to the inactive state `sState_00`.
-* `RESET`: Immediately resets the automaton from any state to the inactive state `sState_00`.
+- `START_S1`: Changes from the initial START state or from state `sState_00` to the first state `State_01`.
+- `S1_S2`: Changes from `State_01` to `State_02`.
+- `S2_S3`: Changes from `State_02` to `State_03`.
+- `S3_S4`: Changes from `State_03` to `State_04`.
+- `S4_S5`: Changes from `State_04` to `State_05`.
+- `S5_START`: Changes from `State_05` back to the inactive state `sState_00`.
+- `RESET`: Immediately resets the automaton from any state to the inactive state `sState_00`.
 
 ### **Event Outputs**
 
-* `CNF`: General confirmation event. Triggered on every state change and returns the current state number `STATE_NR`.
-* `EO_S1`: Triggered upon entry into `State_01` and returns the value `DO_S1`.
-* `EO_S2`: Triggered upon entry into `State_02` and returns the value `DO_S2`.
-* `EO_S3`: Triggered upon entry into `State_03` and returns the value `DO_S3`.
-* `EO_S4`: Triggered upon entry into `State_04` and returns the value `DO_S4`.
-* `EO_S5`: Triggered upon entering `State_05` and returns the value `DO_S5`.
+- `CNF`: General confirmation event. Triggered on every state change and returns the current state number `STATE_NR`.
+- `EO_S1`: Triggered upon entry into `State_01` and returns the value `DO_S1`.
+- `EO_S2`: Triggered upon entry into `State_02` and returns the value `DO_S2`.
+- `EO_S3`: Triggered upon entry into `State_03` and returns the value `DO_S3`.
+- `EO_S4`: Triggered upon entry into `State_04` and returns the value `DO_S4`.
+- `EO_S5`: Triggered upon entering `State_05` and returns the value `DO_S5`.
 
 ### **Data Inputs**
 
@@ -38,13 +39,13 @@ There are no data inputs.
 
 ### **Data Outputs**
 
-* `STATE_NR` (SINT): Numeric identifier of the current state. START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
-* `DO_S1` (BOOL): Is `TRUE` when state `State_01` is active.
-* `STATE_NR` (SINT): Numeric identifier of the current state. START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
-* `DO_S1` (BOOL): Is `TRUE` when state `State_01` is active. * `DO_S2` (BOOL): Is `TRUE` when state `State_02` is active.
-* `DO_S3` (BOOL): Is `TRUE` when state `State_03` is active.
-* `DO_S4` (BOOL): Is `TRUE` when state `State_04` is active.
-* `DO_S5` (BOOL): Is `TRUE` when state `State_05` is active.
+- `STATE_NR` (SINT): Numeric identifier of the current state. START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
+- `DO_S1` (BOOL): Is `TRUE` when state `State_01` is active.
+- `STATE_NR` (SINT): Numeric identifier of the current state. START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
+- `DO_S1` (BOOL): Is `TRUE` when state `State_01` is active. * `DO_S2` (BOOL): Is `TRUE` when state `State_02` is active.
+- `DO_S3` (BOOL): Is `TRUE` when state `State_03` is active.
+- `DO_S4` (BOOL): Is `TRUE` when state `State_04` is active.
+- `DO_S5` (BOOL): Is `TRUE` when state `State_05` is active.
 
 ### **Adapter**
 
@@ -63,11 +64,12 @@ When exiting an active state, an *Exit Step* (e.g., `State_01_X`) is executed, w
 
 ## Technical Features
 
-* **Event-driven Transitions:** Unlike time- or condition-driven sequencers, state changes here occur exclusively through external events. This enables close coupling to other process steps or operator actions.
-* **Explicit Reset Logic:** The reset process is modeled as a separate ECC state (`sRESET`), ensuring that all five outputs (`DO_S1` to `DO_S5`) are properly deactivated during a reset, regardless of their current state.
-* **Separate Entry/Exit Actions:** The logic for setting and resetting the outputs is divided into separate algorithms (E for Entry, X for Exit). This promotes a clear and maintainable structure.
-* **Constants for State Numbers:** The values for `STATE_NR` are retrieved from an imported library (`sequence::State_01`, etc.), facilitating reusability and centralized maintenance.
-*
+- **Event-driven Transitions:** Unlike time- or condition-driven sequencers, state changes here occur exclusively through external events. This enables close coupling to other process steps or operator actions.
+- **Explicit Reset Logic:** The reset process is modeled as a separate ECC state (`sRESET`), ensuring that all five outputs (`DO_S1` to `DO_S5`) are properly deactivated during a reset, regardless of their current state.
+- **Separate Entry/Exit Actions:** The logic for setting and resetting the outputs is divided into separate algorithms (E for Entry, X for Exit). This promotes a clear and maintainable structure.
+- **Constants for State Numbers:** The values for `STATE_NR` are retrieved from an imported library (`sequence::State_01`, etc.), facilitating reusability and centralized maintenance.
+-
+
 ## State Overview
 
 1. **xSTART:** Initial state after startup. Waiting for `START_S1`.
@@ -81,9 +83,9 @@ When exiting an active state, an *Exit Step* (e.g., `State_01_X`) is executed, w
 
 ## Application Scenarios
 
-* **Step Sequence in Handling Devices:** Control of a pick-and-place robot (grasping → lifting → moving → lowering → releasing), where each step is triggered by a sensor event (e.g., "part detected," "position reached").
-* **Manual Operating Sequences:** Execution of a sequence specified by the operator, e.g., in a machine setup ("Release step 1" → "Release step 2").
-* **Synchronization with Higher-Level Controllers:** The sequence serves as a subroutine of a main controller, which dictates the progress via the events.
+- **Step Sequence in Handling Devices:** Control of a pick-and-place robot (grasping → lifting → moving → lowering → releasing), where each step is triggered by a sensor event (e.g., "part detected," "position reached").
+- **Manual Operating Sequences:** Execution of a sequence specified by the operator, e.g., in a machine setup ("Release step 1" → "Release step 2").
+- **Synchronization with Higher-Level Controllers:** The sequence serves as a subroutine of a main controller, which dictates the progress via the events.
 
 ## ⚖️ Comparison with Similar Function Blocks
 
@@ -97,6 +99,6 @@ The `sequence_E_05` is a robust and easy-to-configure function block for event-d
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![Uebung_021_AX_network](./Uebung_021_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a simple control for a **mirror sequence (1)** – AX variant. A digital output can be set and reset using two softkeys (F1 and F2). The function block forms a kind of **start/stop logic** for a drive (AX) that is controlled by the softkeys. The exercise provides basic knowledge about the use of softkeys, SR flip-flops, and digital outputs in the 4diac IDE.
@@ -76,6 +77,6 @@ Exercise **Exercise_021_AX** demonstrates a simple mirror sequence for controlli
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

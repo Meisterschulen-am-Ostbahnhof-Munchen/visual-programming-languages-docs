@@ -3,15 +3,17 @@
 ![AUI_LT](./AUI_LT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_LT` performs a less-than comparison (`<`) between two input values. It is accessed via adapter interfaces and is suitable for use in component-based automation systems according to IEC 61131-3. The block performs the comparison asynchronously and outputs the result as a Boolean value via an output adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Description |
-|------------|--------------|
+| ------------ | -------------- |
 | IN1.E1 | Event at socket adapter IN1; triggers the comparison as soon as a new value is present at IN1. |
 | IN2.E1 | Event at socket adapter IN2; triggers the comparison as soon as a new value is present at IN2. |
 
@@ -24,7 +26,7 @@ The function block `AUI_LT` performs a less-than comparison (`<`) between two in
 ### **Data Inputs**
 
 | Name | Description |
-|------------|--------------|
+| ------------ | -------------- |
 | IN1.D1 | First value of the comparison (ANY_BIT compatible). |
 | IN2.D1 | Second value of the comparison (ANY_BIT compatible). |
 
@@ -36,11 +38,11 @@ The function block `AUI_LT` performs a less-than comparison (`<`) between two in
 
 ### **Adapter**
 
-| Bezeichnung | Typ               | Richtung | Beschreibung |
-|------------|-------------------|----------|--------------|
-| IN1        | AUI (unidirectional) | Socket   | Eingangsadapter für den ersten Wert und dessen Ereignis. |
-| IN2        | AUI (unidirectional) | Socket   | Eingangsadapter für den zweiten Wert und dessen Ereignis. |
-| OUT        | AX (unidirectional) | Plug     | Ausgangsadapter für das Vergleichsergebnis und das zugehörige Ereignis. |
+| Bezeichnung | Typ | Richtung | Beschreibung |
+| ------------ | ------------------- | ---------- | -------------- |
+| IN1 | AUI (unidirectional) | Socket | Eingangsadapter für den ersten Wert und dessen Ereignis. |
+| IN2 | AUI (unidirectional) | Socket | Eingangsadapter für den zweiten Wert und dessen Ereignis. |
+| OUT | AX (unidirectional) | Plug | Ausgangsadapter für das Vergleichsergebnis und das zugehörige Ereignis. |
 
 ## Funktionsweise
 

@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_ADD_4` is a generic arithmetic function block according to the IEC 61131-3 standard. Its main task is to calculate the sum of four input values. Unlike classic arithmetic blocks that work with elementary data types and standard event inputs/outputs, this block uses unidirectional adapter connections of type `ALI` (Analog Line Interface). This enables encapsulated and clear signal transmission of data and the associated trigger events within the 4diac-ide.
@@ -31,14 +32,14 @@ The function block `ALI_ADD_4` is a generic arithmetic function block according 
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALI`): First addend for addition.
-* **IN2** (Type: `adapter::types::unidirectional::ALI`): Second addend for addition.
-* **IN3** (Type: `adapter::types::unidirectional::ALI`): Third addend for the addition.
-* **IN4** (Type: `adapter::types::unidirectional::ALI`): Fourth addend for the addition.
+- **IN1** (Type: `adapter::types::unidirectional::ALI`): First addend for addition.
+- **IN2** (Type: `adapter::types::unidirectional::ALI`): Second addend for addition.
+- **IN3** (Type: `adapter::types::unidirectional::ALI`): Third addend for the addition.
+- **IN4** (Type: `adapter::types::unidirectional::ALI`): Fourth addend for the addition.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALI`): Output of the calculated addition result.
+- **OUT** (Type: `adapter::types::unidirectional::ALI`): Output of the calculated addition result.
 
 ---
 
@@ -54,9 +55,9 @@ The result of the calculation is immediately passed to the output adapter `OUT`,
 
 ## Technical Features
 
-* **Generic Class:** The function block is based on the generic base class `GEN_ALI_ADD` (attribute: `eclipse4diac::core::GenericClassName`).
-* **Adapter Coupling:** By using unidirectional adapters (`ALI`), data and events are bundled into a single connection. This drastically reduces the visual complexity (the "cable clutter") in the 4diac-ide Function Block Diagram (FBD) editor.
-* **IEC 61131-3 Compliance:** Complies with the guidelines for standard arithmetic functions.
+- **Generic Class:** The function block is based on the generic base class `GEN_ALI_ADD` (attribute: `eclipse4diac::core::GenericClassName`).
+- **Adapter Coupling:** By using unidirectional adapters (`ALI`), data and events are bundled into a single connection. This drastically reduces the visual complexity (the "cable clutter") in the 4diac-ide Function Block Diagram (FBD) editor.
+- **IEC 61131-3 Compliance:** Complies with the guidelines for standard arithmetic functions.
 
 ---
 
@@ -68,16 +69,16 @@ The `ALI_ADD_4` function block is a stateless (combinatorial) function block. It
 
 ## Application Scenarios
 
-* **Measurement Consolidation:** Summing four analog measurements (e.g., partial load currents, flow rates, or individual power outputs) into a single total value.
-* **Mixing Processes:** Calculating total weights or volumes in recipe systems where four components are combined.
-* **Signal Processing:** Structured preprocessing of sensor signals in modular control architectures that consistently rely on adapter connections.
+- **Measurement Consolidation:** Summing four analog measurements (e.g., partial load currents, flow rates, or individual power outputs) into a single total value.
+- **Mixing Processes:** Calculating total weights or volumes in recipe systems where four components are combined.
+- **Signal Processing:** Structured preprocessing of sensor signals in modular control architectures that consistently rely on adapter connections.
 
 --
 
 ## Comparison with Similar Components
 
-* **Standard ADD Component (IEC 61131-3):** A standard ADD component uses elementary data types (e.g., `REAL`, `INT`) and separate event ports (`REQ` / `CNF`). `ALI_ADD_4`, on the other hand, encapsulates these interfaces in adapters, which increases reusability and clarity.
-* **ALI_ADD_2 / ALI_ADD_3:** These function blocks operate on the same principle but are designed for adding only two or three input signals, respectively.
+- **Standard ADD Component (IEC 61131-3):** A standard ADD component uses elementary data types (e.g., `REAL`, `INT`) and separate event ports (`REQ` / `CNF`). `ALI_ADD_4`, on the other hand, encapsulates these interfaces in adapters, which increases reusability and clarity.
+- **ALI_ADD_2 / ALI_ADD_3:** These function blocks operate on the same principle but are designed for adding only two or three input signals, respectively.
 
 ---
 

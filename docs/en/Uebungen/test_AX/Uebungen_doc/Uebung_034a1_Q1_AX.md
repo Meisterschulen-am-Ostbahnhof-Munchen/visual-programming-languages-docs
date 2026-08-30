@@ -3,6 +3,7 @@
 ![Uebung_034a1_Q1_AX_network](./Uebung_034a1_Q1_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the simple connection of a **numeric value input** (ISOBUS NumericValue) to a **PWM output** via a direct adapter connection. After confirmation (OK button), the entered numeric value is output to the PWM output of the logiBUS module (channel Q1).
@@ -33,7 +34,7 @@ This exercise is implemented as a **SubAppType** and uses only adapters for sign
 
 Verbindung: PWM_Value.IN → PWMOutput_Q1.OUT
 
-4. `PWMOutput_Q1` converts the received value into a PWM duty cycle on the logiBUS output `Output_Q1`.
+1. `PWMOutput_Q1` converts the received value into a PWM duty cycle on the logiBUS output `Output_Q1`.
 
 **Note**: As noted in the network comment, the updated value is **not** transmitted with every keystroke (e.g., when turning an encoder), but only after pressing the OK button. This behavior is defined by the function block `NumericValue_IDA`.
 
@@ -45,7 +46,7 @@ This exercise demonstrates a **minimal configuration for controlling a PWM outpu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

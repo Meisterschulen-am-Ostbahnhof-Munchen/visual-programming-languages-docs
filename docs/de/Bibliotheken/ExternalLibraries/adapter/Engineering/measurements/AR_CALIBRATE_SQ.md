@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_CALIBRATE_SQ` ist ein adapterbasierter, sequenzieller Baustein zur Zwei-Punkt-Kalibrierung (Offset- und anschließende Skalierungs-Kalibrierung). Er stellt sicher, dass die Kalibrierungsschritte in einer fest definierten mathematischen und logischen Reihenfolge ablaufen. Über den internen Zustandsautomaten (ECC) wird erzwungen, dass die Offset-Kalibrierung (CO) zwingend vor der Skalierungs-Kalibrierung (CS) durchgeführt werden muss.
@@ -17,34 +18,34 @@ $$Y = (X + \text{OFFSET}) \cdot \text{SCALE}$$
 
 ### **Ereignis-Eingänge**
 
-*   **SET** (Typ: `EInit`): Setzt die Referenzwerte `Y_Offset` und `Y_Scale` im Baustein.
+-   **SET** (Typ: `EInit`): Setzt die Referenzwerte `Y_Offset` und `Y_Scale` im Baustein.
 
 ### **Ereignis-Ausgänge**
 
-*   *Keine direkten Ereignis-Ausgänge auf Bausteinebene.* (Die Ereignissteuerung erfolgt vollständig gekoppelt über die Adapter-Schnittstellen).
+-   *Keine direkten Ereignis-Ausgänge auf Bausteinebene.* (Die Ereignissteuerung erfolgt vollständig gekoppelt über die Adapter-Schnittstellen).
 
 ### **Daten-Eingänge**
 
-*   **Y_Offset** (Typ: `REAL`): Gewünschter Ziel-Ausgangswert $Y$ am niedrigen Kalibrierungspunkt (Offset).
-*   **Y_Scale** (Typ: `REAL`): Gewünschter Ziel-Ausgangswert $Y$ am hohen Kalibrierungspunkt (Skalierung).
+-   **Y_Offset** (Typ: `REAL`): Gewünschter Ziel-Ausgangswert $Y$ am niedrigen Kalibrierungspunkt (Offset).
+-   **Y_Scale** (Typ: `REAL`): Gewünschter Ziel-Ausgangswert $Y$ am hohen Kalibrierungspunkt (Skalierung).
 
 ### **Daten-Ausgänge**
 
-*   *Keine direkten Daten-Ausgänge auf Bausteinebene.* (Die Datenübergabe erfolgt über die Adapter-Schnittstellen).
+-   *Keine direkten Daten-Ausgänge auf Bausteinebene.* (Die Datenübergabe erfolgt über die Adapter-Schnittstellen).
 
 ### **Adapter**
 
 #### **Plugs (Ausgangsseitig / Speicherverbindungen)**
 
-*   **Y** (Typ: `adapter::types::unidirectional::AR`): Der kalibrierte Ausgangswert.
-*   **OFFSET** (Typ: `adapter::types::bidirectional::AR2`): Verbindung zum Speicher des Offset-Werts (Standard-Anfangswert: 0.0).
-*   **SCALE** (Typ: `adapter::types::bidirectional::AR2`): Verbindung zum Speicher des Skalierungswerts (Standard-Anfangswert: 1.0).
+-   **Y** (Typ: `adapter::types::unidirectional::AR`): Der kalibrierte Ausgangswert.
+-   **OFFSET** (Typ: `adapter::types::bidirectional::AR2`): Verbindung zum Speicher des Offset-Werts (Standard-Anfangswert: 0.0).
+-   **SCALE** (Typ: `adapter::types::bidirectional::AR2`): Verbindung zum Speicher des Skalierungswerts (Standard-Anfangswert: 1.0).
 
 #### **Sockets (Eingangsseitig / Sensorverbindungen)**
 
-*   **X** (Typ: `adapter::types::unidirectional::AR`): Der unkalibrierte Rohwerteingang des Sensors.
-*   **CO** (Typ: `adapter::types::unidirectional::AX`): Befehl zur Durchführung der Offset-Kalibrierung ("Calibrate Offset").
-*   **CS** (Typ: `adapter::types::unidirectional::AX`): Befehl zur Durchführung der Skalierungs-Kalibrierung ("Calibrate Scale").
+-   **X** (Typ: `adapter::types::unidirectional::AR`): Der unkalibrierte Rohwerteingang des Sensors.
+-   **CO** (Typ: `adapter::types::unidirectional::AX`): Befehl zur Durchführung der Offset-Kalibrierung ("Calibrate Offset").
+-   **CS** (Typ: `adapter::types::unidirectional::AX`): Befehl zur Durchführung der Skalierungs-Kalibrierung ("Calibrate Scale").
 
 ## Funktionsweise
 
@@ -71,26 +72,26 @@ Die Kalibrierung verläuft in zwei sequenziellen Hauptschritten, die mathematisc
 
 ## Technische Besonderheiten
 
-*   **ECC-erzwungene Reihenfolge:** Der Zustand zur Skalierungs-Kalibrierung (`CS`) kann im Zustandsautomaten erst erreicht werden, wenn zuvor eine Offset-Kalibrierung im Zustand `CO` stattgefunden hat. Ein direktes Auslösen von `CS` aus dem Ruhezustand ist nicht möglich.
-*   **Flexibilität beim Offset:** Die Offset-Kalibrierung (`CO`) kann im Zustand `WAIT_CS` jederzeit wiederholt werden, falls Korrekturen am Nullpunkt notwendig sind.
-*   **Kontinuierliche Berechnung:** Die reguläre Berechnung des Ausgangswertes $Y$ über den Rohwerteingang `X.E1` wird in jedem Zustand des Bausteins ausgeführt.
-*   **Interne Variablen:**
-    *   `X_LOW_INT` (REAL): Speichert den unkalibrierten Rohwert während des CO-Schritts zwischen.
-    *   `Y_LOW_INT` (REAL): Speichert den gewünschten Zielwert (`Y_Offset`) während des CO-Schritts.
+-   **ECC-erzwungene Reihenfolge:** Der Zustand zur Skalierungs-Kalibrierung (`CS`) kann im Zustandsautomaten erst erreicht werden, wenn zuvor eine Offset-Kalibrierung im Zustand `CO` stattgefunden hat. Ein direktes Auslösen von `CS` aus dem Ruhezustand ist nicht möglich.
+-   **Flexibilität beim Offset:** Die Offset-Kalibrierung (`CO`) kann im Zustand `WAIT_CS` jederzeit wiederholt werden, falls Korrekturen am Nullpunkt notwendig sind.
+-   **Kontinuierliche Berechnung:** Die reguläre Berechnung des Ausgangswertes $Y$ über den Rohwerteingang `X.E1` wird in jedem Zustand des Bausteins ausgeführt.
+-   **Interne Variablen:**
+    -   `X_LOW_INT` (REAL): Speichert den unkalibrierten Rohwert während des CO-Schritts zwischen.
+    -   `Y_LOW_INT` (REAL): Speichert den gewünschten Zielwert (`Y_Offset`) während des CO-Schritts.
 
 ## Zustandsübersicht
 
-*   **IDLE:** Ruhezustand. Wartet auf Rohdaten oder den Start der Kalibrierung.
-*   **REQ:** Berechnet den kalibrierten Ausgangswert $Y$ im Normalbetrieb.
-*   **CO:** Führt die Offset-Kalibrierung aus und speichert die Zwischenwerte.
-*   **WAIT_CS:** Zustand nach der Offset-Kalibrierung. Berechnungen laufen normal weiter; das System wartet auf die Skalierungs-Kalibrierung.
-*   **REQ_WAIT:** Berechnet den kalibrierten Ausgangswert $Y$ während der Wartezeit auf die Skalierungs-Kalibrierung.
-*   **CS:** Führt die finale Skalierungs-Kalibrierung durch und berechnet die Parameter neu. Kehrt anschließend in den Zustand `IDLE` zurück.
+-   **IDLE:** Ruhezustand. Wartet auf Rohdaten oder den Start der Kalibrierung.
+-   **REQ:** Berechnet den kalibrierten Ausgangswert $Y$ im Normalbetrieb.
+-   **CO:** Führt die Offset-Kalibrierung aus und speichert die Zwischenwerte.
+-   **WAIT_CS:** Zustand nach der Offset-Kalibrierung. Berechnungen laufen normal weiter; das System wartet auf die Skalierungs-Kalibrierung.
+-   **REQ_WAIT:** Berechnet den kalibrierten Ausgangswert $Y$ während der Wartezeit auf die Skalierungs-Kalibrierung.
+-   **CS:** Führt die finale Skalierungs-Kalibrierung durch und berechnet die Parameter neu. Kehrt anschließend in den Zustand `IDLE` zurück.
 
 ## Anwendungsszenarien
 
-*   **Präzise Sensor-Kalibrierung:** Ideal für industrielle Messwertaufnehmer (z. B. Waagen, Drucksensoren oder Temperatursensoren), die zyklisch manuell oder automatisiert kalibriert werden müssen.
-*   **Fehlerminimierung bei der Inbetriebnahme:** Durch die fest vorgegebene Sequenz (erst Nullpunkt/Offset, dann Steigung/Skalierung) werden Fehlkalibrierungen durch Bediener wirksam verhindert.
+-   **Präzise Sensor-Kalibrierung:** Ideal für industrielle Messwertaufnehmer (z. B. Waagen, Drucksensoren oder Temperatursensoren), die zyklisch manuell oder automatisiert kalibriert werden müssen.
+-   **Fehlerminimierung bei der Inbetriebnahme:** Durch die fest vorgegebene Sequenz (erst Nullpunkt/Offset, dann Steigung/Skalierung) werden Fehlkalibrierungen durch Bediener wirksam verhindert.
 
 ## Vergleich mit ähnlichen Bausteinen
 

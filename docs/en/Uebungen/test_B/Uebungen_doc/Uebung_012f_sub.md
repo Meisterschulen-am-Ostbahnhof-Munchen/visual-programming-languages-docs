@@ -3,9 +3,11 @@
 ![Uebung_012f_sub_network](./Uebung_012f_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of a numeric input value (raw value) into a physical value, its permanent storage in non-volatile memory (NVS), and the subsequent reading and output of the stored value. The functionality is encapsulated in a subapplication (SubApp).
+
 ## Function Blocks Used
 
 The subapplication consists of three internal function blocks that together implement the desired functionality.
@@ -45,13 +47,15 @@ The data is converted into a physical value (`rPhys`). If the conversion is succ
 ### Event Flow
 
 1. **Conversion and Storage**:
+
 - The function block `NumericValue_PHYS` receives the configuration (`stObj`) and the raw value (implicitly via the input data of the subapp). After the conversion is complete, it generates the event `IND`.
 - This event is forwarded to the input `SET` of the NVS function block. Simultaneously, the physical value (`NumericValue_PHYS.rPhys`) is available at the data input `NVS.VALUE`.
 - The NVS stores the value under the key taken from the subapp input `KEY` and acknowledges it with `SETO`.
 
 - The event `SETO` is passed to the subapp output `IND` (serving as confirmation for the caller).
 
-2. **Initialization and First Read**:
+1. **Initialization and First Read**:
+
 - After the subapp starts, the event `NVS.INITO` is activated (by initializing the NVS block).
 - This event is placed on the input `GET` of the NVS. This immediately reads the stored value.
 - The read value appears at the data output `NVS.VALUEO`.
@@ -97,5 +101,5 @@ The sub-app `Uebung_012f_sub` implements a compact unit for reading, converting,
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

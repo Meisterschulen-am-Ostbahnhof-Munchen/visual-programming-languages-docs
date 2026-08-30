@@ -6,6 +6,7 @@
 
 The function block `F_REAL_TO_LREAL` is used to convert a REAL value to an LREAL value. This block is part of the `iec61131::conversion` package and enables simple type conversion between the two numeric data types.
 ![F_REAL_TO_LREAL](F_REAL_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

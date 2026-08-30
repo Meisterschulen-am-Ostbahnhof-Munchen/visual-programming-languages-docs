@@ -3,9 +3,11 @@
 ![AR_TO_AUI](./AR_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_TO_AUI** is a composite function block (FB) that implements a uniform and bidirectional conversion from an AR adapter (REAL) to an AUI adapter (UINT). It encapsulates the type conversion and simplifies communication between components that use different data types via adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -69,6 +71,6 @@ The **AR_TO_AUI** is a practical and reliable function block for easy adapter co
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

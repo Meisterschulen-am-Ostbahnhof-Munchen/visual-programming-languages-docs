@@ -3,6 +3,7 @@
 ![Q_ChildPosition](https://user-images.githubusercontent.com/116869307/214147176-8b27f37a-4898-406a-98a0-e5f5701abc58.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ChildPosition** is a standards-compliant function block for the absolute position change of child objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.16) specification for agricultural tax systems.
@@ -51,13 +52,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with child and parent object IDs
 - `INITO` confirms operational readiness
-2. **Position Change**:
+1. **Position Change**:
+
 - `REQ` with absolute coordinates relative to the parent
 - Value range: -32768 to +32767 pixels
 - `CNF` returns the result and the previous position
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -78,7 +82,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Position outside the valid range |
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
@@ -93,7 +97,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_ChildPosition | Q_ChildLocation | VtAbsoluteMove |
-|---------------|-----------------|-----------------|----------------|
+| --------------- | ----------------- | ----------------- | ---------------- |
 | ISO Standard | ✔ | ✔ | ✖ |
 | Position Type | Absolute | Relative | Absolute |
 | Value Range | ±32767 pixels | ±127 pixels | ±32767 pixels |

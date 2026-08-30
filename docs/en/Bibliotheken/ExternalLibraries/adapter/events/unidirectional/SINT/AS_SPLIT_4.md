@@ -4,6 +4,7 @@
 *No image available.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_SPLIT_4** splits an incoming unidirectional AS adapter into four identical outputs. It acts as a generic splitter, forwarding the signal received via socket `IN` unchanged to the four plugs `OUT1` to `OUT4`.
@@ -29,7 +30,7 @@ None.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AS` | IN | Socket | Incoming AS signal path (input) |
 | `adapter::types::unidirectional::AS` | OUT1 | Plug | First output (identical to IN) |
 | `adapter::types::unidirectional::AS` | OUT2 | Plug | Second output (identical to IN) |
@@ -76,4 +77,4 @@ AS_SPLIT_4` is a simple yet essential building block for structurally replicatin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

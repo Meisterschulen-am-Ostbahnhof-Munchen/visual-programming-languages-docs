@@ -6,6 +6,7 @@
 
 The function block `F_UDINT_TO_REAL` converts an unsigned 32-bit integer value (`UDINT`) into a 32-bit floating-point value (`REAL`). This block is particularly useful in scenarios where numeric values of different data types need to be processed.
 ![F_UDINT_TO_REAL](F_UDINT_TO_REAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,10 +54,10 @@ The function block has no internal states. Processing occurs immediately upon tr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Exercise_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Exercise_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Exercise_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Conclusion
 

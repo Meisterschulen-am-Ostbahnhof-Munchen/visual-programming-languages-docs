@@ -3,9 +3,11 @@
 ![AUI_TO_AULI](./AUI_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_TO_AULI` is a composite function block for converting a unidirectional AUI adapter (data type `UINT`) into a unidirectional AULI adapter (data type `ULINT`). It serves as a simple type converter between the two adapter interfaces, transparently passing on both the event signal and the data value. The function block enables seamless integration of components that use different addressing widths.
+
 ## Interface Structure
 
 The function block does not have its own event or data inputs/outputs, but uses only adapter interfaces. The following sections describe the signals that are routed externally via the adapters used.
@@ -37,7 +39,7 @@ The function block does not have its own event or data inputs/outputs, but uses 
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AUI` | `AUI_IN` | Socket (Input) | Adapter for receiving events and data in the format `UINT`. |
 | `adapter::types::unidirectional::AULI` | `AULI_OUT` | Plug (Output) | Adapter for sending events and data in the format `ULINT`. |
 
@@ -75,6 +77,6 @@ AUI_TO_AULI` is a lean, specialized composite block for converting an AUI adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

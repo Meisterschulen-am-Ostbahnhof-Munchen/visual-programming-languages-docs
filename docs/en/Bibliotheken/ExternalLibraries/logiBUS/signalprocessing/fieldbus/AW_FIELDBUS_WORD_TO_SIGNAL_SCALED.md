@@ -3,9 +3,11 @@
 ![AW_FIELDBUS_WORD_TO_SIGNAL_SCALED](./AW_FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` is used to convert an incoming fieldbus word (16-bit) to a physical output value, taking into account a scaling factor and offsets. Additionally, the validity of the signal is monitored and stored via a dedicated output. The block encapsulates the typical processing chain from digital transmission to the standardized analog or signal value.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `AW_FIELDBUS_WORD_TO_SIGNAL_SCALED` is used to convert an inc
 ### **Data Inputs**
 
 | Name | Type | Default | Comment |
-|--------|------|-----------------|-------------------------------|
+| -------- | ------ | ----------------- | ------------------------------- |
 | SCALE | REAL | REAL#1.0 | Scaling Factor |
 | OFFSET | DINT | DINT#0 | Integer Offset (after scaling) |
 
@@ -34,7 +36,7 @@ This function block does not have separate data outputs. The output values are p
 ### **Adapters**
 
 | Adapter | Direction | Type (unidirectional) | Comment |
-|---------|----------|----------------------|-----------|
+| --------- | ---------- | ---------------------- | ----------- |
 | IN | Socket | AW | Input signal (fieldbus word) |
 | OUT | Plug | AR | Processed and scaled output signal |
 | VALID | Plug | AX | Boolean value: TRUE if the signal is valid |

@@ -3,6 +3,7 @@
 ![F_CONCAT_TOD](F_CONCAT_TOD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_CONCAT_TOD` fügt einzelne Zeit-/Datumsbestandteile (`HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) zu einem zusammengesetzten `TIME_OF_DAY`-Wert zusammen. Er ist die Umkehrung von [F_SPLIT_TOD](F_SPLIT_TOD.md), das denselben `TIME_OF_DAY`-Wert wieder in seine Einzelbestandteile zerlegt.

@@ -3,6 +3,7 @@
 <img width="1342" height="208" alt="F_SHL" src="https://github.com/user-attachments/assets/91a9f7fd-3552-4524-91ed-e888afe9acdd" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_SHL` führt eine Linksverschiebung (Shift Left) auf einen beliebigen Bit-Datentyp aus. Dabei werden die Bits des Eingabewertes um eine bestimmte Anzahl von Stellen nach links verschoben und die freiwerdenden Stellen rechts mit Nullen aufgefüllt. Dieser Baustein ist gemäß dem Standard IEC 61131-3 klassifiziert und eignet sich für bitweise Operationen.
@@ -61,7 +62,7 @@ Der Funktionsblock `F_SHL` führt eine bitweise Linksverschiebung des Eingabewer
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_034](../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Fazit
 

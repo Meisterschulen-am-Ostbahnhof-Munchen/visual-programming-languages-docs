@@ -3,6 +3,7 @@
 ![AI_TO_ALR](./AI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_TO_ALR** ist ein Composite-Baustein, der einen **AI (Adapter INT)** in einen **ALR (Adapter LREAL)** umwandelt. Er dient als reine Konvertierungsschnittstelle, indem er die Ereignis- und Datenkanäle des Eingangsadapters direkt auf den Ausgangsadapter durchschleift. Die eigentliche Typkonvertierung von Integer (INT) nach Long Real (LREAL) wird von den zugrunde liegenden Adapterdefinitionen übernommen.
@@ -72,4 +73,4 @@ Der Baustein **AI_TO_ALR** ist ein minimalistischer, aber effektiver Composite�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AL_TO_AB](./AL_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_TO_AB** is a composite function block that enables unidirectional conversion from an LWORD adapter (AL) to a BYTE adapter (AB). It is used to convert data from an LWORD-based adapter to the format of a BYTE adapter, with the conversion being performed internally by the IEC 61131-3 block `F_LWORD_TO_BYTE`.
+
 ## Interface Structure
 
 ### **Adapter (Input)**
@@ -50,7 +52,7 @@ The function block does not have its own state machine. The entire process contr
 ## Comparison with Similar Components
 
 | Component | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | `LWORD_TO_BYTE` | Pure data type conversion without adapters | No adapter interface; direct data and event ports |
 | AB_TO_AL` | Reverse conversion (BYTE → LWORD) | Opposite direction; also composite with adapters |
 | WORD_TO_BYTE` | Conversion from WORD (16-bit) to BYTE | Different data type; similar structure, but different adapter types |

@@ -3,9 +3,10 @@
 ![AUDI_SPLIT_8](./AUDI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsblock **AUDI_SPLIT_8** dient dazu, ein eingehendes unidirektionales **AUDI**-Adapter-Signal auf acht parallele Ausgänge zu verteilen.  
+Der Funktionsblock **AUDI_SPLIT_8** dient dazu, ein eingehendes unidirektionales **AUDI**-Adapter-Signal auf acht parallele Ausgänge zu verteilen.
 Er ist als generischer Baustein (generic FB) implementiert und ermöglicht eine einfache Weiterleitung eines Adaptersignals an bis zu acht Empfänger.
 
 ## Schnittstellenstruktur
@@ -35,13 +36,13 @@ Keine.
 
 ## Funktionsweise
 
-Der Baustein leitet das am Socket `IN` anliegende **AUDI**-Adapter-Signal unverändert an alle acht Plugs (`OUT1` bis `OUT8`) weiter.  
-Es findet keine Verarbeitung, Filterung oder Pufferung statt – die Verteilung erfolgt vollständig passiv auf Adapterebene.  
+Der Baustein leitet das am Socket `IN` anliegende **AUDI**-Adapter-Signal unverändert an alle acht Plugs (`OUT1` bis `OUT8`) weiter.
+Es findet keine Verarbeitung, Filterung oder Pufferung statt – die Verteilung erfolgt vollständig passiv auf Adapterebene.
 Durch die Verwendung eines generischen Typs (siehe Technische Besonderheiten) kann der Baustein flexibel für verschiedene konkrete AUDI-Adapterausprägungen eingesetzt werden.
 
 ## Technische Besonderheiten
 
-- **Generischer Baustein**: Der FB ist als generischer Typ deklariert (`eclipse4diac::core::GenericClassName = 'GEN_AUDI_SPLIT'`).  
+- **Generischer Baustein**: Der FB ist als generischer Typ deklariert (`eclipse4diac::core::GenericClassName = 'GEN_AUDI_SPLIT'`).
   Dies erlaubt die Wiederverwendung für beliebige AUDI-Adapter-Spezialisierungen, ohne den FB selbst ändern zu müssen.
 
 - **Keine Zustandslogik**: Da ausschließlich Adapter verwendet werden, besitzt der Baustein weder Ereignisse noch eine eigene Zustandsmaschine.
@@ -49,7 +50,7 @@ Durch die Verwendung eines generischen Typs (siehe Technische Besonderheiten) ka
 
 ## Zustandsübersicht
 
-Der Baustein besitzt keine interne Zustandsmaschine (kein ECC).  
+Der Baustein besitzt keine interne Zustandsmaschine (kein ECC).
 Die Funktionalität ist rein kombinatorisch: Das Signal am Eingang wird permanent auf alle Ausgänge durchgeschaltet.
 
 ## Anwendungsszenarien
@@ -70,13 +71,13 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ## Fazit
 
-**AUDI_SPLIT_8** ist ein kompakter, generischer Spezialbaustein zur Signalverteilung auf Adapterebene.  
-Er reduziert den Modellierungsaufwand, erhöht die Lesbarkeit von Steuerungsprogrammen und lässt sich durch seine generische Natur flexibel in verschiedenen AUDI-basierten Umgebungen einsetzen.  
+**AUDI_SPLIT_8** ist ein kompakter, generischer Spezialbaustein zur Signalverteilung auf Adapterebene.
+Er reduziert den Modellierungsaufwand, erhöht die Lesbarkeit von Steuerungsprogrammen und lässt sich durch seine generische Natur flexibel in verschiedenen AUDI-basierten Umgebungen einsetzen.
 Für Anwendungen, die eine 1:8-Aufteilung eines unidirektionalen AUDI-Adapters benötigen, stellt er eine ideale und saubere Lösung dar.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

@@ -4,7 +4,8 @@
 
 ![START](./START.svg)
 
-* [Events and IEC 61499: The Starting Signal for Intelligent Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
+- [Events and IEC 61499: The Starting Signal for Intelligent Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
+
 ## Introduction
 
 The `START` constant declaration defines a set of integer constants (of type `UINT`) for use in control programs. These constants represent specific states typically used in sequence controls, such as for sliders. They improve code readability and maintainability by replacing numeric values with meaningful names.
@@ -39,18 +40,18 @@ The `START` constant declaration assigns fixed, unchanging numerical values to t
 
 ## Technical Details
 
-* **Type:** All constants are of type `UINT` (unsigned integer).
-* **Scope of Validity:** The constants are defined globally (`VAR_GLOBAL CONSTANT`) and available within the declared package (`logiBUS::utils::sequence::schieber::const`).
-* **Immutability:** As constants (`CONSTANT`), their values cannot be changed at runtime.
-* **Package Structure:** The constants are organized in a specific package hierarchy that reflects their application domain (auxiliary functions for sequence control of sliders).
+- **Type:** All constants are of type `UINT` (unsigned integer).
+- **Scope of Validity:** The constants are defined globally (`VAR_GLOBAL CONSTANT`) and available within the declared package (`logiBUS::utils::sequence::schieber::const`).
+- **Immutability:** As constants (`CONSTANT`), their values cannot be changed at runtime.
+- **Package Structure:** The constants are organized in a specific package hierarchy that reflects their application domain (auxiliary functions for sequence control of sliders).
 
 ## State Overview
 
 The constants themselves represent abstract states:
 
-* `STARTClosed` (value 5): Represents the state "closed" or "in starting position".
-* `STARTOpened` (value 6): Represents the state "open" or "in end position".
-* `STARTUnknown` (value 7): Represents an undefined, unknown, or error state.
+- `STARTClosed` (value 5): Represents the state "closed" or "in starting position".
+- `STARTOpened` (value 6): Represents the state "open" or "in end position".
+- `STARTUnknown` (value 7): Represents an undefined, unknown, or error state.
 
 ## Application Scenarios
 

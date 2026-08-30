@@ -72,7 +72,7 @@ Compared to simpler output blocks, TC_QD offers enhanced functionality through:
 
 ## 🛠️ Related exercises
 
-* [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Conclusion
 

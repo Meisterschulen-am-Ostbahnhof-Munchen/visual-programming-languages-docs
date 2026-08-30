@@ -3,6 +3,7 @@
 ![BasicOne](./BasicOne.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **BasicOne** ist ein grundlegender, ereignisgesteuerter Baustein nach IEC 61499. Er dient als einfaches Sequenzelement zur Initialisierung, Ausführung einer Hauptoperation und ordnungsgemäßen Deinitialisierung. Der Baustein eignet sich besonders für Steuerungsabläufe, bei denen ein Ressourcenzustand (z. B. Gerät bereit) überwacht und zurückgesetzt werden muss. Der Baustein ist im Paket `logiBUS::utils::sequence::one` enthalten.
@@ -61,7 +62,7 @@ Wichtig: Die normale Operation wird nur dann ausgeführt, wenn `QI = TRUE` ist. 
 ## Zustandsübersicht
 
 | Zustand | Beschreibung | Mögliche Aktionen |
-|---------|--------------|-------------------|
+| --------- | -------------- | ------------------- |
 | `START` | Initialer Ruhezustand nach Systemstart oder nach einer Deinitialisierung. | Wartet auf `INIT` mit `QI = TRUE`. |
 | `Init` | Initialisierungsphase; setzt `QO = QI`. | Führt Algorithmus *initialize* aus, sendet `INITO`. |
 | `Initialized` | Wartezustand nach erfolgreicher Initialisierung. | Kann auf `REQ` (startet NormalOp) oder auf `INIT` mit `QI = FALSE` (startet DeInit) reagieren. |

@@ -3,10 +3,12 @@
 ![AX_E_SWITCH](./AX_E_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
-The **AX_E_SWITCH** function block implements event-driven demultiplexing (switching) based on a Boolean signal. It receives an event at input **EI** and forwards it to either output **EO0** or **EO1**, depending on the value of adapter **G**. This allows event flows to be split based on states or decisions.
+The **AX_E_SWITCH** function block implements event-driven demultiplexing (switching) based on a Boolean signal. It receives an event at input **EI** and forwards it to either output **EO0** or **EO1**, depending on the value of adapter **G**. This allows event flows to be split based on states or decisions
 ---
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -18,7 +20,7 @@ The **AX_E_SWITCH** function block implements event-driven demultiplexing (switc
 ### **Event Outputs**
 
 | Name | Type | Description |
-|-------------|--------|--------------------------------------------|
+| ------------- | -------- | -------------------------------------------- |
 | **EO0** | Event | Activated when **G** = 0 |
 | **EO1** | Event | Activated when **G** = 1 |
 

@@ -3,6 +3,7 @@
 ![ALI_TO_AR](./ALI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_TO_AR** ist ein zusammengesetzter Baustein (Composite FB), der einen LINT‑Adapter (ALI) in einen REAL‑Adapter (AR) umwandelt. Er dient als universelle Konvertierungsschnittstelle, um ganzzahlige 64‑Bit‑Werte aus der IEC‑61131‑Welt in Gleitkommawerte für die weitere Verarbeitung in Steuerungsanwendungen bereitzustellen. Der Baustein ist unter der Eclipse Public License 2.0 lizenziert und wird von der HR Agrartechnik GmbH bereitgestellt.

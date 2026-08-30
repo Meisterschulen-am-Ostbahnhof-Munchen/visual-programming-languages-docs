@@ -19,18 +19,18 @@ Die Übung verwendet folgende Haupt-Funktionsbausteine:
 
 ## Programmablauf und Verbindungen
 
-### Ereignisverbindungen:
+### Ereignisverbindungen
 
 - Die IND-Ereignisse der vier digitalen Eingänge (I1-I4) sind mit den entsprechenden Eingängen des E_MUX_4 Bausteins verbunden
 - Der Ausgang EO des E_MUX_4 ist mit dem Eingang EI des E_DEMUX_4 verbunden
 - Die vier Ausgänge des E_DEMUX_4 (EO1-EO4) sind mit den REQ-Eingängen der entsprechenden digitalen Ausgänge (Q1-Q4) verbunden
 
-### Datenverbindungen:
+### Datenverbindungen
 
 - Der K-Ausgang des E_MUX_4 ist mit dem K-Eingang des E_DEMUX_4 verbunden
 - Jeder digitale Eingang ist direkt mit seinem entsprechenden digitalen Ausgang verbunden (I1→Q1, I2→Q2, I3→Q3, I4→Q4)
 
-### Funktionsweise:
+### Funktionsweise
 
 Der E_MUX_4 Baustein sammelt Ereignisse von den vier digitalen Eingängen und leitet sie über einen gemeinsamen Ausgang weiter. Der E_DEMUX_4 Baustein verteilt diese Ereignisse basierend auf dem K-Wert an die entsprechenden digitalen Ausgänge. Die direkten Datenverbindungen zwischen Eingängen und Ausgängen sorgen für eine 1:1-Signalübertragung.
 
@@ -59,4 +59,4 @@ Diese Übung vermittelt praktische Erfahrungen mit Ereignis-Multiplexing und -De
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

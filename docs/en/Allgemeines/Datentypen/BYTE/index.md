@@ -3,9 +3,11 @@
 ## Description
 
 8-bit sequence
+
 ## Normative Definition
 
 According to **DIN EN 61131-3**, this data type is specified as follows:
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | 8 |
@@ -20,6 +22,6 @@ When used as a literal, a prefix can be used, e.g., `BYTE#...`.
 
 ## 🛠️ Related exercises
 
-* [Uebung_126b_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
-* [Uebung_128b](../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
-* [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
+- [Uebung_126b_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+- [Uebung_128b](../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
+- [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)

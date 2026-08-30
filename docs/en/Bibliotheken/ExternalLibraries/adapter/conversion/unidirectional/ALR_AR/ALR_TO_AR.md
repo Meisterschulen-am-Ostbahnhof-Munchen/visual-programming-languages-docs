@@ -4,6 +4,7 @@
 *No image available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALR_TO_AR** function block is a composite block that converts an LREAL adapter (ALR) into a REAL adapter (AR). It serves as a link between control components operating with different floating-point accuracies and enables clean, event-driven data conversion within an IEC 61499 network.
@@ -76,6 +77,6 @@ The **ALR_TO_AR** is a simple yet effective composite component that bridges the
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

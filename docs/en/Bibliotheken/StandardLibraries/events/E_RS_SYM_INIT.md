@@ -3,6 +3,7 @@
 ![E_RS_SYM_INIT_ecc](./E_RS_SYM_INIT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_RS_SYM_INIT` extends [E_RS_SYM](E_RS_SYM.md) with an explicit `INIT`/`INITO` interface: instead of the start value resulting purely from the first `S` or `R` event, it can be initialized (via `INIT`) with a defined value `Q_INIT`, or deinitialized via `QI = FALSE`.
@@ -44,7 +45,7 @@ From `START`, `INIT` with `QI = TRUE` leads into state `Init`, which sets `QO :=
 ## State Overview
 
 | State | Meaning |
-|---|---|
+| --- | --- |
 | START | Unconfigured initial state |
 | Init | Initialization in progress, `QO := QI` |
 | DeInit | Deinitialization in progress, `QO := FALSE` |

@@ -2,11 +2,12 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010c_AX`. So far, the keys have only switched inputs. Now they should also light up.
+
 ## 🎧 Podcast
 
 ![Uebung_010c_AX_network](./Uebung_010c_AX_network.svg)
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -22,10 +23,10 @@ Feedback to the operator (color change).
 
 ### Function Blocks (FBs)
 
-* **`SoftKey_F1`**: Input.
-* **`DigitalOutput_Q1`**: Output (lamp).
-* **`GreenWhiteBackground_AX`**: A subapplication from the library `MyLib::sys`. This controls the appearance of the softkey on the terminal (green = active, white = inactive).
-* **`AX_SPLIT_2`**: Distributes the signal from the softkey to both the output `Q1` and the feedback block.
+- **`SoftKey_F1`**: Input.
+- **`DigitalOutput_Q1`**: Output (lamp).
+- **`GreenWhiteBackground_AX`**: A subapplication from the library `MyLib::sys`. This controls the appearance of the softkey on the terminal (green = active, white = inactive).
+- **`AX_SPLIT_2`**: Distributes the signal from the softkey to both the output `Q1` and the feedback block.
 
 -----
 

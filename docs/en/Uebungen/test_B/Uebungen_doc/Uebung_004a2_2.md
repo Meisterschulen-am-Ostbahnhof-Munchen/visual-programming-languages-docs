@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_004a2_2`, based on the provided data.
+
 # Exercise_004a2_2: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE
 
 ![Uebung_004a2_2_network](./Uebung_004a2_2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a circuit where an output (Q1) can be toggled by two different inputs (I1 and I2). It specifically responds to the "single click" event of the pushbuttons. The logic uses an event toggle flip-flop (`E_T_FF`) in combination with an event merge block (`E_MERGE_2`) to combine the signals from the two pushbuttons.
@@ -14,7 +16,7 @@ This corresponds to a classic two-way switching or impulse switching circuit in 
 
 In this sub-app, various function blocks are interconnected to implement the desired logic.
 
-### Sub-Blocks:
+### Sub-Blocks
 
 #### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 
@@ -55,20 +57,24 @@ In this sub-app, various function blocks are interconnected to implement the des
 The circuit flow is defined as follows:
 
 1. **Input Detection**:
-* The user presses either the button at input `Input_I1` or at input `Input_I2`.
-* The corresponding function blocks (`DigitalInput_CLK_I1` or `DigitalInput_CLK_I2`) detect the "single click" and send a `IND` event.
-2. **Merge**:
-* The event from `I1` (connected to `E_MERGE_2.EI1`) or the event from `I2` (connected to `E_MERGE_2.EI2`) reaches the merge block.
-* `E_MERGE_2` forwards the event to the flip-flop via `EO`.
-3. **Toggle**:
-* The event reaches the clock input `CLK` of `E_T_FF`.
-* The flip-flop inverts its current state at the data output `Q`.
+
+- The user presses either the button at input `Input_I1` or at input `Input_I2`.
+- The corresponding function blocks (`DigitalInput_CLK_I1` or `DigitalInput_CLK_I2`) detect the "single click" and send a `IND` event.
+1. **Merge**:
+
+- The event from `I1` (connected to `E_MERGE_2.EI1`) or the event from `I2` (connected to `E_MERGE_2.EI2`) reaches the merge block.
+- `E_MERGE_2` forwards the event to the flip-flop via `EO`.
+1. **Toggle**:
+
+- The event reaches the clock input `CLK` of `E_T_FF`.
+- The flip-flop inverts its current state at the data output `Q`.
 ... * The flip-flop signals the new value via the event `EO`.
 
-4. **Output**:
-* The flip-flop's event `EO` activates the output block `DigitalOutput_Q1` at the input `REQ`.
-* Simultaneously, the new state `Q` is transferred to `DigitalOutput_Q1.OUT`.
-* The physical lamp/actuator at `Output_Q1` switches on or off.
+1. **Output**:
+
+- The flip-flop's event `EO` activates the output block `DigitalOutput_Q1` at the input `REQ`.
+- Simultaneously, the new state `Q` is transferred to `DigitalOutput_Q1.OUT`.
+- The physical lamp/actuator at `Output_Q1` switches on or off.
 
 ## Summary
 
@@ -78,6 +84,6 @@ The exercise `Uebung_004a2_2` effectively demonstrates how to route multiple inp
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

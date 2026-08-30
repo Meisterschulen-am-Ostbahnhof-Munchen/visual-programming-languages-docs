@@ -20,8 +20,8 @@ Das Ziel ist die Wiederholung der direkten I/O-Verknüpfung mittels Adapter-Tech
 
 ![Uebung_003d_AX_network](./Uebung_003d_AX_network.svg)
 
-  * **`DigitalInput_I1`** -> **`DigitalOutput_Q1`**
-  * **`DigitalInput_I2`** -> **`DigitalOutput_Q2`**
+  - **`DigitalInput_I1`** -> **`DigitalOutput_Q1`**
+  - **`DigitalInput_I2`** -> **`DigitalOutput_Q2`**
 
 Die Bausteintypen sind `logiBUS_IXA` und `logiBUS_QXA`, verbunden über den Adapter `AX`.
 

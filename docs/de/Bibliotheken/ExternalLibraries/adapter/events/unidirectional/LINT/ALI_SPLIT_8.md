@@ -3,6 +3,7 @@
 ![ALI_SPLIT_8](./ALI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_SPLIT_8` dient als generischer Splitter für das **Agricultural Light Interface (ALI)**. Er verteilt ein eingehendes ALI-Signal unverändert auf acht parallele Ausgänge. Dadurch können mehrere nachfolgende Verbraucher oder Steuerungen mit dem gleichen Signal versorgt werden, ohne die Signalintegrität zu beeinträchtigen.

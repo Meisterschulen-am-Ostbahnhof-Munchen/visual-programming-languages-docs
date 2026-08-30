@@ -3,6 +3,7 @@
 ![ADI_FB_CTUD](./ADI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ADI_FB_CTUD** ist ein aufwärts/abwärts zählender Funktionsbaustein für ganzzahlige Werte (DINT). Er realisiert einen Vorwärts-/Rückwärtszähler, der über standardisierte **Adapterschnittstellen** gesteuert wird. Der Baustein kapselt die IEC-61131-3-Komponente `FB_CTUD_DINT` und stellt deren Funktionalität über ereignisgesteuerte Adapter bereit.
@@ -92,7 +93,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Die Verarbeitung erfol
 ## Vergleich mit ähnlichen Bausteinen
 
 | Eigenschaft | ADI_FB_CTUD | Standard CTUD (IEC 61131-3) |
-|-------------|--------------|------------------------------|
+| ------------- | -------------- | ------------------------------ |
 | Schnittstelle | Adapter-basiert (AX/ADI) | Direkte Ein-/Ausgänge (Events, Daten) |
 | Ereignisverhalten | Ausgang bei jedem Update | Meist Flanken- oder wertabhängig |
 | Wiederverwendbarkeit | Leicht durch Adapter-Kapselung | Abhängig von der konkreten Steuerung |

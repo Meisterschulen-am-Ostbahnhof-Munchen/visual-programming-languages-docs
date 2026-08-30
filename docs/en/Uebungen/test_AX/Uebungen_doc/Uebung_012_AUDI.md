@@ -3,9 +3,11 @@
 ![Uebung_012_AUDI_network](./Uebung_012_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the acquisition of a numeric value via the isobus I/O stack, its conversion into a format compatible with the audio control system, and its persistent storage in non-volatile memory (NVS). The stored value is then output via another isobus output module. The goal is to understand the data flow between input, conversion, storage, and output.
+
 ## Function Blocks (FBs) Used
 
 - **AD_TO_AUDI**
@@ -45,8 +47,8 @@ The blocks are linked exclusively via adapter connections:
 
 **Function**: Received by the NVS block and outputs it to the isobus block. 2. **AD_TO_AUDI** converts the incoming ISOBUS adapter signal into an Audi-compatible adapter signal and forwards it to the **NVS_AUDI** module via its output `AUDI_OUT`.
 
-3. **NVS_AUDI** persistently stores the received value and simultaneously makes it available via its adapter output `AUDI_OUT`.
-4. The output of **NVS_AUDI** is connected to the data input (`u32NewValue`) of the **Q_NumericValue_AUDI** module, which then publishes the value on the ISOBUS output `OutputNumber_N1`.
+1. **NVS_AUDI** persistently stores the received value and simultaneously makes it available via its adapter output `AUDI_OUT`.
+2. The output of **NVS_AUDI** is connected to the data input (`u32NewValue`) of the **Q_NumericValue_AUDI** module, which then publishes the value on the ISOBUS output `OutputNumber_N1`.
 
 ... The entire processing is event-driven: As soon as a new value arrives at the input, it passes through the chain and is both stored and immediately output.
 
@@ -58,6 +60,6 @@ This exercise maps the entire path of a numeric value from the isobus input thro
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

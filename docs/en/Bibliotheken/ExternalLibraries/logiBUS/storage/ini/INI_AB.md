@@ -3,6 +3,7 @@
 ![INI_AB](INI_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `INI_AB` loads and stores a `BYTE` value in the `settings.ini` file, addressed by section (`SECTION`) and key (`KEY`). It is the `settings.ini` counterpart to [NVS_AB](../esp32_nvs/NVS_AB.md) and uses the same two-adapter architecture with unidirectional `AB` adapters.

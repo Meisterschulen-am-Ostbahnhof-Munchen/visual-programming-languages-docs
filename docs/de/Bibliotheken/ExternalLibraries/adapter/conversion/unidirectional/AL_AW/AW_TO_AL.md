@@ -3,6 +3,7 @@
 ![AW_TO_AL](./AW_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein AW_TO_AL ist ein zusammengesetzter Baustein zur Umwandlung eines WORD-Adapters (AW) in einen LWORD-Adapter (AL). Er wird verwendet, um Daten von einem 16-Bit-Format in ein 64-Bit-Format zu überführen, typischerweise in Steuerungs- und Automatisierungssystemen. Der Baustein leitet Ereignisse und Daten direkt von der Eingangsseite zur Ausgangsseite weiter und sorgt dabei für die Typanpassung.
@@ -12,15 +13,19 @@ Der Funktionsbaustein AW_TO_AL ist ein zusammengesetzter Baustein zur Umwandlung
 ### **Ereignis-Eingänge**
 
 Keine (Ereignisse werden ausschließlich über den Adapter AW_IN übertragen)
+
 ### **Ereignis-Ausgänge**
 
 Keine (Ereignisse werden ausschließlich über den Adapter AL_OUT ausgegeben)
+
 ### **Daten-Eingänge**
 
 Keine (Daten werden ausschließlich über den Adapter AW_IN empfangen)
+
 ### **Daten-Ausgänge**
 
 Keine (Daten werden ausschließlich über den Adapter AL_OUT gesendet)
+
 ### **Adapter**
 
 - **AW_IN** (Socket): Adapter vom Typ `adapter::types::unidirectional::AW` – WORD-Eingang (16 Bit) mit Ereignis- und Datenkanal (E1, D1).

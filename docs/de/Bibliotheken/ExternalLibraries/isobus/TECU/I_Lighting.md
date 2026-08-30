@@ -3,6 +3,7 @@
 ![I_Lighting](./I_Lighting.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **I_Lighting** verarbeitet die Beleuchtungsdaten eines landwirtschaftlichen Fahrzeugs gemäß der ISO 11783-7 (ISOBUS). Er empfängt und decodiert die Parametergruppennummer (PGN) 65088, die den Status aller Beleuchtungsfunktionen eines Traktors und angeschlossener Anbaugeräte übermittelt. Der Baustein dient als Schnittstelle zwischen dem ISOBUS-Netzwerk und der Applikationslogik zur Überwachung und Steuerung der Beleuchtung.
@@ -18,7 +19,7 @@ Der Funktionsblock **I_Lighting** verarbeitet die Beleuchtungsdaten eines landwi
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Beschreibung | Mitgeführte Daten |
-|----------|-----|--------------|-------------------|
+| ---------- | ----- | -------------- | ------------------- |
 | INITO | EInit | Bestätigt die erfolgreiche Initialisierung. | QO, STATUS |
 | IND | Event | Signalisierung neuer Beleuchtungsdaten vom Bus. | QO, timestamp_data, STATUS, Q_timeout sowie alle 32 Leuchtenstatus-Ausgänge |
 | TIMEOUT | Event | Wird ausgelöst, wenn die erwarteten Daten ausbleiben (Zeitüberschreitung). | timestamp_timeout, STATUS, Q_timeout |
@@ -32,7 +33,7 @@ Der Funktionsblock **I_Lighting** verarbeitet die Beleuchtungsdaten eines landwi
 ### **Daten-Ausgänge**
 
 | Name | Datentyp | Beschreibung |
-|------|----------|-------------|
+| ------ | ---------- | ------------- |
 | QO | BOOL | Quittierungssignal nach erfolgreicher Initialisierung oder Datenverarbeitung. |
 | STATUS | STRING | Statusmeldung (z. B. Fehlertexte oder Betriebshinweise). |
 | Q_timeout | BOOL | Signalisiert, ob eine Zeitüberschreitung aufgetreten ist (TRUE = Timeout aktiv). |

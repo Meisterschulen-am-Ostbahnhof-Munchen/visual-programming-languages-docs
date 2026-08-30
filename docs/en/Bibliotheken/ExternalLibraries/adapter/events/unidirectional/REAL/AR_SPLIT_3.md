@@ -3,9 +3,11 @@
 ![AR_SPLIT_3](./AR_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_SPLIT_3** serves as a generic splitter for adapter connections. It distributes an incoming data and event stream (via a `AR` adapter) to three separate, identically structured output adapters. This enables efficient reuse of information in automation processes without duplicating the logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,11 +29,11 @@ None – All data is output via the three output adapters (`OUT1`, `OUT2`, `OUT3
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-------|----------------------------|-------------------------------------------------|
+| ---------- | ------- | ---------------------------- | ------------------------------------------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AR` | Incoming adapter as the source of the data/events. |
-| Plug | `OUT1`| `adapter::types::unidirectional::AR` | First outgoing adapter (Destination 1). |
-| Plug | `OUT2`| `adapter::types::unidirectional::AR` | Second outgoing adapter (Destination 2). |
-| Plug | `OUT3`| `adapter::types::unidirectional::AR` | Third outgoing adapter (Destination 3). |
+| Plug | `OUT1` | `adapter::types::unidirectional::AR` | First outgoing adapter (Destination 1). |
+| Plug | `OUT2` | `adapter::types::unidirectional::AR` | Second outgoing adapter (Destination 2). |
+| Plug | `OUT3` | `adapter::types::unidirectional::AR` | Third outgoing adapter (Destination 3). |
 
 ## Functionality
 
@@ -40,6 +42,7 @@ This function block implements a **1:3 distribution** at the adapter level. A `A
 Every event or data packet received at `IN` is simultaneously forwarded to all three outputs. The distribution occurs without delay and without data modification. The function block is generic and can be used with any `AR` adapter profile – its internal logic automatically adapts to the structure of the adapter type used.
 
 ...
+
 ## Technical Features
 
 - **Generic Type**: The function block (FB) is designed as a generic block (`GEN_AR_SPLIT`) and can be used with different `AR` adapter definitions (unidirectional), provided the interfaces are compatible.

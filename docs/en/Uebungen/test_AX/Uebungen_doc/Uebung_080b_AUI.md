@@ -3,6 +3,7 @@
 ![Uebung_080b_AUI_network](./Uebung_080b_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an up-counting counter (E_CTU) with event doubling via an E_SPLIT function block. Two hardware pushbuttons (connected to Input_I1 and Input_I2) serve as the counter pulse generator and reset signal. The current counter value is output via an adapter output (CV) and displayed on a numeric terminal (OutputNumber_N1). An additional digital output (Output_Q1) indicates the counter's Q state.
@@ -41,7 +42,7 @@ The following function blocks are used in the SubApp network:
 - **Parameters**: None
 - **Function**: Up counter with two event inputs: CU (Count Up) and R (Reset). The counter value is output as a Boolean value (when CV>0) via the adapter output `Q`, and the current counter value (data adapter) is output via `CV`.
 
-## `adapter::events::unidirectional::AUI_CTU` ... ##
+## `adapter::events::unidirectional::AUI_CTU` ##
 
 - **Parameters**: None
 - **Function**: Converts an AUI data adapter (here, the counter value CV) into an AUDI data adapter (u32), which can be processed by subsequent function blocks.
@@ -59,23 +60,27 @@ The following function blocks are used in the SubApp network:
 ## Program Flow and Connections
 
 1. **Event Generation**:
+
 - When the button on `Input_I1` is pressed, `DigitalInput_CLK_I1` generates an event `IND`.
 - When the button on `Input_I2` is pressed, `DigitalInput_CLK_I2` generates an event `IND`.
-2. **Event Duplication**:
+1. **Event Duplication**:
+
 - The `IND` event from I1 is routed to the `EI` input of `E_SPLIT`.
 - `E_SPLIT` outputs two identical events at its outputs `EO1` and `EO2`.
 - Both events are connected – via separate connections – to the CU input of `E_CTU`. **This means that each key press on I1 is counted as two counting pulses.**
-3. **Counter**:
+1. **Counter**:
+
 - Each CU event increments the internal counter of `E_CTU` by 1.
 - The `IND` event of I2 (reset button) is connected to the input `R` of `E_CTU` and resets the counter to 0.
-4. **Output**:
+1. **Output**:
+
 - The counter output `Q` (adapter) is connected to the adapter input `OUT` of `DigitalOutput_Q1`. As long as the counter value is > 0, the digital output Q1 is active (TRUE).
 - The counter reading `CV` (also an AUI adapter) is converted to an AUDI adapter via `AUI_TO_AUDI` and passed to `Q_NumericValue_AUDI.u32NewValue`. This function block displays the current counter value on the configured terminal (OutputNumber_N1).
 
 **Summary of Connections** (from the XML):
 
 | Source | Destination | Type |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `DigitalInput_CLK_I1.IND` | `E_SPLIT.EI` | Event |
 | `E_SPLIT.EO1` | `E_CTU.CU` | Event |
 | `E_SPLIT.EO2` | `E_CTU.CU` | Event |
@@ -92,7 +97,7 @@ Exercise **Exercise_080b_AUI** illustrates the combination of an up counter with
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

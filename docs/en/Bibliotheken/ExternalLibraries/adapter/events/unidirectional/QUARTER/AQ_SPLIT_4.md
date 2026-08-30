@@ -27,7 +27,7 @@ No data outputs available.
 ### **Adapters**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AQ` | Socket (Input) | `IN` | Incoming AQ adapter, which is distributed to the four outputs. |
 | `adapter::types::unidirectional::AQ` | Plug (Output) | `OUT1` | First outgoing AQ adapter. |
 | `adapter::types::unidirectional::AQ` | Plug (Output) | `OUT2` | Second outgoing AQ adapter. |
@@ -55,8 +55,8 @@ The `AQ_SPLIT_4` is a simple yet useful function block for signal distribution i
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
 
 ]
 

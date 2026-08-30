@@ -3,9 +3,11 @@
 ![AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED](./AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` is used to receive an incoming byte-shaped signal via an adapter, process it with a configurable scaling factor and offset, and provide the result via an output adapter. Simultaneously, the validity of the signal is indicated via a separate adapter. This function block is specifically designed for use in fieldbus environments where raw data needs to be converted into physical or standardized values.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `AB_FIELDBUS_BYTE_TO_SIGNAL_SCALED` is used to receive an inc
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | `SCALE` | REAL | 1.0 | Scaling factor applied to the raw value |
 | `OFFSET` | DINT | 0 | Integer offset added after scaling |
 
@@ -34,7 +36,7 @@ The module has no independent data inputs or outputs – input/output is handled
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|-----------|--------------|
+| --------- | ----- | ----------- | -------------- |
 | `IN` | AB (Adapter Type A→B) | Socket | Receives the raw BYTE signal |
 | `OUT` | AR (Adapter Type A→R) | Plug | Outputs the scaled signal |
 | `VALID` | AX (Adapter Type A→X) | Plug | Signals whether the current output value is valid (TRUE = valid) |

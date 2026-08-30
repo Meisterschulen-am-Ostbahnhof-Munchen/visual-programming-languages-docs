@@ -3,9 +3,11 @@
 ![AUI_TO_ALI](./AUI_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AUI_TO_ALI function block is a composite function block that converts an AUI adapter (UINT) into an ALI adapter (LINT). Internally, it uses the IEC 61131 function block F_UINT_TO_LINT for the conversion.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -62,6 +64,6 @@ The composite function block AUI_TO_ALI offers a simple and reliable way to conv
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

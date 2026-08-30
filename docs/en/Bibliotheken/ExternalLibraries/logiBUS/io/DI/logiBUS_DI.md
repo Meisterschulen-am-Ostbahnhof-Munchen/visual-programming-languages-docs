@@ -3,6 +3,7 @@
 ![logiBUS_DI](./logiBUS_DI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The logiBUS_DI GlobalConstants definition provides a collection of predefined constants for digital inputs of the logiBUS system. These constants define the pin assignments for various digital input channels and are used to configure logiBUS_DI function blocks.

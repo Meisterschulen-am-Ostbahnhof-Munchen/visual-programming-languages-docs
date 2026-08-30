@@ -25,7 +25,7 @@ Der Funktionsblock INI_AX2 dient dem Lesen und Speichern von REAL-Daten aus eine
 ### **Daten-Eingänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | QI | BOOL | Eingangsqualifikator zur Steuerung der Verarbeitung. |
 | SECTION | STRING | Name des Abschnitts in der settings.ini-Datei. |
 | KEY | STRING | Name des Schlüssels innerhalb des Abschnitts. |
@@ -92,4 +92,4 @@ Der Funktionsblock INI_AX2 ist eine nützliche Komponente für IEC 61499-Anwendu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

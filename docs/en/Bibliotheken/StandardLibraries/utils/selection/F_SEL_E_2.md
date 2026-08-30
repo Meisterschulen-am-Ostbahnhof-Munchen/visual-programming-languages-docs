@@ -3,10 +3,12 @@
 ![F_SEL_E_2](https://github.com/user-attachments/assets/01359d6b-dfd8-4397-ab2d-a78e7f4e6168)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `F_SEL_E_2` is an event-based selector that selects between two input variables. It belongs to the category of standard selection functions according to IEC 61131-3 and is typically used in control applications where conditional selection between two input signals is required.
 ![F_SEL_E_2](F_SEL_E_2.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -48,9 +50,10 @@ The function block `F_SEL_E_2` selects between two input variables based on the 
 
 1. **Initial State**: The function block waits for an event (`REQ0` or `REQ1`).
 2. **Selection State**:
+
 - `REQ0` selects `IN0`.
 - `REQ1` selects `IN1`.
-3. **Confirmation State**: After selection, `CNF` is output, and the block returns to its initial state.
+1. **Confirmation State**: After selection, `CNF` is output, and the block returns to its initial state.
 
 ## Application Scenarios
 
@@ -65,8 +68,8 @@ The function block `F_SEL_E_2` selects between two input variables based on the 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_019](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
-* [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
+- [Exercise_019](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019.md)
+- [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
 
 ## Conclusion
 

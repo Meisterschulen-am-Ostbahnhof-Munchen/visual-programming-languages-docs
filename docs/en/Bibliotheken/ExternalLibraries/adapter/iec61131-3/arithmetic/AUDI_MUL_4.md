@@ -25,7 +25,7 @@ This function block does not have traditional data outputs. The multiplication r
 ### **Adapter**
 
 | Type | Name | Direction | Comment |
-|------|------|----------|-----------|
+| ------ | ------ | ---------- | ----------- |
 | `adapter::types::unidirectional::AUDI` | IN1 | Input (Socket) | MUL input 1 |
 | `adapter::types::unidirectional::AUDI` | IN2 | Input (Socket) | MUL input 2 |
 | `adapter::types::unidirectional::AUDI` | IN3 | Input (Socket) | MUL input 3 |
@@ -54,7 +54,7 @@ Unlike classic IEC 61131 multiplication function blocks (e.g., `MUL` with fixed 
 
 The function block **AUDI_MUL_4** is a specialized, generic multiplication block for four input values. Its use of adapters and generic design make it particularly suitable for modular, reusable automation solutions where flexibility and scalability are paramount. The simple, event-free interface facilitates integration into data-driven architectures.
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

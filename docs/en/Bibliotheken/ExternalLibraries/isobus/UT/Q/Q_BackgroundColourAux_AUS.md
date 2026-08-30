@@ -3,6 +3,7 @@
 ![Q_BackgroundColourAux_AUS](./Q_BackgroundColourAux_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block implements the command to change the background color of an object according to ISO 11783-6, Part F.20.
@@ -19,7 +20,7 @@ It enables interaction with the Virtual Terminal (VT) and handles the transmissi
 ### **Event Outputs**
 
 | Event | Type | With Parameter | Description |
-|----------|--------|----------------|--------------|
+| ---------- | -------- | ---------------- | -------------- |
 | INITO | EInit | – | Initialization confirmed |
 | CNF | Event | STATUS, s16result | Confirmation of requested service |
 
@@ -32,14 +33,14 @@ It enables interaction with the Virtual Terminal (VT) and handles the transmissi
 ### **Data Outputs**
 
 | Name | Type | Description |
-|-----------|--------|--------------|
+| ----------- | -------- | -------------- |
 | STATUS | STRING | Service status (e.g., error message) |
 | s16result | INT | Return value (see below) |
 
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|-------------|------|--------------|
+| ---------- | ------------- | ------ | -------------- |
 | Socket | u8Colour | OFF | New background color (according to ISO 11783-6 A.3) |
 | Plug | u8OldColour | OFF | Old background color (returned by the VT) |
 
@@ -62,6 +63,7 @@ The previous color is output via the plug adapter `u8OldColour`.
 All the logic is encapsulated in a subordinate function block of the same family, so this block serves only as an outer shell for the adapter coupling.
 
 This function block executes the VT command and returns the status (`STATUS`) and the result (`s16result`) via the output `CNF`.
+
 ## Technical Features
 
 - The initial value for `u16ObjId` is `ID_NULL`, meaning the function block must be initialized with a valid object ID before use.

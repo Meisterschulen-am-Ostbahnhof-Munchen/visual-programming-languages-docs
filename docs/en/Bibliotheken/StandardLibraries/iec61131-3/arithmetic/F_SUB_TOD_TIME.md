@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_SUB_TOD_TIME](F_SUB_TOD_TIME.svg)
+
 ## Introduction
 
 The **F_SUB_TOD_TIME** function block is a standards-compliant function block for subtracting time intervals from times of day (TIME_OF_DAY), developed under the EPL 2.0 license. Version 1.0 enables time-of-day-related calculations according to the IEC 61131-3 standard.
@@ -30,13 +31,16 @@ The **F_SUB_TOD_TIME** function block is a standards-compliant function block fo
 ## Operating Principle
 
 1. **Calculation Trigger**:
+
 - `REQ` event with TIME_OF_DAY and TIME value
 - Valid range: TOD#00:00:00 to TOD#23:59:59.999999
-2. **Time Calculation**:
+1. **Time Calculation**:
+
 - Conversion to seconds since midnight
 - Subtraction of the time interval
 - Time-of-day calculation with overflow handling
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with new time of day
 - Automatic 24-hour overflow (circular calculation)
 
@@ -66,7 +70,7 @@ The **F_SUB_TOD_TIME** function block is a standards-compliant function block fo
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | F_SUB_TOD_TIME | F_ADD_TOD_TIME | F_SUB_DT_TIME |
-|---------------|----------------|----------------|---------------|
+| --------------- | ---------------- | ---------------- | --------------- |
 | Operation | Time of Day - Interval | Time of Day + Interval | Timestamp - Interval |
 | Result | TIME_OF_DAY | TIME_OF_DAY | DATE_AND_TIME |
 | Overflow | 24-hour Circular | 24-hour Circular | Calendar-based |

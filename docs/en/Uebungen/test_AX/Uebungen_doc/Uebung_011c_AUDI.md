@@ -3,9 +3,11 @@
 ![Uebung_011c_AUDI_network](./Uebung_011c_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates passing through a numeric value from an input block (`InputNumber_I3`) to an output block (`Q_NumericValue_AUDI`) using an adapter block (`AD_TO_AUDI`). The value is transmitted unchanged ("pass-through"). The sub-application is designed as a reusable component for ISOBUS applications.
+
 ## Function Blocks (FBs) Used
 
 - **InputNumber_I3**

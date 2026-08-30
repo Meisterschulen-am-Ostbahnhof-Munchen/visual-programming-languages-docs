@@ -52,7 +52,7 @@ Auf diese Weise wird der Ereignisfluss zusammengeführt, wobei die Information �
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_172](../../../Uebungen/test_B/Uebungen_doc/Uebung_172.md)
+- [Uebung_172](../../../Uebungen/test_B/Uebungen_doc/Uebung_172.md)
 
 ## Fazit
 

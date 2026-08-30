@@ -1,6 +1,7 @@
 # Uebung_012k: String Input und Speichern INI mit Subapp
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert das Einlesen eines String-Wertes von einer Eingabequelle (z. B. einem Touch-Eingabefeld) und das dauerhafte Speichern dieses Wertes in einer INI-Datei. Die gesamte Funktionalität ist in einer Subapp gekapselt, die als wiederverwendbarer Baustein zur Verfügung steht. Der gespeicherte Wert steht nach jedem Lese- oder Speichervorgang als Ausgang zur Verfügung und wird gleichzeitig an eine Ausgabekomponente (z. B. Display) übermittelt.
@@ -59,4 +60,4 @@ Die Übung zeigt den Umgang mit String-Eingaben, der persistierenden Speicherung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

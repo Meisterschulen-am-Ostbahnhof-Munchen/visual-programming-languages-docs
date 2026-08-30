@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_4](./AIWS_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AIWS_SPLIT_4` dient dazu, eine eingehende unidirektionale **AIWS**-Adapterverbindung auf vier parallele Ausgänge aufzuteilen. Er fungiert als passiver Splitter, der die über den Socket empfangenen Werte an alle vier Plugs weiterleitet, ohne selbst Ereignisse oder Daten zu verarbeiten.
@@ -28,12 +29,12 @@ Keine.
 ### **Adapter**
 
 | Typ | Richtung | Name | Beschreibung |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AIWS` | Socket | **IN** | Eingangsadapter für die zu verteilende AIWS-Verbindung |
-| `adapter::types::unidirectional::AIWS` | Plug  | **OUT1** | Erster Ausgangsadapter |
-| `adapter::types::unidirectional::AIWS` | Plug  | **OUT2** | Zweiter Ausgangsadapter |
-| `adapter::types::unidirectional::AIWS** | Plug  | **OUT3** | Dritter Ausgangsadapter |
-| `adapter::types::unidirectional::AIWS` | Plug  | **OUT4** | Vierter Ausgangsadapter |
+| `adapter::types::unidirectional::AIWS` | Plug | **OUT1** | Erster Ausgangsadapter |
+| `adapter::types::unidirectional::AIWS` | Plug | **OUT2** | Zweiter Ausgangsadapter |
+| `adapter::types::unidirectional::AIWS** | Plug | **OUT3** | Dritter Ausgangsadapter |
+| `adapter::types::unidirectional::AIWS` | Plug | **OUT4** | Vierter Ausgangsadapter |
 
 ## Funktionsweise
 
@@ -75,4 +76,4 @@ Der `AIWS_SPLIT_4` ist ein einfacher, aber essenzieller Baustein zur Verteilung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

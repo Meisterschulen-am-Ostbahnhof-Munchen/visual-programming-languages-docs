@@ -3,6 +3,7 @@
 ![AUS_SPLIT_6](./AUS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AUS_SPLIT_6** ist ein generischer Baustein, der ein eingehendes AUS-Signal (z. B. ein einheitliches Steuersignal oder Ereignis) auf sechs identische Ausgänge verteilt. Er dient als Splitter in der IEC 61499–Kommunikation über Adapter und ermöglicht eine einfache Mehrfachnutzung eines Signals ohne zusätzliche Logik.
@@ -28,7 +29,7 @@ Der Funktionsbaustein **AUS_SPLIT_6** ist ein generischer Baustein, der ein eing
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AUS` | **IN** | Socket | Eingehendes AUS-Signal, das auf alle Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AUS` | **OUT1** | Plug | Erster Ausgang – identisch zu **IN**. |
 | `adapter::types::unidirectional::AUS` | **OUT2** | Plug | Zweiter Ausgang – identisch zu **IN**. |
@@ -78,4 +79,4 @@ Der **AUS_SPLIT_6** ist ein einfacher, aber nützlicher generischer Funktionsbau
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AD` | Empfängt das zu verteilende Adaptersignal. |
 | Plug (Ausgang) 1 | `OUT1` | `adapter::types::unidirectional::AD` | Erster Ausgang – identische Kopie des Eingangssignals. |
 | Plug (Ausgang) 2 | `OUT2` | `adapter::types::unidirectional::AD` | Zweiter Ausgang. |
@@ -76,7 +76,7 @@ Der Baustein besitzt keine Zustände oder Zustandsautomaten. Das Verhalten ist r
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Besonderheit |
-|----------|-----------------|--------------|
+| ---------- | ----------------- | -------------- |
 | `AD_SPLIT_2` | 2 | Einfache 1:2-Verteilung |
 | `AD_SPLIT_4` | 4 | Typisch für 4‑kanalige Systeme |
 | **`AD_SPLIT_7`** | **7** | Erweiterte Verteilung für sieben parallele Pfade |
@@ -98,4 +98,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

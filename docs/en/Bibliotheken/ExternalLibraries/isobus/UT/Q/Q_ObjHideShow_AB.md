@@ -3,9 +3,11 @@
 ![Q_ObjHideShow_AB](./Q_ObjHideShow_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_ObjHideShow_AB** serves as a wrapper for the function block `Q_ObjHideShow` and enables hiding or showing an object via an **AB adapter** (unidirectional, BYTE). It encapsulates the direct control of the internal function block and provides an adapter-based interface that promotes loose coupling in the application.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No explicit data outputs at the FB level. The output data is provided via the ad
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Socket (Input) | `qVisible` | `adapter::types::unidirectional::AB` | Target Visibility: 0 = hidden, 1 = displayed |
 | Plug (Output) | `qOldVisible` | `adapter::types::unidirectional::AB` | Previous Visibility Value: 0 = hidden, 1 = displayed, 0xFF = undefined |
 
@@ -52,11 +54,11 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 
 An event at input `INIT` initializes the internal function block `Q_ObjHideShow`. The passed `u16ObjId` identifies the object to be controlled. After successful startup, the event `INITO` is output.
 
-2. **Visibility Control**
+1. **Visibility Control**
 
 As soon as an event (E1) arrives at the socket adapter `qVisible`, the corresponding data value (D1) is read and forwarded to the internal function block (FB). The internal FB then sets the object's visibility accordingly (0 = hidden, 1 = displayed).
 
-3. **Feedback**
+1. **Feedback**
 
 After the action is executed, the internal FB sends the event `CNF` to the plug adapter `qOldVisible`. The previous visibility state is provided as a data value (D1) on `qOldVisible`. This allows the calling component to query the previous state.
 
@@ -83,7 +85,7 @@ The FB itself does not have its own state machine. Its behavior is entirely dete
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-|---|---|
+| --- | --- |
 | `Q_ObjHideShow` (direct) | Event/data interface without adapter; direct connection required |
 | `Q_ObjHideShow_AB` (this function block) | Uses AB adapters for loose coupling; easier integration into adapter-based networks |
 | Other AB-based wrappers | Similar concept for other commands (e.g., `Q_ObjMove_AB`), but specifically designed for visibility |

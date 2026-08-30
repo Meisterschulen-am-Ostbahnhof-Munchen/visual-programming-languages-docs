@@ -20,10 +20,10 @@ Verwendung des Bausteins `SCALE_LIM`. Im Gegensatz zum einfachen `SCALE` bietet 
 
 ![Uebung_043_network](./Uebung_043_network.svg)
 
-  * **`SCALE_LIM`**: Skalierung mit Sättigung.
-  * **Parameter**:
-    * `MIN_IN_LIM` / `MAX_IN_LIM`: Definieren den Bereich, in dem der Eingangswert "gültig" ist.
-    * `MIN_OUT_FIX` / `MAX_OUT_FIX`: Harte Grenzwerte für den Ausgang. Egal was berechnet wird, der Ausgang wird diese Werte niemals unter- oder überschreiten.
+  - **`SCALE_LIM`**: Skalierung mit Sättigung.
+  - **Parameter**:
+    - `MIN_IN_LIM` / `MAX_IN_LIM`: Definieren den Bereich, in dem der Eingangswert "gültig" ist.
+    - `MIN_OUT_FIX` / `MAX_OUT_FIX`: Harte Grenzwerte für den Ausgang. Egal was berechnet wird, der Ausgang wird diese Werte niemals unter- oder überschreiten.
 
 -----
 

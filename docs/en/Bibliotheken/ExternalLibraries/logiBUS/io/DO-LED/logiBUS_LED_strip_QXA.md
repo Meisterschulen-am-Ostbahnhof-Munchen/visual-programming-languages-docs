@@ -3,9 +3,11 @@
 ![logiBUS_LED_strip_QXA](./logiBUS_LED_strip_QXA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **logiBUS_LED_strip_QXA** is a composite function block for controlling an LED strip via the logiBUS protocol. It encapsulates the communication with the hardware and enables color- and frequency-dependent control of individual outputs. This block is particularly suitable for use in agricultural technology, where flexible LED signaling is required.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,14 +19,14 @@ The function block **logiBUS_LED_strip_QXA** is a composite function block for c
 ### **Event Outputs**
 
 | Event | Description | With |
-|----------|--------------|-----|
+| ---------- | -------------- | ----- |
 | INITO | Initialization Confirmation | QO, STATUS |
 | CNF | Confirmation of Executed Request | QO, STATUS |
 
 ### **Data Inputs**
 
 | Name | Type | Description | Initial Value |
-|--------|--------|--------------|-------------|
+| -------- | -------- | -------------- | ------------- |
 | QI | BOOL | Processing Enable (Event Qualifier) | - |
 | PARAMS | STRING | Service Parameter (e.g., Bus Configuration) | - |
 | Output | USINT | Output Identification (Strip Number) | `LED_strip::Output_strip` |
@@ -34,7 +36,7 @@ The function block **logiBUS_LED_strip_QXA** is a composite function block for c
 ### **Data Outputs**
 
 | Name | Type | Description |
-|--------|--------|--------------|
+| -------- | -------- | -------------- |
 | QO | BOOL | Output Qualifier (Processing Status) |
 | STATUS | STRING | Status Message (e.g., Error Code) |
 

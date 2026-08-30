@@ -6,6 +6,7 @@
 
 The function block `F_UINT_TO_REAL` converts an unsigned integer value (`UINT`) into a floating-point number (`REAL`). This functionality is particularly useful when exchanging data between systems that use different data types.
 ![F_UINT_TO_REAL](F_UINT_TO_REAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +54,7 @@ The function block has no internal state. The conversion occurs immediately upon
 
 ## 🛠️ Related Exercises
 
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Conclusion
 

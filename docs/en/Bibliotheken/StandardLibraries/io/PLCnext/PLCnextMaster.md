@@ -1,10 +1,12 @@
 # PLCnextMaster
 
 * * * * * * * * * *
+
 ## Introduction
 
 The PLCnextMaster is a Service Interface Function Block that serves as the master component for communication with PLCnext systems. This block enables the initialization and control of bus communication in PLCnext-based automation solutions.
 ![PLCnextMaster](PLCnextMaster.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -71,6 +73,6 @@ The PLCnextMaster is a specialized function block for integrating PLCnext system
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

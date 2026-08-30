@@ -3,13 +3,15 @@
 ![Uebung_028a2_AR_network](./Uebung_028a2_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements the calibration of an analog input. An analog value is read, transferred to a calibration block via two adapter conversions, and the determined offset and scale values are permanently stored in the NVS (Non-Volatile Storage) memory. Two digital inputs control the calibration mode (offset and scale). Another digital input serves as a trigger for the analog sampling and is simultaneously routed to a digital output.
+
 ## Function Blocks (FBs) Used
 
 | Name | Type | Parameters |
-|------|-----|------------|
+| ------ | ----- | ------------ |
 | DigitalInput_I1 | `logiBUS::io::DI::logiBUS_IXA` | QI = TRUE, Input = Input_I1 |
 | DigitalOutput_Q1 | `logiBUS::io::DQ::logiBUS_QXA` | QI = TRUE, Output = Output_Q1 |
 | AnalogInput_I4 | `logiBUS::io::AI::logiBUS_AI_IDA` | QI = TRUE, Input = AnalogInput_I4, AnalogInput_hysteresis = 50, TimeDelta = 250, TimeRateLimit = 100 |
@@ -39,15 +41,18 @@ This exercise implements the calibration of an analog input. An analog value is 
 The process is started by the digital input `Input_I1`:
 
 1. **Event Distribution**: The event coming from `DigitalInput_I1` (adapter `IN`) is passed to `AX_SPLIT_2`. This splits the event:
+
 - **OUT1** → connected to `DigitalOutput_Q1.OUT` → the digital output `Output_Q1` is set.
 - **OUT2** → connected to `AnalogInput_I4.SREQ` → triggers the analog sampling.
-2. **Analog Measurement Value**: After sampling, `AnalogInput_I4` outputs an analog data adapter via its output `IN`. This is then passed to `AD_TO_AUDI.AD_IN`.
-3. **Conversion Chain**:
+1. **Analog Measurement Value**: After sampling, `AnalogInput_I4` outputs an analog data adapter via its output `IN`. This is then passed to `AD_TO_AUDI.AD_IN`.
+2. **Conversion Chain**:
+
 - `AD_TO_AUDI` converts the analog data adapter into a universal analog value adapter (`AUDI_OUT`).
 - `AUDI_TO_AR` converts this into a real-value adapter (`AR_OUT`).
 - The real-value adapter is then passed to the calibration input `CALIBRATE.X`.
-4. **Calibration**: Simultaneously, input `Input_I2` (via `DigitalInput_I2_CO`) and input `Input_I3` (via `DigitalInput_I3_CS`) are present at `CALIBRATE.CO`. Depending on the activated control signal, `CALIBRATE` calculates the new offset or the new scale. The default settings (Y_Offset = 100.0, Y_Scale = 600.0) serve as the basis.
-5. **Persistent Storage**:
+1. **Calibration**: Simultaneously, input `Input_I2` (via `DigitalInput_I2_CO`) and input `Input_I3` (via `DigitalInput_I3_CS`) are present at `CALIBRATE.CO`. Depending on the activated control signal, `CALIBRATE` calculates the new offset or the new scale. The default settings (Y_Offset = 100.0, Y_Scale = 600.0) serve as the basis.
+2. **Persistent Storage**:
+
 - The determined offset (adapter `OFFSET`) is transferred to `NVS_OFFSET.VAL` and stored under the key 'OFFSET'.
 - The determined scaling factor (adapter `SCALE`) is transferred to `NVS_SCALE.VAL` and stored under the key 'SCALE'.
 

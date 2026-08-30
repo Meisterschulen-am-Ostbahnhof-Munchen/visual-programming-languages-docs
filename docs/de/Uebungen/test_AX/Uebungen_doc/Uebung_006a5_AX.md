@@ -3,20 +3,21 @@
 ![Uebung_006a5_AX_network](./Uebung_006a5_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die Übung `Uebung_006a5_AX` zeigt, wie sich mit **einem einzigen physischen Taster** (`Input_I1`) sowohl ein **rastendes** (schaltendes) als auch ein **tastendes** (umschaltendes) Bedienverhalten realisieren lässt. Anders als `Uebung_006a_AX`, die für Set, Reset und Toggle drei getrennte Taster (`I1`, `I2`, `I3`) benötigt, wertet diese Übung an einem einzigen Eingang unterschiedliche Tasten-Gesten aus – langes Drücken, Loslassen nach langem Drücken und kurzer Klick – und speist diese in den Baustein `AX_T_FF_SR` ein.
 
 Damit lässt sich mit einem einzigen Taster ein Ausgang:
 
-* **fest einschalten** (Halten/lange drücken → *rastend* wie ein Schalter),
-* **fest ausschalten** (Loslassen nach langem Drücken),
-* **umschalten** (kurzer Klick → *tastend* wie ein klassischer Taster).
+- **fest einschalten** (Halten/lange drücken → *rastend* wie ein Schalter),
+- **fest ausschalten** (Loslassen nach langem Drücken),
+- **umschalten** (kurzer Klick → *tastend* wie ein klassischer Taster).
 
 ## Verwendete Funktionsbausteine (FBs)
 
 | FB-Name | Typ | Parameter |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | `BUTTON_LONG_PRESS_START` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_LONG_PRESS_START` |
 | `BUTTON_LONG_PRESS_UP` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_LONG_PRESS_UP` |
 | `BUTTON_SINGLE_CLICK` | `logiBUS::io::DI::logiBUS_IE` | Input = `Input_I1`, InputEvent = `BUTTON_SINGLE_CLICK` |
@@ -84,4 +85,4 @@ Die Übung `Uebung_006a5_AX` zeigt, wie der Alles-Könner-Baustein `AX_T_FF_SR` 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

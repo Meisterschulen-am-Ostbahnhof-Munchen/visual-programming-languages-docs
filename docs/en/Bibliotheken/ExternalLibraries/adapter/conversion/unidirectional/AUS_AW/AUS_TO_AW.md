@@ -3,9 +3,11 @@
 ![AUS_TO_AW](./AUS_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUS_TO_AW** function block is a composite function block that enables the simple and standardized conversion of a **USINT** value (0–255) to a **WORD** value (16 bits) via adapter interfaces. It acts as an intermediary between systems that provide or expect different data types via unidirectional adapters.
+
 ## Interface Structure
 
 The function block itself has no direct inputs or outputs. All communication takes place via the two integrated adapters.
@@ -73,6 +75,6 @@ The block does not have its own state machine. The process is event-driven and s
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,11 @@
 ![ADI_TO_AR](./ADI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADI_TO_AR** function block is a composite module that converts a DINT adapter (ADI) into a REAL adapter (AR). It acts as an intermediary between components that communicate via unidirectional adapters, performing a data type conversion from integer (DINT) to floating-point number (REAL).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The **ADI_TO_AR** function block is a composite module that converts a DINT adap
 ### **Adapters**
 
 | Adapter | Role | Type | Description |
-|---------|-------|-----|--------------|
+| --------- | ------- | ----- | -------------- |
 | ADI_IN | Socket | adapter::types::unidirectional::ADI | Unidirectional DINT adapter as input interface. |
 | AR_OUT | Plug | adapter::types::unidirectional::AR | Unidirectional REAL adapter as output interface. |
 
@@ -55,7 +57,7 @@ The entire process is synchronous and without intermediate storage – each succ
 The function block does not have its own state machine. The process can be described as a simple step:
 
 | Step | Action |
-|---------|--------|
+| --------- | -------- |
 | 1 | Wait for event at **ADI_IN.E1** |
 | 2 | Convert the data value from DINT to REAL |
 | 3 | Output the converted value to **AR_OUT.D1** and event to **AR_OUT.E1** |
@@ -74,6 +76,7 @@ The function block does not have its own state machine. The process can be descr
 - **Composite function blocks without adapters**: Other implementations use direct data and event ports, which limits flexibility when replacing components. The adapter interface allows for simple plug-and-play in predefined architectures.
 
 **F_DINT_TO_REAL**: ** ...
+
 ## Conclusion
 
 The **ADI_TO_AR** function block represents an elegant and standards-compliant solution for converting DINT values to REAL values, fully embedded in the adapter-based communication structure of IEC 61499. By encapsulating the conversion process in a reusable composite component, it supports the development of modular, type-safe, and well-documented automation systems.

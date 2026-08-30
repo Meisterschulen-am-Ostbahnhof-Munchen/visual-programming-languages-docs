@@ -1,4 +1,5 @@
 ![CTRL_PI](CTRL_PI.svg)
+
 # CTRL_PI
 
 FT_PI is a PI controller with manual functionality.
@@ -58,4 +59,4 @@ default values for KP = 1, TN = 1, TV = 1, LIMIT_L = -1000, LIMIT_H = +1000.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Exercise_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)

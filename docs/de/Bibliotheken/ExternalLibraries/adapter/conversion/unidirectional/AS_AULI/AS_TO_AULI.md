@@ -89,7 +89,7 @@ Eine Fehlerbehandlung ist nicht explizit modelliert; der innere Baustein gibt be
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Zieltyp | Quelltyp | Besonderheit |
-|----------|---------|----------|--------------|
+| ---------- | --------- | ---------- | -------------- |
 | `AS_TO_AULI` | ULINT | SINT | Konvertierung SINT → ULINT |
 | `AS_TO_AUDI` | UDINT | SINT | Konvertierung SINT → UDINT (32 Bit) |
 | `AS_TO_AWORD` | WORD | SINT | Konvertierung SINT → WORD (16 Bit) |
@@ -107,4 +107,4 @@ Der vorliegende Baustein deckt die Konvertierung von einem 8‑Bit‑Vorzeichen�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

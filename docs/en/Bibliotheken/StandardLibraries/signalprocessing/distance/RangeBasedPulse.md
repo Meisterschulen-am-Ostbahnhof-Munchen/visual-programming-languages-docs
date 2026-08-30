@@ -6,6 +6,7 @@
 
 The function block `RangeBasedPulse` is a distance-based pulse generator that controls a Boolean output (Q) based on the distance traveled (DIST_IN). The function block is started with a HIGH pulse and periodically generates output pulses according to the configured distance values for HIGH and LOW phases.
 ![RangeBasedPulse](RangeBasedPulse.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -57,8 +58,8 @@ Unlike simple timers, this function block works with distance values instead of 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Exercise_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Exercise_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Exercise_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
 
 ## Conclusion
 

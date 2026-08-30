@@ -1,8 +1,9 @@
 # Exercise_094a: Example of QI instead of Permit
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_094a`. It demonstrates an alternative method for enabling control that is directly integrated into the function blocks.
+This article describes the logiBUS® exercise `Uebung_094a`. It demonstrates an alternative method for enabling control that is directly integrated into the function blocks
 ----
+
 ## Overview
 
 [cite_start]Instead of using an external `E_PERMIT` function block, the standard port `QI` (Qualified Input) of the input function block `DigitalInput_I1` is used here[cite: 1].

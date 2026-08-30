@@ -1,10 +1,11 @@
 ![E_TOF](E_TOF.svg)
+
 # E_TOF
 
 ## 🎧 Podcast
 
-* [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems? ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
-* [FB_TOF and E_TOF: Delay timers in IEC 61131-3 and 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
+- [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems? ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
+- [FB_TOF and E_TOF: Delay timers in IEC 61131-3 and 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
 
 IEC 61499 is an international standard that enables the modeling of distributed industrial control systems. A central concept in this standard is the function block (FB), which serves as a fundamental component for the control logic. The **E_TOF** (Event-driven Off-Delay Timer) function block is an example of such a function block used in IEC 61499 to model a delayed shutdown function. This paper describes the structure, behavior, and application of the E_TOF function block using the provided source code. A particularly noteworthy aspect is that this function block **also functions when called non-cyclically** because it is internally based on the **E_DELAY** function block from IEC 61499.
 
@@ -16,7 +17,7 @@ The E_TOF function block is a **Composite Function Block (CFB)** specified accor
 
 ### Der Baustein E_TOF in der IEC 61499: Ein Überblick
 
-## Beschreibung:
+## Beschreibung
 
 ##### Interface
 
@@ -55,7 +56,7 @@ The E_TOF block can be used in various industrial control applications, especial
 - **Machine Control**: The block can be used to ensure that a machine continues to run for a specific period of time after being switched off, for example, to complete processes or to implement safety precautions.
 - **Lighting Control**: The block can be used in lighting systems to keep the light on for a specific period of time after the switch has been turned off.
 - **Valve Control**: This function block can be used to keep a valve open for a specific period of time after it has closed, for example, to release pressure.
-* [Exercise_020e](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e.md)
+- [Exercise_020e](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e.md)
 
 The E_TOF function block is a versatile function block in IEC 61499 that implements a delayed shutdown function. Due to its internal use of the **E_DELAY** function block, it can function correctly **even if it is not called cyclically**. This makes it particularly suitable for event-driven and distributed control systems where cyclic calls are not always guaranteed.
 
@@ -86,4 +87,5 @@ The **E_TOF** (Event-driven Off-Delay Timer) is a function block according to IE
 A key advantage of the E_TOF function block is that it **does not need to be called cyclically** to function correctly. Since the internal **E_DELAY** block operates independently of the cyclic call of the parent block, the E_TOF block can also be used in systems that do not operate cyclically, such as event-driven or distributed control systems. This makes the E_TOF block particularly flexible and suitable for modern, distributed control architectures where cyclic calls are not always guaranteed.
 
 In summary, the FB_TOF block, with its **ET** output, enables detailed monitoring of elapsed time but requires a cyclic call. The E_TOF block, on the other hand, does without the **ET** output but offers the flexibility to operate independently of cyclic calls, making it ideal for event-driven systems.
+
 ### Kapitel 2: Der E_TOF-Baustein

@@ -16,7 +16,7 @@ Die Übung ist als Sub-Application (`SubAppType`) realisiert und verarbeitet Lis
 
 In dieser Sub-Application werden verschiedene Funktionsbausteine instanziiert, um die Datenverarbeitung und -visualisierung zu realisieren.
 
-### Haupt-Bausteine:
+### Haupt-Bausteine
 
 #### 1. NmGetCfInfo (`isobus::pgn::NmGetCfInfo`)
 
@@ -87,4 +87,4 @@ Die Übung **Uebung_122b** demonstriert die Detailanalyse von ISOBUS-Teilnehmern
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

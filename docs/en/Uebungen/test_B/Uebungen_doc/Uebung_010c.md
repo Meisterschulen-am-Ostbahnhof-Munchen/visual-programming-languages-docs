@@ -2,11 +2,12 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_010c`. Previously, the keys were only used for input. Now they receive dynamic feedback on the screen.
+
 ## 🎧 Podcast
 
 ![Uebung_010c_network](./Uebung_010c_network.svg)
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -22,9 +23,9 @@ Feedback to the operator through a color change of the virtual key.
 
 ### Function Blocks (FBs)
 
-* **`SoftKey_F1`**: Input block.
-* **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. [cite_start]It changes the background of the softkey on the terminal (green when activated, white when idle)[cite: 1].
-* **`DigitalOutput_Q1`**: The physical output.
+- **`SoftKey_F1`**: Input block.
+- **`GreenWhiteBackground` (SubApp)**: A block from the `MyLib::sys` library. [cite_start]It changes the background of the softkey on the terminal [green when activated, white when idle](cite: 1).
+- **`DigitalOutput_Q1`**: The physical output.
 
 -----
 

@@ -3,9 +3,11 @@
 ![Uebung_214_AULI_network](./Uebung_214_AULI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up counter according to IEC 61131-3 (type **AULI_FB_CTU**) as an adapter version. The counter uses the **ULINT** data type and outputs its current counter value and overflow (Q) to a terminal output (numeric display) and a digital output. Additionally, the initial value (PV) is set via a conversion block. This exercise demonstrates the use of adapter function blocks (FBs), I/O connectivity, and data conversion.
+
 ## Function Blocks Used (FBs)
 
 The sub-app consists of several function blocks, which are described below.
@@ -94,4 +96,4 @@ The exercise **Exercise_214_AULI** teaches how to use the IEC 61131-3 compliant 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![F_TO_BIG_ENDIAN](F_TO_BIG_ENDIAN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_TO_BIG_ENDIAN` konvertiert einen Wert in der Big-Endian (höchstwertiges Byte zuerst)-Byte-Reihenfolge. Er gehört zur Familie der Endian-Konvertierungsfunktionen, die für den plattformübergreifenden Austausch binärer Daten (z. B. über Netzwerkprotokolle oder mit Fremdsystemen) benötigt werden.

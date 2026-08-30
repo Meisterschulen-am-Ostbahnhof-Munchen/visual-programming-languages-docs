@@ -3,6 +3,7 @@
 ![AX_TLIM](./AX_TLIM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_TLIM** ist ein zeitbegrenzender Timer (Time-Limiting) gemäß IEC 61499-2. Er überwacht ein boolesches Eingangssignal, das über einen unidirektionalen **AX-Adapter** bereitgestellt wird. Solange das Signal aktiv (TRUE) ist, bleibt der Ausgang ebenfalls aktiv – jedoch maximal für eine vorgegebene Zeit. Überschreitet die Aktivierungsdauer den Grenzwert, wird der Ausgang zurückgesetzt (Timeout). Ein separater Ereigniseingang erlaubt das Voreinstellen der Zeitbegrenzung, ohne eine neue Ausführung auszulösen.

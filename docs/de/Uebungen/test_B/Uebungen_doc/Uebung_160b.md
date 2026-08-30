@@ -73,31 +73,31 @@ Die Kernlogik der Steuerung.
 Das Netzwerk realisiert eine Motorsteuerung mit folgenden Eigenschaften:
 
 1.  **Start Richtung A (Q5):**
-    *   Wird `Input_I1` (Klick) betätigt, sendet `DigitalInput_CLK_I1` ein Event an den Setz-Eingang (S) von `E_SR_A`.
-    *   `E_SR_A` setzt seinen Ausgang Q auf TRUE, wodurch `DigitalOutput_Q5` aktiviert wird.
+    -   Wird `Input_I1` (Klick) betätigt, sendet `DigitalInput_CLK_I1` ein Event an den Setz-Eingang (S) von `E_SR_A`.
+    -   `E_SR_A` setzt seinen Ausgang Q auf TRUE, wodurch `DigitalOutput_Q5` aktiviert wird.
 
 2.  **Umschaltung / Stopp A & Start B (Q6):**
-    *   Wird `Input_I2` (Drücken) betätigt, geschehen zwei Dinge gleichzeitig:
-        *   Ein Event geht an den Rücksetz-Eingang (R) von `E_SR_A`. Damit wird `DigitalOutput_Q5` sofort ausgeschaltet.
-        *   Ein Event startet den Timer `E_DELAY`.
-    *   Nach Ablauf von 50ms (`DT=T#50ms`) sendet `E_DELAY` ein Event an den Setz-Eingang (S) von `E_SR_B`.
-    *   `E_SR_B` setzt seinen Ausgang Q auf TRUE, wodurch `DigitalOutput_Q6` aktiviert wird.
-    *   *Hinweis:* I2 fungiert hier als Umschalter von A nach B mit einer kleinen Totzeit.
+    -   Wird `Input_I2` (Drücken) betätigt, geschehen zwei Dinge gleichzeitig:
+        -   Ein Event geht an den Rücksetz-Eingang (R) von `E_SR_A`. Damit wird `DigitalOutput_Q5` sofort ausgeschaltet.
+        -   Ein Event startet den Timer `E_DELAY`.
+    -   Nach Ablauf von 50ms (`DT=T#50ms`) sendet `E_DELAY` ein Event an den Setz-Eingang (S) von `E_SR_B`.
+    -   `E_SR_B` setzt seinen Ausgang Q auf TRUE, wodurch `DigitalOutput_Q6` aktiviert wird.
+    -   *Hinweis:* I2 fungiert hier als Umschalter von A nach B mit einer kleinen Totzeit.
 
 3.  **Stopp Richtung B (Q6):**
-    *   Wird `Input_I3` (Drücken) betätigt, sendet `DigitalInput_CLK_I3` ein Event an den Rücksetz-Eingang (R) von `E_SR_B`.
-    *   `DigitalOutput_Q6` wird ausgeschaltet.
+    -   Wird `Input_I3` (Drücken) betätigt, sendet `DigitalInput_CLK_I3` ein Event an den Rücksetz-Eingang (R) von `E_SR_B`.
+    -   `DigitalOutput_Q6` wird ausgeschaltet.
 
 4.  **Betriebsanzeige (Q56):**
-    *   Die Datenausgänge (Q) von `E_SR_A` und `E_SR_B` sind mit den Eingängen des `OR_2_BOOL` Bausteins verbunden.
-    *   Sobald einer der beiden SR-Speicher aktiv ist (Motor läuft links oder rechts), schaltet `OR_2_BOOL` den `DigitalOutput_Q56` ein.
+    -   Die Datenausgänge (Q) von `E_SR_A` und `E_SR_B` sind mit den Eingängen des `OR_2_BOOL` Bausteins verbunden.
+    -   Sobald einer der beiden SR-Speicher aktiv ist (Motor läuft links oder rechts), schaltet `OR_2_BOOL` den `DigitalOutput_Q56` ein.
 
 **Lernziele:**
 
-*   Verwendung von bistabilen Kippgliedern (SR-Latch) zur Zustandsspeicherung.
-*   Implementierung einer Umschaltlogik mit Zeitverzögerung (E_DELAY) zur Vermeidung von abrupten Lastwechseln oder Kurzschlüssen.
-*   Verarbeitung verschiedener Taster-Events (Single Click vs. Press Down).
-*   Logische Verknüpfung von Zuständen (OR) zur Ansteuerung einer Sammelanzeige.
+-   Verwendung von bistabilen Kippgliedern (SR-Latch) zur Zustandsspeicherung.
+-   Implementierung einer Umschaltlogik mit Zeitverzögerung (E_DELAY) zur Vermeidung von abrupten Lastwechseln oder Kurzschlüssen.
+-   Verarbeitung verschiedener Taster-Events (Single Click vs. Press Down).
+-   Logische Verknüpfung von Zuständen (OR) zur Ansteuerung einer Sammelanzeige.
 
 ## Zusammenfassung
 

@@ -1,6 +1,7 @@
 # ST16B
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `ST16B` ist eine strukturierte Datenkomponente, die im 4diac-Framework definiert ist. Im Gegensatz zu einem Funktionsblock (FB) hat `ST16B` keine eigene Logik oder ausführbaren Funktionen, sondern dient als fester Container für 16 einzelne Byte-Werte. Sein Hauptzweck ist die Bereitstellung einer klar definierten Struktur für die Handhabung von Rohdatenpaketen fester Größe, was besonders in Kommunikationsprotokollen oder bei der Interaktion mit hardwarenahen Schnittstellen von Bedeutung ist.
@@ -58,10 +59,10 @@ Nicht zutreffend, da `ST16B` ein Datentyp und kein Funktionsblock ist und daher 
 
 ## Technische Besonderheiten
 
-*   **Feste Größe:** Der Datentyp `ST16B` hat eine feste Größe von exakt 16 Bytes. Dies ist vorteilhaft für die Vorhersagbarkeit des Speicherverbrauchs und die Kompatibilität mit Protokollen, die feste Längen erwarten.
-*   **Direkter Byte-Zugriff:** Jedes der 16 Bytes ist über seinen spezifischen Namen (z.B. `MyVariable.B_00`) direkt zugänglich.
-*   **Rohdatenbehälter:** Ideal für die Speicherung und den Transport von Rohdaten, deren Inhalt erst später interpretiert werden soll.
-*   **Architekturunabhängigkeit:** Als Sammlung von BYTEn ist die grundlegende Struktur relativ plattformunabhängig, auch wenn die Interpretation der Bytes in verschiedenen Systemen variieren kann (z.B. Endianness bei größeren Werten, die über mehrere Bytes verteilt sind).
+-   **Feste Größe:** Der Datentyp `ST16B` hat eine feste Größe von exakt 16 Bytes. Dies ist vorteilhaft für die Vorhersagbarkeit des Speicherverbrauchs und die Kompatibilität mit Protokollen, die feste Längen erwarten.
+-   **Direkter Byte-Zugriff:** Jedes der 16 Bytes ist über seinen spezifischen Namen (z.B. `MyVariable.B_00`) direkt zugänglich.
+-   **Rohdatenbehälter:** Ideal für die Speicherung und den Transport von Rohdaten, deren Inhalt erst später interpretiert werden soll.
+-   **Architekturunabhängigkeit:** Als Sammlung von BYTEn ist die grundlegende Struktur relativ plattformunabhängig, auch wenn die Interpretation der Bytes in verschiedenen Systemen variieren kann (z.B. Endianness bei größeren Werten, die über mehrere Bytes verteilt sind).
 
 ## Zustandsübersicht
 
@@ -69,15 +70,15 @@ Nicht zutreffend, da `ST16B` ein Datentyp ist und keine internen Zustände im Si
 
 ## Anwendungsszenarien
 
-*   **Kommunikationsprotokolle:** Ideal zum Verpacken oder Entpacken von Nachrichten für Protokolle wie Modbus, CAN-Bus, oder proprietäre seriellen Protokollen, bei denen Datenpakete eine feste Größe von 16 Bytes haben.
-*   **Hardware-Schnittstellen:** Abbildung von Registern oder Datenblöcken in hardwarenahen Schnittstellen, die in festen Byte-Mustern arbeiten.
-*   **Puffer für binäre Daten:** Verwendung als Puffer für binäre Daten, die von externen Quellen gelesen oder an diese gesendet werden.
-*   **Zwischenspeicherung von Hashes oder IDs:** Für Anwendungen, die 128-Bit-Hashes (z.B. MD5) oder lange IDs speichern müssen, die genau 16 Bytes umfassen.
+-   **Kommunikationsprotokolle:** Ideal zum Verpacken oder Entpacken von Nachrichten für Protokolle wie Modbus, CAN-Bus, oder proprietäre seriellen Protokollen, bei denen Datenpakete eine feste Größe von 16 Bytes haben.
+-   **Hardware-Schnittstellen:** Abbildung von Registern oder Datenblöcken in hardwarenahen Schnittstellen, die in festen Byte-Mustern arbeiten.
+-   **Puffer für binäre Daten:** Verwendung als Puffer für binäre Daten, die von externen Quellen gelesen oder an diese gesendet werden.
+-   **Zwischenspeicherung von Hashes oder IDs:** Für Anwendungen, die 128-Bit-Hashes (z.B. MD5) oder lange IDs speichern müssen, die genau 16 Bytes umfassen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`ARRAY[0..15] OF BYTE`:** `ST16B` ähnelt einem Array von 16 Bytes. Der Hauptunterschied liegt im Zugriff: Bei `ST16B` erfolgt der Zugriff über benannte Komponenten (`B_00`, `B_01`, etc.), während ein Array den Zugriff über Indizes (`MyArray[0]`, `MyArray[1]`) ermöglicht. Die benannten Komponenten können die Lesbarkeit verbessern, wenn jedes Byte eine spezifische semantische Bedeutung innerhalb der 16 Bytes hat.
-*   **Andere strukturierte Datentypen:** Im Vergleich zu benutzerdefinierten Strukturen, die verschiedene Datentypen (INT, REAL, BOOL) mischen, ist `ST16B` auf reine Byte-Sammlungen spezialisiert. Es bietet eine flache, gleichartige Struktur.
+-   **`ARRAY[0..15] OF BYTE`:** `ST16B` ähnelt einem Array von 16 Bytes. Der Hauptunterschied liegt im Zugriff: Bei `ST16B` erfolgt der Zugriff über benannte Komponenten (`B_00`, `B_01`, etc.), während ein Array den Zugriff über Indizes (`MyArray[0]`, `MyArray[1]`) ermöglicht. Die benannten Komponenten können die Lesbarkeit verbessern, wenn jedes Byte eine spezifische semantische Bedeutung innerhalb der 16 Bytes hat.
+-   **Andere strukturierte Datentypen:** Im Vergleich zu benutzerdefinierten Strukturen, die verschiedene Datentypen (INT, REAL, BOOL) mischen, ist `ST16B` auf reine Byte-Sammlungen spezialisiert. Es bietet eine flache, gleichartige Struktur.
 
 ## Fazit
 
@@ -87,4 +88,4 @@ Der Datentyp `ST16B` ist eine einfache, aber effektive Struktur zum Umgang mit D
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

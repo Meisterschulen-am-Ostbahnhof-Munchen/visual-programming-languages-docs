@@ -39,7 +39,7 @@ Der Baustein verfügt über keine klassischen separaten Event- oder Datenports, 
 ### Adapter
 
 | Adapter | Typ | Richtung | Beschreibung |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `SET1` | unidirectional AX | Socket | Set-Eingang |
 | `RESET` | unidirectional AX | Socket | Reset-Eingang |
 | `ILOCK_IN` | bidirectional AX2 | Socket | Interlock-Eingang (von oben) |

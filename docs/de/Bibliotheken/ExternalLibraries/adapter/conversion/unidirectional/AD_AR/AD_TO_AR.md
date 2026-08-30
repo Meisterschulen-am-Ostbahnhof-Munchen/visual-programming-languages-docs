@@ -3,6 +3,7 @@
 ![AD_TO_AR](./AD_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_TO_AR** ist ein Composite-Baustein zur Umwandlung eines DWORD-Werts aus einem unidirektionalen AD-Adapter (Socket) in einen REAL-Wert, der über einen AR-Adapter (Plug) ausgegeben wird. Er kapselt die Konvertierungslogik und ermöglicht so eine einfache Adapter-basierte Datenübertragung zwischen unterschiedlichen Datentypen.
@@ -79,4 +80,4 @@ Der **AD_TO_AR**-Baustein bietet eine kompakte und standardkonforme Lösung zur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

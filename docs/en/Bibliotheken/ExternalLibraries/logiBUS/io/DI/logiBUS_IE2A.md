@@ -3,15 +3,17 @@
 ![logiBUS_IE2A](./logiBUS_IE2A.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `logiBUS_IE2A` is a composite block (FB) for processing events at digital inputs of the logiBUS system. It extends the functionality of the underlying block `logiBUS_IE2` by adding a dedicated adapter output for event messages and allows the transfer of parameters such as long press times or multi-click counters. The block serves as a standardized interface between the logiBUS hardware and a higher-level control logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|-------|-------|-------------------------------------------|
+| ------- | ------- | ------------------------------------------- |
 | INIT | EInit | Service Initialization |
 | REQ | Event | Service Request |
 
@@ -24,7 +26,7 @@ The function block `logiBUS_IE2A` is a composite block (FB) for processing event
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-|------------|----------------------------------|-----------------------------------------------------------------------|------------------------|
+| ------------ | ---------------------------------- | ----------------------------------------------------------------------- | ------------------------ |
 | QI | BOOL | Event Input Qualifier | – |
 | PARAMS | STRING | Service Parameter | – |
 | Input | `logiBUS::io::DI::logiBUS_DI_S` | Digital input identification (e.g., Input_I1..I8) | `logiBUS_DI::Invalid` |
@@ -34,7 +36,7 @@ The function block `logiBUS_IE2A` is a composite block (FB) for processing event
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|--------|---------------------------------------|
+| -------- | -------- | --------------------------------------- |
 | QO | BOOL | Event output qualifier |
 | STATUS | STRING | Service status |
 

@@ -28,13 +28,13 @@ Keine.
 
 ### **Adapter**
 
-| Typ       | Name   | Richtung | Beschreibung |
-|-----------|--------|----------|--------------|
-| `ADI` (unidirektional) | `IN`   | Socket   | Empfang des zu verteilenden ADI-Datenstroms. |
-| `ADI` (unidirektional) | `OUT1` | Plug     | Erster Ausgang – identische Kopie des Eingangssignals. |
-| `ADI` (unidirektional) | `OUT2` | Plug     | Zweiter Ausgang – identische Kopie des Eingangssignals. |
-| `ADI` (unidirektional) | `OUT3` | Plug     | Dritter Ausgang – identische Kopie des Eingangssignals. |
-| `ADI` (unidirektional) | `OUT4` | Plug     | Vierter Ausgang – identische Kopie des Eingangssignals. |
+| Typ | Name | Richtung | Beschreibung |
+| ----------- | -------- | ---------- | -------------- |
+| `ADI` (unidirektional) | `IN` | Socket | Empfang des zu verteilenden ADI-Datenstroms. |
+| `ADI` (unidirektional) | `OUT1` | Plug | Erster Ausgang – identische Kopie des Eingangssignals. |
+| `ADI` (unidirektional) | `OUT2` | Plug | Zweiter Ausgang – identische Kopie des Eingangssignals. |
+| `ADI` (unidirektional) | `OUT3` | Plug | Dritter Ausgang – identische Kopie des Eingangssignals. |
+| `ADI` (unidirektional) | `OUT4` | Plug | Vierter Ausgang – identische Kopie des Eingangssignals. |
 
 ## Funktionsweise
 
@@ -76,4 +76,4 @@ Der **ADI_SPLIT_4** ist ein einfacher, aber nützlicher generischer Funktionsblo
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

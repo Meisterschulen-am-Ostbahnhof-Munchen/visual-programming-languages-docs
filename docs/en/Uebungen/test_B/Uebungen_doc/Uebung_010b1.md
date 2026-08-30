@@ -1,8 +1,9 @@
 # Exercise_010b1: AuxFunction2_X1 on DigitalOutput_Q1
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_010b1`. It introduces the third pillar of ISOBUS operation: Auxiliary Functions (AUX-N).
+This article describes the logiBUS® exercise `Uebung_010b1`. It introduces the third pillar of ISOBUS operation: Auxiliary Functions (AUX-N)
 ----
+
 ## Objective of the Exercise
 
 Connecting AUX input devices (e.g., ISOBUS joystick).
@@ -17,7 +18,7 @@ Connecting AUX input devices (e.g., ISOBUS joystick).
 
 ![Uebung_010b1_network](./Uebung_010b1_network.svg)
 
-* **`AuxFunction2_X1`**: Type `isobus::UT::io::Auxiliary::IN::Aux_IX`. This block listens for AUX messages from "Function 2".
+- **`AuxFunction2_X1`**: Type `isobus::UT::io::Auxiliary::IN::Aux_IX`. This block listens for AUX messages from "Function 2".
 
 -----
 
@@ -29,6 +30,6 @@ Unlike softkeys, which are fixed screen elements, an AUX function is a logical o
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

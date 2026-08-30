@@ -3,6 +3,7 @@
 ![ADI_TO_AD](./ADI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_AD** ist ein Composite-Baustein (zusammengesetzter FB), der eine Schnittstellenkonvertierung von einem **ADI**-Adapter (DINT-basiert) zu einem **AD**-Adapter (DWORD-basiert) realisiert. Er fungiert als unidirektionaler Wandler und ermöglicht die nahtlose Integration von Komponenten mit unterschiedlichen Datenadapter-Typen in der 4diac-IDE.
@@ -80,4 +81,4 @@ Der **ADI_TO_AD**-Funktionsblock ist ein nützlicher und übersichtlicher Compos
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

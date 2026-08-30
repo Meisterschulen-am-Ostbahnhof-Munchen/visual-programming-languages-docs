@@ -73,7 +73,7 @@ Im Vergleich zu einfachen digitalen Ausgangsbausteinen bietet logiBUS_LED_PWM_QX
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_030](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_030.md)
+- [Uebung_030](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_030.md)
 
 ## Fazit
 
@@ -83,4 +83,4 @@ Der logiBUS_LED_PWM_QX ist ein spezialisierter Funktionsblock für anspruchsvoll
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

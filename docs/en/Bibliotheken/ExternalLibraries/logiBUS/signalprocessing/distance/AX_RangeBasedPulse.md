@@ -3,9 +3,11 @@
 ![AX_RangeBasedPulse](./AX_RangeBasedPulse.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block generates a pulse on an AX adapter based on a distance traveled (adapter version). It is licensed under the Eclipse Public License 2.0 and designed for use in signal processing of distance data.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -41,7 +43,7 @@ The function block operates according to a hysteresis principle with two thresho
 
 - If the current output is LOW (FALSE) and the new distance `DIST_IN.D1` reaches or exceeds the value `LastDist + DIST_LOW`, `OUT.D1` is set to TRUE and `LastDist` is updated to the current distance value.
 - If the output is HIGH (TRUE) and the new distance reaches or exceeds the value `LastDist + DIST_HIGH`, `OUT.D1` is set to FALSE and `LastDist` is updated.
-3. **Output:** When the state of `OUT.D1` changes, the event `OUT.E1` is sent, and the new state is stored in `LastState` for the next check.
+1. **Output:** When the state of `OUT.D1` changes, the event `OUT.E1` is sent, and the new state is stored in `LastState` for the next check.
 
 ## Technical Features
 
@@ -81,6 +83,7 @@ The Execution Control Chart (ECC) consists of four states:
 - **Other Distance Adapter Function Blocks:** Function blocks exist that aggregate distance values, but this function block combines event processing with threshold logic and asymmetric configuration.
 
 **
+
 ## Conclusion
 
 The `AX_RangeBasedPulse` function block offers a robust and flexible solution for distance-based pulse generation. Thanks to its adapter interface, separately configurable distance thresholds, and hysteresis logic, it is ideally suited for modular use in industrial control systems, particularly in agricultural technology and automation. Its implementation as a BasicFB ensures deterministic and predictable behavior.
@@ -89,7 +92,7 @@ The `AX_RangeBasedPulse` function block offers a robust and flexible solution fo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

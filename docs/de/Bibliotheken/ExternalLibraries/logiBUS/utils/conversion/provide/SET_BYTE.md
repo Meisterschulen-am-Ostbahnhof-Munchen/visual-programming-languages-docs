@@ -3,6 +3,7 @@
 ![SET_BYTE](./SET_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_BYTE** dient dem einfachen Überschreiben einer BYTE-Variablen. Er liest den Wert des Dateneingangs `IN` und schreibt ihn in die InOut-Variable `OUT`, sobald ein Ereignis am Eingang `REQ` eintrifft. Anschließend wird das Ereignis `CNF` ausgegeben.
@@ -38,9 +39,11 @@ _Keine vorhanden._
 ## Funktionsweise
 
 Bei einem Ereignis am Eingang `REQ` wird der Algorithmus `REQ` ausgeführt. Dieser weist dem InOut-Variable `OUT` den Wert von `IN` zu:
+
 ```
 OUT := IN;
 ```
+
 Unmittelbar nach der Zuweisung wird das Ereignis `CNF` gesendet. Die InOut-Variable kann sowohl gelesen als auch von außerhalb des Bausteins (z. B. über eine Verbindung im Applikationsmodell) beschrieben werden – nach dem Schreibvorgang besitzt sie den Wert von `IN`.
 
 ## Technische Besonderheiten

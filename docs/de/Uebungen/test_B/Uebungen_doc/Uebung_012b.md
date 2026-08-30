@@ -20,11 +20,11 @@ Verwendung des `INI` Bausteins zur strukturierten Datenspeicherung. Im Gegensatz
 
 ![Uebung_012b_network](./Uebung_012b_network.svg)
 
-  * **`INI`**: Typ `eclipse4diac::storage::INI`. [cite_start]Dieser Baustein speichert Werte in einer dateibasierten Struktur ab[cite: 1]. Er benötigt zusätzlich zum `KEY` eine `SECTION`.
-  * **Parameter**:
-    * `SECTION`: "SECTION_I1_STORE"
-    * `KEY`: "KEY_I1_STORE"
-    * `DEFAULT_VALUE`: 55 (wird geladen, falls noch keine Datei existiert).
+  - **`INI`**: Typ `eclipse4diac::storage::INI`. [cite_start]Dieser Baustein speichert Werte in einer dateibasierten Struktur ab[cite: 1]. Er benötigt zusätzlich zum `KEY` eine `SECTION`.
+  - **Parameter**:
+    - `SECTION`: "SECTION_I1_STORE"
+    - `KEY`: "KEY_I1_STORE"
+    - `DEFAULT_VALUE`: 55 (wird geladen, falls noch keine Datei existiert).
 
 -----
 
@@ -42,4 +42,4 @@ INI-Dateien sind besonders nützlich, wenn Parameter extern (z.B. über einen PC
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

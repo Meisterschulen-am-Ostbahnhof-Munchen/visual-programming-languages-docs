@@ -3,9 +3,11 @@
 ![ASR_SPLIT_6](./ASR_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASR_SPLIT_6` distributes an incoming ASR signal (Generic Adapter Type) to six identical ASR outputs. It serves as a pure signal splitter and is provided as a generic function block in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::ASR` | Input adapter – the ASR signal to be distributed |
 | `OUT1` – `OUT6` | Plug | `adapter::types::unidirectional::ASR` | Six output adapters – identical copies of the input signal |
 
@@ -55,7 +57,7 @@ There is no state diagram (ECC) because the component does not execute any seque
 ## Comparison with Similar Components
 
 | Component | Outputs | Special Features |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `ASR_SPLIT_2` | 2 | Dual Split |
 | `ASR_SPLIT_4` | 4 | Quad Split |
 | **`ASR_SPLIT_6`** | **6** | **Six-Way Split (this module)** |
@@ -71,4 +73,4 @@ The `ASR_SPLIT_6` function block is a simple yet useful function block for signa
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

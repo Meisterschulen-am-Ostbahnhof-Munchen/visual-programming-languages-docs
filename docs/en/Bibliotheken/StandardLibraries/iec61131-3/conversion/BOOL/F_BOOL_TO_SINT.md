@@ -6,6 +6,7 @@
 
 The function block `F_BOOL_TO_SINT` converts a Boolean value (`BOOL`) into a signed 8-bit integer (`SINT`). This conversion is useful when Boolean values are used in calculations or controls that require integer values.
 ![F_BOOL_TO_SINT](F_BOOL_TO_SINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

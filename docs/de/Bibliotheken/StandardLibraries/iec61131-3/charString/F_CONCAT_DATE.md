@@ -3,6 +3,7 @@
 ![F_CONCAT_DATE](F_CONCAT_DATE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_CONCAT_DATE` fügt einzelne Zeit-/Datumsbestandteile (`YEAR`, `MONTH`, `DAY`) zu einem zusammengesetzten `DATE`-Wert zusammen. Er ist die Umkehrung von [F_SPLIT_DATE](F_SPLIT_DATE.md), das denselben `DATE`-Wert wieder in seine Einzelbestandteile zerlegt.

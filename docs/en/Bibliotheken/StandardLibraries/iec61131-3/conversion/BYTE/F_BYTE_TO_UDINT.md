@@ -6,6 +6,7 @@
 
 The function block `F_BYTE_TO_UDINT` is used to convert a BYTE value to a UDINT value. This function block is particularly useful in scenarios where a type conversion between these two data types is required.
 ![F_BYTE_TO_UDINT](F_BYTE_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +54,7 @@ The function block has no internal states. Execution occurs immediately upon tri
 
 ## 🛠️ Related Exercises
 
-* [Exercise_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
+- [Exercise_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
 
 ## Conclusion
 

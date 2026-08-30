@@ -3,9 +3,11 @@
 ![AUS_TO_AR](./AUS_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUS_TO_AR** is a composite FB for converting an AUS adapter interface (based on USINT) to an AR adapter interface (based on REAL). According to its description, it serves to convert between these two adapter types. The current implementation (version 1.0) simply passes through event and data values without performing an explicit conversion – the actual type conversion must be implemented either through the adapter definitions themselves or through subsequent extensions.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No separate data outputs are available. Data is output exclusively via the **AR_
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `adapter::types::unidirectional::AUS` | OFF_IN | Socket (Input) | USINT-based adapter input |
 | `adapter::types::unidirectional::AR` | AR_OUT | Plug (Output) | REAL-based adapter output |
 
@@ -68,4 +70,4 @@ The function block `AUS_TO_AR` is a simple adapter-to-adapter through-pass block
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

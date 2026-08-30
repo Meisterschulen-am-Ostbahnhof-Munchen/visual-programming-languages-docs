@@ -3,6 +3,7 @@
 ![ASR_SPLIT_2](./ASR_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASR_SPLIT_2** dient der Aufteilung eines eingehenden unidirektionalen ASR-Adapters (Application Service Request) auf zwei identische Ausgangsadapter. Er ist als generischer Baustein konzipiert und ermöglicht es, ein ASR-Signal an zwei separate Verbraucher oder nachfolgende Bausteine weiterzuleiten, ohne die Logik zu verändern.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Richtung | Name | Beschreibung |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::ASR` | Eingang (Socket) | **IN** | Eingehendes ASR-Signal |
 | `adapter::types::unidirectional::ASR` | Ausgang (Plug) | **OUT1** | Erster ausgehender ASR-Pfad |
 | `adapter::types::unidirectional::ASR` | Ausgang (Plug) | **OUT2** | Zweiter ausgehender ASR-Pfad |
@@ -66,4 +67,4 @@ Der **ASR_SPLIT_2** ist ein einfacher, aber nützlicher generischer Baustein zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

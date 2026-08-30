@@ -3,6 +3,7 @@
 ![AS_SPLIT_8](./AS_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AS_SPLIT_8** dient dazu, einen eingehenden *Application Specific* (AS)-Adapter-Datenstrom in acht identische Ausgänge zu verzweigen. Er wird als generischer Baustein (generic FB) bereitgestellt und ist speziell für die Aufteilung von Adapterdaten innerhalb einer IEC 61499-basierten Steuerungsapplikation konzipiert.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | `adapter::types::unidirectional::AS` | IN | Socket (Eingang) | Empfängt den zu verteilenden AS-Datenstrom. |
 | `adapter::types::unidirectional::AS` | OUT1 | Plug (Ausgang) | Erste Kopie des eingehenden AS-Datenstroms. |
 | `adapter::types::unidirectional::AS` | OUT2 | Plug (Ausgang) | Zweite Kopie des eingehenden AS-Datenstroms. |

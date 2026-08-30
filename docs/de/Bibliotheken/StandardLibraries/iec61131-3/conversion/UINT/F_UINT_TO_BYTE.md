@@ -3,6 +3,7 @@
 <img width="1438" height="216" alt="F_UINT_TO_BYTE" src="https://github.com/user-attachments/assets/a8cfd8ac-c7a0-4336-80db-1efc0682ced0" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_UINT_TO_BYTE` dient der Konvertierung eines vorzeichenlosen 16-Bit-Integer-Werts (UINT) in einen 8-Bit-Byte-Wert (BYTE). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
@@ -56,7 +57,7 @@ Der Funktionsblock besitzt keine internen Zustände. Die Konvertierung wird bei 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
+- [Uebung_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 

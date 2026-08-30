@@ -3,6 +3,7 @@
 <img width="1536" height="212" alt="F_TIME_IN_US_TO_ULINT" src="https://github.com/user-attachments/assets/30c49e6f-e058-49c6-84cf-c4478d9a7c69" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_TIME_IN_US_TO_ULINT` dient der Konvertierung eines Zeitwerts in Mikrosekunden (`TIME`) in einen vorzeichenlosen 64-Bit-Integer-Wert (`ULINT`). Dies ist besonders nützlich, wenn Zeitwerte in numerische Berechnungen oder für weitere Verarbeitungsschritte umgewandelt werden müssen.
@@ -56,9 +57,9 @@ Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen We
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
 
-*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
-*   **Beispiel:** `500 * T#1ms = T#500ms`
-*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+-   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+-   **Beispiel:** `500 * T#1ms = T#500ms`
+-   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

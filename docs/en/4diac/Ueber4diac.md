@@ -44,7 +44,7 @@ Guerickestr. 25 · 80805 Munich · Germany
 
 [https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/](https://www.jku.at/lit-cyber-physical-systems-lab/ueber-uns/team/univ-prof-di-dr-alois-zoitl/)
 
-## History:
+## History
 
 The first version of 4diac was presented by ACIN TU Vienna on July 7, 2007.
 
@@ -70,4 +70,4 @@ Details are governed by this agreement:
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

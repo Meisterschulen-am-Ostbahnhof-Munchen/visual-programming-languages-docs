@@ -20,10 +20,10 @@ Erlernen des Umgangs mit Alarm-Masken. Im ISOBUS-Standard haben Alarme Vorrang v
 
 ![Uebung_019a_network](./Uebung_019a_network.svg)
 
-  * **`I1` & `I2`**: Normale Maskenwahl (M1, M2).
-  * **`I3`**: Auslöser für den Alarm.
-  * **`ACK`**: Ein Softkey am Terminal zum Quittieren des Alarms.
-  * **`AlarmMask_A2_medium`**: Eine spezielle Alarm-Maske aus dem Pool.
+  - **`I1` & `I2`**: Normale Maskenwahl (M1, M2).
+  - **`I3`**: Auslöser für den Alarm.
+  - **`ACK`**: Ein Softkey am Terminal zum Quittieren des Alarms.
+  - **`AlarmMask_A2_medium`**: Eine spezielle Alarm-Maske aus dem Pool.
 
 -----
 

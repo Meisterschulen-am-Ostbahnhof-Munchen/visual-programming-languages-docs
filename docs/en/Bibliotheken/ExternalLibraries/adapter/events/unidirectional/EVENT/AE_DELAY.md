@@ -1,9 +1,11 @@
 # AE_DELAY
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AE_DELAY** function block is a wrapper for the standard IEC 61499 function block `E_DELAY`, specifically designed for use with **Event Adapters (AE)**. It enables the delayed forwarding of events within an adapter-based architecture. Instead of conventional event pins, this function block uses adapter sockets and plugs to receive start and stop signals and output the delayed event.
+
 ## Interface Structure
 
 The function block encapsulates the functionality of an on-delay timer in adapter interfaces.
@@ -47,24 +49,24 @@ The **AE_DELAY** block acts as a bridge between the adapter world and the classi
 
 ## Technical Details
 
-* **Package Membership:** The function block is part of the package `adapter::events::unidirectional::timers`.
-* **Encapsulation:** It contains an instance of `iec61499::events::E_DELAY`.
-* **Adapter Type:** Uses the unidirectional event adapter `AE` (`adapter::types::unidirectional::AE`), which typically carries a single event (`E1`).
+- **Package Membership:** The function block is part of the package `adapter::events::unidirectional::timers`.
+- **Encapsulation:** It contains an instance of `iec61499::events::E_DELAY`.
+- **Adapter Type:** Uses the unidirectional event adapter `AE` (`adapter::types::unidirectional::AE`), which typically carries a single event (`E1`).
 
 ## State Overview
 
 The function block itself does not have an explicit state machine (ECC) because it is a composite network (FB). The behavior is entirely determined by the internal `E_DELAY`:
 
-* **Idle:** Waiting for an event at the `START` adapter.
-* **Timing:** After receiving a signal at `START`, the timer `DT` starts.
-* **Triggered:** After `DT` expires, the signal is sent to `EO`, and the block returns to the idle state.
-* **Reset:** A signal at `STOP` during the *Timing* phase immediately resets the block to the idle state.
+- **Idle:** Waiting for an event at the `START` adapter.
+- **Timing:** After receiving a signal at `START`, the timer `DT` starts.
+- **Triggered:** After `DT` expires, the signal is sent to `EO`, and the block returns to the idle state.
+- **Reset:** A signal at `STOP` during the *Timing* phase immediately resets the block to the idle state.
 
 ## Application Scenarios
 
-* **Adapter-Based Controllers:** Ideal for systems that rely heavily on adapter connections to reduce the "spaghetti code" of individual connections.
-* **Delayed Signal Chains:** Inserting delays into an event chain that is logically grouped by adapters.
-* **Process Control:** Delayed start of units or processes controlled via standardized AE interfaces.
+- **Adapter-Based Controllers:** Ideal for systems that rely heavily on adapter connections to reduce the "spaghetti code" of individual connections.
+- **Delayed Signal Chains:** Inserting delays into an event chain that is logically grouped by adapters.
+- **Process Control:** Delayed start of units or processes controlled via standardized AE interfaces.
 
 ## ⚖️ Comparison with Similar Function Blocks
 
@@ -82,4 +84,4 @@ The **AE_DELAY** is an indispensable tool for developers who want to leverage th
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

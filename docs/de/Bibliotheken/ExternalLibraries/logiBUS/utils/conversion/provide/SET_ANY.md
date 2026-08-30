@@ -3,6 +3,7 @@
 ![SET_ANY](./SET_ANY.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_ANY** dient dazu, einen beliebigen Wert vom Eingang `IN` auf eine als InOut-Parameter deklarierte Variable `OUT` zu schreiben. Der Vorgang wird durch ein Ereignis am Eingang `REQ` ausgelöst und nach erfolgreicher Zuweisung mit dem Ausgangsereignis `CNF` quittiert. Der Baustein ist generisch und kann mit beliebigen Datentypen arbeiten, solange die Typen von `IN` und `OUT` kompatibel sind.
@@ -43,9 +44,11 @@ Keine.
 ## Funktionsweise
 
 Der Baustein besitzt einen einzigen verarbeitenden Zustand `REQ`. Tritt am Ereigniseingang `REQ` ein Ereignis auf, wird der Algorithmus `REQ` ausgeführt:
+
 ```
 OUT := IN;
 ```
+
 Nach der Zuweisung wird das Ausgangsereignis `CNF` gesendet. Die Ausführung ist atomar – es findet keine weitere Zustandslogik statt.
 
 ## Technische Besonderheiten
@@ -84,4 +87,4 @@ Es gibt keine weiteren Zustände, keine Verzweigungen oder Zeitüberwachungen.
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

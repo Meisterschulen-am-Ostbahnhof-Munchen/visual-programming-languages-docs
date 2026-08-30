@@ -33,7 +33,7 @@ ELSE
 // Aktion ausführen, wenn die Sensorwerte unterschiedlich sind
 END_IF
 
-2. **Controlling Process Steps:**
+1. **Controlling Process Steps:**
 
 In a production process, the EQ operator can be used to check whether a specific process step has been completed. If the current step equals the target step, the next step can be initiated:
 
@@ -41,13 +41,14 @@ IF EQ(AktuellerSchritt, ZielSchritt) THEN
 // Nächsten Prozessschritt einleiten
 END_IF
 
-3. **Error Detection:**
+1. **Error Detection:**
 
 The EQ operator can also be used for error detection. For example, if a target value and an actual value are compared and they do not match, an error signal can be generated:
 
 IF NOT EQ(Sollwert, Istwert) THEN
 // Fehlersignal generieren
 END_IF
+
 ### Advantages of the EQ Operator
 
 - **Simplicity:** The EQ operator is easy to understand and use, which simplifies the development of control logic.

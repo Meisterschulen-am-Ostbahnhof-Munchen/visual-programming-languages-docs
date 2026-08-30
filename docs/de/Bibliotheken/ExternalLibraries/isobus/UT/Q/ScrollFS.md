@@ -3,6 +3,7 @@
 ![ScrollFS](ScrollFS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `ScrollFS` ist die reine Positions-Engine einer scrollbaren VT-Liste: er hält die aktuelle
@@ -59,7 +60,7 @@ Keine Adapter vorhanden.
    Die acht `ScrollFS`-Events sind 1:1 auf `RampLimitFS`-Events gemappt:
 
    | `ScrollFS`-Event | `RampLimitFS`-Event | Wirkung auf `OUT` |
-   |---|---|---|
+   | --- | --- | --- |
    | `FIRST` | `ZERO` | `OUT := 0` |
    | `PAGE_UP` | `DOWN_FAST` | `OUT -= stObj.i32Step` (geklemmt bei 0) |
    | `LINE_UP` | `DOWN_SLOW` | `OUT -= 1` (geklemmt bei 0) |
@@ -116,7 +117,7 @@ Ereignissen erhalten, jedes Navigations-Event ändert ihn schrittweise oder spri
 
 ## 🛠️ Zugehörige Übungen
 
-* Kein eigenständiges Übungsbeispiel — siehe `Workspace_Scroll/SCROLL_KONZEPT.md` (Projekt
+- Kein eigenständiges Übungsbeispiel — siehe `Workspace_Scroll/SCROLL_KONZEPT.md` (Projekt
   `4diac_training1`) für die vollständige Herleitung anhand eines realen Pools.
 
 ## Fazit

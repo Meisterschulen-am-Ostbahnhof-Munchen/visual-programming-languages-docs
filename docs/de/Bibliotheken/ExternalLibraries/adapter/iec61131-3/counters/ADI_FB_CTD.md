@@ -31,12 +31,12 @@ Keine direkten Daten-Ausgänge; Daten werden über die Adapter-Plugs bereitgeste
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
-| CD   | `adapter::types::unidirectional::AX` | Socket (Eingang) | Ereignis zum Herunterzählen; der Datenwert (D1) wird als CD-Impuls an den internen Zähler weitergegeben. |
-| LD   | `adapter::types::unidirectional::AX` | Socket (Eingang) | Ereignis zum Laden des Zählers mit dem aktuellen Wert von **PV**; der Datenwert (D1) signalisiert den Ladevorgang. |
-| PV   | `adapter::types::unidirectional::ADI` | Socket (Eingang) | Vorgabewert (Preset Value) als `DINT`; das Ereignis (E1) löst eine Aktualisierung des internen PV-Registers aus. |
-| Q    | `adapter::types::unidirectional::AX` | Plug (Ausgang) | Ausgangssignal, das anzeigt, ob der Zählerstand den Wert Null erreicht hat (z. B. `TRUE` bei Null). |
-| CV   | `adapter::types::unidirectional::ADI` | Plug (Ausgang) | Aktueller Zählerstand als `DINT`; wird bei jeder Aktualisierung ausgegeben. |
+| ------ | ----- | ---------- | -------------- |
+| CD | `adapter::types::unidirectional::AX` | Socket (Eingang) | Ereignis zum Herunterzählen; der Datenwert (D1) wird als CD-Impuls an den internen Zähler weitergegeben. |
+| LD | `adapter::types::unidirectional::AX` | Socket (Eingang) | Ereignis zum Laden des Zählers mit dem aktuellen Wert von **PV**; der Datenwert (D1) signalisiert den Ladevorgang. |
+| PV | `adapter::types::unidirectional::ADI` | Socket (Eingang) | Vorgabewert (Preset Value) als `DINT`; das Ereignis (E1) löst eine Aktualisierung des internen PV-Registers aus. |
+| Q | `adapter::types::unidirectional::AX` | Plug (Ausgang) | Ausgangssignal, das anzeigt, ob der Zählerstand den Wert Null erreicht hat (z. B. `TRUE` bei Null). |
+| CV | `adapter::types::unidirectional::ADI` | Plug (Ausgang) | Aktueller Zählerstand als `DINT`; wird bei jeder Aktualisierung ausgegeben. |
 
 ## Funktionsweise
 

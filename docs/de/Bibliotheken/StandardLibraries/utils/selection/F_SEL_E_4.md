@@ -3,6 +3,7 @@
 ![F_SEL_E_4](https://github.com/user-attachments/assets/2deb1c98-9daf-4a3c-b155-a719bb97771b)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock F_SEL_E_4 ist ein ereignisbasierter Selektor, der aus bis zu vier Eingängen einen auswählt und an den Ausgang weiterleitet. Er ist gemäß der Norm IEC 61131-3 klassifiziert und dient als Standard-Selektionsfunktion in Automatisierungssystemen.
@@ -63,9 +64,9 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weitergabe erfo
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_019a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
-* [Uebung_019b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
-* [Uebung_019c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
+- [Uebung_019a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019a.md)
+- [Uebung_019b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+- [Uebung_019c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
 
 ## Fazit
 

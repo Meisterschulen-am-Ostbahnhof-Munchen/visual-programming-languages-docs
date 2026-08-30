@@ -3,6 +3,7 @@
 ![AR_SPLIT_7](./AR_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AR_SPLIT_7** ist ein generischer Funktionsblock, der einen eingehenden AR‑Adapter-Socket (vom Typ `adapter::types::unidirectional::AR`) auf sieben separate AR‑Adapter-Plugs verteilt. Er dient dazu, ein AR‑Signal an bis zu sieben verschiedene Empfänger weiterzuleiten, ohne dass die Daten mehrfach bereitgestellt werden müssen.
@@ -72,4 +73,4 @@ Der **AR_SPLIT_7** ist ein schlanker, generischer Funktionsblock zur einfachen V
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

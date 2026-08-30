@@ -3,9 +3,11 @@
 ![INI_AB2](./INI_AB2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `INI_AB2` is used to read and write REAL values to or from a `settings.ini` file. Access is via a combination of section name and key name. Communication with external systems is via a bidirectional **AB2 adapter**, which allows values from the INI file to be passed to other function blocks or values from other function blocks to be received and stored in the file. The function block was developed according to the IEC 61499-2 standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `INI_AB2` is used to read and write REAL values to or from a 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QI | BOOL | Qualifier for the event input; controls its execution. |
 | SECTION | STRING | Name of the section in `settings.ini`. |
 | KEY | STRING | Name of the key within the section. |
@@ -48,7 +50,7 @@ The `INI_AB2` block internally contains an instance of the function block `eclip
 
 1. **Initialization (Read Operation):** An INIT event at the input sets the internal parameters (Section, Key, Default Value) and activates the internal INI instance (`INI.INIT`). After successful reading, the read value is sent to the connected module via the adapter output (`VAL.DI1`). Simultaneously, outputs `INITO`, `QO`, and `STATUS` are updated.
 2. **Write Operation:** The connected module can provide a new value via the adapter input (`VAL.DO1`). As soon as the event `VAL.EO1` arrives, the value is saved in the INI instance (`INI.SET`). The confirmation (`INI.SETO`) is returned to the adapter via `VAL.EI1`.
-2. **Write Operation:** The connected module can provide a new value via the adapter input (`VAL.DO1`). 3. **Cyclic Reading:** After each INIT operation, the internal GET command is automatically triggered, allowing the current value to be read from the file and output via the adapter.
+3. **Write Operation:** The connected module can provide a new value via the adapter input (`VAL.DO1`). 3. **Cyclic Reading:** After each INIT operation, the internal GET command is automatically triggered, allowing the current value to be read from the file and output via the adapter.
 
 The circuitry ensures that both read and write accesses can be handled bidirectionally via the adapter. The module thus implements persistent data storage with external control.
 
@@ -89,6 +91,6 @@ The `INI_AB2` function block is a practical extension for IEC 61499-based automa
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

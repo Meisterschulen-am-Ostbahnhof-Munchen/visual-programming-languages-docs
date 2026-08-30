@@ -1,8 +1,9 @@
 # QD
 
-![](https://user-images.githubusercontent.com/69573151/210781704-73d6a020-e7c0-430e-9797-2d0ef1cc6cc3.png)
+![QD (Output Double Word) Baustein Schnittstelle](https://user-images.githubusercontent.com/69573151/210781704-73d6a020-e7c0-430e-9797-2d0ef1cc6cc3.png)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der QD-Funktionsblock ist ein Ausgabeservice-Interface-Baustein für die Ausgabe von Doppelwort-Daten (DWORD). Er dient als Schnittstelle zwischen der Anwendungslogik und den physikalischen Ausgabegeräten eines Ressourcen-Managers.
@@ -74,7 +75,7 @@ Im Vergleich zu einfacheren Ausgabeblöcken bietet QD:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_060](../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 

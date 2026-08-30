@@ -3,6 +3,7 @@
 ![ATM_IN_MS_TO_AULI](ATM_IN_MS_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ATM_IN_MS_TO_AULI** ist ein Composite-Baustein, der einen `TIME`-Wert (übertragen über den [ATM](../../../types/unidirectional/TIME/ATM.md)-Adapter) in Millisekunden auf einen `ULINT`-Wert (64-Bit-Ganzzahl (vorzeichenlos)) umrechnet und über den [AULI](../../../types/unidirectional/ULINT/AULI.md)-Adapter ausgibt. Er gehört zur Blockfamilie `ATM_IN_<EINHEIT>_TO_<ZIELTYP>`, die dieselbe Umrechnung für alle vier Zeiteinheiten (MS, NS, S, US) und alle fünf Zielganzzahl-/Gleitkommatypen bereitstellt.
@@ -56,7 +57,7 @@ Der gesamte Vorgang erfolgt synchron und ohne Zwischenspeicherung – jede erfol
 Der Baustein besitzt keine eigene Zustandsmaschine. Der Ablauf lässt sich als einfacher Schritt beschreiben:
 
 | Schritt | Aktion |
-|---------|--------|
+| --------- | -------- |
 | 1 | Warten auf Ereignis an **IN.E1** |
 | 2 | Umrechnung des Datenwerts von `TIME` (Millisekunden) nach `ULINT` über `F_TIME_IN_MS_TO_ULINT` |
 | 3 | Ausgabe des umgerechneten Werts an **OUT.D1** und Ereignis an **OUT.E1** |

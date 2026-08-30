@@ -3,6 +3,7 @@
 ![Q_FontAttributes](https://user-images.githubusercontent.com/116869307/214147610-3b768d9e-7d5f-4260-abb0-1393bea3f0ff.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_FontAttributes** is a standards-compliant function module for modifying font attributes in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.28) specification for VT systems.
@@ -48,13 +49,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object ID
 - `INITO` confirms operational readiness
-2. **Attribute Change**:
+1. **Attribute Change**:
+
 - `REQ` with new font attributes
 - Changes the object's font properties
 - `CNF` returns the result status and previous values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -68,7 +72,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Attribute Properties
 
 | Feature | Description |
-|---------------|----------------------------------|
+| --------------- | ---------------------------------- |
 | Color Palette | 8-bit Color Index (ISO 11783-6 A.3) |
 | Sizes | Standardized Font Sizes |
 | Fonts | Predefined Types |
@@ -77,7 +81,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-------|-------------------------|------------------------------------|
+------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful Change |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT Not Ready |
@@ -95,7 +99,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_FontAttributes | VtTextStyle | VtFontManager |
----------------|------------------|-------------|---------------|
+--------------- | ------------------ | ------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Color Control | ✔ | ✔ | ✖ |
 | Size Control | ✔ | ✖ | ✔ |

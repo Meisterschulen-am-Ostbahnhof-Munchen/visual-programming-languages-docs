@@ -5,6 +5,7 @@
 **Unidirektionaler Adapter für 1 Ereignis und 1 Zeichenkette**
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Adapter **AIS** (Adapter Interface String) stellt eine unidirektionale Schnittstelle zur Verfügung, über die genau ein Ereignis (E1) zusammen mit einer zugehörigen Zeichenkette (D1) von einer Plug‑Instanz an eine Socket‑Instanz übertragen werden kann. Er wird verwendet, um einfache, gerichtete Datenflüsse zu realisieren, bei denen keinerlei Rückmeldung oder zusätzliche Steuerung erforderlich ist.

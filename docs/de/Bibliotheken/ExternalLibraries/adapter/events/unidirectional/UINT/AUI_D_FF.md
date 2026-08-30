@@ -37,10 +37,10 @@ Der Adaptertyp **AUI** bietet einen unidirektionalen Kanal, der genau ein Ereign
 
 ## Funktionsweise
 
-Der FB nutzt intern den Baustein `E_D_FF_ANY` aus der IEC‑61499‑Standardbibliothek.  
+Der FB nutzt intern den Baustein `E_D_FF_ANY` aus der IEC‑61499‑Standardbibliothek.
 
-- Bei jedem **Taktereignis** auf `I.E1` wird der aktuelle Datenwert von `I.D1` übernommen.  
-- Der übernommene Wert wird am Ausgang `Q.D1` bereitgestellt und parallel ein **Ausgabeereignis** auf `Q.E1` ausgelöst.  
+- Bei jedem **Taktereignis** auf `I.E1` wird der aktuelle Datenwert von `I.D1` übernommen.
+- Der übernommene Wert wird am Ausgang `Q.D1` bereitgestellt und parallel ein **Ausgabeereignis** auf `Q.E1` ausgelöst.
 - Der gespeicherte Wert bleibt solange erhalten, bis ein neues Taktereignis einen neuen Datenwert übernimmt.
 
 ## Technische Besonderheiten
@@ -79,4 +79,4 @@ Der `AUI_D_FF` stellt ein standardkonformes D‑Flipflop in der 4diac‑IDE dar,
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

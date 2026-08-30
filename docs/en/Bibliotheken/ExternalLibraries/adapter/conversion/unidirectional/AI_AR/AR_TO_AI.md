@@ -3,9 +3,11 @@
 ![AR_TO_AI](./AR_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR_TO_AI** function block is a composite module that converts a unidirectional AR adapter (input with data type REAL) into a unidirectional AI adapter (output with data type INT). It is used for numerical type conversion within 4diac networks and encapsulates an IEC 61131 conversion module.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The data output is provided via the plug **AI_OUT**. The output value **AI_OUT.D
 ### **Adapters**
 
 | Label | Direction | Type | Remark |
-|-------------|----------|-----|-----------|
+| ------------- | ---------- | ----- | ----------- |
 | AR_IN | Input | `adapter::types::unidirectional::AR` | REAL Adapter (Input) |
 | AI_OUT | Output | `adapter::types::unidirectional::AI` | INT Adapter (Output) |
 
@@ -71,6 +73,6 @@ The **AR_TO_AI** is a compact, adapter-based conversion block that enables the c
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

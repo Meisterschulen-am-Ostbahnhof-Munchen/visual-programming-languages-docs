@@ -29,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Name | Typ | Richtung | Beschreibung |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::AS` | Socket | Empfängt das zu verteilende AS‑Signal. |
 | OUT1 | `adapter::types::unidirectional::AS` | Plug | Erster Ausgang – gleiches Signal wie am Eingang. |
 | OUT2 | `adapter::types::unidirectional::AS` | Plug | Zweiter Ausgang – gleiches Signal wie am Eingang. |
@@ -77,4 +77,4 @@ Der **AS_SPLIT_7** ist ein einfacher, aber nützlicher Funktionsblock zur passiv
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

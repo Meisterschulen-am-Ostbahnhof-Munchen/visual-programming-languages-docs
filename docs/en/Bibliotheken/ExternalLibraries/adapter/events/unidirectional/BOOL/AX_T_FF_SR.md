@@ -4,6 +4,7 @@
 ![AX_T_FF_SR_ecc](./AX_T_FF_SR_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_T_FF_SR is an event-driven bistable function block with toggle functionality. It is a flip-flop element that can operate as both a set-reset flip-flop and a toggle flip-flop. The component combines the properties of an SR flip-flop with additional toggle functionality via a clock input.
@@ -78,6 +79,7 @@ RESET (Q.D1 = FALSE)
 ├── S ────→ SET (Q.D1 = TRUE)
 │
 └── CLK ─→ SET (Q.D1 = TRUE)
+
 ## Application Scenarios
 
 - State storage in control applications
@@ -94,11 +96,11 @@ Comparison with [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md
 
 ## 🛠️ Related exercises
 
-* [Uebung_004a7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
-* [Uebung_006a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
-* [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_006a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a4_AX.md)
-* [Uebung_006a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a_AX.md)
+- [Uebung_004a7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+- [Uebung_006a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
+- [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_006a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a4_AX.md)
+- [Uebung_006a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a_AX.md)
 
 ## Conclusion
 

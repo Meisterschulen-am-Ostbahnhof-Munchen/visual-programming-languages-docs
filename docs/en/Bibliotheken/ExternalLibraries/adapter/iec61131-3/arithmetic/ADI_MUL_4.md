@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_MUL_4` is a generic, adapter-based block for IEC 61499, used to perform arithmetic multiplications. It calculates the product of four input values provided via unidirectional ADI adapters (`adapter::types::unidirectional::ADI`) and outputs the result via a corresponding output adapter. By encapsulating signals in adapters, this block ensures a clearer application diagram in the 4diac IDE.
@@ -31,14 +32,14 @@ The function block `ADI_MUL_4` is a generic, adapter-based block for IEC 61499, 
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ADI`): First factor for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::ADI`): Second factor for multiplication.
-* **IN3** (Type: `adapter::types::unidirectional::ADI`): Third factor for multiplication.
-* **IN4** (Type: `adapter::types::unidirectional::ADI`): Fourth factor for multiplication.
+- **IN1** (Type: `adapter::types::unidirectional::ADI`): First factor for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::ADI`): Second factor for multiplication.
+- **IN3** (Type: `adapter::types::unidirectional::ADI`): Third factor for multiplication.
+- **IN4** (Type: `adapter::types::unidirectional::ADI`): Fourth factor for multiplication.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ADI`): Result of the multiplication ($OUT = IN1 × IN2 × IN3 × IN4$).
+- **OUT** (Type: `adapter::types::unidirectional::ADI`): Result of the multiplication ($OUT = IN1 × IN2 × IN3 × IN4$).
 
 ## Functionality
 
@@ -50,8 +51,8 @@ The calculated result, along with the corresponding trigger event, is forwarded 
 
 ## Technical Features
 
-* **Generic Type (`GEN_ADI_MUL`):** The function block is internally declared as a generic function block. This allows for flexible handling of various data types (e.g., `INT`, `REAL`, `LREAL`), depending on the specifications of the connected ADI adapters.
-* **Encapsulation by Adapters:** Since both data and events are routed via unidirectional adapters (`ADI`), the number of visible connection lines in the 4diac IDE is drastically reduced. This improves the clarity of complex control applications.
+- **Generic Type (`GEN_ADI_MUL`):** The function block is internally declared as a generic function block. This allows for flexible handling of various data types (e.g., `INT`, `REAL`, `LREAL`), depending on the specifications of the connected ADI adapters.
+- **Encapsulation by Adapters:** Since both data and events are routed via unidirectional adapters (`ADI`), the number of visible connection lines in the 4diac IDE is drastically reduced. This improves the clarity of complex control applications.
 
 ## State Overview
 
@@ -59,13 +60,13 @@ The function block `ADI_MUL_4` is a **stateless** function block. It does not ha
 
 ## Application Scenarios
 
-* **Physical Calculations:** Calculation of volumes (V = l × b × h) with an additional scaling or correction factor.
-* **Measurement Scaling:** Multi-level weighting or scaling of analog sensor values across multiple factors.
-* **Power Calculations:** Multiplication of various electrical or mechanical parameters to determine total power or efficiency in process automation.
+- **Physical Calculations:** Calculation of volumes (V = l × b × h) with an additional scaling or correction factor.
+- **Measurement Scaling:** Multi-level weighting or scaling of analog sensor values across multiple factors.
+- **Power Calculations:** Multiplication of various electrical or mechanical parameters to determine total power or efficiency in process automation.
 
 ## Comparison with Similar Function Blocks
 
-* **Standard `MUL` function block (IEC 61131-3):** Classic multipliers use direct data and event pins. `ADI_MUL_4`, on the other hand, uses adapters, which simplifies routing but requires a corresponding adapter infrastructure in the project. * **ADI_MUL_2 / ADI_MUL_3:** Similar function blocks with fewer inputs. The `ADI_MUL_4` is particularly suitable when exactly four factors need to be multiplied together without cascading multiple 2x multipliers.
+- **Standard `MUL` function block (IEC 61131-3):** Classic multipliers use direct data and event pins. `ADI_MUL_4`, on the other hand, uses adapters, which simplifies routing but requires a corresponding adapter infrastructure in the project. * **ADI_MUL_2 / ADI_MUL_3:** Similar function blocks with fewer inputs. The `ADI_MUL_4` is particularly suitable when exactly four factors need to be multiplied together without cascading multiple 2x multipliers.
 
 ## Change Detection
 

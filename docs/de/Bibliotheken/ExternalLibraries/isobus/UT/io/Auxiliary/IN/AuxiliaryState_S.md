@@ -1,6 +1,7 @@
 # AuxiliaryState_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `AuxiliaryState_S` ist eine strukturierte Datenstruktur (Struct), die den Zustand eines Hilfseingangs (Auxiliary Input) repräsentiert. Er wird im Kontext der ISOBUS-Schnittstelle (ISO 11783) für die Kommunikation in landwirtschaftlichen und forstwirtschaftlichen Maschinen verwendet. Dieser Datentyp kapselt sowohl den eigentlichen Wert des Eingangs als auch eine Steuerinformation für dessen zyklische Übertragung.
@@ -30,9 +31,9 @@ Der Datentyp dient als Container für Informationen über einen Hilfseingang. Da
 
 ## Technische Besonderheiten
 
-*   **ISOBUS-Kontext:** Der Datentyp ist spezifisch für die ISOBUS-Kommunikation (Package `isobus::UT::io::Auxiliary::IN`) konzipiert.
-*   **Zyklussteuerung:** Die integrierte Steuerung der Zyklizität (`bCyclic`) ist ein charakteristisches Merkmal, das die Effizienz der Buskommunikation berücksichtigt.
-*   **Initialwerte:** Beide Felder haben definierte Initialwerte (`value=255`, `bCyclic=TRUE`), was für eine deterministische Initialisierung sorgt.
+-   **ISOBUS-Kontext:** Der Datentyp ist spezifisch für die ISOBUS-Kommunikation (Package `isobus::UT::io::Auxiliary::IN`) konzipiert.
+-   **Zyklussteuerung:** Die integrierte Steuerung der Zyklizität (`bCyclic`) ist ein charakteristisches Merkmal, das die Effizienz der Buskommunikation berücksichtigt.
+-   **Initialwerte:** Beide Felder haben definierte Initialwerte (`value=255`, `bCyclic=TRUE`), was für eine deterministische Initialisierung sorgt.
 
 ## Zustandsübersicht
 
@@ -42,9 +43,9 @@ Der Datentyp dient als Container für Informationen über einen Hilfseingang. Da
 
 Dieser Struct wird typischerweise als Dateneingang oder -ausgang in Funktionsbausteinen (FBs) verwendet, die ISOBUS-Hilfseingänge verarbeiten oder steuern. Beispiele sind:
 
-*   FBs zum Auslesen des Zustands von Schaltern, Potentiometern oder Sensoren, die als Hilfseingänge konfiguriert sind.
-*   FBs, die Hilfseingangswerte verarbeiten und an andere Systemkomponenten weiterleiten.
-*   FBs, die basierend auf dem `bCyclic`-Flag entscheiden, ob ein Wert aktualisiert und gesendet werden muss.
+-   FBs zum Auslesen des Zustands von Schaltern, Potentiometern oder Sensoren, die als Hilfseingänge konfiguriert sind.
+-   FBs, die Hilfseingangswerte verarbeiten und an andere Systemkomponenten weiterleiten.
+-   FBs, die basierend auf dem `bCyclic`-Flag entscheiden, ob ein Wert aktualisiert und gesendet werden muss.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

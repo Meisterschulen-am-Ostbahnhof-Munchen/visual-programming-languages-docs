@@ -3,6 +3,7 @@
 ![Q_SelectActiveWorkingSet](https://user-images.githubusercontent.com/116869307/214148333-97dd868b-07dc-4e3c-9dcf-aa68d76603f2.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_SelectActiveWorkingSet** is a standards-compliant function block for controlling active workspaces in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.64) specification for VT systems from version 6 onwards.
@@ -33,13 +34,16 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` without parameters
 - `INITO` confirms operational readiness
-2. **Workspace change**:
+1. **Workspace change**:
+
 - `REQ` with 8-byte ISO NAME of the target workspace
 - Performs context change
 - `CNF` returns operational status and previous workspace
-3. **ISO NAME format**:
+1. **ISO NAME format**:
+
 - 8-byte array according to ISO 11783-5 specification
 
 ## Technical features
@@ -52,7 +56,7 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 ## ISO NAME Structure
 
 | Byte | Content |
-|------|-------------------------|
+| ------ | ------------------------- |
 | 0-1 | Vendor ID |
 | 2-3 | Device ID |
 | 4-5 | Device Instance |
@@ -61,7 +65,7 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful Switch |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -79,7 +83,7 @@ The **Q_SelectActiveWorkingSet** is a standards-compliant function block for con
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_SelectActiveWorkingSet | VtContextSwitch | VtWorkspaceManager |
----------------|--------------------------|-----------------|--------------------|
+--------------- | -------------------------- | ----------------- | -------------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | VT Version | 6+ | All | All |
 | ISO NAME | ✔ | ✖ | ✖ |

@@ -3,9 +3,11 @@
 ![logiBUS_DO](./logiBUS_DO.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The logiBUS_DO GlobalConstants define a collection of constants for configuring digital outputs (DOs) in the logiBUS system. These constants are used for pin assignment to digital output channels and provide a standardized interface for hardware configuration.
+
 ## Interface Structure
 
 ### **Event Inputs**

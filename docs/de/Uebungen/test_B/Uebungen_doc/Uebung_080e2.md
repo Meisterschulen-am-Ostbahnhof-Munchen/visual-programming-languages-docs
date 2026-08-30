@@ -13,7 +13,7 @@ Diese Übung demonstriert die Verwendung eines Aufwärtszählers (E_CTU) in Komb
 Die Übung verwendet die folgenden vordefinierten Funktionsbausteine im Netzwerk:
 
 | Bausteinname | Typ | Parameter | Kurzbeschreibung |
-|--------------|-----|-----------|------------------|
+| -------------- | ----- | ----------- | ------------------ |
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` | Erzeugt ein Ereignis (`IND`) bei einfachem Tastendruck auf Eingang I1. |
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` | Erzeugt ein Ereignis (`IND`) bei einfachem Tastendruck auf Eingang I2. |
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` | Zyklischer Ereignisgenerator; erzeugt nach Start alle 1 ms ein Ereignis (`EO`) bis zum Stopp. |
@@ -39,16 +39,16 @@ Die Übung verwendet die folgenden vordefinierten Funktionsbausteine im Netzwerk
 
 ### Datenverbindungen
 
-- `E_CTU.CV` (Aktueller Zählwert) → `E_D_FF_ANY.D`  
-- `E_D_FF_ANY.Q` → `Q_NumericValue.u32NewValue` (Ausgabe des gefilterten Zählwerts)  
-- `E_CTU.Q` (Überlauf/Status) → `E_D_FF.D`  
-- `E_D_FF.Q` → `DigitalOutput_Q1.OUT` (Binärer Ausgangszustand)  
+- `E_CTU.CV` (Aktueller Zählwert) → `E_D_FF_ANY.D`
+- `E_D_FF_ANY.Q` → `Q_NumericValue.u32NewValue` (Ausgabe des gefilterten Zählwerts)
+- `E_CTU.Q` (Überlauf/Status) → `E_D_FF.D`
+- `E_D_FF.Q` → `DigitalOutput_Q1.OUT` (Binärer Ausgangszustand)
 
 ### Hinweise zur Übung
 
-- **Lernziele**: Verständnis für die Kombination von Aufwärtszählern, Ereignisflüssen und zeitverzögerter Wertübernahme (Eventbremse). Typische Anwendung: Entprellung von Zählimpulsen oder Glättung von Messwerten.  
-- **Schwierigkeitsgrad**: Fortgeschritten – Kenntnisse in IEC 61499 Ereignissteuerung und der Verwendung von `E_D_FF_ANY` werden vorausgesetzt.  
-- **Vorkenntnisse**: Grundlagen zu Funktionsbausteinen, Ereignisverbindungen und dem 4diac-IDE-Workflow.  
+- **Lernziele**: Verständnis für die Kombination von Aufwärtszählern, Ereignisflüssen und zeitverzögerter Wertübernahme (Eventbremse). Typische Anwendung: Entprellung von Zählimpulsen oder Glättung von Messwerten.
+- **Schwierigkeitsgrad**: Fortgeschritten – Kenntnisse in IEC 61499 Ereignissteuerung und der Verwendung von `E_D_FF_ANY` werden vorausgesetzt.
+- **Vorkenntnisse**: Grundlagen zu Funktionsbausteinen, Ereignisverbindungen und dem 4diac-IDE-Workflow.
 - **Start der Übung**: Das SubApp-Objekt `Uebung_080e2` muss in ein 4diac-Projekt eingebunden werden. Die Hardware-Eingänge (I1, I2) und Ausgänge (Q1, OutputNumber_N1) sind entsprechend der logiBUS-Konfiguration anzuschließen.
 
 ## Zusammenfassung
@@ -59,6 +59,6 @@ Die Übung 080e2 veranschaulicht, wie ein Ereignisgesteuerter Zähler mit einer 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

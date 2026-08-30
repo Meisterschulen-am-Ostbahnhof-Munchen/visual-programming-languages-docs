@@ -3,6 +3,7 @@
 ![NVS_AX2](./NVS_AX2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NVS_AX2** dient dem Laden und Speichern von REAL-Daten im nichtflüchtigen Speicher (NVS) eines ESP32 über einen Adapter. Er kapselt die Initialisierung und den Zugriff auf einen einzelnen NVS-Eintrag, der über einen Schlüssel (KEY) identifiziert wird. Der FB bietet eine initialisierende Ereignisschnittstelle und eine bidirektionale Adapter-Schnittstelle, über die extern auf den gespeicherten Wert zugegriffen werden kann. Der Baustein ist nach IEC 61499 modelliert und für den Einsatz in verteilten Automatisierungssystemen optimiert.
@@ -90,5 +91,5 @@ Der Funktionsblock `NVS_AX2` ist eine effiziente und standardkonforme Lösung zu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

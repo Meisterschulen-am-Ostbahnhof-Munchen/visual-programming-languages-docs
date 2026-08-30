@@ -10,57 +10,57 @@ Diese Übung demonstriert die Steuerung einer einfachen Spiegelabfolge mithilfe 
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalOutput_Q1**  
-  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
-  - **Parameter**:  
-    - `QI` = `TRUE`  
-    - `Output` = `Output_Q1`  
-  - **Ereigniseingänge**: `OUT` (Adapter)  
+- **DigitalOutput_Q1**
+  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+  - **Parameter**:
+    - `QI` = `TRUE`
+    - `Output` = `Output_Q1`
+  - **Ereigniseingänge**: `OUT` (Adapter)
   - **Funktion**: Schaltet den physikalischen Ausgang `Output_Q1` auf TRUE, sobald am Adaptereingang ein TRUE‑Signal anliegt.
 
-- **SoftKey_UP_F1**  
-  - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`  
-  - **Parameter**:  
-    - `QI` = `TRUE`  
-    - `u16ObjId` = `SoftKey_F1` (Softkey F1)  
-    - `InputEvent` = `SK_PRESSED`  
-  - **Ereignisausgänge**: `IND`  
+- **SoftKey_UP_F1**
+  - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`
+  - **Parameter**:
+    - `QI` = `TRUE`
+    - `u16ObjId` = `SoftKey_F1` (Softkey F1)
+    - `InputEvent` = `SK_PRESSED`
+  - **Ereignisausgänge**: `IND`
   - **Funktion**: Erzeugt ein Ereignis am Ausgang `IND`, sobald die zugeordnete Softkey‑Taste (F1) gedrückt wird. Der Softkey ist ständig freigegeben (QI=TRUE).
 
-- **AX_FB_SR**  
-  - **Typ**: `adapter::events::unidirectional::AX_SR`  
-  - **Parameter**: Keine Parameter  
-  - **Ereigniseingänge**: `S` (Set), `R` (Reset)  
-  - **Adapterausgang**: `Q`  
+- **AX_FB_SR**
+  - **Typ**: `adapter::events::unidirectional::AX_SR`
+  - **Parameter**: Keine Parameter
+  - **Ereigniseingänge**: `S` (Set), `R` (Reset)
+  - **Adapterausgang**: `Q`
   - **Funktion**: Ein asynchroner SR‑Flipflop‑Adapter. Bei einem Ereignis auf `S` wird der Ausgang `Q` auf TRUE gesetzt, bei einem Ereignis auf `R` auf FALSE zurückgesetzt. Der Ausgang bleibt bis zum nächsten Ereignis erhalten.
 
-- **SoftKey_F2_DOWN**  
-  - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`  
-  - **Parameter**:  
-    - `QI` = `TRUE`  
-    - `u16ObjId` = `SoftKey_F2` (Softkey F2)  
-    - `InputEvent` = `SK_PRESSED`  
-  - **Ereignisausgänge**: `IND`  
+- **SoftKey_F2_DOWN**
+  - **Typ**: `isobus::UT::io::Softkey::Softkey_IE`
+  - **Parameter**:
+    - `QI` = `TRUE`
+    - `u16ObjId` = `SoftKey_F2` (Softkey F2)
+    - `InputEvent` = `SK_PRESSED`
+  - **Ereignisausgänge**: `IND`
   - **Funktion**: Wie SoftKey_UP_F1, aber reagiert auf Softkey F2. Erzeugt ein Ereignis bei Tastendruck auf F2.
 
 ## Programmablauf und Verbindungen
 
 Der Ablauf ist in zwei Kommentarfelder unterteilt:
 
-- **START-Knopf** (bei Softkey F1)  
+- **START-Knopf** (bei Softkey F1)
 - **Endlage** (bei Softkey F2)
 
 ### Ereignisverbindungen
 
-- `SoftKey_UP_F1.IND` → `AX_FB_SR.S`  
+- `SoftKey_UP_F1.IND` → `AX_FB_SR.S`
   Ein Druck auf Softkey F1 sendet ein Ereignis an den Set‑Eingang des Flipflops.
 
-- `SoftKey_F2_DOWN.IND` → `AX_FB_SR.R`  
+- `SoftKey_F2_DOWN.IND` → `AX_FB_SR.R`
   Ein Druck auf Softkey F2 sendet ein Ereignis an den Reset‑Eingang des Flipflops.
 
 ### Adapterverbindung
 
-- `AX_FB_SR.Q` → `DigitalOutput_Q1.OUT`  
+- `AX_FB_SR.Q` → `DigitalOutput_Q1.OUT`
   Der Ausgang des Flipflops wird als Adaptersignal an den digitalen Ausgangsbaustein weitergeleitet. Liegt Q auf TRUE, schaltet der Ausgang `Output_Q1` durch.
 
 ### Funktionsweise
@@ -84,4 +84,4 @@ Die Übung eignet sich für Einsteiger in die ereignisgesteuerte Programmierung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

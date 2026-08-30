@@ -3,9 +3,11 @@
 ![Uebung_006f_SR_network](./Uebung_006f_SR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise is designed to help you understand and apply a **set-dominant toggle flip-flop** (FB_SR_T_FF). This function block combines the characteristics of an SR flip-flop with a toggle function, where the set input (S1) takes precedence over the reset input (R). The exercise demonstrates the basic interconnection of digital inputs, the flip-flop, and a digital output in the 4diac IDE using the logiBUS library.
+
 ## Function Blocks (FBs) Used
 
 This exercise consists of five function blocks connected to each other in the logiBUS network.
@@ -86,6 +88,6 @@ Exercise *Exercise_006f_SR* demonstrates the practical application of a set-domi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

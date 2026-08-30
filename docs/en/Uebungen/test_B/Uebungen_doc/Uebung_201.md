@@ -3,6 +3,7 @@
 ![Uebung_201_network](./Uebung_201_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a **mutual interlock** using the function block `ILOCK_BLOCK`. The goal is to link two digital inputs (`I1`, `I2`) in such a way that only one of the two corresponding outputs (`Q1`, `Q2`) can be active at any given time. As soon as an input signal is present, the corresponding output is set and the other output is disabled. This exercise uses the hardware modules `logiBUS_IX` (digital input) and `logiBUS_QX` (digital output), as well as the interlock module from the `logiBUS` library.
@@ -53,6 +54,7 @@ The `ILOCK_BLOCK` evaluates both channels. When `DI_UP` is active (`1`) and the 
 DI_UP` is active (`1`) and the event `EI_UP` occurs.
 
 DO_UP` is set to `1` and `DO_DOWN` is reset to `0` (locking).
+
 ### Sub-Blocks: `DigitalOutput_Q1`
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
@@ -81,7 +83,7 @@ The exercise flow is determined by the **event and data connections** in the Sub
 
 The two digital inputs `DigitalInput_I1` and `DigitalInput_I2` monitor the physical inputs `Input_I1` and `Input_I2`, respectively. The event `IND` is triggered on a rising or falling edge.
 
-2. **Event Forwarding to ILOCK**
+1. **Event Forwarding to ILOCK**
 
 - `DigitalInput_I1.IND` → `ILOCK.EI_UP`
 - `DigitalInput_I2.IND` → `ILOCK.EI_DOWN`
@@ -90,11 +92,11 @@ Simultaneously, the current digital values are passed to `ILOCK` via the data co
 
 - `DigitalInput_I1.IN` → `ILOCK.DI_UP`
 - `DigitalInput_I2.IN` → `ILOCK.DI_DOWN`
-3. **Locking Logic**
+1. **Locking Logic**
 
 ILOCK_BLOCK` processes the incoming events and data. It sets the output `DO_UP` (or `DO_DOWN`) to the value of the corresponding input, provided the other channel is not already active. Internal logic ensures that only one channel can deliver the value `TRUE` at any given time. The output events `EO_UP` and `EO_DOWN` are generated accordingly.
 
-4. **Output to Hardware**
+1. **Output to Hardware**
 
 The events and data of `ILOCK` are forwarded to the digital outputs:
 
@@ -125,6 +127,6 @@ After completing this exercise, you will be able to integrate and extend simple 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

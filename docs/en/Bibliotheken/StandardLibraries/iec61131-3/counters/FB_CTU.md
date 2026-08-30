@@ -36,7 +36,8 @@ The FB_CTU performs the following steps when the event `REQ` occurs:
 1. If `R` is `TRUE`, the counter value (`CV`) is reset to 0.
 ...
 
-3. The output `Q` is set to `TRUE` if `CV` is greater than or equal to `PV`.
+2. The output `Q` is set to `TRUE` if `CV` is greater than or equal to `PV`.
+
 - The counter value (`CV`) is limited to a maximum value of 32767.
 - The FB_CTU is a simple function block without internal state management between calls.
 
@@ -49,6 +50,7 @@ The FB_CTU has no internal states. The logic is re-executed with each `REQ` even
 - **FB_CTUD**: A combined up and down counter that can count both up and down.
 
 The FB_CTU is a simple and effective function block for up counting operations. It is particularly suitable for applications where events need to be counted and an action triggered when a specific value is reached. Its clear interface structure and simple functionality make it a useful component in control engineering.
+
 ## Technical Features
 
 ## State Overview

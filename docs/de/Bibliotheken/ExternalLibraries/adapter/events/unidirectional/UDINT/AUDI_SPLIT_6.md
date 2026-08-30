@@ -29,14 +29,14 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
-| Socket   | **IN**  | `adapter::types::unidirectional::AUDI` | Eingehender Adapter für den zu verteilenden Datenstrom. |
-| Plug     | **OUT1** | `adapter::types::unidirectional::AUDI` | Erster Ausgangsadapter (Kopie des Eingangs). |
-| Plug     | **OUT2** | `adapter::types::unidirectional::AUDI` | Zweiter Ausgangsadapter. |
-| Plug     | **OUT3** | `adapter::types::unidirectional::AUDI` | Dritter Ausgangsadapter. |
-| Plug     | **OUT4** | `adapter::types::unidirectional::AUDI` | Vierter Ausgangsadapter. |
-| Plug     | **OUT5** | `adapter::types::unidirectional::AUDI` | Fünfter Ausgangsadapter. |
-| Plug     | **OUT6** | `adapter::types::unidirectional::AUDI` | Sechster Ausgangsadapter. |
+| ---------- | ------ | ----- | -------------- |
+| Socket | **IN** | `adapter::types::unidirectional::AUDI` | Eingehender Adapter für den zu verteilenden Datenstrom. |
+| Plug | **OUT1** | `adapter::types::unidirectional::AUDI` | Erster Ausgangsadapter (Kopie des Eingangs). |
+| Plug | **OUT2** | `adapter::types::unidirectional::AUDI` | Zweiter Ausgangsadapter. |
+| Plug | **OUT3** | `adapter::types::unidirectional::AUDI` | Dritter Ausgangsadapter. |
+| Plug | **OUT4** | `adapter::types::unidirectional::AUDI` | Vierter Ausgangsadapter. |
+| Plug | **OUT5** | `adapter::types::unidirectional::AUDI` | Fünfter Ausgangsadapter. |
+| Plug | **OUT6** | `adapter::types::unidirectional::AUDI` | Sechster Ausgangsadapter. |
 
 ## Funktionsweise
 
@@ -75,4 +75,4 @@ Der `AUDI_SPLIT_6` ist ein einfacher, aber flexibler Baustein zur Vervielfachung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

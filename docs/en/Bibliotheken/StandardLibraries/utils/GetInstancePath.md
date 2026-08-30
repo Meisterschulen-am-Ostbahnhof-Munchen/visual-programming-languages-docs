@@ -32,6 +32,7 @@ No adapters available.
 1. Upon receiving the `REQ` event, the function block begins determining its own instance path.
 2. The path is formatted with the specified separator character (`Sep`).
 3. The `CNF` event is triggered, and the determined path is output via the `Path` output.
+
 - The function block uses a service interface to communicate with the resource level.
 - **Idle**: Waiting for a `REQ` request.
 - **Processing**: Determines the instance path and outputs it via `CNF`.
@@ -43,7 +44,7 @@ The `GetInstancePath`-FB is a useful tool for dynamically determining the instan
 
 --
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## Technical Features
 

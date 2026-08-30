@@ -3,6 +3,7 @@
 ![ARRAY2VALUES_2_BYTE](ARRAY2VALUES_2_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ARRAY2VALUES_2_BYTE` zerlegt ein `BYTE`-Array der Größe 2 in 2 einzelne Skalarvariablen `OUT_1`…`OUT_2`. Er gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [ARRAY2VALUES_2_LREAL](ARRAY2VALUES_2_LREAL.md)) und dient der Umwandlung von Array-Daten in diskrete Einzelwerte.

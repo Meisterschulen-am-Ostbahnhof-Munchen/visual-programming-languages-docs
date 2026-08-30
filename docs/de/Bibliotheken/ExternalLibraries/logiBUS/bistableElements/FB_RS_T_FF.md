@@ -3,6 +3,7 @@
 ![FB_RS_T_FF](./FB_RS_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FB_RS_T_FF` realisiert einen bistabilen, reset-dominanten Latch mit zusätzlicher Toggle-Funktion. Er kombiniert die Eigenschaften eines RS-Flipflops (Setzen und Zurücksetzen) mit der Möglichkeit, den Ausgang bei jedem positiven Flankenwechsel des Taktsignals umzuschalten. Der Reset-Eingang hat dabei Priorität, gefolgt vom Set-Eingang und dann der Toggle-Funktion.
@@ -49,6 +50,7 @@ Bei jedem Ereignis `REQ` wird der Algorithmus abgearbeitet:
 - Anschließend wird die interne Variable `EDGE` auf den aktuellen Wert von `CLK` gesetzt, um Flanken für den nächsten Aufruf zu erkennen.
 
 Der Algorithmus wird wie folgt im ST-Code umgesetzt:
+
 ```structured text
 IF R1 THEN
     Q1 := BOOL#FALSE;

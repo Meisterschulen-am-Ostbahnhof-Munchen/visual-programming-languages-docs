@@ -3,9 +3,11 @@
 ![AI_FB_CTUD](./AI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_FB_CTUD** implements an up/down counter of data type **INT** in an adapter-based variant. It encapsulates the IEC 61131-3 standard function block `FB_CTUD` and makes its functionality available to the 4diac IDE via the adapter interfaces (`AX` and `AI`). The function block is particularly suitable for use in industrial control systems that rely on event-driven communication.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -109,6 +111,6 @@ The `AI_FB_CTUD` is a powerful, adapter-based up/down counter that transfers the
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

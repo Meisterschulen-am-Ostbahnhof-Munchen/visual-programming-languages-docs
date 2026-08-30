@@ -3,6 +3,7 @@
 ![AE_AUI_DEMUX_2](AE_AUI_DEMUX_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `AE_AUI_DEMUX_2` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `EVENT`. Anders als `AE_DEMUX_2` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.

@@ -5,6 +5,7 @@
 *Bild nicht vorhanden*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Composite FB konvertiert einen AUDI-Adapter (UDINT) in einen AULI-Adapter (ULINT). Er dient als Schnittstelle zwischen Komponenten, die unterschiedliche Adaptertypen für vorzeichenlose Ganzzahlen verwenden. Der Baustein steht unter der Eclipse Public License 2.0 (EPL 2.0) und wird von der HR Agrartechnik GmbH bereitgestellt.

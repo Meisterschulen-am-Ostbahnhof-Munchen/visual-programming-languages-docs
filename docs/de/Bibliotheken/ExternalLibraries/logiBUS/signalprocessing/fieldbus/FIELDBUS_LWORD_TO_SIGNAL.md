@@ -3,6 +3,7 @@
 ![FIELDBUS_LWORD_TO_SIGNAL](./FIELDBUS_LWORD_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_LWORD_TO_SIGNAL** dient der Umwandlung eines LWORD-Wertes aus einem Feldbussystem in ein gültiges Signal. Er übernimmt eine Eingangsgröße und gibt diese nur dann unverändert weiter, wenn ihr Wert innerhalb eines definierten gültigen Bereichs liegt. Andernfalls wird ein Nullwert ausgegeben und die Gültigkeit als `FALSE` signalisiert.

@@ -3,9 +3,11 @@
 ![SoftKeyActivationCode](./SoftKeyActivationCode.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 SoftKeyActivationCode is a collection of global constants for processing softkey events in ISOBUS-compatible systems. These constants define various activation states of softkeys on virtual terminals and are used to control user interactions in agricultural machinery.
+
 ## Interface Structure
 
 SoftKeyActivationCode consists of global constants and not a function block. Therefore, there are no event or data interfaces in the conventional sense.

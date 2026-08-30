@@ -32,10 +32,10 @@ There are no direct data outputs. The calculation result is provided via the out
 
 All communication for this function block is implemented via adapters of type `AULI` (unidirectional):
 
-* **IN1 (Socket)**:
-* **Type**: `adapter::types::unidirectional::AULI`
-* **Description**: First input of the division (dividend/counter).
-* **IN2 (Socket)**:
+- **IN1 (Socket)**:
+- **Type**: `adapter::types::unidirectional::AULI`
+- **Description**: First input of the division (dividend/counter).
+- **IN2 (Socket)**:
 
 **Type**: `adapter::types::unidirectional::AULI`
 
@@ -55,10 +55,11 @@ $$\text{OUT} = \frac{\text{IN1}}{\text{IN2}}$$
 
 Since this is a generic function block (`GEN_AULI_DIV`), it can adapt to various numeric data types at runtime or during instantiation in the 4diac IDE, provided these are supported by type `AULI`. The calculation is typically triggered by an update event on one of the input adapters (`IN1` or `IN2`). The result is then provided at the output adapter `OUT` along with a corresponding output event.
 
-* **Generic Nature**: The attribute `GenericClassName` with the value `'GEN_AULI_DIV'` makes the function block flexible and not rigidly tied to a single data type (such as only `REAL` or `INT`).
-* **Encapsulation via Adapters**: Since no traditional event and data ports are used, the visual design in the function block diagram (FBD) remains very clear. The logical relationship between data and triggers is encapsulated in the `AULI` adapter.
-* **Unidirectional Adapters**: The use of `unidirectional::AULI` indicates that the information flow is strictly unidirectional (from the sockets to the function block and from the function block to the plug).
-* ## State Overview
+- **Generic Nature**: The attribute `GenericClassName` with the value `'GEN_AULI_DIV'` makes the function block flexible and not rigidly tied to a single data type (such as only `REAL` or `INT`).
+- **Encapsulation via Adapters**: Since no traditional event and data ports are used, the visual design in the function block diagram (FBD) remains very clear. The logical relationship between data and triggers is encapsulated in the `AULI` adapter.
+- **Unidirectional Adapters**: The use of `unidirectional::AULI` indicates that the information flow is strictly unidirectional (from the sockets to the function block and from the function block to the plug).
+
+- ## State Overview
 
 Since this function block is a basic arithmetic function block, it typically exhibits simple, stateless behavior (i.e., it behaves like a classic Execution Control Chart (ECC) with a default state that reacts to input events):
 
@@ -69,16 +70,19 @@ Since this function block is a basic arithmetic function block, it typically exh
 
 *Note on Division by Zero:* Depending on the implementation of the runtime environment for the generic type `GEN_AULI_DIV`, mechanisms to prevent division by zero (e.g., outputting `NaN`, infinity, or intercepting via the adapter status) should be considered.
 
-* **Sensor Value Scaling**: Division of raw analog values by a scaling factor for conversion to physical units.
-* **Ratio Measurement**: Calculation of ratios in process automation (e.g., flow rate ratio of two media).
-* **Averaging**: Use in computational networks where total values need to be divided by a number.
-* **Structured Architectures**: Use in systems that consistently rely on adapter-based communication to minimize the number of visible connection lines in the system model.
-* ## Comparison with Similar Components
-* **Standard `DIV` component**: A classic IEC 61131-3 / IEC 61499 `DIV` component uses direct data inputs (`IN1`, `IN2`) and event ports (`REQ`, `CNF`). The `AULI_DIV_2`, on the other hand, bundles these signals in adapters, which significantly simplifies wiring for complex signal structures.
-* **Standard `DIV` component**: A classic IEC 61131-3 / IEC 61499 `DIV` component uses direct data inputs (`IN1`, `IN2`) and event ports (`REQ`, `CNF`). The `AULI_DIV_2`, however, bundles these signals in adapters, which significantly simplifies wiring for complex signal structures.
-* * **Other AULI Arithmetic Blocks** (e.g., `AULI_ADD`, `AULI_SUB`): These use the same interface philosophy with sockets and plugs, but perform different mathematical operations.
+- **Sensor Value Scaling**: Division of raw analog values by a scaling factor for conversion to physical units.
+- **Ratio Measurement**: Calculation of ratios in process automation (e.g., flow rate ratio of two media).
+- **Averaging**: Use in computational networks where total values need to be divided by a number.
+- **Structured Architectures**: Use in systems that consistently rely on adapter-based communication to minimize the number of visible connection lines in the system model.
+
+- ## Comparison with Similar Components
+
+- **Standard `DIV` component**: A classic IEC 61131-3 / IEC 61499 `DIV` component uses direct data inputs (`IN1`, `IN2`) and event ports (`REQ`, `CNF`). The `AULI_DIV_2`, on the other hand, bundles these signals in adapters, which significantly simplifies wiring for complex signal structures.
+- **Standard `DIV` component**: A classic IEC 61131-3 / IEC 61499 `DIV` component uses direct data inputs (`IN1`, `IN2`) and event ports (`REQ`, `CNF`). The `AULI_DIV_2`, however, bundles these signals in adapters, which significantly simplifies wiring for complex signal structures.
+- - **Other AULI Arithmetic Blocks** (e.g., `AULI_ADD`, `AULI_SUB`): These use the same interface philosophy with sockets and plugs, but perform different mathematical operations.
 
 The `AULI_DIV_2` is a modern, modular function block for arithmetic division in Eclipse 4diac. Through the consistent use of unidirectional adapters, it promotes clean and well-organized software design in distributed control systems according to IEC 61499 by elegantly bundling data and control events.
+
 ## Technical Features
 
 ## State Overview

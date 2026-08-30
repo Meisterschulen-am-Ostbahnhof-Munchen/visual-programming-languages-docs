@@ -59,7 +59,7 @@ Da der ATM-Adapter keine interne Zustandsmaschine besitzt (zustandsloser Adapter
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | ATM (dieser Adapter) | Andere unidirektionale Adapter (z. B. mit mehreren Events/Daten) |
-|---------|----------------------|----------------------------------------------------------------|
+| --------- | ---------------------- | ---------------------------------------------------------------- |
 | Ereignisse | 1 (E1) | meist mehrere (z. B. INIT, REQ, IND, RSP) |
 | Daten | 1 (TIME) | oft mehrere Daten oder verschiedene Typen |
 | Komplexität | gering | mittel bis hoch |
@@ -75,4 +75,4 @@ Der ATM-Adapter ist ein minimaler, aber praxisrelevanter Baustein zur unidirekti
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

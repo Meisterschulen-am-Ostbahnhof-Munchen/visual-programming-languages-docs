@@ -3,6 +3,7 @@
 ![AVG](./AVG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AVG** (Array Average) berechnet den arithmetischen Mittelwert (Durchschnitt) aller Elemente eines Integer-Arrays. Er ist für den Einsatz in der Steuerungstechnik konzipiert und ermöglicht eine schnelle statistische Auswertung von Messwerten oder Prozessdaten.
@@ -67,7 +68,7 @@ Da es sich um einen **kombinatorischen Funktionsblock** handelt, existieren kein
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | **AVG** | Typischer IEC‑61131-3 AVG-Baustein |
-|---|---|---|
+| --- | --- | --- |
 | **Parametrierung** | Dynamisch via Array (kein Limit) | Oft statische Array-Größe oder Listen |
 | **Ereignisgesteuert** | Ja (REQ/CNF) | Nein (reine Funktion) |
 | **Ausgabetyp** | `REAL` | Meist `REAL` oder `LREAL` |
@@ -83,4 +84,4 @@ Der FB **AVG** bietet eine einfache und effiziente Möglichkeit, den Durchschnit
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

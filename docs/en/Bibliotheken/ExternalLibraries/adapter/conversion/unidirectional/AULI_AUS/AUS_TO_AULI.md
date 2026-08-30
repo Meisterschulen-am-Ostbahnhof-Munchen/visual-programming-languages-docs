@@ -3,9 +3,11 @@
 ![AUS_TO_AULI](./AUS_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_TO_AULI` is a composite block for converting an AUS adapter (UNSIGNED SHORT INTEGER) to an AULI adapter (UNSIGNED LONG INTEGER). It enables the direct forwarding of events and data between these two unidirectional adapter types, with an implicit type conversion from USINT to ULINT.
+
 ## Interface Structure
 
 ### **Event Inputs**

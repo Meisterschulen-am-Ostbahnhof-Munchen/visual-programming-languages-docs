@@ -6,6 +6,7 @@
 
 The function block `F_REAL_TO_UINT` converts a REAL value (floating-point number) to a UINT value (unsigned integer). This conversion is particularly useful when exchanging data between systems that use different data types or when an explicit type conversion is required.
 ![F_REAL_TO_UINT](F_REAL_TO_UINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,6 +38,7 @@ The underlying algorithm is:
 ALGORITHM REQ
 OUT := REAL_TO_UINT(IN);
 END_ALGORITHM
+
 ## Technical Features
 
 - The conversion is performed using the standard function `REAL_TO_UINT`, which rounds the REAL value to the nearest UINT value.

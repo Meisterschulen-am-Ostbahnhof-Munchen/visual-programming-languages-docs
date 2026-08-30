@@ -3,6 +3,7 @@
 ![F_DAY_OF_WEEK](F_DAY_OF_WEEK.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_DAY_OF_WEEK` determines the day of the week, as a number, from a date (`DATE`). It is a simple calendar-calculation function block per IEC 61131-3.

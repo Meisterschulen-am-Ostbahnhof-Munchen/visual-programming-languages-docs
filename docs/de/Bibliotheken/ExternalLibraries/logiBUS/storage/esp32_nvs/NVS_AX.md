@@ -3,6 +3,7 @@
 ![NVS_AX](NVS_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `NVS_AX` lädt und speichert einen `BOOL`-Wert unter einem Schlüssel (`KEY`) im nichtflüchtigen Speicher (Non-Volatile Storage, NVS) des ESP32. Er ist das boolesche Gegenstück zu [NVS_AB](NVS_AB.md) und verwendet dieselbe Zwei-Adapter-Architektur, jedoch mit unidirektionalen `AX`-Adaptern statt `AB`.

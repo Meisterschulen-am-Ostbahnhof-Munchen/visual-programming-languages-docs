@@ -1,8 +1,9 @@
 # Exercise_004a9: with E_SPLIT_3
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004a9`. Here, the concept of sequential event splitting is extended to three objectives.
+This article describes the logiBUS® exercise `Uebung_004a9`. Here, the concept of sequential event splitting is extended to three objectives
 ----
+
 ## Objective of the Exercise
 
 Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three processes can be triggered sequentially with a single trigger.
@@ -17,10 +18,10 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ![Uebung_004a9_network](./Uebung_004a9_network.svg)
 
-* **`DigitalInput_CLK_I1`**: The central trigger (pushbutton).
-* **`E_SPLIT_3`**: Distributes the input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
-* **`E_T_FF_Q1`, `Q2`, `Q3`**: Three independent flip-flops.
-* **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three physical lamps.
+- **`DigitalInput_CLK_I1`**: The central trigger (pushbutton).
+- **`E_SPLIT_3`**: Distributes the input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
+- **`E_T_FF_Q1`, `Q2`, `Q3`**: Three independent flip-flops.
+- **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three physical lamps.
 
 -----
 

@@ -3,6 +3,7 @@
 ![AR_CALIBRATE_3P](./AR_CALIBRATE_3P.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_CALIBRATE_3P** ermöglicht eine 3‑Punkt‑Kalibrierung eines analogen Eingangssignals unter Verwendung von Adaptern. Er ist speziell für Joysticks ausgelegt, die einen Mittenversatz (Center‑Drift) aufweisen, und korrigiert diesen durch Linearisierung zwischen drei Referenzpunkten: Minimum, Mittelwert und Maximum. Die Kalibrierungspunkte werden gespeichert und können bei Bedarf neu eingestellt werden.
@@ -22,7 +23,7 @@ Keine expliziten Ereignisausgänge vorhanden. Die Ausgabe erfolgt ausschließlic
 ### **Daten-Eingänge**
 
 | Name | Datentyp | Vorgabewert | Kommentar |
-|------|----------|-------------|-----------|
+| ------ | ---------- | ------------- | ----------- |
 | MIN_REF | REAL | 0.0 | Zielwert für den kleinsten Eingangswert (Min). |
 | MID_REF | REAL | 50.0 | Zielwert für den Mittelwert (Mid). |
 | MAX_REF | REAL | 100.0 | Zielwert für den größten Eingangswert (Max). |
@@ -34,7 +35,7 @@ Keine direkten Datenausgänge – alle Ausgaben werden über die **Plugs** (Ausg
 ### **Adapter**
 
 | Richtung | Name | Adaptertyp | Kommentar |
-|----------|------|------------|-----------|
+| ---------- | ------ | ------------ | ----------- |
 | **Plug** (Ausgang) | Y | `adapter::types::unidirectional::AR` | Kalibrierter Ausgabewert (Analogwert plus Ereignis). |
 | **Plug** (Ausgang) | X_MIN | `adapter::types::bidirectional::AR2` | Gespeicherter Minimalwert (vom Rohwert). |
 | **Plug** (Ausgang) | X_MID | `adapter::types::bidirectional::AR2` | Gespeicherter Mittelwert (vom Rohwert). |
@@ -78,7 +79,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 ## Zustandsübersicht
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Warte – kein Ereignis anliegend. Transitionen: Bei `SET` → IDLE (nur Referenzwerte setzen); bei `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → IDLE (keine Aktion); bei `C_MIN.E1[C_MIN.D1]` → CAL_MIN; bei `C_MID.E1[C_MID.D1]` → CAL_MID; bei `C_MAX.E1[C_MAX.D1]` → CAL_MAX; bei `X.E1` → REQ. |
 | **REQ** | Berechnung des kalibrierten Ausgangswerts. Nach Ausführung sofort zurück zu IDLE. |
 | **CAL_MIN** | Speichert den aktuellen Rohwert als Minimum (`X_MIN.DO1 := X.D1`). Geht automatisch nach IDLE. |
@@ -102,7 +103,7 @@ Die Kalibrierung basiert auf einer stückweisen linearen Interpolation zwischen 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | **AR_SCALE** | Einfache lineare Skalierung (2‑Punkt) – ohne Korrektur von Nichtlinearitäten in der Mitte. |
 | **AR_CALIBRATE_2P** | Zwei‑Punkt‑Kalibrierung (Min, Max) – kann Mittenversatz nicht adressieren. |
 | **AR_CALIBRATE_3P** (dieser Baustein) | Drei‑Punkt‑Kalibrierung mit separater Kalibrierung der Mitte – ideal für Joysticks mit Center‑Drift. |

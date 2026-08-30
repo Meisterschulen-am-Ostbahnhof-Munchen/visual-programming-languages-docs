@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_004a2_3` based on the provided data.
+
 # Exercise_004a2_3: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE
 
 ![Uebung_004a2_3_network](./Uebung_004a2_3_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **pulse circuit** (toggle function) that can be controlled by two different inputs. The goal is to switch a digital output (e.g., a lamp) on and off by pressing one of two buttons.
@@ -75,10 +77,12 @@ The circuit flow is as follows:
 3. **Merge**: The events from both inputs are connected to the function block `E_MERGE_3` (to `EI1` and `EI2`). As soon as one of the events arrives, the merge block immediately outputs an event at output `EO`.
 ... 4. **Toggle**: The combined event reaches the `CLK` input of the `E_T_FF`. This causes the flip-flop to invert (toggle) its state `Q`.
 
-5. **Output**:
-* The data signal `Q` (TRUE/FALSE) is sent to the data input `OUT` of the output block `DigitalOutput_Q1`.
-* Simultaneously, the event output `EO` of the flip-flop triggers the `REQ` input of the output block to update the physical output.
-*
+4. **Output**:
+
+- The data signal `Q` (TRUE/FALSE) is sent to the data input `OUT` of the output block `DigitalOutput_Q1`.
+- Simultaneously, the event output `EO` of the flip-flop triggers the `REQ` input of the output block to update the physical output.
+-
+
 ## Summary
 
 In the exercise `Uebung_004a2_3`, a classic push-button circuit with two operating points is implemented. Learning objectives include working with the `E_MERGE` function block for bundling event signals and using the `E_T_FF` (toggle flip-flop) for state storage. Furthermore, it is demonstrated how specific push-button events (here: single click) are processed in the LogiBUS library.

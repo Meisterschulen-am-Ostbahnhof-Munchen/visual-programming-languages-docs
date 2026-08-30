@@ -3,6 +3,7 @@
 ![OR_6](https://user-images.githubusercontent.com/116869307/214143660-1a2216f3-f723-4864-8a8a-8deeb4e0ea8c.png)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der OR_6 Funktionsblock ist ein generischer Bitweise-ODER-Baustein, der sechs Eingangswerte verarbeitet. Er führt eine bitweise logische ODER-Operation auf den sechs Eingangswerten durch und gibt das Ergebnis aus. Der Baustein ist nach der IEC 61131-3 Norm klassifiziert und kann mit beliebigen Bit-Datentypen (ANY_BIT) arbeiten.
@@ -39,9 +40,11 @@ Keine Adapter vorhanden.
 ## Funktionsweise
 
 Bei Empfang des REQ-Ereignisses führt der OR_6-Baustein eine bitweise ODER-Operation auf allen sechs Eingangswerten durch. Die Operation wird nach folgender Logik ausgeführt:
+
 ```
 OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5 OR IN6
 ```
+
 Nach Abschluss der Berechnung wird das CNF-Ereignis zusammen mit dem Ergebniswert ausgegeben.
 
 ## Technische Besonderheiten

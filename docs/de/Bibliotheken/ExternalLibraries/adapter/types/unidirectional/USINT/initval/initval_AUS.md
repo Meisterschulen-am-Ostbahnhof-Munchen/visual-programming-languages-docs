@@ -3,6 +3,7 @@
 ![initval_AUS](initval_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AUS` ist der konfigurierbare Initialisierungsbaustein für den [AUS](../AUS.md)-Adapter (Datentyp `USINT`, 8-Bit-Ganzzahl (vorzeichenlos)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AUS`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

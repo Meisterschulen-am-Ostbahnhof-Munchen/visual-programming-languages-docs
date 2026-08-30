@@ -3,6 +3,7 @@
 ![Uebung_001g_AX_network](./Uebung_001g_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verarbeitung eines digitalen Eingangssignals (I1) unter Verwendung einer Negation und einer zeitlichen Verzögerung. Der Eingangswert wird nach einem initialen Ereignis und einer definierten Verzögerung negiert auf einen digitalen Ausgang (Q1) ausgegeben. Ein besonderer Fokus liegt auf dem Verhalten des Negationsbausteins, der auch dann einen gültigen Wert (TRUE) liefert, wenn der Eingang beim Systemstart noch nicht abgefragt wurde.
@@ -61,7 +62,7 @@ Der Ablauf ist ereignisgesteuert und folgt dieser Reihenfolge:
 
 - **Schwierigkeitsgrad**: Einsteiger
 - **Vorkenntnisse**: Grundlegendes Verständnis der 4diac-IDE, Ereignis‑ und Datenverbindungen.
-- **Lernziele**: 
+- **Lernziele**:
   - Umgang mit digitalen Ein‑ und Ausgängen.
   - Verwendung von Verzögerungsbausteinen (`E_DELAY`).
   - Anwendung von Negationsbausteinen mit Initialisierungssteuerung (`AX_NOT_INIT`).
@@ -77,4 +78,4 @@ Die Übung `Uebung_001g_AX` zeigt, wie ein digitales Eingangssignal nach einer d
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

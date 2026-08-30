@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_MUL_2` ist ein generischer arithmetischer Multiplikationsbaustein für die 4diac-IDE, der auf dem IEC 61499-Standard basiert. Er dient dazu, zwei Eingangswerte miteinander zu multiplizieren. Die Besonderheit dieses Bausteins liegt in der Verwendung von unidirektionalen Adaptern (`ADI`) zur Datenübertragung anstelle von klassischen Daten- und Ereignis-Anschlüssen. Dies ermöglicht eine modulare und lose gekoppelte Signalverarbeitung.
@@ -32,11 +33,11 @@ Der Funktionsbaustein `ADI_MUL_2` ist ein generischer arithmetischer Multiplikat
 
 Der Funktionsbaustein nutzt Adapter zur Kapselung von Daten und Ereignissen:
 
-*   **Sockets (Eingangs-Adapter):**
-    *   **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Faktor für die Multiplikation (Multiplikand).
-    *   **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Faktor für die Multiplikation (Multiplikator).
-*   **Plugs (Ausgangs-Adapter):**
-    *   **OUT** (Typ: `adapter::types::unidirectional::ADI`): Das Ergebnis der Multiplikation ($OUT = IN1 \times IN2$).
+-   **Sockets (Eingangs-Adapter):**
+    -   **IN1** (Typ: `adapter::types::unidirectional::ADI`): Erster Faktor für die Multiplikation (Multiplikand).
+    -   **IN2** (Typ: `adapter::types::unidirectional::ADI`): Zweiter Faktor für die Multiplikation (Multiplikator).
+-   **Plugs (Ausgangs-Adapter):**
+    -   **OUT** (Typ: `adapter::types::unidirectional::ADI`): Das Ergebnis der Multiplikation ($OUT = IN1 \times IN2$).
 
 ## Funktionsweise
 
@@ -48,9 +49,9 @@ Das Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergeben und steht
 
 ## Technische Besonderheiten
 
-*   **Generische Implementierung:** Durch das Attribut `GenericClassName = 'GEN_ADI_MUL'` ist der Baustein datentypunabhängig konzipiert.
-*   **Kapselung durch Adapter:** Die Verwendung des unidirektionalen Adapters `ADI` reduziert die Anzahl der sichtbaren Linien im Funktionsplan, da Daten und Ereignisse in einer Verbindung gebündelt übertragen werden.
-*   **Compiler-Kontext:** Der Baustein ist im Paket `adapter::iec61131::arithmetic` organisiert und importiert die Klasse `eclipse4diac::core::GenericClassName`.
+-   **Generische Implementierung:** Durch das Attribut `GenericClassName = 'GEN_ADI_MUL'` ist der Baustein datentypunabhängig konzipiert.
+-   **Kapselung durch Adapter:** Die Verwendung des unidirektionalen Adapters `ADI` reduziert die Anzahl der sichtbaren Linien im Funktionsplan, da Daten und Ereignisse in einer Verbindung gebündelt übertragen werden.
+-   **Compiler-Kontext:** Der Baustein ist im Paket `adapter::iec61131::arithmetic` organisiert und importiert die Klasse `eclipse4diac::core::GenericClassName`.
 
 ## Zustandsübersicht
 
@@ -58,8 +59,8 @@ Der Funktionsbaustein verhält sich rein zustandslos (bzw. kombinatorisch). Es e
 
 ## Anwendungsszenarien
 
-*   **Modulare Signalverarbeitung:** Perfekt geeignet für Steuerungsarchitekturen, die konsequent auf Adapter-Verbindungen setzen, um die Übersichtlichkeit von komplexen Funktionsplänen zu wahren.
-*   **Skalierbare Berechnungen:** Einsatz in mathematischen Berechnungsnetzwerken innerhalb von IEC 61499 Anwendungen, bei denen unterschiedliche numerische Datentypen multipliziert werden müssen.
+-   **Modulare Signalverarbeitung:** Perfekt geeignet für Steuerungsarchitekturen, die konsequent auf Adapter-Verbindungen setzen, um die Übersichtlichkeit von komplexen Funktionsplänen zu wahren.
+-   **Skalierbare Berechnungen:** Einsatz in mathematischen Berechnungsnetzwerken innerhalb von IEC 61499 Anwendungen, bei denen unterschiedliche numerische Datentypen multipliziert werden müssen.
 
 ## Vergleich mit ähnlichen Bausteinen
 

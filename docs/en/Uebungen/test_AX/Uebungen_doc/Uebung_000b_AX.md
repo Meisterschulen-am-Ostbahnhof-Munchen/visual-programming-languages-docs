@@ -64,7 +64,7 @@ The exercise `Uebung_000b_AX` demonstrates a simple AND logic function implement
 
 The exercise `Uebung_000b_AX` demonstrates a simple AND logic function implemented entirely with adapter function blocks. ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

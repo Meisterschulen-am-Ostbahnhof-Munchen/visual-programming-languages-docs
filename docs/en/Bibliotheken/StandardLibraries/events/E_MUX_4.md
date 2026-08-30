@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_MUX_4` (Event Multiplexer) is a function block according to IEC 61499 that combines four event inputs (`EI1` to `EI4`) into a single event output (`EO`). In addition to combining the inputs, the block outputs a data output, `K`, indicating which input triggered the event. It is the counterpart to the `E_DEMUX_4`.
@@ -50,7 +51,7 @@ In this way, the event flow is merged while preserving information about the eve
 
 ## 🛠️ Related Exercises
 
-* [Exercise_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
+- [Exercise_087a2](../../../Uebungen/test_B/Uebungen_doc/Uebung_087a2.md)
 
 ## Conclusion
 

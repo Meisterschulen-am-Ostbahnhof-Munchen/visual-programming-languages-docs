@@ -1,10 +1,12 @@
 Here is the documentation for Exercise 151 based on the provided data.
+
 # Exercise_151: Pulse Counter
 
 ![Uebung_151_network](./Uebung_151_network.svg)
 *(Insert image of the exercise here, if available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a sub-application (`SubAppType`) named **Exercise_151**. The goal of the exercise is to acquire and process pulse signals via a hardware interface. The incoming raw data is converted, and then the derivative (rate of change) is calculated using a mathematical function block. This is typically used to determine a speed or frequency from a counter reading.
@@ -46,18 +48,19 @@ The exercise flow is defined by the event and data chain:
 
 1. **Signal Acquisition**: The function block `logiBUS_PI_ID` acquires signals at input `PulseInput_I8`. As soon as new data is available, event `IND` is triggered, and the data value is made available at output `IN`.
 2. **Type Conversion**:
-* The signal first passes to function block `F_DWORD_TO_UDINT`.
-* The result is forwarded to `F_UDINT_TO_REAL`.
-* This chain ensures that the signal is converted from a raw binary format (`DWORD`) into a floating-point number (`REAL`).
-* The signal is then converted to a floating-point number (`REAL`). 3. **Calculation**:
-* The converted `REAL` value is passed to the `in` input of the `FT_DERIV` block.
-* The `FT_DERIV` block calculates the change in the input signal per unit of time. Since the input is an accumulated counter value (pulses), the derivative corresponds to the current pulse frequency (pulses per second/minute, depending on the time base).
+
+- The signal first passes to function block `F_DWORD_TO_UDINT`.
+- The result is forwarded to `F_UDINT_TO_REAL`.
+- This chain ensures that the signal is converted from a raw binary format (`DWORD`) into a floating-point number (`REAL`).
+- The signal is then converted to a floating-point number (`REAL`). 3. **Calculation**:
+- The converted `REAL` value is passed to the `in` input of the `FT_DERIV` block.
+- The `FT_DERIV` block calculates the change in the input signal per unit of time. Since the input is an accumulated counter value (pulses), the derivative corresponds to the current pulse frequency (pulses per second/minute, depending on the time base).
 
 **Learning Objectives:**
 
-* Integration of hardware inputs (LogiBUS).
-* Handling data type conversions in IEC 61499 / IEC 61131.
-* Application of mathematical functions from the OSCAT library for signal processing.
+- Integration of hardware inputs (LogiBUS).
+- Handling data type conversions in IEC 61499 / IEC 61131.
+- Application of mathematical functions from the OSCAT library for signal processing.
 
 ## Summary
 

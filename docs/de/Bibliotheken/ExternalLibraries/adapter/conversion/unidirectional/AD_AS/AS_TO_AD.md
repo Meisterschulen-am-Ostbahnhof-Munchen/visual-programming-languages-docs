@@ -3,6 +3,7 @@
 ![AS_TO_AD](./AS_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AS_TO_AD** ist ein zusammengesetzter Baustein (Composite FB), der eine SINT-Adapter-Schnittstelle (AS) in eine DWORD-Adapter-Schnittstelle (AD) umwandelt. Er dient als Konverter zwischen zwei unidirektionalen Adaptertypen und wird typischerweise eingesetzt, um Daten von einem SINT-basierten Signalweg an einen DWORD-basierten Signalweg anzupassen.
@@ -13,12 +14,12 @@ Der Baustein besitzt keine eigenen Ereignis- oder Datenein-/ausgänge, sondern s
 
 ### **Ereignis-Eingänge**
 
-- Keine direkten Ereigniseingänge – die Ereignissteuerung erfolgt über den eingehenden Adapter **AS_IN** (Socket).  
+- Keine direkten Ereigniseingänge – die Ereignissteuerung erfolgt über den eingehenden Adapter **AS_IN** (Socket).
   Der Adapter liefert über seinen Ereignisausgang **E1** das Startsignal für die Umwandlung.
 
 ### **Ereignis-Ausgänge**
 
-- Keine direkten Ereignisausgänge – die Ereignisausgabe erfolgt über den ausgehenden Adapter **AD_OUT** (Plug).  
+- Keine direkten Ereignisausgänge – die Ereignisausgabe erfolgt über den ausgehenden Adapter **AD_OUT** (Plug).
   Nach abgeschlossener Umwandlung wird das Ereignis **E1** am ausgehenden Adapter gesendet.
 
 ### **Daten-Eingänge**
@@ -84,4 +85,4 @@ Der **AS_TO_AD**-Funktionsblock ist ein spezialisierter Adapter-Konverter, der e
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

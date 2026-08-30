@@ -1,10 +1,12 @@
 # RT_E_CYCLE
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_E_CYCLE function block implements periodic event generation (cycle) with real-time capabilities. It allows you to define deadlines and execution times (WCET).
 ![RT_E_CYCLE](RT_E_CYCLE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,6 +45,6 @@ After the `START` event, the `EO` event is triggered periodically at time `DT`. 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

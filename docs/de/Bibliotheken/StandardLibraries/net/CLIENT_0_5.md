@@ -3,6 +3,7 @@
 ![CLIENT_0_5](CLIENT_0_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `CLIENT_0_5`-Funktionsblock ist die generische Client-Variante mit 0 Sende- und 5 Empfangsdatenfeldern für die Kommunikation mit einem passenden [SERVER_5_0](SERVER_5_0.md)-Block. Er empfängt 5 Datenwerte (`RD_1` `RD_2` `RD_3` `RD_4` `RD_5`) vom Server, ohne selbst Nutzdaten zu senden. Wie alle `CLIENT_*`-Bausteine basiert er auf der generischen `GEN_CLIENT`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

@@ -3,6 +3,7 @@
 <img width="618" height="415" alt="image" src="https://github.com/user-attachments/assets/2f54eb67-b52a-498d-b27b-6225a19450fd" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SPLIT_8 Funktionsblock ist ein generischer Baustein, der einen einzelnen AX-Adapter auf acht separate AX-Ausgänge aufteilt. Er dient zur Verteilung von Adapter-Signalen in komplexen Steuerungsarchitekturen.
@@ -84,4 +85,4 @@ Der AX_SPLIT_8 Funktionsblock stellt eine einfache und effiziente Lösung zur Ve
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

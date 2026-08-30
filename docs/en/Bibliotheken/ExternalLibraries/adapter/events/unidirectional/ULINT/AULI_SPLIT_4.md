@@ -3,9 +3,11 @@
 ![AULI_SPLIT_4](./AULI_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_SPLIT_4** is used to split an incoming **AULI** adapter into four separate, identical outputs. It is designed as a generic function block (Generic FB) and is distributed under the Eclipse Public License 2.0. It was developed for use in automation technology, particularly within the HR Agrartechnik GmbH environment.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AULI` | `IN` | Socket | Input adapter for the AULI signal to be distributed |
 | `adapter::types::unidirectional::AULI` | `OUT1` | Plug | First output adapter (identical to the input) |
 | `adapter::types::unidirectional::AULI` | `OUT2` | Plug | Second output adapter |
@@ -72,4 +74,4 @@ The **AULI_SPLIT_4** is a simple yet useful function block for multiplying an AU
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,9 @@
 # Exercise_071: Output WBSD to UT, Switch Q1 when Speed > 0
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_071`. Here, the tractor speed is not only displayed but also used directly to control an actuator.
+This article describes the logiBUS® exercise `Uebung_071`. Here, the tractor speed is not only displayed but also used directly to control an actuator
 ----
+
 ## Objective of the Exercise
 
 Implementation of threshold logic based on TECU data. The output should be activated automatically as soon as the machine starts moving.
@@ -17,9 +18,9 @@ Implementation of threshold logic based on TECU data. The output should be activ
 
 ![Uebung_071_network](./Uebung_071_network.svg)
 
-* **`I_WBSD`**: Returns the current speed.
-* **`F_GT`**: A comparison block (Greater Than). It checks if the input value is greater than 0.
-* **`DigitalOutput_Q1`**: The hardware output.
+- **`I_WBSD`**: Returns the current speed.
+- **`F_GT`**: A comparison block (Greater Than). It checks if the input value is greater than 0.
+- **`DigitalOutput_Q1`**: The hardware output.
 
 -----
 

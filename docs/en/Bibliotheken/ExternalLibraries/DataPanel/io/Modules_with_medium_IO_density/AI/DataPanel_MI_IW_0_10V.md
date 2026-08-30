@@ -3,22 +3,24 @@
 ![DataPanel_MI_IW_0_10V](./DataPanel_MI_IW_0_10V.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface module (SIFB) for acquiring an analog 0-10V input signal. It is designed as part of the **HR Agrartechnik DataPanel MI** system and enables parameterizable initialization as well as cyclical or event-driven retrieval of measured values.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Data Carried | Description |
-|----------|-----|-------------------|---------------|
+| ---------- | ----- | ------------------- | --------------- |
 | `INIT` | `EInit` | `QI`, `PARAMS`, `u8SAMember`, `Input`, `AnalogInput_hysteresis` | Service Initialization: Hardware Connection Configuration |
 | `REQ` | `Event` | `QI` | Service Request: Triggering a Measurement Data Query |
 
 ### **Event Outputs**
 
 | Event | Type | Accompanying Data | Description |
-|----------|-----|-------------------|--------------|
+| ---------- | ----- | ------------------- | -------------- |
 | `INITO` | `EInit` | `QO`, `STATUS` | Initialization Confirmation |
 | `CNF` | `Event` | `QO`, `STATUS`, `IN` | Measurement Query Confirmation |
 | `IND` | `Event` | `QO`, `STATUS`, `IN` | Asynchronous display (e.g., spontaneous measurement update from the resource) |
@@ -26,7 +28,7 @@ The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface mod
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | `QI` | `BOOL` | – | Input Qualifier (controls execution) |
 | `PARAMS` | `STRING` | – | Service Parameter (e.g., communication configuration) |
 | `u8SAMember` | `USINT` | `MI::MI_00` | Node SA Address (valid range 224…239) |
@@ -36,7 +38,7 @@ The **DataPanel_MI_IW_0_10V** function block is a service-oriented interface mod
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `QO` | `BOOL` | Output Qualifier (indicates valid processing) |
 | STATUS` | `STRING` | Service Status (Error/Success Message) |
 | IN` | `WORD` | Digitized Analog Value (0…10V, raw WORD value) |
@@ -51,11 +53,11 @@ No adapters available.
 
 The function block is configured with the parameters `PARAMS`, the node address `u8SAMember`, the selected input `Input`, and the hysteresis `AnalogInput_hysteresis`. Upon successful initialization, the output `INITO` is sent with `QO = TRUE` and a positive `STATUS`.
 
-2. **Measurement Query (`REQ`)**
+1. **Measurement Query (`REQ`)**
 
 A new measurement is requested by creating an event at `REQ`. The result is available at output `IN` as soon as event `CNF` is triggered. Qualifiers `QO` and `STATUS` indicate the validity of the value.
 
-3. **Asynchronous Display (`IND`)**
+1. **Asynchronous Display (`IND`)**
 
 The function block can also receive an event `IND` from the hardware without an explicit request (e.g., during a spontaneous value change or a periodic update). In this case, `IN`, `QO`, and `STATUS` are also updated.
 
@@ -87,7 +89,7 @@ A detailed state machine (ECC) is not present in the XML model; however, the des
 ## Comparison with Similar Function Blocks
 
 | Function Block | Voltage Range | Platform | Features |
-|----------|------------------|-----------|----------------|
+| ---------- | ------------------ | ----------- | ---------------- |
 | `DataPanel_MI_IW_0_10V` | 0-10V | HR DataPanel MI | Hysteresis, SA Addressing |
 | `DataPanel_MI_IW_4_20mA` | 4-20mA | HR DataPanel MI | Analog Current Inputs |
 | `GenericAnalogInput` | Variable | Standard IEC 61131 | General Input, No Hysteresis |
@@ -102,6 +104,6 @@ The **DataPanel_MI_IW_0_10V** function block provides a robust and flexibly conf
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

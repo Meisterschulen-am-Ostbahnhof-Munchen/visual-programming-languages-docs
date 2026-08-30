@@ -3,6 +3,7 @@
 ![ALR_D_FF](./ALR_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_D_FF** implementiert ein datengesteuertes Flip-Flop (D-Latch) mit Adapter‑basierter Schnittstelle. Er übernimmt einen Datenwert bei einem Taktereignis und stellt diesen am Ausgang zur Verfügung. Der Baustein kapselt die IEC‑61499‑Standardfunktion `E_D_FF_ANY` und bietet eine unidirektionale Adapter‑Anbindung für eine modulare Systemintegration.
@@ -77,4 +78,4 @@ Der `ALR_D_FF` ist ein schlanker, aber zuverlässiger D‑Flip‑Flop‑Baustein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

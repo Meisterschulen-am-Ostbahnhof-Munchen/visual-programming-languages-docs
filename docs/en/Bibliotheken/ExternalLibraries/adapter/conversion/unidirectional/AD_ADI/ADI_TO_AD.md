@@ -3,9 +3,11 @@
 ![ADI_TO_AD](./ADI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADI_TO_AD** function block is a composite block that performs interface conversion from an **ADI** adapter (DINT-based) to an **AD** adapter (DWORD-based). It functions as a unidirectional converter and enables seamless integration of components with different data adapter types in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -81,6 +83,6 @@ The **ADI_TO_AD** function block is a useful and clearly structured composite fu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

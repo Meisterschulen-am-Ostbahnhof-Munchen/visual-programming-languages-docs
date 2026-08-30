@@ -2,11 +2,13 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 ![ASSEMBLE_DWORD_FROM_QUARTERS](https://github.com/user-attachments/assets/b87a9cb4-49aa-4375-be7f-c4e32422490e)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_DWORD_FROM_QUARTERS` combines 16 quarter bytes (4 bits each) into a DWORD (32 bits). This is particularly useful when data exists in smaller units and needs to be combined into a larger unit.
@@ -61,7 +63,7 @@ The function block accepts 16 quarter bytes and combines them into a 32-bit DWOR
 
 ## 🛠️ Related Exercises
 
-* [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Conclusion
 

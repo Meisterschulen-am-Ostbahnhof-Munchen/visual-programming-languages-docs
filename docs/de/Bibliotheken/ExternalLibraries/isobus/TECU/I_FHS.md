@@ -34,8 +34,8 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 
 ## Parameter (SPN-Details)
 
-| Parameter | SPN  | Typ   | Länge | Skalierung | Wertebereich | Beschreibung |
-|-----------|------|-------|-------|------------|--------------|--------------|
+| Parameter | SPN | Typ | Länge | Skalierung | Wertebereich | Beschreibung |
+| ----------- | ------ | ------- | ------- | ------------ | -------------- | -------------- |
 | `FRONT_HITCH_POSITION` | 1872 | USINT | 8 bit | 0.4 %/bit | 0-100% | Aktuelle Position des Front-Anbaugeräts |
 | `FRONT_HITCH_WORK_INDICATION` | 1876 | BYTE | 2 bit | 4 Zustände | 0-3 | Arbeitsstatusindikator |
 | `FRONT_HITCH_POS_LIMIT_STATUS` | 5150 | BYTE | 3 bit | 8 Zustände | 0-7 | Positionslimit-Status |
@@ -82,7 +82,7 @@ Entwickelt unter EPL-2.0 Lizenz,ermöglicht er die Überwachung und Steuerung vo
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

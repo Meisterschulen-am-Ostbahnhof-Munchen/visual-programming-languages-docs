@@ -6,6 +6,7 @@
 
 The function block `F_INT_TO_LWORD` converts an integer value (`INT`) into a 64-bit unsigned integer value (`LWORD`). This block is particularly useful in scenarios where type conversion between these two data types is required.
 ![F_INT_TO_LWORD](F_INT_TO_LWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,6 +38,7 @@ The algorithm is defined as follows:
 ALGORITHM REQ
 OUT := INT_TO_LWORD(IN);
 END_ALGORITHM
+
 ## Technical Features
 
 - The function block is simple and efficient because it directly utilizes the built-in `INT_TO_LWORD` function.

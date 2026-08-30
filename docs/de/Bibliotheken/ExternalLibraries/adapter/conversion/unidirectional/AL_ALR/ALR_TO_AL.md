@@ -3,6 +3,7 @@
 ![ALR_TO_AL](./ALR_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_TO_AL** ist ein Composite-Baustein (zusammengesetzter Baustein) gemäß IEC 61499-2. Er dient der Umwandlung eines **ALR-Adapters** (LREAL-Datentyp) in einen **AL-Adapter** (LWORD-Datentyp). Implementiert wird die Konvertierung über den internen Baustein `F_LREAL_TO_LWORD` aus der IEC 61131-3-Bibliothek.

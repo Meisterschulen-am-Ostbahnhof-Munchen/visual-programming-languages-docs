@@ -16,11 +16,11 @@ Die Subapplikation `Uebung_009_AX.SUB` nutzt adapterbasierte Funktionsbausteine 
 
 ### Funktionsbausteine (FBs)
 
-  * **`AE_CYCLE` & `AX_SR`**: Erzeugen einen permanenten Takt und steuern den Blinkerstatus über Adapter. Der `AX_SR` hat einen `AX`-Adapterausgang.
-  * **`AX_SWITCH`**: Ein adapterbasierter Schalter, der den `AX`-Signalfluss basierend auf dem internen Blinker-Status umschaltet.
-  * **`AX_PERMIT`**: Ein adapterbasiertes Ereignis-Gatter. Es lässt Ereignisse am Eingang `PERMIT.E1` nur dann zum Ausgang `EO` durch, wenn der Daten-Eingang `PERMIT.D1` auf `TRUE` steht.
-  * **`AUDI_CTUD_UDINT`**: Ein adapterbasierter Vorwärts-/Rückwärtszähler. Er empfängt `CU`-Ereignisse und gibt den Zählerstand über einen `AUDI`-Adapter (`CV`) aus.
-  * **`Q_NumericValue_AUDI`**: Ein ISOBUS-Ausgangsbaustein zur Anzeige einer Zahl auf dem Bildschirm. Er empfängt den Wert über einen `AUDI`-Adapter (`u32NewValue`).
+  - **`AE_CYCLE` & `AX_SR`**: Erzeugen einen permanenten Takt und steuern den Blinkerstatus über Adapter. Der `AX_SR` hat einen `AX`-Adapterausgang.
+  - **`AX_SWITCH`**: Ein adapterbasierter Schalter, der den `AX`-Signalfluss basierend auf dem internen Blinker-Status umschaltet.
+  - **`AX_PERMIT`**: Ein adapterbasiertes Ereignis-Gatter. Es lässt Ereignisse am Eingang `PERMIT.E1` nur dann zum Ausgang `EO` durch, wenn der Daten-Eingang `PERMIT.D1` auf `TRUE` steht.
+  - **`AUDI_CTUD_UDINT`**: Ein adapterbasierter Vorwärts-/Rückwärtszähler. Er empfängt `CU`-Ereignisse und gibt den Zählerstand über einen `AUDI`-Adapter (`CV`) aus.
+  - **`Q_NumericValue_AUDI`**: Ein ISOBUS-Ausgangsbaustein zur Anzeige einer Zahl auf dem Bildschirm. Er empfängt den Wert über einen `AUDI`-Adapter (`u32NewValue`).
 
 -----
 

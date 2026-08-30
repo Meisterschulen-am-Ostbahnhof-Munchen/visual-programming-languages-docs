@@ -3,9 +3,11 @@
 ![AUI_TO_AX](./AUI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUI_TO_AX** function block is a composite block that converts an AUI adapter (type *AUI* with a UINT value) into an AX adapter (type *AX* with a BOOL value). It serves as a bidirectional conversion interface between two different adapter types and is typically used to provide digital comparison results for further processing in BOOL-based adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -69,7 +71,7 @@ Since this is a composite block without its own ECC (Execution Control Chart), t
 ## Comparison with Similar Blocks
 
 | Block | Input Type | Output Type | Function |
-|----------|------------|------------|-----------|
+| ---------- | ------------ | ------------ | ----------- |
 | **AUI_TO_AX** | AUI (UINT) | AX (BOOL) | Inequality with Zero |
 | *AUI_TO_AX_INV* (hypothetical) | AUI (UINT) | AX (BOOL) | Equality with Zero (inverted) |
 | *CONV_UINT_TO_BOOL* (direct) | UINT (Data) | BOOL (Data) | Direct data converter, no adapter |

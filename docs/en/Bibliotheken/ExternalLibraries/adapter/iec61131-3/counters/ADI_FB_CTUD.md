@@ -3,9 +3,11 @@
 ![ADI_FB_CTUD](./ADI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADI_FB_CTUD** is an up/down counting function block for integer values (DINT). It implements a forward/backward counter that is controlled via standardized **adapter interfaces**. The block encapsulates the IEC 61131-3 component `FB_CTUD_DINT` and provides its functionality via event-driven adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -92,7 +94,7 @@ The function block does not have an explicit state machine. Processing is strict
 ## Comparison with similar function blocks
 
 | Property | ADI_FB_CTUD | Standard CTUD (IEC 61131-3) |
-|-------------|---------------|------------------------------|
+| ------------- | --------------- | ------------------------------ |
 | Interface | Adapter-based (AX/ADI) | Direct inputs/outputs (events, data) |
 | Event behavior | Output on every update | Mostly edge- or value-dependent |
 | Reusability | Easy due to adapter encapsulation | Dependent on the specific controller |

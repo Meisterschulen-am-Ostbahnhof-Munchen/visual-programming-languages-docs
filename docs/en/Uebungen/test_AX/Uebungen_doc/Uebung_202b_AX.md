@@ -3,6 +3,7 @@
 ![Uebung_202b_AX_network](./Uebung_202b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the function block `ILOCK_BLOCK_PROTECT_AX` for the safe control of a motor with a reversing function.
@@ -52,18 +53,22 @@ The logic is implemented as a sub-application and uses an adapter-based data flo
 ## Program Flow and Connections
 
 1. **Inputs**
+
 - The digital inputs `Input_I1` (Up) and `Input_I2` (Down) are read via the function blocks `DigitalInput_I1` and `DigitalInput_I2`.
 - Their signals are passed directly to the adapter inputs `UP_IN` and `DOWN_IN` of the `ILOCK_AX`.
-2. **Interlock Logic**
+1. **Interlock Logic**
+
 - `ILOCK_AX` evaluates the incoming signals. When changing from one direction of rotation to the other, the parameterized **protection time DT_PROTECT = 1s** is activated.
 - Only after this time has elapsed is the new output signal switched to `UP_OUT` or `DOWN_OUT`.
 - Simultaneously, the timer signal `timeOut` is set to `TRUE` for the duration of the protection time and transmitted to `E_TimeOut`.
-3. **Signal Distribution via SubApp `AX_2_TO_3`**
+1. **Signal Distribution via SubApp `AX_2_TO_3`**
+
 - The delayed outputs `UP_OUT` and `DOWN_OUT` from `ILOCK_AX` are routed to the subapp `AX_2_TO_3` via adapter connections.
 
 - This sub-app forwards the signals to the corresponding outputs `UP_OUT` and `DOWN_OUT` and generates an OR signal (`OR_OUT`) that activates the **LowSide_Driver** as soon as one of the two rotation directions is requested.
 
-4. **Outputs**
+1. **Outputs**
+
 - `Rechtslauf` and `Linkslauf` are controlled directly by the sub-app's outputs.
 - `LowSide_Treiber` is activated via the OR signal and controls the common output `Output_Q56`.
 
@@ -91,6 +96,6 @@ This exercise provides practical knowledge for the safe control of actuators in 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,4 +1,4 @@
-# Uebung_011e_MIX: Numeric Value Input I1 Durchschleifen auf N3 (Software Scale via NumericObjectPool_S) falsch gemischt!
+# Uebung_011e_MIX: Numeric Value Input I1 Durchschleifen auf N3 (Software Scale via NumericObjectPool_S) falsch gemischt
 
 ![Uebung_011e_MIX_network](./Uebung_011e_MIX_network.svg)
 
@@ -15,7 +15,7 @@ Im konkreten Beispiel: Eine Eingabe von `10` am Eingang I1 wird über den Bauste
 Die Übung besteht aus einer linearen Kette von drei Funktionsbausteinen (keine Sub-Bausteine):
 
 | Bausteinname | Typ | Beschreibung |
-|--------------|-----|--------------|
+| -------------- | ----- | -------------- |
 | `InputNumber_I1` | `isobus::UT::io::NumericValue::NumericValue_ID` | Liest einen numerischen Wert (DWORD) aus dem Pool `InputNumber_I1`. Der Parameter `u16ObjId` ist auf `"InputNumber_I1"` gesetzt, und der Qualifier `QI` ist `TRUE`. Der Ereignisausgang `IND` signalisiert einen neuen Wert am Eingang `IN`. |
 | `F_DWORD_TO_REAL` | `iec61131::conversion::F_DWORD_TO_REAL` | Wandelt einen `DWORD`-Wert in einen `REAL`-Wert um (gemäß IEC 61131-3). Der Eingang `REQ` startet die Konvertierung, und nach Abschluss wird der Ausgang `CNF` getriggert. |
 | `Q_NumericValue_PHYS` | `isobus::UT::Q::Q_NumericValue_PHYS` | Schreibt einen physikalischen `REAL`-Wert in das Ausgangsobjekt `OutputNumber_N3` (übernommen aus dem Pool `OutputNumber_N3`). Der Parameter `stObj` wird auf den entsprechenden String gesetzt. Der Baustein erwartet einen physikalischen Wert am Eingang `rPhys` und gibt diesen auf den Pool aus. |
@@ -24,16 +24,16 @@ Die Übung besteht aus einer linearen Kette von drei Funktionsbausteinen (keine 
 
 Der Ablauf ist ereignisgesteuert und erfolgt in drei Schritten:
 
-1. **Eingabe lesen:**  
+1. **Eingabe lesen:**
    Wenn `InputNumber_I1` einen neuen Wert erhält (z. B. `10`), sendet es ein Ereignis über `IND` an den Konvertierungsbaustein `F_DWORD_TO_REAL.REQ`. Gleichzeitig wird der gelesene DWORD-Wert über die Datenverbindung `InputNumber_I1.IN` → `F_DWORD_TO_REAL.IN` übergeben.
 
-2. **Konvertierung:**  
+2. **Konvertierung:**
    `F_DWORD_TO_REAL` wandelt den DWORD-Wert in einen REAL-Wert um (z. B. `10` → `10.0`). Nach Abschluss sendet es ein Ereignis über `CNF` an den Ausgangsbaustein `Q_NumericValue_PHYS.REQ`. Der konvertierte REAL-Wert wird über die Datenverbindung `F_DWORD_TO_REAL.OUT` → `Q_NumericValue_PHYS.rPhys` weitergegeben.
 
-3. **Ausgabe schreiben:**  
+3. **Ausgabe schreiben:**
    `Q_NumericValue_PHYS` empfängt das Ereignis und schreibt den physikalischen REAL-Wert in das Pool-Objekt `OutputNumber_N3`. Am Bedienpanel erscheint dann beispielsweise `10.00`.
 
-**Besonderheit:**  
+**Besonderheit:**
 In der Kommentarspalte wird darauf hingewiesen, dass die beiden Namespaces (`isobus::UT::io::NumericValue::NumericValue_ID` und `isobus::UT::Q::Q_NumericValue_PHYS`) **inkompatibel** sind. Der eingehende Wert wird zwar korrekt durchgeschleift, aber die semantische Zuordnung (Raw vs. Physical) wird verletzt, was zu Fehlinterpretationen in der Visualisierung führen kann. Die Übung soll daher für solche Inkompatibilitäten sensibilisieren.
 
 ## Zusammenfassung
@@ -44,4 +44,4 @@ Die Übung `Uebung_011e_MIX` zeigt, wie ein numerischer Wert vom Eingang `I1` ü
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

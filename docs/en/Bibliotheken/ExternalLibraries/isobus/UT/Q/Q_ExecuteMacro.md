@@ -3,6 +3,7 @@
 ![Q_ExecuteMacro](https://user-images.githubusercontent.com/116869307/214147465-1e5432e3-d3d3-4eee-a8a5-8aec4ee82198.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ExecuteMacro** is a standards-compliant function block for executing macros in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.48) specification for VT from version 4 onwards.
@@ -38,13 +39,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with macro object ID (8-bit compatible)
 - `INITO` confirms operational readiness
-2. **Macro Execution**:
+1. **Macro Execution**:
+
 - `REQ` without additional parameters
 - Executes stored macro sequence
 - `CNF` returns result status
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -58,7 +62,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Macro Properties
 
 | Feature | Description |
-|---------------|----------------------------------|
+| --------------- | ---------------------------------- |
 | Location | Permanently stored in the VT |
 | Size | Up to 255 commands |
 | Content | VT command sequences |
@@ -67,7 +71,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful execution |
 | -6 | VT_E_OVERFLOW | Macro too complex |
 | -8 | VT_E_NOACT | VT not ready |
@@ -83,7 +87,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_ExecuteMacro | Q_ExecuteExtendedMacro | VtMacroRunner |
----------------|----------------|------------------------|---------------|
+--------------- | ---------------- | ------------------------ | --------------- |
 | ISO Standard | ✔ | ✔ | ✖ |
 | VT Version | 4+ | 5+ | All |
 | ID Type | 8-bit | 16-bit | 8-bit |

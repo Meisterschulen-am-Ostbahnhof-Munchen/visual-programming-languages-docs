@@ -3,9 +3,11 @@
 ![Uebung_211_ADI_network](./Uebung_211_ADI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as an adapter version for the DINT data type. The counter value is also output via a terminal. The hardware inputs (CU and R) are read via logiBUS DI blocks, and the output Q controls a logiBUS DO terminal. The counter end value (PV) is set to a constant value of 5.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: ADI_FB_CTU
@@ -54,6 +56,7 @@ This exercise implements a standard IEC 61131-3 up counter (Counter Up, CTU) as 
 - **Functionality**: Reads the digital input I2 and makes it available as an adapter data output (IN) for the Reset R. Additionally, the event output INITO triggers a one-time initialization of the PV value.
 
 **Type**: Reads the digital input I2 and makes it available as an adapter data output (IN) for the Reset R.
+
 ### Sub-Blocks: Output_Q1
 
 - **Type**: logiBUS::io::DQ::logiBUS_QXA

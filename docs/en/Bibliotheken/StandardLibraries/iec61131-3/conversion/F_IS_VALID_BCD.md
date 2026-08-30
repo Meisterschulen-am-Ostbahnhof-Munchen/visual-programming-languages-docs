@@ -3,6 +3,7 @@
 ![F_IS_VALID_BCD](F_IS_VALID_BCD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_IS_VALID_BCD` checks whether a bit string contains valid BCD (Binary Coded Decimal) data — i.e. whether every nibble (4-bit group) represents a value between `0` and `9`. It validates BCD-encoded values before they are converted.

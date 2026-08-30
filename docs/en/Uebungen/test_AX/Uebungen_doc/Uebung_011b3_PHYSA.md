@@ -3,13 +3,15 @@
 ![Uebung_011b3_PHYSA_network](./Uebung_011b3_PHYSA_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of physical values in a simple addition circuit. Two numeric inputs provide physical quantities, which are calculated using an addition block. The result is output as a physical value. The goal is to learn how to use adapter connections between **NumericValue_PHYSA** blocks and the standardized **AR_ADD_2** block.
+
 ## Function Blocks (FBs) Used
 
 | Block Name | Type | Short Description |
-|---------------|-----|------------------|
+| --------------- | ----- | ------------------ |
 | **InputNumber_I3** | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Physical value input (e.g., with unit). Parameters: `QI` = TRUE, `stObj` = "InputNumber_I3". Provides the entered physical value via the adapter output `rPhys`. |
 | **InputNumber_I4** | `isobus::UT::io::NumericValue::NumericValue_PHYSA` | Same type as InputNumber_I3. Parameters: `QI` = TRUE, `stObj` = "InputNumber_I4". |
 | **AR_ADD_2** | `adapter::iec61131::arithmetic::AR_ADD_2` | Adder from the IEC 61131 arithmetic library. Receives two physical values at the adapter inputs `IN1` and `IN2` and outputs their sum at the adapter output `OUT`. |
@@ -41,6 +43,6 @@ The sub-app **Exercise_011b3_PHYSA** performs a simple addition of two physical 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -20,7 +20,7 @@ Verwendung eines `Button_IXA`.
 
 ![Uebung_010a2_AX_network](./Uebung_010a2_AX_network.svg)
 
-  * **`Button_A1`**: Typ `isobus::UT::io::Button::Button_IXA`. Referenziert `Button_A1`.
+  - **`Button_A1`**: Typ `isobus::UT::io::Button::Button_IXA`. Referenziert `Button_A1`.
 
 -----
 

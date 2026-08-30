@@ -3,9 +3,11 @@
 ![AI_TO_AR](./AI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AI_TO_AR** function block is a composite module that enables interface conversion from an **AI** adapter (integer type) to an **AR** adapter (real type). It serves purely as a pass-through and adaptation unit between different adapter protocols in an industrial control system.
+
 ## Interface Structure
 
 Since **AI_TO_AR** does not have its own event or data interfaces, all communication takes place exclusively via the connected adapters.
@@ -33,7 +35,7 @@ The data is output as a real value via the **AR_OUT** adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|--------|----------------------------------------------|----------|------------------------|
+| -------- | ---------------------------------------------- | ---------- | ------------------------ |
 | AI_IN | `adapter::types::unidirectional::AI` | Socket | Integer Adapter (Input) |
 | AR_OUT | `adapter::types::unidirectional::AR` | Plug | Real Adapter (Output) |
 
@@ -65,7 +67,7 @@ The component does not have a state machine. Processing occurs directly without 
 ## Comparison with Similar Components
 
 | Component | Function | Special Feature |
-|-----------|-------------------------------------------------|---------------------------------------|
+| ----------- | ------------------------------------------------- | --------------------------------------- |
 | AI_TO_AR | Pass-through from INT to REAL via adapter | No dedicated logic, pure adapter switching |
 | REAL_TO_INT | Conversion from REAL to INT (usually with rounding) | Often includes its own algorithm |
 | ADAPTER_COUPLER | General adapter coupling without type conversion | Requires identical data types |

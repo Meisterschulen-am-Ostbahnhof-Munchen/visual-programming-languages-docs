@@ -3,6 +3,7 @@
 ![SPLIT_LWORD_INTO_BOOLS](https://github.com/user-attachments/assets/1049fa17-3495-4ca5-8e03-ae09e81b47d5)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_LWORD_INTO_BOOLS` dient zur Zerlegung eines 64-Bit-LWORD-Datentyps in seine einzelnen Bits. Jedes Bit wird als separater BOOL-Ausgang bereitgestellt. Dieser Block ist besonders nützlich, wenn einzelne Bits eines langen Wortes ausgewertet oder verarbeitet werden müssen.

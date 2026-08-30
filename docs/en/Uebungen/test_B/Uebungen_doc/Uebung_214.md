@@ -3,6 +3,7 @@
 ![Uebung_214_network](./Uebung_214_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the IEC 61131-3 standard forward counter **FB_CTU_ULINT** for the **ULINT** (unsigned long integer) data type. The counter is controlled via two digital inputs: The **CU** input increments by one on each rising edge, while the **R** input resets the counter value. The current counter value is output to a terminal, and the **Q** output becomes active when the counter value reaches or exceeds the preset value **PV**. The goal is to understand the integration of a standard function block (FB) with hardware inputs/outputs and textual output.
@@ -83,16 +84,19 @@ The exercise consists of a network of six internal function blocks linked via ev
 
 1. **Input Events**: The digital inputs **Input_CU** and **Input_R** generate an **IND** event when their state changes. Both events are connected to the **REQ** input of the counter **FB_CTU_ULINT**. This causes the counter to be recalculated every time one of the inputs changes its state.
 2. **Counter Logic**: The counter evaluates the incoming data:
+
 - **CU** receives the current state from **Input_CU.IN**.
 - **R** receives the state of **Input_R.IN**.
 - A rising edge on **CU** increments the internal counter **CV** by 1.
 - A TRUE on **R** sets **CV** to 0.
 - If **CV** exceeds the value of **PV** (here 5), **Q** is set to TRUE.
-3. **Output**: After the calculation, the counter sends the **CNF** event. This event is handled in parallel by two function blocks:
+1. **Output**: After the calculation, the counter sends the **CNF** event. This event is handled in parallel by two function blocks:
+
 - **Output_Q1** sets the digital output to the value of **FB_CTU_ULINT.Q**.
 - **F_ULINT_TO_UDINT** converts the current counter value **CV** from ULINT to UDINT.
-4. **Terminal Output**: After the conversion is complete, **F_ULINT_TO_UDINT.CNF** triggers the **REQ** event of **Q_NumericValue**. The converted value is passed to **u32NewValue** via the **OUT** data line and displayed on the terminal.
-5. **Notes from the exercise**:
+1. **Terminal Output**: After the conversion is complete, **F_ULINT_TO_UDINT.CNF** triggers the **REQ** event of **Q_NumericValue**. The converted value is passed to **u32NewValue** via the **OUT** data line and displayed on the terminal.
+2. **Notes from the exercise**:
+
 - One comment suggests possibly including an **E_D_FF** (turn-on delay) to reduce the number of events (e.g., with fast input signals).
 - Another comment warns of a possible **overflow** when converting from ULINT to UDINT, as ULINT can cover a larger value range (up to 2⁶⁴‑1) than UDINT (up to 2³²‑1).
 
@@ -104,6 +108,6 @@ Exercise 214 demonstrates the practical application of the IEC 61131-3 standard 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

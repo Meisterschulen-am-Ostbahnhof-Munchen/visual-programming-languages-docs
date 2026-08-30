@@ -3,6 +3,7 @@
 <img width="1480" height="214" alt="F_WSTRING_AS_LINT" src="https://github.com/user-attachments/assets/a8ed434d-17fa-45f9-8839-16517ab7d6b0" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_WSTRING_AS_LINT` dient der Konvertierung eines WSTRING-Wertes in einen LINT-Wert. Dieser Baustein ist besonders nützlich in Szenarien, wo Zeichenketten in numerische Werte umgewandelt werden müssen, beispielsweise bei der Verarbeitung von Benutzereingaben oder der Interpretation von Textdaten.

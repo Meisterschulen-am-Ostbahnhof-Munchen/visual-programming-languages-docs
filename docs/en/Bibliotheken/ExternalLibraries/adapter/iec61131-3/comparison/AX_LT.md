@@ -3,35 +3,37 @@
 ![AX_LT](./AX_LT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_LT** compares two values of type `BOOL` (Boolean value) and checks whether the first value (IN1) is less than the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously. `FALSE` is considered the smaller and `TRUE` the greater value.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
 
 ### **Event Inputs**
 
-* **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
-* **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
+- **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
+- **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
 
 ### **Event Outputs**
 
-* **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
+- **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
 
 ### **Data Inputs**
 
-* **IN1.D1**: First value to be compared (data type `BOOL`, Boolean value).
-* **IN2.D1**: Second value to be compared (data type same as IN1).
+- **IN1.D1**: First value to be compared (data type `BOOL`, Boolean value).
+- **IN2.D1**: Second value to be compared (data type same as IN1).
 
 ### **Data Outputs**
 
-* **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 < IN2`, otherwise `FALSE`.
+- **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 < IN2`, otherwise `FALSE`.
 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `AX` (Socket) | Input | Adapter for the first comparison value and its associated event |
 | IN2 | `AX` (Socket) | Input | Adapter for the second comparison value and its associated event |
 | OUT | `AX` (Plug) | Output | Adapter for the comparison result and the output event |

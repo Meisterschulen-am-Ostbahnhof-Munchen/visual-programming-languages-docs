@@ -49,8 +49,8 @@ flowchart TD
     ANY_MAG_DURATION --> LTIME
 ```
 
-*   **ANY_NUM**: Numerische Typen (Ganzzahlen und Gleitpunktzahlen).
-*   **ANY_DURATION**: Zeitdauer-Typen (`TIME`, `LTIME`).
+-   **ANY_NUM**: Numerische Typen (Ganzzahlen und Gleitpunktzahlen).
+-   **ANY_DURATION**: Zeitdauer-Typen (`TIME`, `LTIME`).
 
 #### ANY_BIT (Bitfolgetypen)
 

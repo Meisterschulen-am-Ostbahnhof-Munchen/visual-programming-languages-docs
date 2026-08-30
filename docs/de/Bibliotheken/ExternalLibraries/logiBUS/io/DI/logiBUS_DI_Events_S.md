@@ -1,6 +1,7 @@
 # logiBUS_DI_Events_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Strukturdatentyp `logiBUS_DI_Events_S` dient der Konfiguration von Ereignissen für digitale Eingänge (DI) innerhalb des logiBUS-Frameworks. Er definiert den Ereignistyp, der einem bestimmten digitalen Eingangskanal zugeordnet werden kann. Dieser Datentyp ist ein wesentlicher Bestandteil für die Parametrierung von logiBUS-E/A-Funktionsblöcken.
@@ -27,9 +28,9 @@ Der Datentyp `logiBUS_DI_Events_S` kapselt eine einzelne Variable (`EType`), die
 
 ## Technische Besonderheiten
 
-*   **Datentyp:** Es handelt sich um einen strukturierten Datentyp (`STRUCT`), der in anderen Funktionsblöcken als komplexer Datenparameter genutzt wird.
-*   **Initialwert:** Die enthaltene Variable `EType` ist mit dem Wert `255` vorinitialisiert. Dieser Wert dient wahrscheinlich als Platzhalter oder "ungültig"-Kennung.
-*   **Basistyp:** Die Variable `EType` ist vom Typ `USINT` (Unsigned Short Integer, 0-255), was einen begrenzten und effizienten Wertebereich für Ereigniscodes bietet.
+-   **Datentyp:** Es handelt sich um einen strukturierten Datentyp (`STRUCT`), der in anderen Funktionsblöcken als komplexer Datenparameter genutzt wird.
+-   **Initialwert:** Die enthaltene Variable `EType` ist mit dem Wert `255` vorinitialisiert. Dieser Wert dient wahrscheinlich als Platzhalter oder "ungültig"-Kennung.
+-   **Basistyp:** Die Variable `EType` ist vom Typ `USINT` (Unsigned Short Integer, 0-255), was einen begrenzten und effizienten Wertebereich für Ereigniscodes bietet.
 
 ## Zustandsübersicht
 
@@ -39,8 +40,8 @@ Da es sich um einen passiven Datentyp handelt, existiert keine Zustandsmaschine.
 
 Dieser Strukturdatentyp wird primär in Verbindung mit logiBUS-I/O-Funktionsblöcken verwendet, beispielsweise:
 
-*   Als Element in einem Array zur Konfiguration aller digitalen Eingänge eines Moduls.
-*   Als Parameter, um festzulegen, bei welchem physikalischen Ereignis (z.B. steigende Flanke) ein logisches Event im Steuerungsprogramm ausgelöst werden soll.
+-   Als Element in einem Array zur Konfiguration aller digitalen Eingänge eines Moduls.
+-   Als Parameter, um festzulegen, bei welchem physikalischen Ereignis (z.B. steigende Flanke) ein logisches Event im Steuerungsprogramm ausgelöst werden soll.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

@@ -3,6 +3,7 @@
 ![AB_OR_6](./AB_OR_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AB_OR_6** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 6 Eingangswerten vom Typ `BYTE` (8-Bit-Bitmuster (Byte)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

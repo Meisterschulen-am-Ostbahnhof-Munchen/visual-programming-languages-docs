@@ -1,4 +1,4 @@
-## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten.
+## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten
 
 # Übungsaufgaben
 
@@ -78,7 +78,7 @@ Build a program where the LED lights up red when you press the red button and bl
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

@@ -1,8 +1,9 @@
 # Exercise_002a3_AX: DigitalInput_I1/_I2 with OR on DigitalOutput_Q1, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a3_AX`. In this exercise, a logical OR gate is implemented, in which a digital output is activated as soon as at least one of two digital inputs is in the "True" (HIGH) state.
+This article describes the logiBUS® exercise `Uebung_002a3_AX`. In this exercise, a logical OR gate is implemented, in which a digital output is activated as soon as at least one of two digital inputs is in the "True" (HIGH) state
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to demonstrate the functionality of an OR gate in automation technology. It shows how alternative conditions (inputs) can be used to trigger the same action (output). This is a standard requirement for systems that must be operable from multiple locations.
@@ -19,9 +20,9 @@ The following blocks are used:
 
 ![Uebung_002a3_AX_network](./Uebung_002a3_AX_network.svg)
 
-* **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. [cite_start]These blocks detect the states of the physical inputs `Input_I1` and `Input_I2`[cite: 1].
-* **`AX_OR_2`**: An instance of type `AX_OR_2`. This function block performs the logical OR operation at the adapter level. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`)[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This function block sets the physical output `Output_Q1` based on the result of the OR operation[cite: 1].
+- **`DigitalInput_I1` & `DigitalInput_I2`**: Instances of type `logiBUS_IXA`. [cite_start]These blocks detect the states of the physical inputs `Input_I1` and `Input_I2`[cite: 1].
+- **`AX_OR_2`**: An instance of type `AX_OR_2`. This function block performs the logical OR operation at the adapter level. It has two adapter inputs (`IN1`, `IN2`) and one adapter output (`OUT`)[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. This function block sets the physical output `Output_Q1` based on the result of the OR operation[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 

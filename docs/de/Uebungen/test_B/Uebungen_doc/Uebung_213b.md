@@ -3,14 +3,15 @@
 ![Uebung_213b_network](./Uebung_213b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Diese Übung implementiert einen Vorwärtszähler nach IEC 61131‑3 (FB_CTU_UDINT) mit einem Presetwert von 5. Die Zählimpulse werden über zwei digitale Eingänge bereitgestellt:  
+Diese Übung implementiert einen Vorwärtszähler nach IEC 61131‑3 (FB_CTU_UDINT) mit einem Presetwert von 5. Die Zählimpulse werden über zwei digitale Eingänge bereitgestellt:
 
-- **I1** dient als Zähleingang (CU – Count Up)  
-- **I2** dient als Rücksetzeingang (R – Reset)  
+- **I1** dient als Zähleingang (CU – Count Up)
+- **I2** dient als Rücksetzeingang (R – Reset)
 
-Der Zählerstand (CV) wird als physikalische Größe vom Typ LREAL auf einem Terminal ausgegeben. Ein digitaler Ausgang (Q1) wird aktiviert, sobald der Zählerstand den Presetwert erreicht oder überschreitet.  
+Der Zählerstand (CV) wird als physikalische Größe vom Typ LREAL auf einem Terminal ausgegeben. Ein digitaler Ausgang (Q1) wird aktiviert, sobald der Zählerstand den Presetwert erreicht oder überschreitet.
 
 Die Übung zeigt die direkte Verbindung eines UDINT‑Werts auf einen LREAL‑Ausgang – eine Typumwandlung ist nicht erforderlich, da UDINT implizit nach LREAL konvertiert werden kann.
 
@@ -82,4 +83,4 @@ Damit werden grundlegende Kenntnisse der IEC‑61131‑3‑Zählerfunktionen und
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

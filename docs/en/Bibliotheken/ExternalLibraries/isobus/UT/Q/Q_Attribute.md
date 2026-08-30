@@ -3,6 +3,7 @@
 ![Q_Attribute](https://user-images.githubusercontent.com/69573151/212329228-8c605296-7915-4def-a497-2860e14ae509.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_Attribute** is a standards-compliant function block for modifying VT object properties, developed under the EPL 2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.38) specification for agricultural tax systems.
@@ -46,12 +47,15 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object and attribute ID
 - `INITO` confirms operational readiness
-2. **Attribute Change**:
+1. **Attribute Change**:
+
 - `REQ` triggers with new value
 - `CNF` returns result and old value
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -65,7 +69,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-----------|-----------|
+| ------ | ----------- | ----------- |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | Invalid State |
@@ -81,7 +85,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with Similar Blocks
 
 | Feature | Q_Attribute | VtPropertySet | VtDynamicConfig |
-|---------------|--------------|---------------|-----------------|
+| --------------- | -------------- | --------------- | ----------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Value Range | 32-bit | 16-bit | 32-bit |
 | State Management | Full | Partial | Extended |

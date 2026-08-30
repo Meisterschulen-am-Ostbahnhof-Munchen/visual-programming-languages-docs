@@ -3,9 +3,11 @@
 ![AULI_SPLIT_6](./AULI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_SPLIT_6** is used to distribute a single AULI adapter input (unidirectional) to six identical AULI outputs. It provides a generic solution for forwarding an AULI signal to multiple subsequent blocks without compromising signal integrity.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | IN | Socket (Input) | adapter::types::unidirectional::AULI | Receives the AULI signal to be distributed. |
 | OUT1 | Plug (Output) | adapter::types::unidirectional::AULI | First identical output of the distributed signal. |
 | OUT2 | Plug (Output) | adapter::types::unidirectional::AULI | Second identical output. |
@@ -62,7 +64,7 @@ Since the function block has no event control and manages no internal states, th
 ## Comparison with Similar Modules
 
 | Module | Number of Outputs | Special Feature |
-|----------|------------------|--------------|
+| ---------- | ------------------ | -------------- |
 | AULI_SPLIT_6 | 6 | Fixed splitter for AULI adapter |
 | AULI_SPLIT_2 | 2 | Smaller version for two outputs |
 | AULI_SPLIT_4 | 4 | Medium-sized version for four outputs |

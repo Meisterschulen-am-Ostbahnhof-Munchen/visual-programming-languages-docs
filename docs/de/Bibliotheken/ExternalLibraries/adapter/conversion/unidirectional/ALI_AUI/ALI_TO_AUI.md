@@ -29,16 +29,16 @@ Nicht vorhanden – die Datenübergabe erfolgt über die Adapter.
 ### **Adapter**
 
 | Typ | Name | Kommentar |
-|------|------|-----------|
+| ------ | ------ | ----------- |
 | Socket | `ALI_IN` | Eingangsadapter vom Typ `adapter::types::unidirectional::ALI` – liefert LINT-Wert und assoziiertes Ereignis. |
 | Plug | `AUI_OUT` | Ausgangsadapter vom Typ `adapter::types::unidirectional::AUI` – stellt den umgewandelten UINT-Wert und zugehöriges Ereignis bereit. |
 
 ## Funktionsweise
 
-Der Baustein verbindet intern den Socket `ALI_IN` mit dem Eingang des Konvertierungsbausteins `F_LINT_TO_UINT`.  
+Der Baustein verbindet intern den Socket `ALI_IN` mit dem Eingang des Konvertierungsbausteins `F_LINT_TO_UINT`.
 
-- Über den Ereignisausgang `E1` von `ALI_IN` wird der `REQ`-Eingang des Konverters angesteuert.  
-- Der Datenwert `D1` von `ALI_IN` (LINT) wird auf den `IN`-Eingang des Konverters gelegt.  
+- Über den Ereignisausgang `E1` von `ALI_IN` wird der `REQ`-Eingang des Konverters angesteuert.
+- Der Datenwert `D1` von `ALI_IN` (LINT) wird auf den `IN`-Eingang des Konverters gelegt.
 - Nach erfolgreicher Konvertierung signalisiert der Konverter mit `CNF` das Ereignis an den Plug `AUI_OUT`, und der umgewandelte Wert (UINT) wird auf dessen `D1`-Ausgang geschrieben.
 
 Der gesamte Ablauf ist ereignisgesteuert: Ein eingehendes Ereignis am ALI‑Adapter löst die Umwandlung aus und erzeugt ein entsprechendes Ausgangsereignis am AUI‑Adapter.
@@ -71,4 +71,4 @@ Der ALI_TO_AUI-Baustein ist eine praktische und leicht verständliche Komponente
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

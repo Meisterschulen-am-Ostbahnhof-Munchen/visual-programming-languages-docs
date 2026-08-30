@@ -6,6 +6,7 @@
 
 The function block `F_UINT_TO_BCD_WORD` converts an unsigned integer value (UINT) into a BCD-encoded word (WORD). BCD (Binary Coded Decimal) is a method for representing decimal numbers where each digit is encoded by 4 bits. This function block is particularly useful in applications where numerical values need to be output in a human-readable format, such as in display systems or printers.
 ![F_UINT_TO_BCD_WORD](F_UINT_TO_BCD_WORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

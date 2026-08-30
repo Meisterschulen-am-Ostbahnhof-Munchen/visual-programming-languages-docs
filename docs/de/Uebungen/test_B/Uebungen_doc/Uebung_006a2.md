@@ -20,9 +20,9 @@ Realisierung einer "Zentral-Aus" Funktion für mehrere unabhängige Speicherglie
 
 ![Uebung_006a2_network](./Uebung_006a2_network.svg)
 
-  * **2x `E_T_FF_SR`**: Einer für jeden Lichtkanal.
-  * **`I1` & `I2`**: Tasten zum individuellen Umschalten der Kanäle.
-  * **`I3`**: Gemeinsamer Reset-Taster.
+  - **2x `E_T_FF_SR`**: Einer für jeden Lichtkanal.
+  - **`I1` & `I2`**: Tasten zum individuellen Umschalten der Kanäle.
+  - **`I3`**: Gemeinsamer Reset-Taster.
 
 -----
 
@@ -30,9 +30,9 @@ Realisierung einer "Zentral-Aus" Funktion für mehrere unabhängige Speicherglie
 
 Die Logik nutzt das Fan-Out Prinzip für Ereignisse:
 
-*   `I1` ist mit `CLK` von Flip-Flop 1 verbunden.
-*   `I2` ist mit `CLK` von Flip-Flop 2 verbunden.
-*   `I3` (Reset) ist mit den `R`-Eingängen **beider** Flip-Flops verbunden.
+-   `I1` ist mit `CLK` von Flip-Flop 1 verbunden.
+-   `I2` ist mit `CLK` von Flip-Flop 2 verbunden.
+-   `I3` (Reset) ist mit den `R`-Eingängen **beider** Flip-Flops verbunden.
 
 Ein Druck auf `I3` schaltet sofort alle Lampen im System aus, unabhängig davon, in welchem Zustand sie sich vorher befanden.
 

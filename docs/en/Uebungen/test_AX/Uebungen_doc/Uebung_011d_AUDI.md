@@ -3,6 +3,7 @@
 ![Uebung_011d_AUDI_network](./Uebung_011d_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates passing a numeric input value (I1) to an output (N3) using an offset/scale effect. The incoming value is converted via an adapter and passed to an output function block.
@@ -47,6 +48,6 @@ The exercise "Exercise_011d_AUDI" illustrates how a numeric ISOBUS input value i
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

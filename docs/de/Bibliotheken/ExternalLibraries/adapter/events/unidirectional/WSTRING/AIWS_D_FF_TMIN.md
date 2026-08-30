@@ -3,6 +3,7 @@
 ![AIWS_D_FF_TMIN](./AIWS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIWS_D_FF_TMIN** realisiert einen Daten-Latch (D-Flip-Flop) mit einer minimalen Wartezeit zwischen zwei aufeinanderfolgenden Ausgabeereignissen (Minimum inter-disposal Time). Er wird über Adapter-Schnittstellen (Typ: AIWS, unidirektional) angesprochen, die einen Wert aufnehmen und als gelatchten Wert wieder ausgeben. Die Steuerung erfolgt über das Ereignis des Eingabeadapters (CLK-Flanke), wobei die Ausgabe erst nach Ablauf einer einstellbaren Totzeit (Tmin) erfolgt.
@@ -34,7 +35,7 @@ Keine eigenen Datenausgänge – der gelatchte Wert wird ausschließlich über d
 ### **Adapter**
 
 | Richtung | Name | Typ | Kommentar |
-|----------|------|-----|----------|
+| ---------- | ------ | ----- | ---------- |
 | Socket (Eingang) | I | adapter::types::unidirectional::AIWS | Wert, der gelatcht werden soll |
 | Plug (Ausgang) | Q | adapter::types::unidirectional::AIWS | Gelatchter Wert |
 

@@ -42,6 +42,7 @@ Der **Q_ChangeObjectLabel** ist ein standardkonformer Funktionsbaustein zur Änd
 Der Befehl F.50 adressiert in Bytes 2,3 die **Objekt-ID des zu beschriftenden Objekts** — laut Annex F.51 (Fehler-Bit 0) und B.21 muss dieses Objekt in der **Object Label Reference List** gelistet sein (d. h. ein beliebiges Pool-Objekt, dessen ID ein Eintrag der Referenzliste ist).
 
 **Implementierungshinweis (VTClientHelper):** `iso_is_object_label_refer_list_id` akzeptiert nur den **ObjectLabelReferList**-Bereich (die ID des Referenzlisten-Objekts selbst) — eine bekannte Abweichung von der Annex-F.50-Semantik:
+
 - **ObjectLabelReferList**: 40000 – 40999
 
 ID_NULL (65535) ist kein gültiges Kommandoziel, deaktiviert aber bei `INIT` den Baustein.

@@ -3,6 +3,7 @@
 ![Uebung_201b_AX_network](./Uebung_201b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the control of a motor with clockwise and counterclockwise rotation using an interlock circuit. The function block `ILOCK_BLOCK_AX` prevents both directions of rotation from being active simultaneously. The input signals come from two digital sensors (I1 and I2) via logiBUS digital signal adapters. The outputs control the motor (clockwise rotation Q5, counterclockwise rotation Q6) and a common low-side driver (Q56) via logiBUS output blocks. Signal adaptation is implemented by the sub-application block `AX_2_TO_3`.
@@ -49,10 +50,11 @@ The exact logic (e.g., edge processing or delay) is determined by the manufactur
 1. **Digital Inputs**: The sensors at `Input_I1` and `Input_I2` are provided as adapter signals via `DigitalInput_I1` and `DigitalInput_I2`.
 2. **Interlock**: These signals are sent to the adapter inputs `UP_IN` and `DOWN_IN` of `ILOCK_BLOCK_AX`. Only if both are not active simultaneously are the signals passed through to `UP_OUT` and `DOWN_OUT`, respectively.
 3. **Signal Conversion**: The outputs of the Interlock module (`UP_OUT`, `DOWN_OUT`) are connected to the corresponding inputs of the Sub-Application module `AX_2_TO_3`. This converts the two adapter signals into three output signals:
+
 - `UP_OUT` → Clockwise (to `Rechtslauf.OUT`)
 - `DOWN_OUT` → Counterclockwise (to `Linkslauf.OUT`)
 - `OR_OUT` → Low-side driver (to `LowSide_Treiber.OUT`)
-4. **Output Blocks**: The three logiBUS_QXA blocks convert the adapter signals into physical outputs at `Output_Q5`, `Output_Q56`, and `Output_Q6`.
+1. **Output Blocks**: The three logiBUS_QXA blocks convert the adapter signals into physical outputs at `Output_Q5`, `Output_Q56`, and `Output_Q6`.
 
 **Learning Objectives**:
 
@@ -71,4 +73,4 @@ The exercise `Uebung_201b_AX` implements an interlock-controlled motor with cloc
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

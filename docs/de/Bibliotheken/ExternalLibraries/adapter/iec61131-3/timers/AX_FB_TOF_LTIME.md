@@ -3,6 +3,7 @@
 ![AX_FB_TOF_LTIME](./AX_FB_TOF_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_FB_TOF_LTIME** realisiert einen Standard-Timer für die Ausschaltverzögerung (Off-Delay) nach IEC 61131-3. Er ist speziell für den Einsatz mit einem AX-Adapter ausgelegt und verwendet dabei einen internen Timerbaustein sowie ein D-Flipflop, um das Zeitverhalten präzise abzubilden. Die Zeitbasis arbeitet mit dem Datentyp `LTIME`, wodurch eine hohe zeitliche Auflösung erreicht wird.
@@ -67,7 +68,7 @@ Die Variable `ET` wird direkt vom Timer übernommen und zeigt jederzeit die aktu
 ## Zustandsübersicht
 
 | Zustand | Eingang `IN` | Ausgang `Q` | Verstrichene Zeit `ET` |
-|---------|--------------|-------------|------------------------|
+| --------- | -------------- | ------------- | ------------------------ |
 | Inaktiv / Bereit | TRUE | TRUE | 0 (Null) |
 | Verzögerung läuft | FALSE → TRUE‑Rückkehr möglich | TRUE | 0 … PT |
 | Verzögerung abgelaufen | FALSE | FALSE | PT (konstant) |

@@ -3,6 +3,7 @@
 ![initval_AI](initval_AI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AI` ist der konfigurierbare Initialisierungsbaustein für den [AI](../AI.md)-Adapter (Datentyp `INT`, 16-Bit-Ganzzahl (vorzeichenbehaftet)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AI`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

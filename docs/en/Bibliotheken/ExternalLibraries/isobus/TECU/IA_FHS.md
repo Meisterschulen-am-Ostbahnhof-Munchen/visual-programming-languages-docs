@@ -3,9 +3,11 @@
 ![IA_FHS](./IA_FHS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **IA_FHS** serves as an ISOBUS adapter for the Front Hitch Status (FHS) according to ISO 11783-7 (PGN 65094). It encapsulates the internal processing of the function block `I_FHS` and provides the acquired measurement and status values via standardized unidirectional adapter outputs. Initialization occurs via the event `INIT`; after successful completion, the data is provided via the adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,15 +31,15 @@ The function block **IA_FHS** serves as an ISOBUS adapter for the Front Hitch St
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|----------|--------|----------------------------|
+| ---------- | -------- | ---------------------------- |
 | `QO` | BOOL | Output Qualifier |
 | `STATUS` | STRING | Status Message (e.g., "OK") |
 
 ### **Adapters**
 
 | Adapter | Type | Description |
-|-----------|-----------------------------|----------------------------------------------|
-| `POSITION`| `adapter::types::unidirectional::AUS` | Front Hitch Position (analog, unsigned) |
+| ----------- | ----------------------------- | ---------------------------------------------- |
+| `POSITION` | `adapter::types::unidirectional::AUS` | Front Hitch Position (analog, unsigned) |
 | `FORCE` | `adapter::types::unidirectional::AUS` | Front Nominal Lower Link Force (analog) |
 | `DRAFT` | `adapter::types::unidirectional::AUI` | Front Draft (analog, integer, unsigned) |
 | `TIMEOUT` | `adapter::types::unidirectional::AX` | ISOBUS Reception Timeout Status |
@@ -84,4 +86,4 @@ The **IA_FHS** function block offers a ready-to-use ISOBUS adapter for front hit
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

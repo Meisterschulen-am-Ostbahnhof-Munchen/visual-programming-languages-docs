@@ -3,6 +3,7 @@
 ![ALI_TO_AX](./ALI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_TO_AX** ist ein zusammengesetzter (Composite) Baustein, der einen Adapter vom Typ **ALI** (enthält einen LINT-Wert) in einen Adapter vom Typ **AX** (enthält einen BOOL-Wert) umwandelt.  

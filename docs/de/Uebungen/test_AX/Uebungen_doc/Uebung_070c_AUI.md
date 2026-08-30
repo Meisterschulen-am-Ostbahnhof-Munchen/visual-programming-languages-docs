@@ -5,6 +5,7 @@
 *Kein Bild vorhanden.*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung zeigt, wie eine radbasierte Maschinengeschwindigkeit (WBSD – Wheel Based Speed) über den ISOBUS erfasst und auf ein UT (Universal Terminal) ausgegeben wird. Die Implementierung erfolgt als Subapplikation (SubApp) und nutzt Adapterverbindungen zur Kommunikation zwischen den Funktionsbausteinen. Ziel ist es, den Eingangswert mittels eines Adapters zu skalieren und als numerischen Wert auf das UT zu bringen.

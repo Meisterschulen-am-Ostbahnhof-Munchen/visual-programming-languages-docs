@@ -3,9 +3,11 @@
 ![NVS_AB2](./NVS_AB2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NVS_AB2** enables the loading and saving of `REAL` data in non-volatile storage (NVS) using a string key. It encapsulates NVS access in a convenient, asynchronous interface and communicates with the environment via a bidirectional **AB2** adapter. This makes the block particularly suitable for scenarios where configuration values or status data need to be permanently stored on an ESP32.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **NVS_AB2** enables the loading and saving of `REAL` data in 
 ### **Data Inputs**
 
 | Name | Type | Description |
-|----------------|--------|--------------|
+| ---------------- | -------- | -------------- |
 | `QI` | BOOL | Qualifier for the initialization event (e.g., enabling processing). |
 | KEY` | STRING | Name of the key under which the value is stored in the NVS. |
 | DEFAULT_VALUE` | REAL | Value returned if no value exists in the NVS for the specified key. |
@@ -31,7 +33,7 @@ The function block **NVS_AB2** enables the loading and saving of `REAL` data in 
 ### **Data Outputs**
 
 | Name | Type | Description |
-|----------|--------|--------------|
+| ---------- | -------- | -------------- |
 | QO` | BOOL | Qualifier for the output event – signals success (`TRUE`) or failure (`FALSE`). |
 | `STATUS` | STRING | Detailed status message (e.g., error text or confirmation). |
 
@@ -91,4 +93,4 @@ In contrast, function blocks without an adapter require separate event inputs fo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

@@ -3,9 +3,11 @@
 ![I_TD_TD](./I_TD_TD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **I_TD_TD** is a wrapper around the base block `I_TD` and generates a combined IEC 61131-3 date/time struct (type `DT`) from the individual time and date components. It serves as an interface to an ISOBUS-compliant time/date service (PGN 65254) and provides the processed time information as well as local time offsets as separate outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The function block **I_TD_TD** is a wrapper around the base block `I_TD` and gen
 ### **Event Outputs**
 
 | Name | Type | Carrying Data |
-|------|-----|--------------------|
+| ------ | ----- | -------------------- |
 | INITO | EInit | `QO`, `STATUS` |
 | IND | Event | `QO`, `timestamp_data`, `STATUS`, `Q_timeout`, `LOCAL_MINUTE_OFFSET`, `LOCAL_HOUR_OFFSET` |
 | TIMEOUT | Event | `timestamp_timeout`, `STATUS`, `Q_timeout` |
@@ -31,7 +33,7 @@ The function block **I_TD_TD** is a wrapper around the base block `I_TD` and gen
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | QO | BOOL | Output Qualifier (Processing Status) |
 | STATUS | STRING | Status Message |
 | Q_timeout | BOOL | Timeout Flag |
@@ -53,15 +55,15 @@ The function block encapsulates the following steps:
 
 An event at input `INIT` starts the internal function block `I_TD` (`I_CORE`). This block executes its own initialization sequence and confirms with `INITO`. The qualifiers `QO` and `STATUS` are passed to the corresponding outputs.
 
-2. **Cyclic Time/Date Capture**
+1. **Cyclic Time/Date Capture**
 
 Once the internal function block is ready, it cyclically generates a `IND` event. This event triggers the downstream function block `F_CONCAT_DT`. `F_CONCAT_DT` combines the individual components (year, month, day, hour, minute, second) provided by `I_TD` into a `DT` struct. The millisecond component is fixed at 0. After concatenation is complete, a `CNF` event is generated, which activates the external `IND` output, along with all other data outputs (timestamps, offsets, etc.).
 
-3. **Timeout**
+1. **Timeout**
 
 If the internal service reports a timeout, the `TIMEOUT` event is activated at the output. The associated data (`timestamp_timeout`, `STATUS`, `Q_timeout`) are taken directly from the inner block.
 
-4. **Forwarding the Raw Data**
+1. **Forwarding the Raw Data**
 
 The outputs `timestamp_data`, `timestamp_timeout`, `LOCAL_MINUTE_OFFSET`, and `LOCAL_HOUR_OFFSET` are taken unchanged from `I_TD`.
 

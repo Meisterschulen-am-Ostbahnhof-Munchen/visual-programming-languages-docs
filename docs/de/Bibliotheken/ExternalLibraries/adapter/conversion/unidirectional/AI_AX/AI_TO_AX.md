@@ -3,6 +3,7 @@
 ![AI_TO_AX](./AI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein `AI_TO_AX` ist ein Composite-Funktionsblock (Typ-Adapter), der eine unidirektionale Schnittstelle eines INT-Adapters (`AI`) in eine entsprechende BOOL-Schnittstelle eines Adapters (`AX`) umwandelt. Er dient dazu, analoge Integer-Signale (z. B. aus Sensoren) in binäre Boolesche Werte zu überführen, die beispielsweise für Schaltsignale oder Alarmmeldungen genutzt werden können.

@@ -47,7 +47,7 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
   - **Datenausgänge**:
     - `DO_UP` – gesetzter Ausgangswert für Kanal 1
     - `DO_DOWN` – gesetzter Ausgangswert für Kanal 2
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der `ILOCK_BLOCK` wertet die beiden Kanäle aus. Wenn `DI_UP` aktiv (`1`) und das Ereignis `EI_UP` eintrifft, wird `DO_UP` auf `1` gesetzt und gleichzeitig `DO_DOWN` auf `0` zurückgesetzt (Verriegelung). Analog wird bei Aktivierung von Kanal 2 der Kanal 1 gesperrt. Es ist sichergestellt, dass nie beide Ausgänge gleichzeitig `TRUE` werden.
 
 ### Sub-Bausteine: `DigitalOutput_Q1`
@@ -74,31 +74,31 @@ Diese Übung demonstriert die Realisierung einer **gegenseitigen Verriegelung** 
 
 Der Ablauf der Übung wird durch die **Ereignis‑ und Datenverbindungen** im SubApp‑Netzwerk bestimmt:
 
-1. **Eingangssignal‑Erfassung**  
+1. **Eingangssignal‑Erfassung**
    Die beiden Digitaleingänge `DigitalInput_I1` und `DigitalInput_I2` überwachen die physikalischen Eingänge `Input_I1` bzw. `Input_I2`. Bei einer steigenden oder fallenden Flanke wird das Ereignis `IND` ausgelöst.
 
-2. **Ereignisweiterleitung zum ILOCK**  
-   - `DigitalInput_I1.IND` → `ILOCK.EI_UP`  
-   - `DigitalInput_I2.IND` → `ILOCK.EI_DOWN`  
-   Gleichzeitig werden die aktuellen digitalen Werte über die Datenverbindungen an den `ILOCK` übergeben:  
+2. **Ereignisweiterleitung zum ILOCK**
+   - `DigitalInput_I1.IND` → `ILOCK.EI_UP`
+   - `DigitalInput_I2.IND` → `ILOCK.EI_DOWN`
+   Gleichzeitig werden die aktuellen digitalen Werte über die Datenverbindungen an den `ILOCK` übergeben:
 
-   - `DigitalInput_I1.IN` → `ILOCK.DI_UP`  
+   - `DigitalInput_I1.IN` → `ILOCK.DI_UP`
    - `DigitalInput_I2.IN` → `ILOCK.DI_DOWN`
 
-3. **Verriegelungslogik**  
+3. **Verriegelungslogik**
    Der `ILOCK_BLOCK` verarbeitet die eingehenden Ereignisse und Daten. Er setzt den Ausgang `DO_UP` (bzw. `DO_DOWN`) auf den Wert des zugehörigen Eingangs, sofern der andere Kanal nicht bereits aktiv ist. Durch die interne Logik wird sichergestellt, dass immer nur ein Kanal den Wert `TRUE` liefern kann. Die Ausgangsereignisse `EO_UP` und `EO_DOWN` werden entsprechend generiert.
 
-4. **Ausgabe an die Hardware**  
-   Die Ereignisse und Daten des `ILOCK` werden an die Digitalausgänge weitergeleitet:  
+4. **Ausgabe an die Hardware**
+   Die Ereignisse und Daten des `ILOCK` werden an die Digitalausgänge weitergeleitet:
 
-   - `ILOCK.EO_UP` → `DigitalOutput_Q1.REQ`  
-   - `ILOCK.EO_DOWN` → `DigitalOutput_Q2.REQ`  
-   - `ILOCK.DO_UP` → `DigitalOutput_Q1.OUT`  
-   - `ILOCK.DO_DOWN` → `DigitalOutput_Q2.OUT`  
+   - `ILOCK.EO_UP` → `DigitalOutput_Q1.REQ`
+   - `ILOCK.EO_DOWN` → `DigitalOutput_Q2.REQ`
+   - `ILOCK.DO_UP` → `DigitalOutput_Q1.OUT`
+   - `ILOCK.DO_DOWN` → `DigitalOutput_Q2.OUT`
 
    Der jeweilige Ausgangsbaustein übernimmt den Wert und gibt ihn an den physikalischen Ausgang `Output_Q1` bzw. `Output_Q2` aus.
 
-**Zusammenfassende Funktionsweise**:  
+**Zusammenfassende Funktionsweise**:
 Wird der erste Eingang aktiviert (z. B. Taste an `Input_I1`), so schaltet der zugehörige Ausgang `Output_Q1` ein und der zweite Ausgang wird sofort ausgeschaltet. Wird anschließend der zweite Eingang aktiviert, wechselt der aktive Ausgang zu `Output_Q2` und `Output_Q1` wird wieder ausgeschaltet. Ein gleichzeitiges Halten beider Eingänge führt zu einer definierten Priorisierung (üblicherweise der zuletzt gedrückte Kanal).
 
 ## Zusammenfassung
@@ -118,4 +118,4 @@ Nach Abschluss dieser Übung sind Sie in der Lage, einfache Interlock‑Logiken 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

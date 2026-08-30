@@ -3,6 +3,7 @@
 ![AIS_SPLIT_7](./AIS_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIS_SPLIT_7** dient zur Verteilung eines eingehenden AIS-Datenstroms auf sieben identische Ausgänge. Er ist als generischer Baustein implementiert und ermöglicht die Aufteilung eines unidirektionalen AIS-Adapters (Socket IN) auf sieben gleichartige Adapter-Plugs (OUT1 … OUT7). Die Bezeichnung „AIS“ steht hier für einen anwendungsspezifischen, abstrakten Datentyp im Adapter-Kontext der IEC 61499.

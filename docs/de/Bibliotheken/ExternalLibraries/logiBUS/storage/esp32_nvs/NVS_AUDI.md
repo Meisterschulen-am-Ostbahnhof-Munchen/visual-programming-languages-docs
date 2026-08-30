@@ -3,6 +3,7 @@
 ![NVS_AUDI](./NVS_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NVS_AUDI** ermöglicht das Speichern und Laden von **UDINT**-Daten im **Non-Volatile Storage (NVS)** eines ESP32-Mikrocontrollers. Die Daten werden über einen eindeutigen **Schlüssel (KEY)** adressiert. Der Baustein verwendet ein **unidirektionales AUDI-Adapter-Interface** zur Kommunikation mit dem NVS: Über einen Eingangsadapter (Socket) wird der zu speichernde Wert empfangen, über einen Ausgangsadapter (Plug) wird der gelesene Wert bereitgestellt.
@@ -63,7 +64,7 @@ Sowohl nach dem Laden als auch nach dem Speichern wird der Status (QO, STATUS) �
 
 Da im XML keine explizite Zustandsmaschine definiert ist, ergibt sich der Ablauf aus den Ereignissen:
 
-1. **Initialisierungsphase** – INIT empfangen → NVS-INIT → NVS-GET ausgelöst.  
+1. **Initialisierungsphase** – INIT empfangen → NVS-INIT → NVS-GET ausgelöst.
    Danach: Bereit (wartet auf SET oder erneuten GET durch erneutes INIT).
 
 2. **Speicherphase** – Ereignis über AUDI_IN (E1) → NVS-SET → Wert wird geschrieben.
@@ -92,5 +93,5 @@ Der **NVS_AUDI**-Funktionsblock stellt eine elegante Lösung zur persistenten Sp
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

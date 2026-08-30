@@ -3,6 +3,7 @@
 ![ISO_NETEVENT_e](./ISO_NETEVENT_e.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die globale Konstantendatei `ISO_NETEVENT_e` definiert eine Aufzählung (Enumeration) von Ereignistypen für das Netzwerkmanagement in einem ISOBUS-kompatiblen System. Sie stellt benannte, ganzzahlige Konstanten zur Verfügung, die verschiedene Zustandsänderungen und Ereignisse im Netzwerk repräsentieren, wie z.B. das Hinzufügen oder Entfernen von Teilnehmern oder Adresskonflikte. Die Verwendung dieser Konstanten erhöht die Lesbarkeit und Wartbarkeit des Quellcodes.
@@ -37,10 +38,10 @@ Die Datei deklariert eine Reihe von Konstanten vom Typ `USINT` (Unsigned Short I
 
 ## Technische Besonderheiten
 
-*   **Typ:** Alle Konstanten sind vom Typ `USINT`.
-*   **Initialisierung:** Jede Konstante wird bei der Deklaration mit einem eindeutigen Wert initialisiert (0 bis 9).
-*   **Bedingte Kompilierung:** Die Konstanten `Isonet_HsiActive` und `Isonet_HsiInactive` sind als bedingte Konstanten gekennzeichnet (ursprünglich aus C-Code). Ihre Verwendung kann von der Definition eines Präprozessor-Symbols (`CCI_HSI`) abhängen.
-*   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was auf ihre Verwendung im Kontext der ISOBUS-Protokollbehandlung (Parameter Group Number) hindeutet.
+-   **Typ:** Alle Konstanten sind vom Typ `USINT`.
+-   **Initialisierung:** Jede Konstante wird bei der Deklaration mit einem eindeutigen Wert initialisiert (0 bis 9).
+-   **Bedingte Kompilierung:** Die Konstanten `Isonet_HsiActive` und `Isonet_HsiInactive` sind als bedingte Konstanten gekennzeichnet (ursprünglich aus C-Code). Ihre Verwendung kann von der Definition eines Präprozessor-Symbols (`CCI_HSI`) abhängen.
+-   **Paketzuordnung:** Die Konstanten sind dem Paket `isobus::pgn` zugeordnet, was auf ihre Verwendung im Kontext der ISOBUS-Protokollbehandlung (Parameter Group Number) hindeutet.
 
 ## Zustandsübersicht
 
@@ -67,4 +68,4 @@ Die `ISO_NETEVENT_e` ist eine essentielle Ressource für die strukturierte Entwi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -58,26 +58,27 @@ The exercise `Uebung_002a5b_AX` implements a control logic in which the states o
 
 2. **Logical OR operation**: The data outputs of the three input blocks are directly connected to the data inputs of the OR block `AX_OR_3`:
 
-* `DigitalInput_I1.IN` is connected to `AX_OR_3.IN1`.
-* `DigitalInput_I2.IN` is connected to `AX_OR_3.IN2`.
-* `DigitalInput_I3.IN` is connected to `AX_OR_3.IN3`.
+- `DigitalInput_I1.IN` is connected to `AX_OR_3.IN1`.
+- `DigitalInput_I2.IN` is connected to `AX_OR_3.IN2`.
+- `DigitalInput_I3.IN` is connected to `AX_OR_3.IN3`.
 
 The `AX_OR_3` block logically combines these three Boolean values. The result (`TRUE`, if I1 OR I2 OR I3 is `TRUE`) is made available at its data output `AX_OR_3.OUT`.
 
-3. **Signal Distribution**: The data output of the OR gate (`AX_OR_3.OUT`) is connected to the data input of the signal distributor `AX_SPLIT_3` (`AX_SPLIT_3.IN`). The `AX_SPLIT_3` gate duplicates this single control signal and forwards it to its three data outputs (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`).
-4. **Output Control**: The outputs of the signal distributor are each connected to the inputs of the digital output modules:
-* `AX_SPLIT_3.OUT1` is connected to `DigitalOutput_Q1.OUT`.
-* `AX_SPLIT_3.OUT2` is connected to `DigitalOutput_Q2.OUT`.
-* `AX_SPLIT_3.OUT3` is connected to `DigitalOutput_Q3.OUT`.
+1. **Signal Distribution**: The data output of the OR gate (`AX_OR_3.OUT`) is connected to the data input of the signal distributor `AX_SPLIT_3` (`AX_SPLIT_3.IN`). The `AX_SPLIT_3` gate duplicates this single control signal and forwards it to its three data outputs (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`).
+2. **Output Control**: The outputs of the signal distributor are each connected to the inputs of the digital output modules:
+
+- `AX_SPLIT_3.OUT1` is connected to `DigitalOutput_Q1.OUT`.
+- `AX_SPLIT_3.OUT2` is connected to `DigitalOutput_Q2.OUT`.
+- `AX_SPLIT_3.OUT3` is connected to `DigitalOutput_Q3.OUT`.
 
 This means that all three digital outputs `Output_Q1`, `Output_Q2`, and `Output_Q3`Assume the same state that corresponds to the result of the OR operation of the three inputs.
 
 **Learning Objectives**:
 
-* Understanding and application of digital input and output components.
-* Implementation of basic logic operations (OR) in the 4diac IDE.
-* Use of signal splitters to efficiently control multiple components from a single control signal.
-* Familiarization with the concept of adapter components for flexible connections.
+- Understanding and application of digital input and output components.
+- Implementation of basic logic operations (OR) in the 4diac IDE.
+- Use of signal splitters to efficiently control multiple components from a single control signal.
+- Familiarization with the concept of adapter components for flexible connections.
 
 **Difficulty Level**: Intermediate. Basic knowledge of digital logic and operation of the 4diac IDE is advantageous.
 
@@ -90,7 +91,7 @@ The exercise `Uebung_002a5b_AX` provides a practical introduction to combining d
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## Program Flow and Connections
 

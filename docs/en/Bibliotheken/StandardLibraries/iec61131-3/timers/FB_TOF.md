@@ -2,8 +2,9 @@
 
 ## 🎧 Podcast
 
-* [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems? ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
-* [FB_TOF and E_TOF: Delay timers in IEC 61131-3 and 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
+- [E_TOF vs. FB_TOF: The event timer that doesn't tick cyclically – a revolution for automation systems? ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
+- [FB_TOF and E_TOF: Delay timers in IEC 61131-3 and 61499 ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
+
 ----
 ![image](https://github.com/user-attachments/assets/e60568d1-aba5-4e35-9488-8a79d1cb877b)
 
@@ -66,8 +67,8 @@ The FB_TOF function block can be used in various industrial control applications
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)
-* [Exercise_020e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+- [Exercise_020e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e2.md)
+- [Exercise_020e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
 
 ## Conclusion
 

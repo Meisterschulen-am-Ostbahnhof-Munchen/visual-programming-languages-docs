@@ -3,6 +3,7 @@
 ![INI_AS](./INI_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus einer `settings.ini`‑Datei. Er greift über einen Abschnittsnamen (`SECTION`) und einen Schlüssel (`KEY`) auf einen Konfigurationswert zu. Über die Adapter‑Schnittstelle `AS` kann der Wert sowohl gelesen als auch geschrieben werden. Der Baustein kapselt den internen `INI`‑Funktionsblock und erweitert ihn um eine einheitliche Adapter‑Schnittstelle.
@@ -46,14 +47,14 @@ Der Funktionsblock **INI_AS** dient dem Laden und Speichern von SINT‑Daten aus
 
 ## Funktionsweise
 
-1. **Initialisierung und erstes Lesen (INIT‑Ereignis)**  
-   Mit dem `INIT`‑Ereignis werden die Parameter `SECTION`, `KEY` und `DEFAULT_VALUE` übergeben. Der interne `INI`‑Baustein wird gestartet, liest den Wert aus der `settings.ini` und gibt ihn über den Adapter‑Ausgang `AS_OUT` aus. Gleichzeitig wird das `INITO`‑Ereignis ausgelöst, das den Abschluss der Initialisierung meldet.  
+1. **Initialisierung und erstes Lesen (INIT‑Ereignis)**
+   Mit dem `INIT`‑Ereignis werden die Parameter `SECTION`, `KEY` und `DEFAULT_VALUE` übergeben. Der interne `INI`‑Baustein wird gestartet, liest den Wert aus der `settings.ini` und gibt ihn über den Adapter‑Ausgang `AS_OUT` aus. Gleichzeitig wird das `INITO`‑Ereignis ausgelöst, das den Abschluss der Initialisierung meldet.
    Anschließend (eventuell noch im gleichen Zyklus) wird automatisch ein `GET` auf dem `INI`‑Baustein ausgeführt, sodass der gelesene Wert sofort am Adapter anliegt.
 
-2. **Schreiben eines Wertes (über den Adapter‑Eingang)**  
+2. **Schreiben eines Wertes (über den Adapter‑Eingang)**
    Über den Socket `AS_IN` kann ein neuer Wert (Ereignis `E1` und Daten `D1`) an den Baustein gesendet werden. Dieses Ereignis wird auf den `SET`‑Eingang des internen `INI`‑Bausteins weitergeleitet, der den Wert in der INI‑Datei speichert. Nach erfolgreichem Speichern wird das Ereignis `SETO` des `INI`‑Bausteins ausgelöst, das wiederum den Adapter‑Ausgang `AS_OUT` (Ereignis `E1`) bedient und den gespeicherten Wert über `D1` ausgibt.
 
-3. **Rückmeldungen**  
+3. **Rückmeldungen**
    Der interne `INI`‑Baustein liefert die Ausgangssignale `QO` und `STATUS`, die direkt an die gleichnamigen Ausgänge des `INI_AS`‑Bausteins durchgeschliffen werden.
 
 ## Technische Besonderheiten
@@ -89,4 +90,4 @@ Der Funktionsblock `INI_AS` ist ein komfortabler Baustein zum persistenten Lesen
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

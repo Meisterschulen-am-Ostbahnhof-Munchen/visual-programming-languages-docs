@@ -29,12 +29,12 @@ Der Baustein besitzt keine direkten Datenausgänge. Das Ergebnis wird über eine
 ### **Adapter**
 
 | Bezeichnung | Richtung | Typ | Beschreibung |
-|-------------|----------|-----|--------------|
-| `IN1`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster Summand |
-| `IN2`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter Summand |
-| `IN3`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Dritter Summand |
-| `IN4`  | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Vierter Summand |
-| `OUT`  | Plug (Ausgang)  | `adapter::types::unidirectional::AUDI` | Ergebnis der Addition |
+| ------------- | ---------- | ----- | -------------- |
+| `IN1` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster Summand |
+| `IN2` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter Summand |
+| `IN3` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Dritter Summand |
+| `IN4` | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Vierter Summand |
+| `OUT` | Plug (Ausgang) | `adapter::types::unidirectional::AUDI` | Ergebnis der Addition |
 
 ## Funktionsweise
 
@@ -74,4 +74,4 @@ Der `AUDI_ADD_4` ist ein flexibler, reiner Adapterbaustein zur Addition von vier
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

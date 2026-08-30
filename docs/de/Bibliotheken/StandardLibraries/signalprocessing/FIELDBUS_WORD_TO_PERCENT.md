@@ -3,6 +3,7 @@
 <img width="888" height="143" alt="FIELDBUS_WORD_TO_PERCENT" src="https://github.com/user-attachments/assets/e6b552d3-4641-408d-b965-e2eb5c8cdef0" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FIELDBUS_WORD_TO_PERCENT` konvertiert einen REAL-Wert im Bereich von 0.0 bis 100.0 in einen WORD-Wert im Bereich von 0 bis FAFF (hexadezimal). Dies ist besonders nützlich für die Signalverarbeitung in Feldbussystemen, die nach den Standards SAE J1939 und ISO 11783 arbeiten.

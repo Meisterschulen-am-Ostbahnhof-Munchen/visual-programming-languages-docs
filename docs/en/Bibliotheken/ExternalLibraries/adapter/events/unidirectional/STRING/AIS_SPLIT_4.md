@@ -3,9 +3,11 @@
 ![AIS_SPLIT_4](./AIS_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_SPLIT_4** is used to distribute an incoming AIS adapter signal (type `adapter::types::unidirectional::AIS`) to four separate outputs. It implements a 1-to-4 split without modifying the data. The block is implemented generically and can be adapted to different signal types via the generic class name.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -72,6 +74,6 @@ The **AIS_SPLIT_4** is a simple yet practical function block for reliably distri
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

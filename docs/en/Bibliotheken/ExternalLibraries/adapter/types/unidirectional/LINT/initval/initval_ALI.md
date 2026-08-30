@@ -3,6 +3,7 @@
 ![initval_ALI](initval_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_ALI` is the configurable initialization block for the [ALI](../ALI.md) adapter (data type `LINT`, 64-bit signed integer): it accepts a start value as a data input at initialization time and writes it to a `ALI` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

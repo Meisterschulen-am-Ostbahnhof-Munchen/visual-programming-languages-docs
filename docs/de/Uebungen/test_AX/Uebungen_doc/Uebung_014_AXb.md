@@ -3,6 +3,7 @@
 ![Uebung_014_AXb_network](./Uebung_014_AXb_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Nutzung von Softkeys in Kombination mit einem SR-Flipflop, um ein grafisches Objekt (Container_B) ein- und auszublenden. Der Funktionsbaustein überwacht die Tastendrücke der Softkeys F1 (Setzen) und F2 (Rücksetzen) und steuert über ein SR-Glied die Sichtbarkeit des Containers. Die zugehörigen Konstanten *Container_B*, *SoftKey_F1* und *SoftKey_F2* sind aus einem globalen Pool importiert.
@@ -57,4 +58,4 @@ In dieser Übung wird ein einfaches, aber praxisnahes Steuerungsmuster für die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

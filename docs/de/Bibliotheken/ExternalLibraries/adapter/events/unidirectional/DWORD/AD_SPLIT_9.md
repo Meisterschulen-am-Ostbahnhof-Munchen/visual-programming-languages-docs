@@ -3,6 +3,7 @@
 ![AD_SPLIT_9](./AD_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_SPLIT_9** verteilt einen eingehenden unidirektionalen Adapter (AD) auf neun identische Ausgänge. Er ist als generischer FB realisiert und eignet sich zur Mehrfachnutzung eines Adaptersignals in verschiedenen nachgelagerten Komponenten.
@@ -28,8 +29,8 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Name | Typ | Richtung |
-|------|-----|----------|
-| IN   | adapter::types::unidirectional::AD | Socket (Eingang) |
+| ------ | ----- | ---------- |
+| IN | adapter::types::unidirectional::AD | Socket (Eingang) |
 | OUT1 | adapter::types::unidirectional::AD | Plug (Ausgang) |
 | OUT2 | adapter::types::unidirectional::AD | Plug (Ausgang) |
 | OUT3 | adapter::types::unidirectional::AD | Plug (Ausgang) |
@@ -76,4 +77,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

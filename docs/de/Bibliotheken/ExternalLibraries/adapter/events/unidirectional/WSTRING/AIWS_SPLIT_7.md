@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_7](./AIWS_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIWS_SPLIT_7** ist ein generischer Baustein, der einen einzelnen eingehenden AIWS-Adapter (unidirektional) auf sieben identische ausgehende AIWS-Adapter aufteilt. Er dient als Signalverteiler für automatisierungstechnische Anwendungen, bei denen ein Datenstrom oder eine Verbindung auf mehrere parallele Pfade kopiert werden muss.
@@ -28,7 +29,7 @@ Keine (der Funktionsblock besitzt keine direkten Daten-Ausgänge; die Datenüber
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AIWS` | **IN** | Socket (Eingang) | Empfängt den zu verteilenden AIWS-Datenstrom. |
 | `adapter::types::unidirectional::AIWS` | **OUT1** | Plug (Ausgang) | Erster identischer Ausgangskanal. |
 | `adapter::types::unidirectional::AIWS` | **OUT2** | Plug (Ausgang) | Zweiter identischer Ausgangskanal. |

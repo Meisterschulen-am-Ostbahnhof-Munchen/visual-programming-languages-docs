@@ -3,6 +3,7 @@
 ![Uebung_202_network](./Uebung_202_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the application of an **interlock function block with timeout (ILOCK_BLOCK_PROTECT)**.
@@ -13,7 +14,7 @@ The logical input signals are read via digital inputs, and the output signals ar
 ## Function Blocks Used
 
 | Function Block Name | Type | Description |
-|--------------|-----|--------------|
+| -------------- | ----- | -------------- |
 | DigitalInput\_I1 | `logiBUS::io::DI::logiBUS_IX` | Digital input – reads the signal from **Input_I1** (e.g., "Up" button) |
 | DigitalInput\_I2 | `logiBUS::io::DI::logiBUS_IX` | Digital input – reads the signal from **Input_I2** (e.g., "Down" button) |
 | ILOCK | `logiBUS::signalprocessing::interlock::ILOCK_BLOCK_PROTECT` | Interlock block with protection time – locks the outputs and enforces a minimum switching delay (parameter `DT_PROTECT = T#1s`) |
@@ -38,11 +39,11 @@ The logical input signals are read via digital inputs, and the output signals ar
 
 A rising edge at input I2 triggers the "Down" event.
 
-3. **ILOCK.EO_UP** → **DigitalOutput_Q1.REQ**
+1. **ILOCK.EO_UP** → **DigitalOutput_Q1.REQ**
 
 When the interlock releases the "Up" state, digital output Q1 is set.
 
-4. **ILOCK.EO_DOWN** → **DigitalOutput_Q2.REQ**
+1. **ILOCK.EO_DOWN** → **DigitalOutput_Q2.REQ**
 
 When the interlock releases the "Down" state, digital output Q2 is set.
 
@@ -80,6 +81,6 @@ Exercise **Exercise_202** illustrates a simple interlock with a timeout. Two pus
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

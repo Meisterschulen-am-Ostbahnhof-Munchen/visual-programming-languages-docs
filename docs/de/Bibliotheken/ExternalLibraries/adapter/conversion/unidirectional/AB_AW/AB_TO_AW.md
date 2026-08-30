@@ -3,6 +3,7 @@
 ![AB_TO_AW](./AB_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AB_TO_AW** ist ein Composite-Baustein, der eine unidirektionale Konvertierung von einem AB-Adapter (BYTE-basiert) zu einem AW-Adapter (WORD-basiert) vornimmt. Er dient als Schnittstellenumsetzer, wenn ein Systemteil Daten im BYTE-Format liefert, der nachgeschaltete Teil jedoch ein WORD-Format erwartet.

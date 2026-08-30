@@ -3,6 +3,7 @@
 ![AUDI_TO_AX](./AUDI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_TO_AX` ist ein Composite-FB, der einen **AUDI**-Adapter (UDINT-Daten) in einen **AX**-Adapter (BOOL-Daten) umwandelt. Er dient als unidirektionaler Konverter für Anwendungen, bei denen ein ganzzahliger Wert (z.B. aus einem Zähler) auf ein binäres Signal abgebildet werden soll – konkret wird geprüft, ob der Eingangswert ungleich Null ist. Der FB ist als reine Netzwerkverbindung aus IEC‑61131-konformen Bausteinen realisiert.
@@ -76,4 +77,4 @@ Der Funktionsblock `AUDI_TO_AX` ist ein spezialisierter, aber sehr nützlicher K
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![AULI_TO_AW](./AULI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_AW** ist ein zusammengesetzter Baustein (Composite FB), der eine ULINT‑Adapter-Schnittstelle (AULI) in eine WORD‑Adapter-Schnittstelle (AW) umwandelt. Er wird dort eingesetzt, wo ein unidirektionaler Datentyp‑Wechsel von vorzeichenloser 64‑Bit‑Ganzzahl auf 16‑Bit‑Wort erforderlich ist.
@@ -76,4 +77,4 @@ Vergleichbare Bausteine sind z.B. **ULINT_TO_INT** oder **ULINT_TO_DWORD**, die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

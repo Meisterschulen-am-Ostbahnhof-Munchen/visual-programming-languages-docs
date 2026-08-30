@@ -65,8 +65,8 @@ Im Vergleich zu einfachen ODER-Bausteinen mit nur zwei Eingängen bietet OR_3 di
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
-* [Uebung_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+- [Uebung_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+- [Uebung_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Fazit
 

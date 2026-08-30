@@ -4,8 +4,8 @@
 
 ![E_SR_ecc](./E_SR_ecc.svg)
 
-* [IEC 61499: Der E_SR-Baustein entschlüsselt – Einfachheit trifft Ereignissteuerung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Der-E_SR-Baustein-entschlsselt--Einfachheit-trifft-Ereignissteuerung-e3682bo)
-* [Decoding the E_SR Function Block: The Unsung Hero of Industrial Automation](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-the-E_SR-Function-Block-The-Unsung-Hero-of-Industrial-Automation-e3681qo)
+- [IEC 61499: Der E_SR-Baustein entschlüsselt – Einfachheit trifft Ereignissteuerung](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/IEC-61499-Der-E_SR-Baustein-entschlsselt--Einfachheit-trifft-Ereignissteuerung-e3682bo)
+- [Decoding the E_SR Function Block: The Unsung Hero of Industrial Automation](https://podcasters.spotify.com/pod/show/iec-61499-prime-course-en/episodes/Decoding-the-E_SR-Function-Block-The-Unsung-Hero-of-Industrial-Automation-e3681qo)
 
 ## Einleitung
 
@@ -58,29 +58,29 @@ Laut **DIN EN 61499-1 (Tabelle A.1, Anmerkung 8)** ist die Implementierung diese
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)
-* [Uebung_004b2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b2.md)
-* [Uebung_004b3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b3.md)
-* [Uebung_006](../../../Uebungen/test_B/Uebungen_doc/Uebung_006.md)
-* [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
-* [Uebung_006d](../../../Uebungen/test_B/Uebungen_doc/Uebung_006d.md)
-* [Uebung_007a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_007a3.md)
-* [Uebung_008](../../../Uebungen/test_B/Uebungen_doc/Uebung_008.md)
-* [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
-* [Uebung_013](../../../Uebungen/test_B/Uebungen_doc/Uebung_013.md)
-* [Uebung_014](../../../Uebungen/test_B/Uebungen_doc/Uebung_014.md)
-* [Uebung_015](../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Uebung_016](../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
-* [Uebung_019b](../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
-* [Uebung_019c](../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
-* [Uebung_021](../../../Uebungen/test_B/Uebungen_doc/Uebung_021.md)
-* [Uebung_022](../../../Uebungen/test_B/Uebungen_doc/Uebung_022.md)
-* [Uebung_023](../../../Uebungen/test_B/Uebungen_doc/Uebung_023.md)
-* [Uebung_024](../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
-* [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
-* [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
-* [Uebung_160b](../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
+- [Uebung_004b](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b.md)
+- [Uebung_004b2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b2.md)
+- [Uebung_004b3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004b3.md)
+- [Uebung_006](../../../Uebungen/test_B/Uebungen_doc/Uebung_006.md)
+- [Uebung_006c](../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+- [Uebung_006d](../../../Uebungen/test_B/Uebungen_doc/Uebung_006d.md)
+- [Uebung_007a3](../../../Uebungen/test_B/Uebungen_doc/Uebung_007a3.md)
+- [Uebung_008](../../../Uebungen/test_B/Uebungen_doc/Uebung_008.md)
+- [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
+- [Uebung_013](../../../Uebungen/test_B/Uebungen_doc/Uebung_013.md)
+- [Uebung_014](../../../Uebungen/test_B/Uebungen_doc/Uebung_014.md)
+- [Uebung_015](../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Uebung_016](../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+- [Uebung_019b](../../../Uebungen/test_B/Uebungen_doc/Uebung_019b.md)
+- [Uebung_019c](../../../Uebungen/test_B/Uebungen_doc/Uebung_019c.md)
+- [Uebung_021](../../../Uebungen/test_B/Uebungen_doc/Uebung_021.md)
+- [Uebung_022](../../../Uebungen/test_B/Uebungen_doc/Uebung_022.md)
+- [Uebung_023](../../../Uebungen/test_B/Uebungen_doc/Uebung_023.md)
+- [Uebung_024](../../../Uebungen/test_B/Uebungen_doc/Uebung_024.md)
+- [Uebung_025](../../../Uebungen/test_B/Uebungen_doc/Uebung_025.md)
+- [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
+- [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_160b](../../../Uebungen/test_B/Uebungen_doc/Uebung_160b.md)
 
 ## Fazit
 

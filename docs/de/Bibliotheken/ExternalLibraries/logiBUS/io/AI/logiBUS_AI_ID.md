@@ -73,8 +73,8 @@ Im Vergleich zu einfachen analogen Eingangsbausteinen bietet logiBUS_AI_ID erwei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
-* [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
+- [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
 
 ## Fazit
 

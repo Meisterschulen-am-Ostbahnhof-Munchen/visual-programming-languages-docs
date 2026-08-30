@@ -5,6 +5,7 @@
 ![sequence_E_05_loop_ecc](./sequence_E_05_loop_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_E_05_loop` implementiert eine zyklische Sequenz mit fünf Zuständen. Der Übergang zwischen den einzelnen Zuständen erfolgt ausschließlich über externe Ereignisse. Der Baustein ist für Anwendungen konzipiert, in denen ein Prozessschritt erst nach Abschluss eines vorherigen Schritts und dem Eintreffen eines spezifischen Freigabesignals beginnen darf. Die Sequenz kann von jedem Zustand aus in den initialen Startzustand zurückgesetzt werden.
@@ -15,39 +16,39 @@ Der Funktionsblock `sequence_E_05_loop` implementiert eine zyklische Sequenz mit
 
 ### **Ereignis-Eingänge**
 
-*   `START_S1`: Wechselt vom Startzustand (`START`) in den ersten aktiven Zustand (`State_01`).
-*   `S1_S2`: Wechselt von `State_01` zu `State_02`.
-*   `S2_S3`: Wechselt von `State_02` zu `State_03`.
-*   `S3_S4`: Wechselt von `State_03` zu `State_04`.
-*   `S4_S5`: Wechselt von `State_04` zu `State_05`.
-*   `S5_S1`: Wechselt von `State_05` zurück zu `State_01` (Zyklus).
-*   `RESET`: Setzt die Sequenz von jedem beliebigen Zustand in den initialen Startzustand (`START`) zurück.
+-   `START_S1`: Wechselt vom Startzustand (`START`) in den ersten aktiven Zustand (`State_01`).
+-   `S1_S2`: Wechselt von `State_01` zu `State_02`.
+-   `S2_S3`: Wechselt von `State_02` zu `State_03`.
+-   `S3_S4`: Wechselt von `State_03` zu `State_04`.
+-   `S4_S5`: Wechselt von `State_04` zu `State_05`.
+-   `S5_S1`: Wechselt von `State_05` zurück zu `State_01` (Zyklus).
+-   `RESET`: Setzt die Sequenz von jedem beliebigen Zustand in den initialen Startzustand (`START`) zurück.
 
 ### **Ereignis-Ausgänge**
 
-*   `CNF`: Allgemeines Bestätigungsereignis, das bei jedem Zustandswechsel ausgelöst wird. Es liefert die aktuelle Zustandsnummer (`STATE_NR`) mit.
-*   `EO_S1`: Wird beim Eintritt in `State_01` ausgelöst und liefert den zugehörigen Datenausgang `DO_S1` mit.
-*   `EO_S2`: Wird beim Eintritt in `State_02` ausgelöst und liefert den zugehörigen Datenausgang `DO_S2` mit.
-*   `EO_S3`: Wird beim Eintritt in `State_03` ausgelöst und liefert den zugehörigen Datenausgang `DO_S3` mit.
-*   `EO_S4`: Wird beim Eintritt in `State_04` ausgelöst und liefert den zugehörigen Datenausgang `DO_S4` mit.
-*   `EO_S5`: Wird beim Eintritt in `State_05` ausgelöst und liefert den zugehörigen Datenausgang `DO_S5` mit.
+-   `CNF`: Allgemeines Bestätigungsereignis, das bei jedem Zustandswechsel ausgelöst wird. Es liefert die aktuelle Zustandsnummer (`STATE_NR`) mit.
+-   `EO_S1`: Wird beim Eintritt in `State_01` ausgelöst und liefert den zugehörigen Datenausgang `DO_S1` mit.
+-   `EO_S2`: Wird beim Eintritt in `State_02` ausgelöst und liefert den zugehörigen Datenausgang `DO_S2` mit.
+-   `EO_S3`: Wird beim Eintritt in `State_03` ausgelöst und liefert den zugehörigen Datenausgang `DO_S3` mit.
+-   `EO_S4`: Wird beim Eintritt in `State_04` ausgelöst und liefert den zugehörigen Datenausgang `DO_S4` mit.
+-   `EO_S5`: Wird beim Eintritt in `State_05` ausgelöst und liefert den zugehörigen Datenausgang `DO_S5` mit.
 
 ### **Daten-Eingänge**
 
-*   Dieser Funktionsblock besitzt keine Dateneingänge.
+-   Dieser Funktionsblock besitzt keine Dateneingänge.
 
 ### **Daten-Ausgänge**
 
-*   `STATE_NR` (SINT): Gibt die Nummer des aktuell aktiven Zustands aus. Die Kodierung lautet: START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
-*   `DO_S1` (BOOL): Ist `TRUE`, wenn `State_01` aktiv ist.
-*   `DO_S2` (BOOL): Ist `TRUE`, wenn `State_02` aktiv ist.
-*   `DO_S3` (BOOL): Ist `TRUE`, wenn `State_03` aktiv ist.
-*   `DO_S4` (BOOL): Ist `TRUE`, wenn `State_04` aktiv ist.
-*   `DO_S5` (BOOL): Ist `TRUE`, wenn `State_05` aktiv ist.
+-   `STATE_NR` (SINT): Gibt die Nummer des aktuell aktiven Zustands aus. Die Kodierung lautet: START = 0, State_01 = 1, State_02 = 2, ..., State_05 = 5.
+-   `DO_S1` (BOOL): Ist `TRUE`, wenn `State_01` aktiv ist.
+-   `DO_S2` (BOOL): Ist `TRUE`, wenn `State_02` aktiv ist.
+-   `DO_S3` (BOOL): Ist `TRUE`, wenn `State_03` aktiv ist.
+-   `DO_S4` (BOOL): Ist `TRUE`, wenn `State_04` aktiv ist.
+-   `DO_S5` (BOOL): Ist `TRUE`, wenn `State_05` aktiv ist.
 
 ### **Adapter**
 
-*   Dieser Funktionsblock verwendet keine Adapter.
+-   Dieser Funktionsblock verwendet keine Adapter.
 
 ## Funktionsweise
 
@@ -63,29 +64,29 @@ Ein `RESET`-Ereignis führt in den `sRESET`-Zustand. Hier werden alle potenziell
 
 ## Technische Besonderheiten
 
-*   **Ereignisgesteuerte Transitionen:** Jeder Zustandsübergang muss explizit durch das entsprechende Eingangsereignis ausgelöst werden. Es gibt keine zeit- oder datengesteuerten automatischen Übergänge.
-*   **Entkoppelte Signale:** Die booleschen Zustandsausgänge (`DO_Sx`) und die zugehörigen Ereignisausgänge (`EO_Sx`) werden synchron gesetzt und ausgelöst. Dies erlaubt eine flexible Anbindung an nachfolgende Logik.
-*   **Explizite Reset-Logik:** Der Reset-Vorgang deaktiviert systematisch alle Ausgänge, bevor der Startzustand wiederhergestellt wird, was ein sauberes und definiertes Verhalten gewährleistet.
-*   **Konstanten für Zustandsnummern:** Die Zustandsnummern werden über den importierten Namensraum `sequence::` (z.B. `sequence::State_01`) zugewiesen, was die Wartbarkeit und Lesbarkeit des Codes erhöht.
+-   **Ereignisgesteuerte Transitionen:** Jeder Zustandsübergang muss explizit durch das entsprechende Eingangsereignis ausgelöst werden. Es gibt keine zeit- oder datengesteuerten automatischen Übergänge.
+-   **Entkoppelte Signale:** Die booleschen Zustandsausgänge (`DO_Sx`) und die zugehörigen Ereignisausgänge (`EO_Sx`) werden synchron gesetzt und ausgelöst. Dies erlaubt eine flexible Anbindung an nachfolgende Logik.
+-   **Explizite Reset-Logik:** Der Reset-Vorgang deaktiviert systematisch alle Ausgänge, bevor der Startzustand wiederhergestellt wird, was ein sauberes und definiertes Verhalten gewährleistet.
+-   **Konstanten für Zustandsnummern:** Die Zustandsnummern werden über den importierten Namensraum `sequence::` (z.B. `sequence::State_01`) zugewiesen, was die Wartbarkeit und Lesbarkeit des Codes erhöht.
 
 ## Zustandsübersicht
 
 Die ECC besteht aus folgenden Zuständen und möglichen Übergängen:
 
-*   **xSTART:** Initialer, inaktiver Zustand. Übergang zu `sState_01` via `START_S1`.
-*   **sState_01:** Erster aktiver Zustand. Übergänge zu `sState_02` via `S1_S2` oder zu `sRESET` via `RESET`.
-*   **sState_02:** Zweiter aktiver Zustand. Übergänge zu `sState_03` via `S2_S3` oder zu `sRESET` via `RESET`.
-*   **sState_03:** Dritter aktiver Zustand. Übergänge zu `sState_04` via `S3_S4` oder zu `sRESET` via `RESET`.
-*   **sState_04:** Vierter aktiver Zustand. Übergänge zu `sState_05` via `S4_S5` oder zu `sRESET` via `RESET`.
-*   **sState_05:** Fünfter aktiver Zustand. Übergänge zu `sState_01` via `S5_S1` (Zyklus) oder zu `sRESET` via `RESET`.
-*   **sRESET:** Reset-Zustand. Führt Reset-Aktionen aus und wechselt anschließend bedingungslos zurück zu `xSTART`.
+-   **xSTART:** Initialer, inaktiver Zustand. Übergang zu `sState_01` via `START_S1`.
+-   **sState_01:** Erster aktiver Zustand. Übergänge zu `sState_02` via `S1_S2` oder zu `sRESET` via `RESET`.
+-   **sState_02:** Zweiter aktiver Zustand. Übergänge zu `sState_03` via `S2_S3` oder zu `sRESET` via `RESET`.
+-   **sState_03:** Dritter aktiver Zustand. Übergänge zu `sState_04` via `S3_S4` oder zu `sRESET` via `RESET`.
+-   **sState_04:** Vierter aktiver Zustand. Übergänge zu `sState_05` via `S4_S5` oder zu `sRESET` via `RESET`.
+-   **sState_05:** Fünfter aktiver Zustand. Übergänge zu `sState_01` via `S5_S1` (Zyklus) oder zu `sRESET` via `RESET`.
+-   **sRESET:** Reset-Zustand. Führt Reset-Aktionen aus und wechselt anschließend bedingungslos zurück zu `xSTART`.
 
 ## Anwendungsszenarien
 
-*   **Schrittkettensteuerungen:** Steuerung von Maschinenabläufen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben werden muss (z.B. Handarbeitsplatz mit Freigabetaster).
-*   **Batch-Prozesse:** Durchführung von Rezeptschritten, bei denen der Operator oder ein übergeordnetes System den nächsten Schritt bestätigen muss.
-*   **Sicherheitskritische Sequenzen:** Prozesse, bei denen ein unkontrollierter automatischer Wechsel vermieden werden soll.
-*   **Test- und Inbetriebnahmesequenzen:** Manuelles Durchschalten von einzelnen Funktionen eines Systems.
+-   **Schrittkettensteuerungen:** Steuerung von Maschinenabläufen, bei denen jeder Schritt manuell oder durch ein Sensorsignal freigegeben werden muss (z.B. Handarbeitsplatz mit Freigabetaster).
+-   **Batch-Prozesse:** Durchführung von Rezeptschritten, bei denen der Operator oder ein übergeordnetes System den nächsten Schritt bestätigen muss.
+-   **Sicherheitskritische Sequenzen:** Prozesse, bei denen ein unkontrollierter automatischer Wechsel vermieden werden soll.
+-   **Test- und Inbetriebnahmesequenzen:** Manuelles Durchschalten von einzelnen Funktionen eines Systems.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

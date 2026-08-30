@@ -1,8 +1,9 @@
 # Exercise_002a6_AX: DigitalInput_I1-3 with AND on DigitalOutput_Q1, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a6_AX`. In this exercise, a logical AND gate with three inputs is implemented. The digital output is only activated if all three monitored inputs are simultaneously in the "True" (HIGH) state.
+This article describes the logiBUS® exercise `Uebung_002a6_AX`. In this exercise, a logical AND gate with three inputs is implemented. The digital output is only activated if all three monitored inputs are simultaneously in the "True" (HIGH) state
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to implement more complex conditional logic. It demonstrates how multiple safety or operational parameters can be combined to enable an actuator. This is a typical requirement in industrial control engineering to ensure that several conditions are met before an action is executed.
@@ -19,9 +20,9 @@ The following blocks are used:
 
 ![Uebung_002a6_AX_network](./Uebung_002a6_AX_network.svg)
 
-* **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the states of the physical inputs `Input_I1` to `Input_I3`[cite: 1].
-* **`AX_AND_3`**: An instance of type `AX_AND_3`. [cite_start]This function block performs the logical AND operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and provides the result at the adapter output `OUT`[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block controls the hardware output `Output_Q1`[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the states of the physical inputs `Input_I1` to `Input_I3`[cite: 1].
+- **`AX_AND_3`**: An instance of type `AX_AND_3`. [cite_start]This function block performs the logical AND operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and provides the result at the adapter output `OUT`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block controls the hardware output `Output_Q1`[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 

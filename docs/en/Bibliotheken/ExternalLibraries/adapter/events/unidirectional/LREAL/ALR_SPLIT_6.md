@@ -3,9 +3,11 @@
 ![ALR_SPLIT_6](./ALR_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ALR_SPLIT_6 function block is a generic 1:6 splitter for the adapter type `adapter::types::unidirectional::ALR`. It distributes an incoming ALR signal unchanged to six outputs and serves as a passive signal distributor without data manipulation.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 #### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::ALR` | Socket (Input) | ALR input signal copied to all outputs |
 | OUT1 | `adapter::types::unidirectional::ALR` | Plug (Output) | First ALR output |
 | OUT2 | `adapter::types::unidirectional::ALR` | Plug (Output) | Second ALR output |
@@ -76,6 +78,6 @@ ALR_SPLIT_6 is a minimalist and reliable block for signal duplication at the ada
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

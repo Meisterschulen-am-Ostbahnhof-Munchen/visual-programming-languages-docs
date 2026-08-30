@@ -13,6 +13,7 @@
 ![ADI_SUB_2](./ADI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_SUB_2` ist ein generischer Funktionsbaustein (Generic FB) zur Durchführung von arithmetischen Subtraktionen in IEC 61499 Anwendungen. Der Baustein nutzt unidirektionale Adapter des Typs `ADI`, um Eingangsdaten zu empfangen und das berechnete Ergebnis auszugeben. Durch den Einsatz von Adaptern wird die Verdrahtung innerhalb der 4diac-IDE vereinfacht und die Modularität erhöht.
@@ -53,27 +54,29 @@ Das Ergebnis wird an den Ausgangs-Adapter `OUT` übergeben, und das zugehörige 
 
 ## Technische Besonderheiten
 
-* **Generischer Typ:** Der Baustein ist als generischer Typ definiert (`eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_ADI_SUB'`). Dies ermöglicht eine flexible Anpassung an unterschiedliche Datentypen innerhalb des `ADI`-Adapters.
-* **Unidirektionale Adapter:** Durch die Verwendung der unidirektionalen Adapterstruktur (`adapter::types::unidirectional::ADI`) bleibt der Datenfluss gerichtet und zyklische Abhängigkeiten werden vermieden.
+- **Generischer Typ:** Der Baustein ist als generischer Typ definiert (`eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_ADI_SUB'`). Dies ermöglicht eine flexible Anpassung an unterschiedliche Datentypen innerhalb des `ADI`-Adapters.
+- **Unidirektionale Adapter:** Durch die Verwendung der unidirektionalen Adapterstruktur (`adapter::types::unidirectional::ADI`) bleibt der Datenfluss gerichtet und zyklische Abhängigkeiten werden vermieden.
 
 ## Zustandsübersicht
 
 Da es sich um einen mathematischen Berechnungsbaustein handelt, ist das Verhalten im Wesentlichen zustandslos und ereignisgesteuert:
+
 1. **Warten:** Der Baustein wartet auf ein Trigger-Ereignis an einem der Eingangs-Adapter (`IN1` oder `IN2`).
 2. **Berechnung:** Bei Ereigniseingang werden die Datenwerte ausgelesen und subtrahiert.
 3. **Ausgabe:** Der berechnete Wert wird auf den Adapter `OUT` geschrieben und das dortige Sende-Ereignis getriggert.
 
 ## Anwendungsszenarien
 
-* **Regelungstechnik:** Berechnung einer Regelabweichung ($e = w - x$), bei der Sollwert ($w$) und Istwert ($x$) über standardisierte ADI-Schnittstellen übertragen werden.
-* **Messwertverarbeitung:** Differenzdruckmessung oder Offset-Korrektur von Sensorwerten, die über Adapter in die Applikation eingebunden sind.
-* **Signalvorverarbeitung:** Reduzierung von Signalwerten um feste oder variable Grenzwerte vor der Weiterleitung an Aktoren.
+- **Regelungstechnik:** Berechnung einer Regelabweichung ($e = w - x$), bei der Sollwert ($w$) und Istwert ($x$) über standardisierte ADI-Schnittstellen übertragen werden.
+- **Messwertverarbeitung:** Differenzdruckmessung oder Offset-Korrektur von Sensorwerten, die über Adapter in die Applikation eingebunden sind.
+- **Signalvorverarbeitung:** Reduzierung von Signalwerten um feste oder variable Grenzwerte vor der Weiterleitung an Aktoren.
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-Subtraktionsbaustein (wie z.B. dem klassischen `SUB`-Baustein nach IEC 61131-3), der direkte Daten- und Ereignispins nutzt, bietet `ADI_SUB_2` folgende Vorteile:
-* **Weniger Verbindungslinien:** Daten und Ereignisse sind im `ADI`-Adapter gebündelt, was das Anwendungsdiagramm in 4diac übersichtlicher macht.
-* **Standardisierte Schnittstellen:** Erleichtert den Austausch von Berechnungs- und Verarbeitungsblöcken, da nur noch die Adapter verbunden werden müssen.
+
+- **Weniger Verbindungslinien:** Daten und Ereignisse sind im `ADI`-Adapter gebündelt, was das Anwendungsdiagramm in 4diac übersichtlicher macht.
+- **Standardisierte Schnittstellen:** Erleichtert den Austausch von Berechnungs- und Verarbeitungsblöcken, da nur noch die Adapter verbunden werden müssen.
 
 ## Änderungserkennung
 

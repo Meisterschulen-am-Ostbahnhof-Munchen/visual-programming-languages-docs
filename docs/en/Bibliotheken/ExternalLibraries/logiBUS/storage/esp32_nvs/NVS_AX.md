@@ -3,6 +3,7 @@
 ![NVS_AX](NVS_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `NVS_AX` loads and stores a `BOOL` value under a key (`KEY`) in the ESP32's non-volatile storage (NVS). It is the Boolean counterpart to [NVS_AB](NVS_AB.md) and uses the same two-adapter architecture, but with unidirectional `AX` adapters instead of `AB`.

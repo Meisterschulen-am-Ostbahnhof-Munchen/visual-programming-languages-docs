@@ -16,7 +16,7 @@ Dies entspricht einer klassischen Wechselschaltung oder Stromstoßschaltung in d
 
 In dieser SubApp werden verschiedene Funktionsbausteine verschaltet, um die gewünschte Logik zu realisieren.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 
@@ -57,22 +57,22 @@ In dieser SubApp werden verschiedene Funktionsbausteine verschaltet, um die gew�
 Der Ablauf der Schaltung ist wie folgt definiert:
 
 1.  **Eingabeerfassung**:
-    *   Der Benutzer betätigt entweder den Taster an Eingang `Input_I1` oder an `Input_I2`.
-    *   Die entsprechenden Bausteine (`DigitalInput_CLK_I1` oder `DigitalInput_CLK_I2`) erkennen den "Single Click" und senden ein `IND` Event.
+    -   Der Benutzer betätigt entweder den Taster an Eingang `Input_I1` oder an `Input_I2`.
+    -   Die entsprechenden Bausteine (`DigitalInput_CLK_I1` oder `DigitalInput_CLK_I2`) erkennen den "Single Click" und senden ein `IND` Event.
 
 2.  **Zusammenführung (Merge)**:
-    *   Das Event von `I1` (verbunden mit `E_MERGE_2.EI1`) oder das Event von `I2` (verbunden mit `E_MERGE_2.EI2`) erreicht den Merge-Baustein.
-    *   Der `E_MERGE_2` leitet das Event über `EO` weiter an das Flip-Flop.
+    -   Das Event von `I1` (verbunden mit `E_MERGE_2.EI1`) oder das Event von `I2` (verbunden mit `E_MERGE_2.EI2`) erreicht den Merge-Baustein.
+    -   Der `E_MERGE_2` leitet das Event über `EO` weiter an das Flip-Flop.
 
 3.  **Verarbeitung (Toggle)**:
-    *   Das Event erreicht den Takteingang `CLK` des `E_T_FF`.
-    *   Das Flip-Flop negiert seinen aktuellen Zustand am Datenausgang `Q`.
-    *   Das Flip-Flop signalisiert den neuen Wert über das Event `EO`.
+    -   Das Event erreicht den Takteingang `CLK` des `E_T_FF`.
+    -   Das Flip-Flop negiert seinen aktuellen Zustand am Datenausgang `Q`.
+    -   Das Flip-Flop signalisiert den neuen Wert über das Event `EO`.
 
 4.  **Ausgabe**:
-    *   Das Event `EO` des Flip-Flops aktiviert den Ausgangsbaustein `DigitalOutput_Q1` am Eingang `REQ`.
-    *   Gleichzeitig wird der neue Zustand `Q` an `DigitalOutput_Q1.OUT` übertragen.
-    *   Die physische Lampe/Aktor an `Output_Q1` schaltet sich ein oder aus.
+    -   Das Event `EO` des Flip-Flops aktiviert den Ausgangsbaustein `DigitalOutput_Q1` am Eingang `REQ`.
+    -   Gleichzeitig wird der neue Zustand `Q` an `DigitalOutput_Q1.OUT` übertragen.
+    -   Die physische Lampe/Aktor an `Output_Q1` schaltet sich ein oder aus.
 
 ## Zusammenfassung
 
@@ -82,4 +82,4 @@ Die Übung `Uebung_004a2_2` demonstriert effektiv, wie man in 4diac mehrere Eing
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

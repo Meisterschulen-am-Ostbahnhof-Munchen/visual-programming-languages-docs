@@ -6,6 +6,7 @@
 
 The function block `F_LREAL_AS_STRING` is used to convert an LREAL value (64-bit floating-point number) into a STRING. This functionality is particularly useful when numeric values are needed as strings for display, logging, or communication.
 ![F_LREAL_AS_STRING](F_LREAL_AS_STRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

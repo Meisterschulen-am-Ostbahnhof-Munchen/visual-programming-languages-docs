@@ -1,9 +1,11 @@
 # RT_Bridge_6
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_6 function block serves as a decoupling bridge for six data connections between real-time event chains.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,4 +38,4 @@ The RT_Bridge_6 function block serves as a decoupling bridge for six data connec
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

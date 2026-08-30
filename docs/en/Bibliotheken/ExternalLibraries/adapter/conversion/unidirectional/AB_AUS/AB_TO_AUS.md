@@ -3,9 +3,11 @@
 ![AB_TO_AUS](./AB_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_TO_AUS** is a composite block that performs a unidirectional conversion of data from the **AB adapter** (BYTE) to the **AUS adapter** (USINT). It encapsulates the necessary type conversion and event passing, thus enabling the seamless integration of components based on different data types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ There are no direct data outputs. The converted data (USINT) is provided via the
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | Socket | **AB_IN** | Input | Unidirectional adapter of type `adapter::types::unidirectional::AB`. Returns a BYTE (`D1`) and an event (`E1`). |
 | Plug | **OFF_OUT** | Output | Unidirectional adapter of type `adapter::types::unidirectional::AUS`. Provides a USINT (`D1`) and an event (`E1`). |
 
@@ -36,7 +38,7 @@ There are no direct data outputs. The converted data (USINT) is provided via the
 1. An event at `AB_IN.E1` triggers processing.
 2. The value of `AB_IN.D1` (BYTE) is passed to the internal converter **F_BYTE_TO_USINT**.
 3. The converter transforms the BYTE into a USINT value. 4. The result is output to `AUS_OUT.D1` (USINT).
-5. Simultaneously, an event is generated on `AUS_OUT.E1` to signal the subsequent processing.
+4. Simultaneously, an event is generated on `AUS_OUT.E1` to signal the subsequent processing.
 
 The entire conversion is event-driven and performed in a single step.
 
@@ -60,7 +62,7 @@ The **AB_TO_AUS** function block does not have its own state machine. Its operat
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | **F_BYTE_TO_USINT** | Simple IEC converter without adapter connection. Must be manually wired with event and data connections. |
 | **AB_TO_AUS** | Composite function block that encapsulates the entire adapter conversion, including event forwarding, thus providing a clean, abstracted interface. |
 | **AUS_TO_AB** (hypothetical) | Reverse conversion from USINT to BYTE – mirrored functionality for the opposite direction. |

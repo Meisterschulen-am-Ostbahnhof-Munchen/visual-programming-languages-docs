@@ -10,16 +10,16 @@ Diese Übung vermittelt die grundlegende Funktionsweise einer **Interlock‑Scha
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **DigitalInput_I1 … DigitalInput_I4**  
-  Typ: `logiBUS::io::DI::logiBUS_IX`  
+- **DigitalInput_I1 … DigitalInput_I4**
+  Typ: `logiBUS::io::DI::logiBUS_IX`
   – Ein digitaler Eingang des logiBUS‑Systems.
 
-- **DigitalOutput_Q1 … DigitalOutput_Q4**  
-  Typ: `logiBUS::io::DQ::logiBUS_QX`  
+- **DigitalOutput_Q1 … DigitalOutput_Q4**
+  Typ: `logiBUS::io::DQ::logiBUS_QX`
   – Ein digitaler Ausgang des logiBUS‑Systems.
 
-- **ILOCK_1 … ILOCK_4**  
-  Typ: `logiBUS::signalprocessing::interlock::ILOCK_IO`  
+- **ILOCK_1 … ILOCK_4**
+  Typ: `logiBUS::signalprocessing::interlock::ILOCK_IO`
   – Spezieller Interlock‑Funktionsbaustein, der den Zustand eines Eingangssignals nur dann an den Ausgang weitergibt, wenn die interne Verriegelungsbedingung erfüllt ist.
 
 Es sind keine verschachtelten Sub‑Bausteine (Unterapplikationen) vorhanden.
@@ -28,13 +28,13 @@ Es sind keine verschachtelten Sub‑Bausteine (Unterapplikationen) vorhanden.
 
 ### Ereignis‑ und Datenfluss
 
-1. **Eingangsereignisse**  
+1. **Eingangsereignisse**
    Jeder Digitaleingang (z. B. `DigitalInput_I1`) erzeugt ein Ereignis (`IND`), sobald sich der Eingangswert ändert. Dieses Ereignis wird direkt an den zugehörigen Interlock‑Block (z. B. `ILOCK_1.REQ`) gesendet.
 
-2. **Datenweitergabe**  
+2. **Datenweitergabe**
    Der Wert des Digitaleingangs (`IN`‑Datenport) wird parallel zum Ereignis an den entsprechenden Interlock‑Block (`ILOCK_x.IN`) übergeben.
 
-3. **Verriegelungskette**  
+3. **Verriegelungskette**
    Über Adapterverbindungen sind die Interlock‑Blöcke kaskadiert:
 
    - `ILOCK_1.ILOCK_OUT` → `ILOCK_2.ILOCK_IN`
@@ -43,14 +43,14 @@ Es sind keine verschachtelten Sub‑Bausteine (Unterapplikationen) vorhanden.
 
    Diese Verkettung bewirkt, dass ein Interlock‑Baustein nur dann einen gültigen Ausgang liefert, wenn der vorherige Baustein ebenfalls aktiviert wurde.
 
-4. **Ausgangssteuerung**  
+4. **Ausgangssteuerung**
    Nach der internen Verarbeitung gibt jeder Interlock‑Block ein Bestätigungsereignis (`CNF`) aus, das den zugehörigen Digitalausgang (z. B. `DigitalOutput_Q1.REQ`) ansteuert. Gleichzeitig wird der Datenwert (`OUT`) an den Ausgang übertragen.
 
 ### Lernziele und Hinweise
 
-- **Lernziel:** Verständnis der Interlock‑Logik und der kaskadierten Freigabebedingungen.  
-- **Schwierigkeitsgrad:** Grundlegend.  
-- **Voraussetzungen:** Grundkenntnisse in der 4diac‑IDE und im Umgang mit logiBUS‑Bausteinen.  
+- **Lernziel:** Verständnis der Interlock‑Logik und der kaskadierten Freigabebedingungen.
+- **Schwierigkeitsgrad:** Grundlegend.
+- **Voraussetzungen:** Grundkenntnisse in der 4diac‑IDE und im Umgang mit logiBUS‑Bausteinen.
 - **Start der Übung:** Legen Sie die Digitaleingänge (z. B. über Simulations‑Testwerte) auf `TRUE` und beobachten Sie, wie die Ausgänge nacheinander aktiv werden.
 
 ## Zusammenfassung
@@ -61,4 +61,4 @@ Die Übung *Uebung_201_Interlock_BOOL* demonstriert den Aufbau einer einfachen V
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

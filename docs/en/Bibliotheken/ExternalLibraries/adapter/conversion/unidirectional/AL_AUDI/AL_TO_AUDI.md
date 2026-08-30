@@ -3,9 +3,11 @@
 ![AL_TO_AUDI](./AL_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_TO_AUDI** is a composite block that converts an LWORD adapter input (type `AL`) into a UDINT adapter output (type `AUDI`). It encapsulates the IEC 61131-3 conversion function `F_LWORD_TO_UDINT` and provides a clean, adapter-based interface for unidirectional data flows.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 ### **Adapters**
 
 | Adapter Type | Name | Description |
-|------------|-----------|-------------------------------------------------------|
+| ------------ | ----------- | ------------------------------------------------------- |
 | Socket | `AL_IN` | LWORD adapter input (Type: `adapter::types::unidirectional::AL`) |
 | Plug | `AUDI_OUT` | UDINT adapter output (Type: `adapter::types::unidirectional::AUDI`) |
 
@@ -52,6 +54,7 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 The function block has no states of its own. Its behavior is purely combinatorial and is entirely determined by the internal conversion function – the conversion occurs per event without internal storage.
 
 **Unidirectional Adapters**: ** ...
+
 ## Application Scenarios
 
 - **System Integration**: Connecting components that use different data types for addresses, counters, or configuration values (e.g., LWORD for wide addresses, UDINT for embedded systems).

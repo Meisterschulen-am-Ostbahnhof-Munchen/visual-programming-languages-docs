@@ -5,6 +5,7 @@
 > **Publisher:** German Association of Agricultural and Construction Machinery Technicians V., Alfredstraße 102, 45131 Essen (Status: February 25, 2025)
 > **Regulation:** *Master Craftsman Examination Regulation (LandBauMechMstrV)* of September 9, 2024 (Federal Law Gazette 2024 I No. 277, effective August 1, 2025)
 ---
+
 ## 🎯 Main Importance in the 2025 Curriculum Framework
 
 Visual programming languages (especially **IEC 61499** with function blocks, event execution control, and low-code development environments such as **Eclipse 4diac**) are the **central didactic and technical tool** in the new 2025 curriculum framework for agricultural and construction machinery mechatronics technicians.
@@ -47,7 +48,7 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## 🔗 Main Portal & Direct Links to the 6 Wikis
 

@@ -3,6 +3,7 @@
 ![AL_SPLIT_8](./AL_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AL_SPLIT_8` verteilt ein eingehendes unidirektionales AL-Signal (Socket `IN`) auf acht identische Ausgänge (Plugs `OUT1` bis `OUT8`). Er wird als generischer Baustein deklariert und dient der einfachen Signalvervielfachung in 4diac‑Anwendungen.
@@ -69,4 +70,4 @@ Der `AL_SPLIT_8` ist ein schlichter, aber wichtiger Baustein zur Vervielfachung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

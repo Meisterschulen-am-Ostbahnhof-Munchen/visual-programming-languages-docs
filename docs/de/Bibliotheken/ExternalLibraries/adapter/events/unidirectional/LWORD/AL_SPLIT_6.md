@@ -3,6 +3,7 @@
 ![AL_SPLIT_6](./AL_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_SPLIT_6** dient dazu, einen einzelnen unidirektionalen AL‑Adapter‑Eingang (Socket) auf sechs identische AL‑Adapter‑Ausgänge (Plugs) aufzuteilen. Er ermöglicht eine einfache Signalverteilung innerhalb einer 4diac‑Applikation, ohne dass zusätzliche Logik oder eine Zustandsmaschine erforderlich ist.
@@ -74,4 +75,4 @@ Der **AL_SPLIT_6** ist ein kompakter und effizienter Funktionsblock zur Vervielf
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,4 +1,5 @@
 Here is the documentation page for exercise `Uebung_173`, based on the provided data.
+
 # Exercise_173: Exercise for E_MUX_8
 
 ![Uebung_173_network](./Uebung_173_network.svg)
@@ -32,6 +33,7 @@ The exercise is currently in an initial state ("TODO").
 - **Existing Instances**: One instance of the multiplexer (`E_MUX_8_1`) is located on the network (coordinates: -3000, -1000).
 - **Connections**: **No** connections are defined in the XML. The component is isolated.
 - **Comments**: A large comment block containing "TODO" marks the area where the implementation should take place.
+
 1. **Goal**: The user should presumably connect event sources (e.g., from other components or inputs of the subapp) to the inputs of `E_MUX_8`.
 2. **Logic**: The goal is to combine different events onto a single event path (the output of the multiplexer).
 
@@ -39,7 +41,7 @@ The `Uebung_173` is a basic template for learning event handling using `E_MUX_8`
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

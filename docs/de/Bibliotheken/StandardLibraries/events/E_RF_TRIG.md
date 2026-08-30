@@ -1,6 +1,7 @@
 # E_RF_TRIG
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_RF_TRIG` (Rising/Falling Trigger) erkennt sowohl steigende als auch fallende Flanken eines `BOOL`-Werts und meldet sie über zwei getrennte Ausgangsereignisse. Er kombiniert die Funktionalität von `E_R_TRIG` (steigende Flanke) und `E_F_TRIG` (fallende Flanke) in einem einzigen Baustein.

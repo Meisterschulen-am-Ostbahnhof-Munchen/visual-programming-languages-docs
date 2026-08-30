@@ -3,6 +3,7 @@
 ![E_T_FF_INIT_ecc](./E_T_FF_INIT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_T_FF_INIT` (toggle flip-flop with initialization) combines the toggling behaviour of a toggle flip-flop (output `Q` switches state on every `CLK` event) with an explicit `INIT`/`INITO` interface for setting a defined start value.
@@ -43,7 +44,7 @@
 ## State Overview
 
 | State | Meaning |
-|---|---|
+| --- | --- |
 | START | Unconfigured initial state |
 | Init | Initialization in progress, `QO := QI` |
 | DeInit | Deinitialization in progress, `QO := FALSE` |

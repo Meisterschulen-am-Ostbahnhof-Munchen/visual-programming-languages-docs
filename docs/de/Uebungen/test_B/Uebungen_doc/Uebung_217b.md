@@ -41,18 +41,18 @@ Folgende Funktionsbausteine werden im Netzwerk der SubApp verwendet:
 
 Die Übung arbeitet ereignisgesteuert:
 
-1. **Ereignispfad**:  
-   - Ein steigender Impuls am Digitaleingang `Input_I1` (verbunden mit `Input_CD`) erzeugt ein Ereignis `IND`.  
-   - Ebenso erzeugt ein Impuls an `Input_I2` (verbunden mit `Input_LD`) ein `IND`-Ereignis.  
-   - Beide Ereignisse werden auf den Ereigniseingang `REQ` des Zählers `FB_CTD_LINT` geführt.  
-   - Nach Verarbeitung des Zählers (Ausgang `CNF`) wird einerseits der Ausgang `Output_Q1` (über `REQ`) und andererseits die Konvertierung `F_LINT_TO_LREAL` (über `REQ`) getriggert.  
+1. **Ereignispfad**:
+   - Ein steigender Impuls am Digitaleingang `Input_I1` (verbunden mit `Input_CD`) erzeugt ein Ereignis `IND`.
+   - Ebenso erzeugt ein Impuls an `Input_I2` (verbunden mit `Input_LD`) ein `IND`-Ereignis.
+   - Beide Ereignisse werden auf den Ereigniseingang `REQ` des Zählers `FB_CTD_LINT` geführt.
+   - Nach Verarbeitung des Zählers (Ausgang `CNF`) wird einerseits der Ausgang `Output_Q1` (über `REQ`) und andererseits die Konvertierung `F_LINT_TO_LREAL` (über `REQ`) getriggert.
    - Nach der Konvertierung wird das Ereignis an die Terminalausgabe `Q_NumericValue_PHYS_LREAL` weitergeleitet.
 
-2. **Datenpfad**:  
-   - Der digitale Wert von `Input_CD.IN` (Bool) wird auf den Dateneingang `CD` des Zählers gelegt.  
-   - Der digitale Wert von `Input_LD.IN` wird auf den Dateneingang `LD` des Zählers gelegt.  
-   - Der Zählerausgang `Q` (Bool) wird auf den Dateneingang `OUT` des Ausgangsbausteins `Output_Q1` geführt.  
-   - Der aktuelle Zählerstand `CV` (LINT) wird an den Konverter `F_LINT_TO_LREAL.IN` übergeben.  
+2. **Datenpfad**:
+   - Der digitale Wert von `Input_CD.IN` (Bool) wird auf den Dateneingang `CD` des Zählers gelegt.
+   - Der digitale Wert von `Input_LD.IN` wird auf den Dateneingang `LD` des Zählers gelegt.
+   - Der Zählerausgang `Q` (Bool) wird auf den Dateneingang `OUT` des Ausgangsbausteins `Output_Q1` geführt.
+   - Der aktuelle Zählerstand `CV` (LINT) wird an den Konverter `F_LINT_TO_LREAL.IN` übergeben.
    - Der konvertierte Wert (LREAL) wird an den Terminalbaustein `Q_NumericValue_PHYS_LREAL.lrPhys` gesendet.
 
 **Funktionsweise des Zählers**:
@@ -70,4 +70,4 @@ Die Übung **Uebung_217b** realisiert einen standardkonformen Rückwärtszähler
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

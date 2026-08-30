@@ -3,6 +3,7 @@
 ![AUDI_MUL_4](./AUDI_MUL_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AUDI_MUL_4** führt eine arithmetische Multiplikation auf Basis von vier Eingangswerten durch. Es handelt sich um einen generischen Baustein (Generic FB), der über Adapter-Schnittstellen mit einer unidirektionalen Datenstruktur vom Typ `adapter::types::unidirectional::AUDI` arbeitet. Der Baustein ist gemäß IEC 61499-2 spezifiziert und wird insbesondere in Automatisierungslösungen eingesetzt, bei denen eine skalierbare Multiplikation mehrerer Eingangsgrößen erforderlich ist.
@@ -28,12 +29,12 @@ Der Baustein verfügt über keine klassischen Datenausgänge. Das Multiplikation
 ### **Adapter**
 
 | Typ | Name | Richtung | Kommentar |
-|------|------|----------|-----------|
+| ------ | ------ | ---------- | ----------- |
 | `adapter::types::unidirectional::AUDI` | IN1 | Eingang (Socket) | MUL input 1 |
 | `adapter::types::unidirectional::AUDI` | IN2 | Eingang (Socket) | MUL input 2 |
 | `adapter::types::unidirectional::AUDI` | IN3 | Eingang (Socket) | MUL input 3 |
 | `adapter::types::unidirectional::AUDI` | IN4 | Eingang (Socket) | MUL input 4 |
-| `adapter::types::unidirectional::AUDI` | OUT | Ausgang (Plug)  | MUL result |
+| `adapter::types::unidirectional::AUDI` | OUT | Ausgang (Plug) | MUL result |
 
 Der Adapter `AUDI` ist als unidirektionaler Datentyp definiert und transportiert die jeweiligen numerischen Werte sowie das Ergebnis.
 
@@ -75,4 +76,4 @@ Der FB **AUDI_MUL_4** ist ein spezialisierter, generischer Multiplikationsbauste
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

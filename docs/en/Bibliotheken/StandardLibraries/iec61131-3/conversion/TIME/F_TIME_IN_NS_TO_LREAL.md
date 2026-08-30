@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_NS_TO_LREAL` is used to convert a time value in nanoseconds (`TIME`) into a floating-point value (`LREAL`). This conversion is particularly useful in control applications where time values need to be used in mathematical calculations.
 ![F_TIME_IN_NS_TO_LREAL](F_TIME_IN_NS_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,9 +53,9 @@ Often, a function like `DINT_TO_TIME` is needed to convert a numeric value (e.g.
 
 Use the block **`F_MULTIME`** (from the `arithmetic` category) for this purpose:
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with Similar Building Blocks
 

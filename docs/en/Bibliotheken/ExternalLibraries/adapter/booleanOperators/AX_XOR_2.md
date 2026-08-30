@@ -6,6 +6,7 @@
 
 The AX_XOR_2 function block is a generic function block for calculating the Boolean XOR operation (exclusive OR). It processes two input signals and outputs the logical XOR result.
 ![AX_XOR_2](AX_XOR_2.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -74,4 +75,4 @@ The AX_XOR_2 function block provides an efficient and reliable solution for XOR 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -36,11 +36,13 @@ Laut XML-Spezifikation besteht der Baustein aus:
 ## Funktionsweise
 
 1.  **Flankenerkennung**:
+
    - Bei jedem `EI`-Ereignis wird der aktuelle `QI`-Wert mit dem gespeicherten Zustand aus dem vorherigen Zyklus verglichen.
    - Eine steigende Flanke liegt vor, wenn `QI` von `FALSE` auf `TRUE` wechselt.
    - Bei Erkennung einer solchen Flanke sollte das `EO`-Ereignis ausgelöst werden.
 
-2.  **Interne Struktur und fehlerhaftes Verhalten**:
+1.  **Interne Struktur und fehlerhaftes Verhalten**:
+
    - Der Baustein ist intern aus einem `E_D_FF` und einem `E_SWITCH` aufgebaut.
    - **Achtung: Fehlerhafte Implementierung!** Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und implementiert tatsächlich einen **fallenden Flankendetektor (`E_F_TRIG`)** anstatt eines steigenden.
    - Das `EO`-Ereignis wird ausgelöst, wenn `QI` von `TRUE` auf `FALSE` wechselt.
@@ -59,15 +61,15 @@ Laut XML-Spezifikation besteht der Baustein aus:
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_R_TRIG (dieser) | E_F_TRIG | E_D_FF |
-|---------------|----------|----------|--------|
+| Feature | E_R_TRIG (dieser) | E_F_TRIG | E_D_FF |
+| --------------- | ---------- | ---------- | -------- |
 | Erkannte Flanke | Steigend (benannt), Fallend (implementiert) | Fallend (benannt), Steigend (implementiert) | Taktflanke |
-| Ereignisausgang | Ja     | Ja       | Ja     |
-| Speicherverhalten | Ja  | Ja     | Ja     |
+| Ereignisausgang | Ja | Ja | Ja |
+| Speicherverhalten | Ja | Ja | Ja |
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
+- [Uebung_089](../../../Uebungen/test_B/Uebungen_doc/Uebung_089.md)
 
 ## Fazit
 

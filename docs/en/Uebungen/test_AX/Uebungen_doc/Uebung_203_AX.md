@@ -30,11 +30,14 @@ The subapp contains five function blocks from the logiBUS library:
 The following adapter connection structure underlies the flow:
 
 1. **Input Signals:**
+
 - `DigitalInput_I1.IN` → `ILOCK_AX.UP_IN`
 - `DigitalInput_I2.IN` → `ILOCK_AX.DOWN_IN`
-2. **Interlock Processing:**
+1. **Interlock Processing:**
+
 - The ILOCK_SWITCH_AX block evaluates the incoming signals and decides, based on priority, which output is set.
-3. **Output Signals:**
+1. **Output Signals:**
+
 - `ILOCK_AX.UP_OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`
 
@@ -49,7 +52,7 @@ When **Input_I1** is active, **Output_Q1** is set. When **Input_I2** is active, 
 
 Exercise **Exercise_203_AX** demonstrates the use of a **priority-controlled interlock** via adapter interfaces. Two digital inputs are processed by the function block `ILOCK_SWITCH_AX`, which applies a defined priority (here: UP before DOWN) when signals are received simultaneously and switches the outputs accordingly. The implementation is carried out entirely with logiBUS I/O function blocks and shows a typical interlock circuit frequently required in automation technology.
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

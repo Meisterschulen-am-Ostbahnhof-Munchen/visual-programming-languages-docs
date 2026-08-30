@@ -6,6 +6,7 @@
 
 The function block `F_WORD_TO_SINT` converts a `WORD` data type to a `SINT` data type. It is part of the `iec61131::conversion` package and enables simple and efficient type conversion within 4diac IDE applications.
 ![F_WORD_TO_SINT](F_WORD_TO_SINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -58,4 +59,4 @@ The `F_WORD_TO_SINT` function block offers a simple and efficient way to convert
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

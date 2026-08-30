@@ -3,6 +3,7 @@
 ![Q_ObjHideShow_AB](./Q_ObjHideShow_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **Q_ObjHideShow_AB** dient als Wrapper für den Baustein `Q_ObjHideShow` und ermöglicht das Verstecken bzw. Anzeigen eines Objekts über einen **AB-Adapter** (unidirektional, BYTE). Er kapselt die direkte Ansteuerung des internen FB und stellt eine adapterbasierte Schnittstelle zur Verfügung, die eine lose Kopplung in der Anwendung fördert.
@@ -34,7 +35,7 @@ Keine expliziten Datenausgänge auf FB-Ebene. Die Ausgangsdaten werden über den
 ### **Adapter**
 
 | Richtung | Name | Typ | Kommentar |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Socket (Eingang) | `qVisible` | `adapter::types::unidirectional::AB` | Sollwert der Sichtbarkeit: 0 = versteckt, 1 = angezeigt |
 | Plug (Ausgang) | `qOldVisible` | `adapter::types::unidirectional::AB` | Alter Wert der Sichtbarkeit: 0 = versteckt, 1 = angezeigt, 0xFF = undefiniert |
 
@@ -81,7 +82,7 @@ Der FB selbst besitzt keinen eigenen Zustandsautomaten. Sein Verhalten wird voll
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|---|---|
+| --- | --- |
 | `Q_ObjHideShow` (direkt) | Ereignis-/Daten-Schnittstelle ohne Adapter; direkte Verschaltung erforderlich |
 | `Q_ObjHideShow_AB` (dieser FB) | Nutzt AB-Adapter für lose Kopplung; einfachere Integration in adapterbasierte Netzwerke |
 | Andere AB-basierte Wrapper | Ähnliches Konzept für andere Befehle (z. B. `Q_ObjMove_AB`), jedoch spezifisch auf Sichtbarkeit ausgelegt |

@@ -3,9 +3,11 @@
 ![AUS_SPLIT_5](./AUS_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_SPLIT_5` distributes an incoming OFF event (e.g., a signal or a message) to five identical outputs. It is a generic function block that serves as a placeholder for an application-specific type (`GEN_AUS_SPLIT`) in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -26,7 +28,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type |
-|----------|------|-----|
+| ---------- | ------ | ----- |
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AUS` |
 | Plug (Output) | `OUT1` | `adapter::types::unidirectional::AUS` |
 | Plug (Output) | `OUT2` | `adapter::types::unidirectional::AUS` |
@@ -72,4 +74,4 @@ AUS_SPLIT_5` is a simple, generic distribution function block for unidirectional
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

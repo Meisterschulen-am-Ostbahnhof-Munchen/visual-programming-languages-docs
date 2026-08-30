@@ -3,9 +3,11 @@
 ![SET_BYTE](./SET_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_BYTE** is used to easily overwrite a BYTE variable. It reads the value of the data input `IN` and writes it to the InOut variable `OUT` as soon as an event arrives at the input `REQ`. The event `CNF` is then output.
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung | Beschreibung |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::ADI` | Socket (Eingang) | Eingehender ADI-Datenstrom, der aufgeteilt wird. |
 | `OUT1` | `adapter::types::unidirectional::ADI` | Plug (Ausgang) | Erster ausgehender ADI-Datenstrom (Kopie des Eingangs). |
 | `OUT2` | `adapter::types::unidirectional::ADI` | Plug (Ausgang) | Zweiter ausgehender ADI-Datenstrom. |
@@ -77,4 +77,4 @@ Der **ADI_SPLIT_3** ist ein einfacher, aber nützlicher generischer Baustein zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

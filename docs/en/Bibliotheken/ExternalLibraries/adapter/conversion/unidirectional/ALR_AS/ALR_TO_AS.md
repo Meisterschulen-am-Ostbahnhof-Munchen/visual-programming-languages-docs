@@ -3,9 +3,11 @@
 ![ALR_TO_AS](./ALR_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALR_TO_AS** function block is a composite function block that converts an **LREAL adapter** (ALR) into a **SINT adapter** (AS). It encapsulates the conversion of a floating-point value (LREAL) into a signed 8-bit integer value (SINT) and provides the result data via the SINT adapter. This function block is typically used in automation technology when data needs to be transferred between different adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block does not have separate data outputs. The output data (SINT va
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `ALR_IN` | Socket | `adapter::types::unidirectional::ALR` | LREAL adapter input: provides the LREAL value to be converted and a trigger event (`E1`). |
 | `AS_OUT` | Plug | `adapter::types::unidirectional::AS` | SINT adapter output: provides the converted SINT value and an acknowledgment event (`E1`). |
 
@@ -70,4 +72,4 @@ The `ALR_TO_AS` function block is a clean, adapter-based solution for converting
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

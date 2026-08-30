@@ -3,9 +3,11 @@
 ![AI_SPLIT_5](./AI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_SPLIT_5** is used to distribute an incoming analog signal (AI) to five identical outputs. It is a generic function block specifically designed for splitting an analog value into multiple parallel paths. It is implemented using unidirectional adapters of type `AI`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs available. Signal transmission occurs exclusively via the
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|--------|------------------------------|-----------------------------------------------------|
+| ---------- | -------- | ------------------------------ | ----------------------------------------------------- |
 | Socket | IN | `adapter::types::unidirectional::AI` | Receives the incoming analog signal. |
 | Plug | OUT1 | `adapter::types::unidirectional::AI` | First output, provides the same signal as the input. |
 | Plug | OUT2 | `adapter::types::unidirectional::AI` | Second output, provides the same signal as the input. |
@@ -63,6 +65,7 @@ The FB does not have an explicit state diagram. Since no events are processed, t
 - **Difference to Data-Event-Based Splitters**: Since the function block does not use events, it is purely signal-flow oriented and requires no synchronization or sequence control.
 
 **AI_SPLIT_5 is not a data-event-based splitter.**
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
@@ -76,6 +79,6 @@ The AI_SPLIT_5 is a simple yet useful function block for duplicating an analog s
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

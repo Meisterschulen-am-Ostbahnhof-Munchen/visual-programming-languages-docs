@@ -3,12 +3,14 @@
 ![Uebung_087a1_network](./Uebung_087a1_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the E_DEMUX_4 function block in a control system. The program counts the number of active inputs and distributes events accordingly to different outputs. The exercise shows the combination of event processing and data processing in an IEC 61499 system.
+
 ## Function Blocks (FBs) Used
 
-### Main Blocks:
+### Main Blocks
 
 - **E_DEMUX_4**: Event Demultiplexer with 4 outputs
 - **ADD_3**: Adder with 3 inputs
@@ -17,7 +19,7 @@ This exercise demonstrates the use of the E_DEMUX_4 function block in a control 
 - **logiBUS_IX**: Digital inputs (4 instances)
 - **logiBUS_QX**: Digital outputs (4 instances)
 
-### Sub-Blocks:
+### Sub-Blocks
 
 - **logiBUS_IX** (Digital inputs)
 - **Type**: Hardware input block
@@ -33,29 +35,33 @@ This exercise demonstrates the use of the E_DEMUX_4 function block in a control 
 
 ## Program Flow and Connections
 
-### Signal Flow:
+### Signal Flow
 
 1. **Input Processing**:
+
 - Three digital inputs (I2, I3, I4) are converted to UINT values via F_BOOL_TO_UINT
 - A dedicated clock input (CLK_I1) with single-click detection
-2. **Calculation**:
+1. **Calculation**:
+
 - The three UINT values are summed in the ADD_3 block
 - The result determines the output channel of E_DEMUX_4
-3. **Event Distribution**:
+1. **Event Distribution**:
+
 - E_DEMUX_4 distributes the clock event to one of four outputs based on the sum:
 - 0 active buttons → Q1
 - 1 active button → Q2
 - 2 active buttons → Q3
 - 3 active buttons → Q4
-4. **Output Control**:
+1. **Output Control**:
+
 - Four T flip-flops (E_T_FF) switch the corresponding outputs (Q1-Q4) on each clock event.
 
-### Connections:
+### Connections
 
 - **Event Connections**: Link IND events of the inputs with REQ events of the converters and onward to ADD_3 and E_DEMUX_4.
 - **Data Connections**: Transmit the input states by converting them to addition and onward to the demultiplexer.
 
-### Learning Objectives:
+### Learning Objectives
 
 - Understanding the E_DEMUX_4 module
 - Combining event and data processing

@@ -14,6 +14,7 @@
 ![AULI_ADD_2](./AULI_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AULI_ADD_2` ist ein generischer Arithmetikbaustein für die IEC 61499-Umgebung (4diac-ide). Er dient zur Durchführung einer mathematischen Addition zweier Eingangswerte, die über standardisierte, unidirektionale Adapter übertragen werden. Das berechnete Ergebnis wird an einen entsprechenden Ausgangs-Adapter übergeben.
@@ -42,14 +43,14 @@ Der Baustein besitzt keine klassischen, diskreten Ereignis- oder Dateneingänge 
 
 #### **Sockets (Eingangs-Adapter)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AULI`):
+- **IN1** (Typ: `adapter::types::unidirectional::AULI`):
   Der erste Summand für die Additionsoperation.
-* **IN2** (Typ: `adapter::types::unidirectional::AULI`):
+- **IN2** (Typ: `adapter::types::unidirectional::AULI`):
   Der zweite Summand für die Additionsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AULI`):
+- **OUT** (Typ: `adapter::types::unidirectional::AULI`):
   Das Ergebnis der Addition ($OUT = IN1 + IN2$).
 
 ## Funktionsweise
@@ -62,8 +63,8 @@ Dieses Ergebnis sowie das dazugehörige Aktualisierungsereignis werden anschlie�
 
 ## Technische Besonderheiten
 
-* **Generischer Charakter:** Der Baustein ist über das Attribut `GenericClassName` als `GEN_AULI_ADD` deklariert. Dies ermöglicht eine flexible Typisierung je nach konkreter Implementierung der verwendeten `AULI`-Adapterdaten.
-* **Adapter-Kapselung:** Durch die Verwendung von Adaptern des Typs `unidirectional::AULI` wird die Komplexität der Steuerungsschaltpläne reduziert, da Daten und zugehörige Trigger-Ereignisse in einer einzigen Verbindung gebündelt sind.
+- **Generischer Charakter:** Der Baustein ist über das Attribut `GenericClassName` als `GEN_AULI_ADD` deklariert. Dies ermöglicht eine flexible Typisierung je nach konkreter Implementierung der verwendeten `AULI`-Adapterdaten.
+- **Adapter-Kapselung:** Durch die Verwendung von Adaptern des Typs `unidirectional::AULI` wird die Komplexität der Steuerungsschaltpläne reduziert, da Daten und zugehörige Trigger-Ereignisse in einer einzigen Verbindung gebündelt sind.
 
 ## Zustandsübersicht
 
@@ -75,9 +76,9 @@ Da es sich bei diesem Baustein um einen rein funktionalen/mathematischen Koppler
 
 ## Anwendungsszenarien
 
-* **Messwert-Aggregation:** Addition von zwei analogen Prozesswerten (z. B. zwei parallele Durchflusssensoren zur Ermittlung des Gesamtdurchflusses).
-* **Sollwert-Offset:** Beaufschlagung eines Hauptsollwerts (über `IN1`) mit einem Korrekturwert oder Offset (über `IN2`).
-* **Signalbündelung:** Strukturierte mathematische Signalverarbeitung in komplexen Anlagensteuerungen unter Verwendung von standardisierten Adapter-Schnittstellen zur Reduzierung des Verdrahtungsaufwands.
+- **Messwert-Aggregation:** Addition von zwei analogen Prozesswerten (z. B. zwei parallele Durchflusssensoren zur Ermittlung des Gesamtdurchflusses).
+- **Sollwert-Offset:** Beaufschlagung eines Hauptsollwerts (über `IN1`) mit einem Korrekturwert oder Offset (über `IN2`).
+- **Signalbündelung:** Strukturierte mathematische Signalverarbeitung in komplexen Anlagensteuerungen unter Verwendung von standardisierten Adapter-Schnittstellen zur Reduzierung des Verdrahtungsaufwands.
 
 ## Vergleich mit ähnlichen Bausteinen
 

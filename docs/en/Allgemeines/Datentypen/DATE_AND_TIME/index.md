@@ -3,9 +3,11 @@
 ## Description
 
 The **DATE_AND_TIME** data type (abbreviated **DT**) combines a calendar date and time of day into a single element.
+
 ## Normative Definition
 
 According to **DIN EN 61131-3** (Table 10, No. 15a):
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | Usually 32 bits (implementation dependent) |

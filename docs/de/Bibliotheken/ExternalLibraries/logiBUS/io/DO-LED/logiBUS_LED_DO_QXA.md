@@ -3,6 +3,7 @@
 ![logiBUS_LED_DO_QXA](./logiBUS_LED_DO_QXA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **logiBUS_LED_DO_QXA** ist ein zusammengesetzter Funktionsblock (Composite FB), der die Ansteuerung einer einzelnen LED über das logiBUS-System vereinfacht. Er nimmt einen booleschen Wert (z. B. von einer Steuerlogik) entgegen und konfiguriert den gewünschten LED-Ausgang (Q1 – Q8) mit einer einstellbaren Frequenz und Priorität. Der FB kapselt die Kommunikation mit dem zugrunde liegenden Hardwaretreiber und stellt eine standardisierte Schnittstelle zur Verfügung.

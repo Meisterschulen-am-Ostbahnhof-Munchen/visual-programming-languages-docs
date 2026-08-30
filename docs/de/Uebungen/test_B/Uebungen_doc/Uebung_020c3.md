@@ -22,8 +22,8 @@ Das Ziel ist es, eine Einschaltverzögerung mit einem klassischen SPS-Verhalten 
 
 ### Funktionsbausteine (FBs)
 
-  * **`FB_TON`**: Der klassische TON-Baustein.
-  * **`E_CYCLE`**: Ein Zeitgeber, der alle 500ms ein Ereignis an den `REQ`-Eingang des Timers sendet.
+  - **`FB_TON`**: Der klassische TON-Baustein.
+  - **`E_CYCLE`**: Ein Zeitgeber, der alle 500ms ein Ereignis an den `REQ`-Eingang des Timers sendet.
 
 -----
 

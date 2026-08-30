@@ -6,6 +6,7 @@
 
 The function block `F_SINT_AS_STRING` converts a `SINT` value (8-bit integer) into a `STRING` (string). This block is particularly useful when numeric values are needed as text for display or further processing.
 ![F_SINT_AS_STRING](F_SINT_AS_STRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

@@ -1,8 +1,9 @@
 # Exercise_004a2: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_MERGE
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004a2`. Here, the impulse circuit is extended so that it can be operated by two different pushbuttons. This is achieved by logically combining the events from the two pushbuttons.
+This article describes the logiBUS® exercise `Uebung_004a2`. Here, the impulse circuit is extended so that it can be operated by two different pushbuttons. This is achieved by logically combining the events from the two pushbuttons
 ----
+
 ## Objective of the Exercise
 
 The objective is to learn how to combine asynchronous event streams. If two different event sources (pushbuttons) are to trigger the same process (switching the light), their signals must be merged before they reach the flip-flop component.
@@ -17,10 +18,10 @@ The objective is to learn how to combine asynchronous event streams. If two diff
 
 ![Uebung_004a2_network](./Uebung_004a2_network.svg)
 
-* **`DigitalInput_CLK_I1` & `I2`**: Two `logiBUS_IE` function blocks, configured to `BUTTON_SINGLE_CLICK`. [cite_start]They generate events when button 1 or 2 is pressed[cite: 1].
-* **`E_MERGE`**: A standard event function block. [cite_start]It has two event inputs (`EI1`, `EI2`) and one event output (`EO`). Every incoming event is immediately passed to the output.[cite: 1]
-* **`E_T_FF`**: The toggle flip-flop for storing the state.
-* **`DigitalOutput_Q1`**: The hardware output for the lamp.
+- **`DigitalInput_CLK_I1` & `I2`**: Two `logiBUS_IE` function blocks, configured to `BUTTON_SINGLE_CLICK`. [cite_start]They generate events when button 1 or 2 is pressed[cite: 1].
+- **`E_MERGE`**: A standard event function block. [cite_start]It has two event inputs (`EI1`, `EI2`) and one event output (`EO`). Every incoming event is immediately passed to the output.[cite: 1]
+- **`E_T_FF`**: The toggle flip-flop for storing the state.
+- **`DigitalOutput_Q1`**: The hardware output for the lamp.
 
 -----
 

@@ -51,8 +51,8 @@ Der Baustein besitzt zwei Zustände: `INIT` und `REQ`.
 
 - **REQ-Zustand**: Bei einem `REQ`-Ereignis wird folgende Logik ausgeführt:
   1. Der eingehende Wert `IN` wird mit einem vordefinierten Schwellwert `VALID_SIGNAL_DW` (aus dem Import `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_DW`) verglichen.
-  2. Wenn `IN <= DWORD_TO_UDINT(VALID_SIGNAL_DW)` gilt, wird der Eingang als gültig betrachtet. Dann wird `OUT` berechnet als:  
-     `OUT := UDINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`  
+  2. Wenn `IN <= DWORD_TO_UDINT(VALID_SIGNAL_DW)` gilt, wird der Eingang als gültig betrachtet. Dann wird `OUT` berechnet als:
+     `OUT := UDINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
      und `VALID` auf `TRUE` gesetzt.
 
   3. Andernfalls wird `OUT` auf `0.0` und `VALID` auf `FALSE` gesetzt. Dies signalisiert, dass der übergebene Feldbuswert ungültig ist (z. B. Fehlerwert oder Kommunikationsabbruch).
@@ -94,4 +94,4 @@ Der `FIELDBUS_UDINT_TO_SIGNAL_SCALED`-Funktionsblock bietet eine robuste und ein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

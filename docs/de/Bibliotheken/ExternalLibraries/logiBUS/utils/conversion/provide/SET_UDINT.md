@@ -3,6 +3,7 @@
 ![SET_UDINT](./SET_UDINT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_UDINT** dient dazu, einen Wert vom Dateneingang `IN` auf die InOut-Variable `OUT` zu schreiben. Der Vorgang wird durch ein Ereignis am Eingang `REQ` ausgelöst und nach erfolgreicher Zuweisung wird der Ausgang `CNF` aktiviert. Der Baustein ist speziell für den UDINT-Datentyp ausgelegt und ermöglicht so eine effiziente und typsichere Datenübergabe an eine gemeinsame Variable.

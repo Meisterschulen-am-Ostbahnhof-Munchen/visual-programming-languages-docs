@@ -1,9 +1,11 @@
 # Exercise_012f: Numeric Value Input PHYS and Storage in Non-Volatile Memory (NVS) with Subapplication
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of a physical numeric value (PHYS) and its permanent storage in non-volatile memory (NVS). The value is configured via an input object pool, written to the NVS, and can then be output via a qualifier block. The exercise is implemented as a nested subapplication, with the innermost sub-block containing all the logic.
+
 ## Function Blocks (FBs) Used
 
 The exercise consists of a main sub-block, which contains another sub-block. This innermost sub-block encapsulates the actual processing logic with three internal FBs.
@@ -41,9 +43,9 @@ The flow is event-driven:
 
 1. **Initialization**: Upon startup, the NVS block receives a `INIT` event (not visible on the network, but implicitly transmitted by the environment). The function block acknowledges with `INITO` and immediately triggers a `GET` event (connection `NVS.INITO` -> `NVS.GET`). This reads the value stored under the passed `KEY` from the NVS.
 2. **Value Update**: As soon as the `NumericValue_PHYS` function block has detected a valid physical value, it sends a `IND` event. This triggers the `SET` input of the NVS, which then stores the current `rPhys` value under the specified `KEY`.
-2. **Value Update**: As soon as the `NumericValue_PHYS` function block has detected a valid physical value, it sends a `IND` event. This triggers the `SET` input of the NVS, causing the current `rPhys` value to be stored under the specified `KEY`.
-3. **Output**: After both a `GET` (during initialization) and a `SET` (after saving), the result is forwarded via `NVS.VALUEO` to the `Q_NumericValue_PHYS` block and directly to the output `VALUEO`. The qualifier block formats the value according to the configuration (`stObj`).
-4. **Signal Pass-Through**: The event outputs `SETO` and `GETO` of the NVS are passed through to the external output `IND`, thus informing the higher-level system of changes.
+3. **Value Update**: As soon as the `NumericValue_PHYS` function block has detected a valid physical value, it sends a `IND` event. This triggers the `SET` input of the NVS, causing the current `rPhys` value to be stored under the specified `KEY`.
+4. **Output**: After both a `GET` (during initialization) and a `SET` (after saving), the result is forwarded via `NVS.VALUEO` to the `Q_NumericValue_PHYS` block and directly to the output `VALUEO`. The qualifier block formats the value according to the configuration (`stObj`).
+5. **Signal Pass-Through**: The event outputs `SETO` and `GETO` of the NVS are passed through to the external output `IND`, thus informing the higher-level system of changes.
 
 **Data Connections**:
 

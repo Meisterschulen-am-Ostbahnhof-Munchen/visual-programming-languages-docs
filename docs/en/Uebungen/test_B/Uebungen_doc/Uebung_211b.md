@@ -3,6 +3,7 @@
 ![Uebung_211b_network](./Uebung_211b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise uses the IEC 61131-3 standard function block **FB_CTU_DINT** (up counter with `DINT` data type). The counter is incremented by pressing a button connected to a digital input and reset by pressing a second button. The current counter value is also output as a physical `LREAL` value via a terminal output block.
@@ -13,7 +14,7 @@ The goal is to understand the interaction between a counter, digital inputs/outp
 The SubApp network uses five instances of predefined block types. No further sub-blocks are defined.
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | `Input_CU` | `logiBUS_IX` | Digital input (logiBUS) that provides the counting pulse (CU). |
 | `Input_R` | `logiBUS_IX` | Digital input that provides the reset signal (R). |
 | `FB_CTU_DINT` | `FB_CTU_DINT` | Up counter with `DINT` data type. |
@@ -50,12 +51,13 @@ The SubApp network uses five instances of predefined block types. No further sub
 ### Event Connections
 
 1. **Input Signals**
+
 - When the button at `Input_I1` is pressed (rising edge), `Input_CU.IND` sends an event to `FB_CTU_DINT.REQ`.
 - When the button at `Input_I2` is pressed, `Input_R.IND` also sends an event to the same `REQ` input of the counter.
 
 *Note: Both events are routed to the same `REQ` input, therefore the function block must internally distinguish which input (CU or R) is active.*
 
-2. **Counter Execution**
+1. **Counter Execution**
 
 After the counter has processed the event (executed the function), it sends two simultaneous events via `CNF`:
 
@@ -97,4 +99,4 @@ Exercise 211b demonstrates the practical application of a forward counter (CTU) 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

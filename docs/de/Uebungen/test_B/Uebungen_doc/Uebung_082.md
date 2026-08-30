@@ -20,12 +20,12 @@ Verwendung des Bausteins `E_CTUD` (Event Count Up/Down). Es wird gezeigt, wie ma
 
 ![Uebung_082_network](./Uebung_082_network.svg)
 
-  * **`I1` (CU)**: Zählt aufwärts.
-  * **`I2` (CD)**: Zählt abwärts.
-  * **`I3` (R)**: Setzt den Zähler auf Null.
-  * **`I4` (LD)**: Lädt den Zähler mit dem Wert 5 (`PV`).
-  * **`Q1` (Upper Limit)**: Leuchtet, wenn der Zählerstand >= 5 ist.
-  * **`Q2` (Lower Limit)**: Leuchtet, wenn der Zählerstand <= 0 ist.
+  - **`I1` (CU)**: Zählt aufwärts.
+  - **`I2` (CD)**: Zählt abwärts.
+  - **`I3` (R)**: Setzt den Zähler auf Null.
+  - **`I4` (LD)**: Lädt den Zähler mit dem Wert 5 (`PV`).
+  - **`Q1` (Upper Limit)**: Leuchtet, wenn der Zählerstand >= 5 ist.
+  - **`Q2` (Lower Limit)**: Leuchtet, wenn der Zählerstand <= 0 ist.
 
 -----
 
@@ -33,8 +33,8 @@ Verwendung des Bausteins `E_CTUD` (Event Count Up/Down). Es wird gezeigt, wie ma
 
 Der Baustein überwacht zwei Schwellwerte gleichzeitig:
 
-*   Der Ausgang `QU` reagiert auf die Obergrenze (`PV`).
-*   Der Ausgang `QD` reagiert auf die Untergrenze (Null).
+-   Der Ausgang `QU` reagiert auf die Obergrenze (`PV`).
+-   Der Ausgang `QD` reagiert auf die Untergrenze (Null).
 
 Dies ermöglicht eine lückenlose Überwachung von Beständen oder Positionen innerhalb eines definierten Arbeitsbereichs.
 
@@ -42,4 +42,4 @@ Dies ermöglicht eine lückenlose Überwachung von Beständen oder Positionen in
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

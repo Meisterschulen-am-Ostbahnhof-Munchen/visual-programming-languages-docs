@@ -3,9 +3,11 @@
 ![AI_SPLIT_4](./AI_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_SPLIT_4** is a generic block that splits a unidirectional analog input (AI) into four separate analog outputs. It serves as a signal distributor for analog signals and allows a single AI signal to be passed on to various subsequent blocks. The block is entirely adapter-based and has no built-in event or data interfaces. It is available under the Eclipse Public License 2.0.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **AI_SPLIT_4** is a generic block that splits a unidirectiona
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | **Socket (Input)** | `IN` | `adapter::types::unidirectional::AI` | Input of the analog signal to be distributed |
 | **Plug (Output)** | `OUT1` | `adapter::types::unidirectional::AI` | First output (copy of the input signal) |
 | **Plug (Output)** | `OUT2` | `adapter::types::unidirectional::AI` | Second output (copy of the input signal) |
@@ -74,6 +76,6 @@ The **AI_SPLIT_4** function block is a specialized yet easy-to-use function bloc
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![Uebung_076_AUI_network](./Uebung_076_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of the Machine Selected Speed (MSS) and its transmission as a physical quantity to the Universal Terminal (UT).
@@ -69,6 +70,6 @@ This exercise requires basic knowledge of the 4diac IDE and working with ISO-bus
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

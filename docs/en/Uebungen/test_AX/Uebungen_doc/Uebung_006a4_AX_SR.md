@@ -3,6 +3,7 @@
 ![Uebung_006a4_AX_SR_network](./Uebung_006a4_AX_SR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise introduces the function block `AX_FB_SR_T_FF` (Set-Dominant Toggle Flip-Flop), which is connected via an adapter. The goal is to understand the behavior of a set-dominant toggle flip-flop and to test it in a simple controller.
@@ -13,7 +14,7 @@ The block is connected with three digital inputs (SET, RESET, CLK) and one digit
 The following function blocks are used in this exercise:
 
 | FB Name | Type | Parameters |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | `DigitalInput_SET` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I1` |
 | `DigitalInput_RESET` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I2` |
 | `DigitalInput_CLK` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I3` |
@@ -32,10 +33,11 @@ The logical flow of the exercise is as follows:
 
 1. **Inputs**: The physical inputs `Input_I1` (SET), `Input_I2` (RESET), and `Input_I3` (CLK) are read into the 4diac environment via the three `logiBUS_IXA` function blocks.
 2. **Flip-Flop**: The signals are routed via adapter connections to `SR_T_FF`:
+
 - `DigitalInput_SET.IN` → `SR_T_FF.SET1`
 - `DigitalInput_RESET.IN` → `SR_T_FF.RESET`
 - `DigitalInput_CLK.IN` → `SR_T_FF.CLK`
-3. **Output**: The output `SR_T_FF.Q1` is transferred to the digital output `DigitalOutput_Q1.OUT` and output to `Output_Q1`.
+1. **Output**: The output `SR_T_FF.Q1` is transferred to the digital output `DigitalOutput_Q1.OUT` and output to `Output_Q1`.
 
 **How the SR_T_FF Works**:
 
@@ -61,6 +63,6 @@ The exercise `Uebung_006a4_AX_SR` demonstrates the use of the set-dominant toggl
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

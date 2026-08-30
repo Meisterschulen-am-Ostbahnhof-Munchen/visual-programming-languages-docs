@@ -3,6 +3,7 @@
 ![F_CONCAT_DT](F_CONCAT_DT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_CONCAT_DT` fügt einzelne Zeit-/Datumsbestandteile (`YEAR`, `MONTH`, `DAY`, `HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) zu einem zusammengesetzten `DATE_AND_TIME`-Wert zusammen. Er ist die Umkehrung von [F_SPLIT_DT](F_SPLIT_DT.md), das denselben `DATE_AND_TIME`-Wert wieder in seine Einzelbestandteile zerlegt.

@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_6](./AIWS_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AIWS_SPLIT_6 dient dazu, ein eingehendes AIWS-Signal (Adaptertyp) auf sechs identische Ausgänge zu verteilen. Er ist als generischer Baustein konzipiert und ermöglicht eine einfache Signalvervielfachung in Steuerungsanwendungen, die auf dem 4diac-IDE-Framework basieren.
@@ -78,4 +79,4 @@ Der AIWS_SPLIT_6 ist ein einfacher, aber nützlicher Baustein zur Vervielfachung
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

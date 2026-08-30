@@ -20,8 +20,8 @@ Abstraktion von Funk-Signalen. Der Baustein ermöglicht es, Funktasten so einfac
 
 ![Uebung_003b2_sub_network](./Uebung_003b2_sub_network.svg)
 
-  * **`IX`**: Typ `Funk_IX`. Empfängt die Signale der über `Input` gewählten Funktaste.
-  * **`QX`**: Typ `DataPanel_MI_QX`. Sendet CAN-Nachrichten an das gewählte DataPanel (`u8SAMember`) und schaltet dort den physischen Port (`Output`).
+  - **`IX`**: Typ `Funk_IX`. Empfängt die Signale der über `Input` gewählten Funktaste.
+  - **`QX`**: Typ `DataPanel_MI_QX`. Sendet CAN-Nachrichten an das gewählte DataPanel (`u8SAMember`) und schaltet dort den physischen Port (`Output`).
 
 -----
 
@@ -29,13 +29,12 @@ Abstraktion von Funk-Signalen. Der Baustein ermöglicht es, Funktasten so einfac
 
 [cite_start]Der Baustein bietet drei Konfigurationsmöglichkeiten[cite: 1]:
 
-*   **`Input`**: Name der Funktaste (z.B. `Key_01`).
-*   **`u8SAMember`**: CAN-Bus Adresse des Zielmoduls.
-*   **`Output`**: Nummer des Ausgangs am Modul (z.B. `DigitalOutput_1A`).
+-   **`Input`**: Name der Funktaste (z.B. `Key_01`).
+-   **`u8SAMember`**: CAN-Bus Adresse des Zielmoduls.
+-   **`Output`**: Nummer des Ausgangs am Modul (z.B. `DigitalOutput_1A`).
 
 Durch die Verwendung dieses Typs kann eine komplexe Funkfernsteuerung durch einfaches "Eintragen" der IDs in der Hauptanwendung konfiguriert werden.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b2](Uebung_003b2.md)
-
+- [Uebung_003b2](Uebung_003b2.md)

@@ -3,6 +3,7 @@
 ![AS_SPLIT_3](./AS_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AS_SPLIT_3 dient der Verteilung eines eingehenden Adapter-Datenstroms auf drei identische Ausgänge. Er ist als generischer Baustein realisiert und auf die Verwendung mit dem `adapter::types::unidirectional::AS`-Adaptertyp ausgelegt.
@@ -28,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung | Beschreibung |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::AS` | Socket | Eingangsadapter – Datenquelle, die auf drei Ausgänge verteilt wird. |
 | OUT1 | `adapter::types::unidirectional::AS` | Plug | Erster Ausgang – erhält die unveränderten Daten von IN. |
 | OUT2 | `adapter::types::unidirectional::AS` | Plug | Zweiter Ausgang – erhält die unveränderten Daten von IN. |
@@ -72,4 +73,4 @@ AS_SPLIT_3 ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfältig
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

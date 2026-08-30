@@ -3,6 +3,7 @@
 <img width="1232" height="182" alt="F_INT_TO_LREAL" src="https://github.com/user-attachments/assets/c99ad1d4-dafe-40fc-9bc4-7515768ec888" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_INT_TO_LREAL` dient der Konvertierung eines ganzzahligen Wertes (INT) in eine 64-Bit Gleitkommazahl (LREAL). Dieser Baustein ist besonders nützlich in Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
@@ -64,4 +65,4 @@ Der `F_INT_TO_LREAL`-Funktionsblock ist ein einfacher und effizienter Baustein f
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_9](./AIWS_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AIWS_SPLIT_9` splits an incoming `AIWS` adapter signal into nine separate, identically typed outputs. It is provided as a generic function block (FB) and enables the distribution of a single adapter data stream to multiple subsequent function units. The block is unidirectional and requires no event or data inputs, as data transmission occurs exclusively via the adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 #### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AIWS` | Incoming AIWS signal, distributed to the nine outputs. |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AIWS` | First AIWS outgoing output. |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AIWS` | Second AIWS outgoing output. |
@@ -81,6 +83,6 @@ AIWS_SPLIT_9` is a simple yet useful generic function block for multiplying a un
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

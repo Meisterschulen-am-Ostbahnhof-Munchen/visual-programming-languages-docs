@@ -3,6 +3,7 @@
 ![Uebung_204_AX_network](./Uebung_204_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert eine Interlock-Logik mit Konflikterkennung und Trip-Auslösung unter Verwendung des Funktionsbausteins **ILOCK_CONFLICT_TRIP_AX**.  
@@ -19,7 +20,7 @@ Die gesamte Übung ist als eigenständige Subapplikation aufgebaut. Alle FBs wer
 ### Übersicht der FBs im Netzwerk
 
 | Bausteinname | Typ | Parameter | Ereignisverbindungen | Adapter-/Datenverbindungen |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **DigitalInput_I1** | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`<br>`Input = Input_I1` | – | Adapter `IN` → ILOCK_AX.UP_IN |
 | **DigitalInput_I2** | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`<br>`Input = Input_I2` | – | Adapter `IN` → ILOCK_AX.DOWN_IN |
 | **DigitalInput_Reset** | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`<br>`Input = Input_I3`<br>`InputEvent = BUTTON_SINGLE_CLICK` | Ereignisausgang `IND` → ILOCK_AX.EI_RESET | – |

@@ -3,6 +3,7 @@
 ![AD_TO_AS](./AD_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AD_TO_AS** function block is a composite block for converting a DWORD adapter (type `AD`) into a SINT adapter (type `AS`). It enables data conversion between different adapter standards within the 4diac IDE and is provided in version 1.0.
@@ -91,6 +92,6 @@ The **AD_TO_AS** function block provides a compact and standardized solution for
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

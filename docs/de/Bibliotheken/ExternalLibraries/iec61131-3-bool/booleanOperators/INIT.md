@@ -3,6 +3,7 @@
 ![INIT](./INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **INIT** dient als direkte Durchleitung von Ereignissen. Er ist als Gegenstück zu einem `E_TRIG`-Baustein konzipiert und wird typischerweise in der Initialisierungsphase eines Systems eingesetzt. Der FB verfügt über zwei Ereigniseingänge und zwei korrespondierende Ereignisausgänge; Daten werden nicht verarbeitet.

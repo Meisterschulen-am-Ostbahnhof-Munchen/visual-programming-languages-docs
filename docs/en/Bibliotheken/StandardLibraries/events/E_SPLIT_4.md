@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_SPLIT_4` is a basic function block according to IEC 61499 that splits a single input event (`EI`) into a sequence of four output events (`EO1` to `EO4`).

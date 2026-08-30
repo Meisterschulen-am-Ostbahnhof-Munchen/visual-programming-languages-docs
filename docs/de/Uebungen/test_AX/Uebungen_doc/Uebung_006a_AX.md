@@ -20,18 +20,18 @@ Kennenlernen des `AX_T_FF_SR`.
 
 ![Uebung_006a_AX_network](./Uebung_006a_AX_network.svg)
 
-  * **`I1` (Set)**
-  * **`I2` (Reset)**
-  * **`I3` (Toggle)**
-  * **`AX_T_FF_SR`**: Vereint Toggle, Set und Reset in einem Baustein.
+  - **`I1` (Set)**
+  - **`I2` (Reset)**
+  - **`I3` (Toggle)**
+  - **`AX_T_FF_SR`**: Vereint Toggle, Set und Reset in einem Baustein.
 
 -----
 
 ## Funktionsweise
 
-*   `I1` schaltet an.
-*   `I2` schaltet aus.
-*   `I3` schaltet um.
+-   `I1` schaltet an.
+-   `I2` schaltet aus.
+-   `I3` schaltet um.
 
 Dies bietet maximale Flexibilität für die Bedienung.
 
@@ -41,6 +41,6 @@ Dies bietet maximale Flexibilität für die Bedienung.
 
 **Smart Home Lichtsteuerung**:
 
-*   Taster an der Wand: Toggle (`I3`).
-*   Zentral "Alles Aus" beim Verlassen des Hauses: Reset (`I2`).
-*   "Panik-Licht" (Alarmanlage): Set (`I1`).
+-   Taster an der Wand: Toggle (`I3`).
+-   Zentral "Alles Aus" beim Verlassen des Hauses: Reset (`I2`).
+-   "Panik-Licht" (Alarmanlage): Set (`I1`).

@@ -3,6 +3,7 @@
 ![AD_AND_2](./AD_AND_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_AND_2** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 2 Eingangswerten vom Typ `DWORD` (32-Bit-Bitmuster (Doppelwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

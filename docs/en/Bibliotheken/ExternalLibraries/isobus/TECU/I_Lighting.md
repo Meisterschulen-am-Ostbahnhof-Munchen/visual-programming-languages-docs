@@ -3,9 +3,11 @@
 ![I_Lighting](./I_Lighting.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_Lighting** function block processes the lighting data of an agricultural vehicle according to ISO 11783-7 (ISOBUS). It receives and decodes the parameter group number (PGN) 65088, which transmits the status of all lighting functions of a tractor and connected implements. The block serves as an interface between the ISOBUS network and the application logic for monitoring and controlling the lighting.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The **I_Lighting** function block processes the lighting data of an agricultural
 ### **Event Outputs**
 
 | Event | Type | Description | Data Carried |
-|----------|-----|--------------|-------------------|
+| ---------- | ----- | -------------- | ------------------- |
 | INITO | EInit | Confirms successful initialization. | QO, STATUS |
 | IND | Event | Signals new lighting data from the bus. | QO, timestamp_data, STATUS, Q_timeout, and all 32 luminaire status outputs |
 | TIMEOUT | Event | Triggered when the expected data is not received (timeout). | timestamp_timeout, STATUS, Q_timeout |
@@ -31,7 +33,7 @@ The **I_Lighting** function block processes the lighting data of an agricultural
 ### **Data Outputs**
 
 | Name | Data Type | Description |
-|------|----------|-------------|
+| ------ | ---------- | ------------- |
 | QO | BOOL | Acknowledgement signal after successful initialization or data processing. |
 | STATUS | STRING | Status message (e.g., error messages or operating instructions). |
 | Q_timeout | BOOL | Signals whether a timeout has occurred (TRUE = Timeout active). |

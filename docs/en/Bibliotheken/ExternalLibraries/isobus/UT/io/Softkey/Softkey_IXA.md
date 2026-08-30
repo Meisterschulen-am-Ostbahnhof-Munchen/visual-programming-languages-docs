@@ -2,7 +2,8 @@
 
 ## 🎧 Podcast
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+
 ## Introduction
 
 Softkey_IXA is a composite function block for processing Boolean input data. The block serves as an interface for softkey operations and enables the initialization and querying of input states via standardized ISOBUS communication protocols.
@@ -65,15 +66,15 @@ Compared to simple Boolean input blocks, Softkey_IXA offers extended ISOBUS comp
 
 ## 🛠️ Related exercises
 
-* [Uebung_010_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010_AX.md)
-* [Uebung_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
-* [Uebung_010a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a_AX.md)
-* [Uebung_010b4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
-* [Uebung_010b5_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
-* [Uebung_010c2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
-* [Uebung_010c3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
-* [Uebung_010c4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
-* [Exercise_010c_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c_AX.md)
+- [Uebung_010_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010_AX.md)
+- [Uebung_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
+- [Uebung_010a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a_AX.md)
+- [Uebung_010b4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
+- [Uebung_010b5_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
+- [Uebung_010c2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
+- [Uebung_010c3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
+- [Uebung_010c4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
+- [Exercise_010c_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c_AX.md)
 
 ## Conclusion
 

@@ -36,6 +36,7 @@ The eIWconfig function block serves as a service interface for configuring eIO i
 The function block receives via The CONF event is a configuration request along with the parameters ST, BT, and GRAD. These parameters are transmitted to the eIO instance via the eIW adapter. After successful configuration, the block confirms the process with the CNF event and provides status feedback via STATUS.
 
 Conf event.
+
 ## Technical Features
 
 - Uses WORD data types for all numeric inputs
@@ -66,6 +67,6 @@ The eIWconfig function block provides a flexible and extensible solution for con
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

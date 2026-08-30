@@ -3,9 +3,11 @@
 ![SPLIT_AW_INTO_AQ](./SPLIT_AW_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AW_INTO_AQ** divides the eight quarter adapters (AQ) of a word adapter (AW). The incoming word (16 bits) is split into eight quarter units (2 bits each) and output via the corresponding AQ plugs.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -72,4 +74,4 @@ The **SPLIT_AW_INTO_AQ** module offers a compact and reliable way to split an in
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

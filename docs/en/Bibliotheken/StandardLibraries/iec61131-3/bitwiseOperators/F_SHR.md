@@ -6,6 +6,7 @@
 
 The function block `F_SHR` performs a bitwise right shift. It is part of the standard bit operators according to IEC 61131-3 and is used for logical and arithmetic operations in control applications.
 ![F_SHR](F_SHR.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

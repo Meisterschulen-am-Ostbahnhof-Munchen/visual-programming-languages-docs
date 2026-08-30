@@ -6,8 +6,8 @@
 
 ## Einleitung
 
-Diese Übung demonstriert den Einsatz eines **ILOCK_SWITCH**-Funktionsbausteins zur sicheren Ansteuerung eines Motors mit Reversierfunktion.  
-Das Prinzip der **Last-Wins-Priorität** sorgt dafür, dass bei gleichzeitig anliegenden Steuersignalen das zuletzt aktive Signal Vorrang hat – ein Kurzschluss durch gleichzeitige Aktivierung beider Drehrichtungen wird verhindert.  
+Diese Übung demonstriert den Einsatz eines **ILOCK_SWITCH**-Funktionsbausteins zur sicheren Ansteuerung eines Motors mit Reversierfunktion.
+Das Prinzip der **Last-Wins-Priorität** sorgt dafür, dass bei gleichzeitig anliegenden Steuersignalen das zuletzt aktive Signal Vorrang hat – ein Kurzschluss durch gleichzeitige Aktivierung beider Drehrichtungen wird verhindert.
 Ein zusätzlicher **Low-Side-Treiber** wird bei jeder aktiven Drehrichtung eingeschaltet, um die Last (z. B. Motor) mit Spannung zu versorgen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -79,7 +79,7 @@ Durch diese Verschaltung wird sichergestellt:
 
 ## Zusammenfassung
 
-Die Übung vermittelt die sichere Ansteuerung eines Reversiermotors mittels Interlock-Baustein und Last-Wins-Logik.  
+Die Übung vermittelt die sichere Ansteuerung eines Reversiermotors mittels Interlock-Baustein und Last-Wins-Logik.
 **Lernziele:**
 
 - Verständnis von Interlock-Mechanismen zur Vermeidung von Kurzschlüssen.
@@ -87,12 +87,12 @@ Die Übung vermittelt die sichere Ansteuerung eines Reversiermotors mittels Inte
 - Kombination von Ereignis- und Datenflüssen in 4diac-IDE.
 - Realisierung einer Hilfsspannung (Low-Side-Treiber) in Abhängigkeit der Motoranforderung.
 
-**Schwierigkeitsgrad:** Mittel  
-**Vorkenntnisse:** Grundlagen der 4diac-IDE, Ereignis- und Datenverbindungen, einfache Logikgatter.  
+**Schwierigkeitsgrad:** Mittel
+**Vorkenntnisse:** Grundlagen der 4diac-IDE, Ereignis- und Datenverbindungen, einfache Logikgatter.
 **Start der Übung:** Öffnen Sie die Subapplikation `Uebung_203b` und simulieren Sie die digitalen Eingänge `Input_I1` / `Input_I2`. Beobachten Sie die Ausgänge `Output_Q5` (Rechts), `Output_Q6` (Links) und `Output_Q56` (Low-Side).
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

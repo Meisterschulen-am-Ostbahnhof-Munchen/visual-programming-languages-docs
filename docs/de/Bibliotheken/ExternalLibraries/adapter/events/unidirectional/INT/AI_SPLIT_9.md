@@ -3,6 +3,7 @@
 ![AI_SPLIT_9](./AI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_SPLIT_9** ist ein generischer Baustein, der ein einzelnes analoges Eingangssignal (Adaptertyp `AI`) auf neun identische Ausgänge (OUT1 bis OUT9) verteilt. Er dient als Signalverteiler, der es ermöglicht, ein AI-Signal mehrfach in einer Steuerungsanwendung zu nutzen, ohne die Quelle mehrfach zu verknüpfen.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | `IN` | `adapter::types::unidirectional::AI` | Einzelner analoger Eingang, der auf alle Ausgänge verteilt wird. |
 | Ausgang (Plug) | `OUT1` | `adapter::types::unidirectional::AI` | Erster ausgehender AI‑Kanal. |
 | Ausgang (Plug) | `OUT2` | `adapter::types::unidirectional::AI` | Zweiter ausgehender AI‑Kanal. |
@@ -78,4 +79,4 @@ Der **AI_SPLIT_9** ist ein einfacher, aber nützlicher Funktionsblock zur Signal
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) `AUS_SUB_2` ist ein generischer Baustein zur Durchführung von arithmetischen Subtraktionsoperationen innerhalb von 4diac-basierten Steuerungssystemen. Der Baustein nutzt unidirektionale Adapter vom Typ `AUS` zur Kapselung und Übertragung von Eingangs- und Ausgangssignalen. Durch sein generisches Design (Kompilierungsklasse `GEN_AUS_SUB`) kann er flexibel in verschiedenen Steuerungsszenarien eingesetzt werden, um die Differenz zweier Werte zu bilden.
@@ -32,12 +33,12 @@ Es sind keine direkten, elementaren Daten-Ausgänge vorhanden. Das Ergebnis wird
 
 #### **Sockets (Eingangs-Adapter)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Eingang (Minuend) für die Subtraktionsberechnung.
-* **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Eingang (Subtrahend) für die Subtraktionsberechnung.
+- **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Eingang (Minuend) für die Subtraktionsberechnung.
+- **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Eingang (Subtrahend) für die Subtraktionsberechnung.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUS`): Der Ausgang (Differenz), der das berechnete Ergebnis der Subtraktion liefert.
+- **OUT** (Typ: `adapter::types::unidirectional::AUS`): Der Ausgang (Differenz), der das berechnete Ergebnis der Subtraktion liefert.
 
 ---
 
@@ -55,9 +56,9 @@ Da es sich um einen generischen Baustein (`GEN_AUS_SUB`) handelt, passt sich die
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_AUS_SUB`):** Der Baustein ist nicht auf einen festen Datentyp (wie z. B. nur `INT` oder `REAL`) beschränkt, sondern unterstützt die durch die Adapterstruktur vorgegebenen Datentypen.
-* **Unidirektionale Adapter:** Die Verwendung des Typs `unidirectional::AUS` sorgt für eine klare, einseitige Daten- und Signalflussrichtung. Dies minimiert die Komplexität bei der Signalverfolgung im System.
-* **Kapselung:** Durch den Verzicht auf klassische Event- und Daten-Pins bleibt das visuelle Layout im Application Editor der 4diac-ide extrem kompakt und übersichtlich.
+- **Generischer Typ (`GEN_AUS_SUB`):** Der Baustein ist nicht auf einen festen Datentyp (wie z. B. nur `INT` oder `REAL`) beschränkt, sondern unterstützt die durch die Adapterstruktur vorgegebenen Datentypen.
+- **Unidirektionale Adapter:** Die Verwendung des Typs `unidirectional::AUS` sorgt für eine klare, einseitige Daten- und Signalflussrichtung. Dies minimiert die Komplexität bei der Signalverfolgung im System.
+- **Kapselung:** Durch den Verzicht auf klassische Event- und Daten-Pins bleibt das visuelle Layout im Application Editor der 4diac-ide extrem kompakt und übersichtlich.
 
 ---
 
@@ -69,17 +70,18 @@ Da dieser Baustein als rein funktionaler bzw. zustandsloser Berechnungsblock kon
 
 ## Anwendungsszenarien
 
-* **Prozesswertkorrektur:** Subtraktion von Nullpunkt-Offsets oder Kalibrierungswerten von einem gemessenen Sensorwert.
-* **Soll-Ist-Wert-Vergleich:** Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen die Signale bereits als strukturierte Adapter-Kanäle vorliegen.
-* **Füllstandsberechnung:** Ermittlung von Differenzmengen in Behältern oder Systemen durch Subtraktion des Abflusses vom Zufluss.
+- **Prozesswertkorrektur:** Subtraktion von Nullpunkt-Offsets oder Kalibrierungswerten von einem gemessenen Sensorwert.
+- **Soll-Ist-Wert-Vergleich:** Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen die Signale bereits als strukturierte Adapter-Kanäle vorliegen.
+- **Füllstandsberechnung:** Ermittlung von Differenzmengen in Behältern oder Systemen durch Subtraktion des Abflusses vom Zufluss.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem klassischen IEC 61131-3 `SUB`-Baustein, der direkt mit elementaren Datentypen arbeitet, bietet der `AUS_SUB_2` folgende Vorteile:
-* **Weniger Verdrahtungsaufwand:** Ereignis- und Datenleitungen müssen nicht separat gezogen werden, da sie im `AUS`-Adapter gebündelt sind.
-* **Höhere Modularität:** Er eignet sich ideal für serviceorientierte Architekturen in der IEC 61499, in denen Subsysteme standardmäßig über Adapter kommunizieren.
+
+- **Weniger Verdrahtungsaufwand:** Ereignis- und Datenleitungen müssen nicht separat gezogen werden, da sie im `AUS`-Adapter gebündelt sind.
+- **Höhere Modularität:** Er eignet sich ideal für serviceorientierte Architekturen in der IEC 61499, in denen Subsysteme standardmäßig über Adapter kommunizieren.
 
 ---
 

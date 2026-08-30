@@ -3,6 +3,7 @@
 ![AL_TO_AX](./AL_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AL_TO_AX` ist ein Composite-Baustein, der eine unidirektionale Adapterkonvertierung von einem `AL`-Adapter (Datentyp `LWORD`) zu einem `AX`-Adapter (Datentyp `BOOL`) durchführt. Er ermöglicht die einfache Umwandlung eines LWORD-Signals in ein boolesches Signal, das dann typischerweise an nachfolgende BOOL-basierte Adapter oder Funktionsblöcke weitergegeben wird. Der Baustein prüft, ob der eingehende LWORD-Wert ungleich Null ist, und liefert als Ergebnis `TRUE`, wenn dies zutrifft.
@@ -11,8 +12,8 @@ Der Funktionsblock `AL_TO_AX` ist ein Composite-Baustein, der eine unidirektiona
 
 Der Funktionsblock besitzt keine eigenen Ereignis- oder Datenein-/ausgänge, sondern verwendet ausschließlich Adapter-Schnittstellen:
 
-*   **Socket (Eingang):** `AL_IN` – Empfängt einen `AL`-Adapter (enthält ein LWORD und ein Ereignis).
-*   **Plug (Ausgang):** `AX_OUT` – Stellt einen `AX`-Adapter (enthält ein BOOL und ein Ereignis) bereit.
+-   **Socket (Eingang):** `AL_IN` – Empfängt einen `AL`-Adapter (enthält ein LWORD und ein Ereignis).
+-   **Plug (Ausgang):** `AX_OUT` – Stellt einen `AX`-Adapter (enthält ein BOOL und ein Ereignis) bereit.
 
 Die internen Verbindungen werden über die Adapter-Elemente abgewickelt:
 
@@ -20,25 +21,25 @@ Die internen Verbindungen werden über die Adapter-Elemente abgewickelt:
 
 (über den AL_IN-Adapter)
 
-*   **`AL_IN.E1`** – Ereigniseingang; löst die Konvertierung aus.
+-   **`AL_IN.E1`** – Ereigniseingang; löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 
 (über den AX_OUT-Adapter)
 
-*   **`AX_OUT.E1`** – Ereignisausgang; signalisiert den Abschluss der Konvertierung.
+-   **`AX_OUT.E1`** – Ereignisausgang; signalisiert den Abschluss der Konvertierung.
 
 ### **Daten-Eingänge**
 
 (über den AL_IN-Adapter)
 
-*   **`AL_IN.D1`** (`LWORD`) – Der umzuwandelnde LWORD-Wert.
+-   **`AL_IN.D1`** (`LWORD`) – Der umzuwandelnde LWORD-Wert.
 
 ### **Daten-Ausgänge**
 
 (über den AX_OUT-Adapter)
 
-*   **`AX_OUT.D1`** (`BOOL`) – Das Ergebnis der Umwandlung: `TRUE`, wenn `AL_IN.D1 ≠ 0`; andernfalls `FALSE`.
+-   **`AX_OUT.D1`** (`BOOL`) – Das Ergebnis der Umwandlung: `TRUE`, wenn `AL_IN.D1 ≠ 0`; andernfalls `FALSE`.
 
 ### **Adapter**
 
@@ -88,4 +89,4 @@ Der `AL_TO_AX`-Funktionsblock bietet eine einfache und zuverlässige Möglichkei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

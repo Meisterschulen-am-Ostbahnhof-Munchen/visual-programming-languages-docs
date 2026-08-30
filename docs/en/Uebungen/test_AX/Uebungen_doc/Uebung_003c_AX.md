@@ -1,8 +1,9 @@
 # Exercise_003c_AX: DigitalInput_I1-2-3-4 on AUX
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_003c_AX`. This exercise demonstrates connecting local digital inputs to the ISOBUS system as "Auxiliary Inputs." This enables the use of local switches to control ISOBUS devices.
+This article describes the logiBUS® exercise `Uebung_003c_AX`. This exercise demonstrates connecting local digital inputs to the ISOBUS system as "Auxiliary Inputs." This enables the use of local switches to control ISOBUS devices
 ----
+
 ## Objective of the Exercise
 
 The objective is to make local hardware inputs (`I1` to `I4`) available to the ISOBUS network. In the ISOBUS environment, input devices (joysticks, switch panels) can be defined as "Auxiliary Inputs," which can then be flexibly mapped to machine functions by the user.
@@ -17,20 +18,20 @@ The objective is to make local hardware inputs (`I1` to `I4`) available to the I
 
 [cite_start]This sub-block connects a local digital input to an ISOBUS auxiliary output block[cite: 2].
 
-* **Input**: `logiBUS_IXA` (Reads the local pin)
-* **Output**: `Aux_QXA` (Sends the status as an ISOBUS AUX message)
-* **Parameters**:
-* `Input`: The local input (e.g., `Input_I1`).
-* `iInpNr`: The number of the AUX input in the ISOBUS pool (index 0 to n).
+- **Input**: `logiBUS_IXA` (Reads the local pin)
+- **Output**: `Aux_QXA` (Sends the status as an ISOBUS AUX message)
+- **Parameters**:
+- `Input`: The local input (e.g., `Input_I1`).
+- `iInpNr`: The number of the AUX input in the ISOBUS pool (index 0 to n).
 
 ### Configuration
 
 This exercise maps four inputs:
 
-* `F1`: `Input_I1` -> AUX Index 0
-* `F2`: `Input_I2` -> AUX Index 1 (implicit, check parameter mapping in the .SUB file)
-* `F3`: `Input_I3` -> AUX Index 2
-* `F4`: `Input_I4` -> AUX Index 3
+- `F1`: `Input_I1` -> AUX Index 0
+- `F2`: `Input_I2` -> AUX Index 1 (implicit, check parameter mapping in the .SUB file)
+- `F3`: `Input_I3` -> AUX Index 2
+- `F4`: `Input_I4` -> AUX Index 3
 
 (Note: In the provided .SUB file, the parameters `Input` and `iInpNr` are not explicitly included in the instances.) `F1`...`F4` are visible, which is typical for untyped sub-apps where the values are set internally. With a properly typed solution, these values would be visible as in `Uebung_003b3_AX`.
 

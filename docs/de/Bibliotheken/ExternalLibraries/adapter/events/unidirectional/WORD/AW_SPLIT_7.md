@@ -3,6 +3,7 @@
 ![AW_SPLIT_7](./AW_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AW_SPLIT_7` dient dazu, einen einzelnen eingehenden AW-Adapter (unidirektional) auf sieben identische AW-Adapter-Ausgänge zu verteilen. Er ist als generischer Baustein ausgelegt und ermöglicht eine einfache Verteilung von Adapterverbindungen ohne Datenverarbeitung.

@@ -1,11 +1,13 @@
 # AX_PULSE
 
 * * * * * * * * * *
+
 ## Introduction
 
 **Important Note: This function block requires only one event and no cyclic calls. It has no output ET and does not display the elapsed time.**
 The AX_PULSE is a function block that outputs a pulse via an AX adapter.
 ![AX_PULSE](AX_PULSE.svg)
+
 ## Interface Structure
 
 ### **Adapters**
@@ -40,8 +42,8 @@ Signaling
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020h_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020h_AX.md)
-* [Exercise_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+- [Exercise_020h_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020h_AX.md)
+- [Exercise_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Conclusion
 

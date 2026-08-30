@@ -3,6 +3,7 @@
 ![AW_OR_9](./AW_OR_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AW_OR_9** is a generic function block for the bitwise OR operation across 9 input values of type `WORD` (16-bit bit pattern (word)). Unlike the Boolean operation on single truth values (as in the `AX_OR` blocks), every bit of the data word is combined independently here.

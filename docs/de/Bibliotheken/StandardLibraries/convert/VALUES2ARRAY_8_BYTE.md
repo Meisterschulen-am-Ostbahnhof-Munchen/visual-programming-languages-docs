@@ -3,6 +3,7 @@
 ![VALUES2ARRAY_8_BYTE](VALUES2ARRAY_8_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `VALUES2ARRAY_8_BYTE` fasst 8 einzelne `BYTE`-Skalarvariablen `IN_1`…`IN_8` zu einem `BYTE`-Array der Größe 8 zusammen. Er ist die Umkehrung von `ARRAY2VALUES_8_BYTE` und gehört zur generischen `GEN_ARRAY2ARRAY`-Familie (vgl. [VALUES2ARRAY_2_LREAL](VALUES2ARRAY_2_LREAL.md)).

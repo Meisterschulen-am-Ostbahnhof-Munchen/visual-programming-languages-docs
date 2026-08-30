@@ -3,6 +3,7 @@
 <img width="842" height="294" alt="RampLimitFS" src="https://github.com/user-attachments/assets/29d36f04-bd95-4ebf-ae98-807414c5e6b9" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `RampLimitFS` dient zur schrittweisen Erhöhung oder Verringerung eines Ausgabewertes mit verschiedenen Geschwindigkeiten (schnell/langsam), ähnlich wie bei einer Tempomat-Funktion in Fahrzeugen. Zusätzlich bietet er die Möglichkeit, Minimal- und Maximalwerte zu setzen sowie einen vordefinierten Wert zu laden.
@@ -93,7 +94,7 @@ Der Funktionsblock hat keinen internen Zustand. Jedes Ereignis führt sofort zur
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
+- [Uebung_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
 
 ## Fazit
 

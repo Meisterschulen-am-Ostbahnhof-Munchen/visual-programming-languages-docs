@@ -3,6 +3,7 @@
 ![AUI_TO_AL](./AUI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_TO_AL** ist ein zusammengesetzter (Composite) Funktionsblock, der die Konvertierung eines Adapters vom Typ AUI (basierend auf dem Datentyp UINT) in einen Adapter vom Typ AL (basierend auf dem Datentyp LWORD) ermöglicht. Er kapselt die standardisierte Konvertierungsfunktion `F_UINT_TO_LWORD` und stellt eine einfache, ereignisgesteuerte Schnittstelle für die unidirektionale Datenübertragung bereit.
@@ -21,13 +22,13 @@ Der Baustein gibt das Ereignis **E1** über den Plug **AL_OUT** aus, nachdem die
 
 Der Daten-Eingang wird ausschließlich über den Socket bereitgestellt:
 
-* **AUI_IN.D1** (Typ: UINT) – Der zu konvertierende Wert.
+- **AUI_IN.D1** (Typ: UINT) – Der zu konvertierende Wert.
 
 ### **Daten-Ausgänge**
 
 Der Daten-Ausgang wird über den Plug bereitgestellt:
 
-* **AL_OUT.D1** (Typ: LWORD) – Der konvertierte Wert (LWORD).
+- **AL_OUT.D1** (Typ: LWORD) – Der konvertierte Wert (LWORD).
 
 ### **Adapter**
 
@@ -79,4 +80,4 @@ Der Funktionsblock **AUI_TO_AL** stellt eine saubere, standardisierte Lösung zu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

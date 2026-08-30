@@ -3,6 +3,7 @@
 ![F_MUX_9](F_MUX_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_MUX_9` ist die generische 9-Eingangs-Variante des Standard-Multiplexer-Bausteins `F_MUX` (vgl. `F_MUX_2`/`F_MUX_3`/`F_MUX_4`). Er wählt anhand des Selektors `K` einen von 9 Eingangswerten (`IN1`, `IN2`, `IN3`, `IN4`, `IN5`, `IN6`, `IN7`, `IN8`, `IN9`) aus und gibt ihn über `OUT` aus.

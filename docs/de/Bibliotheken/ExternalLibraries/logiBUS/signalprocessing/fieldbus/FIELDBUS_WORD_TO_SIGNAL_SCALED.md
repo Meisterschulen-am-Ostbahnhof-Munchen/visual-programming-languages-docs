@@ -3,6 +3,7 @@
 ![FIELDBUS_WORD_TO_SIGNAL_SCALED](./FIELDBUS_WORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_WORD_TO_SIGNAL_SCALED** dient dazu, einen digitalen Feldbus-Rohwert (16‑Bit WORD) in einen skalierten physikalischen Signalwert (REAL) umzurechnen. Dabei wird nur dann ein gültiger Ausgang geliefert, wenn der eingehende Wert als gültiges Signal erkannt wird. Der Baustein prüft die Gültigkeit anhand einer vordefinierten Konstanten (`VALID_SIGNAL_W`) und kann unsichere oder „nicht verfügbare“ Werte zuverlässig unterdrücken.
@@ -46,20 +47,20 @@ Keine Adapter vorhanden.
 
 Der Baustein arbeitet zustandsgesteuert:
 
-1. **INIT‑Zustand**:  
+1. **INIT‑Zustand**:
    Nach dem Eintreten des `INIT`-Ereignisses wird der Initialisierungsalgorithmus (leer) ausgeführt und das Ereignis `INITO` ausgegeben. Die Skalierungsfaktoren werden dabei an den Eingängen `SCALE` und `OFFSET` übernommen (die Werte liegen bereits an den Eingängen an).
 
-2. **REQ‑Zustand** (Hauptlogik):  
+2. **REQ‑Zustand** (Hauptlogik):
    Bei jedem `REQ`-Ereignis wird folgender Algorithmus durchlaufen:
 
    - Der eingehende `IN` (WORD) wird zunächst in `UINT` konvertiert.
    - Liegt dieser Wert **kleiner oder gleich** dem in der globalen Konstanten `VALID_SIGNAL_W` definierten Grenzwert (ebenfalls als WORD/UINT), gilt das Signal als **gültig**.
-   - Bei Gültigkeit:  
-     `OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`  
+   - Bei Gültigkeit:
+     `OUT = UINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)`
      `VALID = TRUE`
 
-   - Bei Ungültigkeit:  
-     `OUT = 0.0`  
+   - Bei Ungültigkeit:
+     `OUT = 0.0`
      `VALID = FALSE`
 
    - Anschließend wird das `CNF`-Ereignis ausgelöst, das die aktualisierten Ausgänge `OUT` und `VALID` begleitet.
@@ -91,7 +92,7 @@ Der FB kennt keine weiteren Zustände; nach jedem Ereignis kehrt er in den entsp
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschiede |
-|----------|-------------|
+| ---------- | ------------- |
 | **FIELDBUS_WORD_TO_SIGNAL** (ohne Skalierung) | Bildet den Rohwert 1:1 ab, ohne Multiplikation/Addition. |
 | **WORD_TO_REAL** (Standard‑IEC‑Baustein) | Reine Typumwandlung ohne Gültigkeitsprüfung und Skalierung. |
 | **SCALING_FB** | Meist mit separatem Gültigkeits- und Skalierungszweig; dieser FB vereint beides in einem Schritt. |
@@ -106,4 +107,4 @@ Der Funktionsblock bietet eine kompakte und robuste Lösung zur Aufbereitung von
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

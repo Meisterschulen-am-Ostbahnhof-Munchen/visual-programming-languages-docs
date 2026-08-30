@@ -3,29 +3,31 @@
 ![GetVtcStatus](./GetVtcStatus.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **GetVtcStatus** is a Service Interface Block (SIFB) that encapsulates the function `IsoVtcGetStatusInfo()` from the ISOBUS driver. It enables the reading of various status information from a VT client and the connected Virtual Terminal (VT). The block was developed according to the ISO 11783-6 standard and is suitable for integration into ISOBUS applications.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-|----------|-----|---------------|-------------------|
+| ---------- | ----- | --------------- | ------------------- |
 | `INIT` | EInit | Initializes the function block. | `QI`, `u8Instance` |
 | `REQ` | Event | Requests the reading of a status value. | `QI`, `u8Instance`, `eVTInfo` |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Data Carried |
-|----------|-----|--------------|-------------------|
+| ---------- | ----- | -------------- | ------------------- |
 | `INITO` | EInit | Confirmation of initialization. | `QO`, `STATUS` |
 | `CNF` | Event | Confirmation of the read request with result. | `QO`, `STATUS`, `wValue` |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | `QI` | BOOL | – | Quality input: TRUE activates the service. |
 | `u8Instance` | USINT | – | VT client instance identifier (0–255). |
 | `eVTInfo` | UINT | 0 | Type of status information to query (values from the enumeration `ISOVT_STATUS_e`). |
@@ -33,7 +35,7 @@ The function block **GetVtcStatus** is a Service Interface Block (SIFB) that enc
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | `QO` | BOOL | Quality output: TRUE upon successful execution. |
 | `STATUS` | STRING | Service status – contains a textual response. |
 | `wValue` | UINT | The value returned by `IsoVtcGetStatusInfo()` (dependent on `eVTInfo`). |
@@ -48,7 +50,7 @@ No adapters available.
 
 The module is activated by the event `INIT`. The parameter `QI` must be set to TRUE for the service to start. The VT client instance to be used is specified via `u8Instance`. After successful initialization, the event `INITO` is sent with the output data `QO` and `STATUS`.
 
-2. **Reading Status Information**
+1. **Reading Status Information**
 
 The event `REQ` initiates a specific query. The desired status value must be selected from the enumeration `ISOVT_STATUS_e` using `eVTInfo` (see the list in the technical specifications). Internally, the function block calls the function `IsoVtcGetStatusInfo()` and sends the event `CNF` upon completion. The outputs contain:
 
@@ -64,7 +66,7 @@ If `QI` is FALSE during the REQ call, the service is not executed and a correspo
 - The possible values for `eVTInfo` (ISOVT_STATUS_e) are:
 
 | Value | Label | Description |
-|------|-------------|--------------|
+| ------ | ------------- | -------------- |
 | 0 | VT_SOURCE_ADDRESS | Source address of the VT |
 | 2 | VT_HND | CF handle of the VT |
 | 3 | CF_SOURCE_ADDRESS | Source address of the VT client |

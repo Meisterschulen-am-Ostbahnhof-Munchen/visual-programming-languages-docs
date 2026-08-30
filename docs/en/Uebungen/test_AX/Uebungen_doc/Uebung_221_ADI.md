@@ -3,9 +3,11 @@
 ![Uebung_221_ADI_network](./Uebung_221_ADI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up/down counter (CTUD) according to IEC 61131-3 in an adapter version (ADI_FB_CTUD). The counter uses 32-bit integers (DINT) and outputs the current count via a terminal output. Inputs are read via logiBUS adapters, and outputs are controlled via logiBUS adapters. A fixed preset value of 5 is loaded during initialization.
+
 ## Function Blocks (FBs) Used
 
 - **ADI_FB_CTUD** (Type: `adapter::iec61131::counters::ADI_FB_CTUD`)
@@ -42,15 +44,18 @@ Terminal output block. Parameter: `u16ObjId = OutputNumber_N1`. Displays the rec
 
 1. **Initialization**: At startup, the INITO event of `Input_LD` is used to trigger the function block `ADI_DINT_TO_DI`. This then passes the fixed value `DINT#5` as an ADI interface to the PV input of the counter `ADI_FB_CTUD`. This sets the preset value to 5.
 2. **Counting Operation**:
+
 - Each rising edge at `Input_CU` (forward count pulse) increments the counter by 1.
 - Each rising edge at `Input_CD` decrements the counter by 1.
 - A positive signal at `Input_R` resets the counter to 0.
 - A positive signal at `Input_LD` sets the counter to the current preset value (here, 5).
-3. **Outputs**:
+1. **Outputs**:
+
 - The output `Output_QU` (overflow) is activated when the counter reaches its maximum DINT value and another forward pulse occurs.
 - The output `Output_QD` (underflow) is activated when the counter reaches the minimum DINT value and another reverse pulse occurs.
 - The current counter value (CV) is output via `ADI_TO_AUDI` and `Q_NumericValue_AUDI` to a terminal (object ID `OutputNumber_N1`).
-4. **Data Connections** (Adapter Connections):
+1. **Data Connections** (Adapter Connections):
+
 - The counter's adapter inputs `CU`, `CD`, `R`, and `LD` are directly connected to the corresponding logiBUS inputs.
 
 - The adapter outputs `QU` and `QD` of the counter are connected to the logiBUS outputs.
@@ -58,7 +63,8 @@ Terminal output block. Parameter: `u16ObjId = OutputNumber_N1`. Displays the rec
 - The adapter output `CV` (count value) is connected to `ADI_TO_AUDI.ADI_IN`.
 - The AUDI output of `ADI_TO_AUDI` is connected to `Q_NumericValue_AUDI.u32NewValue`.
 - The fixed preset value of `ADI_DINT_TO_DI` is transferred to `ADI_FB_CTUD.PV`.
-5. **Notes**:
+1. **Notes**:
+
 - The conversion used, `ADI_TO_AUDI`, cannot represent negative numbers (see comment in the network). If the counter displays negative values, the terminal output will be incorrect.
 - For high-frequency events, it can be useful to insert an AX_D_FF (event flip-flop) to reduce the event rate (see comment).
 

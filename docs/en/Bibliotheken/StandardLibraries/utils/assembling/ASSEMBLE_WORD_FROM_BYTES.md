@@ -3,9 +3,11 @@
 ![ASSEMBLE_WORD_FROM_BYTES](https://github.com/user-attachments/assets/7ddc020d-4826-42e2-8447-7ba0fcfd215a)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ASSEMBLE_WORD_FROM_BYTES` combines two byte values into a single word (WORD). This is particularly useful when data from two separate byte sources needs to be concatenated into a single 16-bit value.
+
 ## Interface Structure
 
 ### **Event Inputs**

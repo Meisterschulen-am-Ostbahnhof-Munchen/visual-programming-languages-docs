@@ -3,9 +3,11 @@
 ![AR_MULTIME](./AR_MULTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_MULTIME** is used to multiply a time value (type TIME) by a numeric value. The numeric factor is input via an adapter, allowing the function block to be used flexibly in various contexts. The result is also output via an adapter. The function block is classified as a standard arithmetic function according to IEC 61131-3.
+
 ## Interface Structure
 
 ### **Event Inputs**

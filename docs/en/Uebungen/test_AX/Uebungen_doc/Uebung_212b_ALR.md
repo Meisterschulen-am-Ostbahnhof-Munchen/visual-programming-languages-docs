@@ -3,12 +3,14 @@
 ![Uebung_212b_ALR_network](./Uebung_212b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up counter (CTU) according to IEC 61131-3 as an adapter version. The counter uses type `ALI_FB_CTU` and can be preset to a predefined value (here 5). The current counter value is output via a physical terminal output (`Q_NumericValue_PHYSA_LREAL`) on an output channel. Additionally, a digital output (`Output_Q1`) is set as soon as the counter value reaches or exceeds the preset value. The inputs for the counter signal (CU) and the reset (R) are fed by digital inputs of the logiBUS platform. A comment indicates that negative counter readings are possible and recommends installing an AX_D_FF to reduce the number of events.
+
 ## Function Blocks (FBs) Used
 
-### Sub-Blocks:
+### Sub-Blocks
 
 #### **ALI_FB_CTU**
 
@@ -32,6 +34,7 @@ This exercise implements an up counter (CTU) according to IEC 61131-3 as an adap
 - **Functionality**: This function block Converts a constant LINT value to the ALI format, which the counter expects as a preset input. The output is updated when an event occurs at the `REQ` input (here, only once during initialization).
 
 Converts a constant LINT value to the ALI format, which the counter expects as a preset input.
+
 #### **Input_CU**
 
 - **Type**: `logiBUS::io::DI::logiBUS_IXA`
@@ -56,6 +59,7 @@ Converts a constant LINT value to the ALI format, which the counter expects as a
 - **Functionality**: Reads The state of the digital input `Input_I2` is monitored and provided as an adapter signal for the counter reset. The `INITO` event output is used for the one-time initialization of the preset value.
 
 The system monitors the state of the digital input `Input_I2` and provides it as an adapter signal for the counter reset.
+
 #### **Output_Q1**
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
@@ -91,9 +95,10 @@ This exercise implements a counting counter with terminal output. The connection
 1. **Initialization**: When the PLC starts, the INITO event is triggered by `Input_R`. This triggers `ALI_LINT_TO_LI` and sets the counter's preset value to `LINT#5`. The counter is now configured for the target value of 5.
 2. **Counting Operation**: The digital input `Input_I1` (pushbutton or sensor) is routed via `Input_CU` to the counter's `CU` input. Each rising edge increments the internal counter value. The digital input `Input_I2` is routed via `Input_R` to the input `R`. A signal resets the counter to 0.
 3. **Outputs**:
+
 - The counter's output `Q` is routed via `Output_Q1` to the digital output `Output_Q1`. This output becomes TRUE as soon as the counter reading is >= 5.
 - The current counter reading (`CV`) is converted to an LREAL value via `ALI_TO_ALR` and displayed on the terminal `OutputNumber_N3` via `Q_NumericValue_PHYSA_LREAL`.The counter reading is output. This allows the counter reading to be displayed in a visualization or on a screen.
-4. **Special Features**: A comment in the network indicates that negative counter readings are possible (e.g., due to overflow or incorrect usage). It is also recommended to insert an AX_D_FF block if necessary to reduce the number of events (especially with rapid counting pulses) and decrease the system load.
+1. **Special Features**: A comment in the network indicates that negative counter readings are possible (e.g., due to overflow or incorrect usage). It is also recommended to insert an AX_D_FF block if necessary to reduce the number of events (especially with rapid counting pulses) and decrease the system load.
 
 **Learning Objectives**: Understanding the IEC 61131-3 counter (CTU) in the adapter version, working with constants and conversion blocks, connecting digital inputs and outputs as well as physical terminal outputs.
 
@@ -111,6 +116,6 @@ Exercise `Uebung_212b_ALR` demonstrates a fully configured up-counter with a fix
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

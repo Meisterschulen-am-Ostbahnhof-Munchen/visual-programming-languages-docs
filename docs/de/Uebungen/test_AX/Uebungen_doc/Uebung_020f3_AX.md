@@ -20,9 +20,9 @@ Verwendung des `AX_BLINK` Bausteins für asymmetrisches Blinken.
 
 ![Uebung_020f3_AX_network](./Uebung_020f3_AX_network.svg)
 
-  * **`AX_BLINK`**: Erzeugt ein Blinksignal.
-  * **Parameter `TIMELOW`**: Zeit für "Aus" (1s).
-  * **Parameter `TIMEHIGH`**: Zeit für "An" (1.2s).
+  - **`AX_BLINK`**: Erzeugt ein Blinksignal.
+  - **Parameter `TIMELOW`**: Zeit für "Aus" (1s).
+  - **Parameter `TIMEHIGH`**: Zeit für "An" (1.2s).
 
 -----
 

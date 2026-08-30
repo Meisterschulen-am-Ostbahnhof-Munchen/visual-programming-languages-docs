@@ -3,6 +3,7 @@
 ![initval_AUDI](initval_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AUDI` ist der konfigurierbare Initialisierungsbaustein für den [AUDI](../AUDI.md)-Adapter (Datentyp `UDINT`, 32-Bit-Ganzzahl (vorzeichenlos)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AUDI`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

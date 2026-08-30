@@ -3,9 +3,11 @@
 ![ALR_TO_AUS](./ALR_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block **ALR_TO_AUS** serves as a universal converter between two unidirectional adapter protocols. It converts an LREAL value (64-bit floating-point) into a USINT value (8-bit unsigned integer). The block was developed for use in IEC 61499-based automation systems and internally uses the standard function block `F_LREAL_TO_USINT` from the library `iec61131::conversion`.
+
 ## Interface Structure
 
 Since this is a composite block, all inputs and outputs are implemented via adapters.
@@ -37,7 +39,7 @@ The **AUS_OUT** adapter provides the data output **D1** (type: USINT), which out
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|-----------|----------------------------------------------|----------|---------------------------------|
+| ----------- | ---------------------------------------------- | ---------- | --------------------------------- |
 | `ALR_IN` | `adapter::types::unidirectional::ALR` | Socket | Unidirectional LREAL input |
 | `AUS_OUT` | `adapter::types::unidirectional::AUS` | Plug | Unidirectional USINT output |
 

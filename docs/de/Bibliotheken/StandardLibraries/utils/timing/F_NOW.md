@@ -59,7 +59,7 @@ Die Funktion dient als Wrapper für die ST-Funktion NOW().
 ## ⚖️ Vergleich mit ähnlichen Funktionen
 
 | Feature | F_NOW | NOW | TIME() |
-|---------|-------|-----|--------|
+| --------- | ------- | ----- | -------- |
 | Rückgabetyp | DATE_AND_TIME | DATE_AND_TIME | TIME |
 | Zeitzone | Lokal | Lokal | System |
 | Genauigkeit | Sekunden | Sekunden | Millisekunden |
@@ -94,4 +94,4 @@ Idealer Einsatz bei:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

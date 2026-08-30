@@ -3,6 +3,7 @@
 ![ILOCK_SWITCH_PROTECT](./ILOCK_SWITCH_PROTECT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ILOCK_SWITCH_PROTECT** realisiert eine priorisierte Verriegelung (Interlock) zwischen zwei Schaltrichtungen – z. B. Auf/Ab, Vor/Rück oder Rechts/Links. Er besitzt eine konfigurierbare Schutzverzögerung (Dead‑Time), die ein sofortiges erneutes Umschalten nach einer Richtungsänderung verhindert. Der Baustein wertet die beiden binären Eingänge aus und gibt nur dann ein Schaltsignal aus, wenn der zuletzt aktive Eingang nach Ablauf der Schutzzeit noch immer ansteht. Dies verhindert kurzzeitige Pendelzustände und schützt angeschlossene Aktoren.

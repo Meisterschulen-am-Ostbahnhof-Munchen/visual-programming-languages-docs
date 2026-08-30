@@ -77,7 +77,7 @@ Vergleich mit [E_TOF](../../../../../../StandardLibraries/events/timers/E_TOF.md
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020e_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e_AX.md)
+- [Uebung_020e_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e_AX.md)
 
 ## Fazit
 
@@ -87,4 +87,4 @@ Der AX_TOF Funktionsblock bietet eine zuverlässige und standardisierte Lösung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

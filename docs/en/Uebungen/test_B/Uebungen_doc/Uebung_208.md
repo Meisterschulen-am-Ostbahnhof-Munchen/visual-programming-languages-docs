@@ -3,6 +3,7 @@
 ![Uebung_208_network](./Uebung_208_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a mutual interlock between two outputs using the function block `ILOCK_FB_SR`. Each set-dominant latch controls one output, with an adapter connection ensuring that only one of the two outputs can be active at any given time. The inputs (set and reset) are read via digital input modules (logiBUS_IX), and the outputs are output via digital output modules (logiBUS_QX). The interlock prevents both outputs from being set simultaneously – even if both set signals are present at the same time.
@@ -32,7 +33,7 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 
 *This prevents both function blocks from simultaneously setting `Q1` = TRUE.
 
-* ... - **DigitalOutput_Q1, DigitalOutput_Q2**
+- ... - **DigitalOutput_Q1, DigitalOutput_Q2**
 - **Type**: `logiBUS::io::DQ::logiBUS_QX`
 - **Parameters**:
 - `QI` = `TRUE` (Internally enabled)
@@ -45,24 +46,26 @@ This exercise demonstrates the implementation of a mutual interlock between two 
 
 Each DigitalInput FB (logiBUS_IX) waits for a signal change at its associated hardware input (`Input_I1` … `Input_I4`). Upon a rising edge, it generates the event `IND` and provides the current state at the data output `IN`.
 
-2. **Interlock Logic**
+1. **Interlock Logic**
+
 - The event `IND` of the respective input is directly forwarded to the `REQ` input of the associated `ILOCK_FB_SR`.
 - Simultaneously, the data value `IN` is applied to the corresponding set or reset input of the ILOCK:
-* `DigitalInput_S1.IN` → `ILOCK_SR_1.S1`
-* `DigitalInput_R1.IN` → `ILOCK_SR_1.R`
-* `DigitalInput_S2.IN` → `ILOCK_SR_2.S1`
-* `DigitalInput_R2.IN` → `ILOCK_SR_2.R`
+- `DigitalInput_S1.IN` → `ILOCK_SR_1.S1`
+- `DigitalInput_R1.IN` → `ILOCK_SR_1.R`
+- `DigitalInput_S2.IN` → `ILOCK_SR_2.S1`
+- `DigitalInput_R2.IN` → `ILOCK_SR_2.R`
 - The two ILOCK modules are interlocked via their adapter connections:
 
 ILOCK_SR_1.ILOCK_OUT` → `ILOCK_SR_2.ILOCK_IN`
 
 This means that `ILOCK_SR_2` can only set its output `Q1` to TRUE if `ILOCK_SR_1.Q1` is FALSE (and vice versa).
 
-3. **Output**
+1. **Output**
+
 - After processing, the ILOCK block generates the event `CNF`. This triggers the associated DigitalOutput FB (logiBUS_QX) via its `REQ` input.
 - Simultaneously, the result `Q1` of the ILOCK is passed to the data output `OUT` of the DigitalOutput:
-* `ILOCK_SR_1.Q1` → `DigitalOutput_Q1.OUT`
-* `ILOCK_SR_2.Q1` → `DigitalOutput_Q2.OUT`
+- `ILOCK_SR_1.Q1` → `DigitalOutput_Q1.OUT`
+- `ILOCK_SR_2.Q1` → `DigitalOutput_Q2.OUT`
 
 **Learning Objectives:**
 
@@ -86,6 +89,6 @@ In this exercise, a mutual interlock of two outputs was implemented using the fu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

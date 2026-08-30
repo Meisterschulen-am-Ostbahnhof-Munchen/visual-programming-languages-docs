@@ -74,9 +74,9 @@ Im Vergleich zu einfachen digitalen Ausgabebausteinen bietet DataPanel_MI_QXA:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003b2_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
-* [Uebung_003b3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
-* [Uebung_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
+- [Uebung_003b2_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_sub_AX.md)
+- [Uebung_003b3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_sub_AX.md)
+- [Uebung_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
 
 ## Fazit
 

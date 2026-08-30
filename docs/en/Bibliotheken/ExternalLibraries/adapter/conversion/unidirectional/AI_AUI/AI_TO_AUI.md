@@ -3,9 +3,11 @@
 ![AI_TO_AUI](./AI_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_TO_AUI** is a composite block that converts an INT adapter (AI) into a UINT adapter (AUI). It serves as an interface converter in systems that rely on unidirectional adapter communication. Internally, it uses the block `F_INT_TO_UINT` from the IEC 61131 library to convert the integer value of `AI_IN` into an unsigned integer and make it available via `AUI_OUT`.
+
 ## Interface Structure
 
 ### Event Inputs
@@ -27,7 +29,7 @@ No separate data outputs are available. The converted value is provided via the 
 ### Adapters
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | `AI_IN` | `adapter::types::unidirectional::AI` | INT adapter input. Returns the event `E1` and the data value `D1` (INT). |
 | Plug (Output) | `AUI_OUT` | `adapter::types::unidirectional::AUI` | UINT adapter output. Provides the event `E1` and the data value `D1` (UINT). |
 

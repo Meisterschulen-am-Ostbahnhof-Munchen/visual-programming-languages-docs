@@ -29,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AE` | Ein unidirektionales Adapter-Ereignis, dessen Inhalt an alle Ausgänge weitergeleitet wird. |
 | Plug (Ausgang 1) | `OUT1` | `adapter::types::unidirectional::AE` | Erster Ausgang, der das eingehende Ereignis bereitstellt. |
 | Plug (Ausgang 2) | `OUT2` | `adapter::types::unidirectional::AE` | Zweiter Ausgang, der das eingehende Ereignis bereitstellt. |

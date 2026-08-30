@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_022`. Hier wird die Ablau
 
 ![Uebung_022_network](./Uebung_022_network.svg)
 
-* [Als Landtechnik-Spezialist durch die Hölle: Wie Lanz-Wery Krieg, Besatzung und Hyperinflation überlebte – Einblicke in Original-Geschäftsberichte 1915-1922](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Als-Landtechnik-Spezialist-durch-die-Hlle-Wie-Lanz-Wery-Krieg--Besatzung-und-Hyperinflation-berlebte--Einblicke-in-Original-Geschftsberichte-1915-1922-e39athj)
+- [Als Landtechnik-Spezialist durch die Hölle: Wie Lanz-Wery Krieg, Besatzung und Hyperinflation überlebte – Einblicke in Original-Geschäftsberichte 1915-1922](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Als-Landtechnik-Spezialist-durch-die-Hlle-Wie-Lanz-Wery-Krieg--Besatzung-und-Hyperinflation-berlebte--Einblicke-in-Original-Geschftsberichte-1915-1922-e39athj)
 
 ----
 
@@ -24,10 +24,10 @@ Erlernen der Ereignisverkettung. Das Ende eines Prozesses (Erreichen der Endlage
 
 ### Funktionsbausteine (FBs)
 
-  * **`I1` (Start)**: Startet den gesamten Ablauf.
-  * **`I2` (Endlage 1)**: Beendet Schritt 1 und startet Schritt 2.
-  * **`I3` (Endlage 2)**: Beendet Schritt 2.
-  * **`Q1` & `Q2`**: Die Ausgänge für zwei Zylinder.
+  - **`I1` (Start)**: Startet den gesamten Ablauf.
+  - **`I2` (Endlage 1)**: Beendet Schritt 1 und startet Schritt 2.
+  - **`I3` (Endlage 2)**: Beendet Schritt 2.
+  - **`Q1` & `Q2`**: Die Ausgänge für zwei Zylinder.
 
 -----
 

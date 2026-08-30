@@ -3,6 +3,7 @@
 <img width="1536" height="212" alt="F_TIME_IN_US_TO_LREAL" src="https://github.com/user-attachments/assets/ece70afa-d5af-4a67-a95e-e1c2a79fc167" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_TIME_IN_US_TO_LREAL` dient zur Konvertierung eines Zeitwertes in Mikrosekunden (`TIME`) in eine Fließkommazahl mit doppelter Genauigkeit (`LREAL`). Diese Umwandlung ist insbesondere in Steuerungsanwendungen nützlich, wo Zeitwerte für weitere Berechnungen benötigt werden.
@@ -55,9 +56,9 @@ Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen We
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
 
-*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
-*   **Beispiel:** `500 * T#1ms = T#500ms`
-*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+-   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+-   **Beispiel:** `500 * T#1ms = T#500ms`
+-   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

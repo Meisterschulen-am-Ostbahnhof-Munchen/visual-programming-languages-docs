@@ -3,9 +3,11 @@
 ![ADI_TO_AUS](./ADI_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ADI_TO_AUS function block acts as an adapter converter from a DINT adapter (ADI) to a USINT adapter (AUS). It converts a DINT value to a USINT value and enables the seamless integration of components with different data types in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -63,6 +65,6 @@ The ADI_TO_AUS is a practical building block for the seamless integration of DIN
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

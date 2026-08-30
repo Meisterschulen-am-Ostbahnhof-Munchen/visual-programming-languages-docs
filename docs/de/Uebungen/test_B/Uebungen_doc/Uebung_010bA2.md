@@ -12,6 +12,6 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010bA2`. Hier geht es um 
 
 ![Uebung_010bA2_network](./Uebung_010bA2_network.svg)
 
-*   Bei einem **tastenden Bediener** (NonLatched) wird das Event nur einmal beim Drücken gesendet.
-*   Bei einem **rastenden Bediener** (Latched) wird das Event zyklisch wiederholt, solange der Schalter aktiv ist.
+-   Bei einem **tastenden Bediener** (NonLatched) wird das Event nur einmal beim Drücken gesendet.
+-   Bei einem **rastenden Bediener** (Latched) wird das Event zyklisch wiederholt, solange der Schalter aktiv ist.
 Dies verdeutlicht, wie die Software auf die Hardware-Eigenschaften des verwendeten Joysticks reagiert.

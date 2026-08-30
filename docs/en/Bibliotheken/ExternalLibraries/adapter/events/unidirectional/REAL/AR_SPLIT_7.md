@@ -3,9 +3,11 @@
 ![AR_SPLIT_7](./AR_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR_SPLIT_7** is a generic function block that distributes an incoming AR adapter socket (of type `adapter::types::unidirectional::AR`) to seven separate AR adapter plugs. It serves to forward an AR signal to up to seven different receivers without requiring the data to be provided multiple times.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AR` | IN | Socket | Incoming AR adapter, which is distributed to the seven outputs. |
 | `adapter::types::unidirectional::AR` | OUT1 … OUT7 | Plug | Seven output adapters to which the incoming AR adapter is passed on unchanged. |
 
@@ -72,6 +74,6 @@ The **AR_SPLIT_7** is a lean, generic function block for easily distributing one
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

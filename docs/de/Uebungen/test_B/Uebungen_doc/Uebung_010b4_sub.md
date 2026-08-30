@@ -4,7 +4,7 @@
 
 ![Uebung_010b4_sub_network](./Uebung_010b4_sub_network.svg)
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ## Übersicht
 
@@ -13,5 +13,4 @@ Er bündelt eine `Softkey_IX` Instanz und einen `DigitalOutput_QX` Baustein. Üb
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010b4](Uebung_010b4.md)
-
+- [Uebung_010b4](Uebung_010b4.md)

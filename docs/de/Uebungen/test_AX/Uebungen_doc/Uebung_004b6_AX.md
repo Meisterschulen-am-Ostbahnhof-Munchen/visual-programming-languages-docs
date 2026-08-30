@@ -3,6 +3,7 @@
 ![Uebung_004b6_AX_network](./Uebung_004b6_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines Toggle-Flip-Flops (T‑FF) in Kombination mit einem Freigabe-Mechanismus. Ein digitaler Eingang (logiBUS_IXA) wird über einen **AX_PERMIT**-Adapter an den Takteingang eines **AX_T_FF**-Adapters weitergeleitet. Der Ausgang des T‑FF steuert einen digitalen Ausgang (logiBUS_QXA). Dadurch kann der Zustand des Ausgangs bei jeder steigenden Flanke am Eingang umgeschaltet werden – jedoch nur, wenn der Eingang vorher vom **AX_PERMIT** freigegeben wurde.
@@ -10,7 +11,7 @@ Diese Übung demonstriert die Verwendung eines Toggle-Flip-Flops (T‑FF) in Kom
 ## Verwendete Funktionsbausteine (FBs)
 
 | FB-Instanz | Typ | Parameter |
-|------------|-----|-----------|
+| ------------ | ----- | ----------- |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`, `Input = "Input_I1"` |
 | `DigitalOutput_Q1` | `logiBUS::io::DQ::logiBUS_QXA` | `QI = TRUE`, `Output = "Output_Q1"` |
 | `AX_PERMIT` | `adapter::events::unidirectional::AX_PERMIT` | (keine Parameter gesetzt) |

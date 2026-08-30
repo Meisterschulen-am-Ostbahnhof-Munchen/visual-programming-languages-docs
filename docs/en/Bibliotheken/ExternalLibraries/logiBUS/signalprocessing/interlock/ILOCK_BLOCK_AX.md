@@ -3,9 +3,11 @@
 ![ILOCK_BLOCK_AX](./ILOCK_BLOCK_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_BLOCK_AX** implements an interlock for two opposing directions (up/down or forward/backward). It prioritizes the first active input and ensures that only one direction can be active at a time. The block is implemented as a basic function block (FB) according to IEC 61499-2.
+
 ## Interface Structure
 
 The function block uses adapter interfaces of type `adapter::types::unidirectional::AX`. Each adapter consists of an event input `E1` and a data input `D1` (BOOL).
@@ -63,7 +65,7 @@ The algorithms set the output signals:
 ## State overview
 
 | State | Description | Output signals |
-|---------|--------------|-----------------|
+| --------- | -------------- | ----------------- |
 | **STOP** | Idle state, no direction active | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = FALSE` |
 | **UP** | Up direction active | `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE` |
 | **DOWN** | Down direction active | `UP_OUT.D1 = FALSE`, `DOWN_OUT.D1 = TRUE` |

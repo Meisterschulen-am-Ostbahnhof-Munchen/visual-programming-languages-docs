@@ -69,7 +69,7 @@ In Compared to simple digital input blocks, Aux_IX offers enhanced service funct
 
 ## 🛠️ Related Exercises
 
-* [Exercise_010b1](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b1.md)
+- [Exercise_010b1](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b1.md)
 
 ## Conclusion
 
@@ -79,4 +79,4 @@ The Aux_IX function block provides a robust and flexible solution for integratin
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

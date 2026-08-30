@@ -3,9 +3,11 @@
 ![Q_Attribute_AUDI](./Q_Attribute_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_Attribute_AUDI** implements the "Change Attribute" command of the ISOBUS standard ISO 11783-6 (Part 6 – F.38). It allows you to change an attribute of an object that is identified by a unique attribute ID (AID). The block supports passing the new attribute value via an adapter interface and returns the old value via an adapter as well. String attributes cannot be changed with this command.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,28 +19,28 @@ The function block **Q_Attribute_AUDI** implements the "Change Attribute" comman
 ### **Event Outputs**
 
 | Event | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | INITO | EInit | Confirms successful completion of initialization |
 | CNF | Event | Confirms execution of the requested attribute change command |
 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|---------------|-------|--------------|
+| --------------- | ------- | -------------- |
 | u16ObjId | UINT | Object ID of the attribute to be changed (initial value: ID_NULL) |
 | u8IdAttribute | USINT | Attribute ID (AID) – defines which attribute of the object is to be changed |
 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|------------|--------|--------------|
+| ------------ | -------- | -------------- |
 | STATUS | STRING | Status message of the executed service |
 | s16result | INT | Return value of the command (error codes, see Functionality) |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | u32ValueAttribute | Socket | unidirectional::AUDI | New value for the attribute (32-bit, fed into the FB via the adapter) |
 | u32OldValueAttribute | Plug | unidirectional::AUDI | Old attribute value (32-bit, output by the function block via the adapter) |
 

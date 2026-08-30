@@ -71,13 +71,13 @@ Compared to simple digital output blocks, `logiBUS_QD_PWM` offers extended PWM f
 
 ## 🛠️ Related exercises
 
-* [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
-* [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
-* [Uebung_034a1_Q2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
-* [Uebung_034a1_Q4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
-* [Uebung_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
-* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
+- [Uebung_034a1_Q2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
+- [Uebung_034a1_Q4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
+- [Uebung_034b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
+- [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Conclusion
 
@@ -87,6 +87,6 @@ The `logiBUS_QD_PWM` function block provides a powerful interface for PWM output
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

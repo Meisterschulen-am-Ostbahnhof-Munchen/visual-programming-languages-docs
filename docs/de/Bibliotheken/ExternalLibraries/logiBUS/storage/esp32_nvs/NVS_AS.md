@@ -48,28 +48,28 @@ Der Funktionsblock **NVS_AS** dient als Schnittstelle zum Lesen und Schreiben vo
 
 Der **NVS_AS**-Baustein kapselt eine Instanz des Bausteins **NVS** (aus der Bibliothek `logiBUS::storage::esp32_nvs`). Die Funktion gliedert sich in zwei Betriebsarten:
 
-1. **Initialisierung und erster Lesevorgang**  
+1. **Initialisierung und erster Lesevorgang**
    Nach einem INIT-Ereignis wird der interne NVS-Baustein initialisiert. Direkt im Anschluss (automatische Verkettung von `INITO` zu `GET`) wird der unter dem angegebenen KEY gespeicherte Wert gelesen. Existiert noch kein Wert, wird `DEFAULT_VALUE` zurückgegeben. Der gelesene oder vorgegebene Wert wird über den Adapter **AS_OUT** (Ereignis `E1` und Data `D1`) an nachgeschaltete Bausteine gesendet.
 
-2. **Schreiben und Lesen über Adapter**  
-   - Ein über den Adapter **AS_IN** eingehendes Ereignis (`E1`) mit zugehörigem Datenwert (`D1`) löst einen **SET**-Vorgang im NVS aus. Der Wert wird unter dem bei INIT angegebenen KEY gespeichert.  
-   - Nach erfolgreichem SET wird automatisch der gespeicherte Wert über **AS_OUT** ausgegeben (durch die Verbindung von `NVS.SETO` zu `AS_OUT.E1`).  
+2. **Schreiben und Lesen über Adapter**
+   - Ein über den Adapter **AS_IN** eingehendes Ereignis (`E1`) mit zugehörigem Datenwert (`D1`) löst einen **SET**-Vorgang im NVS aus. Der Wert wird unter dem bei INIT angegebenen KEY gespeichert.
+   - Nach erfolgreichem SET wird automatisch der gespeicherte Wert über **AS_OUT** ausgegeben (durch die Verbindung von `NVS.SETO` zu `AS_OUT.E1`).
    - Ebenso kann ein erneutes Lesen durch ein INIT-Ereignis oder durch den internen Ablauf nach einem erfolgreichen SET angestoßen werden. Ein separates Lese-Ereignis von außen ist nicht vorgesehen; der Wert wird stets nach einer Änderung oder bei Initialisierung aktualisiert.
 
 Der Baustein arbeitet also als **lesender und schreibender Speicherzugriff mit automatischer Rückmeldung des aktuellen Werts**.
 
 ## Technische Besonderheiten
 
-- **Adapterbasierte Ein-/Ausgabe**  
+- **Adapterbasierte Ein-/Ausgabe**
   Die Verwendung von unidirektionalen AS-Adaptern erlaubt eine lose Kopplung: **AS_IN** empfängt Schreibaufträge, **AS_OUT** gibt den gespeicherten Wert aus. Dies entspricht einem Publisher/Subscriber- oder Client/Server-Muster auf Adapterebene.
 
-- **Automatische Initialisierung**  
+- **Automatische Initialisierung**
   Nach dem INIT-Ereignis wird sofort ein GET ausgeführt, sodass der Baustein nach der Initialisierung sofort den aktuellen oder den Standardwert bereitstellt.
 
-- **Typbeschränkung auf SINT**  
+- **Typbeschränkung auf SINT**
   Der Baustein speichert und lädt ausschließlich SINT-Werte. Für andere Datentypen (z. B. INT, REAL, STRING) sind separate Varianten erforderlich.
 
-- **Fehlerbehandlung**  
+- **Fehlerbehandlung**
   Fehler während der NVS-Operationen (z. B. ungültiger KEY, Speicherfehler) werden über den STATUS-Ausgang als Fehlermeldung ausgegeben, und QO wird auf FALSE gesetzt.
 
 ## Zustandsübersicht
@@ -77,7 +77,7 @@ Der Baustein arbeitet also als **lesender und schreibender Speicherzugriff mit a
 Der interne NVS-Baustein besitzt einen eigenen Zustandsautomaten. Für den Anwender relevant sind folgende Abläufe:
 
 | Phase | Zustand |
-|-------|---------|
+| ------- | --------- |
 | 1 | Warten auf INIT-Ereignis. |
 | 2 | INIT ausgeführt → NVS initialisiert → GET gestartet. |
 | 3 | GET abgeschlossen → Wert über AS_OUT gesendet → Bereit für Schreibaufträge über AS_IN. |
@@ -87,24 +87,24 @@ Ein erneutes INIT-Ereignis kann jederzeit eine Neuinitialisierung erzwingen.
 
 ## Anwendungsszenarien
 
-- **Persistente Geräteparameter**  
+- **Persistente Geräteparameter**
   Speichern von Konfigurationswerten (z. B. Helligkeit, Verzögerungszeit) im nichtflüchtigen Speicher eines ESP32, bei Neustart automatisch laden.
 
-- **Zustandsmerker für Automatisierung**  
+- **Zustandsmerker für Automatisierung**
   Merken des letzten Zustands (z. B. Zählerstand, Produktionsparameter) auch nach Spannungsausfall.
 
-- **Adapterbasierte Datenknoten**  
+- **Adapterbasierte Datenknoten**
   Einbindung in eine Kette von Adaptern, bei denen ein Baustein Werte setzt und ein anderer sie ausliest.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **NVS (direkt)**  
+- **NVS (direkt)**
   Der Baustein `NVS` bietet dieselbe Funktionalität, jedoch ohne Adapterschnittstelle. Er benötigt separate Ereignis- und Datenleitungen. `NVS_AS` vereinfacht die Einbindung in adapterorientierte Architekturen.
 
-- **NVS_AS_REAL, NVS_AS_STRING**  
+- **NVS_AS_REAL, NVS_AS_STRING**
   Analoge Bausteine für andere Datentypen. Die Schnittstelle und das Verhalten sind identisch, lediglich der Datentyp variiert.
 
-- **Retain-Werte**  
+- **Retain-Werte**
   In manchen Systemen gibt es Retain-Variablen, die ebenfalls persistent sind. `NVS_AS` setzt auf hardwarenahen NVS (z. B. auf ESP32) und ist daher plattformspezifisch, aber performanter und kapazitätsoptimiert.
 
 ## Fazit
@@ -115,4 +115,4 @@ Der Funktionsblock **NVS_AS** stellt eine praktische, adapterbasierte Kapselung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

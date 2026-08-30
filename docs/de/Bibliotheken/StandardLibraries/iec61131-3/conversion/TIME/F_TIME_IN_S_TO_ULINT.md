@@ -3,6 +3,7 @@
 <img width="1520" height="212" alt="F_TIME_IN_S_TO_ULINT" src="https://github.com/user-attachments/assets/60c0a628-bf00-4bf4-b81c-1397cad4dd61" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_TIME_IN_S_TO_ULINT` dient der Konvertierung eines TIME-Werts in Sekunden in einen ULINT-Wert. Dies ist besonders nützlich, wenn Zeitwerte in numerische Formate umgewandelt werden müssen, um sie in Berechnungen oder für weitere Verarbeitungsschritte zu verwenden.
@@ -55,9 +56,9 @@ Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen We
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
 
-*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
-*   **Beispiel:** `500 * T#1ms = T#500ms`
-*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+-   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+-   **Beispiel:** `500 * T#1ms = T#500ms`
+-   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

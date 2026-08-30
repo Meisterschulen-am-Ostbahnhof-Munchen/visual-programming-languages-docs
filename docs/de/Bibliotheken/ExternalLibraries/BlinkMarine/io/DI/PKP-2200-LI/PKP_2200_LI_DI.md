@@ -3,6 +3,7 @@
 ![PKP_2200_LI_DI](./PKP_2200_LI_DI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die PKP_2200_LI_DI ist eine globale Konstantendefinition für Blink Marine PowerKey Digital Inputs. Diese Konstante definiert die Pin-Zuordnungen für digitale Eingänge eines PowerKey-Systems und stellt vordefinierte Konfigurationen für verschiedene Tasten sowie einen ungültigen Zustand bereit.

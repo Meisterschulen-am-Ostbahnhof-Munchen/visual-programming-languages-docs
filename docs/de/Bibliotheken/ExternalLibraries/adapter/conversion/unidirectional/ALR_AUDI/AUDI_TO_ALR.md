@@ -3,6 +3,7 @@
 ![AUDI_TO_ALR](./AUDI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_TO_ALR** ist ein Composite-Baustein, der einen unidirektionalen Adapter vom Typ **AUDI** (Datentyp `UDINT`) in einen Adapter vom Typ **ALR** (Datentyp `LREAL`) umwandelt. Er dient als einfaches Bindeglied zwischen zwei unterschiedlichen Adapter-Schnittstellen und ermöglicht so die Integration von Komponenten, die auf unterschiedlichen Datenformaten basieren.
@@ -72,4 +73,4 @@ Im 4diac‑Ökosystem existieren einfache Konvertierungsbausteine wie `INT_TO_RE
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

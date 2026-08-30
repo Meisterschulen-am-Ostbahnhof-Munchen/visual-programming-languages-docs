@@ -3,6 +3,7 @@
 ![Uebung_006f_RS_network](./Uebung_006f_RS_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines **reset-dominanten Toggle-Flipflops** (FB_RS_T_FF) in der 4diac-IDE. Ziel ist es, das Verhalten eines priorisierten Rücksetzeingangs in Kombination mit einem taktgesteuerten Toggle-Mechanismus zu verstehen. Die Eingänge werden über logiBUS-Hardwarekomponenten angeschlossen, die Ausgabe erfolgt über einen digitalen Ausgang.
@@ -78,4 +79,4 @@ Die Übung `Uebung_006f_RS` zeigt die Einbindung eines reset-dominanten Toggle-F
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

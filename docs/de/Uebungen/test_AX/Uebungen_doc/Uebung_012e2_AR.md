@@ -3,6 +3,7 @@
 ![Uebung_012e2_AR_network](./Uebung_012e2_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination eines logiBUS-Digital-Eingangs, einer parametrierbaren Zeitbasis und eines über einen Sub-App-Baustein konfigurierten Timerwerts, der aus einem NVS (Non-Volatile Storage) geladen wird. Ein digitales Eingangssignal startet einen Timer, dessen Ablaufzeit über einen gespeicherten numerischen Wert (INI) eingestellt wird. Der Timerausgang schaltet einen digitalen Ausgang. Die Besonderheit liegt in der AR-Adapter-Verknüpfung zwischen dem Speicherbaustein, der arithmetischen Einheit und dem Timer.
@@ -21,47 +22,47 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 
 ### Weitere Funktionsbausteine
 
-- **DigitalInput_I1**  
-  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`  
-  - Parameter: `QI` = `TRUE`, `Input` = `Input_I1`  
-  - Ereignisausgang/-eingang: AR-Adapter (`IN`)  
-  - Datenausgang/-eingang: –  
+- **DigitalInput_I1**
+  - **Typ**: `logiBUS::io::DI::logiBUS_IXA`
+  - Parameter: `QI` = `TRUE`, `Input` = `Input_I1`
+  - Ereignisausgang/-eingang: AR-Adapter (`IN`)
+  - Datenausgang/-eingang: –
 
-- **AX_TON**  
-  - **Typ**: `adapter::events::unidirectional::timers::ATM_AX_TON`  
-  - Parameter: keine  
-  - Ereignisausgang/-eingang: `IN` (Adapter), `Q` (Adapter)  
-  - Datenausgang/-eingang: `PT` (Timer-Vorgabezeit) über AR-Adapter  
+- **AX_TON**
+  - **Typ**: `adapter::events::unidirectional::timers::ATM_AX_TON`
+  - Parameter: keine
+  - Ereignisausgang/-eingang: `IN` (Adapter), `Q` (Adapter)
+  - Datenausgang/-eingang: `PT` (Timer-Vorgabezeit) über AR-Adapter
 
-- **AR_MULTIME**  
-  - **Typ**: `adapter::iec61131::arithmetic::AR_MULTIME`  
-  - Parameter: `IN1` = `T#100ms` (fester Multiplikator)  
-  - Datenausgang/-eingang: `IN2` (Multiplikand), `OUT` (Ergebnis) über AR-Adapter  
+- **AR_MULTIME**
+  - **Typ**: `adapter::iec61131::arithmetic::AR_MULTIME`
+  - Parameter: `IN1` = `T#100ms` (fester Multiplikator)
+  - Datenausgang/-eingang: `IN2` (Multiplikand), `OUT` (Ergebnis) über AR-Adapter
 
-- **DigitalOutput_Q1**  
-  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`  
-  - Parameter: `QI` = `TRUE`, `Output` = `Output_Q1`  
-  - Ereignisausgang/-eingang: AR-Adapter (`OUT`)  
-  - Datenausgang/-eingang: –  
+- **DigitalOutput_Q1**
+  - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
+  - Parameter: `QI` = `TRUE`, `Output` = `Output_Q1`
+  - Ereignisausgang/-eingang: AR-Adapter (`OUT`)
+  - Datenausgang/-eingang: –
 
 ## Programmablauf und Verbindungen
 
-1. **Digitaler Eingang**  
+1. **Digitaler Eingang**
    Der Baustein `DigitalInput_I1` stellt das physikalische Signal `Input_I1` (z. B. Taster oder Sensor) als AR-Adapter-Signal `IN` zur Verfügung.
 
-2. **Timer-Start**  
-   Dieses Signal wird direkt mit dem `IN`-Adapter des Timers `AX_TON` verbunden.  
+2. **Timer-Start**
+   Dieses Signal wird direkt mit dem `IN`-Adapter des Timers `AX_TON` verbunden.
 
    - Bei einer steigenden Flanke (EIN) startet der Timer.
 
-3. **Variable Timer-Zeit**  
-   Der Sub-Baustein `Uebung_012e_sub_AR` liefert über seinen AR-Ausgang `VALUEO` den aus dem NVS geladenen numerischen Wert.  
+3. **Variable Timer-Zeit**
+   Der Sub-Baustein `Uebung_012e_sub_AR` liefert über seinen AR-Ausgang `VALUEO` den aus dem NVS geladenen numerischen Wert.
 
-   - Dieser Wert wird mit dem AR-Adapter an den `IN2`-Eingang des arithmetischen Bausteins `AR_MULTIME` übergeben.  
-   - Der Baustein `AR_MULTIME` multipliziert den festen Wert `T#100ms` (IN1) mit dem variablen Wert (IN2) und gibt das Ergebnis (Time) an seinem `OUT`-Adapter aus.  
+   - Dieser Wert wird mit dem AR-Adapter an den `IN2`-Eingang des arithmetischen Bausteins `AR_MULTIME` übergeben.
+   - Der Baustein `AR_MULTIME` multipliziert den festen Wert `T#100ms` (IN1) mit dem variablen Wert (IN2) und gibt das Ergebnis (Time) an seinem `OUT`-Adapter aus.
    - Der Ausgang `OUT` wird mit dem `PT`-Adapter des Timers `AX_TON` verbunden. Dadurch wird die Timer-Ablaufzeit dynamisch aus dem gespeicherten Wert berechnet.
 
-4. **Digitaler Ausgang**  
+4. **Digitaler Ausgang**
    Der Timerausgang `Q` von `AX_TON` schaltet den `OUT`-Adapter des Ausgangsbausteins `DigitalOutput_Q1`. Somit wird der physikalische Ausgang `Output_Q1` aktiviert, solange der Timer läuft bzw. nach Ablauf der eingestellten Zeit.
 
 **Erläuterung der Verbindungen im Netzwerk**:
@@ -80,12 +81,12 @@ Diese Übung demonstriert die Verwendung eines **AR-Adapters** zur Kombination e
 - Realisierung einer einstellbaren Timer-Funktion mit einem digitalen Eingang und Ausgang.
 - Verständnis der Adapter-basierten Kommunikation zwischen Funktionsbausteinen unterschiedlicher Bibliotheken.
 
-**Schwierigkeitsgrad**: Mittel  
-**Benötigte Vorkenntnisse**: Grundlegende Kenntnisse der 4diac-IDE, Umgang mit logiBUS-Bausteinen, AR-Adapter und NVS-Konstanten.  
+**Schwierigkeitsgrad**: Mittel
+**Benötigte Vorkenntnisse**: Grundlegende Kenntnisse der 4diac-IDE, Umgang mit logiBUS-Bausteinen, AR-Adapter und NVS-Konstanten.
 **Start der Übung**: Importieren Sie das SubApp-Template `Uebung_012e2_AR` in ein neues 4diac-Projekt, stellen Sie sicher, dass die benötigten Bibliotheken (`logiBUS`, `MyLib`, `Uebungen::const`) im Build-Pfad liegen, und verbinden Sie die physikalischen E/A-Punkte entsprechend der Hardware.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

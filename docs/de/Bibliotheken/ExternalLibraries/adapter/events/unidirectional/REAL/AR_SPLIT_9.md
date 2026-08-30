@@ -3,6 +3,7 @@
 ![AR_SPLIT_9](./AR_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_SPLIT_9** teilt einen eingehenden AR‑Adapter (Typ `unidirectional`) in neun separate AR‑Ausgänge auf. Er dient als Verteiler für ein AR‑Signal an mehrere nachgeschaltete Komponenten. Der Baustein ist vollständig generisch ausgelegt.
@@ -55,7 +56,7 @@ Der Funktionsblock besitzt keinen internen Zustand (keine Zustandsmaschine). Das
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Bemerkung |
-|----------|------------------|-----------|
+| ---------- | ------------------ | ----------- |
 | `AR_SPLIT_4` | 4 | Gleiche Funktionsweise, aber nur vier Ausgänge. |
 | `AR_SPLIT_9` | 9 | Vorliegender Baustein (neun Ausgänge). |
 | `AR_SPLIT_2` | 2 | Minimaler Splitter für zwei Pfade. |
@@ -74,4 +75,4 @@ Der **AR_SPLIT_9** ist ein einfacher, aber hilfreicher Verteilerbaustein für un
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,8 +1,9 @@
 # Exercise_006a3: SR and T Flip-Flop with 3x IE
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_006a3`. This is a more complex application for controlling a motor with two directions of rotation and automatic switching.
+This article describes the logiBUS® exercise `Uebung_006a3`. This is a more complex application for controlling a motor with two directions of rotation and automatic switching
 ----
+
 ## Objective of the Exercise
 
 To build a control system for forward and reverse operation with software interlock. It must be ensured that both directions can never be controlled simultaneously.
@@ -17,10 +18,10 @@ To build a control system for forward and reverse operation with software interl
 
 ![Uebung_006a3_network](./Uebung_006a3_network.svg)
 
-* **`E_T_FF_SR`**: Determines whether the motor is running (On/Off).
-* **`LinksRechts_T_FF` (SubApp)**: An internal marker that changes the direction every time the motor starts.
-* **2x `AND_2_BOOL`**: Link the "On" signal to the selected direction.
-* **`Q1` (Counter-clockwise) & `Q2` (Counter-clockwise)**: The hardware outputs.
+- **`E_T_FF_SR`**: Determines whether the motor is running (On/Off).
+- **`LinksRechts_T_FF` (SubApp)**: An internal marker that changes the direction every time the motor starts.
+- **2x `AND_2_BOOL`**: Link the "On" signal to the selected direction.
+- **`Q1` (Counter-clockwise) & `Q2` (Counter-clockwise)**: The hardware outputs.
 
 -----
 

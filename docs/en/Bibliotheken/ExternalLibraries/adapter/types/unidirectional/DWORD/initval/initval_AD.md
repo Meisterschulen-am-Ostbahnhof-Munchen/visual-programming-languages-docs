@@ -3,6 +3,7 @@
 ![initval_AD](initval_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AD` is the configurable initialization block for the [AD](../AD.md) adapter (data type `DWORD`, 32-bit bit pattern): it accepts a start value as a data input at initialization time and writes it to a `AD` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

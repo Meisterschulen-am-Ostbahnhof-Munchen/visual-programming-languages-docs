@@ -3,6 +3,7 @@
 ![F_ATAN2](F_ATAN2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_ATAN2` berechnet den Hauptwert des Arkustangens von `Y/X` unter Berücksichtigung der Vorzeichen beider Argumente (Zwei-Parameter-Arkustangens). Im Gegensatz zur einfachen `ATAN`-Funktion (die nur ein Argument entgegennimmt) liefert `F_ATAN2` den Winkel im korrekten Quadranten über den vollen Winkelbereich von `-π` bis `+π`.

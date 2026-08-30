@@ -20,8 +20,8 @@ Das Hauptziel dieser Übung ist es, zu zeigen, wie Ereignis- und Datenverbindung
 
 ![Uebung_002_network](./Uebung_002_network.svg)
 
-  * **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein liest den Hardware-Eingang `Input_I1`[cite: 1].
-  * **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QX`. [cite_start]Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IX`. [cite_start]Dieser Baustein liest den Hardware-Eingang `Input_I1`[cite: 1].
+  - **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instanzen des Typs `logiBUS_QX`. [cite_start]Diese repräsentieren die physischen Ausgänge `Output_Q1` und `Output_Q2`[cite: 1].
 
 -----
 

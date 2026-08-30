@@ -3,6 +3,7 @@
 ![CALIBRATE](CALIBRATE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `CALIBRATE` führt eine Zwei-Punkt-Kalibrierung (Offset & Skalierung) eines analogen Eingangssignals durch: `Y = (X + OFFSET) * SCALE`. Die Kalibrierung wird nicht über eigene Ereignisse, sondern über die booleschen Eingänge `CO`/`CS` ausgelöst, die bei jedem `REQ` mitgeprüft werden. Für eine ereignisgesteuerte Variante siehe [E_CALIBRATE](E_CALIBRATE.md), für eine Variante mit erzwungener Reihenfolge [E_CALIBRATE_SQ](E_CALIBRATE_SQ.md).
@@ -51,7 +52,7 @@ Anschließend wird in jedem Fall `Y := (X + OFFSET) * SCALE` berechnet und über
 **Beispiel** (4-20-mA-Drucksensor über logiBUS, normiert auf `0.0 .. 1.0`, gewünschter Ausgabebereich `0.0 .. 500.0`):
 
 | Schritt | Aktion | Ergebnis |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 4 mA anlegen (`X=0.0`), `Y_Offset=0.0`, `CO=TRUE` | `OFFSET = 0` |
 | 2 | 20 mA anlegen (`X=1.0`), `Y_Scale=500.0`, `CS=TRUE` | `SCALE = 500` |
 

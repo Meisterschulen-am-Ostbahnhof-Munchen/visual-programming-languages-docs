@@ -3,9 +3,11 @@
 ![AD_D_FF_TMIN](./AD_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_D_FF_TMIN** implements a data-retaining flip-flop (D-latch) based on adapters with a unidirectional interface. It features a configurable minimum inter-disposal time (MDR) between two consecutive events, making it suitable for time-critical signal processing.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No direct data outputs are available; output is exclusively via the adapter *Q*.
 ### **Adapters**
 
 | Type | Direction | Name | Comment |
-|-----|----------|------|-----------|
+| ----- | ---------- | ------ | ----------- |
 | adapter::types::unidirectional::AD | **Plug** (Output) | Q | Returns the latched value |
 | adapter::types::unidirectional::AD | **Socket** (Input) | I | Receives the value to be latched and the clock event |
 
@@ -74,7 +76,7 @@ Thanks to the adapter interface, the function block can be seamlessly integrated
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature | Difference |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | **E_D_FF** | Standard D Flip-Flop | No time constraint; every clock event is processed. |
 | **E_CTD** / **E_CTU** | Counter | Different basic function; counts events. |
 | **AD_D_FF_TMIN** | D Flip-Flop with *Minimum Inter-disposal Time* | Prevents excessively fast clock sequences through configurable lock time. |
@@ -87,6 +89,6 @@ The **AD_D_FF_TMIN** extends the classic D Flip-Flop with a time-based filter fu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

@@ -3,6 +3,7 @@
 ![AIWS_D_FF](./AIWS_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AIWS_D_FF realisiert ein data latch (D)-Flipflop, das einen eingehenden Datenwert speichert und bei einem Ereignis an den Ausgang weitergibt. Die Kommunikation erfolgt ausschließlich über Adapter, sodass der Baustein nahtlos in modulare Systeme integriert werden kann.

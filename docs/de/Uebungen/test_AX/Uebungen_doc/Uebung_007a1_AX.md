@@ -20,9 +20,9 @@ Starten und Stoppen des Blinkers.
 
 ![Uebung_007a1_AX_network](./Uebung_007a1_AX_network.svg)
 
-  * **`START` (I1)**: Startet den Zyklus.
-  * **`STOP` (I2)**: Stoppt den Zyklus.
-  * **`E_CYCLE`**: Generiert Events nur, wenn er gestartet ist.
+  - **`START` (I1)**: Startet den Zyklus.
+  - **`STOP` (I2)**: Stoppt den Zyklus.
+  - **`E_CYCLE`**: Generiert Events nur, wenn er gestartet ist.
 
 -----
 

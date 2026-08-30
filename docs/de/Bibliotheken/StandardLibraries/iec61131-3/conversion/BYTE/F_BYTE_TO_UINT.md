@@ -3,6 +3,7 @@
 <img width="1436" height="212" alt="F_BYTE_TO_UINT" src="https://github.com/user-attachments/assets/8cb462ae-eb4e-4fd2-8556-33ab2b4fa9f3" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_BYTE_TO_UINT` dient der Konvertierung eines `BYTE`-Wertes in einen `UINT`-Wert. Dies ist besonders nützlich, wenn Daten unterschiedlicher Typen in einem System verarbeitet werden müssen und eine Typumwandlung erforderlich ist.
@@ -56,7 +57,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Ausführung erfolgt unmittel
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
+- [Uebung_006c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006c.md)
 
 ## Fazit
 

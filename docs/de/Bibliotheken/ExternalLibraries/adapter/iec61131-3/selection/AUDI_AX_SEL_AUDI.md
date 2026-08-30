@@ -3,6 +3,7 @@
 ![AUDI_AX_SEL_AUDI](./AUDI_AX_SEL_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_AX_SEL_AUDI** realisiert eine binäre Auswahl (binary selection) zwischen zwei Eingabewerten. Er fungiert als Multiplexer, der abhängig von einem Selektorsignal einen der beiden Eingänge an den Ausgang durchschaltet. Die Kommunikation erfolgt ausschließlich über unidirektionale Adapter, die sowohl Ereignis- als auch Datensignale kapseln. Dadurch wird eine flexible und typengebundene Einbindung in existierende Signalpfade ermöglicht.
@@ -38,11 +39,11 @@ Der FB besitzt keine dedizierten Daten-Ausgänge. Der ausgewählte Datenwert wir
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Kommentar |
-|---------|----------|-----|-----------|
+| --------- | ---------- | ----- | ----------- |
 | **IN0** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Erster auswählbarer Eingang |
 | **IN1** | Socket (Eingang) | `adapter::types::unidirectional::AUDI` | Zweiter auswählbarer Eingang |
-| **G**   | Socket (Eingang) | `adapter::types::unidirectional::AX`   | Selektor (Ereignis + Daten) |
-| **OUT** | Plug (Ausgang)  | `adapter::types::unidirectional::AUDI` | Ausgangsfeld mit Ereignis und Daten |
+| **G** | Socket (Eingang) | `adapter::types::unidirectional::AX` | Selektor (Ereignis + Daten) |
+| **OUT** | Plug (Ausgang) | `adapter::types::unidirectional::AUDI` | Ausgangsfeld mit Ereignis und Daten |
 
 ## Funktionsweise
 
@@ -50,8 +51,8 @@ Der Baustein enthält intern eine Instanz des IEC‑61131‑Funktionsbausteins `
 
 1. **Triggerung**: Ein Ereignis am **G.E1** (über den Selektordapter) startet die Verarbeitung.
 2. **Datensammlung**: Die anliegenden Werte von **IN0.D1**, **IN1.D1** und **G.D1** werden an den `F_SEL`-Baustein weitergeleitet.
-3. **Auswahl**: `F_SEL` prüft den Wert von **G.D1**. Typische Semantik (abhängig vom Datentyp `AX`):  
-   - Ist der Selektorfeld **False** (oder 0), wird **IN0** ausgewählt.  
+3. **Auswahl**: `F_SEL` prüft den Wert von **G.D1**. Typische Semantik (abhängig vom Datentyp `AX`):
+   - Ist der Selektorfeld **False** (oder 0), wird **IN0** ausgewählt.
    - Ist das Selektorfeld **True** (oder ungleich 0), wird **IN1** ausgewählt.
 4. **Ausgabe**: Das ausgewählte Signal wird an **OUT.D1** weitergegeben. Gleichzeitig wird ein Ereignis an **OUT.E1** gesendet, um die nachgeschaltete Verarbeitung zu informieren.
 
@@ -85,7 +86,7 @@ Die Verwendung benutzerdefinierter Adaptertypen (`AUDI`, `AX`) erlaubt eine einf
 ## Vergleich mit ähnlichen Bausteinen
 
 | Kriterium | **AUDI_AX_SEL_AUDI** | Einfacher Bool-MUX (z. B. `F_SEL`) |
-|-----------|------------------------|---------------------------------------|
+| ----------- | ------------------------ | --------------------------------------- |
 | **Schnittstelle** | Reine Adapter (Ereignis+Daten gekapselt) | Getrennte Ein-/Ausgangspins |
 | **Datentyp** | Benutzerdefinierte Typen (`AUDI`, `AX`) | Beliebig (parametrierbar) |
 | **Selektor** | Ereignisgesteuert (über Adapter) | Datenbasiert, ohne extra Ereignis |
@@ -102,4 +103,4 @@ Der **AUDI_AX_SEL_AUDI** ist ein spezialisierter binärer Selektor, der die Vort
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

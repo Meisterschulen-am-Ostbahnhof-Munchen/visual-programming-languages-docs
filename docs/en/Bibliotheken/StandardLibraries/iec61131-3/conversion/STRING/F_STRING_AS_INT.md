@@ -6,6 +6,7 @@
 
 The function block `F_STRING_AS_INT` converts a `STRING` value to a `INT` value. This functionality is particularly useful when strings representing numeric values need to be converted into integer values.
 ![F_STRING_AS_INT](F_STRING_AS_INT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

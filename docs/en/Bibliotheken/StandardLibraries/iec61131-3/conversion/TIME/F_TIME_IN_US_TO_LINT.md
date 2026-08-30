@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_US_TO_LINT` converts a TIME value in microseconds (µs) into a LINT value (64-bit integer). This conversion is useful when time values are needed in numerical calculations or for further processing.
 ![F_TIME_IN_US_TO_LINT](F_TIME_IN_US_TO_LINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,9 +57,9 @@ Often, a function like `DINT_TO_TIME` is needed to convert a numeric value (e.g.
 
 Use the function block **`F_MULTIME`** (from the category `arithmetic`) for this:
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with similar function blocks
 

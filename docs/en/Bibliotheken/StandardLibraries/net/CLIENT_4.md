@@ -3,6 +3,7 @@
 ![CLIENT_4](CLIENT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `CLIENT_4` function block is the generic client variant with 4 send and 4 receive data fields for communicating with a matching [SERVER_4](SERVER_4.md) block. It transmits 4 data values (`SD_1` `SD_2` `SD_3` `SD_4`) to the server and receives 4 data values (`RD_1` `RD_2` `RD_3` `RD_4`) back. Like all `CLIENT_*` blocks, it is based on the generic `GEN_CLIENT` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

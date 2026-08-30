@@ -3,6 +3,7 @@
 ![AQ_AND_4](./AQ_AND_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AQ_AND_4** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 4 Eingangswerten vom Typ `BYTE` (2-Bit-Wert (Viertel-Byte, als Byte übertragen)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

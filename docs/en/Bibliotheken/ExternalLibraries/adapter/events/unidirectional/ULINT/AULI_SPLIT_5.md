@@ -3,9 +3,11 @@
 ![AULI_SPLIT_5](./AULI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_SPLIT_5** serves as a generic splitter for the unidirectional AULI adapter type. It generates five identical output signals from a single incoming AULI signal, which can then be distributed to separate devices. The block is implemented as a generic FB and is parameterized for the Eclipse 4diac Core Framework using the attributes `GenericClassName` and `TypeHash`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AULI` | Incoming AULI adapter (source) |
 | Plug | `OUT1` | `adapter::types::unidirectional::AULI` | First outgoing AULI adapter |
 | Plug | `OUT2` | `adapter::types::unidirectional::AULI` | Second outgoing AULI adapter |
@@ -61,7 +63,7 @@ The FB has **no internal state machine**. There are no states, no transitions, a
 ## Comparison with Similar Components
 
 | Component | Type | Outputs | Special Feature |
-|----------|-----|----------|--------------|
+| ---------- | ----- | ---------- | -------------- |
 | `AULI_SPLIT_5` | Generic splitter | 5 | Specific to AULI adapters |
 | `SPLIT_2` (non-standardized) | Generic splitter | 2 | Mostly for data types such as INT or BOOL |
 | `F_SPLIT` (from IEC 61499 libraries) | Functional splitter | Variable | Based on ECC and events |
@@ -81,4 +83,4 @@ The `AULI_SPLIT_5` is a minimalist yet useful function block for multiplying a u
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

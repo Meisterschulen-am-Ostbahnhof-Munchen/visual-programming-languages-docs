@@ -46,21 +46,21 @@ Keine.
 
 ## Funktionsweise
 
-1. **Initialisierung** (`INIT`):  
+1. **Initialisierung** (`INIT`):
    Der Algorithmus `INIT` ist leer, die Parameter `SCALE_HIGH`, `SCALE_LOW` und `OFFSET` werden jedoch über die `With`-Beziehung mit dem Ereignis verknüpft und können so beim Aufruf von `INIT` gesetzt werden.
 
-2. **Normale Verarbeitung** (`REQ`):  
-   - Der Eingangswert `IN` wird mit einer Konstanten `VALID_SIGNAL_W` (aus dem importierten Namen `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_W`) verglichen:  
-     `IF (IN <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN`  
+2. **Normale Verarbeitung** (`REQ`):
+   - Der Eingangswert `IN` wird mit einer Konstanten `VALID_SIGNAL_W` (aus dem importierten Namen `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL::VALID_SIGNAL_W`) verglichen:
+     `IF (IN <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN`
 
    - Falls die Bedingung **wahr** ist (Signal gültig):
-     - Das obere Byte wird durch Rechts-Shift um 8 Bit und Maskierung mit `0x00FF` extrahiert:  
+     - Das obere Byte wird durch Rechts-Shift um 8 Bit und Maskierung mit `0x00FF` extrahiert:
        `highByte := (IN >> 8) & 0xFF`
 
-     - Das untere Byte wird direkt durch Maskierung gewonnen:  
+     - Das untere Byte wird direkt durch Maskierung gewonnen:
        `lowByte := IN & 0xFF`
 
-     - Beide Bytes werden in `REAL` gewandelt, mit den jeweiligen Skalierungsfaktoren multipliziert und der Offset addiert:  
+     - Beide Bytes werden in `REAL` gewandelt, mit den jeweiligen Skalierungsfaktoren multipliziert und der Offset addiert:
        `OUT := highByte * SCALE_HIGH + lowByte * SCALE_LOW + OFFSET`
 
      - `VALID` wird auf `TRUE` gesetzt.
@@ -94,7 +94,7 @@ Der FB ist als SimpleFB implementiert; es gibt keine weiteren Zustände wie IDLE
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft | Unterschied |
-|----------|-------------|-------------|
+| ---------- | ------------- | ------------- |
 | `SCALE` (z. B. nach IEC 61131) | Linearer Faktor und Offset auf den gesamten Wert | Keine Aufteilung in Bytes, keine Gültigkeitsprüfung |
 | `LINEAR` (Feldbus‑Standard) | Gleitender Mittelwert oder einfache lineare Transformation | Kein Compound‑Ansatz |
 | `UINT_TO_REAL` | Direkte Typumwandlung | Keine Skalierung, keine Fehlererkennung |
@@ -109,4 +109,4 @@ Der `FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` ist ein leistungsfähiger Funktions
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

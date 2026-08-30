@@ -3,9 +3,11 @@
 ![ASR_SPLIT_9](./ASR_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASR_SPLIT_9** is used to split a single incoming ASR adapter (Application Specific Resource) into nine separate ASR outputs. It is implemented as a generic function block (Generic FB) and allows the distribution of an ASR signal to up to nine independent receivers.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ No separate data outputs. The data is output via the ASR adapters **OUT1** to **
 **Plugs (Outputs):**
 
 | Name | Type | Direction |
-|-------|-----|----------|
+| ------- | ----- | ---------- |
 | OUT1 | `adapter::types::unidirectional::ASR` | Plug |
 | OUT2 | `adapter::types::unidirectional::ASR` | Plug |
 | OUT3 | `adapter::types::unidirectional::ASR` | Plug |
@@ -81,6 +83,6 @@ The **ASR_SPLIT_9** function block is a compact and efficient solution for distr
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

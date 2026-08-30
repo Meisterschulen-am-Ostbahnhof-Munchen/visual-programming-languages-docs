@@ -1,8 +1,9 @@
 # Exercise_002: DigitalInput_I1 to DigitalOutput_Q1/_Q2
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_002`, in which a single digital input signal is distributed to two different digital outputs. This demonstrates the concept of "fan-out" (multiplying) connections.
+This article describes the logiBUS® exercise `Uebung_002`, in which a single digital input signal is distributed to two different digital outputs. This demonstrates the concept of "fan-out" (multiplying) connections
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to demonstrate how event and data connections can be branched according to IEC 61499. A single source port can serve multiple destination ports. This is a fundamental method for triggering parallel actions in a controller.
@@ -17,8 +18,8 @@ The main objective of this exercise is to demonstrate how event and data connect
 
 ![Uebung_002_network](./Uebung_002_network.svg)
 
-* **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. [cite_start]This block reads the hardware input `Input_I1`[cite: 1].
-* **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instances of type `logiBUS_QX`. [cite_start]These represent the physical outputs `Output_Q1` and `Output_Q2`[cite: 1].
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IX`. [cite_start]This block reads the hardware input `Input_I1`[cite: 1].
+- **`DigitalOutput_Q1` & `DigitalOutput_Q2`**: Instances of type `logiBUS_QX`. [cite_start]These represent the physical outputs `Output_Q1` and `Output_Q2`[cite: 1].
 
 -----
 

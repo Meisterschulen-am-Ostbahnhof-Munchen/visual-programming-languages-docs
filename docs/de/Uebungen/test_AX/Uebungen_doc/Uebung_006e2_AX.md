@@ -35,7 +35,7 @@ Diese Übung selbst ist als `SubAppType` definiert und enthält folgende interne
     - **AX_FB_RS**: `adapter::iec61131::bistableElements::AX_FB_RS`
         - Beschreibung: Ein bistabiles Element (RS-Flip-Flop) mit Adapter-Schnittstellen. Es realisiert die Speicherfunktion.
 
-- **Funktionsweise**: 
+- **Funktionsweise**:
     Die Sub-Applikation liest zwei externe Signale über die logiBUS-Adapter ein, verarbeitet diese in einem RS-Flip-Flop und gibt den resultierenden Zustand an einen Ausgangsadapter weiter.
 
 ## Programmablauf und Verbindungen
@@ -68,4 +68,4 @@ Die `Uebung_006e2_AX` demonstriert eine grundlegende Speicherfunktion in der Ste
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

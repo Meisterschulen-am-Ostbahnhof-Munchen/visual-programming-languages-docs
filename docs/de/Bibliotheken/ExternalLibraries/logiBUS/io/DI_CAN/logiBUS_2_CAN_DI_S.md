@@ -1,6 +1,7 @@
 # logiBUS_2_CAN_DI_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `logiBUS_2_CAN_DI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines digitalen Eingangs (DI) für ein logiBUS-CAN-System dient. Er definiert die grundlegenden Parameter, die benötigt werden, um einen physischen Eingangspin auf einem logiBUS-CAN-Modul zu adressieren und zu nutzen. Dieser Datentyp dient typischerweise als Eingabe für übergeordnete Funktionsbausteine, die die eigentliche Kommunikation über das CAN-Protokoll abwickeln.
@@ -39,9 +40,9 @@ Der Datentyp `logiBUS_2_CAN_DI_S` fungiert als Konfigurationscontainer. Der enth
 
 ## Technische Besonderheiten
 
-*   **Datentyp `USINT`:** Die Verwendung eines `USINT` (0 bis 255) für den Pin legt nahe, dass die logiBUS-Hardware theoretisch bis zu 256 digitale Eingänge pro Konfigurationsstruktur adressieren kann. Der Wert 255 ist als Standard-Initialwert reserviert.
-*   **Initialwert 255:** Dieser Wert dient als Kennzeichnung für eine nicht aktive oder nicht definierte Konfiguration. Er sollte in der Anwendung durch eine gültige Pinnummer ersetzt werden.
-*   **Packagename:** Der Datentyp ist im Package `logiBUS::io::DI_CAN` organisiert, was seine Zugehörigkeit zur logiBUS-CAN-Eingangskommunikation klar kennzeichnet.
+-   **Datentyp `USINT`:** Die Verwendung eines `USINT` (0 bis 255) für den Pin legt nahe, dass die logiBUS-Hardware theoretisch bis zu 256 digitale Eingänge pro Konfigurationsstruktur adressieren kann. Der Wert 255 ist als Standard-Initialwert reserviert.
+-   **Initialwert 255:** Dieser Wert dient als Kennzeichnung für eine nicht aktive oder nicht definierte Konfiguration. Er sollte in der Anwendung durch eine gültige Pinnummer ersetzt werden.
+-   **Packagename:** Der Datentyp ist im Package `logiBUS::io::DI_CAN` organisiert, was seine Zugehörigkeit zur logiBUS-CAN-Eingangskommunikation klar kennzeichnet.
 
 ## Zustandsübersicht
 
@@ -51,9 +52,9 @@ Der Datentyp `logiBUS_2_CAN_DI_S` fungiert als Konfigurationscontainer. Der enth
 
 Dieser Strukturtyp wird in Szenarien eingesetzt, bei denen digitale Signale (z.B. Schalter, Endschalter, Sensorkontakte) über ein CAN-basiertes logiBUS-Netzwerk in eine Steuerung (z.B. eine IEC 61499-basierte Applikation in 4diac) eingelesen werden sollen. Typische Anwendungen sind:
 
-*   Maschinensteuerungen mit dezentraler, CAN-vernetzter Sensorik.
-*   Mobile Anwendungen (Fahrzeuge, Roboter) mit robustem Bussystem.
-*   Anlagen, bei denen digitale Eingangssignale über größere Entfernungen verteilt sind.
+-   Maschinensteuerungen mit dezentraler, CAN-vernetzter Sensorik.
+-   Mobile Anwendungen (Fahrzeuge, Roboter) mit robustem Bussystem.
+-   Anlagen, bei denen digitale Eingangssignale über größere Entfernungen verteilt sind.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -67,4 +68,4 @@ Der `logiBUS_2_CAN_DI_S` Datentyp ist ein essentielles und schlankes Konfigurati
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

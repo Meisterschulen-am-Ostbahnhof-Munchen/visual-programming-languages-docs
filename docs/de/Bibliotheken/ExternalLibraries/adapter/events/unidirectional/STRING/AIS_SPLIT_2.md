@@ -3,6 +3,7 @@
 ![AIS_SPLIT_2](./AIS_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AIS_SPLIT_2** ist ein generischer Adapter-Baustein, der einen eingehenden unidirektionalen AIS‑Adapter (Application Interface Socket) auf zwei identische, ausgehende AIS‑Adapter aufteilt. Er dient als passiver Splitter ohne eigene Logik oder Ereignisverarbeitung.
@@ -69,4 +70,4 @@ Der AIS_SPLIT_2 ist ein minimalistischer, generisch einsetzbarer Adapter‑Split
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

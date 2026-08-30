@@ -3,6 +3,7 @@
 ![AUI_SUB_2](./AUI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_SUB_2` is used to perform arithmetic subtraction within an IEC 61499 application. It is a generic function block (FB) specifically designed for interaction with adapter interfaces. It allows subtraction operations to be implemented modularly and in a structured manner via standardized adapter connections, instead of using discrete individual wires for data and events.
@@ -29,17 +30,17 @@ The function block `AUI_SUB_2` is used to perform arithmetic subtraction within 
 
 #### **Sockets (Inputs)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AUI`):
+- **IN1** (Type: `adapter::types::unidirectional::AUI`):
 
 First input adapter for subtraction. This represents the minuend (value from which the subtraction is made).
 
-* **IN2** (Type: `adapter::types::unidirectional::AUI`):
+- **IN2** (Type: `adapter::types::unidirectional::AUI`):
 
 Second input adapter for subtraction. This represents the subtrahend (value being subtracted).
 
 #### **Plugs (Inputs / Outputs)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUI`):
+- **OUT** (Type: `adapter::types::unidirectional::AUI`):
 
 Output adapter that provides the result of the subtraction (the difference) for further use.
 
@@ -57,8 +58,8 @@ As soon as a change in value is signaled at the input adapters `IN1` or `IN2` (t
 
 ## Technical Features
 
-* **Generic Type:** The function block is based on the generic class `GEN_AUI_SUB`. This allows for flexible handling of different data types, provided they are supported by the underlying adapter type `AUI` (Analog User Interface / Unidirectional).
-* **Encapsulation:** By using unidirectional adapters, signal flows and their associated trigger events are neatly bundled. This significantly simplifies application design in the 4diac IDE and reduces the number of visible connection lines.
+- **Generic Type:** The function block is based on the generic class `GEN_AUI_SUB`. This allows for flexible handling of different data types, provided they are supported by the underlying adapter type `AUI` (Analog User Interface / Unidirectional).
+- **Encapsulation:** By using unidirectional adapters, signal flows and their associated trigger events are neatly bundled. This significantly simplifies application design in the 4diac IDE and reduces the number of visible connection lines.
 
 --
 
@@ -70,16 +71,17 @@ The function block itself does not manage a complex internal state (stateless in
 
 **Encapsulation:** 2. **Calculation:** After an event occurs, the data values are read and the subtraction is performed.
 
-3. **Output:** The new difference value is applied to `OUT`, and the adapter's output event is triggered.
+1. **Output:** The new difference value is applied to `OUT`, and the adapter's output event is triggered.
 
 ---
 
 ## Application Scenarios
 
-* **Differential Pressure/Differential Temperature Measurement:** Calculation of the deviation between two analog sensors whose values are already available as structured adapter signals.
-* **Setpoint-Actual Value Comparison:** Subtraction of an actual value from a setpoint to determine the control deviation in control loops.
-* **Zero Point Compensation (Offset Calculation):** Subtraction of a static or dynamic offset value (via `IN2`) from a raw signal (via `IN1`).
-* ---
+- **Differential Pressure/Differential Temperature Measurement:** Calculation of the deviation between two analog sensors whose values are already available as structured adapter signals.
+- **Setpoint-Actual Value Comparison:** Subtraction of an actual value from a setpoint to determine the control deviation in control loops.
+- **Zero Point Compensation (Offset Calculation):** Subtraction of a static or dynamic offset value (via `IN2`) from a raw signal (via `IN1`).
+
+- ---
 
 ## Comparison with Similar Building Blocks
 

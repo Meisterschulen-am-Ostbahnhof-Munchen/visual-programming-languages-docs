@@ -10,7 +10,7 @@ Die Übung realisiert eine einfache Durchschaltung von vier digitalen Eingängen
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### DigitalInput_Ix (x=1..4)
 
@@ -21,7 +21,7 @@ Die Übung realisiert eine einfache Durchschaltung von vier digitalen Eingängen
 #### DigitalOutput_Qx (x=1..4) und Bypass_Valve
 
 - **Typ**: `logiBUS::io::DQ::logiBUS_QXA`
-- **Parameter**: 
+- **Parameter**:
   - DigitalOutput_Q1..Q4: QI = `TRUE`; Output = `Output_Q1` .. `Output_Q4`
   - Bypass_Valve: QI = `TRUE`; Output = `Output_Q8`
 - **Funktionsweise**: Gibt das digitale Signal auf den entsprechenden logiBUS‑Ausgang aus.
@@ -34,17 +34,18 @@ Die Übung realisiert eine einfache Durchschaltung von vier digitalen Eingängen
 - **Datenausgang/-eingang**: Adapter‑Ports `IN`, `OUT`, `BY_IN`, `BY_OUT`
 - **Funktionsweise**: Der Baustein besitzt zwei Signalpfade:
   - **Hauptpfad**: `IN` → `OUT` – leitet das Eingangssignal direkt zum Ausgang.
-  - **Bypass‑Pfad**: `BY_IN` → `BY_OUT` – dieser Pfad wird aktiv, sobald das nachgeschaltete Bypass‑Ventil öffnet.  
+  - **Bypass‑Pfad**: `BY_IN` → `BY_OUT` – dieser Pfad wird aktiv, sobald das nachgeschaltete Bypass‑Ventil öffnet.
     In dieser Übung sind die Bypass‑Pfade kaskadiert, sodass der Bypass des ersten Blocks den des zweiten speist usw. Dadurch kann der gesamte Signalfluss über die Bypass‑Kette zum gemeinsamen Ventil (Bypass_Valve) umgeleitet werden.
 
 ## Programmablauf und Verbindungen
 
 Die gesamte Verschaltung erfolgt über **Adapterverbindungen** (keine Daten‑ oder Ereignisverbindungen):
 
-- **Hauptpfad**:  
+- **Hauptpfad**:
   Jeder Digitaleingang (`Input_I1` … `Input_I4`) ist über den `IN`‑Port des zugehörigen `BYPASS_AX`‑Blocks mit dem `OUT`‑Port verbunden, der zum entsprechenden Digitalausgang (`Output_Q1` … `Output_Q4`) führt.
 
-- **Bypass‑Pfad (kaskadiert)**:  
+- **Bypass‑Pfad (kaskadiert)**:
+
   ```
   BYPASS_AX_1.BY_OUT → BYPASS_AX_2.BY_IN
   BYPASS_AX_2.BY_OUT → BYPASS_AX_3.BY_IN
@@ -52,7 +53,7 @@ Die gesamte Verschaltung erfolgt über **Adapterverbindungen** (keine Daten‑ o
   BYPASS_AX_4.BY_OUT → Bypass_Valve.OUT (Output_Q8)
   ```
 
-- **Funktionsweise des Bypass**:  
+- **Funktionsweise des Bypass**:
   Wird das gemeinsame Bypass‑Ventil (`Output_Q8`) geschaltet, öffnet der Bypass‑Pfad. Das Signal wird dann nicht mehr über die Hauptausgänge (Q1–Q4) ausgegeben, sondern über die Bypass‑Kette zum Ventil geleitet. Dies simuliert ein Druckumlaufventil, wie es in hydraulischen oder pneumatischen Steuerungen vorkommt.
 
 ## Zusammenfassung
@@ -63,4 +64,4 @@ Die Übung vermittelt den Umgang mit **Adapterverbindungen** und **Bypass‑Logi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

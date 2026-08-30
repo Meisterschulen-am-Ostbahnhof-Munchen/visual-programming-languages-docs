@@ -1,9 +1,11 @@
 Here is the documentation for the exercise based on the provided XML data.
+
 # Exercise_035a1b_AX: Traffic Light Control with Pattern Sequencer (AX) and Bit Assembler
 
 ![Uebung_035a1b_AX_network](./Uebung_035a1b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_035a1b_AX** implements a classic traffic light control system. It uses a **Pattern Sequencer** in loop mode. The unique aspect of this exercise lies in the definition of the traffic light phases: Instead of hard-coding the outputs directly in the sequencer, the bit patterns for the individual phases (red, red-yellow, green, yellow) are dynamically generated using **bit assemblers** (`ASSEMBLE_BYTE_FROM_BOOLS`) and passed to the sequencer as parameters.
@@ -29,15 +31,19 @@ This block is the core of the control system. It executes four steps in an endle
 Four instances of this block are used to define the light patterns for the four traffic light phases. Each block converts individual Boolean signals into a byte, which is interpreted by the sequencer.
 
 1. **Instance `P1_Red`**:
+
 - **Purpose**: Defines the red phase.
 - **Parameters**: `BIT_00` = `TRUE` (Red active).
-2. **Instance `P2_RedYellow`**:
+1. **Instance `P2_RedYellow`**:
+
 - **Purpose**: Defines the red-yellow phase.
 - **Parameters**: `BIT_00` = `TRUE` (Red), `BIT_01` = `TRUE` (Yellow).
-3. **Instance `P3_Green`**:
+1. **Instance `P3_Green`**:
+
 - **Purpose**: Defines the green phase.
 - **Parameter**: `BIT_02` = `TRUE` (Green).
-4. **Instance `P4_Yellow`**:
+1. **Instance `P4_Yellow`**:
+
 - **Purpose**: Defines the yellow phase.
 - **Parameter**: `BIT_01` = `TRUE` (Yellow).
 
@@ -66,10 +72,12 @@ In order for the sequencer to know which lights should illuminate in which step,
 
 - A simple click (`BUTTON_SINGLE_CLICK`) on input `DigitalInput_I1` sends an event to `START_S1` of the sequencer.
 - The sequencer now begins its sequence:
+
 1. **Step 1**: Pattern from `P1_Red` is output (red light on). Wait 3 seconds.
 2. **Step 2**: Pattern from `P2_RedYellow` is output (red and yellow lights on). Wait 1 second.
 3. **Step 3**: Pattern from `P3_Green` is output (green light on). Wait 3 seconds.
 4. **Step 4**: Pattern from `P4_Yellow` is output (yellow light on). Waiting time: 1 second.
+
 - Since this is a loop block, the cycle automatically restarts at step 1 after step 4.
 
 ### 3. Outputs

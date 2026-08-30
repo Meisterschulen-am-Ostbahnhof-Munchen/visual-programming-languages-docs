@@ -20,10 +20,10 @@ Dynamische Auswahl zwischen verschiedenen Verarbeitungslogiken (Tastend, Rastend
 
 ![Uebung_103_network](./Uebung_103_network.svg)
 
-  * **`InputNumber_I1`**: Ein Eingabefeld auf dem ISOBUS-Terminal. Der Nutzer gibt hier 1, 2 oder 3 ein.
-  * **`AX_DEMUX_3`**: Verteilt das Signal vom Taster `I1` auf einen von drei Ausgängen.
-  * **`AX_MUX_3`**: Sammelt das Ergebnis der drei Zweige wieder ein und gibt es an `Q1` weiter.
-  * **Die drei Zweige**:
+  - **`InputNumber_I1`**: Ein Eingabefeld auf dem ISOBUS-Terminal. Der Nutzer gibt hier 1, 2 oder 3 ein.
+  - **`AX_DEMUX_3`**: Verteilt das Signal vom Taster `I1` auf einen von drei Ausgängen.
+  - **`AX_MUX_3`**: Sammelt das Ergebnis der drei Zweige wieder ein und gibt es an `Q1` weiter.
+  - **Die drei Zweige**:
     1.  `tastend`: Direkte Weiterleitung (1:1).
     2.  `rastend`: Wandelt den Taster in einen Schalter (Toggle) um.
     3.  `tastend_TON_5s`: Leitet das Signal mit einer Einschaltverzögerung von 5s weiter.

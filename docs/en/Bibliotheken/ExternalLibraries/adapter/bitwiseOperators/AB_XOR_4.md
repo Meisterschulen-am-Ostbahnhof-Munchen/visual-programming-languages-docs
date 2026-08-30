@@ -3,6 +3,7 @@
 ![AB_XOR_4](./AB_XOR_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AB_XOR_4** is a generic function block for the bitwise XOR (exclusive OR) operation across 4 input values of type `BYTE` (8-bit bit pattern (byte)). Unlike the Boolean operation on single truth values (as in the `AX_XOR` blocks), every bit of the data word is combined independently here.

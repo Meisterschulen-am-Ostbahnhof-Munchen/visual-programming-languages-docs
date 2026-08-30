@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | **IN** | `adapter::types::unidirectional::AIWS` | Eingehendes AIWS‑Signal, das auf beide Ausgänge verteilt wird. |
 | Plug (Ausgang) | **OUT1** | `adapter::types::unidirectional::AIWS` | Erster Ausgang – identisches Signal wie am Eingang. |
 | Plug (Ausgang) | **OUT2** | `adapter::types::unidirectional::AIWS` | Zweiter Ausgang – identisches Signal wie am Eingang. |
@@ -72,4 +72,4 @@ Der **AIWS_SPLIT_2** ist ein einfacher, aber nützlicher generischer Funktionsbl
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

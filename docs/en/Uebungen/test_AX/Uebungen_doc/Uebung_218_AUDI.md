@@ -3,9 +3,11 @@
 ![Uebung_218_AUDI_network](./Uebung_218_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an IEC 61131-3 compliant down counter (AUDI_FB_CTD) with a UDINT data type. The counter value is output via a terminal block. A separate conversion block sets the initial value (preset value) to 10. The exercise demonstrates the use of adapter-based function blocks and their interaction with input/output modules as well as a numeric terminal display.
+
 ## Function Blocks (FBs) Used
 
 - **AUDI_FB_CTD** – Type: `adapter::iec61131::counters::AUDI_FB_CTD`
@@ -59,6 +61,6 @@ Exercise 218 demonstrates a complete IEC 61131-3 down counter with a UDINT data 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,10 +1,12 @@
 # Q_NumericValueAux
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_NumericValueAux** is a standards-compliant function block for numeric value changes in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.22) specification for numeric VT objects.
 ![Q_NumericValueAux](Q_NumericValueAux.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -38,13 +40,16 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Value Update**:
+1. **Value Update**:
+
 - `REQ` with new 32-bit value
 - Updates the numeric VT object
 - `CNF` returns operational status and previous value
-3. **Value Range**:
+1. **Value Range**:
+
 - 0 to 4,294,967,295 (32-bit unsigned)
 
 ## Technical Features
@@ -66,7 +71,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful change |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -85,7 +90,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with similar modules
 
 | Feature | Q_NumericValueAux | VtNumericUpdate | VtValueManager |
-|---------------|--------------------|-----------------|----------------|
+| --------------- | -------------------- | ----------------- | ---------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Value Range | 32-bit | 16-bit | 32-bit |
 | Feedback | ✔ | ✖ | ✔ |

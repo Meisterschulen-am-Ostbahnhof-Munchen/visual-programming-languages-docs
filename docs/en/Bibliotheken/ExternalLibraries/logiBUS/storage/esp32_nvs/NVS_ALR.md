@@ -3,9 +3,11 @@
 ![NVS_ALR](./NVS_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NVS_ALR** is used to load and store values of type `LREAL` in non-volatile storage (NVS) using a key. It is specifically designed for connection via the unidirectional **ALR adapter**. The block combines an initialization phase, in which the memory contents are read, with a subsequent read and write operation via the adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **NVS_ALR** is used to load and store values of type `LREAL` 
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-------|--------------|
+| ---------- | ------- | -------------- |
 | QI | BOOL | Control for initialization (TRUE = active). |
 | KEY | STRING | Key name for NVS access. |
 | DEFAULT_VALUE | LREAL | Value to be read if no entry exists in the NVS under the specified key. |
@@ -31,14 +33,14 @@ The function block **NVS_ALR** is used to load and store values of type `LREAL` 
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|----------|-------|--------------|
+| ---------- | ------- | -------------- |
 | QO | BOOL | Initialization confirmation (TRUE = successful). |
 | STATUS | STRING | Status message (e.g., error message for failed access). |
 
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **ALR_IN** | Socket | `adapter::types::unidirectional::ALR` | Receives write commands (stores value). |
 | **ALR_OUT** | Plug | `adapter::types::unidirectional::ALR` | Sends read values after a read operation. |
 
@@ -48,11 +50,11 @@ The function block **NVS_ALR** is used to load and store values of type `LREAL` 
 
 After an event at the **INIT** input, the internal function block `NVS` is called with the specified key (`KEY`), the default value (`DEFAULT_VALUE`), and the activation (`QI`). The initialization process opens the NVS area and immediately reads the existing value. This value is output via the **ALR_OUT** adapter as an event with the corresponding data value (`D1`). Simultaneously, the **INITO** event output is triggered with the acknowledgments (`QO`, `STATUS`).
 
-2. **Write via ALR_IN**
+1. **Write via ALR_IN**
 
 An event at the **ALR_IN.E1** input (connected to the socket) triggers a **SET** operation. The supplied data value (`ALR_IN.D1`) is written to the NVS under the previously stored key. After successful writing, the event is passed to **ALR_OUT.E1**, and the written value is output there.
 
-3. **Read via ALR_IN?**
+1. **Read via ALR_IN?**
 
 In this network, a **GET** command is automatically triggered after initialization. An explicit read call via the adapter is not included in the design; the function block always outputs the current value via **ALR_OUT** after each NVS operation (INIT, SET).
 
@@ -119,4 +121,4 @@ The **NVS_ALR** function block offers a compact and user-friendly way to persist
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

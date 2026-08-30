@@ -3,9 +3,11 @@
 ![Q_ObjEnableDisable_AX](./Q_ObjEnableDisable_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **Q_ObjEnableDisable_AX** is a composite function block that serves as an adapter wrapper for the internal function block `Q_ObjEnableDisable`. It enables the control of an enable/disable command (BOOL) via a unidirectional AX adapter (socket) and returns the previous state via an AB adapter (plug). This function block is typically used in ISOBUS-based control systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No direct data outputs; the previous state is output via the adapter plug `qOldA
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | `qAbility` | `adapter::types::unidirectional::AX` | Socket | Receives the Enable/Disable command (0 = disable, 1 = enable, 0xFF = undefined). |
 | `qOldAbility` | `adapter::types::unidirectional::AB` | Plug | Returns the object's previous state (same encoding). |
 
@@ -52,14 +54,15 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 
 An INIT event at input `INIT` sets the desired object ID (`u16ObjId`) and initializes the internal block `Q_ObjEnableDisable`. After successful initialization, the event `INITO` is output.
 
-2. **Signal Processing**
+1. **Signal Processing**
+
 - A new command is received via the socket adapter `qAbility`:
 - The adapter's event `E1` triggers the REQ input of the internal block.
 - The data `D1` (0/1/0xFF) is forwarded to the input `qAbility` of the internal block.
 - The internal block processes the command, activates or deactivates the object with the given ID, and outputs the previous state.
 - The acknowledgment `CNF` of the internal block is transferred to the event `E1` of the plug adapter `qOldAbility`.
 - The previous state is provided via the data output `D1` of the plug adapter.
-3. **Output of Previous State**
+1. **Output of Previous State**
 
 The adapter plug `qOldAbility` provides the state before the last change as a BOOL value (0/1/0xFF). The event connection ensures that the output event occurs at the correct time.
 
@@ -86,7 +89,7 @@ The FB `Q_ObjEnableDisable_AX` itself does not have its own state machine. The i
 ## Comparison with Similar Function Blocks
 
 | Function Block | Interface | Special Feature |
-|----------|----------------|--------------|
+| ---------- | ---------------- | -------------- |
 | **Q_ObjEnableDisable** | Direct event/data inputs | Requires separate Boolean inputs and events. |
 | **Q_ObjEnableDisable_AX** | AX/AB Adapter | Easy integration into adapter-based architectures; reduces wiring effort.
 

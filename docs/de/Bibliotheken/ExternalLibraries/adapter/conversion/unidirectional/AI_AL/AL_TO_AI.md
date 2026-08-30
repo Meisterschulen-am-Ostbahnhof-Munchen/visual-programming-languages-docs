@@ -3,6 +3,7 @@
 ![AL_TO_AI](./AL_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AL_TO_AI ist ein Composite-Baustein, der einen unidirektionalen AL-Adapter (LWORD) in einen unidirektionalen AI-Adapter (INT) umwandelt. Er dient als Schnittstellenkonverter für adapterbasierte Kommunikation und ermöglicht eine einfache Integration zwischen Komponenten, die unterschiedliche Datentypen verwenden. Die Konvertierung erfolgt intern mittels des standardisierten IEC 61131-3-Funktionsbausteins F_LWORD_TO_INT.
@@ -28,7 +29,7 @@ Der FB besitzt keine expliziten Daten-Ausgänge. Die konvertierten Daten werden 
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|-------------|
+| --------- | ---------- | ----- | ------------- |
 | **AL_IN** | Socket (Eingang) | `adapter::types::unidirectional::AL` | Liefert ein LWORD (über Daten-Port D1) sowie ein Ereignis (E1). |
 | **AI_OUT** | Plug (Ausgang) | `adapter::types::unidirectional::AI` | Stellt ein INT (über Daten-Port D1) sowie ein Ereignis (E1) bereit. |
 
@@ -67,4 +68,4 @@ Der **AL_TO_AI**-Funktionsblock ist ein nützlicher, schlanker Konverter für de
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

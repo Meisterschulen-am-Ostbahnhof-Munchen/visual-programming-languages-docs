@@ -3,6 +3,7 @@
 ![AQ_XOR_4](./AQ_XOR_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AQ_XOR_4** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 4 Eingangswerten vom Typ `BYTE` (2-Bit-Wert (Viertel-Byte, als Byte übertragen)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

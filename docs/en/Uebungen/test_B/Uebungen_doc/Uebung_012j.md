@@ -3,6 +3,7 @@
 ![Uebung_012j_network](./Uebung_012j_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing and storage of a string value using an **INI function block**.
@@ -47,6 +48,7 @@ The system outputs the ISOBUS object ID (`InputString_S1`) and the output `IN`, 
 The function block manages a persistent string value in INI format. Upon the event `SET`, the pending `VALUE` is stored under the specified key and section. The event `GET` outputs the stored value to `VALUEO` and sends the event `GETO`. Upon initialization (`INITO`), `GET` is automatically executed.
 
 The event `GET` is executed when the event occurs.
+
 ### FB: `Q_StringValue`
 
 - **Type**: `isobus::UT::Q::Q_StringValue`
@@ -70,11 +72,11 @@ The program flow is divided into two phases: **Initialization** and **Cyclical P
 
 After successful initialization, the function block `INI` generates the event `INITO`. This is directly connected to the `GET` input of `INI`. This allows the stored value to be read immediately after startup.
 
-2. **Reading the Stored Value**:
+1. **Reading the Stored Value**:
 
 After the read operation, `INI` outputs the event `GETO`. This triggers the `REQ` input of `Q_StringValue`, so that the read string is passed to the ISOBUS object.
 
-3. **Saving a New Value**:
+1. **Saving a New Value**:
 
 When `StringValue_IS` receives a new string from the ISOBUS object, it sends the event `IND`. This event is connected to the `SET` input of `INI`, so the new value is saved.
 
@@ -87,7 +89,7 @@ When `StringValue_IS` receives a new string from the ISOBUS object, it sends the
 
 1. **Start**: `INI` initializes → `INITO` → `GET` → reads stored value → `GETO` → `Q_StringValue.REQ` → outputs the stored string.
 1. **Start**: `INI` initializes → `INITO` → `GET` → reads stored value → `GETO` → `Q_StringValue.REQ` → outputs stored string. 2. **New Input**: `StringValue_IS` receives a new string → `IND` → `INI.SET` → stores the new value.
-3. After another input from `GET` (e.g., via a cyclic trigger), the currently stored value is output.
+1. After another input from `GET` (e.g., via a cyclic trigger), the currently stored value is output.
 
 ## Summary
 
@@ -103,6 +105,6 @@ The use of constants (`SECTION_S1_STORE`, `KEY_S1_STORE`, `InputString_S1`) ensu
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

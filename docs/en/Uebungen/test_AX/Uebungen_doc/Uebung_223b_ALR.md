@@ -3,6 +3,7 @@
 ![Uebung_223b_ALR_network](./Uebung_223b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a standards-compliant up/down counter based on the IEC 61131-3 block **AUDI_FB_CTUD** in its adapter version. The counter processes four digital input signals (up count, down count, reset, and loading a preset value) and outputs the current counter value as well as overflow/underflow signals. The preset value is provided via a conversion block, and the counter value is converted into a physical LREAL value for terminal output.
@@ -93,6 +94,6 @@ Exercise 223b implements a complete up/down counter with a fixed preset value (5
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

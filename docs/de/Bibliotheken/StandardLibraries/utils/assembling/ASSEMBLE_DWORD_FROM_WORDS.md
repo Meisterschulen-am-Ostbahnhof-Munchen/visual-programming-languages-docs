@@ -3,6 +3,7 @@
 ![ASSEMBLE_DWORD_FROM_WORDS](https://github.com/user-attachments/assets/6e0070a6-ac74-4370-9657-7d0fdd5e02cf)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_DWORD_FROM_WORDS` kombiniert zwei 16-Bit-Wörter (WORD) zu einem 32-Bit-Doppelwort (DWORD). Diese Funktionalität ist besonders nützlich, wenn Daten aus zwei separaten Quellen zusammengeführt werden müssen.
@@ -64,4 +65,4 @@ Der `ASSEMBLE_DWORD_FROM_WORDS` Funktionsblock bietet eine einfache und effizien
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,6 +4,7 @@
 ![AS_MUL_3](./AS_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AS_MUL_3` ist ein generischer Funktionsblock (Generic FB) für die 4diac-IDE, der zur Durchführung einer arithmetischen Multiplikation mit drei Eingangswerten dient. Er basiert auf der Verwendung von unidirektionalen Adaptern (`adapter::types::unidirectional::AS`), was eine saubere Strukturierung und Kapselung von Daten und Kontrollflüssen in IEC 61499-Anwendungen ermöglicht.
@@ -30,13 +31,13 @@ Der Funktionsbaustein `AS_MUL_3` ist ein generischer Funktionsblock (Generic FB)
 
 Die gesamte Kommunikation des Bausteins wird über Adapter abgewickelt:
 
-* **Sockets (Eingangs-Adapter):**
-  * **IN1** (Typ: `adapter::types::unidirectional::AS`): Der erste Eingangswert (Multiplikand 1) für die Multiplikation.
-  * **IN2** (Typ: `adapter::types::unidirectional::AS`): Der zweite Eingangswert (Multiplikand 2) für die Multiplikation.
-  * **IN3** (Typ: `adapter::types::unidirectional::AS`): Der dritte Eingangswert (Multiplikand 3) für die Multiplikation.
+- **Sockets (Eingangs-Adapter):**
+  - **IN1** (Typ: `adapter::types::unidirectional::AS`): Der erste Eingangswert (Multiplikand 1) für die Multiplikation.
+  - **IN2** (Typ: `adapter::types::unidirectional::AS`): Der zweite Eingangswert (Multiplikand 2) für die Multiplikation.
+  - **IN3** (Typ: `adapter::types::unidirectional::AS`): Der dritte Eingangswert (Multiplikand 3) für die Multiplikation.
 
-* **Plugs (Ausgangs-Adapter):**
-  * **OUT** (Typ: `adapter::types::unidirectional::AS`): Der Ausgangs-Adapter, der das Ergebnis der Multiplikation bereitstellt.
+- **Plugs (Ausgangs-Adapter):**
+  - **OUT** (Typ: `adapter::types::unidirectional::AS`): Der Ausgangs-Adapter, der das Ergebnis der Multiplikation bereitstellt.
 
 ---
 
@@ -51,8 +52,8 @@ $$\text{OUT} = \text{IN1} \times \text{IN2} \times \text{IN3}$$
 
 ## Technische Besonderheiten
 
-* **Generischer Typ:** Der Baustein ist als generischer Typ (`GEN_AS_MUL`) definiert. Dies ermöglicht eine flexible Anpassung an unterschiedliche numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`), die vom zugrundeliegenden Adaptertyp unterstützt werden.
-* **Adapter-basierte Architektur:** Durch die Nutzung von unidirektionalen Adaptern (`AS`) wird der Verkabelungsaufwand in der 4diac-IDE drastisch reduziert, da Ereignis- und Datenleitungen in einer einzigen Verbindung gebündelt sind.
+- **Generischer Typ:** Der Baustein ist als generischer Typ (`GEN_AS_MUL`) definiert. Dies ermöglicht eine flexible Anpassung an unterschiedliche numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`), die vom zugrundeliegenden Adaptertyp unterstützt werden.
+- **Adapter-basierte Architektur:** Durch die Nutzung von unidirektionalen Adaptern (`AS`) wird der Verkabelungsaufwand in der 4diac-IDE drastisch reduziert, da Ereignis- und Datenleitungen in einer einzigen Verbindung gebündelt sind.
 
 ---
 
@@ -64,9 +65,9 @@ Der Baustein verhält sich wie ein klassischer zustandsloser Berechnungsbaustein
 
 ## Anwendungsszenarien
 
-* **Sensorskalierung und Kalibrierung:** Berechnung von korrigierten Messwerten, bei denen ein Rohwert mit zwei verschiedenen Korrekturfaktoren multipliziert werden muss.
-* **Volumenberechnungen:** Multiplikation von drei Dimensionen (Länge × Breite × Höhe) zur Bestimmung eines Volumens in der Prozesstechnik.
-* **Mehrstufige Verstärkungsregelung:** Kaskadierte Signalverstärkung in der Regelungstechnik.
+- **Sensorskalierung und Kalibrierung:** Berechnung von korrigierten Messwerten, bei denen ein Rohwert mit zwei verschiedenen Korrekturfaktoren multipliziert werden muss.
+- **Volumenberechnungen:** Multiplikation von drei Dimensionen (Länge × Breite × Höhe) zur Bestimmung eines Volumens in der Prozesstechnik.
+- **Mehrstufige Verstärkungsregelung:** Kaskadierte Signalverstärkung in der Regelungstechnik.
 
 ---
 

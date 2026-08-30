@@ -5,6 +5,7 @@
 **Bild des Funktionsblocks:** (nicht verfügbar)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `E_T_FF_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabiles Flipflop mit Set-, Reset- und Toggle‑Funktion. Es zeichnet sich durch ein symmetrisches Start‑up‑Verhalten aus: Beim Initialisierungsereignis (`INIT`) wird der Ausgang `Q` auf den am Eingang `Q_INIT` vorgegebenen Wert gesetzt, sofern der Qualifier `QI` aktiv ist. Der Baustein kombiniert die Eigenschaften eines SR‑Flipflops und eines Toggle‑Flipflops in einer Einheit.

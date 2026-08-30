@@ -4,7 +4,7 @@
 
 OUT wird nur geschalten wenn an IN1 und IN2 ein Bool (Signal anliegt) Z.b. von einem Schalter
 
-![](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
+![AND_2 Logikschaltung mit zwei Eingängen](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
 
 bei allen anderen "AND" Bausteinen selbe prinzip nur dass immer alle IN eingänge immer True sein müssen
 
@@ -78,12 +78,12 @@ Im Vergleich zu anderen logischen Verknüpfungsblöcken:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
-* [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
-* [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Uebung_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
+- [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+- [Uebung_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Fazit
 

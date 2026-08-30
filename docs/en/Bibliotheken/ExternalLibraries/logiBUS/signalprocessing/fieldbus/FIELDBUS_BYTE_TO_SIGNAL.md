@@ -3,9 +3,11 @@
 ![FIELDBUS_BYTE_TO_SIGNAL](./FIELDBUS_BYTE_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_BYTE_TO_SIGNAL** is used for the simple validation of a BYTE signal from a fieldbus. It only passes the input value unchanged to the output if it lies within a defined valid range. The result of the validation is signaled via a separate Boolean output.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL** is used for the simple validation
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Comment |
-|------|----------|-------------|-----------|
+| ------ | ---------- | ------------- | ----------- |
 | OUT | BYTE | 16#00 | Filtered output value; 0 if signal is invalid. |
 | VALID | BOOL | FALSE | TRUE if the input signal is recognized as valid. |
 
@@ -52,6 +54,7 @@ OUT := BYTE#0;
 VALID := FALSE;
 END_IF;
 ```
+
 ## Technical Features
 
 - The filter is based on **two external constants** from the `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL` library:
@@ -83,6 +86,7 @@ There are no further wait or initialization states.
 - Compared to a **multiplexer** (`MUX`), it does not require a second control signal but makes the decision automatically based on the input value.
 - Similar blocks in IEC 61499 often exist as `RANGE_CHECK` or `VALIDATE`, but are usually designed for generic data types. This block is specifically tailored to the BYTE format commonly used in fieldbuses.
 -
+
 ## Conclusion
 
 **FIELDBUS_BYTE_TO_SIGNAL** is a compact, specialized filter block for validating BYTE signals. It requires no boundary configuration, as these are defined via the imported constants in the library. Due to the clear separation of the data output and the validity signal, it is ideally suited for processing fieldbus data in safety-critical or fault-tolerant automation systems.
@@ -91,6 +95,6 @@ There are no further wait or initialization states.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

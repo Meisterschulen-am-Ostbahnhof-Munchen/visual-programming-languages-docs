@@ -3,6 +3,7 @@
 ![Uebung_007d4_network](./Uebung_007d4_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **blinker** based on a random signal.
@@ -45,13 +46,13 @@ E_CYCLE generates an event at its output `EO` every 1 ms.
 
 This event is directly forwarded to the input `REQ` of FB_RANDOM.
 
-2. **Generate Random Value**
+1. **Generate Random Value**
 
 FB_RANDOM delivers a new REAL random value to `VAL` every time `REQ` occurs.
 
 This value is fed to the data input `D` of the hysteresis flip-flop.
 
-3. **Hysteresis Filter**
+1. **Hysteresis Filter**
 
 E_D_FF_ANY_HYS compares the current value with the hysteresis threshold (0.95).
 
@@ -61,12 +62,13 @@ the output `Q` is set to TRUE; otherwise, it is set to FALSE.
 
 A valid switch generates an event at `EO`.
 
-4. **Signal Propagation**
+1. **Signal Propagation**
+
 - The event `EO` from the hysteresis flip-flop triggers the F_MOVE block.
 - F_MOVE copies the current state `Q` (as REAL: 0.0 or 1.0?) to its output `OUT`.
 - The output `OUT` is passed to the data input `IN1` of the comparator block F_GT.
 - The event `CNF` from F_MOVE starts F_GT.
-5. **Threshold Comparison**
+1. **Threshold Comparison**
 
 F_GT checks if the copied value is greater than 0.49.
 
@@ -75,7 +77,7 @@ F_GT checks if the copied value is greater than 0.49.
 
 The event `CNF` from F_GT triggers the digital output.
 
-6. **Set Output**
+1. **Set Output**
 
 The digital output `DigitalOutput_Q1` receives the comparison result via the data input `OUT`.
 
@@ -106,4 +108,4 @@ This example deepens the understanding of event-driven function blocks, paramete
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

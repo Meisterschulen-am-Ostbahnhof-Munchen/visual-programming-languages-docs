@@ -3,6 +3,7 @@
 ![Uebung_211_network](./Uebung_211_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up counter according to IEC 61131-3 using the function block `FB_CTU_DINT`. The counter uses the data type `DINT` (double exact integer). The counting pulses are provided via a digital input (I1), and a second digital input (I2) is used to reset the counter. The counter's output (Q) controls a digital output (Q1), and simultaneously, the current counter value (CV) is displayed on a screen via a terminal output.
@@ -10,6 +11,7 @@ This exercise implements an up counter according to IEC 61131-3 using the functi
 This exercise demonstrates the basic interconnection of industrial input/output modules (logiBUS) with a counter module and a numeric display. A comment in the circuit diagram indicates that the data type conversion used, `DINT_TO_UDINT`, is problematic because negative counter values cannot be displayed correctly.
 
 This exercise demonstrates the basic interconnection of industrial input/output modules (logiBUS) with a counter module and a numeric display.
+
 ## Function Blocks (FBs) Used
 
 - **FB_CTU_DINT**
@@ -86,19 +88,19 @@ The interaction of the components is as follows:
 
 The two digital inputs `Input_CU` and `Input_R` detect edges at the physical terminals I1 and I2. They send an event (`IND`) with each change in state.
 
-2. **Counter Logic:**
+1. **Counter Logic:**
 
 The events from `Input_CU` and `Input_R` are routed to the **same** event input `FB_CTU_DINT.REQ`. The counter internally distinguishes, based on the data lines, whether a counting pulse (`CU`) or a reset (`R`) is requested.
 
 **Important:** Since both event sources are directly wired to `REQ`, conflicts can occur if both inputs switch simultaneously. A comment suggests including an "E_D_FF" (Event D Flip-Flop) to reduce or prioritize the events.
 
-3. **Output Control:**
+1. **Output Control:**
 
 After the counter is processed, the event `CNF` is triggered. This triggers two actions in parallel:
 
 - `Output_Q1.REQ` – the digital output Q1 is set by the value of `FB_CTU_DINT.Q`.
 - `F_DINT_TO_UDINT.REQ` – the current counter value (CV) is converted from `DINT` to `UDINT`.
-4. **Terminal Output:**
+1. **Terminal Output:**
 
 The converted number (`UDINT`) is passed to the function block `Q_NumericValue`, which is triggered after the conversion event `CNF`. This updates the value on the terminal (e.g., control panel) with the object ID `OutputNumber_N1`.
 

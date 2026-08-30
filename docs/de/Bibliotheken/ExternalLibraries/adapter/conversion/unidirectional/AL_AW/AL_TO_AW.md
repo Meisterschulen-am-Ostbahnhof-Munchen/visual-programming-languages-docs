@@ -3,6 +3,7 @@
 ![AL_TO_AW](./AL_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AL_TO_AW ist ein zusammengesetzter (Composite) Baustein, der einen LWORD-Eingangsadaper vom Typ AL (unidirektional) in einen WORD-Ausgangsadaper vom Typ AW (unidirektional) umwandelt. Er kapselt die Konvertierungsfunktion und stellt eine einfache Schnittstelle für die Umwandlung von 64‑Bit‑Daten auf 16‑Bit‑Daten in der 4diac‑IDE bereit.
@@ -29,10 +30,10 @@ Keine separaten Daten-Ausgänge. Die Daten werden über den AW_OUT‑Adapter aus
 
 ### **Adapter**
 
-- **AL_IN** (Socket) – Typ: `adapter::types::unidirectional::AL`  
+- **AL_IN** (Socket) – Typ: `adapter::types::unidirectional::AL`
   LWORD‑Eingangsadaper; enthält je ein Ereignis- und Datensignal (E1, D1).
 
-- **AW_OUT** (Plug) – Typ: `adapter::types::unidirectional::AW`  
+- **AW_OUT** (Plug) – Typ: `adapter::types::unidirectional::AW`
   WORD‑Ausgangsadaper; enthält je ein Ereignis- und Datensignal (E1, D1).
 
 ## Funktionsweise
@@ -78,4 +79,4 @@ AL_TO_AW ist ein kompakter und klar strukturierter Composite‑Funktionsblock zu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

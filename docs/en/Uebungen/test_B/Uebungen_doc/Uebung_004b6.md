@@ -3,6 +3,7 @@
 ![Uebung_004b6_network](./Uebung_004b6_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a toggle flip-flop (T-FF) using a digital input (logiBUS_IX) and the function blocks **E_PERMIT** and **E_T_FF**.
@@ -90,6 +91,6 @@ This exercise demonstrates a toggle flip-flop that only changes its state when a
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

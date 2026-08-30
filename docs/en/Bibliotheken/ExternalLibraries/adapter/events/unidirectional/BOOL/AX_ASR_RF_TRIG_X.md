@@ -29,7 +29,7 @@ None (Data output is handled via the **Q** adapter)
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|-----------|--------------|
+| --------- | ----- | ----------- | -------------- |
 | **QI** | `adapter::types::unidirectional::AX` | Socket | Receives the Boolean signal to be checked for edges. Contains the event `E1` (trigger) and the data word `D1` (value). |
 | **Q** | `adapter::types::unidirectional::ASR` | Plug | Outputs the set/reset signals. The corresponding actions are signaled via the events `SET` (falling edge) and `RESET` (rising edge). |
 

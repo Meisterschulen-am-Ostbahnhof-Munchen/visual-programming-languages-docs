@@ -4,6 +4,7 @@
 ![ARR_MAX](./ARR_MAX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ARR_MAX` calculates the maximum value of a one-dimensional array of type `INT`. The implementation is in Structured Text (ST) according to IEC 61131-3 and is from the package `logiBUS::utils::dyn_arr`. The block is suitable for dynamic arrays of any size, with the lower and upper bounds determined at runtime.
@@ -72,7 +73,7 @@ Therefore, an explicit state graph is not required.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference from ARR_MAX |
-|----------|----------|------------------------|
+| ---------- | ---------- | ------------------------ |
 | `ARR_MIN` | Minimum of an Array | Analogous, but minimum instead of maximum. |
 | `ARR_SUM` | Sum of Array Elements | Different mathematical operation; no comparison between elements. |
 | `ARR_MEAN` | Arithmetic Mean | Requires additional division by the number of elements; not just comparison. |

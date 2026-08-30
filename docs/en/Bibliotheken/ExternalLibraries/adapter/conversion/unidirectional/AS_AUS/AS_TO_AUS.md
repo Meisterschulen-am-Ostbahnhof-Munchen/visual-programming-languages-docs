@@ -3,6 +3,7 @@
 ![AS_TO_AUS](./AS_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_TO_AUS** is a composite block that connects an AS adapter (type `adapter::types::unidirectional::AS`) to an AUS adapter (type `adapter::types::unidirectional::AUS`) and converts the data values contained within from `SINT` (signed 8-bit) to `USINT` (unsigned 8-bit). The conversion is performed by the embedded standard function block `F_SINT_TO_USINT` from the IEC 61131 library. This function block enables simple, adapter-based data type conversion in industrial control applications.
@@ -28,7 +29,7 @@ No direct data outputs. Data output is handled exclusively via the `AUS_OUT` ada
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Input) | Receives a SINT value and an event (E1). |
 | `AUS_OUT` | `adapter::types::unidirectional::AUS` | Plug (Output) | Outputs the converted USINT value and an event (E1). |
 
@@ -71,4 +72,4 @@ The function block `AS_TO_AUS` is a practical tool for type conversion in adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

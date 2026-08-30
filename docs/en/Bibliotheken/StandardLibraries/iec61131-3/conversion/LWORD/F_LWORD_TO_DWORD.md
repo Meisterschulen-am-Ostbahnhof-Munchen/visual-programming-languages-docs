@@ -6,6 +6,7 @@
 
 The function block `F_LWORD_TO_DWORD` is used to convert an LWORD data type to a DWORD data type. This conversion is useful when data needs to be exchanged between systems or components that use different data types.
 ![F_LWORD_TO_DWORD](F_LWORD_TO_DWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,4 +60,4 @@ The `F_LWORD_TO_DWORD` function block is a simple and efficient tool for convert
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

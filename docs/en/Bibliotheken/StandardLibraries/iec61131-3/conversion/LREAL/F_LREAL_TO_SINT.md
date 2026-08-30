@@ -6,6 +6,7 @@
 
 The function block `F_LREAL_TO_SINT` converts a `LREAL` value (64-bit floating-point number) to a `SINT` value (8-bit integer count). This conversion is useful when floating-point numbers need to be converted into a compact integer representation, for example, for storage or transmission in systems with limited bandwidth.
 ![F_LREAL_TO_SINT](F_LREAL_TO_SINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

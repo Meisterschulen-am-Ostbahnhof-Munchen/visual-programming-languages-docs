@@ -3,6 +3,7 @@
 ![AIWS_SPLIT_3](./AIWS_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AIWS_SPLIT_3** dient dazu, einen einzelnen eingehenden AIWS-Adapter (Typ `adapter::types::unidirectional::AIWS`) auf drei identische Ausgangsadapter aufzuteilen. Alle Daten, die über den Eingangsadapter empfangen werden, werden unverändert an alle drei Ausgänge weitergeleitet. Der Baustein ist generisch ausgelegt und kann mit verschiedenen AIWS-Typen verwendet werden.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | IN | `adapter::types::unidirectional::AIWS` | Eingangsadapter, der das zu verteilende Signal empfängt. |
 | Plug (Ausgang) | OUT1 | `adapter::types::unidirectional::AIWS` | Erster Ausgangsadapter. |
 | Plug (Ausgang) | OUT2 | `adapter::types::unidirectional::AIWS` | Zweiter Ausgangsadapter. |
@@ -72,4 +73,4 @@ Der **AIWS_SPLIT_3** ist ein einfacher aber effektiver generischer Funktionsbaus
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

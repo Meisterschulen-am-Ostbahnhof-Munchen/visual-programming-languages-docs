@@ -3,9 +3,11 @@
 ![SPLIT_AD_INTO_AB](./SPLIT_AD_INTO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_AD_INTO_AB** is used to split a 32-bit data word (AD adapter) into four individual bytes. The four bytes are output via separate unidirectional AB adapters. The block is implemented as a composite function block and uses a SPLIT_DWORD_INTO_BYTES and several edge-triggered D flip-flops (E_D_FF_ANY).
+
 ## Interface Structure
 
 The function block does not have any traditional event or data interfaces. All communication takes place via adapters:
@@ -19,7 +21,7 @@ The function block does not have any traditional event or data interfaces. All c
 ### **Adapter (Plugs)**
 
 | Adapter | Type | Comment |
-|---------|-----|------------|
+| --------- | ----- | ------------ |
 | BYTE_00 | `adapter::types::unidirectional::AB` | Byte 0 (least significant byte) |
 | BYTE_01 | `adapter::types::unidirectional::AB` | Byte 1 |
 | BYTE_02 | `adapter::types::unidirectional::AB` | Byte 2 |

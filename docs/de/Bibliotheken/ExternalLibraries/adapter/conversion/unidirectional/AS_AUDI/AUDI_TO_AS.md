@@ -3,6 +3,7 @@
 ![AUDI_TO_AS](./AUDI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_TO_AS** ist ein Composite-Baustein, der einen AUDI-Adapter (Datentyp `UDINT`) in einen AS-Adapter (Datentyp `SINT`) umwandelt. Er dient als Brücke zwischen zwei unterschiedlichen Adapter-Schnittstellen und ermöglicht die verlustbehaftete Konvertierung eines vorzeichenlosen 32‑Bit‑Wertes in einen vorzeichenbehafteten 8‑Bit‑Wert. Die Umwandlung erfolgt ereignisgesteuert unter Verwendung der internen Konvertierungsfunktion `F_UDINT_TO_SINT`.

@@ -3,9 +3,11 @@
 ![AULI_SPLIT_9](./AULI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_SPLIT_9** serves as a distributor for the unidirectional AULI adapter. It receives an incoming AULI data set via the **IN** socket and forwards it unchanged to all nine output adapters (**OUT1** to **OUT9**). The block is designed as a generic splitter and is suitable for applications where an AULI signal needs to be split among multiple devices.
+
 ## Interface Structure
 
 ### Event Inputs
@@ -35,7 +37,7 @@ Data output occurs exclusively via the **OUT1** to **OUT9** adapters.
 ### Adapters
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | Socket | Input | **IN** | Unidirectional AULI adapter – receives the data set to be distributed. |
 | Plug | Output | **OUT1** … **OUT9** | Nine unidirectional AULI adapters – output the identical input data set. |
 
@@ -77,4 +79,4 @@ The **AULI_SPLIT_9** is a simple yet effective distribution block for the unidir
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

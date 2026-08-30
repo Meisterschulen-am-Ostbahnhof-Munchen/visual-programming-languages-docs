@@ -6,6 +6,7 @@
 *Interlock: ILOCK_FB_SR_AX (Two mutually interlocked set-dominant latches via AX/AX2 adapter)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a mutual interlock between two set-dominant SR latches. The two latches are interconnected in such a way that only one of the two outputs can be active at any given time. Control is via digital inputs, and the outputs are provided via digital outputs. The locking mechanism is implemented using the special adapters `ILOCK_IN` and `ILOCK_OUT` of the building blocks `ILOCK_FB_SR_AX`.
@@ -88,6 +89,6 @@ Exercise `Uebung_208_AX` demonstrates how to create a mutual interlock between t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

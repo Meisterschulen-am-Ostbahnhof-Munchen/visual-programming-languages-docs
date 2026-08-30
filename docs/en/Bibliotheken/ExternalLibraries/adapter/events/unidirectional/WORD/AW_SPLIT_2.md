@@ -4,6 +4,7 @@
 ![AW_SPLIT_2](./AW_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_SPLIT_2** splits an incoming unidirectional **adapter (AW)** into two identical outgoing adapters. It is implemented as a generic block and is suitable for applications where a signal path or adapter connection needs to be split between two subsequent components.
@@ -29,7 +30,7 @@ No data output available.
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|-------------|----------|-----|--------------|
+| ------------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AW` | Input Adapter – the unidirectional adapter to be shared. |
 | `OUT1` | Plug | `adapter::types::unidirectional::AW` | First Output – receives an identical copy of the incoming adapter. |
 | `OUT2` | Plug | `adapter::types::unidirectional::AW` | Second Output – also receives an identical copy of the incoming adapter. |

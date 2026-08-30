@@ -70,11 +70,11 @@ Comparison with [E_TP](../../../../../../StandardLibraries/events/timers/E_TP.md
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020f_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f_AX.md)
-* [Exercise_020j2_AX_sub](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)
-* [Exercise_020j_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j_AX.md)
-* [Exercise_177_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
-* [Exercise_178_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
+- [Exercise_020f_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f_AX.md)
+- [Exercise_020j2_AX_sub](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j2_AX_sub.md)
+- [Exercise_020j_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020j_AX.md)
+- [Exercise_177_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
+- [Exercise_178_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_178_AX.md)
 
 ## Conclusion
 
@@ -82,4 +82,4 @@ The AX_TP is a robust and standards-compliant timer function block, ideally suit
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

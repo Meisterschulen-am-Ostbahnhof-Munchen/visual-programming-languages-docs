@@ -6,6 +6,7 @@
 
 The function block `F_INT_TO_LINT` converts a 16-bit integer value (`INT`) into a 64-bit long integer value (`LINT`). This block is particularly useful in scenarios where extending the value range or changing the type is required for subsequent processing steps.
 ![F_INT_TO_LINT](F_INT_TO_LINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -62,6 +63,6 @@ The `F_INT_TO_LINT` function block is a simple and efficient tool for type conve
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

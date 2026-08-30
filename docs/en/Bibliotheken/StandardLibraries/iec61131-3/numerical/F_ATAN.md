@@ -3,6 +3,7 @@
 ![F_ATAN](https://user-images.githubusercontent.com/116869307/214144971-bb9f4445-caa8-466d-a1dc-026d8e0a982b.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The F_ATAN function block calculates the arctangent of a real number. It is a standard function for a numeric variable according to IEC 61131-3. The function block converts a tangent value into the corresponding angle in radians.

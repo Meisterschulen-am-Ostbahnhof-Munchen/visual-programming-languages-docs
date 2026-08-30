@@ -3,6 +3,7 @@
 ![Uebung_075_network](./Uebung_075_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the integration of the function block **FB_MM710_IMU** for communication with an MM710 IMU sensor via the logiBUS. The sensor is controlled via the CAN bus and provides motion data. This exercise serves as a foundation for understanding the parameterization and use of CAN-based sensor blocks in 4diac.
@@ -45,6 +46,6 @@ Exercise **Exercise_075** demonstrates the basic integration of the MM710 IMU se
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

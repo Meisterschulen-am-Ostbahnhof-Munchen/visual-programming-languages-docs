@@ -6,6 +6,7 @@
 
 The function block `F_WORD_TO_USINT` converts a `WORD` data type to a `USINT` data type. It is part of the `iec61131::conversion` package and is suitable for applications where type conversion between these two data types is required.
 ![F_WORD_TO_USINT](F_WORD_TO_USINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

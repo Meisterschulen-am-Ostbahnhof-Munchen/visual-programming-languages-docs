@@ -3,6 +3,7 @@
 ![AUDI_SPLIT_3](./AUDI_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_SPLIT_3** dient der Vervielfachung eines eingehenden **AUDI**-Adapter-Signals auf drei separate Ausgänge. Er ist als generischer Baustein (Generic FB) konzipiert und eignet sich besonders für Architekturen, bei denen ein Signal (z. B. ein Steuer- oder Datenstrom) an mehrere nachgelagerte Komponenten verteilt werden muss.
@@ -28,7 +29,7 @@ Der Funktionsblock **AUDI_SPLIT_3** dient der Vervielfachung eines eingehenden *
 ### **Adapter**
 
 | Typ | Name | Beschreibung |
-|-----|------|--------------|
+| ----- | ------ | -------------- |
 | Socket (adapter::types::unidirectional::AUDI) | **IN** | Eingangsadapter zum Empfang des AUDI-Signals |
 | Plug (adapter::types::unidirectional::AUDI) | **OUT1** | Erster Ausgangsadapter |
 | Plug (adapter::types::unidirectional::AUDI) | **OUT2** | Zweiter Ausgangsadapter |
@@ -72,5 +73,5 @@ Der **AUDI_SPLIT_3** ist ein einfacher, aber nützlicher Funktionsblock zur Vert
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

@@ -3,6 +3,7 @@
 ![initval_AI](initval_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AI` is the configurable initialization block for the [AI](../AI.md) adapter (data type `INT`, 16-bit signed integer): it accepts a start value as a data input at initialization time and writes it to a `AI` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

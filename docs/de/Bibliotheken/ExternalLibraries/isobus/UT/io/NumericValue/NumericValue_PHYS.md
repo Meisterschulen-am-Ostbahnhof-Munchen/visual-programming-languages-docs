@@ -5,6 +5,7 @@
 ![NumericValue_PHYS](./NumericValue_PHYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NumericValue_PHYS** ist ein Eingangs-Service-Interface-Baustein nach ISO 11783-6. Er liefert einen physikalischen REAL-Wert, indem er einen rohen Digitalwert (DWORD) aus dem ISOBUS-Objektpool ausliest und unter Berücksichtigung einer vorgegebenen Skalierung und eines Offsets in einen physikalischen Wert umrechnet. Dabei wird die Konvertierung vollständig in Software (innerhalb des FBs) durchgeführt.
@@ -28,7 +29,7 @@ Der Funktionsblock **NumericValue_PHYS** ist ein Eingangs-Service-Interface-Baus
 ### **Daten-Eingänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QI | BOOL | Eingangsqualifikator (aktiviert die Verarbeitung) |
 | PARAMS | STRING | Service-Parameter (z. B. Konfigurationszeichenfolge) |
 | stObj | logiBUS::utils::conversion::phys::NumericObjectPool_S | Objektpool-Eigenschaften: Objekt-ID (16 Bit), Skalierung, Offset, Dezimalstellen |
@@ -36,7 +37,7 @@ Der Funktionsblock **NumericValue_PHYS** ist ein Eingangs-Service-Interface-Baus
 ### **Daten-Ausgänge**
 
 | Variable | Typ | Kommentar |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QO | BOOL | Ausgangsqualifikator (Status der Verarbeitung) |
 | STATUS | STRING | Statusmeldung (Fehler- oder Erfolgsmeldung) |
 | rPhys | REAL | Physikalischer Wert nach Anwendung von Skalierung/Offset |

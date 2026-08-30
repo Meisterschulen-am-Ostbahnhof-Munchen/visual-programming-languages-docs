@@ -3,6 +3,7 @@
 ![Uebung_039_sub_NumbAnzeig_AS_network](./Uebung_039_sub_NumbAnzeig_AS_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise presents a subapplication (subapp) for the 4diac IDE that displays a data value received via an adapter (AS interface) as a numeric value on an ISOBUS-compatible terminal. The subapp is called "Mirror Sequence V2 with Step Chain SUB Num" and serves to easily display a numeric value in an agricultural control system.
@@ -57,4 +58,4 @@ The exercise can be loaded directly into the 4diac IDE and tested with a suitabl
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

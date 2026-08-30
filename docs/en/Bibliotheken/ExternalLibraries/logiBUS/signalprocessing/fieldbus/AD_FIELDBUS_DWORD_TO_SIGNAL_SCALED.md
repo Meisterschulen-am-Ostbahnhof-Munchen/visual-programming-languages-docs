@@ -3,9 +3,11 @@
 ![AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED](./AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED` processes a digital fieldbus signal (DWORD) into a scaled analog output value. It mirrors the input value to the output, provided the signal is valid, and applies linear scaling with an offset. The valid signal state information is synchronized via an edge-triggered flip-flop and provided as a separate output signal.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `AD_FIELDBUS_DWORD_TO_SIGNAL_SCALED` processes a digital fiel
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Description |
-|------|----------|-------------|--------------|
+| ------ | ---------- | ------------- | -------------- |
 | SCALE | LREAL | 1.0 | Scaling factor by which the input value is multiplied |
 | OFFSET | DINT | 0 | Integer offset that is added after scaling |
 
@@ -34,7 +36,7 @@ This module has no direct data outputs. All output data is provided via the adap
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | AD (unidirectional) | Socket | Input adapter for the DWORD value (fieldbus signal) |
 | OUT | ALR (unidirectional) | Plug | Output adapter for the scaled analog value |
 | VALID | AX (unidirectional) | Plug | Output adapter for signal validity (TRUE = valid) |
@@ -66,6 +68,7 @@ The device does not have its own explicit state diagram (ECC). All state logic r
 - **Signal Validation with Storage**: When the fieldbus provides a validity flag (e.g., "Data Updated"), this can be evaluated via the validity adapter level. The flip-flop ensures that the validity signal remains stable until the next update.
 - **Configurable Scaling**: By externally specifying `SCALE` and `OFFSET`, the same function block can be used for different sensor ranges without modifying the function block itself.
 -
+
 ## Comparison with Similar Function Blocks
 
 Compared to a simple `MOVE` or `SCALE` function block, this FB offers integrated validation handling and a clean separation between data and event adapters. Similar function blocks (e.g., `FIELD_DWORD_TO_ANALOG`) often lack separate signal validity output or edge-synchronous storage. The combination of core function block and D flip-flop used here is a proven solution for safety-critical applications where the validity of a data value must be reliably maintained.

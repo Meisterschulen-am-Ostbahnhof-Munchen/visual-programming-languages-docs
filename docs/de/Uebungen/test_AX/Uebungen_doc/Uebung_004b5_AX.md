@@ -3,6 +3,7 @@
 ![Uebung_004b5_AX_network](./Uebung_004b5_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Toggle-Flipflop unter Verwendung eines logiBUS-Eingangs- und Ausgangs-Adapters (IXA/QXA) sowie der Adapter-Funktionsbausteine AX_R_TRIG (Flankendetektion) und AX_T_FF (Toggle-Flipflop). Das Verhalten: Bei jeder steigenden Flanke des digitalen Eingangssignals wechselt der Ausgang seinen Zustand (toggle).

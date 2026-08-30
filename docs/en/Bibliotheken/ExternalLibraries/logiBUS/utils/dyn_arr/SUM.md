@@ -3,9 +3,11 @@
 ![SUM](./SUM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **SUM** function block allows you to calculate the sum of all elements in a dynamic array. It is triggered by an event at the REQ input and, after successful calculation, outputs the result via the data output and a confirmation event via CNF.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -41,6 +43,7 @@ The FB `SUM` accepts a one-dimensional array `A` of type `INT` with arbitrary le
 **Important Note:** Although `A` is declared as an **InOut** variable, its value is not modified during the calculation. It functions solely as an input in this function block.
 
 **Important Note:**
+
 ## Technical Features
 
 - **Dynamic Array Size:** The function block supports variable-length arrays by using the functions `LOWER_BOUND` and `UPPER_BOUND`, as specified by IEC 61131-3.
@@ -74,4 +77,4 @@ The function block `SUM` offers a simple and efficient way to calculate the sum 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

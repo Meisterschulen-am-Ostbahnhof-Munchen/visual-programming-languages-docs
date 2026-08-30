@@ -3,6 +3,7 @@
 ![Uebung_205b_AX_network](./Uebung_205b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise covers motor reversing with a protection time using an interlock function block (ILOCK_SWITCH_PROTECT_AX). The goal is to control a motor via two inputs (up/down), where a defined protection time (here, 1 second) prevents both directions from being switched on simultaneously and blocks excessively rapid direction changes. Control is achieved via adapter interfaces, which increases the reusability of this sub-application type.
@@ -62,7 +63,7 @@ This distributes the separate direction signals to two outputs while simultaneou
 
 The digital inputs `Input_I1` and `Input_I2` are read via the function blocks `DigitalInput_I1` and `DigitalInput_I2`. These provide the requests `UP_IN` and `DOWN_IN` to the interlock function block `ILOCK_AX`.
 
-2. **Interlock Logic**
+1. **Interlock Logic**
 
 ILOCK_AX` evaluates the two requests.
 
@@ -77,7 +78,7 @@ ILOCK_AX` evaluates the two requests.
 
 The event output `timeOut` from `ILOCK_AX` is connected to the `E_TimeOut` function block. This can be used, for example, for further processing or visualization (not discussed further here).
 
-4. **Signal Distribution via AX_2_TO_3**
+1. **Signal Distribution via AX_2_TO_3**
 
 The outputs `UP_OUT` and `DOWN_OUT` from `ILOCK_AX` are passed to the sub-app `AX_2_TO_3`.
 
@@ -88,7 +89,8 @@ The sub-module forwards the signals separately to the output modules `Rechtslauf
 
 The OR signal `OR_OUT` activates `LowSide_Treiber` (Q56), which switches the common low-side supply for the motor.
 
-5. **Output Modules**
+1. **Output Modules**
+
 - `Rechtslauf` (Output_Q5): Controls the relay for clockwise rotation.
 - `Linkslauf` (Output_Q6): Controls the relay for reverse rotation.
 - `LowSide_Treiber` (Output_Q56): Switches the low-side voltage – necessary as soon as either direction is active.
@@ -103,6 +105,6 @@ Exercise **Exercise_205b_AX** demonstrates the implementation of a motorized rev
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

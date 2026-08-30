@@ -1,6 +1,7 @@
 # Uebung_012f: Numeric Value Input PHYS und Speichern NVS mit Subapp
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die Übung demonstriert die Verarbeitung eines physikalischen numerischen Werts (PHYS) und dessen dauerhafte Speicherung in einem nichtflüchtigen Speicher (NVS). Der Wert wird über einen Eingangsobjekt-Pool konfiguriert, in den NVS geschrieben und kann anschließend über einen Qualifier-Baustein ausgegeben werden. Die Übung ist als geschachtelte SubApplikation realisiert, wobei der innere Sub-Baustein die gesamte Logik enthält.

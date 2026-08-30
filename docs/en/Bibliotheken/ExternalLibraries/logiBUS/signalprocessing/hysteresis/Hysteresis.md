@@ -3,29 +3,31 @@
 ![Hysteresis](./Hysteresis.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Hysteresis** function block converts an analog input signal (REAL) into a digital output signal (BOOL). It operates with an adjustable hysteresis threshold to ensure stable switching behavior and prevent oscillations at the threshold. The switching points are arranged symmetrically around a mean value (THRESHOLD).
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | With Data |
-|----------|-------|--------------------------------------------------------|---------------------------|
+| ---------- | ------- | -------------------------------------------------------- | --------------------------- |
 | INIT | EInit | Initialization request; activates or deactivates the function block. | QI |
 | REQ | Event | Normal processing request; Performs the hysteresis calculation. | QI, INPUT, THRESHOLD, HYSTERESIS |
 
 ### **Event Outputs**
 
 | Event | Type | Description | With Data |
-|----------|-------|------------------------------------------------------------|----------------------------|
+| ---------- | ------- | ------------------------------------------------------------ | ---------------------------- |
 | INITO | EInit | Acknowledges the initialization/deinitialization request. | QO |
 | CNF | Event | Acknowledges normal processing; outputs the hysteresis result. | OUTPUT |
 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------------|-------|-------------|---------------------------------------------------------------------------------------------------|
+| ------------ | ------- | ------------- | --------------------------------------------------------------------------------------------------- |
 | QI | BOOL | – | Input qualifier; switches the module on (TRUE) or off (FALSE). |
 | INPUT | REAL | – | Analog input value being monitored. |
 | THRESHOLD | REAL | 0.0 | Midpoint of the hysteresis band. The switch-on threshold is THRESHOLD + (HYSTERESIS / 2). |
@@ -34,7 +36,7 @@ The **Hysteresis** function block converts an analog input signal (REAL) into a 
 ### **Data Outputs**
 
 | Name | Type | Description |
-|--------|-------|------------------------------------------------------------------|
+| -------- | ------- | ------------------------------------------------------------------ |
 | QO | BOOL | Output qualifier; takes the value of QI when processing is active. |
 | OUTPUT | BOOL | Hysteresis output; TRUE when the input exceeds the turn-on point, FALSE until it falls below the turn-off point. |
 
@@ -70,7 +72,7 @@ Initialization (`INIT`) and normal operation (`REQ`) are controlled by the quali
 The function block goes through the following states:
 
 | State | Description |
-|---------|-------------------------------------------------------------------------------------------------|
+| --------- | ------------------------------------------------------------------------------------------------- |
 | START | Initial sleep state after power-on. Waits for an INIT event with QI=TRUE. |
 | Init | Initialization: Sets `QO = QI` and `OUTPUT = FALSE`. Sends INITO. |
 | sOFF | Normal state with output off (OUTPUT=FALSE). Waits for REQ or INIT with QI=FALSE. |
@@ -96,7 +98,7 @@ The function block goes through the following states:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-|--------------------------------|-------------------------------------------------------------------------------------------------|
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
 | **Hysteresis** (of this FB) | Provides symmetrical hysteresis around a mean value, flexible adjustment of width and switching point, strict switch-off condition. |
 | **Simple Threshold Switch** | No hysteresis; switches at the exact threshold, which can lead to oscillation. |
 | **Schmitt Trigger** | Has two fixed thresholds (upper and lower); Similar to hysteresis, but often without adjustable width. |

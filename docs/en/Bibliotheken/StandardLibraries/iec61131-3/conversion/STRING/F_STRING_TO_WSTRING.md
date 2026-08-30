@@ -6,6 +6,7 @@
 
 The function block `F_STRING_TO_WSTRING` converts a `STRING` data type to a `WSTRING` data type. This is particularly useful in environments where conversion between narrow (8-bit) and wide (16-bit) strings is required, for example, when internationalizing applications or communicating with systems that use different character encodings.
 ![F_STRING_TO_WSTRING](F_STRING_TO_WSTRING.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

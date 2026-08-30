@@ -3,10 +3,12 @@
 ![AUDI_TO_AW](./AUDI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUDI_TO_AW** function block is a composite function block for converting an **AUDI adapter** (UDINT) to an **AW adapter** (WORD). It serves as a unidirectional bridge between different data types and enables the seamless integration of components based on different adapter interfaces.
 The block encapsulates the conversion logic and is typically used in automation projects according to IEC 61499 that require the adaptation of data types between adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,7 +38,7 @@ The block encapsulates the conversion logic and is typically used in automation 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | AUDI_IN | adapter::types::unidirectional::AUDI | Socket (Input) | Receives the UDINT signal and its associated event |
 | AW_OUT | adapter::types::unidirectional::AW | Plug (Output) | Passes on the converted WORD signal and its output event |
 

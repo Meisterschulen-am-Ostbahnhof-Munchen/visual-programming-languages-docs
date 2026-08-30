@@ -3,6 +3,7 @@
 ![SERVER_5](SERVER_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `SERVER_5`-Funktionsblock ist die generische Server-Variante mit 5 Sende- und 5 Empfangsdatenfeldern für die Kommunikation mit einem passenden [CLIENT_5](CLIENT_5.md)-Block. Er überträgt 5 Datenwerte (`SD_1` `SD_2` `SD_3` `SD_4` `SD_5`) an den Client und empfängt 5 Datenwerte (`RD_1` `RD_2` `RD_3` `RD_4` `RD_5`) zurück. Wie alle `SERVER_*`-Bausteine basiert er auf der generischen `GEN_SERVER`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

@@ -3,9 +3,11 @@
 ![AX_E_PERMIT](./AX_E_PERMIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_E_PERMIT** function block implements conditional event propagation (permissive propagation). An incoming event is only forwarded to the output if a permit signal provided via an adapter has the value `TRUE`. The function block acts as a gate that can interrupt or enable the processing chain depending on external conditions.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -72,7 +74,7 @@ There is no explicit state machine; the block operates purely combinatorially at
 ## Comparison with Similar Blocks
 
 | Block | Special Feature |
-|-------------------|-----------------------------------------------------------------------------|
+| ------------------- | ----------------------------------------------------------------------------- |
 | **E_PERMIT** | Standard block with direct Boolean input. No adapter required. |
 | **AX_E_PERMIT** | Same logic, but the enable signal is provided via a unidirectional adapter, which facilitates coupling across subsystems. |
 | **E_SR** (Set-Reset) | Event-based state storage; not directly suitable as a gate. |

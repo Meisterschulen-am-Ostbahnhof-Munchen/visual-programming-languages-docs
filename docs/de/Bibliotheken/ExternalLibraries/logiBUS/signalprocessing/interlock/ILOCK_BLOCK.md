@@ -3,6 +3,7 @@
 ![ILOCK_BLOCK](./ILOCK_BLOCK.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ILOCK_BLOCK** realisiert eine Verriegelung (Interlock) zwischen zwei gegenläufigen Signalen. Er priorisiert das zuerst eintreffende aktive Signal und ignoriert alle nachfolgenden widersprüchlichen Signale, bis das initiale Signal wieder freigegeben wird. Dadurch wird sichergestellt, dass sich zwei gegensätzliche Aktionen (z. B. Auf/Ab, Rechts/Links) niemals gleichzeitig aktivieren.

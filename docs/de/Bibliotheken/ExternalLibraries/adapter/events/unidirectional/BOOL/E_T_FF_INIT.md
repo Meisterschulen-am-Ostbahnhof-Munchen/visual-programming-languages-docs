@@ -3,6 +3,7 @@
 ![E_T_FF_INIT](./E_T_FF_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **E_T_FF_INIT** realisiert ein **Toggle-Flip-Flop** mit integrierter Initialisierungslogik. Er kombiniert das klassische Verhalten eines T‑Flip‑Flops (Umschalten des Ausgangs *Q* bei jedem *CLK*‑Ereignis) mit einer gezielten Setzung des Ausgangs während der Initialisierung. Der Baustein eignet sich besonders für Anwendungen, bei denen nach dem Start ein definierter Anfangszustand erforderlich ist, bevor der normale Toggle‑Betrieb beginnt.

@@ -3,6 +3,7 @@
 <img width="1068" height="196" alt="F_DELETE" src="https://github.com/user-attachments/assets/bf84dd90-6f79-4860-924b-8bfa70fcafcc" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_DELETE` dient zur Manipulation von Zeichenketten. Er entfernt eine bestimmte Anzahl von Zeichen (`L`) aus einer Eingabezeichenkette (`IN`), beginnend an einer definierten Position (`P`). Das Ergebnis wird als neue Zeichenkette (`OUT`) ausgegeben.
@@ -70,4 +71,4 @@ Der `F_DELETE` Funktionsblock ist ein nützliches Werkzeug zur Bearbeitung von Z
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

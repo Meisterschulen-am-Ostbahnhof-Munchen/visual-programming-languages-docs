@@ -3,6 +3,7 @@
 ![Uebung_209_AX_network](./Uebung_209_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert den Aufbau einer **gegenseitigen Verriegelung (Interlock)** zwischen zwei reset-dominanten RS-Latches. Die Schaltung verhindert, dass beide Ausgänge gleichzeitig aktiv werden – ein typisches Sicherheitsmerkmal in der Steuerungstechnik. Die Realisierung erfolgt über zwei **ILOCK_FB_RS_AX**-Blöcke, die über einen AX/AX2-Adapter miteinander verbunden sind. Jeweils ein Setz- und ein Rücksetzeingang steuern die Latches, während die Ausgänge die digitalen Ausgänge Q1 und Q2 ansteuern.
@@ -34,27 +35,27 @@ In der Übung werden folgende Funktionsbausteine eingesetzt:
   - `Q1`: Ausgang des Latches (AX-Adapter)
   - `ILOCK_IN`: Eingang für die Verriegelung vom anderen Latch
   - `ILOCK_OUT`: Ausgang, der den eigenen Zustand an den anderen Latch meldet
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der Baustein realisiert ein reset-dominantes RS-Latch, dessen Ausgang `Q1` gesetzt wird, wenn `SET1` aktiv ist und kein aktives RESET anliegt. Der Ausgang bleibt gesetzt, bis `RESET` aktiv wird (Reset-Dominanz). Zusätzlich wird über `ILOCK_IN` der Zustand des anderen Latches empfangen: Wenn der andere Latch aktiv ist, wird das Setzen des eigenen Latches unterbunden. Der eigene Zustand wird über `ILOCK_OUT` an den anderen Latch weitergegeben.
 
 ## Programmablauf und Verbindungen
 
 Die Verdrahtung im `SubAppNetwork` erfolgt über Adapterverbindungen:
 
-1. **Eingangsverarbeitung**:  
-   - `DigitalInput_S1` liefert den Setz-Befehl für `ILOCK_RS_1` (S1).  
-   - `DigitalInput_R1` liefert den Rücksetz-Befehl für `ILOCK_RS_1` (R1).  
+1. **Eingangsverarbeitung**:
+   - `DigitalInput_S1` liefert den Setz-Befehl für `ILOCK_RS_1` (S1).
+   - `DigitalInput_R1` liefert den Rücksetz-Befehl für `ILOCK_RS_1` (R1).
    - Analog für die zweite Gruppe: `DigitalInput_S2` → `ILOCK_RS_2.SET1`, `DigitalInput_R2` → `ILOCK_RS_2.RESET`.
 
-2. **Interlock-Verkettung**:  
-   - Der Ausgang `ILOCK_RS_1.ILOCK_OUT` ist mit `ILOCK_RS_2.ILOCK_IN` verbunden.  
+2. **Interlock-Verkettung**:
+   - Der Ausgang `ILOCK_RS_1.ILOCK_OUT` ist mit `ILOCK_RS_2.ILOCK_IN` verbunden.
    - Diese Verbindung stellt sicher, dass `ILOCK_RS_2` nur dann gesetzt werden kann, wenn `ILOCK_RS_1` nicht aktiv ist (bzw. umgekehrt, da der zweite Block ebenfalls seinen ILOCK_OUT angeben müsste – in dieser Konfiguration ist nur eine Richtung explizit verdrahtet, die interne Logik berücksichtigt jedoch die gegenseitige Sperre).
 
-3. **Ausgangssteuerung**:  
-   - `ILOCK_RS_1.Q1` steuert über `DigitalOutput_Q1` den Ausgang Q1.  
+3. **Ausgangssteuerung**:
+   - `ILOCK_RS_1.Q1` steuert über `DigitalOutput_Q1` den Ausgang Q1.
    - `ILOCK_RS_2.Q1` steuert über `DigitalOutput_Q2` den Ausgang Q2.
 
-**Ablauf**:  
+**Ablauf**:
 Ein Taster an S1 setzt den ersten Latch (Q1 ein), solange R1 nicht gedrückt ist. Wird S2 betätigt, kann der zweite Latch nur aktiv werden, wenn der erste Latch inaktiv ist (durch Interlock). Erst nach einem Reset des ersten Latches (R1) kann der zweite Latch gesetzt werden. Dadurch wird ein gleichzeitiges Einschalten beider Ausgänge ausgeschlossen.
 
 ## Zusammenfassung
@@ -71,4 +72,4 @@ Diese Schaltung findet beispielsweise Anwendung bei der Ansteuerung von zwei geg
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

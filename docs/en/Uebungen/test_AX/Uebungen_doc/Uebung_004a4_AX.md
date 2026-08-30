@@ -1,8 +1,9 @@
 # Exercise_004a4_AX: Toggle Flip-Flop with IE using BUTTON_SINGLE_CLICK with E_SPLIT
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_004a4_AX`. It demonstrates how a single event can be used to trigger multiple independent processes by using a `E_SPLIT` function block.
+This article describes the logiBUS® exercise `Uebung_004a4_AX`. It demonstrates how a single event can be used to trigger multiple independent processes by using a `E_SPLIT` function block
 -----
+
 ## Objective of the Exercise
 
 The objective is to understand sequential event processing. In IEC 61499, an event output can often only be connected to one event input (Fan-Out = 1), or you may want to explicitly control the processing order. The `E_SPLIT` function block receives an input event and fires outputs sequentially.
@@ -17,10 +18,10 @@ The objective is to understand sequential event processing. In IEC 61499, an eve
 
 ![Uebung_004a4_AX_network](./Uebung_004a4_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: The event generator (push button).
-* **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
-* **`E_T_FF_Q1` & `Q2`**: Two independent flip-flops.
-* **`DigitalOutput_Q1` & `Q2`**: Two lamps.
+- **`DigitalInput_CLK_I1`**: The event generator (push button).
+- **`E_SPLIT`**: An event distributor. It has one input `EI` and two outputs `EO1` and `EO2`.
+- **`E_T_FF_Q1` & `Q2`**: Two independent flip-flops.
+- **`DigitalOutput_Q1` & `Q2`**: Two lamps.
 
 -----
 

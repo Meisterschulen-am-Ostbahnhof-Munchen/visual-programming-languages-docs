@@ -3,15 +3,17 @@
 ![E_SR_SYM_INIT](./E_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flop with symmetric startup behavior and an INIT interface. It extends a simple SR flip-flop by adding the ability to set the output `Q` to a predefined value (`Q_INIT`) and perform deinitialization during the INIT event. The input qualification `QI` controls whether the operations (S, R, INIT) actually affect `Q`.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Comment |
-|-------|-----|-----------|
+| ------- | ----- | ----------- |
 | `INIT` | EInit | Initialization request; evaluated with `QI` and `Q_INIT` |
 | `S` | Event | Set output `Q` to `TRUE` (only effective if `QI = TRUE`) |
 | `R` | Event | Set output `Q` to `FALSE` (only effective if `QI = TRUE`) |
@@ -19,7 +21,7 @@ The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flo
 ### **Event Outputs**
 
 | Event | Type | Comment |
-|-------|-----|-----------|
+| ------- | ----- | ----------- |
 | `INITO` | EInit | Initialization/Deinitialization Confirmation |
 | `EO` | Event | Triggered when `Q` has changed (by S or R) |
 
@@ -33,7 +35,7 @@ The function block `E_SR_SYM_INIT` implements an event-driven, bistable flip-flo
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | `QO` | BOOL | Output qualifier; returns the value of `QI` during the last action (`FALSE` upon deinitialization) |
 | `Q` | BOOL | Value of the flip-flop (bistable output) |
 
@@ -55,6 +57,7 @@ Q ...8qz is then set to the value of `Q_INIT` (via the algorithms `SET` and `RES
 The qualification `QI` acts as an enable signal: Only if `QI = TRUE` is active do `S`, `R`, and the initialization affect the output `Q`. The output `QO` reflects the last valid value of `QI` (except after `DeInit`, in which case it is `QO = FALSE`).
 
 The qualification `QI` acts as an enable signal: `S`, `R`, and the initialization only affect the output `Q`. The output `QO` reflects the last valid value of `QI` (except after `DeInit`, in which case it is `QO = FALSE`).
+
 ## Technical Features
 
 - **Symmetrical Start-up**: After initialization, the value of `Q` is determined solely by `Q_INIT` – regardless of the previous state. This enables deterministic behavior after startup.
@@ -86,6 +89,7 @@ DeInit
 │ 1 (immer)
 ▼
 START
+
 ## Application Scenarios
 
 - **Controllers that require a defined output state after power-up** (e.g., machines: valve closed or open).

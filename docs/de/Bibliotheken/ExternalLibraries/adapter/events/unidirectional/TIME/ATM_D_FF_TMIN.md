@@ -3,6 +3,7 @@
 ![ATM_D_FF_TMIN](./ATM_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ATM_D_FF_TMIN` realisiert ein taktgesteuertes D‑Flipflop (Data Latch), das den anliegenden Datenwert bei einem Taktereignis übernimmt und als gespeicherten Wert ausgibt. Eine Besonderheit ist die einstellbare Mindestzeit (`Tmin`) zwischen zwei aufeinanderfolgenden Ausgangsereignissen, die eine definierte Totzeit garantiert.

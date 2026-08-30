@@ -6,6 +6,7 @@
 
 The F_REPLACE function block is used to manipulate strings. It replaces a specific number of characters (L) in the first input string (IN1) with the second input string (IN2), starting at a specified position (P).
 ![F_REPLACE](F_REPLACE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

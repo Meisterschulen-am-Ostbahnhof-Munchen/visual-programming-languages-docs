@@ -3,6 +3,7 @@
 ![Funk_DI](./Funk_DI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Funk_DI ist ein GlobalConstants-Paket für die 4diac-IDE, das Konstanten für digitale Eingänge in Funksystemen definiert. Das Paket stellt vordefinierte Pin-Konfigurationen für verschiedene digitale Eingangssignale zur Verfügung, die in Steuerungsanwendungen verwendet werden können.
@@ -74,4 +75,4 @@ Das Funk_DI GlobalConstants-Paket bietet eine praktische Sammlung vordefinierter
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

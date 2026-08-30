@@ -3,15 +3,17 @@
 ![FIELDBUS_BYTE_TO_SIGNAL_SCALED](./FIELDBUS_BYTE_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte value into a scaled real value. It checks whether the incoming signal is valid. If so, the input value is multiplied by a scaling factor and an offset is added. Otherwise, the output is set to zero and the validity signal is reset. This block is designed for use in fieldbus systems where sensor or actuator data is transmitted as bytes and needs to be linearized or normalized.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-|-------|-----|--------------|-------------------|
+| ------- | ----- | -------------- | ------------------- |
 | `INIT` | EInit | Initialization request; sets scaling and offset | `SCALE`, `OFFSET` |
 | `REQ` | Event | Normal processing request; evaluates input `IN` | `IN` |
 
@@ -25,7 +27,7 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte 
 ### **Data Inputs**
 
 | Name | Data Type | Initial Value | Description |
-|---------|----------|-------------|--------------|
+| --------- | ---------- | ------------- | -------------- |
 | `IN` | BYTE | `NOT_AVAILABLE_B` | Raw fieldbus value (byte) |
 | `SCALE` | REAL | `1.0` | Scaling factor (multiplier) |
 | `OFFSET` | DINT | `0` | Additive Offset (after scaling) |
@@ -33,7 +35,7 @@ The function block **FIELDBUS_BYTE_TO_SIGNAL_SCALED** converts an incoming byte 
 ### **Data Outputs**
 
 | Name | Data Type | Initial Value | Description |
-|---------|----------|-------------|--------------|
+| --------- | ---------- | ------------- | -------------- |
 | `OUT` | REAL | `0.0` | Scaled Output Value |
 | `VALID` | BOOL | `FALSE` | `TRUE`, if the incoming byte value was deemed valid |
 
@@ -49,7 +51,7 @@ The function block is controlled by two events:
 
 Upon arrival of `INIT`, the parameters `SCALE` and `OFFSET` are accepted. The associated algorithm (`INIT`) does not perform any further calculations. After successful initialization, the event `INITO` is sent.
 
-2. **Processing (`REQ`)**
+1. **Processing (`REQ`)**
 
 Upon arrival of `REQ`, the value of `IN` is compared to a fixed threshold value `VALID_SIGNAL_B`. This threshold is obtained from the imported package `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`.
 
@@ -77,7 +79,7 @@ The initial value of `IN` is `NOT_AVAILABLE_B` – another imported constant val
 The function block has two simple states, each activated by the corresponding event:
 
 | State | Triggering Event | Executable Algorithm | Outgoing Events |
-|---------|-------------------|--------------------------|-------------------|
+| --------- | ------------------- | -------------------------- | ------------------- |
 | `INIT` | `INIT` | `INIT` (empty) | `INITO` |
 | `REQ` | `REQ` | `REQ` (validation check + scaling) | `CNF` |
 
@@ -119,6 +121,6 @@ The function block `FIELDBUS_BYTE_TO_SIGNAL_SCALED` is a practical tool for proc
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

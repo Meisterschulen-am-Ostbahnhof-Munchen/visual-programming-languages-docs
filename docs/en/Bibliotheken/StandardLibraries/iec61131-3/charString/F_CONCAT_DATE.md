@@ -3,6 +3,7 @@
 ![F_CONCAT_DATE](F_CONCAT_DATE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_CONCAT_DATE` combines individual date/time components (`YEAR`, `MONTH`, `DAY`) into a composite `DATE` value. It is the reverse of [F_SPLIT_DATE](F_SPLIT_DATE.md), which splits the same `DATE` value back into its individual components.

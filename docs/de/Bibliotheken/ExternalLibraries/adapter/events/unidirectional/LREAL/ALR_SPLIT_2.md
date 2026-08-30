@@ -3,6 +3,7 @@
 ![ALR_SPLIT_2](./ALR_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ALR_SPLIT_2 dient zum Aufteilen eines eingehenden ALR-Adapter-Signals in zwei identische Ausgangssignale. Er ist generisch ausgelegt (`GEN_ALR_SPLIT`) und eignet sich für die Verteilung von Alarm- oder Lebenszyklus-Signalen.

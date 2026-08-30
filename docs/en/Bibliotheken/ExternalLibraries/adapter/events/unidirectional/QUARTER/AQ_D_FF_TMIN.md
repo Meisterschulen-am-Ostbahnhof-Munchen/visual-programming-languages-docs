@@ -6,13 +6,13 @@
 The function block **AQ_D_FF_TMIN** implements a data-locking D flip-flop with a minimum inter-disposal time (MIT) between two consecutive output events (EOs). It serves as an extension of a simple D flip-flop, adding time-based debouncing or minimum-distance control, and is connected to the signal transmitter and receiver via adapters.
 
 | Event | Type | With Variable | Comment |
-|----------|-----|--------------|-----------|
+| ---------- | ----- | -------------- | ----------- |
 | INIT | EInit | Tmin | Initialization request, sets the minimum MIT. |
 | Event | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | INITO | EInit | Initialization confirmation. |
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | Tmin | TIME | Minimum waiting time between two output events (EO). |
 
 No dedicated data outputs; the latched signal is output via the adapter `Q`.
@@ -50,7 +50,7 @@ The initialization (`INIT`) passes the parameter `Tmin` to the internal function
 The FB does not have an explicit public state machine. Its behavior is determined by the internal FB `E_D_FF_ANY_TMIN`, which has the last latched value as its state and a wait logic. Simplified representation:
 
 | State | Meaning |
-|---------|-----------|
+| --------- | ----------- |
 | Initialized | Ready after INIT, Tmin is set |
 | Ready | Waiting for clock (I.E1) |
 | Latched | Data value has been accepted; output event will be released after Tmin has elapsed |
@@ -64,7 +64,7 @@ A detailed state representation can be found in the source code of the internal 
 - **Control of Slow Actuators:** Ensuring that actuators are not controlled faster than their mechanical response time allows.
 
 | Function Block | Special Feature |
-|----------|--------------|
+| ---------- | -------------- |
 | `AQ_D_FF` / `E_D_FF` | Simple D flip-flop without a time limit on the output. |
 | AQ_D_FF_TMIN` (this FB) | Extended by a minimum delay Tmin between output events. |
 | AQ_D_FF_TMAX` (hypothetical) | Limits the maximum time between two output events. |

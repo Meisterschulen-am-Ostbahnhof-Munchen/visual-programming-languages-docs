@@ -2,6 +2,7 @@
 
 * * * * * * * * * *
 This exercise demonstrates the input of a numeric value (PHYS) and its storage using a subapp that utilizes an AR adapter. The entered value is stored under a predefined key in non-volatile memory (NVS). The exercise shows how constants from a central pool (`DefaultPool_Numeric`) and NVS keys are imported and used in a subapp parameter.
+
 ## Function Blocks Used (FBs)
 
 ## Introduction
@@ -30,7 +31,7 @@ Exercise `Uebung_012e_AR` demonstrates a compact solution for persistently stori
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

@@ -3,6 +3,7 @@
 ![OR_4](https://user-images.githubusercontent.com/116869307/214143582-4f76941e-a1fd-411f-96d2-9a28b48f8147.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The OR_4 function block is a generic function block for calculating bitwise OR operations with four inputs. It performs a bitwise OR operation on the input data and outputs the result. The function block is suitable for all ANY_BIT data types, thus enabling flexible use with various bit data types.

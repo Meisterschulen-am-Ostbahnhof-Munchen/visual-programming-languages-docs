@@ -6,6 +6,7 @@
 
 The function block `F_BOOL_TO_WORD` converts a Boolean value (`BOOL`) into a 16-bit word value (`WORD`). This conversion is particularly useful in scenarios where Boolean signals need to be embedded in or further processed within word data structures.
 ![F_BOOL_TO_WORD](F_BOOL_TO_WORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

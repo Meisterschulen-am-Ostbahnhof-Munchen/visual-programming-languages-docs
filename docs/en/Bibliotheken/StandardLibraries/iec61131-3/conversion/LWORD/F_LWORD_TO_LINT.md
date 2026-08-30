@@ -40,6 +40,7 @@ Since it is a simple function block, there are no complex state transitions. The
 - Unlike generic conversion blocks, this one is specifically optimized for converting `LWORD` to `LINT`.
 
 The `F_LWORD_TO_LINT` function block offers an efficient and direct method for converting `LWORD` to `LINT`. Its simplicity and specialization make it a reliable component in control applications.
+
 ## Technical Features
 
 ## State Overview

@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010c`. Bisher dienten die
 
 ![Uebung_010c_network](./Uebung_010c_network.svg)
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -24,9 +24,9 @@ Rückmeldung an den Bediener durch Farbumschlag der virtuellen Taste.
 
 ### Funktionsbausteine (FBs)
 
-  * **`SoftKey_F1`**: Eingabe-Baustein.
-  * **`GreenWhiteBackground` (SubApp)**: Ein Baustein aus der Bibliothek `MyLib::sys`. [cite_start]Er sorgt dafür, dass sich der Hintergrund des Softkeys auf dem Terminal ändert (Grün bei Aktivierung, Weiß im Ruhezustand)[cite: 1].
-  * **`DigitalOutput_Q1`**: Der physische Ausgang.
+  - **`SoftKey_F1`**: Eingabe-Baustein.
+  - **`GreenWhiteBackground` (SubApp)**: Ein Baustein aus der Bibliothek `MyLib::sys`. [cite_start]Er sorgt dafür, dass sich der Hintergrund des Softkeys auf dem Terminal ändert [Grün bei Aktivierung, Weiß im Ruhezustand](cite: 1).
+  - **`DigitalOutput_Q1`**: Der physische Ausgang.
 
 -----
 

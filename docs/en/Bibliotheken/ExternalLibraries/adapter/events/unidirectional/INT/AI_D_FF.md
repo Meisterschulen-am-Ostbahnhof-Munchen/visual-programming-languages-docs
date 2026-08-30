@@ -3,9 +3,11 @@
 ![AI_D_FF](./AI_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_D_FF** implements a data latch (D flip-flop) for the temporary storage of a data value. It serves as an adapter-encapsulated implementation of an edge-triggered D flip-flop according to IEC 61499, which, upon an event at the input, takes the incoming data value and makes it available at the output.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs.
 ### **Adapter**
 
 | Name | Direction | Type | Description |
-|-------------|----------|-----|--------------|
+| ------------- | ---------- | ----- | -------------- |
 | **I** | Socket | `adapter::types::unidirectional::AI` | Returns the input event (E1) and the data value to be latched (D1). |
 | **Q** | Plug | `adapter::types::unidirectional::AI` | After the latch is closed, outputs the result event (E1) and the stored data value (D1). |
 
@@ -52,12 +54,13 @@ An event at `I.E1` triggers a rising edge at the clock input of the internal fli
 - **Unidirectional Data Flow:** The adapters are designed as pure sources (plugs) or sinks (sockets), which clearly defines the signal direction.
 - **Edge-Triggered:** The transfer occurs only upon an event (rising edge), not upon level changes. Therefore, the function block is suitable for clocked systems.
 -
+
 ## State Overview
 
 The internal state of the flip-flop is determined by the stored value `Q`. Two stable states exist:
 
 | Clock (CLK) | D (Input) | Q (Output) before | Q (Output) after |
-|------------|-------------|---------------------|----------------------|
+| ------------ | ------------- | --------------------- | ---------------------- |
 | No event | - | Q_old | Q_old |
 | Event (rising edge) | 0 | X | 0 |
 | Event (rising edge) | 1 | X | 1 |

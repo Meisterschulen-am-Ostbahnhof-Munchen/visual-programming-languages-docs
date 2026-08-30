@@ -3,6 +3,7 @@
 ![Uebung_012d_AR_network](./Uebung_012d_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the acquisition of a numeric value via a physical input (PHYS), the storage of the value in non-volatile memory (NVS), and the subsequent output. Communication between the function blocks is handled via an AR adapter (adapter interface), without the use of sub-blocks.
@@ -53,4 +54,4 @@ The exercise `Uebung_012d_AR` implements a simple pipeline: physical input → s
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

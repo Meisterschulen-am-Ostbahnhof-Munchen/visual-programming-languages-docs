@@ -3,15 +3,17 @@
 ![AX_SR_SYM_INIT](./AX_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_SR_SYM_INIT** implements an event-driven, bistable flip-flop (set-reset) with symmetrical start-up behavior and special initialization logic. It extends the classic SR flip-flop with a qualified initialization and deinitialization sequence, where the output state is specified via the input `Q_INIT`, and the entire logic is only active if the qualifier `QI` has the value `TRUE`.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | INIT | EInit | Initialization request; linked to `QI` and `Q_INIT` |
 | S | Event | Sets output `Q` (via adapter) |
 | R | Event | Resets output `Q` |
@@ -25,7 +27,7 @@ The function block **AX_SR_SYM_INIT** implements an event-driven, bistable flip-
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-------|--------------|
+| ---------- | ------- | -------------- |
 | QI | BOOL | Input qualifier – controls whether actions are executed |
 | Q_INIT | BOOL | Desired value of the output `Q` after initialization |
 
@@ -57,6 +59,7 @@ The function block has four main states: `START`, `Init`, `DeInit`, `SET`, and `
 
 The transitions between ``SET`` and ``RESET`` are triggered only by the events ``S`` and ``R``, respectively. The INIT transitions can result from either stable state in ``DeInit`` if ``QI = FALSE`` is present.
 ...
+
 ## Technical Features
 
 - **Qualifier-Dependent Actions**: The actual change to the flip-flop output (`Q.D1`) only occurs if `QI = TRUE` is present. Otherwise, only the output qualifiers (`QO`) are updated; the adapter remains unchanged.

@@ -40,6 +40,7 @@ The function block has no internal states. The conversion occurs immediately upo
 - **F_BOOL_TO_REAL**: Converts `BOOL` to a floating-point value (`REAL`). `F_BOOL_TO_DINT`, on the other hand, returns an integer value.
 
 The function block `F_BOOL_TO_DINT` is a simple and efficient tool for converting Boolean values to 32-bit integers. It is particularly suitable for applications where Boolean signals need to be integrated into numerical controllers. Its deterministic operation and clear interface structure make it a reliable component in IEC 61499-based automation.
+
 ## Technical Features
 
 ## State Overview

@@ -3,6 +3,7 @@
 ![AD_TO_AUS](./AD_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_TO_AUS** ist ein zusammengesetzter Funktionsblock (Composite FB), der einen DWORD-Adapter (AD) in einen USINT-Adapter (AUS) umwandelt. Er dient als unidirektionale Schnittstelle zur Konvertierung eines 32‑Bit‑Datenwerts in einen 8‑Bit‑Wert. Der Baustein kapselt die IEC‑61131‑Konvertierungsfunktion `F_DWORD_TO_USINT` und stellt die Adapter‑Schnittstellen bereit, sodass er nahtlos in eine Adapter‑basierte Kommunikationsstruktur eingebunden werden kann.
@@ -68,4 +69,4 @@ Der **AD_TO_AUS** ist ein einfacher, aber nützlicher Composite‑FB zur Typkonv
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

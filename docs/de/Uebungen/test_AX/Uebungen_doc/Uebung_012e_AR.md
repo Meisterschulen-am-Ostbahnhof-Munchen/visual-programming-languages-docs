@@ -16,7 +16,7 @@ Diese Übung demonstriert die Eingabe eines numerischen Werts (PHYS) und dessen 
   - `KEY` = `KEY_I1_STORE` (Konstante aus `Uebungen::const::NVS::NVS_Keys`)
   - `SECTION` = `SECTION_I1_STORE` (Konstante aus `Uebungen::const::NVS::NVS_Keys`)
   - `stObj` = `InputNumber_I1` (Konstante aus `Uebungen::const::UT::DefaultPool_Numeric`)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der SubApp `INI_IN_AND_STORE_AR` erwartet einen numerischen Eingangswert (z. B. über den AR-Adapter) und speichert diesen im nichtflüchtigen Speicher unter dem angegebenen Abschnitt und Schlüssel. Die Konstanten `KEY_I1_STORE` und `SECTION_I1_STORE` definieren den genauen Speicherort. Die Konstante `InputNumber_I1` stellt den Initialwert oder die Struktur des zu speichernden Objekts bereit.
 
 ## Programmablauf und Verbindungen
@@ -38,4 +38,4 @@ Die Übung `Uebung_012e_AR` zeigt eine kompakte Lösung zur persistierenden Spei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

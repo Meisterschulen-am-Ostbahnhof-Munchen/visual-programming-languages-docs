@@ -67,7 +67,7 @@ Durch diese Struktur können mehrere Interlock-Bausteine kaskadiert werden: Ein 
 Das interne SR-Latch kennt vier Zustände basierend auf den (kombinierten) Eingängen:
 
 | S1 (nach Logik) | R | Q1 (vorheriger) | Q1 (neuer) |
-|-----------------|---|-----------------|------------|
+| ----------------- | --- | ----------------- | ------------ |
 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 1 |
 | 0 | 1 | 0 | 0 |

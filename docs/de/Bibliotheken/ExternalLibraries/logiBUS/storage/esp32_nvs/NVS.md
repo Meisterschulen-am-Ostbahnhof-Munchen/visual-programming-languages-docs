@@ -3,6 +3,7 @@
 <img width="1739" height="315" alt="image" src="https://github.com/user-attachments/assets/58cbe71a-173a-41eb-848d-c641fafb502f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der NVS-Funktionsblock (Non-Volatile Storage) ermöglicht das persistente Speichern und Laden von Daten auf einem ESP32-Mikrocontroller. Er nutzt den nichtflüchtigen Speicher (NVS) des ESP32, um Werte unter einem definierten Schlüssel (Key) abzulegen und bei Bedarf wieder abzurufen. Dieser Baustein ist besonders für Anwendungen geeignet, bei denen Konfigurationsdaten, Kalibrierwerte oder Zustandsinformationen über einen Neustart des Geräts hinweg erhalten bleiben müssen.
@@ -13,28 +14,28 @@ Der NVS-Funktionsblock (Non-Volatile Storage) ermöglicht das persistente Speich
 
 ### **Ereignis-Eingänge**
 
-*   **INIT**: Initialisiert den Funktionsblock. Löst den Lesevorgang des mit `KEY` angegebenen Wertes aus. Wenn kein Wert gespeichert ist, wird der `DEFAULT_VALUE` zurückgegeben.
-*   **SET**: Speichert den an `VALUE` übergebenen Wert unter dem zuvor konfigurierten Schlüssel (`KEY`) im NVS.
-*   **GET**: Liest den Wert, der unter dem konfigurierten Schlüssel (`KEY`) im NVS gespeichert ist.
+-   **INIT**: Initialisiert den Funktionsblock. Löst den Lesevorgang des mit `KEY` angegebenen Wertes aus. Wenn kein Wert gespeichert ist, wird der `DEFAULT_VALUE` zurückgegeben.
+-   **SET**: Speichert den an `VALUE` übergebenen Wert unter dem zuvor konfigurierten Schlüssel (`KEY`) im NVS.
+-   **GET**: Liest den Wert, der unter dem konfigurierten Schlüssel (`KEY`) im NVS gespeichert ist.
 
 ### **Ereignis-Ausgänge**
 
-*   **INITO**: Bestätigt die Ausführung der Initialisierung (INIT) und liefert das Ergebnis.
-*   **SETO**: Bestätigt die Ausführung des Schreibvorgangs (SET) und liefert den Status.
-*   **GETO**: Bestätigt die Ausführung des Lesevorgangs (GET) und liefert den gelesenen Wert.
+-   **INITO**: Bestätigt die Ausführung der Initialisierung (INIT) und liefert das Ergebnis.
+-   **SETO**: Bestätigt die Ausführung des Schreibvorgangs (SET) und liefert den Status.
+-   **GETO**: Bestätigt die Ausführung des Lesevorgangs (GET) und liefert den gelesenen Wert.
 
 ### **Daten-Eingänge**
 
-*   **QI** (BOOL): Qualifiziert den INIT-Ereigniseingang. Bei `TRUE` wird der Dienst aktiviert, bei `FALSE` deaktiviert.
-*   **KEY** (STRING): Der eindeutige Schlüsselname, unter dem der Wert im NVS gespeichert oder von dem er gelesen wird. Dieser Wert muss während der INIT-Phase gesetzt sein.
-*   **VALUE** (ANY_ELEMENTARY): Der zu speichernde Datensatz. Kann einen beliebigen elementaren Datentyp (z.B. BOOL, INT, REAL, STRING) annehmen.
-*   **DEFAULT_VALUE** (ANY_ELEMENTARY): Der Standardwert, der bei einem Lesevorgang (INIT oder GET) zurückgegeben wird, wenn unter dem angegebenen Schlüssel noch kein Wert im NVS gespeichert ist.
+-   **QI** (BOOL): Qualifiziert den INIT-Ereigniseingang. Bei `TRUE` wird der Dienst aktiviert, bei `FALSE` deaktiviert.
+-   **KEY** (STRING): Der eindeutige Schlüsselname, unter dem der Wert im NVS gespeichert oder von dem er gelesen wird. Dieser Wert muss während der INIT-Phase gesetzt sein.
+-   **VALUE** (ANY_ELEMENTARY): Der zu speichernde Datensatz. Kann einen beliebigen elementaren Datentyp (z.B. BOOL, INT, REAL, STRING) annehmen.
+-   **DEFAULT_VALUE** (ANY_ELEMENTARY): Der Standardwert, der bei einem Lesevorgang (INIT oder GET) zurückgegeben wird, wenn unter dem angegebenen Schlüssel noch kein Wert im NVS gespeichert ist.
 
 ### **Daten-Ausgänge**
 
-*   **QO** (BOOL): Gibt den aktuellen Betriebszustand des Funktionsblocks wider (`TRUE` = bereit/erfolgreich, `FALSE` = nicht bereit/Fehler).
-*   **STATUS** (STRING): Enthält eine Statusmeldung, die den Erfolg oder die Art eines Fehlers bei der letzten Operation beschreibt (z.B. "OK", "Key not found", "Storage full").
-*   **VALUEO** (ANY_ELEMENTARY): Der tatsächlich gelesene Wert aus dem NVS oder, falls kein Wert vorhanden war, der `DEFAULT_VALUE`.
+-   **QO** (BOOL): Gibt den aktuellen Betriebszustand des Funktionsblocks wider (`TRUE` = bereit/erfolgreich, `FALSE` = nicht bereit/Fehler).
+-   **STATUS** (STRING): Enthält eine Statusmeldung, die den Erfolg oder die Art eines Fehlers bei der letzten Operation beschreibt (z.B. "OK", "Key not found", "Storage full").
+-   **VALUEO** (ANY_ELEMENTARY): Der tatsächlich gelesene Wert aus dem NVS oder, falls kein Wert vorhanden war, der `DEFAULT_VALUE`.
 
 ### **Adapter**
 
@@ -53,9 +54,9 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 
 ## Technische Besonderheiten
 
-*   **ESP32-spezifisch**: Dieser Block nutzt direkt die NVS-API des ESP32-IDF und ist daher nur auf ESP32-basierten Zieltplattformen lauffähig.
-*   **Typflexibilität**: Die Verwendung des generischen Datentyps `ANY_ELEMENTARY` erlaubt es, verschiedene elementare Datentypen zu speichern. Der konkrete Typ wird bei der ersten Verwendung (INIT) festgelegt und muss bei allen folgenden Operationen beibehalten werden.
-*   **Persistenz**: Daten im NVS überleben einen Neustart des Mikrocontrollers und bleiben auch nach einem Stromausfall erhalten (je nach Konfiguration des NVS-Speichers).
+-   **ESP32-spezifisch**: Dieser Block nutzt direkt die NVS-API des ESP32-IDF und ist daher nur auf ESP32-basierten Zieltplattformen lauffähig.
+-   **Typflexibilität**: Die Verwendung des generischen Datentyps `ANY_ELEMENTARY` erlaubt es, verschiedene elementare Datentypen zu speichern. Der konkrete Typ wird bei der ersten Verwendung (INIT) festgelegt und muss bei allen folgenden Operationen beibehalten werden.
+-   **Persistenz**: Daten im NVS überleben einen Neustart des Mikrocontrollers und bleiben auch nach einem Stromausfall erhalten (je nach Konfiguration des NVS-Speichers).
 
 ## Zustandsübersicht
 
@@ -66,22 +67,22 @@ Die Datentypen der Ein- und Ausgänge `VALUE`, `DEFAULT_VALUE` und `VALUEO` müs
 
 ## Anwendungsszenarien
 
-*   **Gerätekonfiguration**: Speichern von Netzwerk-Credentials (SSID, Passwort), IP-Adressen oder anderen Parametern, die nach einem Reset erhalten bleiben sollen.
-*   **Betriebsdatenerfassung**: Persistente Zählung von Betriebsstunden, Zykluszahlen oder produzierten Einheiten.
-*   **Kalibrierdaten**: Ablegen von sensor- oder actuatorspezifischen Kalibrierwerten.
-*   **Letzter bekannter Zustand**: Speichern des Systemzustands vor einem unerwarteten Abschalten, um diesen beim nächsten Start wiederherzustellen.
+-   **Gerätekonfiguration**: Speichern von Netzwerk-Credentials (SSID, Passwort), IP-Adressen oder anderen Parametern, die nach einem Reset erhalten bleiben sollen.
+-   **Betriebsdatenerfassung**: Persistente Zählung von Betriebsstunden, Zykluszahlen oder produzierten Einheiten.
+-   **Kalibrierdaten**: Ablegen von sensor- oder actuatorspezifischen Kalibrierwerten.
+-   **Letzter bekannter Zustand**: Speichern des Systemzustands vor einem unerwarteten Abschalten, um diesen beim nächsten Start wiederherzustellen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **E_R_TRIG / F_TRIG**: Diese sind reine Ereignis-Trigger und bieten keine persistente Datenspeicherung.
-*   **BLINK / DELAY**: Zeitbasierte Blöcke ohne Speicherfunktionalität.
-*   **E_EEPROM**: Ein generischer EEPROM-Baustein. Der NVS-Block ist spezifisch für die ESP32-Plattform und nutzt dessen optimiertes, wear-leveling-fähiges Dateisystem (NVS), während ein generischer E_EEPROM-Block hardwareabhängig und oft auf einfacherem Speicher operieren würde.
+-   **E_R_TRIG / F_TRIG**: Diese sind reine Ereignis-Trigger und bieten keine persistente Datenspeicherung.
+-   **BLINK / DELAY**: Zeitbasierte Blöcke ohne Speicherfunktionalität.
+-   **E_EEPROM**: Ein generischer EEPROM-Baustein. Der NVS-Block ist spezifisch für die ESP32-Plattform und nutzt dessen optimiertes, wear-leveling-fähiges Dateisystem (NVS), während ein generischer E_EEPROM-Block hardwareabhängig und oft auf einfacherem Speicher operieren würde.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
-* [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
-* [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+- [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+- [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
+- [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
 
 ## Fazit
 
@@ -91,6 +92,6 @@ Der NVS-Funktionsblock stellt eine einfache und robuste Schnittstelle zum nichtf
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

@@ -57,7 +57,7 @@ Es existiert kein Zustandsdiagramm (ECC), da der Baustein keine sequentielle Log
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgänge | Besonderheit |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `ASR_SPLIT_2` | 2 | Zweifach-Split |
 | `ASR_SPLIT_4` | 4 | Vierfach-Split |
 | **`ASR_SPLIT_6`** | **6** | **Sechsfach-Split (dieser Baustein)** |
@@ -73,4 +73,4 @@ Der `ASR_SPLIT_6` ist ein einfacher, aber nützlicher Funktionsblock zur Signalv
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

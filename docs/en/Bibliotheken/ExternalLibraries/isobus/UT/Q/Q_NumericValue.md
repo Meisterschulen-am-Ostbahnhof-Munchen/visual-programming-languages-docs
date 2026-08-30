@@ -3,6 +3,7 @@
 ![Q_NumericValue](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_NumericValue** is a standards-compliant function block for changing numeric values in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.22) specification for numeric VT objects.
@@ -41,13 +42,16 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Value Update**:
+1. **Value Update**:
+
 - `REQ` with new 32-bit value
 - Updates the numeric VT object
 - `CNF` returns operational status and previous value
-3. **Value Range**:
+1. **Value Range**:
+
 - 0 to 4,294,967,295 (32-bit unsigned)
 
 ## Technical Features
@@ -71,7 +75,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful change |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -90,7 +94,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | Q_NumericValue | VtNumberUpdate | VtDataManager |
----------------|----------------|----------------|---------------|
+--------------- | ---------------- | ---------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Value Range | 32-bit | 16-bit | 32-bit |
 | Feedback | ✔ | ✖ | ✔ |
@@ -98,38 +102,38 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 
 ## 🛠️ Related exercises
 
-* [Uebung_009](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
-* [Uebung_009a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
-* [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
-* [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
-* [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
-* [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
-* [Uebung_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
-* [Uebung_015](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Uebung_015a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
-* [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
-* [Uebung_035](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
-* [Uebung_035b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
-* [Uebung_035c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
-* [Uebung_036](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
-* [Uebung_037](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_037.md)
-* [Uebung_038](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
-* [Uebung_038_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
-* [Uebung_039_sub_NumbAnsicht](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-* [Uebung_040](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Uebung_040_2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Uebung_040_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Uebung_041](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
-* [Uebung_070](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
-* [Uebung_071](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
-* [Uebung_071a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
-* [Uebung_071b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
-* [Exercise_072b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
-* [Exercise_073](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
-* [Exercise_074](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
-* [Exercise_083](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_083.md)
+- [Uebung_009](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
+- [Uebung_009a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
+- [Uebung_011a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a.md)
+- [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
+- [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+- [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
+- [Uebung_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
+- [Uebung_015](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Uebung_015a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_015a.md)
+- [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+- [Uebung_035](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035.md)
+- [Uebung_035b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+- [Uebung_035c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_035c.md)
+- [Uebung_036](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_036.md)
+- [Uebung_037](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_037.md)
+- [Uebung_038](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_038.md)
+- [Uebung_038_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_038_AX.md)
+- [Uebung_039_sub_NumbAnsicht](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
+- [Uebung_040](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Uebung_040_2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Uebung_040_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Uebung_041](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Uebung_070](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
+- [Uebung_071](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
+- [Uebung_071a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+- [Uebung_071b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Uebung_072](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
+- [Exercise_072b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Exercise_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Exercise_073](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+- [Exercise_074](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
+- [Exercise_083](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_083.md)
 
 ## Conclusion
 

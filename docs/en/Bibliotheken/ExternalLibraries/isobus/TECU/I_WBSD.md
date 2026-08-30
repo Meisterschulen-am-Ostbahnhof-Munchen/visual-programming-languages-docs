@@ -1,6 +1,7 @@
 # I_WBSD
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_WBSD** function block (Wheel-based Speed and Distance) is an ISO 11783-7 compliant system for acquiring wheel-based speed and distance data, developed under the EPL-2.0 license.
@@ -40,7 +41,7 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ## Driving Direction States
 
 | Code | State | Description |
-|------|---------|--------------|
+| ------ | --------- | -------------- |
 | 0 | Stationary | No movement |
 | 1 | Forward | Forward travel |
 | 2 | Reverse | Reverse travel |
@@ -49,12 +50,15 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with `QI`=TRUE starts wheel sensor calibration
 - `INITO` confirms operational readiness with system status
-2. **Data Provision**:
+1. **Data Provision**:
+
 - `IND` provides continuously updated motion data
 - Automatic adjustment of the update rate (100 ms at >0.5 m/s)
-3. **Error Handling**:
+1. **Error Handling**:
+
 - `TIMEOUT` in case of signal loss from the wheel speed sensors
 - Status messages in the `STATUS` field
 
@@ -75,7 +79,7 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ## Status Codes
 
 | Parameter | Code | Meaning |
-|-----------|------|-----------|
+| ----------- | ------ | ----------- |
 | `KEYSWITCHSTATE` | 0 | Off |
 | | 1 | On |
 | | 2 | Start |
@@ -88,7 +92,7 @@ The block enables the precise monitoring of vehicle movements and operating cond
 ## ⚖️ Comparison with similar systems
 
 | Feature | I_WBSD | Standard | GPS-based |
-|---------|--------|----------|-----------|
+| --------- | -------- | ---------- | ----------- |
 | Accuracy | ±0.5% | ±2% | ±5% |
 | Low speed | Good | Excellent | Poor |
 | Signal stability | High | Medium | Low |
@@ -96,13 +100,13 @@ The block enables the precise monitoring of vehicle movements and operating cond
 
 ## 🛠️ Related exercises
 
-* [Uebung_070](../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
-* [Uebung_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
-* [Uebung_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
-* [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
-* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Uebung_070](../../../../Uebungen/test_B/Uebungen_doc/Uebung_070.md)
+- [Uebung_071](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071.md)
+- [Uebung_071a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+- [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
+- [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

@@ -3,9 +3,11 @@
 ![AUDI_AX_SEL_AUDI](./AUDI_AX_SEL_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_AX_SEL_AUDI** implements a binary selection between two input values. It acts as a multiplexer, switching one of the two inputs to the output depending on a selector signal. Communication occurs exclusively via unidirectional adapters that encapsulate both event and data signals. This allows for flexible and type-specific integration into existing signal paths.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,7 +39,7 @@ The FB does not have dedicated data outputs. The selected data value is output v
 ### **Adapters**
 
 | Adapter | Direction | Type | Comment |
-|---------|----------|-----|-----------|
+| --------- | ---------- | ----- | ----------- |
 | **IN0** | Socket (Input) | `adapter::types::unidirectional::AUDI` | First selectable input |
 | **IN1** | Socket (Input) | `adapter::types::unidirectional::AUDI` | Second selectable input |
 | **G** | Socket (Input) | `adapter::types::unidirectional::AX` | Selector (Event + Data) |
@@ -50,9 +52,10 @@ The function block internally contains an instance of the IEC 61131 function blo
 1. **Triggering**: An event at **G.E1** (via the selector adapter) starts the processing.
 2. **Data Collection**: The values received from **IN0.D1**, **IN1.D1**, and **G.D1** are forwarded to the `F_SEL` function block.
 3. **Selection**: `F_SEL` checks the value of **G.D1**. Typical Semantics (depending on the data type `AX`):
+
 - If the selector field is **False** (or 0), **IN0** is selected.
 - If the selector field is **True** (or not equal to 0), **IN1** is selected.
-4. **Output**: The selected signal is passed on to **OUT.D1**. Simultaneously, an event is sent to **OUT.E1** to inform downstream processing.
+1. **Output**: The selected signal is passed on to **OUT.D1**. Simultaneously, an event is sent to **OUT.E1** to inform downstream processing.
 
 The internal flow is event-driven and avoids continuous read accesses, enabling efficient communication in time-controlled environments.
 
@@ -84,7 +87,7 @@ The use of user-defined adapter types (`AUDI`, `AX`) allows for easy adaptation 
 ## Comparison with Similar Function Blocks
 
 | Criterion | **AUDI_AX_SEL_AUDI** | Simple Boolean MUX (e.g., `F_SEL`) |
-|-----------|------------------------|---------------------------------------|
+| ----------- | ------------------------ | --------------------------------------- |
 | **Interface** | Pure adapters (event and data encapsulated) | Separate input/output pins |
 | **Data Type** | User-defined types (`AUDI`, `AX`) | Arbitrary (configurable) |
 | **Selector** | Event-driven (via adapter) | Data-driven, without extra events |
@@ -101,4 +104,4 @@ The **AUDI_AX_SEL_AUDI** is a specialized binary selector that leverages the adv
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

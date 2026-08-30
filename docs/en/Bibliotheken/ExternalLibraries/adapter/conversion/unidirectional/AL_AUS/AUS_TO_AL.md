@@ -3,9 +3,11 @@
 ![AUS_TO_AL](./AUS_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **OFF_TO_AL** function block is a composite function block (FB) that converts a unidirectional **OFF** adapter (USINT data type) into a unidirectional **AL** adapter (LWORD data type). It serves as a bridge between different data formats in a 4diac IDE environment, with the conversion being performed internally by the IEC 61131 FB `F_USINT_TO_LWORD`. The function block facilitates the integration of components based on different adapter types.
+
 ## Interface Structure
 
 Because it is a composite FB, all I/O signals are provided via the two adapters. The FB itself does not have any independent event or data inputs/outputs.
@@ -29,7 +31,7 @@ Because it is a composite FB, all I/O signals are provided via the two adapters.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|-----------|--------------|
+| ------------- | ----- | ----------- | -------------- |
 | **OFF_IN** | `adapter::types::unidirectional::AUS` | Socket (Input) | Receives the USINT value and the associated event. The adapter provides an internal event input `E1` and a data input `D1` (USINT). |
 | **AL_OUT** | `adapter::types::unidirectional::AL` | Plug (Output) | Outputs the converted LWORD value. The adapter also provides an internal event output `E1` and a data output `D1` (LWORD). |
 
@@ -39,8 +41,8 @@ Because it is a composite FB, all I/O signals are provided via the two adapters.
 
 **AL_OUT** | `adapter::types::unidirectional::AL` | Plug (Output) | Outputs the converted LWORD value. 2. This event is internally forwarded to the **REQ** input of the conversion function block `F_USINT_TO_LWORD`; the USINT value is placed at its **IN** input.
 
-3. The function block `F_USINT_TO_LWORD` performs the conversion from USINT (8-bit unsigned) to LWORD (64-bit unsigned).
-4. After the conversion is complete, an event is generated at the **CNF** output of `F_USINT_TO_LWORD`, which is sent to the internal event input of the **AL_OUT** adapter (`E1`). Simultaneously, the converted LWORD value is placed at the data output `D1` of the adapter.
+1. The function block `F_USINT_TO_LWORD` performs the conversion from USINT (8-bit unsigned) to LWORD (64-bit unsigned).
+2. After the conversion is complete, an event is generated at the **CNF** output of `F_USINT_TO_LWORD`, which is sent to the internal event input of the **AL_OUT** adapter (`E1`). Simultaneously, the converted LWORD value is placed at the data output `D1` of the adapter.
 
 The conversion is then performed by the function block `F_USINT_TO_LWORD`. 5. The parent function block can then retrieve the LWORD value via the **AL_OUT** plug and use the event.
 
@@ -80,6 +82,6 @@ The **AUS_TO_AL** function block is a practical composite function block for con
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

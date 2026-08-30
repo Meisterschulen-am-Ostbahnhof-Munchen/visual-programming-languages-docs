@@ -3,6 +3,7 @@
 ![sequence_E_04_AX_SR](./sequence_E_04_AX_SR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Sequenzer mit vier Ausgängen über AX-Adapter. Er bietet zusätzlich einen Sicherheitsstopp (STOP), eine Wiederaufnahme (RESUME) und einen Reset (RESET). Die Sequenz durchläuft die Zustände State_00, State_01, State_02, State_03, State_04 und kann zyklisch betrieben werden.
@@ -12,15 +13,15 @@ Der Funktionsblock `sequence_E_04_AX_SR` realisiert einen ereignisgesteuerten Se
 ### **Ereignis-Eingänge**
 
 | Ereignis | Beschreibung |
-|----------|--------------|
+| ---------- | -------------- |
 | `START_S1` | Übergang von START/State_00 nach State_01 |
-| `S1_S2`   | Übergang von State_01 nach State_02 |
-| `S2_S3`   | Übergang von State_02 nach State_03 |
-| `S3_S4`   | Übergang von State_03 nach State_04 |
-| `S4_START`| Übergang von State_04 zurück zu State_00 |
-| `STOP`    | Unterbricht den aktuellen Zustand sofort – alle Ausgänge werden ausgeschaltet (Dead-Man-Stop) |
-| `RESUME`  | Setzt die Sequenz aus dem pausierten Zustand fort (Ausgänge werden wieder aktiviert) |
-| `RESET`   | Setzt die Sequenz aus jedem Zustand zurück in den START-Zustand (State_00) |
+| `S1_S2` | Übergang von State_01 nach State_02 |
+| `S2_S3` | Übergang von State_02 nach State_03 |
+| `S3_S4` | Übergang von State_03 nach State_04 |
+| `S4_START` | Übergang von State_04 zurück zu State_00 |
+| `STOP` | Unterbricht den aktuellen Zustand sofort – alle Ausgänge werden ausgeschaltet (Dead-Man-Stop) |
+| `RESUME` | Setzt die Sequenz aus dem pausierten Zustand fort (Ausgänge werden wieder aktiviert) |
+| `RESET` | Setzt die Sequenz aus jedem Zustand zurück in den START-Zustand (State_00) |
 
 ### **Ereignis-Ausgänge**
 

@@ -1,16 +1,20 @@
 # .markdownlint.yml - Konfigurationsdatei für MarkdownLint
 
-# Regeln, die deaktiviert werden sollen
-default: true  # Standardmäßig sind alle Regeln aktiviert
+# Basis: markdownlint's "relaxed" Preset, außer first-line-h1 (bleibt aktiv,
+# da sinnvoll und mit überschaubarer Trefferzahl). Alle Regeln an, außer den
+# unten genannten Layout-Regeln, die bei einer großen, historisch gewachsenen
+# Doku zu viel Rauschen ohne inhaltlichen Nutzen erzeugen.
+default: true
+whitespace: false
+line_length: false
+ul-indent: false
+no-inline-html: false
+no-bare-urls: false
+fenced-code-language: false
 
-
-# MD043/required-headings : Required heading structure : https://github.com/DavidAnson/markdownlint/blob/v0.37.4/doc/md043.md
-MD043:
-  # List of headings
-  headings: [
-    "# Head",
-    "*"
-]
-  # Match case of headings
-  match_case: false
-
+# MD043/required-headings prüft eine exakte, wortwörtliche Heading-Text-
+# Struktur pro Datei (z.B. für ein Blog-Template) - nicht die Verschachtelung
+# von Heading-Ebenen. Für diese heterogene Doku ist das nicht anwendbar.
+# Falsche Verschachtelung (z.B. # gefolgt von ### ohne ##) erkennt stattdessen
+# MD001/heading-increment, das über "default: true" aktiv bleibt.
+MD043: false

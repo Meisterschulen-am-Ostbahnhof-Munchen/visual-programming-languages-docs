@@ -74,7 +74,7 @@ Ein Startzustand ist nicht explizit definiert; nach dem Initialisieren wird der 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | `GET_USINT` | Eigener FB | Liest eine InOut-Variable und puffert den Wert. Ausgang bleibt stabil bis zum nächsten REQ. |
 | `USINT_TO_*` (z. B. Konvertierer) | Konvertierungs-FB | Wandelt einen USINT in einen anderen Typ um, liest aber nicht zwingend aus einem InOut. |
 | Direkter Datenzugriff | Kein FB | Ein Wert kann über Datenverbindungen ohne Puffer gelesen werden, jedoch ohne Entkopplung und ohne Ereignissteuerung. |
@@ -89,4 +89,4 @@ Der `GET_USINT`-Funktionsblock bietet eine einfache und effiziente Möglichkeit,
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

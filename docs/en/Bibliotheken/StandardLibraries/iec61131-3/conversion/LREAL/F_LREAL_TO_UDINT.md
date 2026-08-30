@@ -6,6 +6,7 @@
 
 The function block `F_LREAL_TO_UDINT` is used to convert a 64-bit floating-point value (LREAL) into a 32-bit unsigned integer value (UDINT). This conversion is useful when floating-point numbers need to be converted into unsigned integers, for example, for specific control or communication applications.
 ![F_LREAL_TO_UDINT](F_LREAL_TO_UDINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,8 +55,8 @@ The function block has no internal states. The conversion occurs immediately upo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Exercise_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Exercise_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Conclusion
 

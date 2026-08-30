@@ -27,7 +27,7 @@ No separate data outputs are available. The output data (LINT) is output via the
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | **AD_IN** | `adapter::types::unidirectional::AD` | Socket | Receives a DWORD value (*D1*) and an input event (*E1*). |
 | **ALI_OUT** | `adapter::types::unidirectional::ALI` | Plug | Sends the converted LINT value (*D1*) and an output event (*E1*).
 
@@ -50,7 +50,7 @@ The **AD_TO_ALI** offers a clean, reusable solution for converting DWORD adapter
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

@@ -4,6 +4,7 @@
 *Image not available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block F_PHYS_LREAL_TO_RAW converts a physical measured value in the LREAL data type into an ISOBUS-compliant raw value as a UDINT. Saturation limits are observed, and overflow and underflow states are signaled as Boolean outputs. The conversion follows the ISOBUS formula:
@@ -30,14 +31,14 @@ This function block is suitable for applications that need to integrate physical
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|---------|----------------------------------------------------------|-------------|---------------------------------------------------|
-| `lrPhys`| `LREAL` | – | Physical Input Value (e.g., Temperature, Pressure) |
+| --------- | ---------------------------------------------------------- | ------------- | --------------------------------------------------- |
+| `lrPhys` | `LREAL` | – | Physical Input Value (e.g., Temperature, Pressure) |
 | `stObj` | `logiBUS::utils::conversion::phys::NumericObjectPool_S` | `(u16ObjId := 65535, r32Scale := 1.0, i32Offset := 0, u8Decimals := 0)` | Data Structure with Scaling and Offset Parameters |
 
 ### **Data Outputs**
 
 | Name | Type | Description |
-|----------|--------|----------------------------------------------|
+| ---------- | -------- | ---------------------------------------------- |
 | *(no name)* | `UDINT` | Calculated ISOBUS raw value (0 … 4294967295) |
 | `xOver` | `BOOL` | `TRUE`, if the input exceeds the upper limit (overflow) |
 | `xUnder` | `BOOL` | `TRUE`, if the input falls below the lower limit (underflow) |
@@ -51,15 +52,17 @@ This function block does not use adapters.
 The function block performs the following steps:
 
 1. **Calculation of limits:**
+
 - Lower limit: `i32Offset * r32Scale`
 - Upper limit: `(i32Offset + 4294967295) * r32Scale`
-2. **Comparison and saturation:**
+1. **Comparison and saturation:**
+
 - If `lrPhys > obere Grenze` is present → Raw value = **UDINT#4294967295**, `xOver = TRUE`.
 
 If `lrPhys < untere Grenze` is present → Raw value = **0**, `xUnder = TRUE`.
 
 - Otherwise → Raw value = `DINT_TO_UDINT( LREAL_TO_DINT( lrPhys / r32Scale ) - i32Offset )`, no overflow/underflow message.
-3. **Output:** The calculated raw value is provided at the unnamed `UDINT` output, and the event `CNF` is triggered.
+1. **Output:** The calculated raw value is provided at the unnamed `UDINT` output, and the event `CNF` is triggered.
 
 ## Technical Features
 

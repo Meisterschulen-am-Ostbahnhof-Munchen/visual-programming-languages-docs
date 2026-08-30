@@ -8,8 +8,8 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_000`. Dies ist das absolu
 
 ![Uebung_000_network](./Uebung_000_network.svg)
 
-* [3000 Watt Lüge Die TVS Diode entschlüsselt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/3000-Watt-Lge-Die-TVS-Diode-entschlsselt-e3aun8t)
-* [Hannes' Turbo-Mais: Wie ein Landwirt mit Hackschnitzel-Kreislauf und Turmtrockner 15.000 Tonnen Körnermais verarbeitet](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hannes-Turbo-Mais-Wie-ein-Landwirt-mit-Hackschnitzel-Kreislauf-und-Turmtrockner-15-000-Tonnen-Krnermais-verarbeitet-e3a5e0o)
+- [3000 Watt Lüge Die TVS Diode entschlüsselt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/3000-Watt-Lge-Die-TVS-Diode-entschlsselt-e3aun8t)
+- [Hannes' Turbo-Mais: Wie ein Landwirt mit Hackschnitzel-Kreislauf und Turmtrockner 15.000 Tonnen Körnermais verarbeitet](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Hannes-Turbo-Mais-Wie-ein-Landwirt-mit-Hackschnitzel-Kreislauf-und-Turmtrockner-15-000-Tonnen-Krnermais-verarbeitet-e3a5e0o)
 
 ----
 
@@ -25,10 +25,10 @@ Verwendung eines Standard-Mathematikbausteins (`ADD_2`). Es wird gezeigt, wie ko
 
 ### Funktionsbausteine (FBs)
 
-  * **`ADD_2`**: Ein Baustein aus der IEC 61131-Bibliothek (Arithmetik).
-  * **Parameter**:
-    * `IN1`: Festwert 5 (`INT#5`).
-    * `IN2`: Festwert 3 (`INT#3`).
+  - **`ADD_2`**: Ein Baustein aus der IEC 61131-Bibliothek (Arithmetik).
+  - **Parameter**:
+    - `IN1`: Festwert 5 (`INT#5`).
+    - `IN2`: Festwert 3 (`INT#3`).
 
 -----
 
@@ -50,5 +50,5 @@ Diese Übung dient dazu, sich mit der 4diac-Oberfläche vertraut zu machen:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)

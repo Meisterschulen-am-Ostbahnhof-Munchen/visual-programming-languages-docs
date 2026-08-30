@@ -2,12 +2,13 @@
 
 ## 🎧 Podcast
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+
 ## Introduction
 
 The Softkey_IX is a service interface function block for Boolean input data, serving as an input interface for softkey functionalities. This block enables communication with resources and the processing of keyboard input in control systems.
 
-* ![Softkey_IX](Softkey_IX.svg)
+- ![Softkey_IX](Softkey_IX.svg)
 
 ## Interface Structure
 
@@ -76,17 +77,17 @@ Compared to simple digital input blocks, Softkey_IX offers extended service func
 
 ## 🛠️ Related exercises
 
-* [Uebung_010](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010.md)
-* [Uebung_010a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a.md)
-* [Uebung_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)
-* [Uebung_010b4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
-* [Uebung_010b5_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
-* [Uebung_010c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
-* [Uebung_010c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c3_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Exercise_010c4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Exercise_039_sub_Outputs](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Exercise_039b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Uebung_010](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010.md)
+- [Uebung_010a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a.md)
+- [Uebung_010a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010a4.md)
+- [Uebung_010b4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
+- [Uebung_010b5_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
+- [Uebung_010c](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c.md)
+- [Uebung_010c2](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+- [Uebung_010c3_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+- [Exercise_010c4_sub](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+- [Exercise_039_sub_Outputs](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Exercise_039b](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
 
 ## Conclusion
 

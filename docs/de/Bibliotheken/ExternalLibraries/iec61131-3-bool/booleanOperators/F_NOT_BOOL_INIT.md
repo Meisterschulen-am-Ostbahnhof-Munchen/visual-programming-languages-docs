@@ -3,6 +3,7 @@
 ![F_NOT_BOOL_INIT](./F_NOT_BOOL_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `F_NOT_BOOL_INIT` realisiert die logische Negation (NOT) eines booleschen Eingangssignals und erweitert die reine NOT-Funktion um einen Initialisierungsmechanismus. Er ist als standardisierter Baustein gemäß IEC 61131-3 für den Einsatz in speicherprogrammierbaren Steuerungen (SPS) konzipiert. Der FB ermöglicht es, bei der Initialisierung eine erste Negation auszulösen und den Ergebniswert am Ausgang bereitzustellen, bevor der normale zyklische Betrieb beginnt.

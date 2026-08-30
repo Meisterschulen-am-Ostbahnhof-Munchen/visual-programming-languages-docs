@@ -14,7 +14,7 @@ Die `Uebung_170` ist eine Sub-Applikation, die sich mit der Handhabung von Zeit�
 
 In dieser Übung wird eine Instanz eines Ereignis-Bausteins aus der Standardbibliothek verwendet.
 
-### Enthaltene Bausteine:
+### Enthaltene Bausteine
 
 - **ARTimeOut_1**
     - **Typ**: `iec61499::events::E_RTimeOut`
@@ -27,10 +27,10 @@ In dieser Übung wird eine Instanz eines Ereignis-Bausteins aus der Standardbibl
 
 Aktuell besteht das Netzwerk dieser Übung lediglich aus der Instanz `ARTimeOut_1`.
 
-*   **Verbindungen**: Es sind in der vorliegenden Konfiguration keine Verbindungen (weder Daten noch Ereignisse) definiert. Der Baustein steht isoliert im Netzwerk.
-*   **Funktionsweise der Übung**:
-    *   Da keine Verbindungen vorhanden sind, ist diese Übung vermutlich dazu gedacht, den Baustein `E_RTimeOut` manuell im Debug-Modus zu testen oder als Ausgangspunkt für eine komplexere Schaltung zu dienen, bei der Verbindungen noch hinzugefügt werden müssen.
-    *   Der Benutzer kann die Eingangsereignisse des Bausteins manuell triggern, um zu beobachten, wann und wie das Timeout-Ereignis ausgelöst wird.
+-   **Verbindungen**: Es sind in der vorliegenden Konfiguration keine Verbindungen (weder Daten noch Ereignisse) definiert. Der Baustein steht isoliert im Netzwerk.
+-   **Funktionsweise der Übung**:
+    -   Da keine Verbindungen vorhanden sind, ist diese Übung vermutlich dazu gedacht, den Baustein `E_RTimeOut` manuell im Debug-Modus zu testen oder als Ausgangspunkt für eine komplexere Schaltung zu dienen, bei der Verbindungen noch hinzugefügt werden müssen.
+    -   Der Benutzer kann die Eingangsereignisse des Bausteins manuell triggern, um zu beobachten, wann und wie das Timeout-Ereignis ausgelöst wird.
 
 ## Zusammenfassung
 
@@ -40,4 +40,4 @@ Die `Uebung_170` stellt eine minimale Konfiguration bereit, die ausschließlich 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

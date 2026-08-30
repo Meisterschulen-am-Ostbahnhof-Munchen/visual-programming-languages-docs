@@ -3,6 +3,7 @@
 ![AX_FB_TP_LTIME](./AX_FB_TP_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer-Pulse) gemäß IEC 61131-3, erweitert um einen uni-direktionalen **AX-Adapter**. Er wird in der 4diac-IDE verwendet, um zeitlich begrenzte Impulse zu erzeugen und die Ausgangssignale über einen Adapter an die Anwendung zu übergeben. Das Verhalten entspricht einem **TP**-Timer, der bei einem steigenden Flanke am Eingang den Ausgang für eine vorgegebene Zeit auf TRUE setzt.
@@ -35,12 +36,12 @@ Der **AX_FB_TP_LTIME** ist ein standardisierter Puls-Timer-Funktionsblock (Timer
 
 ### **Adapter**
 
-- **Stecker (Plugs):**  
-  - **Q**: Ausgangsadapter vom Typ `adapter::types::unidirectional::AX`.  
+- **Stecker (Plugs):**
+  - **Q**: Ausgangsadapter vom Typ `adapter::types::unidirectional::AX`.
     Über diesen Adapter wird das boolesche Ausgangssignal `Q.D1` sowie das Ereignis `Q.E1` an die Anwendung weitergegeben.
 
-- **Buchse (Sockets):**  
-  - **IN**: Eingangsadapter vom Typ `adapter::types::unidirectional::AX`.  
+- **Buchse (Sockets):**
+  - **IN**: Eingangsadapter vom Typ `adapter::types::unidirectional::AX`.
     Über diesen Adapter empfängt der Baustein das Start-Ereignis (über `IN.E1`) und ggf. ein boolesches Signal (über `IN.D1`), das intern als Freigabe oder Zusatzbedingung genutzt wird (hier nicht direkt mit der Timerlogik verbunden, sondern zu einem internen Standard-Timer geführt).
 
 ## Funktionsweise
@@ -70,7 +71,7 @@ Der Baustein besteht intern aus zwei Komponenten:
 Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsverhalten für den Gesamtbaustein:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Kein Impuls aktiv. Der Adapterausgang `Q.D1` ist FALSE. |
 | **TIMING** | Ein Puls läuft – der interne Timer zählt hoch. `ET` steigt, `Q.D1` ist TRUE (sobald das Flipflop beim Start oder nach dem ersten CNF getaktet wurde). |
 | **DONE** | Der Puls ist abgeschlossen. `CNF` wurde ausgegeben, `ET` ist gleich `PT`, `Q.D1` wird mit dem nächsten `CNF` auf FALSE gesetzt. Bei einem neuen `REQ` oder `IN.E1` beginnt der Zyklus von vorn. |
@@ -84,7 +85,7 @@ Da der Funktionsblock aus zwei Teilen besteht, ergibt sich folgendes Zustandsver
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | **FB_TP_LTIME** (Standard) | TP‑Timer | Kein Adapter, nur Standard‑Events und Signale. |
 | **AX_FB_TP_LTIME** (dieser FB) | TP‑Timer mit AX‑Adapter | Ermöglicht Einbindung in adapterbasierte Architekturen, enthält D‑Flipflop zur Signalstabilisierung. |
 | **FB_TON_LTIME** | Einschaltverzögerung | Verzögert das Einschalten eines Ausgangs. |
@@ -100,4 +101,4 @@ Der **AX_FB_TP_LTIME** ist ein robuster und präziser Puls‑Timer für die 4dia
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

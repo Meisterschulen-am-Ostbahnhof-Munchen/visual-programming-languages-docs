@@ -3,6 +3,7 @@
 ![ST_REC_CONN](https://user-images.githubusercontent.com/116869307/214155169-b982c961-19de-4e7e-876a-55ba47f27411.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ST_REC_CONN function block is used for the dynamic reconfiguration of connections between function blocks in 4diac systems. It enables the redirection of event or data connections from existing source and target function blocks to new instances during runtime.
@@ -92,6 +93,6 @@ ST_REC_CONN is an essential component for flexible and adaptive automation syste
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

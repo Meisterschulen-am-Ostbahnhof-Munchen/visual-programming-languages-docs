@@ -22,7 +22,7 @@ Der Funktionsblock **DataPanel_MI_IW_FREQ** ist ein Service-Interface-Funktionsb
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Beschreibung | Mit |
-|----------|--------------|-----|
+| ---------- | -------------- | ----- |
 | **INITO** | Bestätigung der Initialisierung | `QO`, `STATUS` |
 | **CNF** | Bestätigung einer angeforderten Abfrage | `QO`, `STATUS`, `IN` |
 | **IND** | Asynchrone Indikation (Frequenzänderung oder Zeitablauf) | `QO`, `STATUS`, `IN` |
@@ -30,7 +30,7 @@ Der Funktionsblock **DataPanel_MI_IW_FREQ** ist ein Service-Interface-Funktionsb
 ### **Daten-Eingänge**
 
 | Name | Typ | Anfangswert | Beschreibung |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | `QI` | BOOL | – | Ereignis-Eingangsqualifizierer (Steuert die Verarbeitung) |
 | `PARAMS` | STRING | – | Service-Parameter (gerätespezifische Konfiguration) |
 | `u8SAMember` | USINT | `MI::MI_00` | Knotenadresse (SA) des Datensammelmoduls (Wertebereich 224…239) |
@@ -41,7 +41,7 @@ Der Funktionsblock **DataPanel_MI_IW_FREQ** ist ein Service-Interface-Funktionsb
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `QO` | BOOL | Ereignis-Ausgangsqualifizierer (zeigt erfolgreiche Ausführung an) |
 | `STATUS` | STRING | Servicestatus (z. B. Fehlermeldungen oder Bestätigungstexte) |
 | `IN` | WORD | Aktuelle Frequenz in Hz |
@@ -59,7 +59,7 @@ Keine vorhanden.
 3. **Asynchrone Indikation (IND)** – Der FB überwacht den Frequenzeingang kontinuierlich. Eine `IND` wird ausgelöst, wenn:
    - sich der Frequenzwert um mindestens `FreqDelta` [Hz] ändert, oder
    - seit der letzten `IND` die in `TimeDelta` [ms] festgelegte Zeitspanne verstrichen ist.
-  
+
    Dies ermöglicht sowohl schwellwertbasierte als auch zeitgesteuerte Aktualisierungen.
 
 Die Ereignisse `INIT` und `REQ` werden nur ausgeführt, wenn der zugehörige Qualifizierer `QI` den Wert `TRUE` hat. Die Ausgangsqualifizierer `QO` signalisieren die erfolgreiche Durchführung.
@@ -77,7 +77,7 @@ Die Ereignisse `INIT` und `REQ` werden nur ausgeführt, wenn der zugehörige Qua
 Der FB durchläuft intern folgende logische Zustände:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Warten auf `INIT` – keine Verbindung |
 | **INIT** | Verbindung zum Eingang aufbauen und Parameter anwenden |
 | **RUN** | Betriebsbereit – wartet auf `REQ` oder sendet `IND` bei Änderungen/Zeitablauf |
@@ -94,7 +94,7 @@ Ein Wechsel in den Fehlerzustand erfolgt, wenn die Initialisierung fehlschlägt.
 ## Vergleich mit ähnlichen Bausteinen
 
 | Funktionsblock | Typ | Besonderheit |
-|----------------|-----|--------------|
+| ---------------- | ----- | -------------- |
 | `DataPanel_MI_IW_FREQ` | Frequenzeingang (SIFB) | Ereignisgesteuert, asynchrone IND, parametrierbare Schwell- und Zeitwerte |
 | `DataPanel_MI_DI` | Digitaleingang (SIFB) | Nur binäre Zustände, keine frequenzabhängigen Auslöser |
 | Generischer `SIFB` mit INIT/REQ/IND | Allgemein | Keine eingebauten Frequenzfunktionen, muss selbst entwickelt werden |
@@ -109,4 +109,4 @@ Der **DataPanel_MI_IW_FREQ** ist ein leistungsfähiger und flexibler Service-Int
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

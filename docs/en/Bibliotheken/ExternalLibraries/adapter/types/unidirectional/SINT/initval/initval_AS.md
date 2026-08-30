@@ -3,6 +3,7 @@
 ![initval_AS](initval_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AS` is the configurable initialization block for the [AS](../AS.md) adapter (data type `SINT`, 8-bit signed integer): it accepts a start value as a data input at initialization time and writes it to a `AS` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

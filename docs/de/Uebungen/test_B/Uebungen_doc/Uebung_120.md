@@ -20,9 +20,9 @@ Verwendung des Bausteins `NmGetCfInfo`. Jedes ISOBUS-Gerät besitzt einen weltwe
 
 ![Uebung_120_network](./Uebung_120_network.svg)
 
-  * **`NmGetCfInfo`**: Scant den Bus nach Teilnehmern.
-  * **`NmSetNameField`**: Zerlegt den 64-Bit Rohwert in die standardisierten ISOBUS-Felder.
-  * **`STRUCT_DEMUX`**: Macht die einzelnen Felder (Hersteller-Code, Geräteserie, Instanz etc.) für die Programmlogik zugänglich.
+  - **`NmGetCfInfo`**: Scant den Bus nach Teilnehmern.
+  - **`NmSetNameField`**: Zerlegt den 64-Bit Rohwert in die standardisierten ISOBUS-Felder.
+  - **`STRUCT_DEMUX`**: Macht die einzelnen Felder (Hersteller-Code, Geräteserie, Instanz etc.) für die Programmlogik zugänglich.
 
 -----
 

@@ -6,6 +6,7 @@
 
 The function block `F_USINT_TO_WORD` converts an unsigned 8-bit integer value (USINT) into a 16-bit word value (WORD). This conversion is particularly necessary in scenarios where data with different bit widths needs to be processed or transmitted.
 ![F_USINT_TO_WORD](F_USINT_TO_WORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

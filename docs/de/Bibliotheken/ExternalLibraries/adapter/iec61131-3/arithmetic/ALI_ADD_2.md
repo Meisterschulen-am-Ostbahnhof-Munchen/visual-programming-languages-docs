@@ -6,9 +6,10 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein `ALI_ADD_2` ist ein generischer arithmetischer Baustein zur Durchführung einer Addition (ADD) auf Basis des Standards IEC 61131-3. Er ist als Standard-Arithmetikfunktion klassifiziert und dient dazu, zwei Eingangswerte über eine Adapter-Schnittstelle zu addieren und das Ergebnis auszugeben. 
+Der Funktionsbaustein `ALI_ADD_2` ist ein generischer arithmetischer Baustein zur Durchführung einer Addition (ADD) auf Basis des Standards IEC 61131-3. Er ist als Standard-Arithmetikfunktion klassifiziert und dient dazu, zwei Eingangswerte über eine Adapter-Schnittstelle zu addieren und das Ergebnis auszugeben.
 
 Durch die Verwendung von Adaptern ermöglicht dieser Baustein eine hochgradig modulare und übersichtliche Verdrahtung innerhalb der 4diac-IDE.
 
@@ -32,9 +33,9 @@ Durch die Verwendung von Adaptern ermöglicht dieser Baustein eine hochgradig mo
 
 ### **Adapter**
 
-* **IN1 (Socket / Buchse)**: Eingangsadapter vom Typ `adapter::types::unidirectional::ALI`. Repräsentiert den ersten Summanden der Addition.
-* **IN2 (Socket / Buchse)**: Eingangsadapter vom Typ `adapter::types::unidirectional::ALI`. Repräsentiert den zweiten Summanden der Addition.
-* **OUT (Plug / Stecker)**: Ausgangsadapter vom Typ `adapter::types::unidirectional::ALI`. Liefert das mathematische Ergebnis der Addition (`IN1 + IN2`).
+- **IN1 (Socket / Buchse)**: Eingangsadapter vom Typ `adapter::types::unidirectional::ALI`. Repräsentiert den ersten Summanden der Addition.
+- **IN2 (Socket / Buchse)**: Eingangsadapter vom Typ `adapter::types::unidirectional::ALI`. Repräsentiert den zweiten Summanden der Addition.
+- **OUT (Plug / Stecker)**: Ausgangsadapter vom Typ `adapter::types::unidirectional::ALI`. Liefert das mathematische Ergebnis der Addition (`IN1 + IN2`).
 
 ## Funktionsweise
 
@@ -46,8 +47,8 @@ Das Ergebnis wird unmittelbar über den Ausgangsadapter `OUT` zur Verfügung ges
 
 ## Technische Besonderheiten
 
-* **Generische Implementierung**: Durch das Attribut `GenericClassName` mit dem Wert `'GEN_ALI_ADD'` kann der Baustein flexibel für unterschiedliche Datentypen (z. B. INT, REAL, LREAL) instanziiert werden.
-* **Adapter-Kopplung**: Im Gegensatz zu traditionellen Funktionsbausteinen, die diskrete Pins für Daten und Events nutzen, bündelt dieser Baustein die Signale in unidirektionalen `ALI`-Adaptern. Dies reduziert das „Drahtgewitter“ im Funktionsplan erheblich.
+- **Generische Implementierung**: Durch das Attribut `GenericClassName` mit dem Wert `'GEN_ALI_ADD'` kann der Baustein flexibel für unterschiedliche Datentypen (z. B. INT, REAL, LREAL) instanziiert werden.
+- **Adapter-Kopplung**: Im Gegensatz zu traditionellen Funktionsbausteinen, die diskrete Pins für Daten und Events nutzen, bündelt dieser Baustein die Signale in unidirektionalen `ALI`-Adaptern. Dies reduziert das „Drahtgewitter“ im Funktionsplan erheblich.
 
 ## Zustandsübersicht
 
@@ -55,9 +56,9 @@ Der Funktionsbaustein ist zustandslos (kombinatorisches Verhalten). Er besitzt k
 
 ## Anwendungsszenarien
 
-* **Signalverarbeitung**: Summierung von zwei Sensorwerten oder physikalischen Größen, die bereits über ein Adapter-System in der Anwendung verteilt werden.
-* **Sollwert-Generierung**: Aufaddieren eines Basis-Sollwerts und eines Korrektur-Offsets.
-* **Modularer Anlagenbau**: Einsatz in Systemen, bei denen Schnittstellen konsequent über Adapter abgebildet werden, um die Wiederverwendbarkeit und Lesbarkeit des Codes zu maximieren.
+- **Signalverarbeitung**: Summierung von zwei Sensorwerten oder physikalischen Größen, die bereits über ein Adapter-System in der Anwendung verteilt werden.
+- **Sollwert-Generierung**: Aufaddieren eines Basis-Sollwerts und eines Korrektur-Offsets.
+- **Modularer Anlagenbau**: Einsatz in Systemen, bei denen Schnittstellen konsequent über Adapter abgebildet werden, um die Wiederverwendbarkeit und Lesbarkeit des Codes zu maximieren.
 
 ## Vergleich mit ähnlichen Bausteinen
 

@@ -3,9 +3,11 @@
 ![INI_ALR](./INI_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **INI_ALR** is used to read and write floating-point values of type LREAL to and from a `settings.ini` file. It accesses a configuration file that is parameterized via a section name and a key. The block encapsulates the use of the internal `INI` function block and additionally provides a standardized **ALR** adapter interface (unidirectional) through which values can be both set and read.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **INI_ALR** is used to read and write floating-point values o
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|----------------|--------|-----------------------------------------------------------|
+| ---------------- | -------- | ----------------------------------------------------------- |
 | QI | BOOL | Event Input Qualifier (Allow) |
 | SECTION | STRING | Section name in the INI file |
 | KEY | STRING | Key name within the section |
@@ -32,7 +34,7 @@ The function block **INI_ALR** is used to read and write floating-point values o
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|--------|----------------------------------|
+| -------- | -------- | ---------------------------------- |
 | QO | BOOL | Event Output Qualifier |
 | STATUS | STRING | Status message (e.g., error text) |
 
@@ -53,7 +55,7 @@ An event at the input `INIT` triggers the initialization of the internal `INI` b
 
 A set event at the adapter socket `ALR_IN.E1` is forwarded to the SET input of the internal `INI` module. The value to be saved is located at `ALR_IN.D1` and is set via `INI.VALUE`. After successful writing, the `INI` module acknowledges with `SETO`, which in turn triggers `ALR_OUT.E1`.
 
-3. **Reading via ALR-IN** (implicit)
+1. **Reading via ALR-IN** (implicit)
 
 The currently read value is always available at output `ALR_OUT` via the initial GET sequence and the forwarding of `GETO`. A new read can be triggered by another `INIT` pulse.
 
@@ -84,7 +86,7 @@ The `INI_ALR` itself does not have its own state machines. State management is f
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Advantage of INI_ALR |
-|------------|-------------------------------------------------------------------|-------------------------------------------------|
+| ------------ | ------------------------------------------------------------------- | ------------------------------------------------- |
 | `INI` | Direct access to INI files (without ALR) | No adapter interface, manual coupling required |
 | `INI_ALR` | Encapsulates `INI` and provides an ALR adapter interface | Easy integration into ALR-based architectures |
 
@@ -98,6 +100,6 @@ The `INI_ALR` is a practical function block that extends access to `settings.ini
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

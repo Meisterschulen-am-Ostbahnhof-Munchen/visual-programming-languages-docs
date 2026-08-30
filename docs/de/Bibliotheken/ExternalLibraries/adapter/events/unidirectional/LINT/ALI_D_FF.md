@@ -3,6 +3,7 @@
 ![ALI_D_FF](./ALI_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_D_FF** realisiert ein taktgesteuertes D-Flip-Flop (Data Latch) über Adapter-Schnittstellen. Er speichert einen Datenwert bei einer steigenden Flanke eines Taktsignals und gibt diesen bis zur nächsten Taktflanke aus. Der Baustein eignet sich für synchrone Datenspeicherung in ereignisgesteuerten Automatisierungsumgebungen.

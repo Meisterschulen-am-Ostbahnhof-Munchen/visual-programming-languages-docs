@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 The function block AUS_FIELDBUS_USINT_TO_SIGNAL_SCALED mirrors an incoming fieldbus signal value (USINT) to the output, provided the signal is recognized as valid. The input value is multiplied by a configurable scaling factor, and an offset is added. The function block is implemented as a composite block and consists of a sub-function block for scaling and an edge-triggered D flip-flop for synchronizing the validity signal. It is typically used in fieldbus signal processing to convert raw USINT values into physical quantities and pass on the data validity information.
+
 - **INIT** (EInit): Initialization request. Passed through to the internal sub-function block.
 - **INITO** (EInit): Initialization confirmation. This is handled by the internal sub-FB.
 - **SCALE** (REAL): Scaling factor that is multiplied by the input value. Default value: 1.0.
@@ -33,10 +34,12 @@ No direct data outputs – output is exclusively via the adapters.
 1. **Initialization**: The event `INIT` is forwarded directly to the internal sub-FB `FIELDBUS_USINT_TO_SIGNAL_SCALED`. Its `INITO` is passed through to the external `INITO` output.
 2. **Data Processing**: As soon as an event arrives at `IN.E1`, it triggers the execution of the internal sub-FB via its `REQ` input. The sub-FB processes the current value of `IN.D1` (USINT) using `SCALE` and `OFFSET` and calculates a scaled output value (REAL) and a validity flag (BOOL).
 3. **Result Output**: After the calculation, the sub-FB generates a `CNF` event. This triggers:
+
 - The output of the scaled value via `OUT.D1` and the event `OUT.E1`.
 - The clock input (`CLK`) of the D flip-flop `E_D_FF`.
-4. **Validation Signal**: The validation flag of the sub-FB is set to the data input (`D`) of the flip-flop. With each clock event, the flip-flop updates the current `D` value to its output `Q`. The event `E_D_FF.EO` then triggers the output of the validity signal via `VALID.D1` and `VALID.E1`.
-5. **Interaction**: This ensures that the validity signal is updated only after scaling is complete and in a strictly timed manner with the output scaled value.
+1. **Validation Signal**: The validation flag of the sub-FB is set to the data input (`D`) of the flip-flop. With each clock event, the flip-flop updates the current `D` value to its output `Q`. The event `E_D_FF.EO` then triggers the output of the validity signal via `VALID.D1` and `VALID.E1`.
+2. **Interaction**: This ensures that the validity signal is updated only after scaling is complete and in a strictly timed manner with the output scaled value.
+
 - **Composite Structure**: The function block consists of a specialized sub-function block (`FIELDBUS_USINT_TO_SIGNAL_SCALED`) for scaling and a standardized D flip-flop (`E_D_FF`) from the IEC 61499 event library.
 - **Hidden Connections**: Some internal connections (e.g., for `INIT`, `SCALE`, `OFFSET`) are marked as invisible (`Visible="false"`) to improve clarity in the graphical representation.
 - **Data Types**: The input value is assumed to be USINT (0…255), and the output is scaled to REAL. The offset is declared as DINT.

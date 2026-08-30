@@ -3,9 +3,11 @@
 ![AX_T_FF_INIT](./AX_T_FF_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_T_FF_INIT** implements a triggered toggle flip-flop with an initialization function. It can be set to a defined start state via an INIT event and subsequently toggles between the SET and RESET states with each CLK event. The current state is provided via an adapter output. This block is particularly suitable for applications where an output signal needs to be switched at each clock cycle, with the initial state defined by initialization.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -24,7 +26,7 @@ The function block **AX_T_FF_INIT** implements a triggered toggle flip-flop with
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | QI | BOOL | Input qualifier; controls whether actions are actually executed (TRUE = active). |
 | Q_INIT | BOOL | Value assigned to the flip-flop during initialization (TRUE = SET, FALSE = RESET). |
 
@@ -45,6 +47,7 @@ The function block **AX_T_FF_INIT** implements a triggered toggle flip-flop with
 The function block has the following internal states: START, Init, DeInit, SET, and RESET.
 
 1. **Initialization (INIT Event)**
+
 - On an INIT event with **QI = TRUE**, the system transitions from the start state to the **Init** state.
 - In the Init state, the algorithm *initialize* is executed: `QO := QI`.
 - Subsequently, the output qualifier QO is set to TRUE, and the **INITO** event is output.
@@ -54,14 +57,16 @@ If Q_INIT = TRUE → transition to the **SET** state
 
 If Q_INIT = FALSE → transition to the **RESET** state
 
-2. **Toggle Operation (CLK Event)**
+1. **Toggle Operation (CLK Event)**
+
 - Starting from **SET** or **RESET**, the state changes with each **CLK** event:
 - From SET → RESET (and vice versa)
 - Upon exiting the states, the corresponding algorithms are executed:
 - **SET**: `QO := QI;` If QI = TRUE, **Q.D1 = TRUE** is assigned to the adapter output.
 - **RESET**: `QO := QI;` If QI = TRUE, **Q.D1 = FALSE** is assigned to the adapter output.
 - In both cases, the event **Q.E1** is output (via the adapter).
-3. **Deinitialization (INIT event with QI = FALSE)**
+1. **Deinitialization (INIT event with QI = FALSE)**
+
 - If an INIT event with **QI = FALSE** occurs during operation (in SET or RESET), the function block switches to the **DeInit** state.
 - The *deInitialize* algorithm sets `QO := FALSE`.
 - **INITO** is output, and the function block returns to the start state.
@@ -77,7 +82,7 @@ The function block remains in the start state until an INIT event with QI = TRUE
 ## State Overview
 
 | State | Meaning |
-|---------|-----------|
+| --------- | ----------- |
 | START | Waiting for first INIT event. |
 | Init | Initialization is in progress; QO is set to QI, then transition to SET or RESET depending on Q_INIT. |
 | DeInit | Deinitialization is in progress; QO is set to FALSE, return to START. |
@@ -95,7 +100,7 @@ The state transitions are controlled by the INIT event (with a corresponding con
 ## Comparison with similar devices
 
 | Criterion | AX_T_FF_INIT | Simple Toggle Flip-Flop (without INIT) | SR Flip-Flop |
------------|--------------|------------------------------|-------------|
+----------- | -------------- | ------------------------------ | ------------- |
 | Initialization | Yes, via INIT with Q_INIT | No, state undefined after startup | No (set/reset via separate inputs) |
 | State Change | Clocked by CLK | Clocked by CLK | Asynchronous via S and R |
 | Output | Via adapter (typed) | Often as a BOOL data output | BOOL data output |

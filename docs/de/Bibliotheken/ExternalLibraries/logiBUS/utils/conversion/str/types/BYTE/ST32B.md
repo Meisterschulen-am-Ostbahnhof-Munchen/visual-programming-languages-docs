@@ -1,6 +1,7 @@
 # ST32B
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `ST32B` ist ein strukturierter Datentyp (Structured Type) innerhalb der 4diac-IDE, der für die Aggregation von 32 einzelnen Bytes konzipiert ist. Er dient als Vorlage für Datenstrukturen, die eine feste Länge von 32 Byte benötigen und direkten Zugriff auf einzelne Bytes ermöglichen. Dieser Typ ist in der 4diac-IDE unter dem Paket `logiBUS::utils::conversion::types` registriert.
@@ -43,10 +44,10 @@ Die einzelnen Bytes sind wie folgt benannt und können direkt angesprochen werde
 
 ## Technische Besonderheiten
 
-*   **Feste Größe:** Der Datentyp `ST32B` ist auf eine exakte Größe von 32 Bytes festgelegt.
-*   **Direkter Byte-Zugriff:** Jedes der 32 Bytes ist individuell über seinen Namen ansprechbar (`B_00` bis `B_31`).
-*   **Grundlegender Typ:** Er besteht ausschließlich aus dem primitiven Datentyp `BYTE`, was ihn für Low-Level-Datenoperationen oder die Darstellung von Rohdaten prädestiniert.
-*   **Einfachheit:** Die Struktur ist bewusst einfach gehalten, um eine effiziente Nutzung und klare Datenorganisation zu gewährleisten.
+-   **Feste Größe:** Der Datentyp `ST32B` ist auf eine exakte Größe von 32 Bytes festgelegt.
+-   **Direkter Byte-Zugriff:** Jedes der 32 Bytes ist individuell über seinen Namen ansprechbar (`B_00` bis `B_31`).
+-   **Grundlegender Typ:** Er besteht ausschließlich aus dem primitiven Datentyp `BYTE`, was ihn für Low-Level-Datenoperationen oder die Darstellung von Rohdaten prädestiniert.
+-   **Einfachheit:** Die Struktur ist bewusst einfach gehalten, um eine effiziente Nutzung und klare Datenorganisation zu gewährleisten.
 
 ## Zustandsübersicht
 
@@ -54,18 +55,18 @@ Als passiver Datentyp hat `ST32B` keine internen Zustände im Sinne eines Zustan
 
 ## Anwendungsszenarien
 
-*   **Rohdatentransport:** Ideal zum Übertragen von fix langen Rohdatenpaketen, beispielsweise von Sensoren oder über Kommunikationsschnittstellen wie SPI, I2C, UART oder Ethernet, wenn die Nutzlast eine feste Länge von 32 Byte hat.
-*   **Nachrichtenstrukturen:** Kann als Grundlage für einfache Nachrichtenformate dienen, bei denen ein Teil des Nachrichtenrahmens eine definierte Länge von 32 Bytes einnimmt.
-*   **Speicherabbild:** Zur Abbildung eines kleinen, festen Speicherbereichs oder Registersatzes in einer Steuerung.
-*   **Konfigurationsdaten:** Speicherung von 32 Byte umfassenden Konfigurationsparametern.
+-   **Rohdatentransport:** Ideal zum Übertragen von fix langen Rohdatenpaketen, beispielsweise von Sensoren oder über Kommunikationsschnittstellen wie SPI, I2C, UART oder Ethernet, wenn die Nutzlast eine feste Länge von 32 Byte hat.
+-   **Nachrichtenstrukturen:** Kann als Grundlage für einfache Nachrichtenformate dienen, bei denen ein Teil des Nachrichtenrahmens eine definierte Länge von 32 Bytes einnimmt.
+-   **Speicherabbild:** Zur Abbildung eines kleinen, festen Speicherbereichs oder Registersatzes in einer Steuerung.
+-   **Konfigurationsdaten:** Speicherung von 32 Byte umfassenden Konfigurationsparametern.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Ein vergleichbarer Ansatz wäre die Verwendung eines Arrays vom Typ `ARRAY[0..31] OF BYTE`.
 Der Unterschied liegt hauptsächlich in der Art des Zugriffs und der Semantik:
 
-*   **`ST32B` (Struktur):** Ermöglicht den Zugriff auf Bytes über symbolische Namen (`B_00`, `B_01`, ...), was die Lesbarkeit und Wartbarkeit des Codes verbessern kann, insbesondere wenn die einzelnen Bytes eine spezifische Bedeutung haben.
-*   **`ARRAY[0..31] OF BYTE` (Array):** Ermöglicht den Zugriff über einen numerischen Index (`[0]`, `[1]`, ...), was für Schleifen und generische Operationen vorteilhaft ist.
+-   **`ST32B` (Struktur):** Ermöglicht den Zugriff auf Bytes über symbolische Namen (`B_00`, `B_01`, ...), was die Lesbarkeit und Wartbarkeit des Codes verbessern kann, insbesondere wenn die einzelnen Bytes eine spezifische Bedeutung haben.
+-   **`ARRAY[0..31] OF BYTE` (Array):** Ermöglicht den Zugriff über einen numerischen Index (`[0]`, `[1]`, ...), was für Schleifen und generische Operationen vorteilhaft ist.
 
 Während ein Array flexibler in der Dimensionierung sein kann, bietet `ST32B` eine klar definierte, benannte Struktur, die die Absicht hinter jedem Byte expliziter macht, auch wenn die Namen hier generisch sind.
 
@@ -77,4 +78,4 @@ Der Datentyp `ST32B` ist ein fundamentaler strukturierter Datentyp in 4diac, der
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![A2X_SPLIT_2](./A2X_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `A2X_SPLIT_2` dient der Aufteilung eines eingehenden A2X-Adapter-Signals auf zwei identische Ausgangs-Adapter. Er ist als generischer Baustein (`GEN_A2X_SPLIT`) implementiert und ermöglicht die Weiterleitung eines A2X-Signals an zwei unabhängige Zielbausteine ohne Signalverlust oder -veränderung.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::A2X` | `IN` | Socket | Eingangs-Adapter, der das zu verteilende A2X-Signal empfängt. |
 | `adapter::types::unidirectional::A2X` | `OUT1` | Plug | Erster Ausgangs-Adapter, der eine identische Kopie des Eingangssignals bereitstellt. |
 | `adapter::types::unidirectional::A2X` | `OUT2` | Plug | Zweiter Ausgangs-Adapter, der eine identische Kopie des Eingangssignals bereitstellt. |
@@ -67,4 +68,4 @@ Der `A2X_SPLIT_2` ist ein einfacher, aber nützlicher Baustein zur Signalverteil
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

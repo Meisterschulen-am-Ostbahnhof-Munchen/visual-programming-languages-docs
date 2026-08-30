@@ -3,9 +3,11 @@
 ![ADI_TO_AW](./ADI_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ADI_TO_AW** is a composite module that converts a DINT value into a WORD value. It acts as a unidirectional converter between an **ADI** adapter (DINT input) and an **AW** adapter (WORD output). The function block encapsulates the conversion logic and provides a standardized interface for data exchange at the adapter level.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs. All communication takes place via adapters:
@@ -13,7 +15,7 @@ The function block has no direct event or data inputs/outputs. All communication
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::ADI` | `ADI_IN` | Socket (Input) | DINT adapter providing the value to be converted |
 | `adapter::types::unidirectional::AW` | `AW_OUT` | Plug (Output) | WORD adapter outputting the converted value |
 
@@ -77,7 +79,7 @@ Since this is a purely structured composite FB without its own Execution Control
 ## Comparison with Similar Blocks
 
 | Block | Function | Difference |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | `F_DINT_TO_WORD` | Direct DINT to Word conversion | No adapter encapsulation; must be manually integrated into a network |
 | ADI_TO_AW` | Adapter-based encapsulation of the same conversion | Provides ready-to-use adapter interfaces; simplifies reuse |
 | WORD_TO_DINT` | Reverse conversion | Other direction; requires a custom adapter type |
@@ -92,6 +94,6 @@ The function block `ADI_TO_AW` provides a reusable, adapter-based solution for c
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

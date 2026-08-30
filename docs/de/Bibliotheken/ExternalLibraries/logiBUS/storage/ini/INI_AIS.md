@@ -3,6 +3,7 @@
 ![INI_AIS](./INI_AIS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **INI_AIS** dient zum Laden und Speichern von Zeichenketten (STRING) aus einer `settings.ini`-Datei. Dabei wird über einen Abschnittsnamen (Section) und einen Schlüssel (Key) auf den gewünschten Wert zugegriffen. Die Schnittstelle ist über unidirektionale AIS-Adapter realisiert, sodass der Baustein sowohl Werte lesen als auch schreiben kann.
@@ -48,17 +49,17 @@ Der Funktionsblock **INI_AIS** dient zum Laden und Speichern von Zeichenketten (
 
 Der Baustein enthält intern eine Instanz des Funktionsblocks `INI` (aus der Bibliothek `eclipse4diac::storage`). Die Abläufe sind wie folgt:
 
-1. **Initialisierung (INIT)**  
+1. **Initialisierung (INIT)**
    - Die Daten `QI`, `SECTION`, `KEY` und `DEFAULT_VALUE` werden an den internen INI-Baustein weitergeleitet.
    - Der INIT-Ereignisimpuls startet den INI-Baustein.
    - Nach Abschluss liefert INI das Ereignis `INITO` zurück, das nach außen als `INITO` des INI_AIS ausgegeben wird. Gleichzeitig werden die Ausgänge `QO` und `STATUS` übernommen.
    - Unmittelbar nach der Initialisierung wird im INI-Baustein automatisch der `GET`-Dienst ausgelöst, um den Wert aus der `settings.ini` zu lesen.
 
-2. **Lesen eines Wertes (über AIS_OUT)**  
+2. **Lesen eines Wertes (über AIS_OUT)**
    - Der gelesene Wert erscheint am Datenausgang `VALUEO` des INI-Bausteins und wird auf den Datenausgang `D1` des Adapter-Plugs `AIS_OUT` gelegt.
    - Das Ereignis `GETO` des INI-Bausteins wird auf den Ereigniseingang `E1` von `AIS_OUT` übertragen, sodass der empfangende Baustein den Wert abholen kann.
 
-3. **Schreiben eines Wertes (über AIS_IN)**  
+3. **Schreiben eines Wertes (über AIS_IN)**
    - Ein externer Baustein kann über den Adapter-Socket `AIS_IN` einen Wert (Ereignis `E1` mit Daten `D1`) an den INI_AIS senden.
    - Dieses Ereignis triggert den `SET`-Dienst des internen INI-Bausteins. Der ankommende Wert wird an den Dateneingang `VALUE` von INI übergeben.
    - Nach erfolgreichem Schreiben sendet INI das Ereignis `SETO`, welches an den Ereignisausgang `E1` von `AIS_OUT` weitergeleitet wird. Der geschriebene Wert wird gleichzeitig auch über `VALUEO` zurückgegeben, sodass der schreibende Baustein den Wert bestätigt bekommt.
@@ -102,4 +103,4 @@ Der **INI_AIS**-Funktionsblock ist eine praktische Erweiterung des Basis-`INI`-B
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

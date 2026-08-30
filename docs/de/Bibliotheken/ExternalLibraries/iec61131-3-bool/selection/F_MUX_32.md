@@ -3,6 +3,7 @@
 ![F_MUX_32](./F_MUX_32.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **F_MUX_32** ist ein generischer Multiplexer (Auswahlfunktion) gemäß IEC 61131-3. Er ermöglicht die Auswahl eines von 32 Eingangswerten (IN1 … IN32) und gibt diesen am Ausgang OUT weiter. Die Auswahl erfolgt über den ganzzahligen Selektor K. Der Baustein ist ereignisgesteuert: Bei einem Ereignis am Eingang REQ wird der aktuelle Wert von K ausgewertet und der entsprechende Eingangswert übernommen.

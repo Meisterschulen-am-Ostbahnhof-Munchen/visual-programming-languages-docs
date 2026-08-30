@@ -3,10 +3,12 @@
 ![CSV_WRITER_4](https://github.com/user-attachments/assets/376f3f75-18f2-4d8b-95ab-be25457694f3)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The CSV_WRITER_4 function block is used to write data to a CSV file. It supports saving up to four different data values in a structured format. The function block is particularly useful for data acquisition and logging in automation applications.
 ![CSV_WRITER_4](CSV_WRITER_4.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -71,6 +73,6 @@ CSV_WRITER_4 is a versatile function block for data acquisition, particularly we
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

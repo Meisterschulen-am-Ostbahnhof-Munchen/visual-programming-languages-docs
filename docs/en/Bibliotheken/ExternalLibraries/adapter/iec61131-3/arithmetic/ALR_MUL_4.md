@@ -3,6 +3,7 @@
 ![ALR_MUL_4](./ALR_MUL_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_MUL_4` performs an arithmetic multiplication of four input values. It is a generic function block (FB) for the 4diac IDE, based on the IEC 61499 standard. Signal transmission and processing are handled via special unidirectional analog adapters, enabling clean encapsulation of the data streams.
@@ -29,14 +30,14 @@ The function block `ALR_MUL_4` performs an arithmetic multiplication of four inp
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALR`): First input value (multiplicand 1) for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::ALR`): Second input value (multiplicand 2) for multiplication.
-* **IN3** (Type: `adapter::types::unidirectional::ALR`): Third input value (multiplicand 3) for multiplication.
-* **IN4** (Type: `adapter::types::unidirectional::ALR`): Fourth input value (multiplicand 4) for multiplication.
+- **IN1** (Type: `adapter::types::unidirectional::ALR`): First input value (multiplicand 1) for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::ALR`): Second input value (multiplicand 2) for multiplication.
+- **IN3** (Type: `adapter::types::unidirectional::ALR`): Third input value (multiplicand 3) for multiplication.
+- **IN4** (Type: `adapter::types::unidirectional::ALR`): Fourth input value (multiplicand 4) for multiplication.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALR`): Output for the calculated product of the four input values.
+- **OUT** (Type: `adapter::types::unidirectional::ALR`): Output for the calculated product of the four input values.
 
 ## Functionality
 
@@ -50,8 +51,8 @@ Since this is a generic function block that uses the class `GEN_ALR_MUL`, the im
 
 ## Technical Features
 
-* **Generic Function Block**: The attribute `GenericClassName` with the value `GEN_ALR_MUL` allows the function block to adapt flexibly to the specific data type implementation of the adapter used at runtime or during compilation.
-* **Encapsulation via Adapter**: The use of the unidirectional adapter `ALR` (`adapter::types::unidirectional::ALR`) ensures that data values and any associated status or trigger events are bundled compactly in a single connection. This significantly reduces the wiring effort in the function block diagram.
+- **Generic Function Block**: The attribute `GenericClassName` with the value `GEN_ALR_MUL` allows the function block to adapt flexibly to the specific data type implementation of the adapter used at runtime or during compilation.
+- **Encapsulation via Adapter**: The use of the unidirectional adapter `ALR` (`adapter::types::unidirectional::ALR`) ensures that data values and any associated status or trigger events are bundled compactly in a single connection. This significantly reduces the wiring effort in the function block diagram.
 
 ## State Overview
 
@@ -59,14 +60,14 @@ The function block has no internal state behavior (no state machine/ECC) and ope
 
 ## Application Scenarios
 
-* **Physical Calculations**: Calculation of more complex quantities that represent the product of several variables (e.g., power, energy calculations, or volumetric flow rates taking correction factors into account).
-* **Cascaded Scaling**: Applying multiple scaling or correction factors to an analog input signal in a single step.
-* **Signal Processing**: Preprocessing sensor values in control systems before the data is passed on to visualizations or actuators.
+- **Physical Calculations**: Calculation of more complex quantities that represent the product of several variables (e.g., power, energy calculations, or volumetric flow rates taking correction factors into account).
+- **Cascaded Scaling**: Applying multiple scaling or correction factors to an analog input signal in a single step.
+- **Signal Processing**: Preprocessing sensor values in control systems before the data is passed on to visualizations or actuators.
 
 ## Comparison with Similar Function Blocks
 
-* **Standard MUL Function Blocks (IEC 61131-3)**: Classic multiplication function blocks typically work directly with standard data types (e.g., `REAL`) and require separate event connections (`REQ`/`CNF`). `ALR_MUL_4` simplifies this through the use of adapters.
-* **ALR_MUL_2 / ALR_MUL_3**: These function blocks are designed for multiplying only two or three values. The `ALR_MUL_4` function block eliminates the need for additional intermediate steps and block cascades when four multiplicands are required, thus improving the performance and clarity of the control program.
+- **Standard MUL Function Blocks (IEC 61131-3)**: Classic multiplication function blocks typically work directly with standard data types (e.g., `REAL`) and require separate event connections (`REQ`/`CNF`). `ALR_MUL_4` simplifies this through the use of adapters.
+- **ALR_MUL_2 / ALR_MUL_3**: These function blocks are designed for multiplying only two or three values. The `ALR_MUL_4` function block eliminates the need for additional intermediate steps and block cascades when four multiplicands are required, thus improving the performance and clarity of the control program.
 
 ## Change Detection
 

@@ -3,6 +3,7 @@
 ![PoolReload](./PoolReload.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `PoolReload` ist ein Service-Interface-Baustein gemäß ISO 11783-6 (ISOBUS). Er ermöglicht das Nachladen oder Aktualisieren des Objektpools eines Virtual Terminals (VT) während der Laufzeit der Applikation. Typischerweise wird dieser Baustein eingesetzt, um z. B. zwischen verschiedenen Sprachvarianten umzuschalten oder geänderte Pool-Dateien dynamisch einzuspielen, ohne das Gesamtsystem neu starten zu müssen.
@@ -33,7 +34,7 @@ Der Funktionsblock `PoolReload` ist ein Service-Interface-Baustein gemäß ISO 1
 ### **Daten-Ausgänge**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `QO` | `BOOL` | Quality Output: `TRUE`, wenn das Nachladen erfolgreich war |
 | `STATUS` | `STRING` | Dienststatus (z. B. Fehlermeldung oder Erfolgsmeldung) |
 | `s16Result` | `INT` | Rückgabewert: `0` = `E_NO_ERR` (Erfolg), negative Werte entsprechen Fehlercodes |
@@ -68,7 +69,7 @@ Der Baustein kapselt die ISOBUS-Funktion `VTC_PoolReload()`. Der Ablauf gliedert
 Der Baustein kann folgende grundlegende Zustände durchlaufen:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Warten auf ein INIT-Ereignis. |
 | **INIT_PENDING** | Initialisierung wird ausgeführt; nach Abschluss wird `INITO` gesendet. |
 | **READY** | Nach erfolgreicher Initialisierung bereit für `REQ`. |
@@ -84,7 +85,7 @@ Der Baustein kann folgende grundlegende Zustände durchlaufen:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung |
-|----------|--------------|
+| ---------- | -------------- |
 | `PoolLoader` | Lädt den Pool nur beim Systemstart; kein Nachladen zur Laufzeit. |
 | `PoolActivate` | Schaltet zwischen bereits geladenen Pools um, erfordert aber vorheriges Laden. |
 | **`PoolReload`** | Vereint Laden und Aktualisieren in einem Schritt und ermöglicht dynamisches Nachladen während der Laufzeit. |

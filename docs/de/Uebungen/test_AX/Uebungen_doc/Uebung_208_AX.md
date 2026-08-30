@@ -2,7 +2,7 @@
 
 ![Uebung_208_AX_network](./Uebung_208_AX_network.svg)
 
-- **Titel**: Uebung_208_AX  
+- **Titel**: Uebung_208_AX
   *Interlock: ILOCK_FB_SR_AX (Zwei gegenseitig verriegelte Set-Dominante Latches via AX/AX2-Adapter)*
 
 * * * * * * * * * *
@@ -49,15 +49,15 @@ Diese Übung veranschaulicht die Realisierung einer gegenseitigen Verriegelung (
 
 Die Übung besteht aus zwei identischen parallelen Zweigen, die über eine gegenseitige Verriegelung verbunden sind.
 
-- **Erster Zweig**:  
-  Digitaleingang `DigitalInput_S1` (verbunden mit Hardware-Eingang `Input_I1`) liefert das Set-Signal an `ILOCK_SR_1.SET1`.  
-  Digitaleingang `DigitalInput_R1` (verbunden mit `Input_I2`) liefert das Reset-Signal an `ILOCK_SR_1.RESET`.  
+- **Erster Zweig**:
+  Digitaleingang `DigitalInput_S1` (verbunden mit Hardware-Eingang `Input_I1`) liefert das Set-Signal an `ILOCK_SR_1.SET1`.
+  Digitaleingang `DigitalInput_R1` (verbunden mit `Input_I2`) liefert das Reset-Signal an `ILOCK_SR_1.RESET`.
   Der Ausgang `ILOCK_SR_1.Q1` wird auf `DigitalOutput_Q1.OUT` gegeben und schaltet den Hardware-Ausgang `Output_Q1`.
 
-- **Zweiter Zweig**:  
+- **Zweiter Zweig**:
   Analog wird `ILOCK_SR_2` durch `DigitalInput_S2` (über `Input_I3`) gesetzt und durch `DigitalInput_R2` (über `Input_I4`) zurückgesetzt. Sein Ausgang `Q1` steuert `Output_Q2`.
 
-- **Interlock-Verbindung**:  
+- **Interlock-Verbindung**:
   Der Ausgang `ILOCK_SR_1.ILOCK_OUT` ist mit dem Eingang `ILOCK_SR_2.ILOCK_IN` verbunden. Dadurch wird erreicht, dass wenn `ILOCK_SR_1` gesetzt ist (Q1 = TRUE), das Setzen von `ILOCK_SR_2` blockiert wird. Umgekehrt (Symmetrie) – in dieser Konfiguration ist nur eine Richtung explizit verdrahtet, die andere wird implizit durch die interne Logik des Bausteins realisiert. Tatsächlich besitzt `ILOCK_FB_SR_AX` eine bidirektionale Verriegelung: beide Latches blockieren sich gegenseitig. Die zusätzliche Verbindung des `ILOCK_OUT` des einen zum `ILOCK_IN` des anderen stellt sicher, dass immer nur einer aktiv ist.
 
 **Ablauf**:
@@ -73,7 +73,7 @@ Die Übung besteht aus zwei identischen parallelen Zweigen, die über eine gegen
 - Anwendung set-dominanter SR-Latches.
 - Umgang mit Adapterverbindungen in 4diac-IDE (AX/AX2-Konzept).
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlagen der logiBUS-Ein-/Ausgabe, SR-Latch-Funktionalität.
 
 ## Zusammenfassung
@@ -84,4 +84,4 @@ Die Übung `Uebung_208_AX` demonstriert den Aufbau einer gegenseitigen Verriegel
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AUS_FIELDBUS_USINT_TO_SIGNAL](./AUS_FIELDBUS_USINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_FIELDBUS_USINT_TO_SIGNAL` is used to pass a USINT signal from a fieldbus adapter, taking a validity check into account. It mirrors the input value to the output if the signal is recognized as valid. An additional adapter outputs the validity status. The internal logic uses a dedicated fieldbus conversion block and an edge-triggered D flip-flop for synchronization.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -17,7 +19,7 @@ The function block `AUS_FIELDBUS_USINT_TO_SIGNAL` is used to pass a USINT signal
 ### **Event Outputs**
 
 | Name | Description |
-|-------------|--------------|
+| ------------- | -------------- |
 | `OUT.E1` | Event output via adapter `OUT` (plug) after successful mirroring of the valid signal. |
 | `VALID.E1` | Event output via adapter `VALID` (plug) after updating the validity status. |
 
@@ -30,14 +32,14 @@ The function block `AUS_FIELDBUS_USINT_TO_SIGNAL` is used to pass a USINT signal
 ### **Data Outputs**
 
 | Name | Type | Description |
-|-------------|-----|--------------|
+| ------------- | ----- | -------------- |
 | `OUT.D1` | (analogous to IN) | Output data value that mirrors the input value if the signal is valid. |
 | `VALID.D1` | BOOL | Validation flag: `TRUE` if the input signal is recognized as valid, otherwise `FALSE`. |
 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AUS` | Socket | Receives the raw signal (event + data) from the fieldbus. |
 | `OUT` | `adapter::types::unidirectional::AUS` | Plug | Passes the validated signal to downstream components. |
 | `VALID` | `adapter::types::unidirectional::AX` | Plug | Provides the validity status (event + BOOL). |
@@ -64,7 +66,7 @@ In summary: The output `OUT` mirrors the input `IN`, provided the signal is reco
 The internal state is defined by the D flip-flop `E_D_FF`. It has two states:
 
 | State | Description |
-|---------|---------------|
+| --------- | --------------- |
 | `Q = FALSE` (Initial) | Output `VALID.D1` indicates "invalid". After each event, the current value of `VALID` (`D`) is used. |
 | `Q = TRUE` | Output `VALID.D1` indicates "valid". The state remains stable until the next event. |
 

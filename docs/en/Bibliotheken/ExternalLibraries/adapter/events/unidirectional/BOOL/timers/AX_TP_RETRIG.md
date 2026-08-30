@@ -3,6 +3,7 @@
 ![AX_TP_RETRIG](./AX_TP_RETRIG.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_TP_RETRIG** function block is a standardized timer function block (pulse) in a retriggerable configuration. It generates a pulse of duration **PT** on the adapter output **Q** as soon as the input signal **IN** receives a rising edge (event REQ). The pulse is restarted (retriggered) with each new REQ event. A reset via the event input **R** advances the pulse duration **PT** and resets the timer.
@@ -33,7 +34,7 @@ No dedicated data outputs – pulse status is output via the **Q** adapter (data
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | **IN** | `adapter::types::unidirectional::AX` | Socket | Input – Receives the start signal (event **E1**) and the logical value (**D1**). A rising edge on **E1** triggers the pulse. |
 | **Q** | `adapter::types::unidirectional::AX` | Plug | Output – Outputs the pulse: As long as the pulse is active, **D1** = `TRUE`, otherwise it is FALSE. The event **E1** is sent with every state change. |
 
@@ -57,7 +58,7 @@ No dedicated data outputs – pulse status is output via the **Q** adapter (data
 The function block goes through the following states (based on the internal timer function block):
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | No pulse active; **Q.D1** = `FALSE`. |
 | **RUNNING** | Pulse active; **Q.D1** = `TRUE`. The timer runs for the duration **PT**. Upon retriggering, the timer is reset (remains in the RUNNING state). |
 | **TIMEOUT** | Pulse terminated; transition back to IDLE. |
@@ -74,7 +75,7 @@ Note: The reset (event **R**) always immediately returns to the IDLE state.
 ## Comparison with similar function blocks
 
 | Function block | Property |
-|----------|-------------|
+| ---------- | ------------- |
 | **AX_TP_RETRIG** | Retriggerable pulse timer with AX adapter. |
 | **E_TP** (Standard IEC 61499) | Simple pulse timer, non-retriggerable – restarting during the pulse is ignored. |
 | **E_TP_RETRIG** | Retriggerable version without adapter (pure event/data interface). |

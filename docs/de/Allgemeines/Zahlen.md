@@ -2,7 +2,7 @@
 
 ## 🎧 Podcast
 
-* [ISOBUS-Terminals: Zahlen verstehen – NumberVariable, InputNumber & OutputNumber erklärt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
+- [ISOBUS-Terminals: Zahlen verstehen – NumberVariable, InputNumber & OutputNumber erklärt](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISOBUS-Terminals-Zahlen-verstehen--NumberVariable--InputNumber--OutputNumber-erklrt-e36aatd)
 
 ## Zahlensysteme
 
@@ -33,27 +33,27 @@ Literale sind fest im Programmcode geschriebene Werte. Um der Steuerung mitzutei
 
 Ganzzahlen können ohne Nachkommastelle angegeben werden.
 
-*   `1234` (Dezimal)
-*   `-567` (Negativ)
-*   `16#ABCD` (Hexadezimal)
-*   `2#1010_0101` (Binär, Unterstriche dienen der Lesbarkeit)
+-   `1234` (Dezimal)
+-   `-567` (Negativ)
+-   `16#ABCD` (Hexadezimal)
+-   `2#1010_0101` (Binär, Unterstriche dienen der Lesbarkeit)
 
 ### Gleitpunktzahlen (Real)
 
 Werte mit Nachkommastellen oder in wissenschaftlicher Notation.
 
-*   `1.234`
-*   `-0.5`
-*   `1.0E-3` (entspricht 0.001)
+-   `1.234`
+-   `-0.5`
+-   `1.0E-3` (entspricht 0.001)
 
 ### Typisierte Literale
 
 Manchmal ist es wichtig, den Datentyp explizit anzugeben, um Mehrdeutigkeiten zu vermeiden.
 
-*   `INT#15`
-*   `UINT#15`
-*   `REAL#15.0`
-*   `TIME#5s` (Zeitdauer von 5 Sekunden)
+-   `INT#15`
+-   `UINT#15`
+-   `REAL#15.0`
+-   `TIME#5s` (Zeitdauer von 5 Sekunden)
 
 ---
 
@@ -61,6 +61,6 @@ Manchmal ist es wichtig, den Datentyp explizit anzugeben, um Mehrdeutigkeiten zu
 
 Für tiefere Einblicke in die Mengenlehre der Zahlen (natürliche, ganze, reelle Zahlen) bieten folgende Begriffe eine gute Grundlage:
 
-*   **Natürliche Zahlen (ℕ):** Positive ganze Zahlen {1, 2, 3, ...} – oft als Grundlage für `UINT` (Unsigned Integer).
-*   **Ganze Zahlen (ℤ):** Zahlen ohne Nachkommastelle, inkl. Null und negativer Zahlen – Grundlage für `INT`, `DINT`, `LINT`.
-*   **Reelle Zahlen (ℝ):** Zahlen mit Nachkommastellen – Grundlage für `REAL` und `LREAL`.
+-   **Natürliche Zahlen (ℕ):** Positive ganze Zahlen {1, 2, 3, ...} – oft als Grundlage für `UINT` (Unsigned Integer).
+-   **Ganze Zahlen (ℤ):** Zahlen ohne Nachkommastelle, inkl. Null und negativer Zahlen – Grundlage für `INT`, `DINT`, `LINT`.
+-   **Reelle Zahlen (ℝ):** Zahlen mit Nachkommastellen – Grundlage für `REAL` und `LREAL`.

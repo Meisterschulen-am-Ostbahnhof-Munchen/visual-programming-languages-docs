@@ -64,14 +64,14 @@ Compared to simple digital input blocks, Button_IE offers advanced functionality
 
 ## 🛠️ Related exercises
 
-* [Uebung_010b7](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b7.md)
-* [Uebung_010b7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b7_AX.md)
-* [Uebung_010b8](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b8.md)
-* [Uebung_010b8_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b8_AX.md)
-* [Uebung_010b9](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b9.md)
-* [Uebung_010b9_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b9_AX.md)
-* [Uebung_010bA](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA.md)
-* [Uebung_010bA_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA_AX.md)
+- [Uebung_010b7](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b7.md)
+- [Uebung_010b7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b7_AX.md)
+- [Uebung_010b8](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b8.md)
+- [Uebung_010b8_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b8_AX.md)
+- [Uebung_010b9](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b9.md)
+- [Uebung_010b9_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b9_AX.md)
+- [Uebung_010bA](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010bA.md)
+- [Uebung_010bA_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010bA_AX.md)
 
 ## Conclusion
 

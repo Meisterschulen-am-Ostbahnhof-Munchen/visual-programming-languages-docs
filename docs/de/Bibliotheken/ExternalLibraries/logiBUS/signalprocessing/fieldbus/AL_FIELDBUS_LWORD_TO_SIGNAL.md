@@ -31,7 +31,7 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` dient der filternden Weitergabe
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AL` | Empfängt das Ereignis- und Datensignal von einem vorgeschalteten Baustein. |
 | `OUT` | Plug | `adapter::types::unidirectional::AL` | Sendet das gefilterte Signal und zugehöriges Ereignis an nachfolgende Bausteine. |
 | `VALID` | Plug | `adapter::types::unidirectional::AX` | Sendet den Gültigkeitsstatus als booleschen Wert und ein Bestätigungsereignis. |
@@ -86,4 +86,4 @@ Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL` ist ein spezialisierter Composi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

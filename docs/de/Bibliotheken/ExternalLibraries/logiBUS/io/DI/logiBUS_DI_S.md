@@ -1,6 +1,7 @@
 # logiBUS_DI_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_DI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines digitalen Eingangs (DI) innerhalb des logiBUS-Frameworks dient. Er definiert die grundlegenden Parameter, die notwendig sind, um einen physischen oder logischen Eingangspunkt auf einem logiBUS-kompatiblen I/O-System anzusteuern. Dieser Datentyp wird typischerweise als Eingabe für spezifische I/O-Funktionsblöcke verwendet.
@@ -27,9 +28,9 @@ Der Datentyp `logiBUS_DI_S` ist eine reine Datenhaltungsstruktur. Seine Funktion
 
 ## Technische Besonderheiten
 
-*   **Datentyp `USINT`:** Die Verwendung eines `USINT` (0...255) für den Pin legt nahe, dass bis zu 256 verschiedene Eingangskanäle pro Gerät oder Modul adressierbar sind.
-*   **Initialwert 255:** Dieser Wert liegt außerhalb des typischen Nutzbereichs (0...n, wobei n<255) und kann von der Anwendungslogik oder dem Treiber als Indikator für eine nicht vorgenommene Konfiguration interpretiert werden.
-*   **StructuredType:** Als `StructuredType` ist dieser Baustein kein ausführbarer Funktionsblock, sondern ein reiner Datentyp, der in der Deklaration von Variablen und Schnittstellen anderer FBs verwendet wird.
+-   **Datentyp `USINT`:** Die Verwendung eines `USINT` (0...255) für den Pin legt nahe, dass bis zu 256 verschiedene Eingangskanäle pro Gerät oder Modul adressierbar sind.
+-   **Initialwert 255:** Dieser Wert liegt außerhalb des typischen Nutzbereichs (0...n, wobei n<255) und kann von der Anwendungslogik oder dem Treiber als Indikator für eine nicht vorgenommene Konfiguration interpretiert werden.
+-   **StructuredType:** Als `StructuredType` ist dieser Baustein kein ausführbarer Funktionsblock, sondern ein reiner Datentyp, der in der Deklaration von Variablen und Schnittstellen anderer FBs verwendet wird.
 
 ## Zustandsübersicht
 
@@ -37,23 +38,23 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DI_S` keinen Zus
 
 ## Anwendungsszenarien
 
-*   **Konfiguration von I/O-Blöcken:** Primär dient dieser Struct als Eingabeparameter für Funktionsblöcke wie `logiBUS_DI` oder ähnliche, die den eigentlichen Lesevorgang von einem digitalen Eingang durchführen.
-*   **Parametrisierung über Netzwerke:** Die Struktur kann leicht in übergeordneten Steuerungen (z.B. einer SPS) instanziiert, konfiguriert (`Pin`-Nummer gesetzt) und an untergeordnete I/O-Knoten oder Treiberbausteine weitergegeben werden.
-*   **Strukturierte Programmierung:** Ermöglicht eine saubere Kapselung der Konfigurationsdaten für digitale Eingänge, was die Wiederverwendbarkeit und Lesbarkeit des Codes erhöht.
+-   **Konfiguration von I/O-Blöcken:** Primär dient dieser Struct als Eingabeparameter für Funktionsblöcke wie `logiBUS_DI` oder ähnliche, die den eigentlichen Lesevorgang von einem digitalen Eingang durchführen.
+-   **Parametrisierung über Netzwerke:** Die Struktur kann leicht in übergeordneten Steuerungen (z.B. einer SPS) instanziiert, konfiguriert (`Pin`-Nummer gesetzt) und an untergeordnete I/O-Knoten oder Treiberbausteine weitergegeben werden.
+-   **Strukturierte Programmierung:** Ermöglicht eine saubere Kapselung der Konfigurationsdaten für digitale Eingänge, was die Wiederverwendbarkeit und Lesbarkeit des Codes erhöht.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Einfache `USINT` Variable:** Anstelle eines Structs könnte direkt eine `USINT`-Variable verwendet werden. Der Struct bietet jedoch semantische Klarheit (der Name `logiBUS_DI_S` beschreibt den Zweck) und ist leichter erweiterbar, falls zukünftig weitere Konfigurationsparameter (wie Filterzeit, Invertierung) hinzugefügt werden müssen.
-*   **Gerätespezifische Structs:** Innerhalb des logiBUS-Ökosystems könnte es ähnliche Structs für andere Funktionen geben (z.B. `logiBUS_DO_S` für digitale Ausgänge, `logiBUS_AI_S` für analoge Eingänge). Diese würden eine einheitliche Konfigurationsphilosophie über verschiedene I/O-Typen hinweg ermöglichen.
+-   **Einfache `USINT` Variable:** Anstelle eines Structs könnte direkt eine `USINT`-Variable verwendet werden. Der Struct bietet jedoch semantische Klarheit (der Name `logiBUS_DI_S` beschreibt den Zweck) und ist leichter erweiterbar, falls zukünftig weitere Konfigurationsparameter (wie Filterzeit, Invertierung) hinzugefügt werden müssen.
+-   **Gerätespezifische Structs:** Innerhalb des logiBUS-Ökosystems könnte es ähnliche Structs für andere Funktionen geben (z.B. `logiBUS_DO_S` für digitale Ausgänge, `logiBUS_AI_S` für analoge Eingänge). Diese würden eine einheitliche Konfigurationsphilosophie über verschiedene I/O-Typen hinweg ermöglichen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
-* [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
-* [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
-* [Uebung_003c_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003c_sub.md)
-* [Uebung_003c_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
-* [Uebung_033_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_033_sub.md)
+- [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
+- [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
+- [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
+- [Uebung_003c_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003c_sub.md)
+- [Uebung_003c_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
+- [Uebung_033_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_033_sub.md)
 
 ## Fazit
 
@@ -63,4 +64,4 @@ Der `logiBUS_DI_S` ist ein grundlegender und spezifischer Konfigurationsbaustein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

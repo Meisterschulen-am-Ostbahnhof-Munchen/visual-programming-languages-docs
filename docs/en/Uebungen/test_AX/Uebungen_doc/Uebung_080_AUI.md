@@ -3,9 +3,11 @@
 ![Uebung_080_AUI_network](./Uebung_080_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an **adapter-based up counter (AUI_CTU)** in 4diac. The counter is incremented via an event input from a push button (Input_I1) and reset via a second push button (Input_I2). The current counter value is output both on a digital output (Output_Q1) and as a numeric value via a terminal output. This exercise teaches how to use the adapter interface for events and convert them into data values.
+
 ## Function Blocks (FBs) Used
 
 The network editor of the subapplication contains six function blocks. These are described in detail below.
@@ -78,8 +80,8 @@ This exercise is set up as a subapplication (`Uebung_080_AUI`) and does not requ
 
 The new value is immediately displayed on the terminal.
 
-3. When the preset threshold (PV) is reached, `Output_Q1` is set to `TRUE`.
-4. Pressing `Input_I2` resets the counter to 0 (the output also reverts to `FALSE`).
+1. When the preset threshold (PV) is reached, `Output_Q1` is set to `TRUE`.
+2. Pressing `Input_I2` resets the counter to 0 (the output also reverts to `FALSE`).
 
 ## Summary
 
@@ -96,5 +98,5 @@ This exercise demonstrates how to link an adapter-based counter (AUI_CTU) in 4di
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

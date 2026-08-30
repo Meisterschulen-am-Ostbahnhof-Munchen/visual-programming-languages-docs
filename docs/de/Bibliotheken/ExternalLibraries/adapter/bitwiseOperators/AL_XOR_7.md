@@ -3,6 +3,7 @@
 ![AL_XOR_7](./AL_XOR_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AL_XOR_7** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 7 Eingangswerten vom Typ `LWORD` (64-Bit-Bitmuster (Langwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

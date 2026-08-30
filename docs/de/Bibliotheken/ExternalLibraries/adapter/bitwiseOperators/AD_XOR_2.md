@@ -3,6 +3,7 @@
 ![AD_XOR_2](./AD_XOR_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_XOR_2** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 2 Eingangswerten vom Typ `DWORD` (32-Bit-Bitmuster (Doppelwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

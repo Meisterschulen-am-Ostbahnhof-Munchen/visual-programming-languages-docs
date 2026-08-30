@@ -3,9 +3,11 @@
 ![AI_SPLIT_8](./AI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_SPLIT_8** is used to distribute an analog input signal (type *AI*) to eight identical analog output signals. The block is implemented as a generic FB (GenericClassName: `GEN_AI_SPLIT`) and is used in the 4diac IDE to make a single analog signal usable multiple times.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | **IN** | `adapter::types::unidirectional::AI` | Socket (Input) | Receives the analog signal, which is distributed to all outputs. |
 | **OUT1** – **OUT8** | `adapter::types::unidirectional::AI` | Plug (Output) | Eight identical outputs that provide the signal present at the input. |
 
@@ -69,6 +71,6 @@ The **AI_SPLIT_8** is a simple, generic function block for multiplying an analog
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

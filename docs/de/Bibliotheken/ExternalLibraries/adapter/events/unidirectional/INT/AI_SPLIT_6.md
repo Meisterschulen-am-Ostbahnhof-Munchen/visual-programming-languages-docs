@@ -27,7 +27,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | IN | `adapter::types::unidirectional::AI` | Einzige analoge Eingangsadapter (Quelle) |
 | Ausgang (Plug) | OUT1 | `adapter::types::unidirectional::AI` | Erster Ausgang (1:1-Weiterleitung von IN) |
 | Ausgang (Plug) | OUT2 | `adapter::types::unidirectional::AI` | Zweiter Ausgang |
@@ -73,4 +73,4 @@ Der **AI_SPLIT_6** ist ein minimaler, aber nützlicher Baustein zur Verteilung a
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

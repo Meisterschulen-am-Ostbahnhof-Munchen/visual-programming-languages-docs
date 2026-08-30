@@ -3,6 +3,7 @@
 ![logiBUS_LED_PWM_QXA](./logiBUS_LED_PWM_QXA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_LED_PWM_QXA` ist ein Composite-Baustein zur Steuerung einer PWM-gesteuerten LED über den logiBUS. Er fasst die Konfiguration und Ausgabe eines LED-PWM-Signals zusammen und stellt eine einheitliche Schnittstelle für Initialisierung, Parametrierung und Betrieb bereit.
@@ -48,13 +49,13 @@ Der Funktionsblock `logiBUS_LED_PWM_QXA` ist ein Composite-Baustein zur Steuerun
 
 Der Baustein ist als Composition realisiert und enthält intern den Sub-FB `logiBUS_LED_PWM_QX`, der die eigentliche PWM‑Ansteuerung umsetzt.
 
-1. **Initialisierung (INIT):**  
+1. **Initialisierung (INIT):**
    Der FB wird durch das Ereignis `INIT` gestartet. Dabei werden die Parameter `QI`, `PARAMS`, `Output` und `FREQ` an den Sub-Baustein weitergeleitet. Nach erfolgreicher Initialisierung gibt der Sub-Baustein `INITO` und die Ausgangsdaten `QO` und `STATUS` zurück.
 
-2. **Betrieb:**  
+2. **Betrieb:**
    Der Adapter `OUT` empfängt von der Ressource ein Ereignis an `E1`. Dieses wird als `REQ` an den Sub-FB durchgeschaltet. Der Sub-FB verarbeitet die Anfrage und sendet über den Adapter-Datenkanal `OUT.D1` die Ausgangsdaten (den aktuellen PWM-Wert sowie das Status-Signal) an die Ressource. Die Bestätigung `CNF` des Sub-FBs wird als `CNF` des Composite-FBs ausgegeben.
 
-3. **Fehlerbehandlung:**  
+3. **Fehlerbehandlung:**
    Treten während der Initialisierung oder im Betrieb Fehler auf, wird der Status über die Variable `STATUS` gemeldet. Die Ausgangs-Validierung erfolgt über `QO`.
 
 ## Technische Besonderheiten
@@ -92,4 +93,4 @@ Der `logiBUS_LED_PWM_QXA` Funktionsblock kapselt die PWM-Ansteuerung einer LED �
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

@@ -3,6 +3,7 @@
 ![OR_3](https://user-images.githubusercontent.com/116869307/214144056-e850a789-92e3-46c0-ba3c-97960b404daa.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The OR_3 function block is a generic function block for calculating bitwise Boolean OR operations with three inputs. It performs a logical OR operation at the bit level and supports various bit data types according to the IEC 61131-3 standard.
@@ -63,8 +64,8 @@ Compared to simple OR blocks with only two inputs, OR_3 offers the possibility o
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
-* [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+- [Exercise_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)
+- [Exercise_002a5b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
 
 ## Conclusion
 

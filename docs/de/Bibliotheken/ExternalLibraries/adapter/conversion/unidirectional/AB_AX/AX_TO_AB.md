@@ -3,6 +3,7 @@
 ![AX_TO_AB](./AX_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite-Funktionsblock `AX_TO_AB` dient zur Umwandlung eines BOOL-Adaptersignals vom Typ `AX` in ein BYTE-Adaptersignal vom Typ `AB`. Er kapselt die Typkonvertierung und das Durchreichen von Ereignissen in einer wiederverwendbaren Einheit.
@@ -42,17 +43,17 @@ Der Composite-Funktionsblock `AX_TO_AB` dient zur Umwandlung eines BOOL-Adapters
 
 ## Funktionsweise
 
-Der Funktionsblock besteht intern nur aus Verbindungen, die den Ereignis- und Datenpfad vom Socket `AX_IN` zum Plug `AB_OUT` durchschalten.  
+Der Funktionsblock besteht intern nur aus Verbindungen, die den Ereignis- und Datenpfad vom Socket `AX_IN` zum Plug `AB_OUT` durchschalten.
 
-- Das Ereignis `E1` wird ohne Verzögerung oder Veränderung weitergereicht.  
+- Das Ereignis `E1` wird ohne Verzögerung oder Veränderung weitergereicht.
 - Der Datenwert `D1` wird vom Typ `BOOL` in den Typ `BYTE` gewandelt. Dabei wird der boolesche Wert `TRUE` in das Byte `1` und `FALSE` in das Byte `0` umgesetzt. Die Konvertierung erfolgt implizit durch die Laufzeitumgebung von 4diac.
 
 Da es sich um einen Composite-FB handelt, werden alle internen Verbindungen zur Entwurfszeit festgelegt; es gibt keine dynamische Logik oder Zustandsautomaten.
 
 ## Technische Besonderheiten
 
-- **Composite-Typ**: Der Baustein ist ein reiner Netzwerk-FB ohne eigene Algorithmen. Die Konvertierung wird durch die Verbindung zweier unterschiedlicher Adaptertypen erreicht.  
-- **Typkonvertierung**: Die Umwandlung von `BOOL` zu `BYTE` ist standardkonform und nutzt die implizite Cast-Funktion der 4diac-IDE. Dadurch entfällt der Einsatz eines separaten Konvertierungsbausteins.  
+- **Composite-Typ**: Der Baustein ist ein reiner Netzwerk-FB ohne eigene Algorithmen. Die Konvertierung wird durch die Verbindung zweier unterschiedlicher Adaptertypen erreicht.
+- **Typkonvertierung**: Die Umwandlung von `BOOL` zu `BYTE` ist standardkonform und nutzt die implizite Cast-Funktion der 4diac-IDE. Dadurch entfällt der Einsatz eines separaten Konvertierungsbausteins.
 - **Versionierung**: Der FB ist mit Version `1.0` vom 17.02.2026 versehen und für die Nutzung im Package `adapter::conversion::unidirectional` vorgesehen.
 
 ## Zustandsübersicht
@@ -61,8 +62,8 @@ Der Baustein besitzt keine internen Zustände – er arbeitet rein kombinatorisc
 
 ## Anwendungsszenarien
 
-- **Anbindung von Sensoren/Aktoren**: Wenn ein Gerät oder eine Steuerung als BOOL-Signal arbeitet, das Zielsystem aber ein BYTE-Adapterformat erwartet, kann `AX_TO_AB` als Vermittler eingesetzt werden.  
-- **Adapterbrücken**: In heterogenen Automatisierungsnetzwerken, in denen unterschiedliche Adapterprotokolle verwendet werden, erlaubt der FB eine einfache und typsichere Verbindung.  
+- **Anbindung von Sensoren/Aktoren**: Wenn ein Gerät oder eine Steuerung als BOOL-Signal arbeitet, das Zielsystem aber ein BYTE-Adapterformat erwartet, kann `AX_TO_AB` als Vermittler eingesetzt werden.
+- **Adapterbrücken**: In heterogenen Automatisierungsnetzwerken, in denen unterschiedliche Adapterprotokolle verwendet werden, erlaubt der FB eine einfache und typsichere Verbindung.
 - **Test und Simulation**: Der FB kann als einfacher Konverter in Testumgebungen genutzt werden, um Signale zwischen verschiedenen Logikschichten zu übersetzen.
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -77,4 +78,4 @@ Der Composite-FB `AX_TO_AB` bietet eine kompakte und elegante Lösung zur Umwand
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

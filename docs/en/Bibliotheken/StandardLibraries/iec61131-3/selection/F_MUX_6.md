@@ -3,6 +3,7 @@
 ![F_MUX_6](F_MUX_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_MUX_6` is the generic 6-input variant of the standard multiplexer block `F_MUX` (cf. `F_MUX_2`/`F_MUX_3`/`F_MUX_4`). Based on the selector `K`, it picks one of 6 input values (`IN1`, `IN2`, `IN3`, `IN4`, `IN5`, `IN6`) and outputs it via `OUT`.

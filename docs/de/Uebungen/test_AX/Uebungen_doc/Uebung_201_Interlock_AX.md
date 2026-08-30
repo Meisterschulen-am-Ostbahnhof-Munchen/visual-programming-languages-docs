@@ -3,6 +3,7 @@
 ![Uebung_201_Interlock_AX_network](./Uebung_201_Interlock_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung erweitert die grundlegende Interlock-Schaltung auf eine komplexere Anwendung (Advanced eXercise). Ziel ist es, vier digitale Eingänge (I1–I4) über eine verkettete Verriegelungslogik (Interlock) mit vier digitalen Ausgängen (Q1–Q4) zu verbinden. Die Besonderheit liegt in der seriellen Verschaltung der Interlock-Bausteine: Der Freigabeausgang eines Bausteins wird mit dem Freigabeeingang des nächsten Bausteins verbunden, sodass eine Abhängigkeitskette entsteht. Dies ermöglicht zeitliche oder logische Sperren zwischen aufeinanderfolgenden Ausgängen und eignet sich für Anwendungen wie sequenzielle Maschinensteuerungen oder Sicherheitsschaltungen.
@@ -79,4 +80,4 @@ Die Übung `Uebung_201_Interlock_AX` demonstriert die praktische Anwendung verke
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

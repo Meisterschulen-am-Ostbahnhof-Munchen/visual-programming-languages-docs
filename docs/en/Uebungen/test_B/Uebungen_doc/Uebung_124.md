@@ -1,8 +1,9 @@
 # Exercise_124: ISOBUS Send Message Exercise
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_124`. Here, we move beyond standard messages and send custom data packets (PGNs) to a specific partner in the network.
+This article describes the logiBUS® exercise `Uebung_124`. Here, we move beyond standard messages and send custom data packets (PGNs) to a specific partner in the network
 ----
+
 ## Objective of the Exercise
 
 Using the function block `AlPgnTxNew8B`. It demonstrates how to define a proprietary message (Proprietary PGN) and send it to a specific ECU.
@@ -17,11 +18,11 @@ Using the function block `AlPgnTxNew8B`. It demonstrates how to define a proprie
 
 ![Uebung_124_network](./Uebung_124_network.svg)
 
-* **`NmGetCfInfo_1`**: Searches for the target partner (here, a virtual terminal).
-* **`AlPgnTxNew8B`**: The send block for 8-byte messages.
-* **Parameters**:
-* `u32Pgn`: The message number (here, `61184` = Proprietary A).
-* `Data`: The message content (8 bytes of hexadecimal data).
+- **`NmGetCfInfo_1`**: Searches for the target partner (here, a virtual terminal).
+- **`AlPgnTxNew8B`**: The send block for 8-byte messages.
+- **Parameters**:
+- `u32Pgn`: The message number (here, `61184` = Proprietary A).
+- `Data`: The message content (8 bytes of hexadecimal data).
 
 -----
 

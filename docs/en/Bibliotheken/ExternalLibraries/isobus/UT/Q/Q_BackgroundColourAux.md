@@ -1,10 +1,12 @@
 # Q_BackgroundColourAux
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_BackgroundColourAux** is a standards-compliant function block for controlling secondary background colors in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.20) specification for auxiliary colors in agricultural tax systems.
 ![Q_BackgroundColourAux](Q_BackgroundColourAux.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -38,12 +40,15 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object ID for auxiliary element
 - `INITO` confirms operational readiness
-2. **Color Change**:
+1. **Color Change**:
+
 - `REQ` triggers with new auxiliary color code (0-255)
 - `CNF` returns result and previous color value
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -60,7 +65,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Standard auxiliary colors (excerpt)
 
 | Code | Scope | Typical color |
-|------|------------------------|-----------------|
+| ------ | ------------------------ | ----------------- |
 | 16 | Status bar | Blue |
 | 32 | Secondary areas | Gray |
 | 48 | Guidelines | Light blue |
@@ -68,7 +73,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
 | -129 | VT_E_ISO_INSTANCE_INVALID | Invalid instance |
@@ -83,7 +88,7 @@ ID_NULL (65535) is not a command target but deactivates the FB when used with `I
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_BackgroundColourAux | Q_BackgroundColour | VtAuxColour |
-|---------------|-----------------------|--------------------|-------------|
+| --------------- | ----------------------- | -------------------- | ------------- |
 | ISO Standard | ✔ | ✔ | ✖ |
 | Color range | Auxiliary elements | Primary elements | All |
 | Usage | Secondary | Primary | Universal |

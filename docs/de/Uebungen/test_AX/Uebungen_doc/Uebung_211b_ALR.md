@@ -3,43 +3,44 @@
 ![Uebung_211b_ALR_network](./Uebung_211b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen Vorwärtszähler nach IEC 61131-3 (ADI_FB_CTU) im Adapter-Format. Der Zählerwert wird auf einem Terminal (PHYS) ausgegeben. Die Konfiguration ermöglicht das Zählen von Impulsen, Rücksetzen des Zählers und die Darstellung des aktuellen Zählwertes inklusive negativer Werte.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-- **ADI_FB_CTU**  
-  Typ: `adapter::iec61131::counters::ADI_FB_CTU`  
+- **ADI_FB_CTU**
+  Typ: `adapter::iec61131::counters::ADI_FB_CTU`
   Vorwärtszähler-Baustein (DINT). Zählt bei jedem positiven Flanke am Eingang CU. Der aktuelle Zählerstand wird am Ausgang CV ausgegeben. Bei Erreichen des an PV angelegten Sollwerts wird der Ausgang Q gesetzt. Der Eingang R setzt den Zähler zurück.
 
-- **ADI_DINT_TO_DI**  
-  Typ: `adapter::conversion::unidirectional::ADI_DINT_TO_DI`  
-  Wandelt einen DINT-Wert in einen DI-Datenstrom um.  
+- **ADI_DINT_TO_DI**
+  Typ: `adapter::conversion::unidirectional::ADI_DINT_TO_DI`
+  Wandelt einen DINT-Wert in einen DI-Datenstrom um.
   Parameter: OUT = DINT#5 (initialer Sollwert für den Zähler).
 
-- **Input_CU**  
-  Typ: `logiBUS::io::DI::logiBUS_IXA`  
-  Digitaler Eingang für den Zählimpuls (CU).  
+- **Input_CU**
+  Typ: `logiBUS::io::DI::logiBUS_IXA`
+  Digitaler Eingang für den Zählimpuls (CU).
   Parameter: QI = TRUE, Input = Input_I1.
 
-- **Input_R**  
-  Typ: `logiBUS::io::DI::logiBUS_IXA`  
-  Digitaler Eingang für den Rücksetzbefehl (R).  
+- **Input_R**
+  Typ: `logiBUS::io::DI::logiBUS_IXA`
+  Digitaler Eingang für den Rücksetzbefehl (R).
   Parameter: QI = TRUE, Input = Input_I2.
 
-- **Output_Q1**  
-  Typ: `logiBUS::io::DQ::logiBUS_QXA`  
-  Digitaler Ausgang für das Zählererreignis (Q).  
+- **Output_Q1**
+  Typ: `logiBUS::io::DQ::logiBUS_QXA`
+  Digitaler Ausgang für das Zählererreignis (Q).
   Parameter: QI = TRUE, Output = Output_Q1.
 
-- **ADI_TO_ALR**  
-  Typ: `adapter::conversion::unidirectional::ADI_TO_ALR`  
+- **ADI_TO_ALR**
+  Typ: `adapter::conversion::unidirectional::ADI_TO_ALR`
   Wandelt den ADI-Datenstrom des Zählerstandes in ein ALR-Format um (für die Terminalausgabe).
 
-- **Q_NumericValue_1**  
-  Typ: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`  
-  Gibt den Zählerstand als numerischen Wert auf dem Terminal (PHYS) aus.  
+- **Q_NumericValue_1**
+  Typ: `isobus::UT::Q::Q_NumericValue_PHYSA_LREAL`
+  Gibt den Zählerstand als numerischen Wert auf dem Terminal (PHYS) aus.
   Parameter: stObj = OutputNumber_N3.
 
 ## Programmablauf und Verbindungen
@@ -56,9 +57,9 @@ Der Programmablauf ist ereignisgesteuert:
 
 5. **Zählerstand**: Der aktuelle Zählerwert (CV) wird über `ADI_FB_CTU.CV` an `ADI_TO_ALR.ADI_IN` übergeben. Der Baustein ADI_TO_ALR wandelt das Format in ALR um und leitet es an `Q_NumericValue_1.lrPhys` weiter. Dies ermöglicht die Ausgabe des Zählerstandes auf dem Terminal (PHYS).
 
-**Hinweise aus der Implementierung**:  
+**Hinweise aus der Implementierung**:
 
-- Negative Zählerwerte sind möglich.  
+- Negative Zählerwerte sind möglich.
 - Bei hohen Ereignisraten kann ein AX_D_FF (Event-Filter) zwischengeschaltet werden, um die Eventlast zu reduzieren.
 
 ## Zusammenfassung
@@ -69,4 +70,4 @@ Die Übung demonstriert die Verwendung eines standardisierten IEC 61131-3 Vorwä
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

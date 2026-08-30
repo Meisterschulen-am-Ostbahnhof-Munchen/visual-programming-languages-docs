@@ -3,6 +3,7 @@
 ![AW_XOR_6](./AW_XOR_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AW_XOR_6** is a generic function block for the bitwise XOR (exclusive OR) operation across 6 input values of type `WORD` (16-bit bit pattern (word)). Unlike the Boolean operation on single truth values (as in the `AX_XOR` blocks), every bit of the data word is combined independently here.

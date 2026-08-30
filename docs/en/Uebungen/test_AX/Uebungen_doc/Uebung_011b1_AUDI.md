@@ -3,6 +3,7 @@
 ![Uebung_011b1_AUDI_network](./Uebung_011b1_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of two ISOBUS numeric input values and their addition using special adapter blocks. The two incoming values (integers) are converted into an "AUDI"-compatible type via an adapter (`AD_TO_AUDI`), then summed in an addition block (`AUDI_ADD_2`), and the result is provided as an ISOBUS output object via an output block (`Q_NumericValue_AUDI`).
@@ -72,6 +73,6 @@ It provides fundamental knowledge of working with adapter interfaces and data fl
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

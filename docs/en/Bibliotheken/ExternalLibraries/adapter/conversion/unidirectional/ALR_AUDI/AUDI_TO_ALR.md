@@ -3,9 +3,11 @@
 ![AUDI_TO_ALR](./AUDI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUDI_TO_ALR** function block is a composite module that converts a unidirectional adapter of type **AUDI** (data type `UDINT`) into an adapter of type **ALR** (data type `LREAL`). It serves as a simple link between two different adapter interfaces, thus enabling the integration of components based on different data formats.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AUDI_TO_ALR** function block is a composite module that converts a unidire
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Socket (Input) | `AUDI_IN` | `adapter::types::unidirectional::AUDI` | Receives the UDINT data and the associated event |
 | Plug (Output) | `ALR_OUT` | `adapter::types::unidirectional::ALR` | Provides the converted LREAL data and the event |
 
@@ -44,6 +46,7 @@ The **AUDI_TO_ALR** function block is a composite module that converts a unidire
 The function block forwards the incoming event `E1` from socket `AUDI_IN` directly to plug `ALR_OUT`. Simultaneously, the data value `D1` (type `UDINT`) is transferred unchanged to the output data channel `D1` (type `LREAL`). The actual type conversion from `UDINT` to `LREAL` takes place within the adapter interfaces used; the composite block itself does not perform any arithmetic or logical transformation, but merely serves as a wiring aid.
 
 ...
+
 ## Technical Features
 
 - **Pure Adapter Passthrough:** The module contains no logic or state machines of its own – it simply connects the corresponding channels of the two adapters.
@@ -72,6 +75,6 @@ AUDI_TO_ALR` is a minimal yet useful composite block for connecting two unidirec
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

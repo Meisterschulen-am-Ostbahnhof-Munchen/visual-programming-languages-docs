@@ -2,11 +2,13 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+
 ----
 ![SPLIT_LWORD_INTO_QUARTERS](https://github.com/user-attachments/assets/673b8e11-a630-41ed-ab74-5c16e3fe349b)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_LWORD_INTO_QUARTERS` extracts the 32 quarter bytes (8 bits each) from a 64-bit LWORD. This allows for the targeted processing of individual byte segments within a long word.

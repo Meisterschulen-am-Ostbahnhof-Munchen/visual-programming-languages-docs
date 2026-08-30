@@ -30,7 +30,7 @@ No data outputs are available.
 The module has one socket (input) and five plugs (outputs):
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Input | IN | `adapter::types::unidirectional::ALR` | Receives the ALR signal to be distributed |
 | Output | OUT1 | `adapter::types::unidirectional::ALR` | First output with the identical ALR signal |
 | Output | OUT2 | `adapter::types::unidirectional::ALR` | Second output with the identical ALR signal |
@@ -60,7 +60,7 @@ The **ALR_SPLIT_5** is a simple yet valuable component for multiplying ALR signa
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

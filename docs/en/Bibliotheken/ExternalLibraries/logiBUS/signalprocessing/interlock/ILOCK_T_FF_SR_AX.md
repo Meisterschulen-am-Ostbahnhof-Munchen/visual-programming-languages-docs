@@ -3,15 +3,17 @@
 ![ILOCK_T_FF_SR_AX](./ILOCK_T_FF_SR_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_T_FF_SR_AX** is a composite function block (FB) for a latching toggle flip-flop with set/reset functionality and an AE2 adapter interface. It enables the targeted setting, resetting, and clocking of an output signal, taking into account latching states that are read and output via bidirectional adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|------|-----|------------|
+| ------ | ----- | ------------ |
 | S | Event | Sets output Q (if not latched) |
 | R | Event | Resets output Q |
 | CLK | Event | Clock input for toggling the output |
@@ -33,7 +35,7 @@ There are no direct data inputs. The interlock information is exchanged via the 
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Socket | ILOCK_IN | AE2 (bidirectional) | Receives lock signals from external components |
 | Plug | ILOCK_OUT | AE2 (bidirectional) | Sends lock signals to external components |
 | Plug | Q | AX (unidirectional) | Outputs the current state of the flip-flop |
@@ -59,12 +61,13 @@ The latch is implemented using the bidirectional AE2 protocol: The signals from 
 - **Toggle Only on State Change**: The toggle mechanism evaluates the output Q, so a toggle only occurs if the flip-flop has not already been set by S or R.
 - **No Direct Data Inputs**: Control is achieved exclusively via events and adapters, which facilitates integration into event-driven systems.
 -
+
 ## State Overview
 
 The internal state of the flip-flop can take the values `false` (0) or `true` (1). The possible transitions are:
 
 | Current | Event | New State | Conditions |
-|---------|----------|---------------|-------------|
+| --------- | ---------- | --------------- | ------------- |
 | 0 | S | 1 | No locking via ILOCK |
 | 0 | R | 0 | – |
 | 0 | CLK | 1 | No locking |

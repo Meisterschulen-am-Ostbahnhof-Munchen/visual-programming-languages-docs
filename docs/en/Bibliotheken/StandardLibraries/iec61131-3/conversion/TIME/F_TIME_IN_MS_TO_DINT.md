@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_MS_TO_DINT` converts a TIME value in milliseconds to a DINT value. This is particularly useful when time values need to be converted into numerical values for use in calculations or for control purposes.
 ![F_TIME_IN_MS_TO_DINT](F_TIME_IN_MS_TO_DINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,9 +55,9 @@ Often, a function like `DINT_TO_TIME` is needed to convert a numeric value (e.g.
 
 Use the block **`F_MULTIME`** (from the `arithmetic` category) for this purpose:
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with similar function blocks
 

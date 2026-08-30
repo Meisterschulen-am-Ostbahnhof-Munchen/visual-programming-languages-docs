@@ -3,6 +3,7 @@
 ![F_MUX_5](F_MUX_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_MUX_5` is the generic 5-input variant of the standard multiplexer block `F_MUX` (cf. `F_MUX_2`/`F_MUX_3`/`F_MUX_4`). Based on the selector `K`, it picks one of 5 input values (`IN1`, `IN2`, `IN3`, `IN4`, `IN5`) and outputs it via `OUT`.

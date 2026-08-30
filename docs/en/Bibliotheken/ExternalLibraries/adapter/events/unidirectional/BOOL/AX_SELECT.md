@@ -3,10 +3,12 @@
 ![AX_SELECT_ecc](./AX_SELECT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AX_SELECT function block, based on a Boolean input, switches one of two AX adapter inputs to the output.
 ![AX_SELECT](AX_SELECT.svg)
+
 ## Interface Structure
 
 ### **Data Inputs**
@@ -48,7 +50,7 @@ Selection of signals.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)
+- [Exercise_095_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_095_AX.md)
 
 ## Conclusion
 

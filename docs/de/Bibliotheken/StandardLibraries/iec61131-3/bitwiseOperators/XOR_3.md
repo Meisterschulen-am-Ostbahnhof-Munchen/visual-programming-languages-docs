@@ -3,6 +3,7 @@
 ![XOR_3](https://user-images.githubusercontent.com/116869307/214143735-3c0a538b-d39a-47e0-9cd3-1602d3640896.png)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der XOR_3 Funktionsblock ist ein generischer Baustein zur Berechnung der bitweisen XOR-Verknüpfung mit drei Eingängen. Er implementiert die logische Exklusiv-ODER-Operation auf Bitebene gemäß dem IEC 61131-3 Standard und kann mit verschiedenen Bit-Datentypen verwendet werden.
@@ -66,7 +67,7 @@ Im Vergleich zu Standard-XOR-Bausteinen mit zwei Eingängen bietet XOR_3 die Mö
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
+- [Uebung_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Fazit
 
@@ -76,4 +77,4 @@ Der XOR_3 Funktionsblock stellt eine effiziente und flexible Lösung für bitwei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -16,7 +16,7 @@ Video: [unter Windows 10 mit 2 WLAN Verbindungen arbeiten](https://www.youtube.c
 
 ---
 
-## ⚖️ Vergleichstest verschiedener WLAN Adapter:
+## ⚖️ Vergleichstest verschiedener WLAN Adapter
 
 In diesem Artikel werden mehrere WLAN USB-Adapter unter Windows 10 und Ubuntu 22.04 LTS getestet. Der Fokus liegt dabei auf der Funktionalität der Adapter sowie auf der Frage, ob sie ohne die Installation eines Treibers sofort erkannt werden. Dies ist von großem Vorteil, da es Zeit und Mühe spart, wenn man keinen extra Treiber suchen, herunterladen und installieren muss. Der Artikel gibt einen Überblick über die Ergebnisse des Tests und zeigt, welche Adapter ohne Probleme funktionieren und welche eventuell zusätzliche Schritte erfordern. Insgesamt wird der Artikel eine wertvolle Ressource für jeden sein, der einen WLAN USB-Adapter unter Windows 10 oder Ubuntu 22.04 LTS verwenden möchte.
 
@@ -39,8 +39,8 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 
 ### Tabelle
 
-*   läuft unter Windows 10 ohne Treiberinstallation
-*   läuft unter Ubuntu 22.04 LTS ohne Treiberinstallation
+-   läuft unter Windows 10 ohne Treiberinstallation
+-   läuft unter Ubuntu 22.04 LTS ohne Treiberinstallation
 
 | Typ | Link | Windows 10 | Ubuntu 22.04 LTS | CCI.OS-2.0.3 | CCI.OS-3.3.0 |
 | --- | --- | --- | --- | --- | --- |
@@ -54,7 +54,8 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 | ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0100N-RTL8188EU/119387) | geht | geht | nicht getestet | nicht getestet |
 | ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0150N-MTK7601/111798) | geht | geht | nicht getestet | nicht getestet |
 *EOL = End of Life, Produkt nicht mehr Erhältlich.
-## Beschreibung der Verschiedenen Adapter:
+
+## Beschreibung der Verschiedenen Adapter
 
 ### Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz
 

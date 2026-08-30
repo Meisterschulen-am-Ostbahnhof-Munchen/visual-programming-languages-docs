@@ -3,9 +3,11 @@
 ![AE_SWITCH](./AE_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AE_SWITCH** function block acts as an event demultiplexer. It forwards an incoming event to one of two unidirectional event adapter outputs, depending on the value of a Boolean input `G`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The **AE_SWITCH** function block acts as an event demultiplexer. It forwards an 
 ### **Adapters**
 
 | Direction | Name | Type (unidirectional) | Comment |
-|-----------|-------|---------------------------------------------|------------------------------------------------|
+| ----------- | ------- | --------------------------------------------- | ------------------------------------------------ |
 | **Socket** (Input) | `EI` | `adapter::types::unidirectional::AE` | Event input that is switched. |
 | **Plug** (Output) | `EO0` | `adapter::types::unidirectional::AE` | Event output, active at `G = 0` |
 | **Plug** (Output) | `EO1` | `adapter::types::unidirectional::AE` | Event output, active at `G = 1` |
@@ -40,9 +42,10 @@ The function block is initially in the **START** state.
 
 1. **Setting the Switch**: An event at `EIG` inherits the current value from `G`. The block then remains in the **START** state.
 2. **Forwarding the Input Event**: If an event arrives via the adapter input `EI`, the value of `G` is evaluated:
+
 - If `G = 0` → state change to **G0**: The adapter output `EO0` is triggered with its event `E1`.
 - If `G = 1` → State change to **G1**: The adapter output `EO1` is triggered by its event `E1`.
-3. After the respective output is triggered, the function block automatically returns to the **START** state.
+1. After the respective output is triggered, the function block automatically returns to the **START** state.
 
 ## Technical Features
 
@@ -53,7 +56,7 @@ The function block is initially in the **START** state.
 ## State Overview
 
 | State | Description | Action on Entry |
-|---------|-------------------------------------------------------------|---------------------|
+| --------- | ------------------------------------------------------------- | --------------------- |
 | START | Wait for an event at `EI` or `EIG` | – |
 | G0 | Event at `EI` with `G = 0` – forward to `EO0` | `EO0.E1` |
 | G1 | Event at `EI` with `G = 1` – forward to `EO1` | `EO1.E1` |

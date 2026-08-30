@@ -3,9 +3,11 @@
 ![AB_SPLIT_7](./AB_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AB_SPLIT_7** is used to split a single incoming adapter of type `adapter::types::unidirectional::AB` into seven identical output adapters. It is implemented as a generic block (`GEN_AB_SPLIT`) and can therefore be instantiated for various specific adapter types that conform to the unidirectional AB protocol. It was developed under the Eclipse Public License 2.0.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None available.
 #### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::AB` | Socket (Input) | Incoming adapter that is distributed to the outputs. |
 | OUT1 | `adapter::types::unidirectional::AB` | Plug (Output) | First outgoing adapter, identical to the input. |
 | OUT2 | `adapter::types::unidirectional::AB` | Plug (Output) | Second outgoing adapter. |
@@ -80,6 +82,6 @@ The **AB_SPLIT_7** is a simple yet useful function block for multiplying a unidi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

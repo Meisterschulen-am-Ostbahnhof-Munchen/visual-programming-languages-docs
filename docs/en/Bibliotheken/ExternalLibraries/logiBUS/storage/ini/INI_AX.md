@@ -3,6 +3,7 @@
 ![INI_AX](INI_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `INI_AX` loads and stores a `BOOL` value in the `settings.ini` file, addressed by section (`SECTION`) and key (`KEY`). It is the Boolean counterpart to [INI_AB](INI_AB.md) and the `settings.ini` counterpart to [NVS_AX](../esp32_nvs/NVS_AX.md).

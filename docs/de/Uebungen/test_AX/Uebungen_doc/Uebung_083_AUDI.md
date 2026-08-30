@@ -3,6 +3,7 @@
 ![Uebung_083_AUDI_network](./Uebung_083_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung eines Aufwärts-/Abwärtszählers auf Basis des Adapter-FBs `AUDI_CTUD_UDINT`. Vier digitale Eingänge (Taster mit Single-Click-Erkennung) steuern den Zähler: Zählen hoch (CU), Zählen runter (CD), Rücksetzen (R) und Übernahme eines neuen Zählerendwerts (PV). Der aktuelle Zählerwert (CV) wird auf einer numerischen Anzeige ausgegeben, während die Ausgänge QU und QD signalisieren, ob der Zähler den oberen oder unteren Grenzwert erreicht hat.
@@ -73,4 +74,4 @@ Die Übung veranschaulicht den Einsatz eines Adapter-basierten Aufwärts-/Abwär
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

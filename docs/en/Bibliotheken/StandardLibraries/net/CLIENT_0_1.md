@@ -1,10 +1,12 @@
 # CLIENT_0_1
 
 * * * * * * * * * *
+
 ## Introduction
 
 The CLIENT_0_1 function block is used to communicate with a corresponding server block (e.g., SERVER_1_0) via a network connection. It is specifically designed to **receive** data from the server without sending any data itself (Receive Only Client).
 ![CLIENT_0_1](CLIENT_0_1.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,6 +62,6 @@ The CLIENT_0_1 block establishes a connection via INIT. It requests data from th
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![GET_DWORD](./GET_DWORD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `GET_DWORD` dient dazu, den aktuellen Wert einer als InOut-Parameter bereitgestellten Variable vom Typ `DWORD` auszulesen und diesen als gepufferten Ausgangswert bereitzustellen. Der Lesevorgang wird über ein Ereignis gesteuert.
@@ -76,4 +77,4 @@ Der Funktionsblock besitzt einen einzigen Zustand `REQ`:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

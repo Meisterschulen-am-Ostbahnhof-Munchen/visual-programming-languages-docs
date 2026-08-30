@@ -3,6 +3,7 @@
 ![Uebung_213_network](./Uebung_213_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler nach IEC 61131-3 (Typ FB_CTU_UDINT) als Subapplikation. Der Zähler verfügt über zwei digitale Eingänge (Count-Up und Reset), einen digitalen Ausgang (Q) und eine Terminalausgabe für den aktuellen Zählwert. Die Eingänge werden über logiBUS-IO-Bausteine bereitgestellt, während der Ausgang und der numerische Wert auf konfigurierte logiBUS-Kanäle ausgegeben werden.
@@ -50,7 +51,7 @@ Die Subapplikation besteht aus einer direkten Verschaltung der genannten Funktio
 
 Ein Kommentar im Netzwerk weist darauf hin, dass eine zusätzliche Ereignisreduzierung (z.B. durch einen E_D_FF) zwischengeschaltet werden könnte, um die Ausgabe nur bei bestimmten Ereignissen zu aktualisieren.
 
-**Lernziele**: 
+**Lernziele**:
 
 - Verständnis der IEC 61131-3 Zählerfunktionsbausteine.
 - Zusammenspiel von Ereignis- und Datenflüssen in 4diac.
@@ -69,4 +70,4 @@ Die Übung demonstriert die Nachbildung eines standardisierten IEC 61131-3 Vorw�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

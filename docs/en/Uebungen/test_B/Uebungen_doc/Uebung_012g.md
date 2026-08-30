@@ -3,6 +3,7 @@
 ![Uebung_012g_network](./Uebung_012g_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of a physical numeric input (`NumericValue_PHYS`) in conjunction with persistent storage via the INI file format. The goal is to store an entered numeric value (e.g., from a sensor or user input) once and read it back as needed. The exercise introduces fundamental concepts of event handling, data flow chaining, and non-volatile data storage in 4diac.
@@ -36,6 +37,7 @@ This function block implements non-volatile storage using an INI file. A value c
 - On `GET`, the stored value is output at `VALUEO` (if no value is stored, `DEFAULT_VALUE` is used).
 
 ...
+
 ### `Q_NumericValue`
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_PHYS`
@@ -51,11 +53,11 @@ This function block represents a physical output for numeric values. The event r
 
 When the subapplication starts, the function block `NVS` is initialized with `INIT` and sends `INITO`. This event immediately triggers a `GET` instruction to load the last stored value. The read value is then transferred to the output block via the data connection `NVS.VALUEO → Q_NumericValue.rPhys`.
 
-2. **Entering a New Value**
+1. **Entering a New Value**
 
 As soon as the input block `InputNumber_I3` registers a new numeric value (event `IND`), this value is transferred to the memory block via the data line `InputNumber_I3.rPhys → NVS.VALUE`. Simultaneously, `IND` triggers the event `SET` at the block `NVS`, thus persistently storing the new value.
 
-2. **Entering a New Value**
+1. **Entering a New Value**
 
 As soon as the input block `InputNumber_I3` registers a new numeric value (event `IND`), this value is transferred to the memory block via the data line `InputNumber_I3.rPhys → NVS.VALUE`. 3. **Output of the Stored Value**
 
@@ -77,6 +79,6 @@ The event and data connections ensure that the last saved value is automatically
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

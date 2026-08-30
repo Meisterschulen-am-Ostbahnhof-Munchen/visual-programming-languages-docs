@@ -5,6 +5,7 @@
 *(Bild des Funktionsblocks hier einfügen)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASR_SPLIT_8` dient dazu, ein einzelnes eingehendes **ASR**-Adapter-Signal unverändert auf acht identische Ausgänge zu verteilen. Er wird als generischer Baustein definiert und eignet sich besonders für Anwendungen, in denen ein Sensorsignal oder Steuersignal mehrfach benötigt wird – beispielsweise in der landwirtschaftlichen Automatisierungstechnik.
@@ -81,4 +82,4 @@ Der `ASR_SPLIT_8` ist ein einfacher, aber effizienter Baustein, um ein ASR-Signa
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

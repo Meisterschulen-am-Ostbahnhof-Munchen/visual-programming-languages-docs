@@ -3,9 +3,11 @@
 ![Uebung_012e2_AR_network](./Uebung_012e2_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an **AR adapter** to combine a logiBUS digital input, a configurable time base, and a timer value configured via a sub-app block, which is loaded from a non-volatile storage (NVS). A digital input signal starts a timer whose expiration time is set via a stored numeric value (INI). The timer output switches a digital output. The key feature is the AR adapter's connection between the storage block, the arithmetic unit, and the timer.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: Exercise_012e_sub_AR
@@ -19,6 +21,7 @@ This exercise demonstrates the use of an **AR adapter** to combine a logiBUS dig
 - **Functionality**: Upon initialization, the sub-module loads a numeric value (e.g., a timer setpoint) from the NVS under the specified key and section name. The stored value is made available at the AR adapter output `VALUEO`. It serves as a variable operand for subsequent arithmetic processing.
 
 **Functionality**:
+
 ### Further Function Blocks
 
 - **DigitalInput_I1**
@@ -47,12 +50,12 @@ This exercise demonstrates the use of an **AR adapter** to combine a logiBUS dig
 
 The function block `DigitalInput_I1` provides the physical signal `Input_I1` (e.g., push button or sensor) as an AR adapter signal `IN`.
 
-2. **Timer Start**
+1. **Timer Start**
 
 This signal is directly connected to the `IN` adapter of the timer `AX_TON`.
 
 - The timer starts on a rising edge (ON).
-3. **Variable Timer Time**
+1. **Variable Timer Time**
 
 The sub-block `Uebung_012e_sub_AR` outputs the numeric value loaded from the NVS via its AR output `VALUEO`.
 
@@ -61,11 +64,11 @@ The sub-block `Uebung_012e_sub_AR` outputs the numeric value loaded from the NVS
 
 - The output `OUT` is connected to the `PT` adapter of the timer `AX_TON`. This allows the timer's expiration time to be calculated dynamically from the stored value.
 
-4. **Digital Output**
+1. **Digital Output**
 
 The timer output `Q` of `AX_TON` switches the `OUT` adapter of the output module `DigitalOutput_Q1`. This activates the physical output `Output_Q1` while the timer is running or after the set time has elapsed.
 
-4. **Digital Output**
+1. **Digital Output**
 
 The timer output `Q` of `AX_TON` switches the `OUT` adapter of the output module `DigitalOutput_Q1`. **Explanation of Network Connections**:
 
@@ -93,4 +96,4 @@ The timer output `Q` of `AX_TON` switches the `OUT` adapter of the output module
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

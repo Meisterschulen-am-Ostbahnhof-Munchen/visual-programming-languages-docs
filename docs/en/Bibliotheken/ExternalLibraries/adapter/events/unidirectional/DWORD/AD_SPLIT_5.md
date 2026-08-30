@@ -26,7 +26,7 @@ None available. Outputs are exclusively via the adapter plugs.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AD` | `IN` | Socket (Input) | Incoming adapter signal, which is distributed to all outputs. |
 | `adapter::types::unidirectional::AD` | `OUT1` | Plug (Output) | First outgoing adapter, identical to the input signal. |
 | `adapter::types::unidirectional::AD` | `OUT2` | Plug (Output) | Second outgoing adapter. |
@@ -55,7 +55,7 @@ The function block `AD_SPLIT_5` is a simple yet useful tool for multiplying adap
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ## Technical Features
 

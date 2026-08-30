@@ -3,6 +3,7 @@
 ![ADI_SPLIT_8](./ADI_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ADI_SPLIT_8` dient dazu, einen einzelnen unidirektionalen ADI-Adapter (Application Data Interface) auf acht baugleiche Ausgangs-Adapter aufzuteilen. Er ist als generischer Baustein realisiert, der durch die Angabe eines `GenericClassName`-Attributs an verschiedene ADI-Kontexte angepasst werden kann. Der FB vereinfacht die Signaldistribution in Steuerungsanwendungen, indem er einen eingehenden Adapter-Pfad ohne Datenverlust auf mehrere Empfänger verteilt.
@@ -79,4 +80,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

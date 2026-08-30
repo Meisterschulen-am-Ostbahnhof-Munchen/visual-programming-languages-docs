@@ -3,9 +3,11 @@
 ![AX_NOOP](./AX_NOOP.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_NOOP** (No Operation) serves as a pure pass-through function. It connects an incoming adapter (`IN`) directly to an outgoing adapter (`OUT`) without modifying data or processing events. This function block is designed as a basic block for testing, debugging, and placeholder purposes.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ Data is passed on via the `OUT` adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-|-----|------|----------|-----------|
+| ----- | ------ | ---------- | ----------- |
 | `adapter::types::unidirectional::AX` | IN | Socket (Input) | Receives events and data |
 | `adapter::types::unidirectional::AX` | OUT | Plug (Output) | Passes on events and data unchanged |
 
@@ -69,7 +71,7 @@ The function block does not have its own state machine. Its behavior is static a
 ## Comparison with Similar Function Blocks
 
 | Function Block | Description | Difference |
-|----------|--------------|-------------|
+| ---------- | -------------- | ------------- |
 | `E_NOP` | Event NOP with direct event/data inputs/outputs | Uses standard I/O instead of adapters |
 | `MUX` | Selection between multiple data sources | Provides selection, not pure passthrough |
 | `BYE` | Explicit end-of-service marker | Has special semantics, not passthrough |
@@ -83,4 +85,4 @@ The **AX_NOOP** is a minimalist yet useful component for working with adapter in
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

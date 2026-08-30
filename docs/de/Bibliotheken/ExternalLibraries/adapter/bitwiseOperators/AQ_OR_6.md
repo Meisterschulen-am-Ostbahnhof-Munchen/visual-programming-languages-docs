@@ -3,6 +3,7 @@
 ![AQ_OR_6](./AQ_OR_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AQ_OR_6** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 6 Eingangswerten vom Typ `BYTE` (2-Bit-Wert (Viertel-Byte, als Byte übertragen)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

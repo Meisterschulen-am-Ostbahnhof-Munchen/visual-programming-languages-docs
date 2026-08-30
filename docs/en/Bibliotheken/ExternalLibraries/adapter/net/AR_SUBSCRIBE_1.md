@@ -8,7 +8,7 @@
 
 The function block **AR_SUBSCRIBE_1** is a composite function block that encapsulates the network-based `SUBSCRIBE_1` function block from the IEC 61499 standard library and maps its interface to a unidirectional **AR adapter**. It subscribes to a publish channel configured via `ID` and provides the received **REAL** value, buffered via a D flip-flop (E_D_FF_ANY), at the adapter plug `OUT`. This allows for clean integration of network communication and REAL signal processing in the AR adapter environment.
 
- ## Interface Structure
+## Interface Structure
 
 ### **Event Inputs**
 

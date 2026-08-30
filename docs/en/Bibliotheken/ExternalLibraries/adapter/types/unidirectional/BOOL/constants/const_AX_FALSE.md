@@ -3,6 +3,7 @@
 ![const_AX_FALSE](const_AX_FALSE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `const_AX_FALSE` is the counterpart to [const_AX_TRUE](const_AX_TRUE.md): a simple constant block that writes the fixed value `FALSE` to an [AX](../AX.md) adapter plug on initialization. It is used to feed statically wired Boolean constants into an AX adapter network without wiring a separate event and data line for it.

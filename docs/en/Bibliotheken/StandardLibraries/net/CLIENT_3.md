@@ -3,6 +3,7 @@
 ![CLIENT_3](CLIENT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `CLIENT_3` function block is the generic client variant with 3 send and 3 receive data fields for communicating with a matching [SERVER_3](SERVER_3.md) block. It transmits 3 data values (`SD_1` `SD_2` `SD_3`) to the server and receives 3 data values (`RD_1` `RD_2` `RD_3`) back. Like all `CLIENT_*` blocks, it is based on the generic `GEN_CLIENT` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

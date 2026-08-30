@@ -3,6 +3,7 @@
 ![XOR_6](https://user-images.githubusercontent.com/116869307/214143825-a01dfad5-e15c-4869-bac8-379a175f01d9.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The XOR_6 function block is a generic function block for calculating bitwise XOR operations with six inputs. It implements the Boolean exclusive OR operation at the bit level according to the IEC 61131-3 standard and can work with various bit data types.
@@ -78,4 +79,4 @@ The XOR_6 function block provides a powerful and flexible solution for bitwise X
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

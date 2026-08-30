@@ -6,6 +6,7 @@
 
 The function block `F_REAL_TO_DWORD` converts a REAL value (floating-point number) to a DWORD value (32-bit unsigned integer). This conversion is particularly useful when floating-point values need to be processed in systems that only support integer operations.
 ![F_REAL_TO_DWORD](F_REAL_TO_DWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -54,7 +55,7 @@ The function block has no internal states. The conversion occurs immediately upo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+- [Exercise_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
 
 ## Conclusion
 

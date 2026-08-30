@@ -70,11 +70,11 @@ Der Baustein besteht intern aus einem RS-Flipflop (`FB_RS`, Reset-dominant), zwe
 Das interne RS-Flipflop hat folgende Zustandstabelle (Reset-dominant):
 
 | S | R1_eff | Q1 (neu) | Beschreibung |
-|---|---|----------|--------------|
-| 0 | 0 | Q1_alt   | Halten |
-| 1 | 0 | 1        | Setzen |
-| 0 | 1 | 0        | Rücksetzen |
-| 1 | 1 | 0        | Reset dominant |
+| --- | --- | ---------- | -------------- |
+| 0 | 0 | Q1_alt | Halten |
+| 1 | 0 | 1 | Setzen |
+| 0 | 1 | 0 | Rücksetzen |
+| 1 | 1 | 0 | Reset dominant |
 
 Dabei ist `R1_eff` das Ergebnis der Oder-Verknüpfung aus `R1`, `ILOCK_IN.DO1` und `ILOCK_OUT.DI1`. Der Ausgang `Q1` wird nur dann gesetzt, wenn keiner dieser drei Reset-Quellen aktiv ist.
 

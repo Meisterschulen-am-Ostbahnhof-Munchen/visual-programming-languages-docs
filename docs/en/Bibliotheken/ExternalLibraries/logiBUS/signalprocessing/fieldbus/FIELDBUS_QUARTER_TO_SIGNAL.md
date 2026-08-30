@@ -3,9 +3,11 @@
 ![FIELDBUS_QUARTER_TO_SIGNAL](./FIELDBUS_QUARTER_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `FIELDBUS_QUARTER_TO_SIGNAL` serves as a signal validation and pass-through block. It checks whether an incoming BYTE value `IN` is within a valid range and, if so, passes it unchanged to `OUT`. Additionally, a Boolean signal `VALID` is set, indicating the validity status of the output. This block is suitable for filtering fieldbus signals where certain values are marked as invalid or "don't care".
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The function block `FIELDBUS_QUARTER_TO_SIGNAL` serves as a signal validation an
 ### **Data Outputs**
 
 | Name | Type | Comment | Initial Value |
-|---------|--------|---------------------------------|-------------|
+| --------- | -------- | --------------------------------- | ------------- |
 | `OUT` | `BYTE` | Filtered Output Signal | `16#00` |
 | `VALID` | `BOOL` | `TRUE`, if the signal is valid | `FALSE` |
 
@@ -43,12 +45,14 @@ When an event occurs at input `REQ`, the algorithm `REQ` is executed:
 
 1. The incoming value `IN` is compared to the imported constant `DONT_CARE_2bit`.
 2. If `IN` is less than `DONT_CARE_2bit`, the value is considered valid:
+
 - `OUT` receives the value of `IN`.
 - `VALID` is set to `TRUE`.
-3. Otherwise (if `IN` is greater than or equal to `DONT_CARE_2bit`), the signal is classified as invalid:
+1. Otherwise (if `IN` is greater than or equal to `DONT_CARE_2bit`), the signal is classified as invalid:
+
 - `OUT` is reset to `BYTE#0`.
 - `VALID` is set to `FALSE`.
-4. After processing, the event `CNF` is triggered.
+1. After processing, the event `CNF` is triggered.
 
 The comparison uses the semantics of the imported constants:
 
@@ -90,6 +94,6 @@ FIELDBUS_QUARTER_TO_SIGNAL` is a compact, efficient function block for validatin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

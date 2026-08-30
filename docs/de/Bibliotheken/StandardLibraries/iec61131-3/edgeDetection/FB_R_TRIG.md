@@ -3,6 +3,7 @@
 <img width="1366" height="212" alt="FB_R_TRIG" src="https://github.com/user-attachments/assets/b8af3b36-dc40-44c3-8692-198ed7f809a8" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FB_R_TRIG` dient der Erkennung einer steigenden Flanke eines booleschen Signals. Er wird typischerweise verwendet, um Zustandsänderungen von `FALSE` nach `TRUE` zu detektieren und darauf zu reagieren.
@@ -57,8 +58,8 @@ Der Funktionsblock hat keinen komplexen Zustandsautomaten. Der Zustand wird ledi
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
-* [Uebung_177_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
+- [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
+- [Uebung_177_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_177_AX.md)
 
 ## Fazit
 

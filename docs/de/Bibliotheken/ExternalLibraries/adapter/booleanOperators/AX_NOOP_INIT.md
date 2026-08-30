@@ -3,6 +3,7 @@
 ![AX_NOOP_INIT](./AX_NOOP_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AX_NOOP_INIT` ist ein No-Operation-Baustein, der eingehende Ereignisse und Daten von einer Adapter-Schnittstelle unverändert an eine Ausgangs-Schnittstelle weiterleitet. Zusätzlich besitzt er eine Initialisierungsfunktion, die beim Eintreffen des INIT-Ereignisses sowohl die Bestätigung INITO als auch das Ausgangsereignis des Adapters auslöst. Er dient als einfacher Durchschleif- oder Platzhalter-Baustein in der Automatisierungstechnik.

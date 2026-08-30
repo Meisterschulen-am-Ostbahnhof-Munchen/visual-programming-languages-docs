@@ -3,6 +3,7 @@
 ![AUI_D_FF_HYS_TMIN](./AUI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AUI_D_FF_HYS_TMIN** ist ein Datenspeicher (D‑Flip‑Flop) mit einstellbarer Hysterese und einer minimalen Zwischenereigniszeit (`Tmin`). Er wird über Adapter‑Schnittstellen (Socket `I` und Plug `Q`) mit anderen Bausteinen verbunden. Der interne Kern entspricht dem FB `E_D_FF_ANY_HYS_TMIN` aus der Bibliothek `logiBUS::signalprocessing::hysteresis`. Die Initialisierung legt die Parameter fest, danach wird bei jedem eingehenden Ereignis am Eingang `I.E1` der aktuelle Wert von `I.D1` übernommen, gefiltert und über `Q.D1` ausgegeben.
@@ -43,10 +44,10 @@ Der Adapter `AUI` ist ein unidirektionaler Typ, der ein Ereignis und einen Daten
 
 ## Funktionsweise
 
-1. **Initialisierung**  
+1. **Initialisierung**
    Beim Ereignis `INIT` werden die Parameter `HYSTERESIS` (als UINT) und `Tmin` (als TIME) an den internen Baustein übergeben. Nach erfolgreicher Initialisierung wird `INITO` ausgelöst.
 
-2. **Betrieb**  
+2. **Betrieb**
    Der interne FB `E_D_FF_ANY_HYS_TMIN` arbeitet als getaktetes D‑Flip‑Flop mit Hysterese und Zeitbegrenzung:
 
    - Ein Ereignis an `I.E1` (Clock) übernimmt den momentanen Datenwert von `I.D1`.
@@ -54,7 +55,7 @@ Der Adapter `AUI` ist ein unidirektionaler Typ, der ein Ereignis und einen Daten
    - Zusätzlich wird der Wert mit einer Hysterese (band `HYSTERESIS`) geglättet: Kleine Änderungen unterhalb der Hystereseschwelle werden unterdrückt.
    - Der Ausgang wird über das Ereignis `Q.E1` signalisiert.
 
-3. **Ergebnis**  
+3. **Ergebnis**
    Der Ausgangsadapter `Q` liefert den zuletzt angenommenen, gefilterten Wert.
 
 ## Technische Besonderheiten
@@ -81,7 +82,7 @@ Der Baustein besitzt keinen expliziten internen Zustandsautomaten. Das Verhalten
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | `E_D_FF` | Einfaches D‑Flip‑Flop ohne Hysterese oder Zeitbegrenzung |
 | `E_D_FF_HYS` | D‑Flip‑Flop mit Hysterese, aber ohne `Tmin` |
 | `E_D_FF_HYS_TMIN` (dieser FB) | Kombiniert Hysterese *und* minimale Zwischenzeit → robuster gegen Rauschen und Burst‑Ereignisse |
@@ -94,4 +95,4 @@ Der `AUI_D_FF_HYS_TMIN` bietet eine kompakte und zuverlässige Lösung zur signa
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

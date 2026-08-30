@@ -3,6 +3,7 @@
 ![GetInstancePathAndName](https://github.com/user-attachments/assets/818b4609-9a6a-4ec7-b8d8-dfd54f003751)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `GetInstancePathAndName` dient dazu, den Instanzpfad und den Instanznamen aus der Laufzeitumgebung abzurufen. Dies ist besonders nützlich für Debugging-Zwecke oder für dynamische Konfigurationen, bei denen der genaue Pfad einer Instanz benötigt wird.

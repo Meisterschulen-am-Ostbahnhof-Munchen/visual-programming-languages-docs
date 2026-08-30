@@ -3,9 +3,11 @@
 ![AI_SPLIT_2](./AI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AI_SPLIT_2 function block is used to distribute an analog input signal (AI) to two identical analog outputs. It is designed as a generic function block and allows for flexible further processing of the signal in two independent paths.
+
 ## Interface Structure
 
 The function block does not have event or data inputs/outputs in the traditional sense, but communicates exclusively via adapter interfaces of type `adapter::types::unidirectional::AI`.
@@ -29,7 +31,7 @@ None
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN | adapter::types::unidirectional::AI | Input (Socket) | Receives an analog input signal. |
 | OUT1 | adapter::types::unidirectional::AI | Output (Plug) | Passes the signal present at IN unchanged. |
 | OUT2 | adapter::types::unidirectional::AI | Output (Plug) | Passes the signal present at IN unchanged. |

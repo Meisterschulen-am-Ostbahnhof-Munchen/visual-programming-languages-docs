@@ -3,9 +3,11 @@
 ![SET_LWORD](./SET_LWORD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_LWORD** is used to transfer an LWORD value (64-bit integer) from a data input to an InOut variable. It allows the direct setting of a target value that simultaneously functions as an input and output. This makes the block suitable for use in systems where a specific memory location or a connection variable needs to be updated.
+
 ## Interface Structure
 
 ### **Event Inputs**

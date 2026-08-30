@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_7](./AIWS_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIWS_SPLIT_7** is a generic component that splits a single incoming AIWS adapter (unidirectional) into seven identical outgoing AIWS adapters. It serves as a signal distributor for automation applications where a data stream or connection needs to be copied to multiple parallel paths.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None (the function block has no direct data outputs; data transmission occurs ex
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AIWS` | **IN** | Socket (Input) | Receives the AIWS data stream to be distributed. |
 | `adapter::types::unidirectional::AIWS` | **OUT1** | Plug (Output) | First identical output channel. |
 | `adapter::types::unidirectional::AIWS` | **OUT2** | Plug (Output) | Second identical output channel. |

@@ -8,10 +8,10 @@
 
 In dieser Übung wird ein numerischer Wert von einem Eingabegerät (I1) gelesen und unverändert an ein Ausgabegerät (N3) weitergeleitet. Durch die Verwendung eines Konvertierungsbausteins wird der eingehende 32‑Bit‑Wert von `DWORD` in `UDINT` umgewandelt. Diese Typumwandlung führt zu einem Offset‑/Skalierungseffekt, der die Ausgabe gegenüber dem Rohwert verschiebt.
 
-Ein Beispiel verdeutlicht den Effekt:  
+Ein Beispiel verdeutlicht den Effekt:
 
-- Eingabe 100 000 → N3 zeigt 0,00  
-- Eingabe 50 000 → N3 zeigt −500,00  
+- Eingabe 100 000 → N3 zeigt 0,00
+- Eingabe 50 000 → N3 zeigt −500,00
 
 Die Übung zeigt die grundlegende Handhabung der `NumericValue`-Schnittstelle und die Auswirkungen von Datentypkonvertierungen.
 
@@ -22,7 +22,7 @@ Die Übung zeigt die grundlegende Handhabung der `NumericValue`-Schnittstelle un
 Im Netzwerk der Übung werden drei Funktionsbausteine eingesetzt. Es sind keine Sub‑Bausteine vorhanden.
 
 | Name | Typ | Parameter |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `InputNumber_I1` | `isobus::UT::io::NumericValue::NumericValue_ID` | `QI = TRUE`, `u16ObjId = "InputNumber_I1"` |
 | `F_DWORD_TO_UDINT` | `iec61131::conversion::F_DWORD_TO_UDINT` | (keine Parameter) |
 | `Q_NumericValue` | `isobus::UT::Q::Q_NumericValue` | `u16ObjId = "OutputNumber_N3"` |
@@ -37,20 +37,20 @@ Im Netzwerk der Übung werden drei Funktionsbausteine eingesetzt. Es sind keine 
 
 Die Verarbeitung erfolgt ereignisgesteuert:
 
-1. **Ereigniskette**  
-   - `InputNumber_I1` sendet bei einem neuen Eingabewert das Ereignis `IND`.  
-   - Dieses löst über eine Ereignisverbindung den `REQ`-Eingang von `F_DWORD_TO_UDINT` aus.  
+1. **Ereigniskette**
+   - `InputNumber_I1` sendet bei einem neuen Eingabewert das Ereignis `IND`.
+   - Dieses löst über eine Ereignisverbindung den `REQ`-Eingang von `F_DWORD_TO_UDINT` aus.
    - Nach der Konvertierung sendet `F_DWORD_TO_UDINT` das Ereignis `CNF`, das wiederum den `REQ`-Eingang von `Q_NumericValue` triggert.
 
-2. **Datenverbindungen**  
-   - Der Ausgang `IN` von `InputNumber_I1` (Datentyp `DWORD`) ist mit dem Eingang `IN` von `F_DWORD_TO_UDINT` verbunden.  
+2. **Datenverbindungen**
+   - Der Ausgang `IN` von `InputNumber_I1` (Datentyp `DWORD`) ist mit dem Eingang `IN` von `F_DWORD_TO_UDINT` verbunden.
    - Der Ausgang `OUT` von `F_DWORD_TO_UDINT` (Datentyp `UDINT`) ist mit dem Dateneingang `u32NewValue` von `Q_NumericValue` verbunden.
 
-**Lernziele dieser Übung:**  
+**Lernziele dieser Übung:**
 
-- Verständnis der Funktionsweise der `NumericValue`-Ein‑ und Ausgabebausteine.  
-- Erkennen des Einflusses von Datentypkonvertierungen (DWORD → UDINT) auf numerische Werte.  
-- Praktischer Umgang mit Ereignis- und Datenverbindungen in 4diac.  
+- Verständnis der Funktionsweise der `NumericValue`-Ein‑ und Ausgabebausteine.
+- Erkennen des Einflusses von Datentypkonvertierungen (DWORD → UDINT) auf numerische Werte.
+- Praktischer Umgang mit Ereignis- und Datenverbindungen in 4diac.
 - Interpretation von Offset‑/Skalierungseffekten durch Typumwandlung.
 
 Die Übung erfordert Grundkenntnisse der 4diac‑IDE und der isobus‑Bibliothek. Sie kann direkt nach dem Import des Subapp‑Typs im Netzwerkeditor gestartet werden – die Werte werden automatisch beim Verbinden mit einem entsprechenden Eingabegerät aktualisiert.
@@ -65,4 +65,4 @@ Die Übung **Uebung_011d** demonstriert das Durchschleifen eines numerischen Wer
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

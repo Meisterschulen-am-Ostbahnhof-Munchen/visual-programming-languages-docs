@@ -3,6 +3,7 @@
 <img width="1009" height="465" alt="image" src="https://github.com/user-attachments/assets/360232e2-8dcb-496e-84cf-311179b598af" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_XOR_8 Funktionsblock ist ein generischer Baustein zur Berechnung der booleschen XOR-Verknüpfung mit 8 Eingängen. Er ermöglicht die Verarbeitung von logischen Signalen nach dem Exklusiv-ODER-Prinzip und ist für den Einsatz in Steuerungsanwendungen konzipiert.

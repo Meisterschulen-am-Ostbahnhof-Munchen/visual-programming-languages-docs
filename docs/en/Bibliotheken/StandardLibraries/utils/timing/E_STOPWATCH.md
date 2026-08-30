@@ -3,6 +3,7 @@
 ![E_STOPWATCH](https://user-images.githubusercontent.com/116869307/214154982-af9a1e9b-6839-43e1-8191-1eca65a4308c.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **E_STOPWATCH** function block is a high-precision timing module compliant with the IEC 61499-2 standard, developed under the EPL 2.0 license.
@@ -34,12 +35,15 @@ The module enables millisecond-accurate timing measurements between events in re
 ## Functionality
 
 1. **Start Phase**:
+
 - `START` initializes the time measurement
 - Monotone system time is recorded (`NOW_MONOTONIC`)
-2. **Measurement Phase**:
+1. **Measurement Phase**:
+
 - `ET` delivers intermediate results without stopping the measurement
 - Multiple triggers are possible
-3. **Closing Phase**:
+1. **Closing Phase**:
+
 - `STOP` ends the measurement and outputs the final result
 - `RESET` resets all values
 
@@ -78,7 +82,7 @@ START --> RESET: RESET
 ## Example Values
 
 | Operation | Result (TD) |
-|-----------|---------------|
+| ----------- | --------------- |
 | START -> STOP after 1.5s | T#1s500ms |
 | START -> ET after 750ms -> STOP after 1.5s | T#750ms (ETO), T#1s500ms (EO) |
 | RESET during measurement | T#0s |
@@ -86,7 +90,7 @@ START --> RESET: RESET
 ## ⚖️ Comparison with Similar Components
 
 | Feature | E_STOPWATCH | Standard Timer | High-Res Timer |
-|---------|-------------|----------------|----------------|
+| --------- | ------------- | ---------------- | ---------------- |
 | Accuracy | 1 ms | 10 ms | 1 µs |
 | Trigger during run | Yes | No | Yes |
 | Monotonous timer | Yes | No | Yes |
@@ -94,8 +98,8 @@ START --> RESET: RESET
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
-* [Exercise_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+- [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
+- [Exercise_020i_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Conclusion
 
@@ -118,4 +122,4 @@ Ideal for:
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -6,6 +6,7 @@
 
 The function block `F_SINT_TO_LREAL` converts an integer value of type `SINT` (8-bit integer) to a floating-point value of type `LREAL` (64-bit floating-point). This block is particularly useful in applications where type conversion between these two data types is required.
 ![F_SINT_TO_LREAL](F_SINT_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -59,4 +60,4 @@ The `F_SINT_TO_LREAL` function block is a simple and efficient tool for type con
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

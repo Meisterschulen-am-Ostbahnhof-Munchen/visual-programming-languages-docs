@@ -3,9 +3,11 @@
 ![BYPASS_AX_AX](./BYPASS_AX_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **BYPASS_AX_AX** is used for forwarding and parallel bypass processing of AX signals. It combines a direct pass from input **IN** to output **OUT** with a Boolean OR operation on the incoming data, which is passed to the bypass output **BY_OUT** via an edge-triggered D flip-flop.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -47,7 +49,7 @@ The function block implements two parallel paths:
 
 An event on **IN.E1** is passed directly to **OUT.E1**, as is the corresponding data value **IN.D1** to **OUT.D1**. This represents a 1:1 pass-through of the signal.
 
-2. **Bypass Path:**
+1. **Bypass Path:**
 
 An event on both **IN.E1** and **BY_IN.E1** triggers processing in the function block `OR_2_BOOL`. This block performs a Boolean operation on the data values **IN.D1** and **BY_IN.D1** – a logical OR operation on the two binary inputs.
 

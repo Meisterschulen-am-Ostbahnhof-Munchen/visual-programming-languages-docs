@@ -3,6 +3,7 @@
 <img width="1451" height="212" alt="F_UDINT_TO_LINT" src="https://github.com/user-attachments/assets/bdc7f6e4-7460-464c-8c40-94f9399b9c0e" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_UDINT_TO_LINT` dient der Konvertierung eines 32-Bit vorzeichenlosen Integer-Werts (UDINT) in einen 64-Bit vorzeichenbehafteten Integer-Wert (LINT). Dieser Baustein ist Teil des `iec61131::conversion`-Pakets und ermöglicht eine einfache und effiziente Typumwandlung zwischen diesen beiden Datentypen.
@@ -57,7 +58,7 @@ Der Funktionsblock hat keine internen Zustände. Die Konvertierung erfolgt unmit
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Uebung_072c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
 
 ## Fazit
 

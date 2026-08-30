@@ -3,6 +3,7 @@
 ![SERVER_4](SERVER_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `SERVER_4`-Funktionsblock ist die generische Server-Variante mit 4 Sende- und 4 Empfangsdatenfeldern für die Kommunikation mit einem passenden [CLIENT_4](CLIENT_4.md)-Block. Er überträgt 4 Datenwerte (`SD_1` `SD_2` `SD_3` `SD_4`) an den Client und empfängt 4 Datenwerte (`RD_1` `RD_2` `RD_3` `RD_4`) zurück. Wie alle `SERVER_*`-Bausteine basiert er auf der generischen `GEN_SERVER`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

@@ -30,9 +30,11 @@ When the event `REQ` is triggered, the algorithm is executed, converting the val
 
 - The function block uses the function `UDINT_AS_STRING` for conversion.
 - The implementation is in Structured Text (ST).
+
 1. **Initialization**: The function block is ready and waiting for the `REQ` event.
 2. **Conversion**: Upon receiving `REQ`, the value of `IN` is converted and output to `OUT`.
 3. **Acknowledgement**: The `CNF` event is triggered to signal the completion of the conversion.
+
 - Displaying numerical values in user interfaces.
 - Logging measured values to text files or databases.
 - Preparing data for communication via text protocols (e.g., HTTP, MQTT).

@@ -3,6 +3,7 @@
 ![AD_SPLIT_2](./AD_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AD_SPLIT_2 dient dazu, einen eingehenden unidirektionalen Adapter (AD) auf zwei identische Ausgangsadapter aufzuteilen. Er ist als generischer Baustein implementiert und ermöglicht die einfache Verzweigung eines Adaptersignals in zwei parallele Pfade.
@@ -71,4 +72,4 @@ Der AD_SPLIT_2 ist ein einfacher, aber effektiver Baustein zur Signalverteilung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

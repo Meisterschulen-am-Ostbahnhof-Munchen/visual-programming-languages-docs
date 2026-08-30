@@ -13,7 +13,7 @@ Diese Schaltung ist typisch für Sicherheitsanwendungen, bei denen nie beide Aus
 ## Verwendete Funktionsbausteine (FBs)
 
 | Baustein | Typ | Kurzbeschreibung |
-|----------|-----|------------------|
+| ---------- | ----- | ------------------ |
 | `DigitalInput_I1`, `DigitalInput_I2`, `DigitalInput_I3` | `logiBUS_IE` (logiBUS Digital Input Event) | Wandelt einen Tastendruck (Single Click) in ein Ereignis `IND` um. Der Parameter `Input` legt den physikalischen Eingang fest (z. B. `Input_I1`). |
 | `ILOCK` | `ILOCK_2_E` (logiBUS Interlock, eventgesteuert) | Bistabiles Relais mit zwei Ausgängen `OUT1`/`OUT2`. Die Ereignisse `CLK1` und `CLK2` setzen den jeweiligen Ausgang (mit gegenseitiger Verriegelung), `R` setzt beide zurück. |
 | `DigitalOutput_Q1`, `DigitalOutput_Q2` | `logiBUS_QX` (logiBUS Digital Output) | Nimmt über das Ereignis `REQ` einen Datenwert (`OUT`) entgegen und gibt ihn am physikalischen Ausgang aus. |

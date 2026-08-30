@@ -3,6 +3,7 @@
 <img width="842" height="294" alt="RampLimitFS" src="https://github.com/user-attachments/assets/29d36f04-bd95-4ebf-ae98-807414c5e6b9" />
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `RampLimitFS` function block incrementally increases or decreases an output value at different speeds (fast/slow), similar to a cruise control function in vehicles. It also allows you to set minimum and maximum values and load a predefined value.
@@ -93,7 +94,7 @@ The function block has no internal state. Each event immediately triggers its co
 
 ## 🛠️ Related Exercises
 
-* [Exercise_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
+- [Exercise_009a](../../../Uebungen/test_B/Uebungen_doc/Uebung_009a.md)
 
 ## Conclusion
 

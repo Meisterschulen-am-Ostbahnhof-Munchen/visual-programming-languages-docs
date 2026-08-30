@@ -3,6 +3,7 @@
 ![AUI_TO_ALR](./AUI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AUI_TO_ALR ist ein zusammengesetzter Baustein (Composite), der eine Schnittstellenkonvertierung zwischen einem AUI‑Adapter (Datentyp UINT) und einem ALR‑Adapter (Datentyp LREAL) ermöglicht. Er dient als reine Durchleitung und überträgt sowohl Ereignis‑ als auch Datensignale vom Eingangs‑ zum Ausgangsadapter.

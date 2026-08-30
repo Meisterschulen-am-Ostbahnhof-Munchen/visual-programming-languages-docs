@@ -4,6 +4,7 @@
 ![E_SELECT_ecc](./E_SELECT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **E_SELECT** is a basic function block according to IEC 61499 (Annex A) that enables the conditional forwarding of events based on a control signal. The current version 1.0 is licensed under EPL-2.0.
@@ -30,16 +31,19 @@ The **E_SELECT** is a basic function block according to IEC 61499 (Annex A) that
 ## Functionality
 
 1. **Event Processing**:
+
 - Upon input of EI0 or EI1, the G-value is evaluated.
 - Only the event matching the G-value is passed on.
-2. **State Machine** (ECC):
+1. **State Machine** (ECC):
+
 - **START**: Wait state
 - **EO**: Output state (with EO action)
 - Transitions:
 - EI0 at G=0 → EO
 - EI1 at G=1 → EO
 - Always returns to START
-3. **Execution Logic**:
+1. **Execution Logic**:
+
 - Deterministic event selection
 - No buffering of events
 
@@ -61,14 +65,14 @@ The **E_SELECT** is a basic function block according to IEC 61499 (Annex A) that
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_SELECT | E_SWITCH | E_MERGE |
-|---------------|----------|----------|----------|
+| --------------- | ---------- | ---------- | ---------- |
 | Selection Criterion | Boolean (`G`) | Boolean (`G`) | None |
 | Direction | 2:1 (Multiplexer) | 1:2 (Demultiplexer) | n:1 (OR Gate) |
 | State Model | BasicFB | BasicFB | BasicFB/Generic |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_095](../../../Uebungen/test_B/Uebungen_doc/Uebung_095.md)
+- [Exercise_095](../../../Uebungen/test_B/Uebungen_doc/Uebung_095.md)
 
 ## Conclusion
 

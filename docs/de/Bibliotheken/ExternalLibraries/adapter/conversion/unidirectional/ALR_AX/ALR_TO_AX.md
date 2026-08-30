@@ -3,6 +3,7 @@
 ![ALR_TO_AX](./ALR_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_TO_AX** ist ein Composite-Baustein zur Umwandlung eines LREAL-Werts (über den unidirektionalen ALR-Adapter) in einen BOOL-Wert (über den unidirektionalen AX-Adapter). Er wird typischerweise eingesetzt, um ein analoges Eingangssignal in ein digitales Ausgangssignal zu konvertieren – beispielsweise zur Erkennung einer Schwellwertüberschreitung. Der Baustein basiert auf einem einfachen Null-Vergleich und löst das Ausgangsereignis aus, sobald ein gültiger Wert am Eingang anliegt.
@@ -38,29 +39,29 @@ Der gesamte Ablauf erfolgt innerhalb eines einzigen Zyklus, da es sich um einen 
 
 ## Technische Besonderheiten
 
-- **Lizenz & Herkunft**: Der Baustein ist unter der Eclipse Public License 2.0 lizenziert und wurde mit der Versionsinformation 1.0 bereitgestellt.  
-- **Verwendete Bibliotheken**: Der Vergleichsbaustein *F_NE* stammt aus der IEC‑61131-Bibliothek (*iec61131::comparison*).  
-- **Paketname**: Der FB gehört zum Paket *adapter::conversion::unidirectional*.  
+- **Lizenz & Herkunft**: Der Baustein ist unter der Eclipse Public License 2.0 lizenziert und wurde mit der Versionsinformation 1.0 bereitgestellt.
+- **Verwendete Bibliotheken**: Der Vergleichsbaustein *F_NE* stammt aus der IEC‑61131-Bibliothek (*iec61131::comparison*).
+- **Paketname**: Der FB gehört zum Paket *adapter::conversion::unidirectional*.
 - **Kompatibilität**: Er setzt die Adapter-Spezifikation des 4diac‑Frameworks voraus und ist für unidirektionale Adaptertypen ausgelegt.
 
 ## Zustandsübersicht
 
-Der Baustein besitzt keinen expliziten Zustandsautomaten. Seine Logik ist rein kombinatorisch und ereignisgesteuert:  
+Der Baustein besitzt keinen expliziten Zustandsautomaten. Seine Logik ist rein kombinatorisch und ereignisgesteuert:
 
-1. Warten auf Ereignis an **ALR_IN.E1**.  
-2. Datenverarbeitung (Vergleich mit 0.0).  
+1. Warten auf Ereignis an **ALR_IN.E1**.
+2. Datenverarbeitung (Vergleich mit 0.0).
 3. Ausgabe des BOOL-Ergebnisses an **AX_OUT.D1** und Senden des Bestätigungsereignisses an **AX_OUT.E1**.
 
 ## Anwendungsszenarien
 
-- **Analog-Digital-Umwandlung**: Erkennung, ob ein analoger Messwert (z. B. Drucksensor, Temperatur) von null verschieden ist.  
-- **Schwellwert-Erkennung**: Durch einfache Modifikation (Austausch von *F_NE* gegen *F_GT* oder *F_LT*) kann eine beliebige Schwellwertlogik realisiert werden.  
+- **Analog-Digital-Umwandlung**: Erkennung, ob ein analoger Messwert (z. B. Drucksensor, Temperatur) von null verschieden ist.
+- **Schwellwert-Erkennung**: Durch einfache Modifikation (Austausch von *F_NE* gegen *F_GT* oder *F_LT*) kann eine beliebige Schwellwertlogik realisiert werden.
 - **Adapter-Kopplung**: Einbinden von ALR‑basierten Sensoren in eine AX‑basierte Steuerungslogik, ohne dass komplexe Typkonvertierungen auf übergeordneter Ebene nötig sind.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **LREAL_TO_BOOL**: Während ein dedizierter LREAL‑to‑BOOL‑Baustein oft einen Schwellwert und Hysterese unterstützt, realisiert *ALR_TO_AX* die einfachste Form – null ≠ null → TRUE.  
-- **Vergleichsbausteine (F_NE, F_EQ usw.)**: Diese arbeiten direkt auf Daten, während *ALR_TO_AX* die vollständige Adapter-Integration und Ereignissteuerung übernimmt.  
+- **LREAL_TO_BOOL**: Während ein dedizierter LREAL‑to‑BOOL‑Baustein oft einen Schwellwert und Hysterese unterstützt, realisiert *ALR_TO_AX* die einfachste Form – null ≠ null → TRUE.
+- **Vergleichsbausteine (F_NE, F_EQ usw.)**: Diese arbeiten direkt auf Daten, während *ALR_TO_AX* die vollständige Adapter-Integration und Ereignissteuerung übernimmt.
 - **Adapter‑Converter‑Bausteine**: Im selben Paket finden sich weitere uni‑/bidirektionale Konverter, die ähnliche Aufgaben für andere Typen (z. B. BOOL_TO_ALR) erfüllen.
 
 ## Fazit
@@ -71,4 +72,4 @@ Der **ALR_TO_AX**‑Funktionsblock bietet eine schlanke, zuverlässige Möglichk
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

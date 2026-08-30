@@ -3,6 +3,7 @@
 <img width="1370" height="307" alt="image" src="https://github.com/user-attachments/assets/8a66daf2-c93b-4cfc-bd10-dba250315aaf" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `OR_4_BOOL` ist ein Standardbaustein zur Berechnung der logischen ODER-Verknüpfung. Er führt eine ODER-Operation mit bis zu vier booleschen Eingangswerten durch und gibt das Ergebnis als einen einzigen booleschen Wert aus. Der Baustein folgt dem EVA-Prinzip (Ereignisgesteuerte Verarbeitung) und ist für den Einsatz in Steuerungsanwendungen nach IEC 61131-3 konzipiert.
@@ -13,22 +14,22 @@ Der Funktionsblock `OR_4_BOOL` ist ein Standardbaustein zur Berechnung der logis
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Startet die Ausführung des Funktionsblocks. Bei diesem Ereignis werden die Werte an den Daten-Eingängen `IN1` bis `IN4` gelesen und die ODER-Operation berechnet.
+-   **REQ**: Startet die Ausführung des Funktionsblocks. Bei diesem Ereignis werden die Werte an den Daten-Eingängen `IN1` bis `IN4` gelesen und die ODER-Operation berechnet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Bestätigt die abgeschlossene Ausführung. Dieses Ereignis wird nach der Berechnung des Ergebnisses ausgelöst und liefert den Wert an den Daten-Ausgang `OUT`.
+-   **CNF**: Bestätigt die abgeschlossene Ausführung. Dieses Ereignis wird nach der Berechnung des Ergebnisses ausgelöst und liefert den Wert an den Daten-Ausgang `OUT`.
 
 ### **Daten-Eingänge**
 
-*   **IN1**: Boolescher ODER-Eingang 1.
-*   **IN2**: Boolescher ODER-Eingang 2.
-*   **IN3**: Boolescher ODER-Eingang 3.
-*   **IN4**: Boolescher ODER-Eingang 4.
+-   **IN1**: Boolescher ODER-Eingang 1.
+-   **IN2**: Boolescher ODER-Eingang 2.
+-   **IN3**: Boolescher ODER-Eingang 3.
+-   **IN4**: Boolescher ODER-Eingang 4.
 
 ### **Daten-Ausgänge**
 
-*   **OUT**: Boolesches Ergebnis der ODER-Verknüpfung aller aktiven Eingänge.
+-   **OUT**: Boolesches Ergebnis der ODER-Verknüpfung aller aktiven Eingänge.
 
 ### **Adapter**
 
@@ -42,9 +43,9 @@ Nach der Berechnung wird das Bestätigungsereignis `CNF` ausgelöst, wobei der b
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein**: Der Block ist als generischer Baustein gekennzeichnet (`GEN_OR`). Dies ermöglicht es, ihn als Basis für die Erstellung von ODER-Bausteinen mit einer anderen Anzahl von Eingängen zu verwenden.
-*   **Ereignisgesteuert**: Die Operation wird nur bei einem eingehenden `REQ`-Ereignis ausgeführt, was eine ressourcenschonende und deterministische Abarbeitung im Steuerungssystem gewährleistet.
-*   **Standardkonform**: Entspricht der Klassifikation nach IEC 61131-3 für Standard-Boolesche Funktionen.
+-   **Generischer Baustein**: Der Block ist als generischer Baustein gekennzeichnet (`GEN_OR`). Dies ermöglicht es, ihn als Basis für die Erstellung von ODER-Bausteinen mit einer anderen Anzahl von Eingängen zu verwenden.
+-   **Ereignisgesteuert**: Die Operation wird nur bei einem eingehenden `REQ`-Ereignis ausgeführt, was eine ressourcenschonende und deterministische Abarbeitung im Steuerungssystem gewährleistet.
+-   **Standardkonform**: Entspricht der Klassifikation nach IEC 61131-3 für Standard-Boolesche Funktionen.
 
 ## Zustandsübersicht
 
@@ -52,15 +53,15 @@ Der Funktionsblock besitzt keinen internen Zustand (speicherfrei). Sein Verhalte
 
 ## Anwendungsszenarien
 
-*   **Verknüpfung von Meldesignalen**: Kombination mehrerer Zustands- oder Fehlermelder, bei denen bereits eine einzige Meldung eine Aktion auslösen soll (z.B. "Maschine anhalten, wenn Sensor A ODER Sensor B ODER Not-Halt betätigt ist").
-*   **Logik in Sicherheitssteuerungen**: Implementierung von ODER-Gattern in Sicherheitsschaltungen.
-*   **Vereinfachung von Steuerungslogik**: Als klar definierter Baustein zur Strukturierung von Programmen in der Funktionsbausteinsprache (FBD) oder im Ablaufsprache (SFC).
+-   **Verknüpfung von Meldesignalen**: Kombination mehrerer Zustands- oder Fehlermelder, bei denen bereits eine einzige Meldung eine Aktion auslösen soll (z.B. "Maschine anhalten, wenn Sensor A ODER Sensor B ODER Not-Halt betätigt ist").
+-   **Logik in Sicherheitssteuerungen**: Implementierung von ODER-Gattern in Sicherheitsschaltungen.
+-   **Vereinfachung von Steuerungslogik**: Als klar definierter Baustein zur Strukturierung von Programmen in der Funktionsbausteinsprache (FBD) oder im Ablaufsprache (SFC).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`OR_2_BOOL` / `OR_8_BOOL`**: Diese Blöcke führen die identische logische ODER-Operation durch, jedoch mit einer unterschiedlichen Anzahl von Eingängen (2 bzw. 8). Die Wahl des Bausteins hängt von der benötigten Anzahl an zu verknüpfenden Signalen ab. Siehe: [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)
-*   **`AND_4_BOOL`**: Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind.
-*   **`XOR_4_BOOL`**: Führt eine exklusiv-ODER (XOR) Verknüpfung durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist.
+-   **`OR_2_BOOL` / `OR_8_BOOL`**: Diese Blöcke führen die identische logische ODER-Operation durch, jedoch mit einer unterschiedlichen Anzahl von Eingängen (2 bzw. 8). Die Wahl des Bausteins hängt von der benötigten Anzahl an zu verknüpfenden Signalen ab. Siehe: [OR_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_4.md)
+-   **`AND_4_BOOL`**: Führt eine logische UND-Verknüpfung durch. Das Ergebnis ist nur `TRUE`, wenn *alle* Eingänge `TRUE` sind.
+-   **`XOR_4_BOOL`**: Führt eine exklusiv-ODER (XOR) Verknüpfung durch. Das Ergebnis ist `TRUE`, wenn eine ungerade Anzahl an Eingängen `TRUE` ist.
 
 ## Fazit
 

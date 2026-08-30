@@ -65,26 +65,26 @@ Die Übung eignet sich für Anwender, die erste Schritte mit Zählern und Ereign
 
 Der Ablauf wird durch Ereignisse gesteuert:
 
-1. **Zählereingang**  
-   - Ein Klick auf Taster I1 erzeugt ein Ereignis `IND` am Baustein `DigitalInput_CLK_I1`.  
+1. **Zählereingang**
+   - Ein Klick auf Taster I1 erzeugt ein Ereignis `IND` am Baustein `DigitalInput_CLK_I1`.
    - Dieses Ereignis wird direkt an den Eingang `CU` von `E_CTU` geleitet. Der Zähler erhöht sich um 1.
 
-2. **Reset**  
-   - Ein Klick auf Taster I2 erzeugt ein Ereignis `IND` an `DigitalInput_CLK_I2`.  
+2. **Reset**
+   - Ein Klick auf Taster I2 erzeugt ein Ereignis `IND` an `DigitalInput_CLK_I2`.
    - Dieses Ereignis wird an den Eingang `R` von `E_CTU` geleitet. Der Zähler wird auf 0 zurückgesetzt.
 
-3. **Ereigniszusammenführung**  
-   - Sowohl der Ausgang `CUO` (nach Zählererhöhung) als auch `RO` (nach Reset) von `E_CTU` werden an die Eingänge `EI1` und `EI2` des `E_MERGE_2` gelegt.  
+3. **Ereigniszusammenführung**
+   - Sowohl der Ausgang `CUO` (nach Zählererhöhung) als auch `RO` (nach Reset) von `E_CTU` werden an die Eingänge `EI1` und `EI2` des `E_MERGE_2` gelegt.
    - Der zusammengeführte Ausgang `EO` wird bei jeder Zähleränderung aktiv.
 
-4. **Aktualisierung der Anzeige und des Ausgangs**  
-   - Das gemeinsame Ereignis `EO` wird parallel an zwei Bausteine weitergeleitet:  
-     - **Multiplexer**: Das Ereignis erreicht den `REQ`-Eingang von `F_MUX_32`. Der aktuelle Zählerstand `CV` (Datenverbindung von `E_CTU.CV` zu `F_MUX_32.K`) wählt das passende Frame aus. Der Multiplexer gibt das gewählte Frame an seinem Ausgang `OUT` aus.  
-     - **Digitale Anzeige**: Nachdem der Multiplexer fertig ist (`CNF`-Ereignis), wird das Ereignis an den `REQ`-Eingang von `Q_NumericValue_1` weitergegeben. Der Datenwert `OUT` des Multiplexers wird als neuer Anzeigewert übernommen.  
+4. **Aktualisierung der Anzeige und des Ausgangs**
+   - Das gemeinsame Ereignis `EO` wird parallel an zwei Bausteine weitergeleitet:
+     - **Multiplexer**: Das Ereignis erreicht den `REQ`-Eingang von `F_MUX_32`. Der aktuelle Zählerstand `CV` (Datenverbindung von `E_CTU.CV` zu `F_MUX_32.K`) wählt das passende Frame aus. Der Multiplexer gibt das gewählte Frame an seinem Ausgang `OUT` aus.
+     - **Digitale Anzeige**: Nachdem der Multiplexer fertig ist (`CNF`-Ereignis), wird das Ereignis an den `REQ`-Eingang von `Q_NumericValue_1` weitergegeben. Der Datenwert `OUT` des Multiplexers wird als neuer Anzeigewert übernommen.
    - Gleichzeitig wird das Ereignis `EO` auch an den `REQ`-Eingang von `DigitalOutput_Q1` gelegt. Der logische Wert `Q` von `E_CTU` (TRUE wenn `CV >= 5`) wird auf den Ausgang Q1 geschrieben.
 
-5. **Kommentare im Netzwerk**  
-   - Ein Kommentar weist darauf hin, dass eine Typkonvertierung von `UINT` nach `UDINT` bei der Verbindung `CV` → `K` nicht notwendig ist, da `UDINT` immer einen `UINT` aufnehmen kann.  
+5. **Kommentare im Netzwerk**
+   - Ein Kommentar weist darauf hin, dass eine Typkonvertierung von `UINT` nach `UDINT` bei der Verbindung `CV` → `K` nicht notwendig ist, da `UDINT` immer einen `UINT` aufnehmen kann.
    - Ein weiterer Kommentar erklärt, dass der `E_MERGE_2` zwar weggelassen werden könnte, aber die Verwendung den Code sauberer hält (Vermeidung von sich kreuzenden Leitungen).
 
 ## Zusammenfassung
@@ -102,6 +102,6 @@ Voraussetzungen: Grundkenntnisse der IEC 61499 Ereignisverarbeitung und der 4dia
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 IEC 61499 Events – Der Puls der Automatisierung auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)

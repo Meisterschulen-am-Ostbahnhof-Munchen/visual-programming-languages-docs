@@ -29,7 +29,7 @@ Der FB besitzt keine eigenen Daten-Ausgänge. Die Datenausgabe erfolgt indirekt 
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **IN** | Socket | `adapter::types::unidirectional::AW` | Empfängt ein 16‑Bit Wort (WORD). Der Adapter stellt die Daten und ein zugehöriges Ereignis zur Verfügung. |
 | **BYTE_00** | Plug | `adapter::types::unidirectional::AB` | Gibt das niederwertige Byte (Byte 0) aus. |
 | **BYTE_01** | Plug | `adapter::types::unidirectional::AB` | Gibt das höherwertige Byte (Byte 1) aus. |
@@ -72,4 +72,4 @@ Der FB besitzt keine explizite Zustandsmaschine. Er verarbeitet Impulse ereignis
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

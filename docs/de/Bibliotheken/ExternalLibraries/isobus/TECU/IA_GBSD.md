@@ -3,6 +3,7 @@
 ![IA_GBSD](./IA_GBSD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_GBSD** dient als Adapter-Wrapper für den ISOBUS-kompatiblen Baustein **I_GBSD** („Ground Based Speed and Distance“). Er kapselt die Initialisierung und Datenkommunikation eines bodenbasierten Geschwindigkeits- und Distanzsensors gemäß ISO 11783‑7 (PGN 65097) und stellt die Werte über unidirektionale Adapter-Schnittstellen bereit.

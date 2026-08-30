@@ -3,9 +3,11 @@
 ![AUDI_GE](./AUDI_GE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_GE` performs a "greater than or equal to" comparison of two values. It provides the result as a Boolean value. The block is implemented as a composition and internally uses the standard comparison block `F_GE` from the IEC 61131-3 library. Input and output are exclusively via unidirectional adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -34,7 +36,7 @@ The data values to be compared are obtained via the following adapters:
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN1` | Socket | `adapter::types::unidirectional::AUDI` | First Input Value |
 | `IN2` | Socket | `adapter::types::unidirectional::AUDI` | Second Input Value |
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Output: `IN1 >= IN2` (boolean) |
@@ -86,4 +88,4 @@ AUDI_GE` is a specialized comparison block that enables flexible and clean inter
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

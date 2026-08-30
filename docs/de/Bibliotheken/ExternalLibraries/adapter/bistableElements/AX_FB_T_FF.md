@@ -3,15 +3,16 @@
 ![AX_FB_T_FF](./AX_FB_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein **AX_FB_T_FF** realisiert ein taktflankengesteuertes Toggle-Flipflop (T-FF).  
-Er schaltet seinen Ausgangszustand bei jeder aktiven Taktflanke um und kann asynchron zurückgesetzt werden.  
+Der Funktionsbaustein **AX_FB_T_FF** realisiert ein taktflankengesteuertes Toggle-Flipflop (T-FF).
+Er schaltet seinen Ausgangszustand bei jeder aktiven Taktflanke um und kann asynchron zurückgesetzt werden.
 Die Ein- und Ausgänge erfolgen ausschließlich über Adapter des Typs `AX`, die sowohl ein Ereignis als auch einen booleschen Datenwert übertragen.
 
 ## Schnittstellenstruktur
 
-Der Baustein besitzt keine direkten Ereignis- oder Datenschnittstellen.  
+Der Baustein besitzt keine direkten Ereignis- oder Datenschnittstellen.
 Die gesamte Kommunikation erfolgt über **Adapter** (Plugs und Sockets).
 
 ### **Ereignis-Eingänge**
@@ -33,7 +34,7 @@ Keine (Daten werden über den Adapter `Q1` gesendet).
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Eingang) | `CLK` | `adapter::types::unidirectional::AX` | Taktsignal – bei jedem eingehenden Ereignis (E1) wird der Bool‑Wert (D1) als Taktpegel ausgewertet. |
 | **Socket** (Eingang) | `RST` | `adapter::types::unidirectional::AX` | Reset – bei einem eingehenden Ereignis (E1) wird der Ausgang unabhängig vom Takt auf FALSE gesetzt (asynchroner Reset). |
 | **Plug** (Ausgang) | `Q1` | `adapter::types::unidirectional::AX` | Ausgang – bei jedem Taktwechsel oder Reset wird ein Ereignis (E1) ausgelöst und der aktuelle Bool‑Wert (D1) gesendet. |
@@ -45,7 +46,7 @@ Die Adapter vom Typ `unidirectional::AX` besitzen intern:
 
 ## Funktionsweise
 
-Der Baustein arbeitet als **Toggle-Flipflop mit positiver Flankenerkennung**.  
+Der Baustein arbeitet als **Toggle-Flipflop mit positiver Flankenerkennung**.
 Er besitzt einen internen Speicher `EDGE`, der den letzten Taktpegel speichert.
 
 **Algorithmus (im Zustand REQ):**
@@ -71,7 +72,7 @@ Er besitzt einen internen Speicher `EDGE`, der den letzten Taktpegel speichert.
 
 ## Zustandsübersicht
 
-Der ECC besteht aus einem einzigen Zustand `REQ`.  
+Der ECC besteht aus einem einzigen Zustand `REQ`.
 Jeder eingehende Ereignisimpuls (über `CLK.E1` oder `RST.E1`) führt zur Ausführung des Algorithmus `REQ` und einem sofortigen Ausgangsereignis auf `Q1.E1`.
 
 | aktueller Zustand | eingehendes Ereignis | nächster Zustand | ausgeführte Aktion |
@@ -96,12 +97,12 @@ Keine weiteren Zustände oder Verweilzeiten.
 
 ## Fazit
 
-Der `AX_FB_T_FF` ist ein kompakter und flexibler Funktionsbaustein, der ein Toggle-Flipflop mit positiver Flankenerkennung und asynchronem Reset realisiert.  
-Durch die reine Adapter-Schnittstelle lässt er sich besonders gut in modularen, adapterbasierten Entwürfen einsetzen, bei denen Daten- und Ereignisübertragung über einen einheitlichen Kanal erfolgen.  
+Der `AX_FB_T_FF` ist ein kompakter und flexibler Funktionsbaustein, der ein Toggle-Flipflop mit positiver Flankenerkennung und asynchronem Reset realisiert.
+Durch die reine Adapter-Schnittstelle lässt er sich besonders gut in modularen, adapterbasierten Entwürfen einsetzen, bei denen Daten- und Ereignisübertragung über einen einheitlichen Kanal erfolgen.
 Die einfache Logik und der minimale Zustandsautomat machen ihn zuverlässig und leicht verständlich.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

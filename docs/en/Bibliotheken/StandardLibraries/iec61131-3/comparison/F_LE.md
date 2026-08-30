@@ -33,7 +33,7 @@ IF LE(Messwert, Schwellenwert) THEN
 // Aktion ausführen, wenn der Messwert den Schwellenwert nicht überschreitet
 END_IF
 
-2. **Controlling Production Processes:**
+1. **Controlling Production Processes:**
 
 In a production process, the LE operator can be used to determine whether a specific quantity of material has been produced. If the produced quantity is less than or equal to the target quantity, the process can continue:
 
@@ -41,7 +41,7 @@ IF LE(ProduzierteMenge, ZielMenge) THEN
 // Produktionsprozess fortsetzen
 END_IF
 
-3. **Temperature Control:**
+1. **Temperature Control:**
 
 In a cooling system, the LE operator can be used to check whether the current temperature is less than or equal to the set temperature. If so, the cooling can be switched off:
 
@@ -49,13 +49,14 @@ IF LE(AktuelleTemperatur, SollTemperatur) THEN
 // Kühlung abschalten
 END_IF
 
-4. **Energy Consumption Monitoring:**
+1. **Energy Consumption Monitoring:**
 
 The LE operator can also be used to monitor energy consumption. If consumption is less than or equal to a certain value, energy-saving measures can be deactivated:
 
 IF LE(EnergieVerbrauch, Grenzwert) THEN
 // Energieeinsparmaßnahmen deaktivieren
 END_IF
+
 ### Advantages of the LE Operator
 
 - **Simple Logic:** The LE operator allows complex conditions to be formulated in simple, easily understandable expressions.

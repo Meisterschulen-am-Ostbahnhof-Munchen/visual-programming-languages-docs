@@ -3,6 +3,7 @@
 ![AD_TO_ALI](./AD_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_TO_ALI** ist ein Composite-Funktionsbaustein zur unidirektionalen Umwandlung eines DWORD-Werts (über einen AD-Adapter) in einen LINT-Wert (über einen ALI-Adapter). Die Konvertierung erfolgt mittels des integrierten Standard-FBs `F_DWORD_TO_LINT`. Der Baustein ermöglicht eine einfache und standardisierte Anbindung von Komponenten, die unterschiedliche Datentypen über Adapterschnittstellen austauschen.
@@ -64,4 +65,4 @@ Der **AD_TO_ALI** bietet eine saubere, wiederverwendbare Lösung zur Konvertieru
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AX_NOOP_INIT](./AX_NOOP_INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AX_NOOP_INIT` is a no-operation block that forwards incoming events and data from an adapter interface unchanged to an output interface. It also has an initialization function that, upon arrival of the INIT event, triggers both the INITO acknowledgment and the adapter's output event. It serves as a simple pass-through or placeholder block in automation technology.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -34,9 +36,11 @@ This function block does not have separate data outputs at the top level. All da
 The function block operates as a simple pass-through module:
 
 1. **Event Forwarding**:
+
 - The INIT event is forwarded to `INITO` and to `OUT.E1`.
 - The event `IN.E1` is passed directly to `OUT.E1`.
-2. **Data Forwarding**:
+1. **Data Forwarding**:
+
 - The value of `IN.D1` is copied unchanged to `OUT.D1`.
 
 No processing or modification of the data takes place. The function block is stateless and simply combines the signal and data paths.

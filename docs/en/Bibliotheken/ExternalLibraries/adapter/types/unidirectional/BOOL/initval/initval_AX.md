@@ -3,6 +3,7 @@
 ![initval_AX](initval_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AX` is the configurable counterpart to the [const_AX_TRUE](../constants/const_AX_TRUE.md)/[const_AX_FALSE](../constants/const_AX_FALSE.md) blocks: instead of a hard-wired value, it accepts a Boolean start value as a data input at initialization time and writes it to an [AX](../AX.md) adapter plug.

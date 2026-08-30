@@ -44,7 +44,7 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Priorisierung oder Verzög
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a2_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
+- [Uebung_004a2_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
 
 ## Fazit
 
@@ -54,4 +54,4 @@ Der `E_MERGE_2` ist ein fundamentaler und häufig verwendeter Baustein für die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

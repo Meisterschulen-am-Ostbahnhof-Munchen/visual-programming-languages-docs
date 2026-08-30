@@ -3,6 +3,7 @@
 ![GET_DINT](./GET_DINT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **GET_DINT** liest einen DINT-Wert aus einer InOut-Variable und stellt diesen als gepufferten Ausgangswert bereit. Die Variable wird dabei nicht verändert; der Baustein dient als reiner Lese- und Pufferbaustein.
@@ -65,7 +66,7 @@ Es gibt keine Verzweigungen, Schleifen oder Wartezeiten.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-In der 4diac-IDE existieren analoge Bausteine für andere Datentypen (z. B. `GET_INT`, `GET_BOOL`). Der grundlegende Mechanismus ist identisch, lediglich der Datentyp unterscheidet sich. 
+In der 4diac-IDE existieren analoge Bausteine für andere Datentypen (z. B. `GET_INT`, `GET_BOOL`). Der grundlegende Mechanismus ist identisch, lediglich der Datentyp unterscheidet sich.
 
 Im Gegensatz zu einem **MOVE**-Baustein, der einen Wert von einem Eingang zu einem Ausgang kopiert, liest **GET_DINT** den Wert aus einer InOut-Variable und puffert ihn. Dies erlaubt das Lesen von Variablen, die nicht direkt als Daten-Eingang verbunden werden können.
 
@@ -77,4 +78,4 @@ Im Gegensatz zu einem **MOVE**-Baustein, der einen Wert von einem Eingang zu ein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

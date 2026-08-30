@@ -3,6 +3,7 @@
 ![ASSEMBLE_DWORD_FROM_BYTES](https://github.com/user-attachments/assets/818dd9ca-040d-43e5-a631-b8206ec1ed5d)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_DWORD_FROM_BYTES` kombiniert vier BYTE-Werte zu einem einzigen DWORD-Wert. Dies ist besonders nützlich, wenn Daten aus mehreren Quellen zusammengeführt werden müssen, um sie als eine einzige Einheit zu verarbeiten oder zu speichern.

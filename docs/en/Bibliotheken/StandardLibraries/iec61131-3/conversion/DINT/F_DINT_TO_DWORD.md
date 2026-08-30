@@ -6,6 +6,7 @@
 
 The function block `F_DINT_TO_DWORD` converts a 32-bit integer value (DINT) into a 32-bit unsigned value (DWORD). This conversion is particularly necessary when signed values need to be converted to unsigned values, for example, for further processing in certain control algorithms or for communication with other systems.
 ![F_DINT_TO_DWORD](F_DINT_TO_DWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -60,6 +61,6 @@ The `F_DINT_TO_DWORD` function block is an efficient and reliable tool for conve
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

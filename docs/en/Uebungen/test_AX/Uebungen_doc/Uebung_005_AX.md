@@ -1,8 +1,9 @@
 # Exercise_005_AX: Toggle Flip-Flop with IXA
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_005_AX`. This exercise demonstrates how to use a state-based input (`IXA`) to control an event-based flip-flop.
+This article describes the logiBUS® exercise `Uebung_005_AX`. This exercise demonstrates how to use a state-based input (`IXA`) to control an event-based flip-flop
 ----
+
 ## Objective of the Exercise
 
 Demonstration of converting data to events for control purposes.
@@ -17,9 +18,9 @@ Demonstration of converting data to events for control purposes.
 
 ![Uebung_005_AX_network](./Uebung_005_AX_network.svg)
 
-* **`DigitalInput_I1`**: Type `logiBUS_IXA`. Continuously returns TRUE when pressed.
-* **`AX_SWITCH`**: Serves as a gate here.
-* **`AX_T_FF`**: The toggle flip-flop.
+- **`DigitalInput_I1`**: Type `logiBUS_IXA`. Continuously returns TRUE when pressed.
+- **`AX_SWITCH`**: Serves as a gate here.
+- **`AX_T_FF`**: The toggle flip-flop.
 
 -----
 

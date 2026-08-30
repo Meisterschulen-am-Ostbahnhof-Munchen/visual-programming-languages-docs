@@ -3,6 +3,7 @@
 ![ST_CREATE_CONN](https://user-images.githubusercontent.com/116869307/214154724-8b937f3d-9158-4a65-8267-347c9eeaf763.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ST_CREATE_CONN function block is used to create event or data connections between two function block instances at runtime. This component enables the dynamic reconfiguration of connections in a 4diac system and is classified as a structural service.
@@ -77,4 +78,4 @@ ST_CREATE_CONN is an essential building block for systems requiring dynamic reco
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

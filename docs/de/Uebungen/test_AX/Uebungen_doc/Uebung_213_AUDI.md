@@ -17,7 +17,7 @@ Die Übung dient dem Kennenlernen von:
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub‑Bausteine:
+### Sub‑Bausteine
 
 #### **AUDI_FB_CTU**
 
@@ -32,7 +32,7 @@ Die Übung dient dem Kennenlernen von:
   - **PV** (Preset Value) – Vergleichswert für das Setzen von `Q` (von `AUDI_UDINT_TO_UDI.AUDI_OUT`)
   - **Q** (Ausgang) – wird TRUE, wenn `CV ≥ PV` (an `Output_Q1.OUT`)
   - **CV** (Current Value) – aktueller Zählerstand (an `Q_NumericValue_AUDI.u32NewValue`)
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Bei jeder steigenden Flanke am CU‑Eingang wird der Zähler um 1 erhöht, sofern `R=FALSE` ist. Ein Signal an `R` setzt den Zähler auf 0 zurück. Der Ausgang `Q` ist TRUE, sobald der aktuelle Zählerstand `CV` den Preset‑Wert `PV` erreicht oder überschreitet. Der Zählbereich ist `UDINT` (0 … 4.294.967.295).
 
 ---
@@ -47,7 +47,7 @@ Die Übung dient dem Kennenlernen von:
   - **REQ** (Ereigniseingang) – löst die Konvertierung aus (verbunden mit `Input_R.INITO`)
 - **Datenausgang**:
   - **AUDI_OUT** (Adapter‑Ausgang) – liefert den konvertierten UDI‑Wert (entspricht `UDINT#5`) an `AUDI_FB_CTU.PV`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Wandelt den konstanten UDINT‑Wert 5 in ein UDI‑Adapter‑Signal um, das vom nachfolgenden CTU‑Baustein als Preset‑Wert genutzt wird. Die Konvertierung wird einmalig beim Initialisierungsereignis (`INITO`) des Reset‑Eingangs ausgelöst.
 
 ---
@@ -61,7 +61,7 @@ Die Übung dient dem Kennenlernen von:
 - **Ereignis-/Datenanschlüsse**:
   - Keine Ereignisse
   - **IN** (Adapter‑Ausgang) – liefert den digitalen Eingangswert an `AUDI_FB_CTU.CU`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Stellt den ersten digitalen logiBUS‑Eingang (Klemme I1) als Adapter‑Signal für den Zählimpuls bereit.
 
 ---
@@ -75,7 +75,7 @@ Die Übung dient dem Kennenlernen von:
 - **Ereignis-/Datenanschlüsse**:
   - **INITO** (Ereignisausgang) – wird beim Initialisierungsstart ausgelöst (verbunden mit `AUDI_UDINT_TO_UDI.REQ`)
   - **IN** (Adapter‑Ausgang) – liefert den digitalen Eingangswert an `AUDI_FB_CTU.R`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Stellt den zweiten digitalen logiBUS‑Eingang (Klemme I2) als Adapter‑Signal für den Reset des Zählers bereit. Zusätzlich wird beim Start das Ereignis `INITO` erzeugt, das die einmalige Initialisierung des Preset‑Werts auslöst.
 
 ---
@@ -89,7 +89,7 @@ Die Übung dient dem Kennenlernen von:
 - **Ereignis-/Datenanschlüsse**:
   - Keine Ereignisse
   - **OUT** (Adapter‑Eingang) – empfängt das Signal von `AUDI_FB_CTU.Q`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Übernimmt den Zählerendwert (`Q`) und gibt ihn auf dem ersten digitalen logiBUS‑Ausgang (Klemme Q1) aus.
 
 ---
@@ -102,7 +102,7 @@ Die Übung dient dem Kennenlernen von:
 - **Ereignis-/Datenanschlüsse**:
   - Keine Ereignisse
   - **u32NewValue** (Dateneingang) – empfängt den aktuellen Zählerstand von `AUDI_FB_CTU.CV`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Zeigt den übergebenen 32‑Bit‑Wert (CV) auf einem numerischen Terminal (z. B. HMI) an. Die Objekt‑ID `OutputNumber_N1` legt fest, auf welchem Anzeigeelement die Zahl erscheint.
 
 ---
@@ -111,10 +111,10 @@ Die Übung dient dem Kennenlernen von:
 
 ### Ablauf
 
-1. **Initialisierung**:  
+1. **Initialisierung**:
    Nach dem Systemstart wird der Reset‑Eingang `Input_R` initialisiert. Das dabei erzeugte Ereignis `INITO` triggert den Konvertierungsbaustein `AUDI_UDINT_TO_UDI`, der den Preset‑Wert `5` an den Zähler `AUDI_FB_CTU.PV` übergibt.
 
-2. **Zählbetrieb**:  
+2. **Zählbetrieb**:
    - Jede positive Flanke am logiBUS‑Eingang I1 (`Input_CU`) inkrementiert den Zähler, solange der Reset (`Input_R`) inaktiv ist.
    - Ein Signal am Eingang I2 (`Input_R`) setzt den Zähler auf 0 zurück.
 
@@ -125,7 +125,7 @@ Die Übung dient dem Kennenlernen von:
 ### Verbindungsübersicht (aus dem Netzwerk)
 
 | Quelle | Ziel | Art |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `Input_CU.IN` | `AUDI_FB_CTU.CU` | Adapter (Daten) |
 | `Input_R.IN` | `AUDI_FB_CTU.R` | Adapter (Daten) |
 | `Input_R.INITO` | `AUDI_UDINT_TO_UDI.REQ` | Ereignis |
@@ -141,11 +141,11 @@ Die Übung dient dem Kennenlernen von:
 
 Die Übung **Uebung_213_AUDI** realisiert einen vollständigen Vorwärtszähler (CTU) nach IEC 61131-3 in einer Adapter‑Variante. Der Zähler wird über zwei logiBUS‑Digitaleingänge bedient, sein aktueller Stand sowie das Erreichen des Preset‑Werts werden sowohl auf einem Terminal als auch auf einem digitalen Ausgang ausgegeben. Die einmalige Initialisierung des Preset‑Werts erfolgt über einen Konverterbaustein. Die Übung vermittelt den Umgang mit Adapter‑basierten Funktionsbausteinen, Datenkonvertierung und der Einbindung von Ein‑/Ausgängen in der 4diac‑IDE.
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlagen der 4diac‑IDE, IEC 61131-3, logiBUS‑Ein‑/Ausgänge
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

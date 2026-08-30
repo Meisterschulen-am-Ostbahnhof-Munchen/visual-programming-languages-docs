@@ -14,10 +14,10 @@ Diese Übung demonstriert die Verarbeitung von Signalen mittels Adapter-Verbindu
 
 Im Hauptnetzwerk werden folgende Bausteine verwendet:
 
-*   **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IXA`): Repräsentiert den physischen Eingang `Input_I1`.
-*   **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Repräsentiert den physischen Ausgang `Output_Q1`.
-*   **DigitalOutput_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Repräsentiert den physischen Ausgang `Output_Q2`.
-*   **Uebung_020j2_AX_sub** (`Uebungen::Uebung_020j2_AX_sub`): Eine benutzerdefinierte Sub-Applikation, welche die Logik zur Impulsformung und Signalverteilung enthält.
+-   **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IXA`): Repräsentiert den physischen Eingang `Input_I1`.
+-   **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QXA`): Repräsentiert den physischen Ausgang `Output_Q1`.
+-   **DigitalOutput_Q2** (`logiBUS::io::DQ::logiBUS_QXA`): Repräsentiert den physischen Ausgang `Output_Q2`.
+-   **Uebung_020j2_AX_sub** (`Uebungen::Uebung_020j2_AX_sub`): Eine benutzerdefinierte Sub-Applikation, welche die Logik zur Impulsformung und Signalverteilung enthält.
 
 ### Sub-Bausteine: Uebung_020j2_AX_sub
 
@@ -55,15 +55,15 @@ Der Ablauf der Übung gestaltet sich wie folgt:
     Das System liest den Zustand des digitalen Eingangs `Input_I1` über den Baustein `DigitalInput_I1`.
 
 2.  **Verarbeitung in der Sub-Applikation**:
-    *   Die Adapter-Verbindung des Eingangs wird an die Sub-Applikation `Uebung_020j2_AX_sub` weitergeleitet.
-    *   Innerhalb der Sub-Applikation wird das Signal aufgeteilt.
-    *   Es werden zwei unabhängige Timer gestartet, deren Zeitwerte über Parameter im Hauptnetzwerk definiert sind:
-        *   **Pfad 1**: Zeitdauer `T#800ms` (Parameter `TQ1`).
-        *   **Pfad 2**: Zeitdauer `T#1200ms` (Parameter `TQ2`).
+    -   Die Adapter-Verbindung des Eingangs wird an die Sub-Applikation `Uebung_020j2_AX_sub` weitergeleitet.
+    -   Innerhalb der Sub-Applikation wird das Signal aufgeteilt.
+    -   Es werden zwei unabhängige Timer gestartet, deren Zeitwerte über Parameter im Hauptnetzwerk definiert sind:
+        -   **Pfad 1**: Zeitdauer `T#800ms` (Parameter `TQ1`).
+        -   **Pfad 2**: Zeitdauer `T#1200ms` (Parameter `TQ2`).
 
 3.  **Signalausgabe**:
-    *   Der Ausgang `Q1` der Sub-Applikation (800ms Impuls) steuert den `DigitalOutput_Q1`.
-    *   Der Ausgang `Q2` der Sub-Applikation (1200ms Impuls) steuert den `DigitalOutput_Q2`.
+    -   Der Ausgang `Q1` der Sub-Applikation (800ms Impuls) steuert den `DigitalOutput_Q1`.
+    -   Der Ausgang `Q2` der Sub-Applikation (1200ms Impuls) steuert den `DigitalOutput_Q2`.
 
 Dadurch wird erreicht, dass ein einzelnes Eingangssignal zwei Ausgänge aktiviert, die jedoch unterschiedlich lange aktiv bleiben (Impulsformung).
 

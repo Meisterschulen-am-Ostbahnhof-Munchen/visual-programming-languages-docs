@@ -1,6 +1,7 @@
 # I_FPTO
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_FPTO** is a standards-compliant function block for controlling and monitoring the front power take-off (FPTO) output shaft, developed under the EPL 2.0 license.
@@ -34,7 +35,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 ## FPTO Parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-|-----------|------|--------------|-----|------------|------------|
+| ----------- | ------ | -------------- | ----- | ------------ | ------------ |
 | `FRONT_PTO_OUTP_SHAFT_SPEED` | UINT | Current FPTO shaft speed | 1882 | 16 | 0.125 rpm/bit |
 | `FRONT_PTO_OUTP_SH_SPEED_SET` | UINT | Target speed of FPTO shaft | 1884 | 16 | 0.125 rpm/bit |
 | `FRONT_PTO_ENGAGEMENT` | BYTE | FPTO coupling status | 1888 | 2 | 4 states/2 bits |
@@ -49,12 +50,15 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with `QI`=TRUE starts initialization
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-2. **Data Provision**:
+1. **Data Provision**:
+
 - `IND` provides all FPTO parameters with timestamps
 - Automatic updates upon state changes
-3. **Error Handling**:
+1. **Error Handling**:
+
 - `TIMEOUT` in case of communication problems
 - Detailed status messages in the `STATUS` field
 
@@ -77,7 +81,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 ## ⚖️ Comparison with similar components
 
 | Feature | I_FPTO | Standard_PTO | Advanced_PTO |
-|---------------|--------|--------------|--------------|
+| --------------- | -------- | -------------- | -------------- |
 | ISO standard | ✔ (ISO 11783-7) | ✔ | ✖ |
 | Front PTO | ✔ | ✖ | ✔ |
 | Economy Mode | ✔ | ✖ | ✔ |
@@ -85,7 +89,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65092) for measuring a
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

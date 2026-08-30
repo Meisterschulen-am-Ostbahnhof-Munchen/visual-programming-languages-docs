@@ -3,9 +3,11 @@
 ![AD_TO_AL](./AD_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AD_TO_AL** function block is a composite function block that performs a unidirectional conversion of an AD adapter (DWORD) to an AL adapter (LWORD). It serves as a bridge between subsystems that use different adapter types but require the same logical connection. The function block passes event and data signals through one-to-one, thus enabling the seamless integration of heterogeneous components.
+
 ## Interface Structure
 
 The function block has only adapter interfaces; separate event or data inputs/outputs are not available.
@@ -29,7 +31,7 @@ None.
 ### **Adapter**
 
 | Type | Direction | Name | Comment |
-|-----|----------|------|-----------|
+| ----- | ---------- | ------ | ----------- |
 | Socket (Input) | Input | `AD_IN` | DWORD adapter input of type `adapter::types::unidirectional::AD` |
 | Plug (Output) | Output | `AL_OUT` | LWORD adapter output of type `adapter::types::unidirectional::AL` |
 
@@ -79,6 +81,6 @@ The `AD_TO_AL` function block is a lean yet valuable tool for adapter conversion
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -29,7 +29,7 @@ Keine – der FB besitzt keine eigenständigen Daten-Ausgänge. Daten werden üb
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AUI` | Eingehende AUI-Schnittstelle, die auf drei Ausgänge verteilt wird. |
 | Plug (Ausgang) | `OUT1` | `adapter::types::unidirectional::AUI` | Erster ausgehender AUI-Ausgang (identisch zum Eingangssignal). |
 | Plug (Ausgang) | `OUT2` | `adapter::types::unidirectional::AUI` | Zweiter ausgehender AUI-Ausgang (identisch zum Eingangssignal). |
@@ -59,7 +59,7 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Es gibt nur einen einzig
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgänge | Eigenschaften |
-|----------|----------|---------------|
+| ---------- | ---------- | --------------- |
 | `AUI_SPLIT_2` | 2 | Gleiche Funktionsweise, aber nur zwei Ausgänge. |
 | `AUI_SPLIT_4` | 4 | Erweiterte Version mit vier Ausgängen. |
 | `AUI_MERGE` | – | Führt mehrere AUI-Eingänge zu einem Ausgang zusammen (entgegengesetzte Funktion). |

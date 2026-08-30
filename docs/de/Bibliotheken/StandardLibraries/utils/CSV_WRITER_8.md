@@ -3,6 +3,7 @@
 ![CSV_WRITER_8](https://github.com/user-attachments/assets/1bef9b69-8591-4f61-b6e1-2589d51844b3)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der CSV_WRITER_8 ist ein Funktionsblock zur Ausgabe von Daten in eine CSV-Datei. Er ermöglicht das Schreiben von bis zu 8 verschiedenen Datenwerten in eine spezifizierte Datei. Der Funktionsblock ist Teil der eclipse4diac::utils-Paketfamilie und eignet sich besonders für Datenerfassungs- und Protokollierungsaufgaben.
@@ -67,4 +68,4 @@ Der CSV_WRITER_8 ist ein leistungsfähiger Funktionsblock für die Datenerfassun
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

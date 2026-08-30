@@ -52,9 +52,9 @@ The `NVS` block simultaneously generates an event at output `GETO`, which is con
 1. As soon as the value of `InputString_S1` is changed externally (e.g., via an operator terminal), `StringValue_IS` generates an event at `IND`.
 2. This event is connected to the `SET` input of the `NVS` module.
 
-### ...##
+### ... ##
 
-4. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
+1. **Note:** After saving, ``Q_StringValue`` is **not** automatically updated. The value is only written back to the ISOBUS variable at startup. This is intentional, as the value is already visible in the terminal.
 
 `NVS``.
 
@@ -79,8 +79,8 @@ Exercise `Uebung_012l` demonstrates how to write an ISOBUS string to the NVS mem
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
 
 ### Datenverbindungen im Überblick
 

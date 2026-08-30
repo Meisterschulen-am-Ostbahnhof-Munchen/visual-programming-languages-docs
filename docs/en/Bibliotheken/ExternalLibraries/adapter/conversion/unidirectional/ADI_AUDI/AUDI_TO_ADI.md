@@ -3,9 +3,11 @@
 ![AUDI_TO_ADI](./AUDI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUDI_TO_ADI** function block is a composite block that converts a unidirectional AUDI adapter (UDINT) into an ADI adapter (DINT). It serves as a bridge between components that use different data types via adapter interfaces. The conversion is performed by the inner block `iec61131::conversion::F_UDINT_TO_DINT`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AUDI_TO_ADI** function block is a composite block that converts a unidirec
 ### **Adapter**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | AUDI_IN | adapter::types::unidirectional::AUDI | Socket (Input) | UDINT Adapter Interface |
 | ADI_OUT | adapter::types::unidirectional::ADI | Plug (Output) | DINT Adapter Interface |
 

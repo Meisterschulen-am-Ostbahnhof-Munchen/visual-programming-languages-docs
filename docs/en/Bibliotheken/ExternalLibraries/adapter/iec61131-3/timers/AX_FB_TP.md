@@ -69,7 +69,7 @@ Compared to [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md), AX_
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+- [Exercise_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Conclusion
 

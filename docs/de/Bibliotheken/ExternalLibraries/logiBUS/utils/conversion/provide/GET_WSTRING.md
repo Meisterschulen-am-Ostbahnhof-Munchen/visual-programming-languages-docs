@@ -3,6 +3,7 @@
 ![GET_WSTRING](./GET_WSTRING.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_WSTRING** dient dem Auslesen einer WSTRING-Variablen über einen InOut-Parameter und stellt den gelesenen Wert gepuffert als Datenausgang bereit. Er wird typischerweise eingesetzt, um einen externen WSTRING-Wert in die interne Verarbeitung eines Applikationsbausteins zu übernehmen, ohne den Ursprungswert zu verändern.

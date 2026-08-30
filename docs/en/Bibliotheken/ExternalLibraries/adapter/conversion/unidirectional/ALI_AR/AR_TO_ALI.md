@@ -3,9 +3,11 @@
 ![AR_TO_ALI](./AR_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AR_TO_ALI` converts a REAL adapter (`AR-IN`) into a LINT adapter (`ALI-OUT`). It enables the seamless integration of floating-point values from adapter `AR` into applications that expect 64-bit integer values via adapter `ALI`. The conversion is performed via an internal function block `F_REAL_TO_LINT` according to IEC 61131.
+
 ## Interface Structure
 
 The function block does not have any independent event or data inputs/outputs at the block level. All signal transmission occurs via adapter sockets or plugs.
@@ -29,7 +31,7 @@ No dedicated data outputs. The data is sent via the plug `ALI_OUT` (interface `D
 ### **Adapter**
 
 | Direction | Label | Type | Compatible Adapter Type | Description |
-|----------|-------------|-----|------------------------|--------------|
+| ---------- | ------------- | ----- | ------------------------ | -------------- |
 | Socket | `AR_IN` | `adapter::types::unidirectional::AR` | AR Adapter (REAL) | Receiving adapter for the REAL value. |
 | Plug | `ALI_OUT` | `adapter::types::unidirectional::ALI` | ALI Adapter (LINT) | Providing adapter for the converted LINT value. |
 
@@ -60,7 +62,7 @@ The Composite FB itself does not have its own state machine. Its behavior is ent
 ## Comparison with Similar Function Blocks
 
 | FB | Conversion | Interface | Note |
-|----|---------------|---------------|-----------|
+| ---- | --------------- | --------------- | ----------- |
 | `AR_TO_ALI` | REAL → LINT | AR / ALI Adapter | Specifically for Adapter Coupling |
 | `F_REAL_TO_LINT` | REAL → LINT | Standalone I/O (REQ/CNF, IN/OUT) | Direct converter without adapters |
 | The `AR_TO_ALI` encapsulates the `F_REAL_TO_LINT` and adds the adapter connections. The advantage lies in its simple, adapter-network-compatible connection. A direct converter without adapters would not be usable in adapter structures. |

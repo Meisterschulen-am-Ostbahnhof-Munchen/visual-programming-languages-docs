@@ -3,6 +3,7 @@
 ![AX_AUI_DEMUX_4](AX_AUI_DEMUX_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `AX_AUI_DEMUX_4` ist die adapterbasierte Variante des generischen Demultiplexers für den Datentyp `BOOL`. Anders als `AX_DEMUX_4` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.

@@ -3,9 +3,11 @@
 ![Uebung_215b_network](./Uebung_215b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **down counter** according to IEC 61131-3 (function block `FB_CTD`) with a preset value of **10**. The counter is controlled via two digital inputs (CD – Count Down, LD – Load). The current counter value is output to a terminal (PHYS), and the output Q indicates whether the counter value has reached zero.
+
 ## Function Blocks (FBs) Used
 
 - **FB_CTD** (Type: `iec61131::counters::FB_CTD`)
@@ -62,6 +64,6 @@ Exercise 215b demonstrates the use of the IEC 61131-3 down counter `FB_CTD` in a
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

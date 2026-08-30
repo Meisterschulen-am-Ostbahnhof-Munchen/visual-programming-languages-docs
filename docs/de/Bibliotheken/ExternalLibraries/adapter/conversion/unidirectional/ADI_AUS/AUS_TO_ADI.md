@@ -3,6 +3,7 @@
 ![AUS_TO_ADI](./AUS_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein AUS_TO_ADI ist ein zusammengesetzter (Composite) Funktionsbaustein, der eine unidirektionale Adapter-Konvertierung von `AUS` (Daten vom Typ `USINT`) nach `ADI` (Daten vom Typ `DINT`) realisiert. Er kapselt einen IEC 61131‑Konvertierungsbaustein und ermöglicht so eine saubere Trennung von Adaptertypen in der 4diac-IDE.
@@ -73,4 +74,4 @@ Der Composite‑Baustein `AUS_TO_ADI` bietet eine einfache und saubere Möglichk
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

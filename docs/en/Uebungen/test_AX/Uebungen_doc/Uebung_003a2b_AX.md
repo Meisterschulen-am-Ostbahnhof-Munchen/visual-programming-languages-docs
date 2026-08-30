@@ -3,6 +3,7 @@
 ![Uebung_003a2b_AX_network](./Uebung_003a2b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the control of two digital outputs (Q1 and Q2) using a reset-set function block (AX_FB_R_IO) for each output. The reset inputs of both blocks are controlled jointly via a third digital input (I3), which acts as a "maintenance off" switch. An AX_SPLIT_2 distributes the reset signal to both channels.
@@ -59,16 +60,18 @@ The goal is to understand the interaction of monostable elements (R_IO) with har
 ## Program Flow and Connections
 
 1. **Signal Flow**:
+
 - The pushbuttons on `Input_I1` and `Input_I2` each control a `AX_FB_R_IO` module (set).
 - The outputs of these modules connect the digital outputs `Output_Q1` and `Output_Q2`.
 - The third pushbutton on `Input_I3` serves as a common reset signal: It is simultaneously distributed via `AX_SPLIT_2` to the `RESET1` inputs of both `AX_FB_R_IO` modules.
 
-2. **Functionality**:
+1. **Functionality**:
 
 - Pressing I1 or I2 activates the corresponding output, which then remains on (self-holding).
 - Pressing I3 deactivates both outputs ("caretaker off").
 - The network specifies that I3 should be a **latching** switch, otherwise the output will only be off while the button is pressed. Alternatively, an enabling switch could be implemented using an AND gate (see comments).
-3. **Special Features**:
+1. **Special Features**:
+
 - The logiBUS modules require a `QI` signal (`TRUE`) to be active.
 - The `AX_FB_R_IO` can also be operated without a connected reset – in this case, the output remains permanently on after being set once (like an RS flip-flop without a reset).
 
@@ -93,4 +96,4 @@ This exercise demonstrates a robust circuit for controlling two outputs with a c
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

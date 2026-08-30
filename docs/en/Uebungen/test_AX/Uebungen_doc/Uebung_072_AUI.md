@@ -3,6 +3,7 @@
 ![Uebung_072_AUI_network](./Uebung_072_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how to read the vehicle-based speed (Ground-Based Machine Speed – GBSD) and the wheel-based speed (Wheel-Based Machine Speed – WBSD) of an ISOBUS TECU (Tractor Electronic Control Unit) via an interface adapter (AUI) and display it on a Universal Terminal (UT).
@@ -78,18 +79,19 @@ Same functionality as `Q_NumericValue_GBSD`, but for wheel-based speed.
 
 Both interface adapters (`IA_GBSD` and `IA_WBSD`) are parameterized with `QI = TRUE`. After system startup, they generate an event at output `INITO`.
 
-2. **Event Chaining**:
+1. **Event Chaining**:
 
 The event `INITO` from `IA_GBSD` is directly connected to input `INIT` from `Q_NumericValue_GBSD`.
 
 Accordingly, `INITO` is connected to `IA_WBSD` and `INIT` to `Q_NumericValue_WBSD`. This initializes the UT display blocks after the data is read.
 
-3. **Data Flow (Adapter Connections)**:
+1. **Data Flow (Adapter Connections)**:
+
 - The adapter output `SPEED` of `IA_GBSD` (AUI interface) is connected to the adapter input `AUI_IN` of the converter `CONV_GBSD`.
 - The converter `CONV_GBSD` converts the AUI interface into an AUDI interface and outputs it at its adapter output `AUDI_OUT`.
 - This output is connected to the data input `u32NewValue` of `Q_NumericValue_GBSD`.
 - The same applies to the wheel-based speed (`IA_WBSD` → `CONV_WBSD` → `Q_NumericValue_WBSD`).
-4. **Result**:
+1. **Result**:
 
 Two numerical values appear on the UT: the vehicle-based speed (GBSD) and the wheel-based speed (WBSD). The values are provided via the configured object IDs in the TECU's variable pool.
 

@@ -3,6 +3,7 @@
 ![Uebung_210_network](./Uebung_210_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler (Count-Up) basierend auf dem Standardbaustein **FB_CTU** nach IEC 61131-3. Der Zähler arbeitet mit einem Datentyp `INT` (16‑Bit Ganzzahl) und verfügt über eine Terminal-Ausgabe, die den aktuellen Zählwert numerisch anzeigt. Als Hardware-Anbindung dienen digitale Eingänge und ein digitaler Ausgang des logiBUS-Systems.
@@ -10,7 +11,7 @@ Diese Übung implementiert einen Vorwärtszähler (Count-Up) basierend auf dem S
 ## Verwendete Funktionsbausteine (FBs)
 
 | Bausteinname | Typ | Parameter | Ereigniseingänge/-ausgänge | Dateneingänge/-ausgänge |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **FB_CTU** | `iec61131::counters::FB_CTU` | PV = INT#5 | REQ (Eingang), CNF (Ausgang) | CU (Eingang), R (Eingang), Q (Ausgang), CV (Ausgang) |
 | **Input_CU** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I1 | IND (Ausgang) | IN (Ausgang) |
 | **Input_R** | `logiBUS::io::DI::logiBUS_IX` | QI = TRUE, Input = Input_I2 | IND (Ausgang) | IN (Ausgang) |
@@ -50,12 +51,12 @@ Diese Übung vermittelt den praktischen Umgang mit dem IEC‑61131-3 Zählerbaus
 - Datenkonvertierung und Darstellung numerischer Werte auf einem Terminal.
 - Verständnis der ereignisgesteuerten Ausführung und der Notwendigkeit von Ereignisreduzierung (z. B. durch Flipflops).
 
-**Schwierigkeitsgrad**: Mittel  
-**Vorkenntnisse**: Grundlegende Bedienung der 4diac‑IDE, Verständnis von Ereignissen und Datenverbindungen, Basiswissen über IEC‑61131-3 Funktionsbausteine.  
+**Schwierigkeitsgrad**: Mittel
+**Vorkenntnisse**: Grundlegende Bedienung der 4diac‑IDE, Verständnis von Ereignissen und Datenverbindungen, Basiswissen über IEC‑61131-3 Funktionsbausteine.
 **Start der Übung**: Importieren Sie die Datei `Uebung_210.fbt` (oder das entsprechende 4diac‑Projekt) und weisen Sie die logiBUS‑Hardware‑Kanäle entsprechend den Pool‑Bezeichnungen (`Input_I1`, `Input_I2`, `Output_Q1`, `OutputNumber_N1`) zu.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

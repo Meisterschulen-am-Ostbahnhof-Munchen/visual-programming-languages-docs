@@ -3,9 +3,11 @@
 ![logiBUS_DI_Events](./logiBUS_DI_Events.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The GlobalConstants definition `logiBUS_DI_Events` provides a comprehensive collection of event constants for digital inputs (DI) in the logiBUS system. These constants define various button press events and their unique identifiers, which are used in the control logic for processing user input via pushbuttons.
+
 ## Functionality
 
 The GlobalConstants definition `logiBUS_DI_Events` contains 14 different event constants of type `logiBUS_DI_Events_S`, each identified by a unique numeric value (`EType`). These constants are used to represent various states and events of pushbuttons in the control logic.
@@ -24,7 +26,7 @@ Documentation for the individual events: <https://components.espressif.com/compo
 The event constants cover the following states:
 
 | EType | Constant | Description |
-|-------|-----------|--------------|
+| ------- | ----------- | -------------- |
 | 0 | BUTTON_PRESS_DOWN | Button pressed |
 | 1 | BUTTON_PRESS_UP | Button released |
 | 2 | BUTTON_PRESS_REPEAT | Button pressed again |
@@ -40,6 +42,7 @@ The event constants cover the following states:
 | 12 | BUTTON_NONE_PRESS | No key press |
 | 255 | Invalid | Invalid event |
 ...
+
 ## Application Scenarios
 
 - **User Interface Control**: Processing keystrokes on operator panels

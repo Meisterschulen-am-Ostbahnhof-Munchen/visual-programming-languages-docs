@@ -3,9 +3,11 @@
 ![Uebung_053_AB_network](./Uebung_053_AB_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates how four digital inputs (I1 to I4) are combined into a single byte using an adapter and then split back into four digital outputs (Q1 to Q4). It demonstrates how parallel binary signals can be converted into a data bus and recovered using the function blocks `ASSEMBLE_AB_FROM_AX` and `SPLIT_AB_INTO_AX`.
+
 ## Function Blocks (FBs) Used
 
 - **DigitalInput_I1 .. DigitalInput_I4** (Type `logiBUS::io::DI::logiBUS_IXA`)
@@ -39,16 +41,18 @@ This exercise uses only the standard function blocks listed above. No other sub-
 
 1. The **digital inputs** I1 to I4 are read via function blocks `DigitalInput_I1` to `DigitalInput_I4`. Its outputs (`IN`) provide the Boolean states of the connected sensors.
 2. These four Boolean values are routed via adapter connections to sockets `BIT_00` to `BIT_03` of the function block **`ASSEMBLE_BYTE_FROM_BOOLS`**.
+
 - `DigitalInput_I1.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_00`
 - `DigitalInput_I2.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_01`
 - `DigitalInput_I3.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_02`
 - `DigitalInput_I4.IN` → `ASSEMBLE_BYTE_FROM_BOOLS.BIT_03`
-3. The **assemble module** packs the four bits into a byte (least significant bit = BIT_00) and outputs this byte at its output `OUT`.
-4. This output is directly connected to the input `IN` of the module **`SPLIT_BYTE_INTO_BOOLS`**.
-- `ASSEMBLE_BYTE_FROM_BOOLS.OUT` → `SPLIT_BYTE_INTO_BOOLS.IN`
-5. The **Split Block** splits the byte back into four individual Boolean values at its output sockets `BIT_00` to `BIT_03`.
+1. The **assemble module** packs the four bits into a byte (least significant bit = BIT_00) and outputs this byte at its output `OUT`.
+2. This output is directly connected to the input `IN` of the module **`SPLIT_BYTE_INTO_BOOLS`**.
 
-6. These values are then connected to the **digital outputs** Q1 to Q4:
+- `ASSEMBLE_BYTE_FROM_BOOLS.OUT` → `SPLIT_BYTE_INTO_BOOLS.IN`
+1. The **Split Block** splits the byte back into four individual Boolean values at its output sockets `BIT_00` to `BIT_03`.
+
+2. These values are then connected to the **digital outputs** Q1 to Q4:
 
 - `SPLIT_BYTE_INTO_BOOLS.BIT_00` → `DigitalOutput_Q1.OUT`
 - `SPLIT_BYTE_INTO_BOOLS.BIT_01` → `DigitalOutput_Q2.OUT`
@@ -65,6 +69,6 @@ This exercise demonstrates how to implement data flow from four digital inputs t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

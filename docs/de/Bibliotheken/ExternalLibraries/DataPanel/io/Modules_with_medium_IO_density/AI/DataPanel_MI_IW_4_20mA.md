@@ -3,11 +3,13 @@
 ![DataPanel_MI_IW_4_20mA](./DataPanel_MI_IW_4_20mA.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **DataPanel_MI_IW_4_20mA** ist ein Service-Interface-Funktionsblock (SIFB) zur Erfassung analoger Eingangsdaten im 4‑20 mA Bereich. Er dient als Schnittstelle zwischen dem Automatisierungssystem und einem hardwarenahen analogen Eingabemodul. Der Baustein übernimmt die Initialisierung der Kommunikation (z. B. Bus‑Anbindung), die zyklische Messwertanforderung sowie die Bereitstellung der gemessenen Rohdaten über Ausgangsereignisse.
 
 * * * * * * * * * *
+
 ## Schnittstellenstruktur
 
 ### **Ereignis-Eingänge**
@@ -48,22 +50,24 @@ Der Funktionsblock **DataPanel_MI_IW_4_20mA** ist ein Service-Interface-Funktion
 *Keine Adapter definiert.*
 
 * * * * * * * * * *
+
 ## Funktionsweise
 
 Der Funktionsblock realisiert eine asynchrone Kommunikation mit einem Slave‑Gerät (z. B. einem Analog‑Eingangsmodul mit 4‑20 mA Schnittstelle) über einen proprietären Bus.
 
-1. **Initialisierung** (`INIT`):  
+1. **Initialisierung** (`INIT`):
    Die Parameter `PARAMS` (z. B. Baudrate, Protokoll‑Einstellungen), die Knotenadresse (`u8SAMember`) und der konkrete analoge Eingangskanal (`Input`) werden gesetzt. Eine Hysterese (`AnalogInput_hysteresis`) kann zur Stabilisierung des Rohwerts angegeben werden. Nach erfolgreicher Verbindung wird `INITO` mit `QO = TRUE` gesendet.
 
-2. **Messwertanforderung** (`REQ`):  
+2. **Messwertanforderung** (`REQ`):
    Der Baustein fordert den aktuellen Messwert des konfigurierten Kanals an. Die Antwort wird asynchron über den Ausgang `CNF` (bei erfolgreicher Anforderung) oder ggf. über `IND` (bei spontanen Wertänderungen oder zyklischen Meldungen des Slaves) geliefert. Der gelesene Wert erscheint in der Ausgangsvariablen `IN` als 16‑Bit‑Rohwert.
 
-3. **Asynchrone Indikation** (`IND`):  
+3. **Asynchrone Indikation** (`IND`):
    Falls das Slave‑Gerät selbstständig (z. B. bei Überschreitung einer Schwelle) Daten sendet, wird `IND` ausgelöst. Dadurch können auch nicht angeforderte Messwerte erfasst werden.
 
 Die Ausgänge `QO` und `STATUS` geben Aufschluss über den Erfolg der Operationen (z. B. Initialisierungsfehler, Kommunikationsfehler).
 
 * * * * * * * * * *
+
 ## Technische Besonderheiten
 
 - **Zielplattform**: Der Baustein ist für das „DataPanel“‑System der HR Agrartechnik GmbH (Version 1.0, Jahr 2026) ausgelegt.
@@ -73,6 +77,7 @@ Die Ausgänge `QO` und `STATUS` geben Aufschluss über den Erfolg der Operatione
 - **Typ‑Hash**: Ein Attribut `eclipse4diac::core::TypeHash` ist enthalten, wird aber mit leerem String initialisiert – kann später zur Laufzeit gesetzt werden.
 
 * * * * * * * * * *
+
 ## Zustandsübersicht
 
 Da es sich um einen Service‑Interface‑FB handelt, ist das Verhalten durch die Ereignislogik und das zugrundeliegende Kommunikations‑Protokoll bestimmt. Ein interner Zustandsautomat wird nicht in der XML‑Definition abgebildet, typischerweise existieren jedoch folgende Phasen:
@@ -86,6 +91,7 @@ Da es sich um einen Service‑Interface‑FB handelt, ist das Verhalten durch di
 Fehlerzustände (z. B. Kommunikationsabbruch) werden über `STATUS` gemeldet.
 
 * * * * * * * * * *
+
 ## Anwendungsszenarien
 
 - **4‑20 mA Sensoranbindung**: Ein Drucksensor, Füllstandssensor oder Temperaturfühler mit 4‑20 mA Ausgang wird an das DataPanel‑System angeschlossen. Der FB liest zyklisch oder auf Anforderung den Messwert.
@@ -94,6 +100,7 @@ Fehlerzustände (z. B. Kommunikationsabbruch) werden über `STATUS` gemeldet.
 - **Landtechnische Steuerung**: In der Agrartechnik (HR Agrartechnik GmbH) werden so z. B. Flüssigkeitsstände, Durchflüsse oder Achslasten erfasst.
 
 * * * * * * * * * *
+
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem allgemeinen analogen Eingangs‑FB (z. B. einem FB für standardisierte Feldbusse wie PROFIBUS oder IO‑Link) zeichnet sich dieser Baustein durch folgende Punkte aus:
@@ -104,6 +111,7 @@ Im Vergleich zu einem allgemeinen analogen Eingangs‑FB (z. B. einem FB für 
 - **Hysterese‑Parameter**: Bietet eine einfache Entprellung auf FB‑Ebene, die in vielen generischen Bausteinen nicht vorhanden ist.
 
 * * * * * * * * * *
+
 ## Fazit
 
 Der Funktionsblock **DataPanel_MI_IW_4_20mA** stellt eine robuste und kompakte Lösung für die Erfassung von 4‑20 mA‑Signalen in einem proprietären DataPanel‑System dar. Die klare Trennung von Initialisierung, Anforderung und spontaner Indikation sowie die integrierte Hysterese machen ihn für den praktischen Einsatz in der Agrartechnik geeignet. Durch die Parametrierbarkeit von Knotenadresse und Kanal ist er flexibel einsetzbar und in bestehende Automatisierungsnetzwerke integrierbar.
@@ -112,4 +120,4 @@ Der Funktionsblock **DataPanel_MI_IW_4_20mA** stellt eine robuste und kompakte L
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

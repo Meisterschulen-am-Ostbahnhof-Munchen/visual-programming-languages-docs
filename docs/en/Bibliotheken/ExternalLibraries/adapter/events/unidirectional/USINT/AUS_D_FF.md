@@ -27,7 +27,7 @@ No direct data outputs. The stored value is output via the adapter output **Q**.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **I** | Socket | `adapter::types::unidirectional::AUS` | Provides the signal to be latched (event E1 and data D1). |
 | **Q** | Plug | `adapter::types::unidirectional::AUS` | Outputs the latched value (event E1 and data D1). |
 

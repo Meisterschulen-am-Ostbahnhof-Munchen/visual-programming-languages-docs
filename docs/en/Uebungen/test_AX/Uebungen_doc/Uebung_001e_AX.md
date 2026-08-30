@@ -3,6 +3,7 @@
 ![Uebung_001e_AX_network](./Uebung_001e_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a simple Boolean negation: The state of the digital input **Input_I1** is negated and output to the digital output **Output_Q1**. It serves as an introduction to signal processing with 4diac and demonstrates the basic interconnection of an input module, a logic negation block, and an output module via adapter connections.
@@ -36,7 +37,7 @@ Data flows via three adapter connections (defined in the XML as `<AdapterConnect
 
 The read state of input I1 is passed to the negation block.
 
-2. `AX_NOT.OUT` → `DigitalOutput_Q1.OUT`
+1. `AX_NOT.OUT` → `DigitalOutput_Q1.OUT`
 
 The negated value is passed to the output block.
 
@@ -55,6 +56,6 @@ The exercise **Exercise_001e_AX** teaches the fundamentals of adapter-based comm
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,11 @@
 ![Uebung_003e_network](./Uebung_003e_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 In this exercise, four digital input signals (I1–I4) are directly connected to four digital outputs (Q1–Q4). A bypass block is inserted between each output, providing additional functionality: The bypass blocks are cascaded and routed through a common bypass valve (output Q8). The circuit implements a simple pass-through with the option of influencing the signal flow via a pressure relief valve.
+
 ## Function Blocks (FBs) Used
 
 The exercise consists of the following FB instances:

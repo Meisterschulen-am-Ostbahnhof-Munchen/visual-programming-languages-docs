@@ -3,6 +3,7 @@
 ![Uebung_011f_PHYSA_network](./Uebung_011f_PHYSA_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the direct pass-through of a physical value (PHYSA) without conversion. An incoming numeric value from interface `InputNumber_I3` is passed unchanged to output interface `OutputNumber_N3`. The exercise illustrates how to handle physical values in an ISOBUS context and the simple connection of input and output modules.
@@ -53,6 +54,6 @@ Exercise **Exercise_011f_PHYSA** implements a simple pass-through of a physical 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

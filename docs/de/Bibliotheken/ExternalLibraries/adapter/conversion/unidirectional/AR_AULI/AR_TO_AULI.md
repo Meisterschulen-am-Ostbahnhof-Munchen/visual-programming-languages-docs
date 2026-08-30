@@ -3,6 +3,7 @@
 ![AR_TO_AULI](./AR_TO_AULI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_TO_AULI** ist ein Composite-Baustein, der eine REAL-Eingangsadapter (AR) in eine ULINT-Ausgangsadapter (AULI) umwandelt. Er dient als unidirektionale Schnittstelle zwischen Komponenten, die mit dem Datentyp REAL arbeiten, und solchen, die ULINT (unsigned long integer) erwarten. Der Baustein kapselt die notwendige Konvertierung und stellt die Ereignis- und Datenweiterleitung automatisch sicher.

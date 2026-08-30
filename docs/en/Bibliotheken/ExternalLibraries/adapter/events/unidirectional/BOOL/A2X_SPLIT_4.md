@@ -3,9 +3,11 @@
 ![A2X_SPLIT_4](./A2X_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **A2X_SPLIT_4** is used to split an incoming A2X adapter signal into four identical A2X outputs. It is designed as a generic block, enabling flexible use in a wide variety of automation environments where an A2X signal is required multiple times.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Direction | Identifier | Type | Description |
-|----------|------------|-----|--------------|
+| ---------- | ------------ | ----- | -------------- |
 | **Socket (Input)** | IN | `adapter::types::unidirectional::A2X` | One incoming A2X signal (unidirectional) |
 | **Plug (Output 1)** | OUT1 | `adapter::types::unidirectional::A2X` | First outgoing A2X channel |
 | **Plug (Output 2)** | OUT2 | `adapter::types::unidirectional::A2X` | Second outgoing A2X channel |
@@ -68,6 +70,6 @@ The **A2X_SPLIT_4** is a simple yet useful component for duplicating a unidirect
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -72,7 +72,7 @@ Vergleich mit [E_D_FF](../../../../../StandardLibraries/events/E_D_FF.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_170_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_170_AX.md)
+- [Uebung_170_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_170_AX.md)
 
 ## Fazit
 
@@ -82,4 +82,4 @@ Der AX_D_FF bietet eine einfache und effektive Lösung für grundlegende Datensp
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

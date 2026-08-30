@@ -4,7 +4,7 @@
 
 ## 🎧 Podcast
 
-* [E_TON in der Industrieautomation: Wie ein simpler Timer Sicherheit und Stabilität schafft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
+- [E_TON in der Industrieautomation: Wie ein simpler Timer Sicherheit und Stabilität schafft](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TON-in-der-Industrieautomation-Wie-ein-simpler-Timer-Sicherheit-und-Stabilitt-schafft-e3672u9)
 
 ## Bild
 
@@ -14,7 +14,7 @@
 
 Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) gemäß der Norm **IEC 61499**, der für **On-Delay-Timer** (Einschaltverzögerung) in industriellen Automatisierungssystemen verwendet wird. Dieser Baustein ermöglicht es, ein Signal zeitlich verzögert einzuschalten, was in vielen Steuerungsanwendungen erforderlich ist, um beispielsweise Maschinen oder Prozesse sicher zu steuern.
 
-### Allgemeine Beschreibung:
+### Allgemeine Beschreibung
 
 - **Name**: E_TON
 - **Typ**: Standard Timer Function Block (On-Delay Timing)
@@ -23,7 +23,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
 
 ---
 
-### Interface-Beschreibung:
+### Interface-Beschreibung
 
 #### **Eingangsereignisse (Event Inputs):**
 
@@ -60,7 +60,7 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
 
 ---
 
-### Funktionsweise:
+### Funktionsweise
 
 1. **Einschaltverzögerung (On-Delay)**:
    - Wenn **IN** auf `TRUE` gesetzt wird, startet der Timer für die Einschaltverzögerung (**PT**).
@@ -72,21 +72,20 @@ Der Baustein **E_TON** ist ein standardisierter Funktionsbaustein-Typ (FBType) g
 
 ---
 
-### Anwendungsbeispiele:
+### Anwendungsbeispiele
 
 - **Maschinensteuerung**: Verzögerte Reaktion auf Sensoren oder Schaltbefehle, z. B. um ein Überlasten von Motoren zu vermeiden.
 - **Prozessautomatisierung**: Zeitgesteuerte Schaltvorgänge in industriellen Prozessen, z. B. in Förderbändern oder Heizungssteuerungen.
 
 ---
 
-### Zusammenfassung:
+### Zusammenfassung
 
 Der **E_TON**-Baustein ist ein einfaches, aber leistungsstarkes Werkzeug in der IEC 61499, um zeitverzögerte Einschaltvorgänge in industriellen Automatisierungssystemen zu realisieren. Er bietet eine zuverlässige Möglichkeit, Signale mit einer definierten Verzögerung einzuschalten, was in vielen Steuerungsanwendungen unerlässlich ist. Der Baustein ist einfach zu konfigurieren und kann in einer Vielzahl von Szenarien eingesetzt werden, bei denen eine zeitliche Verzögerung erforderlich ist.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
-* [Uebung_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
-* [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
-* [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
-
+- [Uebung_020c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c.md)
+- [Uebung_020c2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2.md)
+- [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Uebung_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)

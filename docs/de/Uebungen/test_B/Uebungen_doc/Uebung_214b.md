@@ -88,7 +88,7 @@ Alle Datenverbindungen sind so verdrahtet, dass die Werte synchron mit den Ereig
 - Umgang mit Datentypkonvertierung (ULINT → LREAL)
 - Einbindung von physikalischen Ein‑/Ausgängen und Terminalausgabe in einer 4diac‑Subapplikation
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Benötigte Vorkenntnisse**: Grundlagen der 4diac‑IDE, Umgang mit logiBUS‑Klemmen
 
 **Ausführung**: In der 4diac‑IDE die Subapplikation `Uebung_214b` öffnen und im Simulation‑Modus testen. Die Eingänge `Input_I1` und `Input_I2` können über die Hardware‑Simulation oder reale Klemmen gesteuert werden.
@@ -101,4 +101,4 @@ Die Übung 214b demonstriert die Implementierung eines industriellen Vorwärtsz�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

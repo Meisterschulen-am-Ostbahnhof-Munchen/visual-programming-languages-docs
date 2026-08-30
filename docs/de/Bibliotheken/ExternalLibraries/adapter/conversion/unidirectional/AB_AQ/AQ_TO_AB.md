@@ -3,6 +3,7 @@
 ![AQ_TO_AB](./AQ_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AQ_TO_AB` dient der Konvertierung eines AQ-Adapters (Quarter Byte) in einen AB-Adapter (BYTE). Er ermöglicht die nahtlose Verbindung von Komponenten, die unterschiedliche Adapter-Schnittstellen verwenden, indem er die Signale unverändert durchleitet. Der Baustein ist als reiner „Durchschleif“-FB realisiert, der keine Datenmanipulation vornimmt.

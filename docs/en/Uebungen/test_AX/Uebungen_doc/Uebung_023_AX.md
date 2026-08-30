@@ -3,6 +3,7 @@
 ![Uebung_023_AX_network](./Uebung_023_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **mirror sequence** for two double-acting cylinders. The goal is to build a sequential control for extending and retracting two cylinders using AX function blocks (SR bistables) and softkeys. The control is operated via softkeys on the terminal, and the digital outputs control the actuators (e.g., valves).
@@ -195,13 +196,13 @@ Function: Outputs Q4 (Cylinder 1 Retract). Controlled by `AX_FB_SR_Einfahren_Cyl
 
 Pressing **SoftKey_F1** (UP) sets the SET1 input of `AX_FB_SR_Ausfahren_Cyl_1`. This activates `Q1` and switches output Q1.
 
-2. **Mirroring to Cylinder 2**
+1. **Mirroring to Cylinder 2**
 
 Pressing **SoftKey_F2** (DOWN) sends an event to `AX_SPLIT_2`.
 
 - Output OUT1 of `AX_SPLIT_2` resets the SR bistable `AX_FB_SR_Ausfahren_Cyl_1` → Q1 becomes inactive, cylinder 1 no longer extends.
 - Output OUT2 simultaneously activates `AX_FB_SR_Ausfahren_Cyl_2` → Q2 extends cylinder 2.
-3. **Reset Cylinder 2**
+1. **Reset Cylinder 2**
 
 Pressing **SoftKey_F3** (DOWN) resets `AX_FB_SR_Ausfahren_Cyl_2` → Q2 is inactive.
 
@@ -211,17 +212,18 @@ Pressing **SoftKey_F3** (DOWN) resets `AX_FB_SR_Ausfahren_Cyl_2` → Q2 is inact
 
 Pressing **SoftKey_F7** (UP) sets `AX_FB_SR_Einfahren_Cyl_2` → Q3 is active.
 
-2. **Mirroring to Cylinder 1**
+1. **Mirroring to Cylinder 1**
 
 Pressing **SoftKey_F8** (DOWN) activates `AX_SPLIT_3`:
 
 - OUT1 resets `AX_FB_SR_Einfahren_Cyl_2` → Q3 is inactive.
 - OUT2 sets `AX_FB_SR_Einfahren_Cyl_1` → Q4 is active.
-3. **Reset Cylinder 1**
+1. **Reset Cylinder 1**
 
 Pressing **SoftKey_F9** (DOWN) resets `AX_FB_SR_Einfahren_Cyl_1` → Q4 is deactivated.
 
 Reset Cylinder 1 by pressing **SoftKey_F9** (DOWN).
+
 ### Connection Structure (Adapter Connections)
 
 The adapter connections are linked in the network as follows:
@@ -263,6 +265,6 @@ The exercise "Mirror Sequence (3) – AX Variant" demonstrates sequential contro
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -1,6 +1,7 @@
 # E_TMIN
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_TMIN` (Minimum inter-arrival time) ist ein Composite-Funktionsbaustein, der eingehende Ereignisse an `EI` nur dann an `EO` weiterleitet, wenn seit dem letzten weitergeleiteten Ereignis mindestens die Zeitspanne `Tmin` vergangen ist. Er dient als Ereignis-Drossel (Rate-Limiter) für beliebige Ereignisströme.

@@ -3,6 +3,7 @@
 ![Uebung_224b_network](./Uebung_224b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vor-/Rückwärtszähler nach IEC 61131-3 (Funktionsbaustein `FB_CTUD_ULINT`) mit dem Datentyp `ULINT`. Der aktuelle Zählerstand wird über einen Konverter in einen physikalischen Wert (`LREAL`) umgewandelt und auf einer Terminalausgabe (z. B. einem Bedienpanel) angezeigt. Die Steuerung erfolgt über vier digitale Eingänge (CU, CD, R, LD), zwei digitale Ausgänge zeigen die Grenzwertsignale (QU, QD) an.
@@ -77,4 +78,4 @@ Die Übung demonstriert die Verwendung eines IEC 61131-3 Vor-/Rückwärtszähler
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

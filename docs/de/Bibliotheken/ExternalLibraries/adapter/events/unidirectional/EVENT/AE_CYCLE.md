@@ -13,24 +13,24 @@ Der Funktionsbaustein **AE_CYCLE** (Adapter Event Cycle) dient als periodischer 
 
 ### **Ereignis-Eingänge**
 
-*   **START**: Startet die periodische Erzeugung von Ereignissen. Beim Auslösen dieses Ereignisses wird der Zeitgeber aktiviert.
-*   **STOP**: Stoppt die Erzeugung von Ereignissen und unterbricht den laufenden Zyklus.
+-   **START**: Startet die periodische Erzeugung von Ereignissen. Beim Auslösen dieses Ereignisses wird der Zeitgeber aktiviert.
+-   **STOP**: Stoppt die Erzeugung von Ereignissen und unterbricht den laufenden Zyklus.
 
 ### **Ereignis-Ausgänge**
 
-*   *Keine direkten Ereignis-Ausgänge vorhanden (siehe Adapter).*
+-   *Keine direkten Ereignis-Ausgänge vorhanden (siehe Adapter).*
 
 ### **Daten-Eingänge**
 
-*   **DT** (TIME): Die Zykluszeit (Cycle Time). Dieser Wert bestimmt das Intervall zwischen zwei aufeinanderfolgenden Ereignissen.
+-   **DT** (TIME): Die Zykluszeit (Cycle Time). Dieser Wert bestimmt das Intervall zwischen zwei aufeinanderfolgenden Ereignissen.
 
 ### **Daten-Ausgänge**
 
-*   *Keine Daten-Ausgänge vorhanden.*
+-   *Keine Daten-Ausgänge vorhanden.*
 
 ### **Adapter**
 
-*   **EO** (Plug): Ein Adapter vom Typ `adapter::types::unidirectional::AE`. Über diesen Adapter wird das periodisch erzeugte Ereignis ausgegeben (konkret über das Adapter-Event `E1`).
+-   **EO** (Plug): Ein Adapter vom Typ `adapter::types::unidirectional::AE`. Über diesen Adapter wird das periodisch erzeugte Ereignis ausgegeben (konkret über das Adapter-Event `E1`).
 
 ## Funktionsweise
 
@@ -39,35 +39,35 @@ Der **AE_CYCLE** ist als Composite Function Block (zusammengesetzter Funktionsba
 1.  **Starten**: Wenn das `START`-Ereignis eintrifft, wird der interne `E_DELAY`-Baustein mit der Zeitdauer `DT` gestartet.
 2.  **Verzögerung & Auslösen**: Nach Ablauf der Zeit `DT` erzeugt der interne Baustein ein Ausgangsereignis.
 3.  **Rückkopplung (Loop)**: Dieses interne Ereignis erfüllt zwei Aufgaben:
-    *   Es wird an den Adapter **EO** weitergeleitet, um das Signal nach außen zu geben.
-    *   Es wird direkt auf den `START`-Eingang des internen `E_DELAY` zurückgeführt.
+    -   Es wird an den Adapter **EO** weitergeleitet, um das Signal nach außen zu geben.
+    -   Es wird direkt auf den `START`-Eingang des internen `E_DELAY` zurückgeführt.
 4.  **Zyklus**: Durch diese Rückkopplung startet der Timer sofort neu, wodurch eine kontinuierliche Schleife entsteht.
 5.  **Stoppen**: Das `STOP`-Ereignis unterbricht den internen `E_DELAY`-Baustein sofort und beendet die Schleife.
 
 ## Technische Besonderheiten
 
-*   **Kapselung**: Der Baustein kapselt die Logik einer Oszillatorschaltung (Feedback-Loop) und stellt sie über eine vereinfachte Schnittstelle bereit.
-*   **Adapter-Nutzung**: Die Verwendung des `AE`-Adapters (Adapter Event) ermöglicht eine saubere Trennung und Gruppierung von Ereignisflüssen, passend zum `adapter::events::unidirectional` Paket.
+-   **Kapselung**: Der Baustein kapselt die Logik einer Oszillatorschaltung (Feedback-Loop) und stellt sie über eine vereinfachte Schnittstelle bereit.
+-   **Adapter-Nutzung**: Die Verwendung des `AE`-Adapters (Adapter Event) ermöglicht eine saubere Trennung und Gruppierung von Ereignisflüssen, passend zum `adapter::events::unidirectional` Paket.
 
 ## Zustandsübersicht
 
 Da es sich um einen Composite Function Block handelt, besitzt er keine eigene Zustandsmaschine (ECC). Der implizite Zustand wird durch den internen `E_DELAY` bestimmt:
 
-*   **Inaktiv**: Nach Initialisierung oder `STOP`.
-*   **Laufend**: Nach `START`, während der Timer läuft oder neu getriggert wird.
+-   **Inaktiv**: Nach Initialisierung oder `STOP`.
+-   **Laufend**: Nach `START`, während der Timer läuft oder neu getriggert wird.
 
 ## Anwendungsszenarien
 
-*   **Heartbeat-Signale**: Erzeugung eines Lebenszeichens für übergeordnete Systeme oder Watchdogs.
-*   **Polling**: Periodisches Abfragen von Sensordaten (Trigger für `READ`-Operationen).
-*   **Blinken**: Ansteuerung von Signalleuchten (in Kombination mit Toggle-Logik).
-*   **Zeitgesteuerte Abläufe**: Takterzeugung für Schrittketten oder periodische Berechnungen.
+-   **Heartbeat-Signale**: Erzeugung eines Lebenszeichens für übergeordnete Systeme oder Watchdogs.
+-   **Polling**: Periodisches Abfragen von Sensordaten (Trigger für `READ`-Operationen).
+-   **Blinken**: Ansteuerung von Signalleuchten (in Kombination mit Toggle-Logik).
+-   **Zeitgesteuerte Abläufe**: Takterzeugung für Schrittketten oder periodische Berechnungen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **E_CYCLE**: Dies ist das direkte Standard-Pendant aus der IEC 61499 Bibliothek. `E_CYCLE` bietet die gleiche Funktionalität, nutzt jedoch einen direkten `EO`-Event-Ausgang statt eines Adapters.
-*   **E_DELAY**: `AE_CYCLE` basiert auf `E_DELAY`. Während `E_DELAY` ein Ereignis nur einmalig verzögert weiterleitet, sorgt `AE_CYCLE` durch die interne Verschaltung für eine endlose Wiederholung.
-*   **E_TRAIN**: Erzeugt eine begrenzte Anzahl von Impulsen (Pulse Train), während `AE_CYCLE` unendlich läuft, bis er gestoppt wird.
+-   **E_CYCLE**: Dies ist das direkte Standard-Pendant aus der IEC 61499 Bibliothek. `E_CYCLE` bietet die gleiche Funktionalität, nutzt jedoch einen direkten `EO`-Event-Ausgang statt eines Adapters.
+-   **E_DELAY**: `AE_CYCLE` basiert auf `E_DELAY`. Während `E_DELAY` ein Ereignis nur einmalig verzögert weiterleitet, sorgt `AE_CYCLE` durch die interne Verschaltung für eine endlose Wiederholung.
+-   **E_TRAIN**: Erzeugt eine begrenzte Anzahl von Impulsen (Pulse Train), während `AE_CYCLE` unendlich läuft, bis er gestoppt wird.
 
 ## Fazit
 
@@ -77,4 +77,4 @@ Der **AE_CYCLE** ist ein nützlicher Utility-Baustein für Entwickler, die inner
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

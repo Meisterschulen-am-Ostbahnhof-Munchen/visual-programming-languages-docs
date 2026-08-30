@@ -3,9 +3,11 @@
 ![AIS_SPLIT_2](./AIS_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_SPLIT_2** is a generic adapter module that splits an incoming unidirectional AIS adapter (Application Interface Socket) into two identical outgoing AIS adapters. It serves as a passive splitter without its own logic or event processing.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -69,6 +71,6 @@ The AIS_SPLIT_2 is a minimalist, generically applicable adapter splitter that en
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

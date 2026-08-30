@@ -3,9 +3,11 @@
 ![AI_TO_AUDI](./AI_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AI_TO_AUDI` is a composite module that converts an **AI adapter** (data of type `INT`) into an **AUDI adapter** (data of type `UDINT`). It serves as a unidirectional interface between different adapter types and enables seamless data conversion within the 4diac IDE.
+
 ## Interface Structure
 
 The module does not have traditional event and data inputs/outputs, but instead implements its inputs and outputs via **adapter interfaces**. The following ports are available via the internal adapters:
@@ -37,7 +39,7 @@ The module does not have traditional event and data inputs/outputs, but instead 
 ### Adapter
 
 | Direction | Name | Type | Description |
-|----------|------------|------------------------------|-----------------------------|
+| ---------- | ------------ | ------------------------------ | ----------------------------- |
 | Socket | `AI_IN` | `adapter::types::unidirectional::AI` | Input adapter (INT). |
 | Plug | `AUDI_OUT` | `adapter::types::unidirectional::AUDI` | Output adapter (UDINT). |
 
@@ -97,6 +99,6 @@ The `AI_TO_AUDI` composite block offers a simple yet clean solution for converti
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

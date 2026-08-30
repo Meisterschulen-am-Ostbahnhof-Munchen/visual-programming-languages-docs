@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_MUL_2` is a generic arithmetic function block for the 4diac-ide development environment, used to perform the multiplication of two input values.
@@ -31,15 +32,15 @@ The special feature of this block lies in its adapter-based architecture. Instea
 
 ### **Adapters**
 
-* **`IN1` (Type: `adapter::types::unidirectional::AUI` - Socket):**
+- **`IN1` (Type: `adapter::types::unidirectional::AUI` - Socket):**
 
 The first input adapter, providing the first multiplication factor.
 
-* **`IN2` (Type: `adapter::types::unidirectional::AUI` - Socket):**
+- **`IN2` (Type: `adapter::types::unidirectional::AUI` - Socket):**
 
 The second input adapter, providing the second multiplication factor.
 
-* **`OUT` (Type: `adapter::types::unidirectional::AUI` - Plug):**
+- **`OUT` (Type: `adapter::types::unidirectional::AUI` - Plug):**
 
 The output adapter that outputs the calculated product of the two input values along with the corresponding update event.
 
@@ -59,9 +60,10 @@ After successful calculation, the result is passed to the output adapter `OUT`, 
 
 ## Technical Features
 
-* **Generic Behavior:** The function block is linked to the value `'GEN_AUI_MUL'` via the compiler attribute `GenericClassName`. This means that the function block can operate independently of the data type (e.g., for `INT`, `REAL`, `LREAL`, etc.), depending on the specific data type defined by the connected adapters.
-* **Efficient Wiring:** By encapsulating the function block in `AUI` adapters (Unidirectional Interface Adapters), the number of connections in the function plan is drastically reduced, as data and event flows are combined.
-* ---
+- **Generic Behavior:** The function block is linked to the value `'GEN_AUI_MUL'` via the compiler attribute `GenericClassName`. This means that the function block can operate independently of the data type (e.g., for `INT`, `REAL`, `LREAL`, etc.), depending on the specific data type defined by the connected adapters.
+- **Efficient Wiring:** By encapsulating the function block in `AUI` adapters (Unidirectional Interface Adapters), the number of connections in the function plan is drastically reduced, as data and event flows are combined.
+
+- ---
 
 ## State Overview
 
@@ -75,15 +77,15 @@ The function block operates purely event-driven and stateless (reactively):
 
 ## Application Scenarios
 
-* **Measurement Scaling:** Multiplication of an analog sensor value (e.g., voltage) by a scaling factor to calculate the actual physical value.
-* **Power Calculation:** Continuous multiplication of current (I) and voltage (U) to determine the current active power (P). * **Signal Amplification:** Application in signal processing for simple level adjustment.
+- **Measurement Scaling:** Multiplication of an analog sensor value (e.g., voltage) by a scaling factor to calculate the actual physical value.
+- **Power Calculation:** Continuous multiplication of current (I) and voltage (U) to determine the current active power (P). * **Signal Amplification:** Application in signal processing for simple level adjustment.
 
 ---
 
 ## Comparison with Similar Components
 
-* **Standard `MUL` component (IEC 61131-3):** A standard multiplication component requires separate pins for each data signal as well as for the execution control (`REQ`/`CNF`). `AUI_MUL_2` solves this more elegantly and compactly using adapter connections.
-* **Multi-Input Multipliers (`MUL_3`, `MUL_4`):** While function blocks like `AUI_MUL_2` are fixed to two inputs, multi-input function blocks allow the multiplication of three or more factors in a single step, but are more complex.
+- **Standard `MUL` component (IEC 61131-3):** A standard multiplication component requires separate pins for each data signal as well as for the execution control (`REQ`/`CNF`). `AUI_MUL_2` solves this more elegantly and compactly using adapter connections.
+- **Multi-Input Multipliers (`MUL_3`, `MUL_4`):** While function blocks like `AUI_MUL_2` are fixed to two inputs, multi-input function blocks allow the multiplication of three or more factors in a single step, but are more complex.
 
 ---
 

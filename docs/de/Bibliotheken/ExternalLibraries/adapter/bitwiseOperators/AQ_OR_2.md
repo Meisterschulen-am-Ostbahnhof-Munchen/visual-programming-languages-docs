@@ -3,6 +3,7 @@
 ![AQ_OR_2](./AQ_OR_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AQ_OR_2** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 2 Eingangswerten vom Typ `BYTE` (2-Bit-Wert (Viertel-Byte, als Byte übertragen)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

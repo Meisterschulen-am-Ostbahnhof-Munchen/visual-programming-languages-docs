@@ -3,6 +3,7 @@
 <img width="1312" height="242" alt="FB_SR" src="https://github.com/user-attachments/assets/97406c32-e30d-47c7-958c-cb76b2fcd83c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `FB_SR` ist ein bistabiles Element, das als Set-Reset-Flipflop (SR-Flipflop) fungiert. Es speichert einen Zustand basierend auf den Eingangssignalen und behält diesen bei, bis er durch neue Eingangssignale geändert wird.
@@ -41,6 +42,7 @@ Der Funktionsblock `FB_SR` verarbeitet die Eingänge `S1` (Set) und `R` (Reset) 
 - Wenn beide Eingänge `FALSE` sind, behält `Q1` seinen vorherigen Zustand bei.
 
 Die Logik wird durch den folgenden Algorithmus implementiert:
+
 ```ST
 ALGORITHM REQ
 Q1 := S1 OR ((NOT R) AND Q1);
@@ -73,8 +75,8 @@ Der Zustand des Flipflops (`Q1`) hängt von den aktuellen Werten von `S1` und `R
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
-* [Uebung_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
+- [Uebung_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
+- [Uebung_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
 
 ## Fazit
 

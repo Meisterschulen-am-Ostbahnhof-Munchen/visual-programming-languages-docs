@@ -3,6 +3,7 @@
 ![Uebung_011f_network](./Uebung_011f_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the direct pass-through of a numeric input value from the physical input I3 to the physical output N3.
@@ -40,6 +41,7 @@ The function block `Q_NumericValue_PHYS` then writes the received value to the p
 
 The entire subapplication thus functions as a transparent pass-through from I3 to N3.
 ...
+
 ## Program Flow and Connections
 
 - **Event Connection**: `NumericValue_PHYS.IND` → `Q_NumericValue_PHYS.REQ`
@@ -72,4 +74,4 @@ The subapplication is designed as a reusable building block and can be directly 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

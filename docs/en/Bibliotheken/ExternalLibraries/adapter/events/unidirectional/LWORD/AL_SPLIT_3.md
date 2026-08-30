@@ -3,9 +3,11 @@
 ![AL_SPLIT_3](./AL_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_3** is used to split an incoming unidirectional adapter signal (AL – Adapter Label) into three identical output adapters. It is designed as a generic building block and enables the multiple forwarding of an adapter-based data or event flow within an IEC 61499 application.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AL` | IN | Socket | Input adapter that provides the signal to be distributed. |
 | `adapter::types::unidirectional::AL` | OUT1 | Plug | First output adapter – identical copy of the input signal. |
 | `adapter::types::unidirectional::AL` | OUT2 | Plug | Second output adapter – identical copy of the input signal. |
@@ -72,6 +74,6 @@ Each output plug is updated independently: the incoming value is written to a gi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

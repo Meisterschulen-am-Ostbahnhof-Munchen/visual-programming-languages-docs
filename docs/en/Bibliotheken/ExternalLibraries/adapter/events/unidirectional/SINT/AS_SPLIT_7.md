@@ -3,9 +3,11 @@
 ![AS_SPLIT_7](./AS_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_SPLIT_7** is used to distribute an incoming unidirectional AS signal (e.g., an analog or binary automation signal) to seven identical outputs. The block is implemented as a generic FB and is frequently used in automation technology to provide a signal to multiple subsequent consumers or process steps.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::AS` | Socket | Receives the AS signal to be distributed. |
 | OUT1 | `adapter::types::unidirectional::AS` | Plug | First output – same signal as the input. |
 | OUT2 | `adapter::types::unidirectional::AS` | Plug | Second output – same signal as the input. |
@@ -76,6 +78,6 @@ The **AS_SPLIT_7** is a simple yet useful function block for passively distribut
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
 
 ]

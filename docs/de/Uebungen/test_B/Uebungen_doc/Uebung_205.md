@@ -13,7 +13,7 @@ Diese Übung demonstriert den Einsatz des Funktionsbausteins `ILOCK_SWITCH_PROTE
 ### Bausteine der SubApplikation `Uebung_205`
 
 | Bausteinname | Typ | Parameter | Beschreibung |
-|--------------|-----|-----------|--------------|
+| -------------- | ----- | ----------- | -------------- |
 | `DigitalInput_I1` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` | Liest den ersten digitalen Eingang (Hardwareadresse `Input_I1`). Das Ereignis `IND` signalisiert eine Wertänderung. |
 | `DigitalInput_I2` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` | Liest den zweiten digitalen Eingang. Das Ereignis `IND` signalisiert eine Wertänderung. |
 | `ILOCK` | `logiBUS::signalprocessing::interlock::ILOCK_SWITCH_PROTECT` | `DT_PROTECT = T#1s` | Kernbaustein: Realisiert die Umschalt-Priorität mit Schutzzeit von 1 Sekunde. |
@@ -50,7 +50,7 @@ Diese Übung demonstriert den Einsatz des Funktionsbausteins `ILOCK_SWITCH_PROTE
 - Einbindung eines Zeitgeber-Adapters zur Überwachung der Schutzzeit.
 - Konfiguration von Hardware-Ein-/Ausgängen (`logiBUS_IX`, `logiBUS_QX`).
 
-**Schwierigkeitsgrad:** Mittel  
+**Schwierigkeitsgrad:** Mittel
 **Vorkenntnisse:** Grundlagen der Ereignissteuerung in 4diac, Umgang mit Ein-/Ausgangsbausteinen.
 
 ## Zusammenfassung
@@ -61,4 +61,4 @@ Die Übung **Uebung_205** zeigt die praktische Anwendung eines Interlocks mit Sc
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

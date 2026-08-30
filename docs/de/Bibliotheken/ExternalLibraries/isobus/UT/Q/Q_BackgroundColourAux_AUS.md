@@ -3,6 +3,7 @@
 ![Q_BackgroundColourAux_AUS](./Q_BackgroundColourAux_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Funktionsblock implementiert das Kommando zum Ändern der Hintergrundfarbe eines Objekts gemäß ISO 11783-6, Teil F.20.  

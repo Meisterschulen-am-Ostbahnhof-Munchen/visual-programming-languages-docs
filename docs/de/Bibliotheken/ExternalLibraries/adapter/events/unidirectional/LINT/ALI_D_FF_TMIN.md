@@ -3,6 +3,7 @@
 ![ALI_D_FF_TMIN](./ALI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALI_D_FF_TMIN** realisiert einen Datenspeicher (D-Flip-Flop) mit einem Adapter-gestützten Ein- und Ausgang und einer konfigurierbaren Mindestverweilzeit zwischen den Ausgangsereignissen. Er dient dazu, einen anliegenden Datenwert bei einer steigenden Flanke am Eingang zu übernehmen und nach Ablauf einer minimalen Zeit freizugeben, um zyklische Bedingungen oder Zeitauflösungsprobleme in der Kommunikation zu vermeiden.
@@ -75,7 +76,7 @@ Der genaue Zustandsautomat liegt jedoch im internen FB und ist hier nicht abgebi
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
-|----------|-------------|
+| ---------- | ------------- |
 | `ALI_D_FF` (ohne TMIN) | Keine Mindestzeit zwischen Ausgangsereignissen, sofortige Weiterleitung bei jeder Flanke. |
 | `E_D_FF` (Standard-61499) | Ereignis-Ein- und Ausgänge direkt, ohne Adapter und ohne Zeitsteuerung. |
 | `E_D_FF_ANY_TMIN` | Gleiche Funktionalität, aber mit eigenen Daten- und Ereignis-Ports, nicht über Adapter. |

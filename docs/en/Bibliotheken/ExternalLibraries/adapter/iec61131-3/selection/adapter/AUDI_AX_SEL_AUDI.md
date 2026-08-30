@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUDI_AX_SEL_AUDI` serves as a binary selector (selection switch) for unidirectional communication adapters. Based on the state of a control signal at a selector adapter, it allows the data and event stream between two alternative input adapters to be redirected to a single output adapter.
@@ -33,21 +34,21 @@ The block encapsulates the necessary synchronization and conversion logic to ens
 
 #### **Sockets (Input Connections)**
 
-* **IN0** (Type: `adapter::types::unidirectional::AUDI`):
+- **IN0** (Type: `adapter::types::unidirectional::AUDI`):
 
 First selectable input adapter. Data and events arriving here are passed through to the output when the selection signal `G` has the logical state `FALSE` (or `0`).
 
-* **IN1** (Type: `adapter::types::unidirectional::AUDI`):
+- **IN1** (Type: `adapter::types::unidirectional::AUDI`):
 
 Second selectable input adapter. Data and events arriving at this adapter are passed to the output when the selection signal `G` has the logical state `TRUE` (or `1`).
 
-* **G** (Type: `adapter::types::unidirectional::AX`):
+- **G** (Type: `adapter::types::unidirectional::AX`):
 
 Selector adapter. The signal on this adapter determines which of the two inputs (`IN0` or `IN1`) is routed to the output.
 
 #### **Plugs (Output Connections)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUDI`):
+- **OUT** (Type: `adapter::types::unidirectional::AUDI`):
 
 Output adapter. Outputs the data and the corresponding trigger event of the currently selected input.
 
@@ -61,17 +62,17 @@ The internal behavior of the function block is implemented by a network of stand
 
 The signals received via the sockets (`IN0`, `IN1`, `G`) are first processed through edge- or level-triggered D flip-flops (`E_D_FF` and `E_D_FF_ANY`). This ensures that data values (`D1`) and events (`E1`) are processed synchronously.
 
-2. **Data Conversion**:
+1. **Data Conversion**:
 
 The synchronized data values from the two inputs are transferred to the selection block via two transfer blocks (`F_MOVE` with the data type `UDINT`).
 
-3. **Selection Control**:
+1. **Selection Control**:
 
 The function block `F_SEL` (IEC 61131-3 Selection) performs the actual logical switching:
 
-* If the control signal of the adapter `G` is `0` (`FALSE`), the value of `IN0` is selected.
-* If the control signal of the adapter `G` is `1` (`TRUE`), the value of `IN1` is selected.
-4. **Output**:
+- If the control signal of the adapter `G` is `0` (`FALSE`), the value of `IN0` is selected.
+- If the control signal of the adapter `G` is `1` (`TRUE`), the value of `IN1` is selected.
+1. **Output**:
 
 The selected result is transferred via another transfer block (`F_MOVE_OUT`) to the output flip-flop `E_D_FF_ANY_OUT`. This flip-flop generates the output event `OUT.E1` and makes the selected data value available to `OUT.D1`.
 
@@ -79,9 +80,9 @@ The selected result is transferred via another transfer block (`F_MOVE_OUT`) to 
 
 ## Technical Features
 
-* **UDINT Data Processing**: Although the adapters are of the generic type `AUDI`, the user data (`D1`) is explicitly processed and transmitted internally as `UDINT` (Unsigned Double Integer / 32-bit integer).
-* **Event-driven behavior**: Any change to the inputs or the selector triggers a recalculation via the internal coupling network and the output event of the adapter `OUT`.
-* **Encapsulation**: By using adapters instead of individual event and data ports, the wiring effort in the overall system diagram is drastically reduced.
+- **UDINT Data Processing**: Although the adapters are of the generic type `AUDI`, the user data (`D1`) is explicitly processed and transmitted internally as `UDINT` (Unsigned Double Integer / 32-bit integer).
+- **Event-driven behavior**: Any change to the inputs or the selector triggers a recalculation via the internal coupling network and the output event of the adapter `OUT`.
+- **Encapsulation**: By using adapters instead of individual event and data ports, the wiring effort in the overall system diagram is drastically reduced.
 
 ---
 
@@ -98,10 +99,11 @@ Since the function block is structured as a function block network, it does not 
 
 ## Application Scenarios
 
-* **Setpoint Switching**: Switching between an automatic setpoint (e.g., from a PID controller at `IN1`) and a manual setpoint (e.g., from a visualization at `IN0`) via a selection signal at `G`.
-* **Sensor Redundancy**: Fail-safe switching between a primary sensor and a backup sensor in case of signal interference.
-* **Recipe Control**: Selection of different predefined parameter profiles during operation.
-* ---
+- **Setpoint Switching**: Switching between an automatic setpoint (e.g., from a PID controller at `IN1`) and a manual setpoint (e.g., from a visualization at `IN0`) via a selection signal at `G`.
+- **Sensor Redundancy**: Fail-safe switching between a primary sensor and a backup sensor in case of signal interference.
+- **Recipe Control**: Selection of different predefined parameter profiles during operation.
+
+- ---
 
 ## Comparison with Similar Function Blocks
 

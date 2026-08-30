@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 This exercise implements analog input calibration with offset and scaling adjustment. The calibration parameters are persistently stored in NVS (Non-Volatile Storage). Additionally, a hysteresis controller is used, which reacts to the calibrated analog value. The threshold values and hysteresis bands for the controller are also loaded from NVS. The entire process is controlled by digital inputs and output via digital outputs.
+
 - **DigitalInput_I1** (Type: `logiBUS::io::DI::logiBUS_IXA`): Digital input that starts the output process.
 - Parameters: `QI=TRUE`, `Input=Input_I1`
 - **DigitalOutput_Q1** (Type: `logiBUS::io::DQ::logiBUS_QXA`): Digital output for direct transmission of the input status.
@@ -46,16 +47,21 @@ This exercise implements analog input calibration with offset and scaling adjust
 - **Type**: `MyLib::sys::NVS_IN_AND_STORE_AR`
 - **Internal Function Blocks Used**: Analogous to the `THRESHOLD` block, but with the key `'HYSTERESIS'` and the structure object `InputNumber_HYSTERESIS`.
 - **Functionality**: Reads the hysteresis value (bandwidth) from the NVS and makes it available to the hysteresis controller via output `VALUEO`.
+
 1. **Initialization**: The digital input `DigitalInput_I1` is split into two paths via the adapter `AX_SPLIT_2`:
+
 - Path 1 → `DigitalOutput_Q1` (direct output)
 - Path 2 → `AnalogInput_I4.SREQ` (event for reading the analog value)
-2. **Analog Value Processing**:
+1. **Analog Value Processing**:
+
 - The analog input `AnalogInput_I4` is read, and the value is passed via the adapter chain `AD_TO_AUDI` → `AUDI_TO_AR` to the calibration module `CALIBRATE.X` (Note: A double conversion is necessary because a direct `AD_TO_AR` (as a `reinterpret_cast` would behave.)
-3. **Calibration**:
+1. **Calibration**:
+
 - The calibration process is started via the digital inputs `DigitalInput_I2_CO` (offset calibration) and `DigitalInput_I3_CS` (scale calibration).
 - `CALIBRATE` calculates the offset and scale based on the reference values `Y_Offset=100.0` and `Y_Scale=600.0`.
 - The calculated parameters are transferred to `NVS_OFFSET` and `NVS_SCALE` and stored.
-4. **Hysteresis Control**:
+1. **Hysteresis Control**:
+
 - The calibrated value `CALIBRATE.Y` is passed to the hysteresis controller `Hysteresis_AR_AX.INPUT`.
 - The threshold value (`THRESHOLD.VALUEO`) and the hysteresis (`HYSTERESIS.VALUEO`) are loaded from the NVS and fed to the controller.
 - The output `Hysteresis_AR_AX.OUTPUT` controls the digital output `DigitalOutput_Q2`.
@@ -74,7 +80,7 @@ This exercise demonstrates a complete analog measurement chain: from reading the
 
 This exercise demonstrates a complete analog measurement chain: from reading the raw analog value and calibration with persistent storage to rule-based output via a hysteresis comparator. ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

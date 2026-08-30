@@ -52,18 +52,18 @@ Der Ablauf der Übung wird durch die Ereignis- und Datenkette definiert:
 
 1.  **Signalerfassung**: Der Baustein `logiBUS_PI_ID` erfasst Signale am Eingang `PulseInput_I8`. Sobald neue Daten verfügbar sind, wird das Ereignis `IND` ausgelöst und der Datenwert am Ausgang `IN` bereitgestellt.
 2.  **Typkonvertierung**:
-    *   Das Signal gelangt zunächst zum Baustein `F_DWORD_TO_UDINT`.
-    *   Das Ergebnis wird an `F_UDINT_TO_REAL` weitergeleitet.
-    *   Diese Kette sorgt dafür, dass das Signal von einem binären Rohformat (`DWORD`) in eine fließkomma-basierte Zahl (`REAL`) gewandelt wird.
+    -   Das Signal gelangt zunächst zum Baustein `F_DWORD_TO_UDINT`.
+    -   Das Ergebnis wird an `F_UDINT_TO_REAL` weitergeleitet.
+    -   Diese Kette sorgt dafür, dass das Signal von einem binären Rohformat (`DWORD`) in eine fließkomma-basierte Zahl (`REAL`) gewandelt wird.
 3.  **Berechnung**:
-    *   Der konvertierte `REAL`-Wert wird an den Eingang `in` des `FT_DERIV` Bausteins übergeben.
-    *   Der `FT_DERIV` Baustein berechnet die Änderung des Eingangssignals pro Zeiteinheit. Da der Eingang ein akkumulierter Zählerstand (Impulse) ist, entspricht die Ableitung der aktuellen Impulsfrequenz (Impulse pro Sekunde/Minute, abhängig von der Zeitbasis).
+    -   Der konvertierte `REAL`-Wert wird an den Eingang `in` des `FT_DERIV` Bausteins übergeben.
+    -   Der `FT_DERIV` Baustein berechnet die Änderung des Eingangssignals pro Zeiteinheit. Da der Eingang ein akkumulierter Zählerstand (Impulse) ist, entspricht die Ableitung der aktuellen Impulsfrequenz (Impulse pro Sekunde/Minute, abhängig von der Zeitbasis).
 
 **Lernziele:**
 
-*   Einbindung von Hardware-Eingängen (LogiBUS).
-*   Umgang mit Datentyp-Konvertierungen in IEC 61499 / IEC 61131.
-*   Anwendung mathematischer Funktionen aus der OSCAT-Bibliothek zur Signalverarbeitung.
+-   Einbindung von Hardware-Eingängen (LogiBUS).
+-   Umgang mit Datentyp-Konvertierungen in IEC 61499 / IEC 61131.
+-   Anwendung mathematischer Funktionen aus der OSCAT-Bibliothek zur Signalverarbeitung.
 
 ## Zusammenfassung
 

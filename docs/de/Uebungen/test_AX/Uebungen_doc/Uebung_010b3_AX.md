@@ -20,8 +20,8 @@ Verwendung von `Aux_IE` (Event).
 
 ![Uebung_010b3_AX_network](./Uebung_010b3_AX_network.svg)
 
-  * **`AuxFunction2_X1_UP`**: Typ `isobus::UT::io::Auxiliary::IN::Aux_IE`.
-  * **InputEvent**: `AuxDisabled_START`.
+  - **`AuxFunction2_X1_UP`**: Typ `isobus::UT::io::Auxiliary::IN::Aux_IE`.
+  - **InputEvent**: `AuxDisabled_START`.
 
 -----
 
@@ -29,8 +29,8 @@ Verwendung von `Aux_IE` (Event).
 
 Das Event-Namensschema bei AUX ist etwas speziell:
 
-*   `AuxDisabled`: Bedeutet, der Schalter ist "Aus" (Offen).
-*   `AuxEnabled`: Bedeutet, der Schalter ist "Ein" (Geschlossen).
-*   `_START`: Bedeutet Flanke (Übergang in diesen Zustand).
+-   `AuxDisabled`: Bedeutet, der Schalter ist "Aus" (Offen).
+-   `AuxEnabled`: Bedeutet, der Schalter ist "Ein" (Geschlossen).
+-   `_START`: Bedeutet Flanke (Übergang in diesen Zustand).
 
 `AuxDisabled_START` bedeutet also: Der Übergang von "Enabled" zu "Disabled". Das entspricht dem **Loslassen** eines Tasters (`Falling Edge`). Das Flip-Flop schaltet also beim Loslassen der Joystick-Taste um.

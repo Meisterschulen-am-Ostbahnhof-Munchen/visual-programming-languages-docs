@@ -13,9 +13,9 @@ Der Funktionsblock `E_T_FF_SR_SYM_STORE` realisiert ein ereignisgesteuertes bist
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
-| `S`   | Event | Setzen des Ausgangs Q auf TRUE |
-| `R`   | Event | Rücksetzen des Ausgangs Q auf FALSE |
+| ------ | ----- | ----------- |
+| `S` | Event | Setzen des Ausgangs Q auf TRUE |
+| `R` | Event | Rücksetzen des Ausgangs Q auf FALSE |
 | `CLK` | Event | Toggle – wechselt Q (TRUE → FALSE oder FALSE → TRUE) |
 
 ### **Ereignis-Ausgänge**
@@ -70,7 +70,7 @@ Der Ausgang `EO` wird bei jeder Zustandsänderung von Q aktiviert.
 Die Zustandsmaschine (ECC) umfasst vier Zustände:
 
 | Zustand | Beschreibung | Ausgehende Transitionen |
-|---------|--------------|--------------------------|
+| --------- | -------------- | -------------------------- |
 | `START` | Initialer Ruhezustand nach dem Einschalten | → `Init` bei `Q_INIT.EI1` |
 | `Init` | Initialisierungs‑Zustand – entscheidet über Startwert | → `SET` bei `TRUE = Q_INIT.DI1`<br>→ `RESET` bei `FALSE = Q_INIT.DI1` |
 | `SET` | Q = TRUE | → `RESET` bei `R` oder `CLK` |
@@ -87,7 +87,7 @@ Nach dem Verlassen von `Init` wird der Zustand `SET` oder `RESET` erreicht; die 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften | Unterschied zu `E_T_FF_SR_SYM_STORE` |
-|----------|--------------|---------------------------------------|
+| ---------- | -------------- | --------------------------------------- |
 | `E_SR_FF` (Standard‑SR‑Flipflop) | Setzen, Rücksetzen; meist kein Toggle, kein konfigurierbarer Startwert | Fehlende Toggle‑Funktion; Startwert oft fest auf FALSE |
 | `E_RS_FF` | Setzen priorisiert | Andere Priorisierung; kein Toggle |
 | `E_D_FF` (D‑Flipflop) | Übernahme eines Dateneingangs mit Takt | Kein Setzen/Rücksetzen ohne Daten; kein symmetrischer Start |
@@ -103,5 +103,5 @@ Der **E_T_FF_SR_SYM_STORE** ist ein leistungsfähiger ereignisgesteuerter Flipfl
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

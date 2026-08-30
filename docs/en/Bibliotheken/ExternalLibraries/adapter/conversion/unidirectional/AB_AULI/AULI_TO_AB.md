@@ -3,9 +3,11 @@
 ![AULI_TO_AB](./AULI_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AULI_TO_AB` is a composite function block that converts an AULI adapter (ULINT data type) into an AB adapter (BYTE data type). It enables the seamless connection of components using different adapter interfaces by converting the incoming data and providing it as a compatible output.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs. All input and output is handled via adapters.
@@ -29,7 +31,7 @@ None (data is sent via the AB adapter).
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | `AULI_IN` | `adapter::types::unidirectional::AULI` | Socket (Input Adapter) | ULINT adapter that provides the values to be converted and the trigger event |
 | `AB_OUT` | `adapter::types::unidirectional::AB` | Plug (Output Adapter) | BYTE adapter that provides the converted values and the confirmation event |
 
@@ -72,6 +74,6 @@ The `AULI_TO_AB` is a compact, reliable composite function block for converting 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

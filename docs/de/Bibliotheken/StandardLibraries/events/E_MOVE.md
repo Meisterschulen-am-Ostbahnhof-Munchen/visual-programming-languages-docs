@@ -59,7 +59,7 @@ Dieser Mechanismus reduziert die Anzahl der Ereignisse im System, indem er nur b
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
+- [Uebung_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
 
 ## Fazit
 

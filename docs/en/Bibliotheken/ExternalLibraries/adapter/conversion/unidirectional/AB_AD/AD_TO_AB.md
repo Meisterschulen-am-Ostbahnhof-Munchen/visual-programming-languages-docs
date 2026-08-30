@@ -3,9 +3,11 @@
 ![AD_TO_AB](./AD_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AD_TO_AB** function block is a composite module for the unidirectional conversion of a 32-bit DWORD adapter (AD) to an 8-bit BYTE adapter (AB). It serves as a bridge between components designed for different data widths and encapsulates the necessary type conversion according to IEC 61131-3.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ This function block has no directly visible data outputs. The BYTE value is outp
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | **AD_IN** | `adapter::types::unidirectional::AD` | Socket (Input) | Accepts a DWORD (32-bit) and an associated event (here `E1`). |
 | **AB_OUT** | `adapter::types::unidirectional::AB` | Plug (Output) | Outputs a converted byte (8-bit) and an acknowledgment event (here `E1`). |
 
@@ -63,7 +65,7 @@ Since this is a pure composite module without its own state machine, there is no
 ## Comparison with Similar Function Blocks
 
 | Function Block | Conversion | Direction | Adapter Type |
-|----------|---------------|-----------|------------|
+| ---------- | --------------- | ----------- | ------------ |
 | AD_TO_AB | DWORD → BYTE | Unidirectional | AD ↔ AB |
 | AD_TO_AW | DWORD → WORD | Unidirectional | AD ↔ AW |
 | AW_TO_AB | WORD → BYTE | Unidirectional | AW ↔ AB |
@@ -78,6 +80,6 @@ The composite block **AD_TO_AB** offers a simple, event-driven way to convert a 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 <img width="1215" height="181" alt="image" src="https://github.com/user-attachments/assets/e3a4235c-ef25-4396-b440-3929cea8731a" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SWITCH Funktionsblock dient als Schaltbaustein (Demultiplexer) für Ereignisse basierend auf einem booleschen Eingangswert. Er leitet eingehende Ereignisse je nach Zustand des Steuersignals auf einen von zwei möglichen Ausgängen weiter.
@@ -63,21 +64,21 @@ Vergleich mit [E_SWITCH](../../../../../StandardLibraries/events/E_SWITCH.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
-* [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
-* [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
-* [Uebung_005_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_005_AX.md)
-* [Uebung_006a3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
-* [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
-* [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
-* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Uebung_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)
-* [Uebung_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
-* [Uebung_020c3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
-* [Uebung_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
-* [Uebung_020e2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
-* [Uebung_020f2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
-* [Uebung_020i_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+- [Uebung_004b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX.md)
+- [Uebung_004b_AX_ASR](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR.md)
+- [Uebung_004b_AX_ASR_X](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004b_AX_ASR_X.md)
+- [Uebung_005_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_005_AX.md)
+- [Uebung_006a3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_sub_AX.md)
+- [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
+- [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
+- [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Uebung_020a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020a_AX.md)
+- [Uebung_020b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020b_AX.md)
+- [Uebung_020c3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c3_AX.md)
+- [Uebung_020d_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020d_AX.md)
+- [Uebung_020e2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020e2_AX.md)
+- [Uebung_020f2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+- [Uebung_020i_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Fazit
 

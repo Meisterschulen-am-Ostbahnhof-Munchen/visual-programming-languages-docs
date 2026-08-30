@@ -3,6 +3,7 @@
 ![AIS_AUI_DEMUX_2](AIS_AUI_DEMUX_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `AIS_AUI_DEMUX_2` is the adapter-based variant of the generic demultiplexer for data type `STRING`. Unlike `AIS_DEMUX_2`, it does not receive the selection index through a REQ event with an associated K data input, but through its own adapter socket **K** of type `AUI` ("Adapter Unidirectional Interface"). This lets the index be fed directly from another block with a matching `AUI` plug, without wiring a separate event and data line for it.

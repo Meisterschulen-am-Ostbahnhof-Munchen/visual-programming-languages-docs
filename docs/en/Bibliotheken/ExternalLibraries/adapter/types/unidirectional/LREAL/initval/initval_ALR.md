@@ -3,6 +3,7 @@
 ![initval_ALR](initval_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_ALR` is the configurable initialization block for the [ALR](../ALR.md) adapter (data type `LREAL`, 64-bit floating-point number): it accepts a start value as a data input at initialization time and writes it to a `ALR` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

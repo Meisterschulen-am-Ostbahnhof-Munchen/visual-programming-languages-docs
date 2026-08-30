@@ -3,6 +3,7 @@
 ![E_SR_SYM_INIT](./E_SR_SYM_INIT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `E_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabiles Flip-Flop mit symmetrischem Start-up-Verhalten und einer INIT-Schnittstelle. Er erweitert ein einfaches SR-Flip-Flop um die Möglichkeit, beim INIT‑Event den Ausgang `Q` auf einen vorgegebenen Wert (`Q_INIT`) zu setzen und eine Deinitialisierung durchzuführen. Die Eingangsqualifikation `QI` steuert, ob die Operationen (S, R, INIT) tatsächlich auf `Q` wirken.
@@ -12,7 +13,7 @@ Der Funktionsblock `E_SR_SYM_INIT` realisiert ein ereignisgesteuertes, bistabile
 ### **Ereignis-Eingänge**
 
 | Event | Typ | Kommentar |
-|-------|-----|-----------|
+| ------- | ----- | ----------- |
 | `INIT` | EInit | Initialisierungsanforderung; wird mit `QI` und `Q_INIT` ausgewertet |
 | `S` | Event | Setze den Ausgang `Q` auf `TRUE` (nur wirksam wenn `QI = TRUE`) |
 | `R` | Event | Setze den Ausgang `Q` auf `FALSE` (nur wirksam wenn `QI = TRUE`) |

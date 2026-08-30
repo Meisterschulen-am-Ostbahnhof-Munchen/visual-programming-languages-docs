@@ -3,6 +3,7 @@
 ![GET_UDINT](./GET_UDINT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_UDINT** dient dazu, den aktuellen Wert einer als InOut deklarierten Variable vom Typ **UDINT** zu lesen und als gepufferten Ausgang bereitzustellen. Die Pufferung stellt sicher, dass der Ausgangswert während eines Zyklus stabil bleibt, auch wenn die Quelldaten sich später ändern.

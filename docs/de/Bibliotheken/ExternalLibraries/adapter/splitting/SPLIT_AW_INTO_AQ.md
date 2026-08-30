@@ -3,6 +3,7 @@
 ![SPLIT_AW_INTO_AQ](./SPLIT_AW_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SPLIT_AW_INTO_AQ** teilt die acht Quarter-Adapter (AQ) eines Word-Adapters (AW) auf. Das eingehende Word (16 Bit) wird in acht Quarter-Einheiten (je 2 Bit) zerlegt und über die entsprechenden AQ-Plugs ausgegeben.
@@ -72,4 +73,4 @@ Der Baustein **SPLIT_AW_INTO_AQ** bietet eine kompakte und zuverlässige Möglic
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

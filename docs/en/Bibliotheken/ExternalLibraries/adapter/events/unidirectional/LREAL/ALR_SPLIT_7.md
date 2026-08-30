@@ -4,6 +4,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_SPLIT_7` is used to split an incoming ALR (Agricultural Logic Resource) signal into seven identical output signals. It is designed as a generic block and enables the parallel distribution of an alarm or control signal to up to seven downstream components or subsystems.
@@ -29,7 +30,7 @@ None
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | IN | `adapter::types::unidirectional::ALR` | Socket (Input) | Incoming ALR signal, which is distributed to the outputs. |
 | OUT1 | `adapter::types::unidirectional::ALR` | Plug (Output) | First output of the split signal. |
 | OUT2 | `adapter::types::unidirectional::ALR` | Plug (Output) | Second output of the split signal. |
@@ -62,7 +63,7 @@ The function block does not have an internal state machine. There are no states 
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Special Feature |
-|----------|------------------|--------------|
+| ---------- | ------------------ | -------------- |
 | `ALR_SPLIT_2` | 2 | Simple Dual Distribution |
 | `ALR_SPLIT_4` | 4 | Quad Distribution |
 | `ALR_SPLIT_7` | 7 | Seven-Way Distribution (this module) |

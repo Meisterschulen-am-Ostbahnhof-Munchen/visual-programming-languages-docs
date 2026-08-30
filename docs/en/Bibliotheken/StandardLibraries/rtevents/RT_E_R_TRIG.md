@@ -1,10 +1,12 @@
 # RT_E_R_TRIG
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time variant of the E_R_TRIG function block (rising edge).
 ![RT_E_R_TRIG](RT_E_R_TRIG.svg)
+
 ## Metadata
 
 | Attribute | Value |
@@ -17,4 +19,4 @@ Real-time variant of the E_R_TRIG function block (rising edge).
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

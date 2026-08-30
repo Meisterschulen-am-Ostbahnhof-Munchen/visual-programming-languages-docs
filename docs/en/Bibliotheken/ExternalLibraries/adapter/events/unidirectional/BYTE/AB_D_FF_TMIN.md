@@ -3,9 +3,11 @@
 ![AB_D_FF_TMIN](./AB_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AB_D_FF_TMIN** is an adapter-based function block (FB) according to IEC 61499 that implements the functionality of a data latch (D flip-flop) with a minimum time condition between successive output events. It serves to transfer a digital data value from an adapter socket (input) to an adapter plug (output), ensuring that the output events (EO) do not occur faster than permitted by a configured time parameter `Tmin`. The block abstracts the pure D flip-flop logic by using an internal flip-flop block and encapsulates data and events in adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No direct data outputs; Data output is handled via the adapter plug `Q`.
 ### **Adapter**
 
 | Direction | Name | Type | Comment |
-|----------|------|----------------------------------|-------------------------------------------------------------|
+| ---------- | ------ | ---------------------------------- | ------------------------------------------------------------- |
 | Socket | `I` | adapter::types::unidirectional::AB | Input adapter: returns event `E1` and data value `D1` (the value to be latched) |
 | Plug | `Q` | adapter::types::unidirectional::AB | Output adapter: outputs the latched data value `D1` and the event `E1` |
 
@@ -47,7 +49,8 @@ The function block works internally with the function block `E_D_FF_ANY_TMIN` (t
 
 An event at `INIT` passes the parameter `Tmin` (minimum time) to the inner function block. The function block acknowledges this with `INITO`.
 
-2. **Data Acquisition and Transmission:**
+1. **Data Acquisition and Transmission:**
+
 - An event `E1` occurs at socket `I`, which carries the data value `D1` (the signal to be latched).
 
 - This event is forwarded as `CLK` to the inner flip-flop, which simultaneously receives the data value `D1` from `I.D1`.
@@ -103,7 +106,7 @@ When transferring a value from a fast to a slower clock range, the FB can be set
 ## Comparison with similar components
 
 | Component | Properties |
-|-------------------|-------------------------------------------------------------------------------|
+| ------------------- | ------------------------------------------------------------------------------- |
 | **AB_D_FF** | Pure D flip-flop without a minimum output time – events are passed on immediately. |
 | **E_D_FF_ANY** | Standard event data flip-flop without a time limit, but with discrete ports (no adapters). |
 | **AB_D_FF_TMIN** | Combines adapter encapsulation with a configurable minimum time between output events. |

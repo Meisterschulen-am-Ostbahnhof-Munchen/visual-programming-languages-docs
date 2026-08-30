@@ -3,6 +3,7 @@
 ![FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Funktionsbaustein bildet einen 16‑Bit‑Wort‑Eingang auf einen skalierten Realwert ab. Dabei wird das eingehende Wort zunächst auf Gültigkeit geprüft. Ist das Signal gültig, werden das obere und das untere Byte mit jeweils eigenen Skalierungsfaktoren multipliziert und mit einem Offset addiert. Das Ergebnis wird als Skalierung des ursprünglichen Feldbussignals ausgegeben.
@@ -22,7 +23,7 @@ Dieser Funktionsbaustein bildet einen 16‑Bit‑Wort‑Eingang auf einen skalie
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Beschreibung |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | `IN` | WORD | `NOT_AVAILABLE_WM` | Das zu verarbeitende 16‑Bit‑Feldbussignal. |
 | `SCALE_HIGH` | REAL | 0.256 | Skalierungsfaktor für das obere Byte (High‑Byte). |
 | `SCALE_LOW` | REAL | 0.001 | Skalierungsfaktor für das untere Byte (Low‑Byte). |
@@ -43,24 +44,25 @@ Keine Adapter vorhanden.
 
 Der Baustein arbeitet in zwei Schritten, gesteuert durch die Ereignisse:
 
-1. **Initialisierung (INIT)**  
-   - Der interne Algorithmus ist leer; es wird lediglich der Ereignisausgang `INITO` gesetzt.  
+1. **Initialisierung (INIT)**
+   - Der interne Algorithmus ist leer; es wird lediglich der Ereignisausgang `INITO` gesetzt.
    - Die Skalierungsparameter (`SCALE_HIGH`, `SCALE_LOW`, `OFFSET`) werden beim Initialisierungsereignis übergeben, jedoch erst im **REQ**‑Zyklus verwendet.
 
-2. **Verarbeitung (REQ)**  
-   - Der eingehende Wert `IN` wird mit der externen Konstanten `VALID_SIGNAL_W` verglichen.  
+2. **Verarbeitung (REQ)**
+   - Der eingehende Wert `IN` wird mit der externen Konstanten `VALID_SIGNAL_W` verglichen.
    - **Gültiges Signal** (`IN` ≤ `VALID_SIGNAL_W`):
-     1. Das obere Byte wird durch Rechtsverschiebung um 8 Bit und Maskierung mit `0x00FF` extrahiert.  
-     2. Das untere Byte wird durch Maskierung mit `0x00FF` gewonnen.  
-     3. Beide Bytes werden in `REAL` konvertiert, mit den zugehörigen Skalierungsfaktoren multipliziert und zum Offset addiert:  
-        `OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`  
+     1. Das obere Byte wird durch Rechtsverschiebung um 8 Bit und Maskierung mit `0x00FF` extrahiert.
+     2. Das untere Byte wird durch Maskierung mit `0x00FF` gewonnen.
+     3. Beide Bytes werden in `REAL` konvertiert, mit den zugehörigen Skalierungsfaktoren multipliziert und zum Offset addiert:
+        `OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`
 
-     4. `VALID` wird auf `TRUE` gesetzt.  
-   - **Ungültiges Signal** (sonst):  
-     - `OUT` wird auf `0.0` gesetzt.  
-     - `VALID` wird auf `FALSE` gesetzt.  
+     4. `VALID` wird auf `TRUE` gesetzt.
+   - **Ungültiges Signal** (sonst):
+     - `OUT` wird auf `0.0` gesetzt.
+     - `VALID` wird auf `FALSE` gesetzt.
 
 Der folgende ST‑Code verdeutlicht die interne Logik:
+
 ```pascal
 IF (WORD_TO_UINT(IN) <= WORD_TO_UINT(VALID_SIGNAL_W)) THEN
     temp := SHR(IN, SINT#8);
@@ -79,9 +81,9 @@ END_IF;
 
 ## Technische Besonderheiten
 
-- **Compound‑Skalierung:** Die beiden Bytes eines Words werden getrennt skaliert. Dies ermöglicht die Abbildung von Messwerten, deren Information auf zwei Bytes verteilt ist (z. B. unterschiedliche Auflösungen oder Einheiten).  
-- **Feldbus‑Konstanten:** Die beiden externen Konstanten `VALID_SIGNAL_W` und `NOT_AVAILABLE_WM` definieren den gültigen Wertebereich bzw. den „nicht verfügbar“‑Zustand. Sie stammen aus dem Paket `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`.  
-- **Initialwerte:** Die Voreinstellungen `SCALE_HIGH = 0.256`, `SCALE_LOW = 0.001` und `OFFSET = 0` sind praxiserprobte Werte für typische Feldbussignale (z. B. Temperaturmessung).  
+- **Compound‑Skalierung:** Die beiden Bytes eines Words werden getrennt skaliert. Dies ermöglicht die Abbildung von Messwerten, deren Information auf zwei Bytes verteilt ist (z. B. unterschiedliche Auflösungen oder Einheiten).
+- **Feldbus‑Konstanten:** Die beiden externen Konstanten `VALID_SIGNAL_W` und `NOT_AVAILABLE_WM` definieren den gültigen Wertebereich bzw. den „nicht verfügbar“‑Zustand. Sie stammen aus dem Paket `eclipse4diac::signalprocessing::FIELDBUS_SIGNAL`.
+- **Initialwerte:** Die Voreinstellungen `SCALE_HIGH = 0.256`, `SCALE_LOW = 0.001` und `OFFSET = 0` sind praxiserprobte Werte für typische Feldbussignale (z. B. Temperaturmessung).
 - **Keine Zustandsabhängigkeit:** Der Baustein besitzt keine internen Zustandsautomaten, die über INIT/REQ hinausgehen – die Reaktion ist rein kombinatorisch beim REQ‑Ereignis.
 
 ## Zustandsübersicht
@@ -97,14 +99,14 @@ Weitere Zustände oder Verzweigungen sind nicht vorhanden.
 
 ## Anwendungsszenarien
 
-- **Temperaturmessung über zwei Kanäle** – High‑Byte repräsentiert den ganzzahligen Anteil, Low‑Byte den Nachkommateil einer Temperatur (z. B. 0.256 °C/LSB für High, 0.001 °C/LSB für Low).  
-- **Druck‑ oder Füllstandssensoren** – Liefern einen 16‑Bit‑Rohwert, der in zwei unterschiedlich skalierte Anteile zerlegt wird, um den physikalischen Wert zu ermitteln.  
+- **Temperaturmessung über zwei Kanäle** – High‑Byte repräsentiert den ganzzahligen Anteil, Low‑Byte den Nachkommateil einer Temperatur (z. B. 0.256 °C/LSB für High, 0.001 °C/LSB für Low).
+- **Druck‑ oder Füllstandssensoren** – Liefern einen 16‑Bit‑Rohwert, der in zwei unterschiedlich skalierte Anteile zerlegt wird, um den physikalischen Wert zu ermitteln.
 - **Feldbus‑Datenvorverarbeitung** – In einer logiBUS‑Signalverarbeitungskette kann dieser Baustein als erste Stufe zur Konvertierung von Wortwerten in reale physikalische Größen eingesetzt werden.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **FIELDBUS_WORD_TO_SIGNAL** (ohne Compound) – Wendet nur einen einzigen Skalierungsfaktor auf das gesamte Word an. Geeignet, wenn High‑ und Low‑Byte die gleiche Gewichtung haben.  
-- **FIELDBUS_BYTE_TO_SIGNAL** – Verarbeitet nur ein einzelnes Byte. Benötigt zwei Instanzen, um beide Bytes eines Words zu behandeln.  
+- **FIELDBUS_WORD_TO_SIGNAL** (ohne Compound) – Wendet nur einen einzigen Skalierungsfaktor auf das gesamte Word an. Geeignet, wenn High‑ und Low‑Byte die gleiche Gewichtung haben.
+- **FIELDBUS_BYTE_TO_SIGNAL** – Verarbeitet nur ein einzelnes Byte. Benötigt zwei Instanzen, um beide Bytes eines Words zu behandeln.
 - **FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** zeichnet sich durch die getrennte Skalierung der beiden Bytes aus, was eine flexiblere und genauere Abbildung vieler Sensorprotokolle ermöglicht.
 
 ## Fazit
@@ -115,4 +117,4 @@ Der Baustein **FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** ist ein spezialisiertes 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

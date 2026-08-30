@@ -6,6 +6,7 @@
 
 The function block `F_BYTE_TO_LWORD` converts a `BYTE` value to a `LWORD` value. It is part of the `iec61131::conversion` library and enables simple and efficient type conversion.
 ![F_BYTE_TO_LWORD](F_BYTE_TO_LWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

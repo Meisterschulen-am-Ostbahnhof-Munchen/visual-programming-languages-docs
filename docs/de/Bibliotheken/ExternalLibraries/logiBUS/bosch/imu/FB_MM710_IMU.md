@@ -20,7 +20,7 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 ### **Ereignis‑Ausgänge**
 
 | Ereignis | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | INITO | EInit | Bestätigung der erfolgreichen Initialisierung (QO = TRUE) oder Fehlermeldung. |
 | CNF | Event | Bestätigung einer Messwertanforderung. Liefert die aktuellen Sensordaten und Statusinformationen. |
 | ERROR | Event | Tritt bei Kommunikations‑ oder CRC‑Fehlern auf. Enthält detaillierte Fehlerinformationen. |
@@ -28,7 +28,7 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 ### **Daten‑Eingänge**
 
 | Variable | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QI | BOOL | Aktivierungs‑Qualifier: Nur bei QI = TRUE wird die Initialisierung (INIT) ausgeführt. |
 | PARAMS | STRING | Service‑Parameter, z. B. CAN‑Interface‑Konfiguration (optional). |
 | u8CanIdx | USINT | CAN‑Node‑Index (Standard‑Initialwert: `INVALID`). |
@@ -37,7 +37,7 @@ Der Funktionsblock **FB_MM710_IMU** ist ein serviceorientierter Baustein (SIFB) 
 ### **Daten‑Ausgänge**
 
 | Variable | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QO | BOOL | Quittierung der Initialisierung (TRUE = erfolgreich). |
 | STATUS | STRING | Statusmeldung (z. B. „Initialized“, „Error“). |
 | rAccX, rAccY, rAccZ | REAL | Beschleunigungswerte in X‑, Y‑ und Z‑Richtung [m/s²]. |

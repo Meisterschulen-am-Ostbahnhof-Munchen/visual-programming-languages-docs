@@ -3,6 +3,7 @@
 <img width="1520" height="212" alt="F_TIME_IN_MS_TO_LREAL" src="https://github.com/user-attachments/assets/fd32035d-3e73-424b-9bef-32b3ce7a10d8" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_TIME_IN_MS_TO_LREAL` dient zur Konvertierung eines TIME-Werts in Millisekunden in einen LREAL-Wert. Dies ist besonders nützlich, wenn Zeitwerte für weitere Berechnungen oder Analysen in einer höheren Präzision benötigt werden.
@@ -55,9 +56,9 @@ Oft wird nach einer Funktion wie `DINT_TO_TIME` gesucht, um einen numerischen We
 
 Verwenden Sie hierfür den Baustein **`F_MULTIME`** (aus der Kategorie `arithmetic`):
 
-*   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
-*   **Beispiel:** `500 * T#1ms = T#500ms`
-*   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
+-   Multiplizieren Sie Ihren numerischen Wert mit der gewünschten Zeitbasis.
+-   **Beispiel:** `500 * T#1ms = T#500ms`
+-   Dies ermöglicht eine flexible Skalierung (z.B. * T#1s für Sekunden, * T#100ms für Zehntelsekunden).
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

@@ -3,6 +3,7 @@
 ![ASSEMBLE_WORD_FROM_BYTES](https://github.com/user-attachments/assets/7ddc020d-4826-42e2-8447-7ba0fcfd215a)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_WORD_FROM_BYTES` kombiniert zwei Byte-Werte zu einem Wort (WORD). Dies ist besonders nützlich, wenn Daten aus zwei separaten Byte-Quellen zu einem zusammenhängenden 16-Bit-Wert verknüpft werden müssen.

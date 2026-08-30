@@ -3,9 +3,11 @@
 ![AE_SPLIT_9](./AE_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AE_SPLIT_9 function block is used to split an incoming unidirectional adapter event (AE) into nine identical outputs. It is implemented as a generic function block and allows events to be distributed to multiple downstream function blocks.
+
 ## Interface Structure
 
 ### **Event Inputs**

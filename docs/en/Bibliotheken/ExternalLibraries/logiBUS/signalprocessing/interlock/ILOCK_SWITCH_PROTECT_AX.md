@@ -3,9 +3,11 @@
 ![ILOCK_SWITCH_PROTECT_AX](./ILOCK_SWITCH_PROTECT_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ILOCK_SWITCH_PROTECT_AX` is used for interlocked switching between two input channels (UP/DOWN) with an adjustable protection dead time. It prioritizes the last active input and, through the dead time, prevents uncontrolled switching back and forth (bouncing) in the case of simultaneous or rapidly changing demands. The interface is provided via standardized unidirectional adapters (type `AX`) and a timer adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -38,7 +40,7 @@ No direct data outputs. State output is provided via the adapters:
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `UP_IN` | `adapter::types::unidirectional::AX` | Input for the "Up/Forward" request. Contains event `E1` and Boolean data `D1`. |
 | Socket | `DOWN_IN` | `adapter::types::unidirectional::AX` | Input for the "Down/Backward" request. |
 | Plug | `UP_OUT` | `adapter::types::unidirectional::AX` | Output for the Up direction. |
@@ -66,7 +68,7 @@ This module implements a **latched two-channel circuit with dead time**:
 ## State Overview
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | `STOP` | Idle state. No output active. Waiting for an input to be activated. |
 | `UP` | Output `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE`. Activates when `UP_IN.D1` is present and `DOWN_IN.D1` is inactive. |
 | `DOWN` | Output `DOWN_OUT.D1 = TRUE`, `UP_OUT.D1 = FALSE`. Activates when `DOWN_IN.D1` is present and `UP_IN.D1` is inactive. |
@@ -108,6 +110,6 @@ ILOCK_SWITCH_PROTECT_AX`This robust and flexible component for interlocked switc
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

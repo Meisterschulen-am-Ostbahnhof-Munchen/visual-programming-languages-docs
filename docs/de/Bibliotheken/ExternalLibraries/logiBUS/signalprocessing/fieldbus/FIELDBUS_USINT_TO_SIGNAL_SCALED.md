@@ -48,12 +48,14 @@ Keine vorhanden.
 Der Baustein arbeitet mit zwei Zuständen: `INIT` und `REQ`.
 
 - Bei einem `INIT`-Ereignis werden die Parameter `SCALE` und `OFFSET` übernommen (der Algorithmus ist leer, die Werte werden jedoch durch das `With`-Binding eingelesen). Anschließend wird `INITO` ausgegeben.
-- Bei einem `REQ`-Ereignis wird der Algorithmus `REQ` ausgeführt:  
+- Bei einem `REQ`-Ereignis wird der Algorithmus `REQ` ausgeführt:
   Falls der Eingangswert `IN` kleiner oder gleich dem vordefinierten Grenzwert `BYTE_TO_USINT(VALID_SIGNAL_B)` ist, gilt das Signal als gültig. In diesem Fall wird der Wert wie folgt skaliert:
+
   ```
   OUT := USINT_TO_REAL(IN) * SCALE + DINT_TO_REAL(OFFSET)
   ```
-  und `VALID` wird auf `TRUE` gesetzt.  
+
+  und `VALID` wird auf `TRUE` gesetzt.
   Überschreitet `IN` den Grenzwert (d. h. das Signal ist ungültig), werden `OUT` auf `0.0` und `VALID` auf `FALSE` gesetzt.
 
 Das Verhalten spiegelt den Eingang 1:1 auf den Ausgang wider, sofern das Signal gültig ist – mit zusätzlicher Skalierung und Offset.
@@ -94,4 +96,4 @@ Der Funktionsblock `FIELDBUS_USINT_TO_SIGNAL_SCALED` ist ein kompakter, aber lei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

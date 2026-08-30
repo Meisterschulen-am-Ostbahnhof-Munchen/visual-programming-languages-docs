@@ -1,4 +1,5 @@
 Here is the documentation for exercise `Uebung_018a` in the required format.
+
 # Exercise_018a: Control Audio Signal and Delay
 
 ![Uebung_018a_network](./Uebung_018a_network.svg)

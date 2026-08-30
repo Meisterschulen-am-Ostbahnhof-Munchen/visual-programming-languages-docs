@@ -3,9 +3,11 @@
 ![AUS_SPLIT_2](./AUS_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **OFF_SPLIT_2** is used to distribute an incoming OFF signal to two identical outputs. It is implemented as a generic function block (FB) and is suitable for applications where a universal control signal is required multiple times. The block operates purely on an adapter basis and has no event or data inputs of its own.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|------------------|----------------------------------------------------|
+| ---------- | ------ | ------------------ | ---------------------------------------------------- |
 | Sockets | IN | OFF (unidirectional) | Input adapter that receives the signal to be distributed |
 | Plugs | OUT1 | OFF (unidirectional) | First output adapter, identical to the input signal |
 | Plugs | OUT2 | OFF (unidirectional) | Second output adapter, identical to the input signal |
@@ -72,6 +74,6 @@ The `AUS_SPLIT_2` is a minimalist yet useful function block for decentralized si
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

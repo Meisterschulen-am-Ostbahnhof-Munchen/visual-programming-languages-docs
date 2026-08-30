@@ -20,20 +20,20 @@ Das Ziel ist es, lokale Hardware-Eingänge (`I1` bis `I4`) für das ISOBUS-Netzw
 
 [cite_start]Dieser Sub-Baustein verbindet einen lokalen digitalen Eingang mit einem ISOBUS-Auxiliary-Ausgangsbaustein[cite: 2].
 
-  * **Eingang**: `logiBUS_IXA` (Liest den lokalen Pin)
-  * **Ausgang**: `Aux_QXA` (Sendet den Status als ISOBUS AUX Nachricht)
-  * **Parameter**:
-    * `Input`: Der lokale Eingang (z.B. `Input_I1`).
-    * `iInpNr`: Die Nummer des AUX-Inputs im ISOBUS-Pool (Index 0 bis n).
+  - **Eingang**: `logiBUS_IXA` (Liest den lokalen Pin)
+  - **Ausgang**: `Aux_QXA` (Sendet den Status als ISOBUS AUX Nachricht)
+  - **Parameter**:
+    - `Input`: Der lokale Eingang (z.B. `Input_I1`).
+    - `iInpNr`: Die Nummer des AUX-Inputs im ISOBUS-Pool (Index 0 bis n).
 
 ### Konfiguration
 
 Die Übung mappt vier Eingänge:
 
-*   `F1`: `Input_I1` -> AUX Index 0
-*   `F2`: `Input_I2` -> AUX Index 1 (implizit, Parameter-Mapping in der .SUB prüfen)
-*   `F3`: `Input_I3` -> AUX Index 2
-*   `F4`: `Input_I4` -> AUX Index 3
+-   `F1`: `Input_I1` -> AUX Index 0
+-   `F2`: `Input_I2` -> AUX Index 1 (implizit, Parameter-Mapping in der .SUB prüfen)
+-   `F3`: `Input_I3` -> AUX Index 2
+-   `F4`: `Input_I4` -> AUX Index 3
 
 (Hinweis: In der bereitgestellten .SUB-Datei sind die Parameter `Input` und `iInpNr` nicht explizit bei den Instanzen `F1`...`F4` sichtbar, was typisch für untypisierte SubApps ist, wo die Werte im Inneren gesetzt sind. Bei einer sauberen typisierten Lösung wären diese Werte wie in `Uebung_003b3_AX` sichtbar.)
 

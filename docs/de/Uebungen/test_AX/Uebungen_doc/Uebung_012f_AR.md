@@ -14,7 +14,7 @@ Diese Übung befasst sich mit dem Einlesen eines numerischen Werts (physikalisch
 - **Parameter**:
   - `KEY` = `KEY_I1_STORE`
   - `stObj` = `InputNumber_I3`
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der Baustein nimmt über den eingebauten AR-Adapter einen numerischen Wert entgegen. Der Datentyp und die Struktur des Werts sind durch die vorgegebene Konstante `InputNumber_I3` aus der Bibliothek `DefaultPool_Numeric` definiert. Der gelesene Wert wird unter dem Speicherschlüssel `KEY_I1_STORE` aus der Konstantenbibliothek `NVS_Keys` im nichtflüchtigen Speicher abgelegt.
 
 ## Programmablauf und Verbindungen
@@ -27,7 +27,7 @@ Die SubApp `Uebung_012f_AR` selbst besitzt keine eigenen Ein- oder Ausgangsschni
 - Speichern von Werten im nichtflüchtigen Speicher mit vordefinierten Schlüsseln.
 - Verwaltung von Konstanten aus externen Bibliotheken.
 
-**Schwierigkeitsgrad:** Mittel  
+**Schwierigkeitsgrad:** Mittel
 **Vorkenntnisse:** Grundlegendes Verständnis von 4diac‑FB‑Netzwerken, SubApps und der Verwendung von Adaptern.
 
 ## Zusammenfassung
@@ -38,4 +38,4 @@ Die Übung `Uebung_012f_AR` demonstriert das persistente Ablegen eines numerisch
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

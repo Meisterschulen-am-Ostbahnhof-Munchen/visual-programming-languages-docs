@@ -3,6 +3,7 @@
 ![AQ_SPLIT_4](./AQ_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AQ_SPLIT_4` dient als Fan-Out-Komponente zur Verteilung eines eingehenden AQ-Adapters auf vier identische Ausgangs-Adapter. Er wird eingesetzt, um ein analoges Signal oder eine Steuergröße (AQ – Analog Quantity) von einem Sender an mehrere unabhängige Empfänger weiterzuleiten, ohne die Signalintegrität zu beeinträchtigen.
@@ -28,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Typ | Richtung | Name | Beschreibung |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AQ` | Socket (Eingang) | `IN` | Eingehender AQ-Adapter, der auf die vier Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | `OUT1` | Erster ausgehender AQ-Adapter. |
 | `adapter::types::unidirectional::AQ` | Plug (Ausgang) | `OUT2` | Zweiter ausgehender AQ-Adapter. |
@@ -73,5 +74,5 @@ Der `AQ_SPLIT_4` ist ein einfacher, aber nützlicher Funktionsblock zur Signalve
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

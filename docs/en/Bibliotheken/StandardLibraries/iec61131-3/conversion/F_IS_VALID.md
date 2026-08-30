@@ -3,6 +3,7 @@
 ![F_IS_VALID](F_IS_VALID.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_IS_VALID` checks whether a floating-point value (`REAL`/`LREAL`) is a valid, finite value — i.e. neither `NaN` (Not a Number) nor `+/-Infinity`. It guards numerical calculations against invalid intermediate results.

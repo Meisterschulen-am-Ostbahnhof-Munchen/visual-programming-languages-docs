@@ -3,6 +3,7 @@
 ![Q_LineAttributes](https://user-images.githubusercontent.com/116869307/214147948-3b9f6d08-00a5-43c0-895b-f2a997773b97.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_LineAttributes** is a standards-compliant function module for modifying line attributes in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.30) specification for VT systems.
@@ -46,13 +47,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with object ID
 - `INITO` confirms operational readiness
-2. **Attribute Change**:
+1. **Attribute Change**:
+
 - `REQ` with new line attributes
 - Changes Object Line Properties
 - `CNF` provides result status and previous values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -68,7 +72,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Attribute Reference
 
 | Attribute | Value range | Description |
-|--------------|-----------------------|----------------------------------|
+| -------------- | ----------------------- | ---------------------------------- |
 | Color | 0-255 (8-bit) | Color index according to ISO 11783-6 A.3 |
 | Width | 1-255 pixels | Line thickness in pixels |
 | Style | 16-bit Bitmask | Line type according to B.14.3 |
@@ -76,7 +80,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful change |
 | -6 | VT_E_OVERFLOW | Buffer overflow |
 | -8 | VT_E_NOACT | VT not ready |
@@ -94,7 +98,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when used w
 ## ⚖️ Comparison with Similar Building Blocks
 
 | Feature | Q_LineAttributes | VtLineStyle | VtGraphicAttributes |
-|---------------|------------------|-------------|---------------------|
+| --------------- | ------------------ | ------------- | --------------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Color Control | ✔ | ✔ | ✔ |
 | Width Control | ✔ | ✔ | ✖ |

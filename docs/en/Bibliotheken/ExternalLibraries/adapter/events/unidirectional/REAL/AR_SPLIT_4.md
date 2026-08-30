@@ -3,9 +3,11 @@
 ![AR_SPLIT_4](./AR_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_SPLIT_4** is used to split one incoming AR adapter (unidirectional) into four outgoing AR adapters. It is implemented as a generic function block (`GenericClassName = 'GEN_AR_SPLIT'`) and enables simple signal multiplication for adapter-based communication in control systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ None
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AR` | **IN** | Socket (Input) | Incoming AR adapter signal, which is distributed to the four outputs. |
 | `adapter::types::unidirectional::AR` | **OUT1** | Plug (Output) | First outgoing AR channel. |
 | `adapter::types::unidirectional::AR` | **OUT2** | Plug (Output) | Second outgoing AR channel. |

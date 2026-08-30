@@ -3,6 +3,7 @@
 ![Q_CtrlAudioSignal](https://user-images.githubusercontent.com/116869307/214147202-f060b872-d3d6-4c56-92c9-84961ce5127b.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_CtrlAudioSignal** is a standards-compliant function block for controlling audio devices in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.10) specification for agricultural tax systems.
@@ -41,13 +42,16 @@ The F.10 command addresses the VT's **audio device** directly — it does **not 
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` without parameters
 - `INITO` confirmed Operational Readiness
-2. **Audio Control**:
+1. **Audio Control**:
+
 - Trigger `REQ` with signal parameters
 - Generates tone with a configurable pattern
 - `CNF` returns result and previous values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -61,7 +65,7 @@ The F.10 command addresses the VT's **audio device** directly — it does **not 
 ## Standard Parameter Ranges
 
 | Parameter | Range | Typical Value |
------------------|------------|----------------|
+----------------- | ------------ | ---------------- |
 | Frequency | 0-65535 Hz | 2000 Hz |
 | Duty Cycle | 0-65535 ms | 200 ms |
 | Shutdown time | 0-65535 ms | 100 ms |
@@ -70,7 +74,7 @@ The F.10 command addresses the VT's **audio device** directly — it does **not 
 ## Return codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Invalid parameter values |
 | -8 | VT_E_NOACT | VT in incorrect state |
@@ -86,16 +90,16 @@ The F.10 command addresses the VT's **audio device** directly — it does **not 
 ## ⚖️ Comparison with similar modules
 
 | Feature | Q_CtrlAudioSignal | VtSoundManager | VtAudioAlert |
-|---------------|-------------------|----------------|--------------|
+| --------------- | ------------------- | ---------------- | -------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
-| Parameterization| Full | Partial | Simple |
+| Parameterization | Full | Partial | Simple |
 | Frequency Control | Yes | No | No |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
-* [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
-* [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
+- [Exercise_017](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_017.md)
+- [Exercise_018](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018.md)
+- [Exercise_018a](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_018a.md)
 
 ## Conclusion
 

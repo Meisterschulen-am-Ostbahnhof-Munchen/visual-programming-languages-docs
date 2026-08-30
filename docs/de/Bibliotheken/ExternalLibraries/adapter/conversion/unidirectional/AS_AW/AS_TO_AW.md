@@ -3,6 +3,7 @@
 ![AS_TO_AW](./AS_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AS_TO_AW** ist ein zusammengesetzter Baustein (Composite FB), der einen unidirektionalen **SINT**-Adapter (AS) in einen unidirektionalen **WORD**-Adapter (AW) umwandelt. Er dient als Brücke zwischen verschiedenen Adapter-Typen und ermöglicht die Weiterverarbeitung von SINT-Signalen als WORD-Daten in einer 4diac-Umgebung.
@@ -11,14 +12,14 @@ Der Funktionsbaustein **AS_TO_AW** ist ein zusammengesetzter Baustein (Composite
 
 ### **Ereignis-Eingänge**
 
-*Keine direkten Ereignis-Eingänge.*  
+*Keine direkten Ereignis-Eingänge.*
 Der Baustein besitzt einen **Socket** vom Typ `AS`, der indirekt einen Ereignis-Eingang bereitstellt:
 
 - **AS_IN.E1** – Ereignis-Eingang über den Socket; ein eingehendes Ereignis löst die Konvertierung aus.
 
 ### **Ereignis-Ausgänge**
 
-*Keine direkten Ereignis-Ausgänge.*  
+*Keine direkten Ereignis-Ausgänge.*
 Der Baustein besitzt einen **Plug** vom Typ `AW`, der indirekt einen Ereignis-Ausgang bereitstellt:
 
 - **AW_OUT.E1** – Ereignis-Ausgang über den Plug; nach erfolgreicher Konvertierung wird ein Ereignis gesendet.
@@ -34,13 +35,13 @@ Der Baustein besitzt einen **Plug** vom Typ `AW`, der indirekt einen Ereignis-Au
 ### **Adapter**
 
 | Typ | Name | Richtung | Kommentar |
-|------|------|----------|-----------|
+| ------ | ------ | ---------- | ----------- |
 | `AS` (unidirektional) | **AS_IN** | Socket (Eingang) | SINT Adapter Eingang |
 | `AW` (unidirektional) | **AW_OUT** | Plug (Ausgang) | WORD Adapter Ausgang |
 
 ## Funktionsweise
 
-Der Baustein enthält eine interne Instanz des Konvertierungsbausteins `iec61131::conversion::F_SINT_TO_WORD`.  
+Der Baustein enthält eine interne Instanz des Konvertierungsbausteins `iec61131::conversion::F_SINT_TO_WORD`.
 Die Verarbeitung erfolgt ereignisgesteuert:
 
 1. Ein Ereignis am **AS_IN.E1** (Socket) triggert den internen Baustein über seinen `REQ`-Eingang.
@@ -62,7 +63,7 @@ Somit wird eine zuverlässige, einmalige Konvertierung bei jeder Ereignisankunft
 Da der Baustein aus einem internen FB mit REQ/CNF-Handshake besteht, lässt sich der Ablauf wie folgt beschreiben:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **Idle** | Warten auf ein Ereignis am AS_IN.E1 |
 | **Busy** | Konvertierung läuft (interner FB aktiv) |
 | **Done** | Konvertierung abgeschlossen, Ereignis an AW_OUT.E1 gesendet |
@@ -78,7 +79,7 @@ Der Baustein ist nicht zustandsbehaftet im Sinne eines eigenen Zustandsautomaten
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **AS_TO_AW** | SINT → WORD | Spezifische Konvertierung für unidirektionale Adapter |
 | **Allgemeine Konverter** (z.B. `F_SINT_TO_WORD`) | reine Datenkonvertierung ohne Adapter-Kapselung | AS_TO_AW bietet eine fertige Adapter-Schnittstelle und kann direkt in Adapter basierten Netzwerken verwendet werden |
 | **Andere Adapter-Konverter** (z.B. `BOOL_TO_BYTE`) | andere Datentypen | AS_TO_AW ist auf SINT ↔ WORD spezialisiert |
@@ -91,4 +92,4 @@ Der **AS_TO_AW** ist ein nützlicher, kompakter Konvertierungsbaustein, der die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

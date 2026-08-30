@@ -2,13 +2,14 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 <img width="1211" height="473" alt="image" src="https://github.com/user-attachments/assets/3736c2d1-1312-41dd-8375-2cf4ab9c7c50" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `QUARTERS_TO_BOOLS` ist ein Composite Function Block, der 16 separate 2-Bit-Eingabewerte (sogenannte "Quarter Bytes") parallel in entsprechende boolesche Ausgangssignale umwandelt. Er dient als Wrapper und vereinfacht die Handhabung, indem er eine Vielzahl einzelner Konvertierungsbausteine zu einem einzigen, übersichtlichen Baustein zusammenfasst. Dieser Block ist besonders nützlich in Steuerungssystemen, in denen kompakte Datenformate (wie 2-Bit-Zustände in einem Byte) in einfache binäre Steuersignale für Aktoren oder Statusanzeigen umgesetzt werden müssen.
@@ -19,19 +20,19 @@ Der Funktionsblock `QUARTERS_TO_BOOLS` ist ein Composite Function Block, der 16 
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Startet die Verarbeitung. Bei Eintreffen dieses Ereignisses werden alle 16 Eingabewerte (`IB_00` bis `IB_15`) ausgelesen und verarbeitet.
+-   **REQ**: Startet die Verarbeitung. Bei Eintreffen dieses Ereignisses werden alle 16 Eingabewerte (`IB_00` bis `IB_15`) ausgelesen und verarbeitet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Signalisiert die erfolgreiche Beendigung der Verarbeitung. Dieses Ereignis wird ausgegeben, nachdem alle 16 internen Konvertierungen abgeschlossen und die Ausgangsdaten (`Q_00` bis `Q_15`) aktualisiert sind.
+-   **CNF**: Signalisiert die erfolgreiche Beendigung der Verarbeitung. Dieses Ereignis wird ausgegeben, nachdem alle 16 internen Konvertierungen abgeschlossen und die Ausgangsdaten (`Q_00` bis `Q_15`) aktualisiert sind.
 
 ### **Daten-Eingänge**
 
-*   **IB_00** bis **IB_15** (Typ: `BYTE`): 16 Eingänge für 2-Bit-Daten (Quarter Bytes). Jeder Eingang kann einen von vier definierten Zuständen repräsentieren (z.B. `quarter::COMMAND_DISABLE`). Der Standard-Initialwert für alle Eingänge ist `quarter::COMMAND_DISABLE`.
+-   **IB_00** bis **IB_15** (Typ: `BYTE`): 16 Eingänge für 2-Bit-Daten (Quarter Bytes). Jeder Eingang kann einen von vier definierten Zuständen repräsentieren (z.B. `quarter::COMMAND_DISABLE`). Der Standard-Initialwert für alle Eingänge ist `quarter::COMMAND_DISABLE`.
 
 ### **Daten-Ausgänge**
 
-*   **Q_00** bis **Q_15** (Typ: `BOOL`): 16 boolesche Ausgänge, die den konvertierten Zustand des jeweiligen Quarter-Byte-Eingangs widerspiegeln. Der Initialwert aller Ausgänge ist `FALSE`.
+-   **Q_00** bis **Q_15** (Typ: `BOOL`): 16 boolesche Ausgänge, die den konvertierten Zustand des jeweiligen Quarter-Byte-Eingangs widerspiegeln. Der Initialwert aller Ausgänge ist `FALSE`.
 
 ### **Adapter**
 
@@ -50,9 +51,9 @@ Dieser Funktionsblock verwendet keine Adapter-Schnittstellen.
 
 ## Technische Besonderheiten
 
-*   **Initialisierung**: Alle Eingänge sind mit dem spezifischen Wert `quarter::COMMAND_DISABLE` vorbelegt, und alle Ausgänge starten mit `FALSE`. Dies gewährleistet einen definierten, inaktiven Ausgangszustand.
-*   **Verarbeitungsreihenfolge**: Während die Dateneingänge parallel verteilt werden, erfolgt die Ereignisverarbeitung streng sequenziell von Index 00 bis 15. Dies führt zu einer deterministischen, wenn auch nicht gleichzeitigen, Aktualisierung der Ausgänge.
-*   **Komposit-Bauweise**: Der Block kapselt die Komplexität von 16 einzelnen Konvertierungen und bietet eine saubere, vereinheitlichte Schnittstelle, was die Wiederverwendbarkeit und Lesbarkeit in übergeordneten Applikationen erhöht.
+-   **Initialisierung**: Alle Eingänge sind mit dem spezifischen Wert `quarter::COMMAND_DISABLE` vorbelegt, und alle Ausgänge starten mit `FALSE`. Dies gewährleistet einen definierten, inaktiven Ausgangszustand.
+-   **Verarbeitungsreihenfolge**: Während die Dateneingänge parallel verteilt werden, erfolgt die Ereignisverarbeitung streng sequenziell von Index 00 bis 15. Dies führt zu einer deterministischen, wenn auch nicht gleichzeitigen, Aktualisierung der Ausgänge.
+-   **Komposit-Bauweise**: Der Block kapselt die Komplexität von 16 einzelnen Konvertierungen und bietet eine saubere, vereinheitlichte Schnittstelle, was die Wiederverwendbarkeit und Lesbarkeit in übergeordneten Applikationen erhöht.
 
 ## Zustandsübersicht
 
@@ -60,18 +61,18 @@ Als Composite Function Block besitzt `QUARTERS_TO_BOOLS` keinen eigenen komplexe
 
 ## Anwendungsszenarien
 
-*   **Kompakte SPS-Anbindung**: Umwandlung von kompakten 32-Bit-Datenwörtern (die 16 2-Bit-Zustände enthalten) in 16 einzelne binäre Steuersignale für Ventile, Lampen oder Relais.
-*   **Statusdekodierung**: Dekodierung von Gerätestatusinformationen, die in einem "Quarter Byte"-Format übertragen werden, in einzelne, leicht verarbeitbare Fehler- oder Betriebszustandsbits.
-*   **Vereinfachung von Funktionsplanern**: Ersetzt 16 separate `QUARTER_TO_BOOL`-Blöcke und deren Verdrahtung in einem Funktionsplan durch einen einzigen, übersichtlichen Block, was die Projektwartung erleichtert.
+-   **Kompakte SPS-Anbindung**: Umwandlung von kompakten 32-Bit-Datenwörtern (die 16 2-Bit-Zustände enthalten) in 16 einzelne binäre Steuersignale für Ventile, Lampen oder Relais.
+-   **Statusdekodierung**: Dekodierung von Gerätestatusinformationen, die in einem "Quarter Byte"-Format übertragen werden, in einzelne, leicht verarbeitbare Fehler- oder Betriebszustandsbits.
+-   **Vereinfachung von Funktionsplanern**: Ersetzt 16 separate `QUARTER_TO_BOOL`-Blöcke und deren Verdrahtung in einem Funktionsplan durch einen einzigen, übersichtlichen Block, was die Projektwartung erleichtert.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`QUARTER_TO_BOOL`**: Dies ist der elementare Baustein, der einen einzelnen 2-Bit-Eingang konvertiert. `QUARTERS_TO_BOOLS` bündelt 16 Instanzen dieses Blocks zu einer Einheit. Die Verwendung des Composite-Blocks ist effizienter für die Handhabung mehrerer Kanäle, während der Einzelblock maximale Flexibilität bei der individuellen Platzierung und Verdrahtung bietet.
-*   **`BYTE_TO_BOOL`-Blöcke**: Konventionelle Blöcke, die ein ganzes Byte in 8 einzelne Bits aufspalten. `QUARTERS_TO_BOOLS` ist spezialisierter, da er davon ausgeht, dass jedes Byte bereits in vier unabhängige 2-Bit-Einheiten unterteilt ist, die separat interpretiert werden müssen.
+-   **`QUARTER_TO_BOOL`**: Dies ist der elementare Baustein, der einen einzelnen 2-Bit-Eingang konvertiert. `QUARTERS_TO_BOOLS` bündelt 16 Instanzen dieses Blocks zu einer Einheit. Die Verwendung des Composite-Blocks ist effizienter für die Handhabung mehrerer Kanäle, während der Einzelblock maximale Flexibilität bei der individuellen Platzierung und Verdrahtung bietet.
+-   **`BYTE_TO_BOOL`-Blöcke**: Konventionelle Blöcke, die ein ganzes Byte in 8 einzelne Bits aufspalten. `QUARTERS_TO_BOOLS` ist spezialisierter, da er davon ausgeht, dass jedes Byte bereits in vier unabhängige 2-Bit-Einheiten unterteilt ist, die separat interpretiert werden müssen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Uebung_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Fazit
 

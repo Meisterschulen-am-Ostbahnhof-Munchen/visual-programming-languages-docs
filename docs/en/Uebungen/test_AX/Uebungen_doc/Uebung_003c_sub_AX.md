@@ -1,10 +1,12 @@
 Here is the documentation for the sub-application `Uebung_003c_sub_AX` based on the provided data.
+
 # Exercise_003c_sub_AX: IX to QX (generic)
 
 <Bild der Übung, falls vorhanden>
 ![Uebung_003c_sub_AX_network](./Uebung_003c_sub_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The sub-application **Exercise_003c_sub_AX** serves as a generic building block for connecting a digital input (IX) to an auxiliary output (QX). It functions as an interface to map signals from the LogiBUS system to the ISOBUS auxiliary system, taking into account a specific input number (`iInpNr`).
@@ -62,4 +64,4 @@ The `Uebung_003c_sub_AX` is a reusable module (sub-application) that maps a digi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

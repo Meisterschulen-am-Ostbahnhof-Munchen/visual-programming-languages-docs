@@ -3,9 +3,11 @@
 ![ADI_FB_CTD](./ADI_FB_CTD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADI_FB_CTD** is a down counter for values of type `DINT` that communicates exclusively via ADI adapters. It encapsulates an internal standard counter and enables counting down, loading a default value, and outputting the current counter value – all via standardized adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ No direct data outputs; data is provided via the adapter plugs.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | CD | `adapter::types::unidirectional::AX` | Socket (Input) | Countdown event; the data value (D1) is passed to the internal counter as a CD pulse. |
 | LD | `adapter::types::unidirectional::AX` | Socket (Input) | Load the counter with the current value of **PV**; The data value (D1) signals the charging process. |
 | PV | `adapter::types::unidirectional::ADI` | Socket (Input) | Preset value as `DINT`; the event (E1) triggers an update of the internal PV register. |

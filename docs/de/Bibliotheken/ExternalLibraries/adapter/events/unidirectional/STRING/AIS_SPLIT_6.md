@@ -29,7 +29,7 @@ Keine Datenausgänge vorhanden (die Datenübertragung erfolgt ausschließlich ü
 ### **Adapter**
 
 | Typ | Richtung | Name | Beschreibung |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AIS` | Eingang (Socket) | IN | Eingehendes AIS-Signal, das auf alle Ausgänge verteilt wird. |
 | `adapter::types::unidirectional::AIS` | Ausgang (Plug) | OUT1 | Erster Ausgang mit dem gesplitteten AIS-Signal. |
 | `adapter::types::unidirectional::AIS` | Ausgang (Plug) | OUT2 | Zweiter Ausgang mit dem gesplitteten AIS-Signal. |
@@ -76,4 +76,4 @@ Der `AIS_SPLIT_6` ist ein nützlicher und minimalistischer Baustein zur Signalf�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

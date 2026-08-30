@@ -3,9 +3,11 @@
 ![AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE](./AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to convert and scale a 16-bit value received via an AUI fieldbus adapter into a scalable signal. The block mirrors the input value to the output, provided the validity signal is active, and performs compound scaling on the upper and lower bytes of the input value. An offset can be added after scaling. The output is provided via a unidirectional AR adapter, while the validity is signaled via an AX adapter. The block is specifically designed for industrial fieldbus protocols where user data consists of two separately scalable byte ranges.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block `AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` is used to conve
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-|----------|-----|--------------|-------------|
+| ---------- | ----- | -------------- | ------------- |
 | SCALE_HIGH | REAL | 0.256 | Scaling factor for the upper byte of the incoming value. |
 | SCALE_LOW | REAL | 0.001 | Scaling factor for the lower byte of the incoming value. |
 | OFFSET | DINT | 0 | Integer offset added after scaling. |
@@ -35,7 +37,7 @@ This function block has no separate data outputs other than `VarDeclaration`. Th
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|-------------|
+| --------- | ---------- | ----- | ------------- |
 | IN | Socket | adapter::types::unidirectional::AUI | Input for the fieldbus data value to be processed. |
 | OUT | Plug | adapter::types::unidirectional::AR | Output of the scaled value (e.g., REAL or DINT, depending on the internal function block). |
 | VALID | Plug | adapter::types::unidirectional::AX | Output signal: TRUE if the current output value is valid. |

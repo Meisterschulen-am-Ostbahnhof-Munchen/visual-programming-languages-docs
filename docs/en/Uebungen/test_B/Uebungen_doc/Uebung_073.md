@@ -1,8 +1,9 @@
 # Exercise_073: Outputting VDS to UT
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_073`. Here, the third speed source of the ISOBUS is explored: the navigation system.
+This article describes the logiBUS® exercise `Uebung_073`. Here, the third speed source of the ISOBUS is explored: the navigation system
 ----
+
 ## Objective of the Exercise
 
 Use of the function block `I_VDS` (Vehicle Direction and Speed).
@@ -17,7 +18,7 @@ Use of the function block `I_VDS` (Vehicle Direction and Speed).
 
 ![Uebung_073_network](./Uebung_073_network.svg)
 
-* **`I_VDS`**: This block receives data from the tractor's GPS receiver (`NavigationBasedVehicleSpeed`).
+- **`I_VDS`**: This block receives data from the tractor's GPS receiver (`NavigationBasedVehicleSpeed`).
 
 -----
 

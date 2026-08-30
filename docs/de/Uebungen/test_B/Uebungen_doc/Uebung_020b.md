@@ -20,8 +20,8 @@ Verstehen der Zeitsteuerung durch Ereignisverzögerung (`E_DELAY`). Es wird geze
 
 ![Uebung_020b_network](./Uebung_020b_network.svg)
 
-  * **`E_DELAY`**: Wartet die Zeit `DT` (2 Sekunden) ab.
-  * **`E_SWITCH`**: Steuert den Start und Stopp des Timers.
+  - **`E_DELAY`**: Wartet die Zeit `DT` (2 Sekunden) ab.
+  - **`E_SWITCH`**: Steuert den Start und Stopp des Timers.
 
 -----
 

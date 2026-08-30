@@ -6,6 +6,7 @@
 
 The function block `F_WSTRING_AS_LINT` is used to convert a WSTRING value to a LINT value. This block is particularly useful in scenarios where strings need to be converted into numeric values, for example, when processing user input or interpreting text data.
 ![F_WSTRING_AS_LINT](F_WSTRING_AS_LINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

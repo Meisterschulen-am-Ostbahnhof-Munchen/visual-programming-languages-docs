@@ -4,9 +4,11 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **OFF_SPLIT_7** is a generic block for distributing a single OFF adapter signal to seven identical OFF outputs. It serves as a signal multiplier in control applications based on the IEC 61499 standard. The block has no event- or data-based interfaces, but communicates exclusively via adapters of type `adapter::types::unidirectional::AUS`. The actual signal type is only determined at runtime via the generic attribute `GenericClassName`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +30,7 @@ None available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AUS` | Uniform OFF input signal |
 | **Plug** (Output) | `OUT1` – `OUT7` | `adapter::types::unidirectional::AUS` | Seven parallel OFF signals |
 
@@ -72,6 +74,6 @@ The **AUS_SPLIT_7** is a simple yet effective generic function block for the uni
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

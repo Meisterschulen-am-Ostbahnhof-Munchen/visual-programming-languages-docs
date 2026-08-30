@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_SUB_DATE_DATE](F_SUB_DATE_DATE.svg)
+
 ## Introduction
 
 The **F_SUB_DATE_DATE** function block is a standards-compliant function block for calculating time differences between two date values, developed under the EPL-2.0 license. Version 1.0 enables the precise calculation of time intervals according to the IEC 61131-3 standard.
@@ -30,13 +31,16 @@ The **F_SUB_DATE_DATE** function block is a standards-compliant function block f
 ## Operating Principle
 
 1. **Calculation Trigger**:
+
 - `REQ` event with two DATE values
 - Both inputs must be of type DATE
-2. **Difference Calculation**:
+1. **Difference Calculation**:
+
 - Conversion of both date values to seconds since January 1, 1970
 - Subtraction of the timestamps (IN1 - IN2)
 - Conversion to the TIME data type
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with calculated time interval
 - Positive values if IN1 > IN2, negative values if IN1 < IN2
 
@@ -67,7 +71,7 @@ The **F_SUB_DATE_DATE** function block is a standards-compliant function block f
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | F_SUB_DATE_DATE | F_SUB_TIME | F_SUB_DT_DT |
-|---------------|-----------------|------------|-------------|
+| --------------- | ----------------- | ------------ | ------------- |
 | Input Types | DATE - DATE | TIME - TIME | DT - DT |
 | Output Type | TIME | TIME | TIME |
 | Accuracy | Day-accurate | Nanosecond | Microsecond |

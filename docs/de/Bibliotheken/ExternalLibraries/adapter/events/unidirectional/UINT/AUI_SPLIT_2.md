@@ -3,6 +3,7 @@
 ![AUI_SPLIT_2](./AUI_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_SPLIT_2** verteilt ein von einem AUI-Adapter (Socket) eingehendes Signal unverändert auf zwei identische AUI-Adapter (Plugs). Er wird als generischer Baustein (GenericClassName = `'GEN_AUI_SPLIT'`) ausgeliefert und ermöglicht die einfache Aufteilung eines unidirektionalen AUI-Datenstroms auf zwei unabhängige Senken.
@@ -28,7 +29,7 @@ Keine direkten Datenausgänge vorhanden. Der Datentransport erfolgt ausschließl
 ### **Adapter**
 
 | Name | Typ | Richtung / Rolle |
-|------|-----|------------------|
+| ------ | ----- | ------------------ |
 | `IN` | `adapter::types::unidirectional::AUI` | Socket (Eingang) |
 | `OUT1` | `adapter::types::unidirectional::AUI` | Plug (Ausgang 1) |
 | `OUT2` | `adapter::types::unidirectional::AUI` | Plug (Ausgang 2) |

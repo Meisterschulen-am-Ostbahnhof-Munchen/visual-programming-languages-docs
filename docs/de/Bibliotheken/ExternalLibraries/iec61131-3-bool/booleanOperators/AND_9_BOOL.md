@@ -3,6 +3,7 @@
 <img width="1383" height="452" alt="image" src="https://github.com/user-attachments/assets/2b74e859-7af1-4a33-9ae1-94290210600c" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AND_9_BOOL` ist ein Standardbaustein zur Berechnung der logischen UND-Verknüpfung. Er führt eine bitweise UND-Operation über neun separate boolesche Eingänge durch. Der Block folgt dem IEC 61131-3 Standard und ist für den Einsatz in der 4diac-IDE konzipiert.
@@ -15,27 +16,27 @@ Der Block besitzt ein ereignisgesteuertes Ein-/Ausgangsmodell.
 
 ### **Ereignis-Eingänge**
 
-*   **REQ (Normal Execution Request):** Löst die Berechnung der UND-Verknüpfung aus. Bei diesem Ereignis werden alle Daten-Eingänge (`IN1` bis `IN9`) ausgelesen und das Ergebnis berechnet.
+-   **REQ (Normal Execution Request):** Löst die Berechnung der UND-Verknüpfung aus. Bei diesem Ereignis werden alle Daten-Eingänge (`IN1` bis `IN9`) ausgelesen und das Ergebnis berechnet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF (Execution Confirmation):** Wird nach Abschluss der Berechnung ausgelöst und signalisiert, dass das Ergebnis am Daten-Ausgang `OUT` bereitsteht.
+-   **CNF (Execution Confirmation):** Wird nach Abschluss der Berechnung ausgelöst und signalisiert, dass das Ergebnis am Daten-Ausgang `OUT` bereitsteht.
 
 ### **Daten-Eingänge**
 
-*   **IN1 (BOOL):** UND-Eingang 1.
-*   **IN2 (BOOL):** UND-Eingang 2.
-*   **IN3 (BOOL):** UND-Eingang 3.
-*   **IN4 (BOOL):** UND-Eingang 4.
-*   **IN5 (BOOL):** UND-Eingang 5.
-*   **IN6 (BOOL):** UND-Eingang 6.
-*   **IN7 (BOOL):** UND-Eingang 7.
-*   **IN8 (BOOL):** UND-Eingang 8.
-*   **IN9 (BOOL):** UND-Eingang 9.
+-   **IN1 (BOOL):** UND-Eingang 1.
+-   **IN2 (BOOL):** UND-Eingang 2.
+-   **IN3 (BOOL):** UND-Eingang 3.
+-   **IN4 (BOOL):** UND-Eingang 4.
+-   **IN5 (BOOL):** UND-Eingang 5.
+-   **IN6 (BOOL):** UND-Eingang 6.
+-   **IN7 (BOOL):** UND-Eingang 7.
+-   **IN8 (BOOL):** UND-Eingang 8.
+-   **IN9 (BOOL):** UND-Eingang 9.
 
 ### **Daten-Ausgänge**
 
-*   **OUT (BOOL):** Ergebnis der UND-Verknüpfung. Der Ausgang ist nur `TRUE`, wenn **alle** neun Eingänge (`IN1` bis `IN9`) den Wert `TRUE` aufweisen. In allen anderen Fällen ist der Ausgang `FALSE`.
+-   **OUT (BOOL):** Ergebnis der UND-Verknüpfung. Der Ausgang ist nur `TRUE`, wenn **alle** neun Eingänge (`IN1` bis `IN9`) den Wert `TRUE` aufweisen. In allen anderen Fällen ist der Ausgang `FALSE`.
 
 ### **Adapter**
 
@@ -50,9 +51,9 @@ Die logische Funktion lässt sich wie folgt beschreiben:
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist als Instanz eines generischen UND-Bausteins (`GEN_AND`) implementiert, der für eine feste Anzahl von Eingängen (hier 9) spezialisiert wurde.
-*   **Ereignisgesteuert:** Die Operation wird nur bei einem eingehenden `REQ`-Ereignis ausgeführt, was eine ressourcenschonende und deterministische Abarbeitung ermöglicht.
-*   **Feste Eingangsanzahl:** Im Gegensatz zu variablen Funktionen arbeitet dieser Block exakt mit neun Eingängen.
+-   **Generischer Baustein:** Der Block ist als Instanz eines generischen UND-Bausteins (`GEN_AND`) implementiert, der für eine feste Anzahl von Eingängen (hier 9) spezialisiert wurde.
+-   **Ereignisgesteuert:** Die Operation wird nur bei einem eingehenden `REQ`-Ereignis ausgeführt, was eine ressourcenschonende und deterministische Abarbeitung ermöglicht.
+-   **Feste Eingangsanzahl:** Im Gegensatz zu variablen Funktionen arbeitet dieser Block exakt mit neun Eingängen.
 
 ## Zustandsübersicht
 
@@ -60,15 +61,15 @@ Der Block besitzt keinen internen Zustand im Sinne eines Speichers. Sein Verhalt
 
 ## Anwendungsszenarien
 
-*   **Sicherheitskette:** Verknüpfung mehrerer Sicherheitsschalter (z.B. Not-Aus, Schutzgitter, Zwei-Hand-Bedienung), die alle geschlossen sein müssen, um eine Maschine zu starten.
-*   **Mehrfachbedingung:** Prüfung, ob mehrere Voraussetzungen in einem Prozessschritt gleichzeitig erfüllt sind.
-*   **Verkettung von Logik:** Als Teil einer größeren logischen Schaltung, wo das Ergebnis von neun Quellen gemeinsam ausgewertet werden muss.
+-   **Sicherheitskette:** Verknüpfung mehrerer Sicherheitsschalter (z.B. Not-Aus, Schutzgitter, Zwei-Hand-Bedienung), die alle geschlossen sein müssen, um eine Maschine zu starten.
+-   **Mehrfachbedingung:** Prüfung, ob mehrere Voraussetzungen in einem Prozessschritt gleichzeitig erfüllt sind.
+-   **Verkettung von Logik:** Als Teil einer größeren logischen Schaltung, wo das Ergebnis von neun Quellen gemeinsam ausgewertet werden muss.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **`AND` (2 Eingänge):** Der Standard-UND-Baustein mit nur zwei Eingängen. `AND_9_BOOL` ist eine spezielle, erweiterte Version für genau neun Eingänge. Siehe: [AND_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_9.md)
-*   **`GEN_AND`:** Der zugrunde liegende generische Baustein, der mit einer konfigurierbaren Anzahl von Eingängen instanziiert werden kann. `AND_9_BOOL` ist eine vordefinierte Instanz davon.
-*   **`OR_*` / `XOR_*` Bausteine:** Führen andere logische Grundoperationen (ODER, exklusives ODER) mit einer festen Anzahl von Eingängen durch.
+-   **`AND` (2 Eingänge):** Der Standard-UND-Baustein mit nur zwei Eingängen. `AND_9_BOOL` ist eine spezielle, erweiterte Version für genau neun Eingänge. Siehe: [AND_9](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_9.md)
+-   **`GEN_AND`:** Der zugrunde liegende generische Baustein, der mit einer konfigurierbaren Anzahl von Eingängen instanziiert werden kann. `AND_9_BOOL` ist eine vordefinierte Instanz davon.
+-   **`OR_*` / `XOR_*` Bausteine:** Führen andere logische Grundoperationen (ODER, exklusives ODER) mit einer festen Anzahl von Eingängen durch.
 
 ## Fazit
 
@@ -78,4 +79,4 @@ Der `AND_9_BOOL` ist ein robuster und einfach zu verwendender Standardbaustein f
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

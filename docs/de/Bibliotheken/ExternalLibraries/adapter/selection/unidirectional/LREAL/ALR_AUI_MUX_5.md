@@ -3,6 +3,7 @@
 ![ALR_AUI_MUX_5](ALR_AUI_MUX_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `ALR_AUI_MUX_5` ist die adapterbasierte Variante des generischen Multiplexers für den Datentyp `LREAL`. Anders als `ALR_MUX_5` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.

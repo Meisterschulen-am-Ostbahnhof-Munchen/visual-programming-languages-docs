@@ -14,7 +14,7 @@
 
 Der Baustein **E_TONOF** ist ein standardisiertes Funktionsbaustein-Typ (FBType) gemäß der Norm **IEC 61499**, der für zeitverzögerte Schaltvorgänge in industriellen Automatisierungssystemen verwendet wird. Dieser Baustein kombiniert die Funktionen eines **On-Delay-Timers** (Einschaltverzögerung) und eines **Off-Delay-Timers** (Ausschaltverzögerung) in einem einzigen Baustein. Er ermöglicht es, sowohl das Einschalten als auch das Ausschalten eines Signals zeitlich zu verzögern.
 
-### Allgemeine Beschreibung:
+### Allgemeine Beschreibung
 
 - **Name**: E_TONOF
 - **Typ**: Standard Timer Function Block (On/Off-Delay Timing)
@@ -23,7 +23,7 @@ Der Baustein **E_TONOF** ist ein standardisiertes Funktionsbaustein-Typ (FBType)
 
 ---
 
-### Interface-Beschreibung:
+### Interface-Beschreibung
 
 #### **Eingangsereignisse (Event Inputs):**
 
@@ -69,7 +69,7 @@ Der Baustein **E_TONOF** ist ein standardisiertes Funktionsbaustein-Typ (FBType)
 
 ---
 
-### Funktionsweise:
+### Funktionsweise
 
 1. **Einschaltverzögerung (On-Delay)**:
    - Wenn **IN** auf `TRUE` gesetzt wird, startet der Timer für die Einschaltverzögerung (**PT_ON**).
@@ -84,18 +84,17 @@ Der Baustein **E_TONOF** ist ein standardisiertes Funktionsbaustein-Typ (FBType)
 
 ---
 
-### Anwendungsbeispiele:
+### Anwendungsbeispiele
 
 - **Maschinensteuerung**: Verzögerte Reaktion auf Sensoren oder Schaltbefehle, z. B. um ein Überlasten von Motoren zu vermeiden.
 - **Prozessautomatisierung**: Zeitgesteuerte Schaltvorgänge in industriellen Prozessen, z. B. in Förderbändern oder Heizungssteuerungen.
 
 ---
 
-### Zusammenfassung:
+### Zusammenfassung
 
 Der **E_TONOF**-Baustein ist ein leistungsstarkes Werkzeug in der IEC 61499, um zeitverzögerte Schaltvorgänge in industriellen Automatisierungssystemen zu realisieren. Er kombiniert die Funktionen eines Ein- und Ausschaltverzögerungstimers in einem einzigen Baustein und bietet zusätzlich die Möglichkeit, den Timer über ein Reset-Ereignis zurückzusetzen. Dies macht ihn besonders flexibel und vielseitig einsetzbar in komplexen Steuerungsaufgaben.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020g](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020g.md)
-
+- [Uebung_020g](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020g.md)

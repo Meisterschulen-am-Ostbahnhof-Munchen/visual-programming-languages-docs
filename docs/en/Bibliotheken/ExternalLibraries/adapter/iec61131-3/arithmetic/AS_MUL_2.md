@@ -3,6 +3,7 @@
 ![AS_MUL_2](./AS_MUL_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_MUL_2` is a generic, arithmetic multiplication block for IEC 61499 applications in the 4diac IDE. It is used to multiply two input values. The special feature of this block lies in the use of adapter interfaces instead of classic, discrete event and data channels. This enables structured and clear signal transmission.
@@ -29,11 +30,11 @@ The block does not have any directly accessible standard event or data pins, but
 
 ### **Adapters**
 
-* **Sockets (Input Interfaces):**
-* `IN1` (Type: `adapter::types::unidirectional::AS`): The first input (multiplicand) for calculation.
-* `IN2` (Type: `adapter::types::unidirectional::AS`): The second input (multiplier) for calculation.
-* **Plugs (Output Interfaces):**
-* `OUT` (Type: `adapter::types::unidirectional::AS`): The result of the multiplication ($OUT = IN1 × IN2$).
+- **Sockets (Input Interfaces):**
+- `IN1` (Type: `adapter::types::unidirectional::AS`): The first input (multiplicand) for calculation.
+- `IN2` (Type: `adapter::types::unidirectional::AS`): The second input (multiplier) for calculation.
+- **Plugs (Output Interfaces):**
+- `OUT` (Type: `adapter::types::unidirectional::AS`): The result of the multiplication ($OUT = IN1 × IN2$).
 
 ---
 
@@ -47,9 +48,9 @@ Since the function block is designed generically (`GenericClassName = 'GEN_AS_MU
 
 ## Technical Features
 
-* **Generic Function Block:** By defining it as `GEN_AS_MUL`, the function block is not tied to a specific data type.
-* **Unidirectional Adapter Coupling:** Using the adapter type `adapter::types::unidirectional::AS` ensures a clear, directed flow of data and signals, thus preventing feedback loops.
-* **Reduced Editor Complexity:** Encapsulating data and events in adapters minimizes the visual "spaghetti code" problem (too many connecting lines) in the 4diac IDE.
+- **Generic Function Block:** By defining it as `GEN_AS_MUL`, the function block is not tied to a specific data type.
+- **Unidirectional Adapter Coupling:** Using the adapter type `adapter::types::unidirectional::AS` ensures a clear, directed flow of data and signals, thus preventing feedback loops.
+- **Reduced Editor Complexity:** Encapsulating data and events in adapters minimizes the visual "spaghetti code" problem (too many connecting lines) in the 4diac IDE.
 
 ---
 
@@ -65,9 +66,9 @@ The function block behaves purely event-driven:
 
 ## Application Scenarios
 
-* **Signal Scaling:** Multiplication of analog sensor values by a scaling factor supplied via an adapter.
-* **Modular Calculations:** Used in more complex mathematical computing networks where structured data streams need to be transported via adapter buses.
-* **Power Calculation:** Multiplication of current and voltage values to determine electrical power in real-time systems.
+- **Signal Scaling:** Multiplication of analog sensor values by a scaling factor supplied via an adapter.
+- **Modular Calculations:** Used in more complex mathematical computing networks where structured data streams need to be transported via adapter buses.
+- **Power Calculation:** Multiplication of current and voltage values to determine electrical power in real-time systems.
 
 ---
 

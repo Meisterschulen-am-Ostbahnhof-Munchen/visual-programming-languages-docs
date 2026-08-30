@@ -4,20 +4,21 @@
 
 ![E_CTU_ecc](./E_CTU_ecc.svg)
 
-* [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
+- [The E_CTU upcounter](https://www.youtube.com/watch?v=2v4Ib2wZLGM)
 
 ## 🎧 Podcast
 
-* [Der E_CTU in der IEC 61499: Ereignisgesteuertes Zählen und warum der Minimalist im Maschinenbau überzeugt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
-* [Der E_CTU-Baustein: Ereignisgesteuertes Hochzählen in der Industrie nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-Baustein-Ereignisgesteuertes-Hochzhlen-in-der-Industrie-nach-IEC-61499-e36846t)
-* [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
-* [Meisterwissen 61499: Der Ereignisgesteuerte Aufwärtszähler (E_CTU) – Robustes Zählen in Landmaschinen-Steuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Meisterwissen-61499-Der-Ereignisgesteuerte-Aufwrtszhler-E_CTU--Robustes-Zhlen-in-Landmaschinen-Steuerungen-e3a9q5n)
+- [Der E_CTU in der IEC 61499: Ereignisgesteuertes Zählen und warum der Minimalist im Maschinenbau überzeugt](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-in-der-IEC-61499-Ereignisgesteuertes-Zhlen-und-warum-der-Minimalist-im-Maschinenbau-berzeugt-e3a9qnq)
+- [Der E_CTU-Baustein: Ereignisgesteuertes Hochzählen in der Industrie nach IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Der-E_CTU-Baustein-Ereignisgesteuertes-Hochzhlen-in-der-Industrie-nach-IEC-61499-e36846t)
+- [E_CTUD: Bidirektionaler Zähler in IEC 61499 Systemen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_CTUD-Bidirektionaler-Zhler-in-IEC-61499-Systemen-e368lmb)
+- [Meisterwissen 61499: Der Ereignisgesteuerte Aufwärtszähler (E_CTU) – Robustes Zählen in Landmaschinen-Steuerungen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Meisterwissen-61499-Der-Ereignisgesteuerte-Aufwrtszhler-E_CTU--Robustes-Zhlen-in-Landmaschinen-Steuerungen-e3a9q5n)
 
----- 
+----
 
 <img width="1139" height="202" alt="E_CTU" src="https://user-images.githubusercontent.com/113907528/204894537-54f1c9c9-de57-4beb-ad38-697fff012b4b.png">
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_CTU` (Event-Driven Up Counter) ist ein ereignisgesteuerter Aufwärtszähler gemäß dem IEC 61499-Standard. Seine Funktion ist es, bei jedem ankommenden Zählereignis einen internen Zählerstand zu erhöhen und diesen mit einem vorgegebenen Grenzwert zu vergleichen. Der Baustein kann jederzeit zurückgesetzt werden.
@@ -78,15 +79,15 @@ Der `E_CTU`-Baustein hat zwei Hauptfunktionen: Zählen und Zurücksetzen.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
-* [Uebung_040_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
-* [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
-* [Uebung_041](../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
-* [Uebung_080](../../../Uebungen/test_B/Uebungen_doc/Uebung_080.md)
-* [Uebung_080b](../../../Uebungen/test_B/Uebungen_doc/Uebung_080b.md)
-* [Uebung_080c](../../../Uebungen/test_B/Uebungen_doc/Uebung_080c.md)
-* [Uebung_084](../../../Uebungen/test_B/Uebungen_doc/Uebung_084.md)
-* [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
+- [Uebung_040](../../../Uebungen/test_B/Uebungen_doc/Uebung_040.md)
+- [Uebung_040_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_040_2.md)
+- [Uebung_040_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_040_AX.md)
+- [Uebung_041](../../../Uebungen/test_B/Uebungen_doc/Uebung_041.md)
+- [Uebung_080](../../../Uebungen/test_B/Uebungen_doc/Uebung_080.md)
+- [Uebung_080b](../../../Uebungen/test_B/Uebungen_doc/Uebung_080b.md)
+- [Uebung_080c](../../../Uebungen/test_B/Uebungen_doc/Uebung_080c.md)
+- [Uebung_084](../../../Uebungen/test_B/Uebungen_doc/Uebung_084.md)
+- [Uebung_12x_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
 
 ## Fazit
 
@@ -96,4 +97,4 @@ Der `E_CTU` ist ein grundlegender und vielseitiger Zählerbaustein für ereignis
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

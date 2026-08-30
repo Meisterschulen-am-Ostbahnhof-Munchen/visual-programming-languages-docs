@@ -3,9 +3,11 @@
 ![AX_TO_AD](./AX_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AX_TO_AD` converts a Boolean adapter (AX) to a DWORD adapter (AD). It forwards event and data signals from the input adapter directly to the output adapter and implicitly converts the data type from Boolean to DWORD.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,6 +55,7 @@ The `AX_TO_AD` function block does not have its own internal state. Its behavior
 
 
 - **Composite FB**:**
+
 ## Application Scenarios
 
 - Integration of a digital sensor (e.g., switch, light barrier) into a system that expects a DWORD adapter for data acquisition.
@@ -73,4 +76,4 @@ The `AX_TO_AD` function block offers a simple and clean way to convert a BOOL ad
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

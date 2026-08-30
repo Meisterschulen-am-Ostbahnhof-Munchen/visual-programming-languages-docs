@@ -3,9 +3,11 @@
 ![AR_TO_AD](./AR_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_TO_AD` serves as a composite function block (FB) for converting a REAL value received via a unidirectional AR adapter into a DWORD value output via a unidirectional AD adapter. The conversion is performed according to IEC 61131-3 using the function block `F_REAL_TO_DWORD`. The FB encapsulates the necessary event and data connections and allows for easy integration into existing adapter-based communication structures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -77,4 +79,4 @@ The `AR_TO_AD` function block is a specialized composite function block that ena
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

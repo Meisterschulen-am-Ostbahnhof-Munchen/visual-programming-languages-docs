@@ -6,6 +6,7 @@
 
 The function block `F_CONCAT_DATE_TOD` concatenates a date (`DATE`) and a time of day (`TIME_OF_DAY`) into a combined date and time stamp (`DATE_AND_TIME`). This block is particularly useful in scenarios where separate date and time information needs to be combined into a single timestamp.
 ![F_CONCAT_DATE_TOD](F_CONCAT_DATE_TOD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

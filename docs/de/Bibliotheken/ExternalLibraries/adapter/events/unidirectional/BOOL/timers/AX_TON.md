@@ -68,8 +68,8 @@ Vergleich mit [E_TON](../../../../../../StandardLibraries/events/timers/E_TON.md
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)
-* [Uebung_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Uebung_020c_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020c_AX.md)
+- [Uebung_160b2_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Fazit
 

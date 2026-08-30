@@ -1,8 +1,9 @@
 # Exercise_002a5_AX: DigitalInput_I1-3 with OR on DigitalOutput_Q1, with Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002a5_AX`. In this exercise, a logical OR gate with three inputs is implemented. The digital output is activated as soon as at least one of the three monitored inputs carries a signal.
+This article describes the logiBUS® exercise `Uebung_002a5_AX`. In this exercise, a logical OR gate with three inputs is implemented. The digital output is activated as soon as at least one of the three monitored inputs carries a signal
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to extend the basic logic functions to more than two input signals. It illustrates the scalability of logic blocks in IEC 61499 and shows how multiple alternative switching conditions can be efficiently combined in a controller.
@@ -17,9 +18,9 @@ The following blocks are used in this configuration:
 
 ![Uebung_002a5_AX_network](./Uebung_002a5_AX_network.svg)
 
-* **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the states of the hardware inputs `Input_I1` to `Input_I3`[cite: 1].
-* **`AX_OR_3`**: An instance of type `AX_OR_3`. [cite_start]This function block performs an OR operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and outputs the result to the adapter output `OUT`[cite: 1].
-* **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block controls the hardware output `Output_Q1`[cite: 1].
+- **`DigitalInput_I1`, `I2`, `I3`**: Three instances of type `logiBUS_IXA`. [cite_start]These capture the states of the hardware inputs `Input_I1` to `Input_I3`[cite: 1].
+- **`AX_OR_3`**: An instance of type `AX_OR_3`. [cite_start]This function block performs an OR operation on three adapter inputs (`IN1`, `IN2`, `IN3`) and outputs the result to the adapter output `OUT`[cite: 1].
+- **`DigitalOutput_Q1`**: An instance of type `logiBUS_QXA`. [cite_start]This function block controls the hardware output `Output_Q1`[cite: 1].
 
 ### Adapter Interface: `AX.adp`
 

@@ -3,9 +3,11 @@
 ![AUS_TO_AUI](./AUS_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AUS_TO_AUI** function block is a composite component that performs an interface conversion from an AUS adapter (USINT data type) to an AUI adapter (UINT data type). It serves as a simple passthrough, where both the event and the data value are transferred directly from the input to the output adapter. The implicit type conversion from USINT (8-bit unsigned) to UINT (16-bit unsigned) is performed automatically by the runtime environment.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AUS_TO_AUI** function block is a composite component that performs an inte
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | adapter::types::unidirectional::AUS | AUS_IN | Socket (Input) | Out adapter with USINT data and one event. |
 | adapter::types::unidirectional::AUI | AUI_OUT | Plug (Output) | AUI adapter with UINT data and one event. |
 
@@ -78,6 +80,6 @@ The **AUS_TO_AUI** function block is a streamlined tool for adapting adapter int
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -104,31 +104,31 @@ Die Subapplikation besteht aus folgenden Funktionsbausteinen:
 
 Die folgende Beschreibung erläutert den Signalfluss innerhalb der Subapplikation.
 
-1. **Start/Stop des Taktgebers**  
-   - Ein Tastendruck an I1 löst ein Ereignis am Ausgang `IND` von `DigitalInput_CLK_I1` aus. Dieses Ereignis wird mit dem Ereignis-Eingang `START` des `E_CYCLE` verbunden → der Zyklusgenerator startet.  
+1. **Start/Stop des Taktgebers**
+   - Ein Tastendruck an I1 löst ein Ereignis am Ausgang `IND` von `DigitalInput_CLK_I1` aus. Dieses Ereignis wird mit dem Ereignis-Eingang `START` des `E_CYCLE` verbunden → der Zyklusgenerator startet.
    - Ein Tastendruck an I2 löst ein Ereignis am Ausgang `IND` von `DigitalInput_CLK_I2` aus. Dieses Ereignis wird mit dem Ereignis-Eingang `STOP` des `E_CYCLE` verbunden → der Zyklusgenerator stoppt.
 
-2. **Zyklus und Verteilung**  
-   - Der `E_CYCLE` erzeugt alle 10 ms ein Ereignis an seinem Ausgang `EO`.  
+2. **Zyklus und Verteilung**
+   - Der `E_CYCLE` erzeugt alle 10 ms ein Ereignis an seinem Ausgang `EO`.
    - Dieses Ereignis wird auf den Eingang `EI` des `E_SPLIT_4` gegeben. Der Splitter verteilt das Ereignis auf alle vier Ausgänge (`EO1` .. `EO4`).
 
-3. **Zusammenführung**  
-   - Die vier Ausgänge des Splitters sind mit den vier Eingängen (`EI1` .. `EI4`) des `E_MERGE_4` verbunden. Dadurch wird jedes Ereignis, egal über welchen Pfad, sofort an den Ausgang `EO` des Mergers weitergeleitet.  
+3. **Zusammenführung**
+   - Die vier Ausgänge des Splitters sind mit den vier Eingängen (`EI1` .. `EI4`) des `E_MERGE_4` verbunden. Dadurch wird jedes Ereignis, egal über welchen Pfad, sofort an den Ausgang `EO` des Mergers weitergeleitet.
    - Die Verbindung von Splitter zu Merger über alle vier Pfade dient hier als reine Durchleitung (Redundanz), könnte aber für spätere Erweiterungen genutzt werden.
 
-4. **Toggle-Flipflop**  
-   - Das Ausgangsereignis des `E_MERGE_4` wird auf den Takteingang `CLK` des `E_T_FF` gegeben.  
-   - Bei jedem Takt wechselt der Ausgang `Q` des Flipflops seinen Zustand (0 → 1 → 0 → …).  
+4. **Toggle-Flipflop**
+   - Das Ausgangsereignis des `E_MERGE_4` wird auf den Takteingang `CLK` des `E_T_FF` gegeben.
+   - Bei jedem Takt wechselt der Ausgang `Q` des Flipflops seinen Zustand (0 → 1 → 0 → …).
    - Gleichzeitig wird ein Ereignis am Ausgang `EO` des Flipflops ausgelöst.
 
-5. **Ausgabe**  
-   - Das Ereignis `EO` des Flipflops wird mit dem Ereignis-Eingang `REQ` des Ausgangsbausteins `DigitalOutput_Q1` verbunden.  
-   - Der aktuelle Wert `Q` des Flipflops wird auf den Dateneingang `OUT` des Ausgangsbausteins gegeben.  
+5. **Ausgabe**
+   - Das Ereignis `EO` des Flipflops wird mit dem Ereignis-Eingang `REQ` des Ausgangsbausteins `DigitalOutput_Q1` verbunden.
+   - Der aktuelle Wert `Q` des Flipflops wird auf den Dateneingang `OUT` des Ausgangsbausteins gegeben.
    - Bei jedem Takt wird der Ausgang Q1 auf den aktuellen Flipflop-Zustand gesetzt – es entsteht ein Blinksignal mit einer Periodendauer von 20 ms (10 ms Ein, 10 ms Aus, wenn die Zykluszeit 10 ms beträgt).
 
 ### Datenverbindungen
 
-- `E_T_FF.Q` → `DigitalOutput_Q1.OUT`  
+- `E_T_FF.Q` → `DigitalOutput_Q1.OUT`
   Überträgt den toggelnden Wert (0/1) auf den Ausgangsbaustein.
 
 ### Ereignisverbindungen (Zusammenfassung)
@@ -155,4 +155,4 @@ Die Übung 007b demonstriert den Einsatz von zyklischer Ereigniserzeugung (`E_CY
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

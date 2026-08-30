@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Diese Übung realisiert einen Toggle-Flip-Flop (T-FF) mithilfe eines digitalen Eingangs (logiBUS_IX) und der Funktionsbausteine **E_PERMIT** und **E_T_FF**.  
+Diese Übung realisiert einen Toggle-Flip-Flop (T-FF) mithilfe eines digitalen Eingangs (logiBUS_IX) und der Funktionsbausteine **E_PERMIT** und **E_T_FF**.
 Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den Zustand des Flip-Flops wechselt. Der Ausgang wird auf einen digitalen Ausgang (logiBUS_QX) geschaltet.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -62,11 +62,11 @@ Der digitale Eingang dient als Freigabesignal (PERMIT) für einen Takt, der den 
 - `DigitalInput_I1.IN` → `E_PERMIT.PERMIT`
 - `E_T_FF.Q` → `DigitalOutput_Q1.OUT`
 
-**Ablauf**:  
-Sobald sich der Digitaleingang ändert, wird das Ereignis `IND` ausgelöst. Der aktuelle Zustand des Eingangs (`IN`) wird als `PERMIT` an den Baustein `E_PERMIT` übergeben.  
+**Ablauf**:
+Sobald sich der Digitaleingang ändert, wird das Ereignis `IND` ausgelöst. Der aktuelle Zustand des Eingangs (`IN`) wird als `PERMIT` an den Baustein `E_PERMIT` übergeben.
 
-- Ist `PERMIT = TRUE`, wird das Ereignis an den Takt-Eingang (`CLK`) des Toggle-Flip-Flops weitergeleitet.  
-- Der `E_T_FF` toggelt daraufhin seinen Ausgang `Q`.  
+- Ist `PERMIT = TRUE`, wird das Ereignis an den Takt-Eingang (`CLK`) des Toggle-Flip-Flops weitergeleitet.
+- Der `E_T_FF` toggelt daraufhin seinen Ausgang `Q`.
 - Gleichzeitig wird das Ereignis `EO` von `E_T_FF` an den Digitalausgang gesendet, der den neuen Wert von `Q` übernimmt.
 
 **Lernziele**:
@@ -75,10 +75,10 @@ Sobald sich der Digitaleingang ändert, wird das Ereignis `IND` ausgelöst. Der 
 - Anwendung des Freigabebausteins `E_PERMIT`
 - Zusammenspiel von Ereignis- und Datenflüssen in IEC 61499
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlagen der ereignisgesteuerten Logik und digitaler Ein-/Ausgänge
 
-**Starten der Übung**:  
+**Starten der Übung**:
 Fügen Sie die SubApp `Uebung_004b6` in ein 4diac-Projekt ein, verbinden Sie die Hardware-Ressourcen (z. B. physischen Eingang `Input_I1` und Ausgang `Output_Q1`) und führen Sie die Applikation aus.
 
 ## Zusammenfassung
@@ -89,4 +89,4 @@ Die Übung demonstriert einen Toggle-Flip-Flop, der nur bei aktivem digitalen Ei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

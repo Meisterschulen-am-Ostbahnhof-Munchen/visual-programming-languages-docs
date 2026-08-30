@@ -3,15 +3,17 @@
 ![StringValue_AIS](./StringValue_AIS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **StringValue_AIS** function block is a service interface function block for providing string input data. It serves as an interface between an external resource (e.g., ISOBUS Universal Terminal) and the control logic. The block initializes communication, processes requests, and passes status information to the application.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Description |
-|----------|-----|----------------|--------------|
+| ---------- | ----- | ---------------- | -------------- |
 | INIT | EInit | QI, PARAMS, u16ObjId | Initializes the service and passes qualifiers, parameters, and object IDs. |
 | REQ | Event | QI | Requests a data query or processing. |
 
@@ -24,7 +26,7 @@ The **StringValue_AIS** function block is a service interface function block for
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-|----------|-----|--------------|--------------|
+| ---------- | ----- | -------------- | -------------- |
 | QI | BOOL | – | Qualifier for events (TRUE = active). |
 | PARAMS | STRING | – | Service parameters (e.g., configuration data). |
 | u16ObjId | UINT | ID_NULL | Object ID referenced in the log. |
@@ -92,6 +94,6 @@ The **StringValue_AIS** is a specialized service interface module for receiving 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

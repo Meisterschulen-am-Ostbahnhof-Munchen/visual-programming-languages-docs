@@ -3,29 +3,31 @@
 ![E_D_FF_ANY_HYS_TMIN](./E_D_FF_ANY_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **E_D_FF_ANY_HYS_TMIN** is a D flip-flop (data latch) with hysteresis that additionally enforces a minimum inter-disposal time between successive output events. It serves to stably transfer an analog or discrete value while simultaneously suppressing fast noise and excessively frequent state transitions.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description |
-|----------|-------|------------------------------------------------------|
+| ---------- | ------- | ------------------------------------------------------ |
 | `INIT` | EInit | Initialization Request; Parameter `Tmin` is passed |
 | `CLK` | Event | Clock signal; takes the current value from `D` and applies hysteresis |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-|----------|-------|-----------------------------------------------------------|
+| ---------- | ------- | ----------------------------------------------------------- |
 | `INITO` | EInit | Initialization confirmation |
 | `EO` | Event | Outputs when output `Q` changes **and** the minimum time `Tmin` has elapsed since the last `EO` |
 
 ### **Data Inputs**
 
 | Name | Type | Description |
-|--------------|----------|---------------------------------------------------------|
+| -------------- | ---------- | --------------------------------------------------------- |
 | `D` | ANY_NUM | Value to be inherited from `CLK` |
 | `HYSTERESIS` | ANY_NUM | Hysteresis band: Changes smaller than this amount are ignored |
 | `Tmin` | TIME | Minimum time between two consecutive `EO` events |
@@ -81,7 +83,7 @@ Since the function block consists of two sub-blocks internally, no separate stat
 ## Comparison with similar modules
 
 | Module | Hysteresis | Minimum event interval | Application area |
-|--------------------------------|-----------|----------------------|--------------------------------------|
+| -------------------------------- | ----------- | ---------------------- | -------------------------------------- |
 | `E_D_FF` (simple) | No | No | Pure data acquisition without filtering |
 | `E_D_FF_ANY_HYS` | Yes | No | Hysteresis, but no frequency limiting |
 | `E_D_FF_ANY_HYS_TMIN` (this one) | Yes | Yes | Complete filtering with noise and frequency limiting |

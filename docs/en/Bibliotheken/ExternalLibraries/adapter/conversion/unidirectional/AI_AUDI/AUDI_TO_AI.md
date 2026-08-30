@@ -3,9 +3,11 @@
 ![AUDI_TO_AI](./AUDI_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `AUDI_TO_AI` converts a unidirectional AUDI adapter (data type `UDINT`) into a unidirectional AI adapter (data type `INT`). It encapsulates the conversion logic and enables easy integration into adapter-based communication structures according to IEC 61499.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,6 +38,7 @@ The function block is implemented as a composite block. Internally, socket `AUDI
 When an event is received via the adapter input `AUDI_IN.E1`, the corresponding data value `AUDI_IN.D1` is passed to the conversion block. After successful conversion of `UDINT` to `INT`, the event `Convert.CNF` is generated and output via `AI_OUT.E1`. Simultaneously, the converted value is available at `AI_OUT.D1`.
 
 ...
+
 ## Technical Features
 
 - Uses a standardized IEC 61131 conversion block that can be implemented platform-independently.

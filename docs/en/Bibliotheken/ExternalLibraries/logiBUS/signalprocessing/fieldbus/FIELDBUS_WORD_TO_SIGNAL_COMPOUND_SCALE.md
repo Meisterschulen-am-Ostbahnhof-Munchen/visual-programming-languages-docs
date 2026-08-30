@@ -3,9 +3,11 @@
 ![FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE](./FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This function block maps a 16-bit word input to a scaled real value. The incoming word is first checked for validity. If the signal is valid, the upper and lower bytes are multiplied by their respective scaling factors and added with an offset. The result is output as the scale of the original fieldbus signal.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +23,7 @@ This function block maps a 16-bit word input to a scaled real value. The incomin
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | `IN` | WORD | `NOT_AVAILABLE_WM` | The 16-bit fieldbus signal to be processed. |
 | `SCALE_HIGH` | REAL | 0.256 | Scaling factor for the upper byte (high byte). |
 | `SCALE_LOW` | REAL | 0.001 | Scaling factor for the lower byte (low byte). |
@@ -30,7 +32,7 @@ This function block maps a 16-bit word input to a scaled real value. The incomin
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | `OUT` | REAL | 0.0 | Calculated scalar output value. |
 | `VALID` | BOOL | FALSE | Indicates whether the input signal is valid (`TRUE`) or not (`FALSE`). |
 
@@ -43,18 +45,22 @@ No adapters available.
 The function block operates in two steps, controlled by events:
 
 1. **Initialization (INIT)**
+
 - The internal algorithm is empty; only the event output `INITO` is set.
 - The scaling parameters (`SCALE_HIGH`, `SCALE_LOW`, `OFFSET`) are passed during the initialization event but are not used until the **REQ** cycle.
-2. **Processing (REQ)**
+1. **Processing (REQ)**
+
 - The incoming value `IN` is compared to the external constant `VALID_SIGNAL_W`.
 - **Valid Signal** (`IN` ≤ `VALID_SIGNAL_W`):
+
 1. The upper byte is extracted by right-shifting 8 bits and masking with `0x00FF`.
 2. The lower byte is obtained by masking with `0x00FF`.
 3. Both bytes are converted to `REAL`, multiplied by the corresponding scaling factors, and added to the offset:
 
 OUT = (highByte * SCALE_HIGH) + (lowByte * SCALE_LOW) + OFFSET`
 
-4. `VALID` is set to `TRUE`.
+1. `VALID` is set to `TRUE`.
+
 - **Invalid signal** (otherwise):
 - `OUT` is set to `0.0`.
 - `VALID` is set to `FALSE`.
@@ -67,13 +73,14 @@ highByte := temp AND WORD#16#00FF;
 lowByte := IN AND WORD#16#00FF;
 OUT := UINT_TO_REAL(WORD_TO_UINT(highByte)) * SCALE_HIGH
 
-+ UINT_TO_REAL(WORD_TO_UINT(lowByte)) * SCALE_LOW
-+ DINT_TO_REAL(OFFSET);
+- UINT_TO_REAL(WORD_TO_UINT(lowByte)) * SCALE_LOW
+- DINT_TO_REAL(OFFSET);
 VALID := BOOL#TRUE;
 ELSE
 OUT := REAL#0.0;
 VALID := BOOL#FALSE;
 END_IF;
+
 ## Technical Features
 
 - **Compound Scaling:** The two bytes of a word are scaled separately. This allows for the representation of measured values whose information is distributed across two bytes (e.g., different resolutions or units).
@@ -86,7 +93,7 @@ END_IF;
 The component has two simple states that directly correspond to the events:
 
 | State | Triggered by | Action performed | Output event |
-|---------|----------------|--------------------|------------------|
+| --------- | ---------------- | -------------------- | ------------------ |
 | `INIT` | Event `INIT` | Algorithm `INIT` (empty) | `INITO` |
 | `REQ` | Event `REQ` | Algorithm `REQ` (Scaling) | `CNF` |
 
@@ -112,6 +119,6 @@ The **FIELDBUS_WORD_TO_SIGNAL_COMPOUND_SCALE** function block is a specialized t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

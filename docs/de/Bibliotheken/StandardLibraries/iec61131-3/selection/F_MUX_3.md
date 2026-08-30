@@ -3,6 +3,7 @@
 <img width="1366" height="254" alt="F_MUX_3" src="https://github.com/user-attachments/assets/2dbe8298-6066-469e-96d6-1a6850de8bd8" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_MUX_3` ist ein Multiplexer, der drei Eingangssignale basierend auf einem Steuersignal auswählt und an den Ausgang weiterleitet. Er ist Teil der IEC 61131-3 Standardbibliothek und dient zur Signalauswahl in Automatisierungsanwendungen.
@@ -61,7 +62,7 @@ Der Funktionsblock hat keine internen Zustände. Die Auswahl und Weiterleitung e
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_090a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
+- [Uebung_090a2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a2.md)
 
 ## Fazit
 

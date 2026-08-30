@@ -5,6 +5,7 @@
 *(Symbolic representation of the function block)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALR_MUL_3` is a generic block from the `adapter::iec61131::arithmetic` library, designed for the arithmetic multiplication of three input values. Instead of classic, discrete data inputs, this block uses unidirectional adapters of type `ALR` to encapsulate and transmit data and control events. This enables structured, modular, and clear wiring within the 4diac IDE.
@@ -31,13 +32,13 @@ The function block `ALR_MUL_3` is a generic block from the `adapter::iec61131::a
 
 #### **Sockets (Input Interfaces)**
 
-* **IN1** (Type: `adapter::types::unidirectional::ALR`): The first factor for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::ALR`): The second factor for multiplication.
-* **IN3** (Type: `adapter::types::unidirectional::ALR`): The third factor for the multiplication.
+- **IN1** (Type: `adapter::types::unidirectional::ALR`): The first factor for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::ALR`): The second factor for multiplication.
+- **IN3** (Type: `adapter::types::unidirectional::ALR`): The third factor for the multiplication.
 
 #### **Plugs (Output Interfaces)**
 
-* **OUT** (Type: `adapter::types::unidirectional::ALR`): The calculated product of the three input values.
+- **OUT** (Type: `adapter::types::unidirectional::ALR`): The calculated product of the three input values.
 
 ---
 
@@ -55,9 +56,9 @@ Since this is a generic function block (Generic class: `GEN_ALR_MUL`), the actua
 
 ## Technical Features
 
-* **Generic Design:** By assigning the attribute `GenericClassName = 'GEN_ALR_MUL'`, the function block can be used flexibly for various data types, provided the adapters used support them.
-* **Adapter-Based Coupling:** Using adapters instead of loose event/data connections drastically reduces the wiring effort (routing) within the 4diac application and improves clarity.
-* * **Unidirectionality:** The `ALR` adapters used are defined as unidirectional, ensuring a clear and feedback-free data flow from the sources (sockets) to the sink (plug).
+- **Generic Design:** By assigning the attribute `GenericClassName = 'GEN_ALR_MUL'`, the function block can be used flexibly for various data types, provided the adapters used support them.
+- **Adapter-Based Coupling:** Using adapters instead of loose event/data connections drastically reduces the wiring effort (routing) within the 4diac application and improves clarity.
+- - **Unidirectionality:** The `ALR` adapters used are defined as unidirectional, ensuring a clear and feedback-free data flow from the sources (sockets) to the sink (plug).
 
 ---
 
@@ -69,16 +70,16 @@ The component does not have a complex internal state machine (ECC). It operates 
 
 ## Application Scenarios
 
-* **Sensor Scaling and Correction:** Multiplication of a raw value (IN1) by a calibration factor (IN2) and an application-specific weighting factor (IN3).
-* **Three-Dimensional Calculations:** Calculation of volumes or throughputs where three physical variables need to be multiplied together.
-* **Cascaded Gainers:** Calculation of combined gains in control loops.
+- **Sensor Scaling and Correction:** Multiplication of a raw value (IN1) by a calibration factor (IN2) and an application-specific weighting factor (IN3).
+- **Three-Dimensional Calculations:** Calculation of volumes or throughputs where three physical variables need to be multiplied together.
+- **Cascaded Gainers:** Calculation of combined gains in control loops.
 
 ---
 
 ## Comparison with Similar Function Blocks
 
-* **Standard MUL Function Block (IEC 61131-3):** Classic multipliers work with direct elementary data types (e.g., `REAL`). `ALR_MUL_3`, on the other hand, bundles data and events in adapters, which improves modularity and reusability in distributed systems according to IEC 61499.
-* **ALR_MUL_2 (Dual Multiplier):** For multiplying only two values, a corresponding dual function block is preferred. `ALR_MUL_3` eliminates the need to cascade two separate function blocks when multiplying three factors.
+- **Standard MUL Function Block (IEC 61131-3):** Classic multipliers work with direct elementary data types (e.g., `REAL`). `ALR_MUL_3`, on the other hand, bundles data and events in adapters, which improves modularity and reusability in distributed systems according to IEC 61499.
+- **ALR_MUL_2 (Dual Multiplier):** For multiplying only two values, a corresponding dual function block is preferred. `ALR_MUL_3` eliminates the need to cascade two separate function blocks when multiplying three factors.
 
 --
 

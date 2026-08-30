@@ -25,10 +25,10 @@ Der Funktionsblock `AUI_FIELDBUS_UINT_TO_SIGNAL_COMPOUND_SCALE` dient der Umwand
 ### **Daten-Eingänge**
 
 | Variable | Typ | Initialwert | Beschreibung |
-|----------|-----|-------------|-------------|
+| ---------- | ----- | ------------- | ------------- |
 | SCALE_HIGH | REAL | 0.256 | Skalierungsfaktor für das obere Byte des eingehenden Wertes. |
-| SCALE_LOW  | REAL | 0.001 | Skalierungsfaktor für das untere Byte des eingehenden Wertes. |
-| OFFSET     | DINT | 0          | Ganzzahliger Offset, der nach der Skalierung addiert wird. |
+| SCALE_LOW | REAL | 0.001 | Skalierungsfaktor für das untere Byte des eingehenden Wertes. |
+| OFFSET | DINT | 0 | Ganzzahliger Offset, der nach der Skalierung addiert wird. |
 
 ### **Daten-Ausgänge**
 

@@ -3,9 +3,11 @@
 ## Description
 
 The **LTOD** (Long Time of Day) data type represents the time of day with a high resolution of 64 bits (nanosecond precision).
+
 ## Normative Definition
 
 According to **DIN EN 61131-3** (Table 10, No. 14b):
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | 64 bits |

@@ -20,15 +20,15 @@ Verwendung des Bausteins `F_MUX_2` (Multiplexer). Es wird gezeigt, wie man zwisc
 
 ![Uebung_090a1_network](./Uebung_090a1_network.svg)
 
-  * **`I1` & `I2` (Sources)**: Die Datenquellen.
-  * **`I4` (Selector)**: Bestimmt, welche Quelle durchgeschaltet wird.
-  * **`F_MUX_2`**: Der Multiplexer-Baustein.
+  - **`I1` & `I2` (Sources)**: Die Datenquellen.
+  - **`I4` (Selector)**: Bestimmt, welche Quelle durchgeschaltet wird.
+  - **`F_MUX_2`**: Der Multiplexer-Baustein.
 
 -----
 
 ## Funktionsweise
 
-*   Ist Taster **I4** nicht gedrückt (K=0) ➡️ Der Zustand von **I1** wird an den Ausgang `Q1` weitergereicht.
-*   Ist Taster **I4** gedrückt (K=1) ➡️ Der Zustand von **I2** wird an den Ausgang `Q1` weitergereicht.
+-   Ist Taster **I4** nicht gedrückt (K=0) ➡️ Der Zustand von **I1** wird an den Ausgang `Q1` weitergereicht.
+-   Ist Taster **I4** gedrückt (K=1) ➡️ Der Zustand von **I2** wird an den Ausgang `Q1` weitergereicht.
 
 Dies ermöglicht das Umschalten von Bedien-Zuständigkeiten (z.B. zwischen Lokal- und Fernsteuerung).

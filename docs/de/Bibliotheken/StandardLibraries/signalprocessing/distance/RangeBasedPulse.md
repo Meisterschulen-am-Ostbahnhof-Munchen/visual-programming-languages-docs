@@ -3,6 +3,7 @@
 <img width="1038" height="216" alt="RangeBasedPulse" src="https://github.com/user-attachments/assets/7a38dda2-cdee-4a47-be13-09d2637500b0" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `RangeBasedPulse` ist ein distanzbasierter Impulsgenerator, der einen booleschen Ausgang (Q) basierend auf der zurückgelegten Distanz (DIST_IN) steuert. Der FB wird mit einem HIGH-Puls gestartet und erzeugt periodisch Ausgangsimpulse entsprechend den konfigurierten Distanzwerten für HIGH- und LOW-Phasen.
@@ -60,8 +61,8 @@ Im Gegensatz zu einfachen Zeitgebern arbeitet dieser FB mit Distanzwerten statt 
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Uebung_071b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
 
 ## Fazit
 

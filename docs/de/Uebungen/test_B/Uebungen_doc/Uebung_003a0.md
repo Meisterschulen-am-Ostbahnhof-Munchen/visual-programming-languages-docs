@@ -21,19 +21,19 @@ Das Hauptziel dieser Übung ist es, Möglichkeiten zur rein visuellen Strukturie
 Anders als bei typisierten SubApps, die auf einer externen Definition basieren, existiert die Logik dieser Container nur innerhalb dieser spezifischen Instanz. Sie haben keine externen Ein- oder Ausgänge im Interface (in diesem Beispiel), sondern greifen direkt auf die Hardware zu.
 
 1.  **Container `SubApp`**:
-    *   Beinhaltet die Logik für Kanal 2.
-    *   Intern: [cite_start]`DigitalInput_I2` verbunden mit `DigitalOutput_Q2`[cite: 1].
+    -   Beinhaltet die Logik für Kanal 2.
+    -   Intern: [cite_start]`DigitalInput_I2` verbunden mit `DigitalOutput_Q2`[cite: 1].
 
 2.  **Container `SubApp_1`**:
-    *   Beinhaltet die Logik für Kanal 1.
-    *   Intern: [cite_start]`DigitalInput_I1` verbunden mit `DigitalOutput_Q1`[cite: 1].
+    -   Beinhaltet die Logik für Kanal 1.
+    -   Intern: [cite_start]`DigitalInput_I1` verbunden mit `DigitalOutput_Q1`[cite: 1].
 
 ### Funktionsbausteine (FBs)
 
 Innerhalb der Container werden die bekannten Standard-Bausteine verwendet:
 
-  * **`logiBUS_IX`**: Zum ereignisbasierten Einlesen der Signale.
-  * **`logiBUS_QX`**: Zum ereignisbasierten Ausgeben der Signale.
+  - **`logiBUS_IX`**: Zum ereignisbasierten Einlesen der Signale.
+  - **`logiBUS_QX`**: Zum ereignisbasierten Ausgeben der Signale.
 
 -----
 
@@ -51,7 +51,7 @@ Die Logik ist identisch zur parallelen Steuerung, jedoch ist die Ansicht hierarc
             <DataConnections> ... </DataConnections>
         </SubAppNetwork>
     </SubApp>
-    
+
     <SubApp Name="SubApp_1">
         <SubAppNetwork>
             <FB Name="DigitalInput_I1" ... />

@@ -3,9 +3,11 @@
 ![SPLIT_MI_DO_S_Dual_SA](./SPLIT_MI_DO_S_Dual_SA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SPLIT_MI_DO_S_Dual_SA** is used to split a single data panel input of type `DataPanel_MI_DO_S_Dual_SA` into two separate outputs of type `DataPanel_MI_DO_S_Single_SA`. The drive information contained in the dual structure for forward/reverse movement (or up/down, right/left, clockwise/counterclockwise) is distributed to two independent outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The function block **SPLIT_MI_DO_S_Dual_SA** is used to split a single data pane
 ### **Data Outputs**
 
 | Name | Type | Description |
-|-------|-----|--------------|
+| ------- | ----- | -------------- |
 | UP | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for forward, upward, clockwise, or counterclockwise rotation. |
 | DOWN | `DataPanel::io::MI::DQ::DataPanel_MI_DO_S_Single_SA` | Output for reverse, downward, counterclockwise, or counterclockwise rotation. |
 

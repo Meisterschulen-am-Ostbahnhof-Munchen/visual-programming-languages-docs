@@ -1,7 +1,9 @@
 ![INTEGRATE](INTEGRATE.svg)
+
 # INTEGRATE
 
 Integrator with I/O for out
+
 ## Interface
 
 ### Event inputs

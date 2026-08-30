@@ -3,6 +3,7 @@
 ![Uebung_001d_network](./Uebung_001d_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die grundlegende Verknüpfung eines digitalen Eingangs (Input_I1) mit einem digitalen Ausgang (Output_Q1) unter Verwendung einer logischen UND-Verknüpfung. Ziel ist es, das Signal des Eingangs direkt auf den Ausgang zu schalten – hierbei wird das UND-Gatter genutzt, um die Funktionsweise von Ereignis- und Datenflüssen innerhalb der 4diac-IDE kennenzulernen.
@@ -35,7 +36,7 @@ Diese Übung demonstriert die grundlegende Verknüpfung eines digitalen Eingangs
 1. Der **DigitalInput_I1** erfasst den Wert des physikalischen Eingangs `Input_I1`. Bei einer Änderung wird das Ereignis `IND` ausgelöst.
 2. Dieses Ereignis wird über die Ereignisverbindung an den **AND_2**‑Baustein gesendet (an dessen Ereigniseingang `REQ`).
 3. Gleichzeitig wird der Datenwert `IN` des Eingangsbausteins über zwei parallele **Datenverbindungen** an die Dateneingänge `IN1` und `IN2` des AND_2‑Bausteins weitergegeben.
-4. Der **AND_2**‑Baustein berechnet die logische UND-Verknüpfung der beiden identischen Signale:  
+4. Der **AND_2**‑Baustein berechnet die logische UND-Verknüpfung der beiden identischen Signale:
    `OUT = IN1 AND IN2 = IN (da beide Eingänge gleich sind)`.
 
 5. Nach der Berechnung wird das Ereignis `CNF` ausgelöst, das an den **DigitalOutput_Q1**‑Baustein (Ereigniseingang `REQ`) weitergeleitet wird.
@@ -51,4 +52,4 @@ Die Übung führt in die Grundlagen der Ereignis- und Datenverbindungen in der 4
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

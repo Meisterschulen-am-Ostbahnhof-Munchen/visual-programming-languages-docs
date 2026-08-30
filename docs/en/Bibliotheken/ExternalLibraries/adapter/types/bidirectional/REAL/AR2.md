@@ -3,9 +3,11 @@
 ![AR2](./AR2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR2** adapter type provides a bidirectional interface between two function blocks. It transmits exactly one event along with a REAL value in both directions. The designation "AR2" stands for "Adapter Real 2-Way". The component is designed as a generic connector (plug/socket) within the 4diac IDE and enables clean, type-safe coupling of components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -77,4 +79,4 @@ The AR2 adapter is an elegant component for the bidirectional transmission of a 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

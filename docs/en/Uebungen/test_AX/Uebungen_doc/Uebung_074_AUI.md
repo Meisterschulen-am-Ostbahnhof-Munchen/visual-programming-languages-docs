@@ -3,6 +3,7 @@
 ![Uebung_074_AUI_network](./Uebung_074_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the output of the rear PTO speed to a user terminal (UT) using adapters. It implements a so-called "Fendt circuit" that displays the value 0 on the UT if the PTO signal times out. This ensures reliable operation in case of sensor failure or communication problems.
@@ -94,6 +95,6 @@ The exercise `Uebung_074_AUI` implements a reliable display of the PTO speed on 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -4,6 +4,7 @@
 ![AX_F_TRIG](./AX_F_TRIG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AX_F_TRIG** (Boolean falling edge detection) dient der Erkennung einer fallenden Flanke (Wechsel von TRUE auf FALSE) basierend auf einem Adapter-Interface. Er ist speziell für die Verwendung mit dem unidirektionalen Adaptertyp `AX` ausgelegt.
@@ -20,7 +21,7 @@ Dieser Baustein besitzt keine direkten Ereignis-Eingänge. Die Ereignissteuerung
 
 ### **Ereignis-Ausgänge**
 
-*   **EO** (Event Output): Dieses Ereignis wird ausgelöst, wenn eine fallende Flanke (oder ein logischer FALSE-Zustand) am Adapter erkannt wurde.
+-   **EO** (Event Output): Dieses Ereignis wird ausgelöst, wenn eine fallende Flanke (oder ein logischer FALSE-Zustand) am Adapter erkannt wurde.
 
 ### **Daten-Eingänge**
 
@@ -32,8 +33,8 @@ Dieser Baustein besitzt keine direkten Daten-Ausgänge.
 
 ### **Adapter**
 
-*   **QI** (Typ: `adapter::types::unidirectional::AX`): Der Eingangs-Socket. Über diesen Adapter empfängt der Baustein sowohl das Trigger-Ereignis als auch den zu prüfenden booleschen Wert.
-    *   *Kommentar:* Wert, der auf eine fallende Flanke geprüft werden soll.
+-   **QI** (Typ: `adapter::types::unidirectional::AX`): Der Eingangs-Socket. Über diesen Adapter empfängt der Baustein sowohl das Trigger-Ereignis als auch den zu prüfenden booleschen Wert.
+    -   *Kommentar:* Wert, der auf eine fallende Flanke geprüft werden soll.
 
 ## Funktionsweise
 
@@ -50,8 +51,8 @@ Zusammenfassend: Wenn der Adapter ein Ereignis sendet und der dabei übertragene
 
 ## Technische Besonderheiten
 
-*   **Adapter-Integration:** Der Baustein kapselt die Logik zur Aufspaltung des `AX`-Adapters in Einzelereignisse und Daten, um diese logisch zu verarbeiten.
-*   **Composite Network:** Die Implementierung erfolgt rein durch Verschaltung von Standard-IEC-61499-Bausteinen (`E_D_FF`, `E_SWITCH`) und enthält keine eigenen Algorithmen in ST oder C++.
+-   **Adapter-Integration:** Der Baustein kapselt die Logik zur Aufspaltung des `AX`-Adapters in Einzelereignisse und Daten, um diese logisch zu verarbeiten.
+-   **Composite Network:** Die Implementierung erfolgt rein durch Verschaltung von Standard-IEC-61499-Bausteinen (`E_D_FF`, `E_SWITCH`) und enthält keine eigenen Algorithmen in ST oder C++.
 
 ## Zustandsübersicht
 
@@ -59,15 +60,15 @@ Da es sich um einen Composite Function Block handelt, besitzt der **AX_F_TRIG** 
 
 ## Anwendungsszenarien
 
-*   **Signalverarbeitung:** Einsatz in Systemen, die `AX`-Adapter nutzen, um binäre Zustandsänderungen zu kommunizieren.
-*   **Ausschalt-Logik:** Auslösen von Aktionen, wenn ein Sensor oder Signal, das über einen Adapter angebunden ist, in den Zustand `FALSE` (Aus/Low) wechselt.
-*   **Event-Filterung:** Blockieren von Ereignissen, solange das zugehörige Datensignal `TRUE` ist, und Passierenlassen, wenn es `FALSE` ist.
+-   **Signalverarbeitung:** Einsatz in Systemen, die `AX`-Adapter nutzen, um binäre Zustandsänderungen zu kommunizieren.
+-   **Ausschalt-Logik:** Auslösen von Aktionen, wenn ein Sensor oder Signal, das über einen Adapter angebunden ist, in den Zustand `FALSE` (Aus/Low) wechselt.
+-   **Event-Filterung:** Blockieren von Ereignissen, solange das zugehörige Datensignal `TRUE` ist, und Passierenlassen, wenn es `FALSE` ist.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **E_F_TRIG:** Der Standard-Baustein für fallende Flankenerkennung in IEC 61499. Er nutzt separate Ereignis- (`EI`) und Daten-Eingänge (`QI`) anstelle eines Adapters.
-*   **AX_R_TRIG:** Das direkte Gegenstück zu diesem Baustein. Es detektiert eine steigende Flanke (Wechsel auf `TRUE`) unter Verwendung desselben Adapter-Typs.
-*   **E_SWITCH:** Ein generischer Schalter, der Ereignisse basierend auf einem booleschen Wert routet. **AX_F_TRIG** ist im Wesentlichen eine Spezialisierung hiervon für Adapter.
+-   **E_F_TRIG:** Der Standard-Baustein für fallende Flankenerkennung in IEC 61499. Er nutzt separate Ereignis- (`EI`) und Daten-Eingänge (`QI`) anstelle eines Adapters.
+-   **AX_R_TRIG:** Das direkte Gegenstück zu diesem Baustein. Es detektiert eine steigende Flanke (Wechsel auf `TRUE`) unter Verwendung desselben Adapter-Typs.
+-   **E_SWITCH:** Ein generischer Schalter, der Ereignisse basierend auf einem booleschen Wert routet. **AX_F_TRIG** ist im Wesentlichen eine Spezialisierung hiervon für Adapter.
 
 ## Fazit
 
@@ -77,4 +78,4 @@ Der **AX_F_TRIG** ist ein spezialisierter Utility-Baustein für die strukturiert
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

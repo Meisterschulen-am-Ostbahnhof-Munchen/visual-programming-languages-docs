@@ -3,9 +3,11 @@
 ![ASSEMBLE_AW_FROM_AB](./ASSEMBLE_AW_FROM_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AW_FROM_AB** is used to combine two unidirectional byte adapters (type `AB`) into a unidirectional word adapter (type `AW`). It combines the data from two byte inputs into a word output, with event logic ensuring that output occurs only when the information is updated.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs/outputs, but communicates exclusively via adapter interfaces:
@@ -19,7 +21,7 @@ The function block has no direct event or data inputs/outputs, but communicates 
 ### **Adapter (Sockets – Inputs)**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | BYTE_00 | `adapter::types::unidirectional::AB` | Socket | Byte 0 (low-order byte) |
 | BYTE_01 | `adapter::types::unidirectional::AB` | Socket | Byte 1 (higher-order byte) |
 
@@ -52,6 +54,7 @@ Since both BYTE events lead to the same `REQ` input in the assembler, assembly i
 
 **Important feature:**
 **Since both BYTE events lead to the same `REQ` input in the assembler, the assembly is re-executed with each event from either input.**
+
 ## Technical Features
 
 - **Pure Adapter Communication:** The function block (FB) has no conventional input/output variables; all data and event transmission occurs via unidirectional adapters.

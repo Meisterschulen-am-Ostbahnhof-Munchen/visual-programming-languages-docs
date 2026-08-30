@@ -3,9 +3,11 @@
 ![ALI_TO_AI](./ALI_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ALI_TO_AI** function block is a composite function block (FB) that converts an **ALI adapter** (input of a LINT value interface) into an **AI adapter** (output of an INT value interface). It serves to convert data from a LINT-based adapter to the INT-based adapter type without requiring the user to implement the conversion themselves.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **ALI_TO_AI** function block is a composite function block (FB) that convert
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|---------|--------------|---------------------------------------------|
+| ---------- | --------- | -------------- | --------------------------------------------- |
 | Socket | ALI_IN | ALI (unidirectional) | Returns LINT values and control events |
 | Plug | AI_OUT | AI (unidirectional) | Outputs converted INT values and events |
 
@@ -45,7 +47,7 @@ This function block operates as a simple coupling of an ALI socket to an AI plug
 
 1. An incoming event at **ALI_IN.E1** triggers the conversion function block.
 2. Simultaneously, the current value of **ALI_IN.D1** is passed to the input of the converter. 3. After the conversion is complete, the result is forwarded to **AI_OUT.D1**.
-4. An acknowledgment event is output via **AI_OUT.E1**.
+3. An acknowledgment event is output via **AI_OUT.E1**.
 
 The entire process is atomic within a single cycle – delays only occur due to the runtime of the conversion block.
 
@@ -72,7 +74,7 @@ As a composite function block without its own state diagram, **ALI_TO_AI** does 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Function | Difference |
-|-----------------|------------------------------------------|------------------------------------------------------------------|
+| ----------------- | ------------------------------------------ | ------------------------------------------------------------------ |
 | ALI_TO_AI | LINT → INT via adapter | Specifically for unidirectional ALI/AI interfaces |
 | LINT_TO_INT | Direct conversion LINT → INT | No adapter integration – pure data conversion |
 | AI_TO_ALI | INT → LINT (reverse direction) | Same structure, but opposite data direction |

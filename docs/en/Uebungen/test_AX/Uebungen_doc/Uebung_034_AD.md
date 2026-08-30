@@ -4,6 +4,7 @@ Analog Input to PWM Output (Adapter Version)
 ![Uebung_034_AD_network](./Uebung_034_AD_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an analog input to control a PWM output via an adapter connection. The analog input signal is first processed by a bit shift (left shift) before being passed to the PWM output. The PWM output is initialized by an event triggered by the analog input.
@@ -27,6 +28,7 @@ This exercise demonstrates the use of an analog input to control a PWM output vi
 Read analog value as adapter
 
 **Functionality**: Reads the analog input value of the connected logiBUS module. The parameter `AnalogInput_hysteresis` reduces signal noise.
+
 ### Sub-Blocks: PWMOutput\_Q4
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QDA_PWM`
@@ -82,7 +84,7 @@ The exercise "Exercise_034_AD" demonstrates a simple yet practical application: 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 The PWM Signal & Infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

@@ -3,6 +3,7 @@
 ![AS_TO_ADI](./AS_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AS_TO_ADI** wandelt einen SINT-Adapter (AS) in einen DINT-Adapter (ADI) um. Es handelt sich um einen Composite-Baustein, der eine unidirektionale, typkonvertierende Verbindung zwischen den beiden unterschiedlichen Datenadaptern herstellt.

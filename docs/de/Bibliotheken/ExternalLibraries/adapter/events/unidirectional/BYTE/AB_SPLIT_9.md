@@ -3,6 +3,7 @@
 ![AB_SPLIT_9](./AB_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AB_SPLIT_9** dient dazu, einen einzelnen eingehenden Adapter vom Typ **AB** auf neun identische ausgehende Adapter (**OUT1** bis **OUT9**) aufzuteilen. Er ist als generischer Baustein (GenericClassName = `'GEN_AB_SPLIT'`) implementiert und kann in beliebigen 4diac‑Projekten eingesetzt werden, um eine Punkt‑zu‑Mehrpunkt‑Verbindung über das Adapter‑Interface zu realisieren.
@@ -30,7 +31,7 @@ Keine vorhanden.
 ### **Adapter**
 
 | Schnittstelle | Richtung | Typ | Beschreibung |
-|--------------|----------|-----|--------------|
+| -------------- | ---------- | ----- | -------------- |
 | IN | Socket | `adapter::types::unidirectional::AB` | Eingehender Adapter (Quelle) |
 | OUT1 – OUT9 | Plug | `adapter::types::unidirectional::AB` | Neun identische ausgehende Adapter (Senken) |
 
@@ -59,7 +60,7 @@ Der Baustein besitzt **keine** eigenen Zustände. Das Verhalten ist rein kombina
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Ausgänge | Besonderheit |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `AB_SPLIT_9` | 9 | Standard‑Split für 1→9, generisch |
 | `AB_SPLIT_4` | 4 | Gleiche Funktionsweise, geringere Anzahl |
 | `AB_MERGE` | – | Fasst mehrere Eingänge zu einem Ausgang zusammen (entgegengesetzte Richtung) |
@@ -78,4 +79,4 @@ Der **AB_SPLIT_9** bietet eine einfache, aber leistungsfähige Möglichkeit, ein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -15,14 +15,14 @@ Die Übung demonstriert die grundlegende Funktionsweise eines industriellen Zäh
 In dieser Übung werden folgende Funktionsbausteine eingesetzt:
 
 | FB-Name | Typ | Parameter | Kurzbeschreibung |
-|---------|-----|-----------|------------------|
+| --------- | ----- | ----------- | ------------------ |
 | `FB_CTU` | `iec61131::counters::FB_CTU` | `PV = INT#5` | IEC 61131‑3 Vorwärtszähler, Zählbereich INT, Preset-Wert 5. |
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` | Digitaler Eingang, liefert den Zählimpuls (`CU`). |
 | `Input_R` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` | Digitaler Eingang, liefert das Rücksetzsignal (`R`). |
 | `Output_Q1` | `logiBUS::io::DQ::logiBUS_QX` | `QI = TRUE`, `Output = Output_Q1` | Digitaler Ausgang, wird aktiviert wenn der Zähler seinen Endwert erreicht hat (`Q`). |
 | `Q_NumericValue_PHYS` | `isobus::UT::Q::Q_NumericValue_PHYS` | `stObj = OutputNumber_N3` | Terminal-Ausgabe: Zeigt den aktuellen Zählerstand (CV) numerisch an. |
 
-**Hinweise zu den Hardware‑FBs**:  
+**Hinweise zu den Hardware‑FBs**:
 Die Eingänge `Input_I1` und `Input_I2` sowie der Ausgang `Output_Q1` sind physische logiBUS‑Kanäle. Das Terminal‑Objekt `OutputNumber_N3` ist ein vordefiniertes numerisches Anzeigeelement, das den Zählerwert darstellt.
 
 ## Programmablauf und Verbindungen
@@ -46,16 +46,16 @@ Daten:
 
 **Erklärung**:
 
-- **Zählereingänge**:  
+- **Zählereingänge**:
   Die beiden digitalen Eingänge `Input_CU` und `Input_R` werden über ihre `IND`‑Ereignisse mit dem `REQ`‑Eingang des Zählers `FB_CTU` verbunden. Dadurch wird der Zähler bei jeder positiven Flanke der Eingänge bearbeitet. Der Datenwert des jeweiligen Eingangs (`IN`) wird auf den entsprechenden Zähleingang (`CU` bzw. `R`) gelegt.
 
-- **Zählerverhalten**:  
+- **Zählerverhalten**:
   Der `FB_CTU` zählt bei jeder steigenden Flanke an `CU` hoch. Der aktuelle Zählerstand ist auf dem Datenausgang `CV` verfügbar. Ist der Zählerstand größer oder gleich dem Preset-Wert `PV` (hier `INT#5`), wird der Ausgang `Q` auf `TRUE` gesetzt. Ein `TRUE`-Signal an `R` setzt den Zähler zurück (CV = 0, Q = FALSE).
 
-- **Ausgabe**:  
-  Nach jedem Zählvorgang wird das `CNF`-Ereignis des Zählers an den digitalen Ausgang `Output_Q1` und an die Terminal‑Ausgabe `Q_NumericValue_PHYS` weitergeleitet.  
+- **Ausgabe**:
+  Nach jedem Zählvorgang wird das `CNF`-Ereignis des Zählers an den digitalen Ausgang `Output_Q1` und an die Terminal‑Ausgabe `Q_NumericValue_PHYS` weitergeleitet.
 
-  - Der `Q`-Wert wird auf den Ausgang `Output_Q1` geschrieben.  
+  - Der `Q`-Wert wird auf den Ausgang `Output_Q1` geschrieben.
   - Der `CV`-Wert wird als physikalische Größe (`rPhys`) an das Terminal übergeben und dort numerisch dargestellt.
 
 ### Anmerkungen aus dem Quellcode
@@ -66,11 +66,11 @@ Daten:
 
 ### Lernziele und Vorkenntnisse
 
-- **Lernziele**:  
-  - Einbindung eines IEC‑61131-3‑Zählers in eine 4diac‑Applikation.  
-  - Verknüpfung digitaler Ein‑ und Ausgänge mit logiBUS‑Hardware.  
+- **Lernziele**:
+  - Einbindung eines IEC‑61131-3‑Zählers in eine 4diac‑Applikation.
+  - Verknüpfung digitaler Ein‑ und Ausgänge mit logiBUS‑Hardware.
   - Ausgabe von numerischen Werten auf einem Terminal.
-- **Schwierigkeitsgrad**: Einfach  
+- **Schwierigkeitsgrad**: Einfach
 - **Vorkenntnisse**: Grundlegende Kenntnisse der 4diac‑IDE, Verständnis von Ereignis‑ und Datenverbindungen.
 - **Start der Übung**: Die Übung kann direkt in einer laufenden 4diac‑Umgebung mit angeschlossener logiBUS‑Hardware ausgeführt werden. Die Eingänge `Input_I1` (Taster) und `Input_I2` (Taster) steuern den Zähler; `Output_Q1` kann z.B. eine Lampe ansteuern.
 
@@ -82,4 +82,4 @@ Die Übung **Uebung_210b** realisiert einen vollständigen IEC‑61131-3 Vorwär
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

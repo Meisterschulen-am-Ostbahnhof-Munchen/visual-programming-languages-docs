@@ -70,30 +70,30 @@ Daten werden über die **Plug-Adapter** ausgegeben:
 
 Der Baustein kapselt die IEC 61131-3-Funktion `FB_CTD_ULINT`. Die interne Logik wird durch die Ereignisse der drei Socket-Adapter getriggert:
 
-1. **CD-Ereignis (Count Down):**  
+1. **CD-Ereignis (Count Down):**
    Bei einer steigenden Flanke von `CD.D1` und einem gleichzeitigen Event auf `CD.E1` wird der Zählerstand um 1 dekrementiert (sofern er > 0 ist). Der neue Wert wird am Plug `CV` ausgegeben.
 
-2. **LD-Ereignis (Load):**  
+2. **LD-Ereignis (Load):**
    Bei einer steigenden Flanke von `LD.D1` und einem Event auf `LD.E1` wird der aktuelle Preset-Wert (`PV.D1`) in den Zähler geladen. Der Zählerstand wird auf den Preset-Wert gesetzt.
 
-3. **PV-Ereignis (Preset Value Update):**  
+3. **PV-Ereignis (Preset Value Update):**
    Ein Event auf `PV.E1` aktualisiert den intern gespeicherten Preset-Wert (ohne den Zählerstand zu verändern). Dies ist nützlich, um den Preset dynamisch während des Betriebs zu ändern.
 
 Nach jeder Verarbeitung wird das Bestätigungsereignis `CNF` sowie die Ereignisse auf den Plug-Adaptern `Q.E1` und `CV.E1` gesendet. Die Daten `Q.D1` und `CV.D1` werden entsprechend aktualisiert.
 
 ## Technische Besonderheiten
 
-- **Datentyp ULINT:**  
+- **Datentyp ULINT:**
   Der Baustein arbeitet mit vorzeichenlosen 64‑Bit-Ganzzahlen (ULINT), wodurch Zählbereiche von 0 bis 2⁶⁴‑1 möglich sind – geeignet für sehr große Zählaufgaben.
 
-- **Adapter-basierte Anbindung:**  
+- **Adapter-basierte Anbindung:**
   Alle Ein- und Ausgänge erfolgen über Adapter (`AX` für binäre Signale, `AULI` für ULINT-Werte). Dies ermöglicht eine saubere Kapselung und modulare Verdrahtung in der 4diac-IDE.
 
-- **Ereignisausgabe bei jedem Update:**  
-  Der Baustein feuert die Ausgangsereignisse bei jedem eingehenden Ereignis (CD, LD, PV) – auch wenn sich der Zählerstand oder Ausgangswert nicht ändert. Dadurch entsteht ein **permanentes Triggern** des nachgeschalteten Netzwerks.  
+- **Ereignisausgabe bei jedem Update:**
+  Der Baustein feuert die Ausgangsereignisse bei jedem eingehenden Ereignis (CD, LD, PV) – auch wenn sich der Zählerstand oder Ausgangswert nicht ändert. Dadurch entsteht ein **permanentes Triggern** des nachgeschalteten Netzwerks.
   → **Empfehlung:** Verwenden Sie einen `AX_D_FF` (Differentiator/Filter) an den Ausgängen, wenn nur bei Wertänderung reagiert werden soll.
 
-- **Kein interner Zustandsautomat:**  
+- **Kein interner Zustandsautomat:**
   Der Baustein selbst besitzt keinen eigenen Zustandsautomaten; die Zustandslogik (z. B. Erkennung der steigenden Flanke) wird vom internen `FB_CTD_ULINT` übernommen.
 
 ## Zustandsübersicht
@@ -110,16 +110,16 @@ Der Ausgang `Q` wird auf `TRUE` gesetzt, sobald `CV = 0` ist; andernfalls ist er
 
 ## Anwendungsszenarien
 
-- **Stückzähler mit großem Bereich:**  
+- **Stückzähler mit großem Bereich:**
   Erfassung von Produktionsmengen mit Wertebereich > 32 Bit (z. B. 10 Mrd. Teile).
 
-- **Vorwahl- oder Ablaufsteuerung:**  
+- **Vorwahl- oder Ablaufsteuerung:**
   Einsatz als Abwärtszähler in einer Ablaufkette, bei der nach Erreichen des Werts 0 ein Signal ausgelöst wird (z. B. Chargenende).
 
-- **Dynamische Preset-Werte:**  
+- **Dynamische Preset-Werte:**
   Änderung des Zähl-Endwerts während des Betriebs über das PV-Ereignis, ohne den aktuellen Zählerstand zu beeinflussen.
 
-- **Modulare Systeme:**  
+- **Modulare Systeme:**
   Integration in größere Steuerungsarchitekturen, die durchgängig auf Adapter-Kommunikation setzen (z. B. über den Eclipse 4diac-Adapter-Mechanismus).
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -140,4 +140,4 @@ Der **AULI_FB_CTD** ist ein leistungsfähiger Abwärtszähler für 64‑Bit-Wert
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

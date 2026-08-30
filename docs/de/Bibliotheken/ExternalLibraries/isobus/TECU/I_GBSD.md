@@ -36,7 +36,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 ## Bewegungsdaten-Parameter
 
 | Parameter | Typ | Beschreibung | SPN | Bit-Länge | Skalierung | Genauigkeit |
-|-----------|------|--------------|-----|-----------|------------|-------------|
+| ----------- | ------ | -------------- | ----- | ----------- | ------------ | ------------- |
 | `GROUNDBASEDMACHINESPEED` | UINT | Maschinengeschwindigkeit | 1859 | 16 | 0.001 m/s pro Bit | ±0.1% bei >1 m/s |
 | `GROUNDBASEDMACHINEDISTANCE` | UDINT | Zurückgelegte Distanz | 1860 | 32 | 0.001 m pro Bit | ±0.5% kumulativ |
 | `GROUNDBASEDMACHINEDIRECTION` | BYTE | Fahrtrichtung | 1861 | 2 | 4 Zustände/2 Bit | - |
@@ -44,7 +44,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 ## Fahrtrichtungszustände
 
 | Wert | Zustand | Beschreibung |
-|------|---------|--------------|
+| ------ | --------- | -------------- |
 | 0 | Stillstand | Keine Bewegung erkannt |
 | 1 | Vorwärts | Bewegung in Vorwärtsrichtung |
 | 2 | Rückwärts | Bewegung in Rückwärtsrichtung |
@@ -81,7 +81,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 ## Genauigkeitsmerkmale
 
 | Geschwindigkeitsbereich | Typische Genauigkeit | Update-Rate |
-|------------------------|----------------------|-------------|
+| ------------------------ | ---------------------- | ------------- |
 | > 2 m/s (7.2 km/h) | ±0.1% | 100 ms |
 | 0.5 - 2 m/s | ±1% | 200 ms |
 | < 0.5 m/s | ±5% | 500 ms |
@@ -89,7 +89,7 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 ## ⚖️ Vergleich mit ähnlichen Systemen
 
 | Feature | I_GBSD | Radbasiert | GPS-basiert |
-|---------|--------|------------|-------------|
+| --------- | -------- | ------------ | ------------- |
 | Bodenkontakt | ✔ Direkt | ✔ Indirekt | ✖ |
 | Niedriggeschwindigkeit | ✔ Gut | ✖ Ungenau | ✖ Ungenau |
 | Richtungserkennung | ✔ Präzise | ✔ | ✖ Mehrdeutig |
@@ -97,11 +97,11 @@ Die Version 1.0 implementiert die ISO 11783-7 Spezifikation (PGN 65097) für pr�
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
-* [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Uebung_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
-* [Uebung_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
-* [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Uebung_072](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072.md)
+- [Uebung_072b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Uebung_072c](../../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Uebung_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+- [Uebung_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Fazit
 

@@ -3,9 +3,11 @@
 ![ADI_TO_AX](./ADI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADI_TO_AX** function block is a composite module that performs a simple signal conversion between two adapter types. It converts a DINT value (type: *adapter::types::unidirectional::ADI*) received via the **ADI_IN** socket into a BOOL value and outputs it via the **AX_OUT** plug (type: *adapter::types::unidirectional::AX*). The conversion is performed by comparing the received DINT value with the constant value 0. If the value is not equal to 0, the BOOL output is set to TRUE; if they are equal, it is set to FALSE. This module is particularly suitable for connecting digital signal sources encoded as integers to Boolean interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **ADI_TO_AX** function block is a composite module that performs a simple si
 ### **Adapter**
 
 | Adapter | Name | Direction | Type | Description |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Socket | ADI_IN | Input | `adapter::types::unidirectional::ADI` | Receives a DINT value (with associated event). |
 | Plug | AX_OUT | Output | `adapter::types::unidirectional::AX` | Passes on the resulting BOOL value (with associated event). |
 
@@ -76,7 +78,7 @@ This function block has no states of its own, as it is entirely based on the int
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Function |
-|---|---|---|
+| --- | --- | --- |
 | **ADI_TO_AX** (this function block) | Composite | DINT ≠ 0 → BOOL |
 | `BOOL_TO_DINT` (Standard Library) | Function | Direct conversion from BOOL to DINT (e.g., TRUE → 1) |
 | `F_NE` (IEC 61131) | Function | General Non-Equal Comparison of Arbitrary Data Types |

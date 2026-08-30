@@ -3,6 +3,7 @@
 ![ATM_AX_TOF](./ATM_AX_TOF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ATM_AX_TOF` realisiert eine Ausschaltverzögerung (off-delay timing) mit einer modularen Adapter-Schnittstelle auf Basis der Typen `AX` und `ATM`. Er wird typischerweise eingesetzt, um nach dem Wegfallen eines Eingangssignals einen Ausgang für eine definierte Zeit aktiv zu halten. Der Baustein ist als Standard-Timer-FB gemäß IEC 61499-2 klassifiziert und intern mit dem FB `E_TOF` realisiert.
@@ -88,4 +89,4 @@ Der `ATM_AX_TOF` bietet eine zuverlässige und flexible Ausschaltverzögerung f�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

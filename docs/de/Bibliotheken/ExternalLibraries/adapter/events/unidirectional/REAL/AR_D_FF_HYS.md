@@ -75,7 +75,7 @@ Explizite Zustandsautomaten sind nicht vorhanden; der Baustein arbeit rein ereig
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | **AR_D_FF** (ohne Hysterese) | Übernimmt jeden neuen Wert sofort; empfindlich gegen Rauschen. |
 | **AR_D_FF_HYS** (dieser FB) | Verwendet ein Hystereseband zur Unterdrückung von Flimmern. |
 | **Schmitt-Trigger** | Realisiert eine ähnliche Hysterese, aber meist für binäre (boolesche) Signale. Dieser Baustein arbeitet mit analogen (REAL) Werten. |

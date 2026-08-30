@@ -14,7 +14,7 @@ Diese Übung demonstriert die Steuerung von Audiosignalen in einer ISOBUS-Univer
 
 In dieser SubApplikation werden verschiedene Funktionsbausteine instanziiert und verschaltet, um die gewünschte Logik zu realisieren.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### **SoftKey_UP_F1**
 

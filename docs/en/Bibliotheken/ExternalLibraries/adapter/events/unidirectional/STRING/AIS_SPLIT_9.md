@@ -3,9 +3,11 @@
 ![AIS_SPLIT_9](./AIS_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AIS_SPLIT_9** function block is used to distribute an incoming unidirectional **AIS** adapter (Application Interface Socket) to nine identical outgoing **AIS** adapters (plugs). It is designed as a generic building block and enables the simple duplication of an AIS signal for up to nine downstream function blocks.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|----------------------|----------|-----------------------------------------------------|
+| ------------- | ---------------------- | ---------- | ----------------------------------------------------- |
 | **IN** | AIS (unidirectional) | Socket | Input adapter – the AIS signal to be distributed. |
 | **OUT1** | AIS (unidirectional) | Plug | First output – identical copy of the input signal. |
 | **OUT2** | AIS (unidirectional) | Plug | Second output – identical copy of the input signal. |
@@ -67,6 +69,7 @@ The **AIS_SPLIT_9** has no internal states or sequence controls. Its behavior is
 - **Direct Coupling**: Instead of a Split component, manual wiring (multiple OUT adapters) could also be performed in the 4diac IDE. However, the **AIS_SPLIT_9** simplifies the graphical representation and reduces the complexity of the network.
 
 **AIS_MERGE**
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
@@ -80,6 +83,6 @@ The **AIS_SPLIT_9** is a simple yet extremely useful function block for duplicat
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

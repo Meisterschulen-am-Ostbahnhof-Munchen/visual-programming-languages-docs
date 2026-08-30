@@ -3,9 +3,11 @@
 ![AUDI_ADD_2](./AUDI_ADD_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_ADD_2** performs an arithmetic addition of two input values and outputs the result. The block is generic and uses a standardized adapter interface of type `AUDI`. This allows it to be used for different data types (e.g., integers, floating-point numbers) without requiring modification of the function block itself.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 #### **Adapter**
 
 | Type | Direction | Name | Comment |
-|-----|----------|------|-----------|
+| ----- | ---------- | ------ | ----------- |
 | `adapter::types::unidirectional::AUDI` | Socket (Input) | **IN1** | ADD input 1 |
 | `adapter::types::unidirectional::AUDI` | Socket (Input) | **IN2** | ADD input 2 |
 | `adapter::types::unidirectional::AUDI` | Plug (Output) | **OUT** | ADD result |
@@ -75,6 +77,6 @@ The **AUDI_ADD_2** is a specialized, generic addition function block for adapter
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

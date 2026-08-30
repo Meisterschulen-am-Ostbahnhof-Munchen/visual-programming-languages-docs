@@ -2,11 +2,12 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
 This article describes the logiBUS® exercise `Uebung_010a_AX`.
+
 ## 🎧 Podcast
 
 ![Uebung_010a_AX_network](./Uebung_010a_AX_network.svg)
 
-* [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Understanding Softkeys and the Virtual Terminal – Your Key to Agricultural Machinery Mechatronics ](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -22,8 +23,8 @@ Extension to multiple softkeys.
 
 ### Function Blocks (FBs)
 
-* **`SoftKey_F1`** -> **`DigitalOutput_Q1`**
-* **`SoftKey_F2`** -> **`DigitalOutput_Q2`**
+- **`SoftKey_F1`** -> **`DigitalOutput_Q1`**
+- **`SoftKey_F2`** -> **`DigitalOutput_Q2`**
 
 -----
 

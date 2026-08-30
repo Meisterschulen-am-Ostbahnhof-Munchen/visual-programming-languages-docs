@@ -1,4 +1,5 @@
 ![BaseMemberExternAdd](BaseMemberExternAdd.svg)
+
 # BaseMemberExternAdd
 
 Adds an external member to the network list manually.
@@ -41,4 +42,4 @@ The added CF will be set to announced in the next iso_DlCyclicGlobal() run.
 
 ## 🛠️ Related exercises
 
-* [Uebung_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
+- [Uebung_134](../../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)

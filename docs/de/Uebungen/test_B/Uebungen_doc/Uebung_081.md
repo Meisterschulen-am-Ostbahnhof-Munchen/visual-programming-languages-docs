@@ -20,20 +20,20 @@ Verwendung des Bausteins `E_CTD` (Event Count Down). Es wird demonstriert, wie e
 
 ![Uebung_081_network](./Uebung_081_network.svg)
 
-  * **`I1` (Count Down)**: Verringert den Zählerstand bei jedem Klick.
-  * **`I2` (Load)**: Lädt den Zähler mit dem Vorgabewert (`PV`).
-  * **`E_CTD`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` ist auf 5 eingestellt[cite: 1].
-  * **`DigitalOutput_Q1`**: Signalisiert das Erreichen der Nullgrenze.
+  - **`I1` (Count Down)**: Verringert den Zählerstand bei jedem Klick.
+  - **`I2` (Load)**: Lädt den Zähler mit dem Vorgabewert (`PV`).
+  - **`E_CTD`**: Der Zähler-Baustein. [cite_start]Der Parameter `PV` ist auf 5 eingestellt[cite: 1].
+  - **`DigitalOutput_Q1`**: Signalisiert das Erreichen der Nullgrenze.
 
 -----
 
 ## Funktionsweise
 
 1.  **Laden**: Ein Klick auf **I2** triggert den Eingang `LD`. Der Zählerstand springt sofort auf
-5. Der Ausgang `Q` wird `FALSE`.
-2.  **Zählen**: Jeder Klick auf **I1** (`CD`) verringert den Zählerstand (4, 3, 2, 1, 0).
-3.  **Grenzwert**: Sobald der Stand Null erreicht (`CV <= 0`), wechselt der Ausgang `Q` auf `TRUE`.
-4.  Die Lampe an **Q1** leuchtet auf.
+2. Der Ausgang `Q` wird `FALSE`.
+3.  **Zählen**: Jeder Klick auf **I1** (`CD`) verringert den Zählerstand (4, 3, 2, 1, 0).
+4.  **Grenzwert**: Sobald der Stand Null erreicht (`CV <= 0`), wechselt der Ausgang `Q` auf `TRUE`.
+5.  Die Lampe an **Q1** leuchtet auf.
 
 -----
 

@@ -2,7 +2,7 @@
 
 ## 🎧 Podcast
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ## Einleitung
 
@@ -67,15 +67,15 @@ Im Vergleich zu einfachen booleschen Eingabeblöcken bietet Softkey_IXA erweiter
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010_AX.md)
-* [Uebung_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
-* [Uebung_010a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a_AX.md)
-* [Uebung_010b4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
-* [Uebung_010b5_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
-* [Uebung_010c2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
-* [Uebung_010c3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
-* [Uebung_010c4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
-* [Uebung_010c_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c_AX.md)
+- [Uebung_010_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010_AX.md)
+- [Uebung_010a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a4_AX.md)
+- [Uebung_010a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010a_AX.md)
+- [Uebung_010b4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
+- [Uebung_010b5_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
+- [Uebung_010c2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
+- [Uebung_010c3_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
+- [Uebung_010c4_sub_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
+- [Uebung_010c_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c_AX.md)
 
 ## Fazit
 

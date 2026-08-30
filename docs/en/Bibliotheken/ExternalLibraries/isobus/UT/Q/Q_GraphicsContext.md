@@ -3,6 +3,7 @@
 ![Q_GraphicsContext](https://user-images.githubusercontent.com/116869307/214147904-b9764918-1247-4264-908d-bd8fb290e0ef.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_GraphicsContext** is a standards-compliant function block for controlling graphics context objects in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.56) specification for VT systems from version 4 onwards.
@@ -38,13 +39,16 @@ The **Q_GraphicsContext** is a standards-compliant function block for controllin
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with graphics context object ID
 - `INITO` confirms operational readiness
-2. **Configuration**:
+1. **Configuration**:
+
 - `REQ` with sub-command ID and parameter list
 - Configures graphics context properties
 - `CNF` returns result status and previous configuration
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Buffer overflow check
 
@@ -74,7 +78,7 @@ The sub-command IDs correspond to Table F.1 of ISO 11783-6 (not to be confused w
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful Execution |
 | -6 | VT_E_OVERFLOW | Parameter Buffer Too Small |
 | -8 | VT_E_NOACT | VT not ready |

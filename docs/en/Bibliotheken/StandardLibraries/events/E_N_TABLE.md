@@ -40,6 +40,7 @@ The `E_N_TABLE` (Event N-Table) is a function block according to IEC 61499 that 
 - `N` = 3
 - `DT` = `[T#2s, T#5s, T#1s]`
 - After a `START` event:
+
 1. After 2 seconds, `EO0` is triggered.
 2. 5 seconds later, `EO1` is triggered.
 3. 1 second later, `EO2` is triggered.
@@ -59,7 +60,7 @@ The `E_N_TABLE` (Event N-Table) is a function block according to IEC 61499 that 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_093b](../../../Uebungen/test_B/Uebungen_doc/Uebung_093b.md)
+- [Exercise_093b](../../../Uebungen/test_B/Uebungen_doc/Uebung_093b.md)
 
 ## Conclusion
 

@@ -3,9 +3,11 @@
 ![AUI_TO_AI](./AUI_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Composite function block (FB) for converting an AUI (UINT) adapter into an AI (INT) adapter. It encapsulates the conversion using the function block `F_UINT_TO_INT` and provides a standardized adapter interface.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,8 +38,8 @@ This function block connects the AUI adapter socket to a conversion function blo
 1. The event `E1` of the AUI_IN adapter triggers the conversion function block at the **REQ** input.
 2. The conversion function block reads the UINT value from the data point `AUI_IN.D1` and converts it to INT.
 3. After the conversion, the function block sends an acknowledgment event via **CNF**, which triggers the event `E1` of the AI_OUT adapter.
-1. The event `E1` of the AI_OUT adapter.
-2. The conversion function block reads the UINT value from the data point `AUI_IN.D1` and converts it to INT. 4. The converted INT value is passed to the AI adapter via the data point `AI_OUT.D1`.
+4. The event `E1` of the AI_OUT adapter.
+5. The conversion function block reads the UINT value from the data point `AUI_IN.D1` and converts it to INT. 4. The converted INT value is passed to the AI adapter via the data point `AI_OUT.D1`.
 
 ## Technical Features
 

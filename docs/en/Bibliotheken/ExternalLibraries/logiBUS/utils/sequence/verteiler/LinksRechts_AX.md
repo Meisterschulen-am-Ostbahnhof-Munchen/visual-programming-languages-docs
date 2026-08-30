@@ -4,6 +4,7 @@
 *Note: An image of the function block is not available here.*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **LeftRight_AX** (from the package `logiBUS::utils::sequence::verteiler`) controls an alternating process with two directions (clockwise and counterclockwise rotation). It is designed to switch back and forth between two outputs, taking pause states into account.
@@ -59,17 +60,18 @@ The **LeftRight_AX** function block implements a state machine that alternates b
 2. **Activation (Run):** As long as the signal `EIN.D1` (data) is present together with an event `EIN.E1` as `TRUE`, the function block enters an active state (`Rechtslauf` or `Linkslauf`). The corresponding output adapter (`Rechts` or `Links`) is then set to `TRUE`.
 3. **Deactivation (Pause):** When `EIN.D1` changes to `FALSE` (switch off), the function block switches to the corresponding pause state (`Rechtslauf_Pause` or `Linkslauf_Pause`). The outputs are deactivated (`FALSE`).
 4. **Alternating Logic:**
-* If the function block is in `Rechtslauf_Pause` and is switched on again (`EIN` = TRUE), it switches to **counterclockwise** by default.
-* If the function block is in `Linkslauf_Pause` and is switched on again, it switches to **clockwise** by default.
-* If the function block is in `Linkslauf_Pause` and is switched on again, it switches to **clockwise** by default. 5. **Override Logic (Forcing):**
-* If input `DI_Rechts` is active in state `Rechtslauf_Pause`, the switch to counterclockwise rotation is prevented, and counterclockwise rotation is restarted.
-* If input `DI_Links` is active in state `Linkslauf_Pause`, the switch to clockwise rotation is prevented, and counterclockwise rotation is restarted.
+
+- If the function block is in `Rechtslauf_Pause` and is switched on again (`EIN` = TRUE), it switches to **counterclockwise** by default.
+- If the function block is in `Linkslauf_Pause` and is switched on again, it switches to **clockwise** by default.
+- If the function block is in `Linkslauf_Pause` and is switched on again, it switches to **clockwise** by default. 5. **Override Logic (Forcing):**
+- If input `DI_Rechts` is active in state `Rechtslauf_Pause`, the switch to counterclockwise rotation is prevented, and counterclockwise rotation is restarted.
+- If input `DI_Links` is active in state `Linkslauf_Pause`, the switch to clockwise rotation is prevented, and counterclockwise rotation is restarted.
 
 ## Technical Features
 
-* **AX Adapter:** This function block uses the generic `unidirectional::AX` type. This typically combines a Boolean data signal (`D1`) with an event (`E1`).
-* * **Prioritization:** According to the internal description, "clockwise rotation only takes precedence over counterclockwise rotation only," which is reflected in the start conditions. However, the sequence logic is primarily determined by the previous state (history).
-* **Status Reporting:** Each state change updates the `STATE` variable and fires the `EO` event. The state names are obtained via an external enumeration (`STATES::...`).
+- **AX Adapter:** This function block uses the generic `unidirectional::AX` type. This typically combines a Boolean data signal (`D1`) with an event (`E1`).
+- - **Prioritization:** According to the internal description, "clockwise rotation only takes precedence over counterclockwise rotation only," which is reflected in the start conditions. However, the sequence logic is primarily determined by the previous state (history).
+- **Status Reporting:** Each state change updates the `STATE` variable and fires the `EO` event. The state names are obtained via an external enumeration (`STATES::...`).
 
 ## State Overview
 
@@ -85,15 +87,15 @@ The ECC (Execution Control Chart) defines the following states:
 
 ## Application Scenarios
 
-* **Pendulum Operation:** Automatic control of mechanisms that need to move back and forth (e.g., a windshield wiper mode or a cleaning head), controlled by a single button (`EIN`).
-* **Irrigation Systems:** Sequential control of two sectors (Sector Right -> Pause -> Sector Left -> Pause), whereby a sector can be activated multiple times in succession if required (using `DI_Rechts`/`DI_Links`).
-* **Reversing Motor:** Control of a motor that should change its direction of rotation every time it restarts, unless otherwise specified.
+- **Pendulum Operation:** Automatic control of mechanisms that need to move back and forth (e.g., a windshield wiper mode or a cleaning head), controlled by a single button (`EIN`).
+- **Irrigation Systems:** Sequential control of two sectors (Sector Right -> Pause -> Sector Left -> Pause), whereby a sector can be activated multiple times in succession if required (using `DI_Rechts`/`DI_Links`).
+- **Reversing Motor:** Control of a motor that should change its direction of rotation every time it restarts, unless otherwise specified.
 
 ## ⚖️ Comparison with Similar Function Blocks
 
-* **Simple Toggle (Flip-Flop):** A standard toggle switch simply turns one output on/off. `LinksRechts_AX` toggles between *two* outputs.
-* **RS Gate:** An RS gate stores only one state based on set/reset. This function block incorporates sequence logic (history memory) because it remembers which state was active *before* the pause.
-* **E_SELECT:** Similar to a selector, but `LinksRechts_AX` includes the timing component of the "pause" and automatic switching at the next start signal.
+- **Simple Toggle (Flip-Flop):** A standard toggle switch simply turns one output on/off. `LinksRechts_AX` toggles between *two* outputs.
+- **RS Gate:** An RS gate stores only one state based on set/reset. This function block incorporates sequence logic (history memory) because it remembers which state was active *before* the pause.
+- **E_SELECT:** Similar to a selector, but `LinksRechts_AX` includes the timing component of the "pause" and automatic switching at the next start signal.
 
 ## Conclusion
 

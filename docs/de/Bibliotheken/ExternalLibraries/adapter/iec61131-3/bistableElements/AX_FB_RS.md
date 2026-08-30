@@ -55,27 +55,27 @@ Sobald ein Ereignis (`E1`) an einem der Eingangs-Adapter (`SET` oder `RESET1`) e
 
 ## Technische Besonderheiten
 
-*   **Adapter-Technologie:** Durch die Verwendung von `AX`-Adaptern reduziert der Baustein die visuelle Komplexität in 4diac-Anwendungen, da für das Paar aus Ereignis und booleschem Wert nur eine Verbindungslinie gezogen werden muss.
-*   **Ereignisgesteuert:** Der Algorithmus wird bei Eintreffen eines Events über den `SET`- oder `RESET1`-Adapter ausgelöst.
-*   **Reset-Dominanz:** Dies ist ein sicherheitsrelevantes Merkmal. Im Falle eines Konflikts (beide Eingänge TRUE) schaltet der Ausgang sicher ab (FALSE).
+-   **Adapter-Technologie:** Durch die Verwendung von `AX`-Adaptern reduziert der Baustein die visuelle Komplexität in 4diac-Anwendungen, da für das Paar aus Ereignis und booleschem Wert nur eine Verbindungslinie gezogen werden muss.
+-   **Ereignisgesteuert:** Der Algorithmus wird bei Eintreffen eines Events über den `SET`- oder `RESET1`-Adapter ausgelöst.
+-   **Reset-Dominanz:** Dies ist ein sicherheitsrelevantes Merkmal. Im Falle eines Konflikts (beide Eingänge TRUE) schaltet der Ausgang sicher ab (FALSE).
 
 ## Zustandsübersicht
 
 Der Baustein basiert auf einem einfachen ECC (Execution Control Chart) mit einem einzigen Hauptzustand.
 
-*   **Zustandsname:** `REQ`
-*   **Aktion:** Führt den Algorithmus `REQ` aus und sendet ein Ereignis über `Q1.E1`.
-*   **Transitionen:**
-    *   Der Zustand `REQ` hat Selbstübergänge (Self-Loops), die durch das Eintreffen von Ereignissen an den Adaptern `SET.E1` oder `RESET1.E1` ausgelöst werden.
+-   **Zustandsname:** `REQ`
+-   **Aktion:** Führt den Algorithmus `REQ` aus und sendet ein Ereignis über `Q1.E1`.
+-   **Transitionen:**
+    -   Der Zustand `REQ` hat Selbstübergänge (Self-Loops), die durch das Eintreffen von Ereignissen an den Adaptern `SET.E1` oder `RESET1.E1` ausgelöst werden.
 
 Dies bedeutet, dass der Baustein immer bereit ist, Eingangssignale zu verarbeiten und sofort darauf zu reagieren.
 
 ## Anwendungsszenarien
 
-*   **Motorsteuerungen (Start/Stop):** Typische Anwendung für Start- (Set) und Stop-Taster (Reset), wobei der Stop-Taster aus Sicherheitsgründen Vorrang hat (Not-Halt-Logik).
-*   **Alarm-Speicher:** Ein Alarm wird gesetzt und bleibt bestehen, bis er explizit zurückgesetzt (quittiert) wird.
-*   **Zustandsmerker:** Speichern von binären Zuständen innerhalb einer adapterbasierten Steuerungslogik.
-*   **Modulare Systeme:** Einsatz in Systemen, die konsequent auf Adapter-Schnittstellen setzen, um "Spaghetti-Code" in der grafischen Darstellung zu vermeiden.
+-   **Motorsteuerungen (Start/Stop):** Typische Anwendung für Start- (Set) und Stop-Taster (Reset), wobei der Stop-Taster aus Sicherheitsgründen Vorrang hat (Not-Halt-Logik).
+-   **Alarm-Speicher:** Ein Alarm wird gesetzt und bleibt bestehen, bis er explizit zurückgesetzt (quittiert) wird.
+-   **Zustandsmerker:** Speichern von binären Zuständen innerhalb einer adapterbasierten Steuerungslogik.
+-   **Modulare Systeme:** Einsatz in Systemen, die konsequent auf Adapter-Schnittstellen setzen, um "Spaghetti-Code" in der grafischen Darstellung zu vermeiden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -93,4 +93,4 @@ Der **AX_FB_RS** ist eine moderne, adapterbasierte Implementierung des klassisch
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

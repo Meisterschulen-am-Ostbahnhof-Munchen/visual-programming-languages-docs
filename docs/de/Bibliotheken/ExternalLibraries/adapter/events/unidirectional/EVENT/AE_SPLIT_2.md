@@ -29,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Rolle | Name | Typ | Beschreibung |
-|-------|------|-----|--------------|
+| ------- | ------ | ----- | -------------- |
 | Socket (Eingang) | `IN` | `adapter::types::unidirectional::AE` | Empfängt ein unidirektionales Ereignis, das auf beide Ausgänge verteilt wird. |
 | Plug (Ausgang 1) | `OUT1` | `adapter::types::unidirectional::AE` | Erster Ausgang für das duplizierte Ereignis. |
 | Plug (Ausgang 2) | `OUT2` | `adapter::types::unidirectional::AE` | Zweiter Ausgang für das duplizierte Ereignis. |
@@ -68,4 +68,4 @@ Der **AE_SPLIT_2** ist ein minimaler, aber nützlicher Funktionsblock zur einfac
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

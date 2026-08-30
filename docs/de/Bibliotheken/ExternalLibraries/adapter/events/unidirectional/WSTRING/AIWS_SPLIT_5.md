@@ -29,7 +29,7 @@ Keine Daten‑Ausgänge vorhanden. Die Ausgabe geschieht über die Plug‑Adapte
 ### **Adapter**
 
 | Typ | Bezeichnung | Richtung | Adapter‑Typ |
-|-----|-------------|----------|-------------|
+| ----- | ------------- | ---------- | ------------- |
 | **Socket (Eingang)** | IN | Eingang | `adapter::types::unidirectional::AIWS` |
 | **Plug (Ausgang)** | OUT1 | Ausgang | `adapter::types::unidirectional::AIWS` |
 | **Plug (Ausgang)** | OUT2 | Ausgang | `adapter::types::unidirectional::AIWS` |
@@ -62,7 +62,7 @@ Der **AIWS_SPLIT_5** besitzt keine explizite Zustandsmaschine. Seine Funktionali
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Anzahl Ausgänge | Typ | Besonderheit |
-|----------|-----------------|-----|--------------|
+| ---------- | ----------------- | ----- | -------------- |
 | **AIWS_SPLIT_5** | 5 | AIWS‑Adapter | Generisch, keine Events/Daten |
 | AIWS_SPLIT_2 | 2 | AIWS‑Adapter | Gleiche Funktionsweise, minimale Verteilung |
 | AIWS_SPLIT_3 | 3 | AIWS‑Adapter | Mittlere Anzahl Ausgänge |
@@ -82,4 +82,4 @@ Der **AIWS_SPLIT_5** ist ein einfacher, aber essenzieller Funktionsblock zur Ver
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

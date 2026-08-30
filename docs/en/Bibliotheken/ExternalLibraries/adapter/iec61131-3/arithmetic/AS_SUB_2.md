@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_SUB_2` is a generic function block (Generic FB) for the 4diac-ide development environment. It performs an arithmetic subtraction ($OUT = IN1 - IN2$).
@@ -33,11 +34,11 @@ No direct data outputs are defined on the function block. The result is passed v
 
 All communication of the function block is implemented via adapters:
 
-* **Sockets (Input Adapters):**
-* `IN1` (Type: `adapter::types::unidirectional::AS`): The first input (minuend) for subtraction.
-* `IN2` (Type: `adapter::types::unidirectional::AS`): The second input (subtrahend) for subtraction.
-* **Plugs (Output Adapters):**
-* `OUT` (Type: `adapter::types::unidirectional::AS`): The result (difference) of the arithmetic subtraction.
+- **Sockets (Input Adapters):**
+- `IN1` (Type: `adapter::types::unidirectional::AS`): The first input (minuend) for subtraction.
+- `IN2` (Type: `adapter::types::unidirectional::AS`): The second input (subtrahend) for subtraction.
+- **Plugs (Output Adapters):**
+- `OUT` (Type: `adapter::types::unidirectional::AS`): The result (difference) of the arithmetic subtraction.
 
 ## Functionality
 
@@ -51,8 +52,8 @@ The result of the calculation and the corresponding output event are then forwar
 
 ## Technical Features
 
-* **Generic Behavior:** By declaring it as a generic function block, it can be used for various numeric data types (e.g., INT, REAL, LREAL), depending on the definition of the adapter used, `adapter::types::unidirectional::AS`.
-* **Compact Structure:** The use of adapters significantly reduces visual complexity in the 4diac Application Editor, as event and data lines are bundled into a single adapter connection.
+- **Generic Behavior:** By declaring it as a generic function block, it can be used for various numeric data types (e.g., INT, REAL, LREAL), depending on the definition of the adapter used, `adapter::types::unidirectional::AS`.
+- **Compact Structure:** The use of adapters significantly reduces visual complexity in the 4diac Application Editor, as event and data lines are bundled into a single adapter connection.
 
 **Unidirectional Data Flow:** The adapters used have a strictly unidirectional signal flow (from the sockets to the plug).
 
@@ -66,9 +67,9 @@ The execution logic is typically triggered by events on the input adapters:
 
 ## Application Scenarios
 
-* **Measurement Correction:** Subtraction of zero-point errors or offsets in analog sensor values.
-* **Setpoint-Actual Comparison:** Calculation of the control deviation ($e = w - x$) in control loops where setpoint and actual values are transferred via standardized adapter structures.
-* **Level and Quantity Calculation:** Determination of differential quantities in process plants.
+- **Measurement Correction:** Subtraction of zero-point errors or offsets in analog sensor values.
+- **Setpoint-Actual Comparison:** Calculation of the control deviation ($e = w - x$) in control loops where setpoint and actual values are transferred via standardized adapter structures.
+- **Level and Quantity Calculation:** Determination of differential quantities in process plants.
 
 ## Comparison with Similar Function Blocks
 

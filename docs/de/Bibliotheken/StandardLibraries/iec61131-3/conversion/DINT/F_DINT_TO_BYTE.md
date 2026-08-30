@@ -3,6 +3,7 @@
 <img width="1437" height="212" alt="F_DINT_TO_BYTE" src="https://github.com/user-attachments/assets/ed116d5d-f0ed-4f4d-9ddc-489b45dec70f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_DINT_TO_BYTE` dient der Konvertierung eines 32-Bit Ganzzahlwerts (DINT) in einen 8-Bit Ganzzahlwert (BYTE). Diese Konvertierung ist besonders nützlich, wenn Daten zwischen Systemen mit unterschiedlichen Wortbreiten ausgetauscht oder verarbeitet werden müssen.
@@ -36,6 +37,7 @@ Dieser Funktionsblock verfügt über keine Adapter-Schnittstellen.
 Bei Auslösung des Ereigniseingangs `REQ` wird der Algorithmus ausgeführt, der den Wert am Eingang `IN` vom Typ `DINT` in einen `BYTE`-Wert konvertiert. Das Ergebnis wird am Ausgang `OUT` ausgegeben und das Ereignis `CNF` signalisiert den Abschluss der Operation.
 
 Der verwendete Algorithmus lautet:
+
 ```ST
 OUT := DINT_TO_BYTE(IN);
 ```

@@ -56,19 +56,19 @@ Der Baustein wird typischerweise verwendet, um Konfigurationsdaten oder gemessen
 
 Die SubApp arbeitet in mehreren Schritten, die über Ereignis- und Datenverbindungen miteinander verknüpft sind.
 
-1. **Wert einlesen und konvertieren**  
+1. **Wert einlesen und konvertieren**
    - Der Baustein `ID` wartet auf einen neuen Wert zur Objekt‑ID `u16ObjId`. Sobald ein Wert eintrifft, sendet er das Ereignis `IND`.
    - Dieses Ereignis wird an den Konvertierungsbaustein `F_DWORD_TO_UDINT.REQ` weitergeleitet.
    - Gleichzeitig wird der gelesene DWORD‑Wert von `ID.IN` an `F_DWORD_TO_UDINT.IN` übergeben.
    - Nach erfolgreicher Konvertierung sendet `F_DWORD_TO_UDINT` das Ereignis `CNF` und der konvertierte UDINT‑Wert erscheint an `OUT`.
 
-2. **Wert speichern**  
+2. **Wert speichern**
    - Das Ereignis `F_DWORD_TO_UDINT.CNF` triggert den `INI.SET`‑Eingang.
    - Der konvertierte Wert wird über die Datenverbindung von `F_DWORD_TO_UDINT.OUT` an `INI.VALUE` übergeben.
    - Der Schlüssel (`KEY`) und die Sektion (`SECTION`) werden von den SubApp‑Eingängen direkt an den INI‑Baustein geführt.
    - Nach dem Speichern sendet `INI` das Ereignis `SETO`, welches an den SubApp‑Ausgang `IND` weitergeleitet wird (dort als sichtbarer Ausgang der SubApp).
 
-3. **Gespeicherten Wert ausgeben / aktualisieren**  
+3. **Gespeicherten Wert ausgeben / aktualisieren**
    - Bei der Initialisierung der SubApp (implizit oder durch ein externes Initialisierungsereignis) wird `INI.INITO` ausgelöst und direkt mit `INI.GET` verbunden (siehe Event‑Connection `INI.INITO -> INI.GET`). Dadurch wird der zuletzt gespeicherte Wert gelesen.
    - Der gelesene Wert erscheint an `INI.VALUEO`.
    - Das Ereignis `GETO` wird gleichzeitig an zwei Stellen weitergegeben:
@@ -76,7 +76,7 @@ Die SubApp arbeitet in mehreren Schritten, die über Ereignis- und Datenverbindu
      - An den SubApp‑Ausgang `IND` (unsichtbare Verbindung), sodass die übergeordnete Applikation über die Aktualisierung informiert wird.
    - Die Objekt‑ID für `Q_NumericValue` stammt vom SubApp‑Eingang `u16ObjId`.
 
-4. **Ausgang der SubApp**  
+4. **Ausgang der SubApp**
    - Der gespeicherte Wert `VALUEO` wird parallel zum SubApp‑Ausgang `VALUEO` durchgeschleift.
 
 Die folgende Grafik (schematisch) zeigt die wesentlichen Verbindungen:
@@ -114,4 +114,4 @@ Die SubApp demonstriert die typische Vorgehensweise für eine zyklische Datenauf
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

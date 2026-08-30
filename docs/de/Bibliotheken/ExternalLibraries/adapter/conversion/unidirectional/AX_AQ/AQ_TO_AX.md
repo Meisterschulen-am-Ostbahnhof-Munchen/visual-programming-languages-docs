@@ -3,6 +3,7 @@
 ![AQ_TO_AX](./AQ_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AQ_TO_AX` dient der Konvertierung eines AQ-Adapters (Quarter Byte) in einen AX-Adapter (BOOL) unter Verwendung einer STATUS-Logik. Er ermöglicht die einfache Integration von AQ-basierten Signalen in Systeme, die ausschließlich mit AX-Schnittstellen arbeiten. Intern nutzt er den Baustein `QUARTER_TO_BOOL`, um die Datenkonvertierung durchzuführen.
@@ -69,4 +70,4 @@ Der Baustein definiert keine eigenen Zustände. Die Zustandslogik liegt vollstä
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

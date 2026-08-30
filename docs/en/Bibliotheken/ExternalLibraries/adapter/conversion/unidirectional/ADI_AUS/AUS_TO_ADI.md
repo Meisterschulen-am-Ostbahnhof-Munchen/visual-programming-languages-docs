@@ -3,9 +3,11 @@
 ![AUS_TO_ADI](./AUS_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block AUS_TO_ADI is a composite function block that performs a unidirectional adapter conversion from `AUS` (data of type `USINT`) to `ADI` (data of type `DINT`). It encapsulates an IEC 61131 conversion block, thus enabling a clean separation of adapter types in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No separate data outputs are available. The converted data is output via the plu
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|------|----------|-----|--------------|
+| ------ | ---------- | ----- | -------------- |
 | `AUS_IN` | Socket (Input) | `adapter::types::unidirectional::AUS` | Unidirectional adapter input that provides a `USINT` value (and an associated event). |
 | `ADI_OUT` | Plug (Output) | `adapter::types::unidirectional::ADI` | Unidirectional adapter output that outputs the converted `DINT` value (and an associated event). |
 
@@ -72,6 +74,6 @@ The `AUS_TO_ADI` composite block offers a simple and clean way to convert a `AUS
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

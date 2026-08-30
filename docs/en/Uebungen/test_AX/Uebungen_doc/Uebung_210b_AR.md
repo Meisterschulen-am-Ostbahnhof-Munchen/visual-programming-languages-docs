@@ -3,6 +3,7 @@
 ![Uebung_210b_AR_network](./Uebung_210b_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an IEC 61131-3 up counter (CTU) in an adapter version. The counter is controlled via two digital inputs (CU for counting pulses, R for reset). The current counter value is output to a terminal (PHYS) via an analog output. A preset value (PV) is set to 5 at startup. The counter's output Q is routed to a digital output.
@@ -59,19 +60,19 @@ Terminal output (PHYS), displays the meter reading numerically. Parameter: `stOb
 
 At startup, the function block `AI_INT_TO_I` is triggered via the event output `Input_R.INITO`. This delivers the constant value 5 to the PV input of the counter.
 
-2. **Counting**
+1. **Counting**
 
 Each rising edge at the digital input `Input_CU` (connected to `Input_I1`) increments the counter value (CV) by 1.
 
-3. **Reset**
+1. **Reset**
 
 A signal at the input `Input_R` (connected to `Input_I2`) resets the counter value to 0.
 
-4. **Output Q**
+1. **Output Q**
 
 If CV >= PV (5), the output Q is activated. This is connected to the digital output `Output_Q1`.
 
-5. **Display on the Terminal**
+1. **Display on the Terminal**
 
 The current counter reading (CV) is converted into an AR value via `AI_TO_AR` and sent to the terminal output `Q_NumericValue_1`. This allows the value to be displayed on a physical display or a visualization.
 
@@ -102,6 +103,6 @@ This exercise teaches how to use an IEC 61131-3 counter (CTU) in an adapter-base
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

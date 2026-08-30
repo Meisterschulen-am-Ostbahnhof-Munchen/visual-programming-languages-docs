@@ -3,6 +3,7 @@
 ![AIS_SPLIT_5](./AIS_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **AIS_SPLIT_5** dient als generischer Verteiler (Splitter) für Adapter vom Typ `AIS` (unidirektional). Er nimmt ein eingehendes AIS-Signal über einen Socket entgegen und leitet es an fünf separate AIS-Plugs weiter. Dies ermöglicht die Vervielfachung eines Adaptersignals auf mehrere Zielbausteine.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Eingang) | IN | `adapter::types::unidirectional::AIS` | Eingehendes AIS-Adapter-Signal |
 | Plug (Ausgang 1) | OUT1 | `adapter::types::unidirectional::AIS` | Erster ausgehender AIS-Adapter-Anschluss |
 | Plug (Ausgang 2) | OUT2 | `adapter::types::unidirectional::AIS` | Zweiter ausgehender AIS-Adapter-Anschluss |
@@ -72,4 +73,4 @@ Der `AIS_SPLIT_5` ist ein einfacher, aber wirkungsvoller generischer Funktionsba
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

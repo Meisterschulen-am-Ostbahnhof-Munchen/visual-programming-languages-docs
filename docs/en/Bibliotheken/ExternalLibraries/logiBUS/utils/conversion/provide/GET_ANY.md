@@ -3,9 +3,11 @@
 ![GET_ANY](./GET_ANY.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_ANY** function block reads an arbitrary value (type `ANY`) from an InOut variable and provides it as a buffered output value. It serves to capture the current value of a variable source at a specific point in time and temporarily store it for subsequent processing steps.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -38,9 +40,10 @@ None.
 
 1. An event at **REQ** triggers the internal algorithm `REQ`.
 2. The algorithm executes the assignment `OUT := IN`.
+
 - **IN** is an InOut variable that can be both read and written – here it is used only as a source.
 - **OUT** receives the current value of **IN** and stores it temporarily.
-3. After the assignment is complete, the **CNF** event is sent. At this point, both **IN** (unchanged) and **OUT** are valid.
+1. After the assignment is complete, the **CNF** event is sent. At this point, both **IN** (unchanged) and **OUT** are valid.
 
 ## Technical Features
 

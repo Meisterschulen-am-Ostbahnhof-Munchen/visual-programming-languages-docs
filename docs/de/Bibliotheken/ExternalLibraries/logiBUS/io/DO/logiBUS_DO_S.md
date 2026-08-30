@@ -1,6 +1,7 @@
 # logiBUS_DO_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_DO_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines digitalen Ausgangs (DO) innerhalb des logiBUS-Systems dient. Er definiert die notwendigen Parameter, um einen physischen Ausgangspin eines logiBUS I/O-Moduls eindeutig zu adressieren und zu steuern. Dieser Datentyp wird typischerweise als Eingabe für Funktionsblöcke verwendet, die die eigentliche Ausgabefunktionalität bereitstellen.
@@ -41,9 +42,9 @@ Der Initialwert von 255 für `Pin` signalisiert, dass der Pin noch nicht konfigu
 
 ## Technische Besonderheiten
 
-*   **Typisierung:** Die Verwendung eines strukturierten Datentyps anstelle eines einfachen `USINT` erhöht die Typsicherheit und Lesbarkeit der Anwendung. Es ist klar, dass der Wert einen logiBUS-Ausgangspin repräsentiert.
-*   **Initialwert:** Der Initialwert 255 dient als "Safe State"-Indikator. Bevor die Struktur korrekt konfiguriert wird, zeigt dieser Wert einen inaktiven oder fehlerhaften Zustand an.
-*   **Paketzuordnung:** Der Struct ist Teil des Pakets `logiBUS::io::DQ`, was seine Zugehörigkeit zur digitalen Ein-/Ausgabe (Digital I/O) des logiBUS-Frameworks kennzeichnet.
+-   **Typisierung:** Die Verwendung eines strukturierten Datentyps anstelle eines einfachen `USINT` erhöht die Typsicherheit und Lesbarkeit der Anwendung. Es ist klar, dass der Wert einen logiBUS-Ausgangspin repräsentiert.
+-   **Initialwert:** Der Initialwert 255 dient als "Safe State"-Indikator. Bevor die Struktur korrekt konfiguriert wird, zeigt dieser Wert einen inaktiven oder fehlerhaften Zustand an.
+-   **Paketzuordnung:** Der Struct ist Teil des Pakets `logiBUS::io::DQ`, was seine Zugehörigkeit zur digitalen Ein-/Ausgabe (Digital I/O) des logiBUS-Frameworks kennzeichnet.
 
 ## Zustandsübersicht
 
@@ -57,27 +58,27 @@ Da es sich um einen passiven Datentyp handelt, besitzt `logiBUS_DO_S` keinen int
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Einfacher `USINT`:** Der direkte Einsatz eines `USINT`-Werts für die Pin-Nummer ist möglich, bietet aber weniger semantische Klarheit und Typsicherheit. Der `logiBUS_DO_S` macht die Absicht des Datenelements explizit.
-*   **`logiBUS_DI_S`:** Dies ist das strukturelle Gegenstück für digitale Eingänge (DI). Es hat eine identische Struktur (ein `USINT`-Feld `Pin`), gehört aber konzeptionell zur Eingabeseite. Die Trennung in DO- und DI-Structs verbessert die Lesbarkeit und Wartbarkeit des Codes.
+-   **Einfacher `USINT`:** Der direkte Einsatz eines `USINT`-Werts für die Pin-Nummer ist möglich, bietet aber weniger semantische Klarheit und Typsicherheit. Der `logiBUS_DO_S` macht die Absicht des Datenelements explizit.
+-   **`logiBUS_DI_S`:** Dies ist das strukturelle Gegenstück für digitale Eingänge (DI). Es hat eine identische Struktur (ein `USINT`-Feld `Pin`), gehört aber konzeptionell zur Eingabeseite. Die Trennung in DO- und DI-Structs verbessert die Lesbarkeit und Wartbarkeit des Codes.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
-* [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
-* [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
-* [Uebung_010b4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
-* [Uebung_010b4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
-* [Uebung_010b5_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
-* [Uebung_010b5_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
-* [Uebung_010c2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
-* [Uebung_010c2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
-* [Uebung_010c3_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
-* [Uebung_010c3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
-* [Uebung_010c4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
-* [Uebung_010c4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
-* [Uebung_026_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
-* [Uebung_039_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
-* [Uebung_039a_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
+- [Uebung_003a_AX_sub](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003a_AX_sub.md)
+- [Uebung_003a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003a_sub.md)
+- [Uebung_003b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_003b_sub.md)
+- [Uebung_010b4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b4_sub.md)
+- [Uebung_010b4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b4_sub_AX.md)
+- [Uebung_010b5_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b5_sub.md)
+- [Uebung_010b5_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b5_sub_AX.md)
+- [Uebung_010c2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c2.md)
+- [Uebung_010c2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c2_AX.md)
+- [Uebung_010c3_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c3_sub.md)
+- [Uebung_010c3_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c3_sub_AX.md)
+- [Uebung_010c4_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010c4_sub.md)
+- [Uebung_010c4_sub_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010c4_sub_AX.md)
+- [Uebung_026_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
+- [Uebung_039_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_Outputs.md)
+- [Uebung_039a_sub_Outputs](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
 
 ## Fazit
 
@@ -87,4 +88,4 @@ Der `logiBUS_DO_S`-Struct ist ein einfaches, aber wesentliches Hilfselement im l
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![ADI_D_FF_HYS](./ADI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ADI_D_FF_HYS** implements a data-timed (D) flip-flop with adjustable hysteresis. It receives values via a unidirectional adapter input `I` and outputs the state, including hysteresis, via the adapter output `Q`. The hysteresis bandwidth is set during the initialization event `INIT`.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ This function block does not have direct data outputs; The latched value is prov
 ### **Adapter**
 
 | Interface | Type | Direction | Description |
-|---------------|-----|----------|----------------------------------|
+| --------------- | ----- | ---------- | ---------------------------------- |
 | `I` | `adapter::types::unidirectional::ADI` | Socket | Input value (consisting of Event `E1` and Data `D1`). |
 | `Q` | `adapter::types::unidirectional::ADI` | Plug | Latched output value (consisting of Event `E1` and Data `D1`). |
 
@@ -45,7 +47,7 @@ This function block does not have direct data outputs; The latched value is prov
 
 An event at `INIT` transfers the value to `HYSTERESIS` and sets the internal hysteresis bandwidth for the flip-flop. The initialization event is then passed directly to `INITO`.
 
-2. **Data Transfer**
+1. **Data Transfer**
 
 The input adapter `I` delivers the current data value to `I.D1` with each event at `I.E1`.
 
@@ -54,7 +56,7 @@ The internal function block `E_D_FF_ANY_HYS` adopts this value according to the 
 - If the input value is **above** the upper threshold (stored value + hysteresis), the output is set to `1`.
 - If the input value is **below** the lower threshold (stored value - hysteresis), the output is set to `0`.
 - If the value remains within the hysteresis range, the output does not change.
-3. **Output**
+1. **Output**
 
 The internally latched value is passed to the data output `Q.D1`. Simultaneously, an event is triggered at `Q.E1` to signal data processing to downstream logic blocks.
 
@@ -84,7 +86,7 @@ The output only changes when the new input value leaves the hysteresis band.
 ## Comparison with similar function blocks
 
 | Function block | Properties |
-|----------------------|----------------------------------------------------|
+| ---------------------- | ---------------------------------------------------- |
 | **E_D_FF** | Standard D flip-flop without hysteresis (direct transfer). |
 | **E_D_FF_ANY_HYS** | Identical function, but with direct data ports instead of adapters. |
 | **Schmitt trigger** | Similar behavior, but hysteresis cannot be configured at runtime. |

@@ -3,6 +3,7 @@
 ![Q_ObjEnableDisable_AX](./Q_ObjEnableDisable_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **Q_ObjEnableDisable_AX** ist ein Composite-Baustein, der als Adapter-Wrapper für den internen Baustein `Q_ObjEnableDisable` dient. Er ermöglicht die Ansteuerung eines Enable/Disable-Befehls (BOOL) über einen unidirektionalen AX-Adapter (Socket) und gibt den vorherigen Zustand über einen AB-Adapter (Plug) zurück. Der Baustein wird typischerweise in ISOBUS-basierten Steuerungssystemen eingesetzt.

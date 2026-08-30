@@ -3,6 +3,7 @@
 ![INI_AR](./INI_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock INI_AR dient zum Laden und Speichern von REAL-Daten aus einer settings.ini-Datei. Er greift über einen Sektions- und Schlüsselnamen auf die Konfigurationsdatei zu und stellt die gelesenen bzw. zu speichernden Werte über einen unidirektionalen Adapter zur Verfügung. Dies ermöglicht eine flexible Einbindung in modulare Speicher- und Steuerungsarchitekturen.
@@ -74,4 +75,4 @@ Der Funktionsblock INI_AR kapselt den Zugriff auf eine INI-Datei für REAL-Werte
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

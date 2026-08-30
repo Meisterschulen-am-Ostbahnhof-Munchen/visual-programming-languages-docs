@@ -15,7 +15,7 @@ Antwort: mit einem Traktor.
 ## Schritt für Schritt
 
 | Baustein | Herkunft | Ergebnis |
-|---|---|---|
+| --- | --- | --- |
 | **6** | Case IH 1455 ist ein **6-Zylinder**-Traktor | `6 _ _ _ _` |
 | **14** | Die ersten beiden Ziffern von **14**55 | `6 1 4 _ _` |
 | **99** | Aus der **55** am Ende von 1455 wird eine **99** | `6 1 4 9 9` |
@@ -64,12 +64,12 @@ klein gehalten, damit die Brücke nicht zu wackelig wird.
 
 ## Weiterführender Link
 
-* [Traktorenlexikon: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
-* [Traktorenlexikon: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
+- [Traktorenlexikon: Case-IH 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_Case-IH_1455XL)
+- [Traktorenlexikon: IHC 1455 XL – Wikibooks](https://de.wikibooks.org/wiki/Traktorenlexikon:_IHC_1455XL)
 
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

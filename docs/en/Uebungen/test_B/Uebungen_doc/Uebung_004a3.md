@@ -1,8 +1,9 @@
 # Exercise_004a3: same as Exercise_004a2 but without E_MERGE
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004a3`. This exercise demonstrates a simplification compared to `Uebung_004a2`: In IEC 61499, multiple event sources can often be directly connected to the same event input.
+This article describes the logiBUS® exercise `Uebung_004a3`. This exercise demonstrates a simplification compared to `Uebung_004a2`: In IEC 61499, multiple event sources can often be directly connected to the same event input
 ----
+
 ## Objective of the Exercise
 
 The objective is to reduce the visual complexity of the network diagram. It demonstrates that the explicit `E_MERGE` block can be omitted because the 4diac runtime environment automatically processes incoming events on a port sequentially ("fan-in").
@@ -17,9 +18,9 @@ The objective is to reduce the visual complexity of the network diagram. It demo
 
 ![Uebung_004a3_network](./Uebung_004a3_network.svg)
 
-* **`DigitalInput_CLK_I1` & `I2`**: The event-based inputs.
-* **`E_T_FF`**: The toggle flip-flop.
-* **`DigitalOutput_Q1`**: The output.
+- **`DigitalInput_CLK_I1` & `I2`**: The event-based inputs.
+- **`E_T_FF`**: The toggle flip-flop.
+- **`DigitalOutput_Q1`**: The output.
 
 The function block `E_MERGE` from the previous exercise is intentionally omitted here.
 
@@ -48,6 +49,6 @@ Same example as before (toggle switch), but with leaner code (fewer blocks, impr
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

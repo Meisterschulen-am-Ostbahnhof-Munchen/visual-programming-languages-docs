@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_MERGE_2` is a fundamental function block according to the IEC 61499 standard. It combines two event streams (`EI1`, `EI2`) into a single output (`EO`). This logical OR operation of events is essential for control logic in industrial automation systems. This block is functionally identical to the `E_MERGE` block.
@@ -41,7 +42,7 @@ The inputs are logically ORed and forwarded without prioritization or delay.
 
 ## 🛠️ Related Exercises
 
-* [Exercise_004a2_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
+- [Exercise_004a2_2](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_2.md)
 
 ## Conclusion
 
@@ -51,4 +52,4 @@ The `E_MERGE_2` is a fundamental and frequently used building block for the simp
 
 ### 🌐 Related Topic Subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

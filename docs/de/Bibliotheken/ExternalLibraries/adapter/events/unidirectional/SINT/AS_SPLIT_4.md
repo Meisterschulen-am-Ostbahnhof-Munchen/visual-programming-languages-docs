@@ -31,7 +31,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AS` | IN | Socket | Eingehender AS-Signalpfad (Eingang) |
 | `adapter::types::unidirectional::AS` | OUT1 | Plug | Erster Ausgang (identisch zu IN) |
 | `adapter::types::unidirectional::AS` | OUT2 | Plug | Zweiter Ausgang (identisch zu IN) |
@@ -77,4 +77,4 @@ Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

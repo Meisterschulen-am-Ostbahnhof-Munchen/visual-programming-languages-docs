@@ -26,6 +26,7 @@ The image above illustrates this exact case.
 
 
 ...
+
 ### Data Outputs
 
 ### Data Inputs
@@ -51,6 +52,7 @@ The `STRUCT_DEMUX` is a stateless function block that operates according to a si
 1. **Ready**: Waits for a `REQ` event.
 2. **Executing**: Reads the input structure, extracts the member values, and sets the corresponding outputs.
 3. **Completed**: Triggers the `CNF` event and returns to the ready state.
+
 - **Complex Data Splitting**: Decomposing complex data structures (e.g., sensor data, status information) into individual signals for further processing.
 - **Improved Readability**: Instead of accessing structure members via `GET_STRUCT_VALUE`, the members can be used directly as separate data lines in the logic.
 - **Interface Adaptation**: Adapting data arriving as a single structure from a function block to multiple function blocks that expect individual inputs.
@@ -74,29 +76,29 @@ The `STRUCT_DEMUX` is a stateless function block that operates according to a si
 | Version | 3.0 (2025-04-14, Patrick Aigner) |
 | 4diac Package | eclipse4diac::convert |
 
-* [Uebung_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)
-* [Uebung_120](../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
-* [Uebung_121](../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
-* [Uebung_122](../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
-* [Uebung_122b](../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
-* [Uebung_123](../../../Uebungen/test_B/Uebungen_doc/Uebung_123.md)
-* [Uebung_124](../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
-* [Uebung_125](../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
-* [Uebung_126](../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)
-* [Uebung_127](../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
-* [Uebung_128](../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
-* [Uebung_128b](../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
-* [Uebung_130](../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)
-* [Uebung_131](../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)
-* [Uebung_132](../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
-* [Uebung_133](../../../Uebungen/test_B/Uebungen_doc/Uebung_133.md)
-* [Uebung_134](../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
+- [Uebung_051](../../../Uebungen/test_B/Uebungen_doc/Uebung_051.md)
+- [Uebung_120](../../../Uebungen/test_B/Uebungen_doc/Uebung_120.md)
+- [Uebung_121](../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+- [Uebung_122](../../../Uebungen/test_B/Uebungen_doc/Uebung_122.md)
+- [Uebung_122b](../../../Uebungen/test_B/Uebungen_doc/Uebung_122b.md)
+- [Uebung_123](../../../Uebungen/test_B/Uebungen_doc/Uebung_123.md)
+- [Uebung_124](../../../Uebungen/test_B/Uebungen_doc/Uebung_124.md)
+- [Uebung_125](../../../Uebungen/test_B/Uebungen_doc/Uebung_125.md)
+- [Uebung_126](../../../Uebungen/test_B/Uebungen_doc/Uebung_126.md)
+- [Uebung_127](../../../Uebungen/test_B/Uebungen_doc/Uebung_127.md)
+- [Uebung_128](../../../Uebungen/test_B/Uebungen_doc/Uebung_128.md)
+- [Uebung_128b](../../../Uebungen/test_B/Uebungen_doc/Uebung_128b.md)
+- [Uebung_130](../../../Uebungen/test_B/Uebungen_doc/Uebung_130.md)
+- [Uebung_131](../../../Uebungen/test_B/Uebungen_doc/Uebung_131.md)
+- [Uebung_132](../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
+- [Uebung_133](../../../Uebungen/test_B/Uebungen_doc/Uebung_133.md)
+- [Uebung_134](../../../Uebungen/test_B/Uebungen_doc/Uebung_134.md)
 
 STRUCT_DEMUX` is a fundamental and extremely useful building block for working with data structures in 4diac. Its ability to automatically decompose any structure into its constituent parts significantly simplifies application logic and promotes clear, readable wiring. It is the standard tool for accessing the contents of structures.
 
 ---
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

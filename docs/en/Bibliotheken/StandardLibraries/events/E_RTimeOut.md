@@ -3,6 +3,7 @@
 ![IEC 61499 Timeout Symbol](https://user-images.githubusercontent.com/113907528/204902807-7fadcd7d-d6e1-47c0-812e-f5c2d80f79e0.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **E_RTimeOut** is a special function block according to IEC 61499-2. It implements a resettable timeout service by internally using an E_RDELAY block.
@@ -28,14 +29,18 @@ The block uses a **socket** of type `ARTimeOut`. Since it is a socket, the signa
 ## Functionality
 
 1. **Timeout Initialization**:
+
 - The timer starts when the `START` event occurs on the socket.
 - Uses the configured `DT` value.
-2. **Timeout Reset**:
+1. **Timeout Reset**:
+
 - A new `START` event resets the running timer.
 - Uses the new `DT` value.
-3. **Timeout Termination**:
+1. **Timeout Termination**:
+
 - The `STOP` event terminates the active timer.
-4. **Timeout Triggering**:
+1. **Timeout Triggering**:
+
 - After `DT` expires, the `TimeOut` event is generated
 - Signaled via the adapter socket
 
@@ -59,15 +64,15 @@ The block uses a **socket** of type `ARTimeOut`. Since it is a socket, the signa
 ## ⚖️ Comparison with Similar Components
 
 | Feature | E_RTimeOut | E_DELAY | E_TABLE |
-|--------------|------------|---------|---------|
+| -------------- | ------------ | --------- | --------- |
 | Reset Function | ✔️ | ❌ | ❌ |
 | Interface | Adapter | Direct | Direct |
 | Standard | 61499-2 | 61499-1 | 61499-1 |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
-* [Exercise_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)
+- [Exercise_035b](../../../Uebungen/test_B/Uebungen_doc/Uebung_035b.md)
+- [Exercise_170](../../../Uebungen/test_B/Uebungen_doc/Uebung_170.md)
 
 ## Conclusion
 

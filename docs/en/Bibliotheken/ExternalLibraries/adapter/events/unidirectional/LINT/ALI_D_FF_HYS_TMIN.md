@@ -3,9 +3,11 @@
 ![ALI_D_FF_HYS_TMIN](./ALI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_D_FF_HYS_TMIN** implements a data-driven D flip-flop with an adjustable hysteresis width (threshold band) and a minimum waiting time between two consecutive output events. It is used for debouncing and stabilizing signal transitions in industrial automation, particularly when a signal should only be considered valid after it has left a defined tolerance range and a minimum time has elapsed since the last valid edge.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **ALI_D_FF_HYS_TMIN** implements a data-driven D flip-flop wi
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|------------|------|-----------|
+| ------------ | ------ | ----------- |
 | HYSTERESIS | LINT | Hysteresis band as an integer value (LINT). |
 | Tmin | TIME | Minimum time between two output events (Inter-Disposal Time). |
 
@@ -48,9 +50,9 @@ The function block **ALI_D_FF_HYS_TMIN** is implemented as a composition and int
 1. **Initialization** – The **INIT** event sets the **HYSTERESIS** and **Tmin** parameters. After successful initialization, **INITO** is triggered.
 2. **Signal Acquisition** – Every event at socket **I** (event **I.E1**) is interpreted as a clock edge. The corresponding data value **I.D1** is only transferred to internal memory if it is outside the hysteresis band around the currently stored value (i.e., the change exceeds the hysteresis).
 3. **Minimum Time Control** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
-2. **Signal Acquisition** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
+4. **Signal Acquisition** – After a valid value is acquired, output via plug **Q** (event **Q.E1** and value **Q.D1**) is only enabled after at least **Tmin** has elapsed since the last output event. This suppresses unwanted rapid signal changes.
 
-4. **Output** – Once the minimum time has elapsed, the new value is output via the output adapter **Q**. The function block then waits for the next input event.
+5. **Output** – Once the minimum time has elapsed, the new value is output via the output adapter **Q**. The function block then waits for the next input event.
 
 ## Technical Features
 
@@ -66,9 +68,11 @@ The function block goes through the following states:
 1. **INIT** – Waiting for initialization parameters.
 2. **IDLE** – Ready; waiting for an event on socket **I**.
 3. **SAMPLE** – An event has arrived; the data value is checked for exceeding the hysteresis.
+
 - *Hysteresis violated:* The value is ignored, returning to **IDLE**.
 - *Hysteresis satisfied:* Transition to state **WAIT_TMIN**.
-4. **WAIT_TMIN** – The new value is saved; release is delayed by **Tmin**.
+1. **WAIT_TMIN** – The new value is saved; release is delayed by **Tmin**.
+
 - After the time has elapsed, output is made via **Q**, and the data returns to **IDLE**.
 
 A formal state machine is not visible via the XML interface, but it can be deduced from the behavior of the internal flip-flop.
@@ -82,7 +86,7 @@ A formal state machine is not visible via the XML interface, but it can be deduc
 ## Comparison with Similar Components
 
 | Component | Hysteresis | Minimum Time | Adapter Interface |
-|----------|-----------|-------------|----------------------|
+| ---------- | ----------- | ------------- | ---------------------- |
 | `E_D_FF` (simple) | No | No | No (direct I/O) |
 | `E_D_FF_HYS` | Yes | No | No |
 | `ALI_D_FF_HYS_TMIN` | Yes | Yes | Yes (adapter usage) |

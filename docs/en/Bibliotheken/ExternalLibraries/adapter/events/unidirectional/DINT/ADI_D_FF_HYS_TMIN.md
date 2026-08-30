@@ -3,9 +3,11 @@
 ![ADI_D_FF_HYS_TMIN](./ADI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ADI_D_FF_HYS_TMIN** implements a data latch (D flip-flop) with hysteresis and a minimal time delay between successive output events. It serves for stable and interference-free signal transmission in industrial control applications based on unidirectional adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -45,7 +47,7 @@ The function block internally uses the FB `E_D_FF_ANY_HYS_TMIN`. It processes th
 The function block has two stable internal states (e.g., HIGH/LOW or TRUE/FALSE) that represent the latched output value. A state change only occurs if the incoming value (via **I**) exceeds the hysteresis threshold and the time elapsed since the last output event is at least `Tmin`. Otherwise, the event is suppressed.
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | LOW | Output value is logic 0 or low |
 | HIGH | Output value is logic 1 or high |
 
@@ -73,6 +75,6 @@ The `ADI_D_FF_HYS_TMIN` is a robust functional block for reliable signal process
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

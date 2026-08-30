@@ -3,15 +3,17 @@
 ![sequence_B_08_AX_AX](./sequence_B_08_AX_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **sequence_B_08_AX_AX** implements a sequential control system with eight outputs. State transitions are level-controlled via BOOL signals provided by an AX adapter. The block is designed for fail-safe applications and allows for the restoration of the current state after a power failure. It is particularly suitable for sequence control systems in automation technology where multiple switching operations must be executed sequentially.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Description |
-|------|--------------|
+| ------ | -------------- |
 | `S8_START` | Event that triggers a jump from state 8 back to the start state. |
 | `RESET` | Event that triggers an immediate reset from any active state. |
 
@@ -36,7 +38,7 @@ The FB has no direct data inputs. The transition conditions are read exclusively
 **Plugs (Outputs – Type `adapter::types::unidirectional::AX`)**
 
 | Name | Description |
-|------|--------------|
+| ------ | -------------- |
 | `DO_S1` | Output active when state 1 is active. |
 | `DO_S2` | Output active when state 2 is active. |
 | `DO_S3` | Output active when state 3 is active. |
@@ -49,7 +51,7 @@ The FB has no direct data inputs. The transition conditions are read exclusively
 **Sockets (Inputs – Type `adapter::types::unidirectional::AX`)**
 
 | Name | Description |
-|------|--------------|
+| ------ | -------------- |
 | DI_S1` | Signal for transition from start state to state 1. |
 | DI_S2` | Signal for transition from state 1 to state 2. |
 | `DI_S3` | Signal for transition from state 2 to state 3. |
@@ -84,7 +86,7 @@ After a reset (`RESET`), the machine briefly enters state `sRESET`, which deacti
 ## State Overview
 
 | State (ECC) | State Number | Output Active | Transition Condition (to the Next State) |
-|--------------|----------------|---------------|-------------------------------------------|
+| -------------- | ---------------- | --------------- | ------------------------------------------- |
 | `xSTART` | 0 | – | `DI_S1.D1` → sState_01<br>`DI_S2.D1` → sState_02<br>…<br>`DI_S8.D1` → sState_08<br> otherwise → sState_00 |
 | `sState_01` | 1 | `DO_S1` | `DI_S2.D1` → sState_02<br>`RESET` → sState_00 |
 | `sState_02` | 2 | `DO_S2` | `DI_S3.D1` → sState_03<br>`RESET` → sState_00 |

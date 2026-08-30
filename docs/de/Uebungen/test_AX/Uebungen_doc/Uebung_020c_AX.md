@@ -20,8 +20,8 @@ Kennenlernen des Timer-Bausteins `AX_TON`.
 
 ![Uebung_020c_AX_network](./Uebung_020c_AX_network.svg)
 
-  * **`AX_TON`**: Timer On-Delay.
-  * **Parameter `PT`**: Preset Time (hier 5 Sekunden).
+  - **`AX_TON`**: Timer On-Delay.
+  - **Parameter `PT`**: Preset Time (hier 5 Sekunden).
 
 -----
 

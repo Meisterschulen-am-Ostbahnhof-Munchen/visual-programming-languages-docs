@@ -3,6 +3,7 @@
 ![AUDI_D_FF_HYS](./AUDI_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUDI_D_FF_HYS` realisiert ein datengetriggertes Flip‑Flop (D‑Latch) mit einer Hysteresefunktion. Er dient dazu, einen eingehenden Datenwert bei einem Ereignis zu übernehmen, wobei durch die Hysterese ein Schaltverhalten mit definiertem Totband ermöglicht wird. Der Baustein kapselt die Logik des internen Bausteins `E_D_FF_ANY_HYS` und stellt die Schnittstellen über zwei unidirektionale Adapter vom Typ `AUDI` bereit.

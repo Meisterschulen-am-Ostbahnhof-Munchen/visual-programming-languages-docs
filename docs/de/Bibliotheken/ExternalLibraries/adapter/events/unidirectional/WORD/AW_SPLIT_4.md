@@ -29,7 +29,7 @@ Keine (die Ausgabe erfolgt ausschließlich über die Adapter‑Plugs).
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AW` | `IN` | Socket | Eingang für den zu verteilenden AW‑Datenstrom |
 | `adapter::types::unidirectional::AW` | `OUT1` | Plug | Erster Ausgang (Kopie des Eingangs) |
 | `adapter::types::unidirectional::AW` | `OUT2` | Plug | Zweiter Ausgang |

@@ -1,12 +1,13 @@
 # E_CTUD_UDINT
 
----- 
+----
 
 <img width="1139" height="259" alt="E_CTUD_UDINT" src="https://user-images.githubusercontent.com/116869307/214142444-55a16971-caf0-4c6c-a1fa-c0294a26464a.png">
 
 ![E_CTUD_UDINT_ecc](./E_CTUD_UDINT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `E_CTUD_UDINT` ist eine Variante des `E_CTUD`-Zählers, die den Datentyp `UDINT` (Unsigned Double Integer, 32-Bit) verwendet. Dieser ereignisgesteuerte Vor- und Rückwärtszähler kann einen sehr großen Zählerbereich abdecken. Er kann einen Zählerwert basierend auf separaten Ereignissen inkrementieren, dekrementieren, zurücksetzen oder mit einem vordefinierten Wert laden.
@@ -69,9 +70,9 @@ Nach jeder dieser Aktionen werden die Status-Flags `QU` und `QD` basierend auf d
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
-* [Uebung_034b](../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
-* [Uebung_083](../../../Uebungen/test_B/Uebungen_doc/Uebung_083.md)
+- [Uebung_009](../../../Uebungen/test_B/Uebungen_doc/Uebung_009.md)
+- [Uebung_034b](../../../Uebungen/test_B/Uebungen_doc/Uebung_034b.md)
+- [Uebung_083](../../../Uebungen/test_B/Uebungen_doc/Uebung_083.md)
 
 ## Fazit
 
@@ -81,4 +82,4 @@ Der `E_CTUD_UDINT` ist die `UDINT`-Variante des universellen `E_CTUD`-Zählers. 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

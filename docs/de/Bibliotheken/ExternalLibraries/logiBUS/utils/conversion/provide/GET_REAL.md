@@ -3,6 +3,7 @@
 ![GET_REAL](./GET_REAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_REAL** dient dazu, einen REAL-Wert aus einer **InOut-Variable** auszulesen und diesen in einem gepufferten Ausgang bereitzustellen. Der ausgelesene Wert wird beim Empfang eines Ereignisses am Eingang `REQ` aus der InOut-Variable `IN` gelesen und am Ausgang `OUT` ausgegeben. Nach der Ausführung wird das Bestätigungsereignis `CNF` gesendet.
@@ -43,6 +44,7 @@ Keine Adapter vorhanden.
 
 1. Ein eingehendes Ereignis am Eingang `REQ` triggert die Ausführung des internen Algorithmus `REQ`.
 2. Im Algorithmus wird der aktuelle Wert der InOut-Variable `IN` in die Ausgangsvariable `OUT` kopiert:
+
    ```structuredtext
    OUT := IN;
    ```
@@ -61,15 +63,15 @@ Keine Adapter vorhanden.
 
 Der FB besitzt nur einen einzigen Zustand:
 
-- **Zustand `REQ`:**  
+- **Zustand `REQ`:**
   Beim Eintritt wird der Algorithmus `REQ` ausgeführt (OUT := IN) und das Ereignis `CNF` gesendet. Der FB verbleibt in diesem Zustand und ist stets bereit für die nächste Anforderung.
 
 Es gibt keine weiteren Zustände oder Verzweigungen – der FB ist deterministisch und reagiert unmittelbar auf jedes `REQ`-Ereignis.
 
 ## Anwendungsszenarien
 
-- **Lesen eines Prozesswertes:** In einer SPS-Steuerung kann `GET_REAL` verwendet werden, um einen aktuellen Sensorwert, der als InOut-Variable vorliegt, auszulesen und an einen nachfolgenden Funktionsblock weiterzugeben (z. B. für Berechnungen oder Visualisierung).  
-- **Werteabgleich zwischen Bausteinen:** Wenn ein anderer FB eine InOut-Schnittstelle mit einem REAL-Wert bereitstellt, kann `GET_REAL` diesen Wert abrufen und als gepufferten Ausgang verfügbar machen.  
+- **Lesen eines Prozesswertes:** In einer SPS-Steuerung kann `GET_REAL` verwendet werden, um einen aktuellen Sensorwert, der als InOut-Variable vorliegt, auszulesen und an einen nachfolgenden Funktionsblock weiterzugeben (z. B. für Berechnungen oder Visualisierung).
+- **Werteabgleich zwischen Bausteinen:** Wenn ein anderer FB eine InOut-Schnittstelle mit einem REAL-Wert bereitstellt, kann `GET_REAL` diesen Wert abrufen und als gepufferten Ausgang verfügbar machen.
 - **Test und Simulation:** Der Baustein eignet sich zum Debuggen, um den aktuellen Wert einer Variablen zu einem bestimmten Zeitpunkt festzuhalten und zu protokollieren.
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -93,4 +95,4 @@ Der `GET_REAL`-Funktionsblock ist ein schlanker und zuverlässiger Baustein zum 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

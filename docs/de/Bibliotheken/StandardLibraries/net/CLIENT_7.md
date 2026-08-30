@@ -3,6 +3,7 @@
 ![CLIENT_7](CLIENT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `CLIENT_7`-Funktionsblock ist die generische Client-Variante mit 7 Sende- und 7 Empfangsdatenfeldern für die Kommunikation mit einem passenden [SERVER_7](SERVER_7.md)-Block. Er überträgt 7 Datenwerte (`SD_1` `SD_2` `SD_3` `SD_4` `SD_5` `SD_6` `SD_7`) an den Server und empfängt 7 Datenwerte (`RD_1` `RD_2` `RD_3` `RD_4` `RD_5` `RD_6` `RD_7`) zurück. Wie alle `CLIENT_*`-Bausteine basiert er auf der generischen `GEN_CLIENT`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

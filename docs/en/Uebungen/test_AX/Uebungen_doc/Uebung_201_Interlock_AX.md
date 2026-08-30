@@ -3,9 +3,11 @@
 ![Uebung_201_Interlock_AX_network](./Uebung_201_Interlock_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise extends the basic interlock circuit to a more complex application (Advanced eXercise). The goal is to connect four digital inputs (I1–I4) to four digital outputs (Q1–Q4) via a chained interlock logic. The special feature lies in the serial connection of the interlock components: The enable output of one component is connected to the enable input of the next, creating a dependency chain. This allows for time-based or logical blocking between successive outputs and is suitable for applications such as sequential machine controls or safety circuits.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: DigitalInput_Ix
@@ -50,16 +52,19 @@ The circuit consists of four identical interlock stages connected in series. Eac
 Network connections:
 
 1. **Input side**: Each `DigitalInput` module is connected to its corresponding `ILOCK_AX` module via the `IN` adapter.
+
 - `DigitalInput_I1.IN` → `ILOCK_AX_1.IN`
 - `DigitalInput_I2.IN` → `ILOCK_AX_2.IN`
 - `DigitalInput_I3.IN` → `ILOCK_AX_3.IN`
 - `DigitalInput_I4.IN` → `ILOCK_AX_4.IN`
-2. **Output Side**: Each `ILOCK_AX` forwards its release signal via the adapter `OUT` to the corresponding `DigitalOutput`.
+1. **Output Side**: Each `ILOCK_AX` forwards its release signal via the adapter `OUT` to the corresponding `DigitalOutput`.
+
 - `ILOCK_AX_1.OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_AX_2.OUT` → `DigitalOutput_Q2.OUT`
 - `ILOCK_AX_3.OUT` → `DigitalOutput_Q3.OUT`
 - `ILOCK_AX_4.OUT` → `DigitalOutput_Q4.OUT`
-3. **Interlocking Interlock**:
+1. **Interlocking Interlock**:
+
 - `ILOCK_AX_1.ILOCK_OUT` → `ILOCK_AX_2.ILOCK_IN`
 - `ILOCK_AX_2.ILOCK_OUT` → `ILOCK_AX_3.ILOCK_IN`
 - `ILOCK_AX_3.ILOCK_OUT` → `ILOCK_AX_4.ILOCK_IN`
@@ -71,6 +76,7 @@ The sequence: To activate Q2, Q1 must first be active (because `ILOCK_IN` from b
 **Notes on operation**: The exercise can be tested in the 4diac IDE by loading the subapp type `Uebung_201_Interlock_AX` and then running it on a logiBUS hardware platform. The inputs should be activated alternately or sequentially to observe the sequential activation.
 
 **
+
 ## Summary
 
 The exercise `Uebung_201_Interlock_AX` demonstrates the practical application of chained interlock devices (`ILOCK_IO_AX`) in a 4diac environment. Four independent input/output pairs are connected in series such that each subsequent output is only enabled if the preceding output is already active. This principle is frequently used in automation technology for startup sequences, safety interlocks, or machine safety. The learner deepens their understanding of adapter interconnection and the creation of dependency chains according to IEC 61499.
@@ -79,4 +85,4 @@ The exercise `Uebung_201_Interlock_AX` demonstrates the practical application of
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

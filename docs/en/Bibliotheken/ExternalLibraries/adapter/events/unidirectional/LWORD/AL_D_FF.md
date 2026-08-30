@@ -3,9 +3,11 @@
 ![AL_D_FF](./AL_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_D_FF** implements a data latch flip-flop (D flip-flop). It serves to store a digital data value upon each incoming event and make the stored value available via an adapter output. The block encapsulates the recurring task of a D flip-flop and provides a clean, typed interface for event and data exchange via adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. The stored data value is output via the adapter plug **Q
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|------|-----|----------|-----------|
+| ------ | ----- | ---------- | ----------- |
 | I | `adapter::types::unidirectional::AL` | Socket | Value to be latched |
 | Q | `adapter::types::unidirectional::AL` | Plug | Latched value |
 

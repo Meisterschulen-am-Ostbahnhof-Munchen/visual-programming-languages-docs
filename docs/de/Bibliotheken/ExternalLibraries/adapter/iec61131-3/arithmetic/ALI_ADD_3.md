@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ALI_ADD_3` ist ein generischer, arithmetischer Baustein zur Addition von drei Werten. Er basiert auf dem Standard IEC 61131-3 für arithmetische Funktionen. Anstelle von klassischen, separaten Daten- und Ereignisanschlüssen nutzt dieser Baustein unidirektionale Adapter des Typs `ALI`, um eine strukturierte und übersichtliche Signalübertragung in 4diac-ide zu ermöglichen.
@@ -32,12 +33,12 @@ Der Funktionsbaustein `ALI_ADD_3` ist ein generischer, arithmetischer Baustein z
 
 Der Baustein kommuniziert ausschließlich über Adapter-Schnittstellen:
 
-*   **Sockets (Eingangs-Schnittstellen):**
-    *   `IN1` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle für den ersten Summanden (Eingangswert 1).
-    *   `IN2` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle für den zweiten Summanden (Eingangswert 2).
-    *   `IN3` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle für den dritten Summanden (Eingangswert 3).
-*   **Plugs (Ausgangs-Schnittstellen):**
-    *   `OUT` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle zur Ausgabe des berechneten Ergebnisses.
+-   **Sockets (Eingangs-Schnittstellen):**
+    -   `IN1` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle für den ersten Summanden (Eingangswert 1).
+    -   `IN2` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle für den zweiten Summanden (Eingangswert 2).
+    -   `IN3` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle für den dritten Summanden (Eingangswert 3).
+-   **Plugs (Ausgangs-Schnittstellen):**
+    -   `OUT` (Typ: `adapter::types::unidirectional::ALI`): Schnittstelle zur Ausgabe des berechneten Ergebnisses.
 
 ## Funktionsweise
 
@@ -49,8 +50,8 @@ Das Ergebnis sowie das zugehörige Aktualisierungsereignis werden anschließend 
 
 ## Technische Besonderheiten
 
-*   **Generische Implementierung:** Der Baustein ist als generischer Typ (`GEN_ALI_ADD`) deklariert. Dies ermöglicht eine flexible Anpassung an verschiedene Datentypen, die vom `ALI`-Adapter unterstützt werden.
-*   **Verwendung von Adaptern:** Durch die Kapselung von Daten und Events in unidirektionalen Adaptern (`ALI`) wird die Anzahl der notwendigen Verbindungslinien im Application-Editor von 4diac-ide drastisch reduziert, was zu einer besseren Übersichtlichkeit führt.
+-   **Generische Implementierung:** Der Baustein ist als generischer Typ (`GEN_ALI_ADD`) deklariert. Dies ermöglicht eine flexible Anpassung an verschiedene Datentypen, die vom `ALI`-Adapter unterstützt werden.
+-   **Verwendung von Adaptern:** Durch die Kapselung von Daten und Events in unidirektionalen Adaptern (`ALI`) wird die Anzahl der notwendigen Verbindungslinien im Application-Editor von 4diac-ide drastisch reduziert, was zu einer besseren Übersichtlichkeit führt.
 
 ## Zustandsübersicht
 
@@ -58,14 +59,14 @@ Der Funktionsbaustein arbeitet rein zustandslos (stateless). Es gibt keine inter
 
 ## Anwendungsszenarien
 
-*   **Messwert-Summierung:** Zusammenfassung von drei analogen Einzelmesswerten (z. B. Leistungsaufnahme von drei Phasen, Durchflussmengen aus drei Rohren) zu einem Gesamtwert.
-*   **Mittelwertvorbereitung:** Aufsummierung von drei Werten zur anschließenden Division durch 3 in einem nachfolgenden Baustein.
-*   **Strukturierte Signalverarbeitung:** Einsatz in komplexen Projekten, bei denen analoge Signale standardisiert und übersichtlich über Adapter-Kanäle geführt werden sollen.
+-   **Messwert-Summierung:** Zusammenfassung von drei analogen Einzelmesswerten (z. B. Leistungsaufnahme von drei Phasen, Durchflussmengen aus drei Rohren) zu einem Gesamtwert.
+-   **Mittelwertvorbereitung:** Aufsummierung von drei Werten zur anschließenden Division durch 3 in einem nachfolgenden Baustein.
+-   **Strukturierte Signalverarbeitung:** Einsatz in komplexen Projekten, bei denen analoge Signale standardisiert und übersichtlich über Adapter-Kanäle geführt werden sollen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-*   **Standard-ADD (IEC 61131-3):** Ein Standard-ADD-Baustein verwendet klassische Daten- und Ereignis-Verbindungen. `ALI_ADD_3` hingegen kapselt diese Schnittstellen in Adaptern, was die visuelle Komplexität im Systementwurf verringert.
-*   **Kaskadierte 2-fach-Addierer:** Um drei Werte mit herkömmlichen 2-fach-Addierern zu addieren, müssten zwei Bausteine in Reihe geschaltet werden. `ALI_ADD_3` spart hierbei einen Baustein sowie die dazwischenliegende Instanziierung und Verdrahtung ein.
+-   **Standard-ADD (IEC 61131-3):** Ein Standard-ADD-Baustein verwendet klassische Daten- und Ereignis-Verbindungen. `ALI_ADD_3` hingegen kapselt diese Schnittstellen in Adaptern, was die visuelle Komplexität im Systementwurf verringert.
+-   **Kaskadierte 2-fach-Addierer:** Um drei Werte mit herkömmlichen 2-fach-Addierern zu addieren, müssten zwei Bausteine in Reihe geschaltet werden. `ALI_ADD_3` spart hierbei einen Baustein sowie die dazwischenliegende Instanziierung und Verdrahtung ein.
 
 ## Änderungserkennung
 

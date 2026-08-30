@@ -3,6 +3,7 @@
 ![AX_TO_AD](./AX_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite FB `AX_TO_AD` dient der Konvertierung eines Bool-Adapters (AX) in einen DWORD-Adapter (AD). Er leitet Ereignis- und Datensignale vom Eingangsadapter direkt an den Ausgangsadapter weiter und wandelt implizit den Datentyp von BOOL nach DWORD um.
@@ -69,4 +70,4 @@ Der `AX_TO_AD` FB bietet eine einfache und saubere Möglichkeit, einen BOOL-Adap
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

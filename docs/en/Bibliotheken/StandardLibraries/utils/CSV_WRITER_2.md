@@ -3,10 +3,12 @@
 ![CSV_WRITER_2](https://github.com/user-attachments/assets/3c2f2095-ba2e-4a3a-9484-9f5c310500e9)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The CSV_WRITER_2 is a function block used to write data to a CSV file. It provides a simple interface for initialization and the writing process, supporting two different data fields. This function block is particularly useful for applications where data needs to be stored persistently or exported for further analysis.
 ![CSV_WRITER_2](CSV_WRITER_2.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -75,4 +77,4 @@ The `CSV_WRITER_2` function block is a flexible and reliable function block for 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

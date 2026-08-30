@@ -13,7 +13,7 @@ Der Funktionsblock **E_T_FF_SR_SYM** ist ein ereignisgesteuerter, bistabiler Kip
 ### **Ereignis-Eingänge**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | S | Event | Setzen des Ausgangs Q (auf TRUE) |
 | R | Event | Zurücksetzen des Ausgangs Q (auf FALSE) |
 | CLK | Event | Takt zum Umschalten des Ausgangs Q (Toggle) |
@@ -65,20 +65,20 @@ Das **Toggle**-Verhalten ist dadurch realisiert, dass ein CLK-Ereignis immer den
 ## Zustandsübersicht
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | START | Initialzustand nach Aktivierung des Bausteins |
-| SET   | Ausgang Q = TRUE |
+| SET | Ausgang Q = TRUE |
 | RESET | Ausgang Q = FALSE |
 
 **Übergänge** (Ereignis → Zielzustand):
 
 | Ausgangszustand | Ereignis | Zielzustand |
-|-----------------|----------|-------------|
+| ----------------- | ---------- | ------------- |
 | START | S | SET |
 | START | R | RESET |
 | START | CLK | SET |
-| SET   | R | RESET |
-| SET   | CLK | RESET |
+| SET | R | RESET |
+| SET | CLK | RESET |
 | RESET | S | SET |
 | RESET | CLK | SET |
 
@@ -93,7 +93,7 @@ Hinweis: Verbleiben S‑Ereignisse im SET‑Zustand oder R‑Ereignisse im RESET
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
-|----------|-------------|
+| ---------- | ------------- |
 | E_FF_SR | Reines SR-Flipflop ohne Toggle. Keine Taktfunktion. |
 | E_FF_Toggle | Reines Toggle-Flipflop, kein Set/Reset. |
 | E_T_FF_SR | Ähnlich, jedoch ohne symmetrisches Startverhalten. Hier führt CLK im START-Zustand ggf. zu undefiniertem Verhalten. |
@@ -107,4 +107,4 @@ Der **E_T_FF_SR_SYM** ist ein vielseitiger ereignisgesteuerter Flipflop-Baustein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

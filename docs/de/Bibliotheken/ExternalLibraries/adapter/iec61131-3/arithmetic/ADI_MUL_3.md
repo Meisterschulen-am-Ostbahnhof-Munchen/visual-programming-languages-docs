@@ -6,6 +6,7 @@
 *Kein Bild verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `ADI_MUL_3` ist ein generischer Arithmetik-Baustein für die 4diac-IDE. Er dient zur Multiplikation von drei numerischen Eingangswerten, die über standardisierte, unidirektionale Adapter übertragen werden. Durch die Kapselung der mathematischen Operation in einer Adapter-Schnittstelle eignet sich dieser Baustein besonders für modulare und saubere Anwendungsarchitekturen innerhalb des IEC 61499-Standards.
@@ -34,17 +35,17 @@ Da es sich um einen adapterbasierten Funktionsbaustein handelt, besitzt der `ADI
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::ADI`)
-    *   Erster Multiplikand für die Berechnungsoperation.
-*   **IN2** (Typ: `adapter::types::unidirectional::ADI`)
-    *   Zweiter Multiplikand für die Berechnungsoperation.
-*   **IN3** (Typ: `adapter::types::unidirectional::ADI`)
-    *   Dritter Multiplikand für die Berechnungsoperation.
+-   **IN1** (Typ: `adapter::types::unidirectional::ADI`)
+    -   Erster Multiplikand für die Berechnungsoperation.
+-   **IN2** (Typ: `adapter::types::unidirectional::ADI`)
+    -   Zweiter Multiplikand für die Berechnungsoperation.
+-   **IN3** (Typ: `adapter::types::unidirectional::ADI`)
+    -   Dritter Multiplikand für die Berechnungsoperation.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::ADI`)
-    *   Ausgangsadapter, der das mathematische Produkt der drei Eingangswerte liefert.
+-   **OUT** (Typ: `adapter::types::unidirectional::ADI`)
+    -   Ausgangsadapter, der das mathematische Produkt der drei Eingangswerte liefert.
 
 ## Funktionsweise
 
@@ -56,8 +57,8 @@ Das berechnete Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergebe
 
 ## Technische Besonderheiten
 
-*   **Generischer Typ:** Der Baustein basiert auf der generischen Klasse `'GEN_ADI_MUL'`. Dies ermöglicht eine flexible Handhabung unterschiedlicher numerischer Datentypen (z. B. `INT`, `UINT`, `REAL`, `LREAL`), je nachdem, wie die zugrunde liegenden ADI-Adapter implementiert sind.
-*   **Unidirektionale Adapter:** Die Verwendung des Typs `unidirectional::ADI` sorgt für einen klaren Datenfluss in eine Richtung, was die Kopplung zwischen Programmteilen minimiert und die Systemstabilität erhöht.
+-   **Generischer Typ:** Der Baustein basiert auf der generischen Klasse `'GEN_ADI_MUL'`. Dies ermöglicht eine flexible Handhabung unterschiedlicher numerischer Datentypen (z. B. `INT`, `UINT`, `REAL`, `LREAL`), je nachdem, wie die zugrunde liegenden ADI-Adapter implementiert sind.
+-   **Unidirektionale Adapter:** Die Verwendung des Typs `unidirectional::ADI` sorgt für einen klaren Datenfluss in eine Richtung, was die Kopplung zwischen Programmteilen minimiert und die Systemstabilität erhöht.
 
 ## Zustandsübersicht
 
@@ -65,9 +66,9 @@ Der Funktionsbaustein ist als rein mathematischer, zustandsloser Baustein (state
 
 ## Anwendungsszenarien
 
-*   **Volumenberechnungen:** Berechnung des Volumens aus drei Dimensionen (Länge $\times$ Breite $\times$ Höhe).
-*   **Dreiphasen-Messungen:** Leistungs- oder Energieberechnungen, bei denen mehrere Faktoren (z. B. Strom, Spannung und ein Skalierungs-/Korrekturfaktor) miteinander multipliziert werden müssen.
-*   **Mehrstufige Skalierung:** Einlesen eines Sensorwerts, der mit einem Kalibrierungswert und einem zusätzlichen Verstärkungsfaktor multipliziert werden muss.
+-   **Volumenberechnungen:** Berechnung des Volumens aus drei Dimensionen (Länge $\times$ Breite $\times$ Höhe).
+-   **Dreiphasen-Messungen:** Leistungs- oder Energieberechnungen, bei denen mehrere Faktoren (z. B. Strom, Spannung und ein Skalierungs-/Korrekturfaktor) miteinander multipliziert werden müssen.
+-   **Mehrstufige Skalierung:** Einlesen eines Sensorwerts, der mit einem Kalibrierungswert und einem zusätzlichen Verstärkungsfaktor multipliziert werden muss.
 
 ## Vergleich mit ähnlichen Bausteinen
 

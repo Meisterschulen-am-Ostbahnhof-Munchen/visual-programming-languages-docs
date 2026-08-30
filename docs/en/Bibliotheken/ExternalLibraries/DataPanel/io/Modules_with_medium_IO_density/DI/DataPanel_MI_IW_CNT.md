@@ -6,16 +6,16 @@
 The **DataPanel_MI_IW_CNT** is a service interface function block from the DataPanel family of HR Agrartechnik GmbH. It is used to acquire **pulse counter data** via the dedicated hardware inputs 7A and 8A of the underlying bus system. The block encapsulates the initialization, cyclic querying, and event-driven output of the counter values. Typical applications include agricultural machinery where pulse generators (e.g., speed, flow, or position sensors) need to be evaluated. The function block is designed for the IEC 61499-compliant 4diac IDE and uses the service interface patterns defined therein.
 
 | Event | Type | Description |
-|--------|-------|---------------------------------------------------|
+| -------- | ------- | --------------------------------------------------- |
 | INIT | EInit | Initializes the channel (sets hardware parameters) |
 | REQ | Event | Requests a current counter value |
 | Event | Type | Description |
-|-------|-------|-----------------------------------------------------------|
+| ------- | ------- | ----------------------------------------------------------- |
 | INITO | EInit | Acknowledges successful initialization |
 | CNF | Event | Confirmation of a requested REQ operation |
 | IND | Event | Asynchronous indication (triggered by pulse or time interval) |
 | Name | Type | Description |
-|---------------|----------|-----------------------------------------------------------------------------|
+| --------------- | ---------- | ----------------------------------------------------------------------------- |
 | QI | BOOL | Qualifies the INIT/REQ event |
 | PARAMS | STRING | Service parameter (vendor-dependent configuration) |
 | u8SAMember | USINT | Node SA (224..239); Default = `MI::MI_00` |
@@ -23,7 +23,7 @@ The **DataPanel_MI_IW_CNT** is a service interface function block from the DataP
 | ImpulseDelta | WORD | Pulse threshold for asynchronous IND triggering (number of pulses) |
 | TimeDelta | DWORD | Time threshold for asynchronous IND triggering (in ms) |
 | Name | Type | Description |
-|--------|--------|----------------------------------------------|
+| -------- | -------- | ---------------------------------------------- |
 | QO | BOOL | Qualifies the event outputs |
 | STATUS | STRING | Status message (e.g., "OK" or error code) |
 | IN | WORD | Current 16-bit counter value (pulse counter) |
@@ -63,7 +63,7 @@ Error handling is provided via the `STATUS` output and the `QO` flag. If an erro
 The FB (Function Block) cycles through classic service interface states:
 
 | State | Description |
-|-------------|-----------------------------------------------------------------|
+| ------------- | ----------------------------------------------------------------- |
 | **IDLE** | Waiting for INIT or REQ. Hardware is not yet assigned. |
 | **INIT** | INIT received – Parameterization and hardware reservation are in progress. |
 | **ACTIVE** | Initialization successful – Channel is ready for operation. |
@@ -76,6 +76,7 @@ After an error, only a new INIT can return the FB to the IDLE state.
 1. **Speed Measurement:** A radar sensor or magnetic pulse generator delivers rectangular pulses. The module counts the pulses and outputs the value as CNF or IND. `TimeDelta` can be used for time-based speed calculation.
 2. **Flow Measurement:** Pulse flow meters (e.g., Hall effect) are used in agricultural irrigation systems. `ImpulseDelta`Generates an event after each defined quantity of liquid.
 3. **Position Detection:** Distances are measured using an incremental encoder. By combining pulse and time monitoring, both position and speed can be determined.
+
 - **DataPanel_MI_DI:** A purely digital input function block (status 0/1) without a counting function. The IW_CNT extends it with pulse counting and asynchronous event triggering.
 - **DataPanel_MI_AI:** An analog input function block for voltage or current signals. In contrast, the IW_CNT processes only pulses (discrete) and not a continuous value.
 - **CTUD** (IEC 61499 standard counter): This standard function block can count forwards/backwards but does not require low-level initialization. The DataPanel_MI_IW_CNT is specifically connected to the DataPanel hardware and offers the IND function, which is often missing in standard function blocks.
@@ -86,7 +87,7 @@ The **DataPanel_MI_IW_CNT** is a powerful service interface function block for t
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

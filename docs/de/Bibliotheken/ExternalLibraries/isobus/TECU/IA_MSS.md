@@ -3,6 +3,7 @@
 ![IA_MSS](./IA_MSS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **IA_MSS** stellt einen ISOBUS-Adapter für die maschinenselektierte Geschwindigkeit (Machine Selected Speed, MSS) dar. Er kapselt die Kommunikation mit dem zugrunde liegenden ISOBUS-Protokoll (PGN 61474) und stellt die ermittelten Werte für Geschwindigkeit, zurückgelegte Distanz und Timeout-Status über standardisierte Adapter-Schnittstellen bereit. Der Baustein ist typischerweise in einem ISOBUS-fähigen Steuergerät (TECU) eingebettet und ermöglicht eine einfache Integration in IEC 61499-basierte Automatisierungssysteme.
@@ -37,7 +38,7 @@ Der Funktionsblock **IA_MSS** stellt einen ISOBUS-Adapter für die maschinensele
 ### **Adapter**
 
 | Adapter | Typ | Beschreibung |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | SPEED | adapter::types::unidirectional::AUI | Ausgang für die maschinenselektierte Geschwindigkeit (Wert vom Typ `AUI`). |
 | DISTANCE | adapter::types::unidirectional::AUDI | Ausgang für die maschinenselektierte Distanz (Wert vom Typ `AUDI`). |
 | TIMEOUT | adapter::types::unidirectional::AX | Ausgang für den Timeout-Status (Wert vom Typ `AX`). |
@@ -62,7 +63,7 @@ Der Adapter stellt also eine saubere Trennung zwischen der ISOBUS-Kommunikation 
 Da der Baustein keinen eigenen Ausführungszustand (ECC) besitzt, ergibt sich der Zustand aus dem Zusammenspiel von Eingangs- und Ausgangsereignissen:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **Nicht initialisiert** | Nach dem Systemstart oder nach einer fehlgeschlagenen Initialisierung. `INIT` kann ausgelöst werden. |
 | **Initialisiert** | Nach erfolgreichem Durchlauf von `INIT` → `INITO` mit gesetztem `QO`. Die Adapter liefern gültige Werte. |
 | **Fehler/Timeout** | Falls die interne Initialisierung fehlschlägt oder ein Timeout erkannt wird, wird dies über `STATUS` und den `TIMEOUT`-Adapter signalisiert. |

@@ -3,6 +3,7 @@
 ![ARRAY2VALUES_32_BYTE](ARRAY2VALUES_32_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ARRAY2VALUES_32_BYTE` splits a `BYTE` array of size 32 into 32 individual scalar variables `OUT_1`…`OUT_32`. It belongs to the generic `GEN_ARRAY2ARRAY` family (cf. [ARRAY2VALUES_2_LREAL](ARRAY2VALUES_2_LREAL.md)) and converts array data into discrete individual values.

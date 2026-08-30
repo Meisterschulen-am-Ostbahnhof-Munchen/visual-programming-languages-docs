@@ -3,6 +3,7 @@
 ![SPLIT_DWORD_INTO_WORDS](https://github.com/user-attachments/assets/393aad99-3222-4c5f-981b-4795868b5052)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_DWORD_INTO_WORDS` dient dazu, ein 32-Bit DWORD in zwei 16-Bit WORDS aufzuteilen. Diese Funktionalität ist besonders nützlich, wenn mit Daten gearbeitet wird, die als DWORD vorliegen, aber in einzelnen WORD-Teilen weiterverarbeitet werden müssen.
@@ -66,4 +67,4 @@ Der `SPLIT_DWORD_INTO_WORDS`-Funktionsblock bietet eine einfache und effiziente 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

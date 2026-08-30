@@ -3,6 +3,7 @@
 ![XOR_3](https://user-images.githubusercontent.com/116869307/214143735-3c0a538b-d39a-47e0-9cd3-1602d3640896.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The XOR_3 function block is a generic function block for calculating bitwise XOR operations with three inputs. It implements the logical exclusive OR operation at the bit level according to the IEC 61131-3 standard and can be used with various bit data types.
@@ -65,7 +66,7 @@ Compared to XOR_3 offers the ability to process three inputs simultaneously, unl
 
 ## 🛠️ Related Exercises
 
-* [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
+- [Exercise_002a7_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a7_AX.md)
 
 ## Conclusion
 
@@ -75,6 +76,6 @@ The XOR_3 function block provides an efficient and flexible solution for bitwise
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

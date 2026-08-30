@@ -42,9 +42,11 @@ The function block performs the following operations when the REQ event occurs:
 1. **Reset (R)**: Sets the count value (CV) to 0 if R is active.
 2. **Load (LD)**: Loads the preset value (PV) into the count value (CV) if LD is active.
 3. **Count (CU/CD)**:
+
 - If CU is active and the count value has not reached the maximum value (2147483647), the count value is incremented by 1.
 - If CD is active and the count value has not reached the minimum value (-2147483648), the count value is decremented by 1.
-4. **Setting Outputs**:
+1. **Setting Outputs**:
+
 - QU is set to TRUE when the counter value reaches or exceeds the preset value.
 - QD is set to TRUE when the counter value reaches or falls below 0.
 

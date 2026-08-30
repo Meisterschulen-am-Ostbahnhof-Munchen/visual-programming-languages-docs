@@ -3,6 +3,7 @@
 ![E_D_FF_ANY_ecc](./E_D_FF_ANY_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_D_FF_ANY` is the generically-typed variant of `E_D_FF`: while `E_D_FF` only latches `BOOL` values, `E_D_FF_ANY` accepts an input `D` of data type `ANY` and can therefore be used as a clocked latch with built-in change detection for arbitrary data types (e.g. `TIME`, `DINT`, `REAL`, `STRING`).

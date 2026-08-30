@@ -3,9 +3,11 @@
 ![ASSEMBLE_AB_FROM_AQ](./ASSEMBLE_AB_FROM_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AB_FROM_AQ** combines four **AQ** quarter adapters (quarter bytes) into a single **AB** byte adapter. It encapsulates the logic for assembling a complete byte from four incoming 4-bit values and providing it via a standardized adapter interface. The block is specifically designed for use in distributed automation systems according to IEC 61499.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,7 +38,7 @@ Data is read in via the **adapter sockets** in the form of 4-bit values (nibbles
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AQ` | Socket (Input) | `QUARTER_BYTE_00` .. `QUARTER_BYTE_03` | Four quarter adapters, each providing a nibble and an event. |
 | `adapter::types::unidirectional::AB` | Plug (Output) | `OUT` | Byte adapter providing the assembled byte and an event. |
 

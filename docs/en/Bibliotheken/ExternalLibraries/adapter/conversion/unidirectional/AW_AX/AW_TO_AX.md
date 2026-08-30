@@ -3,9 +3,11 @@
 ![AW_TO_AX](./AW_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block **AW_TO_AX** converts an **AW adapter** (WORD) into an **AX adapter** (BOOL). It checks whether the 16-bit value received via the AW adapter is non-zero and outputs the result as a Boolean signal via the AX adapter.
+
 ## Interface Structure
 
 This function block does not have traditional event or data inputs/outputs, but only adapter interfaces.
@@ -29,7 +31,7 @@ No separate data outputs. Data is sent via the plug adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|--------|----------------------------------------|----------|--------------------------|
+| -------- | ---------------------------------------- | ---------- | -------------------------- |
 | AW_IN | adapter::types::unidirectional::AW | Socket | WORD adapter input |
 | AX_OUT | adapter::types::unidirectional::AX | Plug | BOOL adapter output |
 
@@ -48,6 +50,7 @@ This behavior is event-driven and follows the IEC 61499 execution semantics: An 
 
 - If **AW_IN.D1 ≠ 0**, an event is sent to **AX_OUT.E1** and the data value **AX_OUT.D1** is set to **TRUE**.
 -
+
 ## Technical Features
 
 - The function block is implemented as a **composite function block**, meaning its functionality is represented by an internal network consisting of a single **F_NE** function block.
@@ -78,4 +81,4 @@ The **AW_TO_AX** is a compact yet useful composite block for converting Word ada
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

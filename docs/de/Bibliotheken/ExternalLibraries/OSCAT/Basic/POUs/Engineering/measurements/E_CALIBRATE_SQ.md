@@ -5,6 +5,7 @@
 ![E_CALIBRATE_SQ](E_CALIBRATE_SQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `E_CALIBRATE_SQ` ist die Variante von [E_CALIBRATE](E_CALIBRATE.md) mit **erzwungener Reihenfolge**: Die Skalierungskalibrierung (`EICS`) ist erst erreichbar, nachdem die Offset-Kalibrierung (`EICO`) mindestens einmal durchlaufen wurde. Zusätzlich verwendet er eine robustere Formel, die `Y` nach der Offset-Kalibrierung unabhängig vom aktuellen `SCALE`-Wert korrekt liefert.
@@ -55,7 +56,7 @@
 **Beispiel** (4-20-mA-Drucksensor über logiBUS, normiert auf `0.0..1.0`, gewünschter Ausgabebereich `0.0..500.0`):
 
 | Schritt | Aktion | Ergebnis |
-|---|---|---|
+| --- | --- | --- |
 | 1 | 4 mA anlegen (`X=0.0`), `Y_Offset=0.0`, `EICO` feuern | `OFFSET = 0/1 - 0 = 0` |
 | 2 | 20 mA anlegen (`X=1.0`), `Y_Scale=500.0`, `EICS` feuern | `SCALE = 500/(1+0) = 500` |
 
@@ -87,7 +88,7 @@ WAIT_CS --EICS----> CS       --1--> START     (Skalierung kalibriert, fertig)
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | [CALIBRATE](CALIBRATE.md) | [E_CALIBRATE](E_CALIBRATE.md) | `E_CALIBRATE_SQ` |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | CO-Formel | `OFFSET := Y_Offset - X` | `OFFSET := Y_Offset - X` | `OFFSET := Y_Offset / SCALE - X` |
 | Y nach CO | korrekt nur bei `SCALE = 1` | korrekt nur bei `SCALE = 1` | immer korrekt |
 | Reihenfolge erzwungen | Nein (`SimpleFB`) | Nein (ECC, beide aus `REQ`) | Ja (ECC: `EICS` nur aus `WAIT_CS`) |

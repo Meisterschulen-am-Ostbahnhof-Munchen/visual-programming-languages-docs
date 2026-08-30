@@ -3,6 +3,7 @@
 ![Uebung_215_AI_network](./Uebung_215_AI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Rückwärtszähler (Down-Counter) nach IEC 61131-3 mit Adapter-Schnittstelle (AI_FB_CTD) und gibt den aktuellen Zählerwert auf einem Terminal aus. Der Zähler wird über digitale Eingänge dekrementiert und geladen.
@@ -95,4 +96,4 @@ Diese Übung vermittelt den Umgang mit einem IEC 61131-3 Rückwärtszähler (CTD
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

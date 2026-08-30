@@ -2,13 +2,14 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ![SPLIT_WORD_INTO_QUARTERS](https://github.com/user-attachments/assets/f26e7474-c9bf-4fb4-923f-d8c2ad4ac48e)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_WORD_INTO_QUARTERS` dient dazu, ein 16-Bit-Wort in acht 2-Bit-Quarter-Bytes aufzuteilen. Dies ist besonders nützlich, wenn komprimierte Daten verarbeitet oder bestimmte Bitmuster extrahiert werden müssen.

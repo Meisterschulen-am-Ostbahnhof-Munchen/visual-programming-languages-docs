@@ -17,5 +17,4 @@ Zusätzlich bietet der Baustein einen Eingang `REQ`, um den Anzeige-Refresh exte
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_012a](Uebung_012a.md)
-
+- [Uebung_012a](Uebung_012a.md)

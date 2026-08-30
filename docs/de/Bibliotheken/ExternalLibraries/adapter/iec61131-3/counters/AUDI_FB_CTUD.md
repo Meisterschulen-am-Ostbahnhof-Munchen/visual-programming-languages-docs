@@ -3,6 +3,7 @@
 ![AUDI_FB_CTUD](./AUDI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AUDI_FB_CTUD** ist ein Aufwärts-/Abwärtszähler (Up-Down Counter) mit einem Wertebereich für vorzeichenlose 32‑Bit‑Ganzzahlen (UDINT). Er ist als reine Adapter‑Version realisiert, d. h. alle Ein‑ und Ausgänge werden über Adapter‑Schnittstellen bereitgestellt. Der Baustein kapselt den standardisierten IEC‑61131‑Funktionsblock `FB_CTUD_UDINT` und erweitert dessen Funktionalität um eine adapterbasierte Anbindung. Bei jedem auslösenden Ereignis (CU, CD, R, LD oder PV) werden alle Ausgangsadapter zyklisch aktualisiert. Wenn eine änderungsgesteuerte (flankensensitive) Auslösung benötigt wird, ist die Verwendung eines `AX_D_FF` als Filterbaustein empfohlen.
@@ -32,10 +33,10 @@ Auf oberster Ebene existieren keine direkten Daten-Ausgänge. Die Ergebnisdaten 
 ### **Adapter**
 
 | Richtung | Name | Typ | Kommentar |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | **Socket (Eingang)** | `CU` | `adapter::types::unidirectional::AX` | Count up – Ereignis und Daten (BOOL) zum Hochzählen |
 | **Socket (Eingang)** | `CD` | `adapter::types::unidirectional::AX` | Count down – Ereignis und Daten (BOOL) zum Herunterzählen |
-| **Socket (Eingang)** | `R`  | `adapter::types::unidirectional::AX` | Reset – Ereignis und Daten (BOOL) zum Rücksetzen des Zählers |
+| **Socket (Eingang)** | `R` | `adapter::types::unidirectional::AX` | Reset – Ereignis und Daten (BOOL) zum Rücksetzen des Zählers |
 | **Socket (Eingang)** | `LD` | `adapter::types::unidirectional::AX` | Load – Ereignis und Daten (BOOL) zum Laden des Preset-Wertes |
 | **Socket (Eingang)** | `PV` | `adapter::types::unidirectional::AUDI` | Preset value – Ereignis und Daten (UDINT) für den Vorgabewert |
 | **Plug (Ausgang)** | `QU` | `adapter::types::unidirectional::AX` | Output Up – Ereignis und Daten (BOOL), aktiv wenn der aktuelle Zählwert den Wert 0 erreicht |
@@ -60,7 +61,7 @@ Der `AUDI_FB_CTUD` nutzt intern den Baustein `FB_CTUD_UDINT` aus der IEC‑61131
 Der interne `FB_CTUD_UDINT` durchläuft folgende Zustände, abhängig von den eingehenden Befehlen:
 
 | Bedingung | Aktion |
-|-----------|--------|
+| ----------- | -------- |
 | `CU` = TRUE (steigende Flanke) und `CD` = FALSE | Zähler erhöht sich um 1 |
 | `CD` = TRUE (steigende Flanke) und `CU` = FALSE | Zähler verringert sich um 1 |
 | `R` = TRUE (steigende Flanke) | Zähler wird auf 0 zurückgesetzt |
@@ -79,7 +80,7 @@ Der interne `FB_CTUD_UDINT` durchläuft folgende Zustände, abhängig von den ei
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | `AUDI_FB_CTUD` | Standard `CTUD` (IEC 61131) |
-|---------|----------------|----------------------------|
+| --------- | ---------------- | ---------------------------- |
 | **Schnittstelle** | Reine Adapter (Sockets/Plugs) | Direkte Ereignis- und Datenein‑/ausgänge |
 | **Datenformat** | UDINT (über AUDI‑Adapter) | UDINT (direkt) |
 | **Ereignisverhalten** | Jedes eingehende Event feuert alle Ausgänge | Ereignis wird nur bei relevanten Änderungen ausgegeben |
@@ -94,4 +95,4 @@ Der `AUDI_FB_CTUD` ist ein leistungsfähiger Aufwärts-/Abwärtszähler, der dur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

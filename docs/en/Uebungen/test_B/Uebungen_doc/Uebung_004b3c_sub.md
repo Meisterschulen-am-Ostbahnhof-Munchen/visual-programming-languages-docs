@@ -4,6 +4,7 @@
 *Image of the exercise not available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **sub-application for a lockable toggle flip-flop with an AE2 adapter interface**.
@@ -37,6 +38,7 @@ No other sub-applications or sub-blocks are included.
 The E_SR stores a Boolean state. An event at input `S` sets `Q = TRUE`, an event at input `R` sets `Q = FALSE`. An event is output at output `EO` after each change.
 
 An event is output at input `EO`.
+
 #### E_SWITCH_I1 (Event Switch)
 
 - **Type**: `iec61499::events::E_SWITCH`
@@ -78,12 +80,13 @@ The sub-application implements a **lockable toggle function** with the following
 
 1. **Input event `IND`** reaches the function block `E_SWITCH_I1` at the event input `EI`.
 2. The control input `G` of the switch is fed by the current state `Q` of `E_SR`.
+
 - If `Q = FALSE` is off, the event is routed via `EO0` to the `S` input of `E_SR` → `Q` is set (toggle off → on).
 - If `Q = TRUE` is on, the event is routed via `EO1` to the `R` input of `E_SR` → `Q` is reset (toggle on → off).
 
 If `Q = TRUE` is on, the event is routed via `EO1` to the `R` input of `E_SR` → `Q` is reset (toggle on → off). 3. After each state change, `E_SR` sends an event to `EO` (output of the sub-app) and updates `Q`.
 
-4. **Locking via the AE2 adapter**:
+1. **Locking via the AE2 adapter**:
 
 In addition to the direct connections, the adapter converters are controlled:
 
@@ -118,6 +121,6 @@ It is suitable as a basic building block for more complex control systems that r
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

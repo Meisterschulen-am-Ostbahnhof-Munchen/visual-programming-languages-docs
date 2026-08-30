@@ -20,9 +20,9 @@ Das Ziel dieser Übung ist die Anwendung des `AX_TP` Bausteins. Ein Impulsglied 
 
 ![Uebung_020f_AX_network](./Uebung_020f_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Der Auslöser.
-  * **`AX_TP`**: [cite_start]Erzeugt bei einer steigenden Flanke am Eingang einen Impuls der Länge `PT` (hier 5 Sekunden) am Ausgang `Q`[cite: 1].
-  * **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Der Aktor.
+  - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Der Auslöser.
+  - **`AX_TP`**: [cite_start]Erzeugt bei einer steigenden Flanke am Eingang einen Impuls der Länge `PT` (hier 5 Sekunden) am Ausgang `Q`[cite: 1].
+  - **`DigitalOutput_Q1`**: Typ `logiBUS_QXA`. Der Aktor.
 
 -----
 

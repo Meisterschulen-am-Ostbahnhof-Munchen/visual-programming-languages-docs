@@ -20,9 +20,9 @@ Kennenlernen der spezifischen Splitter-Bausteine. `E_SPLIT` ist oft der generisc
 
 ![Uebung_004a8_AX_network](./Uebung_004a8_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Taster.
-  * **`E_SPLIT_2`**: Verteilt Eingang `EI` sequenziell auf `EO1` und `EO2`.
-  * **`AX_T_FF_Q1` & `Q2`**: Zwei Flip-Flops für die Ausgänge `Q1` und `Q2`.
+  - **`DigitalInput_CLK_I1`**: Taster.
+  - **`E_SPLIT_2`**: Verteilt Eingang `EI` sequenziell auf `EO1` und `EO2`.
+  - **`AX_T_FF_Q1` & `Q2`**: Zwei Flip-Flops für die Ausgänge `Q1` und `Q2`.
 
 -----
 

@@ -3,6 +3,7 @@
 ![E_F_TRIG Diagram](https://user-images.githubusercontent.com/113907528/204898671-3eb058ff-7481-4fc8-a2d4-8cf50f349cee.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **E_F_TRIG** (Falling Edge Trigger) is a fundamental function block of the IEC 61499 standard for detecting falling signal edges. This block plays an important role in event detection and signal processing in industrial control systems.
@@ -38,6 +39,7 @@ The internal logic of the function block (as of `events-3.0.0`) is incorrect and
 **The internal logic of the function block (as of `events-3.0.0`)** is incorrect and actually implements a **rising edge detector (`E_R_TRIG`)** instead of a falling one.** The `EO` event is triggered when `QI` transitions from `FALSE` to `TRUE`.**
 
 **
+
 ## Technical Features
 
 ✔ **Event-driven**: The check only occurs when a `EI` event occurs.
@@ -53,14 +55,14 @@ The internal logic of the function block (as of `events-3.0.0`) is incorrect and
 ## ⚖️ Comparison with similar function blocks
 
 | Feature | E_F_TRIG (this) | E_R_TRIG | E_SWITCH |
-|---------------|------------------|----------|----------|
+| --------------- | ------------------ | ---------- | ---------- |
 | Detected Edge | Falling (named), Rising (implemented) | Rising | - |
 | Event Control | Yes | Yes | Yes |
 | Principle | Edge Detector | Edge Detector | Event Switch |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Exercise_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Conclusion
 

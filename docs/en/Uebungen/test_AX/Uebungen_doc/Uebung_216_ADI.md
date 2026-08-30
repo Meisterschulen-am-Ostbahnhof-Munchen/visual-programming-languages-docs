@@ -3,6 +3,7 @@
 ![Uebung_216_ADI_network](./Uebung_216_ADI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a countdown counter according to IEC 61131-3 based on the adapter function block `ADI_FB_CTD`. The counter uses the data type `DINT` and outputs the current counter value as well as the counter end signal. To visualize the counter value, it is output via a terminal block, which requires an adapter conversion.
@@ -49,6 +50,7 @@ This exercise demonstrates the use of adapter interfaces to connect various func
 - **Parameters**: None
 - **Function**: Converts the ADI interface (DINT) to an AUDI interface (Analog Universal Data Interface). **Important:** This conversion does not support negative numbers – the counter value can only be displayed as a positive number or zero.
 ...
+
 ### Q_NumericValue_AUDI
 
 - **Type**: `isobus::UT::Q::Q_NumericValue_AUDI`
@@ -63,25 +65,26 @@ Control is achieved via event and adapter connections:
 
 The event output `INITO` of the function block `Input_LD` triggers the function block `ADI_DINT_TO_DI`. This loads the constant `DINT#10` once into `ADI_FB_CTD` (via the adapter connection `ADI_DINT_TO_DI.ADI_OUT` → `ADI_FB_CTD.PV`).
 
-2. **Count Pulses (CD)**:
+1. **Count Pulses (CD)**:
 
 The adapter output `Input_CD.IN` is connected to the adapter input `ADI_FB_CTD.CD`. Each rising edge at input I1 increments the counter by one.
 
-3. **Load Signal (LD)**:
+1. **Load Signal (LD)**:
 
 The adapter output `Input_LD.IN` is connected to the adapter input `ADI_FB_CTD.LD`. A signal at I2 loads the counter with the current default value (10).
 
-4. **Counter End (Q)**:
+1. **Counter End (Q)**:
 
 The adapter output `ADI_FB_CTD.Q` leads to the adapter input `Output_Q1.OUT`. When zero is reached, output Q1 is activated.
 
-5. **Counter Reading Output**:
+1. **Counter Reading Output**:
 
 The adapter output `ADI_FB_CTD.CV` (current counter reading) is converted via `ADI_TO_AUDI` and forwarded to the terminal block `Q_NumericValue_AUDI`. The counter reading appears on the terminal.
 
 **Note**: The comment in the network indicates that the block `ADI_TO_AUDI` cannot process negative numbers. Since the down counter only counts to zero, this case does not occur in this exercise. For more advanced applications, a more suitable conversion would need to be chosen.
 
 **Note**:**
+
 ## Summary
 
 This exercise teaches how to use the IEC 61131-3 reverse counter as an adapter module. It demonstrates:
@@ -97,6 +100,6 @@ The setup is implemented as a sub-application and can be directly loaded and tes
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

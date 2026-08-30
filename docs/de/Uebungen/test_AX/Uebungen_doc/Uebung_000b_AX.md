@@ -3,6 +3,7 @@
 ![Uebung_000b_AX_network](./Uebung_000b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung von **Adapter-Funktionsbausteinen** zur Realisierung einer logischen UND-Verknüpfung. Innerhalb der SubApp werden Boolesche Werte über Adapterverbindungen zwischen Konvertierungsbausteinen und einem logischen UND-Baustein ausgetauscht. Sie lernen die grundlegende Struktur von Adaptern und deren Zusammenspiel in einer SubApp kennen.
@@ -16,11 +17,11 @@ Die SubApp besteht aus drei internen Funktionsbausteinen:
 ### AX_BOOL_TO_X (zweimal instanziiert)
 
 - **Typ**: `adapter::conversion::unidirectional::AX_BOOL_TO_X`
-- **Parameter**:  
+- **Parameter**:
   - `OUT` = `TRUE` (setzt den Ausgang auf den Wert **TRUE**)
 - **Funktion**: Konvertiert einen Booleschen Wert (über Parameter oder Eingang) in den Adapter-Datentyp `X`. In dieser Übung wird der Ausgang direkt auf `TRUE` gesetzt, sodass der Baustein als Konstantengeber fungiert.
-- **Verbindungen**:  
-  - `AX_BOOL_TO_X.AX_OUT` → `AX_AND_2.IN1`  
+- **Verbindungen**:
+  - `AX_BOOL_TO_X.AX_OUT` → `AX_AND_2.IN1`
   - `AX_BOOL_TO_X_1.AX_OUT` → `AX_AND_2.IN2`
 
 ### AX_AND_2
@@ -28,8 +29,8 @@ Die SubApp besteht aus drei internen Funktionsbausteinen:
 - **Typ**: `adapter::booleanOperators::AX_AND_2`
 - **Parameter**: Keine
 - **Funktion**: Führt eine logische UND-Verknüpfung der beiden Eingänge (`IN1`, `IN2`) durch. Der Ausgang (`OUT`) wird nach Ausführung der UND-Operation gesetzt.
-- **Verbindungen**:  
-  - Eingänge: von `AX_BOOL_TO_X` (IN1) und `AX_BOOL_TO_X_1` (IN2)  
+- **Verbindungen**:
+  - Eingänge: von `AX_BOOL_TO_X` (IN1) und `AX_BOOL_TO_X_1` (IN2)
   - Ausgang (`OUT`) → `AX_X_TO_BOOL.AX_IN`
 
 ### AX_X_TO_BOOL
@@ -37,7 +38,7 @@ Die SubApp besteht aus drei internen Funktionsbausteinen:
 - **Typ**: `adapter::conversion::unidirectional::AX_X_TO_BOOL`
 - **Parameter**: Keine
 - **Funktion**: Konvertiert einen Wert des Adapter-Datentyps `X` zurück in einen Booleschen Wert. Dies stellt den Ausgang der Gesamtschaltung dar.
-- **Verbindungen**:  
+- **Verbindungen**:
   - Eingang (`AX_IN`) von `AX_AND_2.OUT`
 
 ## Programmablauf und Verbindungen
@@ -71,4 +72,4 @@ Die Übung `Uebung_000b_AX` zeigt eine einfache UND-Logik, die ausschließlich m
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

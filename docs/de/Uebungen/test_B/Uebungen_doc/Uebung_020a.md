@@ -20,9 +20,9 @@ Verständnis der Flankenerkennung. Es wird gezeigt, wie man mit einer Ereignis-W
 
 ![Uebung_020a_network](./Uebung_020a_network.svg)
 
-  * **`DigitalInput_I1`**: Standard-Eingang. Liefert ein Event bei jeder Änderung.
-  * **`E_SWITCH`**: Leitet das Event je nach Pegel an `S` oder `R` weiter.
-  * **`E_RS`**: Der Ereignis-Speicher.
+  - **`DigitalInput_I1`**: Standard-Eingang. Liefert ein Event bei jeder Änderung.
+  - **`E_SWITCH`**: Leitet das Event je nach Pegel an `S` oder `R` weiter.
+  - **`E_RS`**: Der Ereignis-Speicher.
 
 -----
 

@@ -3,6 +3,7 @@
 ![GET_ANY](./GET_ANY.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_ANY** liest einen beliebigen Wert (Typ `ANY`) aus einer InOut-Variable und stellt diesen als gepufferten Ausgangswert bereit. Er dient dazu, den aktuellen Wert einer variablen Quelle zu einem bestimmten Zeitpunkt zu erfassen und für nachfolgende Verarbeitungsschritte zwischenzuspeichern.

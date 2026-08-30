@@ -3,6 +3,7 @@
 ![AB_SPLIT_8](./AB_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AB_SPLIT_8** dient der Vervielfachung eines eingehenden Adaptersignals vom Typ `AB` auf acht gleichartige Ausgänge. Er fungiert als passiver Verteiler (Splitter) für den unidirektionalen Datenaustausch über die standardisierte Schnittstelle `adapter::types::unidirectional::AB`. Der Baustein ist als generischer Funktionblock ausgelegt und wird typischerweise in der Automatisierungstechnik eingesetzt, um ein AB-Signal parallel an mehrere nachfolgende Komponenten weiterzuleiten.
@@ -81,5 +82,5 @@ Der **AB_SPLIT_8** ist ein einfacher, aber effektiver Funktionsblock zur Verviel
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

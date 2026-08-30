@@ -5,6 +5,7 @@
 ![sequence_ET_05_ecc](./sequence_ET_05_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `sequence_ET_05` implementiert eine sequenzielle Steuerung mit fünf definierten Zuständen (State_01 bis State_05) und einem Startzustand (START). Der Übergang zwischen den Zuständen kann entweder durch ein externes Ereignis oder nach Ablauf einer einstellbaren Zeit erfolgen. Der Baustein ist für Anwendungen konzipiert, die eine schrittweise Abfolge von Aktionen mit flexiblen Übergangsbedingungen erfordern.
@@ -15,43 +16,43 @@ Der Funktionsblock `sequence_ET_05` implementiert eine sequenzielle Steuerung mi
 
 ### **Ereignis-Eingänge**
 
-*   **`START_S1`**: Wechselt vom Zustand START oder State_00 in den Zustand State_01. Überträgt die Zeitparameter für alle Zustandsübergänge.
-*   **`S1_S2`**: Manueller Übergang von State_01 zu State_02.
-*   **`S2_S3`**: Manueller Übergang von State_02 zu State_03.
-*   **`S3_S4`**: Manueller Übergang von State_03 zu State_04.
-*   **`S4_S5`**: Manueller Übergang von State_04 zu State_05.
-*   **`S5_START`**: Manueller Übergang von State_05 zurück in den Zustand State_00 (repräsentiert START).
-*   **`RESET`**: Führt von jedem beliebigen Zustand sofort zum Zustand State_00 (START) zurück und deaktiviert alle Ausgänge.
+-   **`START_S1`**: Wechselt vom Zustand START oder State_00 in den Zustand State_01. Überträgt die Zeitparameter für alle Zustandsübergänge.
+-   **`S1_S2`**: Manueller Übergang von State_01 zu State_02.
+-   **`S2_S3`**: Manueller Übergang von State_02 zu State_03.
+-   **`S3_S4`**: Manueller Übergang von State_03 zu State_04.
+-   **`S4_S5`**: Manueller Übergang von State_04 zu State_05.
+-   **`S5_START`**: Manueller Übergang von State_05 zurück in den Zustand State_00 (repräsentiert START).
+-   **`RESET`**: Führt von jedem beliebigen Zustand sofort zum Zustand State_00 (START) zurück und deaktiviert alle Ausgänge.
 
 ### **Ereignis-Ausgänge**
 
-*   **`CNF`**: Ausführungsbestätigung. Wird bei jedem Zustandswechsel ausgelöst und liefert die neue Zustandsnummer (`STATE_NR`).
-*   **`EO_S1`**: Wird beim Eintritt in State_01 ausgelöst und liefert den aktiven Ausgang `DO_S1`.
-*   **`EO_S2`**: Wird beim Eintritt in State_02 ausgelöst und liefert den aktiven Ausgang `DO_S2`.
-*   **`EO_S3`**: Wird beim Eintritt in State_03 ausgelöst und liefert den aktiven Ausgang `DO_S3`.
-*   **`EO_S4`**: Wird beim Eintritt in State_04 ausgelöst und liefert den aktiven Ausgang `DO_S4`.
-*   **`EO_S5`**: Wird beim Eintritt in State_05 ausgelöst und liefert den aktiven Ausgang `DO_S5`.
+-   **`CNF`**: Ausführungsbestätigung. Wird bei jedem Zustandswechsel ausgelöst und liefert die neue Zustandsnummer (`STATE_NR`).
+-   **`EO_S1`**: Wird beim Eintritt in State_01 ausgelöst und liefert den aktiven Ausgang `DO_S1`.
+-   **`EO_S2`**: Wird beim Eintritt in State_02 ausgelöst und liefert den aktiven Ausgang `DO_S2`.
+-   **`EO_S3`**: Wird beim Eintritt in State_03 ausgelöst und liefert den aktiven Ausgang `DO_S3`.
+-   **`EO_S4`**: Wird beim Eintritt in State_04 ausgelöst und liefert den aktiven Ausgang `DO_S4`.
+-   **`EO_S5`**: Wird beim Eintritt in State_05 ausgelöst und liefert den aktiven Ausgang `DO_S5`.
 
 ### **Daten-Eingänge**
 
-*   **`DT_S1_S2`** (TIME): Verweilzeit in State_01 vor automatischem Übergang zu State_02. Initialwert: `NO_TIME` (deaktiviert).
-*   **`DT_S2_S3`** (TIME): Verweilzeit in State_02 vor automatischem Übergang zu State_03. Initialwert: `NO_TIME` (deaktiviert).
-*   **`DT_S3_S4`** (TIME): Verweilzeit in State_03 vor automatischem Übergang zu State_04. Initialwert: `NO_TIME` (deaktiviert).
-*   **`DT_S4_S5`** (TIME): Verweilzeit in State_04 vor automatischem Übergang zu State_05. Initialwert: `NO_TIME` (deaktiviert).
-*   **`DT_S5_START`** (TIME): Verweilzeit in State_05 vor automatischem Übergang zurück zu State_00 (START). Initialwert: `NO_TIME` (deaktiviert).
+-   **`DT_S1_S2`** (TIME): Verweilzeit in State_01 vor automatischem Übergang zu State_02. Initialwert: `NO_TIME` (deaktiviert).
+-   **`DT_S2_S3`** (TIME): Verweilzeit in State_02 vor automatischem Übergang zu State_03. Initialwert: `NO_TIME` (deaktiviert).
+-   **`DT_S3_S4`** (TIME): Verweilzeit in State_03 vor automatischem Übergang zu State_04. Initialwert: `NO_TIME` (deaktiviert).
+-   **`DT_S4_S5`** (TIME): Verweilzeit in State_04 vor automatischem Übergang zu State_05. Initialwert: `NO_TIME` (deaktiviert).
+-   **`DT_S5_START`** (TIME): Verweilzeit in State_05 vor automatischem Übergang zurück zu State_00 (START). Initialwert: `NO_TIME` (deaktiviert).
 
 ### **Daten-Ausgänge**
 
-*   **`STATE_NR`** (SINT): Aktuelle Zustandsnummer (START = 0, State_01 = 1, ..., State_05 = 5).
-*   **`DO_S1`** (BOOL): Ist `TRUE`, wenn State_01 aktiv ist.
-*   **`DO_S2`** (BOOL): Ist `TRUE`, wenn State_02 aktiv ist.
-*   **`DO_S3`** (BOOL): Ist `TRUE`, wenn State_03 aktiv ist.
-*   **`DO_S4`** (BOOL): Ist `TRUE`, wenn State_04 aktiv ist.
-*   **`DO_S5`** (BOOL): Ist `TRUE`, wenn State_05 aktiv ist.
+-   **`STATE_NR`** (SINT): Aktuelle Zustandsnummer (START = 0, State_01 = 1, ..., State_05 = 5).
+-   **`DO_S1`** (BOOL): Ist `TRUE`, wenn State_01 aktiv ist.
+-   **`DO_S2`** (BOOL): Ist `TRUE`, wenn State_02 aktiv ist.
+-   **`DO_S3`** (BOOL): Ist `TRUE`, wenn State_03 aktiv ist.
+-   **`DO_S4`** (BOOL): Ist `TRUE`, wenn State_04 aktiv ist.
+-   **`DO_S5`** (BOOL): Ist `TRUE`, wenn State_05 aktiv ist.
 
 ### **Adapter**
 
-*   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Wird intern für die zeitgesteuerten Zustandsübergänge verwendet. Der FB startet und stoppt den Timer und setzt dessen Laufzeit (`DT`).
+-   **`timeOut`** (Plug, Typ: `iec61499::events::ATimeOut`): Wird intern für die zeitgesteuerten Zustandsübergänge verwendet. Der FB startet und stoppt den Timer und setzt dessen Laufzeit (`DT`).
 
 ## Funktionsweise
 
@@ -72,25 +73,25 @@ Das `RESET`-Ereignis führt immer in den speziellen Zustand `sRESET`, in dem all
 
 ## Technische Besonderheiten
 
-*   **Flexible Übergänge:** Jeder Zustandsübergang kann unabhängig als ereignis- oder zeitgesteuert konfiguriert werden. Die Zeitsteuerung wird deaktiviert, indem der entsprechende `DT_`-Eingang auf die Konstante `NO_TIME` gesetzt wird.
-*   **Sofortiger Reset:** Der `RESET`-Eingang hat jederzeit Priorität und unterbricht die aktuelle Sequenz sofort.
-*   **Klar definierte Schnittstelle:** Die Zustandsnummer und die aktiven Ausgänge sind stets als Datenausgänge verfügbar und werden bei jedem Schritt per Ereignis bestätigt.
-*   **Adapter-basierte Zeitsteuerung:** Die Nutzung eines standardisierten TimeOut-Adapters macht die interne Zeitverwaltung robust und wiederverwendbar.
+-   **Flexible Übergänge:** Jeder Zustandsübergang kann unabhängig als ereignis- oder zeitgesteuert konfiguriert werden. Die Zeitsteuerung wird deaktiviert, indem der entsprechende `DT_`-Eingang auf die Konstante `NO_TIME` gesetzt wird.
+-   **Sofortiger Reset:** Der `RESET`-Eingang hat jederzeit Priorität und unterbricht die aktuelle Sequenz sofort.
+-   **Klar definierte Schnittstelle:** Die Zustandsnummer und die aktiven Ausgänge sind stets als Datenausgänge verfügbar und werden bei jedem Schritt per Ereignis bestätigt.
+-   **Adapter-basierte Zeitsteuerung:** Die Nutzung eines standardisierten TimeOut-Adapters macht die interne Zeitverwaltung robust und wiederverwendbar.
 
 ## Zustandsübersicht
 
 Die ECC umfasst folgende Zustände:
 
-*   **xSTART:** Initialer Idle-Zustand.
-*   **sState_01 ... sState_05:** Die fünf sequenziellen Arbeitszustände.
-*   **sState_00:** Repräsentiert den logischen START-Zustand nach Abschluss der Sequenz oder nach einem Reset. Hier ist kein Ausgang aktiv.
-*   **sRESET:** Zwischenzustand zur Deaktivierung aller Ausgänge während einer Reset-Operation.
+-   **xSTART:** Initialer Idle-Zustand.
+-   **sState_01 ... sState_05:** Die fünf sequenziellen Arbeitszustände.
+-   **sState_00:** Repräsentiert den logischen START-Zustand nach Abschluss der Sequenz oder nach einem Reset. Hier ist kein Ausgang aktiv.
+-   **sRESET:** Zwischenzustand zur Deaktivierung aller Ausgänge während einer Reset-Operation.
 
 ## Anwendungsszenarien
 
-*   **Steuerung von Batch-Prozessen:** Schrittweise Abarbeitung von Rezepten in Misch- oder Füllanlagen, wobei ein Schritt manuell quittiert oder nach einer definierten Zeit automatisch weiter geschaltet wird.
-*   **Verkettete Maschinenabläufe:** Steuerung einer Maschine, deren Zyklus aus mehreren nacheinander geschalteten Aktionen besteht (z.B. Einlegen, Bearbeiten, Prüfen, Auswerfen).
-*   **Testsequenzen:** Automatisierte Prüfstände, die eine Reihe von Tests nacheinander durchführen, wobei jeder Test eine feste Dauer haben oder manuell bestätigt werden kann.
+-   **Steuerung von Batch-Prozessen:** Schrittweise Abarbeitung von Rezepten in Misch- oder Füllanlagen, wobei ein Schritt manuell quittiert oder nach einer definierten Zeit automatisch weiter geschaltet wird.
+-   **Verkettete Maschinenabläufe:** Steuerung einer Maschine, deren Zyklus aus mehreren nacheinander geschalteten Aktionen besteht (z.B. Einlegen, Bearbeiten, Prüfen, Auswerfen).
+-   **Testsequenzen:** Automatisierte Prüfstände, die eine Reihe von Tests nacheinander durchführen, wobei jeder Test eine feste Dauer haben oder manuell bestätigt werden kann.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -98,8 +99,8 @@ Im Vergleich zu einfachen Timer-Ketten oder Zählern bietet `sequence_ET_05` ein
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_039](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
-* [Uebung_039a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
+- [Uebung_039](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039.md)
+- [Uebung_039a](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_039a.md)
 
 ## Fazit
 
@@ -109,4 +110,4 @@ Der `sequence_ET_05` ist ein gut strukturierter und flexibler Funktionsblock zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

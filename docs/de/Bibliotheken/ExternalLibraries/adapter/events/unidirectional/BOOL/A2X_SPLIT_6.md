@@ -3,6 +3,7 @@
 ![A2X_SPLIT_6](./A2X_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `A2X_SPLIT_6` dient dazu, einen eingehenden A2X-Adapter auf sechs identische A2X-Ausgänge zu verteilen. Er ist als generischer Baustein (Generic FB) realisiert und ermöglicht die Weiterleitung von Adapterdaten ohne Verzögerung oder Zustandsänderung. Typische Einsatzbereiche sind die parallele Versorgung mehrerer Verbraucher oder die Signalkaskadierung in industriellen Steuerungen.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | `IN` | `adapter::types::unidirectional::A2X` | Empfängt das eingehende A2X-Adapter-Signal |
 | Ausgang (Plug) 1 | `OUT1` | `adapter::types::unidirectional::A2X` | Erster ausgehender A2X-Adapter |
 | Ausgang (Plug) 2 | `OUT2` | `adapter::types::unidirectional::A2X` | Zweiter ausgehender A2X-Adapter |

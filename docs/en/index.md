@@ -19,10 +19,10 @@ myst:
 
 > **Visual programming (IEC 61499 / 4diac) is the central core method of the Framework Curriculum 2025** for creating and diagnosing automated and autonomous functions on agricultural and construction machinery (LandBauMechMstrV of September 9, 2024, effective August 1, 2025).
 
-* 📋 **[This is in the curriculum – Visual languages as a main curriculum topic](./das_steht_im_lehrplan.md)**
-* ⚡ [Automated functions with IEC 61499 (LE 1.4 / 40 units)](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)
-* 🔍 [Fault diagnosis in automated & autonomous systems (LE 2.6 / 20 units)](./lehrplan_praxis/fehlerdiagnose_autonome_systeme.md)
-* 🧩 [Systems engineering, signal flow & state machines (LE 1.1 / 160 units)](./lehrplan_praxis/funktionsbausteine_systemtechnik.md)
+- 📋 **[This is in the curriculum – Visual languages as a main curriculum topic](./das_steht_im_lehrplan.md)**
+- ⚡ [Automated functions with IEC 61499 (LE 1.4 / 40 units)](./lehrplan_praxis/iec61499_automatisierte_funktionen.md)
+- 🔍 [Fault diagnosis in automated & autonomous systems (LE 2.6 / 20 units)](./lehrplan_praxis/fehlerdiagnose_autonome_systeme.md)
+- 🧩 [Systems engineering, signal flow & state machines (LE 1.1 / 160 units)](./lehrplan_praxis/funktionsbausteine_systemtechnik.md)
 
 ---
 
@@ -32,10 +32,10 @@ This documentation is part of the knowledge base of the Meisterschulen at Munich
 
 **Useful Links:**
 
-* 📋 **[This is in the curriculum (Curriculum 2025)](./das_steht_im_lehrplan.md)**
-* [🏠 Main Menu](https://www.ms-muc-docs.de/)
-* [🔍 Super Search (all wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/)
-* [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
+- 📋 **[This is in the curriculum (Curriculum 2025)](./das_steht_im_lehrplan.md)**
+- [🏠 Main Menu](https://www.ms-muc-docs.de/)
+- [🔍 Super Search (all wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/)
+- [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
 
 ---
 
@@ -63,7 +63,7 @@ Have you ever wondered how to create programs visually? Here you will find resou
 
 **Eclipse 4diac** is the leading open-source development environment for this standard. It enables the efficient modeling and distribution of complex industrial applications.
 
-<p align="center"><img src="img/powerdby4diac_large_light.png" width="400px" /></p>
+<p align="center"><img src="img/powerdby4diac_large_light.png" alt="Powered by Eclipse 4diac logo" width="400px" /></p>
 
 ---
 
@@ -102,4 +102,4 @@ Have you ever wondered how to create programs visually? Here you will find resou
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

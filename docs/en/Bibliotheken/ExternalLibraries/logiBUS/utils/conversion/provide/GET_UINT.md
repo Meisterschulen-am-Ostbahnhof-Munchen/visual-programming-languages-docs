@@ -3,9 +3,11 @@
 ![GET_UINT](./GET_UINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_UINT** function block reads the current value of a source `UINT` passed as an InOut variable and provides it as a buffered output value. It serves to capture a consistent snapshot of an external or internal UINT value at a defined point in time and make it available for further processing in the workflow.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -48,7 +50,7 @@ None.
 
 The function block has a single execution state (`REQ`). 2. **Copy** this value to the output variable `OUT`.
 
-3. **Trigger** the event output `CNF` to signal completion.
+1. **Trigger** the event output `CNF` to signal completion.
 
 Processing is strictly sequential and instantaneous.
 

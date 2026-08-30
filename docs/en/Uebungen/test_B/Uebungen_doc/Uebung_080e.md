@@ -3,6 +3,7 @@
 ![Uebung_080e_network](./Uebung_080e_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction with an event brake, implemented using `RT_E_REND` function blocks. The counter is controlled by two pushbuttons (single-click pushbuttons): one for counting (CU) and another for resetting (R). The count result is output to a digital output. The event brake provides time-based debouncing and decoupling of the events. No sub-application blocks are used; all function blocks are standard or device-specific library elements.
@@ -73,16 +74,20 @@ This exercise demonstrates the use of an up counter (`E_CTU`) in conjunction wit
 ## Program Flow and Connections
 
 1. **Input Events**:
+
 - A single click on the button at `Input_I1` generates an event at `DigitalInput_CLK_I1.IND`.
 - A single click on the button at `Input_I2` generates an event at `DigitalInput_CLK_I2.IND`.
-2. **Counter Control**:
+1. **Counter Control**:
+
 - The event at `DigitalInput_CLK_I1.IND` is connected to the input at `E_CTU.CU` – increments the counter.
 - The event at `DigitalInput_CLK_I2.IND` is connected to the input at `E_CTU.R` – resets the counter.
-3. **Event Distribution and Merging**:
+1. **Event Distribution and Merging**:
+
 - Outputs `E_CTU.CUO` and `E_CTU.RO` are connected to the common input `E_SPLIT_4.EI` (both events trigger the same split).
 - The four outputs `EO1`–`EO4` are connected to the four inputs `EI1`–`EI4` of `E_MERGE_4`. This ensures that each counter or reset event is passed through four times (redundantly here to serve all outputs).
 - The merge output `EO` combines these into a single event stream.
-4. **Event Brake (RT_E_REND)**:
+1. **Event Brake (RT_E_REND)**:
+
 - The combined event is applied to the inputs `EI1` and `EI2` of all three `RT_E_REND` function blocks.
 - The output `EO` of the first `RT_E_REND` triggers the `REQ` input of the digital output function block `DigitalOutput_Q1`.
 - The other two `RT_E_REND` are also present in the network (possibly prepared for additional outputs or redundancy), but are not directly connected to a subsequent function block in the current data flow.
@@ -111,7 +116,7 @@ This exercise demonstrates a typical counter application with two buttons, where
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

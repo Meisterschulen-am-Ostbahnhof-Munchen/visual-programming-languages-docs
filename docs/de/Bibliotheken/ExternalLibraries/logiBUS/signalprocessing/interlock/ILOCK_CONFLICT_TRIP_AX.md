@@ -3,6 +3,7 @@
 ![ILOCK_CONFLICT_TRIP_AX](./ILOCK_CONFLICT_TRIP_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ILOCK_CONFLICT_TRIP_AX` realisiert eine Verriegelungslogik für zwei entgegengesetzte Richtungen (UP und DOWN). Er priorisiert das zuerst aktive Eingangssignal und wechselt bei gleichzeitiger Aktivierung beider Eingänge sofort in einen Trip-Zustand. Ein Zurücksetzen aus dem Trip-Zustand ist nur über das Ereignis `EI_RESET` möglich, wenn beide Eingänge inaktiv sind. Die gesamte Kommunikation erfolgt über Adapter vom Typ `unidirectional::AX`, was eine flexible und modulare Einbindung ermöglicht.
@@ -41,14 +42,14 @@ Der FB besitzt keine direkten Datenausgänge. Die Ausgangsdaten werden über die
 **Sockets (Eingänge)**
 
 | Adapter | Typ | Beschreibung |
-|---|---|---|
+| --- | --- | --- |
 | `UP_IN` | `adapter::types::unidirectional::AX` | Eingang für Aufwärts-Richtung (Ereignis + Daten) |
 | `DOWN_IN` | `adapter::types::unidirectional::AX` | Eingang für Abwärts-Richtung (Ereignis + Daten) |
 
 **Plugs (Ausgänge)**
 
 | Adapter | Typ | Beschreibung |
-|---|---|---|
+| --- | --- | --- |
 | `UP_OUT` | `adapter::types::unidirectional::AX` | Ausgang für Aufwärts-Richtung |
 | `DOWN_OUT` | `adapter::types::unidirectional::AX` | Ausgang für Abwärts-Richtung |
 | `TRIP_OUT` | `adapter::types::unidirectional::AX` | Trip-Zustandsausgang |
@@ -87,7 +88,7 @@ Die Priorisierung erfolgt implizit: Solange kein Konflikt vorliegt, wird die zue
 ## Zustandsübersicht
 
 | Zustand | UP_OUT.D1 | DOWN_OUT.D1 | TRIP_OUT.D1 | Beschreibung |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | `STOP` | FALSE | FALSE | FALSE | Ruheposition, keine Richtung aktiv |
 | `UP` | TRUE | FALSE | FALSE | Aufwärts-Richtung aktiv |
 | `DOWN` | FALSE | TRUE | FALSE | Abwärts-Richtung aktiv |

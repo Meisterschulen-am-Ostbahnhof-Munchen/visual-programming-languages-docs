@@ -3,6 +3,7 @@
 ![Uebung_090a2_network](./Uebung_090a2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the F_MUX_3 multiplexer function block in conjunction with digital inputs and outputs. The exercise shows how a multiplexer can be used to control outputs based on various input signals.
@@ -36,14 +37,14 @@ This exercise demonstrates the use of the F_MUX_3 multiplexer function block in 
 
 ## Program Flow and Connections
 
-### Event Connections:
+### Event Connections
 
 - DigitalInput_I4.IND → F_BOOL_TO_UINT_I4.REQ
 - F_MUX_3.CNF → DigitalOutput_Q1.REQ
 - DigitalInput_I1.IND → F_MUX_3.REQ
 - DigitalInput_I2.IND → F_MUX_3.REQ
 
-### Data Connections:
+### Data Connections
 
 - F_MUX_3.OUT → DigitalOutput_Q1.OUT
 - DigitalInput_I1.IN → F_MUX_3.IN1
@@ -51,7 +52,7 @@ This exercise demonstrates the use of the F_MUX_3 multiplexer function block in 
 - DigitalInput_I4.IN → F_BOOL_TO_UINT_I4.IN
 - F_BOOL_TO_UINT_I4.OUT → F_MUX_3.K
 
-### Functionality:
+### Functionality
 
 Based on the control signal K (from F_BOOL_TO_UINT_I4), the multiplexer F_MUX_3 selects one of its three inputs and outputs it at output OUT. Digital inputs I1 and I2 are used as selectable inputs, while IN3 is set to FALSE. Input I4 serves as the control signal, which is converted into the control input K of the multiplexer via the converter F_BOOL_TO_UINT.
 
@@ -61,6 +62,6 @@ This exercise illustrates the basic use of a multiplexer in 4diac. It demonstrat
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

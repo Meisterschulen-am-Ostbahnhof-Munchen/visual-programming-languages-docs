@@ -3,6 +3,7 @@
 ![ALI_TO_ADI](./ALI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Dieser Composite-Funktionsblock dient der Umwandlung eines **ALI**-Adaptertyps (LINT, 64‑Bit‑Integer) in einen **ADI**-Adaptertyp (DINT, 32‑Bit‑Integer). Er ermöglicht die nahtlose Integration von Komponenten, die unterschiedliche Adapter-Formate verwenden, indem er die Datenkonvertierung kapselt und über Ereignissteuerung synchronisiert.

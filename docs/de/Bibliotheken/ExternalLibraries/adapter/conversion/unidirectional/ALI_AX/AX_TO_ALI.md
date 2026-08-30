@@ -3,6 +3,7 @@
 ![AX_TO_ALI](./AX_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AX_TO_ALI** ist ein zusammengesetzter Funktionsblock (Composite FB), der einen unidirektionalen AX‑Adapter (BOOL) in einen unidirektionalen ALI‑Adapter (LINT) umwandelt. Er wurde entwickelt, um BOOL-Werte, die über einen AX‑Socket empfangen werden, in LINT-Werte zu konvertieren und über einen ALI‑Plug auszugeben. Der Baustein nutzt intern die IEC‑61131‑Konvertierungsfunktion `F_BOOL_TO_LINT`.
@@ -48,7 +49,7 @@ Damit wird eine synchrone, ereignisgesteuerte Umsetzung von BOOL in LINT realisi
 
 ## Technische Besonderheiten
 
-- **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.  
+- **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.
   Copyright © 2026 HR Agrartechnik GmbH.
 
 - **Autor & Version**: Entwickelt von Franz Höpfinger, Version 1.0, Stand 2026‑02‑17.
@@ -78,4 +79,4 @@ Der AX_TO_ALI ist ein kompakter, lizenzkonformer Composite‑FB zur zuverlässig
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

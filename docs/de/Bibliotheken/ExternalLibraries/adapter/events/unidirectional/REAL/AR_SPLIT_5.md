@@ -3,6 +3,7 @@
 ![AR_SPLIT_5](./AR_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AR_SPLIT_5 dient dazu, einen eingehenden AR-Adapter in fünf identische AR-Adapter-Ausgänge aufzuteilen. Es handelt sich um einen generischen Baustein, der speziell für die Verteilung von unidirektionalen Adaptern (Typ: `adapter::types::unidirectional::AR`) konzipiert ist.
@@ -12,15 +13,19 @@ Der Funktionsblock AR_SPLIT_5 dient dazu, einen eingehenden AR-Adapter in fünf 
 ### **Ereignis-Eingänge**
 
 Keine vorhanden.
+
 ### **Ereignis-Ausgänge**
 
 Keine vorhanden.
+
 ### **Daten-Eingänge**
 
 Keine vorhanden.
+
 ### **Daten-Ausgänge**
 
 Keine vorhanden.
+
 ### **Adapter**
 
 - **Socket (Eingang)**:

@@ -3,9 +3,11 @@
 ![FIELDBUS_USINT_TO_SIGNAL_SCALED](./FIELDBUS_USINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FIELDBUS_USINT_TO_SIGNAL_SCALED** converts an incoming USINT signal into a scaled REAL value, taking a validity check into account. It is typically used in fieldbus signal processing to apply a scaling factor and an offset to raw fieldbus values (e.g., sensor data) and simultaneously evaluate the validity of the input signal. The block is structured according to the IEC 61499-1 standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -94,6 +96,6 @@ The function block `FIELDBUS_USINT_TO_SIGNAL_SCALED` is a compact yet powerful c
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![ADI_TO_AR](./ADI_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_AR** ist ein Composite-Baustein, der einen DINT-Adapter (ADI) in einen REAL-Adapter (AR) umwandelt. Er dient als Vermittler zwischen Komponenten, die über unidirektionale Adapter kommunizieren, und führt dabei eine Datentypkonvertierung von Ganzzahl (DINT) auf Gleitkommazahl (REAL) durch.
@@ -56,7 +57,7 @@ Der gesamte Vorgang erfolgt synchron und ohne Zwischenspeicherung – jede erfol
 Der Baustein besitzt keine eigene Zustandsmaschine. Der Ablauf lässt sich als einfacher Schritt beschreiben:
 
 | Schritt | Aktion |
-|---------|--------|
+| --------- | -------- |
 | 1 | Warten auf Ereignis an **ADI_IN.E1** |
 | 2 | Konvertierung des Datenwerts von DINT nach REAL |
 | 3 | Ausgabe des konvertierten Werts an **AR_OUT.D1** und Ereignis an **AR_OUT.E1** |

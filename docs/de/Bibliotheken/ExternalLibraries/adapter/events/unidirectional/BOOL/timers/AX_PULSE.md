@@ -1,6 +1,7 @@
 # AX_PULSE
 
 * * * * * * * * * *
+
 ## Einleitung
 
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
@@ -43,8 +44,8 @@ Signalisierung.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020h_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020h_AX.md)
-* [Uebung_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
+- [Uebung_020h_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020h_AX.md)
+- [Uebung_020i_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020i_AX.md)
 
 ## Fazit
 

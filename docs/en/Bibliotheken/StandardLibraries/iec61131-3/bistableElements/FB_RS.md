@@ -6,6 +6,7 @@
 
 The FB_RS function block is a bistable element that functions as a set-reset flip-flop (RS flip-flop). It stores a state and changes it based on the input signals S (Set) and R1 (Reset). The block is implemented according to the IEC 61499-1 standard and is suitable for control applications that require state storage.
 ![FB_RS](FB_RS.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -42,6 +43,7 @@ The logic is implemented using the following algorithm:
 ALGORITHM REQ
 Q1 := (NOT R1) AND (S OR Q1);
 END_ALGORITHM
+
 ## Technical Features
 
 - **IEC 61131-3 Compliance**: This component precisely replicates the behavior of the classic `RS` flip-flop. Since the inputs `S` and `R1` are data inputs that are sampled simultaneously during the `REQ` event, logical prioritization is necessary.
@@ -49,6 +51,7 @@ END_ALGORITHM
 - **Storage Behavior**: The block retains its state as long as there is no change to `S` or `R1` (or no `REQ` event occurs).
 
 **Storage Behavior**: The block retains its state as long as there is no change to `S` or `R1` (or no `REQ` event occurs).
+
 ## State Overview
 
 The `FB_RS` evaluates the inputs at `REQ`:
@@ -69,10 +72,10 @@ The `FB_RS` evaluates the inputs at `REQ`:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e2.md)
-* [Exercise_006e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e2_AX.md)
-* [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
-* [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Exercise_006e2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e2.md)
+- [Exercise_006e2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e2_AX.md)
+- [Exercise_160b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_160b2.md)
+- [Exercise_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
 
 ## Conclusion
 

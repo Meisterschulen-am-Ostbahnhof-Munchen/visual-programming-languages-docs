@@ -3,6 +3,7 @@
 ![AULI_TO_AX](./AULI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AULI_TO_AX** dient als Composite-Baustein zur Umwandlung eines **AULI**-Adapters (Datentyp ULINT) in einen **AX**-Adapter (Datentyp BOOL). Er ermöglicht die Anbindung einer vorzeichenlosen Ganzzahl aus einem Adapter-Socket an einen booleschen Adapter-Plug, wobei der Wert 0 als FALSE und jeder andere Wert als TRUE interpretiert wird.

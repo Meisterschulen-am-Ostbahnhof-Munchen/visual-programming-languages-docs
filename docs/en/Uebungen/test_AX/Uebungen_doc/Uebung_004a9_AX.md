@@ -1,8 +1,9 @@
 # Exercise_004a9_AX: with E_SPLIT_3
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_004a9_AX`. Here, the concept of event splitting is extended to three objectives.
+This article describes the logiBUS® exercise `Uebung_004a9_AX`. Here, the concept of event splitting is extended to three objectives
 ----
+
 ## Objective of the Exercise
 
 Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three processes can be triggered sequentially.
@@ -17,10 +18,10 @@ Demonstrating the scalability of event distributors. With `E_SPLIT_3`, three pro
 
 ![Uebung_004a9_AX_network](./Uebung_004a9_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Pushbutton.
-* **`E_SPLIT_3`**: Distributes input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
-* **`AX_T_FF_Q1`, `Q2`, `Q3`**: Three flip-flops.
-* **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three lamps.
+- **`DigitalInput_CLK_I1`**: Pushbutton.
+- **`E_SPLIT_3`**: Distributes input `EI` sequentially to `EO1`, `EO2`, and `EO3`.
+- **`AX_T_FF_Q1`, `Q2`, `Q3`**: Three flip-flops.
+- **`DigitalOutput_Q1`, `Q2`, `Q3`**: Three lamps.
 
 -----
 

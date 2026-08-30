@@ -20,11 +20,11 @@ Verwendung des Bausteins `AlPgnTxNew8B`. Es wird gezeigt, wie man eine herstelle
 
 ![Uebung_124_network](./Uebung_124_network.svg)
 
-  * **`NmGetCfInfo_1`**: Sucht den Zielpartner (hier ein Virtual Terminal).
-  * **`AlPgnTxNew8B`**: Der Sende-Baustein für 8-Byte Nachrichten.
-  * **Parameter**:
-    * `u32Pgn`: Die Nummer der Nachricht (hier `61184` = Proprietary A).
-    * `Data`: Der Inhalt der Nachricht (8 Bytes Hex-Daten).
+  - **`NmGetCfInfo_1`**: Sucht den Zielpartner (hier ein Virtual Terminal).
+  - **`AlPgnTxNew8B`**: Der Sende-Baustein für 8-Byte Nachrichten.
+  - **Parameter**:
+    - `u32Pgn`: Die Nummer der Nachricht (hier `61184` = Proprietary A).
+    - `Data`: Der Inhalt der Nachricht (8 Bytes Hex-Daten).
 
 -----
 

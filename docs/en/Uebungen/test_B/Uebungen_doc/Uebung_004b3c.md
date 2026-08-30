@@ -4,6 +4,7 @@
 ![Uebung_004b3c_network](./Uebung_004b3c_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise involves implementing a circuit consisting of two interlocked toggle flip-flops. Each flip-flop is toggled by its own push button (input I1 or I2). The key feature is the interlocking: only one of the two flip-flops can assume the logic state `TRUE` at any given time. As soon as one flip-flop is set to `TRUE`, it automatically resets the other. Communication between the two sub-applications is handled by a single bidirectional adapter (type AE2), resulting in a very compact interconnect structure.
@@ -91,6 +92,6 @@ In this exercise, a mutually interlocked control system using two toggle flip-fl
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

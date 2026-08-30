@@ -3,22 +3,24 @@
 ![FB_MM710_IMU](./FB_MM710_IMU.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **FB_MM710_IMU** is a service-oriented module (SIFB) for connecting the Bosch MM7.10 IMU sensor via CAN/J1939. It enables the reading of acceleration, yaw rate, and tilt values, as well as the monitoring of system and error states. The FB encapsulates all CAN communication and signal processing and provides the data in a standardized format via event and data outputs.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | INIT | EInit | Initialization of the module. This event sets the CAN parameters (index, source address) and the activation qualifier QI. |
 | REQ | Event | Triggers a new measurement query. After successful initialization, sensor data can be requested cyclically or event-driven. |
 
 ### **Event Outputs**
 
 | Event | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | INITO | EInit | Confirmation of successful initialization (QO = TRUE) or error message. |
 | CNF | Event | Confirmation of a measurement request. Provides the current sensor data and status information. |
 | ERROR | Event | Occurs in case of communication or CRC errors. Contains detailed error information. |
@@ -26,7 +28,7 @@ The function block **FB_MM710_IMU** is a service-oriented module (SIFB) for conn
 ### **Data Inputs**
 
 | Variable | Type | Description |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | QI | BOOL | Activation Qualifier: Initialization (INIT) is only performed if QI = TRUE. |
 | PARAMS | STRING | Service parameter, e.g., CAN interface configuration (optional). |
 | u8CanIdx | USINT | CAN node index (default initial value: `INVALID`). |

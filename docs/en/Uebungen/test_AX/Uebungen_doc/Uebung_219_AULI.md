@@ -3,6 +3,7 @@
 ![Uebung_219_AULI_network](./Uebung_219_AULI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **countdown counter** according to IEC 61131-3 (type `CTD`) in **adapter format**. The counter uses the **ULINT** (Unsigned Long Integer) data type and outputs the current counter value to a terminal (e.g., system display). Additionally, a digital output is set as soon as the counter value reaches zero.
@@ -86,26 +87,26 @@ The subapp contains the following internal function blocks:
 
 At startup, the event `Input_LD.INITO` triggers the function block `AULI_ULINT_TO_ULI`. This delivers the fixed preset value 10 (ULINT) to the counter's data input `PV`.
 
-2. **Loading the counter**:
+1. **Loading the counter**:
 
 A rising edge at the digital input `Input_I2` (LD) loads the counter with the preset value. The current counter value is set to 10.
 
-3. **Count Down**:
+1. **Count Down**:
 
 Each rising edge at the digital input `Input_I1` (CD) decrements the counter value by 1, as long as the value is greater than 0.
 
-4. **Counter Value Output**:
+1. **Counter Value Output**:
 
 The current counter value (`CV`) is output to the terminal (object `OutputNumber_N1`) via the conversion chain `AULI_TO_AUDI` → `Q_NumericValue_AUDI`.
 
-5. **Signal at Zero**:
+1. **Signal at Zero**:
 
 As soon as the counter value reaches 0, the CTD block sets the output `Q` to TRUE. This activates the digital output `Output_Q1`.
 
 **Summary of Connections (Adapter and Event Connections):**
 
 | Source | Destination | Type |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `Input_CD.IN` | `AULI_FB_CTD.CD` | Adapter |
 | `Input_LD.IN` | `AULI_FB_CTD.LD` | Adapter |
 | `AULI_FB_CTD.Q` | `Output_Q1.OUT` | Adapter |
@@ -137,6 +138,6 @@ As soon as the counter value reaches 0, the CTD block sets the output `Q` to TRU
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

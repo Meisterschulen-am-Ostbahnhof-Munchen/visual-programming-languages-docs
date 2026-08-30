@@ -44,7 +44,7 @@ Die Eingänge werden logisch ODER-verknüpft und ohne Verzögerung weitergeleite
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a2_3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_3.md)
+- [Uebung_004a2_3](../../../Uebungen/test_B/Uebungen_doc/Uebung_004a2_3.md)
 
 ## Fazit
 
@@ -54,4 +54,4 @@ Der `E_MERGE_3` ist ein einfacher, aber nützlicher Baustein zur Verknüpfung vo
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

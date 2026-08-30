@@ -3,22 +3,24 @@
 ![INIT](./INIT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **INIT** function block serves as a direct event pass-through. It is designed as the counterpart to a `E_TRIG` function block and is typically used in the initialization phase of a system. The function block has two event inputs and two corresponding event outputs; no data is processed.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|-------|--------|------------------------------|
+| ------- | -------- | ------------------------------ |
 | INIT | EInit | Initialization Request |
 | REQ | Event | Service Request |
 
 ### **Event Outputs**
 
 | Name | Type | Comment |
-|-------|--------|-------------------------------|
+| ------- | -------- | ------------------------------- |
 | INITO | EInit | Initialization Acknowledgement |
 | CNF | Event | Request Acknowledgement |
 

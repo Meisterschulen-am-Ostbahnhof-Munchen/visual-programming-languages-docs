@@ -3,6 +3,7 @@
 ![AR_MULTIME](./AR_MULTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AR_MULTIME** dient der Multiplikation eines Zeitwertes (Typ TIME) mit einem numerischen Wert. Die Eingabe des numerischen Faktors erfolgt über einen Adapter, sodass der Baustein flexibel in verschiedenen Kontexten eingesetzt werden kann. Die Ausgabe des Ergebnisses geschieht ebenfalls über einen Adapter. Der Baustein ist gemäß IEC 61131-3 als standard arithmetic function klassifiziert.

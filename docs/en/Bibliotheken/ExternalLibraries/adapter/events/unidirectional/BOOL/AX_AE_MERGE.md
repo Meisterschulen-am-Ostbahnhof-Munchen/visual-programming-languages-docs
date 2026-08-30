@@ -5,6 +5,7 @@
 The AX_AE_MERGE function block allows you to merge a pure event signal (**AE**) with a combined event-data signal (**AX**). The result is an AX signal flow where the data bit from the AX branch is preserved but can be triggered by either source.
 This is particularly useful when a cyclic event (e.g., from a `AE_CYCLE`) needs to force a status check or action in an AX-based data stream without modifying the data itself.
 ![AX_AE_MERGE](AX_AE_MERGE.svg)
+
 ## Interface Structure
 
 ### **Adapter**
@@ -25,6 +26,7 @@ In many exercises (e.g., with the blinker in `Uebung_007a3_AX`), a `AX_OR_2` was
 - **AX_AE_MERGE**: Is designed precisely for this mixed operation. It ensures that the event is passed through while the data source (`IN_AX`) remains uniquely defined.
 
 **AX_OR_2**: Expects two fully functional AX adapters. Connecting an AE adapter is technically incorrect, as the data value for one of the inputs remains undefined.
+
 ## Technical Features
 
 ✔ **Event Merge**: Internally uses a `E_MERGE`.
@@ -41,6 +43,6 @@ In many exercises (e.g., with the blinker in `Uebung_007a3_AX`), a `AX_OR_2` was
 
 ## 🛠️ Related exercises
 
-* [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
-* [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
-* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Uebung_007a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_007a3_AX.md)
+- [Uebung_008_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_008_AX.md)
+- [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)

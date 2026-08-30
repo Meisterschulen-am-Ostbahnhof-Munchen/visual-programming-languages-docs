@@ -4,15 +4,17 @@
 *Image not available*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_AX_PULSE** is a standardized timer module for generating a non-retriggerable pulse. It is configured and read via the adapter interfaces **PT** (ATM) and **Q** (AX). The module complies with the IEC 61499-2 standard and is part of the library **adapter::events::unidirectional::timers**.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | **REQ** | Event | Service request – starts the pulse. |
 | **R** | Event | Reset – terminates the pulse prematurely. |
 
@@ -31,7 +33,7 @@ No direct data outputs. The pulse status is queried via the **Q** adapter.
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **PT** | Socket | `adapter::types::unidirectional::ATM` | Returns the pulse duration as a time value. |
 | **Q** | Plug | `adapter::types::unidirectional::AX` | Outputs the pulse status: **D1** = current value (TRUE during the pulse); **E1** = event at the end or change of the pulse. |
 
@@ -50,9 +52,10 @@ This function block implements the behavior of a non-retriggerable pulse generat
 
 1. **Idle** – No pulse active. **Q.D1** = FALSE.
 2. **PulseActive** – Pulse running. **Q.D1** = TRUE. Entered by **REQ** and exited either by timeout or **R**.
+
 - At time elapse: Transition to Idle, triggering **Q.E1**.
 - At **R**: Transition to Idle, triggering **Q.E1**.
-3. During **PulseActive**, **REQ** is ignored.
+1. During **PulseActive**, **REQ** is ignored.
 
 ## Application Scenarios
 

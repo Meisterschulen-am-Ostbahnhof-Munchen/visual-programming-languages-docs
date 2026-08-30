@@ -6,6 +6,7 @@
 
 The function block `F_STRING_AS_TIME` converts a time value in STRING format to TIME format. This is particularly useful when time values are in text format and need to be converted into a machine-readable format for further processing.
 ![F_STRING_AS_TIME](F_STRING_AS_TIME.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

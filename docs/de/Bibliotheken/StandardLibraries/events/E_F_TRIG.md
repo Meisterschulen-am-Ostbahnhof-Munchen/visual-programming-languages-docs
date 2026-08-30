@@ -49,15 +49,15 @@ Die interne Logik des Bausteins (Stand: `events-3.0.0`) ist fehlerhaft und imple
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_F_TRIG (dieser) | E_R_TRIG | E_SWITCH |
-|---------------|------------------|----------|----------|
+| Feature | E_F_TRIG (dieser) | E_R_TRIG | E_SWITCH |
+| --------------- | ------------------ | ---------- | ---------- |
 | Erkannte Flanke | Fallend (benannt), Steigend (implementiert) | Steigend | - |
-| Ereignissteuerung | Ja     | Ja       | Ja       |
+| Ereignissteuerung | Ja | Ja | Ja |
 | Prinzip | Flankendetektor | Flankendetektor | Ereignisweiche |
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Uebung_088](../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Fazit
 

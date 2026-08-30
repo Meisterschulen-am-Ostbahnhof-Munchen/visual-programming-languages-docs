@@ -29,11 +29,11 @@ There are no direct data outputs. Data transmission occurs via the output adapte
 
 ### **Adapters**
 
-* **Sockets (Input Adapters):**
-* `IN1` (Type: `adapter::types::unidirectional::ALI`): First input for multiplication (multiplicand).
-* `IN2` (Type: `adapter::types::unidirectional::ALI`): Second input for multiplication (multiplier).
-* **Plugs (Output Adapters):**
-* `OUT` (Type: `adapter::types::unidirectional::ALI`): Output for the result of the multiplication (product).
+- **Sockets (Input Adapters):**
+- `IN1` (Type: `adapter::types::unidirectional::ALI`): First input for multiplication (multiplicand).
+- `IN2` (Type: `adapter::types::unidirectional::ALI`): Second input for multiplication (multiplier).
+- **Plugs (Output Adapters):**
+- `OUT` (Type: `adapter::types::unidirectional::ALI`): Output for the result of the multiplication (product).
 
 ## Functionality
 
@@ -43,20 +43,21 @@ $$\text{OUT} = \text{IN1} \times \text{IN2}$$
 
 The calculated result and the associated output event are then forwarded to subsequent blocks via the output plug `OUT`.
 
-* **Generic Nature:** The function block is declared as `GEN_ALI_MUL` via the attribute `GenericClassName`. This allows for flexible handling of various data types specified by the higher-level system or the adapter type used.
-* **Adapter Coupling:** By using the unidirectional adapter type `ALI`, data and trigger events are bundled in a single connection, significantly minimizing wiring effort in the development environment.
+- **Generic Nature:** The function block is declared as `GEN_ALI_MUL` via the attribute `GenericClassName`. This allows for flexible handling of various data types specified by the higher-level system or the adapter type used.
+- **Adapter Coupling:** By using the unidirectional adapter type `ALI`, data and trigger events are bundled in a single connection, significantly minimizing wiring effort in the development environment.
 
 Since this is a purely data-flow and adapter-based function block, it does not have a complex internal state machine (Execution Control Chart - ECC). Execution is event-driven and directly coupled to the triggers received via the adapters.
 
 **Adapter Coupling:** ## Application Scenarios
 
-* **Measurement Scaling:** Multiplication of sensor values by calibration or scaling factors.
-* **Power Calculation:** Determination of physical quantities such as electrical power ($P = U \times I$) in adapter-based control networks.
-* **Compact Computing Networks:** Use in complex mathematical calculations where the visual clarity of the control diagram must be maintained through the use of adapters.
+- **Measurement Scaling:** Multiplication of sensor values by calibration or scaling factors.
+- **Power Calculation:** Determination of physical quantities such as electrical power ($P = U \times I$) in adapter-based control networks.
+- **Compact Computing Networks:** Use in complex mathematical calculations where the visual clarity of the control diagram must be maintained through the use of adapters.
 
 Compared to classic mathematical components of IEC 61131-3 (such as a standard `MUL` component with discrete `REQ` / `CNF` events and separate data lines), the `ALI_MUL_2` eliminates the need for manual linking of event and data paths. This prevents errors in event data mapping and results in a significantly cleaner and more readable application diagram in 4diac-ide.
 
 The `ALI_MUL_2` is a modern and efficient function block for multiplication. Thanks to the consistent use of unidirectional adapters, it is ideally suited for service-oriented and modular control systems where clarity and ease of maintenance are paramount.
+
 ## Technical Features
 
 ## State Overview

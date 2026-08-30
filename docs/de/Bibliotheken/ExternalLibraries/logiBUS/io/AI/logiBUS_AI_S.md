@@ -1,6 +1,7 @@
 # logiBUS_AI_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_AI_S` ist ein strukturierter Datentyp (Struct), der zur Konfiguration eines analogen Eingangskanals (AI - Analog Input) innerhalb der logiBUS-Bibliothek dient. Er definiert die grundlegende Parameterstruktur, die benötigt wird, um einen physischen Pin eines logiBUS-Hardwaremoduls für die Erfassung analoger Signale zu adressieren.
@@ -13,7 +14,7 @@ Dies ist ein strukturierter Datentyp (STRUCT), daher besitzt er keine Ereignis- 
 
 Die Struktur selbst enthält folgendes Datenelement, das als Eingabeparameter für einen konfigurierenden Funktionsblock (z.B. `logiBUS_AI`) dient:
 
-*   **`Pin`** (`USINT`): Dieser Wert spezifiziert den physischen Hardware-Pin oder Kanal des logiBUS-Moduls, von dem das analoge Signal gelesen werden soll. Der Standardwert ist `255`, was typischerweise als ungültiger oder nicht konfigurierter Zustand interpretiert wird.
+-   **`Pin`** (`USINT`): Dieser Wert spezifiziert den physischen Hardware-Pin oder Kanal des logiBUS-Moduls, von dem das analoge Signal gelesen werden soll. Der Standardwert ist `255`, was typischerweise als ungültiger oder nicht konfigurierter Zustand interpretiert wird.
 
 ## Funktionsweise
 
@@ -21,17 +22,17 @@ Der Datentyp `logiBUS_AI_S` ist eine reine Datenstruktur und besitzt keine aktiv
 
 ## Technische Besonderheiten
 
-*   **Initialwert:** Das Mitglied `Pin` ist mit dem Initialwert `255` vordefiniert. Dieser Wert liegt außerhalb des typischen Bereichs gültiger Pin-Nummern (oft 0..n) und kann daher zur Erkennung einer nicht initialisierten oder fehlerhaften Konfiguration genutzt werden.
-*   **Typensicherheit:** Die Verwendung eines strukturierten Datentyps anstelle einzelner, unverbundener Parameter erhöht die Typsicherheit und Wartbarkeit des Codes in der 4diac IDE.
-*   **Bibliothekszugehörigkeit:** Der Typ ist Teil des Pakets `logiBUS::io::AI`, was seine Zugehörigkeit zur logiBUS-IO-Bibliothek für analoge Eingänge klar kennzeichnet.
+-   **Initialwert:** Das Mitglied `Pin` ist mit dem Initialwert `255` vordefiniert. Dieser Wert liegt außerhalb des typischen Bereichs gültiger Pin-Nummern (oft 0..n) und kann daher zur Erkennung einer nicht initialisierten oder fehlerhaften Konfiguration genutzt werden.
+-   **Typensicherheit:** Die Verwendung eines strukturierten Datentyps anstelle einzelner, unverbundener Parameter erhöht die Typsicherheit und Wartbarkeit des Codes in der 4diac IDE.
+-   **Bibliothekszugehörigkeit:** Der Typ ist Teil des Pakets `logiBUS::io::AI`, was seine Zugehörigkeit zur logiBUS-IO-Bibliothek für analoge Eingänge klar kennzeichnet.
 
 ## Anwendungsszenarien
 
 Dieser Struct wird ausschließlich in Szenarien verwendet, in denen logiBUS-Hardware mit analogen Eingangsmodulen (z.B. für Spannungs- oder Strommessung) in eine 4diac FORTE-Applikation integriert wird. Typische Anwendungen sind:
 
-*   Prozessüberwachung (Temperatur, Druck, Füllstand via Sensoren)
-*   Erfassung von Steuerspannungen
-*   Konfiguration von Mehrkanal-Messsystemen, bei denen für jeden Kanal eine separate Instanz von `logiBUS_AI_S` angelegt wird.
+-   Prozessüberwachung (Temperatur, Druck, Füllstand via Sensoren)
+-   Erfassung von Steuerspannungen
+-   Konfiguration von Mehrkanal-Messsystemen, bei denen für jeden Kanal eine separate Instanz von `logiBUS_AI_S` angelegt wird.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -45,4 +46,4 @@ Der `logiBUS_AI_S`-Datentyp ist ein essentielles Konfigurationselement für die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

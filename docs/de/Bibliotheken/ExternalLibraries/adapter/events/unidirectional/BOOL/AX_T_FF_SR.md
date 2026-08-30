@@ -97,11 +97,11 @@ Vergleich mit [E_T_FF_SR](../../../../../StandardLibraries/events/E_T_FF_SR.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_004a7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
-* [Uebung_006a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
-* [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_006a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a4_AX.md)
-* [Uebung_006a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a_AX.md)
+- [Uebung_004a7_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_004a7_AX.md)
+- [Uebung_006a2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a2_AX.md)
+- [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_006a4_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a4_AX.md)
+- [Uebung_006a_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a_AX.md)
 
 ## Fazit
 

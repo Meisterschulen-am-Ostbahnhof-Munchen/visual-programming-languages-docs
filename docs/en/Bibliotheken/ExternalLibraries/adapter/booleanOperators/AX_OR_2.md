@@ -66,13 +66,13 @@ Comparison with [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR
 
 ## 🛠️ Related exercises
 
-* [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
-* [Uebung_035a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
-* [Uebung_160_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
-* [Uebung_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
-* [Uebung_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
+- [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_035a2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a2_AX.md)
+- [Uebung_035a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a3_AX.md)
+- [Uebung_160_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160_AX.md)
+- [Uebung_160b2_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b2_AX.md)
+- [Uebung_160b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_160b_AX.md)
 
 ## Change Detection
 
@@ -87,6 +87,6 @@ The AX_OR_2 function block offers a reliable A simple solution for Boolean OR op
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

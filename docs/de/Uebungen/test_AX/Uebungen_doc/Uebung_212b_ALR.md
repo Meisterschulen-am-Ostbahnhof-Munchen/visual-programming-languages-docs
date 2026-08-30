@@ -3,13 +3,14 @@
 ![Uebung_212b_ALR_network](./Uebung_212b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Adapter-Version. Der Zähler verwendet den Typ `ALI_FB_CTU` und kann auf einen vorgegebenen Preset-Wert (hier 5) voreingestellt werden. Der aktuelle Zählerstand wird über eine physikalische Terminalausgabe (`Q_NumericValue_PHYSA_LREAL`) auf einem Ausgabekanal ausgegeben. Zusätzlich wird ein digitaler Ausgang (`Output_Q1`) gesetzt, sobald der Zählwert den Preset-Wert erreicht oder überschreitet. Die Eingänge für das Zählsignal (CU) und den Reset (R) werden von digitalen Eingängen der logiBUS-Plattform gespeist. Ein Kommentar weist darauf hin, dass negative Zählerstände möglich sind und empfiehlt ggf. den Einbau eines AX_D_FF zur Reduzierung von Ereignissen.
 
 ## Verwendete Funktionsbausteine (FBs)
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### **ALI_FB_CTU**
 
@@ -111,4 +112,4 @@ Die Übung `Uebung_212b_ALR` demonstriert einen vollständig konfigurierten Vorw
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

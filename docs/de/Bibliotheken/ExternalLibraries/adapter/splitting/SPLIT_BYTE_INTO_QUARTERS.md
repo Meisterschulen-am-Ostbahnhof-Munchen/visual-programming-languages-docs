@@ -5,6 +5,7 @@ Bild nicht verfügbar
 ![SPLIT_BYTE_INTO_QUARTERS](./SPLIT_BYTE_INTO_QUARTERS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_BYTE_INTO_QUARTERS` dient der Aufteilung eines eingehenden Byte-Datenwerts in vier separate Quarter-Ausgänge. Er realisiert eine logische Zerlegung eines Bytes (8 Bit) in vier 2‑Bit‑Gruppen, die über unidirektionale Adapter nach außen geführt werden. Die interne Implementierung nutzt eine Kombination aus Flipflops und einer rekursiven Instanz des gleichen Bausteins, um die Aufteilung synchron und datengetrieben zu steuern.
@@ -30,7 +31,7 @@ Nicht vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Eingang) | `IN` | `adapter::types::unidirectional::AB` | Byte‑Eingang, der die aufzuteilenden Daten liefert. |
 | **Plug** (Ausgang) | `QUARTER_BYTE_00` | `adapter::types::unidirectional::AQ` | Ausgang für das erste Quarter (niederwertigste 2 Bit). |
 | **Plug** (Ausgang) | `QUARTER_BYTE_01` | `adapter::types::unidirectional::AQ` | Ausgang für das zweite Quarter (Bit 2‑3). |
@@ -71,4 +72,4 @@ Der Funktionsblock `SPLIT_BYTE_INTO_QUARTERS` stellt eine kompakte, adapterbasie
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

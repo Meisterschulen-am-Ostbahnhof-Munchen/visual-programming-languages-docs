@@ -3,6 +3,7 @@
 ![FIELDBUS_ULINT_TO_SIGNAL_SCALED](./FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_ULINT_TO_SIGNAL_SCALED** dient zur Konvertierung eines ULINT-Rohwerts (z. B. von einem Feldbus) in einen skalierten LREAL-Wert. Dabei wird die Gültigkeit des Eingangssignals anhand eines konstanten Schwellwerts (`VALID_SIGNAL_LW`) überprüft. Ist der Eingang gültig, erfolgt eine lineare Skalierung (Multiplikation mit einem Faktor und Addition eines Offsets); andernfalls wird der Ausgang auf 0,0 gesetzt und die Gültigkeit negiert.
@@ -26,7 +27,7 @@ Der Funktionsblock **FIELDBUS_ULINT_TO_SIGNAL_SCALED** dient zur Konvertierung e
 ### **Daten-Eingänge**
 
 | Variable | Typ | Initialwert | Beschreibung |
-|----------|-----|-------------|--------------|
+| ---------- | ----- | ------------- | -------------- |
 | **IN** | ULINT | `LWORD_TO_ULINT(NOT_AVAILABLE_LWM)` | Rohwert vom Feldbus |
 | **SCALE** | LREAL | `1.0` | Skalierungsfaktor |
 | **OFFSET** | DINT | `0` | Offset, der nach der Skalierung addiert wird |
@@ -46,21 +47,21 @@ Keine Adapter vorhanden.
 
 Der Funktionsblock besitzt zwei Betriebszustände, die durch die Ereignisse **INIT** und **REQ** aktiviert werden:
 
-1. **INIT‑Zustand**  
-   Beim Eintreffen des INIT-Ereignisses wird der Algorithmus `INIT` ausgeführt (derzeit leer). Anschließend wird das Ereignis **INITO** gesendet.  
+1. **INIT‑Zustand**
+   Beim Eintreffen des INIT-Ereignisses wird der Algorithmus `INIT` ausgeführt (derzeit leer). Anschließend wird das Ereignis **INITO** gesendet.
    Über die mit INIT verbundenen Eingänge können die Parameter **SCALE** und **OFFSET** gesetzt werden.
 
-2. **REQ‑Zustand**  
+2. **REQ‑Zustand**
    Bei einem REQ-Ereignis wird der Algorithmus `REQ` ausgeführt:
 
-   - Prüfung: `IN ≤ LWORD_TO_ULINT(VALID_SIGNAL_LW)`  
-     - **Gültig** (Bedingung erfüllt):  
-       `OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`  
-       `VALID := TRUE`  
+   - Prüfung: `IN ≤ LWORD_TO_ULINT(VALID_SIGNAL_LW)`
+     - **Gültig** (Bedingung erfüllt):
+       `OUT := ULINT_TO_LREAL(IN) * SCALE + DINT_TO_LREAL(OFFSET)`
+       `VALID := TRUE`
 
-     - **Ungültig** (Bedingung nicht erfüllt):  
-       `OUT := 0.0`  
-       `VALID := FALSE`  
+     - **Ungültig** (Bedingung nicht erfüllt):
+       `OUT := 0.0`
+       `VALID := FALSE`
 
    - Anschließend wird das Ereignis **CNF** mit den neuen Werten von **OUT** und **VALID** ausgegeben.
 
@@ -101,4 +102,4 @@ Der Funktionsblock **FIELDBUS_ULINT_TO_SIGNAL_SCALED** bietet eine kompakte, par
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![SPLIT_AD_INTO_AX](./SPLIT_AD_INTO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The SPLIT_AD_INTO_AX function block splits a 32-bit data word received via an AD adapter (DWORD) into 32 separate AX adapters (BOOL). Each AX adapter represents a single bit of the original DWORD value. The block encapsulates the necessary event control and data storage in a modular, easy-to-use function block.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ Data is received via the IN adapter socket. The AD adapter provides a DWORD valu
 ### **Data Outputs**
 
 | Label | Type | Comment |
-|-------------|-------|---------------------|
+| ------------- | ------- | --------------------- |
 | BIT_00 | AX | Bool Bit 0 |
 | BIT_01 | AX | Bool Bit 1 |
 | … | … | … |
@@ -48,7 +50,7 @@ The internal process of the function block (FB) is divided into two steps:
 
 An internal FB `SPLIT_DWORD_INTO_BOOLS` receives the DWORD via the data connection `IN.D1`. It divides the 32 bits into individual Boolean signals (`BIT_00` … `BIT_31`).
 
-2. **Synchronization and Storage**
+1. **Synchronization and Storage**
 
 The event `IN.E1` triggers the input `REQ` of the splitter. After complete processing, the splitter sends the acknowledgment event `CNF`. This event is forwarded to the clock inputs (CLK) of 32 flip-flops (type `E_D_FF`). Simultaneously, the flip-flops receive the Boolean values provided by `SPLIT_DWORD_INTO_BOOLS` on their data inputs `D`.
 

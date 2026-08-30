@@ -3,6 +3,7 @@
 ![Uebung_021b_AX2_network](./Uebung_021b_AX2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the control of a simple mirror sequence using an AX flip-flop (AX_SR). The sequence is started and reset using two softkeys (F1 and F2). The flip-flop's output controls a digital output (Output_Q1), which can, for example, drive a mirror actuator. This exercise demonstrates the basic handling of adapter-based event flip-flops and digital outputs in the 4diac IDE.
@@ -85,6 +86,6 @@ This exercise is suitable for beginners in event-driven programming with 4diac a
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

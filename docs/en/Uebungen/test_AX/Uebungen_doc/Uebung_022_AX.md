@@ -4,6 +4,7 @@ No image available.
 ![Uebung_022_AX_network](./Uebung_022_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **mirror sequence** for two cylinders using the **AX variant** (adapter-based function blocks). Control is via three softkeys (F1, F2, F3). The operation is as follows:
@@ -56,12 +57,14 @@ The exercise consists of a SubApp network with seven function blocks and an even
 The flow is determined by the adapter connections in the SubApp network:
 
 1. **F1 (SoftKey_UP_F1)** → sets `AX_FB_SR_Ausfahren_Cyl_1` (via `SET1`).
+
 - The output `Q1` from Cyl_1 becomes `TRUE` and activates **DigitalOutput_Q1** (cylinder 1 extends).
-2. **F2 (SoftKey_F2_DOWN)** → is distributed via `AX_SPLIT_2` to two paths:
+1. **F2 (SoftKey_F2_DOWN)** → is distributed via `AX_SPLIT_2` to two paths:
+
 - **OUT1** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_1` → cylinder 1 retracts (Q1 = FALSE).
 - **OUT2** → `SET1` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 extends (Q2 = TRUE).
 - This achieves the mirroring: The active cylinder switches from 1 to 2.
-3. **F3 (SoftKey_F3_DOWN)** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 retracts (Q2 = FALSE).
+1. **F3 (SoftKey_F3_DOWN)** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 retracts (Q2 = FALSE).
 
 **Overview of signal flows:**
 

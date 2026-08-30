@@ -3,6 +3,7 @@
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_003a0`. Unlike using types (as in `Uebung_003a`), this exercise demonstrates how to visually group logic without creating separate type definitions in the library. This is achieved using so-called "Untyped SubApps."
 ----
+
 The main objective of this exercise is to demonstrate methods for structuring applications purely visually. Untyped sub-applications serve as "containers" or folders within a network to encapsulate related functions. They help to tidy up complex diagrams ("tidy up by collapsing") without having to worry about reusability or interface definitions.
 
 -----
@@ -17,18 +18,19 @@ The main objective of this exercise is to demonstrate methods for structuring ap
 
 Unlike typed subapplications, which are based on an external definition, the logic of these containers exists only within this specific instance. They have no external inputs or outputs in the interface (in this example) but access the hardware directly.
 
-* Contains the logic for channel 2.
-* Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
-2. **Container `SubApp_1`**:
-* Contains the logic for channel 1.
-* Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`[cite: 1].
+- Contains the logic for channel 2.
+- Internally: `DigitalInput_I2` connected to `DigitalOutput_Q2`[cite: 1].
+1. **Container `SubApp_1`**:
+
+- Contains the logic for channel 1.
+- Internally: `DigitalInput_I1` connected to `DigitalOutput_Q1`[cite: 1].
 
 ### Function Blocks (FBs)
 
 The familiar standard function blocks are used within the containers:
 
-* **`logiBUS_IX`**: For event-based signal reading.
-* **`logiBUS_QX`**: For event-based signal output.
+- **`logiBUS_IX`**: For event-based signal reading.
+- **`logiBUS_QX`**: For event-based signal output.
 
 -----
 

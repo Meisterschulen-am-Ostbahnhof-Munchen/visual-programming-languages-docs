@@ -3,6 +3,7 @@
 ![Uebung_076_network](./Uebung_076_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a function for processing machine selected speed (MSS). The value is scaled using a compound scale function block and then output as a numeric value to a Universal Terminal (UT). The scaling is performed using upper and lower factors (0.256 and 0.001). A note indicates that the object pool entry used (NumberVariable_Wheel_based_machine_speed) is currently a placeholder and should later be replaced with the correct entry (NumberVariable_Machine_selected_speed).
@@ -48,7 +49,7 @@ The process takes place entirely internally within the subapplication type (no e
 
 As soon as a new MSS value is received, scaling is triggered.
 
-2. `COMPOUND_SCALE.CNF` → `Q_NumericValue.REQ`
+1. `COMPOUND_SCALE.CNF` → `Q_NumericValue.REQ`
 
 After scaling is complete, the output value is sent to the UT (User Task).
 
@@ -58,7 +59,7 @@ After scaling is complete, the output value is sent to the UT (User Task).
 
 The raw machine speed value (UINT) is forwarded to the scaling block.
 
-2. `COMPOUND_SCALE.OUT` → `Q_NumericValue.rPhys`
+1. `COMPOUND_SCALE.OUT` → `Q_NumericValue.rPhys`
 
 The scaled value (REAL) is passed as the physical value for the UT output.
 

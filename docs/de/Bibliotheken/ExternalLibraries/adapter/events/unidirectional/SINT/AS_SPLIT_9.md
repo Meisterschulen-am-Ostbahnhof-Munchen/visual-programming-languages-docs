@@ -29,17 +29,17 @@ Der Funktionsblock **AS_SPLIT_9** dient dazu, einen eingehenden **AS‑Adapter**
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AS` | Eingangsadapter (AS‑Schnittstelle) |
-| **Plug**  | `OUT1` | `adapter::types::unidirectional::AS` | Erster Ausgangsadapter |
-| **Plug**  | `OUT2` | `adapter::types::unidirectional::AS` | Zweiter Ausgangsadapter |
-| **Plug**  | `OUT3` | `adapter::types::unidirectional::AS` | Dritter Ausgangsadapter |
-| **Plug**  | `OUT4` | `adapter::types::unidirectional::AS` | Vierter Ausgangsadapter |
-| **Plug**  | `OUT5` | `adapter::types::unidirectional::AS` | Fünfter Ausgangsadapter |
-| **Plug**  | `OUT6` | `adapter::types::unidirectional::AS` | Sechster Ausgangsadapter |
-| **Plug**  | `OUT7` | `adapter::types::unidirectional::AS` | Siebter Ausgangsadapter |
-| **Plug**  | `OUT8` | `adapter::types::unidirectional::AS` | Achter Ausgangsadapter |
-| **Plug**  | `OUT9` | `adapter::types::unidirectional::AS` | Neunter Ausgangsadapter |
+| **Plug** | `OUT1` | `adapter::types::unidirectional::AS` | Erster Ausgangsadapter |
+| **Plug** | `OUT2` | `adapter::types::unidirectional::AS` | Zweiter Ausgangsadapter |
+| **Plug** | `OUT3` | `adapter::types::unidirectional::AS` | Dritter Ausgangsadapter |
+| **Plug** | `OUT4` | `adapter::types::unidirectional::AS` | Vierter Ausgangsadapter |
+| **Plug** | `OUT5` | `adapter::types::unidirectional::AS` | Fünfter Ausgangsadapter |
+| **Plug** | `OUT6` | `adapter::types::unidirectional::AS` | Sechster Ausgangsadapter |
+| **Plug** | `OUT7` | `adapter::types::unidirectional::AS` | Siebter Ausgangsadapter |
+| **Plug** | `OUT8` | `adapter::types::unidirectional::AS` | Achter Ausgangsadapter |
+| **Plug** | `OUT9` | `adapter::types::unidirectional::AS` | Neunter Ausgangsadapter |
 
 ## Funktionsweise
 

@@ -43,6 +43,7 @@ The logic is implemented using the following algorithm:
 ALGORITHM REQ
 Q1 := S1 OR ((NOT R) AND Q1);
 END_ALGORITHM
+
 ## Technical Features
 
 - **IEC 61131-3 Compliance**: This function block precisely replicates the behavior of the classic `SR` flip-flop. Since the inputs `S1` and `R` are data inputs that are sampled simultaneously during the `REQ` event, logical prioritization is necessary.
@@ -69,8 +70,8 @@ The state of the flip-flop (`Q1`) depends on the current values of `S1` and `R` 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
-* [Exercise_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
+- [Exercise_006e1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_006e1.md)
+- [Exercise_006e1_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006e1_AX.md)
 
 ## Conclusion
 

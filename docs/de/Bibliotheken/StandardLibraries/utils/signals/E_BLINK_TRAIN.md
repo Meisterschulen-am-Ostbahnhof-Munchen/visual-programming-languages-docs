@@ -3,6 +3,7 @@
 ![E_BLINK_TRAIN](https://github.com/user-attachments/assets/41c5817d-1229-455b-b5c9-e7ad4003e0c5)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bestimmte Zeitintervalle ein- und ausgeschaltet wird. Die Anzahl der Blinkzyklen kann begrenzt werden. Im Gegensatz zu ähnlichen Blink-Funktionsblöcken kehrt dieser FB beim Stoppen immer auf den Zustand `FALSE` zurück.
@@ -62,7 +63,7 @@ Der Funktionsblock `E_BLINK_TRAIN` simuliert ein blinkendes Signal, das für bes
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Uebung_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
 
 ## Fazit
 

@@ -1,6 +1,6 @@
 # E_D_FF
 
----- 
+----
 
 ![E_D_FF Diagram](https://user-images.githubusercontent.com/113907528/204898130-f9f31fd9-da42-4b29-a664-add0d91e8890.png)
 
@@ -62,19 +62,19 @@ Die IEC 61499 ist ein internationaler Standard für die Modellierung verteilter 
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-| Feature        | E_D_FF | E_SR | E_R_TRIG |
-|---------------|--------|------|----------|
-| Speichertyp   | D-Flip-Flop | SR-Latch | Flankendetektor |
-| Taktung       | Erforderlich | Keine | Keine |
-| Datenhaltung  | Ja | Ja | Nein |
+| Feature | E_D_FF | E_SR | E_R_TRIG |
+| --------------- | -------- | ------ | ---------- |
+| Speichertyp | D-Flip-Flop | SR-Latch | Flankendetektor |
+| Taktung | Erforderlich | Keine | Keine |
+| Datenhaltung | Ja | Ja | Nein |
 | Ereignisausgang | Bei Änderung | Bei Set/Reset | Bei Flanke |
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_071a](../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
-* [Uebung_071b](../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
-* [Uebung_072b](../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
-* [Uebung_085](../../../Uebungen/test_B/Uebungen_doc/Uebung_085.md)
+- [Uebung_071a](../../../Uebungen/test_B/Uebungen_doc/Uebung_071a.md)
+- [Uebung_071b](../../../Uebungen/test_B/Uebungen_doc/Uebung_071b.md)
+- [Uebung_072b](../../../Uebungen/test_B/Uebungen_doc/Uebung_072b.md)
+- [Uebung_085](../../../Uebungen/test_B/Uebungen_doc/Uebung_085.md)
 
 ## Fazit
 

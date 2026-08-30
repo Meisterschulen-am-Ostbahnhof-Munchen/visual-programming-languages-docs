@@ -3,6 +3,7 @@
 ![AW_TO_AB](./AW_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AW_TO_AB` ist ein Composite-Baustein, der einen unidirektionalen WORD-Adapter (`AW`) in einen unidirektionalen BYTE-Adapter (`AB`) umwandelt. Er dient als Schnittstellenkonverter zwischen Komponenten, die auf unterschiedlichen Datentypen basieren. Die Konvertierung erfolgt durch den integrierten Standardfunktionsbaustein `F_WORD_TO_BYTE`.
@@ -28,7 +29,7 @@ Der Baustein besitzt keine eigenen Daten-Ausgänge. Das konvertierte BYTE-Ergebn
 ### **Adapter**
 
 | Name | Richtung | Typ | Beschreibung |
-|------|----------|-----|-------------|
+| ------ | ---------- | ----- | ------------- |
 | `AW_IN` | Socket (Eingang) | `adapter::types::unidirectional::AW` | WORD-Adapter mit einem Ereignis `E1` und einem Datenwert `D1` (WORD) |
 | `AB_OUT` | Plug (Ausgang) | `adapter::types::unidirectional::AB` | BYTE-Adapter mit einem Ereignis `E1` und einem Datenwert `D1` (BYTE) |
 
@@ -78,4 +79,4 @@ Der Composite-Baustein besitzt keinen eigenen Zustandsautomaten. Die Funktionswe
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

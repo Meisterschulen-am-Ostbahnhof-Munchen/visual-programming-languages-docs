@@ -3,6 +3,7 @@
 ![Uebung_012d_network](./Uebung_012d_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Erfassung eines numerischen Werts (Physical Value) über einen Eingabebaustein, das Speichern des Werts im nichtflüchtigen Speicher (NVS) sowie das Auslesen und Bereitstellen des gespeicherten Werts über einen Ausgabebaustein. Ziel ist es, den Ablauf von Datenerfassung, persistenter Speicherung und Rückgabe zu verstehen.

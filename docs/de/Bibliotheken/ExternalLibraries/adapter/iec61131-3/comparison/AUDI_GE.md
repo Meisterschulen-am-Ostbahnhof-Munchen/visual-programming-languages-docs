@@ -3,6 +3,7 @@
 ![AUDI_GE](./AUDI_GE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_GE` führt einen Vergleich zweier Werte auf „größer oder gleich“ durch. Er stellt das Ergebnis als booleschen Wert bereit. Der Baustein ist als Komposition realisiert und nutzt intern den Standard‑Vergleichsbaustein `F_GE` aus der IEC 61131-3‑Bibliothek. Die Ein‑ und Ausgabe erfolgt ausschließlich über unidirektionale Adapter.
@@ -11,12 +12,12 @@ Der Funktionsblock `AUDI_GE` führt einen Vergleich zweier Werte auf „größer
 
 ### **Ereignis‑Eingänge**
 
-- **Keine direkten Ereignisseingänge**  
+- **Keine direkten Ereignisseingänge**
   Die Auslösung des Vergleichs erfolgt über die **Socket‑Adapter** `IN1` und `IN2`. Jeder dieser Adapter liefert ein Ereignis an den internen Baustein, sobald gültige Daten anliegen.
 
 ### **Ereignis‑Ausgänge**
 
-- **Keine direkten Ereignisausgänge**  
+- **Keine direkten Ereignisausgänge**
   Das Ergebnis des Vergleichs wird über den **Plug‑Adapter** `OUT` als Ereignis weitergereicht, sobald die Auswertung abgeschlossen ist.
 
 ### **Daten‑Eingänge**
@@ -33,7 +34,7 @@ Die Datenwerte, die verglichen werden sollen, werden über die Adapter bezogen:
 ### **Adapter**
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN1` | Socket | `adapter::types::unidirectional::AUDI` | Erster Eingabewert |
 | `IN2` | Socket | `adapter::types::unidirectional::AUDI` | Zweiter Eingabewert |
 | `OUT` | Plug | `adapter::types::unidirectional::AX` | Ausgabe: `IN1 >= IN2` (boolesch) |
@@ -83,4 +84,4 @@ Der Baustein selbst besitzt keinen expliziten Zustandsautomaten – die gesamte 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

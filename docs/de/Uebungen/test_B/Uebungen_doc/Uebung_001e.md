@@ -16,7 +16,7 @@ Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit I
 - Logischer Negation mittels IEC 61131-Bitoperatoren
 - Ereignisgesteuerter Datenverarbeitung
 
-**Schwierigkeitsgrad:** Einfach  
+**Schwierigkeitsgrad:** Einfach
 **Benötigte Vorkenntnisse:** Grundlegende Kenntnisse der 4diac-IDE und des IEC 61499-Modells
 
 ---
@@ -25,7 +25,7 @@ Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit I
 
 ### **DigitalInput_I1** (`logiBUS::io::DI::logiBUS_IX`)
 
-- **Typ:** `logiBUS::io::DI::logiBUS_IX`  
+- **Typ:** `logiBUS::io::DI::logiBUS_IX`
 - **Parameter:**
   - `QI` = `TRUE` (Qualifier – immer aktiv)
   - `Input` = `Input_I1` (physikalischer Pin I1)
@@ -37,10 +37,10 @@ Die Übung eignet sich für Einsteiger in die industrielle Automatisierung mit I
 
 - **Typ:** `iec61131::bitwiseOperators::F_NOT_BOOL`
 - **Parameter:** Keine
-- **Ereigniseingang:** `REQ` – startet die Negation  
-- **Ereignisausgang:** `CNF` – bestätigt die fertige Negation  
-- **Dateneingang:** `IN` (BOOL) – zu negierender Wert  
-- **Datenausgang:** `OUT` (BOOL) – negierter Wert  
+- **Ereigniseingang:** `REQ` – startet die Negation
+- **Ereignisausgang:** `CNF` – bestätigt die fertige Negation
+- **Dateneingang:** `IN` (BOOL) – zu negierender Wert
+- **Datenausgang:** `OUT` (BOOL) – negierter Wert
 - **Funktionsweise:** Führt eine logische NOT-Operation auf den booleschen Eingangswert aus. Bei `IN = TRUE` wird `OUT = FALSE` und umgekehrt.
 
 ### **DigitalOutput_Q1** (`logiBUS::io::DQ::logiBUS_QX`)
@@ -84,4 +84,4 @@ Die Übung **Uebung_001e** realisiert eine einfache Negation eines digitalen Ein
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

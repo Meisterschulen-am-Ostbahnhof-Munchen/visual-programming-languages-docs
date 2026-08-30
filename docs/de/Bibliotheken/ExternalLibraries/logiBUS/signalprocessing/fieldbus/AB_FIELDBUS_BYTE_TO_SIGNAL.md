@@ -3,6 +3,7 @@
 ![AB_FIELDBUS_BYTE_TO_SIGNAL](./AB_FIELDBUS_BYTE_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AB_FIELDBUS_BYTE_TO_SIGNAL** dient dazu, ein eingehendes Byte-Signal (über den Adapter *IN*) auf den Ausgang (*OUT*) zu spiegeln, sofern das Signal als gültig erkannt wird. Die Gültigkeit wird über einen separaten Ausgang (*VALID*) signalisiert. Der Baustein kapselt die Verarbeitung eines Feldbus-Byte-Signals und stellt sicher, dass nur valide Daten an die nachfolgende Logik weitergegeben werden. Er basiert auf einem internen `FIELDBUS_BYTE_TO_SIGNAL`-Baustein, ergänzt durch ein D-Flipflop zur stabilen Ausgabe des Gültigkeitssignals.
@@ -12,7 +13,7 @@ Der Funktionsblock **AB_FIELDBUS_BYTE_TO_SIGNAL** dient dazu, ein eingehendes By
 Der FB besitzt **keine** direkten Ereignis- oder Daten-Ein-/Ausgänge auf der obersten Ebene. Die gesamte Kommunikation erfolgt über drei **Adapter-Schnittstellen**:
 
 | Adapter | Richtung | Typ | Beschreibung |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AB` | Eingangsadapter für das Byte-Signal und das zugehörige Ereignis. |
 | `OUT` | Plug | `adapter::types::unidirectional::AB` | Ausgangsadapter für das gespiegelte Byte-Signal. |
 | `VALID` | Plug | `adapter::types::unidirectional::AX` | Ausgangsadapter, der den Gültigkeitszustand des Signals anzeigt. |
@@ -74,7 +75,7 @@ Somit wird das Byte immer dann an `OUT` weitergegeben, wenn es gültig ist. Der 
 Der Baustein besitzt keinen expliziten Zustandsautomaten auf der obersten Ebene; die Zustände ergeben sich aus dem Zusammenwirken der internen Komponenten:
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | **Idle** | Warten auf ein Ereignis an `IN.E1`. |
 | **Processing** | Interner `FIELDBUS_BYTE_TO_SIGNAL` verarbeitet das Byte; `OUT` und `VALID` werden aktualisiert. |
 | **Valid stable** | Nachdem das Flipflop getaktet wurde, bleibt `VALID.D1` bis zum nächsten Ereignis stabil. |
@@ -99,4 +100,4 @@ Der `AB_FIELDBUS_BYTE_TO_SIGNAL` ist ein spezialisierter Baustein für die siche
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AX_TO_AQ](./AX_TO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a quarter-byte signal (AQ adapter). The conversion is based on event-driven COMMAND logic, where an incoming event triggers the conversion and the result is acknowledged via an output event. The function block encapsulates the conversion logic in an internal sub-function block, thus enabling a clean separation between adapter types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The **AX_TO_AQ** function block converts a Boolean signal (AX adapter) into a qu
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `IN` | Socket | `adapter::types::unidirectional::AX` | Receives the Boolean signal. The AX adapter provides a unidirectional Boolean channel. |
 | `OUT` | Plug | `adapter::types::unidirectional::AQ` | Provides the converted quarter-byte signal. The AQ adapter is a unidirectional quarter-byte channel. |
 
@@ -73,7 +75,7 @@ The function block does not have an explicit state machine. It operates as pure 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Task | Difference |
-|----------|---------|-------------|
+| ---------- | --------- | ------------- |
 | `BOOL_TO_BYTE` | Converts BOOL to a byte (8-bit) | Works with 8-bit output instead of 4-bit. Requires other adapter types (e.g., `AB`). |
 | `BOOL_TO_WORD` | Converts BOOL to a word (16-bit) | Provides a wider output, often for analog or digital word signals. |
 | `AX_TO_AQ` | Converts BOOL (AX) to a quarter byte (AQ) | Specifically designed for the unidirectional AX↔AQ adapter combination, it generates only 4-bit values. |

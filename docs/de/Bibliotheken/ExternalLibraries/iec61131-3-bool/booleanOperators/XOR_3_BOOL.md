@@ -3,6 +3,7 @@
 <img width="1186" height="241" alt="image" src="https://github.com/user-attachments/assets/a3d5273a-10df-4b36-b9ea-460635fa84fc" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `XOR_3_BOOL` ist ein standardisierter Baustein zur Berechnung der logischen Exklusiv-ODER-Verknüpfung (XOR) für drei boolesche Eingangswerte. Er ist als generischer Baustein implementiert und führt seine Operation bei jedem eingehenden Ausführungsereignis durch.
@@ -13,21 +14,21 @@ Der Funktionsblock `XOR_3_BOOL` ist ein standardisierter Baustein zur Berechnung
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Normal Execution Request): Löst die Berechnung der XOR-Funktion aus. Die mit diesem Ereignis verbundenen Daten (`IN1`, `IN2`, `IN3`) werden gelesen und verarbeitet.
+-   **REQ** (Normal Execution Request): Löst die Berechnung der XOR-Funktion aus. Die mit diesem Ereignis verbundenen Daten (`IN1`, `IN2`, `IN3`) werden gelesen und verarbeitet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Execution Confirmation): Wird nach Abschluss der Berechnung ausgelöst. Dieses Ereignis liefert das berechnete Ergebnis über die zugehörige Datenausgabe `OUT`.
+-   **CNF** (Execution Confirmation): Wird nach Abschluss der Berechnung ausgelöst. Dieses Ereignis liefert das berechnete Ergebnis über die zugehörige Datenausgabe `OUT`.
 
 ### **Daten-Eingänge**
 
-*   **IN1** (BOOL): Erster boolescher Operand für die XOR-Operation.
-*   **IN2** (BOOL): Zweiter boolescher Operand für die XOR-Operation.
-*   **IN3** (BOOL): Dritter boolescher Operand für die XOR-Operation.
+-   **IN1** (BOOL): Erster boolescher Operand für die XOR-Operation.
+-   **IN2** (BOOL): Zweiter boolescher Operand für die XOR-Operation.
+-   **IN3** (BOOL): Dritter boolescher Operand für die XOR-Operation.
 
 ### **Daten-Ausgänge**
 
-*   **OUT** (BOOL): Das Ergebnis der dreifachen XOR-Verknüpfung der Eingänge `IN1`, `IN2` und `IN3`.
+-   **OUT** (BOOL): Das Ergebnis der dreifachen XOR-Verknüpfung der Eingänge `IN1`, `IN2` und `IN3`.
 
 ### **Adapter**
 
@@ -41,9 +42,9 @@ Die logische Funktion entspricht: `OUT = (IN1 XOR IN2) XOR IN3`. Für drei Eing�
 
 ## Technische Besonderheiten
 
-*   **Generischer Baustein:** Der Block ist mit dem Attribut `eclipse4diac::core::GenericClassName` als generischer Baustein (`'GEN_XOR'`) gekennzeichnet. Dies ermöglicht eine potenzielle Wiederverwendung der Logik für andere Datentypen, die die XOR-Operation unterstützen.
-*   **Standardkonformität:** Der Block ist gemäß der Norm IEC 61131-3 als "standard boolean function" klassifiziert.
-*   **Paketzuordnung:** Der Baustein ist dem Paket `iec61131::bitwiseOperators` zugeordnet.
+-   **Generischer Baustein:** Der Block ist mit dem Attribut `eclipse4diac::core::GenericClassName` als generischer Baustein (`'GEN_XOR'`) gekennzeichnet. Dies ermöglicht eine potenzielle Wiederverwendung der Logik für andere Datentypen, die die XOR-Operation unterstützen.
+-   **Standardkonformität:** Der Block ist gemäß der Norm IEC 61131-3 als "standard boolean function" klassifiziert.
+-   **Paketzuordnung:** Der Baustein ist dem Paket `iec61131::bitwiseOperators` zugeordnet.
 
 ## Zustandsübersicht
 
@@ -51,16 +52,16 @@ Der Funktionsblock besitzt keinen internen Zustand im Sinne eines Speichers. Sei
 
 ## Anwendungsszenarien
 
-*   **Paritätsprüfung:** Erkennung, ob eine ungerade Anzahl von drei booleschen Signalen aktiv ist.
-*   **Steuerungslogik:** In speziellen Steuerungsalgorithmen, die eine "entweder-oder"-Logik über mehr als zwei Bedingungen benötigen.
-*   **Verschlüsselung und Codierung:** Als grundlegende Komponente in einfachen kryptografischen oder fehlererkennenden Schaltungen (z.B. für Paritätsbits).
-*   **Signalvergleich:** Feststellen, ob sich ein drittes Signal von der Kombination zweier anderer Signale unterscheidet.
+-   **Paritätsprüfung:** Erkennung, ob eine ungerade Anzahl von drei booleschen Signalen aktiv ist.
+-   **Steuerungslogik:** In speziellen Steuerungsalgorithmen, die eine "entweder-oder"-Logik über mehr als zwei Bedingungen benötigen.
+-   **Verschlüsselung und Codierung:** Als grundlegende Komponente in einfachen kryptografischen oder fehlererkennenden Schaltungen (z.B. für Paritätsbits).
+-   **Signalvergleich:** Feststellen, ob sich ein drittes Signal von der Kombination zweier anderer Signale unterscheidet.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **XOR (2 Eingänge):** Der Standard-XOR-Baustein mit nur zwei Eingängen. `XOR_3_BOOL` erweitert diese Funktion auf drei Operanden. Siehe: [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
-*   **ODER / UND (3 Eingänge):** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung aller Eingänge. Die XOR-Logik ist spezieller und unterscheidet sich insbesondere im Fall, wenn alle drei Eingänge `TRUE` sind (bei ODER=TRUE, bei UND=TRUE, bei XOR=TRUE).
-*   **GEN_XOR:** Dies ist die generische Basis, von der `XOR_3_BOOL` als spezifische Instanz für den Datentyp `BOOL` abgeleitet ist.
+-   **XOR (2 Eingänge):** Der Standard-XOR-Baustein mit nur zwei Eingängen. `XOR_3_BOOL` erweitert diese Funktion auf drei Operanden. Siehe: [XOR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_3.md)
+-   **ODER / UND (3 Eingänge):** Diese Blöcke berechnen die logische ODER- bzw. UND-Verknüpfung aller Eingänge. Die XOR-Logik ist spezieller und unterscheidet sich insbesondere im Fall, wenn alle drei Eingänge `TRUE` sind (bei ODER=TRUE, bei UND=TRUE, bei XOR=TRUE).
+-   **GEN_XOR:** Dies ist die generische Basis, von der `XOR_3_BOOL` als spezifische Instanz für den Datentyp `BOOL` abgeleitet ist.
 
 ## Fazit
 
@@ -70,4 +71,4 @@ Der `XOR_3_BOOL` Funktionsblock ist ein spezialisierter, normkonformer Baustein 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

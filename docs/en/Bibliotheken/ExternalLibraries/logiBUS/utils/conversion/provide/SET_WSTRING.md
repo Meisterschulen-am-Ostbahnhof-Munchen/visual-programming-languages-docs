@@ -3,9 +3,11 @@
 ![SET_WSTRING](./SET_WSTRING.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_WSTRING** is used to transfer a value of data type `WSTRING` to an InOut parameter. It is typically used to write a calculated or externally specified string value to a higher-level variable (e.g., of another instance or a higher-level function block).
+
 ## Interface Structure
 
 ### **Event Inputs**

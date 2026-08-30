@@ -3,6 +3,7 @@
 ![AUDI_TO_AB](./AUDI_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AUDI_TO_AB** Funktionsblock ist ein zusammengesetzter Baustein (Composite FB), der eine UDINT‑Schnittstelle (AUDI, 32‑Bit unsigned Integer) in eine BYTE‑Schnittstelle (AB, 8‑Bit) umwandelt. Er kapselt die Konvertierungslogik und stellt zwei unidirektionale Adapter bereit: einen Socket für den AUDI‑Eingang und einen Plug für den AB‑Ausgang. Der Baustein wird typischerweise eingesetzt, um Datenkommunikation zwischen Systemen zu ermöglichen, die unterschiedliche Datentypen über Adapter verwenden.
@@ -71,7 +72,7 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Er arbeitet ereignisge
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung | Unterschied zu AUDI_TO_AB |
-|----------|--------------|----------------------------|
+| ---------- | -------------- | ---------------------------- |
 | `F_UDINT_TO_BYTE` | Direkte Konvertierungsfunktion ohne Adapter | Erwartet Standard‑Ereignis‑ und Daten‑Schnittstellen; AUDI_TO_AB kapselt die Konvertierung in Adapter‑Signaturen. |
 | `UDINT_TO_BYTE` (Composite mit Standard‑Ports) | Ähnliche Logik, aber mit SOCKET/PLUG‑Schnittstelle | Verwendet möglicherweise andere Adapter‑Typen oder bidirektionale Schnittstellen; AUDI_TO_AB ist auf unidirektionale Adapter spezialisiert. |
 

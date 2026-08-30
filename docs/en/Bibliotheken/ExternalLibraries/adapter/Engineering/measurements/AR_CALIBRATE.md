@@ -3,9 +3,11 @@
 ![AR_CALIBRATE](./AR_CALIBRATE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AR_CALIBRATE` is used for offset and scale calibration of an analog input signal provided via an adapter. It enables two-stage calibration: First, the offset is determined by comparison with a reference value during active calibration (CO), and then the scale is determined using a second reference (CS). The calibrated output signal is calculated continuously.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +23,7 @@ This function block does not have its own event outputs. However, events are sen
 ### **Data Inputs**
 
 | Name | Type | Description |
-|------|-----|---------------|
+| ------ | ----- | --------------- |
 | `Y_Offset` | `REAL` | Reference value for offset calibration |
 | `Y_Scale` | `REAL` | Reference value for scale calibration |
 
@@ -34,7 +36,7 @@ The FB has no direct data outputs. The calculated values are provided via the ad
 **Plugs (providing interfaces):**
 
 | Adapter | Type | Description |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `Y` | `adapter::types::unidirectional::AR` | Calibrated output (data + event) |
 | `OFFSET` | `adapter::types::bidirectional::AR2` | Returns the calculated offset value (bidirectional) |
 | `SCALE` | `adapter::types::bidirectional::AR2` | Returns the calculated scale factor (bidirectional) |
@@ -42,7 +44,7 @@ The FB has no direct data outputs. The calculated values are provided via the ad
 **Sockets (user interfaces):**
 
 | Adapter | Type | Description |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `X` | `adapter::types::unidirectional::AR` | Analog input value (unidirectional) |
 | `CO` | `adapter::types::unidirectional::AX` | Trigger for offset calibration (event + data) |
 | `CS` | `adapter::types::unidirectional::AX` | Trigger for Scale Calibration (Event + Data) |
@@ -51,17 +53,17 @@ The FB has no direct data outputs. The calculated values are provided via the ad
 
 The function block operates with three basic algorithms, which are executed in the states `REQ`, `CO`, and `CS`:
 
-* **REQ** (Normal Operation):
+- **REQ** (Normal Operation):
 
 Y.D1 := (X.D1 + OFFSET.DI1) * SCALE.DI1`
 The output value is calculated from the input, the current offset, and the scale factor.
 
-* **CO** (Offset Calibration):
+- **CO** (Offset Calibration):
 
 OFFSET.DO1 := Y_Offset - X.D1`
 The offset is determined as the difference between the reference value `Y_Offset` and the current input value.
 
-* * **CS** (Scale Calibration):
+- - **CS** (Scale Calibration):
 
 SCALE.DO1 := Y_Scale / (X.D1 + OFFSET.DI1)`
 
@@ -86,25 +88,26 @@ The transitions between the states are defined as follows:
 
 ## Technical Features
 
-* **Adapter-based communication**: All inputs and outputs (except reference values) are implemented via adapters. This allows for flexible coupling with various analog input modules.
-* **Bidirectional calibration adapters**: The adapters `OFFSET` and `SCALE` are bidirectional, meaning they can be written to by the calibration function block and read by external modules.
-* **Two-Stage Calibration**: Offset and scaling are calibrated sequentially. The scaling factor already uses the determined offset to ensure correct linear correction.
-* **No Own Event Output**: The function block does not generate its own events but triggers them via the adapter events (e.g., `Y.E1` after each calculation).
+- **Adapter-based communication**: All inputs and outputs (except reference values) are implemented via adapters. This allows for flexible coupling with various analog input modules.
+- **Bidirectional calibration adapters**: The adapters `OFFSET` and `SCALE` are bidirectional, meaning they can be written to by the calibration function block and read by external modules.
+- **Two-Stage Calibration**: Offset and scaling are calibrated sequentially. The scaling factor already uses the determined offset to ensure correct linear correction.
+- **No Own Event Output**: The function block does not generate its own events but triggers them via the adapter events (e.g., `Y.E1` after each calculation).
 
 ## State Overview
 
 | State | Description | Action |
-|---------|--------------|--------|
+| --------- | -------------- | -------- |
 | **REQ** | Normal Operation – Calculation of the Calibrated Output | Executes algorithm `REQ`, sends event to `Y.E1` |
 | **CO** | Offset Calibration | Executes algorithm `CO`, sends event to `OFFSET.EO1` |
 | **CS** | Scale Calibration | Executes algorithm `CS`, sends event to `SCALE.EO1` |
 
 ## Application Scenarios
 
-* **Industrial Data Processing**: Calibration of pressure sensors, temperature sensors, or other analog encoders where offset and gain need to be readjusted.
-* **Measuring Chain Alignment**: After connecting a sensor, the entire chain can be linearized by applying a known zero point (offset) and a known measured value (scaling).
-* **Automatic Recalibration**: Drift effects can be compensated for by cyclically triggering the calibration adapters.
-*
+- **Industrial Data Processing**: Calibration of pressure sensors, temperature sensors, or other analog encoders where offset and gain need to be readjusted.
+- **Measuring Chain Alignment**: After connecting a sensor, the entire chain can be linearized by applying a known zero point (offset) and a known measured value (scaling).
+- **Automatic Recalibration**: Drift effects can be compensated for by cyclically triggering the calibration adapters.
+-
+
 ## Comparison with Similar Function Blocks
 
 Simple scaling function blocks (e.g., `SCALE`) offer only fixed multiplication and addition, without automatic calibration. In contrast, `AR_CALIBRATE` integrates the entire calibration logic – including reference setting and event-driven activation – and is therefore suitable for dynamic environments where parameters need to be adjusted during operation.

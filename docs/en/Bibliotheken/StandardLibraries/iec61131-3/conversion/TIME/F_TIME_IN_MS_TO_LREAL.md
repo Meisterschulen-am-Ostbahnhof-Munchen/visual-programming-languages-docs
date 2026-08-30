@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_MS_TO_LREAL` is used to convert a TIME value in milliseconds to an LREAL value. This is particularly useful when time values are needed for further calculations or analyses with higher precision.
 ![F_TIME_IN_MS_TO_LREAL](F_TIME_IN_MS_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,11 +53,11 @@ Often, a function like `DINT_TO_TIME` is needed to convert a numeric value (e.g.
 
 Use the block **`F_MULTIME`** (from the category `arithmetic`) for this purpose:
 
-* Multiply your numeric value by the desired time base.
+- Multiply your numeric value by the desired time base.
 
-* **Example:** `500 * T#1ms = T#500ms`
+- **Example:** `500 * T#1ms = T#500ms`
 
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with similar function blocks
 

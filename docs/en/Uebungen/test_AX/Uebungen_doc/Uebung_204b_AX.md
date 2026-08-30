@@ -3,9 +3,11 @@
 ![Uebung_204b_AX_network](./Uebung_204b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the function block **ILOCK_CONFLICT_TRIP_AX** for safety-related motor shutdown. An interlock logic is implemented, in which two opposing requirements (e.g., clockwise and counterclockwise rotation) are monitored, and a trip is triggered in the event of a conflict. The entire control is achieved via adapter connections and an intermediate sub-app (AX_2_TO_3), which distributes the signals to the outputs.
+
 ## Function Blocks Used (FBs)
 
 - **DigitalInput_I1** (Type: `logiBUS::io::DI::logiBUS_IXA`)
@@ -51,11 +53,12 @@ This exercise demonstrates the use of the function block **ILOCK_CONFLICT_TRIP_A
 - `ILOCK_AX.UP_OUT` → `AX_2_TO_3.UP_IN`
 - `ILOCK_AX.DOWN_OUT` → `AX_2_TO_3.DOWN_IN`
 - `ILOCK_AX.TRIP_OUT` → `Trip_Anzeige.OUT`
-4. **Power Amplifier Control**: The sub-app `AX_2_TO_3` distributes the signals to the final outputs:
+1. **Power Amplifier Control**: The sub-app `AX_2_TO_3` distributes the signals to the final outputs:
+
 - `AX_2_TO_3.UP_OUT` → `Rechtslauf.OUT`
 - `AX_2_TO_3.DOWN_OUT` → `Linkslauf.OUT`
 - `AX_2_TO_3.OR_OUT` → `LowSide_Treiber.OUT`
-5. **Reset Function**: The digital input **I3** (via `DigitalInput_Reset`) is connected to the event input **EI_RESET** of `ILOCK_AX` via a button press event (`BUTTON_SINGLE_CLICK`) to reset a triggered trip.
+1. **Reset Function**: The digital input **I3** (via `DigitalInput_Reset`) is connected to the event input **EI_RESET** of `ILOCK_AX` via a button press event (`BUTTON_SINGLE_CLICK`) to reset a triggered trip.
 
 **Exercise Notes**:
 
@@ -71,6 +74,6 @@ This exercise teaches the construction of a safety-related motor control using t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

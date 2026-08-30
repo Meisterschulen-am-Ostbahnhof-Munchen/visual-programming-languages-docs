@@ -3,6 +3,7 @@
 ![AX_TO_AQ](./AX_TO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_TO_AQ** dient der Umwandlung eines booleschen Signals (AX‑Adapter) in ein Quarter‑Byte‑Signal (AQ‑Adapter). Die Umwandlung erfolgt auf Basis einer ereignisgesteuerten COMMAND‑Logik, bei der ein eingehendes Ereignis die Konvertierung auslöst und das Ergebnis über ein Ausgangsereignis quittiert wird. Der Baustein kapselt die Konvertierungslogik in einem internen Sub‑Funktionsblock und ermöglicht so eine saubere Trennung zwischen Adaptertypen.
@@ -72,7 +73,7 @@ Der Funktionsblock besitzt keine explizite Zustandsmaschine. Er arbeitet als rei
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Aufgabe | Unterschied |
-|----------|---------|-------------|
+| ---------- | --------- | ------------- |
 | `BOOL_TO_BYTE` | Konvertiert BOOL in ein Byte (8‑Bit) | Arbeitet mit 8‑Bit‑ statt 4‑Bit‑Ausgabe. Benötigt andere Adaptertypen (z. B. `AB`). |
 | `BOOL_TO_WORD` | Konvertiert BOOL in ein Word (16‑Bit) | Liefert eine breitere Ausgabe, oft für analoge oder digitale Wort‑Signale. |
 | `AX_TO_AQ` | Konvertiert BOOL (AX) in Quarter Byte (AQ) | Speziell auf die unidirektionale Adapterkombination AX↔AQ zugeschnitten und erzeugt nur 4‑Bit‑Werte. |

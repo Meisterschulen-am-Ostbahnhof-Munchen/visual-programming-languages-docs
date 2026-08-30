@@ -3,6 +3,7 @@
 ![NVS_AB2](./NVS_AB2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **NVS_AB2** ermöglicht das Laden und Speichern von `REAL`-Daten in einem nichtflüchtigen Speicher (Non‑Volatile Storage, NVS) unter Verwendung eines Zeichenketten-Schlüssels. Er kapselt den NVS-Zugriff in einer komfortablen, asynchronen Schnittstelle und kommuniziert mit der Umgebung über einen bidirektionalen **AB2**‑Adapter. Dadurch eignet sich der Baustein besonders für Szenarien, in denen Konfigurationswerte oder Zustandsdaten dauerhaft auf einem ESP32 gespeichert werden müssen.
@@ -92,4 +93,4 @@ Bausteine ohne Adapter erfordern hingegen separate Event‑Eingänge für Lesen 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

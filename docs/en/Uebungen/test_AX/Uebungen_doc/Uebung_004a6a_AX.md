@@ -3,12 +3,14 @@
 ![Uebung_004a6a_AX_network](./Uebung_004a6a_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **toggle flip-flop** (changeover switch) using **event inputs** (IE) and a **rendezvous block** (`RT_E_REND`).
 The system expects two button events (inputs I1 and I2) that must arrive within a specific time limit (deadline). Only when both events have been synchronized is the flip-flop clocked and the digital output Q1 switched. A third button (I3) serves as a reset for the rendezvous mechanism.
 This exercise demonstrates how to handle time-critical event connections, rendezvous synchronization, and simple toggle functions in the 4diac IDE.
 ...
+
 ## Function Blocks Used (FBs)
 
 The SubApp uses the following (sub)blocks:
@@ -65,24 +67,27 @@ The SubApp uses the following (sub)blocks:
 ## Program Flow and Connections
 
 1. **Event Detection:**
+
 - The three button inputs (`Input_I1`, `Input_I2`, `Input_I3`) are monitored by the `DigitalInput_CLK_IX` function blocks. Each simple button press (event `BUTTON_SINGLE_CLICK`) activates the event output `IND`.
-2. **Rendezvous (Event Synchronization):**
+1. **Rendezvous (Event Synchronization):**
+
 - The events from `I1` and `I2` are forwarded to `EI1` and `EI2` of the `RT_E_REND` block.
 - The block waits until both events have arrived. The maximum waiting time between the first and second events is 20 ms (`Deadline`). If the difference exceeds this value, the operation is discarded and the next attempt is awaited.
 - An event from `I3` (Reset Pin) immediately resets the rendezvous state without triggering `EO`.
 
-3. **Toggle Flip-Flop:**
+1. **Toggle Flip-Flop:**
 
 - If the rendezvous is successful, `RT_E_REND` sends an event to the `CLK` input of `AX_T_FF`.
 - The flip-flop changes its internal state (from `FALSE` to `TRUE` or vice versa) and outputs it via the adapter output `Q`.
-4. **Output:**
+1. **Output:**
+
 - The state of the flip-flop (`Q`) is connected to the `OUT` adapter input of the `DigitalOutput_Q1` device. This controls the physical output `Output_Q1` accordingly.
 - The output switches (toggle function) on each successful rendezvous.
 
 **Summary Connection Table:**
 
 | Source | Destination |
-|--------|------|
+| -------- | ------ |
 | `DigitalInput_CLK_I1.IND` | `RT_E_REND.EI1` |
 | `DigitalInput_CLK_I2.IND` | `RT_E_REND.EI2` |
 | `DigitalInput_CLK_I3.IND` | `RT_E_REND.R` |
@@ -102,6 +107,6 @@ This provides the foundation for time-critical, event-driven logic in automation
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

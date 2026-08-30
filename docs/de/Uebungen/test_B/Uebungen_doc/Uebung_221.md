@@ -41,7 +41,7 @@ Die Steuerung erfolgt über vier digitale Eingänge (CU, CD, Reset, Laden des An
 
 ## Programmablauf und Verbindungen
 
-1. **Ereignisverknüpfung**: Jeder der vier digitalen Eingänge (Input_CU, Input_CD, Input_R, Input_LD) löst bei einer Zustandsänderung (Ereignis `IND`) die Ausführung des Zählers `FB_CTUD_DINT` aus (Eingangsereignis `REQ`).  
+1. **Ereignisverknüpfung**: Jeder der vier digitalen Eingänge (Input_CU, Input_CD, Input_R, Input_LD) löst bei einer Zustandsänderung (Ereignis `IND`) die Ausführung des Zählers `FB_CTUD_DINT` aus (Eingangsereignis `REQ`).
    → Alle Eingänge sind direkt mit demselben `REQ`-Ereignis des Zählers verbunden. Dies bewirkt, dass bei jeder Änderung eines beliebigen Eingangs der Zähler neu verarbeitet wird.
 
 2. **Datenverknüpfung**:
@@ -57,14 +57,14 @@ Die Steuerung erfolgt über vier digitale Eingänge (CU, CD, Reset, Laden des An
    - Ein positiver Flanke an LD lädt den Wert von `PV` (hier 10) in den Zähler.
    - Sobald der Zählerstand den Vergleichswert `PV` erreicht oder überschreitet, wird `QU` auf TRUE gesetzt; bei Unterschreiten von 0 wird `QD` auf TRUE gesetzt.
 
-**Lernziele**:  
+**Lernziele**:
 
-- Verständnis und Anwendung des IEC 61131-3 Standardzählers `CTUD`.  
-- Einbindung von logiBUS-I/O-Modulen in eine 4diac-Applikation.  
-- Ausgabe numerischer Werte auf einem Terminal.  
+- Verständnis und Anwendung des IEC 61131-3 Standardzählers `CTUD`.
+- Einbindung von logiBUS-I/O-Modulen in eine 4diac-Applikation.
+- Ausgabe numerischer Werte auf einem Terminal.
 - Umgang mit Ereignis- und Datenverbindungen in 4diac.
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Vorkenntnisse**: Grundlagen der 4diac-IDE, IEC 61131-3 Bausteine, logiBUS-Konfiguration.
 
 ## Zusammenfassung
@@ -75,4 +75,4 @@ Die Übung **Uebung_221** realisiert einen voll funktionsfähigen Vor-/Rückwär
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

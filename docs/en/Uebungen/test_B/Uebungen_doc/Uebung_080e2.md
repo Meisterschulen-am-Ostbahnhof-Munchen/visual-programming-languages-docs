@@ -3,15 +3,17 @@
 ![Uebung_080e2_network](./Uebung_080e2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an up counter (E_CTU) in combination with an **event brake**, implemented by the function block `E_D_FF_ANY_TMIN`. The counter is incremented via a cyclic event generator (E_CYCLE) as soon as a key is pressed at `DigitalInput_CLK_I1`. A second key press at `DigitalInput_CLK_I2` resets the counter and stops the cycle. The output counter values are only passed to a numeric output if the minimum dwell time (`Tmin`) of the signal state is exceeded – this prevents unwanted or noisy values. An additional D flip-flop block (`E_D_FF`) outputs the counter status (Q) as a binary signal to a digital output.
+
 ## Function Blocks Used
 
 This exercise uses the following predefined function blocks in the network:
 
 | Block Name | Type | Parameters | Short Description |
-|--------------|-----|-----------|------------------|
+| -------------- | ----- | ----------- | ------------------ |
 | `DigitalInput_CLK_I1` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I1`, `InputEvent = BUTTON_SINGLE_CLICK` | Generates an event (`IND`) when a button is pressed on input I1. |
 | `DigitalInput_CLK_I2` | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`, `Input = Input_I2`, `InputEvent = BUTTON_SINGLE_CLICK` | Generates an event (`IND`) upon a single key press on input I2. |
 | `E_CYCLE` | `iec61499::events::E_CYCLE` | `DT = T#1ms` | Cyclic event generator; generates an event (`EO`) every 1 ms after starting, until stopped. |
@@ -36,6 +38,7 @@ This exercise uses the following predefined function blocks in the network:
 7. **Stop and Reset**: Pressing a key on `DigitalInput_CLK_I2` generates an event that simultaneously stops the cycle (`E_CYCLE.STOP`) and resets the counter (`E_CTU.R`).
 
 ...
+
 ### Data Connections
 
 - `E_CTU.CV` (Current Count Value) → `E_D_FF_ANY.D`
@@ -58,8 +61,8 @@ Exercise 080e2 illustrates how an event-driven counter is coupled with **tempora
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
 ]

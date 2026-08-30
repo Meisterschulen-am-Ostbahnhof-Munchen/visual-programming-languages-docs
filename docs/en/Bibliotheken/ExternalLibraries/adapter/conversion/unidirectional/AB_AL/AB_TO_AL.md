@@ -3,9 +3,11 @@
 ![AB_TO_AL](./AB_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AB_TO_AL` is a composite block for converting a unidirectional BYTE adapter (type `AB`) into a unidirectional LWORD adapter (type `AL`). It is used to convert data from an 8-bit data format to a 64-bit data format, thereby transferring the event control of the source adapter to the target adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ This function block does not have direct event outputs. The outgoing event flow 
 ### **Adapters**
 
 | Name | Direction | Adapter Type | Description |
-|------|----------|--------------|--------------|
+| ------ | ---------- | -------------- | -------------- |
 | `AB_IN` | Socket | `adapter::types::unidirectional::AB` | Input adapter, returns BYTE data and an event |
 | `AL_OUT` | Plug | `adapter::types::unidirectional::AL` | Output adapter, expects LWORD data and passes on an event |
 
@@ -73,6 +75,6 @@ AB_TO_AL` is a simple yet useful composite building block for converting a BYTE 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

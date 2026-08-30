@@ -3,15 +3,17 @@
 ![E_T_FF_SR_SYM](./E_T_FF_SR_SYM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **E_T_FF_SR_SYM** is an event-driven, bistable toggle switch with an integrated toggle function. It combines the properties of an SR flip-flop (set-reset) and a toggle flip-flop (toggles on clock). Its unique feature is its symmetrical startup behavior: In the initial state, both set and clock events result in the set state, while a reset event directly results in the reset state. This enables defined and predictable behavior immediately after commissioning.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | S | Event | Set output Q (to TRUE) |
 | R | Event | Reset output Q (to FALSE) |
 | CLK | Event | Clock to toggle output Q |
@@ -63,7 +65,7 @@ The **toggle** behavior is implemented by ensuring that a CLK event always toggl
 ## State Overview
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | START | Initial state after activation of the function block |
 | SET | Output Q = TRUE |
 | RESET | Output Q = FALSE |
@@ -71,7 +73,7 @@ The **toggle** behavior is implemented by ensuring that a CLK event always toggl
 **Transitions** (Event → Target State):
 
 | Initial State | Event | Target State |
-|-----------------|----------|-------------|
+| ----------------- | ---------- | ------------- |
 | START | S | SET |
 | START | R | RESET |
 | START | CLK | SET |
@@ -91,7 +93,7 @@ Note: S events remaining in the SET state or R events remaining in the RESET sta
 ## Comparison with Similar Function Blocks
 
 | Function Block | Difference |
-|----------|-------------|
+| ---------- | ------------- |
 | E_FF_SR | Pure SR flip-flop without toggle. No clock function. |
 | E_FF_Toggle | Pure toggle flip-flop, no set/reset. |
 | E_T_FF_SR | Similar, but without symmetric start behavior. Here, CLK in the START state may lead to undefined behavior. |
@@ -105,6 +107,6 @@ The **E_T_FF_SR_SYM** is a versatile event-driven flip-flop component that combi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
 
 ]

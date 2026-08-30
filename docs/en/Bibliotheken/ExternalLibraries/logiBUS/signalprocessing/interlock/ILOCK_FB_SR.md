@@ -3,9 +3,11 @@
 ![ILOCK_FB_SR](./ILOCK_FB_SR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The ILOCK_FB_SR function block implements a bistable set-dominant SR latch, specifically designed for use in interlock circuits. It extends a simple SR latch with bidirectional adapters for coupling with other function blocks, enabling the implementation of complex interconnections and priority logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -36,7 +38,7 @@ The ILOCK_FB_SR function block implements a bistable set-dominant SR latch, spec
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|-----------|--------------|
+| --------- | ----- | ----------- | -------------- |
 | `ILOCK_IN` | `adapter::types::bidirectional::AX2` | Socket | Receives data and events from an upstream interlock block |
 | `ILOCK_OUT` | `adapter::types::bidirectional::AX2` | Plug | Sends data and events to a downstream interlock block |
 
@@ -65,7 +67,7 @@ This structure allows multiple interlock blocks to be cascaded: A set signal can
 The internal SR latch has four states based on the (combined) inputs:
 
 | S1 (after logic) | R | Q1 (previous) | Q1 (new) |
-|-----------------|---|-----------------|------------|
+| ----------------- | --- | ----------------- | ------------ |
 | 0 | 0 | 0 | 0 |
 | 0 | 0 | 1 | 1 |
 | 0 | 1 | 0 | 0 |

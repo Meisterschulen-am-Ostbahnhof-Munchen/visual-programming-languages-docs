@@ -3,6 +3,7 @@
 ![AX_FB_SR_T_FF](./AX_FB_SR_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_FB_SR_T_FF** realisiert ein bistabiles, setzdominantes Latch (SR-Flipflop) kombiniert mit einer Toggle-Funktion. Die gesamte Kommunikation erfolgt über Adapter-Schnittstellen, die sowohl Ereignis- als auch Datensignale bündeln.
@@ -38,11 +39,11 @@ Der Ausgangsadapter **Q1** gibt über **Q1.D1** den aktuellen Zustand des Latch 
 ### **Adapter**
 
 | Adapter | Typ | Richtung | Beschreibung |
-|---------|-----|----------|--------------|
-| `SET1`  | `adapter::types::unidirectional::AX` | Socket (Eingang) | Setz-Eingang |
+| --------- | ----- | ---------- | -------------- |
+| `SET1` | `adapter::types::unidirectional::AX` | Socket (Eingang) | Setz-Eingang |
 | `RESET` | `adapter::types::unidirectional::AX` | Socket (Eingang) | Rücksetz-Eingang |
-| `CLK`   | `adapter::types::unidirectional::AX` | Socket (Eingang) | Takt-Eingang für Toggle |
-| `Q1`    | `adapter::types::unidirectional::AX` | Plug (Ausgang) | Ausgang des Latch |
+| `CLK` | `adapter::types::unidirectional::AX` | Socket (Eingang) | Takt-Eingang für Toggle |
+| `Q1` | `adapter::types::unidirectional::AX` | Plug (Ausgang) | Ausgang des Latch |
 
 ## Funktionsweise
 

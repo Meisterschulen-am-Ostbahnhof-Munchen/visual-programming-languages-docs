@@ -3,6 +3,7 @@
 ![AI_SPLIT_4](./AI_SPLIT_4.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_SPLIT_4** ist ein generischer Baustein, der einen unidirektionalen Analog-Eingang (AI) auf vier separate Analog-Ausgänge aufteilt. Er dient als Signalverteiler für analoge Signale und erlaubt, ein einzelnes AI-Signal an verschiedene nachfolgende Bausteine weiterzugeben. Der Baustein ist vollständig adapterbasiert und besitzt keine eigenen Ereignis- oder Datenschnittstellen. Er ist unter der Eclipse Public License 2.0 verfügbar.
@@ -28,7 +29,7 @@ Der Funktionsblock **AI_SPLIT_4** ist ein generischer Baustein, der einen unidir
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket (Eingang)** | `IN` | `adapter::types::unidirectional::AI` | Eingang des zu verteilenden analogen Signals |
 | **Plug (Ausgang)** | `OUT1` | `adapter::types::unidirectional::AI` | Erster Ausgang (Kopie des Eingangssignals) |
 | **Plug (Ausgang)** | `OUT2` | `adapter::types::unidirectional::AI` | Zweiter Ausgang (Kopie des Eingangssignals) |
@@ -74,4 +75,4 @@ Der Funktionsblock **AI_SPLIT_4** ist ein spezialisierter, aber einfach einsetzb
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

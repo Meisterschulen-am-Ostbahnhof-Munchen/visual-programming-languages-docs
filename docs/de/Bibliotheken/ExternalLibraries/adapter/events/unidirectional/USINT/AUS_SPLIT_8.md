@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Schnittstelle | Typ | Richtung | Beschreibung |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **IN** | `adapter::types::unidirectional::AUS` | Socket | Eingang – empfängt das zu verteilende AUS-Signal |
 | **OUT1** | `adapter::types::unidirectional::AUS` | Plug | Ausgang 1 – gibt das eingehende Signal weiter |
 | **OUT2** | `adapter::types::unidirectional::AUS` | Plug | Ausgang 2 – gibt das eingehende Signal weiter |
@@ -78,5 +78,5 @@ Der **AUS_SPLIT_8** ist ein einfacher, aber nützlicher Funktionsbaustein zur Ve
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

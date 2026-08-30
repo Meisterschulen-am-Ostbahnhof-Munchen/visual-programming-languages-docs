@@ -3,9 +3,11 @@
 ![IA_WBSD](./IA_WBSD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distance) serves as an interface wrapper for ISOBUS communication of wheel-based speed and distance values according to ISO 11783-7. It encapsulates the internal module `I_WBSD` and provides its functionality via standardized adapter connections.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,14 +31,14 @@ The function block **IA_WBSD** (ISOBUS Adapter for Wheel Based Speed and Distanc
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|--------|-------|-----------|
+| -------- | ------- | ----------- |
 | QO | BOOL | Event Output Qualifier (Initialization Result) |
 | STATUS | STRING | Status Message (e.g., Error or Success) |
 
 ### **Adapters**
 
 | Adapter | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | SPEED | adapter::types::unidirectional::AUI | Wheel-based machine speed (unidirectional, analog value) |
 | DISTANCE | adapter::types::unidirectional::AUDI | Wheel-based machine distance (unidirectional) |
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout status (unidirectional) |
@@ -82,6 +84,7 @@ The block does not have its own explicit state machine. Its behavior is controll
 - **IA_WBSD vs. Other ISOBUS Adapters:** Specific to the PGN 65096 (Wheel Based Speed and Distance). Adapters for other PGNs (e.g., for GPS position or motor speed) have a similar structure but differ in data types and internal interpretation.
 
 **IA_WBSD vs. Other ISOBUS Adapters:**
+
 ## Conclusion
 
 The **IA_WBSD** is a practical adapter wrapper for the ISOBUS module `I_WBSD`. It reduces the complexity of integrating wheel-based speed and distance data into IEC 61499 projects and provides the functionality via standardized unidirectional adapters. Thanks to its EPL 2.0 license, it can be freely used and adapted in your own projects. Version 1.1 ensures that all internal connections are correctly routed to the adapter plugs.
@@ -90,4 +93,4 @@ The **IA_WBSD** is a practical adapter wrapper for the ISOBUS module `I_WBSD`. I
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

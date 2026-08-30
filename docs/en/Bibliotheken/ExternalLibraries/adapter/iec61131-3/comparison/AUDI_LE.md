@@ -3,15 +3,17 @@
 ![AUDI_LE](./AUDI_LE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_LE** performs a less-than-equal-to comparison of two values. It is built as a composite function block based on the standardized comparison block `F_LE` from the IEC 61131 classification. Communication with the environment occurs exclusively via adapter interfaces, allowing the block to be integrated modularly into event-driven processes.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Data Type | Description |
-|-------------|-----------|--------------|
+| ------------- | ----------- | -------------- |
 | `IN1.E1` | EVENT | Event input of adapter IN1 – triggers processing of the first value. |
 | `IN2.E1` | EVENT | Event input of adapter IN2 – triggers processing of the second value. |
 
@@ -26,7 +28,7 @@ The function block **AUDI_LE** performs a less-than-equal-to comparison of two v
 ### **Data Inputs**
 
 | Label | Data Type | Description |
-|-------------|----------|--------------|
+| ------------- | ---------- | -------------- |
 | `IN1.D1` | ANY | First value to be compared (via adapter IN1). |
 | `IN2.D1` | ANY | Second value to be compared (via adapter IN2). |
 
@@ -39,7 +41,7 @@ The function block **AUDI_LE** performs a less-than-equal-to comparison of two v
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `IN1` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Capture the first value (event + data). |
 | `IN2` | `adapter::types::unidirectional::AUDI` | Socket (Input) | Capture the second value (event + data). |
 | `OUT` | `adapter::types::unidirectional::AX` | Plug (Output) | Output the comparison result (event + data). |
@@ -70,7 +72,7 @@ The FB does not have its own directed state machine, as it operates purely combi
 ## Comparison with Similar Function Blocks
 
 | FB | Function | Difference to AUDI_LE |
-|----|----------|------------------------|
+| ---- | ---------- | ------------------------ |
 | `AUDI_LT` | Less than (`<`) | Not including equality. |
 | `AUDI_EQ` | Equality (`=`) | Checks for exact matches only. |
 | `AUDI_GE` | Greater Than or Equal To (`≥`) | Reverse comparison direction. |

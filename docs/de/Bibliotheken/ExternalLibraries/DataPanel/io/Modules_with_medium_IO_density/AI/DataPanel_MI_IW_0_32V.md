@@ -20,7 +20,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_32V** ist ein Service-Interface-Funktions
 ### **Ereignis-Ausgänge**
 
 | Event | Kommentar | Mit (With) |
-|-------|-----------|------------|
+| ------- | ----------- | ------------ |
 | **INITO** | Bestätigung der Initialisierung | QO, STATUS |
 | **CNF** | Bestätigung der angeforderten Serviceleistung | QO, STATUS, IN |
 | **IND** | Indikation eines neuen Messwerts von der Ressource | QO, STATUS, IN |
@@ -28,7 +28,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_32V** ist ein Service-Interface-Funktions
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Kommentar |
-|------|-----|-------------|-----------|
+| ------ | ----- | ------------- | ----------- |
 | **QI** | BOOL | – | Ereignis-Eingangsqualifizierer |
 | **PARAMS** | STRING | – | Service-Parameter (z. B. Adressen, Baudrate) |
 | **u8SAMember** | USINT | `MI::MI_00` | Knoten‑SA‑Adresse (224..239) |
@@ -38,7 +38,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_32V** ist ein Service-Interface-Funktions
 ### **Daten-Ausgänge**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | **QO** | BOOL | Ereignis-Ausgangsqualifizierer |
 | **STATUS** | STRING | Dienststatus (z. B. Fehler-/Erfolgsmeldungen) |
 | **IN** | WORD | Gemessener Analogwert (0..32 V skaliert als WORD) |

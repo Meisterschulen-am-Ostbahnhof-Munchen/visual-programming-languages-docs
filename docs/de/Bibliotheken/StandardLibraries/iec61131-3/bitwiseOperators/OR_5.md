@@ -41,6 +41,7 @@ Keine Adapter-Schnittstellen vorhanden.
 Der OR_5 Funktionsblock führt eine bitweise ODER-Verknüpfung aller fünf Eingangswerte durch. Bei Aktivierung des REQ-Ereignisses werden die Werte an IN1 bis IN5 verarbeitet und das Ergebnis an OUT ausgegeben. Das CNF-Ereignis signalisiert den Abschluss der Operation.
 
 Die ODER-Operation wird nach folgender Logik durchgeführt:
+
 ```
 OUT = IN1 OR IN2 OR IN3 OR IN4 OR IN5
 ```

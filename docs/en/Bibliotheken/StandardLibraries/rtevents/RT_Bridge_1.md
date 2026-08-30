@@ -1,9 +1,11 @@
 # RT_Bridge_1
 
 * * * * * * * * * *
+
 ## Introduction
 
 The RT_Bridge_1 function block serves as a decoupling bridge for a data connection between real-time event chains. It enables secure data exchange between different execution contexts.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -40,4 +42,4 @@ The module temporarily stores the data received via `WR` and makes it available 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

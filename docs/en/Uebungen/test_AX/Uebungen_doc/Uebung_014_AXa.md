@@ -3,9 +3,11 @@
 ![Uebung_014_AXa_network](./Uebung_014_AXa_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates controlling the visibility of a container (object) using two softkeys. SoftKey_F1 shows the container, and SoftKey_F2 hides it. A set-reset flip-flop (AX_SR) is used to store the state and pass it to a hide/show block.
+
 ## Function Blocks (FBs) Used
 
 ### SoftKey_UP_F1 (Type: isobus::UT::io::Softkey::Softkey_IE)
@@ -74,6 +76,6 @@ This exercise demonstrates a typical application for showing/hiding a container 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

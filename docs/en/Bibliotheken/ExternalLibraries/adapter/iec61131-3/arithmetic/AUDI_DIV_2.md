@@ -3,6 +3,7 @@
 ![AUDI_DIV_2](./AUDI_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) **AUDI_DIV_2** is used to perform arithmetic division. It is a generic function block (`GEN_AUDI_DIV`) that can flexibly work with various data types within the adapter structure. Unlike classic mathematical function blocks, which have dedicated data inputs, this block uses adapter connections to encapsulate signals and control flows.
@@ -57,9 +58,9 @@ Since the interfaces are implemented as unidirectional `AUDI` adapters, an updat
 
 ## Technical Features
 
-* **Generic Type:** The function block is declared as `GEN_AUDI_DIV` via the attribute `eclipse4diac::core::GenericClassName`. This enables automatic type adaptation to the specific data structures used within the `AUDI` adapters.
-* **Clean Wiring:** Encapsulating data and event signals in adapters minimizes the visual "spaghetti code" problem in 4diac-ide.
-* **Error Handling (Division by Zero):** Since this is a generic division, the underlying runtime environment (e.g., forte) catches division by zero to prevent the controller from crashing. In such a case, the output is typically set to a default value (e.g., `0` or `NaN`/`Infinity`, depending on the data type).
+- **Generic Type:** The function block is declared as `GEN_AUDI_DIV` via the attribute `eclipse4diac::core::GenericClassName`. This enables automatic type adaptation to the specific data structures used within the `AUDI` adapters.
+- **Clean Wiring:** Encapsulating data and event signals in adapters minimizes the visual "spaghetti code" problem in 4diac-ide.
+- **Error Handling (Division by Zero):** Since this is a generic division, the underlying runtime environment (e.g., forte) catches division by zero to prevent the controller from crashing. In such a case, the output is typically set to a default value (e.g., `0` or `NaN`/`Infinity`, depending on the data type).
 
 ---
 
@@ -98,9 +99,9 @@ Execution follows a simple, event-driven pattern:
 
 ## Application Scenarios
 
-* **Scaling and Normalization Tasks:** Division of measured values transmitted in standardized `AUDI` data structures.
-* **Ratio Calculations:** Determining ratios in the process industry (e.g., flow ratios of two media).
-* **Signal Processing:** Modular use in control architectures where strict separation through adapter structures is required.
+- **Scaling and Normalization Tasks:** Division of measured values transmitted in standardized `AUDI` data structures.
+- **Ratio Calculations:** Determining ratios in the process industry (e.g., flow ratios of two media).
+- **Signal Processing:** Modular use in control architectures where strict separation through adapter structures is required.
 
 ---
 

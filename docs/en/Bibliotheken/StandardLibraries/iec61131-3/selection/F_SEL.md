@@ -3,6 +3,7 @@
 ![image](https://user-images.githubusercontent.com/69573151/210802734-9caf89bd-f437-43d3-8ed5-294c89df8c3d.png)
 <https://content.helpme-codesys.com/en/CODESYS%20Development%20System/_cds_operator_sel.html>
 * * * * * * * * * *
+
 ## Introduction
 
 The F_SEL function block is a binary selector according to the IEC 61131-3 standard. It enables selection between two input values based on a control signal. The block is used for conditional data selection in control applications.
@@ -72,9 +73,9 @@ Compared to other selection blocks, F_SEL offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
-* [Exercise_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
-* [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Exercise_015](../../../../Uebungen/test_B/Uebungen_doc/Uebung_015.md)
+- [Exercise_016](../../../../Uebungen/test_B/Uebungen_doc/Uebung_016.md)
+- [Exercise_060](../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Conclusion
 

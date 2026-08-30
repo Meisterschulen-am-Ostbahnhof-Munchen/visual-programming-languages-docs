@@ -3,6 +3,7 @@
 <img width="1009" height="265" alt="image" src="https://github.com/user-attachments/assets/e9225b9f-ba25-427f-bf49-71f15c562b73" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_AND_2 ist ein generischer Funktionsblock zur Berechnung der logischen UND-Verknüpfung. Der Baustein verarbeitet zwei boolesche Eingangssignale und gibt das logische UND-Ergebnis aus.
@@ -67,9 +68,9 @@ Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.m
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
-* [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+- [Uebung_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Uebung_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
 
 ## Änderungserkennung
 

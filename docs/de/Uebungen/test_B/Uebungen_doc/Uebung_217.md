@@ -3,6 +3,7 @@
 ![Uebung_217_network](./Uebung_217_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Rückwärtszähler (Count Down, CTD) nach IEC 61131‑3 mit dem Datentyp LINT (64‑Bit Integer). Der Zähler wird durch zwei digitale Eingänge gesteuert: ein Count-Down-Impuls (CD) und ein Load-Impuls (LD). Der aktuelle Zählerstand (CV) wird über eine Konvertierung in den Typ UDINT (Unsigned 32‑Bit) an eine numerische Terminalausgabe gesendet. Der Ausgang Q signalisiert, wenn der Zählerstand ≤ 0 ist.
@@ -81,4 +82,4 @@ In dieser Übung wird ein IEC 61131‑3 Rückwärtszähler (`FB_CTD_LINT`) mit z
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

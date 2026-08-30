@@ -3,6 +3,7 @@
 ![Uebung_203_network](./Uebung_203_network.svg)
 > **Interlock: ILOCK_SWITCH (Last-Wins Switching Priority)**
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an interlock function block of type `ILOCK_SWITCH` to prioritize two competing requests. The circuit implements a **last-wins switching priority**: The last activated input receives the enable signal (priority). As soon as both inputs are inactive again, the output is reset.
@@ -52,6 +53,7 @@ The subapp contains the following function blocks:
 The circuit operates **event-driven** and utilizes both event and data connections.
 
 1. **Event-driven**:
+
 - A rising edge at input `I1` generates an event at `IND` on `DigitalInput_I1`, which is connected to the event input `EI_UP` of the interlock module.
 - Similarly, an edge at `I2` sends the event to `EI_DOWN`.
 - The interlock block determines which channel is enabled based on priority (last wins) and triggers either `EO_UP` or `EO_DOWN`.
@@ -62,7 +64,8 @@ The circuit operates **event-driven** and utilizes both event and data connectio
 - The current value of `I1` (via `IN` from `DigitalInput_I1`) is passed to the data input `DI_UP` of the interlock.
 - The value of `I2` is passed to `DI_DOWN`.
 - The interlock block passes the enabled channel via the corresponding data outputs (`DO_UP` → `OUT` from `DigitalOutput_Q1`, `DO_DOWN` → `OUT` from `DigitalOutput_Q2`).
-3. **Functionality of `ILOCK_SWITCH`**:
+1. **Functionality of `ILOCK_SWITCH`**:
+
 - In case of simultaneous or conflicting requests, the last received pulse wins (last wins).
 - Only one of the two outputs can be active.
 - As soon as both inputs return to `FALSE`, the outputs are also reset (provided the block is configured accordingly).
@@ -82,4 +85,4 @@ The exercise `Uebung_203` uses a `ILOCK_SWITCH` function block to prioritize two
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

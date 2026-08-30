@@ -78,7 +78,7 @@ Der Baustein bleibt im Startzustand, bis ein INIT mit QI=TRUE eintrifft. Ohne In
 ## Zustandsübersicht
 
 | Zustand | Bedeutung |
-|---------|-----------|
+| --------- | ----------- |
 | START | Warte auf erstes INIT-Ereignis. |
 | Init | Initialisierung läuft; QO wird auf QI gesetzt, dann Übergang zu SET oder RESET abhängig von Q_INIT. |
 | DeInit | Deinitialisierung läuft; QO wird auf FALSE gesetzt, Rückkehr zu START. |
@@ -96,7 +96,7 @@ Die Zustandsübergänge werden durch die Ereignisse INIT (mit entsprechender Bed
 ## Vergleich mit ähnlichen Bausteinen
 
 | Kriterium | AX_T_FF_INIT | Einfaches Toggle-FF (ohne INIT) | SR-Flipflop |
-|-----------|--------------|------------------------------|-------------|
+| ----------- | -------------- | ------------------------------ | ------------- |
 | Initialisierung | Ja, über INIT mit Q_INIT | Nein, Zustand nach Start undefiniert | Nein (set/reset über separate Eingänge) |
 | Zustandswechsel | Gettaktet durch CLK | Gettaktet durch CLK | Asynchron über S und R |
 | Ausgang | Über Adapter (typisiert) | Oft als BOOL-Datenausgang | BOOL-Datenausgang |

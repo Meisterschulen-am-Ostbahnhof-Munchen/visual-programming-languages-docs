@@ -3,6 +3,7 @@
 ![ToJSON](ToJSON.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `ToJSON` function block adds a named field with a value to a JSON string. If `JSONIn` is empty, a new JSON object containing exactly that one field is created — by chaining several `ToJSON` calls (`JSONOut` of one as `JSONIn` of the next), a complete JSON object can be built up step by step.

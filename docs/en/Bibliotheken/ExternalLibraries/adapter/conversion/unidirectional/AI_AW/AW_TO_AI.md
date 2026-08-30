@@ -3,9 +3,11 @@
 ![AW_TO_AI](./AW_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AW_TO_AI** function block is a composite function block that converts a unidirectional **WORD adapter (AW)** to a unidirectional **INT adapter (AI)**. It encapsulates the type conversion from 16-bit word values to integer values, thus enabling the seamless integration of components that use different adapter types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,7 +45,7 @@ Output via the AI plug:
 ### **Adapter**
 
 | Direction | Adapter | Type | Description |
-|----------|---------|-----|--------------|
+| ---------- | --------- | ----- | -------------- |
 | Socket (Input) | AW_IN | `adapter::types::unidirectional::AW` | Receives WORD values and associated events |
 | Plug (Output) | AI_OUT | `adapter::types::unidirectional::AI` | Sends INT values and associated events |
 

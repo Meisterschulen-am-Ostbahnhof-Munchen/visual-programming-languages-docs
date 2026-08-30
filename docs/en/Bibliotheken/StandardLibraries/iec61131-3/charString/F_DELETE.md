@@ -6,6 +6,7 @@
 
 The function block `F_DELETE` is used to manipulate strings. It removes a specific number of characters (`L`) from an input string (`IN`), starting at a defined position (`P`). The result is output as a new string (`OUT`).
 ![F_DELETE](F_DELETE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -67,4 +68,4 @@ The `F_DELETE` function block is a useful tool for manipulating strings in the 4
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

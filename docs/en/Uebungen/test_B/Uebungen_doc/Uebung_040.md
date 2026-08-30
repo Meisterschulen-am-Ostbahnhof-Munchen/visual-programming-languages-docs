@@ -6,17 +6,18 @@ Exercise_040: Running Light 8
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
 This article describes the logiBUS® exercise `Uebung_040`. It shows a sophisticated method for manually switching through an 8-step sequence using only a few buttons.]
+
 ## 📺 Video
 
 ![Uebung_040_network](./Uebung_040_network.svg)
 
-* [From 1,400 errors to zero ](https://www.youtube.com/watch?v=jBk9Y-EX8zE)
+- [From 1,400 errors to zero ](https://www.youtube.com/watch?v=jBk9Y-EX8zE)
 
 ## 🎧 Podcast
 
-* [From 1,400 errors to clean code: Migrating the "Grain Hoe" to Eclipse 4diac™ 3.0 and the power of AX adapters ](https://podcasters.spotify.com/pod/show/logibus/episodes/Von-1400-Fehlern-zum-sauberen-Code-Die-Migration-der-Getreidehacke-auf-Eclipse-4diac-3-0-und-die-Macht-der-AX-Adapter-e3ahcko)
-* [Digitizing 400 million tons of agricultural logistics ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/400-Millionen-Tonnen-Agrar-Logistik-digitalisieren-e3b8o5m)
-* [Schlüter 1500 Special: Turbo toxicity, 40 years, and the soul of a powerhouse ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Schlter-1500-Spezial-Turbo-Giftigkeit--40-Jahre-und-die-Seele-eines-Kraftprotzes-e39au2l)
+- [From 1,400 errors to clean code: Migrating the "Grain Hoe" to Eclipse 4diac™ 3.0 and the power of AX adapters ](https://podcasters.spotify.com/pod/show/logibus/episodes/Von-1400-Fehlern-zum-sauberen-Code-Die-Migration-der-Getreidehacke-auf-Eclipse-4diac-3-0-und-die-Macht-der-AX-Adapter-e3ahcko)
+- [Digitizing 400 million tons of agricultural logistics ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/400-Millionen-Tonnen-Agrar-Logistik-digitalisieren-e3b8o5m)
+- [Schlüter 1500 Special: Turbo toxicity, 40 years, and the soul of a powerhouse ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Schlter-1500-Spezial-Turbo-Giftigkeit--40-Jahre-und-die-Seele-eines-Kraftprotzes-e39au2l)
 
 ----
 
@@ -43,5 +44,5 @@ This is a very efficient method for mapping complex manual processes in a very s
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

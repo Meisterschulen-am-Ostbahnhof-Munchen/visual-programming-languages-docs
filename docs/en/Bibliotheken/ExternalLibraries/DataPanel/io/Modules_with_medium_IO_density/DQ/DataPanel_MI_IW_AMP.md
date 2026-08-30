@@ -3,9 +3,11 @@
 ![DataPanel_MI_IW_AMP](./DataPanel_MI_IW_AMP.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The DataPanel_MI_IW_AMP function block is an input interface function block (Service Interface Function Block) for acquiring the current feedback (amperage) of a single channel. It serves to integrate current measurements into the 4diac IDE and enables communication with a higher-level controller or a data panel. The block initializes the hardware-level communication and returns the current measurement value as a WORD upon each request.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -81,6 +83,6 @@ The `DataPanel_MI_IW_AMP` function block provides a standardized and flexible in
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

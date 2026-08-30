@@ -3,6 +3,7 @@
 ![sequence](./sequence.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Die globale Konstantendatei `sequence` definiert eine Reihe von vordefinierten Konstanten, die in Verbindung mit Sequenz-Funktionsblöcken verwendet werden können. Sie stellt symbolische Namen für Zustände und einen speziellen Zeitwert bereit, um die Lesbarkeit und Wartbarkeit von IEC 61499-Applikationen zu erhöhen. Die Konstanten sind im Paket `logiBUS::utils::sequence::const` organisiert.
@@ -29,9 +30,9 @@ Die Datei definiert Konstanten, die zur Kompilierzeit durch ihre Werte ersetzt w
 
 ## Technische Besonderheiten
 
-*   **Datentypen:** Die Konstanten verwenden die elementaren IEC 61131-3-Datentypen `TIME` und `SINT` (Short Integer).
-*   **Besonderer Wert `NO_TIME`:** Die Konstante `NO_TIME` ist mit dem sehr großen Wert `TIME#49d17h2m47s295ms` initialisiert. Dieser Wert dient typischerweise als Platzhalter oder Initialwert, um einen "undefinierten" oder "nicht gesetzten" Zeitpunkt zu kennzeichnen, da er weit außerhalb des Bereichs normaler Steuerungszeiten liegt.
-*   **Zustandskonstanten:** Die Konstanten `State_00` bis `State_08` repräsentieren ganzzahlige Zustände (0-8) und sind vom Typ `SINT`. Sie sind für die Verwendung in Zustandsautomaten oder Schrittketten vorgesehen.
+-   **Datentypen:** Die Konstanten verwenden die elementaren IEC 61131-3-Datentypen `TIME` und `SINT` (Short Integer).
+-   **Besonderer Wert `NO_TIME`:** Die Konstante `NO_TIME` ist mit dem sehr großen Wert `TIME#49d17h2m47s295ms` initialisiert. Dieser Wert dient typischerweise als Platzhalter oder Initialwert, um einen "undefinierten" oder "nicht gesetzten" Zeitpunkt zu kennzeichnen, da er weit außerhalb des Bereichs normaler Steuerungszeiten liegt.
+-   **Zustandskonstanten:** Die Konstanten `State_00` bis `State_08` repräsentieren ganzzahlige Zustände (0-8) und sind vom Typ `SINT`. Sie sind für die Verwendung in Zustandsautomaten oder Schrittketten vorgesehen.
 
 ## Zustandsübersicht
 
@@ -45,8 +46,8 @@ Die Datei definiert Konstanten, die zur Kompilierzeit durch ihre Werte ersetzt w
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **ENUM-Datentyp:** Ein benutzerdefinierter Aufzählungstyp (ENUM) könnte eine ähnliche Rolle wie die `State_XX`-Konstanten übernehmen und bietet oft eine strengere Typprüfung. Globale Konstanten sind jedoch einfacher zu definieren und in 4diac zu verwenden.
-*   **Direkte Werteingabe:** Der Hauptvorteil gegenüber der direkten Eingabe von Werten (z.B. `3`) ist die zentrale Definition. Eine Änderung des Wertes muss nur an einer Stelle (hier in der Konstantendatei) vorgenommen werden und wirkt sich auf alle Verwendungen aus.
+-   **ENUM-Datentyp:** Ein benutzerdefinierter Aufzählungstyp (ENUM) könnte eine ähnliche Rolle wie die `State_XX`-Konstanten übernehmen und bietet oft eine strengere Typprüfung. Globale Konstanten sind jedoch einfacher zu definieren und in 4diac zu verwenden.
+-   **Direkte Werteingabe:** Der Hauptvorteil gegenüber der direkten Eingabe von Werten (z.B. `3`) ist die zentrale Definition. Eine Änderung des Wertes muss nur an einer Stelle (hier in der Konstantendatei) vorgenommen werden und wirkt sich auf alle Verwendungen aus.
 
 ## Fazit
 
@@ -56,5 +57,5 @@ Die globale Konstantendatei `sequence` ist ein nützliches Hilfsmittel zur Struk
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -77,8 +77,8 @@ Der Ablauf der Schaltung gestaltet sich wie folgt:
 3.  **Zusammenführung (Merge)**: Die Events beider Eingänge sind mit dem `E_MERGE_3` Baustein verbunden (an `EI1` und `EI2`). Sobald eines der Events eintrifft, gibt der Merge-Baustein sofort ein Event am Ausgang `EO` aus.
 4.  **Umschaltung (Toggle)**: Das zusammengeführte Event erreicht den `CLK`-Eingang des `E_T_FF`. Dies veranlasst das Flip-Flop, seinen Zustand `Q` zu invertieren (umzuschalten).
 5.  **Ausgabe**:
-    *   Das Daten-Signal `Q` (TRUE/FALSE) wird an den Dateneingang `OUT` des Ausgangsbausteins `DigitalOutput_Q1` gesendet.
-    *   Gleichzeitig triggert der Event-Ausgang `EO` des Flip-Flops den `REQ`-Eingang des Ausgangsbausteins, um die Aktualisierung des physikalischen Ausgangs durchzuführen.
+    -   Das Daten-Signal `Q` (TRUE/FALSE) wird an den Dateneingang `OUT` des Ausgangsbausteins `DigitalOutput_Q1` gesendet.
+    -   Gleichzeitig triggert der Event-Ausgang `EO` des Flip-Flops den `REQ`-Eingang des Ausgangsbausteins, um die Aktualisierung des physikalischen Ausgangs durchzuführen.
 
 ## Zusammenfassung
 

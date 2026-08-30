@@ -3,6 +3,7 @@
 ![DataPanel_MI_ID_ENC](./DataPanel_MI_ID_ENC.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Funktionsblock zur Erfassung von Encoder-Impulsdaten. Er ist für die Verarbeitung eines 7A+8A-Encoder-Paares ausgelegt und gibt den aktuellen Zählerstand sowie Statusinformationen aus. Die Initialisierung erfolgt über Parameter wie die Knotenadresse (SA-Member), die Eingangskonfiguration sowie Schwellwerte für impuls- und zeitbasierte Ereignisauslösung.
@@ -19,7 +20,7 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Beschreibung | Mitgeführte Daten |
-|----------|--------------|-------------------|
+| ---------- | -------------- | ------------------- |
 | INITO | Bestätigung der Initialisierung | QO, STATUS |
 | CNF | Bestätigung der angeforderten Aktion | QO, STATUS, IN |
 | IND | Asynchrone Anzeige eines Ereignisses (Impuls- oder Zeitüberschreitung) | QO, STATUS, IN |
@@ -27,7 +28,7 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 ### **Daten-Eingänge**
 
 | Name | Typ | Initialwert | Beschreibung |
-|------|-----|-------------|--------------|
+| ------ | ----- | ------------- | -------------- |
 | QI | BOOL | – | Ereignis-Eingangsqualifizierer |
 | PARAMS | STRING | – | Service-Parameter |
 | u8SAMember | USINT | MI::MI_00 | Knotenadresse (Bereich 224..239) |
@@ -38,7 +39,7 @@ Der Funktionsblock **DataPanel_MI_ID_ENC** ist ein Eingangs-Service-Interface-Fu
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | QO | BOOL | Ereignis-Ausgangsqualifizierer |
 | STATUS | STRING | Servicestatus |
 | IN | DWORD | Aktueller Encoder-Zählerwert |
@@ -69,7 +70,7 @@ Der Ausgang `IN` enthält zu jedem Ereignis (CNF und IND) den aktuellen 32-Bit-Z
 ## Zustandsübersicht
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | IDLE | Warten auf INIT oder REQ |
 | INIT | Initialisierung läuft, Parametrierung wird übernommen |
 | ACTIVE | Initialisierung abgeschlossen, bereit für REQ und IND |

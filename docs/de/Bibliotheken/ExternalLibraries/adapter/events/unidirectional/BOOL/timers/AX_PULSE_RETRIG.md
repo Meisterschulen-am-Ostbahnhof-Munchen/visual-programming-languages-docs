@@ -3,6 +3,7 @@
 ![AX_PULSE_RETRIG](./AX_PULSE_RETRIG.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_PULSE_RETRIG** ist ein nachtriggerbarer (retriggerbarer) Impulsformer mit AX-Adapter-Schnittstelle. Er erzeugt an seinem Ausgang einen Impuls mit einer vorgegebenen Dauer PT. Ein erneuter Startbefehl innerhalb der Impulsdauer setzt die Timer-Zeit zurück und verlängert den Impuls. Der Block wird typischerweise eingesetzt, um zeitlich exakte, verlängerbare Ausgangssignale in Automatisierungssystemen zu generieren.
@@ -72,7 +73,7 @@ Der Baustein bildet die Zustände des internen `E_PULSE_RETRIG` ab:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaft |
-|----------|-------------|
+| ---------- | ------------- |
 | **E_PULSE** | Einfacher Impuls ohne Retrigger – einmaliger Timerstart, kein Neustart bei erneutem REQ. |
 | **AX_PULSE_RETRIG** | Retriggerbare Version mit AX-Adapter (Ereignis + Daten). |
 | **TON / TOF** | Verzögerungsbausteine (Einschaltverzögerung / Ausschaltverzögerung) – kein Impulsformer. |

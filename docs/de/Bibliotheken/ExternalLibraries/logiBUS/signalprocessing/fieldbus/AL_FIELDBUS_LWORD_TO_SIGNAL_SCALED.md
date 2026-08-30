@@ -3,6 +3,7 @@
 ![AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED](./AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AL_FIELDBUS_LWORD_TO_SIGNAL_SCALED` dient der Umwandlung eines Feldbus-Signals (LWORD) in einen skalierten und mit Offset versehenen Wert. Dabei wird nur dann ein gültiges Ausgangssignal erzeugt, wenn das Eingangssignal als gültig markiert ist. Die Gültigkeit wird über ein internes D-Flipflop stabil gehalten und als boolesches Signal ausgegeben.

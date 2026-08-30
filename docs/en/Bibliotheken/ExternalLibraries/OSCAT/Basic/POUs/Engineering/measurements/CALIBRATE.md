@@ -3,6 +3,7 @@
 ![CALIBRATE](CALIBRATE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `CALIBRATE` performs a two-point calibration (offset & scale) of an analog input signal: `Y = (X + OFFSET) * SCALE`. Calibration is not triggered by dedicated events but by the Boolean inputs `CO`/`CS`, which are checked on every `REQ`. For an event-driven variant see [E_CALIBRATE](E_CALIBRATE.md); for a variant with enforced ordering see [E_CALIBRATE_SQ](E_CALIBRATE_SQ.md).
@@ -51,7 +52,7 @@ On every `REQ`, `CALIBRATE` first checks `CO` and `CS` (as an `ELSIF` chain, so 
 **Example** (4-20 mA pressure sensor via logiBUS, normalized to `0.0..1.0`, desired output range `0.0..500.0`):
 
 | Step | Action | Result |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Apply 4 mA (`X=0.0`), `Y_Offset=0.0`, `CO=TRUE` | `OFFSET = 0` |
 | 2 | Apply 20 mA (`X=1.0`), `Y_Scale=500.0`, `CS=TRUE` | `SCALE = 500` |
 

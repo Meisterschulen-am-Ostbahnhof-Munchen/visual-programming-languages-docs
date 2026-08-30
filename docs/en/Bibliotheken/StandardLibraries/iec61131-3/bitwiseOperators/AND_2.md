@@ -2,7 +2,7 @@
 
 ![AND_2](https://user-images.githubusercontent.com/116869307/214143461-f2104d1b-a147-4a9f-a118-f527fc245b5f.png)
 OUT is only switched when a Boolean signal is present at IN1 and IN2, e.g., from a switch.
-![](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
+![AND_2 logic circuit with two inputs](https://user-images.githubusercontent.com/113907580/227966597-94049ae9-429e-49d8-93ca-b46b31b27550.png)
 The same principle applies to all other "AND" blocks, except that all IN inputs must always be True.
 
 * * * * * * * * * *
@@ -75,12 +75,12 @@ Compared to other logical operation blocks:
 
 ## 🛠️ Related exercises
 
-* [Exercise_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
-* [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
-* [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
-* [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
-* [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Exercise_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
+- [Exercise_002a](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002a.md)
+- [Exercise_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)
+- [Exercise_002b2](../../../../Uebungen/test_B/Uebungen_doc/Uebung_002b2.md)
+- [Exercise_002b3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002b3_AX.md)
+- [Exercise_006a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Exercise_088](../../../../Uebungen/test_B/Uebungen_doc/Uebung_088.md)
 
 ## Conclusion
 

@@ -1,8 +1,9 @@
 # Exercise_020h: DigitalInput_I1 to DigitalOutput_Q1; E_PULSE; Pulse Shaping
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_020h`.
+This article describes the logiBUS® exercise `Uebung_020h`
 ----
+
 ## Overview
 
 [cite_start]This exercise demonstrates controlling the function block `E_PULSE` via an event input (`logiBUS_IE`)[cite: 1].

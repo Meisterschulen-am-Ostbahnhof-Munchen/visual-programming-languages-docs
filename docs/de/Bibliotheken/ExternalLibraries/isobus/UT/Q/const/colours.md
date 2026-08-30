@@ -3,6 +3,7 @@
 ![colours](./colours.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Das globale Konstantenpaket `colours` definiert eine Reihe von benannten Konstanten für Farbwerte. Diese Konstanten repräsentieren einen Satz von 16 vordefinierten Farben, die durch numerische Werte des Typs `USINT` (Unsigned Short Integer) kodiert sind. Die Verwendung solcher Konstanten verbessert die Lesbarkeit und Wartbarkeit von IEC 61499-Anwendungen, da anstelle von magischen Zahlen aussagekräftige Bezeichner wie `COLOR_RED` oder `COLOR_BLUE` verwendet werden können.
@@ -37,10 +38,10 @@ Das Paket `colours` deklariert 16 Konstanten vom Datentyp `USINT`. Jeder Konstan
 
 ## Technische Besonderheiten
 
-*   **Datentyp:** Alle Konstanten sind vom Typ `USINT` (Unsigned Short Integer), einem vorzeichenlosen 8-Bit-Datentyp.
-*   **Wertebereich:** Die definierten Werte liegen im Bereich von 0 bis 15 und passen somit gut in den Wertebereich des `USINT`-Typs.
-*   **Namenskonvention:** Die Konstantennamen folgen der Konvention `COLOR_<FARBNAME>` (z.B., `COLOR_GREEN`), was sie leicht identifizierbar macht.
-*   **Kompilierung:** Als `CONSTANT` deklarierte Werte werden zur Kompilierzeit festgelegt und können zur Laufzeit nicht verändert werden.
+-   **Datentyp:** Alle Konstanten sind vom Typ `USINT` (Unsigned Short Integer), einem vorzeichenlosen 8-Bit-Datentyp.
+-   **Wertebereich:** Die definierten Werte liegen im Bereich von 0 bis 15 und passen somit gut in den Wertebereich des `USINT`-Typs.
+-   **Namenskonvention:** Die Konstantennamen folgen der Konvention `COLOR_<FARBNAME>` (z.B., `COLOR_GREEN`), was sie leicht identifizierbar macht.
+-   **Kompilierung:** Als `CONSTANT` deklarierte Werte werden zur Kompilierzeit festgelegt und können zur Laufzeit nicht verändert werden.
 
 ## Zustandsübersicht
 
@@ -50,9 +51,9 @@ Das Paket `colours` deklariert 16 Konstanten vom Datentyp `USINT`. Jeder Konstan
 
 Dieses Konstantenpaket ist besonders nützlich in Anwendungen, die eine begrenzte Palette von Farben für Benutzeroberflächen, visuelle Statusanzeigen (z.B. auf HMIs oder Bedienterminals) oder zur Kennzeichnung von Prozesszuständen benötigen. Typische Einsatzgebiete sind:
 
-*   **Visualisierung:** Zuweisung von Farben zu verschiedenen Maschinenzuständen (z.B. Grün = Betrieb, Rot = Fehler, Gelb = Warnung).
-*   **ISOBUS-konforme Anwendungen (UT/Universal Terminal):** Standardisierung von Farbwerten in landwirtschaftlichen Anwendungen, die das ISOBUS-Protokoll verwenden, um eine konsistente Darstellung auf verschiedenen Terminalgeräten zu gewährleisten.
-*   **Code-Verbesserung:** Ersetzen von undurchsichtigen Zahlenwerten in Algorithmen oder Konfigurationen durch selbsterklärende Bezeichner.
+-   **Visualisierung:** Zuweisung von Farben zu verschiedenen Maschinenzuständen (z.B. Grün = Betrieb, Rot = Fehler, Gelb = Warnung).
+-   **ISOBUS-konforme Anwendungen (UT/Universal Terminal):** Standardisierung von Farbwerten in landwirtschaftlichen Anwendungen, die das ISOBUS-Protokoll verwenden, um eine konsistente Darstellung auf verschiedenen Terminalgeräten zu gewährleisten.
+-   **Code-Verbesserung:** Ersetzen von undurchsichtigen Zahlenwerten in Algorithmen oder Konfigurationen durch selbsterklärende Bezeichner.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

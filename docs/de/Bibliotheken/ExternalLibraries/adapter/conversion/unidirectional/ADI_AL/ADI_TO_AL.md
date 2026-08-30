@@ -3,6 +3,7 @@
 ![ADI_TO_AL](./ADI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ADI_TO_AL` dient als Composite-Baustein zur Konvertierung eines ADI-Adapters (DINT) in einen AL-Adapter (LWORD). Er kapselt eine Typumwandlung von einem 32‑Bit‑Ganzzahlwert in ein 64‑Bit‑Wort und stellt die Verbindung über unidirektionale Adapter bereit. Der Baustein ist ideal für Systeme, in denen eine unterschiedliche Datentypdarstellung zwischen Komponenten überbrückt werden muss.
@@ -13,22 +14,22 @@ Der Baustein besitzt keine direkten Ereignis- oder Datenein-/-ausgänge. Die ges
 
 ### **Ereignis-Eingänge**
 
-- **Keine direkten Ereignis-Eingänge**  
+- **Keine direkten Ereignis-Eingänge**
   Das Ereignis wird über den ADI‑Adapter `ADI_IN.E1` empfangen.
 
 ### **Ereignis-Ausgänge**
 
-- **Keine direkten Ereignis-Ausgänge**  
+- **Keine direkten Ereignis-Ausgänge**
   Das ausgehende Ereignis wird über den AL‑Adapter `AL_OUT.E1` gesendet.
 
 ### **Daten-Eingänge**
 
-- **Keine direkten Daten-Eingänge**  
+- **Keine direkten Daten-Eingänge**
   Die Eingangsdaten werden über den ADI‑Adapter `ADI_IN.D1` (Datentyp: DINT) geliefert.
 
 ### **Daten-Ausgänge**
 
-- **Keine direkten Daten-Ausgänge**  
+- **Keine direkten Daten-Ausgänge**
   Die Ausgangsdaten werden über den AL‑Adapter `AL_OUT.D1` (Datentyp: LWORD) bereitgestellt.
 
 ### **Adapter**
@@ -67,7 +68,7 @@ Der Baustein hat keine eigene Zustandsmaschine. Sein Verhalten ist rein reaktiv:
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **Einzelkonvertierungs‑FBs** – Bausteine wie `DINT_TO_LWORD` (Direktkonvertierung ohne Adapter) bieten eine kompaktere Schnittstelle, erfordern aber eigene Ereignis‑ und Datenleitungen.  
+- **Einzelkonvertierungs‑FBs** – Bausteine wie `DINT_TO_LWORD` (Direktkonvertierung ohne Adapter) bieten eine kompaktere Schnittstelle, erfordern aber eigene Ereignis‑ und Datenleitungen.
 - **Universelle Adapter‑Konverter** – Es existieren generische Konverter, die beliebige Datentypen via Adapter umwandeln. `ADI_TO_AL` ist speziell auf die Kombination DINT→LWORD optimiert und daher einfacher zu verstehen und zu warten.
 - **Bidirektionale Adapter** – Im Gegensatz zu bidirektionalen Varianten beschränkt sich dieser Baustein auf eine Datenflussrichtung, was die Fehleranfälligkeit reduziert.
 
@@ -79,4 +80,4 @@ Der `ADI_TO_AL`‑Baustein bietet eine saubere, auf wenige Elemente reduzierte L
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

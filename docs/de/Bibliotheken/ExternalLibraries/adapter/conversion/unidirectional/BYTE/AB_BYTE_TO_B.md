@@ -3,6 +3,7 @@
 <img width="1201" height="230" alt="image" src="https://github.com/user-attachments/assets/51ece190-d883-49b1-9fe3-c91b94247501" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AB_BYTE_TO_B ist ein Composite-Funktionsblock, der zur Konvertierung eines BYTE-Datentyps in das AB-Adapterformat dient. Er ermöglicht die unidirektionale Datenübertragung von Byte-Werten über ein standardisiertes Adapter-Interface.
@@ -69,4 +70,4 @@ AB_BYTE_TO_B ist ein spezialisierter Konvertierungsbaustein, der durch seine Ada
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

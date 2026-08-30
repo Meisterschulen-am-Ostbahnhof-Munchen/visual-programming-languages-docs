@@ -3,6 +3,7 @@
 ![SET_REAL](./SET_REAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_REAL** dient dazu, einen REAL-Wert von einem Dateneingang auf eine InOut-Variable zu schreiben. Er ist ein einfacher, ereignisgesteuerter Baustein, der nach einer Anforderung (REQ) den aktuellen Eingangswert IN an die referenzierte Variable OUT weitergibt und den Vorgang durch ein Bestätigungsereignis (CNF) quittiert.
@@ -69,7 +70,7 @@ Es existiert kein weiterer Zustand; der FB kehrt nach dem Durchlauf sofort wiede
 ## Vergleich mit ähnlichen Bausteinen
 
 | FB | Typ | Unterschied |
-|----|-----|-------------|
+| ---- | ----- | ------------- |
 | **SET_BOOL** | BOOL | Schreibt boolesche Werte, analoge Funktionsweise |
 | **SET_INT** | INT | Schreibt Ganzzahlen, identische Ereignissteuerung |
 | **MOVE** (generisch) | ANY | Kann beliebige Datentypen kopieren, erfordert jedoch Typanpassung und hat oft mehrere Zustände |

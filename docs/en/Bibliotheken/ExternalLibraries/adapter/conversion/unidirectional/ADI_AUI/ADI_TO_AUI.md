@@ -3,9 +3,11 @@
 ![ADI_TO_AUI](./ADI_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADI_TO_AUI** function block is a composite function block that implements interface conversion between the ADI adapter (DINT, 32-bit integer) and the AUI adapter (UINT, 16-bit integer). It enables the unidirectional transfer of a value from a DINT adapter to a UINT adapter using a standardized IEC 61131 conversion block.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None – all data is output via the plug adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | Socket | `ADI_IN` | Input | ADI adapter (DINT) – provides the value to be converted and an event |
 | Plug | `AUI_OUT` | Output | AUI adapter (UINT) – provides the converted value and the associated event |
 
@@ -39,11 +41,11 @@ The function block does not have its own input/output events or top-level data p
 
 The event `E1` received at socket `ADI_IN` is forwarded directly to the internal block `F_DINT_TO_UINT` (type: `iec61131::conversion`) to trigger a conversion.
 
-2. **Data Path**:
+1. **Data Path**:
 
 The DINT value provided via `ADI_IN.D1` is passed to input `IN` of `F_DINT_TO_UINT`. After successful conversion, the result (UINT) is available at output `OUT` and is assigned to the data output `D1` of the plug adapter `AUI_OUT`.
 
-3. **Feedback**:
+1. **Feedback**:
 
 The internal function block signals the end of the conversion with the event `CNF`. This event is transferred to the output event `E1` of the plug adapter `AUI_OUT` – synchronously with the provided data value.
 
@@ -81,6 +83,6 @@ The **ADI_TO_AUI** function block provides a clean, maintainable, and standardiz
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

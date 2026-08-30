@@ -3,9 +3,11 @@
 ![AUS_TO_ALR](./AUS_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **OFF_TO_ALR** function block is a composite function block that converts an **OFF adapter** (with USINT data) into an **ALR adapter** (with LREAL data). It serves purely as a forwarding interface and does not perform any complex logic or conversion calculations.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No separate data outputs are available. Data is forwarded via the **ALR_OUT** ad
 ### **Adapters**
 
 | Role | Name | Type | Comment |
-|-------|------|-----|-----------|
+| ------- | ------ | ----- | ----------- |
 | **Socket (Input)** | AUS_IN | `adapter::types::unidirectional::AUS` | USINT Adapter Input |
 | **Plug (Output)** | ALR_OUT | `adapter::types::unidirectional::ALR` | LREAL Adapter Output |
 
@@ -62,7 +64,7 @@ The function block has **no internal state machine**. It operates transparently:
 ## Comparison with Similar Function Blocks
 
 | Feature | AUS_TO_ALR | Typical Conversion FBs (e.g., USINT_TO_LREAL) |
-|---------|------------|-----------------------------------------------------|
+| --------- | ------------ | ----------------------------------------------------- |
 | Input / Output | Adapter Interfaces | Individual Data Inputs/Outputs |
 | Event Processing | Pass-Through via Adapter | Custom Event I/C Pairs |
 | Implementation | Composite (Connections Only) | Executable Algorithms |

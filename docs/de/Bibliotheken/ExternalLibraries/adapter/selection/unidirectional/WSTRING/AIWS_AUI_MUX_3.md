@@ -3,6 +3,7 @@
 ![AIWS_AUI_MUX_3](AIWS_AUI_MUX_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `AIWS_AUI_MUX_3` ist die adapterbasierte Variante des generischen Multiplexers für den Datentyp `WSTRING`. Anders als `AIWS_MUX_3` erhält er den Auswahlindex nicht über ein REQ-Ereignis mit zugehörigem K-Dateneingang, sondern über einen eigenen Adapter-Socket **K** vom Typ `AUI` („Adapter Unidirectional Interface“). Das erlaubt es, den Index direkt aus einem anderen Baustein mit passendem `AUI`-Plug einzuspeisen, ohne eigene Verdrahtung von Ereignis- und Datenleitung.

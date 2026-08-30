@@ -69,7 +69,7 @@ Da der Baustein als reines Verbindungsnetzwerk ohne eigenen Zustandsautomaten re
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Funktion | Unterschied |
-|----------|----------|-------------|
+| ---------- | ---------- | ------------- |
 | **AUI_TO_AR** | Adapter-Umschaltung UINT → REAL | Nur Durchschleif; keine Typumwandlung, erwartet kompatible Daten. |
 | **AR_TO_AUI** | Adapter-Umschaltung REAL → UINT | Umgekehrte Richtung, ebenfalls reine Durchschleif. |
 | **CONV_UINT_TO_REAL** | Typumwandlung von UINT nach REAL | Führt tatsächliche Konvertierung durch, benötigt aber direkte Daten-Ein-/Ausgänge statt Adapter. |

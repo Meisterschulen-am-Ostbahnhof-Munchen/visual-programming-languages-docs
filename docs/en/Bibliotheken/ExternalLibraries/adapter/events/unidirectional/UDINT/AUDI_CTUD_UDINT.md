@@ -4,6 +4,7 @@
 
 The `AUDI_CTUD_UDINT` is an event-driven up/down counter for unsigned 32-bit integers (UDINT), specifically designed for integration into adapter-based systems. It utilizes the `AUDI` adapter for passing the counter value and the default value, enabling a clean separation of event and data flow.
 ![AUDI_CTUD_UDINT](AUDI_CTUD_UDINT.svg)
+
 ## Interface Structure
 
 ![AUDI_CTUD_UDINT_ecc](./AUDI_CTUD_UDINT_ecc.svg)
@@ -57,11 +58,11 @@ The counter value is output via the `CV` adapter as the `AUDI` signal. The outpu
 
 ## 🛠️ Related exercises
 
-* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
-* [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
+- [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Uebung_083_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_083_AX.md)
 
 ---
 
 ### 🌐 Matching topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

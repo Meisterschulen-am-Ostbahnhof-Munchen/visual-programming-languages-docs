@@ -3,9 +3,11 @@
 ![SET_TIME_OF_DAY](./SET_TIME_OF_DAY.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SET_TIME_OF_DAY` is used to write a time of day value provided via the data input `IN` to a target variable `OUT`, which is declared as an InOut variable. The block is implemented as a simple FB (SimpleFB) and complies with the IEC 61499-1 standard.
+
 ## Interface Structure
 
 ### **Event Inputs**

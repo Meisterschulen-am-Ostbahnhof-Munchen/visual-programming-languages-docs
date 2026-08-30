@@ -3,6 +3,7 @@
 <img width="1253" height="181" alt="F_DWORD_TO_UDINT" src="https://github.com/user-attachments/assets/0b023d3e-49d2-41d3-a6b3-db4d5f1970f8" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_DWORD_TO_UDINT` dient der Konvertierung eines `DWORD`-Werts in einen `UDINT`-Wert. Dieser Baustein ist Teil des `iec61131::conversion`-Pakets und ermöglicht eine einfache und effiziente Typumwandlung.
@@ -56,23 +57,23 @@ Der Funktionsblock hat keinen internen Zustand. Die Konvertierung wird bei jedem
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)
-* [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
-* [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
-* [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
-* [Uebung_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
-* [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
-* [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
-* [Uebung_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
-* [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
-* [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
-* [Uebung_034a1_Q2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
-* [Uebung_034a1_Q4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
-* [Uebung_103](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
-* [Uebung_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-* [Uebung_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-* [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_011](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011.md)
+- [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
+- [Uebung_012](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012.md)
+- [Uebung_012a_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012a_sub.md)
+- [Uebung_012b](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012b.md)
+- [Uebung_012c](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_012c.md)
+- [Uebung_020c2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_020c2_sub.md)
+- [Uebung_028](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_028.md)
+- [Uebung_034](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034.md)
+- [Uebung_034a1_Q1](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q1.md)
+- [Uebung_034a1_Q2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q2.md)
+- [Uebung_034a1_Q4](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_034a1_Q4.md)
+- [Uebung_103](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Uebung_151](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
+- [Uebung_151_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
+- [Uebung_152](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
 
 ## Fazit
 

@@ -3,9 +3,11 @@
 ![AIS_SPLIT_7](./AIS_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_SPLIT_7** is used to distribute an incoming AIS data stream to seven identical outputs. It is implemented as a generic block and allows the division of a unidirectional AIS adapter (Socket IN) into seven identical adapter plugs (OUT1 … OUT7). The term "AIS" here refers to an application-specific, abstract data type in the adapter context of IEC 61499.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket (Input) | IN | `adapter::types::unidirectional::AIS` | Incoming AIS data stream, distributed to all outputs. |
 | Plug (Output) | OUT1 … OUT7 | `adapter::types::unidirectional::AIS` | Seven identical outputs, each forwarding the incoming AIS data stream unchanged. |
 

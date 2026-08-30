@@ -29,7 +29,7 @@ Keine Daten-Ausgänge vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AULI` | Eingehender AULI-Adapter (Quelle) |
 | Plug | `OUT1` | `adapter::types::unidirectional::AULI` | Erster ausgehender AULI-Adapter |
 | Plug | `OUT2` | `adapter::types::unidirectional::AULI` | Zweiter ausgehender AULI-Adapter |
@@ -63,7 +63,7 @@ Der FB besitzt **keinen internen Zustandsautomaten**. Es existieren keine Zustä
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Ausgänge | Besonderheit |
-|----------|-----|----------|--------------|
+| ---------- | ----- | ---------- | -------------- |
 | `AULI_SPLIT_5` | generischer Splitter | 5 | spezifisch für AULI-Adapter |
 | `SPLIT_2` (nicht standardisiert) | generischer Splitter | 2 | meist für Datentypen wie INT oder BOOL |
 | `F_SPLIT` (aus IEC 61499-Bibliotheken) | funktionaler Splitter | variabel | basiert auf ECC und Ereignissen |
@@ -82,4 +82,4 @@ Der `AULI_SPLIT_5` ist ein minimalistischer, aber nützlicher Funktionsblock zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

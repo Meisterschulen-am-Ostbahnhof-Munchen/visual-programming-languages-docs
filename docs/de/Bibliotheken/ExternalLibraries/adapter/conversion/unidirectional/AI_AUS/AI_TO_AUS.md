@@ -32,12 +32,12 @@ Der Baustein besitzt keine eigenen separaten Ereignis- oder Datenports, sondern 
 
 ### **Adapter**
 
-- **`AI_IN`** (Socket)  
-  Typ: `adapter::types::unidirectional::AI`  
+- **`AI_IN`** (Socket)
+  Typ: `adapter::types::unidirectional::AI`
   Beschreibung: Nimmt einen `INT`-Wert und ein zugehöriges Ereignis auf.
 
-- **`AUS_OUT`** (Plug)  
-  Typ: `adapter::types::unidirectional::AUS`  
+- **`AUS_OUT`** (Plug)
+  Typ: `adapter::types::unidirectional::AUS`
   Beschreibung: Gibt den konvertierten `USINT`-Wert mit einem Ereignis aus.
 
 ## Funktionsweise
@@ -76,4 +76,4 @@ Der Funktionsblock **AI_TO_AUS** ist ein kompakter Composite-Baustein zur einfac
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

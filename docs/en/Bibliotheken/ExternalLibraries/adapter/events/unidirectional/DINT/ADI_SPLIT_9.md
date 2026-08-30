@@ -3,9 +3,11 @@
 ![ADI_SPLIT_9](./ADI_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_SPLIT_9` is a generic component that splits an incoming ADI signal (adapter) into nine identical output signals. It functions purely as a splitter at the adapter level.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -68,4 +70,4 @@ ADI_SPLIT_9` is a simple, generic function block for 1-to-9 distribution of a un
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

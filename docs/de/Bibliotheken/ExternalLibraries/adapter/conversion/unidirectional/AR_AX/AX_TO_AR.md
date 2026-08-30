@@ -3,6 +3,7 @@
 ![AX_TO_AR](./AX_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AX_TO_AR** ist ein Composite-Funktionsbaustein, der ein boolesches Signal aus einem AX-Adapter (Typ `adapter::types::unidirectional::AX`) in einen REAL-Wert (0.0 oder 1.0) umwandelt und über einen AR-Adapter (Typ `adapter::types::unidirectional::AR`) ausgibt. Die Konvertierung erfolgt mithilfe des IEC‑61131‑Bausteins **F_SEL**.
@@ -19,23 +20,23 @@ Auf FB-Ebene sind keine Ereignis-Ausgänge vorhanden. Das Ausgangsereignis des F
 
 ### **Daten-Eingänge**
 
-Es existieren keine direkten Daten-Eingänge auf FB-Ebene. Der einzige Daten-Eingang wird über den AX_IN-Adapter bereitgestellt:  
+Es existieren keine direkten Daten-Eingänge auf FB-Ebene. Der einzige Daten-Eingang wird über den AX_IN-Adapter bereitgestellt:
 
 - **D1** (BOOL) – das zu konvertierende boolesche Signal.
 
 ### **Daten-Ausgänge**
 
-Es gibt keine direkten Daten-Ausgänge auf FB-Ebene. Der konvertierte Wert wird über den AR_OUT-Adapter ausgegeben:  
+Es gibt keine direkten Daten-Ausgänge auf FB-Ebene. Der konvertierte Wert wird über den AR_OUT-Adapter ausgegeben:
 
 - **D1** (REAL) – der resultierende REAL-Wert (0.0 oder 1.0).
 
 ### **Adapter**
 
-- **AX_IN** (Socket):  
-  - Typ: `adapter::types::unidirectional::AX`  
-  - Liefert ein boolesches Signal und einen Ereignisimpuls.  
-- **AR_OUT** (Plug):  
-  - Typ: `adapter::types::unidirectional::AR`  
+- **AX_IN** (Socket):
+  - Typ: `adapter::types::unidirectional::AX`
+  - Liefert ein boolesches Signal und einen Ereignisimpuls.
+- **AR_OUT** (Plug):
+  - Typ: `adapter::types::unidirectional::AR`
   - Gibt den umgewandelten REAL-Wert aus.
 
 ## Funktionsweise
@@ -68,8 +69,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Er reagiert **ereignisge
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **Standard‑Konvertierungsbausteine** wie `BOOL_TO_REAL` aus IEC‑Bibliotheken bieten eine direkte Umwandlung auf Datenebene, jedoch ohne Adapter‑Schnittstellen.  
-- **`SELECT`** (IEC 61131) kann ebenfalls ein boolesches Signal zur Auswahl zwischen zwei REAL‑Werten nutzen, erfordert aber manuelle Verdrahtung.  
+- **Standard‑Konvertierungsbausteine** wie `BOOL_TO_REAL` aus IEC‑Bibliotheken bieten eine direkte Umwandlung auf Datenebene, jedoch ohne Adapter‑Schnittstellen.
+- **`SELECT`** (IEC 61131) kann ebenfalls ein boolesches Signal zur Auswahl zwischen zwei REAL‑Werten nutzen, erfordert aber manuelle Verdrahtung.
 - **AX_TO_AR** kapselt die komplette Adapter‑Konvertierung in einem wiederverwendbaren Composite‑FB und reduziert so den Verdrahtungsaufwand in adapternetzwerkbasierten 4diac‑Anwendungen deutlich.
 
 ## Fazit
@@ -80,4 +81,4 @@ Der Baustein **AX_TO_AR** stellt eine kompakte und robuste Lösung zur Konvertie
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

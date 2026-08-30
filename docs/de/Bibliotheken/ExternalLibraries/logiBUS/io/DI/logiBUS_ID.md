@@ -3,6 +3,7 @@
 <img width="1903" height="313" alt="image" src="https://github.com/user-attachments/assets/52ce1d6d-0a92-42d7-8fd0-ce51ed902a2b" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der logiBUS_ID Funktionsblock ist ein Eingabe-Service-Interface-Baustein für Doppelwort-Eingabedaten (DWORD). Er dient als Schnittstelle für die Kommunikation mit logiBUS-Eingabegeräten und ermöglicht die Verarbeitung von digitalen Eingangssignalen in 4diac-Steuerungssystemen.
@@ -77,7 +78,7 @@ Im Vergleich zu standardmäßigen digitalen Eingangsblöcken bietet logiBUS_ID:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
+- [Uebung_011a2](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_011a2.md)
 
 ## Fazit
 
@@ -87,4 +88,4 @@ Der logiBUS_ID Funktionsblock stellt eine spezialisierte Schnittstelle für logi
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AR_SPLIT_6](./AR_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_SPLIT_6** is used to distribute a single AR adapter input to six separate AR adapter outputs. It is designed as a generic function block (Generic FB) and allows for the simple duplication of an AR interface without data loss or protocol-specific conversion.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs are available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|-------------|
+| ----- | ------ | ---------- | ------------- |
 | `adapter::types::unidirectional::AR` | **IN** | Socket (Input) | An incoming AR adapter that is distributed to all outputs. |
 | `adapter::types::unidirectional::AR` | **OUT1** | Plug (Output) | First outgoing AR adapter (identical to IN). |
 | `adapter::types::unidirectional::AR` | **OUT2** | Plug (Output) | Second outgoing AR adapter (identical to IN). |
@@ -75,4 +77,4 @@ The **AR_SPLIT_6** is a simple yet useful generic function block for multiplying
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -20,7 +20,7 @@ Anbindung von AUX-Eingabegeräten (z.B. ISOBUS-Joystick).
 
 ![Uebung_010b1_network](./Uebung_010b1_network.svg)
 
-  * **`AuxFunction2_X1`**: Typ `isobus::UT::io::Auxiliary::IN::Aux_IX`. Dieser Baustein lauscht auf AUX-Nachrichten der "Funktion 2".
+  - **`AuxFunction2_X1`**: Typ `isobus::UT::io::Auxiliary::IN::Aux_IX`. Dieser Baustein lauscht auf AUX-Nachrichten der "Funktion 2".
 
 -----
 
@@ -32,4 +32,4 @@ Im Gegensatz zu Softkeys, die ein festes Bildschirmelement sind, ist eine AUX-Fu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

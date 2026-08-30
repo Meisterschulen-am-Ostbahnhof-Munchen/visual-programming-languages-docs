@@ -1,4 +1,5 @@
 Here is the documentation for exercise `Uebung_035a2_AX` based on the provided data.
+
 # Exercise_035a2_AX: Traffic Light System Austria (AX) with Sequence T05
 
 ![Uebung_035a2_AX_network](./Uebung_035a2_AX_network.svg)
@@ -39,22 +40,27 @@ This block controls the timing of the traffic light phases.
 The program is started by clicking the button (`Input_I1`), which triggers the event `START_S1` in the sequence function block `Seq`. The sequence is as follows:
 
 1. **Phase 1 (Red - 6s):**
+
 - `Seq` activates output `DO_S1`.
 - Signal goes to `OR_Red` -> `Light_Red_Q1` lights up.
-2. **Phase 2 (Red & Yellow - 2s):**
+1. **Phase 2 (Red & Yellow - 2s):**
+
 - `Seq` activates output `DO_S2`.
 - Signal goes to `AX_SPLIT_2`.
 - `AX_SPLIT_2` sends a signal to `OR_Red` (red remains on) and `OR_Yellow` (yellow lights up).
-3. **Phase 3 (Green - 6s):**
+1. **Phase 3 (Green - 6s):**
+
 - `Seq` activates output `DO_S3`.
 - Signal goes to `OR_Green` -> `Light_Green_Q3` is constantly lit.
-4. **Phase 4 (Green Flashing - 4s):**
+1. **Phase 4 (Green Flashing - 4s):**
+
 - `Seq` activates output `DO_S4`.
 - The signal triggers `AX_R_TRIG`, which starts the `E_TRAIN` module.
 - `E_TRAIN` sends pulses to the toggle flip-flop `AX_T_FF`.
 - The flip-flop's output `Q` changes its state every 500ms and is connected to `OR_Green`.
 - Result: The green light flashes 4 times (controlled by parameter N=4).
-5. **Phase 5 (Yellow - 2s):**
+1. **Phase 5 (Yellow - 2s):**
+
 - `Seq` activates output `DO_S5`.
 - Signal goes to `OR_Yellow` -> `Light_Yellow_Q2` lights up.
 

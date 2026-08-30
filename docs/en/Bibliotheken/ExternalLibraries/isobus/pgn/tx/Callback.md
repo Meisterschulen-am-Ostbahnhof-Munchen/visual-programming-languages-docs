@@ -1,7 +1,9 @@
 ![Callback](Callback.svg)
+
 # Callback
 
 Message callback
+
 ## Interface
 
 ### Event inputs
@@ -24,6 +26,6 @@ Message callback
 
 ## 🛠️ Related exercises
 
-* [Uebung_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
-* [Uebung_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
-* [Uebung_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)
+- [Uebung_126b2_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b2_sub.md)
+- [Uebung_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+- [Uebung_12x_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_12x_sub.md)

@@ -3,6 +3,7 @@
 ![ILOCK_T_FF_AX](./ILOCK_T_FF_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ILOCK_T_FF_AX` ist ein zusammengesetzter (Composite) Baustein, der einen verriegelbaren Toggle-Flip-Flop (engl. lockable toggle flip-flop) realisiert. Er verfügt über eine AE2-Adapter-Schnittstelle zur Anbindung an eine übergeordnete Verriegelungslogik und gibt den aktuellen Schaltzustand über einen unidirektionalen AX-Adapter aus. Der Baustein ist für den Einsatz in sicherheitsgerichteten oder verriegelten Steuerungsanwendungen konzipiert, bei denen das Umschalten eines Ausgangs durch externe Bedingungen beeinflusst werden muss.

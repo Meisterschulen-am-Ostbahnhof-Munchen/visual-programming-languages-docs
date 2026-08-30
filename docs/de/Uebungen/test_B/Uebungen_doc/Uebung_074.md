@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_074`. Hier wird die Drehz
 
 ![Uebung_074_network](./Uebung_074_network.svg)
 
-* [Verpolungsschutz in der Elektronik: Warum die ideale Diode (LM74700) MOSFETs und Schottky-Dioden in Effizienz und Kosten schlägt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verpolungsschutz-in-der-Elektronik-Warum-die-ideale-Diode-LM74700-MOSFETs-und-Schottky-Dioden-in-Effizienz-und-Kosten-schlgt-e3a2487)
+- [Verpolungsschutz in der Elektronik: Warum die ideale Diode (LM74700) MOSFETs und Schottky-Dioden in Effizienz und Kosten schlägt](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Verpolungsschutz-in-der-Elektronik-Warum-die-ideale-Diode-LM74700-MOSFETs-und-Schottky-Dioden-in-Effizienz-und-Kosten-schlgt-e3a2487)
 
 ----
 
@@ -24,8 +24,8 @@ Verwendung des Bausteins `I_RPTO` (Rear PTO). Es wird gezeigt, wie man mit einer
 
 ### Funktionsbausteine (FBs)
 
-  * **`I_RPTO`**: Liefert die Drehzahl am Ausgang `REAR_PTO_OUTP_SHAFT_SPEED`.
-  * **`F_SEL_E_2`**: Wählt zwischen dem Messwert und einer festen Null aus.
+  - **`I_RPTO`**: Liefert die Drehzahl am Ausgang `REAR_PTO_OUTP_SHAFT_SPEED`.
+  - **`F_SEL_E_2`**: Wählt zwischen dem Messwert und einer festen Null aus.
 
 -----
 
@@ -46,4 +46,4 @@ Ein Gülle-Rührwerk darf nur arbeiten, wenn die Zapfwelle mindestens 300 U/min 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)
+- [🌐 Diode & Halbleitergrundlagen auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektronik-i/diode/diode/)

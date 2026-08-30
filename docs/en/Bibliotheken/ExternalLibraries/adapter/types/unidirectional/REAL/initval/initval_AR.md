@@ -3,6 +3,7 @@
 ![initval_AR](initval_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AR` is the configurable initialization block for the [AR](../AR.md) adapter (data type `REAL`, 32-bit floating-point number): it accepts a start value as a data input at initialization time and writes it to a `AR` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

@@ -22,10 +22,10 @@ In der Subapplikation werden vier Funktionsbausteine instanziiert:
 
 ![Uebung_001_AX_b_network](./Uebung_001_AX_b_network.svg)
 
-  * **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Dieser Baustein liest den Zustand des physischen Eingangs `Input_I1` und stellt ihn über seinen Adapter-Anschluss `IN` bereit[cite: 1].
-  * **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein empfängt Signale an seinem Adapter-Anschluss `OUT` und setzt entsprechend den physischen Ausgang `Output_Q1`[cite: 1].
-  * **`AX_X_TO_BOOL`**: [cite_start]Ein Wandler-Baustein, der ein am Adapter-Eingang `AX_IN` (Socket) empfangenes Signal in ein Ereignis `CNF` und einen booleschen Datenwert `IN` zerlegt[cite: 1].
-  * **`AX_BOOL_TO_X`**: [cite_start]Ein Wandler-Baustein, der aus einem Ereignis `REQ` und einem booleschen Datenwert `OUT` wieder ein Adapter-Signal am Ausgang `AX_OUT` (Plug) zusammensetzt[cite: 1].
+  - **`DigitalInput_I1`**: Eine Instanz des Typs `logiBUS_IXA`. [cite_start]Dieser Baustein liest den Zustand des physischen Eingangs `Input_I1` und stellt ihn über seinen Adapter-Anschluss `IN` bereit[cite: 1].
+  - **`DigitalOutput_Q1`**: Eine Instanz des Typs `logiBUS_QXA`. [cite_start]Dieser Baustein empfängt Signale an seinem Adapter-Anschluss `OUT` und setzt entsprechend den physischen Ausgang `Output_Q1`[cite: 1].
+  - **`AX_X_TO_BOOL`**: [cite_start]Ein Wandler-Baustein, der ein am Adapter-Eingang `AX_IN` (Socket) empfangenes Signal in ein Ereignis `CNF` und einen booleschen Datenwert `IN` zerlegt[cite: 1].
+  - **`AX_BOOL_TO_X`**: [cite_start]Ein Wandler-Baustein, der aus einem Ereignis `REQ` und einem booleschen Datenwert `OUT` wieder ein Adapter-Signal am Ausgang `AX_OUT` (Plug) zusammensetzt[cite: 1].
 
 ### Adapter-Schnittstelle: `AX.adp`
 

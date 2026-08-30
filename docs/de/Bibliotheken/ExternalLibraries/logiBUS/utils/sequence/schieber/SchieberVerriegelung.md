@@ -5,6 +5,7 @@
 ![SchieberVerriegelung_ecc](./SchieberVerriegelung_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SchieberVerriegelung` dient der koordinierten Steuerung und Verriegelung von drei Schiebern: einem Hauptschieber sowie einem linken und einem rechten Seitenschieber. Sein primärer Zweck ist es, basierend auf externen Anforderungen (Ereignisse) und Sperrzuständen, gültige und kollisionsfreie Schieber-Kombinationen zu gewährleisten. Der Baustein ist besonders für Anwendungen geeignet, bei denen die Bewegung eines Schiebers die Bewegung eines anderen verhindern oder erzwingen muss.
@@ -15,35 +16,35 @@ Der Funktionsblock `SchieberVerriegelung` dient der koordinierten Steuerung und 
 
 ### **Ereignis-Eingänge**
 
-*   **`INIT`**: Initialisierungsanforderung. Löst den Übergang in den initialisierten Zustand aus. Wird mit den Daten `QI`, `DI_LINKS_GESPERRT` und `DI_RECHTS_GESPERRT` verknüpft.
-*   **`EI_Hauptschieber_Open`**: Fordert das Öffnen des Hauptschiebers an.
-*   **`EI_Hauptschieber_Close`**: Fordert das Schließen des Hauptschiebers an.
-*   **`EI_SchieberLinks_Open`**: Fordert das Öffnen des linken Seitenschiebers an.
-*   **`EI_SchieberLinks_Close`**: Fordert das Schließen des linken Seitenschiebers an.
-*   **`EI_SchieberRechts_Open`**: Fordert das Öffnen des rechten Seitenschiebers an.
-*   **`EI_SchieberRechts_Close`**: Fordert das Schließen des rechten Seitenschiebers an.
+-   **`INIT`**: Initialisierungsanforderung. Löst den Übergang in den initialisierten Zustand aus. Wird mit den Daten `QI`, `DI_LINKS_GESPERRT` und `DI_RECHTS_GESPERRT` verknüpft.
+-   **`EI_Hauptschieber_Open`**: Fordert das Öffnen des Hauptschiebers an.
+-   **`EI_Hauptschieber_Close`**: Fordert das Schließen des Hauptschiebers an.
+-   **`EI_SchieberLinks_Open`**: Fordert das Öffnen des linken Seitenschiebers an.
+-   **`EI_SchieberLinks_Close`**: Fordert das Schließen des linken Seitenschiebers an.
+-   **`EI_SchieberRechts_Open`**: Fordert das Öffnen des rechten Seitenschiebers an.
+-   **`EI_SchieberRechts_Close`**: Fordert das Schließen des rechten Seitenschiebers an.
 
 ### **Ereignis-Ausgänge**
 
-*   **`INITO`**: Initialisierungsbestätigung. Wird nach Abschluss der Initialisierung (`INIT`) oder Deinitialisierung ausgelöst. Ist mit den Daten `QO`, `DO_LINKS_GESPERRT` und `DO_RECHTS_GESPERRT` verknüpft.
-*   **`EO_Hauptschieber_Open`**: Signalisiert den Befehl zum Öffnen des Hauptschiebers.
-*   **`EO_Hauptschieber_Close`**: Signalisiert den Befehl zum Schließen des Hauptschiebers.
-*   **`EO_SchieberLinks_Open`**: Signalisiert den Befehl zum Öffnen des linken Seitenschiebers.
-*   **`EO_SchieberLinks_Close`**: Signalisiert den Befehl zum Schließen des linken Seitenschiebers.
-*   **`EO_SchieberRechts_Open`**: Signalisiert den Befehl zum Öffnen des rechten Seitenschiebers.
-*   **`EO_SchieberRechts_Close`**: Signalisiert den Befehl zum Schließen des rechten Seitenschiebers.
+-   **`INITO`**: Initialisierungsbestätigung. Wird nach Abschluss der Initialisierung (`INIT`) oder Deinitialisierung ausgelöst. Ist mit den Daten `QO`, `DO_LINKS_GESPERRT` und `DO_RECHTS_GESPERRT` verknüpft.
+-   **`EO_Hauptschieber_Open`**: Signalisiert den Befehl zum Öffnen des Hauptschiebers.
+-   **`EO_Hauptschieber_Close`**: Signalisiert den Befehl zum Schließen des Hauptschiebers.
+-   **`EO_SchieberLinks_Open`**: Signalisiert den Befehl zum Öffnen des linken Seitenschiebers.
+-   **`EO_SchieberLinks_Close`**: Signalisiert den Befehl zum Schließen des linken Seitenschiebers.
+-   **`EO_SchieberRechts_Open`**: Signalisiert den Befehl zum Öffnen des rechten Seitenschiebers.
+-   **`EO_SchieberRechts_Close`**: Signalisiert den Befehl zum Schließen des rechten Seitenschiebers.
 
 ### **Daten-Eingänge**
 
-*   **`QI` (BOOL)**: Qualifiziert das INIT-Ereignis. `TRUE` startet die Initialisierung, `FALSE` die Deinitialisierung.
-*   **`DI_LINKS_GESPERRT` (BOOL)**: Signalisiert den Sperrzustand des linken Seitenschiebers (`TRUE` = gesperrt).
-*   **`DI_RECHTS_GESPERRT` (BOOL)**: Signalisiert den Sperrzustand des rechten Seitenschiebers (`TRUE` = gesperrt).
+-   **`QI` (BOOL)**: Qualifiziert das INIT-Ereignis. `TRUE` startet die Initialisierung, `FALSE` die Deinitialisierung.
+-   **`DI_LINKS_GESPERRT` (BOOL)**: Signalisiert den Sperrzustand des linken Seitenschiebers (`TRUE` = gesperrt).
+-   **`DI_RECHTS_GESPERRT` (BOOL)**: Signalisiert den Sperrzustand des rechten Seitenschiebers (`TRUE` = gesperrt).
 
 ### **Daten-Ausgänge**
 
-*   **`QO` (BOOL)**: Statusausgabe, die den Erfolg der Initialisierung/Deinitialisierung widerspiegelt.
-*   **`DO_LINKS_GESPERRT` (BOOL)**: Gibt den intern verarbeiteten oder weitergeleiteten Sperrzustand für den linken Schieber aus.
-*   **`DO_RECHTS_GESPERRT` (BOOL)**: Gibt den intern verarbeiteten oder weitergeleiteten Sperrzustand für den rechten Schieber aus.
+-   **`QO` (BOOL)**: Statusausgabe, die den Erfolg der Initialisierung/Deinitialisierung widerspiegelt.
+-   **`DO_LINKS_GESPERRT` (BOOL)**: Gibt den intern verarbeiteten oder weitergeleiteten Sperrzustand für den linken Schieber aus.
+-   **`DO_RECHTS_GESPERRT` (BOOL)**: Gibt den intern verarbeiteten oder weitergeleiteten Sperrzustand für den rechten Schieber aus.
 
 ### **Adapter**
 
@@ -65,9 +66,9 @@ Der Algorithmus `normalOperation` kopiert bei aktiviertem Betrieb (`QI=TRUE`) di
 
 ## Technische Besonderheiten
 
-*   **Zustandsgesteuerte Ausgabe**: Jeder operative Zustand (`AlleZu`, `AlleAuf`, `LinksAuf`, `rechtsAuf`) löst sofort eine feste Kombination von Ausgabeereignissen (`EO_*`) aus, die die gewünschte Schieberposition definieren.
-*   **Bedingte Transitionen**: Die Transition von `AlleZu` zu `LinksAuf`/`rechtsAuf` ist an den `EI_Hauptschieber_Open`-Event **und** den entsprechenden Sperrzustand (`DI_*_GESPERRT`) geknüpft. Dies stellt eine hardwarenahe Verriegelungslogik dar.
-*   **Explizite Deinitialisierung**: Ein `INIT`-Event mit `QI=FALSE` führt von jedem Zustand aus in den `DeInit`-Zustand und setzt den Ausgang `QO` auf `FALSE`.
+-   **Zustandsgesteuerte Ausgabe**: Jeder operative Zustand (`AlleZu`, `AlleAuf`, `LinksAuf`, `rechtsAuf`) löst sofort eine feste Kombination von Ausgabeereignissen (`EO_*`) aus, die die gewünschte Schieberposition definieren.
+-   **Bedingte Transitionen**: Die Transition von `AlleZu` zu `LinksAuf`/`rechtsAuf` ist an den `EI_Hauptschieber_Open`-Event **und** den entsprechenden Sperrzustand (`DI_*_GESPERRT`) geknüpft. Dies stellt eine hardwarenahe Verriegelungslogik dar.
+-   **Explizite Deinitialisierung**: Ein `INIT`-Event mit `QI=FALSE` führt von jedem Zustand aus in den `DeInit`-Zustand und setzt den Ausgang `QO` auf `FALSE`.
 
 ## Zustandsübersicht
 
@@ -83,16 +84,16 @@ Der Algorithmus `normalOperation` kopiert bei aktiviertem Betrieb (`QI=TRUE`) di
 
 Typische Anwendungen finden sich in Verteil- und Förderanlagen, beispielsweise in der Landtechnik oder Materiallogistik:
 
-*   **Korn- oder Schüttgutförderer**: Der Hauptschieber leitet den Strom. Die Seitenschieber können je nach Bedarf geöffnet werden, um z.B. in verschiedene Silos zu verteilen. Die Verriegelung verhindert, dass beide Seiten gleichzeitig geöffnet sind, wenn dies mechanisch oder prozessbedingt unzulässig ist.
-*   **Weichensteuerung**: Analog zu einer mechanischen Weiche, bei der die Stellung eines Weichenschuhs die andere Position blockiert.
+-   **Korn- oder Schüttgutförderer**: Der Hauptschieber leitet den Strom. Die Seitenschieber können je nach Bedarf geöffnet werden, um z.B. in verschiedene Silos zu verteilen. Die Verriegelung verhindert, dass beide Seiten gleichzeitig geöffnet sind, wenn dies mechanisch oder prozessbedingt unzulässig ist.
+-   **Weichensteuerung**: Analog zu einer mechanischen Weiche, bei der die Stellung eines Weichenschuhs die andere Position blockiert.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einfachen Schieber-Steuerungsbausteinen (z.B. einzelnen `E_SR`-FlipFlops pro Schieber) bietet der `SchieberVerriegelung`-FB:
 
-*   **Integrierte Kollisionsvermeidung**: Die Verriegelungslogik ist fest im Zustandsautomaten hinterlegt und muss nicht extern verdrahtet werden.
-*   **Zustandsbasierte Koordination**: Die Ausgangsbefehle sind immer konsistente Sets (`Open`/`Close`-Kombinationen für alle drei Schieber).
-*   **Explizite Sperreingänge**: Die Berücksichtigung externer Sperrsignale (`DI_*_GESPERRT`) ist integraler Bestandteil der Steuerlogik.
+-   **Integrierte Kollisionsvermeidung**: Die Verriegelungslogik ist fest im Zustandsautomaten hinterlegt und muss nicht extern verdrahtet werden.
+-   **Zustandsbasierte Koordination**: Die Ausgangsbefehle sind immer konsistente Sets (`Open`/`Close`-Kombinationen für alle drei Schieber).
+-   **Explizite Sperreingänge**: Die Berücksichtigung externer Sperrsignale (`DI_*_GESPERRT`) ist integraler Bestandteil der Steuerlogik.
 
 Ein Nachteil ist die geringere Flexibilität. Die Logik ist spezifisch für genau drei Schieber mit dieser speziellen Verriegelungsbeziehung. Für andere Anzahlen oder Abhängigkeiten muss ein neuer Baustein erstellt werden.
 

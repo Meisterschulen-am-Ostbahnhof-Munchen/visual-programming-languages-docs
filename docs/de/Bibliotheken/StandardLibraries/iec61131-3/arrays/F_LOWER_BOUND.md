@@ -3,6 +3,7 @@
 ![F_LOWER_BOUND](F_LOWER_BOUND.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_LOWER_BOUND` liefert die untere Indexgrenze einer gewählten Dimension eines Arrays beliebigen Typs. Zusammen mit [F_UPPER_BOUND](F_UPPER_BOUND.md) bildet er die Grundlage für generische, größenunabhängige Array-Verarbeitung — z. B. wird `F_LEN_ARRAY` (siehe `utils::arrays`) aus beiden Grenzen berechnet.

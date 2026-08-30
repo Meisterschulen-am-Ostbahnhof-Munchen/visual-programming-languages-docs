@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_US_TO_LREAL` converts a time value in microseconds (`TIME`) into a double-precision floating-point number (`LREAL`). This conversion is particularly useful in control applications where time values are needed for further calculations.
 ![F_TIME_IN_US_TO_LREAL](F_TIME_IN_US_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,11 +53,11 @@ Often, a function like `DINT_TO_TIME` is needed to convert a numeric value (e.g.
 
 Use the function block **`F_MULTIME`** (from the category `arithmetic`) for this purpose:
 
-* Multiply your numeric value by the desired time base.
+- Multiply your numeric value by the desired time base.
 
-* **Example:** `500 * T#1ms = T#500ms`
+- **Example:** `500 * T#1ms = T#500ms`
 
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with Similar Blocks
 

@@ -46,6 +46,7 @@ This function block calculates the XOR operation across all five inputs. The XOR
 The mathematical formula is:
 
 OUT = IN1 XOR IN2 XOR IN3 XOR IN4 XOR IN5
+
 ## Technical Features
 
 - Uses unidirectional AX adapters for all interfaces

@@ -20,8 +20,8 @@ Demonstration der "Fan-Out"-Fähigkeit von Ereignisverbindungen in 4diac. Ein Qu
 
 ![Uebung_004a5_AX_network](./Uebung_004a5_AX_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Taster.
-  * **`E_T_FF_Q1` & `Q2`**: Flip-Flops.
+  - **`DigitalInput_CLK_I1`**: Taster.
+  - **`E_T_FF_Q1` & `Q2`**: Flip-Flops.
 
 -----
 
@@ -48,4 +48,4 @@ Gleiches Beispiel wie zuvor (Zentral-Aus), aber platzsparender implementiert.
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

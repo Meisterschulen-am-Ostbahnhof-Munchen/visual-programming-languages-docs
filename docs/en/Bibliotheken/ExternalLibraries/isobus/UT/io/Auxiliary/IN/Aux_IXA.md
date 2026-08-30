@@ -38,6 +38,7 @@ The Aux_IXA is a composite function block for processing Boolean input data. It 
 The Aux_IXA acts as a composite block that encapsulates the basic function block Aux_IX. Upon an INIT event, all parameters are forwarded to the internal IX block. REQ events trigger service requests, while INITO confirms successful initialization. The IN adapter enables bidirectional communication with external components.
 
 **IN**
+
 ## Technical Features
 
 - Integration into ISOBUS environments through a special package structure
@@ -72,7 +73,7 @@ Compared to simple Boolean input blocks, Aux_IXA offers:
 
 ## 🛠️ Related exercises
 
-* [Exercise_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
+- [Exercise_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
 
 ## Conclusion
 

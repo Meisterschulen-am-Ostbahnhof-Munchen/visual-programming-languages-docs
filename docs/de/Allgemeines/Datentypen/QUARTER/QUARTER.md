@@ -2,9 +2,9 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ## Beschreibung
 
@@ -36,6 +36,5 @@ Da **QUARTER** kein Standard-Datentyp der IEC-Normen ist, wird er in Programmier
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
-* [Uebung_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
-
+- [Uebung_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+- [Uebung_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)

@@ -3,6 +3,7 @@
 ![Q_ESC](https://user-images.githubusercontent.com/116869307/214147236-7b0ba071-871f-4b5c-8d15-5089ae7f07fc.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ESC** is a standards-compliant function block for termination control in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.8) specification for agricultural tax systems.
@@ -28,13 +29,16 @@ The **Q_ESC** is a standards-compliant function block for termination control in
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` without parameters
 - `INITO` confirmed Operational Readiness
-2. **Cancel Function**:
+1. **Cancel Function**:
+
 - `REQ` terminates the current user input
 - No additional parameters required
 - `CNF` returns the result status
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -50,7 +54,7 @@ The **Q_ESC** is a standards-compliant function block for termination control in
 ## Typical Use Cases
 
 | Scenario | Effect |
-|------------------------|-----------------------------|
+| ------------------------ | ----------------------------- |
 | Dialog cancel | Ends current input |
 | Exit menu | Return to main screen |
 | Alarm acknowledgement | Stops audible signals |
@@ -58,7 +62,7 @@ The **Q_ESC** is a standards-compliant function block for termination control in
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successfully aborted |
 | -8 | VT_E_NOACT | No active input to abort |
 | -21 | VT_E_NO_INSTANCE | No VT instance available |
@@ -74,7 +78,7 @@ The **Q_ESC** is a standards-compliant function block for termination control in
 ## ⚖️ Comparison with similar modules
 
 | Feature | Q_ESC | VtAbortCmd | VtCancelOp |
-|---------------|-------------|--------------|-------------|
+| --------------- | ------------- | -------------- | ------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Effect | Global | Local | Object-Specific |
 | Parameters | None | Configurable | Configurable |

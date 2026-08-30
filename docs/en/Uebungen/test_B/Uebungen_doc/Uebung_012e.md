@@ -1,9 +1,11 @@
 # Exercise_012e: Numeric Value Input PHYS and Saving to INI with Subapp
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates reading a numeric value via a physical input block (`NumericValue_PHYS`) and permanently saving the value using an INI file block. All the logic is encapsulated in a subapp, which serves as a reusable component. The goal is to capture a value via an object-based configuration, temporarily store it, and read it back as needed.
+
 ## Function Blocks (FBs) Used
 
 ### Main Subapp: `Uebung_012e`
@@ -33,21 +35,24 @@ This exercise demonstrates reading a numeric value via a physical input block (`
 - Data inputs: `stObj` (object configuration), `rPhys` (value)
 - Function: Qualifies the physical value (e.g., for scaling or offsetting)
 - **How it works**:
+
 1. The function block `NumericValue_PHYS` reads a value according to the object configuration (`stObj`) and outputs it as `rPhys`. Upon successful acquisition, the event `IND` is sent.
 2. The event `IND` triggers the `SET` input of the `INI` block. This block stores the value under the specified `KEY` in the `SECTION` of the INI file.
 3. After saving, `SETO` is triggered, which is then passed on to the subapp via the output `IND`. 4. Simultaneously, the initialization chain starts: `INITO` from `INI` is connected to `GET`, so that the stored value is read after the subapp starts.
-5. The read value (`VALUEO`) is passed to the function block `Q_NumericValue_PHYS`, which qualifies it with the object configuration and forwards it to the output `VALUEO` of the subapp.
+4. The read value (`VALUEO`) is passed to the function block `Q_NumericValue_PHYS`, which qualifies it with the object configuration and forwards it to the output `VALUEO` of the subapp.
 
 ## Program Flow and Connections
 
 The subapp operates in two main phases:
 
 1. **Initialization (Start)**:
+
 - The event `INITO` of the `INI` block is internally connected to the `GET` input.
 - This immediately reads the stored value from the INI file.
 - The read value is passed via `VALUEO` to `Q_NumericValue_PHYS` and to the output of the subapp.
 - The event `GETO` is also sent to the output `IND` of the subapp.
-2. **Cyclic Operation (on Value Change)**:
+1. **Cyclic Operation (on Value Change)**:
+
 - `NumericValue_PHYS` captures a new physical value upon activation.
 - This value is passed to the `VALUE` input of the `INI` block via `rPhys`.
 - The `IND` event of `NumericValue_PHYS` triggers the `SET` input of `INI`, thus saving the value.
@@ -74,6 +79,6 @@ The combination of the blocks `NumericValue_PHYS`, `INI`, and `Q_NumericValue_PH
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

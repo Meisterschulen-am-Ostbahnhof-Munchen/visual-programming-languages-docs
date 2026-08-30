@@ -3,6 +3,7 @@
 ![initval_AUI](initval_AUI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AUI` ist der konfigurierbare Initialisierungsbaustein für den [AUI](../AUI.md)-Adapter (Datentyp `UINT`, 16-Bit-Ganzzahl (vorzeichenlos)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `AUI`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

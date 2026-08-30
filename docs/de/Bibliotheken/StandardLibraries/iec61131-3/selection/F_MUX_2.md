@@ -74,7 +74,7 @@ Im Vergleich zu anderen Multiplexern bietet F_MUX_2:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_090a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
+- [Uebung_090a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_090a1.md)
 
 ## Fazit
 

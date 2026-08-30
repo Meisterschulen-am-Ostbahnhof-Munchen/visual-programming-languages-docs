@@ -6,7 +6,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_006`. Hier wird ein klass
 
 ----
 
-![](Uebung_006.png)
+![Schaltplan der Übung 006 SR-Flip-Flop](Uebung_006.png)
 
 ## Ziel der Übung
 
@@ -22,9 +22,9 @@ Realisierung einer Schaltung mit getrennter Setz- und Rücksetz-Logik unter Verw
 
 ![Uebung_006_network](./Uebung_006_network.svg)
 
-  * **`I1` (Set)**: Taster zum Einschalten (konfiguriert auf Einzelklick).
-  * **`I2` (Reset)**: Taster zum Ausschalten (konfiguriert auf Einzelklick).
-  * **`E_SR`**: Ein ereignisbasierter Speicherbaustein. [cite_start]Ein Event am Eingang `S` (Set) setzt den Ausgang `Q` auf TRUE, ein Event am Eingang `R` (Reset) setzt ihn auf FALSE[cite: 1].
+  - **`I1` (Set)**: Taster zum Einschalten (konfiguriert auf Einzelklick).
+  - **`I2` (Reset)**: Taster zum Ausschalten (konfiguriert auf Einzelklick).
+  - **`E_SR`**: Ein ereignisbasierter Speicherbaustein. [cite_start]Ein Event am Eingang `S` (Set) setzt den Ausgang `Q` auf TRUE, ein Event am Eingang `R` (Reset) setzt ihn auf FALSE[cite: 1].
 
 -----
 
@@ -40,9 +40,9 @@ Realisierung einer Schaltung mit getrennter Setz- und Rücksetz-Logik unter Verw
 
 [cite_start][cite: 1]
 
-*   Ein Klick auf Taster 1 ➡️ Speicher wird gesetzt ➡️ Lampe geht an.
-*   Ein Klick auf Taster 2 ➡️ Speicher wird gelöscht ➡️ Lampe geht aus.
-*   Erneutes Drücken von Taster 1, wenn das Licht bereits an ist, hat keine Auswirkung.
+-   Ein Klick auf Taster 1 ➡️ Speicher wird gesetzt ➡️ Lampe geht an.
+-   Ein Klick auf Taster 2 ➡️ Speicher wird gelöscht ➡️ Lampe geht aus.
+-   Erneutes Drücken von Taster 1, wenn das Licht bereits an ist, hat keine Auswirkung.
 
 -----
 

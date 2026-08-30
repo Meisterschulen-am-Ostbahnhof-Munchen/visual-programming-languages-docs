@@ -49,14 +49,14 @@ Der Ablauf innerhalb der Subapplikation ist rein ereignis- und signalgesteuert �
 2.  **Triggerung**: Der `AX_SWITCH` detektiert das Signal am Eingang `G` und feuert ein Event am Ausgang `EO1`.
 3.  **Zustandswechsel**: Dieses Event dient als Clock-Signal (`CLK`) für das `AX_T_FF`, welches daraufhin seinen internen Zustand `Q` umschaltet (Toggelt).
 4.  **Signalverteilung**: Das Signal von `Q` wird an den Splitter `AX_SPLIT_2` weitergegeben.
-    *   **Pfad A (Rechts)**: Der Ausgang `OUT1` des Splitters leitet das Signal direkt an den Plug `Rechts` weiter.
-    *   **Pfad B (Links)**: Der Ausgang `OUT2` des Splitters leitet das Signal an den Inverter `AX_NOT`. Das invertierte Signal wird dann an den Plug `Links` ausgegeben.
+    -   **Pfad A (Rechts)**: Der Ausgang `OUT1` des Splitters leitet das Signal direkt an den Plug `Rechts` weiter.
+    -   **Pfad B (Links)**: Der Ausgang `OUT2` des Splitters leitet das Signal an den Inverter `AX_NOT`. Das invertierte Signal wird dann an den Plug `Links` ausgegeben.
 
 **Schnittstellen:**
 
-*   `IN` (Socket): Eingang für das Steuersignal.
-*   `Rechts` (Plug): Ausgang, der dem aktuellen Zustand des Flip-Flops entspricht.
-*   `Links` (Plug): Ausgang, der dem invertierten Zustand des Flip-Flops entspricht.
+-   `IN` (Socket): Eingang für das Steuersignal.
+-   `Rechts` (Plug): Ausgang, der dem aktuellen Zustand des Flip-Flops entspricht.
+-   `Links` (Plug): Ausgang, der dem invertierten Zustand des Flip-Flops entspricht.
 
 ## Zusammenfassung
 

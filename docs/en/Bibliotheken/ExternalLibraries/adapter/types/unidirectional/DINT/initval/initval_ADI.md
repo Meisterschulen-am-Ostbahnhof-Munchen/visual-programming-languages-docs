@@ -3,6 +3,7 @@
 ![initval_ADI](initval_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_ADI` is the configurable initialization block for the [ADI](../ADI.md) adapter (data type `DINT`, 32-bit signed integer): it accepts a start value as a data input at initialization time and writes it to a `ADI` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

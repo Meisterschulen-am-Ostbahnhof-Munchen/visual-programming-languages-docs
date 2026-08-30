@@ -3,6 +3,7 @@
 <img width="1449" height="238" alt="image" src="https://github.com/user-attachments/assets/b43c3e3b-03a9-421b-a9ba-bcd4c4f00f28" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SET_AT_INDEX` dient dazu, den Wert eines Elements in einem Array an einem bestimmten Index zu setzen. Dabei muss sichergestellt werden, dass die Datentypen des zu setzenden Wertes dem Datentyp des Arrays entsprechen. Das resultierende Ausgabe-Array wird ebenfalls den Datentyp des Eingabe-Arrays aufweisen. Dieser Baustein ist nützlich für die dynamische Manipulation von Array-Daten innerhalb eines Steuerungsprogramms.
@@ -13,22 +14,22 @@ Der Funktionsblock `SET_AT_INDEX` dient dazu, den Wert eines Elements in einem A
 
 ### **Ereignis-Eingänge**
 
-*   **REQ** (Event): Ein Anforderungseingang, der die Ausführung des Funktionsblocks initiiert. Mit diesem Ereignis werden die Daten-Eingänge `IN_ARRAY`, `INDEX` und `VALUE` verarbeitet.
+-   **REQ** (Event): Ein Anforderungseingang, der die Ausführung des Funktionsblocks initiiert. Mit diesem Ereignis werden die Daten-Eingänge `IN_ARRAY`, `INDEX` und `VALUE` verarbeitet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF** (Event): Ein Bestätigungsausgang, der nach erfolgreicher Ausführung des Dienstes ausgelöst wird. Mit diesem Ereignis werden die Daten-Ausgänge `QO` und `OUT_ARRAY` aktualisiert.
+-   **CNF** (Event): Ein Bestätigungsausgang, der nach erfolgreicher Ausführung des Dienstes ausgelöst wird. Mit diesem Ereignis werden die Daten-Ausgänge `QO` und `OUT_ARRAY` aktualisiert.
 
 ### **Daten-Eingänge**
 
-*   **IN_ARRAY** (ANY): Das Eingabearray, dessen Wert an einem bestimmten Index geändert werden soll. Der Datentyp `ANY` ermöglicht die Verwendung mit verschiedenen Array-Typen.
-*   **INDEX** (UINT): Der nullbasierte Index des Elements im Array, dessen Wert gesetzt werden soll.
-*   **VALUE** (ANY): Der Wert, der an der angegebenen Position im Array gesetzt werden soll. Der Datentyp muss mit dem Datentyp des `IN_ARRAY` übereinstimmen.
+-   **IN_ARRAY** (ANY): Das Eingabearray, dessen Wert an einem bestimmten Index geändert werden soll. Der Datentyp `ANY` ermöglicht die Verwendung mit verschiedenen Array-Typen.
+-   **INDEX** (UINT): Der nullbasierte Index des Elements im Array, dessen Wert gesetzt werden soll.
+-   **VALUE** (ANY): Der Wert, der an der angegebenen Position im Array gesetzt werden soll. Der Datentyp muss mit dem Datentyp des `IN_ARRAY` übereinstimmen.
 
 ### **Daten-Ausgänge**
 
-*   **QO** (BOOL): Ein Event-Ausgabe-Qualifizierer, der den Erfolg der Operation anzeigt. `TRUE` bei Erfolg, `FALSE` bei einem Fehler (z.B. ungültiger Index).
-*   **OUT_ARRAY** (ANY): Das resultierende Array nach dem Setzen des Wertes am angegebenen Index.
+-   **QO** (BOOL): Ein Event-Ausgabe-Qualifizierer, der den Erfolg der Operation anzeigt. `TRUE` bei Erfolg, `FALSE` bei einem Fehler (z.B. ungültiger Index).
+-   **OUT_ARRAY** (ANY): Das resultierende Array nach dem Setzen des Wertes am angegebenen Index.
 
 ### **Adapter**
 
@@ -40,10 +41,10 @@ Der `SET_AT_INDEX` Funktionsblock wartet auf ein `REQ`-Ereignis. Sobald dieses E
 
 ## Technische Besonderheiten
 
-*   **Datentyp-Flexibilität:** Durch die Verwendung von `ANY` für die Array- und Wert-Parameter ist der Baustein flexibel in Bezug auf die zu verarbeitenden Datentypen. Es ist jedoch entscheidend, dass der Datentyp von `VALUE` exakt mit dem Elementdatentyp des `IN_ARRAY` übereinstimmt, um Laufzeitfehler zu vermeiden.
-*   **Index-Typ:** Der `INDEX` ist vom Typ `UINT` (Unsigned Integer), was bedeutet, dass nur positive Indizes zulässig sind.
-*   **Nullbasierte Indizierung:** Der Index beginnt bei 0 für das erste Element des Arrays.
-*   **Fehlerbehandlung:** Die `QO`-Ausgabe dient als einfacher Indikator für den Erfolg der Operation. Eine erweiterte Fehlerbehandlung (z.B. für Index-Out-Of-Bounds) muss möglicherweise auf Anwendungsebene implementiert oder durch zusätzliche Prüfungen ergänzt werden.
+-   **Datentyp-Flexibilität:** Durch die Verwendung von `ANY` für die Array- und Wert-Parameter ist der Baustein flexibel in Bezug auf die zu verarbeitenden Datentypen. Es ist jedoch entscheidend, dass der Datentyp von `VALUE` exakt mit dem Elementdatentyp des `IN_ARRAY` übereinstimmt, um Laufzeitfehler zu vermeiden.
+-   **Index-Typ:** Der `INDEX` ist vom Typ `UINT` (Unsigned Integer), was bedeutet, dass nur positive Indizes zulässig sind.
+-   **Nullbasierte Indizierung:** Der Index beginnt bei 0 für das erste Element des Arrays.
+-   **Fehlerbehandlung:** Die `QO`-Ausgabe dient als einfacher Indikator für den Erfolg der Operation. Eine erweiterte Fehlerbehandlung (z.B. für Index-Out-Of-Bounds) muss möglicherweise auf Anwendungsebene implementiert oder durch zusätzliche Prüfungen ergänzt werden.
 
 ## Zustandsübersicht
 
@@ -51,10 +52,10 @@ Der `SET_AT_INDEX` Baustein ist im Wesentlichen ein ereignisgesteuerter Baustein
 
 ## Anwendungsszenarien
 
-*   **Dynamische Konfiguration:** Ändern von Konfigurationsparametern, die in Arrays gespeichert sind, zur Laufzeit.
-*   **Datenverarbeitung:** Aktualisieren von Sensor- oder Aktuatordaten, die in Arrays gesammelt werden.
-*   **Algorithmische Anpassung:** Modifizieren von Look-Up-Tabellen oder Reglerparametern in Echtzeit.
-*   **Benutzerinteraktion:** Setzen von Array-Werten basierend auf Benutzereingaben.
+-   **Dynamische Konfiguration:** Ändern von Konfigurationsparametern, die in Arrays gespeichert sind, zur Laufzeit.
+-   **Datenverarbeitung:** Aktualisieren von Sensor- oder Aktuatordaten, die in Arrays gesammelt werden.
+-   **Algorithmische Anpassung:** Modifizieren von Look-Up-Tabellen oder Reglerparametern in Echtzeit.
+-   **Benutzerinteraktion:** Setzen von Array-Werten basierend auf Benutzereingaben.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -77,4 +78,4 @@ Der `SET_AT_INDEX` Funktionsblock ist ein grundlegendes, aber mächtiges Werkzeu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

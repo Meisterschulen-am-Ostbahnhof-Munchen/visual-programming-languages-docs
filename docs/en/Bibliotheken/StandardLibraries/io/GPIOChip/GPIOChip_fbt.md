@@ -5,6 +5,7 @@
 ## Introduction
 
 The GPIOChip function block is a service interface function block for controlling GPIO chips under Linux systems. It enables access to GPIO lines via the Linux GPIO Character Device Interface (/dev/gpiochipX) and supports various operating modes for reading and writing GPIO signals.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -39,6 +40,7 @@ No adapter interfaces available.
 
 Upon receiving the INIT event, the GPIOChip FB initializes a connection to a specific GPIO chip and a defined GPIO line. The configuration includes the operating mode (read/write), the bias mode, and the polarity setting (ActiveLow). After successful initialization, the block confirms with INITO+; in case of errors, it confirms with INITO- and a corresponding STATUS.
 ...
+
 ## Technical Features
 
 - Supports various GPIO operating modes: Read, Write (Push/Pull), Open Drain, and Open Source

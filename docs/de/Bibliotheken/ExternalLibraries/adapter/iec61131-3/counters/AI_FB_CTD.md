@@ -3,6 +3,7 @@
 ![AI_FB_CTD](./AI_FB_CTD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AI_FB_CTD** ist ein nach IEC 61499-2 standardisierter Abwärtszähler (**Down Counter**) für Integer-Werte. Er nutzt durchgängig Adapter-Schnittstellen (AX, AI), um Ereignisse und Daten zu transportieren. Der Baustein ist als Wrapper um den klassischen IEC 61131-FB `FB_CTD` realisiert und ermöglicht eine modulare, adapterbasierte Verbindung in 4diac-IDE-Netzwerken. Jedes eingehende Ereignis über die Zählersteuerungen (CD, LD, PV) führt zur Aktualisierung des internen Zählers und löst ein Ausgangsereignis aus.
@@ -116,4 +117,4 @@ Der `AI_FB_CTD` ist ein flexibler, adapterbasierter Abwärtszähler für Integer
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![SET_STRING](./SET_STRING.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SET_STRING` dient dazu, einen über den Dateneingang `IN` bereitgestellten Zeichenkettenwert (STRING) in eine In‑Out‑Variable `OUT` zu schreiben. Die Ausführung erfolgt gesteuert durch ein Ereignis am Eingang `REQ`. Nach dem Schreiben wird ein Bestätigungsereignis am Ausgang `CNF` gesendet.

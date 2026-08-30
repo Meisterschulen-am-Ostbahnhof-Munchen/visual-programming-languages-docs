@@ -1,8 +1,9 @@
-# Exercise_001c2: DigitalInput_I1 negated to DigitalOutput_Q1 --> Input polling at boot.
+# Exercise_001c2: DigitalInput_I1 negated to DigitalOutput_Q1 --> Input polling at boot
 
 ![Uebung_001c2_network](./Uebung_001c2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a simple signal processing operation: The digital input `I1` is negated and output to the digital output `Q1`. The input is polled once during system boot. A specific comment in the network indicates that the startup behavior depends on the presence of a specific event connection (`INITO → REQ`).
@@ -61,11 +62,11 @@ The three modules are connected as follows:
 
 The event output `IND` of `DigitalInput_I1` is directly connected to the event input `REQ` of `F_NOT_BOOL`. This ensures that after each successful reading of the digital input, the negation of the read value is immediately triggered. Simultaneously, the data value `IN` from `DigitalInput_I1` is transferred to the data input `IN` of `F_NOT_BOOL`.
 
-2. **Negation and Setting Output**
+1. **Negation and Setting Output**
 
 The event output `CNF` from `F_NOT_BOOL` is connected to the event input `REQ` from `DigitalOutput_Q1`. Once the negation is complete, the negated value (from output `OUT` of `F_NOT_BOOL`) is placed on data input `OUT` of `DigitalOutput_Q1`, and the output is updated.
 
-3. **Special Features During Boot**
+1. **Special Features During Boot**
 
 An important aspect is the initialization. The event output `INITO` of `DigitalInput_I1` is connected back to the event input `REQ` of `DigitalInput_I1` (i.e., the block itself). This connection ensures that the input is read once immediately after booting. Without this feedback, the output `Q1` would retain the value `FALSE` at startup because no initial event is triggered. **With this connection**, the input is immediately queried, negated, and the output is set to the actual (negated) value – which could then be `TRUE`.
 
@@ -81,4 +82,4 @@ This exercise demonstrates the basic use of digital input and output components 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

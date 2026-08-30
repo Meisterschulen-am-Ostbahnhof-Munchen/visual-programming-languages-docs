@@ -3,9 +3,11 @@
 ![AR_D_FF_HYS](./AR_D_FF_HYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_D_FF_HYS** implements a data latch (D) flip-flop with hysteresis. It serves for the stable acquisition and transmission of an analog (real) value, with a hysteresis band suppressing unwanted fluctuations at the output. The block is designed for use in industrial signal processing.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ The function block **AR_D_FF_HYS** implements a data latch (D) flip-flop with hy
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----|-----------|--------------|
+| ------------- | ----- | ----------- | -------------- |
 | I | adapter::types::unidirectional::AR | Socket (Input) | Receives the value to be latched (trigger event on E1, data on D1). |
 | Q | adapter::types::unidirectional::AR | Plug (Output) | Outputs the latched value (event on E1, data on D1). |
 
@@ -49,6 +51,7 @@ The function block internally contains a sub-FB `E_D_FF_ANY_HYS` from the librar
 - Initialization (`INIT`) sets the hysteresis band and immediately confirms it with `INITO`. Changing `HYSTERESIS` during operation is not supported; the hysteresis is only applied during the INIT event.
 - Initialization (`INIT`) sets the hysteresis band and immediately confirms it with `INITO`. Modifying `HYSTERESIS` during operation is not supported; the hysteresis is only applied during the INIT event.
 -
+
 ## Technical Features
 
 - **Adapter-Based Interface**: Both the input and output use the generic adapter `adapter::types::unidirectional::AR`, allowing the block to be flexibly integrated into existing adapter chains.
@@ -76,7 +79,7 @@ There are no explicit state machines; the component operates purely event-driven
 ## Comparison with Similar Function Blocks
 
 | Function Block | Feature |
-|----------|-------------|
+| ---------- | ------------- |
 | **AR_D_FF** (without hysteresis) | Instantly adopts any new value; sensitive to noise. |
 | **AR_D_FF_HYS** (this function block) | Uses a hysteresis band to suppress flicker. |
 | **Schmitt Trigger** | Implements similar hysteresis, but usually for binary (Boolean) signals. This function block operates with analog (REAL) values. |

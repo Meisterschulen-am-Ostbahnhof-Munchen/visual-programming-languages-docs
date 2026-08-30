@@ -1,6 +1,7 @@
 # I_RPTO
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_RPTO** (Rear Power Take-Off) is a standards-compliant function block for controlling and monitoring the rear power take-off (PTO), developed under the EPL-2.0 license.
@@ -34,7 +35,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 ## PTO parameters
 
 | Parameter | Type | Description | SPN | Bit length | Scaling |
-|-----------|------|--------------|-----|------------|------------|
+| ----------- | ------ | -------------- | ----- | ------------ | ------------ |
 | `REAR_PTO_OUTP_SHAFT_SPEED` | UINT | Current speed | 1883 | 16 | 0.125 rpm/bit |
 | `REAR_PTO_OUTP_SH_SPEED_SET` | UINT | Target Speed | 1885 | 16 | 0.125 rpm/bit |
 | `REAR_PTO_ENGAGEMENT` | BYTE | Clutch State | 2408 | 2 | 4 states/2 bits |
@@ -49,21 +50,25 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 ## Operating Modes
 
 | Code | Mode | Description |
-|------|-------|--------------|
+| ------ | ------- | -------------- |
 | 0 | Standby | Standby Mode |
 | 1 | Speed Mode | Constant Speed |
 | 2 | Load Mode | Load-Dependent Control |
 | 3 | Reserved | Manufacturer-specific |
 ...
+
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with `QI`=TRUE starts system calibration
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-2. **Speed Control**:
+1. **Speed Control**:
+
 - `IND` provides actual and target speeds
 - Automatic adjustment to load changes
-3. **Error Handling**:
+1. **Error Handling**:
+
 - `TIMEOUT` in case of communication problems
 - Detailed error codes in `REAR_PTO_EXIT_REASON_CODE`
 
@@ -85,7 +90,7 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 ## ⚖️ Comparison with Similar Systems
 
 | Feature | I_RPTO | Standard | Premium |
-|---------|--------|----------|---------|
+| --------- | -------- | ---------- | --------- |
 | Speed Accuracy | ±0.2% | ±1% | ±0.1% |
 | Operating Modes | 4 | 2 | 6 |
 | Diagnostic Scope | 64 Codes | 8 Codes | 128 Codes |
@@ -93,8 +98,8 @@ Version 1.0 implements the ISO 11783-7 specification (PGN 65091) for the precise
 
 ## 🛠️ Related Exercises
 
-* [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_074](../../../../Uebungen/test_B/Uebungen_doc/Uebung_074.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

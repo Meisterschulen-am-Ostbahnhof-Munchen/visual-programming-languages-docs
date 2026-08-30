@@ -3,9 +3,11 @@
 ![AI_D_FF_TMIN](./AI_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_D_FF_TMIN** implements a D flip-flop (data latch) with a minimum inter-disposal time between successive output events. It serves as an adapter-encapsulated component that receives an asynchronously incoming data value via a socket, temporarily stores it during an active event, and passes it on via a plug. Output is only released again when the configured minimum time \( T_{\text{min}} \) has elapsed since the last output.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ This function block does not have its own data outputs; output is exclusively vi
 ### **Adapter**
 
 | Name | Type (Adapter) | Direction | Comment |
-|-------------|------------------------------------|-----------|------------------------------|
+| ------------- | ------------------------------------ | ----------- | ------------------------------ |
 | `I` | `adapter::types::unidirectional::AI` | Socket | Input data for latching |
 | `Q` | `adapter::types::unidirectional::AI` | Plug | Latched Output Value |
 
@@ -75,7 +77,7 @@ The function block does not have an explicitly visible state machine; the timing
 ## Comparison with Similar Modules
 
 | Module | Description | Difference to AI_D_FF_TMIN |
------------------|------------------------------------------------|-------------------------------------------------|
+----------------- | ------------------------------------------------ | ------------------------------------------------- |
 | `E_D_FF` | Simple D flip-flop without a time limit | No minimum time between output events |
 | `E_D_FF_ANY` | D flip-flop for arbitrary data types | Also without time control |
 | `AI_D_FF` | D-Flip-Flop with Adapter Interface | Missing `Tmin` Option |
@@ -91,6 +93,6 @@ AI_D_FF_TMIN` offers a compact solution for buffering and time-controlled data t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

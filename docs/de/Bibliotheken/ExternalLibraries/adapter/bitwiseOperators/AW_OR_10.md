@@ -3,6 +3,7 @@
 ![AW_OR_10](./AW_OR_10.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AW_OR_10** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 10 Eingangswerten vom Typ `WORD` (16-Bit-Bitmuster (Wort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

@@ -3,6 +3,7 @@
 ![Uebung_006a4_AX_SR_network](./Uebung_006a4_AX_SR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung führt in den Funktionsbaustein `AX_FB_SR_T_FF` (Set-Dominant Toggle Flip-Flop) ein, der über Adapter angebunden wird. Ziel ist es, das Verhalten eines setzdominanten Toggle-Flipflops zu verstehen und in einer einfachen Steuerung zu testen.
@@ -14,7 +15,7 @@ Der Baustein wird mit drei digitalen Eingängen (SET, RESET, CLK) und einem digi
 In dieser Übung werden folgende Funktionsbausteine eingesetzt:
 
 | FB-Name | Typ | Parameter |
-|---------|-----|-----------|
+| --------- | ----- | ----------- |
 | `DigitalInput_SET` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I1` |
 | `DigitalInput_RESET` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I2` |
 | `DigitalInput_CLK` | `logiBUS::io::DI::logiBUS_IXA` | Input = `Input_I3` |
@@ -50,7 +51,7 @@ Der logische Ablauf der Übung ist wie folgt:
 - Einbindung von Hardware-Ein-/Ausgängen über logiBUS-Adapter.
 - Analyse des zeitlichen Verhaltens bei unterschiedlichen Eingangskombinationen.
 
-**Schwierigkeitsgrad**: Einfach  
+**Schwierigkeitsgrad**: Einfach
 **Vorkenntnisse**: Grundlegender Umgang mit der 4diac-IDE, einfache digitale Logik.
 
 ## Zusammenfassung
@@ -61,4 +62,4 @@ Die Übung `Uebung_006a4_AX_SR` demonstriert die Verwendung des setzdominanten T
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

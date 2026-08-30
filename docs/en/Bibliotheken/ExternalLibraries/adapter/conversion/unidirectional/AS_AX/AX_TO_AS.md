@@ -3,9 +3,11 @@
 ![AX_TO_AS](./AX_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AX_TO_AS` is a composite function block that converts a BOOL adapter (type AX) into a SINT adapter (type AS). It encapsulates the conversion of a binary signal into a signed 8-bit value and provides this via a standardized adapter interface.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -77,4 +79,4 @@ The `AX_TO_AS` is a simple yet useful composite function block for converting BO
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

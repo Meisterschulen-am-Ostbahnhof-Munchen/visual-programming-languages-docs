@@ -3,6 +3,7 @@
 ![AUI_TO_ADI](./AUI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock AUI_TO_ADI ist ein Composite-Baustein, der einen unidirektionalen AUI-Adapter (Datentyp UINT) in einen unidirektionalen ADI-Adapter (Datentyp DINT) umwandelt. Er dient als standardisierte Schnittstelle zwischen Komponenten, die unterschiedliche Datentypen für analoge Ein- oder Ausgangswerte verwenden.

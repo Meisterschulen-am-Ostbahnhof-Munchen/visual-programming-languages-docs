@@ -3,6 +3,7 @@
 <img width="1234" height="182" alt="F_BOOL_TO_LINT" src="https://github.com/user-attachments/assets/4c333a4d-5021-4e63-8ee2-fdf1494dd38f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_BOOL_TO_LINT` dient der Konvertierung eines booleschen Wertes (`BOOL`) in einen 64-Bit Integer-Wert (`LINT`). Dieser Block ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.

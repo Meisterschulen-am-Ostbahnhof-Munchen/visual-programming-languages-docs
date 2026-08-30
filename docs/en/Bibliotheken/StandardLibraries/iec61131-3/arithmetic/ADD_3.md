@@ -3,6 +3,7 @@
 ![ADD_3](https://user-images.githubusercontent.com/116869307/214143012-431cb6ed-2e5c-4316-a5b8-ab7a341eeb37.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ADD_3** is an enhanced version of the adder for calculating the sum of three values, developed under the EPL-2.0 license. Version 1.0 offers type-safe addition for various numeric data types according to the IEC 61131-3 standard.
@@ -31,15 +32,18 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 ## Operating Principle
 
 1. **Requirement**:
+
 - The `REQ` event triggers the calculation
 - All three input values are evaluated simultaneously
-2. **Calculation**:
+1. **Calculation**:
+
 - Type-preserving summation
 - Supports all ANY_MAGNITUDE types:
 - Integers (INT, DINT)
 - Floating-point numbers (REAL, LREAL)
 - Time values (TIME, LTIME)
-3. **Result Output**:
+1. **Result Output**:
+
 - The `CNF` event with the calculated OUT value
 - Automatic type conversion for mixed inputs
 
@@ -61,7 +65,7 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 ## ⚖️ Comparison with ADD_2
 
 | Feature | ADD_3 | ADD_2 |
-|---------------|--------|--------|
+| --------------- | -------- | -------- |
 | Inputs | 3 | 2 |
 | Calculation | IN1+IN2+IN3 | IN1+IN2 |
 | Performance | Higher efficiency with 3 inputs | Lightweight |
@@ -75,8 +79,8 @@ The **ADD_3** is an enhanced version of the adder for calculating the sum of thr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
-* [Exercise_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
+- [Exercise_087](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087.md)
+- [Exercise_087a1](../../../../Uebungen/test_B/Uebungen_doc/Uebung_087a1.md)
 
 ## Conclusion
 

@@ -6,6 +6,7 @@
 ![AR_SUB_2](./AR_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_SUB_2` dient zur Durchführung einer arithmetischen Subtraktion (Subtrahend von Minuend). Es handelt sich um einen generischen Funktionsbaustein (`GEN_AR_SUB`), der für die Berechnung keine klassischen diskreten Ein- und Ausgänge nutzt, sondern vollständig auf einer adapterbasierten Schnittstellenstruktur aufbaut. Die Werte und die dazugehörige Steuerungslogik werden über unidirektionale Adapter vom Typ `AR` übertragen.
@@ -30,23 +31,23 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Das Berechnungsergebnis wird �
 
 ### **Adapter**
 
-* **Sockets (Eingangs-Adapter):**
-  * **IN1** (Typ: `adapter::types::unidirectional::AR`): Erster Eingang der Subtraktion (Minuend).
-  * **IN2** (Typ: `adapter::types::unidirectional::AR`): Zweiter Eingang der Subtraktion (Subtrahend).
+- **Sockets (Eingangs-Adapter):**
+  - **IN1** (Typ: `adapter::types::unidirectional::AR`): Erster Eingang der Subtraktion (Minuend).
+  - **IN2** (Typ: `adapter::types::unidirectional::AR`): Zweiter Eingang der Subtraktion (Subtrahend).
 
-* **Plugs (Ausgangs-Adapter):**
-  * **OUT** (Typ: `adapter::types::unidirectional::AR`): Ausgang für das Ergebnis der Subtraktion ($OUT = IN1 - IN2$).
+- **Plugs (Ausgangs-Adapter):**
+  - **OUT** (Typ: `adapter::types::unidirectional::AR`): Ausgang für das Ergebnis der Subtraktion ($OUT = IN1 - IN2$).
 
 ## Funktionsweise
 
-Der Baustein subtrahiert den Wert, der am Adapter `IN2` anliegt, von dem Wert des Adapters `IN1`. Das Ergebnis dieser arithmetischen Operation wird an den Ausgangs-Plug `OUT` übergeben. 
+Der Baustein subtrahiert den Wert, der am Adapter `IN2` anliegt, von dem Wert des Adapters `IN1`. Das Ergebnis dieser arithmetischen Operation wird an den Ausgangs-Plug `OUT` übergeben.
 
 Da es sich um unidirektionale Adapter handelt, triggern eingehende Ereignisse auf den Sockets `IN1` oder `IN2` die interne Berechnung. Nach erfolgter Subtraktion wird das entsprechende Aktualisierungsereignis über den Plug `OUT` an die nachfolgenden Bausteine signalisiert.
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_AR_SUB`)**: Der Baustein ist generisch implementiert. Dies ermöglicht eine flexible Handhabung verschiedener numerischer Datentypen, sofern diese innerhalb der Definition der `AR`-Adapterstruktur zulässig sind.
-* **Kapselung**: Durch die Verwendung von Adaptern werden Daten- und Event-Leitungen gebündelt. Dies reduziert die Anzahl der sichtbaren Verbindungslinien im Funktionsplan der 4diac-IDE erheblich.
+- **Generischer Typ (`GEN_AR_SUB`)**: Der Baustein ist generisch implementiert. Dies ermöglicht eine flexible Handhabung verschiedener numerischer Datentypen, sofern diese innerhalb der Definition der `AR`-Adapterstruktur zulässig sind.
+- **Kapselung**: Durch die Verwendung von Adaptern werden Daten- und Event-Leitungen gebündelt. Dies reduziert die Anzahl der sichtbaren Verbindungslinien im Funktionsplan der 4diac-IDE erheblich.
 
 ## Zustandsübersicht
 
@@ -58,9 +59,9 @@ Der Baustein besitzt keine komplexe interne Zustandsmaschine (kein Execution Con
 
 ## Anwendungsszenarien
 
-* **Soll-Istwert-Vergleich**: Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen die Signale bereits als Adapterstrukturen vorliegen.
-* **Offset-Kompensation**: Subtraktion eines Nullpunktfehlers oder Offsets von einem analogen Sensorwert.
-* **Strukturierte Signalverarbeitung**: Mathematische Berechnungen in komplexen, verteilten Steuerungssystemen zur Wahrung einer übersichtlichen Software-Architektur.
+- **Soll-Istwert-Vergleich**: Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen die Signale bereits als Adapterstrukturen vorliegen.
+- **Offset-Kompensation**: Subtraktion eines Nullpunktfehlers oder Offsets von einem analogen Sensorwert.
+- **Strukturierte Signalverarbeitung**: Mathematische Berechnungen in komplexen, verteilten Steuerungssystemen zur Wahrung einer übersichtlichen Software-Architektur.
 
 ## Vergleich mit ähnlichen Bausteinen
 

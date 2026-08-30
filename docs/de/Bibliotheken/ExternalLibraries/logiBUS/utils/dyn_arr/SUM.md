@@ -3,6 +3,7 @@
 ![SUM](./SUM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SUM** ermöglicht die Berechnung der Summe aller Elemente eines dynamischen Arrays. Er wird durch ein Ereignis am Eingang REQ angestoßen und gibt nach erfolgreicher Berechnung das Ergebnis über den Datenausgang sowie ein Bestätigungsereignis über CNF aus.
@@ -74,4 +75,4 @@ Der Funktionsblock `SUM` bietet eine einfache und performante Möglichkeit, die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

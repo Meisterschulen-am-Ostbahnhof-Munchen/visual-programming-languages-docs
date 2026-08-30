@@ -72,7 +72,7 @@ Im Vergleich zu einfachen digitalen Ausgabeblöcken bietet logiBUS_LED_DO_QX erw
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_029](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_029.md)
+- [Uebung_029](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_029.md)
 
 ## Fazit
 

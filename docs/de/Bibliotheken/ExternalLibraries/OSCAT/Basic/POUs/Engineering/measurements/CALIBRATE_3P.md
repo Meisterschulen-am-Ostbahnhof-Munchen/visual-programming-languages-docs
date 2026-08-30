@@ -3,6 +3,7 @@
 ![CALIBRATE_3P](CALIBRATE_3P.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `CALIBRATE_3P` ist eine Drei-Punkt-Kalibrierung für Roheingänge mit Mittelstellung, wie sie typischerweise bei Joysticks auftritt. Statt einer linearen Skalierung wie [CALIBRATE](CALIBRATE.md) interpoliert er stückweise linear zwischen drei gespeicherten Referenzpunkten (Min, Mid, Max) und kompensiert damit auch eine Mittelstellung, die nicht exakt in der Mitte des Rohbereichs liegt.
@@ -52,7 +53,7 @@ Die drei Kalibrierpunkte können in **beliebiger Reihenfolge** und beliebig oft 
 **Beispiel** (Joystick mit Mittelpunkt-Drift, Rohbereich `0..1000`, gewünschter Ausgabebereich `-100..0..100`):
 
 | Schritt | Aktion | Ergebnis |
-|---|---|---|
+| --- | --- | --- |
 | 1 | Joystick auf **Minimum**, `C_MIN=TRUE` | `X_MIN = 50` (Drift gegenüber ideal `0`) |
 | 2 | Joystick auf **Mitte**, `C_MID=TRUE` | `X_MID = 520` (Drift gegenüber ideal `500`) |
 | 3 | Joystick auf **Maximum**, `C_MAX=TRUE` | `X_MAX = 980` (Drift gegenüber ideal `1000`) |

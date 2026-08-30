@@ -3,9 +3,11 @@
 ## Description
 
 The **LDATE** (Long Date) data type represents a calendar date with a width of 64 bits and allows for a significantly larger time frame.
+
 ## Normative Definition
 
 According to **DIN EN 61131-3** (Table 10, No. 13b):
+
 | Property | Value |
 | :--- | :--- |
 | **Bits** | 64 bits |

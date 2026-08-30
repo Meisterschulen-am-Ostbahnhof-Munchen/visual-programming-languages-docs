@@ -3,6 +3,7 @@
 ![ALR_SPLIT_8](./ALR_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ALR_SPLIT_8** dient der Aufteilung eines einzelnen ALR-Signals (über einen Socket) auf acht identische ALR-Ausgänge (Plugs). Dieser Baustein ist als generischer FB konzipiert und ermöglicht die Signalverteilung innerhalb einer IEC 61499-basierten Steuerung.
@@ -28,7 +29,7 @@ Keine
 ### **Adapter**
 
 | Bezeichnung | Typ | Richtung | Beschreibung |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | **IN** | `adapter::types::unidirectional::ALR` | Socket | Eingangssignal, das auf alle Ausgänge weitergeleitet wird |
 | **OUT1** | `adapter::types::unidirectional::ALR` | Plug | Ausgang 1 – dupliziertes Signal |
 | **OUT2** | `adapter::types::unidirectional::ALR` | Plug | Ausgang 2 – dupliziertes Signal |

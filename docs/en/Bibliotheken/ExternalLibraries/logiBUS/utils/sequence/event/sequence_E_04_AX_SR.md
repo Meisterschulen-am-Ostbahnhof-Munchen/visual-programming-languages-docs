@@ -3,15 +3,17 @@
 ![sequence_E_04_AX_SR](./sequence_E_04_AX_SR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `sequence_E_04_AX_SR` implements an event-driven sequencer with four outputs via an AX adapter. It also offers a safety stop (STOP), a resume (RESUME), and a reset (RESET). The sequence cycles through the states State_00, State_01, State_02, State_03, and State_04 and can be operated cyclically.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Description |
-|----------|--------------|
+| ---------- | -------------- |
 | `START_S1` | Transition from START/State_00 to State_01 |
 | `S1_S2` | Transition from State_01 to State_02 |
 | S2_S3` | Transition from State_02 to State_03 |
@@ -41,7 +43,7 @@ No external data inputs.
 ### **Adapter**
 
 | Adapter | Type | Description |
-|----------|------------------------------------|--------------|
+| ---------- | ------------------------------------ | -------------- |
 | `DO_S1` | `adapter::types::unidirectional::AX` | Output active in State_01 (D1 = TRUE) |
 | `DO_S2` | `adapter::types::unidirectional::AX` | Output active in State_02 |
 | `DO_S3` | `adapter::types::unidirectional::AX` | Output active in State_03 |
@@ -76,7 +78,7 @@ The state then changes to one of the paused states (`sPAUSED_S1` to `sPAUSED_S4`
 ## State Overview
 
 | State | Active Output | `STATE_NR` | `PAUSED` |
-------------------|-----------------|------------|----------|
+------------------ | ----------------- | ------------ | ---------- |
 | xSTART | none | 0 | FALSE |
 | sState_00 | none | 0 | FALSE |
 | sState_01 | DO_S1 | 1 | FALSE |

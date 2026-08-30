@@ -3,19 +3,20 @@
 ![Uebung_080b_AUI_network](./Uebung_080b_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert den Einsatz eines aufwärtszählenden Zählers (E_CTU) mit Ereignisverdoppelung durch einen E_SPLIT-Funktionsbaustein. Zwei Hardware-Taster (an Input_I1 und Input_I2) dienen als Zählimpulsgeber und Rücksetzsignal. Der aktuelle Zählerstand wird über einen Adapter-Ausgang (CV) ausgegeben und auf einem numerischen Terminal (OutputNumber_N1) dargestellt. Ein zusätzlicher digitaler Ausgang (Output_Q1) signalisiert den Q-Zustand des Zählers.
 
 **Lernziele**:
 
-- Anwendung des E_CTU-Zählers (Aufwärtszähler)  
-- Nutzung des E_SPLIT zur Verdoppelung eines Ereignissignals  
-- Verwendung von AUI-Adapter-Schnittstellen für Daten- und Ereignisübertragung  
-- Parametrierung von logiBUS-Eingängen und -Ausgängen  
+- Anwendung des E_CTU-Zählers (Aufwärtszähler)
+- Nutzung des E_SPLIT zur Verdoppelung eines Ereignissignals
+- Verwendung von AUI-Adapter-Schnittstellen für Daten- und Ereignisübertragung
+- Parametrierung von logiBUS-Eingängen und -Ausgängen
 - Ausgabe numerischer Werte auf einem Terminal (Q_NumericValue_AUDI)
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlagen der 4diac-IDE, Umgang mit Ereignis- und Datenverbindungen, Ein/Ausgabe-Konfiguration
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -39,12 +40,12 @@ Folgende Funktionsbausteine werden im SubApp-Netzwerk eingesetzt:
 
 ### `E_CTU` (Typ: `adapter::events::unidirectional::AUI_CTU`)
 
-- **Parameter**: keine  
+- **Parameter**: keine
 - **Funktion**: Aufwärtszähler mit zwei Ereigniseingängen: CU (Count Up) und R (Reset). Über den Adapter-Ausgang `Q` wird der Zählerstand als boolescher Wert (bei CV>0) ausgegeben, über `CV` der aktuelle Zählerstand (Datenadapter).
 
 ### `AUI_TO_AUDI` (Typ: `adapter::conversion::unidirectional::AUI_TO_AUDI`)
 
-- **Parameter**: keine  
+- **Parameter**: keine
 - **Funktion**: Wandelt einen AUI-Datenadapter (hier den Zählerwert CV) in einen AUDI-Datenadapter (u32) um, der von nachfolgenden Bausteinen verarbeitet werden kann.
 
 ### `DigitalOutput_Q1` (Typ: `logiBUS::io::DQ::logiBUS_QXA`)
@@ -59,27 +60,27 @@ Folgende Funktionsbausteine werden im SubApp-Netzwerk eingesetzt:
 
 ## Programmablauf und Verbindungen
 
-1. **Ereigniserzeugung**:  
-   - Bei Betätigung des Tasters an `Input_I1` erzeugt `DigitalInput_CLK_I1` ein Ereignis `IND`.  
+1. **Ereigniserzeugung**:
+   - Bei Betätigung des Tasters an `Input_I1` erzeugt `DigitalInput_CLK_I1` ein Ereignis `IND`.
    - Bei Betätigung des Tasters an `Input_I2` erzeugt `DigitalInput_CLK_I2` ein Ereignis `IND`.
 
-2. **Ereignisverdoppelung**:  
-   - Das `IND`-Ereignis von I1 wird an den Eingang `EI` von `E_SPLIT` geleitet.  
-   - `E_SPLIT` gibt zwei identische Ereignisse an seinen Ausgängen `EO1` und `EO2` aus.  
+2. **Ereignisverdoppelung**:
+   - Das `IND`-Ereignis von I1 wird an den Eingang `EI` von `E_SPLIT` geleitet.
+   - `E_SPLIT` gibt zwei identische Ereignisse an seinen Ausgängen `EO1` und `EO2` aus.
    - Beide Ereignisse werden – über separate Verbindungen – an den CU-Eingang des `E_CTU` angeschlossen. **Dadurch wird jeder Tastendruck auf I1 als zwei Zählimpulse gewertet.**
 
-3. **Zähler**:  
-   - Jedes CU-Ereignis erhöht den internen Zähler von `E_CTU` um 1.  
+3. **Zähler**:
+   - Jedes CU-Ereignis erhöht den internen Zähler von `E_CTU` um 1.
    - Das `IND`-Ereignis von I2 (Rücksetztaster) ist mit dem Eingang `R` von `E_CTU` verbunden und setzt den Zähler auf 0 zurück.
 
-4. **Ausgabe**:  
-   - Der Zählerausgang `Q` (Adapter) wird mit dem Adaptereingang `OUT` von `DigitalOutput_Q1` verbunden. Solange der Zählerstand > 0 ist, wird der digitale Ausgang Q1 aktiv (TRUE).  
+4. **Ausgabe**:
+   - Der Zählerausgang `Q` (Adapter) wird mit dem Adaptereingang `OUT` von `DigitalOutput_Q1` verbunden. Solange der Zählerstand > 0 ist, wird der digitale Ausgang Q1 aktiv (TRUE).
    - Der Zählerstand `CV` (ebenfalls ein AUI-Adapter) wird über `AUI_TO_AUDI` in einen AUDI-Adapter konvertiert und an `Q_NumericValue_AUDI.u32NewValue` übergeben. Der Baustein zeigt den aktuellen Zählerwert auf dem konfigurierten Terminal (OutputNumber_N1) an.
 
 **Zusammenfassung der Verbindungen** (aus dem XML):
 
 | Quelle | Ziel | Typ |
-|--------|------|-----|
+| -------- | ------ | ----- |
 | `DigitalInput_CLK_I1.IND` | `E_SPLIT.EI` | Event |
 | `E_SPLIT.EO1` | `E_CTU.CU` | Event |
 | `E_SPLIT.EO2` | `E_CTU.CU` | Event |
@@ -96,5 +97,5 @@ Die Übung **Uebung_080b_AUI** veranschaulicht die Kombination eines Aufwärtsz�
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

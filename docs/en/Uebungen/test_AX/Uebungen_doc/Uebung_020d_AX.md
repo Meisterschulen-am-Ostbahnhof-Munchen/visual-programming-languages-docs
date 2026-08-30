@@ -1,8 +1,9 @@
 # Exercise_020d_AX: DigitalInput_I1 to DigitalOutput_Q1; TOF Off-Delay; resolved
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_020d_AX`. Here, an off-delay (TOF) is constructed using discrete event and memory blocks.
+This article describes the logiBUS® exercise `Uebung_020d_AX`. Here, an off-delay (TOF) is constructed using discrete event and memory blocks
 ----
+
 ## Objective of the Exercise
 
 ![Uebung_020d_AX_network](./Uebung_020d_AX_network.svg)
@@ -17,11 +18,11 @@ The objective of this exercise is to analyze the off-delay at the logic level. U
 
 ### Function Blocks (FBs)
 
-* **`DigitalInput_I1`**: Type `logiBUS_IXA`. Signal input.
-* **`AX_SWITCH`**: [cite_start]Separates rising (`EO1`) and falling (`EO0`) edges.[cite: 1]
-* **`AX_RS`**: The result memory.
-* **`E_DELAY`**: [cite_start]Delays the reset event by 2 seconds (`DT = T#2S`)[cite: 1].
-* **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
+- **`DigitalInput_I1`**: Type `logiBUS_IXA`. Signal input.
+- **`AX_SWITCH`**: [cite_start]Separates rising (`EO1`) and falling (`EO0`) edges.[cite: 1]
+- **`AX_RS`**: The result memory.
+- **`E_DELAY`**: [cite_start]Delays the reset event by 2 seconds (`DT = T#2S`)[cite: 1].
+- **`DigitalOutput_Q1`**: Type `logiBUS_QXA`. Signal output.
 
 -----
 
@@ -33,17 +34,17 @@ The logic works as follows:
 
 When `I1` is pressed, the switch sends an event to `EO1`. This event immediately sets the memory `AX_RS.S` -> `Q1` is activated. Simultaneously, any delay still in progress is stopped (`E_DELAY.STOP`).
 
-2. **Release (Start of Delay)**:
+1. **Release (Start of Delay)**:
 
 When `I1` is released, the switch sends an event to `EO0`. This event starts the timer `E_DELAY.START`. The memory remains set to TRUE for the time being.
 
-3. **Switch Off (After Time Expires)**:
+1. **Switch Off (After Time Expires)**:
 
 After 2 seconds, `E_DELAY.EO` fires. This event resets the memory (`AX_RS.R`) -> `Q1` switches off.
 
 As a result, the indicator light illuminates immediately upon pressing and remains on for exactly 2 seconds after release.
 ...
-#2 -----
+# 2 -----
 
 ## Application Example
 

@@ -3,6 +3,7 @@
 ![AX_D_FF_TMIN](./AX_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_D_FF_TMIN** realisiert ein data-latch D-Flip-Flop, das zusätzlich eine minimale Zeit zwischen aufeinanderfolgenden Ereignisausgängen (z. B. EO) erzwingt. Er dient als modulare Hülle um den IEC‑61499‑Standardbaustein `E_D_FF_TMIN` und verwendet einen unidirektionalen Adapter (`adapter::types::unidirectional::AX`) für die ereignisgesteuerte Datenübergabe. Der Baustein eignet sich besonders für Anwendungen, die eine zuverlässige Datenübernahme mit einstellbarem Mindestabstand zwischen Ausgangsimpulsen erfordern.
@@ -78,7 +79,7 @@ Der Baustein besitzt keine explizite Zustandsmaschine. Die innere Logik des eing
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
-|----------|-------------|
+| ---------- | ------------- |
 | `E_D_FF` (Standard‑D‑Flip‑Flop) | Keine zeitliche Begrenzung der Ausgangsimpulse; Ereignisse werden sofort weitergeleitet. |
 | `AX_D_FF_TMIN` (vorliegend) | Fügt die minimale Zwischenzeit `Tmin` zwischen Ausgangsereignissen ein, realisiert über den eingebauten `E_D_FF_TMIN`. |
 | `E_CTD` / `E_CTU` (Zähler) | Zählen Ereignisse; bieten keine Datenübernahme oder Latch‑Funktion. |
@@ -93,5 +94,5 @@ Der **AX_D_FF_TMIN** ist ein spezialisierter Funktionsblock für Anwendungen, di
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

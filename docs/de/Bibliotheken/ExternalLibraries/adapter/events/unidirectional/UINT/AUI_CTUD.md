@@ -3,6 +3,7 @@
 ![AUI_CTUD](./AUI_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_CTUD** ist ein ereignisgesteuerter Aufwärts-/Abwärtszähler in der Adapter-Version (Adapter Version). Er basiert auf dem Standardbaustein E_CTUD und erweitert diesen um eine „On-Change“-Triggerung für die Ausgangszustände. Über die Adapter-Schnittstellen werden der Zählerwert (CV), der Preset-Wert (PV) sowie die Vergleichsergebnisse (QU, QD) mit anderen Bausteinen ausgetauscht. Der Baustein ist für den Einsatz in IEC 61499‑Anwendungen vorgesehen, bei denen eine lose Kopplung über Adapter gewünscht ist.
@@ -122,4 +123,4 @@ Der Funktionsblock **AUI_CTUD** stellt eine moderne, adaptergestützte Variante 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -4,9 +4,11 @@ Image not available
 ![SPLIT_BYTE_INTO_QUARTERS](./SPLIT_BYTE_INTO_QUARTERS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_BYTE_INTO_QUARTERS` is used to split an incoming byte data value into four separate quarter outputs. It implements a logical decomposition of a byte (8 bits) into four 2-bit groups, which are routed externally via unidirectional adapters. The internal implementation uses a combination of flip-flops and a recursive instance of the same function block to control the split synchronously and data-driven.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +30,7 @@ Not available.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** (Input) | `IN` | `adapter::types::unidirectional::AB` | Byte input that provides the data to be split. |
 | **Plug** (Output) | `QUARTER_BYTE_00` | `adapter::types::unidirectional::AQ` | Output for the first quarter (least significant 2 bits). |
 | **Plug** (Output) | `QUARTER_BYTE_01` | `adapter::types::unidirectional::AQ` | Output for the second quarter (bits 2-3). |
@@ -69,6 +71,6 @@ The `SPLIT_BYTE_INTO_QUARTERS` function block provides a compact, adapter-based 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -20,9 +20,9 @@ Kennenlernen von typspezifischen Splitter-Bausteinen. Während `E_SPLIT` oft gen
 
 ![Uebung_004a8_network](./Uebung_004a8_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Taster.
-  * **`E_SPLIT_2`**: Verteilt den Eingang `EI` nacheinander auf `EO1` und `EO2`.
-  * **`E_T_FF_Q1` & `Q2`**: Zwei Flip-Flops.
+  - **`DigitalInput_CLK_I1`**: Taster.
+  - **`E_SPLIT_2`**: Verteilt den Eingang `EI` nacheinander auf `EO1` und `EO2`.
+  - **`E_T_FF_Q1` & `Q2`**: Zwei Flip-Flops.
 
 -----
 

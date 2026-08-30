@@ -3,13 +3,14 @@
 ![Uebung_003e_AX_network](./Uebung_003e_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a simple pass-through from four digital inputs (I1–I4) to four digital outputs (Q1–Q4). Additionally, a bypass function (pressure relief valve) is integrated, controlled by a common solenoid valve (Output_Q8). The signals are routed through bypass adapters (BYPASS_AX_AX), which provide a main and a bypass path. By cascading the bypass paths, the entire signal flow can be rerouted.
 
 ## Function Blocks (FBs) Used
 
-### Sub-Blocks:
+### Sub-Blocks
 
 #### DigitalInput_Ix (x=1..4)
 
@@ -64,6 +65,6 @@ This exercise teaches how to use **adapter connections** and **bypass logic** in
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

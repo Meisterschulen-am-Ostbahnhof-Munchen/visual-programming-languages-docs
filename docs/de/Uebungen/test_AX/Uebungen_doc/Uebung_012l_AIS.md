@@ -3,6 +3,7 @@
 ![Uebung_012l_AIS_network](./Uebung_012l_AIS_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung des AIS-Adapter-Protokolls zur Kommunikation zwischen einem String-Eingabebaustein und einem nichtflüchtigen Speicher (NVS). Der eingegebene String wird über einen AIS-Adapter an den NVS-Baustein übergeben und dort gespeichert. Ein Lesebaustein stellt den aktuell gespeicherten Wert wieder bereit. Die Übung dient als einfaches Beispiel für die Speicherung von Konfigurations- oder Zustandsdaten mittels des AIS-Modells in 4diac.
@@ -58,4 +59,4 @@ Die Übung **Uebung_012l_AIS** zeigt eine minimalistische Kette: Stringeingabe �
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

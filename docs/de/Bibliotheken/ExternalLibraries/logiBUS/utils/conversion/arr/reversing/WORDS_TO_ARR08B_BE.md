@@ -5,6 +5,7 @@
 ![WORDS_TO_ARR08B_BE](./WORDS_TO_ARR08B_BE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **WORDS_TO_ARR08B_BE** fasst vier 16‑Bit‑Wörter (WORD) zu einem 8‑Byte‑Array zusammen. Die Umwandlung erfolgt im **Big‑Endian‑Format** (Network Byte Order), bei dem das höherwertige Byte (High‑Byte) zuerst im Ausgabearray abgelegt wird. Dies entspricht der üblichen Darstellung in Netzwerkprotokollen wie Modbus TCP, Siemens S7‑Kommunikation oder Ethernet‑Headern.

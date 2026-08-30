@@ -4,10 +4,10 @@
 
 ## 🎧 Podcast
 
-* [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
-* [FB_TOF und E_TOF: Verzögerungstimer in IEC 61131-3 und 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
+- [E_TOF vs. FB_TOF: Der Event-Timer, der nicht zyklisch tickt – Revolution für Automatisierungssysteme?](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/E_TOF-vs--FB_TOF-Der-Event-Timer--der-nicht-zyklisch-tickt--Revolution-fr-Automatisierungssysteme-e3673qk)
+- [FB_TOF und E_TOF: Verzögerungstimer in IEC 61131-3 und 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/FB_TOF-und-E_TOF-Verzgerungstimer-in-IEC-61131-3-und-61499-e368e2d)
 
-## Beschreibung:
+## Beschreibung
 
 ### Der Baustein E_TOF in der IEC 61499: Ein Überblick
 
@@ -70,7 +70,7 @@ Der E_TOF-Baustein kann in verschiedenen industriellen Steuerungsanwendungen ein
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020e](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e.md)
+- [Uebung_020e](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020e.md)
 
 ## Fazit
 

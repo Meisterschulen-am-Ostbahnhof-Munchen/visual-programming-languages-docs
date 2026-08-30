@@ -3,6 +3,7 @@
 ![AUDI_EQ](./AUDI_EQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_EQ** dient dem Vergleich zweier analogen Werte auf Gleichheit. Er ist als Composite-FB (zusammengesetzter Baustein) realisiert und verwendet Adapter zur Kommunikation mit der Umgebung. Das Ergebnis ist ein boolescher Wert, der über einen weiteren Adapter ausgegeben wird. Der Baustein entspricht der IEC 61131-3 Klassifikation "Standard comparison function".

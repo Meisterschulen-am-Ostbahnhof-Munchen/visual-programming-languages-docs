@@ -6,6 +6,7 @@
 
 The function block `F_STRING_AS_SINT` converts a `STRING` value into a `SINT` value (8-bit signed integer). This block is particularly useful when strings need to be converted into numeric values, for example, when processing user input or interpreting text data.
 ![F_STRING_AS_SINT](F_STRING_AS_SINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +29,7 @@ The function block `F_STRING_AS_SINT` converts a `STRING` value into a `SINT` va
 
 This function block does not use any adapters.
 
-## **Data Inputs ... #
+## **Data Inputs #
 
 When the `REQ` event is triggered, the function `STRING_AS_SINT` is applied to the value of the `IN` input. The result is stored in the `OUT` output, and the `CNF` event signals the successful completion of the operation.
 

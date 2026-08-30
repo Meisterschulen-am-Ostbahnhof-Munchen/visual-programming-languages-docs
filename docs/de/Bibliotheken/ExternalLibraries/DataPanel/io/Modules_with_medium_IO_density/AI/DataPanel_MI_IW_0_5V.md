@@ -3,6 +3,7 @@
 ![DataPanel_MI_IW_0_5V](./DataPanel_MI_IW_0_5V.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **DataPanel_MI_IW_0_5V** ist ein Service‑Interface‑Funktionsblock (SIFB) zur Erfassung analoger Eingangssignale im Spannungsbereich **0 ... 5 V**. Er stellt die Schnittstelle zu einem analogen Eingangskanal der DataPanel‑MI‑IW‑Reihe dar und ermöglicht die Initialisierung, die zyklische Abfrage sowie den asynchronen Empfang von Messwerten über ein Bussystem. Der Baustein ist als IEC 61499‑konformer FB realisiert und verwendet systemspezifische Datentypen aus dem Package `DataPanel::io::MI::AI`.
@@ -19,7 +20,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_5V** ist ein Service‑Interface‑Funkti
 ### **Ereignis-Ausgänge**
 
 | Ereignis | Typ | Beschreibung | Mit Variablen |
-|----------|-----|--------------|---------------|
+| ---------- | ----- | -------------- | --------------- |
 | `INITO` | EInit | Bestätigung der Initialisierung | `QO`, `STATUS` |
 | `CNF` | Event | Bestätigung einer abgeschlossenen Anforderung | `QO`, `STATUS`, `IN` |
 | `IND` | Event | Asynchrone Indikation eines Messwerts von der Ressource | `QO`, `STATUS`, `IN` |
@@ -27,7 +28,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_5V** ist ein Service‑Interface‑Funkti
 ### **Daten-Eingänge**
 
 | Variable | Typ | Beschreibung | Initialwert |
-|----------|-----|--------------|-------------|
+| ---------- | ----- | -------------- | ------------- |
 | `QI` | BOOL | Qualifizierer für Ereignis‑Eingänge | – |
 | `PARAMS` | STRING | Service‑Parameter (z. B. Kommunikationsadresse) | – |
 | `u8SAMember` | USINT | Knoten‑SA‑Adresse (224 … 239) | `MI::MI_00` |
@@ -37,7 +38,7 @@ Der Funktionsblock **DataPanel_MI_IW_0_5V** ist ein Service‑Interface‑Funkti
 ### **Daten-Ausgänge**
 
 | Variable | Typ | Beschreibung |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | `QO` | BOOL | Ausgangsqualifizierer (zeigt gültigen Status an) |
 | `STATUS` | STRING | Statusmeldung des Service (z. B. Fehlertext) |
 | `IN` | WORD | Gemessener Analogwert (Rohwert) aus der Ressource |
@@ -77,7 +78,7 @@ Bei negativem `QI` oder Fehlersituationen werden `QO` auf `FALSE` und `STATUS` a
 Da die XML‑Definition keine ECC (Execution Control Chart) enthält, ergibt sich die Zustandslogik aus dem typischen Verhalten eines SIFB. Eine abstrakte Zustandsmaschine lässt sich wie folgt beschreiben:
 
 | Zustand | Beschreibung | Ereignis | Aktion |
-|---------|--------------|----------|--------|
+| --------- | -------------- | ---------- | -------- |
 | **IDLE** | Warten auf Initialisierung | `INIT` (QI=TRUE) | Starte Verbindungsaufbau |
 | **INIT** | Initialisierung läuft | – | Warte auf Bestätigung der Ressource |
 | **READY** | Bereit für Anforderungen | `INITO` | Setze QO=TRUE |
@@ -96,7 +97,7 @@ Asynchrone `IND`‑Ereignisse können in den Zuständen **READY** oder **BUSY** 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | DataPanel_MI_IW_0_5V | Generischer Analogeingang (z. B. IEC 61499‑Standard) |
-|---------|----------------------|------------------------------------------------------|
+| --------- | ---------------------- | ------------------------------------------------------ |
 | Spannungsbereich | 0 – 5 V | Meist konfigurierbar (0‑10 V, 4‑20 mA u. a.) |
 | Kanalauswahl | Spezifischer Typ `DataPanel_MI_AI_S` | Meist `INT`‑ oder `STRING`‑Parameter |
 | Hysterese | Separate Variable (`WORD`) | Oft nicht enthalten |

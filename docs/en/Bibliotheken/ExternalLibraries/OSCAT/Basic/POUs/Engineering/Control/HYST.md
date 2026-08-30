@@ -2,7 +2,8 @@
 
 ## 🎧 Podcast
 
-* [The relay in detail: Switching amplifiers, protection, and the secrets of A1/A2, 85/86, and the hysteresis](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
+- [The relay in detail: Switching amplifiers, protection, and the secrets of A1/A2, 85/86, and the hysteresis](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
+
 ## Interface
 
 ### Event Inputs

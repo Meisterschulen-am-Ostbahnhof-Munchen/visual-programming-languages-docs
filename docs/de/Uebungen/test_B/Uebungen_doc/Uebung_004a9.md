@@ -20,10 +20,10 @@ Demonstration der Skalierbarkeit von Ereignis-Verteilern. Mit `E_SPLIT_3` könne
 
 ![Uebung_004a9_network](./Uebung_004a9_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Der zentrale Auslöser (Taster).
-  * **`E_SPLIT_3`**: Verteilt den Eingang `EI` nacheinander auf `EO1`, `EO2` und `EO3`.
-  * **`E_T_FF_Q1`, `Q2`, `Q3`**: Drei unabhängige Flip-Flops.
-  * **`DigitalOutput_Q1`, `Q2`, `Q3`**: Drei physische Lampen.
+  - **`DigitalInput_CLK_I1`**: Der zentrale Auslöser (Taster).
+  - **`E_SPLIT_3`**: Verteilt den Eingang `EI` nacheinander auf `EO1`, `EO2` und `EO3`.
+  - **`E_T_FF_Q1`, `Q2`, `Q3`**: Drei unabhängige Flip-Flops.
+  - **`DigitalOutput_Q1`, `Q2`, `Q3`**: Drei physische Lampen.
 
 -----
 

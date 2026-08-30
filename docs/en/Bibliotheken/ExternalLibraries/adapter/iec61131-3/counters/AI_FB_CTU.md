@@ -3,9 +3,11 @@
 ![AI_FB_CTU](./AI_FB_CTU.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AI_FB_CTU** is an up counter for integers (INT) that encapsulates the IEC 61131-3 functionality of a CTU (Counter Up) in an adapter-based form factor. It is specifically designed for use in the 4diac IDE and allows for modular connection via unidirectional adapter interfaces. The block fires an acknowledgment event with each update of its inputs (CU, R, PV), making it suitable for time-controlled or event-driven counting tasks.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -30,7 +32,7 @@ The output adapters **Q** and **CV** are also served with the same event:
 All data inputs are provided via the adapter sockets:
 
 | Adapter | Data Input | Type | Description |
-|---------|---------------|-----|--------------|
+| --------- | --------------- | ----- | -------------- |
 | CU.D1 | CU | INT | Count Up – Count pulse (increments with each event) |
 | R.D1 | R | INT | Reset – Value to which the counter is reset (typically 0) |
 | PV.D1 | PV | INT | Preset Value – Threshold at which output Q becomes active |
@@ -43,7 +45,7 @@ All data inputs are provided via the adapter sockets:
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | CU | adapter::types::unidirectional::AX | Socket (Input) | Event and data adapter for the counter pulse |
 | R | adapter::types::unidirectional::AX | Socket (Input) | Event and data adapter for the reset |
 | PV | adapter::types::unidirectional::AI | Socket (Input) | Data adapter (value only, no event) for the preset value |
@@ -84,7 +86,7 @@ The function block has no sequential states beyond these data dependencies.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Properties |
-|----------|---------------|
+| ---------- | --------------- |
 | **AI_FB_CTU** | Adapter-based, uses IEC 61131-3 CTU, triggers on every input |
 | **Standard CTU (IEC 61131)** | Inputs as events + data, no adapter concept, often directly bound to hardware |
 | **CTUD (Up/Down Counter)** | Offers additional down counting, has a more complex interface |
@@ -100,4 +102,4 @@ The **AI_FB_CTU** is a practical counter module for adapter-based automation wit
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

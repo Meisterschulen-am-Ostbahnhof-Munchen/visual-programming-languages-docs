@@ -20,16 +20,16 @@ Verknüpfung von UI-Zuständen mit Hardware-Speichern. Es soll sichergestellt we
 
 ![Uebung_019b_network](./Uebung_019b_network.svg)
 
-  * **`E_SR`**: Der Alarm-Speicher.
-  * **`Alarmausgang`**: Schaltet eine physische Hupe oder Warnlampe (`Q1`).
+  - **`E_SR`**: Der Alarm-Speicher.
+  - **`Alarmausgang`**: Schaltet eine physische Hupe oder Warnlampe (`Q1`).
 
 -----
 
 ## Funktionsweise
 
-*   **Alarm auslösen**: Taster `I3` triggert den Alarm. Das Terminal springt auf die Alarmmaske **UND** der Speicher `E_SR` wird gesetzt ➡️ Die physische Hupe geht an.
-*   **Quittieren**: Der Nutzer drückt **ACK** am Terminal. Die Steuerung wechselt zurück zur normalen Maske **UND** löscht den Speicher `E_SR.R` ➡️ Die Hupe verstummt.
-*   Interessant: Auch das Wechseln zu einer anderen normalen Maske (`I1`, `I2`) löscht in dieser Implementierung den Alarm-Speicher (Reset-Zweig am `E_SR`).
+-   **Alarm auslösen**: Taster `I3` triggert den Alarm. Das Terminal springt auf die Alarmmaske **UND** der Speicher `E_SR` wird gesetzt ➡️ Die physische Hupe geht an.
+-   **Quittieren**: Der Nutzer drückt **ACK** am Terminal. Die Steuerung wechselt zurück zur normalen Maske **UND** löscht den Speicher `E_SR.R` ➡️ Die Hupe verstummt.
+-   Interessant: Auch das Wechseln zu einer anderen normalen Maske (`I1`, `I2`) löscht in dieser Implementierung den Alarm-Speicher (Reset-Zweig am `E_SR`).
 
 -----
 

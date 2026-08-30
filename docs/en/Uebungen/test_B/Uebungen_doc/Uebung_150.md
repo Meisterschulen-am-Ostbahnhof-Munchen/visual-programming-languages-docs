@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_150` based on the provided data.
+
 # Exercise_150: Pulse Counter
 
 ![Uebung_150_network](./Uebung_150_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_150** implements a sub-application (SubApp) that functions as a "pulse counter." It is used to configure and integrate a hardware-based pulse input via the logiBUS system. The goal is to establish an interface to a physical input (`PulseInput_I8`) and define parameters for data acquisition.
@@ -50,6 +52,6 @@ Exercise **Exercise_150** presents a basic configuration for a pulse counter. It
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

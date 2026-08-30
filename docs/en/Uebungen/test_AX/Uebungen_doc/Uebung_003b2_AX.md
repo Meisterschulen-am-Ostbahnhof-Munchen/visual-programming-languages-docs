@@ -1,8 +1,9 @@
 # Exercise_003b2_AX: Wireless 16 Buttons on DataPanel 16
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_003b2_AX`. This exercise demonstrates the system's scalability using the example of linking 15 wireless buttons with 15 digital outputs, implemented through untyped sub-applications (or reused typed sub-applications, which were manually placed here).
+This article describes the logiBUS® exercise `Uebung_003b2_AX`. This exercise demonstrates the system's scalability using the example of linking 15 wireless buttons with 15 digital outputs, implemented through untyped sub-applications (or reused typed sub-applications, which were manually placed here)
 ----
+
 The objective of this exercise is to efficiently manage a large number of similar connections. Instead of drawing the same function blocks and connections 15 times in the main view, the logic is packaged into modular blocks (sub-applications). This demonstrates how IEC 61499 is used for extensive I/O mappings.
 
 -----
@@ -15,22 +16,22 @@ The objective of this exercise is to efficiently manage a large number of simila
 
 [cite_start]This sub-module connects a radio input (`Funk_IXA`) to a DataPanel output (`DataPanel_MI_QXA`)[cite: 2]. It has the following configuration parameters:
 
-* **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
+- **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
 
 ### Sub-component: `Uebung_003b2_sub_AX`
 
 
-* **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
-* * **`Output`**: The physical output (e.g., `DigitalOutput_1B`).
-* **`u8SAMember`**: The address of the DataPanel.
+- **`Input`**: The radio button (e.g., `DigitalInput_Key_START`).
+- - **`Output`**: The physical output (e.g., `DigitalOutput_1B`).
+- **`u8SAMember`**: The address of the DataPanel.
 
 ### Mapping
 
 This exercise maps the following signals:
 
-* `STOP` -> (not assigned/internal)
-* `START` -> `F2`
-* `Key_01` to `Key_13` -> `F3` to `F15`
+- `STOP` -> (not assigned/internal)
+- `START` -> `F2`
+- `Key_01` to `Key_13` -> `F3` to `F15`
 
 (Note: The exact parameter mapping is not explicitly visible in the `.SUB` file for `Uebung_003b2_AX`, unlike `Uebung_003b3_AX`, because untyped or embedded subapps were used where the parameters are set internally or use default values.) (The parameters are explicitly exposed to the outside via `Uebung_003b3_AX`.)
 

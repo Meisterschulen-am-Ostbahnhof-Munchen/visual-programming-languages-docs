@@ -6,6 +6,7 @@
 
 The function block `F_INT_TO_BYTE` is used to convert an integer value (`INT`) to a byte value (`BYTE`). It is part of the package `iec61131::conversion` and provides a simple and efficient way to convert data types within IEC 61499 systems.
 ![F_INT_TO_BYTE](F_INT_TO_BYTE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -37,6 +38,7 @@ The algorithm is defined as follows:
 ALGORITHM REQ
 OUT := INT_TO_BYTE(IN);
 END_ALGORITHM
+
 ## Technical Features
 
 - The function block is implemented simply and efficiently, without additional states or complex logic.

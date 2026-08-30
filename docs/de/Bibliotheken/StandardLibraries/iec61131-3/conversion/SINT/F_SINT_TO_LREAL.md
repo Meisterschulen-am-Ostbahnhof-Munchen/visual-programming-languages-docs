@@ -3,6 +3,7 @@
 <img width="1448" height="213" alt="F_SINT_TO_LREAL" src="https://github.com/user-attachments/assets/68877ca6-0d50-4534-9301-8bdead3b94f2" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_SINT_TO_LREAL` dient der Konvertierung eines ganzzahligen Wertes vom Typ `SINT` (8-Bit Ganzzahl) in einen Fließkommawert vom Typ `LREAL` (64-Bit Fließkomma). Dieser Baustein ist besonders nützlich in Anwendungen, bei denen eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
@@ -62,4 +63,4 @@ Der `F_SINT_TO_LREAL`-Funktionsblock ist ein einfaches und effizientes Werkzeug 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AIWS_D_FF_TMIN](./AIWS_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIWS_D_FF_TMIN** implements a data latch (D flip-flop) with a minimum inter-disposal time between two consecutive output events. It is accessed via adapter interfaces (type: AIWS, unidirectional) that receive a value and output it as a latched value. Control is achieved via the input adapter's event (CLK edge), with output occurring only after a configurable dead time (Tmin) has elapsed.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ No dedicated data outputs – the latched value is provided exclusively via the 
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|----------|
+| ---------- | ------ | ----- | ---------- |
 | Socket (Input) | I | adapter::types::unidirectional::AIWS | Value to be latched |
 | Plug (Output) | Q | adapter::types::unidirectional::AIWS | Latched Value |
 

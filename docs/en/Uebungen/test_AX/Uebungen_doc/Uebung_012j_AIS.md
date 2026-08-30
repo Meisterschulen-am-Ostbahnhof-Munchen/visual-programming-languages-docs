@@ -3,6 +3,7 @@
 ![Uebung_012j_AIS_network](./Uebung_012j_AIS_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates reading a string value via a virtual input, storing it in non-volatile memory (NVS), and then outputting the stored value. It shows how to use the adapter interfaces of the 4diac IDE and how to utilize predefined constants for memory areas.
@@ -69,6 +70,6 @@ The exercise **Exercise_012j_AIS** demonstrates the basic handling of string dat
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

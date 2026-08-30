@@ -20,9 +20,9 @@ Implementierung einer Schwellwert-Logik basierend auf TECU-Daten. Der Ausgang so
 
 ![Uebung_071_network](./Uebung_071_network.svg)
 
-  * **`I_WBSD`**: Liefert die aktuelle Geschwindigkeit.
-  * **`F_GT`**: Ein Vergleichs-Baustein (Greater Than). [cite_start]Er prüft, ob der Eingangswert größer als 0 ist[cite: 1].
-  * **`DigitalOutput_Q1`**: Der Hardware-Ausgang.
+  - **`I_WBSD`**: Liefert die aktuelle Geschwindigkeit.
+  - **`F_GT`**: Ein Vergleichs-Baustein (Greater Than). [cite_start]Er prüft, ob der Eingangswert größer als 0 ist[cite: 1].
+  - **`DigitalOutput_Q1`**: Der Hardware-Ausgang.
 
 -----
 

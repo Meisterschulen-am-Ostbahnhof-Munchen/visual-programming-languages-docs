@@ -3,9 +3,11 @@
 ![Uebung_011a2_AUDI_network](./Uebung_011a2_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the output of a numeric value using a button press event (BUTTON_LONG_PRESS_UP). A digital input block (logiBUS_IDA) is used, which triggers an event when the button is pressed and held. This event is converted via an adapter into a format that the output block Q_NumericValue_AUDI can process – this then outputs the predefined numeric value on the ISOBUS.
+
 ## Function Blocks (FBs) Used
 
 - **logiBUS_IDA**
@@ -22,6 +24,7 @@ This exercise demonstrates the output of a numeric value using a button press ev
 
 **Type**: u16ObjId = OutputNumber_N1
 **Function**: Receives a 32-bit value (here via the adapter) and outputs it via the ISOBUS object with the object ID `OutputNumber_N1`.** This allows the display of a numeric value on an ISOBUS terminal.
+
 ## Program Flow and Connections
 
 The function blocks are connected as follows:
@@ -30,7 +33,7 @@ The function blocks are connected as follows:
 
 When a key is pressed for an extended period (event `BUTTON_LONG_PRESS_UP`), `logiBUS_IDA` generates a signal at output `IN`, which is forwarded to the adapter input `AD_IN`.
 
-2. **AD_TO_AUDI (AUDI_OUT)** -> **Q_NumericValue_AUDI (u32NewValue)**:
+1. **AD_TO_AUDI (AUDI_OUT)** -> **Q_NumericValue_AUDI (u32NewValue)**:
 
 The adapter converts the incoming signal into a numeric data value and sends it via output `AUDI_OUT` to the data input `u32NewValue` of the output block.
 

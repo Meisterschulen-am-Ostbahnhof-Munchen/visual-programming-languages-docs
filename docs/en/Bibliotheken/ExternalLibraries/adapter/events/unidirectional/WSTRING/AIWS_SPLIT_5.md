@@ -3,9 +3,11 @@
 ![AIWS_SPLIT_5](./AIWS_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIWS_SPLIT_5** is a generic block for splitting a single **AIWS** adapter into five identical **AIWS** adapters. It allows an AIWS signal provided by a socket to be forwarded to multiple independent adapter plugs without requiring event or data processing logic. This function block is particularly suitable for signal distribution in industrial automation architectures based on the **IEC 61499** standard.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs are available. Output is via the plug adapters.
 ### **Adapters**
 
 | Type | Label | Direction | Adapter Type |
-|-----|-------------|-----------|-------------|
+| ----- | ------------- | ----------- | ------------- |
 | **Socket (Input)** | IN | Input | `adapter::types::unidirectional::AIWS` |
 | **Plug (Output)** | OUT1 | Output | `adapter::types::unidirectional::AIWS` |
 | **Plug (Output)** | OUT2 | Output | `adapter::types::unidirectional::AIWS` |
@@ -60,7 +62,7 @@ The **AIWS_SPLIT_5** does not have an explicit state machine. Its functionality 
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Type | Special Feature |
-|----------|-----------------|-----|--------------|
+| ---------- | ----------------- | ----- | -------------- |
 | **AIWS_SPLIT_5** | 5 | AIWS Adapter | Generic, no events/data |
 | AIWS_SPLIT_2 | 2 | AIWS Adapter | Same functionality, minimal distribution |
 | AIWS_SPLIT_3 | 3 | AIWS Adapter | Medium number of outputs |
@@ -81,6 +83,6 @@ The **AIWS_SPLIT_5** is a simple yet essential function block for duplicating AI
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

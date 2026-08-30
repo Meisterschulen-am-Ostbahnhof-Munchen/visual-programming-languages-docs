@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_MUL_4` is a generic function block (Generic FB) for performing an arithmetic multiplication (`MUL`) with up to four input values. It is based on the IEC 61499 architecture and uses unidirectional adapters to transmit data and the associated control events in a clean, encapsulated manner.
@@ -33,14 +34,14 @@ Due to its generic nature (`GEN_AUS_MUL`), the function block is flexible and ca
 
 #### **Sockets (Input Adapters)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AUS`): First input value (multiplicand 1) for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::AUS`): Second input value (multiplicand 2) for multiplication.
-* **IN3** (Type: `adapter::types::unidirectional::AUS`): Third input value (multiplicand 3) for multiplication.
-* **IN4** (Type: `adapter::types::unidirectional::AUS`): Fourth input value (multiplicand 4) for multiplication.
+- **IN1** (Type: `adapter::types::unidirectional::AUS`): First input value (multiplicand 1) for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::AUS`): Second input value (multiplicand 2) for multiplication.
+- **IN3** (Type: `adapter::types::unidirectional::AUS`): Third input value (multiplicand 3) for multiplication.
+- **IN4** (Type: `adapter::types::unidirectional::AUS`): Fourth input value (multiplicand 4) for multiplication.
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUS`): The calculated product (result of the multiplication).
+- **OUT** (Type: `adapter::types::unidirectional::AUS`): The calculated product (result of the multiplication).
 
 ---
 
@@ -58,8 +59,8 @@ The calculated result, along with a corresponding output event, is provided via 
 
 ## Technical Features
 
-* **Generic Function Block:** By defining it as `GEN_AUS_MUL`, the function block is not tied to a specific data type, which drastically increases its reusability across different projects.
-* **Adapter-Based Communication:** The use of unidirectional `AUS` adapters ensures a clear application diagram, as data and event lines are bundled into a single connection. This reduces wiring errors in the development environment.
+- **Generic Function Block:** By defining it as `GEN_AUS_MUL`, the function block is not tied to a specific data type, which drastically increases its reusability across different projects.
+- **Adapter-Based Communication:** The use of unidirectional `AUS` adapters ensures a clear application diagram, as data and event lines are bundled into a single connection. This reduces wiring errors in the development environment.
 
 --
 
@@ -71,9 +72,9 @@ The function block behaves like a classic, stateless mathematical operator (comb
 
 ## Application Scenarios
 
-* **Scaling and Calibration:** Calculation of more complex physical values where multiple factors (e.g., sensor value × calibration factor × temperature compensation × unit conversion) need to be multiplied.
-* **Power Calculation:** Combination of multiple measured variables in process engineering.
-* **Multi-Stage Gain Control:** Cascading of gain factors in control algorithms.
+- **Scaling and Calibration:** Calculation of more complex physical values where multiple factors (e.g., sensor value × calibration factor × temperature compensation × unit conversion) need to be multiplied.
+- **Power Calculation:** Combination of multiple measured variables in process engineering.
+- **Multi-Stage Gain Control:** Cascading of gain factors in control algorithms.
 
 --
 
@@ -81,8 +82,8 @@ The function block behaves like a classic, stateless mathematical operator (comb
 
 Compared to standard multiplication components (such as the classic `MUL` of IEC 61131-3), which use separate pins for events and data, the `AUS_MUL_4` offers the following advantages:
 
-* **Fewer Connections:** Four separate inputs and one output would require at least 10 connections (5 events, 5 data lines) in the classic model. The adapter technology reduces this to 5 adapter connections.
-* **Compactness:** Cascading multiple 2x multipliers is no longer necessary, as four operands can be processed directly in a single function block.
+- **Fewer Connections:** Four separate inputs and one output would require at least 10 connections (5 events, 5 data lines) in the classic model. The adapter technology reduces this to 5 adapter connections.
+- **Compactness:** Cascading multiple 2x multipliers is no longer necessary, as four operands can be processed directly in a single function block.
 
 ---
 

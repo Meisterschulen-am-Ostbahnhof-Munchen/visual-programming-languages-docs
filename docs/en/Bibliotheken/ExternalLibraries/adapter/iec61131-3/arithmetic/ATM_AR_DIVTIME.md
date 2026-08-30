@@ -3,9 +3,11 @@
 ![ATM_AR_DIVTIME](./ATM_AR_DIVTIME.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ATM_AR_DIVTIME** divides a time value (type TIME) by a numeric value -- the fully adapter-based variant of [AR_DIVTIME](AR_DIVTIME.md). Unlike AR_DIVTIME, the dividend (IN1) is also supplied via an adapter (type `ATM`) instead of a fixed data input. The block is classified as a standard arithmetic function according to IEC 61131-3.
+
 ## Interface Structure
 
 ### **Event Inputs**

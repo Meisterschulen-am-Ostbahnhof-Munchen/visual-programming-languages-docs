@@ -3,9 +3,11 @@
 ![AR_TO_ALR](./AR_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Composite function block for converting an AR adapter (REAL) to an ALR adapter (LREAL). It is used to adapt data formats in IEC 61499-2 environments and is licensed under the Eclipse Public License 2.0.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -70,6 +72,6 @@ The `AR_TO_ALR` block enables simple and efficient conversion of REAL to LREAL a
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

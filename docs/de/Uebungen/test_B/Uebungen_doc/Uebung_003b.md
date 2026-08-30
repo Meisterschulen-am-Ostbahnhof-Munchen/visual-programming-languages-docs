@@ -20,17 +20,17 @@ Das Hauptziel ist die Demonstration der Skalierbarkeit durch Typisierung. Es wir
 
 [cite_start]Dieser Baustein kapselt die 1:1 Weiterleitung von einem digitalen Eingang (`IX`) zu einem digitalen Ausgang (`QX`)[cite: 2]. Er stellt zwei Parameter für die Konfiguration bereit:
 
-  * **`Input`**: Auswahl des physischen Eingangs (z.B. `Input_I1` bis `Input_I4`).
-  * **`Output`**: Auswahl des physischen Ausgangs (z.B. `Output_Q1` bis `Output_Q4`).
+  - **`Input`**: Auswahl des physischen Eingangs (z.B. `Input_I1` bis `Input_I4`).
+  - **`Output`**: Auswahl des physischen Ausgangs (z.B. `Output_Q1` bis `Output_Q4`).
 
 ### Instanzen in der Hauptanwendung
 
 In `Uebung_003b` werden vier Instanzen (`F1` bis `F4`) genutzt:
 
-  * **`F1`**: `I1` ➡️ `Q1`
-  * **`F2`**: `I2` ➡️ `Q2`
-  * **`F3`**: `I3` ➡️ `Q3`
-  * **`F4`**: `I4` ➡️ `Q4`
+  - **`F1`**: `I1` ➡️ `Q1`
+  - **`F2`**: `I2` ➡️ `Q2`
+  - **`F3`**: `I3` ➡️ `Q3`
+  - **`F4`**: `I4` ➡️ `Q4`
 
 -----
 

@@ -35,7 +35,7 @@ There are no separate data outputs. The output data is provided via the followin
 ### **Adapters**
 
 | Name | Direction | Type | Description |
-|-------------|----------|-----|--------------|
+| ------------- | ---------- | ----- | -------------- |
 | CD | Socket | AX | Down counter pulse (Event + Bool) |
 | LD | Socket | AX | Charge pulse (Event + Bool) |
 | PV | Socket | ALI | Preset value (LINT) |
@@ -50,17 +50,17 @@ The ALI_FB_CTD implements a down counter with charge function. The internal logi
 
 An event at socket **LD** (via `LD.E1`) transfers the data value from **PV** (via `PV.D1`) to the internal counter. The counter value is then set to the preset value.
 
-2. **Count Down**
+1. **Count Down**
 
 An event at socket **CD** (via `CD.E1`) decrements the current counter value by 1, provided it is greater than 0.
 
-3. **Output Signaling**
+1. **Output Signaling**
 
 The current counter value is always output via plug **CV** (as a LINT).
 
 - The plug **Q** returns `true` when the counter reaches **zero** (Boolean value via the AX adapter).
 - The **CNF** event is sent after **every** processing operation (CD, LD, and PV).
-4. **Event Passing**
+1. **Event Passing**
 
 The incoming events from CD, LD, and PV are all combined at the **REQ** input of the internal function block. Its **CNF** output is then distributed to the output adapters (Q.E1, CV.E1) and to the external event output CNF.
 
@@ -72,7 +72,7 @@ The incoming events from CD, LD, and PV are all combined at the **REQ** input of
 The ALI_FB_CTD does **not have an explicit state machine** in the FB network. Its behavior is purely event-driven and combinatorial:
 
 | Input event | Action |
-|------------------|--------|
+| ------------------ | -------- |
 | LD activated | Counter reading = Preset value |
 | CD activated | Decrement counter reading (if > 0) |
 | PV activated | No counter change, but a CNF event is sent. The data value from PV is not directly adopted – an LD is required. |
@@ -84,7 +84,7 @@ The current counter reading and the Boolean output are updated after each step.
 - **Maintenance Interval**: The counter serves as a countdown in maintenance cycles; an alarm is triggered when it reaches 0.
 
 | Function Block | Special Feature |
-|----------|--------------|
+| ---------- | -------------- |
 | **ALI_FB_CTD** (this function block) | Uses AX and ALI adapters; always triggers; suitable for adapter-based architectures. |
 | **FB_CTD_LINT** (Standard) | Pure data/event function block without adapters; event triggering directly via the interfaces. |
 | **CTU** (Upward Counter) | Counts upwards instead of downwards; different application logic. |

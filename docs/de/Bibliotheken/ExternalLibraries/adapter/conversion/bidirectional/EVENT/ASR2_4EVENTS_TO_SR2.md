@@ -3,6 +3,7 @@
 <img width="1146" height="210" alt="image" src="https://github.com/user-attachments/assets/73199e82-fa67-457f-b043-7f54b3d02af7" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock ASR2_4EVENTS_TO_SR2 ist ein Composite-Funktionsblock, der zur Konvertierung von 4 Ereignissen in das ASR2-Adapterformat dient. Er ermöglicht die bidirektionale Umwandlung zwischen einzelnen Set/Reset-Ereignissen und dem standardisierten ASR2-Adapter.

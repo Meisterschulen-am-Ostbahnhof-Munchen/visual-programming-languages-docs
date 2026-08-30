@@ -60,9 +60,9 @@ Der Baustein enthält intern eine Instanz `I_CORE` vom Typ `isobus::tecu::I_FHS`
 Der Baustein besitzt keinen eigenen sichtbaren Zustandsautomaten. Die interne Ablaufsteuerung erfolgt über den Kernbaustein `I_FHS`. Grob lassen sich zwei Phasen unterscheiden:
 
 - **Vor Initialisierung**: Der Baustein ist inaktiv. Die Ereignis‑Ausgänge und Adapter liefern keine Daten.
-- **Nach Initialisierung (INIT erfolgreich)**:  
-  - `INITO` wird ausgelöst, `QO = TRUE`.  
-  - Die Adapter `POSITION`, `FORCE`, `DRAFT` werden zyklisch oder ereignisgesteuert mit aktuellen Messwerten versorgt.  
+- **Nach Initialisierung (INIT erfolgreich)**:
+  - `INITO` wird ausgelöst, `QO = TRUE`.
+  - Die Adapter `POSITION`, `FORCE`, `DRAFT` werden zyklisch oder ereignisgesteuert mit aktuellen Messwerten versorgt.
   - Der Adapter `TIMEOUT` meldet den aktuellen Timeout‑Status.
 
 Tritt während des Betriebs ein Fehler auf (z. B. Verbindungsabbruch), wird dies über den Timeout‑Adapter oder den Status‑Ausgang signalisiert.
@@ -86,4 +86,4 @@ Der Funktionsblock **IA_FHS** bietet einen fertig konfektionierten ISOBUS‑Adap
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

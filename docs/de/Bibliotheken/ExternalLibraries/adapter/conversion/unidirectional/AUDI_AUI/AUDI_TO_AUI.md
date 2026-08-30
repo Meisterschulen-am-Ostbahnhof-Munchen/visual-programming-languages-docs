@@ -5,6 +5,7 @@
 *Kein Bild vorhanden.*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUDI_TO_AUI` ist ein Composite‑Baustein, der einen AUDI‑Adapter (Datentyp UDINT) in einen AUI‑Adapter (Datentyp UINT) umwandelt. Er dient als einfache Schnittstellenanpassung zwischen Komponenten, die unterschiedliche ganzzahlige Datentypen für ihre unidirektionalen Adapter verwenden. Der Baustein kapselt die Konvertierung und ermöglicht eine nahtlose Integration in IEC 61499‑Netzwerke.

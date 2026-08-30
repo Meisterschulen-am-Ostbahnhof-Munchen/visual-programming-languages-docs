@@ -3,15 +3,17 @@
 ![logiBUS_IEA](./logiBUS_IEA.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The composite function block `logiBUS_IEA` is used for event-driven processing of digital input data in a logiBUS fieldbus system. It encapsulates an internal `logiBUS_IE` block and makes its functionality available via a standardized interface. The function block enables the initialization and querying of events at a digital input and forwards the resulting indications to the resource via an adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment | Data Carried |
-|------|-----|------------|-------------------|
+| ------ | ----- | ------------ | ------------------- |
 | `INIT` | EInit | Service Initialization | `QI`, `PARAMS`, `Input`, `InputEvent` |
 | `REQ` | Event | Service Request | `QI` |
 
@@ -24,7 +26,7 @@ The composite function block `logiBUS_IEA` is used for event-driven processing o
 ### **Data Inputs**
 
 | Name | Type | Comment | Initial Value |
-|------|-----|-----------|-------------|
+| ------ | ----- | ----------- | ------------- |
 | `QI` | BOOL | Event Input Qualifier | – |
 | `PARAMS` | STRING | Service Parameters | – |
 | `Input` | `logiBUS::io::DI::logiBUS_DI_S` | Identifies the input (e.g., Input_I1..I8) | `logiBUS_DI::Invalid` |
@@ -89,7 +91,7 @@ The state transitions are indicated by the events `IND` and `CNF` and communicat
 ## Comparison with Similar Blocks
 
 | FB Type | Property |
-|--------|-------------|
+| -------- | ------------- |
 | `logiBUS_DI` | Pure digital input without event detection; simple level retrieval |
 | `logiBUS_IEA` | **This FB:** Event-based input with initialization and adapter for indication |
 | `logiBUS_DI_Events` | Event Detection on a Single Input, but Without Initialization Logic |

@@ -8,7 +8,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_010c_AX`. Bisher haben di
 
 ![Uebung_010c_AX_network](./Uebung_010c_AX_network.svg)
 
-* [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
+- [ISO 11783-6: Softkeys und das Virtual Terminal verstehen – Dein Schlüssel zur Landmaschinen-Mechatronik](https://podcasters.spotify.com/pod/show/isobus-vt-objects/episodes/ISO-11783-6-Softkeys-und-das-Virtual-Terminal-verstehen--Dein-Schlssel-zur-Landmaschinen-Mechatronik-e36a8b0)
 
 ----
 
@@ -24,10 +24,10 @@ Rückmeldung an den Bediener (Farbumschlag).
 
 ### Funktionsbausteine (FBs)
 
-  * **`SoftKey_F1`**: Eingabe.
-  * **`DigitalOutput_Q1`**: Ausgabe (Lampe).
-  * **`GreenWhiteBackground_AX`**: Eine SubApp aus der Bibliothek `MyLib::sys`. Diese steuert das Aussehen des Softkeys auf dem Terminal (Grün = Aktiv, Weiß = Inaktiv).
-  * **`AX_SPLIT_2`**: Verteilt das Signal vom Softkey sowohl an den Ausgang `Q1` als auch an den Feedback-Baustein.
+  - **`SoftKey_F1`**: Eingabe.
+  - **`DigitalOutput_Q1`**: Ausgabe (Lampe).
+  - **`GreenWhiteBackground_AX`**: Eine SubApp aus der Bibliothek `MyLib::sys`. Diese steuert das Aussehen des Softkeys auf dem Terminal (Grün = Aktiv, Weiß = Inaktiv).
+  - **`AX_SPLIT_2`**: Verteilt das Signal vom Softkey sowohl an den Ausgang `Q1` als auch an den Feedback-Baustein.
 
 -----
 

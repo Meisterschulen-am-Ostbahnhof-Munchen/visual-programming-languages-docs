@@ -13,12 +13,12 @@ Der ADI_FB_CTU ist ein Aufwärtszähler (Up-Counter) für Ganzzahlen vom Typ DIN
 Der Funktionsblock besitzt keine direkten Ereignis- oder Datenschnittstellen, sondern ausschließlich Adapter für die Anbindung. Die nachfolgende Tabelle erläutert die verfügbaren Adapter, deren Typ und Bedeutung.
 
 | Richtung | Name | Adapter-Typ | Beschreibung |
-|----------|------|-------------|--------------|
+| ---------- | ------ | ------------- | -------------- |
 | **Eingang (Socket)** | `CU` | `AX` | Zählimpuls-Eingang (Ereignis + Daten) |
-| **Eingang (Socket)** | `R`  | `AX` | Rücksetz-Eingang (Ereignis + Daten) |
+| **Eingang (Socket)** | `R` | `AX` | Rücksetz-Eingang (Ereignis + Daten) |
 | **Eingang (Socket)** | `PV` | `ADI` | Vorgabewert (Preset Value) für den Vergleich |
-| **Ausgang (Plug)**  | `Q`  | `AX` | Ausgangssignal – aktiv, wenn Zählerstand ≥ PV |
-| **Ausgang (Plug)**  | `CV` | `ADI` | Aktueller Zählerstand |
+| **Ausgang (Plug)** | `Q` | `AX` | Ausgangssignal – aktiv, wenn Zählerstand ≥ PV |
+| **Ausgang (Plug)** | `CV` | `ADI` | Aktueller Zählerstand |
 
 Die Adapter `AX` (Ereignis-Adapter) und `ADI` (Daten-Adapter) sind unidirektional. Über die Adapter werden sowohl die Ereignisse als auch die zugehörigen Datenwerte übertragen.
 
@@ -93,7 +93,7 @@ Der Ausgang `Q` (über den Adapter) wird gesetzt, sobald `Zähler ≥ PV` ist. D
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eigenschaften |
-|----------|---------------|
+| ---------- | --------------- |
 | `CTU` (Standard, ohne Adapter) | Gleiche Zählfunktion, aber mit direkten Ereignis- und Dateneingängen/-ausgängen. Einfacher in klassischen IEC‑61499-Netzwerken nutzbar. |
 | `ADI_FB_CTUD` | Auf-/Abwärtszähler, ebenfalls Adapter-basiert. Bietet zusätzlich einen Abwärtszähleingang. |
 | `FB_CTU_DINT` (intern) | Dieselbe Zähllogik, jedoch ohne Adapterkapselung. Die Adapterversion bietet eine einheitliche, modulare Schnittstelle. |

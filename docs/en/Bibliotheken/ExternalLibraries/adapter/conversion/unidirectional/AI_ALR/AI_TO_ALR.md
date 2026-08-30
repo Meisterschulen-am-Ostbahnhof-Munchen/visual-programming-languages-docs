@@ -3,9 +3,11 @@
 ![AI_TO_ALR](./AI_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AI_TO_ALR** is a composite function block that converts an **AI (INT adapter)** to an **ALR (LREAL adapter)**. It serves as a pure conversion interface by directly routing the event and data channels of the input adapter to the output adapter. The actual type conversion from Integer (INT) to Long Real (LREAL) is handled by the underlying adapter definitions.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -71,6 +73,6 @@ The **AI_TO_ALR** function block is a minimalist yet effective composite functio
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

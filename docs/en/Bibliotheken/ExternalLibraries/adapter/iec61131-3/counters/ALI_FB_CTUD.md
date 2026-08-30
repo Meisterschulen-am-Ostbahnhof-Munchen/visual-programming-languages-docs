@@ -3,9 +3,11 @@
 ![ALI_FB_CTUD](./ALI_FB_CTUD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_FB_CTUD** implements an up/down counter with a value range of type **LINT** (64-bit integer). It is specifically designed for use with **ALI adapters** and encapsulates a standard-compliant counter according to IEC 61131-3 (FB_CTUD_LINT). Control and output are exclusively via adapter interfaces, allowing for flexible integration into adapter-based architectures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,6 +25,7 @@ The function block does not have direct event inputs. All control events are rec
 *Note: **CU.E1** – Count Up event
 *Note: **CU.E1** – Count Down event
 *CT ...
+
 ### **Event Outputs**
 
 - **CNF** (Event) – Execution Confirmation
@@ -56,15 +59,15 @@ The results data are provided via the **plugs**:
 ### **Adapter**
 
 | Typ | Richtung | Adapter-Typ | Beschreibung |
-|------|----------|-------------|--------------|
+| ------ | ---------- | ------------- | -------------- |
 | **CU** | Socket | `adapter::types::unidirectional::AX` | Aufwärtszähl‑Eingang (Ereignis+BOOL) |
 | **CD** | Socket | `adapter::types::unidirectional::AX` | Abwärtszähl‑Eingang (Ereignis+BOOL) |
-| **R**  | Socket | `adapter::types::unidirectional::AX` | Reset‑Eingang (Ereignis+BOOL) |
+| **R** | Socket | `adapter::types::unidirectional::AX` | Reset‑Eingang (Ereignis+BOOL) |
 | **LD** | Socket | `adapter::types::unidirectional::AX` | Load‑Eingang (Ereignis+BOOL) |
 | **PV** | Socket | `adapter::types::unidirectional::ALI` | Preset‑Wert‑Eingang (Ereignis+LINT) |
-| **QU** | Plug   | `adapter::types::unidirectional::AX` | Aufwärts‑Ausgang (Ereignis+BOOL) |
-| **QD** | Plug   | `adapter::types::unidirectional::AX` | Abwärts‑Ausgang (Ereignis+BOOL) |
-| **CV** | Plug   | `adapter::types::unidirectional::ALI` | Zählerwert‑Ausgang (Ereignis+LINT) |
+| **QU** | Plug | `adapter::types::unidirectional::AX` | Aufwärts‑Ausgang (Ereignis+BOOL) |
+| **QD** | Plug | `adapter::types::unidirectional::AX` | Abwärts‑Ausgang (Ereignis+BOOL) |
+| **CV** | Plug | `adapter::types::unidirectional::ALI` | Zählerwert‑Ausgang (Ereignis+LINT) |
 
 ## Funktionsweise
 

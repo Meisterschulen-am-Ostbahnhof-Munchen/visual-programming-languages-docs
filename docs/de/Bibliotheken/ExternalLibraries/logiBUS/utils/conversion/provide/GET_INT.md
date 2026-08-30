@@ -3,6 +3,7 @@
 ![GET_INT](./GET_INT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_INT** dient dazu, den aktuellen Wert einer INT-Variablen (als InOut-Parameter definiert) auszulesen und als gepufferten Wert am Ausgang bereitzustellen. Die Pufferung erfolgt bei jedem Ausführungszyklus, sodass der Ausgangswert bis zur nächsten Anforderung stabil bleibt.
@@ -48,6 +49,7 @@ Der Eingabewert wird über den InOut-Parameter **IN** bereitgestellt (siehe näc
 Der FB arbeitet als einfacher Lesepuffer:
 
 1. Beim Eintreffen des Ereignisses **REQ** wird die **ST**-Algorithmus `REQ` ausgeführt:
+
    ```structured text
    OUT := IN;
    ```
@@ -82,7 +84,7 @@ Der FB besitzt einen einzigen Zustand **REQ**:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ des Eingangs | Pufferung | Besonderheit |
-|----------|------------------|-----------|--------------|
+| ---------- | ------------------ | ----------- | -------------- |
 | **GET_INT** | InOut (INT) | Ja (einmaliges Lesen bei REQ) | Zugriff auf Originalvariable, keine zusätzliche Variable erforderlich |
 | **MOVE** (z.B. IEC 61131-3) | Eingang (INT) | Ja (bei jeder Ausführung) | Kopiert Wert von einem expliziten Eingang in einen Ausgang |
 | **F_TRIG / R_TRIG** | Eingang (BOOL) | Nein (nur Flankenerkennung) | Arbeitet mit Booleschen Werten |

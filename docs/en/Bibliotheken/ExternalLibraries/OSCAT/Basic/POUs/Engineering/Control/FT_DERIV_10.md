@@ -1,7 +1,9 @@
 ![FT_DERIV_10](FT_DERIV_10.svg)
+
 # FT_DERIV_10
 
 Derivative with variable window size (0..9 periods)
+
 ## Interface
 
 ### Event inputs
@@ -57,5 +59,5 @@ Derivative with variable window size (0..9 periods)
 
 ## 🛠️ Related exercises
 
-* [Uebung_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-* [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_152](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
+- [Uebung_153](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)

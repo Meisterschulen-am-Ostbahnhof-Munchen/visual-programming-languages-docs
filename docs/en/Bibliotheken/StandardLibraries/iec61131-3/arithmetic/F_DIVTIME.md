@@ -4,6 +4,7 @@
 
 * * * * * * * * * *
 ![F_DIVTIME](F_DIVTIME.svg)
+
 ## Introduction
 
 The **F_DIVTIME** function block is a specialized function module for dividing time values by numerical factors, developed under the EPL 2.0 license. Version 1.0 enables precise time calculations using TIME and ANY_NUM data types.
@@ -30,13 +31,16 @@ The **F_DIVTIME** function block is a specialized function module for dividing t
 ## Functionality
 
 1. **Activation**:
+
 - Triggered by the `REQ` event
 - Processes TIME values and numeric divisors
-2. **Calculation**:
+1. **Calculation**:
+
 - Divides time value (IN1) by numeric value (IN2)
 - Performs automatic type conversion
 - Calculation accurate to milliseconds
-3. **Result Output**:
+1. **Result Output**:
+
 - `CNF` event with new TIME value
 - Format: T#1d5h30m15s250ms
 
@@ -75,7 +79,7 @@ The **F_DIVTIME** function block is a specialized function module for dividing t
 ## ⚖️ Comparison with Standard F_DIV
 
 | Feature | F_DIVTIME | F_DIV |
-|----------------|-----------|-------------|
+| ---------------- | ----------- | ------------- |
 | Input Type 1 | TIME | ANY_NUM |
 | Input Type 2 | ANY_NUM | ANY_NUM |
 | Output Type | TIME | ANY_NUM |

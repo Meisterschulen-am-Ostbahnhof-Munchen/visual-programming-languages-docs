@@ -3,9 +3,11 @@
 ![IA_COGSOGRapidUpdate](./IA_COGSOGRapidUpdate.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **IA_COGSOGRapidUpdate** serves as an ISOBUS adapter for the NMEA 2000 PGN 129026 messages "Course Over Ground (COG)" and "Speed Over Ground (SOG)" with support for rapid updates. It decouples the ISOBUS communication and provides the received navigation data and a timeout status via standardized adapter interfaces. The block was developed under the Eclipse Public License 2.0 and is optimized for use in agricultural control systems (TECU).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,14 +31,14 @@ The function block **IA_COGSOGRapidUpdate** serves as an ISOBUS adapter for the 
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QO | BOOL | Output qualifier (initialization status) |
 | STATUS | STRING | Status message (e.g., error text or "OK") |
 
 ### **Adapter**
 
 | Adapter Name | Type | Comment |
-|--------------|-----|-----------|
+| -------------- | ----- | ----------- |
 | COG | adapter::types::unidirectional::AUI | Course Over Ground |
 | SOG | adapter::types::unidirectional::AUI | Speed Over Ground |
 | TIMEOUT | adapter::types::unidirectional::AX | Timeout status (active when no update occurs) |
@@ -49,7 +51,7 @@ The function block **IA_COGSOGRapidUpdate** serves as an ISOBUS adapter for the 
 
 An event at **INIT** activates the function block. The **QI** input controls the start. After successful initialization, **INITO** is triggered, and the **QO** (TRUE on success) and **STATUS** outputs are set.
 
-2. **ISOBUS Message Processing**
+1. **ISOBUS Message Processing**
 
 The internal core (FB `I_CORE` of type `isobus::tecu::I_COGSOGRapidUpdate`) continuously receives NMEA 2000 PGN 129026 messages. As soon as new data is available, the following values are output via the corresponding adapters:
 
@@ -57,11 +59,11 @@ The internal core (FB `I_CORE` of type `isobus::tecu::I_COGSOGRapidUpdate`) cont
 - **SOG**: Speed over ground (e.g., in 0.01 km/h)
 - **SID**: Sequence ID for synchronization
 - **COG_REF**: Reference (True or Magnetic)
-3. **Timeout Monitoring**
+1. **Timeout Monitoring**
 
 If no valid message is received within a configured time period, the function block activates the **TIMEOUT** adapter. This event can be used by the application to trigger error conditions or plausibility checks.
 
-4. **Output Cycles**
+1. **Output Cycles**
 
 The **COG**, **SOG**, **SID**, and **COG_REF** adapters are triggered together with each valid data reception (event connection `IND`). The **TIMEOUT** adapter is triggered independently upon timeout.
 
@@ -78,7 +80,7 @@ The **COG**, **SOG**, **SID**, and **COG_REF** adapters are triggered together w
 The function block does not have explicitly modeled states; however, the following operating phases can be derived:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Inactive** | INIT not yet triggered or QI = FALSE |
 | **Initializing** | After INIT, until INITO is reported with QO |
 | **Active (Data Received)** | Regular reception of PGN 129026, adapter updates |

@@ -3,6 +3,7 @@
 ![AI_TO_AD](./AI_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Composite-Funktionsbaustein **AI_TO_AD** dient der Konvertierung eines INT-basierten Adapter-Interface (AI) in ein DWORD-basiertes Adapter-Interface (AD). Er kapselt die Typumwandlung von `INT` nach `DWORD` und ermöglicht so die nahtlose Integration unterschiedlicher Adapter-Typen in Steuerungsanwendungen. Der Baustein ist unidirektional ausgelegt und arbeitet ereignisgesteuert.

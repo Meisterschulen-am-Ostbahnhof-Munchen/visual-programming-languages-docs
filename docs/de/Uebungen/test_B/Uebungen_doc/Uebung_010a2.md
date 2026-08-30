@@ -20,7 +20,7 @@ Verwendung eines `Button_IX` Bausteins.
 
 ![Uebung_010a2_network](./Uebung_010a2_network.svg)
 
-  * **`Button_A1`**: Typ `isobus::UT::io::Button::Button_IX`. Referenziert das Objekt `Button_A1` im Pool.
+  - **`Button_A1`**: Typ `isobus::UT::io::Button::Button_IX`. Referenziert das Objekt `Button_A1` im Pool.
 
 -----
 

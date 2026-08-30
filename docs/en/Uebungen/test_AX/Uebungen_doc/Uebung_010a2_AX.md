@@ -1,8 +1,9 @@
 # Exercise_010a2_AX: Button_A1 on DigitalOutput_Q1
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_010a2_AX`. In addition to softkeys (F-keys), ISOBUS also uses buttons (switches in the data mask area).
+This article describes the logiBUS® exercise `Uebung_010a2_AX`. In addition to softkeys (F-keys), ISOBUS also uses buttons (switches in the data mask area)
 ----
+
 ## Objective of the exercise
 
 Using `Button_IXA`.
@@ -17,7 +18,7 @@ Using `Button_IXA`.
 
 ![Uebung_010a2_AX_network](./Uebung_010a2_AX_network.svg)
 
-* **`Button_A1`**: Type `isobus::UT::io::Button::Button_IXA`. References `Button_A1`.
+- **`Button_A1`**: Type `isobus::UT::io::Button::Button_IXA`. References `Button_A1`.
 
 -----
 

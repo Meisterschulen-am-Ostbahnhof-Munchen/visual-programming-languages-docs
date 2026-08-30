@@ -1,8 +1,9 @@
 # Exercise_002b2: DigitalInput_I1/_I2/_I3 to DigitalOutput_Q1; with MOVE
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002b2`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR), using a `F_MOVE` block for explicit data forwarding.
+This article describes the logiBUS® exercise `Uebung_002b2`. In this exercise, a combinational logic circuit is implemented that links two basic operations (AND and OR), using a `F_MOVE` block for explicit data forwarding
 -----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is the hierarchical linking of logic blocks. It demonstrates how partial results of one operation can serve as input for another operation. Additionally, the `F_MOVE` block is introduced, which is used to explicitly pass data values in a separate event step.
@@ -17,11 +18,11 @@ The main objective of this exercise is the hierarchical linking of logic blocks.
 
 ![Uebung_002b2_network](./Uebung_002b2_network.svg)
 
-* **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They provide the input signals for the logic chain[cite: 1].
-* **`AND_2`**: One instance of type `AND_2`. [cite_start]Combines the inputs `I1` and `I2`[cite: 1].
-* **`F_MOVE`**: A data transfer block. [cite_start]It receives the value at input `IN` and outputs it unchanged at output `OUT` upon the event `REQ`[cite: 1]. It serves as a buffer between the logic stages.
-* **`OR_2`**: An instance of type `OR_2`. [cite_start]Combines the (buffered) result of the AND block with the third input `I3`[cite: 1].
-* **`DigitalOutput_Q1`**: Outputs the final result of the logic to the hardware output.
+- **`DigitalInput_I1` to `I3`**: Three instances of type `logiBUS_IX`. [cite_start]They provide the input signals for the logic chain[cite: 1].
+- **`AND_2`**: One instance of type `AND_2`. [cite_start]Combines the inputs `I1` and `I2`[cite: 1].
+- **`F_MOVE`**: A data transfer block. [cite_start]It receives the value at input `IN` and outputs it unchanged at output `OUT` upon the event `REQ`[cite: 1]. It serves as a buffer between the logic stages.
+- **`OR_2`**: An instance of type `OR_2`. [cite_start]Combines the (buffered) result of the AND block with the third input `I3`[cite: 1].
+- **`DigitalOutput_Q1`**: Outputs the final result of the logic to the hardware output.
 
 -----
 

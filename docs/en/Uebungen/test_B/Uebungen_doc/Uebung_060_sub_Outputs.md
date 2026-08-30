@@ -1,4 +1,5 @@
 Here is the documentation for exercise `Uebung_060_sub_Outputs` based on the provided XML data.
+
 # Exercise_060_sub_Outputs: for TC-SC, i.e., Task Controller Section Control
 
 ![Uebung_060_sub_Outputs_network](./Uebung_060_sub_Outputs_network.svg)
@@ -32,26 +33,27 @@ These function blocks act as drivers for the LogiBUS system. As soon as an event
 The flow within the sub-application is purely event-driven and serves for direct signal routing (mapping).
 
 1. **Event Handling (`CNF`)**:
-* The main event `CNF` (Confirmation) at the input of the sub-application triggers the `REQ` input of all 8 included DigitalOutput blocks (`DigitalOutput_Q1` to `DigitalOutput_Q8`).
-* This ensures that all outputs are updated in the same cycle.
-2. **Data Mapping**:
+
+- The main event `CNF` (Confirmation) at the input of the sub-application triggers the `REQ` input of all 8 included DigitalOutput blocks (`DigitalOutput_Q1` to `DigitalOutput_Q8`).
+- This ensures that all outputs are updated in the same cycle.
+1. **Data Mapping**:
 
 The input variables are mapped to the outputs with an index offset:
 
-* Input `Q_00` controls `DigitalOutput_Q1` (Output 1).
-* * Input `Q_01` controls `DigitalOutput_Q2` (Output 2).
-* Input `Q_02` controls `DigitalOutput_Q3` (Output 3).
-* Input `Q_03` controls `DigitalOutput_Q4` (Output 4).
-* Input `Q_04` controls `DigitalOutput_Q5` (Output 5).
-* Input `Q_05` controls `DigitalOutput_Q6` (Output 6).
-* Input `Q_06` controls `DigitalOutput_Q7` (Output 7).
-* Input `Q_07` controls `DigitalOutput_Q8` (output 8).
+- Input `Q_00` controls `DigitalOutput_Q1` (Output 1).
+- - Input `Q_01` controls `DigitalOutput_Q2` (Output 2).
+- Input `Q_02` controls `DigitalOutput_Q3` (Output 3).
+- Input `Q_03` controls `DigitalOutput_Q4` (Output 4).
+- Input `Q_04` controls `DigitalOutput_Q5` (Output 5).
+- Input `Q_05` controls `DigitalOutput_Q6` (Output 6).
+- Input `Q_06` controls `DigitalOutput_Q7` (Output 7).
+- Input `Q_07` controls `DigitalOutput_Q8` (output 8).
 
 *Note:* The variable `Q_08` is defined in the interface, but according to the current configuration, it is not linked to the internal network.
 
 The `Uebung_060_sub_Outputs` is an interface component that enables a clean separation between the control logic and the hardware connection. It receives eight control signals (`Q_00` - `Q_07`) and maps them to LogiBUS outputs 1 through 8. This facilitates code reuse and improves clarity when controlling sectors (Section Control).
 
-* [Uebung_060](Uebung_060.md)
+- [Uebung_060](Uebung_060.md)
 
 ## Program Flow and Connections
 

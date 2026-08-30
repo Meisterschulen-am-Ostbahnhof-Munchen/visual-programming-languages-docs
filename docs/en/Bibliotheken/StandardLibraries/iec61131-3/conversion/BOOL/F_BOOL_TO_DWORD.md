@@ -6,6 +6,7 @@
 
 The function block `F_BOOL_TO_DWORD` converts a Boolean value (`BOOL`) into a 32-bit unsigned integer value (`DWORD`). This block is particularly useful in scenarios where Boolean signals need to be converted into numerical values, for example, for communication with systems that can only process numeric input.
 ![F_BOOL_TO_DWORD](F_BOOL_TO_DWORD.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,6 +30,7 @@ The function block `F_BOOL_TO_DWORD` converts a Boolean value (`BOOL`) into a 32
 - No adapters are available.
 
 **
+
 ## Functionality
 
 The function block performs the conversion as soon as the event `REQ` is received. The Boolean value `IN` is converted to `DWORD`:

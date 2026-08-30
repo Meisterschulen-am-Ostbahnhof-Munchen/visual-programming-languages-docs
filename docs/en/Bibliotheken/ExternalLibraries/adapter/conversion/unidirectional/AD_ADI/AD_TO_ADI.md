@@ -3,9 +3,11 @@
 ![AD_TO_ADI](./AD_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AD_TO_ADI** function block is a composite module for converting a DWORD adapter (AD) to a DINT adapter (ADI). It enables the seamless integration of components with different data types into an IEC 61499 application without requiring the user to implement the conversion logic themselves.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. Data is transferred via the plug adapter `ADI_OUT`.
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|-------------|-----|-----------|-----------|
+| ------------- | ----- | ----------- | ----------- |
 | `AD_IN` | `adapter::types::unidirectional::AD` | Socket (Input) | DWORD Adapter Input – returns a DWORD date and an event |
 | `ADI_OUT` | `adapter::types::unidirectional::ADI` | Plug (Output) | DINT Adapter Output – Returns a Converted DINT Data and an Event |
 

@@ -5,6 +5,7 @@
 *(No image available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_ADD_2` is a generic function block for performing arithmetic addition operations. Unlike conventional mathematical function blocks, this block uses an adapter-based interface concept (unidirectional `ADI` adapters) to transmit data and associated control signals in a bundled manner. It enables the addition of two input values to produce one output value.
@@ -31,15 +32,15 @@ The function block `ADI_ADD_2` is a generic function block for performing arithm
 
 #### **Sockets (Inputs)**
 
-* **IN1**: Type `adapter::types::unidirectional::ADI`
-* *Description:* First input value for mathematical addition.
-* **IN2**: Type `adapter::types::unidirectional::ADI`
-* *Description:* Second input value for mathematical addition.
+- **IN1**: Type `adapter::types::unidirectional::ADI`
+- *Description:* First input value for mathematical addition.
+- **IN2**: Type `adapter::types::unidirectional::ADI`
+- *Description:* Second input value for mathematical addition.
 
 #### **Plugs (Connectors - Outputs)**
 
-* **OUT**: Type `adapter::types::unidirectional::ADI`
-* *Description:* Output that provides the result of the addition (`IN1 + IN2`).
+- **OUT**: Type `adapter::types::unidirectional::ADI`
+- *Description:* Output that provides the result of the addition (`IN1 + IN2`).
 
 ---
 
@@ -57,9 +58,10 @@ Since this is a generic function block (`GEN_ADI_ADD`), the specific data type u
 
 ## Technical Features
 
-* **Generic Type:** The function block is declared as `GEN_ADI_ADD`. This allows for flexible handling of different numeric data types, provided they are supported by the adapters used.
-* **Adapter-Based Design:** By using unidirectional adapters of type `ADI`, the number of explicit connection lines (wiring overhead in the 4diac IDE's Application Editor) is drastically reduced, as data and synchronization events are encapsulated in a single connection.
-* ---
+- **Generic Type:** The function block is declared as `GEN_ADI_ADD`. This allows for flexible handling of different numeric data types, provided they are supported by the adapters used.
+- **Adapter-Based Design:** By using unidirectional adapters of type `ADI`, the number of explicit connection lines (wiring overhead in the 4diac IDE's Application Editor) is drastically reduced, as data and synchronization events are encapsulated in a single connection.
+
+- ---
 
 ## State Overview
 
@@ -73,8 +75,8 @@ The function block behaves like a stateless (or purely event-driven combinationa
 
 ## Application Scenarios
 
-* **Modular Signal Processing:** Addition of measured values (e.g., Sensor 1 + Sensor 2 to determine a total value) in systems that are consistently based on an adapter architecture.
-* **Cascaded Computations:** Easy integration into complex arithmetic computation networks through clean, structured adapter connections.
+- **Modular Signal Processing:** Addition of measured values (e.g., Sensor 1 + Sensor 2 to determine a total value) in systems that are consistently based on an adapter architecture.
+- **Cascaded Computations:** Easy integration into complex arithmetic computation networks through clean, structured adapter connections.
 
 ---
 
@@ -82,8 +84,8 @@ The function block behaves like a stateless (or purely event-driven combinationa
 
 Compared to a classic `ADD` component according to IEC 61499 (which typically has dedicated `REQ` and `CNF` event ports, as well as direct data inputs such as `IN1` and `IN2` as `ANY_NUM`), the `ADI_ADD_2` encapsulates these interfaces in adapters.
 
-* **Standard ADD:** Requires manual wiring of a minimum of 2 events and 3 data lines (5 connections in total).
-* **ADI_ADD_2:** Only requires connecting the three adapter lines (`IN1`, `IN2`, `OUT`), which significantly improves the readability of complex control diagrams.
+- **Standard ADD:** Requires manual wiring of a minimum of 2 events and 3 data lines (5 connections in total).
+- **ADI_ADD_2:** Only requires connecting the three adapter lines (`IN1`, `IN2`, `OUT`), which significantly improves the readability of complex control diagrams.
 
 ---
 

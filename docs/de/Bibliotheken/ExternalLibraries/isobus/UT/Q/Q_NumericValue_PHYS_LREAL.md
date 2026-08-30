@@ -3,6 +3,7 @@
 ![Q_NumericValue_PHYS_LREAL](./Q_NumericValue_PHYS_LREAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **Q_NumericValue_PHYS_LREAL** dient dazu, über ISOBUS (ISO 11783‑6) einen numerischen Wert als physikalische Größe zu setzen. Er nimmt einen physikalischen Wert vom Typ `LREAL` entgegen, konvertiert ihn automatisch in den erforderlichen Rohwert und sendet den entsprechenden Befehl an das angeschlossene Gerät. Dies entspricht der Spezifikation in Teil 6, Anhang F.22.
@@ -35,7 +36,7 @@ Der Baustein kapselt die notwendigen Schritte der physikalischen Umrechnung und 
 ### **Daten-Ausgänge**
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `STATUS` | `STRING` | Statusmeldung des durchgeführten Dienstes. |
 | `u32OldValue` | `UDINT` | Alter Rohwert des Objekts vor der Änderung. |
 | `s16result` | `INT` | Rückgabewert (siehe `Q_NumericValue`). |
@@ -74,7 +75,7 @@ Die Ausgänge `STATUS`, `u32OldValue` und `s16result` stammen direkt von `Q_Nume
 Der Baustein besitzt keinen expliziten Zustandsautomaten im Sinne einer ECC, sondern arbeitet ereignisgesteuert nach folgender Logik:
 
 | Zustand / Ablauf | Beschreibung |
-|------------------|--------------|
+| ------------------ | -------------- |
 | **Initialisierung** | Nach einem `INIT`-Ereignis werden die Objekt‑Eigenschaften intern gespeichert. Anschließend wird `INITO` gesendet. |
 | **Befehl senden** | Nach einem `REQ`-Ereignis wird der physikalische Wert umgerechnet, der Befehl abgesetzt und nach Abschluss `CNF` mit den Ergebnisdaten gesendet. |
 | **Fehlerbehandlung** | Tritt bei der Umrechnung ein Über‑/Unterlauf auf, werden `xOver` bzw. `xUnder` bereits vor dem Absetzen des Befehls gesetzt. Ein fehlerhafter Befehl wird durch `s16result` und die Statusmeldung signalisiert. |

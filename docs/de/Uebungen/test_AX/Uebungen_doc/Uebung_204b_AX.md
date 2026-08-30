@@ -3,6 +3,7 @@
 ![Uebung_204b_AX_network](./Uebung_204b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die Verwendung des Funktionsbausteins **ILOCK_CONFLICT_TRIP_AX** zur sicherheitsgerichteten Motorabschaltung. Es wird eine Interlock-Logik realisiert, bei der zwei gegensätzliche Anforderungen (z. B. Rechts- und Linkslauf) überwacht und bei einem Konflikt ein Trip ausgelöst wird. Die gesamte Steuerung erfolgt über Adapterverbindungen und einen zwischengeschalteten SubApp (AX_2_TO_3), der die Aufteilung der Signale auf die Ausgänge vornimmt.
@@ -79,4 +80,4 @@ Die Übung vermittelt den Aufbau einer sicherheitsgerichteten Motorsteuerung unt
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

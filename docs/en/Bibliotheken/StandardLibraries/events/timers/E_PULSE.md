@@ -61,8 +61,8 @@ The E_PULSE function block can be used in various industrial control application
 
 ## 🛠️ Related Exercises
 
-* [Exercise_020h](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020h.md)
-* [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
+- [Exercise_020h](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020h.md)
+- [Exercise_020i](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020i.md)
 
 ## Conclusion
 

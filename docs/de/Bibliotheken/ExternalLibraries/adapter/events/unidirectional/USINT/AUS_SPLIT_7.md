@@ -5,6 +5,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUS_SPLIT_7** ist ein generischer Baustein zur Verteilung eines einzelnen AUS-Adapter-Signals auf sieben identische AUS-Ausgänge. Er dient als Signalvervielfacher in Steuerungsanwendungen, die auf der IEC 61499-Norm basieren. Der Baustein besitzt keine ereignis- oder datenbasierten Schnittstellen, sondern kommuniziert ausschließlich über Adapter des Typs `adapter::types::unidirectional::AUS`. Die eigentliche Typisierung des Signals wird erst zur Laufzeit über das generische Attribut `GenericClassName` festgelegt.
@@ -73,4 +74,4 @@ Der **AUS_SPLIT_7** ist ein einfacher, aber effektiver generischer Funktionsbloc
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

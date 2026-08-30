@@ -3,9 +3,11 @@
 ![AUI_D_FF](./AUI_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_D_FF** implements a clock-controlled D flip-flop (data latch). It takes the value of a data input when an event occurs and outputs the stored value. The input and output interfaces are implemented as unidirectional **adapters**, enabling a flexible and standardized connection in the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None – data output is exclusively via the **Q** adapter.
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|-----|----------|-------------|
+| ------------- | ----- | ---------- | ------------- |
 | **I** | `adapter::types::unidirectional::AUI` | Socket (Input) | Input value (D) and clock event (CLK) |
 | **Q** | `adapter::types::unidirectional::AUI` | Plug (Output) | Stored value (Q) and output event (EO) |
 
@@ -52,7 +54,7 @@ The function block internally uses the function block `E_D_FF_ANY` from the IEC 
 The function block has two logical states, corresponding to the internal flip-flop:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Q = 0** | Output value is LOW (logical 0). |
 | **Q = 1** | Output value is HIGH (logical 1). |
 
@@ -77,4 +79,4 @@ The `AUI_D_FF` is a standards-compliant D flip-flop in the 4diac IDE that offers
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

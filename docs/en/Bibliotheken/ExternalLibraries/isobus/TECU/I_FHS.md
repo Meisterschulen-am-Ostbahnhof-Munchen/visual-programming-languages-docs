@@ -1,6 +1,7 @@
 # I_FHS
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_FHS** is a standards-compliant function block for front-mounted implement status information according to ISO 11783-7 (PGN 65094).
@@ -33,7 +34,7 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 ## Parameters (SPN Details)
 
 | Parameter | SPN | Type | Length | Scale | Value Range | Description |
-|-----------|-------|-------|-------|------------|--------------|--------------|
+| ----------- | ------- | ------- | ------- | ------------ | -------------- | -------------- |
 | `FRONT_HITCH_POSITION` | 1872 | USINT | 8 bits | 0.4%/bit | 0-100% | Current Position of Front Attachment |
 | `FRONT_HITCH_WORK_INDICATION` | 1876 | BYTE | 2 bits | 4 States | 0-3 | Working Status Indicator |
 | `FRONT_HITCH_POS_LIMIT_STATUS` | 5150 | BYTE | 3 bits | 8 states | 0-7 | Position limit status |
@@ -44,12 +45,15 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 ## Functionality
 
 1. **Initialization**:
+
 - Activation via `INIT` event
 - Confirmation via `INITO` with status information
-2. **Data Update**:
+1. **Data Update**:
+
 - Automatic status messages via `IND` event
 - Contains all relevant front-mounted implement parameters
-3. **Error Handling**:
+1. **Error Handling**:
+
 - Timeout detection via `TIMEOUT` event
 - Detailed status codes in the `STATUS` field
 
@@ -71,7 +75,7 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 ## ⚖️ Comparison with Similar Modules
 
 | Feature | I_FHS | Standard Hitch Control | Advanced Hitch Manager |
-|---------------|-------|------------------------|------------------------|
+| --------------- | ------- | ------------------------ | ------------------------ |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Front Mounting | ✔ | ✖ | ✔ |
 | Force Measurement | ✔ | ✔ | ✔ |
@@ -79,7 +83,7 @@ Developed under the EPL-2.0 license, it enables the monitoring and control of fr
 
 ## 🛠️ Related Exercises
 
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

@@ -3,9 +3,11 @@
 ![Uebung_224_AULI_network](./Uebung_224_AULI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an up/down counter according to IEC 61131-3 (Type CTUD) in adapter format. The counter uses the ULINT (Unsigned Long Integer) data type and outputs the current counter value as well as overflow/underflow signals to physical outputs. Additionally, the counter value is output via a terminal (ISOBUS). The preset value (PV) is initially set to 5.
+
 ## Function Blocks (FBs) Used
 
 ### Sub-Blocks: `AULI_FB_CTUD`
@@ -53,6 +55,7 @@ This exercise implements an up/down counter according to IEC 61131-3 (Type CTUD)
 **Functionality**: Receives the converted counter reading (AUDI) and outputs it as a numeric value to the configured terminal (ISOBUS).
 
 ** ...
+
 ### Other Function Blocks Used (logiBUS I/O Connection)
 
 - **Input_CU** (`logiBUS::io::DI::logiBUS_IXA`): Reads the digital input `Input_I1` (count up)

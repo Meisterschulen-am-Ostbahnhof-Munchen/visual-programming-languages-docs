@@ -1,6 +1,7 @@
 # SoftKeyActivationCode_S
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `SoftKeyActivationCode_S` ist eine strukturierte Datenstruktur (Struct), die zur Konfiguration der Aktivierung eines Softkeys in einem ISOBUS-konformen System dient. Er definiert den spezifischen Aktivierungscode und ein Steuerflag für die Wiederholungsfrequenz der Tasteneingabe.
@@ -30,9 +31,9 @@ Die Struktur `SoftKeyActivationCode_S` dient als Container für Konfigurationsda
 
 ## Technische Besonderheiten
 
-*   **Initialwerte:** Beide Felder besitzen vordefinierte Initialwerte. Der Standardwert `255` für `code` kann als "ungültiger" oder "nicht konfigurierter" Code interpretiert werden.
-*   **ISOBUS-Kontext:** Der Datentyp ist Teil des Pakets `isobus::UT::io::Softkey`, was auf seine Verwendung in ISOBUS Virtual Terminal (VT) oder ähnlichen IO-Kontexten hindeutet.
-*   **Zyklussteuerung:** Die präzise Steuerung der Wiederholungsrate über `bCyclic` ist entscheidend für eine benutzerfreundliche und zuverlässige Tastatureingabe, insbesondere bei langen Datenfeldern oder Listensteuerungen.
+-   **Initialwerte:** Beide Felder besitzen vordefinierte Initialwerte. Der Standardwert `255` für `code` kann als "ungültiger" oder "nicht konfigurierter" Code interpretiert werden.
+-   **ISOBUS-Kontext:** Der Datentyp ist Teil des Pakets `isobus::UT::io::Softkey`, was auf seine Verwendung in ISOBUS Virtual Terminal (VT) oder ähnlichen IO-Kontexten hindeutet.
+-   **Zyklussteuerung:** Die präzise Steuerung der Wiederholungsrate über `bCyclic` ist entscheidend für eine benutzerfreundliche und zuverlässige Tastatureingabe, insbesondere bei langen Datenfeldern oder Listensteuerungen.
 
 ## Zustandsübersicht
 
@@ -50,8 +51,8 @@ Diese Datenstruktur wird typischerweise als Eingabe- oder Konfigurationsparamete
 
 Im Gegensatz zu einem Funktionsbaustein (FB) ist `SoftKeyActivationCode_S` ein reiner **Datentyp** (Struct). Er enthält keine Algorithmen oder ereignisgesteuerte Logik.
 
-*   **Ähnlichkeit zu `E_SR` oder `E_RS`:** Diese sind Funktionsbausteine mit Speicherfunktion und besitzen eine interne Zustandslogik. `SoftKeyActivationCode_S` ist hingegen ein reiner Datenträger.
-*   **Vergleich mit einfachen Datentypen:** Im Gegensatz zu atomaren Typen wie `INT` oder `BOOL` bündelt dieser Struct zwei logisch zusammengehörige Informationen (`code` und Verhalten `bCyclic`) zu einer einzigen, wiederverwendbaren Einheit.
+-   **Ähnlichkeit zu `E_SR` oder `E_RS`:** Diese sind Funktionsbausteine mit Speicherfunktion und besitzen eine interne Zustandslogik. `SoftKeyActivationCode_S` ist hingegen ein reiner Datenträger.
+-   **Vergleich mit einfachen Datentypen:** Im Gegensatz zu atomaren Typen wie `INT` oder `BOOL` bündelt dieser Struct zwei logisch zusammengehörige Informationen (`code` und Verhalten `bCyclic`) zu einer einzigen, wiederverwendbaren Einheit.
 
 ## Fazit
 

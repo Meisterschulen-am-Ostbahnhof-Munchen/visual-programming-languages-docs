@@ -3,35 +3,37 @@
 ![AD_NE](./AD_NE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AD_NE** compares two values of type `DWORD` (32-bit bit pattern (double word)) and checks whether the first value (IN1) is not equal to the second value (IN2). The result is provided as a Boolean value via the output adapter. The function block is event-driven and operates asynchronously. The bit patterns are interpreted as unsigned integers and compared numerically.
+
 ## Interface Structure
 
 The function block has no direct event or data inputs and outputs, but communicates exclusively via adapters.
 
 ### **Event Inputs**
 
-* **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
-* **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
+- **IN1.E1**: Event input of socket adapter IN1 – triggers the comparison.
+- **IN2.E1**: Event input of socket adapter IN2 – also triggers the comparison.
 
 ### **Event Outputs**
 
-* **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
+- **OUT.E1**: Event output of the plug adapter OUT – indicates that the comparison result is available at the data output.
 
 ### **Data Inputs**
 
-* **IN1.D1**: First value to be compared (data type `DWORD`, 32-bit bit pattern (double word)).
-* **IN2.D1**: Second value to be compared (data type same as IN1).
+- **IN1.D1**: First value to be compared (data type `DWORD`, 32-bit bit pattern (double word)).
+- **IN2.D1**: Second value to be compared (data type same as IN1).
 
 ### **Data Outputs**
 
-* **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 != IN2`, otherwise `FALSE`.
+- **OUT.D1**: Boolean result of the comparison – `TRUE` if `IN1 != IN2`, otherwise `FALSE`.
 
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `AD` (Socket) | Input | Adapter for the first comparison value and its associated event |
 | IN2 | `AD` (Socket) | Input | Adapter for the second comparison value and its associated event |
 | OUT | `AX` (Plug) | Output | Adapter for the comparison result and the output event |

@@ -1,9 +1,11 @@
 Here is the documentation for exercise `Uebung_006e2`, based on the provided data.
+
 # Exercise_006e2: RS Flip-Flop with 2x IX
 
 ![Uebung_006e2_network](./Uebung_006e2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 Exercise **Exercise_006e2** demonstrates the implementation of an RS flip-flop (reset dominant) using two digital inputs (IX) and one digital output. The goal is to implement a basic memory function where one input sets the output and the other resets it. This exercise uses the `logiBUS` library for the hardware abstraction of the inputs and outputs.
@@ -50,17 +52,21 @@ In this sub-application, various function blocks are instantiated and interconne
 The program flow is determined by the event connections and the data connection:
 
 1. **Input Processing**:
+
 - The digital inputs `DigitalInput_I1` and `DigitalInput_I2` acquire signals from the hardware.
 - As soon as an input value changes or is updated, a `IND` event (Indication) is triggered.
-2. **Logic Processing (RS Flip-Flop)**:
+1. **Logic Processing (RS Flip-Flop)**:
+
 - The `IND` events of both inputs are connected to the `REQ` (Request) input of `FB_RS`. This means that any change to I1 or I2 triggers the flip-flop's calculation.
 - **Data Connection**:
 - The value of `DigitalInput_I1` (`IN`) is connected to the Set input (`S`) of `FB_RS`.
 - The value of `DigitalInput_I2` (`IN`) is connected to the reset input (`R1`) of `FB_RS`.
-3. **Output Processing**:
+1. **Output Processing**:
+
 - After the calculation of `FB_RS`, the `CNF` event (Confirmation) is triggered.
 - This event is connected to the `REQ` input of `DigitalOutput_Q1` to update the output.
-3. **Output Processing**:
+1. **Output Processing**:
+
 - After the calculation of `FB_RS`, the `CNF` event (Confirmation) is triggered.
 - This event is connected to the `REQ` input of `DigitalOutput_Q1` to update the output. - **Data Connection**: The result output `Q1` of the flip-flop is passed to the input `OUT` of `DigitalOutput_Q1`.
 
@@ -78,6 +84,6 @@ This exercise is a classic example of programmable logic controllers (PLCs) acco
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

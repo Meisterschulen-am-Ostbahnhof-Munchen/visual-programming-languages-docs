@@ -1,6 +1,7 @@
 # DataPanel_MI_AI
 
 DataPanel Modules with medium IO density AI constants
+
 ## Global Constants
 
 | Name | Type | Initial Value |

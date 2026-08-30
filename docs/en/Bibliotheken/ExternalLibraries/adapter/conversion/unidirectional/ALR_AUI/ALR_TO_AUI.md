@@ -3,9 +3,11 @@
 ![ALR_TO_AUI](./ALR_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALR_TO_AUI** is a composite function block (FB) that converts an LREAL value, received via an **ALR** adapter (unidirectional), into a UINT value and makes it available via an **AUI** adapter (unidirectional). The conversion is performed using the internal IEC 61131 function block `F_LREAL_TO_UINT`. This block encapsulates the adapter conversion and provides a clean interface for data exchange between the two adapter types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The converted data is output via the **AUI_OUT** adapter:
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | **ALR_IN** | `adapter::types::unidirectional::ALR` | Socket (Input) | Returns the LREAL value and the trigger event. |
 | **AUI_OUT** | `adapter::types::unidirectional::AUI` | Plug (Output) | Outputs the converted UINT value and the confirmation event. |
 
@@ -75,7 +77,7 @@ Since this is a composite function block without its own Execution Control Chart
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Description |
-|----------|-------------|-------------|-------------|
+| ---------- | ------------- | ------------- | ------------- |
 | **ALR_TO_AUI** | ALR (LREAL) | AUI (UINT) | Adapter-based conversion LREAL→UINT. |
 | `F_LREAL_TO_UINT` | LREAL | UINT | Pure data conversion without an adapter. |
 | `LREAL_TO_INT` | LREAL | INT | Conversion to a signed integer. |

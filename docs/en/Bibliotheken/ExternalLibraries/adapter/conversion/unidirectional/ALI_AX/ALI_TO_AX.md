@@ -3,6 +3,7 @@
 ![ALI_TO_AX](./ALI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ALI_TO_AX** is a composite function block that converts an adapter of type **ALI** (containing a LINT value) into an adapter of type **AX** (containing a BOOL value).
@@ -35,7 +36,7 @@ The function block serves as a bidirectional bridge between adapters based on di
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **ALI_IN** | Socket (Input) | `adapter::types::unidirectional::ALI` | Input adapter with a LINT value. |
 | **AX_OUT** | Plug (Output) | `adapter::types::unidirectional::AX` | Output adapter with a BOOL value. |
 
@@ -49,10 +50,11 @@ The function block internally uses the comparison function block **F_NE** ("Not 
 3. In `F_NE`, the input value (`IN1`) is compared with the constant value `LINT#0` (`IN2`).
 
 4. The result `OUT` is a BOOL:
+
 - **TRUE** if `IN1 ≠ 0`
 - **FALSE** if `IN1 = 0`
-5. After the comparison is complete, `F_NE` sends a `CNF` event, which triggers the output adapter `AX_OUT` via its `E1`.
-6. Simultaneously, the BOOL value is output as `AX_OUT.D1`.
+1. After the comparison is complete, `F_NE` sends a `CNF` event, which triggers the output adapter `AX_OUT` via its `E1`.
+2. Simultaneously, the BOOL value is output as `AX_OUT.D1`.
 
 Thus, any LINT value (including negative numbers) is converted into a binary signal.
 

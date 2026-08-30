@@ -3,6 +3,7 @@
 ![Uebung_008_AE_network](./Uebung_008_AE_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung realisiert einen einfachen Blinker (Wechselblinker) unter Verwendung von Adapter-Funktionsbausteinen (FBs) für die ereignisgesteuerte Logik. Der Kern besteht aus einem Zyklusgeber (AE_CYCLE), einem Umschalter (AX_SWITCH) und einem SR-Flipflop (AX_SR). Über einen Aufteiler (AX_SPLIT_2) und einen Zusammenführer (AX_AE_MERGE) wird die Rückkopplung und die Ausgabe auf einen digitalen Ausgang realisiert. Die Übung demonstriert die Nutzung von Ereignis- und Adapterverbindungen in der 4diac-IDE.
@@ -83,7 +84,7 @@ Der Blinker arbeitet ereignisgesteuert nach folgendem Schema:
 3. **Schalter**: Der Ausgang `AX_AE_MERGE.OUT` wird an den Eingang `G` des `AX_SWITCH` gelegt. Der Schalter wertet den ankommenden Adapterzustand aus:
    - Bei Zustand `false` (Flipflop zurückgesetzt) wird ein Ereignis an `EO0` ausgegeben.
    - Bei Zustand `true` (Flipflop gesetzt) wird ein Ereignis an `EO1` ausgegeben.
-4. **SR-Flipflop**: 
+4. **SR-Flipflop**:
    - Ein Ereignis von `AX_SWITCH.EO0` gelangt an den Setzeingang `S` des `AX_SR`. Damit wird der Flipflop gesetzt → Ausgang `Q` wird `true`.
    - Ein Ereignis von `AX_SWITCH.EO1` gelangt an den Rücksetzeingang `R` des `AX_SR`. Damit wird der Flipflop zurückgesetzt → Ausgang `Q` wird `false`.
 5. **Ausgabe**: Über `AX_SPLIT_2` wird der Zustand `Q` auf zwei Pfade verteilt:
@@ -100,4 +101,4 @@ Die Übung „Uebung_008_AE" zeigt den Aufbau eines Blinkers mit Hilfe von 4diac
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -16,7 +16,7 @@ Besonderheit dieser Übung ist der Hinweis im Quellcode, dass dieser Lösungsweg
 
 In dieser Sub-Application kommen verschiedene Bausteine aus der `logiBUS` Bibliothek für die IO-Anbindung sowie Bausteine aus der `adapter` Bibliothek für die logische Verarbeitung zum Einsatz.
 
-### Haupt-Bausteine:
+### Haupt-Bausteine
 
 #### **DigitalInput_CLK_I1**
 
@@ -68,14 +68,14 @@ Die Logik dieser Übung basiert auf einer Rückkopplung des aktuellen Zustands, 
 1.  **Eingangssignal**: Ein Klick auf `DigitalInput_CLK_I1` löst ein Event aus (`IND`), welches den Konverter `AX_BOOL_TO_X` aktiviert (`REQ`).
 2.  **Entscheidungslogik (Weiche)**: Das Signal gelangt zum `AX_SWITCH` (Eingang `G`).
 3.  **Zustandsänderung**:
-    *   Der `AX_SWITCH` ist mit dem `AX_SR` (Speicher) verbunden.
-    *   Über `EO0` wird der Speicher gesetzt (`S`).
-    *   Über `EO1` wird der Speicher zurückgesetzt (`R`).
-    *   Welcher Weg gewählt wird, hängt vom aktuellen Zustand der Rückkopplung ab.
+    -   Der `AX_SWITCH` ist mit dem `AX_SR` (Speicher) verbunden.
+    -   Über `EO0` wird der Speicher gesetzt (`S`).
+    -   Über `EO1` wird der Speicher zurückgesetzt (`R`).
+    -   Welcher Weg gewählt wird, hängt vom aktuellen Zustand der Rückkopplung ab.
 4.  **Ausgabe und Rückkopplung**:
-    *   Der Ausgang des Speichers `AX_SR` geht in den Splitter `AX_SPLIT_2`.
-    *   **Zweig 1 (`OUT1`)**: Geht direkt an den `DigitalOutput_Q1`, um die Lampe zu schalten.
-    *   **Zweig 2 (`OUT2`)**: Wird zurückgeführt. Er läuft über `AX_X_TO_BOOL` (Konvertierung) zurück zu `AX_BOOL_TO_X`.
+    -   Der Ausgang des Speichers `AX_SR` geht in den Splitter `AX_SPLIT_2`.
+    -   **Zweig 1 (`OUT1`)**: Geht direkt an den `DigitalOutput_Q1`, um die Lampe zu schalten.
+    -   **Zweig 2 (`OUT2`)**: Wird zurückgeführt. Er läuft über `AX_X_TO_BOOL` (Konvertierung) zurück zu `AX_BOOL_TO_X`.
 5.  **Der Zyklus**: Durch diese Rückführung (Feedback Loop) "weiß" das System beim nächsten Klick, in welchem Zustand es sich befindet, und der `AX_SWITCH` schaltet entsprechend in den entgegengesetzten Zustand.
 
 ## Zusammenfassung
@@ -88,4 +88,4 @@ Obwohl die Funktionalität (Taster drücken -> Licht an, Taster drücken -> Lich
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

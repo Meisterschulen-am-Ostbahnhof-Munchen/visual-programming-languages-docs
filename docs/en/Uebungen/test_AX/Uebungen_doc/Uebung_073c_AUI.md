@@ -3,6 +3,7 @@
 ![Uebung_073c_AUI_network](./Uebung_073c_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the output of the speed signals **Ground Based Speed (GBSD)** and **Vehicle/Drive Speed (VDS)** to a Universal Terminal (UT) using physical addresses (PHYS). The signals are received via ISOBUS adapters (IA), scaled, and displayed on the UT using the `Q_NumericValue_PHYSA` blocks.
@@ -17,7 +18,7 @@ This exercise teaches how to use signal scaling and the adapter concept (*AUI*) 
 This exercise consists of six function blocks, all located within the subapp `Uebung_073c_AUI`.
 
 | Block Name | Type | Parameter | Description |
-|--------------|-----|------------|--------------|
+| -------------- | ----- | ------------ | -------------- |
 | `IA_GBSD` | `isobus::tecu::IA_GBSD` | QI = TRUE | ISOBUS interface block for **ground-based speed**. Returns the measured value as a UINT at output `SPEED`. |
 | `IA_VDS` | `isobus::tecu::IA_VDS` | QI = TRUE | ISOBUS interface module for **vehicle-related speed** (Vehicle/Drive Speed). Outputs the measured value as a UINT at output `NAV_SPEED`. |
 | `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD` | `logiBUS::signalprocessing::fieldbus::AUI_FIELDBUS_UINT_TO_SIGNAL_SCALED` | SCALE = 0.001, OFFSET = 0 | Scales the UINT value from `IA_GBSD` to a REAL value (multiplication by 0.001). |
@@ -32,12 +33,13 @@ This exercise consists of six function blocks, all located within the subapp `Ue
 The connections between the function blocks are made via **adapters (AUI)**. The data flow is as follows:
 
 1. **GBSD**
+
 - `IA_GBSD` receives the raw speed (UINT) via ISOBUS.
 - The output `SPEED` is routed via an adapter connection to the input `IN` of `FIELDBUS_UINT_TO_SIGNAL_SCALED_GBSD`.
 - This module scales the value using `SCALE = 0.001` and outputs the result as REAL at output `OUT`.
 - The scaled value is passed to the input `rPhys` of `Q_NumericValue_GBSD` and displayed on the UT.
 
-2. **VDS**
+1. **VDS**
 
 - `IA_VDS` outputs the navigation speed as a UINT signal at output `NAV_SPEED`.
 - This value is passed via an adapter connection to the scaling module `FIELDBUS_UINT_TO_SIGNAL_SCALED_VDS`.
@@ -57,6 +59,6 @@ Exercise **Exercise_073c_AUI** demonstrates how to read two speed signals (GBSD 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

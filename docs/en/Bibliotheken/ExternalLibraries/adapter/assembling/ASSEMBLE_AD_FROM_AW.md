@@ -3,9 +3,11 @@
 ![ASSEMBLE_AD_FROM_AW](./ASSEMBLE_AD_FROM_AW.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AD_FROM_AW** combines two word values (WORD) from a single unidirectional AW adapter into a double word (DWORD), which is output via a unidirectional AD adapter. The block encapsulates the logical combination of two 16-bit inputs into a 32-bit output and stores the result using an edge-triggered D flip-flop.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +23,7 @@ There are no direct event outputs here either. The output adapter **OUT** provid
 Data is read in via the two socket adapters:
 
 | Adapter | Type | Description |
-|---------|-----|---------------|
+| --------- | ----- | --------------- |
 | `WORD_00` | `adapter::types::unidirectional::AW` | First 16-bit word (lower-order part of the double word) |
 | WORD_01` | `adapter::types::unidirectional::AW` | Second 16-bit word (higher-order part of the double word) |
 
@@ -65,7 +67,7 @@ The function block provides two incoming adapters (sockets) and one outgoing ada
 The function block itself does not have an explicit state machine. However, its internal process can be characterized by the states of the D flip-flop:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Waiting for Event** | The flip-flop holds the last calculated value; no new input event is pending. |
 | **Calculation Active** | An event from WORD_00 or WORD_01 triggers the merge, and the flip-flop is clocked. |
 | **Output Active** | After the clock cycle, the new value is passed to `OUT`, and the output event is sent. |

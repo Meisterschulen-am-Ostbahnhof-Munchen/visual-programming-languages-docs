@@ -3,6 +3,7 @@
 ![ARRAY2VALUES_4_BYTE](ARRAY2VALUES_4_BYTE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ARRAY2VALUES_4_BYTE` splits a `BYTE` array of size 4 into 4 individual scalar variables `OUT_1`…`OUT_4`. It belongs to the generic `GEN_ARRAY2ARRAY` family (cf. [ARRAY2VALUES_2_LREAL](ARRAY2VALUES_2_LREAL.md)) and converts array data into discrete individual values.

@@ -41,18 +41,18 @@ Nicht vorhanden.
 
 Die Konstanten werden beim Kompilieren durch ihre fest definierten Werte ersetzt:
 
-*   `Override_K_Normal`: `UINT#0` — K-Wert für "kein Override" (`AX_AUI_MUX_3.IN1`, Normalwert).
-*   `Override_K_ForceFalse`: `UINT#1` — K-Wert für "Override auf FALSE erzwungen"
+-   `Override_K_Normal`: `UINT#0` — K-Wert für "kein Override" (`AX_AUI_MUX_3.IN1`, Normalwert).
+-   `Override_K_ForceFalse`: `UINT#1` — K-Wert für "Override auf FALSE erzwungen"
     (`AX_AUI_MUX_3.IN2`).
-*   `Override_K_ForceTrue`: `UINT#2` — K-Wert für "Override auf TRUE erzwungen"
+-   `Override_K_ForceTrue`: `UINT#2` — K-Wert für "Override auf TRUE erzwungen"
     (`AX_AUI_MUX_3.IN3`).
 
 ## Technische Besonderheiten
 
-*   **Direkte Kopplung an `AX_AUI_MUX_3`-Eingangsreihenfolge.** Die Zahlenwerte 0/1/2 entsprechen
+-   **Direkte Kopplung an `AX_AUI_MUX_3`-Eingangsreihenfolge.** Die Zahlenwerte 0/1/2 entsprechen
     exakt der Eingangsnummerierung von `AX_AUI_MUX_3` (`IN1`/`IN2`/`IN3`) — eine Änderung dieser
     Reihenfolge in [Override_K_Select](../Override_K_Select.md) müsste hier mit gepflegt werden.
-*   **Nur von `Override_K_Select` verwendet.** Anders als z. B. `OPC_UA_Endpoints` ist dieses
+-   **Nur von `Override_K_Select` verwendet.** Anders als z. B. `OPC_UA_Endpoints` ist dieses
     Paket eng an einen einzigen Baustein gekoppelt, nicht an mehrere unabhängige Verwendungsstellen.
 
 ## Zustandsübersicht
@@ -61,14 +61,14 @@ Da es sich um statische, konstante Werte handelt, existiert kein Zustandsautomat
 
 ## Anwendungsszenarien
 
-*   Referenzierung in den `IN0`/`IN1`-`Parameter`-Werten der beiden `F_SEL`-Bausteine in
+-   Referenzierung in den `IN0`/`IN1`-`Parameter`-Werten der beiden `F_SEL`-Bausteine in
     [Override_K_Select](../Override_K_Select.md).
-*   Vergleichswerte, falls ein Konsument den rohen `K`-Wert eines `AX_AUI_MUX_3` auswerten möchte,
+-   Vergleichswerte, falls ein Konsument den rohen `K`-Wert eines `AX_AUI_MUX_3` auswerten möchte,
     statt nur den gemuxten Ausgangswert zu verwenden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **[IDs](../../../isobus/UT/Q/const/IDs.md)** (ISOBUS-UT-Bibliothek): folgt demselben GCF-
+-   **[IDs](../../../isobus/UT/Q/const/IDs.md)** (ISOBUS-UT-Bibliothek): folgt demselben GCF-
     Muster (benannte Konstanten statt Literale), deckt aber ISOBUS-Objekt-IDs ab statt eines
     MUX-Selektors.
 

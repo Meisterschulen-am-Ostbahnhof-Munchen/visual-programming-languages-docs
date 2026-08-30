@@ -3,6 +3,7 @@
 ![AQ](./AQ.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Adapter `AQ` stellt eine unidirektionale Schnittstelle (Plug-Seite) für die Übertragung eines Ereignisses und eines Byte-Wertes (genutzt für 2 Bit) bereit. Er dient als Standarddefinition für die Kommunikation zwischen Funktionsbausteinen nach IEC 61499-1 und ermöglicht eine einfache, gerichtete Datenübergabe.
@@ -57,7 +58,7 @@ Der Adapter selbst besitzt keinen internen Zustand. Der sendende Funktionsbauste
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | AQ (dieser Adapter) | Andere Adapter (z. B. mit mehreren Events) |
-|---------|---------------------|--------------------------------------------|
+| --------- | --------------------- | -------------------------------------------- |
 | Ereignisse | 1 Ausgang | Oft mehrere Ein-/Ausgänge |
 | Daten | 1 Byte (2 Bit genutzt) | Häufig mehrere Variablen oder komplexe Typen |
 | Ausrichtung | Unidirektional (Plug-Seite) | Bidirektional oder reine Socket-Seite |

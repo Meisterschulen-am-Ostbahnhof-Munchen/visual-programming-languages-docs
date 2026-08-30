@@ -20,8 +20,8 @@ Nutzung des Ereignisses `BUTTON_DOUBLE_CLICK` zur Steuerung einer Speicherfunkti
 
 ![Uebung_004c1_network](./Uebung_004c1_network.svg)
 
-  * **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE`. Dieser ist im Parameter `InputEvent` auf `BUTTON_DOUBLE_CLICK` konfiguriert.
-  * **`E_T_FF`**: Das Toggle-Flip-Flop.
+  - **`DigitalInput_CLK_I1`**: Typ `logiBUS_IE`. Dieser ist im Parameter `InputEvent` auf `BUTTON_DOUBLE_CLICK` konfiguriert.
+  - **`E_T_FF`**: Das Toggle-Flip-Flop.
 
 -----
 

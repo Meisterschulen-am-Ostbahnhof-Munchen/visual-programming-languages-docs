@@ -3,6 +3,7 @@
 ![Uebung_011b1_network](./Uebung_011b1_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the processing of two numeric input values via ISOBUS (UT). The values are received as `DWORD`, converted to `UDINT`, added, and the result is provided as a numeric output value. It serves as an introductory example of combining data type conversion, arithmetic operations, and the use of the ISOBUS Numeric Value interface.
@@ -56,6 +57,6 @@ Exercise **Exercise_011b1** illustrates the entire data path from ISOBUS input t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

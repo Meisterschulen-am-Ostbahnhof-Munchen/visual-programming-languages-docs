@@ -3,22 +3,24 @@
 ![StringValue_IS](./StringValue_IS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **StringValue_IS** function block is an input service interface function block (Input SIFB) for receiving string data from a resource. It serves as a standardized interface for integrating external string information into the 4diac environment. Typical applications include connecting to ISOBUS systems, where strings such as names, status messages, or identifiers are received.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | Description | Data Carried |
-|---------|------|--------------|-------------------|
+| --------- | ------ | -------------- | ------------------- |
 | `INIT` | EInit | Service Interface Component Initialization | `QI`, `PARAMS`, `u16ObjId` |
 | `REQ` | Event | Request for data query or update | `QI` |
 
 ### **Event Outputs**
 
 | Event | Type | Description | Data Carried |
-|---------|------|-------------|-------------------|
+| --------- | ------ | ------------- | ------------------- |
 | `INITO` | EInit | Confirmation of successful initialization | `QO`, `STATUS` |
 | `CNF` | Event | Confirmation of executed request | `QO`, `STATUS`, `IN` |
 | `IND` | Event | Asynchronous indication – new input data from the resource | `QO`, `STATUS`, `IN` |
@@ -26,7 +28,7 @@ The **StringValue_IS** function block is an input service interface function blo
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|-------------|
+| ------ | ----- | -------------- | ------------- |
 | `QI` | BOOL | – | Event Qualifier: Controls the execution of the associated events |
 | `PARAMS` | STRING | – | Service parameter (e.g., configuration of access to the resource) |
 | `u16ObjId` | UINT | `ID_NULL` | Object ID that identifies the string to be read from the resource |
@@ -34,7 +36,7 @@ The **StringValue_IS** function block is an input service interface function blo
 ### **Data Outputs**
 
 | Name | Type | Description |
-|------|-----|-------------|
+| ------ | ----- | ------------- |
 | `QO` | BOOL | Event Qualifier: Indicates whether the output provides valid data |
 | `STATUS` | STRING | Service status message (e.g., error codes or success message) |
 | `IN` | STRING | Received string from the resource |
@@ -51,11 +53,11 @@ The **StringValue_IS** function block operates according to the standard scheme 
 
 The function block is configured by creating a `INIT` event. The parameters `QI` (qualifier), `PARAMS` (service parameter), and `u16ObjId` (object ID) are passed. After successful initialization, the function block confirms with the event `INITO` and returns the status via `QO` and `STATUS`.
 
-2. **Request (`REQ`)**
+1. **Request (`REQ`)**
 
 A `REQ` event triggers an active data query from the resource. The qualifier `QI` is evaluated. The response is returned with the event `CNF`. The received string is then available at the output `IN`.
 
-3. **Asynchronous Indication (`IND`)**
+1. **Asynchronous Indication (`IND`)**
 
 The resource can send new data at any time. The function block signals this via the event `IND`. Simultaneously, the current data is provided at output `IN`, and the status is provided via `QO` and `STATUS`.
 
@@ -105,7 +107,7 @@ Retrieving string parameters from a central configuration service.
 ## Comparison with Similar Function Blocks
 
 | Function Block | Data Type | Special Feature |
-|----------|----------|--------------|
+| ---------- | ---------- | -------------- |
 | `BOOL_IS` | BOOL | Simple Boolean inputs (e.g., switches) |
 | `INT_IS` | INT | Integer inputs (e.g., counter readings) |
 | REAL_IS` | REAL | Floating-point inputs (e.g., measured values) |
@@ -121,6 +123,6 @@ The **StringValue_IS** is an essential component for integrating string-based da
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

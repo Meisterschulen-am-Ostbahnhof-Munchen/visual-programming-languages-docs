@@ -16,7 +16,7 @@ Der Fokus liegt auf dem Baustein `AX_FB_R_TRIG`, der eine steigende Flanke erken
 
 In dieser Sub-Application kommen Hardware-Treiberbausteine sowie Logik- und Zeitbausteine zum Einsatz.
 
-### Sub-Bausteine:
+### Sub-Bausteine
 
 #### 1. Hardware-Eingang
 
@@ -54,16 +54,16 @@ Der Ablauf der Schaltung gestaltet sich wie folgt:
 
 1.  **Signaleingang**: Das Signal von `DigitalInput_I1` (Eingang I1) wird an den `CLK`-Eingang des Flankenerkennungsbausteins `AX_FB_R_TRIG` geleitet.
 2.  **Flankenauswertung**:
-    *   Wenn der Taster an I1 gedrückt wird, erkennt `AX_FB_R_TRIG` die positive Flanke.
-    *   Der Ausgang `Q` des Triggers wird kurzzeitig aktiv.
+    -   Wenn der Taster an I1 gedrückt wird, erkennt `AX_FB_R_TRIG` die positive Flanke.
+    -   Der Ausgang `Q` des Triggers wird kurzzeitig aktiv.
 3.  **Zeitsteuerung**: Dieses Signal wird an den Eingang `IN` des Timers `AX_TP` weitergeleitet.
 4.  **Ausgabe**: Der Timer aktiviert seinen Ausgang `Q` für genau **1 Sekunde** (`PT=T#1s`). Dieses Signal steuert den `DigitalOutput_Q1` an.
 
 **Zusammenhang der Verbindungen:**
 
-*   `DigitalInput_I1.IN` → `AX_FB_R_TRIG.CLK`
-*   `AX_FB_R_TRIG.Q` → `AX_TP.IN`
-*   `AX_TP.Q` → `DigitalOutput_Q1.OUT`
+-   `DigitalInput_I1.IN` → `AX_FB_R_TRIG.CLK`
+-   `AX_FB_R_TRIG.Q` → `AX_TP.IN`
+-   `AX_TP.Q` → `DigitalOutput_Q1.OUT`
 
 ## Zusammenfassung
 

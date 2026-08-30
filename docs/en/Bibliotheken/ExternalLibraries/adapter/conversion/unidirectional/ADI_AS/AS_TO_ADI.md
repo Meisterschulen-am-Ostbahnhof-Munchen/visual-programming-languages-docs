@@ -3,9 +3,11 @@
 ![AS_TO_ADI](./AS_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AS_TO_ADI** function block converts a SINT adapter (AS) into a DINT adapter (ADI). It is a composite function block that establishes a unidirectional, type-converting connection between the two different data adapters.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapter**
 
 | Type | Direction | Name | Description |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | Socket | Input | AS_IN | Adapter type `AS` (SINT, 8-bit signed integer) – receives the SINT signal. |
 | Plug | Output | ADI_OUT | Adapter type `ADI` (DINT, 32-bit signed integer) – outputs the converted DINT signal. |
 

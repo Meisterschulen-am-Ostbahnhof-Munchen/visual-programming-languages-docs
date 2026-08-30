@@ -3,9 +3,11 @@
 ![AQ_SPLIT_2](./AQ_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AQ_SPLIT_2` serves as a fan-out block. It distributes an incoming AQ (Analog Quantity) signal unidirectionally to two identical outputs. It thus implements a simple 1:2 signal multiplication for analog quantities.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|------|------|----------|--------------|
+| ------ | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AQ` | `IN` | Socket (Input) | Input adapter for the AQ signal to be split. |
 | `adapter::types::unidirectional::AQ` | `OUT1` | Plug (Output) | First output – provides the unaltered input signal. |
 | `adapter::types::unidirectional::AQ` | `OUT2` | Plug (Output) | Second output – also provides the unaltered input signal. |
@@ -71,6 +73,6 @@ The `AQ_SPLIT_2` is a simple yet useful component for distributing an analog sig
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

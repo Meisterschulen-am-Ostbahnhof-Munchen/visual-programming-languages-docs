@@ -1,8 +1,9 @@
 # Exercise_004c1_AX: Toggle Flip-Flop with IE using BUTTON_DOUBLE_CLICK
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_004c1_AX`. From here on, we will focus on the advanced capabilities of the `logiBUS_IE` block, which can recognize complex button patterns.
+This article describes the logiBUS® exercise `Uebung_004c1_AX`. From here on, we will focus on the advanced capabilities of the `logiBUS_IE` block, which can recognize complex button patterns
 ----
+
 ## Objective of the Exercise
 
 Using the event `BUTTON_DOUBLE_CLICK`.
@@ -17,7 +18,7 @@ Using the event `BUTTON_DOUBLE_CLICK`.
 
 ![Uebung_004c1_AX_network](./Uebung_004c1_AX_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Configured with `InputEvent = BUTTON_DOUBLE_CLICK`.
+- **`DigitalInput_CLK_I1`**: Configured with `InputEvent = BUTTON_DOUBLE_CLICK`.
 
 -----
 

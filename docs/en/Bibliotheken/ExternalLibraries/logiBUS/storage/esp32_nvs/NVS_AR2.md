@@ -3,9 +3,11 @@
 ![NVS_AR2](./NVS_AR2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The NVS_AR2 function block is used to store and load real values (floating-point numbers) into non-volatile storage (NVS) using a key. It encapsulates the logic of the underlying NVS block and provides a bidirectional AR2 adapter interface for asynchronous communication. This allows the block to be integrated into an event-driven environment where read and write operations are triggered asynchronously.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -74,4 +76,4 @@ The NVS_AR2 function block offers a clean, adapter-based interface for asynchron
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)

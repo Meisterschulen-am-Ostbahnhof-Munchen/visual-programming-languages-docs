@@ -3,6 +3,7 @@
 ![SET_LREAL](./SET_LREAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **SET_LREAL** dient dazu, einen Wert vom Typ LREAL an eine InOut-Variable zu übergeben. Der Eingangswert wird bei einer steigenden Flanke am REQ-Ereignis in die Zielvariable geschrieben und der Vorgang über das CNF-Ereignis quittiert.

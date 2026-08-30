@@ -3,9 +3,11 @@
 ![AL_TO_ALR](./AL_TO_ALR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_TO_ALR** is a composite function block (FB) that converts a unidirectional AL adapter (LWORD) into a unidirectional ALR adapter (LREAL). Internally, it uses the conversion block `F_LWORD_TO_LREAL` to convert an incoming LWORD value (64-bit integer) into an LREAL value (64-bit floating-point number) and output it via the output adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block has no direct data outputs. The converted LREAL value is outp
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **AL_IN** | Socket (Input) | `adapter::types::unidirectional::AL` | LWORD adapter that provides the input signal (LWORD) and a trigger event. |
 | **ALR_OUT** | Plug (Output) | `adapter::types::unidirectional::ALR` | LREAL adapter that outputs the converted signal (LREAL) and an acknowledgment event. |
 

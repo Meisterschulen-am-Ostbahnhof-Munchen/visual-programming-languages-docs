@@ -1,8 +1,9 @@
 # Exercise_134: ISOBUS Receive from Unclaimed Partner
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_134`.
+This article describes the logiBUS® exercise `Uebung_134`
 ----
+
 ## Overview
 
 [cite_start]This exercise demonstrates a solution for communicating with devices that do not perform standard-compliant ISOBUS address claiming [cite: 1].

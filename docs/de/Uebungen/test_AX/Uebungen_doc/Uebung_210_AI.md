@@ -54,25 +54,25 @@ Diese Übung implementiert einen Vorwärtszähler (CTU) gemäß IEC 61131-3 in e
 
 Die Schaltung arbeitet wie folgt zusammen:
 
-1. **Eingangssignale**:  
-   - Der digitale Eingang `Input_I1` wird über `Input_CU` als Zählimpuls (CU) an den Zähler `AI_FB_CTU` weitergeleitet.  
+1. **Eingangssignale**:
+   - Der digitale Eingang `Input_I1` wird über `Input_CU` als Zählimpuls (CU) an den Zähler `AI_FB_CTU` weitergeleitet.
    - Der digitale Eingang `Input_I2` wird über `Input_R` als Rücksetzsignal (R) an den Zähler weitergeleitet.
 
-2. **Preset-Wert**:  
+2. **Preset-Wert**:
    - Der Baustein `AI_INT_TO_I` liefert einen festen Wert von 5. Dieser wird einmalig über eine Ereignisverbindung von `Input_R.INITO` (Initialisierungsereignis) zu `AI_INT_TO_I.REQ` gesetzt und dann als Preset-Wert (PV) an den Zähler übergeben.
 
-3. **Zählerverhalten**:  
-   - Bei jeder steigenden Flanke an CU wird der interne Zähler um 1 erhöht.  
-   - Ein positiver Impuls an R setzt den Zähler auf 0 zurück.  
-   - Erreicht der Zählerstand (CV) den Preset-Wert (5), wird der Ausgang Q gesetzt.  
+3. **Zählerverhalten**:
+   - Bei jeder steigenden Flanke an CU wird der interne Zähler um 1 erhöht.
+   - Ein positiver Impuls an R setzt den Zähler auf 0 zurück.
+   - Erreicht der Zählerstand (CV) den Preset-Wert (5), wird der Ausgang Q gesetzt.
    - Der Ausgang Q wird über den Adapterausgang an den digitalen Ausgang `Output_Q1` geleitet.
 
-4. **Terminalausgabe**:  
-   - Der aktuelle Zählerstand (CV) wird über `AI_TO_AUDI` in das AUDI-Format konvertiert.  
+4. **Terminalausgabe**:
+   - Der aktuelle Zählerstand (CV) wird über `AI_TO_AUDI` in das AUDI-Format konvertiert.
    - Anschließend wird der Wert über `Q_NumericValue_AUDI` auf dem Terminal dargestellt.
 
-5. **Hinweise aus den Kommentaren**:  
-   - Der Baustein `AI_TO_AUDI` unterstützt keine negativen Zahlen (kann bei bestimmten Anwendungen zu Fehlern führen).  
+5. **Hinweise aus den Kommentaren**:
+   - Der Baustein `AI_TO_AUDI` unterstützt keine negativen Zahlen (kann bei bestimmten Anwendungen zu Fehlern führen).
    - Um die Ereignisrate zu reduzieren, kann optional ein `AX_D_FF` (D-Flipflop) zwischengeschaltet werden.
 
 ## Zusammenfassung
@@ -83,4 +83,4 @@ Die Übung demonstriert die Realisierung eines IEC 61131-3 Vorwärtszählers mit
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

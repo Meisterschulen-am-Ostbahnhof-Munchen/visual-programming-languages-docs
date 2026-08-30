@@ -3,6 +3,7 @@
 ![F_SPLIT_TOD](F_SPLIT_TOD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_SPLIT_TOD` splits a `TIME_OF_DAY` value into its individual date/time components (`HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`). It is the reverse of [F_CONCAT_TOD](F_CONCAT_TOD.md), which combines the same individual components back into a `TIME_OF_DAY` value.

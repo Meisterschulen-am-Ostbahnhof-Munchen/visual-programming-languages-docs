@@ -3,9 +3,11 @@
 ![AUS_TO_AS](./AUS_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUS_TO_AS** is a composite function block (FB) for converting a unidirectional OFF adapter (based on the USINT data type) into a unidirectional AS adapter (based on the SINT data type). It serves as a standardized interface between components that use different unsigned/signed integer types.
+
 ## Interface Structure
 
 The FB has no direct event or data inputs/outputs, but only two adapter interfaces:
@@ -29,7 +31,7 @@ No directly visible data outputs. The data is output via the plug adapter `AS_OU
 ### **Adapters**
 
 | Name | Type | Direction | Comment |
-|----------|-----------------------------------------------|----------|------------------------------|
+| ---------- | ----------------------------------------------- | ---------- | ------------------------------ |
 | `AUS_IN` | `adapter::types::unidirectional::AUS` (Socket) | Input | USINT Adapter Input |
 | `AS_OUT` | `adapter::types::unidirectional::AS` (Plug) | Output | SINT Adapter Output |
 

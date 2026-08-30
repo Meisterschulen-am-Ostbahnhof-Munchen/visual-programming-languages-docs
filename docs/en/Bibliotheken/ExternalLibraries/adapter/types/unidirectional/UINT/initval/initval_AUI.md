@@ -3,6 +3,7 @@
 ![initval_AUI](initval_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AUI` is the configurable initialization block for the [AUI](../AUI.md) adapter (data type `UINT`, 16-bit unsigned integer): it accepts a start value as a data input at initialization time and writes it to a `AUI` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

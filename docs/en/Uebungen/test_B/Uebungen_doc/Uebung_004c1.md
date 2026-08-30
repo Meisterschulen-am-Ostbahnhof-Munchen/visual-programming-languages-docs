@@ -1,8 +1,9 @@
 # Exercise_004c1: Toggle Flip-Flop with IE using BUTTON_DOUBLE_CLICK
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_004c1`. From here on, we will focus on the advanced capabilities of the `logiBUS_IE` block, which can recognize complex button patterns.
+This article describes the logiBUS® exercise `Uebung_004c1`. From here on, we will focus on the advanced capabilities of the `logiBUS_IE` block, which can recognize complex button patterns
 ----
+
 ## Objective of the Exercise
 
 Using the `BUTTON_DOUBLE_CLICK` event to control a memory function.
@@ -17,8 +18,8 @@ Using the `BUTTON_DOUBLE_CLICK` event to control a memory function.
 
 ![Uebung_004c1_network](./Uebung_004c1_network.svg)
 
-* **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. This is configured as `BUTTON_DOUBLE_CLICK` in the parameter `InputEvent`.
-* **`E_T_FF`**: The toggle flip-flop.
+- **`DigitalInput_CLK_I1`**: Type `logiBUS_IE`. This is configured as `BUTTON_DOUBLE_CLICK` in the parameter `InputEvent`.
+- **`E_T_FF`**: The toggle flip-flop.
 
 -----
 

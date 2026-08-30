@@ -3,29 +3,31 @@
 ![ILOCK_BLOCK_PROTECT](./ILOCK_BLOCK_PROTECT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ILOCK_BLOCK_PROTECT` implements an interlock-protected direction control with an adjustable dead time. As soon as an active input (e.g., `EI_UP` with `DI_UP = TRUE`) is detected, it is prioritized, and all conflicting signals are ignored until the active input is reset. After resetting, a configurable protection time (`DT_PROTECT`) elapses before a new direction can be activated. This reliably prevents unwanted direction changes or short circuits.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | with variables | Description |
-|----------|---------------|--------------|
+| ---------- | --------------- | -------------- |
 | `EI_UP` | `DI_UP`, `DT_PROTECT` | Event to activate forward direction |
-| `EI_DOWN`| `DI_DOWN`, `DT_PROTECT` | Event to activate reverse direction |
+| `EI_DOWN` | `DI_DOWN`, `DT_PROTECT` | Event to activate reverse direction |
 
 ### **Event Outputs**
 
 | Event | with variables | Description |
-|----------|----------------|--------------|
+| ---------- | ---------------- | -------------- |
 | `EO_UP` | `DO_UP` | Acknowledge active forward direction |
-| `EO_DOWN`| `DO_DOWN` | Acknowledge active reverse direction |
+| `EO_DOWN` | `DO_DOWN` | Acknowledge active reverse direction |
 
 ### **Data Inputs**
 
 | Variable | Type | Initial Value | Description |
-|--------------|---------|-------------|-------------|
+| -------------- | --------- | ------------- | ------------- |
 | `DI_UP` | BOOL | – | `TRUE` = forward, upward, right, clockwise |
 | `DI_DOWN` | BOOL | – | `TRUE` = reverse, downward, left, counterclockwise |
 | `DT_PROTECT` | TIME | `T#50ms` | Dead time after resetting a direction |
@@ -33,7 +35,7 @@ The function block `ILOCK_BLOCK_PROTECT` implements an interlock-protected direc
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|-----------|------|--------------|
+| ----------- | ------ | -------------- |
 | `DO_UP` | BOOL | `TRUE` = Forward direction active |
 | `DO_DOWN` | BOOL | `TRUE` = Reverse direction active |
 
@@ -51,7 +53,7 @@ The function block operates according to the **first priority** principle:
 
 Both outputs are `FALSE`. When an event with a valid condition is received (e.g., `EI_UP` for `DI_UP = TRUE`), the state changes in the corresponding direction (`UP` or `DOWN`).
 
-2. **Directional States (`UP` / `DOWN`)**
+1. **Directional States (`UP` / `DOWN`)**
 
 The corresponding output (`DO_UP` or `DO_DOWN`) is set to `TRUE`, the other to `FALSE`.
 
@@ -63,7 +65,7 @@ A new event with the same input is only processed if the input previously fell t
 
 If the active input is reset (e.g., `DI_UP` from `TRUE` to `FALSE`), the output is immediately set to `FALSE` and the timer `timeOut` is started. The dead time `DT_PROTECT` begins to run.
 
-4. **Evaluation State (`EVAL`)**
+1. **Evaluation State (`EVAL`)**
 
 After the dead time has elapsed, the function block leaves the protection phase and enters the `EVAL` state. The following decisions are made based on the current inputs:
 
@@ -84,7 +86,7 @@ After the dead time has elapsed, the function block leaves the protection phase 
 ## State Overview
 
 | State | Description |
-|--------------|---------------|
+| -------------- | --------------- |
 | `STOP` | Idle state: both outputs `FALSE`, waiting for the first valid event |
 | `UP` | Forward direction active: `DO_UP = TRUE`, `DO_DOWN = FALSE` |
 | `DOWN` | Reverse direction active: `DO_DOWN = TRUE`, `DO_UP = FALSE` |
@@ -102,7 +104,7 @@ After the dead time has elapsed, the function block leaves the protection phase 
 ## Comparison with similar components
 
 | Component | Properties |
-|----------|---------------|
+| ---------- | --------------- |
 | **SR Flip-Flop** | Simple set/reset logic, no dead time, no protection against simultaneous signals |
 | **ILOCK_BLOCK_PROTECT** | Prioritizes the first active input, dead time after each direction change, both outputs never active simultaneously `TRUE` |
 | **Interlock Block without Timer** | Blocking logic only, immediate switching possible, no protection time |

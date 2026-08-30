@@ -3,6 +3,7 @@
 ![Uebung_215b_AR_network](./Uebung_215b_AR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Abwärtszähler (CTD) nach IEC 61131-3 als Adaptervariante. Der Zähler wird über zwei digitale Eingänge (Count-Down und Load) gesteuert und gibt einen digitalen Ausgang (Q) sowie den aktuellen Zählerwert (CV) aus. Der Zählerwert wird über einen Konverter in eine Textdarstellung umgewandelt und auf einem Terminal (PHYS) ausgegeben. Der Preset-Wert (PV) wird fest auf 10 gesetzt und dem Zähler über einen weiteren Adapter zugeführt.
@@ -15,7 +16,7 @@ Lernziele:
 - Steuerung von logiBUS-Ein- und Ausgängen
 - Ausgabe numerischer Werte auf einem Terminal
 
-Schwierigkeitsgrad: Fortgeschritten  
+Schwierigkeitsgrad: Fortgeschritten
 Vorkenntnisse: Grundlagen der IEC 61131-3, 4diac-IDE, Adapterkonzept
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -93,4 +94,4 @@ Die Übung zeigt die Realisierung eines Abwärtszählers nach IEC 61131-3 unter 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

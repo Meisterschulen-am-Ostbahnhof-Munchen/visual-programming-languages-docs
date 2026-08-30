@@ -3,9 +3,11 @@
 ![AX_TO_ALI](./AX_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AX_TO_ALI** is a composite function block (FB) that converts a unidirectional AX adapter (BOOL) into a unidirectional ALI adapter (LINT). It was developed to convert BOOL values received via an AX socket into LINT values and output them via an ALI plug. The block internally uses the IEC 61131 conversion function `F_BOOL_TO_LINT`.
+
 ## Interface Structure
 
 The AX_TO_ALI has no direct event or data inputs/outputs. All communication takes place exclusively via adapters.
@@ -29,7 +31,7 @@ No separate data outputs. Data is output indirectly via the ALI adapter plug.
 ### **Adapter**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `AX_IN` | Socket | `adapter::types::unidirectional::AX` | BOOL adapter input: Receives a BOOL signal via the unidirectional AX adapter. |
 | `ALI_OUT` | Plug | `adapter::types::unidirectional::ALI` | LINT adapter output: Outputs the converted LINT value via the unidirectional ALI adapter. |
 
@@ -78,6 +80,6 @@ The AX_TO_ALI is a compact, license-compliant composite function block for relia
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

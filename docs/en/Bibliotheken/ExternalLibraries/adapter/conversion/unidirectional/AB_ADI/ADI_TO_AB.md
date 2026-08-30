@@ -3,9 +3,11 @@
 ![ADI_TO_AB](./ADI_TO_AB.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ADI_TO_AB` serves as a composite module for converting a 32-bit integer value (DINT) into a byte value (BYTE). It encapsulates the conversion between two unidirectional adapters: the **ADI adapter** (input) and the **AB adapter** (output). The module is used to transfer data from a DINT adapter to a BYTE adapter without requiring the user to implement the actual conversion logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -43,7 +45,7 @@ The converted data is output via the AB_OUT adapter:
 ### **Adapters**
 
 | Name | Direction | Adapter Type | Description |
-|---------|----------|------------------------------------------|--------------------------------|
+| --------- | ---------- | ------------------------------------------ | -------------------------------- |
 | ADI_IN | Socket | `adapter::types::unidirectional::ADI` | DINT adapter as input. |
 | AB_OUT | Plug | `adapter::types::unidirectional::AB` | BYTE adapter as output. |
 
@@ -89,6 +91,6 @@ The function block `ADI_TO_AB` offers a cleanly encapsulated, adapter-based conv
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

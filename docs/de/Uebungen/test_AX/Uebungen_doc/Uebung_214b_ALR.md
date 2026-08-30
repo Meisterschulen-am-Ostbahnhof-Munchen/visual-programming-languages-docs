@@ -3,6 +3,7 @@
 ![Uebung_214b_ALR_network](./Uebung_214b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung implementiert einen Vorwärtszähler (CTU) nach IEC 61131-3 als Adapter-Version. Der Zähler arbeitet mit dem Datentyp `ULINT`. Der aktuelle Zählwert wird über einen physikalischen Ausgang (`PHYSA_LREAL`) an ein Terminal ausgegeben. Der Preset-Wert wird initial auf 5 gesetzt.

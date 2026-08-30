@@ -21,8 +21,8 @@ Realisierung eines Nachlauf-Verhaltens. Der Ausgang soll beim Drücken des Taste
 ![Uebung_020d_network](./Uebung_020d_network.svg)
 
 1.  **Einschalten**: Nutzer drückt `I1`. Die Weiche leitet das Event an `EO1`. Dies bewirkt zwei Dinge:
-    *   Der Speicher `E_RS` wird sofort gesetzt (Lampe geht an).
-    *   Ein eventuell noch laufender Verzögerungs-Timer wird gestoppt (`E_DELAY.STOP`).
+    -   Der Speicher `E_RS` wird sofort gesetzt (Lampe geht an).
+    -   Ein eventuell noch laufender Verzögerungs-Timer wird gestoppt (`E_DELAY.STOP`).
 2.  **Halten**: Solange gedrückt wird, bleibt der Zustand stabil.
 3.  **Ausschalten**: Nutzer lässt `I1` los. Die Weiche schaltet auf `EO0`. Dies triggert den Verzögerungs-Timer (`E_DELAY.START`).
 4.  **Nachlauf**: Erst wenn die 2 Sekunden abgelaufen sind, feuert der Timer `E_DELAY.EO` ➡️ `E_RS.R`. Der Speicher wird zurückgesetzt, die Lampe geht aus.

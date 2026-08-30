@@ -31,9 +31,11 @@ When the `REQ` event occurs, the algorithm for converting the LREAL value at inp
 - **Data Types**: The function block processes 64-bit floating-point numbers (LREAL) and outputs 16-bit unsigned integers (UINT).
 - **Algorithm**: The conversion is performed directly by the built-in `LREAL_TO_UINT` function.
 - **Error Handling**: The function block does not have built-in error handling for overflow or invalid input values.
+
 1. **Wait State**: The function block waits for the `REQ` event.
 2. **Execution State**: The conversion is performed at `REQ`.
 3. **Confirmation State**: After successful conversion, `CNF` is output, and the function block returns to the wait state.
+
 - Conversion of sensor values (e.g., temperature measurements) into integer values for further processing.
 - Type conversion in control applications where floating-point numbers are required to integers for specific operations.
 - Interface adaptation between system components with different data types.
@@ -41,6 +43,7 @@ When the `REQ` event occurs, the algorithm for converting the LREAL value at inp
 - Other conversion blocks might offer additional functions such as range checking or error handling, but are more complex to use.
 
 The `F_LREAL_TO_UINT` function block offers a simple and efficient solution for the specific conversion of 64-bit floating-point numbers to 16-bit unsigned integers. Its simple interface and direct operation make it ideal for applications where fast type conversion without additional functions is required. However, for applications with critical values, additional checks should be implemented.
+
 ## Functionality
 
 ## Technical Features

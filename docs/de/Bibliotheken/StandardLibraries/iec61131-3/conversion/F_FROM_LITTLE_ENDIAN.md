@@ -3,6 +3,7 @@
 ![F_FROM_LITTLE_ENDIAN](F_FROM_LITTLE_ENDIAN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_FROM_LITTLE_ENDIAN` konvertiert einen Wert aus der Little-Endian (niedrigstwertiges Byte zuerst)-Byte-Reihenfolge. Er gehört zur Familie der Endian-Konvertierungsfunktionen, die für den plattformübergreifenden Austausch binärer Daten (z. B. über Netzwerkprotokolle oder mit Fremdsystemen) benötigt werden.

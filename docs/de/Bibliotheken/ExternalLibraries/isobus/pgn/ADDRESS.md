@@ -3,6 +3,7 @@
 ![ADDRESS](./ADDRESS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ADDRESS` ist ein globaler Konstantenblock, der spezielle Adresskonstanten für die Verwendung in ISOBUS-basierten Anwendungen definiert. Er stellt vordefinierte Werte für Quell- und Zieladressen (Source Address, SA) bereit, die in der ISOBUS-Kommunikation eine besondere Bedeutung haben. Dieser Block dient dazu, den Quellcode lesbarer und wartbarer zu machen, indem magische Zahlen durch aussagekräftige Namen ersetzt werden.
@@ -42,8 +43,8 @@ Diese Konstanten werden zur Compile-Zeit in den Code eingefügt und können nich
 
 ## Technische Besonderheiten
 
-*   **Typunterschied:** Auffällig ist, dass `NULL_A` als `BYTE` und `GLOBAL_A` als `INT` deklariert ist. Beide Werte liegen jedoch im darstellbaren Bereich beider Datentypen. Die Verwendung von `INT` für `GLOBAL_A` könnte auf eine spätere Erweiterbarkeit oder Kompatibilität mit anderen Teilen des Systems hindeuten.
-*   **Paketzuordnung:** Der Block ist Teil des Pakets `isobus::pgn`, was auf seine Verwendung in der Parametergruppennummer (PGN)-Kommunikation des ISOBUS-Protokolls hindeutet.
+-   **Typunterschied:** Auffällig ist, dass `NULL_A` als `BYTE` und `GLOBAL_A` als `INT` deklariert ist. Beide Werte liegen jedoch im darstellbaren Bereich beider Datentypen. Die Verwendung von `INT` für `GLOBAL_A` könnte auf eine spätere Erweiterbarkeit oder Kompatibilität mit anderen Teilen des Systems hindeuten.
+-   **Paketzuordnung:** Der Block ist Teil des Pakets `isobus::pgn`, was auf seine Verwendung in der Parametergruppennummer (PGN)-Kommunikation des ISOBUS-Protokolls hindeutet.
 
 ## Zustandsübersicht
 
@@ -53,16 +54,16 @@ Da es sich um einen Konstantenblock handelt, besitzt er keinen Zustandsautomaten
 
 Der `ADDRESS`-Block wird in ISOBUS-Anwendungen verwendet, beispielsweise in der Landtechnik (Traktoren, Anbaugeräte). Typische Szenarien sind:
 
-*   **Konfiguration von Nachrichten:** Beim Aufbau von PGN-Nachrichten (Parameter Group Number) werden diese Konstanten verwendet, um das Quell- oder Zieladressfeld zu belegen.
-*   **Netzwerkmanagement:** Die `NULL_A`-Adresse wird in speziellen Netzwerkmanagement-Nachrichten verwendet.
-*   **Broadcast-Kommunikation:** Die `GLOBAL_A`-Adresse wird genutzt, um Befehle oder Daten an alle angeschlossenen Geräte im ISOBUS-Netz zu senden.
+-   **Konfiguration von Nachrichten:** Beim Aufbau von PGN-Nachrichten (Parameter Group Number) werden diese Konstanten verwendet, um das Quell- oder Zieladressfeld zu belegen.
+-   **Netzwerkmanagement:** Die `NULL_A`-Adresse wird in speziellen Netzwerkmanagement-Nachrichten verwendet.
+-   **Broadcast-Kommunikation:** Die `GLOBAL_A`-Adresse wird genutzt, um Befehle oder Daten an alle angeschlossenen Geräte im ISOBUS-Netz zu senden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
 In der IEC 61499-Standardbibliothek gibt es keinen direkten äquivalenten Baustein, da globale Konstanten eine sprachspezifische Erweiterung (hier abgeleitet von Structured Text) innerhalb der 4diac-IDE sind. Ein ähnlicher Zweck könnte erreicht werden durch:
 
-*   **Direkte Werteingabe (Magic Numbers):** Das direkte Schreiben der Werte `254` oder `255` im Code ist möglich, aber schlechter Stil, da es die Lesbarkeit und Wartbarkeit beeinträchtigt.
-*   **Konstanten-Blöcke in anderen Sprachen:** In Funktionsblock-Programmiersprachen wie CFC oder SFC werden vergleichbare Konstanten oft in separaten Header-Dateien oder globalen Variablenlisten definiert.
+-   **Direkte Werteingabe (Magic Numbers):** Das direkte Schreiben der Werte `254` oder `255` im Code ist möglich, aber schlechter Stil, da es die Lesbarkeit und Wartbarkeit beeinträchtigt.
+-   **Konstanten-Blöcke in anderen Sprachen:** In Funktionsblock-Programmiersprachen wie CFC oder SFC werden vergleichbare Konstanten oft in separaten Header-Dateien oder globalen Variablenlisten definiert.
 
 Der Vorteil des `ADDRESS`-Blocks liegt in der zentralen, paketgebundenen Definition und der semantischen Klarheit.
 
@@ -74,4 +75,4 @@ Der `ADDRESS`-Funktionsblock ist ein einfacher, aber essentieller Hilfsbaustein 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

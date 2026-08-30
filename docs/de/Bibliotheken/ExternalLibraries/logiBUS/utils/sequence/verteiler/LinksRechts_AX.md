@@ -61,17 +61,17 @@ Der **LinksRechts_AX** Baustein implementiert eine Zustandsmaschine, die grunds�
 2.  **Aktivierung (Lauf):** Solange das Signal `EIN.D1` (Daten) zusammen mit einem Event `EIN.E1` als `TRUE` anliegt, geht der Baustein in einen aktiven Zustand (`Rechtslauf` oder `Linkslauf`). Dabei wird der entsprechende Ausgangsadapter (`Rechts` oder `Links`) auf `TRUE` gesetzt.
 3.  **Deaktivierung (Pause):** Wird `EIN.D1` zu `FALSE` (Ausschalten), wechselt der Baustein in den entsprechenden Pausenzustand (`Rechtslauf_Pause` oder `Linkslauf_Pause`). Die Ausgänge werden deaktiviert (`FALSE`).
 4.  **Wechsel-Logik (Alternieren):**
-    *   Befindet sich der Baustein in `Rechtslauf_Pause` und wird wieder eingeschaltet (`EIN` = TRUE), wechselt er standardmäßig in den **Linkslauf**.
-    *   Befindet sich der Baustein in `Linkslauf_Pause` und wird wieder eingeschaltet, wechselt er standardmäßig in den **Rechtslauf**.
+    -   Befindet sich der Baustein in `Rechtslauf_Pause` und wird wieder eingeschaltet (`EIN` = TRUE), wechselt er standardmäßig in den **Linkslauf**.
+    -   Befindet sich der Baustein in `Linkslauf_Pause` und wird wieder eingeschaltet, wechselt er standardmäßig in den **Rechtslauf**.
 5.  **Override-Logik (Erzwingen):**
-    *   Ist im Zustand `Rechtslauf_Pause` der Eingang `DI_Rechts` aktiv, wird der Wechsel zum Linkslauf unterbunden und erneut der **Rechtslauf** gestartet.
-    *   Ist im Zustand `Linkslauf_Pause` der Eingang `DI_Links` aktiv, wird der Wechsel zum Rechtslauf unterbunden und erneut der **Linkslauf** gestartet.
+    -   Ist im Zustand `Rechtslauf_Pause` der Eingang `DI_Rechts` aktiv, wird der Wechsel zum Linkslauf unterbunden und erneut der **Rechtslauf** gestartet.
+    -   Ist im Zustand `Linkslauf_Pause` der Eingang `DI_Links` aktiv, wird der Wechsel zum Rechtslauf unterbunden und erneut der **Linkslauf** gestartet.
 
 ## Technische Besonderheiten
 
-*   **AX-Adapter:** Der Baustein nutzt den generischen `unidirectional::AX` Typ. Dieser kombiniert typischerweise ein boolesches Datensignal (`D1`) mit einem Ereignis (`E1`).
-*   **Priorisierung:** Laut der internen Beschreibung ist "Nur Rechtslauf vorrangig vor Nur Linkslauf", was sich in den Startbedingungen widerspiegelt, jedoch wird die Sequenzlogik primär durch den vorherigen Zustand (History) bestimmt.
-*   **Status-Reporting:** Jede Zustandsänderung aktualisiert die `STATE`-Variable und feuert das `EO`-Event. Die Zustandsnamen werden über eine externe Enumeration (`STATES::...`) bezogen.
+-   **AX-Adapter:** Der Baustein nutzt den generischen `unidirectional::AX` Typ. Dieser kombiniert typischerweise ein boolesches Datensignal (`D1`) mit einem Ereignis (`E1`).
+-   **Priorisierung:** Laut der internen Beschreibung ist "Nur Rechtslauf vorrangig vor Nur Linkslauf", was sich in den Startbedingungen widerspiegelt, jedoch wird die Sequenzlogik primär durch den vorherigen Zustand (History) bestimmt.
+-   **Status-Reporting:** Jede Zustandsänderung aktualisiert die `STATE`-Variable und feuert das `EO`-Event. Die Zustandsnamen werden über eine externe Enumeration (`STATES::...`) bezogen.
 
 ## Zustandsübersicht
 
@@ -87,15 +87,15 @@ Die ECC (Execution Control Chart) definiert folgende Zustände:
 
 ## Anwendungsszenarien
 
-*   **Pendelbetrieb:** Automatische Steuerung von Mechanismen, die sich hin- und herbewegen müssen (z.B. ein Scheibenwischer-Modus oder ein Reinigungskopf), gesteuert durch einen einzigen Taster (`EIN`).
-*   **Beregnungsanlagen:** Sequentielle Ansteuerung von zwei Sektoren (Sektor Rechts -> Pause -> Sektor Links -> Pause), wobei bei Bedarf ein Sektor mehrfach hintereinander aktiviert werden kann (mittels `DI_Rechts`/`DI_Links`).
-*   **Reversiermotor:** Steuerung eines Motors, der bei jedem Neustart die Drehrichtung ändern soll, sofern nicht anders vorgegeben.
+-   **Pendelbetrieb:** Automatische Steuerung von Mechanismen, die sich hin- und herbewegen müssen (z.B. ein Scheibenwischer-Modus oder ein Reinigungskopf), gesteuert durch einen einzigen Taster (`EIN`).
+-   **Beregnungsanlagen:** Sequentielle Ansteuerung von zwei Sektoren (Sektor Rechts -> Pause -> Sektor Links -> Pause), wobei bei Bedarf ein Sektor mehrfach hintereinander aktiviert werden kann (mittels `DI_Rechts`/`DI_Links`).
+-   **Reversiermotor:** Steuerung eines Motors, der bei jedem Neustart die Drehrichtung ändern soll, sofern nicht anders vorgegeben.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Einfaches Toggle (FlipFlop):** Ein Standard-Toggle schaltet nur einen Ausgang Ein/Aus. `LinksRechts_AX` schaltet zwischen *zwei* Ausgängen um.
-*   **RS-Glied:** Ein RS-Glied speichert nur einen Zustand basierend auf Set/Reset. Dieser Baustein beinhaltet eine Sequenzlogik (History-Memory), da er weiß, welcher Zustand *vor* der Pause aktiv war.
-*   **E_SELECT:** Ähnelt einem Selektor, aber `LinksRechts_AX` beinhaltet die zeitliche Komponente des "Pausierens" und des automatischen Wechsels beim nächsten Startsignal.
+-   **Einfaches Toggle (FlipFlop):** Ein Standard-Toggle schaltet nur einen Ausgang Ein/Aus. `LinksRechts_AX` schaltet zwischen *zwei* Ausgängen um.
+-   **RS-Glied:** Ein RS-Glied speichert nur einen Zustand basierend auf Set/Reset. Dieser Baustein beinhaltet eine Sequenzlogik (History-Memory), da er weiß, welcher Zustand *vor* der Pause aktiv war.
+-   **E_SELECT:** Ähnelt einem Selektor, aber `LinksRechts_AX` beinhaltet die zeitliche Komponente des "Pausierens" und des automatischen Wechsels beim nächsten Startsignal.
 
 ## Fazit
 

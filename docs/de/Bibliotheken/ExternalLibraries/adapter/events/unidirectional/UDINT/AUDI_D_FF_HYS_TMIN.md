@@ -5,6 +5,7 @@ Kein Bild vorhanden
 ![AUDI_D_FF_HYS_TMIN](./AUDI_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_D_FF_HYS_TMIN** realisiert ein taktflankengesteuertes Daten-Latch (D-Flipflop) mit einer Hysterese-Funktion und einer Mindestverweilzeit zwischen den Ausgangsereignissen (EO). Er dient der stabilen und entstörten Übernahme eines Datenwertes bei gleichzeitiger Unterdrückung von Rauschen und unerwünscht schnellen Schaltvorgängen. Der FB kapselt die Logik eines internen Bausteins `E_D_FF_ANY_HYS_TMIN` und stellt die Ein‑/Ausgänge über standardisierte Adapter bereit.

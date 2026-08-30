@@ -3,9 +3,11 @@
 ![AS_TO_AUDI](./AS_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The AS_TO_AUDI function block is a composite function block that performs a conversion from a SINT adapter (AS) to a UDINT adapter (AUDI). It serves as a bridge between two different adapter types and enables the seamless integration of components that use different data types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ Not present. Data output is provided via the adapter plug **AUDI_OUT**.
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | **AS_IN** | `adapter::types::unidirectional::AS` | Socket (Input) | SINT adapter that provides an input value (SINT) and a corresponding event. |
 | **AUDI_OUT** | `adapter::types::unidirectional::AUDI` | Plug (Output) | UDINT adapter that outputs the converted value (UDINT) and an event. |
 

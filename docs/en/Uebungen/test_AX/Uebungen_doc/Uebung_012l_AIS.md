@@ -3,9 +3,11 @@
 ![Uebung_012l_AIS_network](./Uebung_012l_AIS_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of the AIS adapter protocol for communication between a string input block and non-volatile memory (NVS). The entered string is passed to the NVS block via an AIS adapter and stored there. A read block then retrieves the currently stored value. This exercise serves as a simple example of storing configuration or status data using the AIS model in 4diac.
+
 ## Function Blocks Used (FBs)
 
 ### StringValue_AIS
@@ -57,6 +59,6 @@ The exercise **Exercise_012l_AIS** demonstrates a minimalist chain: String input
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

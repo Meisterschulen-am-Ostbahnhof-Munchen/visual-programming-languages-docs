@@ -3,9 +3,11 @@
 ![AS_TO_AUI](./AS_TO_AUI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_TO_AUI` is a composite function block (FB) that converts a SINT adapter input (`AS`) into a UINT adapter output (`AUI`). It encapsulates the type conversion and enables a clean, adapter-based interface between components that use different data types.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block `AS_TO_AUI` is a composite function block (FB) that converts 
 ### **Adapters**
 
 | Label | Type | Direction | Description |
-|-------------|-----|----------|--------------|
+| ------------- | ----- | ---------- | -------------- |
 | `AS_IN` | `adapter::types::unidirectional::AS` | Socket (Input) | Provides the SINT value and the triggering event. |
 | `AUI_OUT` | `adapter::types::unidirectional::AUI` | Plug (Output) | Outputs the converted UINT value and the acknowledgment event. |
 
@@ -61,6 +63,7 @@ The entire process is atomic within an event cycle: event in, data conversion, e
 Since this is a composite function block without its own state machine, there is no internal state machine. The function block is completely event-driven and executes the conversion immediately upon each trigger.
 
 -
+
 ## Application Scenarios
 
 - **Connecting Different Bus Systems**: If a sensor (e.g., AS-Interface) delivers SINT values, but the controller expects UINT values, this function block can handle the translation.
@@ -80,6 +83,6 @@ The `AS_TO_AUI` module provides a simple, reliable, and standardized method for 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

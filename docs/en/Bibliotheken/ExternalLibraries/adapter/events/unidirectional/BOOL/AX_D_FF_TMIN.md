@@ -3,9 +3,11 @@
 ![AX_D_FF_TMIN](./AX_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_D_FF_TMIN** implements a data-latch D flip-flop that additionally enforces a minimum time between successive event outputs (e.g., EO). It serves as a modular wrapper around the IEC 61499 standard function block `E_D_FF_TMIN` and uses a unidirectional adapter (`adapter::types::unidirectional::AX`) for event-driven data transfer. This function block is particularly suitable for applications requiring reliable data transfer with an adjustable minimum interval between output pulses.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ This function block has no direct data outputs; the latching data value is provi
 ### **Adapters**
 
 | Role | Name | Type | Description |
-|-------|------|-----|--------------|
+| ------- | ------ | ----- | -------------- |
 | Socket | `I` | adapter::types::unidirectional::AX | Input adapter; Provides the data word to be latched (`D1`) and the clock event (`E1`). |
 | Plug | `Q` | adapter::types::unidirectional::AX | Output adapter; provides the latching data word (`D1`) and the output event (`E1`). |
 
@@ -45,11 +47,12 @@ The function block encapsulates the internal function block `E_D_FF_TMIN`, which
 
 1. **Initialization**: When a `INIT` event is received, the current time `Tmin` is stored as the minimum lock time for the output `EO`. The function block acknowledges this with `INITO`.
 2. **Clocking (D Flip-Flop)**:
+
 - An event at socket `I.E1` is forwarded as a clock signal (CLK) to the internal flip-flop.
 - Simultaneously, the data value `I.D1` is adopted as the new input value `D`.
 - On each rising edge of the clock (here: each `E1` event), the current data value `D` is acquired and made available at output `Q`.
 - After acquisition, an output event `EO` is generated at plug `Q.E1` – but only after the minimum lock time since the last `EO` has elapsed. This ensures that output pulses do not follow each other faster than specified by `Tmin`.
-3. **Output**: The latching data value appears at plug `Q.D1`, and the corresponding event at plug `Q.E1`.
+1. **Output**: The latching data value appears at plug `Q.D1`, and the corresponding event at plug `Q.E1`.
 
 ## Technical Features
 
@@ -75,7 +78,7 @@ The function block does not have an explicit state machine. The internal logic o
 ## Comparison with Similar Components
 
 | Component | Difference |
-|----------|-------------|
+| ---------- | ------------- |
 | `E_D_FF` (Standard D Flip-Flop) | No time limit on output pulses; events are forwarded immediately. |
 | `AX_D_FF_TMIN` (present) | Inserts the minimum interval `Tmin` between output events, implemented via the built-in `E_D_FF_TMIN`. |
 | `E_CTD` / `E_CTU` (counter) | Count events; do not offer data transfer or latching functionality. |
@@ -90,5 +93,5 @@ The **AX_D_FF_TMIN** is a specialized function block for applications that requi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter function block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter function block on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

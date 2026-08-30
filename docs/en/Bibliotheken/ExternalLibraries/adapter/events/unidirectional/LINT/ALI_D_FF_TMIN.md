@@ -6,13 +6,13 @@
 The function block **ALI_D_FF_TMIN** implements a data storage (D flip-flop) with an adapter-based input and output and a configurable minimum dwell time between output events. It serves to accept an incoming data value on a rising edge at the input and release it after a minimum time to avoid cyclical conditions or timing issues in communication.
 
 | Event | Type | With Variables | Comment |
-|----------|-----|----------------|------------|
+| ---------- | ----- | ---------------- | ------------ |
 | INIT | EInit | Tmin | Initialization request, sets the minimum dwell time |
 | Event | Type | With Variables | Comment |
-|----------|-----|---------------|-----------|
+| ---------- | ----- | --------------- | ----------- |
 | INITO | EInit | – | Initialization Confirmation |
 | Variable | Type | Comment |
-|----------|-------|-----------|
+| ---------- | ------- | ----------- |
 | Tmin | TIME | Minimum time between two output events (EO) |
 
 No direct data outputs. The latched value is provided via the **Q-Adapter**.
@@ -64,7 +64,7 @@ The exact state machine is located in the internal function block and is not sho
 - **Sequential Processing with Minimum Interval**: Ensures that subsequent function blocks have sufficient processing time.
 
 | Function Block | Difference |
-|----------|-------------|
+| ---------- | ------------- |
 | `ALI_D_FF` (without TMIN) | No minimum time between output events, immediate forwarding on every edge. |
 | `E_D_FF` (Standard-61499) | Direct event inputs and outputs, without adapters or timing. |
 | `E_D_FF_ANY_TMIN` | Same functionality, but with dedicated data and event ports, not via adapters. |

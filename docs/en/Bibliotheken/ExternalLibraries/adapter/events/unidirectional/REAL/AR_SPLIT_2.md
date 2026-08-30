@@ -3,9 +3,11 @@
 ![AR_SPLIT_2](./AR_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR_SPLIT_2** is a generic function block that splits an incoming adapter of type `adapter::types::unidirectional::AR` into two separate outputs (OUT1, OUT2). It serves to forward a signal to two subsequent function blocks without modifying the data. The function block is implemented as a generic type (`GEN_AR_SPLIT`) and is parameterized at runtime.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AR` | IN | Socket | Input signal (AR) |
 | `adapter::types::unidirectional::AR` | OUT1 | Plug | First output (identical to IN) |
 | `adapter::types::unidirectional::AR` | OUT2 | Plug | Second output (identical to IN) |
@@ -69,6 +71,6 @@ The **AR_SPLIT_2** is a simple yet essential module for multiplying an AR signal
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

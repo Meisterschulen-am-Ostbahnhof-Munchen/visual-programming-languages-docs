@@ -6,6 +6,7 @@
 
 The OR_8 function block is a generic function block for calculating a bitwise OR operation. It supports up to 8 inputs and is classified according to the IEC 61131-3 standard. This function block is particularly suitable for applications where multiple binary signals need to be logically combined.
 ![OR_8](OR_8.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

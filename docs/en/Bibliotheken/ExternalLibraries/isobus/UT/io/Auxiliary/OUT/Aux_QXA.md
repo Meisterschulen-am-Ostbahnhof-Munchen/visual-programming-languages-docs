@@ -75,7 +75,7 @@ Compared to simple Boolean output blocks, this offers Aux_QXA:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_003c_sub_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
+- [Exercise_003c_sub_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003c_sub_AX.md)
 
 ## Conclusion
 

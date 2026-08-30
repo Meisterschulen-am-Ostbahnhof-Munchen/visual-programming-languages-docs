@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_MUX_2` (Event Multiplexer) is a function block according to IEC 61499 that combines two event inputs (`EI1`, `EI2`) into a single event output (`EO`). In addition to combining the inputs, the block outputs a data output, `K`, indicating which input triggered the event. It is the counterpart to the `E_DEMUX_2`.
@@ -28,6 +29,7 @@ The `E_MUX_2` (Event Multiplexer) is a function block according to IEC 61499 tha
 
 1. **Event Receipt**: The function block waits for an event at one of its inputs (`EI1` or `EI2`).
 2. **Forwarding and Identification**:
+
 - When an event arrives at `EI1`, the data output `K` is set to `0`, and the `EO` event is immediately triggered.
 - When an event arrives at `EI2`, the data output `K` is set to `1`, and the `EO` event is immediately triggered.
 
@@ -48,7 +50,7 @@ In this way, the event flow is merged while preserving information about the eve
 
 ## 🛠️ Related Exercises
 
-* [Exercise_172](../../../Uebungen/test_B/Uebungen_doc/Uebung_172.md)
+- [Exercise_172](../../../Uebungen/test_B/Uebungen_doc/Uebung_172.md)
 
 ## Conclusion
 

@@ -3,9 +3,11 @@
 ![AUI_SPLIT_6](./AUI_SPLIT_6.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUI_SPLIT_6** is used to split an incoming **AUI adapter** (Application Universal Interface) into six outgoing AUI adapters. It is designed as a generic function block capable of distributing the incoming AUI signal to all six outputs without any data processing or logic.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ No data outputs available.
 The function block uses adapters exclusively for communication:
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | Input | **IN** | `adapter::types::unidirectional::AUI` | Incoming AUI adapter being split. |
 | Output | **OUT1** | `adapter::types::unidirectional::AUI` | First outgoing AUI adapter. |
 | Output | **OUT2** | `adapter::types::unidirectional::AUI` | Second outgoing AUI adapter. |
@@ -77,6 +79,6 @@ The **AUI_SPLIT_6** is a simple yet effective distribution block for AUI signals
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

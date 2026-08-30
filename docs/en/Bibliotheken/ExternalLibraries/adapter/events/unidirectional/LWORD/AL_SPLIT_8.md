@@ -3,9 +3,11 @@
 ![AL_SPLIT_8](./AL_SPLIT_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AL_SPLIT_8` distributes an incoming unidirectional AL signal (socket `IN`) to eight identical outputs (plugs `OUT1` to `OUT8`). It is declared as a generic block and serves for simple signal multiplication in 4diac applications.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AL` | `IN` | Socket (Input) | Incoming AL signal |
 | `adapter::types::unidirectional::AL` | `OUT1` … `OUT8` | Plugs (Output) | Eight outgoing AL signals |
 
@@ -69,6 +71,6 @@ The `AL_SPLIT_8` is a simple yet important function block for multiplying AL ada
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

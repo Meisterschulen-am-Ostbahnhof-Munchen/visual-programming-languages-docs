@@ -3,6 +3,7 @@
 ![AW_TO_ALI](./AW_TO_ALI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AW_TO_ALI** ist ein zusammengesetzter (Composite) Baustein, der einen unidirektionalen Adapter vom Typ **AW** (WORD) in einen Adapter vom Typ **ALI** (LINT) umwandelt. Er wird eingesetzt, um Daten zwischen verschiedenen Adapterschnittstellen zu konvertieren, ohne dass der Anwender die eigentliche Konvertierungslogik implementieren muss. Der Baustein nutzt intern den IEC 61131‑Funktionsbaustein `F_WORD_TO_LINT` und stellt die typische Ereignis‑/Datensteuerung über die mitgelieferten Adapter‑Schnittstellen bereit.
@@ -21,20 +22,20 @@ Der Funktionsblock **AW_TO_ALI** ist ein zusammengesetzter (Composite) Baustein,
 
 Eingehende Daten werden über den **Socket AW_IN** geführt:
 
-*   **D1** (Datentyp: WORD) – der zu konvertierende 16‑Bit‑Wert.
+-   **D1** (Datentyp: WORD) – der zu konvertierende 16‑Bit‑Wert.
 
 ### **Daten-Ausgänge**
 
 Die konvertierten Daten werden über den **Plug ALI_OUT** ausgegeben:
 
-*   **D1** (Datentyp: LINT) – der konvertierte 64‑Bit‑Wert (Long Integer).
+-   **D1** (Datentyp: LINT) – der konvertierte 64‑Bit‑Wert (Long Integer).
 
 ### **Adapter**
 
 Der Baustein besitzt zwei Adapter‑Schnittstellen:
 
-*   **Socket AW_IN** – Unidirektionaler Eingangsadapter (Typ AW), der die Verbindung zu einem vorherigen Baustein herstellt, der WORD‑Daten liefert.
-*   **Plug ALI_OUT** – Unidirektionaler Ausgangsadapter (Typ ALI), der die konvertierten LINT‑Daten an nachfolgende Bausteine weitergibt.
+-   **Socket AW_IN** – Unidirektionaler Eingangsadapter (Typ AW), der die Verbindung zu einem vorherigen Baustein herstellt, der WORD‑Daten liefert.
+-   **Plug ALI_OUT** – Unidirektionaler Ausgangsadapter (Typ ALI), der die konvertierten LINT‑Daten an nachfolgende Bausteine weitergibt.
 
 Beide Adapter sind unidirektional, d. h. sie übertragen Ereignisse und Daten nur in eine Richtung (Eingang → Ausgang).
 
@@ -52,11 +53,11 @@ Damit ist die Datenkonvertierung zu einem sicheren, ereignisgesteuerten Zeitpunk
 
 ## Technische Besonderheiten
 
-*   **Composite‑Baustein** – Die Konvertierungslogik ist vollständig in einem inneren Netzwerk gekapselt, das nur aus einem einzigen Konvertierungs‑FB besteht. Der Baustein besitzt keinen eigenen ECC‑Zustandsautomaten.
-*   **Adapter‑basierte Schnittstelle** – Statt einzelner Ereignis‑/Daten‑Ein‑/Ausgänge werden Adapter verwendet. Dies ermöglicht eine modulare, wieder verwendbare Verbindung in Adapter‑basierten Steuerungsarchitekturen.
-*   **Paket‑Struktur** – Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt und verwendet den Konverter `iec61131::conversion::F_WORD_TO_LINT` aus der IEC‑61131‑Konvertierungsbibliothek.
-*   **Unidirektionale Richtung** – Daten fließen nur vom Eingangsadapter zum Ausgangsadapter; Rückwärtskommunikation ist nicht vorgesehen.
-*   **Lizenz** – Der Quellcode unterliegt der Eclipse Public License 2.0 (EPL‑2.0), entwickelt von der HR Agrartechnik GmbH.
+-   **Composite‑Baustein** – Die Konvertierungslogik ist vollständig in einem inneren Netzwerk gekapselt, das nur aus einem einzigen Konvertierungs‑FB besteht. Der Baustein besitzt keinen eigenen ECC‑Zustandsautomaten.
+-   **Adapter‑basierte Schnittstelle** – Statt einzelner Ereignis‑/Daten‑Ein‑/Ausgänge werden Adapter verwendet. Dies ermöglicht eine modulare, wieder verwendbare Verbindung in Adapter‑basierten Steuerungsarchitekturen.
+-   **Paket‑Struktur** – Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt und verwendet den Konverter `iec61131::conversion::F_WORD_TO_LINT` aus der IEC‑61131‑Konvertierungsbibliothek.
+-   **Unidirektionale Richtung** – Daten fließen nur vom Eingangsadapter zum Ausgangsadapter; Rückwärtskommunikation ist nicht vorgesehen.
+-   **Lizenz** – Der Quellcode unterliegt der Eclipse Public License 2.0 (EPL‑2.0), entwickelt von der HR Agrartechnik GmbH.
 
 ## Zustandsübersicht
 
@@ -64,14 +65,14 @@ Da es sich um einen zusammengesetzten Baustein ohne eigenen Zustandsautomaten (E
 
 ## Anwendungsszenarien
 
-*   **Datenkonvertierung in Adapterketten** – Wenn ein Steuerungssystem auf unidirektionalen Adaptern basiert und eine Komponente WORD‑Daten liefert, eine nachfolgende Komponente jedoch LINT‑Daten erwartet, kann AW_TO_ALI als Zwischenglied eingefügt werden.
-*   **Anbindung von Feldgeräten mit unterschiedlichen Bitbreiten** – Z. B. die Integration eines Sensors, der 16‑Bit‑Messwerte (WORD) liefert, in eine Logik, die mit 64‑Bit‑Werten (LINT) arbeitet (etwa für hochauflösende Zähler oder Zeitstempel).
-*   **Typanpassung in Bibliotheken** – Erweiterung einer bestehenden Adapterbibliothek um komfortable Konvertierungsbausteine, um die Kompatibilität zwischen verschiedenen Datenformaten zu gewährleisten.
+-   **Datenkonvertierung in Adapterketten** – Wenn ein Steuerungssystem auf unidirektionalen Adaptern basiert und eine Komponente WORD‑Daten liefert, eine nachfolgende Komponente jedoch LINT‑Daten erwartet, kann AW_TO_ALI als Zwischenglied eingefügt werden.
+-   **Anbindung von Feldgeräten mit unterschiedlichen Bitbreiten** – Z. B. die Integration eines Sensors, der 16‑Bit‑Messwerte (WORD) liefert, in eine Logik, die mit 64‑Bit‑Werten (LINT) arbeitet (etwa für hochauflösende Zähler oder Zeitstempel).
+-   **Typanpassung in Bibliotheken** – Erweiterung einer bestehenden Adapterbibliothek um komfortable Konvertierungsbausteine, um die Kompatibilität zwischen verschiedenen Datenformaten zu gewährleisten.
 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Eingang(sadapter) | Ausgang(sadapter) | Konvertierung | Besonderheiten |
-|----------|-------------------|-------------------|---------------|----------------|
+| ---------- | ------------------- | ------------------- | --------------- | ---------------- |
 | **AW_TO_ALI** | AW (WORD) | ALI (LINT) | WORD → LINT | Unidirektional, Composite |
 | `F_WORD_TO_LINT` (IEC 61131) | Einzelner REQ‑Eingang, IN (WORD) | Einzelner CNF‑Ausgang, OUT (LINT) | WORD → LINT | Standard‑FB, kein Adapter |
 | `ALI_TO_AW` (hypothetisch) | ALI (LINT) | AW (WORD) | LINT → WORD | Umgekehrte Richtung |

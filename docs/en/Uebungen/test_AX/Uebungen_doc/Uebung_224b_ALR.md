@@ -3,9 +3,11 @@
 ![Uebung_224b_ALR_network](./Uebung_224b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a standard IEC 61131-3 up/down counter (CTUD) as an adapter version with the ULINT data type. The current counter value is output via a terminal output as the physical value (PHYSA_LREAL). Control is achieved via four digital inputs, two digital outputs, and a start value set using a ULINT-to-ULI converter.
+
 ## Function Blocks Used (FBs)
 
 - **AULI_FB_CTUD**: Adapter-based forward/backward counter (Type: ULINT)
@@ -35,15 +37,18 @@ This exercise does not use any further sub-blocks; all function blocks are locat
 
 1. **Initialization**: At startup (INITO event of Input_LD), the function block AULI_ULINT_TO_ULI is triggered, which passes the fixed starting value ULINT#5 to the PV input of the counter. This presets the counter to 5.
 2. **Counting Operation**:
+
 - **Count Up**: Pulse at input I1 → Input_CU → Adapter CU → Counter increments CV by 1.
 - **Count Down**: Pulse at input I2 → Input_CD → Adapter CD → Counter decrements CV by 1 (negative values are possible!).
 - **Reset**: Pulse at input I3 → Input_R → Adapter R → Counter is reset to 0.
 - **Load**: Pulse at input I4 → Input_LD → Adapter LD → Counter loads the value from PV (currently 5) into CV.
-3. **Output**:
+1. **Output**:
+
 - On overflow (QU), Output_Q1 is signaled.
 - In case of underflow (QD), Output_Q2 is signaled.
 - The current counter value CV is output to the terminal via the converter chain (AULI_TO_ALR → Q_NumericValue_PHYSA_LREAL).
-4. **Notes**: The XML contains two comments:
+1. **Notes**: The XML contains two comments:
+
 - "Negative values are possible here!" – this refers to the counter, which can go below zero when counting backwards.
 - "If necessary, add an AX_D_FF here to reduce the number of events." – a suggestion for a possible extension to reduce the number of events at the outputs.
 
@@ -55,6 +60,6 @@ Exercise 224b ALR demonstrates the use of an IEC 61131-3 compliant forward/backw
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

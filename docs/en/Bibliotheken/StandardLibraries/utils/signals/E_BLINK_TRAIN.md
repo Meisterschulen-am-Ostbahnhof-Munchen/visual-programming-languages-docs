@@ -31,18 +31,21 @@ The function block `E_BLINK_TRAIN` simulates a flashing signal that is switched 
 2. The function block generates `N` blink cycles, where `OUT` is set to `TRUE` for `TIMEHIGH` and to `FALSE` for `TIMELOW`.
 3. Upon a `STOP` event, generation is terminated and `OUT` is reset to `FALSE`.
 4. Each state change is confirmed via the `CNF` event.
+
 - Uses internal function blocks `E_PULSE` (for timing) and `E_TRAIN` (for cycle limiting).
 - The period duration is determined by adding `TIMELOW` and `TIMEHIGH`.
 - Unlike some other blink function blocks, `FALSE` is always output upon stopping.
+
 1. **Inactive**: `OUT` = `FALSE` (initial state or after `STOP`).
 2. **Active**: Generates blink cycles according to the set times and number of cycles.
+
 - `OUT` toggles between `TRUE` (`TIMEHIGH`) and `FALSE` (`TIMELOW`).
 - Display of warning or status lights with a defined blink frequency.
 - Control of periodic signals in industrial automation processes.
 - Simulation of blink patterns for testing purposes.
 - **CODESYS BLINK FB**: Retains the last state when stopped, while `E_BLINK_TRAIN` always reverts to `FALSE`.
 - **Simple Timer FBs**: Do not offer an integrated limit on the number of cycles (`N`).
-* [Exercise_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
+- [Exercise_035a3](../../../../Uebungen/test_B/Uebungen_doc/Uebung_035a3.md)
 
 The `E_BLINK_TRAIN` is a versatile function block for generating blinking signals with configurable times and a limited number of cycles. Its unique feature is that it reverts to `FALSE` when stopped, making it ideal for safety-critical applications. The clear interface structure and the internal use of proven timer FBs make it reliable and easy to use.
 

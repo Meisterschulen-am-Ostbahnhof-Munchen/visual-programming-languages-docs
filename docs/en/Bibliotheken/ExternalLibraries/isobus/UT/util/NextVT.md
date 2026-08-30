@@ -3,22 +3,24 @@
 ![NextVT](./NextVT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **NextVT** function block is a service interface block that enables switching to the next available Virtual Terminal (VT) in an ISOBUS network (ISO 11783-6). It encapsulates the functionality of `VTC_NextVTButtonPressed()` from the ISOBUS driver examples and allows seamless switching between multiple VT devices.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Data Type | With Variables | Description |
-|----------|-----------|----------------|---------------|
+| ---------- | ----------- | ---------------- | --------------- |
 | INIT | EInit | QI | Service Initialization. Triggered to configure the block. |
 | REQ | Event | QI | Service request. Starts the process to switch to the next available VT. |
 
 ### **Event Outputs**
 
 | Event | Data Type | With Variables | Description |
-|----------|-----------|---------------|---------------|
+| ---------- | ----------- | --------------- | --------------- |
 | INITO | EInit | QO, STATUS | Initialization confirmation. Signals whether the initialization was successful. |
 | CNF | Event | QO, STATUS, s16Result | Switchover confirmation. Outputs as soon as the switch to the next VT has been initiated. |
 
@@ -31,7 +33,7 @@ The **NextVT** function block is a service interface block that enables switchin
 ### **Data Outputs**
 
 | Variable | Type | Description |
-|-----------|--------|---------------|
+| ----------- | -------- | --------------- |
 | QO | BOOL | Quality output. TRUE if the service was successful. |
 | STATUS | STRING | Status message regarding the result of the last operation. |
 | s16Result | INT | Return value: 0 = E_NO_ERR (successful), negative value = error code. |
@@ -48,6 +50,7 @@ When a **REQ** event is received, the block performs the following steps:
 2. **Find currently connected VT** – The currently used VT is identified using `IsoVtcGetStatusInfo(VT_HND)`.
 3. **Determine next VT** – The next entry after the current VT is selected from the list (cyclic sequence).
 4. **Execute switchover** – The switchover to the next VT is initiated using `IsoVtcMultipleNextVT()`.
+
 - **Error case:** If only one VT is present on the bus or the switchover fails, a negative return value (`s16Result`) and a corresponding status message are output.
 - **Important Note:** The application must enter a safe state after calling this block, as the connection to the current VT is lost during the transition.
 

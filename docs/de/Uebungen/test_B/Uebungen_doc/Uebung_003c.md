@@ -6,7 +6,7 @@ Dieser Artikel beschreibt die logiBUS®-Übung `Uebung_003c`. Hier wird demonstr
 
 ## 🎧 Podcast
 
-* [Altbayerisch für Einsteiger: Von Gratler-Schnupfen und Stadthodern – Eine Laute-Reise durch Lektion 3C](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Altbayerisch-fr-Einsteiger-Von-Gratler-Schnupfen-und-Stadthodern--Eine-Laute-Reise-durch-Lektion-3C-e376jh4)
+- [Altbayerisch für Einsteiger: Von Gratler-Schnupfen und Stadthodern – Eine Laute-Reise durch Lektion 3C](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Altbayerisch-fr-Einsteiger-Von-Gratler-Schnupfen-und-Stadthodern--Eine-Laute-Reise-durch-Lektion-3C-e376jh4)
 
 ----
 
@@ -24,8 +24,8 @@ Das Ziel ist es, lokale physische Schalter (`I1` bis `I4`) für das ISOBUS-Netzw
 
 [cite_start]Dieser Baustein verbindet einen Standard-Digitaleingang mit einem ISOBUS-Auxiliary-Ausgang[cite: 2]. Er verfügt über folgende Parameter:
 
-  * **`Input`**: Auswahl des lokalen Hardware-Pins (z.B. `Input_I1`).
-  * **`iInpNr`**: Die fortlaufende Nummer des AUX-Eingangs im Objekt-Pool (Index 0 bis n).
+  - **`Input`**: Auswahl des lokalen Hardware-Pins (z.B. `Input_I1`).
+  - **`iInpNr`**: Die fortlaufende Nummer des AUX-Eingangs im Objekt-Pool (Index 0 bis n).
 
 Intern werden die Ereignisse (`IND -> REQ`) und Daten (`IN -> OUT`) vom `logiBUS_IX` zum `Aux_QX` Baustein durchgereicht.
 
@@ -33,10 +33,10 @@ Intern werden die Ereignisse (`IND -> REQ`) und Daten (`IN -> OUT`) vom `logiBUS
 
 In `Uebung_003c` erfolgt das Mapping wie folgt:
 
-*   `F1`: `Input_I1` ➡️ AUX Index 0
-*   `F2`: `Input_I2` ➡️ AUX Index 1
-*   `F3`: `Input_I3` ➡️ AUX Index 2
-*   `F4`: `Input_I4` ➡️ AUX Index 3
+-   `F1`: `Input_I1` ➡️ AUX Index 0
+-   `F2`: `Input_I2` ➡️ AUX Index 1
+-   `F3`: `Input_I3` ➡️ AUX Index 2
+-   `F4`: `Input_I4` ➡️ AUX Index 3
 
 -----
 

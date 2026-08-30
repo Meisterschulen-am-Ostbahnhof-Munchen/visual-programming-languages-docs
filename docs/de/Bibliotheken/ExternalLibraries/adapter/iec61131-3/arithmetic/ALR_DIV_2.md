@@ -6,9 +6,10 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein `ALR_DIV_2` ist ein generischer Funktionsbaustein (Generic FB) zur Durchführung von arithmetischen Divisionen. Er ist im Package `adapter::iec61131::arithmetic` definiert und basiert auf der generischen Klasse `GEN_ALR_DIV`. 
+Der Funktionsbaustein `ALR_DIV_2` ist ein generischer Funktionsbaustein (Generic FB) zur Durchführung von arithmetischen Divisionen. Er ist im Package `adapter::iec61131::arithmetic` definiert und basiert auf der generischen Klasse `GEN_ALR_DIV`.
 
 Im Gegensatz zu klassischen arithmetischen Bausteinen, die mit direkten Daten- und Ereigniseingängen arbeiten, nutzt dieser Baustein Adapter vom Typ `ALR` (unidirektional). Dies ermöglicht eine stark vereinfachte und strukturierte Verdrahtung innerhalb von 4diac-Anwendungen, da Signale und deren zugehörige Kontrollflüsse in Adaptern gebündelt werden.
 
@@ -48,9 +49,9 @@ Da es sich um einen generischen Funktionsbaustein handelt, wird der genaue Daten
 
 ## Technische Besonderheiten
 
-* **Generischer Baustein:** Durch die Eigenschaft `GenericClassName = "GEN_ALR_DIV"` ist der Baustein flexibel für verschiedene Datentypen einsetzbar, sofern diese vom Adaptertyp unterstützt werden.
-* **Adapter-Kopplung:** Durch die Verwendung von Adaptern anstelle von einzelnen Pins wird der grafische Verdrahtungsaufwand in der 4diac-IDE minimiert und die Übersichtlichkeit im Applikationseditor erhöht.
-* **Division durch Null:** Bei der Implementierung und Anwendung ist darauf zu achten, dass der Wert am Adapter `IN2` ungleich Null ist, um Laufzeitfehler oder ein undefiniertes Systemverhalten zu vermeiden.
+- **Generischer Baustein:** Durch die Eigenschaft `GenericClassName = "GEN_ALR_DIV"` ist der Baustein flexibel für verschiedene Datentypen einsetzbar, sofern diese vom Adaptertyp unterstützt werden.
+- **Adapter-Kopplung:** Durch die Verwendung von Adaptern anstelle von einzelnen Pins wird der grafische Verdrahtungsaufwand in der 4diac-IDE minimiert und die Übersichtlichkeit im Applikationseditor erhöht.
+- **Division durch Null:** Bei der Implementierung und Anwendung ist darauf zu achten, dass der Wert am Adapter `IN2` ungleich Null ist, um Laufzeitfehler oder ein undefiniertes Systemverhalten zu vermeiden.
 
 ## Zustandsübersicht
 
@@ -58,9 +59,9 @@ Der Baustein besitzt kein komplexes internes Zustandsdiagramm (ECC). Er arbeitet
 
 ## Anwendungsszenarien
 
-* **Signal-Skalierung:** Division von analogen Messwerten durch konstante Faktoren zur Einheitenumrechnung innerhalb einer Adapter-basierten Signalverarbeitungskette.
-* **Mittelwertbildung und Verhältnissteuerung:** Berechnung von Verhältnissen (z. B. Luft-Brennstoff-Verhältnis) in Regelungssystemen, bei denen die Signalpfade modular über Adapter realisiert sind.
-* **Standardisierung:** Verwendung in komplexen Steuerungsarchitekturen zur Reduzierung von Verbindungslinien.
+- **Signal-Skalierung:** Division von analogen Messwerten durch konstante Faktoren zur Einheitenumrechnung innerhalb einer Adapter-basierten Signalverarbeitungskette.
+- **Mittelwertbildung und Verhältnissteuerung:** Berechnung von Verhältnissen (z. B. Luft-Brennstoff-Verhältnis) in Regelungssystemen, bei denen die Signalpfade modular über Adapter realisiert sind.
+- **Standardisierung:** Verwendung in komplexen Steuerungsarchitekturen zur Reduzierung von Verbindungslinien.
 
 ## Vergleich mit ähnlichen Bausteinen
 

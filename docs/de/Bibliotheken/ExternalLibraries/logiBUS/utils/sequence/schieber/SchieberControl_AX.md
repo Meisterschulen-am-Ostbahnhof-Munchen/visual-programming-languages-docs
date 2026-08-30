@@ -71,10 +71,10 @@ Der Baustein arbeitet als Zustandsautomat (ECC), der Übergänge basierend auf d
     Beim Start (`INIT`) wird geprüft, in welchem Zustand der Schieber beginnen soll (definiert durch `START`). Möglich sind z.B. direkt „Closed“, „Opened“ oder „Unknown“.
 
 2.  **Bewegungsablauf:**
-    *   Erfolgt der Befehl `Open`, wechselt der Baustein in den Zustand **Opening**. Dabei werden die Adapter `POWERED` und `OPEN` aktiviert und der Timer mit `DT_Opening` gestartet.
-    *   Nach Ablauf der Zeit (`timeOut.TimeOut`) wechselt der Zustand automatisch zu **Opened**.
-    *   Erfolgt der Befehl `Close`, wechselt der Baustein zu **Closing**. Der Adapter `CLOSE` wird aktiviert (während `POWERED` und `OPEN` deaktiviert werden) und der Timer mit `DT_Closing` gestartet.
-    *   Nach Ablauf der Zeit wechselt der Zustand zu **Closed**.
+    -   Erfolgt der Befehl `Open`, wechselt der Baustein in den Zustand **Opening**. Dabei werden die Adapter `POWERED` und `OPEN` aktiviert und der Timer mit `DT_Opening` gestartet.
+    -   Nach Ablauf der Zeit (`timeOut.TimeOut`) wechselt der Zustand automatisch zu **Opened**.
+    -   Erfolgt der Befehl `Close`, wechselt der Baustein zu **Closing**. Der Adapter `CLOSE` wird aktiviert (während `POWERED` und `OPEN` deaktiviert werden) und der Timer mit `DT_Closing` gestartet.
+    -   Nach Ablauf der Zeit wechselt der Zustand zu **Closed**.
 3.  **Unterbrechung:**
     Wird während des Öffnens der Befehl `Close` (oder umgekehrt) gegeben, wird der Vorgang gestoppt (`STOP`-Zustände), die Ausgänge zurückgesetzt und der entgegengesetzte Vorgang eingeleitet.
 
@@ -83,27 +83,27 @@ Der Baustein arbeitet als Zustandsautomat (ECC), der Übergänge basierend auf d
 
 ## Technische Besonderheiten
 
-*   **AX-Adapter Integration:** Die direkte Nutzung von `adapter::types::unidirectional::AX` deutet auf eine standardisierte Schnittstelle zur Hardware-Abstraktion hin, was den Baustein wiederverwendbar für verschiedene Ventiltypen macht, solange der Adapter passt.
-*   **Struktur-Mapping:** Der Baustein fungiert als "Mapper". Er nimmt komplexe Konfigurationsstrukturen (`SchieberStruct`) entgegen und gibt zur Laufzeit nur die für den aktuellen Zustand relevanten Einzelwerte aus. Das reduziert die Logik im HMI.
-*   **Stop-Logik:** Es sind explizite `STOP`-Zustände implementiert, die sicherstellen, dass bei einem Richtungswechsel die Ausgänge kurzzeitig definiert abgeschaltet werden (`timeOut.STOP`, Ventile aus), bevor die neue Richtung eingeschlagen wird.
+-   **AX-Adapter Integration:** Die direkte Nutzung von `adapter::types::unidirectional::AX` deutet auf eine standardisierte Schnittstelle zur Hardware-Abstraktion hin, was den Baustein wiederverwendbar für verschiedene Ventiltypen macht, solange der Adapter passt.
+-   **Struktur-Mapping:** Der Baustein fungiert als "Mapper". Er nimmt komplexe Konfigurationsstrukturen (`SchieberStruct`) entgegen und gibt zur Laufzeit nur die für den aktuellen Zustand relevanten Einzelwerte aus. Das reduziert die Logik im HMI.
+-   **Stop-Logik:** Es sind explizite `STOP`-Zustände implementiert, die sicherstellen, dass bei einem Richtungswechsel die Ausgänge kurzzeitig definiert abgeschaltet werden (`timeOut.STOP`, Ventile aus), bevor die neue Richtung eingeschlagen wird.
 
 ## Zustandsübersicht
 
 Die wichtigsten Zustände im ECC (Execution Control Chart) sind:
 
-*   **START / Init / DeInit:** Verwaltungszustände für den Lebenszyklus des Bausteins.
-*   **Unknown:** Fehler- oder Initialzustand, wenn die Position nicht bekannt ist.
-*   **Closed:** Der Schieber ist vollständig geschlossen. (`CLOSE`=False, `OPEN`=False).
-*   **Opening:** Der Schieber öffnet sich gerade. (`POWERED`=True, `OPEN`=True, Timer läuft).
-*   **Opened:** Der Schieber ist vollständig offen. (`POWERED`=True, `OPEN`=False).
-*   **Closing:** Der Schieber schließt sich gerade. (`CLOSE`=True, `POWERED`=False, Timer läuft).
-*   **..._STOP:** Zwischenzustände zum sauberen Abbrechen von Bewegungen.
+-   **START / Init / DeInit:** Verwaltungszustände für den Lebenszyklus des Bausteins.
+-   **Unknown:** Fehler- oder Initialzustand, wenn die Position nicht bekannt ist.
+-   **Closed:** Der Schieber ist vollständig geschlossen. (`CLOSE`=False, `OPEN`=False).
+-   **Opening:** Der Schieber öffnet sich gerade. (`POWERED`=True, `OPEN`=True, Timer läuft).
+-   **Opened:** Der Schieber ist vollständig offen. (`POWERED`=True, `OPEN`=False).
+-   **Closing:** Der Schieber schließt sich gerade. (`CLOSE`=True, `POWERED`=False, Timer läuft).
+-   **..._STOP:** Zwischenzustände zum sauberen Abbrechen von Bewegungen.
 
 ## Anwendungsszenarien
 
-*   **Landwirtschaftliche Maschinen:** Steuerung von Gülle-Schiebern, Dosierklappen oder hydraulischen Auslegern.
-*   **Prozessautomatisierung:** Einfache Ventilsteuerungen, bei denen keine Endlagensensoren vorhanden sind, sondern über Zeit (`DT_Opening`/`DT_Closing`) gefahren wird.
-*   **HMI-Integration:** Systeme, bei denen sich das Symbol oder die Tastenfarbe auf dem Display ändern muss, je nachdem, ob das Ventil gerade fährt, offen oder geschlossen ist.
+-   **Landwirtschaftliche Maschinen:** Steuerung von Gülle-Schiebern, Dosierklappen oder hydraulischen Auslegern.
+-   **Prozessautomatisierung:** Einfache Ventilsteuerungen, bei denen keine Endlagensensoren vorhanden sind, sondern über Zeit (`DT_Opening`/`DT_Closing`) gefahren wird.
+-   **HMI-Integration:** Systeme, bei denen sich das Symbol oder die Tastenfarbe auf dem Display ändern muss, je nachdem, ob das Ventil gerade fährt, offen oder geschlossen ist.
 
 ## Vergleich mit ähnlichen Bausteinen
 

@@ -3,9 +3,11 @@
 ![AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED](./AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used for the scalable mirroring of an unsigned integer value (ULINT) into a scaled signal value (LREAL), taking validity information into account. It is implemented as a composite block and combines the actual scaling logic with a synchronized valid output. The block is designed for use in fieldbus environments where raw data (e.g., sensor values) must be converted using a linear factor and offset, and the signal's validity must be reliably transmitted.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -22,7 +24,7 @@ The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used for the scal
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-|--------|-------|--------------|-----------------------------------|
+| -------- | ------- | -------------- | ----------------------------------- |
 | SCALE | LREAL | 1.0 | Scaling Factor |
 | OFFSET | DINT | 0 | Offset added after scaling |
 
@@ -41,7 +43,7 @@ The function block **AULI_FIELDBUS_ULINT_TO_SIGNAL_SCALED** is used for the scal
 #### **Plug (Output)**
 
 | Name | Type | Comment |
-|-------|--------------------------------------------------|---------------------|
+| ------- | -------------------------------------------------- | --------------------- |
 | OUT | adapter::types::unidirectional::ALR | Filtered Output |
 | VALID | adapter::types::unidirectional::AX | TRUE if Signal is VALID |
 
@@ -57,6 +59,7 @@ The function block operates in an event-driven manner. After an INIT event (at i
 The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive. However, in this design, the inner instance contains the actual computational logic. The outer shell adds the synchronization of the validity information and provides the adapter interfaces.
 
 The internal scaling block is of the same type as the outer one, meaning that the scaling logic could be recursive.
+
 ## Technical Features
 
 - **Adapted Inputs/Outputs:** The module uses adapters exclusively for data transmission. This enables loose coupling in fieldbus and component networks.

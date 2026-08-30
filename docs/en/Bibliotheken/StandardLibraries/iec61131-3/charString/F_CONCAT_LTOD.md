@@ -3,6 +3,7 @@
 ![F_CONCAT_LTOD](F_CONCAT_LTOD.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `F_CONCAT_LTOD` combines individual date/time components (`HOUR`, `MINUTE`, `SECOND`, `MILLISECOND`) into a composite `LTIME_OF_DAY` value. It is the reverse of [F_SPLIT_LTOD](F_SPLIT_LTOD.md), which splits the same `LTIME_OF_DAY` value back into its individual components.

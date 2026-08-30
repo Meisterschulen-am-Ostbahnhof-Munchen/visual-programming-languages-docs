@@ -3,6 +3,7 @@
 <img width="711" height="299" alt="image" src="https://github.com/user-attachments/assets/79f5b696-e66f-481a-8642-b19ac2f35cb4" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AX_SPLIT_3 ist ein generischer Funktionsblock, der einen AX-Adapter-Eingang auf drei separate AX-Adapter-Ausgänge aufteilt. Der Baustein ermöglicht die Verteilung eines eingehenden AX-Signals an drei verschiedene Empfänger innerhalb eines 4diac-Systems.
@@ -69,9 +70,9 @@ Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_002a5b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
-* [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
-* [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
+- [Uebung_002a5b_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5b_AX.md)
+- [Uebung_006a3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_006a3_AX.md)
+- [Uebung_009_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_009_AX.md)
 
 ## Änderungserkennung
 
@@ -85,4 +86,4 @@ Der AX_SPLIT_3 bietet eine einfache und effiziente Lösung zur Signalverteilung 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

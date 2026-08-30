@@ -3,6 +3,7 @@
 ![initval_AX](initval_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_AX` ist die konfigurierbare Variante der [const_AX_TRUE](../constants/const_AX_TRUE.md)/[const_AX_FALSE](../constants/const_AX_FALSE.md)-Bausteine: Statt eines fest verdrahteten Werts nimmt er bei der Initialisierung einen booleschen Startwert als Dateneingang entgegen und legt diesen auf einen [AX](../AX.md)-Adapter-Plug.

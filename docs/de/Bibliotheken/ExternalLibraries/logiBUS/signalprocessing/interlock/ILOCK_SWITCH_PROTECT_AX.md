@@ -40,7 +40,7 @@ Keine direkten Datenausgänge. Die Zustandsausgabe erfolgt über die Adapter:
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `UP_IN` | `adapter::types::unidirectional::AX` | Eingang für die Anforderung „Aufwärts/Vorwärts“. Enthält Ereignis `E1` und Bool-Daten `D1`. |
 | Socket | `DOWN_IN` | `adapter::types::unidirectional::AX` | Eingang für die Anforderung „Abwärts/Rückwärts“. |
 | Plug | `UP_OUT` | `adapter::types::unidirectional::AX` | Ausgang für die Richtung Aufwärts. |
@@ -66,7 +66,7 @@ Der Baustein realisiert eine **verriegelte Zwei-Kanal-Schaltung mit Totzeit**:
 ## Zustandsübersicht
 
 | Zustand | Beschreibung |
-|---------|--------------|
+| --------- | -------------- |
 | `STOP` | Ruhezustand. Keine Ausgabe aktiv. Wartet auf Aktivierung eines Eingangs. |
 | `UP` | Ausgang `UP_OUT.D1 = TRUE`, `DOWN_OUT.D1 = FALSE`. Wird aktiv, wenn `UP_IN.D1` anliegt und `DOWN_IN.D1` inaktiv ist. |
 | `DOWN` | Ausgang `DOWN_OUT.D1 = TRUE`, `UP_OUT.D1 = FALSE`. Wird aktiv, wenn `DOWN_IN.D1` anliegt und `UP_IN.D1` inaktiv ist. |
@@ -108,4 +108,4 @@ Die in der ECC definierten Transitionen sind:
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![AUI_TO_AS](./AUI_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUI_TO_AS` is a composite block that enables the conversion of an **AUI (UINT)** adapter to an **AS (SINT)** adapter.
@@ -35,7 +36,7 @@ There are also **no direct data outputs**. The converted data (data type `SINT`)
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|--------|----------------------------------------|----------------------------------|
+| ---------- | -------- | ---------------------------------------- | ---------------------------------- |
 | Socket | AUI_IN | `adapter::types::unidirectional::AUI` | Input adapter (UINT data) |
 | Plug | AS_OUT | `adapter::types::unidirectional::AS` | Output adapter (SINT data) |
 
@@ -82,4 +83,4 @@ The function block `AUI_TO_AS` offers a simple, encapsulated solution for conver
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

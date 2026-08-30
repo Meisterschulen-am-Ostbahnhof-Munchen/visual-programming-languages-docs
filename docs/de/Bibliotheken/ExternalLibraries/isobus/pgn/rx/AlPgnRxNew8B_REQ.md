@@ -3,6 +3,7 @@
 <img width="1324" height="281" alt="image" src="https://github.com/user-attachments/assets/692b1960-1bad-4a6d-89ca-c6daba8a85cd" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AlPgnRxNew8B_REQ` dient zur Anforderung (Request) von Daten über ein ISOBUS-Netzwerk. Er ermöglicht die Installation eines Empfangsparametersatzes (RX PGN) und das Auslösen einer einmaligen Anfrage für diesen Parameter. Der Baustein ist Teil einer ISOBUS-spezifischen Kommunikationsbibliothek und behandelt die Interaktion mit dem CAN-Netzwerkprotokoll nach ISO 11783.
@@ -13,33 +14,33 @@ Der Funktionsblock `AlPgnRxNew8B_REQ` dient zur Anforderung (Request) von Daten 
 
 ### **Ereignis-Eingänge**
 
-*   **INIT**: Initialisiert den Funktionsblock.
-*   **install**: Installiert einen Empfangsparametersatz (RX PGN) für die spätere Datenanforderung. Wird mit den Daten `u32Pgn`, `NmSource`, `u16DaSize` und `u8Priority` ausgelöst.
-*   **REQ**: Löst eine einmalige Anforderung für den zuvor installierten RX PGN aus.
+-   **INIT**: Initialisiert den Funktionsblock.
+-   **install**: Installiert einen Empfangsparametersatz (RX PGN) für die spätere Datenanforderung. Wird mit den Daten `u32Pgn`, `NmSource`, `u16DaSize` und `u8Priority` ausgelöst.
+-   **REQ**: Löst eine einmalige Anforderung für den zuvor installierten RX PGN aus.
 
 ### **Ereignis-Ausgänge**
 
-*   **INITO**: Bestätigt die abgeschlossene Initialisierung.
-*   **installO**: Bestätigt die abgeschlossene Installation eines PGN. Liefert den zugewiesenen `PGN_handle`.
-*   **CNF**: Bestätigt das erfolgreiche Absenden der Anforderung (Request) an das Netzwerk.
-*   **IND**: Wird ausgelöst, wenn die angeforderte Daten-Nachricht empfangen wurde. Liefert die `Data` und einen `s32TimeStamp`.
-*   **dataERR**: Signalisiert einen Fehler bei der Datenverarbeitung. Liefert den Fehlercode `dataERRC`.
-*   **pgnERR**: Signalisiert einen Fehler bei der PGN-Verarbeitung (z.B. bei der Installation). Liefert den Fehlercode `pgnERRC`.
+-   **INITO**: Bestätigt die abgeschlossene Initialisierung.
+-   **installO**: Bestätigt die abgeschlossene Installation eines PGN. Liefert den zugewiesenen `PGN_handle`.
+-   **CNF**: Bestätigt das erfolgreiche Absenden der Anforderung (Request) an das Netzwerk.
+-   **IND**: Wird ausgelöst, wenn die angeforderte Daten-Nachricht empfangen wurde. Liefert die `Data` und einen `s32TimeStamp`.
+-   **dataERR**: Signalisiert einen Fehler bei der Datenverarbeitung. Liefert den Fehlercode `dataERRC`.
+-   **pgnERR**: Signalisiert einen Fehler bei der PGN-Verarbeitung (z.B. bei der Installation). Liefert den Fehlercode `pgnERRC`.
 
 ### **Daten-Eingänge**
 
-*   **u32Pgn** (UDINT): Die Parameter Group Number (PGN) im Bereich 0 bis 0x3FFFF.
-*   **NmSource** (isobus::pgn::ISONETEVENT_T): Definiert den Kommunikationspartner im Netzwerk.
-*   **u16DaSize** (UINT): Die zu erwartende Datenlänge der PGN (0..8 Byte).
-*   **u8Priority** (USINT): Die Standard-Priorität dieser PGN (0..7, wobei 0 die höchste Priorität ist). Initialwert ist 7.
+-   **u32Pgn** (UDINT): Die Parameter Group Number (PGN) im Bereich 0 bis 0x3FFFF.
+-   **NmSource** (isobus::pgn::ISONETEVENT_T): Definiert den Kommunikationspartner im Netzwerk.
+-   **u16DaSize** (UINT): Die zu erwartende Datenlänge der PGN (0..8 Byte).
+-   **u8Priority** (USINT): Die Standard-Priorität dieser PGN (0..7, wobei 0 die höchste Priorität ist). Initialwert ist 7.
 
 ### **Daten-Ausgänge**
 
-*   **PGN_handle** (INT): Ein Handle zur Identifikation des erfolgreich installierten PGN. Im Fehlerfall wird ein ungültiger Handle-Wert (`HANDLE_UNVALID`) zurückgegeben.
-*   **dataERRC** (INT): Fehlercode, der bei Auslösen des `dataERR`-Ereignisses gesetzt wird.
-*   **pgnERRC** (INT): Fehlercode, der bei Auslösen des `pgnERR`-Ereignisses gesetzt wird.
-*   **s32TimeStamp** (DINT): Zeitstempel der empfangenen Nachricht in Millisekunden. Initialwert ist -1.
-*   **Data** (isobus::pgn::CAN_MSG): Der Puffer, der die empfangenen CAN-Nachrichtendaten enthält.
+-   **PGN_handle** (INT): Ein Handle zur Identifikation des erfolgreich installierten PGN. Im Fehlerfall wird ein ungültiger Handle-Wert (`HANDLE_UNVALID`) zurückgegeben.
+-   **dataERRC** (INT): Fehlercode, der bei Auslösen des `dataERR`-Ereignisses gesetzt wird.
+-   **pgnERRC** (INT): Fehlercode, der bei Auslösen des `pgnERR`-Ereignisses gesetzt wird.
+-   **s32TimeStamp** (DINT): Zeitstempel der empfangenen Nachricht in Millisekunden. Initialwert ist -1.
+-   **Data** (isobus::pgn::CAN_MSG): Der Puffer, der die empfangenen CAN-Nachrichtendaten enthält.
 
 ### **Adapter**
 
@@ -56,10 +57,10 @@ Fehler während der Installation (z.B. ungültige PGN) führen zum `pgnERR`-Ausg
 
 ## Technische Besonderheiten
 
-*   Der Block ist für die Verarbeitung von PGNs mit einer Datenlänge von bis zu 8 Byte ausgelegt (`u16DaSize` 0..8).
-*   Die Prioritätsverwaltung (`u8Priority`) folgt dem ISOBUS-Standard.
-*   Die Daten werden in einem typsicheren `CAN_MSG`-Puffer bereitgestellt.
-*   Die Fehlerbehandlung ist über dedizierte Ereignisausgänge (`pgnERR`, `dataERR`) strukturiert.
+-   Der Block ist für die Verarbeitung von PGNs mit einer Datenlänge von bis zu 8 Byte ausgelegt (`u16DaSize` 0..8).
+-   Die Prioritätsverwaltung (`u8Priority`) folgt dem ISOBUS-Standard.
+-   Die Daten werden in einem typsicheren `CAN_MSG`-Puffer bereitgestellt.
+-   Die Fehlerbehandlung ist über dedizierte Ereignisausgänge (`pgnERR`, `dataERR`) strukturiert.
 
 ## Zustandsübersicht
 
@@ -73,9 +74,9 @@ Fehler während der Installation (z.B. ungültige PGN) führen zum `pgnERR`-Ausg
 
 Typische Anwendungen liegen in der landwirtschaftlichen oder mobilen Arbeitsmaschinensteuerung (ISO 11783 / ISOBUS):
 
-*   Abfrage von Maschinenparametern (z.B. Drehzahl, Temperatur) von einem Anbaugerät.
-*   Einmaliges Anfordern von Konfigurationsdaten von einem Steuergerät im Netzwerk.
-*   Implementierung von Diagnose- oder Service-Tools, die spezifische PGNs abfragen müssen.
+-   Abfrage von Maschinenparametern (z.B. Drehzahl, Temperatur) von einem Anbaugerät.
+-   Einmaliges Anfordern von Konfigurationsdaten von einem Steuergerät im Netzwerk.
+-   Implementierung von Diagnose- oder Service-Tools, die spezifische PGNs abfragen müssen.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -83,7 +84,7 @@ Im Vergleich zu generischen CAN-Empfangsblöcken ist `AlPgnRxNew8B_REQ` speziell
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
+- [Uebung_132](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_132.md)
 
 ## Fazit
 

@@ -3,6 +3,7 @@
 ![SET_WSTRING](./SET_WSTRING.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **SET_WSTRING** dient dazu, einen Wert vom Datentyp `WSTRING` an einen InOut-Parameter zu übertragen. Er wird typischerweise eingesetzt, um einen berechneten oder extern vorgegebenen Zeichenkettenwert in eine übergeordnete Variable (z. B. einer anderen Instanz oder eines übergeordneten Bausteins) zu schreiben.
@@ -38,9 +39,11 @@ Keine.
 ## Funktionsweise
 
 Wird der Ereigniseingang `REQ` aktiviert, führt der Baustein die folgende Zuweisung aus:
+
 ```
 OUT := IN;
 ```
+
 Der am Eingang `IN` anliegende `WSTRING`-Wert wird unverändert in die InOut-Variable `OUT` kopiert. Anschließend wird das Ereignis `CNF` gesendet, um dem aufrufenden Baustein die Beendigung der Operation zu signalisieren.
 
 ## Technische Besonderheiten

@@ -1,8 +1,9 @@
 # Exercise_002_AX: DigitalInput_I1 to DigitalOutput_Q1/_Q2, using Plug and Socket
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_002_AX`, in which a single digital input signal is distributed to two different digital outputs. This exercise utilizes the concept of adapter branching.
+This article describes the logiBUS® exercise `Uebung_002_AX`, in which a single digital input signal is distributed to two different digital outputs. This exercise utilizes the concept of adapter branching
 ----
+
 ## Objective of the Exercise
 
 The main objective of this exercise is to demonstrate how adapter connections can be branched according to IEC 61499. Since a "plug" (output of an adapter) in 4diac can often only be connected to one "socket" (input of an adapter) (depending on the version and configuration), a special splitter module is used to cleanly distribute a signal to multiple receivers.
@@ -19,9 +20,9 @@ The following function blocks are used:
 
 ![Uebung_002_AX_network](./Uebung_002_AX_network.svg)
 
-* **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]This function block reads the hardware input `Input_I1`[cite: 1].
-* **`AX_SPLIT`**: An instance of type `AX_SPLIT_2`. This component has one adapter input (`IN`) and two identical adapter outputs (`OUT1`, `OUT2`) and thus functions as a signal multiplier.
-* **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instances of type `logiBUS_QXA`. These represent the physical outputs `Output_Q1` and `Output_Q2`.
+- **`DigitalInput_I1`**: An instance of type `logiBUS_IXA`. [cite_start]This function block reads the hardware input `Input_I1`[cite: 1].
+- **`AX_SPLIT`**: An instance of type `AX_SPLIT_2`. This component has one adapter input (`IN`) and two identical adapter outputs (`OUT1`, `OUT2`) and thus functions as a signal multiplier.
+- **`DigitalOutput_Q1`** & **`DigitalOutput_Q2`**: Instances of type `logiBUS_QXA`. These represent the physical outputs `Output_Q1` and `Output_Q2`.
 
 ### Adapter Interface: `AX.adp`
 
@@ -60,6 +61,6 @@ A sensor on a machine (`I1`) should not only control the internal logic, but als
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

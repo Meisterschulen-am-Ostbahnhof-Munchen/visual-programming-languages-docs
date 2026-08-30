@@ -3,6 +3,7 @@
 ![logiBUS_PI](./logiBUS_PI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `logiBUS_PI` ist eine Sammlung globaler Konstanten für die Konfiguration von Puls-Eingängen (Pulse Inputs) in logiBUS-Systemen. Er definiert vorkonfigurierte Strukturen, die die physischen Eingangspins eines logiBUS I/O-Moduls repräsentieren. Diese Konstanten dienen der einfachen und fehlerfreien Zuweisung von Hardware-Pins in übergeordneten Funktionsblöcken oder Anwendungen.
@@ -17,8 +18,8 @@ Die Schnittstelle besteht ausschließlich aus den definierten globalen Konstante
 
 Die folgenden Konstanten werden bereitgestellt:
 
-*   `PulseInput_I1` bis `PulseInput_I9`: Repräsentieren die physischen Puls-Eingänge 1 bis 9. Der Initialwert setzt das Strukturfeld `Pin` auf den entsprechenden Wert (1-9).
-*   `Invalid`: Stellt einen ungültigen oder nicht belegten Eingang dar. Der Initialwert setzt das Strukturfeld `Pin` auf den Wert 255.
+-   `PulseInput_I1` bis `PulseInput_I9`: Repräsentieren die physischen Puls-Eingänge 1 bis 9. Der Initialwert setzt das Strukturfeld `Pin` auf den entsprechenden Wert (1-9).
+-   `Invalid`: Stellt einen ungültigen oder nicht belegten Eingang dar. Der Initialwert setzt das Strukturfeld `Pin` auf den Wert 255.
 
 ## Funktionsweise
 
@@ -28,9 +29,9 @@ Die Konstanten werden zur Kompilierzeit in den Anwendungscode eingefügt. Wenn e
 
 ## Technische Besonderheiten
 
-*   **Typisierung:** Alle Konstanten sind streng vom strukturierten Datentyp `logiBUS_PI_S`. Dies erzwingt eine typsichere Verwendung und verhindert die unbeabsichtigte Zuweisung einfacher Integer-Werte.
-*   **Initialisierung:** Die Initialwerte werden in der ST-Syntax `(Pin := X)` angegeben, was auf eine strukturierte Initialisierung hindeutet.
-*   **Ungültiger Zustand:** Die Konstante `Invalid` mit dem Pin-Wert 255 bietet eine standardisierte Möglichkeit, einen nicht genutzten oder fehlerhaften Kanal zu kennzeichnen.
+-   **Typisierung:** Alle Konstanten sind streng vom strukturierten Datentyp `logiBUS_PI_S`. Dies erzwingt eine typsichere Verwendung und verhindert die unbeabsichtigte Zuweisung einfacher Integer-Werte.
+-   **Initialisierung:** Die Initialwerte werden in der ST-Syntax `(Pin := X)` angegeben, was auf eine strukturierte Initialisierung hindeutet.
+-   **Ungültiger Zustand:** Die Konstante `Invalid` mit dem Pin-Wert 255 bietet eine standardisierte Möglichkeit, einen nicht genutzten oder fehlerhaften Kanal zu kennzeichnen.
 
 ## Zustandsübersicht
 
@@ -38,9 +39,9 @@ Da es sich um einen Konstanten-Block handelt, besitzt `logiBUS_PI` keinen intern
 
 ## Anwendungsszenarien
 
-*   **Hardware-Konfiguration:** Primärer Einsatz zur Konfiguration von logiBUS I/O-Modulen, die Puls-Eingänge (z.B. für Encoder, Frequenz- oder Drehzahlmessung) bereitstellen.
-*   **Parametrierung von Funktionsblöcken:** Vereinfachte und lesbare Parametrierung von Funktionsblöcken, die einen spezifischen Puls-Eingang benötigen. Statt der magischen Zahl `3` wird die selbsterklärende Konstante `PulseInput_I3` verwendet.
-*   **Wartung und Lesbarkeit:** Erhöht die Wartbarkeit und Lesbarkeit des Anwendungscodes, da die Hardware-Zuordnung direkt im Konstantennamen ersichtlich ist.
+-   **Hardware-Konfiguration:** Primärer Einsatz zur Konfiguration von logiBUS I/O-Modulen, die Puls-Eingänge (z.B. für Encoder, Frequenz- oder Drehzahlmessung) bereitstellen.
+-   **Parametrierung von Funktionsblöcken:** Vereinfachte und lesbare Parametrierung von Funktionsblöcken, die einen spezifischen Puls-Eingang benötigen. Statt der magischen Zahl `3` wird die selbsterklärende Konstante `PulseInput_I3` verwendet.
+-   **Wartung und Lesbarkeit:** Erhöht die Wartbarkeit und Lesbarkeit des Anwendungscodes, da die Hardware-Zuordnung direkt im Konstantennamen ersichtlich ist.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 

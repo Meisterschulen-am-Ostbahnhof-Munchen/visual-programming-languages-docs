@@ -3,15 +3,17 @@
 ![ILOCK_2_E_AX](./ILOCK_2_E_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ILOCK_2_E_AX** provides two bistable outputs with mutual interlock and a toggle function. It is event-driven and outputs its states via two adapters (type `AX`). This block is suitable for applications requiring two mutually exclusive signals, such as controlling switches, valves, or motors.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Description |
-|--------|-----------------------------------------------|
+| -------- | ----------------------------------------------- |
 | `SET1` | Sets output `OUT1` to TRUE and `OUT2` to FALSE |
 | `CLK1` | Toggles the state of `OUT1` if it is not already toggled |
 | `SET2` | Sets output `OUT2` to TRUE and `OUT1` to FALSE |
@@ -33,7 +35,7 @@ No direct data outputs. The current states of the flip-flops can be retrieved vi
 ### **Adapters**
 
 | Name | Type | Description |
-|--------|------|--------------------------------------------------|
+| -------- | ------ | -------------------------------------------------- |
 | `OUT1` | `AX` | Provides the state of the first flip-flop (data output `D1`) and acknowledges changes via event output `E1` |
 | `OUT2` | `AX` | Provides the state of the second flip-flop (data output `D1`) and acknowledges changes via event output `E1` |
 

@@ -3,9 +3,11 @@
 ![SPLIT_AD_INTO_AQ](./SPLIT_AD_INTO_AQ.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `SPLIT_AD_INTO_AQ` splits an incoming AD adapter (DWORD) into 16 individual AQ adapters (QUARTER). It serves as an interface to divide a wide data value (32 bits) into its 2-bit quarter components and forward these to separate output adapters. The block is implemented as a composite function block and internally uses a `SPLIT_DWORD_INTO_QUARTERS` block and 16 flip-flops (`E_D_FF_ANY`) for synchronous transmission.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The FB does not have its own data outputs. The distributed data is output via th
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|------|-----|----------|--------------|
+| ------ | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AD` | Socket (Input) | DWORD input adapter (32 bits). Events and data are received via `E1` and `D1`. |
 | `QUARTER_BYTE_00` to `QUARTER_BYTE_15` | `adapter::types::unidirectional::AQ` | Plug (Output) | 16 output adapters, each providing one quarter (2 bits) of the original DWORD. Each adapter has an event output `E1` and a data output `D1`. |
 
@@ -47,6 +49,7 @@ The flip-flops then receive the respective quarter data at their data input (`SP
 - **Scalability**: The FB is designed for 16 quarter values (corresponding to 32 bits). Adaptation to other bit widths would be possible by modifying the internal structure.
 
 **No Dedicated Inputs/Outputs**:
+
 ## State Overview
 
 As a composite function block (FB), `SPLIT_AD_INTO_AQ` does not have its own state machine. Internal data processing is determined by:
@@ -64,7 +67,7 @@ As a composite function block (FB), `SPLIT_AD_INTO_AQ` does not have its own sta
 ## Comparison with similar components
 
 | Component | Description | Difference to `SPLIT_AD_INTO_AQ` |
-|----------|--------------|-----------------------------------|
+| ---------- | -------------- | ----------------------------------- |
 | `SPLIT_DWORD_INTO_QUARTERS` | Decomposes a DWORD into 16 quarter values and outputs them as direct data outputs. | `SPLIT_AD_INTO_AQ` additionally encapsulates this decomposition in adapter interfaces and adds flip-flop synchronization. |
 | `SPLIT_INT_INTO_BITS` | Splits an integer into individual bits. | Operates at the bit level and not on 2-bit quarters; Output is typically in Boolean form. |
 | Manual partitioning with `MUX` or `DEMUX` | Could be used to implement data partitioning without adapters. | `SPLIT_AD_INTO_AQ` is specifically optimized for adapter communication and offers a bundled, synchronized solution. |
@@ -75,6 +78,6 @@ SPLIT_AD_INTO_AQ` is a useful building block for partitioning a DWORD (AD adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,10 @@
 ![AUS_TO_AX](./AUS_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein **AUS_TO_AX** ist ein Composite-FB zur Konvertierung eines **AUS**-Adapters (Daten vom Typ USINT) in einen **AX**-Adapter (Daten vom Typ BOOL).  
+Der Funktionsbaustein **AUS_TO_AX** ist ein Composite-FB zur Konvertierung eines **AUS**-Adapters (Daten vom Typ USINT) in einen **AX**-Adapter (Daten vom Typ BOOL).
 Er vergleicht den eingehenden USINT-Wert mit Null und gibt das Ergebnis als Boolesches Signal aus. Dies ermöglicht eine einfache Umsetzung von Zähler- oder Sensordaten in ein binäres Statusignal.
 
 ## Schnittstellenstruktur
@@ -37,11 +38,11 @@ Keine direkten Datenausgänge. Das Datensignal (BOOL) wird über den Adapter **A
 
 ## Funktionsweise
 
-Der FB nutzt intern einen **F_NE**-Baustein (Vergleich auf Ungleichheit) aus der IEC‑61131‑Bibliothek.  
+Der FB nutzt intern einen **F_NE**-Baustein (Vergleich auf Ungleichheit) aus der IEC‑61131‑Bibliothek.
 
-- Ein ankommendes Ereignis **AUS\_IN.E1** triggert den **REQ**-Eingang von **F_NE**.  
-- **F_NE** vergleicht den Datenwert **AUS\_IN.D1** (USINT) mit dem konstanten Wert **USINT#0**.  
-- Das Vergleichsergebnis (BOOL: TRUE, wenn ungleich Null, sonst FALSE) wird an **AX\_OUT.D1** weitergeleitet.  
+- Ein ankommendes Ereignis **AUS\_IN.E1** triggert den **REQ**-Eingang von **F_NE**.
+- **F_NE** vergleicht den Datenwert **AUS\_IN.D1** (USINT) mit dem konstanten Wert **USINT#0**.
+- Das Vergleichsergebnis (BOOL: TRUE, wenn ungleich Null, sonst FALSE) wird an **AX\_OUT.D1** weitergeleitet.
 - Nach Abschluss der Verarbeitung erzeugt **F_NE** ein **CNF**-Ereignis, das auf **AX\_OUT.E1** übertragen wird.
 
 ## Technische Besonderheiten
@@ -53,8 +54,8 @@ Der FB nutzt intern einen **F_NE**-Baustein (Vergleich auf Ungleichheit) aus der
 
 ## Zustandsübersicht
 
-Als Composite-FB besitzt **AUS_TO_AX** keinen eigenen Zustandsautomaten.  
-Die gesamte Logik wird vom integrierten **F_NE** durchgeführt, das keine zustandsbehaftete Steuerung benötigt.  
+Als Composite-FB besitzt **AUS_TO_AX** keinen eigenen Zustandsautomaten.
+Die gesamte Logik wird vom integrierten **F_NE** durchgeführt, das keine zustandsbehaftete Steuerung benötigt.
 Das Verhalten ist rein kombinatorisch mit ereignisgesteuerter Ausführung.
 
 ## Anwendungsszenarien
@@ -65,17 +66,17 @@ Das Verhalten ist rein kombinatorisch mit ereignisgesteuerter Ausführung.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- Direkter Vergleich mit einem **NE**-Baustein: **AUS_TO_AX** erweitert die reine Vergleichsfunktion um eine Adapter-Konvertierung.  
-- Während ein **NE**-FB üblicherweise zwei einfache Dateneingänge (z.B. ANY) erwartet, arbeitet dieser Baustein ausschließlich mit vordefinierten Adaptern (AUS / AX) und versteckt die interne Logik.  
+- Direkter Vergleich mit einem **NE**-Baustein: **AUS_TO_AX** erweitert die reine Vergleichsfunktion um eine Adapter-Konvertierung.
+- Während ein **NE**-FB üblicherweise zwei einfache Dateneingänge (z.B. ANY) erwartet, arbeitet dieser Baustein ausschließlich mit vordefinierten Adaptern (AUS / AX) und versteckt die interne Logik.
 - Er ist damit spezifisch für Systeme mit einheitlichem Adapter‑Konzept (unidirektionale Schnittstellen) optimiert.
 
 ## Fazit
 
-**AUS_TO_AX** ist ein einfacher, aber zweckmäßiger Adapter-Konverter, der einen USINT-Wert über den Vergleich mit Null in ein Boolesches Signal umsetzt.  
+**AUS_TO_AX** ist ein einfacher, aber zweckmäßiger Adapter-Konverter, der einen USINT-Wert über den Vergleich mit Null in ein Boolesches Signal umsetzt.
 Durch die Kapselung als Composite-FB mit Adapteranschlüssen lässt er sich sauber in modulare 4diac‑Projekte einbinden. Der FB bietet keine eigenen Zustände und ist aufgrund seiner geringen Komplexität zuverlässig und wartungsarm.
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

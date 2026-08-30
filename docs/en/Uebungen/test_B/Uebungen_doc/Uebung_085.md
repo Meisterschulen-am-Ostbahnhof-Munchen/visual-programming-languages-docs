@@ -2,11 +2,12 @@
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 This article describes the logiBUS® exercise `Uebung_085`. It introduces the principle of the D flip-flop (delay or data flip-flop).
+
 ## 🎧 Podcast
 
 ![Uebung_085_network](./Uebung_085_network.svg)
 
-* [The relay in detail: switching amplifiers, protection, and the secrets of A1/A2, 85/86, and hysteresis ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
+- [The relay in detail: switching amplifiers, protection, and the secrets of A1/A2, 85/86, and hysteresis ](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Das-Relais-im-Detail-Schaltverstrker--Schutz-und-die-Geheimnisse-von-A1A2--8586-und-der-Hysterese-e3audsc)
 
 ----
 
@@ -22,9 +23,9 @@ Using the function block `E_D_FF`. The goal is to only accept a data value (TRUE
 
 ### Function Blocks (FBs)
 
-* **`I1` (Data)**: Provides the target state.
-* **`I2` (Clock)**: Provides the takeover pulse.
-* **`E_D_FF`**: The memory block. [cite_start]It only transfers the value at input `D` to output `Q` if an event is received at input `CLK`[cite: 1].
+- **`I1` (Data)**: Provides the target state.
+- **`I2` (Clock)**: Provides the takeover pulse.
+- **`E_D_FF`**: The memory block. [cite_start]It only transfers the value at input `D` to output `Q` if an event is received at input `CLK`[cite: 1].
 
 -----
 

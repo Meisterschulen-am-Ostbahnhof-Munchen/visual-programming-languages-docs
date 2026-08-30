@@ -6,6 +6,7 @@
 
 The function block `F_TIME_IN_NS_TO_ULINT` converts a `TIME` value in nanoseconds to a `ULINT` value. This conversion is particularly useful when time values are needed in numerical calculations or for further processing steps.
 ![F_TIME_IN_NS_TO_ULINT](F_TIME_IN_NS_TO_ULINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -52,9 +53,9 @@ Often, a function like `DINT_TO_TIME` is sought to convert a numerical value (e.
 
 Use the function block **`F_MULTIME`** (from the category `arithmetic`) for this:
 
-* Multiply your numeric value by the desired time base.
-* **Example:** `500 * T#1ms = T#500ms`
-* This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
+- Multiply your numeric value by the desired time base.
+- **Example:** `500 * T#1ms = T#500ms`
+- This allows for flexible scaling (e.g., * T#1s for seconds, * T#100ms for tenths of a second).
 
 ## ⚖️ Comparison with similar function blocks
 

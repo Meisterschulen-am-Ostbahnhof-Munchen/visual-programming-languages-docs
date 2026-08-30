@@ -3,9 +3,11 @@
 ![AQ_D_FF](./AQ_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AQ_D_FF` implements a data storage element (D-latch) based on the adapter concept of IEC 61499. It receives an incoming data value upon an event and makes it available at the output until the next event. The block fully encapsulates the latch functionality in an adapter interface, thus enabling modular integration into system-wide data and event paths.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs are available. The latched data value is output via the a
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `I` | Socket (Input) | `adapter::types::unidirectional::AQ` | Provides the data value to be latched and the triggering event. |
 | `Q` | Plug (Output) | `adapter::types::unidirectional::AQ` | Outputs the latched data value and an acknowledgment event. |
 
@@ -53,7 +55,7 @@ The `AQ_D_FF` operates on the principle of an edge-triggered D-latch. Internally
 The `AQ_D_FF` does not have an explicit state machine. However, its behavior can be described by two logical states:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **Waiting for Event** | The output `Q` holds the last latched value. No event is pending at `I`. |
 | **Accept/Output** | When an event arrives at `I`, the new value is transferred from `I`, output to `Q`, and an event is generated on `E1` by `Q`. The function block then returns to its wait state. |
 
@@ -66,7 +68,7 @@ The `AQ_D_FF` does not have an explicit state machine. However, its behavior can
 ## Comparison with similar function blocks
 
 | Function block | Properties |
-|----------|---------------|
+| ---------- | --------------- |
 | `E_D_FF` (direct I/Os) | Same latch functionality, but with separate event and data inputs/outputs. No adapters. |
 | `E_SR_FF` | Set/reset flip-flop with two separate input events. Binary states, not data values. |
 | `AQ_D_FF` | Enables embedding the latch function into existing adapter interfaces without additional wiring at the function block level. |

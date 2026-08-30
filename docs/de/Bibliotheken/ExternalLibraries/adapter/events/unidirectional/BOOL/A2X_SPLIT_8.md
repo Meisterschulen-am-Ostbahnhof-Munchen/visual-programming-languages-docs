@@ -13,15 +13,19 @@ Der Funktionsblock A2X_SPLIT_8 dient als generischer Baustein, um einen eingehen
 ### **Ereignis-Eingänge**
 
 Nicht vorhanden.
+
 ### **Ereignis-Ausgänge**
 
 Nicht vorhanden.
+
 ### **Daten-Eingänge**
 
 Nicht vorhanden.
+
 ### **Daten-Ausgänge**
 
 Nicht vorhanden.
+
 ### **Adapter**
 
 Der FB besitzt folgende Adapter-Schnittstellen:
@@ -69,4 +73,4 @@ Der A2X_SPLIT_8 ist ein einfacher, aber nützlicher Baustein zur Vervielfältigu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Gesamtwiderstand in Reihen- & Parallelschaltung auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

@@ -39,10 +39,10 @@ Keine.
 
 Der Baustein ist ein reiner Weiterleitungsbaustein. Innerhalb des Composite-FBs werden die Adapter-Kanäle direkt verbunden:
 
-- **Ereignisverbindung:** `AD_IN.E1` → `AL_OUT.E1`  
+- **Ereignisverbindung:** `AD_IN.E1` → `AL_OUT.E1`
   Jedes eingehende Ereignis am AD-Adapter wird unverändert an den AL-Adapter weitergegeben.
 
-- **Datenverbindung:** `AD_IN.D1` → `AL_OUT.D1`  
+- **Datenverbindung:** `AD_IN.D1` → `AL_OUT.D1`
   Der eingehende Datenwert (DWORD) wird ohne Transformation als LWORD an den Ausgang übergeben.
 
 Die Typumwandlung erfolgt implizit durch die Kopplung der Adapter; eine explizite Datentyp-Konvertierung findet nicht statt. Die Laufzeitumgebung sorgt dafür, dass die Werte entsprechend der Adapterdefinition behandelt werden.
@@ -81,4 +81,4 @@ Der Funktionsblock `AD_TO_AL` ist ein schlanker, aber wertvoller Helfer zur Adap
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![AUI_SPLIT_7](./AUI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUI_SPLIT_7` dient dazu, ein eingehendes AUI‑Signal (Application User Interface) auf bis zu sieben identische Ausgänge zu verteilen. Er ist als generischer Baustein konzipiert und arbeitet ausschließlich über Adapter‑Schnittstellen – ohne Ereignis‑ oder Daten‑Ein‑/Ausgänge im klassischen Sinne. Dadurch eignet er sich besonders für reine Signalverteilungen in adapterbasierten Architekturen.

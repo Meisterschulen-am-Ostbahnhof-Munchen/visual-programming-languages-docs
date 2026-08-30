@@ -3,6 +3,7 @@
 ![initval_ADI](initval_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `initval_ADI` ist der konfigurierbare Initialisierungsbaustein für den [ADI](../ADI.md)-Adapter (Datentyp `DINT`, 32-Bit-Ganzzahl (vorzeichenbehaftet)): Er nimmt bei der Initialisierung einen Startwert als Dateneingang entgegen und legt diesen auf einen `ADI`-Adapter-Plug. Damit ersetzt er die früher verbreitete Praxis, einen konstanten Vergleichswert über einen gemischten Adapter/Elementar-Baustein einzuspeisen.

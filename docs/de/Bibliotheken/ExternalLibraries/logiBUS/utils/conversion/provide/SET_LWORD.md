@@ -3,6 +3,7 @@
 ![SET_LWORD](./SET_LWORD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein **SET_LWORD** dient dazu, einen LWORD-Wert (64-Bit-Integer) von einem Dateneingang auf eine InOut-Variable zu übertragen. Er ermöglicht das direkte Setzen eines Zielwerts, der gleichzeitig als Ein- und Ausgang fungiert. Dadurch kann der Baustein in Systemen eingesetzt werden, in denen ein bestimmter Speicherplatz oder eine Verbindungsvariable aktualisiert werden muss.

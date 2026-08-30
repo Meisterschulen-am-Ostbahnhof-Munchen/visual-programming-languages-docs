@@ -3,6 +3,7 @@
 ![const_AX_FALSE](const_AX_FALSE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `const_AX_FALSE` ist das Gegenstück zu [const_AX_TRUE](const_AX_TRUE.md): Ein einfacher Konstanten-Baustein, der bei seiner Initialisierung den festen Wert `FALSE` auf einen [AX](../AX.md)-Adapter-Plug legt. Er dient dazu, statisch verdrahtete boolesche Konstanten in ein AX-Adapternetzwerk einzuspeisen, ohne dass dafür eine eigene Verdrahtung von Ereignis- und Datenleitung nötig ist.

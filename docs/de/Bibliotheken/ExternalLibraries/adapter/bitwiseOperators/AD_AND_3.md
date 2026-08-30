@@ -3,6 +3,7 @@
 ![AD_AND_3](./AD_AND_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AD_AND_3** ist ein generischer Funktionsblock zur bitweisen UND-Verknüpfung von 3 Eingangswerten vom Typ `DWORD` (32-Bit-Bitmuster (Doppelwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_AND`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

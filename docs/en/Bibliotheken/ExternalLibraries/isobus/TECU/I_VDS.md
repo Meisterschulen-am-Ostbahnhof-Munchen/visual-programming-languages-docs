@@ -1,6 +1,7 @@
 # I_VDS
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **I_VDS** function block (Vehicle Direction/Speed) is an ISO 11783-7 compliant system for the precise detection of vehicle direction, speed, and inclination, developed under the EPL-2.0 license.
@@ -37,12 +38,15 @@ The block integrates navigation data for modern agricultural machinery and comme
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with `QI`=TRUE starts the GPS/navigation system
 - `INITO` confirms operational readiness with `QO` and `STATUS`
-2. **Data Update**:
+1. **Data Update**:
+
 - `IND` provides continuously updated navigation data
 - Standard update rate: 100ms for real-time applications
-3. **Error Handling**:
+1. **Error Handling**:
+
 - `TIMEOUT` in case of signal loss or communication errors
 - Status messages in the `STATUS` field
 
@@ -66,7 +70,7 @@ The block integrates navigation data for modern agricultural machinery and comme
 ## Data formats
 
 | Parameter | Example value | Meaning |
-|-----------|--------------|------------|
+| ----------- | -------------- | ------------ |
 | `CompassBearing` | 16384 | 128° (16384 × 1/128) |
 | `NavigationBasedVehicleSpeed` | 12800 | 50 km/h (12800 × 1/256) |
 | `Pitch` | 0xFFFF | Not used |
@@ -75,7 +79,7 @@ The block integrates navigation data for modern agricultural machinery and comme
 ## ⚖️ Comparison with similar systems
 
 | Feature | I_VDS | Standard GPS | Premium Navigation |
-|---------|-------|-------------|--------------|
+| --------- | ------- | ------------- | -------------- |
 | Accuracy | ±0.1° Direction | ±5° | ±0.05° |
 | Speed | ±0.1% | ±2% | ±0.05% |
 | Update Rate | 10 Hz | 1 Hz | 20 Hz |
@@ -83,8 +87,8 @@ The block integrates navigation data for modern agricultural machinery and comme
 
 ## 🛠️ Related Exercises
 
-* [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
-* [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
+- [Exercise_073](../../../../Uebungen/test_B/Uebungen_doc/Uebung_073.md)
+- [Exercise_079](../../../../Uebungen/test_B/Uebungen_doc/Uebung_079.md)
 
 ## Conclusion
 

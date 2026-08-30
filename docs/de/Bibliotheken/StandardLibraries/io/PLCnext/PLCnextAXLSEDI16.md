@@ -3,6 +3,7 @@
 <img width="1134" height="525" alt="image" src="https://github.com/user-attachments/assets/eb1ecb99-bebd-4650-b9fb-a7b8e9fc9331" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der PLCnextAXLSEDI16 ist ein Service Interface Function Block für die Anbindung an PLCnext-Systeme. Dieser Funktionsblock dient als Schnittstelle für digitale Eingänge und ermöglicht die Kommunikation mit der PLCnext-Bus-Architektur. Er unterstützt 16 digitale Eingangskanäle und bietet standardisierte Initialisierungs- und Statusrückmeldungen.

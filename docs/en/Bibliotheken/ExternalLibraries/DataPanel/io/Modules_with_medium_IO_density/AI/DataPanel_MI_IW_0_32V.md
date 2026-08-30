@@ -3,22 +3,24 @@
 ![DataPanel_MI_IW_0_32V](./DataPanel_MI_IW_0_32V.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Block (SIFB) according to IEC 61499. It is used to read an analog voltage signal in the range of 0–32V via a DataPanel MI module. The block handles the initialization of the communication channel, the configuration of an analog input (e.g., AnalogInput_1A to 8B), and the cyclical querying or reception of measured values. The output is as a **WORD** value; the status is signaled via **STATUS** and the **CNF** or **IND** event.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Comment | With |
-|-------|-----------|------------|
+| ------- | ----------- | ------------ |
 | **INIT** | Service Initialization | QI, PARAMS, u8SAMember, Input, AnalogInput_hysteresis |
 | **REQ** | Service Request (Measurement Retrieval) | QI |
 
 ### **Event Outputs**
 
 | Event | Comment | With |
-|-------|-----------|------------|
+| ------- | ----------- | ------------ |
 | **INITO** | Initialization Acknowledgement | QO, STATUS |
 | **CNF** | Service Request Acknowledgement | QO, STATUS, IN |
 | **IND** | Indication of a New Measured Value from the Resource | QO, STATUS, IN |
@@ -26,7 +28,7 @@ The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Blo
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Comment |
-|------|-----|-------------|-----------|
+| ------ | ----- | ------------- | ----------- |
 | **QI** | BOOL | – | Event input qualifier |
 | **PARAMS** | STRING | – | Service parameters (e.g., addresses, baud rate) |
 | **u8SAMember** | USINT | `MI::MI_00` | Node SA address (224..239) |
@@ -36,7 +38,7 @@ The function block **DataPanel_MI_IW_0_32V** is a Service Interface Function Blo
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | **QO** | BOOL | Event Output Qualifier |
 | **STATUS** | STRING | Service Status (e.g., error/success messages) |
 | **IN** | WORD | Measured Analog Value (0..32V scaled as WORD) |

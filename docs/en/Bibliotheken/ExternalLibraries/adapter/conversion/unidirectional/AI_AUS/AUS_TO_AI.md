@@ -3,9 +3,11 @@
 ![AUS_TO_AI](./AUS_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AUS_TO_AI` is a composite block that converts a `AUS` adapter (USINT-based) into a `AI` adapter (INT-based). It serves as a unidirectional interface between system components that use different data types for analog inputs. The block encapsulates the conversion logic and facilitates the integration of components based on `USINT` adapters into environments that expect `INT` adapters.
+
 ## Interface Structure
 
 The function block has **no direct event or data inputs or outputs**. All signal communication is handled via the two built-in adapters:
@@ -29,7 +31,7 @@ None.
 #### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | `AUS_IN` | Socket | `adapter::types::unidirectional::AUS` | USINT-based adapter input (source of the value to be converted) |
 | `AI_OUT` | Plug | `adapter::types::unidirectional::AI` | INT-based adapter output (destination of the converted value) |
 

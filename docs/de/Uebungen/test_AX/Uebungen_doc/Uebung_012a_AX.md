@@ -13,17 +13,17 @@ Der Baustein selbst besitzt keine sichtbaren Ein‑/Ausgangsschnittstellen – d
 ### Sub-Bausteine: Uebung_012a_sub_AUDI
 
 - **Typ**: `MyLib::sys::NVS_IN_AND_STORE_AUDI`
-- **Verwendete interne FBs**:  
+- **Verwendete interne FBs**:
   Nicht näher spezifiziert – der Baustein enthält eine gekapselte Implementierung zur Adapter‑basierten Eingabe und NVS-Speicherung.
 
 - **Parameter**:
-  - `KEY` = `KEY_I1_STORE`  
+  - `KEY` = `KEY_I1_STORE`
     (Schlüssel, unter dem der Wert im NVS abgelegt wird; definiert in `Uebungen::const::NVS::NVS_Keys`)
 
-  - `u16ObjId` = `InputNumber_I1`  
+  - `u16ObjId` = `InputNumber_I1`
     (Identifikation des Eingabewerts; definiert in `Uebungen::const::UT::DefaultPool`)
 
-- **Funktionsweise**:  
+- **Funktionsweise**:
   Der FB liest bei Aktivierung den aktuellen numerischen Wert von einem Adapter ein und speichert diesen persistent im NVS unter dem angegebenen `KEY`. Die Objekt‑ID `InputNumber_I1` referenziert die Bereitstellung des Werts durch die übergeordnete Umgebung (z. B. eine HMI‑Eingabe oder eine übergeordnete Steuerung).
 
 ## Programmablauf und Verbindungen
@@ -42,7 +42,7 @@ Der SubApp `Uebung_012a_AX` besteht aus einem einzelnen Netzwerk, das den FB `Ue
 - Kennenlernen der persistenten Speicherung mit NVS.
 - Umgang mit konstanten Schlüsseln und Objekt‑IDs aus getrennten Const‑Quellen.
 
-**Schwierigkeitsgrad**: Mittel  
+**Schwierigkeitsgrad**: Mittel
 **Vorkenntnisse**: Grundlagen der 4diac‑IDE, Umgang mit SubApps und Konstanten, Adapter‑Konzept.
 
 **Hinweise zur Einbindung**:
@@ -58,4 +58,4 @@ Die Übung `Uebung_012a_AX` demonstriert die effiziente Nutzung von Adaptern zur
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -20,14 +20,14 @@ Ansteuerung eines Rampen-Bausteins (`RampLimitFS`). Es wird gezeigt, wie verschi
 
 ![Uebung_009a_network](./Uebung_009a_network.svg)
 
-  * **`RampLimitFS`**: Der Hauptbaustein aus der Signalverarbeitungs-Bibliothek. Er berechnet einen Ausgangswert, der sich zeitlich gleitend (Rampe) verändert.
-  * **Eingangstaster**:
-    *   `ZERO`: Setzt den Wert sofort auf 0.
-    *   `FULL`: Setzt den Wert sofort auf 100.
-    *   `UP_SLOW` (Klick): Erhöht den Wert langsam.
-    *   `UP_FAST` (Langer Druck): Erhöht den Wert schnell.
-    *   `DOWN_SLOW` (Klick): Verringert den Wert langsam.
-    *   `DOWN_FAST` (Langer Druck): Verringert den Wert schnell.
+  - **`RampLimitFS`**: Der Hauptbaustein aus der Signalverarbeitungs-Bibliothek. Er berechnet einen Ausgangswert, der sich zeitlich gleitend (Rampe) verändert.
+  - **Eingangstaster**:
+    -   `ZERO`: Setzt den Wert sofort auf 0.
+    -   `FULL`: Setzt den Wert sofort auf 100.
+    -   `UP_SLOW` (Klick): Erhöht den Wert langsam.
+    -   `UP_FAST` (Langer Druck): Erhöht den Wert schnell.
+    -   `DOWN_SLOW` (Klick): Verringert den Wert langsam.
+    -   `DOWN_FAST` (Langer Druck): Verringert den Wert schnell.
 
 -----
 
@@ -37,8 +37,8 @@ Der Rampen-Baustein reagiert auf unterschiedliche Event-Eingänge:
 
 1.  **Statische Ziele**: Bei `ZERO` oder `FULL` springt die interne Berechnung sofort auf die Grenzwerte.
 2.  **Dynamische Änderung**:
-    *   Ein Klick (`SINGLE_CLICK`) an `I2` triggert den `UP_SLOW` Eingang des Rampen-Bausteins. Der Wert steigt mit der im Parameter `SLOW` hinterlegten Rate.
-    *   Hält der Nutzer den Taster länger gedrückt (`LONG_PRESS_START`), wird der Eingang `UP_FAST` getriggert. Der Wert steigt nun wesentlich schneller (Parameter `FAST`).
+    -   Ein Klick (`SINGLE_CLICK`) an `I2` triggert den `UP_SLOW` Eingang des Rampen-Bausteins. Der Wert steigt mit der im Parameter `SLOW` hinterlegten Rate.
+    -   Hält der Nutzer den Taster länger gedrückt (`LONG_PRESS_START`), wird der Eingang `UP_FAST` getriggert. Der Wert steigt nun wesentlich schneller (Parameter `FAST`).
 
 Das Ergebnis wird am ISOBUS-Terminal als Zahl (`OutputNumber_N1`) angezeigt.
 

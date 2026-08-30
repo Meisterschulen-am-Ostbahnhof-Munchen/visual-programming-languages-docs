@@ -5,6 +5,7 @@
 ![NmSetName](./NmSetName.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `NmSetName` dient der Konvertierung einer strukturierten Namensfeld-Definition in ein kompaktes, 8-Byte langes ISO-NAME gemäß der Spezifikation ISO 11783-5 (Abschnitt 5.1.2). Dieser Baustein ist ein wesentlicher Bestandteil für die Geräteidentifikation und -adressierung in ISOBUS-Netzwerken (Landwirtschaftliche und Forstmaschinen). Er übernimmt die Bit-genaue Zuordnung der einzelnen Felder einer `NAMEFIELD_T`-Struktur in das entsprechende Byte-Array eines `CF_NAME_T`.
@@ -13,19 +14,19 @@ Der Funktionsblock `NmSetName` dient der Konvertierung einer strukturierten Name
 
 ### **Ereignis-Eingänge**
 
-*   **REQ**: Dieses Ereignis löst die Konvertierung aus. Bei seinem Eintreffen werden die anliegenden Daten am Eingang `psNameField` verarbeitet.
+-   **REQ**: Dieses Ereignis löst die Konvertierung aus. Bei seinem Eintreffen werden die anliegenden Daten am Eingang `psNameField` verarbeitet.
 
 ### **Ereignis-Ausgänge**
 
-*   **CNF**: Dieses Ereignis signalisiert den Abschluss der Verarbeitung. Es wird nach der erfolgreichen Umwandlung der Eingangsdaten generiert.
+-   **CNF**: Dieses Ereignis signalisiert den Abschluss der Verarbeitung. Es wird nach der erfolgreichen Umwandlung der Eingangsdaten generiert.
 
 ### **Daten-Eingänge**
 
-*   **psNameField** (`isobus::pgn::NAMEFIELD_T`): Die Eingangsstruktur, die alle Einzelkomponenten eines ISOBUS-Namens (wie Herstellercode, Geräteklasse, Funktionsinstanz, etc.) in einem für den Programmierer gut handhabbaren Format enthält.
+-   **psNameField** (`isobus::pgn::NAMEFIELD_T`): Die Eingangsstruktur, die alle Einzelkomponenten eines ISOBUS-Namens (wie Herstellercode, Geräteklasse, Funktionsinstanz, etc.) in einem für den Programmierer gut handhabbaren Format enthält.
 
 ### **Daten-Ausgänge**
 
-*   **(Unbenannt)** (`isobus::pgn::CF_NAME_T`): Der Ausgang liefert das resultierende 8-Byte große ISO-NAME-Array (`data[0]` bis `data[7]`), das direkt in ISOBUS-Nachrichten verwendet werden kann.
+-   **(Unbenannt)** (`isobus::pgn::CF_NAME_T`): Der Ausgang liefert das resultierende 8-Byte große ISO-NAME-Array (`data[0]` bis `data[7]`), das direkt in ISOBUS-Nachrichten verwendet werden kann.
 
 ### **Adapter**
 
@@ -37,10 +38,10 @@ Der Baustein arbeitet als reiner Daten-Transformer. Bei Auslösung durch das `RE
 
 ## Technische Besonderheiten
 
-*   **Bitweise Verarbeitung:** Die Kernfunktionalität basiert auf präzisen bitweisen Operationen, um die komplexe Struktur des ISO-NAME in ein kompaktes Byte-Array zu packen.
-*   **Typensicherheit:** Es werden explizite Typkonvertierungen (z.B. `DWORD_TO_BYTE`, `WORD_TO_BYTE`) verwendet, um die korrekte Datenhandhabung sicherzustellen.
-*   **Normkonformität:** Die Implementierung folgt strikt der Bit-Zuordnung, wie sie in ISO 11783-5 definiert ist.
-*   **Zustandslos:** Der Block besitzt keinen internen Zustand zwischen zwei Aufrufen. Die Ausgabe hängt ausschließlich von den aktuellen Eingabedaten ab.
+-   **Bitweise Verarbeitung:** Die Kernfunktionalität basiert auf präzisen bitweisen Operationen, um die komplexe Struktur des ISO-NAME in ein kompaktes Byte-Array zu packen.
+-   **Typensicherheit:** Es werden explizite Typkonvertierungen (z.B. `DWORD_TO_BYTE`, `WORD_TO_BYTE`) verwendet, um die korrekte Datenhandhabung sicherzustellen.
+-   **Normkonformität:** Die Implementierung folgt strikt der Bit-Zuordnung, wie sie in ISO 11783-5 definiert ist.
+-   **Zustandslos:** Der Block besitzt keinen internen Zustand zwischen zwei Aufrufen. Die Ausgabe hängt ausschließlich von den aktuellen Eingabedaten ab.
 
 ## Zustandsübersicht
 
@@ -53,18 +54,18 @@ Der Block kehrt danach direkt wieder in den Wartezustand (1) zurück.
 
 ## Anwendungsszenarien
 
-*   **Initialisierung eines ISOBUS-Knotens:** Beim Start eines Steuergeräts (ECU) in einem ISOBUS-Netzwerk muss dessen eindeutiger NAME aus konfigurierbaren Parametern (z.B. aus einem NVRAM) zusammengesetzt und in die Kommunikationsstack eingetragen werden.
-*   **Dynamische Gerätekonfiguration:** In Systemen, wo sich die Geräteeigenschaften (z.B. Funktionsinstanz) zur Laufzeit ändern können, wird dieser Block verwendet, um den neuen, gültigen NAME zu generieren.
-*   **Test- und Simulationstools:** Zum Erzeugen von korrekten ISO-NAMEs für die Simulation verschiedener virtueller Geräte in einem ISOBUS-Netzwerk.
+-   **Initialisierung eines ISOBUS-Knotens:** Beim Start eines Steuergeräts (ECU) in einem ISOBUS-Netzwerk muss dessen eindeutiger NAME aus konfigurierbaren Parametern (z.B. aus einem NVRAM) zusammengesetzt und in die Kommunikationsstack eingetragen werden.
+-   **Dynamische Gerätekonfiguration:** In Systemen, wo sich die Geräteeigenschaften (z.B. Funktionsinstanz) zur Laufzeit ändern können, wird dieser Block verwendet, um den neuen, gültigen NAME zu generieren.
+-   **Test- und Simulationstools:** Zum Erzeugen von korrekten ISO-NAMEs für die Simulation verschiedener virtueller Geräte in einem ISOBUS-Netzwerk.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **Gegenstück `NmGetName`:** Während `NmSetName` eine strukturierte Beschreibung in ein Byte-Array packt, würde ein hypothetischer `NmGetName`-Block die umgekehrte Operation durchführen: Er extrahiert aus einem gegebenen ISO-NAME-Byte-Array die einzelnen Felder und stellt sie in einer `NAMEFIELD_T`-Struktur bereit. `NmSetName` ist somit der "Encoder", sein Pendant wäre der "Decoder".
-*   **Generische Byte-Packer:** Im Gegensatz zu generischen Bausteinen, die beliebige Datenstrukturen serialisieren, ist `NmSetName` spezifisch auf die ISO 11783-NAME-Struktur optimiert und garantiert so Normkonformität ohne zusätzliche Konfiguration.
+-   **Gegenstück `NmGetName`:** Während `NmSetName` eine strukturierte Beschreibung in ein Byte-Array packt, würde ein hypothetischer `NmGetName`-Block die umgekehrte Operation durchführen: Er extrahiert aus einem gegebenen ISO-NAME-Byte-Array die einzelnen Felder und stellt sie in einer `NAMEFIELD_T`-Struktur bereit. `NmSetName` ist somit der "Encoder", sein Pendant wäre der "Decoder".
+-   **Generische Byte-Packer:** Im Gegensatz zu generischen Bausteinen, die beliebige Datenstrukturen serialisieren, ist `NmSetName` spezifisch auf die ISO 11783-NAME-Struktur optimiert und garantiert so Normkonformität ohne zusätzliche Konfiguration.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
+- [Uebung_121](../../../../Uebungen/test_B/Uebungen_doc/Uebung_121.md)
 
 ## Fazit
 

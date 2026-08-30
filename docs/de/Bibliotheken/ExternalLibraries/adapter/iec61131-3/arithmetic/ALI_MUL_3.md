@@ -6,6 +6,7 @@
 *Kein Bild verfügbar. Der Funktionsblock wird grafisch mit drei eingangsseitigen Sockets (IN1, IN2, IN3) und einem ausgangsseitigen Plug (OUT) dargestellt.*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ALI_MUL_3` ist ein generischer Arithmetik-Baustein für die 4diac-IDE, der zur Multiplikation von drei Eingangswerten dient. Er zeichnet sich dadurch aus, dass die Ein- und Ausgänge nicht über klassische Daten- und Ereignis-Pins, sondern vollständig über unidirektionale Adapter des Typs `ALI` realisiert sind. Dies ermöglicht eine strukturierte, modulare und übersichtliche Kapselung von Signal- und Datenflüssen in IEC 61499-Anwendungen.
@@ -34,13 +35,13 @@ Da dieser Funktionsblock vollständig auf der Adapter-Technologie basiert, besit
 
 #### **Sockets (Eingänge)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::ALI`): Der erste Faktor (Multiplikand 1) für die arithmetische Multiplikation.
-* **IN2** (Typ: `adapter::types::unidirectional::ALI`): Der zweite Faktor (Multiplikand 2) für die arithmetische Multiplikation.
-* **IN3** (Typ: `adapter::types::unidirectional::ALI`): Der dritte Faktor (Multiplikand 3) für die arithmetische Multiplikation.
+- **IN1** (Typ: `adapter::types::unidirectional::ALI`): Der erste Faktor (Multiplikand 1) für die arithmetische Multiplikation.
+- **IN2** (Typ: `adapter::types::unidirectional::ALI`): Der zweite Faktor (Multiplikand 2) für die arithmetische Multiplikation.
+- **IN3** (Typ: `adapter::types::unidirectional::ALI`): Der dritte Faktor (Multiplikand 3) für die arithmetische Multiplikation.
 
 #### **Plugs (Ausgänge)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::ALI`): Das Ergebnis der Multiplikation (Produkt).
+- **OUT** (Typ: `adapter::types::unidirectional::ALI`): Das Ergebnis der Multiplikation (Produkt).
 
 ---
 
@@ -56,34 +57,36 @@ Die Steuerung des Berechnungszeitpunkts und die Übergabe der Werte erfolgen gek
 
 ## Technische Besonderheiten
 
-* **Generischer Baustein:** Durch das Attribut `GenericClassName` mit dem Wert `'GEN_ALI_MUL'` ist der Funktionsblock datentypunabhängig konzipiert. Er kann (je nach Ausprägung des verwendeten `ALI`-Adapters) für verschiedene numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`) eingesetzt werden.
-* **Sauberes Design:** Die Verwendung von Adaptern reduziert den Verdrahtungsaufwand im Funktionsplan (FBD) erheblich, da Kontroll- und Datenfluss in einer einzigen Verbindung gebündelt werden.
-* **Unidirektionale Adapter:** Da es sich um das Paket `adapter::types::unidirectional` handelt, fließen Daten und Trigger gerichtet von den Sockets (`IN1`-`IN3`) zum Plug (`OUT`).
+- **Generischer Baustein:** Durch das Attribut `GenericClassName` mit dem Wert `'GEN_ALI_MUL'` ist der Funktionsblock datentypunabhängig konzipiert. Er kann (je nach Ausprägung des verwendeten `ALI`-Adapters) für verschiedene numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`) eingesetzt werden.
+- **Sauberes Design:** Die Verwendung von Adaptern reduziert den Verdrahtungsaufwand im Funktionsplan (FBD) erheblich, da Kontroll- und Datenfluss in einer einzigen Verbindung gebündelt werden.
+- **Unidirektionale Adapter:** Da es sich um das Paket `adapter::types::unidirectional` handelt, fließen Daten und Trigger gerichtet von den Sockets (`IN1`-`IN3`) zum Plug (`OUT`).
 
 ---
 
 ## Zustandsübersicht
 
 Der Funktionsblock verhält sich wie ein klassischer, zustandsloser mathematischer Operator (kombinatorisches Verhalten):
-* **Bereitschaft:** Der Baustein wartet auf eingehende Aktualisierungsereignisse an den Adaptern `IN1`, `IN2` oder `IN3`.
-* **Berechnung:** Bei Triggerung wird die Multiplikation ausgeführt.
-* **Ausgabe:** Das Ergebnis wird direkt an den Ausgang `OUT` übergeben und der nachfolgende Baustein getriggert.
+
+- **Bereitschaft:** Der Baustein wartet auf eingehende Aktualisierungsereignisse an den Adaptern `IN1`, `IN2` oder `IN3`.
+- **Berechnung:** Bei Triggerung wird die Multiplikation ausgeführt.
+- **Ausgabe:** Das Ergebnis wird direkt an den Ausgang `OUT` übergeben und der nachfolgende Baustein getriggert.
 
 ---
 
 ## Anwendungsszenarien
 
-* **Berechnung physikalischer Größen:** Bestimmung von Volumina (Länge $\times$ Breite $\times$ Höhe) oder dreidimensionalen Skalierungen in der Fabrikautomatisierung.
-* **Kaskadierte Verstärkungsfaktoren:** Multiplikation von drei verschiedenen Gain-Faktoren oder Korrekturwerten in Regelungskreisen (z. B. Sensorwert $\times$ Kalibrierfaktor $\times$ Skalierungsfaktor).
-* **Signalverarbeitung:** Kombination mehrerer Gewichtungsfaktoren in der Prozessüberwachung.
+- **Berechnung physikalischer Größen:** Bestimmung von Volumina (Länge $\times$ Breite $\times$ Höhe) oder dreidimensionalen Skalierungen in der Fabrikautomatisierung.
+- **Kaskadierte Verstärkungsfaktoren:** Multiplikation von drei verschiedenen Gain-Faktoren oder Korrekturwerten in Regelungskreisen (z. B. Sensorwert $\times$ Kalibrierfaktor $\times$ Skalierungsfaktor).
+- **Signalverarbeitung:** Kombination mehrerer Gewichtungsfaktoren in der Prozessüberwachung.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
 Im Vergleich zu einem Standard-`MUL`-Baustein der IEC 61131-3:
-* **Klassischer `MUL`-Block:** Benötigt explizite `REQ`- und `CNF`-Ereignisse sowie einzelne Daten-Pins für jeden Operanden. Das führt bei mehreren Eingängen schnell zu unübersichtlichen Plänen.
-* **`ALI_MUL_3`:** Bündelt die Schnittstellen in vier übersichtliche Adapter-Anschlüsse. Zudem ist er fest auf genau drei Eingänge ausgelegt, was eine Zwischenstufe (Kaskadierung von zwei 2-fach Multiplizierern) einspart.
+
+- **Klassischer `MUL`-Block:** Benötigt explizite `REQ`- und `CNF`-Ereignisse sowie einzelne Daten-Pins für jeden Operanden. Das führt bei mehreren Eingängen schnell zu unübersichtlichen Plänen.
+- **`ALI_MUL_3`:** Bündelt die Schnittstellen in vier übersichtliche Adapter-Anschlüsse. Zudem ist er fest auf genau drei Eingänge ausgelegt, was eine Zwischenstufe (Kaskadierung von zwei 2-fach Multiplizierern) einspart.
 
 ---
 

@@ -2,13 +2,14 @@
 
 ## 🎧 Podcast
 
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ![SPLIT_BYTE_INTO_QUARTERS](https://github.com/user-attachments/assets/9cbf32e0-f8c2-437f-88d3-8e29db1731dd)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_BYTE_INTO_QUARTERS` dient dazu, ein Byte in vier Viertelbytes (Quarter Bytes) aufzuteilen. Diese Funktion ist besonders nützlich, wenn einzelne Teile eines Bytes separat verarbeitet werden müssen, z.B. bei der Dekodierung von Daten oder bei der Bitmanipulation.
@@ -68,7 +69,7 @@ Der Funktionsblock hat keinen internen Zustand. Die Verarbeitung erfolgt ausschl
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
+- [Uebung_056](../../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
 
 ## Fazit
 

@@ -6,9 +6,10 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein (FB) `ALI_SUB_2` ist ein generischer, arithmetischer Funktionsbaustein zur Durchführung einer Subtraktion. Er entspricht dem IEC 61131-3-Standard für standardmäßige arithmetische Funktionen. Der Baustein verwendet Adapter-Verbindungen (`ALI` - Arithmetic Logical Interface), um die Eingangsdaten entgegenzunehmen und das Ergebnis der Subtraktion auszugeben. 
+Der Funktionsbaustein (FB) `ALI_SUB_2` ist ein generischer, arithmetischer Funktionsbaustein zur Durchführung einer Subtraktion. Er entspricht dem IEC 61131-3-Standard für standardmäßige arithmetische Funktionen. Der Baustein verwendet Adapter-Verbindungen (`ALI` - Arithmetic Logical Interface), um die Eingangsdaten entgegenzunehmen und das Ergebnis der Subtraktion auszugeben.
 
 ## Schnittstellenstruktur
 
@@ -32,12 +33,12 @@ Es sind keine direkten Daten-Ausgänge vorhanden. Das Ergebnis wird über den Au
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::ALI`): Der erste Eingang (Minuend) für die Subtraktionsberechnung.
-*   **IN2** (Typ: `adapter::types::unidirectional::ALI`): Der zweite Eingang (Subtrahend) für die Subtraktionsberechnung.
+-   **IN1** (Typ: `adapter::types::unidirectional::ALI`): Der erste Eingang (Minuend) für die Subtraktionsberechnung.
+-   **IN2** (Typ: `adapter::types::unidirectional::ALI`): Der zweite Eingang (Subtrahend) für die Subtraktionsberechnung.
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::ALI`): Der Ausgang (Differenz) der Berechnung ($OUT = IN1 - IN2$).
+-   **OUT** (Typ: `adapter::types::unidirectional::ALI`): Der Ausgang (Differenz) der Berechnung ($OUT = IN1 - IN2$).
 
 ---
 
@@ -53,8 +54,8 @@ Das Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergeben. Da es si
 
 ## Technische Besonderheiten
 
-*   **Generische Implementierung:** Der Baustein nutzt das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_ALI_SUB'`. Dies erlaubt eine flexible Handhabung verschiedener Datentypen, die durch die Adapter-Schnittstellen vorgegeben werden.
-*   **Kapselung durch Adapter:** Durch die Verwendung von unidirektionalen `ALI`-Adaptern werden Daten und die dazugehörigen Steuerungsereignisse (wie z.B. Update-Events) in einer einzigen Verbindung gebündelt. Dies reduziert die Anzahl der sichtbaren Verbindungslinien im 4diac-Applikationseditor und erhöht die Übersichtlichkeit.
+-   **Generische Implementierung:** Der Baustein nutzt das Attribut `eclipse4diac::core::GenericClassName` mit dem Wert `'GEN_ALI_SUB'`. Dies erlaubt eine flexible Handhabung verschiedener Datentypen, die durch die Adapter-Schnittstellen vorgegeben werden.
+-   **Kapselung durch Adapter:** Durch die Verwendung von unidirektionalen `ALI`-Adaptern werden Daten und die dazugehörigen Steuerungsereignisse (wie z.B. Update-Events) in einer einzigen Verbindung gebündelt. Dies reduziert die Anzahl der sichtbaren Verbindungslinien im 4diac-Applikationseditor und erhöht die Übersichtlichkeit.
 
 ---
 
@@ -66,9 +67,9 @@ Der Baustein verhält sich rein zustandslos und reaktiv. Es gibt keine interne Z
 
 ## Anwendungsszenarien
 
-*   **Signalverarbeitung und Skalierung:** Berechnung von Abweichungen, wie beispielsweise der Differenz zwischen einem Sollwert und einem Istwert (Regelungsabweichung) in Steuerungsanwendungen.
-*   **Offset-Kompensation:** Abzug von Nullpunktfehlern oder Offsets bei Sensordaten, die über Adapterstrukturen in das System eingespeist werden.
-*   **Modulare Systemarchitekturen:** Einsatz in komplexen, verteilten Steuerungssystemen, bei denen ein strukturierter und übersichtlicher Datenfluss durch den Einsatz von Adaptern gefordert ist.
+-   **Signalverarbeitung und Skalierung:** Berechnung von Abweichungen, wie beispielsweise der Differenz zwischen einem Sollwert und einem Istwert (Regelungsabweichung) in Steuerungsanwendungen.
+-   **Offset-Kompensation:** Abzug von Nullpunktfehlern oder Offsets bei Sensordaten, die über Adapterstrukturen in das System eingespeist werden.
+-   **Modulare Systemarchitekturen:** Einsatz in komplexen, verteilten Steuerungssystemen, bei denen ein strukturierter und übersichtlicher Datenfluss durch den Einsatz von Adaptern gefordert ist.
 
 ---
 

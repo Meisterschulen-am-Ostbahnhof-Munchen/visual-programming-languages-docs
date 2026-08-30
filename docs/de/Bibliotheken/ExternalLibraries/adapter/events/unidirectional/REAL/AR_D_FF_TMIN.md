@@ -3,6 +3,7 @@
 ![AR_D_FF_TMIN](./AR_D_FF_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Baustein **AR_D_FF_TMIN** realisiert ein Data-Latch (D-Flipflop) mit einem Eingangs‑ und einem Ausgangsadapter. Er zeichnet sich durch die optionale Vorgabe einer Mindestzeit (`Tmin`) zwischen aufeinanderfolgenden Ereignisausgaben aus. Der Kern des Bausteins basiert auf dem Standard-FB `E_D_FF_ANY_TMIN`, der die eigentliche Flipflop-Logik sowie die Zeitsteuerung übernimmt.

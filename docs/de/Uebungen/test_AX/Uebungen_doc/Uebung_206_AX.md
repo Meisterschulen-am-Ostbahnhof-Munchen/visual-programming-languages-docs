@@ -50,10 +50,10 @@ Dadurch eignet sich die Schaltung für sicherheitskritische Anwendungen, z. B.
 
 ## Programmablauf und Verbindungen
 
-1. **Eingangsereignisse**  
+1. **Eingangsereignisse**
    Die drei Digital-Eingänge (`DigitalInput_CLK_Ix`) wandeln Taster-Signale (Single-Click-Ereignis) in Ereignisse am Ausgang `IND` um. Diese werden direkt mit dem `CLK`-Eingang des jeweiligen `ILOCK_T_FF_Ax`-Bausteins verbunden.
 
-2. **Interlock-Kette**  
+2. **Interlock-Kette**
    Die drei Flip-Flops werden über ihre Adapter-Schnittstellen in einer Kette verbunden:
 
    - `ILOCK_T_FF_1.ILOCK_OUT` → `ILOCK_T_FF_2.ILOCK_IN`
@@ -62,7 +62,7 @@ Dadurch eignet sich die Schaltung für sicherheitskritische Anwendungen, z. B.
 
    Durch diese Verkettung wird sichergestellt, dass bei Setzen eines Flip-Flops (z. B. Nr. 1) der Nachfolger (Nr. 2) ein Sperrsignal erhält, das wiederum an Nr. 3 weitergegeben wird. Sobald in der Kette ein aktives Sperrsignal anliegt, schaltet der betroffene Baustein seinen Ausgang `Q` sofort aus.
 
-3. **Ausgangsansteuerung**  
+3. **Ausgangsansteuerung**
    Die Ausgänge `Q` der drei Flip-Flops sind mit den Digitalausgängen (`DigitalOutput_Q1` … `DigitalOutput_Q3`) verbunden. Diese geben den Zustand an die Hardware‑Kanäle Q1, Q2 und Q3 weiter.
 
 **Lernziele**:
@@ -87,4 +87,4 @@ Die Übung „Uebung_206_AX“ zeigt einen eleganten Weg, drei Toggle-Flip-Flops
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

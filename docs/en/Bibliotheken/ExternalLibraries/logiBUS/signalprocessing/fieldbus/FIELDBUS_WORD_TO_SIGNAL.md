@@ -3,9 +3,11 @@
 ![FIELDBUS_WORD_TO_SIGNAL](./FIELDBUS_WORD_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The FIELDBUS_WORD_TO_SIGNAL function block is used for simple signal filtering in fieldbus applications. It reflects an incoming WORD value at the output, provided the signal is classified as valid. A Boolean output indicates the validity status. Implementation is based on a comparison with an externally defined limit constant.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The FIELDBUS_WORD_TO_SIGNAL function block is used for simple signal filtering i
 ### **Data Outputs**
 
 | Name | Type | Initial Value | Comment |
-|------|-----|-------------|-----------|
+| ------ | ----- | ------------- | ----------- |
 | OUT | WORD | 16#0000 | Filtered output value (only if the signal is valid). |
 | VALID | BOOL | FALSE | TRUE if the input signal is recognized as valid. |
 
@@ -49,7 +51,7 @@ The module operates using a simple algorithm:
 
 Otherwise, **OUT** is reset to `16#0000` and **VALID** to `FALSE`.
 
-4. The **CNF** event is then triggered.
+1. The **CNF** event is then triggered.
 
 The initial value of input `IN` is `NOT_AVAILABLE_WM`, so the function block signals an invalid signal in its default state.
 
@@ -61,6 +63,7 @@ The initial value of input `IN` is `NOT_AVAILABLE_WM`, so the function block sig
 - **Simple State Machine:** There is only one execution state (REQ) – the function block is event-driven and does not remain in any other states.
 
 **Initial State Machine:**
+
 ## State Overview
 
 The function block has exactly one state:
@@ -89,6 +92,6 @@ The function block `FIELDBUS_WORD_TO_SIGNAL` offers a compact and reliable way t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

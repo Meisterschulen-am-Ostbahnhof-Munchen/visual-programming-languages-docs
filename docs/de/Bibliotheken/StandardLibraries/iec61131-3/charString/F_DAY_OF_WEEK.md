@@ -3,6 +3,7 @@
 ![F_DAY_OF_WEEK](F_DAY_OF_WEEK.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `F_DAY_OF_WEEK` ermittelt aus einem Datum (`DATE`) den zugehörigen Wochentag als Zahl. Er ist ein einfacher Funktionsbaustein zur Kalenderberechnung nach IEC 61131-3.

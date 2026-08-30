@@ -3,6 +3,7 @@
 ![AUDI_SUB_2](./AUDI_SUB_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block (FB) `AUDI_SUB_2` is a generic function block for performing arithmetic subtraction. It is based on the generic class `GEN_AUDI_SUB` and uses unidirectional adapters of type `AUDI` for structured and event-driven data transmission. This achieves clean encapsulation of data and events, reducing the complexity of wiring in IEC 61499 applications.
@@ -31,15 +32,15 @@ Since the block is entirely based on adapters, it does not have any traditional,
 
 #### **Sockets (Input Adapters / Sockets)**
 
-* **IN1** (Type: `adapter::types::unidirectional::AUDI`):
-* First input for subtraction (minuend).
-* **IN2** (Type: `adapter::types::unidirectional::AUDI`):
-* Second input for subtraction (subtrahend).
+- **IN1** (Type: `adapter::types::unidirectional::AUDI`):
+- First input for subtraction (minuend).
+- **IN2** (Type: `adapter::types::unidirectional::AUDI`):
+- Second input for subtraction (subtrahend).
 
 #### **Plugs (Output Adapters)**
 
-* **OUT** (Type: `adapter::types::unidirectional::AUDI`):
-* Output of the function block that provides the result of the subtraction (difference).
+- **OUT** (Type: `adapter::types::unidirectional::AUDI`):
+- Output of the function block that provides the result of the subtraction (difference).
 
 --
 
@@ -55,8 +56,8 @@ As soon as values at the input adapters `IN1` or `IN2` change and a correspondin
 
 ## Technical Features
 
-* **Generic Implementation:** The `eclipse4diac::core::GenericClassName = 'GEN_AUDI_SUB'` attribute makes the function block flexible. Depending on the implementation of the underlying adapter, it can support various data types.
-* **Encapsulation by Adapter:** Using the unidirectional adapter `AUDI` bundles data and event lines. This significantly improves clarity in the 4diac application editor, as fewer lines need to be drawn.
+- **Generic Implementation:** The `eclipse4diac::core::GenericClassName = 'GEN_AUDI_SUB'` attribute makes the function block flexible. Depending on the implementation of the underlying adapter, it can support various data types.
+- **Encapsulation by Adapter:** Using the unidirectional adapter `AUDI` bundles data and event lines. This significantly improves clarity in the 4diac application editor, as fewer lines need to be drawn.
 
 --
 
@@ -68,15 +69,15 @@ The function block behaves like a stateless mathematical operator. There is no i
 
 ## Application Scenarios
 
-* **Signal Processing:** Subtraction of sensor values (e.g., offset compensation or calculation of differential pressures/temperatures) in systems that are consistently based on the `AUDI` adapter architecture.
-* **Control Engineering:** Calculation of the control error ($e = w - x$) by subtracting the actual value from the setpoint.
+- **Signal Processing:** Subtraction of sensor values (e.g., offset compensation or calculation of differential pressures/temperatures) in systems that are consistently based on the `AUDI` adapter architecture.
+- **Control Engineering:** Calculation of the control error ($e = w - x$) by subtracting the actual value from the setpoint.
 
 ---
 
 ## Comparison with Similar Components
 
-* **Standard SUB Component (IEC 61131-3 / IEC 61499):** A classic `SUB` component has dedicated data inputs (`IN1`, `IN2`), a data output (`OUT`), and event inputs and outputs (e.g., `REQ` / `CNF`). The `AUDI_SUB_2`, on the other hand, bundles these signals in adapters, which improves reusability and modularity in complex architectures.
-* **AUDI_ADD_2:** The counterpart for addition. Uses the same adapter interface, but adds the input values ($IN1 + IN2$).
+- **Standard SUB Component (IEC 61131-3 / IEC 61499):** A classic `SUB` component has dedicated data inputs (`IN1`, `IN2`), a data output (`OUT`), and event inputs and outputs (e.g., `REQ` / `CNF`). The `AUDI_SUB_2`, on the other hand, bundles these signals in adapters, which improves reusability and modularity in complex architectures.
+- **AUDI_ADD_2:** The counterpart for addition. Uses the same adapter interface, but adds the input values ($IN1 + IN2$).
 
 ---
 

@@ -3,6 +3,7 @@
 ![AL_OR_2](./AL_OR_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AL_OR_2** ist ein generischer Funktionsblock zur bitweisen ODER-Verknüpfung von 2 Eingangswerten vom Typ `LWORD` (64-Bit-Bitmuster (Langwort)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_OR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

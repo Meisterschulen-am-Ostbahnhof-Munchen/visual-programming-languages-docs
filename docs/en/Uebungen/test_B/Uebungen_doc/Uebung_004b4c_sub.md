@@ -3,9 +3,11 @@
 ![Uebung_004b4c_sub_network](./Uebung_004b4c_sub_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a sub-application for a latching toggle flip-flop that can communicate with other components via an AE2 adapter. The circuit is identical to that in Exercise 004b3c_sub and serves as a basis for understanding event-driven state changes with feedback and adapter-based input/output.
+
 ## Function Blocks (FBs) Used
 
 The sub-application contains four internal function blocks that are interconnected via event, data, and adapter connections.
@@ -67,14 +69,15 @@ If `Q = TRUE` (flip-flop is set), the event is forwarded to output `EO0`.
 
 - If `Q = FALSE` (flip-flop reset) is triggered, the event is forwarded to `EO1`.
 
-4. The output `EO0` (when set) leads to the reset input `R` of the flip-flop (via the path: `EO0` → `AE2_E_TO_EVENT.REQ` → (feedback) → `AE2_EVENT_TO_E.CNF` → `E_SR_I1.R`). **Note:** The event chain is actually wired as follows:
+1. The output `EO0` (when set) leads to the reset input `R` of the flip-flop (via the path: `EO0` → `AE2_E_TO_EVENT.REQ` → (feedback) → `AE2_EVENT_TO_E.CNF` → `E_SR_I1.R`). **Note:** The event chain is actually wired as follows:
+
 - `E_SWITCH_I1.EO0` goes to `E_SR_I1.S` (set).
 - `E_SWITCH_I1.EO1` goes to `E_SR_I1.R` (reset).
 - Additionally, both outputs are connected to the AE2 converters to send the events externally.
 - The adapter converters are cross-connected (see EventConnections), so an event from `AE2_E_TO_EVENT` is passed to `AE2_EVENT_TO_E` and vice versa. This enables bidirectional communication via the adapter.
-5. After processing the set or reset event, the output `EO` is triggered by `E_SR_I1` and made available as the sub-application output `EO`.
+1. After processing the set or reset event, the output `EO` is triggered by `E_SR_I1` and made available as the sub-application output `EO`.
 
-6. The current state `Q` is directly output as `Q` by the sub-application.
+2. The current state `Q` is directly output as `Q` by the sub-application.
 
 **Adapter Connections:**
 
@@ -101,7 +104,7 @@ Exercise 004b4c_sub demonstrates the construction of a latching toggle flip-flop
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 IEC 61499 Events – The Pulse of Automation on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/events/event/)
 
 ]

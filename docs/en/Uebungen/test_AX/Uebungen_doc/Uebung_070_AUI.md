@@ -3,9 +3,11 @@
 ![Uebung_070_AUI_network](./Uebung_070_AUI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the output of wheel-based machine speed (WBSD) to a Universal Terminal (UT) using adapters. Unlike the basic exercise (Exercise_070), this exercise uses an adapter-based connection between the sensor interface and the output module. Communication is via the proprietary AUI protocol, which must be converted to an AUDI protocol for connection to the UT module.
+
 ## Function Blocks Used (FBs)
 
 The exercise consists of three predefined function blocks connected in the SubApp network:
@@ -67,6 +69,6 @@ The difficulty level is classified as **advanced**, as basic knowledge of adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

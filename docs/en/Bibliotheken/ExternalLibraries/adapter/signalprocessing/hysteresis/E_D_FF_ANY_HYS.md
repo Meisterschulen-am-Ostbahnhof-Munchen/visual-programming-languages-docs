@@ -12,24 +12,24 @@ The function block `E_D_FF_ANY_HYS` is an edge-triggered D flip-flop (data latch
 
 ### **Event Inputs**
 
-* **CLK**: Clock Input. Upon the occurrence of this event, the system checks whether the input value `D` has changed by at least the value of `Q` compared to the current output value `HYSTERESIS`.
+- **CLK**: Clock Input. Upon the occurrence of this event, the system checks whether the input value `D` has changed by at least the value of `Q` compared to the current output value `HYSTERESIS`.
 
 ### **Event Outputs**
 
-* **EO**: Event Output. Triggered when a clock event (`CLK`) results in an actual value change and update of the output `Q`.
+- **EO**: Event Output. Triggered when a clock event (`CLK`) results in an actual value change and update of the output `Q`.
 
 ### **Data Inputs**
 
-* **D** (`ANY_NUM`): The current data value to be read.
-* **HYSTERESIS** (`ANY_NUM`): The hysteresis band. Specifies the minimum difference that must exist between `D` and `Q` for the output to be updated.
+- **D** (`ANY_NUM`): The current data value to be read.
+- **HYSTERESIS** (`ANY_NUM`): The hysteresis band. Specifies the minimum difference that must exist between `D` and `Q` for the output to be updated.
 
 ### **Data Outputs**
 
-* **Q** (`ANY_NUM`): The stored (latched) value.
+- **Q** (`ANY_NUM`): The stored (latched) value.
 
 ### **Adapters**
 
-* *No adapters available.*
+- *No adapters available.*
 
 ## Functionality
 
@@ -47,8 +47,8 @@ In the ECC condition, this is mathematically implemented using the formula `GE(S
 
 ## Technical Features
 
-* **Generic Data Type**: By using the data type `ANY_NUM` for the inputs and outputs, the function block is highly reusable and can be interconnected with various numeric data types (e.g., `INT`, `REAL`, `LREAL`).
-* **Efficient Difference Calculation**: The difference calculation using `SUB(MAX(D, Q), MIN(D, Q))` ensures that a positive absolute value is always used for comparison with the hysteresis, regardless of whether the new value is greater or less than the old value.
+- **Generic Data Type**: By using the data type `ANY_NUM` for the inputs and outputs, the function block is highly reusable and can be interconnected with various numeric data types (e.g., `INT`, `REAL`, `LREAL`).
+- **Efficient Difference Calculation**: The difference calculation using `SUB(MAX(D, Q), MIN(D, Q))` ensures that a positive absolute value is always used for comparison with the hysteresis, regardless of whether the new value is greater or less than the old value.
 
 ## Status Overview
 
@@ -56,18 +56,18 @@ In the ECC condition, this is mathematically implemented using the formula `GE(S
 |
                             +--( CLK [Differenz >= HYSTERESIS] )--> (erneuter Aufruf von SET)
 
-* **START**: Waiting state before the first clock cycle.
-* **SET**: State in which the input value is accepted and output. This state is called cyclically at each valid clock cycle (taking hysteresis into account).
+- **START**: Waiting state before the first clock cycle.
+- **SET**: State in which the input value is accepted and output. This state is called cyclically at each valid clock cycle (taking hysteresis into account).
 
 ## Application Scenarios
 
-* **Noise Filtering for Analog Sensor Values**: Reduction of event floods in distributed systems. If a sensor (e.g., a temperature sensor) continuously delivers slightly fluctuating values, hysteresis prevents new control events from being constantly distributed throughout the system in response to minimal changes.
-* **Limit Monitoring with Deadband**: Prevention of signal bounce when transmitting process values to visualizations (HMI) or databases.
+- **Noise Filtering for Analog Sensor Values**: Reduction of event floods in distributed systems. If a sensor (e.g., a temperature sensor) continuously delivers slightly fluctuating values, hysteresis prevents new control events from being constantly distributed throughout the system in response to minimal changes.
+- **Limit Monitoring with Deadband**: Prevention of signal bounce when transmitting process values to visualizations (HMI) or databases.
 
 ## Comparison with Similar Function Blocks
 
-* **E_D_FF**: The standard D flip-flop typically reacts at the Boolean level or unconditionally stores values at each clock cycle. `E_D_FF_ANY_HYS` additionally filters the values using the hysteresis condition.
-* **Hysteresis blocks (e.g., with Boolean output)**: Typical hysteresis blocks compare a value with fixed thresholds and output a `BOOL` signal (e.g., threshold switch). `E_D_FF_ANY_HYS`, on the other hand, outputs the numerical value itself as soon as it has changed significantly.
+- **E_D_FF**: The standard D flip-flop typically reacts at the Boolean level or unconditionally stores values at each clock cycle. `E_D_FF_ANY_HYS` additionally filters the values using the hysteresis condition.
+- **Hysteresis blocks (e.g., with Boolean output)**: Typical hysteresis blocks compare a value with fixed thresholds and output a `BOOL` signal (e.g., threshold switch). `E_D_FF_ANY_HYS`, on the other hand, outputs the numerical value itself as soon as it has changed significantly.
 
 ## Conclusion
 

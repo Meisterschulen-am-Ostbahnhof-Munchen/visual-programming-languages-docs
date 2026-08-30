@@ -3,6 +3,7 @@
 ![SERVER_0_3](SERVER_0_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der `SERVER_0_3`-Funktionsblock ist die generische Server-Variante mit 0 Sende- und 3 Empfangsdatenfeldern für die Kommunikation mit einem passenden [CLIENT_3_0](CLIENT_3_0.md)-Block. Er empfängt 3 Datenwerte (`RD_1` `RD_2` `RD_3`) vom Client, ohne selbst Nutzdaten zu senden. Wie alle `SERVER_*`-Bausteine basiert er auf der generischen `GEN_SERVER`-Implementierung — dieselbe C++-Basis wie [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md), lediglich die Anzahl der Sende-/Empfangsfelder unterscheidet sich pro Instanziierung.

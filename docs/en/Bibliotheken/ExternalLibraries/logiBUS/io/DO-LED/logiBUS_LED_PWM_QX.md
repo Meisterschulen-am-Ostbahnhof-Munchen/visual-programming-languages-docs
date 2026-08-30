@@ -70,7 +70,7 @@ Compared to simple digital output modules, logiBUS_LED_PWM_QX offers advanced PW
 
 ## 🛠️ Related Exercises
 
-* [Exercise_030](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_030.md)
+- [Exercise_030](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_030.md)
 
 ## Conclusion
 
@@ -80,4 +80,4 @@ The logiBUS_LED_PWM_QX is a specialized function block for demanding LED control
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 The PWM signal & infographic on ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

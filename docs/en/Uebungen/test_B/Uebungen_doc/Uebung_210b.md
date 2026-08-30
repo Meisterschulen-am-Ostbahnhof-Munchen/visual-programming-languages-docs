@@ -3,6 +3,7 @@
 ![Uebung_210b_network](./Uebung_210b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a **Counter Up** according to IEC 61131-3 (FB_CTU) with the data type `INT`. The counter is controlled via two digital inputs: a count pulse input (`CU`) and a reset input (`R`). The current counter value is output both to a digital output (limit reached) and via a terminal object for numerical display.
@@ -14,7 +15,7 @@ This exercise demonstrates the basic functionality of an industrial counter, the
 The following function blocks are used in this exercise:
 
 | FB Name | Type | Parameters | Short Description |
-|---------|-----|-----------|------------------|
+| --------- | ----- | ----------- | ------------------ |
 | `FB_CTU` | `iec61131::counters::FB_CTU` | `PV = INT#5` | IEC 61131-3 Upward Counter, Counting Range INT, Preset Value 5. |
 | `Input_CU` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` | Digital input, provides the counting pulse (`CU`). |
 | `Input_R` | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` | Digital input, provides the reset signal (`R`). |
@@ -29,6 +30,7 @@ The inputs `Input_I1` and `Input_I2`, as well as the output `Output_Q1`, are phy
 
 
 **
+
 ## Program Flow and Connections
 
 ### Event and Data Connections
@@ -62,6 +64,7 @@ After each counting operation, the counter's `CNF` event is forwarded to the dig
 - The `Q` value is written to the output `Output_Q1`.
 - The `CV` value is passed to the terminal as a physical quantity (`rPhys`) and displayed numerically there.
 ...
+
 ### Notes from the Source Code
 
 - The comment "**INT can be closed to REAL without conversion**" refers to the fact that the counter value of type `INT` can be directly connected to the `rPhys` input (type `REAL`) – automatic type conversion takes place.
@@ -86,6 +89,6 @@ Exercise **Exercise_210b** implements a complete IEC 61131-3 forward counter (`F
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

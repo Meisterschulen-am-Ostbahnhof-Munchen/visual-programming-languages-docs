@@ -3,6 +3,7 @@
 ![const_AX_TRUE](const_AX_TRUE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `const_AX_TRUE` is a simple constant block that writes the fixed value `TRUE` to an [AX](../AX.md) adapter plug on initialization. It is used to feed statically wired Boolean constants into an AX adapter network without wiring a separate event and data line for it.

@@ -1,8 +1,9 @@
 # Exercise_053: DigitalInput_I1-_I4 to DigitalOutput_Q1-_Q4
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_053`.
+This article describes the logiBUS® exercise `Uebung_053`
 ----
+
 ## Purpose of the Exercise
 
 Combining bits into a byte. This is a low-level form of data bundling, often used in communication with fieldbus devices (e.g., CAN bus messages).
@@ -17,8 +18,8 @@ Combining bits into a byte. This is a low-level form of data bundling, often use
 
 ![Uebung_053_network](./Uebung_053_network.svg)
 
-* **`ASSEMBLE_BYTE_FROM_BOOLS`**: Converts 8 individual bits (4 are used here) into an 8-bit integer value (BYTE).
-* **`SPLIT_BYTE_INTO_BOOLS`**: Decomposes the byte back into its individual bits.
+- **`ASSEMBLE_BYTE_FROM_BOOLS`**: Converts 8 individual bits (4 are used here) into an 8-bit integer value (BYTE).
+- **`SPLIT_BYTE_INTO_BOOLS`**: Decomposes the byte back into its individual bits.
 
 -----
 

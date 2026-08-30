@@ -76,7 +76,7 @@ Der Baustein besitzt keine expliziten benannten Zustände. Das interne Flipflop 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Wesentlicher Unterschied |
-|----------|--------------------------|
+| ---------- | -------------------------- |
 | **E_D_FF** (einfaches D-Flipflop) | Kein Hystereseband, keine Mindestzeit – übernimmt jede Änderung sofort. |
 | **AI_D_FF_HYS** (ohne Tmin) | Enthält Hysterese, jedoch keine zeitliche Begrenzung der Ausgabe. |
 | **AI_D_FF_TMIN** (ohne Hysterese) | Enthält nur die Mindestzeit, aber keine Hysterese. |

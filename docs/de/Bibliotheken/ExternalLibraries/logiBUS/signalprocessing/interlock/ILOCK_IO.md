@@ -3,6 +3,7 @@
 ![ILOCK_IO](./ILOCK_IO.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ILOCK_IO** realisiert eine kaskadierbare, momentane (nicht rücksetzbare) Verriegelung (Interlock) mit BOOL-Schnittstelle. Er wird verwendet, um in einer Kette mehrerer Bausteine sicherzustellen, dass immer nur ein Baustein seinen Ausgang auf TRUE setzt, solange sein Eingang aktiv ist und kein anderer Baustein in der Kette bereits aktiv ist. Der Baustein eignet sich besonders für Steuerungen, bei denen konkurrierende Anforderungen exklusiv bedient werden müssen.

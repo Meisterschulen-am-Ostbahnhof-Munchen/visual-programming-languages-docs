@@ -13,7 +13,7 @@ Dieses Feature dient dazu, Werkseinstellungen, herstellerseitige Systemparameter
 Das Steuergerät unterscheidet zwei Ebenen der Konfigurationsspeicherung:
 
 | Datei | Zweck | Schreibbar? | Typische Inhalte |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | **`settingsReadOnly.ini`** | Werkseinstellungen & Systemvorgaben | ❌ Nein (Schreibschutz) | ISOBUS-Quelladressen (Node-SAs), Hardware-Pinbelegungen, fest vorgegebene Boot-Zeiten |
 | **`settings.ini`** | Benutzer- & Laufzeiteinstellungen | ✅ Ja (Lesen & Schreiben) | Benutzerpräferenzen, dynamische Betriebsparameter, wählbare Grenzwert-Skalierungen |
 
@@ -35,9 +35,9 @@ Das Auslesen von Parametern erfolgt transparent. Wenn ein Schlüssel in `setting
 
 Wird versucht, einen schreibgeschützten Schlüssel zu ändern (egal ob durch Steuerungsfunktionen oder über 4diac IEC 61499 Funktionsblöcke), passiert Folgendes:
 
-* Der **Schreibversuch wird abgelehnt**.
-* Der in `settingsReadOnly.ini` festgelegte Wert **bleibt unverändert**.
-* Die Ablehnung des Schreibvorgangs wird protokolliert und an die aufrufende Baustein-Logik zurückgemeldet.
+- Der **Schreibversuch wird abgelehnt**.
+- Der in `settingsReadOnly.ini` festgelegte Wert **bleibt unverändert**.
+- Die Ablehnung des Schreibvorgangs wird protokolliert und an die aufrufende Baustein-Logik zurückgemeldet.
 
 ---
 
@@ -45,11 +45,11 @@ Wird versucht, einen schreibgeschützten Schlüssel zu ändern (egal ob durch St
 
 Für Anwender von 4diac FORTE Steuerungsprogrammen verhalten sich die INI-Funktionsblöcke (`INI`, `INI_AX`, `INI_AUI`, `INI_AR` usw.) bei schreibgeschützten Parametern wie folgt:
 
-* **Lese-Ereignis (`GET`)**: Signalisiert wie gewohnt das Bestätigungsereignis `GETO`. Am Ausgang `VALUEO` liegt der geschützte Wert an, `STATUS` meldet `"OK"`.
-* **Schreib-Ereignis (`SET`)**:
-  * Es wird **nicht** das normale Erfolgsereignis (`SETO`) ausgelöst, sondern das Fehler-Ereignis **`SETOE`** (*Set Output Error*).
-  * Der Datenausgang **`STATUS`** liefert die verständliche Meldung: **`"Key is read-only"`**.
-  * Der Ausgang **`QO`** zeigt den Fehlerzustand an.
+- **Lese-Ereignis (`GET`)**: Signalisiert wie gewohnt das Bestätigungsereignis `GETO`. Am Ausgang `VALUEO` liegt der geschützte Wert an, `STATUS` meldet `"OK"`.
+- **Schreib-Ereignis (`SET`)**:
+  - Es wird **nicht** das normale Erfolgsereignis (`SETO`) ausgelöst, sondern das Fehler-Ereignis **`SETOE`** (*Set Output Error*).
+  - Der Datenausgang **`STATUS`** liefert die verständliche Meldung: **`"Key is read-only"`**.
+  - Der Ausgang **`QO`** zeigt den Fehlerzustand an.
 
 !!! note "Hinweis für Applikationsentwickler"
     Durch Auswerten des Ausgangsereignisses `SETOE` oder des Statusstrings `"Key is read-only"` kann in der 4diac-Applikation gezielt auf schreibgeschützte Parameter reagiert werden (z. B. Anzeige eines Hinweises auf der Visualisierung).
@@ -78,7 +78,7 @@ Falls keine `settingsReadOnly.ini` auf dem Steuergerät vorhanden ist, startet d
 
 ## Praktisches Beispiel
 
-### Beispieldatei `settingsReadOnly.ini` (Werkseinstellungen):
+### Beispieldatei `settingsReadOnly.ini` (Werkseinstellungen)
 
 ```ini
 [CF-A]
@@ -89,7 +89,7 @@ bootTimeVT = 90
 DeviceName = LOGIBUS-NODE-01
 ```
 
-### Beispieldatei `settings.ini` (Benutzereinstellungen):
+### Beispieldatei `settings.ini` (Benutzereinstellungen)
 
 ```ini
 [CF-A]
@@ -101,16 +101,16 @@ OperatorID = 42
 
 **Ergebnis im Betrieb:**
 
-* `NODE1_SA` (`128`), `bootTimeVT` (`90`) und `DeviceName` (`"LOGIBUS-NODE-01"`) sind geschützt und können nicht verändert werden.
-* `UserLanguage` (`"DE"`) und `OperatorID` (`42`) können durch die Steuerung frei geändert und dauerhaft gespeichert werden.
-* Sollte in `settings.ini` versehentlich ein alter Wert `NODE1_SA = 130` vorhanden gewesen sein, löscht das Steuergerät diesen beim Booten automatisch, sodass stets die Vorgabe `128` gilt.
+- `NODE1_SA` (`128`), `bootTimeVT` (`90`) und `DeviceName` (`"LOGIBUS-NODE-01"`) sind geschützt und können nicht verändert werden.
+- `UserLanguage` (`"DE"`) und `OperatorID` (`42`) können durch die Steuerung frei geändert und dauerhaft gespeichert werden.
+- Sollte in `settings.ini` versehentlich ein alter Wert `NODE1_SA = 130` vorhanden gewesen sein, löscht das Steuergerät diesen beim Booten automatisch, sodass stets die Vorgabe `128` gilt.
 
 ---
 
 ## Zusammenfassung & Best Practices
 
 | Ziel | Empfohlene Vorgehensweise |
-|---|---|
+| --- | --- |
 | **Werkseinstellungen sichern** | Legen Sie alle unveränderlichen Parameter (z. B. Bus-Adressen, Sicherheitsgrenzen) in `settingsReadOnly.ini` an und spielen Sie diese auf das Steuergerät auf. |
 | **Benutzereinstellungen erlauben** | Halten Sie Parameter, die vom Bediener angepasst werden dürfen (z. B. Sprache, Betriebsmodi, Zählerstände), ausschließlich in `settings.ini`. |
 | **Parameter freigeben** | Um einen Parameter wieder beschreibbar zu machen, entfernen Sie den betreffenden Schlüssel aus `settingsReadOnly.ini` und starten Sie das Steuergerät neu. |
@@ -120,4 +120,4 @@ OperatorID = 42
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

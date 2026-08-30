@@ -3,9 +3,11 @@
 ![DataPanel_MI_IXn](./DataPanel_MI_IXn.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The DataPanel_MI_IXn function block is a service-oriented input block for digital binary inputs (ground switching / NPN). It is used to read a single Boolean input signal from a DataPanel system via the MI (Module Interface) protocol. The block is typically used in the 4diac IDE to connect field devices such as switches or sensors.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -76,6 +78,6 @@ The `DataPanel_MI_IXn` function block provides a standardized interface for read
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

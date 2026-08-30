@@ -1,8 +1,9 @@
 # Exercise_093b: Example for E_N_TABLE
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_093b`.
+This article describes the logiBUS® exercise `Uebung_093b`
 ----
+
 ## Overview
 
 [cite_start]Extension of the table concept using the function block `E_N_TABLE`[cite: 1].

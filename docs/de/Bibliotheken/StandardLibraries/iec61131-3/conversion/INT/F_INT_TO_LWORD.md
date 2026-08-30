@@ -3,6 +3,7 @@
 <img width="1232" height="182" alt="F_INT_TO_LWORD" src="https://github.com/user-attachments/assets/af2f07c7-56ec-498d-94f5-170a88e6a3e3" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_INT_TO_LWORD` dient der Konvertierung eines Integer-Werts (`INT`) in einen 64-Bit langen vorzeichenlosen Integer-Wert (`LWORD`). Dieser Baustein ist besonders nützlich in Szenarien, wo eine Typumwandlung zwischen diesen beiden Datentypen erforderlich ist.
@@ -36,6 +37,7 @@ Keine Adapter vorhanden.
 Der Funktionsblock führt bei einem eingehenden `REQ`-Ereignis die Konvertierung des `INT`-Werts am Eingang `IN` in einen `LWORD`-Wert durch. Das Ergebnis wird am Ausgang `OUT` ausgegeben und das `CNF`-Ereignis signalisiert die erfolgreiche Ausführung.
 
 Der Algorithmus ist wie folgt definiert:
+
 ```ST
 ALGORITHM REQ
 OUT := INT_TO_LWORD(IN);

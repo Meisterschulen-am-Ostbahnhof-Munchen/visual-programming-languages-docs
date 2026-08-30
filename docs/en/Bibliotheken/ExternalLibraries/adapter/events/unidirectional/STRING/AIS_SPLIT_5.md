@@ -3,9 +3,11 @@
 ![AIS_SPLIT_5](./AIS_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AIS_SPLIT_5** serves as a generic splitter for adapters of type `AIS` (unidirectional). It receives an incoming AIS signal via a socket and forwards it to five separate AIS plugs. This allows a single adapter signal to be distributed to multiple target blocks.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | Socket (Input) | IN | `adapter::types::unidirectional::AIS` | Incoming AIS adapter signal |
 | Plug (Output 1) | OUT1 | `adapter::types::unidirectional::AIS` | First outgoing AIS adapter port |
 | Plug (Output 2) | OUT2 | `adapter::types::unidirectional::AIS` | Second outgoing AIS adapter port |
@@ -72,6 +74,6 @@ The `AIS_SPLIT_5` is a simple yet effective generic function block for multiplyi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

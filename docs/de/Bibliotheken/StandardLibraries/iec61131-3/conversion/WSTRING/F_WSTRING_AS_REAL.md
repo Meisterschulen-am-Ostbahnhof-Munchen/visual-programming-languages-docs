@@ -3,6 +3,7 @@
 <img width="1481" height="214" alt="F_WSTRING_AS_REAL" src="https://github.com/user-attachments/assets/6c4a0b16-af89-44e9-80ef-d3aff2884324" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_WSTRING_AS_REAL` dient der Konvertierung eines WSTRING-Wertes in einen REAL-Wert. Dieser Baustein ist besonders nützlich, wenn Zeichenketten, die numerische Werte repräsentieren, in numerische Datentypen umgewandelt werden müssen, um sie für weitere Berechnungen oder Steuerungslogik zu verwenden.

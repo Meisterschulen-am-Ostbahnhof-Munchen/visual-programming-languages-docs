@@ -43,17 +43,17 @@ Der Funktionsblock **AUS_TO_AUI** ist ein Composite-Baustein, der eine Schnittst
 
 ## Funktionsweise
 
-Der Baustein arbeitet als reine Durchleitung:  
+Der Baustein arbeitet als reine Durchleitung:
 
-- Ein eingehendes Ereignis an `AUS_IN.E1` wird direkt an `AUI_OUT.E1` weitergegeben.  
-- Der eingehende Datenwert von `AUS_IN.D1` (USINT) wird ohne zusätzliche Logik an `AUI_OUT.D1` weitergeleitet. Die Typkonvertierung von USINT nach UINT wird automatisch von der 4diac-IDE bzw. der Zielplattform ausgeführt.  
+- Ein eingehendes Ereignis an `AUS_IN.E1` wird direkt an `AUI_OUT.E1` weitergegeben.
+- Der eingehende Datenwert von `AUS_IN.D1` (USINT) wird ohne zusätzliche Logik an `AUI_OUT.D1` weitergeleitet. Die Typkonvertierung von USINT nach UINT wird automatisch von der 4diac-IDE bzw. der Zielplattform ausgeführt.
 
 Es existieren keine internen Funktionsbausteine oder Algorithmen, die das Signal manipulieren.
 
 ## Technische Besonderheiten
 
-- **Composite-Baustein**: Enthält keine eigenen FB-Instanzen, sondern verbindet lediglich die Adapterports direkt miteinander.  
-- **Implizite Typkonvertierung**: Die Konvertierung von USINT zu UINT wird nicht explizit im FB abgebildet, sondern durch das Laufzeitsystem unterstützt. Dabei wird der 8‑Bit-Wert in den niederwertigen Teil des 16‑Bit-Worts übernommen.  
+- **Composite-Baustein**: Enthält keine eigenen FB-Instanzen, sondern verbindet lediglich die Adapterports direkt miteinander.
+- **Implizite Typkonvertierung**: Die Konvertierung von USINT zu UINT wird nicht explizit im FB abgebildet, sondern durch das Laufzeitsystem unterstützt. Dabei wird der 8‑Bit-Wert in den niederwertigen Teil des 16‑Bit-Worts übernommen.
 - **Unidirektionale Adapter**: Sowohl AUS als auch AUI sind als unidirektionale Adapter definiert, d.h. die Datenflüsse sind nur in eine Richtung vorgesehen.
 
 ## Zustandsübersicht
@@ -62,14 +62,14 @@ Der Baustein besitzt keine eigenen Zustände, da er keinerlei interne Logik oder
 
 ## Anwendungsszenarien
 
-- **Systemintegration**: Wenn ein Steuerungssystem (z.B. Feldgeräte) Daten im USINT-Format liefert, ein nachgelagertes Modul aber UINT erwartet.  
-- **Adapterumschaltung**: In einer SPS oder verteilten Steuerungsumgebung können Standardadapter unterschiedlicher Typen über solch einen Konvertierungsbaustein gekoppelt werden.  
+- **Systemintegration**: Wenn ein Steuerungssystem (z.B. Feldgeräte) Daten im USINT-Format liefert, ein nachgelagertes Modul aber UINT erwartet.
+- **Adapterumschaltung**: In einer SPS oder verteilten Steuerungsumgebung können Standardadapter unterschiedlicher Typen über solch einen Konvertierungsbaustein gekoppelt werden.
 - **Prototyping**: Schnelle Anpassung von Schnittstellen während der Entwicklungsphase, ohne die zugrundeliegenden Adapter zu ändern.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **INT_TO_UINT**: Konvertiert einen Integer-Datentyp in einen unsigned Integer – ebenfalls als Composite oder Basisbaustein realisierbar.  
-- **AUS_TO_AUI** ist spezifisch auf die Adaptertypen AUS (USINT) und AUI (UINT) zugeschnitten. Andere Bausteine, wie z.B. `SINT_TO_USINT`, verwenden analoge Durchleitungen für andere Datentypen.  
+- **INT_TO_UINT**: Konvertiert einen Integer-Datentyp in einen unsigned Integer – ebenfalls als Composite oder Basisbaustein realisierbar.
+- **AUS_TO_AUI** ist spezifisch auf die Adaptertypen AUS (USINT) und AUI (UINT) zugeschnitten. Andere Bausteine, wie z.B. `SINT_TO_USINT`, verwenden analoge Durchleitungen für andere Datentypen.
 - Im Gegensatz zu Bausteinen mit arithmetischer oder logischer Verarbeitung beschränkt sich dieser Baustein auf die reine Konvertierung und Ereignisweitergabe.
 
 ## Fazit
@@ -80,4 +80,4 @@ Der **AUS_TO_AUI**-Baustein ist ein schlankes Werkzeug zur Anpassung von Adapter
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AQ_TO_AX](./AQ_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AQ_TO_AX` converts an AQ adapter (Quarter Byte) to an AX adapter (BOOL) using STATUS logic. It enables the easy integration of AQ-based signals into systems that operate exclusively with AX interfaces. Internally, it uses the block `QUARTER_TO_BOOL` to perform the data conversion.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -68,6 +70,6 @@ AQ_TO_AX` is a lean yet essential adapter converter that bridges the gap between
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

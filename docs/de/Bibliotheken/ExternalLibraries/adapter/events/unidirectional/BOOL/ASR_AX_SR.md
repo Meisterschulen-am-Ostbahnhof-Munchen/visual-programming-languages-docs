@@ -5,6 +5,7 @@
 ![ASR_AX_SR_ecc](./ASR_AX_SR_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der ASR_AX_SR ist ein ereignisgesteuerter bistabiler Funktionsblock (Flip-Flop), der nach dem Set-Reset-Prinzip arbeitet. Er dient zur Speicherung eines binären Zustands und wird über Adapter-Schnittstellen angesteuert.
@@ -78,7 +79,7 @@ RESET → SET:    bei S_R.SET Ereignis
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
+- [Uebung_171_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_171_AX.md)
 
 ## Fazit
 

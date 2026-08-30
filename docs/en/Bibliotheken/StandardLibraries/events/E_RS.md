@@ -4,6 +4,7 @@
 
 The `E_RS` (Event-driven RS Flip-Flop) is an event-driven, bistable function block according to IEC 61499. It serves as a basic memory element controlled by separate "Set" and "Reset" events. Its output `Q` retains its state until an opposing event occurs.
 ![E_RS](E_RS.svg)
+
 ## Interface Structure
 
 ![E_RS_ecc](./E_RS_ecc.svg)
@@ -51,10 +52,10 @@ According to **DIN EN 61499-1 (Table A.1, Note 8)**, the implementation of this 
 
 ## 🛠️ Related Exercises
 
-* [Exercise_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
-* [Exercise_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
-* [Exercise_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
-* [Exercise_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
+- [Exercise_006b](../../../Uebungen/test_B/Uebungen_doc/Uebung_006b.md)
+- [Exercise_020a](../../../Uebungen/test_B/Uebungen_doc/Uebung_020a.md)
+- [Exercise_020b](../../../Uebungen/test_B/Uebungen_doc/Uebung_020b.md)
+- [Exercise_020d](../../../Uebungen/test_B/Uebungen_doc/Uebung_020d.md)
 
 ## Conclusion
 

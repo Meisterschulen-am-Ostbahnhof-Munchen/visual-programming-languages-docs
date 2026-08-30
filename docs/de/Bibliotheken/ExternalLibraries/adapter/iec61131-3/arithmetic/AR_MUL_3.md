@@ -6,6 +6,7 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_MUL_3` ist ein generischer arithmetischer Baustein, der zur Multiplikation von drei Eingangswerten dient. Er basiert auf der Verwendung von unidirektionalen Adaptern des Typs `AR` (Arithmetic), was eine strukturierte und übersichtliche Signalübertragung innerhalb der 4diac-IDE ermöglicht. Da es sich um einen generischen Baustein handelt, ist er flexibel für verschiedene numerische Datentypen einsetzbar.
@@ -32,12 +33,12 @@ Die Schnittstellen dieses Funktionsbausteins sind vollständig über Adapter rea
 
 ### **Adapter**
 
-* **Sockets (Eingangs-Adapter):**
-  * `IN1` (Typ: `adapter::types::unidirectional::AR`): Erster Multiplikand (Eingang 1).
-  * `IN2` (Typ: `adapter::types::unidirectional::AR`): Zweiter Multiplikand (Eingang 2).
-  * `IN3` (Typ: `adapter::types::unidirectional::AR`): Dritter Multiplikand (Eingang 3).
-* **Plugs (Ausgangs-Adapter):**
-  * `OUT` (Typ: `adapter::types::unidirectional::AR`): Ergebnis der Multiplikation ($OUT = IN1 \cdot IN2 \cdot IN3$).
+- **Sockets (Eingangs-Adapter):**
+  - `IN1` (Typ: `adapter::types::unidirectional::AR`): Erster Multiplikand (Eingang 1).
+  - `IN2` (Typ: `adapter::types::unidirectional::AR`): Zweiter Multiplikand (Eingang 2).
+  - `IN3` (Typ: `adapter::types::unidirectional::AR`): Dritter Multiplikand (Eingang 3).
+- **Plugs (Ausgangs-Adapter):**
+  - `OUT` (Typ: `adapter::types::unidirectional::AR`): Ergebnis der Multiplikation ($OUT = IN1 \cdot IN2 \cdot IN3$).
 
 ## Funktionsweise
 
@@ -49,26 +50,27 @@ Sobald an den Eingangs-Adaptern ein Berechnungsereignis (z. B. eine Werteaktuali
 
 ## Technische Besonderheiten
 
-* **Generisches Verhalten (`GEN_AR_MUL`):** Der Baustein ist als generischer Typ deklariert. Dadurch kann er zur Entwicklungs- oder Laufzeit auf verschiedene numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`) angewendet werden, sofern die verwendeten Adapter diesen Datentyp unterstützen.
-* **Adapter-Struktur:** Die Verwendung von `unidirectional::AR`-Adaptern reduziert die Anzahl der sichtbaren Verbindungslinien im Funktionsplan (FBD) drastisch, da Daten und Steuerungsereignisse in einer einzigen Verbindung gebündelt sind.
+- **Generisches Verhalten (`GEN_AR_MUL`):** Der Baustein ist als generischer Typ deklariert. Dadurch kann er zur Entwicklungs- oder Laufzeit auf verschiedene numerische Datentypen (z. B. `INT`, `REAL`, `LREAL`) angewendet werden, sofern die verwendeten Adapter diesen Datentyp unterstützen.
+- **Adapter-Struktur:** Die Verwendung von `unidirectional::AR`-Adaptern reduziert die Anzahl der sichtbaren Verbindungslinien im Funktionsplan (FBD) drastisch, da Daten und Steuerungsereignisse in einer einzigen Verbindung gebündelt sind.
 
 ## Zustandsübersicht
 
 Der Baustein verhält sich rein funktional und besitzt im Wesentlichen folgende logische Zustände:
-* **Warten (Idle):** Der Baustein wartet auf ein Trigger-Ereignis über die Eingangs-Adapter.
-* **Berechnen (Evaluation):** Nach dem Eintreffen eines Ereignisses werden die Eingangsdaten gelesen und multipliziert.
-* **Aktualisieren (Update):** Das berechnete Produkt wird an den Ausgang `OUT` angelegt und das Ausgangsereignis getriggert.
+
+- **Warten (Idle):** Der Baustein wartet auf ein Trigger-Ereignis über die Eingangs-Adapter.
+- **Berechnen (Evaluation):** Nach dem Eintreffen eines Ereignisses werden die Eingangsdaten gelesen und multipliziert.
+- **Aktualisieren (Update):** Das berechnete Produkt wird an den Ausgang `OUT` angelegt und das Ausgangsereignis getriggert.
 
 ## Anwendungsszenarien
 
-* **Volumenberechnungen:** Multiplikation von drei Dimensionen (Länge $\times$ Breite $\times$ Höhe) zur Ermittlung eines Volumens.
-* **Skalierung und Gewichtung:** Anwendung von zwei aufeinanderfolgenden Skalierungsfaktoren auf einen Rohwert (z. B. Sensorwert $\times$ Kalibrierfaktor $\times$ Einheitenumrechnung).
-* **Physikalische Formeln:** Berechnung von Größen, die direkt von drei Variablen abhängen (z. B. Leistung $P = U \cdot I \cdot \cos(\varphi)$ bei vereinfachter Betrachtung).
+- **Volumenberechnungen:** Multiplikation von drei Dimensionen (Länge $\times$ Breite $\times$ Höhe) zur Ermittlung eines Volumens.
+- **Skalierung und Gewichtung:** Anwendung von zwei aufeinanderfolgenden Skalierungsfaktoren auf einen Rohwert (z. B. Sensorwert $\times$ Kalibrierfaktor $\times$ Einheitenumrechnung).
+- **Physikalische Formeln:** Berechnung von Größen, die direkt von drei Variablen abhängen (z. B. Leistung $P = U \cdot I \cdot \cos(\varphi)$ bei vereinfachter Betrachtung).
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Standard-`MUL` (IEC 61131-3):** Klassische Multiplikationsbausteine arbeiten mit diskreten Daten- und Ereignis-Pins. `AR_MUL_3` nutzt stattdessen Adapter, was das Design übersichtlicher macht.
-* **`AR_MUL_2`:** Multipliziert lediglich zwei Werte. `AR_MUL_3` spart einen zusätzlichen Kaskadierungs-Baustein ein, wenn drei Variablen multipliziert werden müssen, was die Performance und Übersichtlichkeit optimiert.
+- **Standard-`MUL` (IEC 61131-3):** Klassische Multiplikationsbausteine arbeiten mit diskreten Daten- und Ereignis-Pins. `AR_MUL_3` nutzt stattdessen Adapter, was das Design übersichtlicher macht.
+- **`AR_MUL_2`:** Multipliziert lediglich zwei Werte. `AR_MUL_3` spart einen zusätzlichen Kaskadierungs-Baustein ein, wenn drei Variablen multipliziert werden müssen, was die Performance und Übersichtlichkeit optimiert.
 
 ## Änderungserkennung
 

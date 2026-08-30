@@ -3,9 +3,11 @@
 ![ALI_SPLIT_5](./ALI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `ALI_SPLIT_5` is a generic adapter split block. It accepts a single incoming ALI adapter (`adapter::types::unidirectional::ALI`) and provides the same ALI signals at five outgoing ALI adapter interfaces. This allows an ALI connection to be distributed to multiple subsequent blocks or devices without interrupting the logical signal chain.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block `ALI_SPLIT_5` is a generic adapter split block. It accepts a 
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Input (Socket) | `IN` | `adapter::types::unidirectional::ALI` | Single input: contains the ALI data to be distributed to the five outputs. |
 | Output (Plug) | `OUT1` | `adapter::types::unidirectional::ALI` | First output (identical signals as at the input). |
 | Output (Plug) | `OUT2` | `adapter::types::unidirectional::ALI` | Second output. |
@@ -75,6 +77,6 @@ The `ALI_SPLIT_5` is a simple yet essential component for multiplying an ALI sig
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,11 @@
 ![AULI_TO_AL](./AULI_TO_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AULI_TO_AL` is a composite function block for converting an AULI adapter (data type ULINT) into an AL adapter (data type LWORD). Internally, it uses the IEC 61131 conversion function `F_ULINT_TO_LWORD` and is intended for use in unidirectional adapter structures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ The function block `AULI_TO_AL` is a composite function block for converting an 
 ### **Adapter**
 
 | Name | Type | Direction | Description |
-|-------------|-----------|----------|------------------------------------------|
+| ------------- | ----------- | ---------- | ------------------------------------------ |
 | AULI_IN | AULI (ULINT) | Socket | Unidirectional input adapter. |
 | AL_OUT | AL (LWORD) | Plug | Unidirectional output adapter. |
 

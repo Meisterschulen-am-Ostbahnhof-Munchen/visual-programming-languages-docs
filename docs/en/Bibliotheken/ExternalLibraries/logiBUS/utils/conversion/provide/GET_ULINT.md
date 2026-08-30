@@ -3,9 +3,11 @@
 ![GET_ULINT](./GET_ULINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **GET_ULINT** function block reads the current value of a variable of type `ULINT` (unsigned 64-bit integer) provided as an InOut parameter and makes it available as a buffered value at a data output. Upon a request (REQ), the value from the source is read and output at `OUT`. The acknowledgment (CNF) is then sent. Thus, GET_ULINT is a simple read function block for InOut variables.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +55,7 @@ This function block processes a single action:
 
 OUT := IN;`
 
-3. After the assignment is complete, the event `CNF` is output. The outputs `OUT` and `IN` are associated with the event `CNF`, allowing calling blocks to process the updated value.
+1. After the assignment is complete, the event `CNF` is output. The outputs `OUT` and `IN` are associated with the event `CNF`, allowing calling blocks to process the updated value.
 
 By using an InOut variable, the block can access memory outside its own context without obtaining it via a conventional input. The value is read fresh with each request, making the block suitable as a read buffer.
 

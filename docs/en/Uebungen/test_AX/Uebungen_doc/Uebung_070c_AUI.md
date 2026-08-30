@@ -40,8 +40,8 @@ The SubApp has no dedicated input/output interfaces (SubAppInterfaceList is empt
 
 1. The block `IA_WBSD` receives the wheel-based speed (presumably from the ISOBUS network) and outputs it via its adapter output `SPEED`.
 2. `SPEED` is forwarded via an adapter connection to the input `IN` of the scaling block `FIELDBUS_UDINT_TO_SIGNAL_SCALED`. 3. The scaling block multiplies the value by `0.001` and adds no offset (0). The result is available at output `OUT`.
-4. The scaled signal is then passed via another adapter connection to the `rPhys` input of block `Q_NumericValue`.
-5. Block `Q_NumericValue` sets the received physical value to the UT variable `NumberVariable_Wheel_based_machine_speed`, so that the speed is displayed at the terminal.
+3. The scaled signal is then passed via another adapter connection to the `rPhys` input of block `Q_NumericValue`.
+4. Block `Q_NumericValue` sets the received physical value to the UT variable `NumberVariable_Wheel_based_machine_speed`, so that the speed is displayed at the terminal.
 
 **Special Features**:
 

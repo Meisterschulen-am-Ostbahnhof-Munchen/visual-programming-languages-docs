@@ -3,6 +3,7 @@
 ![Uebung_223_AUDI_network](./Uebung_223_AUDI_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a bidirectional counter (up/down counter) according to IEC 61131-3 (type CTUD) as an adapter version. The counter value is processed as a UDINT (unsigned double integer) and output via a terminal module to a numeric display. The counter functions are controlled via four digital inputs (CU, CD, R, LD) connected via logiBUS modules. The outputs (QU, QD) are also routed to digital outputs via logiBUS modules.
@@ -65,16 +66,18 @@ Data input: u32NewValue (receives the current counter value CV).
 
 At system startup (INITO of the input block Input_LD), the block `AUDI_UDINT_TO_UDI` is triggered via the event input REQ. This converts the constant value `UDINT#5` into an adapter output, which is connected to the preset value input PV of the counter. Thus, the counter is set to the value 5 on the first load (LD).
 
-2. **Counter Control**
+1. **Counter Control**
+
 - **CU** (Input I1): On a rising edge, the counter increments by 1.
 - **CD** (Input I2): On a rising edge, the counter decrements by 1.
 - **R** (Input I3): On a rising edge, the counter is reset to 0.
 - **LD** (Input I4): On a rising edge, the counter is loaded to the current PV value (5).
-3. **Output Signals**
+1. **Output Signals**
+
 - **QU** (Output Q1): Becomes HIGH when the counter reaches its maximum value (overflow).
 - **QD** (Output Q2): Becomes HIGH when the counter reaches its minimum value (underflow).
 - The current counter value (CV) is transmitted to the terminal (OutputNumber_N1) via the function block `Q_NumericValue_AUDI` and displayed numerically there.
-4. **Note on Debouncing**
+1. **Note on Debouncing**
 
 A comment on the network suggests inserting AX_D_FF blocks (T flip-flops) between the digital inputs and the counter to reduce the event rate by damping the rising edge. This is not implemented in this exercise but can be added if needed.
 
@@ -86,6 +89,6 @@ This exercise demonstrates the use of an IEC 61131-compliant up/down counter (CT
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![AX_E_SWITCH](./AX_E_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_E_SWITCH** realisiert ein ereignisgesteuertes Demultiplexing (Weiche) auf Basis eines booleschen Signals. Er empfängt ein Ereignis am Eingang **EI** und leitet es abhängig vom Wert des Adapters **G** entweder an den Ausgang **EO0** oder **EO1** weiter. Dadurch lassen sich Ereignisflüsse in Abhängigkeit von Zuständen oder Entscheidungen aufteilen.

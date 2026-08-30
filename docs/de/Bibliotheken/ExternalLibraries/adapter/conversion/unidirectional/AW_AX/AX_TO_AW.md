@@ -5,6 +5,7 @@ Kein Bild verfügbar.
 ![AX_TO_AW](./AX_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AX_TO_AW` ist ein zusammengesetzter Baustein (Composite FB) zur Konvertierung eines unidirektionalen BOOL-Adapters (Typ `AX`) in einen unidirektionalen WORD-Adapter (Typ `AW`). Er dient als Schnittstellenwandler, der ein ankommendes Ereignis und einen BOOL-Datenwert direkt an den Ausgangsadapter weiterleitet, wobei der BOOL-Wert implizit in ein WORD umgewandelt wird.

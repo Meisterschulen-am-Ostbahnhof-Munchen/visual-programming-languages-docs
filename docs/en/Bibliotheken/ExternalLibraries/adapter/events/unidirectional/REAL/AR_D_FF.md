@@ -3,9 +3,11 @@
 ![AR_D_FF](./AR_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AR_D_FF** implements a data-controlled flip-flop (D-latch) according to the IEC 61499-1 Annex A specification. It serves as an encapsulation for the standard function block `iec61499::events::E_D_FF_ANY` and provides its functionality via two unidirectional adapters. The block accepts a data value on a rising edge of the clock signal and holds it until the next rising edge.
+
 ## Interface Structure
 
 The AR_D_FF has no direct event or data inputs/outputs; all communication takes place via its two adapters.
@@ -37,7 +39,7 @@ The latched data value is provided via the output adapter **Q** (see Adapters se
 ### **Adapters**
 
 | Adapter | Direction / Type | Description | Included Elements |
-|---------|----------------|--------------|---------------------|
+| --------- | ---------------- | -------------- | --------------------- |
 | **I** | Socket (`adapter::types::unidirectional::AR`) | Value to be latched. | **E1** (Event Input) – Clock Signal (CLK) <br>**D1** (Data Input) – Data Value |
 | **Q** | Plug (`adapter::types::unidirectional::AR`) | Latched Value. | **E1** (Event Output) – Acknowledgement after Successful Latch <br>**D1** (Data Output) – Latched Data Value |
 
@@ -77,7 +79,7 @@ There are no other internal states or branches.
 ## Comparison with similar components
 
 | Component | Property | Difference to AR_D_FF |
-|----------|--------------|-------------------------|
+| ---------- | -------------- | ------------------------- |
 | **AR_SR_FF** | Set-Reset Flip-Flop | Does not latch a data value, but is set/reset via Set/Reset. Has two event inputs. |
 | **E_D_FF_ANY** | Standard D Flip-Flop without adapter | Same core logic, but direct event/data connections; no adapter encapsulation. |
 | **AR_T_FF** | Toggle Flip-Flop | Toggles the output on each clock pulse; no data input. |

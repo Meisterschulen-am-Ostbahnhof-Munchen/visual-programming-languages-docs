@@ -3,9 +3,11 @@
 ![INI_AR](./INI_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The INI_AR function block is used to load and save real data from a settings.ini file. It accesses the configuration file via a section and key name and provides the read or saved values via a unidirectional adapter. This allows for flexible integration into modular storage and control architectures.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -73,6 +75,6 @@ The INI_AR function block encapsulates access to an INI file for real values and
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

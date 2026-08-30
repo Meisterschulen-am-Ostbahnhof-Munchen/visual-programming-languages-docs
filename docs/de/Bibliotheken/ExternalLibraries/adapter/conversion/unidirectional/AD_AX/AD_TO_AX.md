@@ -3,6 +3,7 @@
 ![AD_TO_AX](./AD_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AD_TO_AX` dient als Composite-FB zur Umwandlung eines AD-Adapters (Datenwort – DWORD) in einen AX-Adapter (Boolescher Wert – BOOL). Er kapselt einen Vergleichsmechanismus, der prüft, ob der anliegende DWORD-Wert ungleich Null ist, und das Ergebnis als BOOL an den Ausgangsadapter weiterleitet. Der Baustein vereinfacht die Adapterkommunikation in Steuerungssystemen, indem er die Signaltypen zwischen verschiedenen Komponenten umsetzt.

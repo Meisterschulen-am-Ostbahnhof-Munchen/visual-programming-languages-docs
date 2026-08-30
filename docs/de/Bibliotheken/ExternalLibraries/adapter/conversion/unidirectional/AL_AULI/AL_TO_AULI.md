@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der Funktionsblock **AL_TO_AULI** ist ein zusammengesetzter Baustein (Composite FB), der eine Datentypkonvertierung von einem **AL-Adapter** (Typ `LWORD`) in einen **AULI-Adapter** (Typ `ULINT`) vornimmt.  
+Der Funktionsblock **AL_TO_AULI** ist ein zusammengesetzter Baustein (Composite FB), der eine Datentypkonvertierung von einem **AL-Adapter** (Typ `LWORD`) in einen **AULI-Adapter** (Typ `ULINT`) vornimmt.
 Er dient als Brücke zwischen Komponenten, die mit unterschiedlichen Datentypen arbeiten, und ermöglicht eine nahtlose Integration in IEC 61499‑basierten Systemen.
 
 ## Schnittstellenstruktur
@@ -40,19 +40,19 @@ Er dient als Brücke zwischen Komponenten, die mit unterschiedlichen Datentypen 
 
 ## Funktionsweise
 
-Der FB realisiert die Konvertierung durch einen internen Baustein `F_LWORD_TO_ULINT` aus der Bibliothek `iec61131::conversion`.  
+Der FB realisiert die Konvertierung durch einen internen Baustein `F_LWORD_TO_ULINT` aus der Bibliothek `iec61131::conversion`.
 
-- Sobald am Eingangsadapter **AL_IN** ein Ereignis **E1** eintrifft, wird dieses an den Eingang **REQ** des internen Konvertierungsbausteins weitergeleitet.  
-- Gleichzeitig wird der Datenwert **D1** (LWORD) an den Eingang **IN** des Konverters übergeben.  
-- Nach erfolgreicher Konvertierung signalisiert der interne Baustein dies über seinen Ausgang **CNF**, welcher das Ereignis **E1** des Ausgangsadapters **AULI_OUT** auslöst.  
+- Sobald am Eingangsadapter **AL_IN** ein Ereignis **E1** eintrifft, wird dieses an den Eingang **REQ** des internen Konvertierungsbausteins weitergeleitet.
+- Gleichzeitig wird der Datenwert **D1** (LWORD) an den Eingang **IN** des Konverters übergeben.
+- Nach erfolgreicher Konvertierung signalisiert der interne Baustein dies über seinen Ausgang **CNF**, welcher das Ereignis **E1** des Ausgangsadapters **AULI_OUT** auslöst.
 - Der konvertierte ULINT‑Wert steht dann am Datenausgang **D1** des Ausgangsadapters zur Verfügung.
 
 ## Technische Besonderheiten
 
-- **Lizenz:** Der Baustein wird unter der **Eclipse Public License 2.0** bereitgestellt.  
-- **Version:** 1.0 (Stand 2026-02-17)  
-- **Abhängigkeiten:** Er benötigt die Funktion `F_LWORD_TO_ULINT` aus der Bibliothek `iec61132::conversion`.  
-- **Portabilität:** Als Composite FB ist er plattformunabhängig und kann in jeder 4diac‑IDE‑Umgebung eingesetzt werden.  
+- **Lizenz:** Der Baustein wird unter der **Eclipse Public License 2.0** bereitgestellt.
+- **Version:** 1.0 (Stand 2026-02-17)
+- **Abhängigkeiten:** Er benötigt die Funktion `F_LWORD_TO_ULINT` aus der Bibliothek `iec61132::conversion`.
+- **Portabilität:** Als Composite FB ist er plattformunabhängig und kann in jeder 4diac‑IDE‑Umgebung eingesetzt werden.
 - **Typ-Hash:** Der Baustein besitzt ein Attribut `eclipse4diac::core::TypeHash` zur eindeutigen Identifikation (Wert leer).
 
 ## Zustandsübersicht
@@ -61,13 +61,13 @@ Der FB **AL_TO_AULI** besitzt keine eigene Zustandsmaschine – er delegiert die
 
 ## Anwendungsszenarien
 
-- **Datentypanpassung** in SPS‑ oder Automatisierungssystemen, wenn ein LWORD‑Signal (z. B. aus einem Kommunikationsmodul) in einen ULINT‑Wert für eine nachfolgende Verarbeitung (z. B. Zähler oder Arithmetik) umgewandelt werden muss.  
-- **Adapter‑Brücke** zwischen Funktionsblöcken, die ausschließlich mit dem AULI‑Adapter arbeiten, und solchen, die den AL‑Adapter verwenden.  
+- **Datentypanpassung** in SPS‑ oder Automatisierungssystemen, wenn ein LWORD‑Signal (z. B. aus einem Kommunikationsmodul) in einen ULINT‑Wert für eine nachfolgende Verarbeitung (z. B. Zähler oder Arithmetik) umgewandelt werden muss.
+- **Adapter‑Brücke** zwischen Funktionsblöcken, die ausschließlich mit dem AULI‑Adapter arbeiten, und solchen, die den AL‑Adapter verwenden.
 - **Migration** von bestehenden LWORD‑basierten Komponenten auf ULINT‑basierte Systeme ohne Änderung der Signalkette.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **F_LWORD_TO_ULINT (direkter Konverter):** Dieser reine Funktionsbaustein führt dieselbe Konvertierung durch, jedoch ohne Adapter‑Schnittstellen. Er eignet sich für einfache Datenfluss‑Modelle, während **AL_TO_AULI** speziell für den Einsatz in Adapter‑basierten Architekturen optimiert ist.  
+- **F_LWORD_TO_ULINT (direkter Konverter):** Dieser reine Funktionsbaustein führt dieselbe Konvertierung durch, jedoch ohne Adapter‑Schnittstellen. Er eignet sich für einfache Datenfluss‑Modelle, während **AL_TO_AULI** speziell für den Einsatz in Adapter‑basierten Architekturen optimiert ist.
 - **Andere Adapter‑Konverter (z. B. AL_TO_UDINT, AL_TO_DWORD):** Ähnliche Bausteine existieren für andere Zieltypen (UDINT, DWORD). Sie unterscheiden sich nur im Ausgabedatentyp, folgen aber dem gleichen Entwurfsmuster.
 
 ## Fazit
@@ -78,4 +78,4 @@ Der **AL_TO_AULI**‑Funktionsblock bietet eine einfache und robuste Möglichkei
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

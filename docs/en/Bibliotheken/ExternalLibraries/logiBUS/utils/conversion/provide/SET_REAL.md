@@ -3,9 +3,11 @@
 ![SET_REAL](./SET_REAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **SET_REAL** is used to write a REAL value from a data input to an InOut variable. It is a simple, event-driven function block that, upon receiving a request (REQ), passes the current input value IN to the referenced variable OUT and acknowledges the operation with a confirmation event (CNF).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **SET_REAL** is used to write a REAL value from a data input 
 ### **Data Inputs**
 
 | Name | Type | Initial Value | Description |
-|------|-----|--------------|--------------|
+| ------ | ----- | -------------- | -------------- |
 | IN | REAL | 0.0 | Value to be written |
 | OUT | REAL (InOut) | 0.0 | Target variable (InOut – read and write) |
 
@@ -65,7 +67,7 @@ No further state exists; the function block immediately returns to the waiting R
 ## Comparison with similar function blocks
 
 | FB | Type | Difference |
-|----|-----|-------------|
+| ---- | ----- | ------------- |
 | **SET_BOOL** | BOOL | Writes Boolean values, analogous functionality |
 | **SET_INT** | INT | Writes integers, identical event control |
 | **MOVE** (generic) | ANY | Can copy any data type, but requires type matching and often has multiple states |

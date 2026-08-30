@@ -1,8 +1,9 @@
 # Exercise_016a: Switching Background Color -- 3-way
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_016a`.
+This article describes the logiBUS® exercise `Uebung_016a`
 ----
+
 ## Overview
 
 ![Uebung_016a_network](./Uebung_016a_network.svg)

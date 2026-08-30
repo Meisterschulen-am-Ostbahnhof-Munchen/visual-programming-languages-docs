@@ -5,6 +5,7 @@
 ![LinksRechts_ecc](./LinksRechts_ecc.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `LinksRechts` ist ein grundlegender Baustein zur Steuerung einer bidirektionalen Bewegung, beispielsweise eines Antriebs, der sowohl im Rechts- als auch im Linkslauf betrieben werden kann. Er realisiert eine einfache Priorisierungslogik, bei der der Rechtslauf Vorrang vor dem Linkslauf hat, es sei denn, ein spezieller Linkslauf-Befehl ist aktiv. Der Block ermöglicht zudem das pausieren der Bewegung.
@@ -15,23 +16,23 @@ Der Funktionsblock `LinksRechts` ist ein grundlegender Baustein zur Steuerung ei
 
 ### **Ereignis-Eingänge**
 
-*   **`EI_ON`**: Das zentrale Steuerereignis. Es löst bei jedem Eintreffen eine Auswertung der aktuellen Eingangsdaten und einen potenziellen Zustandsübergang aus.
+-   **`EI_ON`**: Das zentrale Steuerereignis. Es löst bei jedem Eintreffen eine Auswertung der aktuellen Eingangsdaten und einen potenziellen Zustandsübergang aus.
 
 ### **Ereignis-Ausgänge**
 
-*   **`EO`**: Dieses Ereignis wird bei jedem Zustandswechsel ausgelöst. Es liefert die aktualisierten Ausgangsdaten `Rechts`, `Links` und `STATE`.
+-   **`EO`**: Dieses Ereignis wird bei jedem Zustandswechsel ausgelöst. Es liefert die aktualisierten Ausgangsdaten `Rechts`, `Links` und `STATE`.
 
 ### **Daten-Eingänge**
 
-*   **`EIN`** (BOOL): Allgemeiner Freigabe-/Einschaltbefehl. Bei `TRUE` ist der Betrieb erlaubt, bei `FALSE` geht der Block in einen Pause-Zustand.
-*   **`DI_Rechts`** (BOOL): Befehl für "Nur Rechtslauf". Setzt den Rechtslauf durch, sofern `EIN` aktiv ist.
-*   **`DI_Links`** (BOOL): Befehl für "Nur Linkslauf". Setzt den Linkslauf durch, sofern `EIN` aktiv ist und kein `DI_Rechts`-Befehl vorliegt.
+-   **`EIN`** (BOOL): Allgemeiner Freigabe-/Einschaltbefehl. Bei `TRUE` ist der Betrieb erlaubt, bei `FALSE` geht der Block in einen Pause-Zustand.
+-   **`DI_Rechts`** (BOOL): Befehl für "Nur Rechtslauf". Setzt den Rechtslauf durch, sofern `EIN` aktiv ist.
+-   **`DI_Links`** (BOOL): Befehl für "Nur Linkslauf". Setzt den Linkslauf durch, sofern `EIN` aktiv ist und kein `DI_Rechts`-Befehl vorliegt.
 
 ### **Daten-Ausgänge**
 
-*   **`Rechts`** (BOOL): Steuersignal für den Rechtslauf. Ist `TRUE`, wenn der Block im Zustand `Rechtslauf` ist.
-*   **`Links`** (BOOL): Steuersignal für den Linkslauf. Ist `TRUE`, wenn der Block im Zustand `Linkslauf` ist.
-*   **`STATE`** (STRING): Zeigt den aktuellen internen Zustand des Funktionsblocks als lesbaren Text an (z.B. "Rechtslauf", "Linkslauf_Pause").
+-   **`Rechts`** (BOOL): Steuersignal für den Rechtslauf. Ist `TRUE`, wenn der Block im Zustand `Rechtslauf` ist.
+-   **`Links`** (BOOL): Steuersignal für den Linkslauf. Ist `TRUE`, wenn der Block im Zustand `Linkslauf` ist.
+-   **`STATE`** (STRING): Zeigt den aktuellen internen Zustand des Funktionsblocks als lesbaren Text an (z.B. "Rechtslauf", "Linkslauf_Pause").
 
 ### **Adapter**
 
@@ -47,9 +48,9 @@ Die Prioritätslogik ist wie folgt definiert: Wenn `EIN` aktiv ist (`TRUE`), wir
 
 ## Technische Besonderheiten
 
-*   **Priorität**: Die Spezifikation betont, dass "Nur Rechtslauf" (`DI_Rechts`) Vorrang vor "Nur Linkslauf" (`DI_Links`) hat. Dies ist in der ECC-Transition von `START` nach `Rechtslauf` umgesetzt, die nur `EIN` benötigt, während der Übergang nach `Linkslauf` zusätzlich `DI_Links` erfordert.
-*   **Zustandsausgabe**: Die Ausgabe `STATE` ist vom Typ `STRING` und wird aus einer importierten Aufzählung `STATES` gespeist, was die Diagnose und Visualisierung erleichtert.
-*   **Pause-Zustände**: Es existieren zwei separate Pause-Zustände (`Rechtslauf_Pause` und `Linkslauf_Pause`). Diese merken sich die letzte aktive Laufrichtung. Bei erneuter Freigabe (`EIN=TRUE`) wird, sofern kein spezifischer Laufbefehl (`DI_Rechts`/`DI_Links`) anliegt, die zuletzt aktive Richtung fortgesetzt.
+-   **Priorität**: Die Spezifikation betont, dass "Nur Rechtslauf" (`DI_Rechts`) Vorrang vor "Nur Linkslauf" (`DI_Links`) hat. Dies ist in der ECC-Transition von `START` nach `Rechtslauf` umgesetzt, die nur `EIN` benötigt, während der Übergang nach `Linkslauf` zusätzlich `DI_Links` erfordert.
+-   **Zustandsausgabe**: Die Ausgabe `STATE` ist vom Typ `STRING` und wird aus einer importierten Aufzählung `STATES` gespeist, was die Diagnose und Visualisierung erleichtert.
+-   **Pause-Zustände**: Es existieren zwei separate Pause-Zustände (`Rechtslauf_Pause` und `Linkslauf_Pause`). Diese merken sich die letzte aktive Laufrichtung. Bei erneuter Freigabe (`EIN=TRUE`) wird, sofern kein spezifischer Laufbefehl (`DI_Rechts`/`DI_Links`) anliegt, die zuletzt aktive Richtung fortgesetzt.
 
 ## Zustandsübersicht
 
@@ -67,9 +68,9 @@ Die Übergänge zwischen den Zuständen werden ausschließlich durch das Ereigni
 
 Typische Anwendungen sind:
 
-*   Steuerung eines Wechselstrommotors mit zwei Drehrichtungen.
-*   Kontrolle einer horizontal verfahrbaren Einheit (z.B. Schlitten, Tor).
-*   Jede Applikation, bei der eine Vorwärts-/Rückwärtsbewegung mit einer allgemeinen Freigabe und individuellen Richtungsbefehlen gesteuert werden muss.
+-   Steuerung eines Wechselstrommotors mit zwei Drehrichtungen.
+-   Kontrolle einer horizontal verfahrbaren Einheit (z.B. Schlitten, Tor).
+-   Jede Applikation, bei der eine Vorwärts-/Rückwärtsbewegung mit einer allgemeinen Freigabe und individuellen Richtungsbefehlen gesteuert werden muss.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -77,7 +78,7 @@ Im Vergleich zu einem einfachen `SR`- oder `RS`-Flipflop bietet `LinksRechts` ei
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_006a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a4.md)
+- [Uebung_006a4](../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_006a4.md)
 
 ## Fazit
 

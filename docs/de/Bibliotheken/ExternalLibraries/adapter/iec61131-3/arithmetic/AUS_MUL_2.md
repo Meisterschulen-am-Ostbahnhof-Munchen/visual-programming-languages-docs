@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AUS_MUL_2` ist ein generischer Arithmetikbaustein für die 4diac-IDE, der zur Multiplikation zweier Werte dient. Im Gegensatz zu klassischen mathematischen Funktionsbausteinen nutzt dieser Baustein ein adapterbasiertes Konzept zur Datenübertragung. Dadurch wird eine strukturierte, modulare und übersichtliche Signalverdrahtung in komplexen IEC 61499 Anwendungen ermöglicht.
@@ -34,12 +35,12 @@ Die gesamte Kommunikation (Daten und zugehörige Trigger-Ereignisse) wird über 
 
 #### **Sockets (Eingangs-Adapter)**
 
-*   **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Multiplikand (Eingang 1).
-*   **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Multiplikand (Eingang 2).
+-   **IN1** (Typ: `adapter::types::unidirectional::AUS`): Der erste Multiplikand (Eingang 1).
+-   **IN2** (Typ: `adapter::types::unidirectional::AUS`): Der zweite Multiplikand (Eingang 2).
 
 #### **Plugs (Ausgangs-Adapter)**
 
-*   **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das Ergebnis der Multiplikation ($IN1 \times IN2$).
+-   **OUT** (Typ: `adapter::types::unidirectional::AUS`): Das Ergebnis der Multiplikation ($IN1 \times IN2$).
 
 ---
 
@@ -55,8 +56,8 @@ Das Ergebnis der Berechnung sowie das entsprechende Bestätigungsereignis werden
 
 ## Technische Besonderheiten
 
-*   **Generischer Charakter:** Der Baustein ist als generischer Typ (`GenericClassName = 'GEN_AUS_MUL'`) deklariert. Dies ermöglicht eine flexible Handhabung verschiedener numerischer Datentypen (z. B. `INT`, `REAL`, `LREAL`), die durch die Adapterstruktur vorgegeben werden.
-*   **Adapter-Fokus:** Die Reduktion von klassischen Pins hin zu Adaptern minimiert den Verdrahtungsaufwand im Funktionsplan erheblich und sorgt für ein sauberes, objektorientiertes Design.
+-   **Generischer Charakter:** Der Baustein ist als generischer Typ (`GenericClassName = 'GEN_AUS_MUL'`) deklariert. Dies ermöglicht eine flexible Handhabung verschiedener numerischer Datentypen (z. B. `INT`, `REAL`, `LREAL`), die durch die Adapterstruktur vorgegeben werden.
+-   **Adapter-Fokus:** Die Reduktion von klassischen Pins hin zu Adaptern minimiert den Verdrahtungsaufwand im Funktionsplan erheblich und sorgt für ein sauberes, objektorientiertes Design.
 
 ---
 
@@ -72,9 +73,9 @@ Der Baustein arbeitet ereignisgesteuert basierend auf den Zustandsänderungen de
 
 ## Anwendungsszenarien
 
-*   **Messwertskalierung:** Multiplikation eines Rohwertes (z. B. aus einem Sensor-Adapter) mit einem Kalibrierungsfaktor.
-*   **Leistungsberechnung:** Multiplikation von Strom- und Spannungswerten, die über standardisierte Adapter-Schnittstellen eingelesen werden.
-*   **Modulare Signalverarbeitung:** Einsatz in komplexen Regelungsschleifen, bei denen Signalketten sauber durch Adapter gekapselt sind, um die Übersicht im Steuerungsdiagramm zu wahren.
+-   **Messwertskalierung:** Multiplikation eines Rohwertes (z. B. aus einem Sensor-Adapter) mit einem Kalibrierungsfaktor.
+-   **Leistungsberechnung:** Multiplikation von Strom- und Spannungswerten, die über standardisierte Adapter-Schnittstellen eingelesen werden.
+-   **Modulare Signalverarbeitung:** Einsatz in komplexen Regelungsschleifen, bei denen Signalketten sauber durch Adapter gekapselt sind, um die Übersicht im Steuerungsdiagramm zu wahren.
 
 ---
 

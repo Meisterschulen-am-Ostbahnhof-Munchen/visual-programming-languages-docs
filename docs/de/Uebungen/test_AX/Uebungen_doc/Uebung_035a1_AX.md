@@ -71,14 +71,14 @@ Der Ablauf der Ampelsteuerung gestaltet sich wie folgt:
 2.  **Sequenzablauf (Pattern Sequencer)**:
     Der `PatternSeq` Baustein steuert die Ampelphasen basierend auf den konfigurierten Parametern. Die Ausgänge werden binär kodiert angesteuert (Q3, Q2, Q1):
 
-    *   **Phase 1 (Rot)**: Dauer 3s (`DT_S1_S2`). Parameter `P_S1 = 1` (Binär `001`) aktiviert Adapter-Ausgang `Q1` -> **Rote Lampe**.
-    *   **Phase 2 (Rot-Gelb)**: Dauer 1s (`DT_S2_S3`). Parameter `P_S2 = 3` (Binär `011`) aktiviert `Q1` und `Q2` -> **Rote und Gelbe Lampen**.
-    *   **Phase 3 (Grün)**: Dauer 3s (`DT_S3_S4`). Parameter `P_S3 = 4` (Binär `100`) aktiviert `Q3` -> **Grüne Lampe**.
-    *   **Phase 4 (Gelb)**: Dauer 1s (`DT_S4_S1`). Parameter `P_S4 = 2` (Binär `010`) aktiviert `Q2` -> **Gelbe Lampe**.
+    -   **Phase 1 (Rot)**: Dauer 3s (`DT_S1_S2`). Parameter `P_S1 = 1` (Binär `001`) aktiviert Adapter-Ausgang `Q1` -> **Rote Lampe**.
+    -   **Phase 2 (Rot-Gelb)**: Dauer 1s (`DT_S2_S3`). Parameter `P_S2 = 3` (Binär `011`) aktiviert `Q1` und `Q2` -> **Rote und Gelbe Lampen**.
+    -   **Phase 3 (Grün)**: Dauer 3s (`DT_S3_S4`). Parameter `P_S3 = 4` (Binär `100`) aktiviert `Q3` -> **Grüne Lampe**.
+    -   **Phase 4 (Gelb)**: Dauer 1s (`DT_S4_S1`). Parameter `P_S4 = 2` (Binär `010`) aktiviert `Q2` -> **Gelbe Lampe**.
 
 3.  **Verbindungen**:
-    *   Die Logik verwendet **Adapter-Connections** (erkennbar am `logiBUS_QXA` Typ und den verschachtelten Verbindungen), was die Verdrahtung im Diagramm übersichtlicher macht, da Daten und Events gebündelt übertragen werden.
-    *   Der `E_TimeOut` Baustein ist über den Adapter `timeOut` mit dem Sequenzer verbunden, um die Timer-Events (`T#3s`, `T#1s` etc.) intern zu verarbeiten.
+    -   Die Logik verwendet **Adapter-Connections** (erkennbar am `logiBUS_QXA` Typ und den verschachtelten Verbindungen), was die Verdrahtung im Diagramm übersichtlicher macht, da Daten und Events gebündelt übertragen werden.
+    -   Der `E_TimeOut` Baustein ist über den Adapter `timeOut` mit dem Sequenzer verbunden, um die Timer-Events (`T#3s`, `T#1s` etc.) intern zu verarbeiten.
 
 ## Zusammenfassung
 
@@ -88,4 +88,4 @@ Die Übung `Uebung_035a1_AX` demonstriert effizient, wie komplexe Zustandsautoma
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

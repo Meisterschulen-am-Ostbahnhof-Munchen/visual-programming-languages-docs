@@ -3,6 +3,7 @@
 ![ADI_TO_AX](./ADI_TO_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ADI_TO_AX** ist ein Composite-Baustein, der eine einfache Signalumsetzung zwischen zwei Adaptertypen realisiert. Er wandelt einen über den **ADI_IN**-Socket empfangenen DINT-Wert (Typ: *adapter::types::unidirectional::ADI*) in einen BOOL-Wert um und gibt diesen über den **AX_OUT**-Plug (Typ: *adapter::types::unidirectional::AX*) aus. Die Umwandlung erfolgt durch einen Vergleich des empfangenen DINT-Werts mit dem konstanten Wert 0. Ist der Wert ungleich 0, wird der BOOL-Ausgang auf TRUE gesetzt; bei Gleichheit auf FALSE. Der Baustein eignet sich vor allem für die Anbindung von digitalen Signalquellen, die als Ganzzahlen codiert sind, an boolesche Schnittstellen.
@@ -36,7 +37,7 @@ Der Funktionsblock **ADI_TO_AX** ist ein Composite-Baustein, der eine einfache S
 ### **Adapter**
 
 | Adapter | Name | Richtung | Typ | Beschreibung |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | Socket | ADI_IN | Eingang | `adapter::types::unidirectional::ADI` | Nimmt einen DINT-Wert (mit zugehörigem Ereignis) entgegen. |
 | Plug | AX_OUT | Ausgang | `adapter::types::unidirectional::AX` | Gibt den resultierenden BOOL-Wert (mit zugehörigem Ereignis) weiter. |
 
@@ -75,7 +76,7 @@ Der FB besitzt keine eigenen Zustände, da er vollständig auf dem internen funk
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Funktion |
-|---|---|---|
+| --- | --- | --- |
 | **ADI_TO_AX** (dieser FB) | Composite | DINT ≠ 0 → BOOL |
 | `BOOL_TO_DINT` (Standard-Bibliothek) | Funktion | Direkte Konvertierung von BOOL zu DINT (z. B. TRUE → 1) |
 | `F_NE` (IEC 61131) | Funktion | Allgemeiner Ungleich-Vergleich beliebiger Datentypen |

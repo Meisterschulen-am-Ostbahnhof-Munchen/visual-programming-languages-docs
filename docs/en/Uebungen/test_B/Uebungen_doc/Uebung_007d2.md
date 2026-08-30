@@ -3,9 +3,11 @@
 ![Uebung_007d2_network](./Uebung_007d2_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a blinker using `E_CYCLE` and `E_D_FF_TMIN`. The blinker generates a random on/off cycle, and a flip-flop with a minimum on-time of 3 seconds ensures that the output does not turn off too soon after being switched on.
+
 ## Function Blocks (FBs) Used
 
 - **E_CYCLE**
@@ -79,6 +81,6 @@ Basic knowledge of event handling according to IEC 61499 and logiBUS output cont
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

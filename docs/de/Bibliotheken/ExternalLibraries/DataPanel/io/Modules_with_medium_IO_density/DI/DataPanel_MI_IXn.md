@@ -3,6 +3,7 @@
 ![DataPanel_MI_IXn](./DataPanel_MI_IXn.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock DataPanel_MI_IXn ist ein serviceorientierter Eingangsbaustein für digitale Binäreingänge (Ground Switching / npn). Er dient zum Auslesen eines einzelnen booleschen Eingangssignals über das MI‑Protokoll (Module Interface) aus einem DataPanel‑System. Der Baustein wird typischerweise in der 4diac‑IDE verwendet, um Feldgeräte wie Schalter oder Sensoren anzubinden.
@@ -76,4 +77,4 @@ Der Funktionsblock `DataPanel_MI_IXn` bietet eine standardisierte Schnittstelle 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

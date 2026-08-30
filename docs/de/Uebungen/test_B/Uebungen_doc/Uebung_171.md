@@ -18,16 +18,16 @@ Innerhalb dieser SubApp werden die folgenden Funktionsbausteine verwendet, um di
 
 In dieser Übung werden spezifisch folgende Bausteine instanziiert:
 
-*   **E_MOVE**
-    *   **Typ**: `iec61499::events::E_MOVE`
-    *   **Beschreibung**: Ein ereignisgesteuerter Baustein, der Daten von einem Eingang zu einem Ausgang bewegt, sobald ein Ereignis ausgelöst wird.
-    *   **Verwendung in der Übung**: Dient als Empfänger des Datenwerts.
+-   **E_MOVE**
+    -   **Typ**: `iec61499::events::E_MOVE`
+    -   **Beschreibung**: Ein ereignisgesteuerter Baustein, der Daten von einem Eingang zu einem Ausgang bewegt, sobald ein Ereignis ausgelöst wird.
+    -   **Verwendung in der Übung**: Dient als Empfänger des Datenwerts.
 
-*   **F_MOVE**
-    *   **Typ**: `iec61131::selection::F_MOVE`
-    *   **Parameter**: `DataType` = `INT`
-    *   **Beschreibung**: Eine Standard-IEC 61131 Funktion zur Zuweisung von Werten. In dieser Übung ist der Datentyp explizit auf `INT` (Integer) gesetzt.
-    *   **Verwendung in der Übung**: Dient als Quelle oder Vorverarbeitung des Datenwerts, der an `E_MOVE` übergeben wird.
+-   **F_MOVE**
+    -   **Typ**: `iec61131::selection::F_MOVE`
+    -   **Parameter**: `DataType` = `INT`
+    -   **Beschreibung**: Eine Standard-IEC 61131 Funktion zur Zuweisung von Werten. In dieser Übung ist der Datentyp explizit auf `INT` (Integer) gesetzt.
+    -   **Verwendung in der Übung**: Dient als Quelle oder Vorverarbeitung des Datenwerts, der an `E_MOVE` übergeben wird.
 
 ## Programmablauf und Verbindungen
 
@@ -35,7 +35,7 @@ Das Netzwerk zeigt eine einfache Verbindung zwischen einer Standard-Funktion und
 
 ### Bestehende Datenverbindungen
 
-*   **F_MOVE.OUT** $\rightarrow$ **E_MOVE.IN**: Das Ergebnis der Zuweisung/Bewegung aus dem Baustein `F_MOVE` wird direkt an den Dateneingang von `E_MOVE` geleitet.
+-   **F_MOVE.OUT** $\rightarrow$ **E_MOVE.IN**: Das Ergebnis der Zuweisung/Bewegung aus dem Baustein `F_MOVE` wird direkt an den Dateneingang von `E_MOVE` geleitet.
 
 ### Hinweise zur Durchführung
 
@@ -46,8 +46,8 @@ Im Netzwerk befindet sich ein Kommentarbaustein mit dem Inhalt **"TODO"**. Dies 
 
 **Lernziele:**
 
-*   Verständnis des Unterschieds zwischen reinen Datenfunktionen (`F_MOVE`) und ereignisgesteuerten Bausteinen (`E_MOVE`).
-*   Korrekte Verdrahtung von Datentypen (hier `INT`).
+-   Verständnis des Unterschieds zwischen reinen Datenfunktionen (`F_MOVE`) und ereignisgesteuerten Bausteinen (`E_MOVE`).
+-   Korrekte Verdrahtung von Datentypen (hier `INT`).
 
 ## Zusammenfassung
 
@@ -57,4 +57,4 @@ Die `Uebung_171` stellt eine grundlegende Aufgabe dar, um die Datenübergabe in 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

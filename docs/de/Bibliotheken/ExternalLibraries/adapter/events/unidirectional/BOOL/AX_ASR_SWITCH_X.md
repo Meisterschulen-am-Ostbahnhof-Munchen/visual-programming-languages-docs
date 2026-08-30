@@ -4,6 +4,7 @@
 ![AX_ASR_SWITCH_X](./AX_ASR_SWITCH_X.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_ASR_SWITCH_X** ist ein zusammengesetzter Baustein (Composite Function Block), der für die Konvertierung zwischen zwei verschiedenen Adaptertypen zuständig ist. Er wandelt Signale eines **AX**-Adapters (Boolean Event) in Signale eines **ASR**-Adapters (Asynchronous Set/Reset) um.
@@ -44,18 +45,18 @@ Der **AX_ASR_SWITCH_X** nutzt intern einen Standard-`E_SWITCH`-Baustein (`iec614
 1.  Ein Ereignis am Eingangsadapter **G** (Ereignis `E1`) löst die Verarbeitung aus.
 2.  Der Datenwert vom Eingangsadapter **G** (Datum `D1`) wird ausgewertet.
 3.  **Logik-Invertierung (Crossed Mapping):**
-    *   Ist **G.D1 = TRUE**: Der interne Switch leitet das Ereignis auf seinen Ausgang `EO1`. Dieser ist mit **Q.RESET** verbunden.
-    *   Ist **G.D1 = FALSE**: Der interne Switch leitet das Ereignis auf seinen Ausgang `EO0`. Dieser ist mit **Q.SET** verbunden.
+    -   Ist **G.D1 = TRUE**: Der interne Switch leitet das Ereignis auf seinen Ausgang `EO1`. Dieser ist mit **Q.RESET** verbunden.
+    -   Ist **G.D1 = FALSE**: Der interne Switch leitet das Ereignis auf seinen Ausgang `EO0`. Dieser ist mit **Q.SET** verbunden.
 
 Zusammenfassend:
 
-*   Input `TRUE` $\rightarrow$ Output `RESET`
-*   Input `FALSE` $\rightarrow$ Output `SET`
+-   Input `TRUE` $\rightarrow$ Output `RESET`
+-   Input `FALSE` $\rightarrow$ Output `SET`
 
 ## Technische Besonderheiten
 
-*   **Adapter-Konvertierung:** Brücke zwischen der einfachen booleschen Ereigniswelt (AX) und der Set/Reset-Steuerlogik (ASR).
-*   **Invertierte Logik:** Dieser Baustein ist spezifisch für Anwendungen konzipiert, bei denen ein aktives Signal (`TRUE`) eine Rücksetzung oder Deaktivierung (`RESET`) bewirken soll, und ein inaktives Signal (`FALSE`) eine Aktivierung (`SET`) – oder umgekehrt, je nach Interpretation der angeschlossenen Systeme.
+-   **Adapter-Konvertierung:** Brücke zwischen der einfachen booleschen Ereigniswelt (AX) und der Set/Reset-Steuerlogik (ASR).
+-   **Invertierte Logik:** Dieser Baustein ist spezifisch für Anwendungen konzipiert, bei denen ein aktives Signal (`TRUE`) eine Rücksetzung oder Deaktivierung (`RESET`) bewirken soll, und ein inaktives Signal (`FALSE`) eine Aktivierung (`SET`) – oder umgekehrt, je nach Interpretation der angeschlossenen Systeme.
 
 ## Zustandsübersicht
 
@@ -68,14 +69,14 @@ Da es sich um einen Composite Function Block ohne eigene Zustandsmaschine (ECC) 
 
 ## Anwendungsszenarien
 
-*   **Fail-Safe-Logik:** In Systemen, bei denen ein anliegendes Signal (High/True) den "Normalzustand" oder "Ruhezustand" (Reset) darstellt und das Wegfallen des Signals (Low/False) eine Aktion (Set) auslösen soll (Drahtbruchsicherheit).
-*   **Logik-Invertierung:** Anpassung von Sensoren, die "Active High" liefern, an Aktoren oder Steuerbausteine, die "Active Low" (bzw. Reset bei High) erwarten.
-*   **Spezifische Protokollanpassung:** Wenn ein Subsystem über einen AX-Adapter kommuniziert, das empfangende Subsystem jedoch einen ASR-Adapter mit invertierter Polarität benötigt.
+-   **Fail-Safe-Logik:** In Systemen, bei denen ein anliegendes Signal (High/True) den "Normalzustand" oder "Ruhezustand" (Reset) darstellt und das Wegfallen des Signals (Low/False) eine Aktion (Set) auslösen soll (Drahtbruchsicherheit).
+-   **Logik-Invertierung:** Anpassung von Sensoren, die "Active High" liefern, an Aktoren oder Steuerbausteine, die "Active Low" (bzw. Reset bei High) erwarten.
+-   **Spezifische Protokollanpassung:** Wenn ein Subsystem über einen AX-Adapter kommuniziert, das empfangende Subsystem jedoch einen ASR-Adapter mit invertierter Polarität benötigt.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-*   **AX_ASR_SWITCH (hypothetisch/Standard):** Ein Standard-Wandler würde typischerweise `TRUE` auf `SET` und `FALSE` auf `RESET` mappen. Der hier beschriebene `_X` Baustein ist das genaue Gegenteil.
-*   **E_SWITCH:** Der zugrunde liegende IEC 61499 Standardbaustein, der die eigentliche Weichenstellung der Ereignisse basierend auf einem Boolean-Wert übernimmt, jedoch ohne die Kapselung in Adapter.
+-   **AX_ASR_SWITCH (hypothetisch/Standard):** Ein Standard-Wandler würde typischerweise `TRUE` auf `SET` und `FALSE` auf `RESET` mappen. Der hier beschriebene `_X` Baustein ist das genaue Gegenteil.
+-   **E_SWITCH:** Der zugrunde liegende IEC 61499 Standardbaustein, der die eigentliche Weichenstellung der Ereignisse basierend auf einem Boolean-Wert übernimmt, jedoch ohne die Kapselung in Adapter.
 
 ## Fazit
 

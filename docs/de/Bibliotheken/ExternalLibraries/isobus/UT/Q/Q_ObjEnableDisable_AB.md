@@ -103,7 +103,7 @@ Fehlerzustände (z. B. ungültige Objekt-ID, fehlerhafte INIT-Sequenz) werden 
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Unterschied |
-|----------|------------|
+| ---------- | ------------ |
 | `Q_ObjEnableDisable` (direkt) | Erfordert native Ereignis- und Datenschnittstellen ohne Adapter. `Q_ObjEnableDisable_AB` fügt die Adapter-Kompatibilität hinzu. |
 | `Q_ObjEnableDisable_BB` (hypothetisch) | Würde einen bidirektionalen BB-Adapter verwenden. Der vorliegende FB verwendet den einfacheren unidirektionalen AB-Adapter. |
 | Generischer „CommandOnOff“ | Ist typischerweise nicht auf ein spezifisches Objekt (ID) ausgerichtet und besitzt keine Zustandsrückmeldung über Adapter. |

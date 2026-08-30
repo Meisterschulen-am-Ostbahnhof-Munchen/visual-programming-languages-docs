@@ -3,9 +3,11 @@
 ![GET_USINT](./GET_USINT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `GET_USINT` is used to read a `USINT` value from an InOut variable. It buffers the read value and makes it available via an output. This function block is particularly suitable when the value of a variable from a higher-level context (e.g., a group) needs to be queried once and then used as a constant intermediate value in subsequent processes.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -74,7 +76,7 @@ A start state is not explicitly defined; after initialization, the function bloc
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Special Feature |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | `GET_USINT` | Custom Function Block | Reads an InOut variable and buffers the value. The output remains stable until the next request. |
 | `USINT_TO_*` (e.g., Converter) | Conversion Function Block | Converts a USINT to another type, but does not necessarily read from an InOut. |
 | Direct data access | No function block | A value can be read over data connections without buffering, but without decoupling and without event control. |
@@ -89,6 +91,6 @@ The `GET_USINT` function block offers a simple and efficient way to read a `USIN
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

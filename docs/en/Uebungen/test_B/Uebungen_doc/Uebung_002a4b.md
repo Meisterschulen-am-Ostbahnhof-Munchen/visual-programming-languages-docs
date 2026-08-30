@@ -3,6 +3,7 @@
 ![Uebung_002a4b_network](./Uebung_002a4b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the basic linking of digital inputs with an **AND** function block, as well as the negation of an input signal. The result is routed to a digital output.
@@ -13,7 +14,7 @@ The goal is to understand the configuration and interconnection of input/output 
 The exercise consists of the following function blocks used directly in the network (there are no sub-blocks):
 
 | Block | Type | Parameters |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | **DigitalInput_I1** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I1` |
 | **DigitalInput_I2** | `logiBUS::io::DI::logiBUS_IX` | `QI = TRUE`, `Input = Input_I2` |
 | **AND_2_BOOL** | `iec61131::bitwiseOperators::AND_2_BOOL` | (no parameters) |
@@ -34,9 +35,9 @@ The logic of the exercise is structured as follows:
 
 *(Negation is only possible with Boolean data types.)*
 
-3. The function block `AND_2_BOOL` combines the signal from **I1** (to `IN1`) with the negated signal from **I2** (to `IN2`) using an AND operation.
-4. The result (`AND_2_BOOL.OUT`) is passed to the data input `OUT` of the output function block `DigitalOutput_Q1`.
-5. Event control:
+1. The function block `AND_2_BOOL` combines the signal from **I1** (to `IN1`) with the negated signal from **I2** (to `IN2`) using an AND operation.
+2. The result (`AND_2_BOOL.OUT`) is passed to the data input `OUT` of the output function block `DigitalOutput_Q1`.
+3. Event control:
 
 Each of the two input function blocks triggers the event `IND` when a new value is received.
 
@@ -65,6 +66,6 @@ Exercise **Exercise_002a4b** implements a simple AND gate with a negated second 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

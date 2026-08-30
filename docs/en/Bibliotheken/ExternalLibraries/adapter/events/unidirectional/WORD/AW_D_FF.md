@@ -3,9 +3,11 @@
 ![AW_D_FF](./AW_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_D_FF** implements a data-controlled flip-flop (D-latch) according to IEC 61499. It accepts a binary data value at its input and outputs it in a clock-controlled manner. The interface is exclusively via adapters, which enables modular and flexible integration into existing components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -42,7 +44,7 @@ On a rising edge of the clock signal (event `E1` at adapter **I**), the current 
 The logic table (D flip-flop) is as follows:
 
 | Clock (E1) | Input D | Output Q (after clock) |
-|-----------|-----------|----------------------|
+| ----------- | ----------- | ---------------------- |
 | ↑ | 0 | 0 |
 | ↑ | 1 | 1 |
 | otherwise | arbitrary | unchanged |
@@ -73,7 +75,7 @@ There is no other internal state machine; the functionality is purely storage-ba
 ## Comparison with Similar Components
 
 | Component | Property | Difference to AW_D_FF |
-|----------|-------------|------------------------|
+| ---------- | ------------- | ------------------------ |
 | **RS Flip-Flop** | Sets/resets asynchronously | AW_D_FF requires a clock signal, no separate set/reset inputs. |
 | **T Flip-Flop** | Toggles on clock signal | AW_D_FF takes the value from D, no toggle function. |
 | **JK Flip-Flop** | Universal (Set, Reset, Toggle) | AW_D_FF is simpler (only D input), no toggle mode. |

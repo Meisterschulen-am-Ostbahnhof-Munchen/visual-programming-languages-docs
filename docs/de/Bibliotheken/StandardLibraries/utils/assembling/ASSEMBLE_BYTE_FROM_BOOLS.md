@@ -3,6 +3,7 @@
 ![ASSEMBLE_BYTE_FROM_BOOLS](https://github.com/user-attachments/assets/4a70532a-aa28-4489-a8b6-5cf357a41460)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `ASSEMBLE_BYTE_FROM_BOOLS` kombiniert 8 boolesche Eingangswerte zu einem Byte. Jeder boolesche Eingang repräsentiert dabei ein Bit des resultierenden Bytes. Dieser Baustein ist besonders nützlich, wenn einzelne boolesche Signale zu einem kompakten Byte-Wert zusammengefasst werden müssen.
@@ -64,8 +65,8 @@ Bei Auslösung des Ereignisses `REQ` werden die aktuellen Werte der booleschen E
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
-* [Uebung_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
+- [Uebung_035a1b_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_035a1b_AX.md)
+- [Uebung_053](../../../../Uebungen/test_B/Uebungen_doc/Uebung_053.md)
 
 ## Fazit
 

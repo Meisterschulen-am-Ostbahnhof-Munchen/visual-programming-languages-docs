@@ -3,9 +3,11 @@
 ![all_colours](./all_colours.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The GlobalConstants block **all_colours** provides an extensive color palette with 256 defined colors (0 to 255). Each color is defined as a constant of type `USINT` and has a fixed numerical value. The comments contain the corresponding hexadecimal code, the RGB value, and English and German color names. Colors 0 to 231 correspond to the standardized ISOBUS color space, while colors 232 to 255 are reserved for manufacturer-specific purposes and are assigned a neutral gray.
+
 ## Interface Structure
 
 ### **Event Inputs**

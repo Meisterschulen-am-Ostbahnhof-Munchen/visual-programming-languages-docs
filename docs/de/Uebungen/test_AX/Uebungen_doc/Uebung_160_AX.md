@@ -20,10 +20,10 @@ Kombination von Einzelausgängen und einer Sammelmeldung.
 
 ![Uebung_160_AX_network](./Uebung_160_AX_network.svg)
 
-  * **`I1`**: Taster für Links (`Q5`).
-  * **`I2`**: Taster für Rechts (`Q6`).
-  * **`AX_OR_2`**: Verknüpft beide Signale.
-  * **`Q56`**: Ein dritter Ausgang.
+  - **`I1`**: Taster für Links (`Q5`).
+  - **`I2`**: Taster für Rechts (`Q6`).
+  - **`AX_OR_2`**: Verknüpft beide Signale.
+  - **`Q56`**: Ein dritter Ausgang.
 
 -----
 

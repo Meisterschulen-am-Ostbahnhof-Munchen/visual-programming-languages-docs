@@ -5,6 +5,7 @@
 These function blocks serve as a bridge between the data-oriented AX world and the event-oriented ASR world (Set/Reset). They convert a Boolean signal (encapsulated in an AX adapter) into dedicated `SET` and `RESET` events.
 Since the direction of the events (which sets the state, which clears it) is hard-coded in the adapter, two variants are available.
 ![AX_ASR_SWITCH](AX_ASR_SWITCH.svg)
+
 ## Variants
 
 ### **AX_ASR_SWITCH** (1:1)

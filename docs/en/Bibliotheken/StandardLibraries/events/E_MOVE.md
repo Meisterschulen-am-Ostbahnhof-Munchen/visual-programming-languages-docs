@@ -2,6 +2,7 @@
 
 <!-- Hier wäre Platz für ein Bild des Funktionsblocks, falls vorhanden. -->
 * * * * * * * * * *
+
 ## Introduction
 
 The `E_MOVE` block (Event-driven Move) is a data latch that filters the transmission of data and events. It outputs a data event only if the input data value differs from the last output value. It functions like a D flip-flop for arbitrary data types (`ANY`).
@@ -32,6 +33,7 @@ The `E_MOVE` block (Event-driven Move) is a data latch that filters the transmis
 1. **Event Receipt**: The function block waits for an event at input `REQ`.
 2. **Value Comparison**: When the `REQ` event arrives, the current value at input `IN` is compared with the internally stored value (which is also present at output `OUT`).
 3. **Conditional Forwarding**:
+
 - **If `IN` is not equal to `OUT`**: The new value of `IN` is output at `OUT`, and the `CNF` event is triggered.
 - **If `IN` equals `OUT`**: Nothing happens. The `CNF` event is not triggered, and the data flow is interrupted.
 
@@ -56,7 +58,7 @@ This mechanism reduces the number of events in the system by reacting only to ac
 
 ## 🛠️ Related Exercises
 
-* [Exercise_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
+- [Exercise_171](../../../Uebungen/test_B/Uebungen_doc/Uebung_171.md)
 
 ## Conclusion
 

@@ -35,7 +35,7 @@ Die SubApp besitzt keine eigenen Ein‑/Ausgangsschnittstellen (InterfaceList is
 - Persistente Speicherung von Stringdaten im NVS
 - Einsatz von importierten Konstanten zur Parametrierung von Funktionsbausteinen
 
-**Schwierigkeitsgrad**: Fortgeschritten  
+**Schwierigkeitsgrad**: Fortgeschritten
 **Vorkenntnisse**: Grundlagen der 4diac-IDE, NVS-Konzept, Umgang mit Konstanten und Importen
 
 ## Zusammenfassung
@@ -46,4 +46,4 @@ Die Übung `Uebung_012m_AIS` zeigt, wie ein String über einen AIS-Adapter einge
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

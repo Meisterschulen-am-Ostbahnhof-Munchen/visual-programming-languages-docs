@@ -3,6 +3,7 @@
 ![GET_DATE](./GET_DATE.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **GET_DATE** liest einen DATE-Wert aus einer InOut-Variable aus und stellt diesen als gepufferten Ausgang bereit. Bei Anforderung durch ein Ereignis wird der aktuelle Wert der Quelle in einen internen Puffer kopiert und anschließend am Ausgang sowie an der InOut-Variable selbst ausgegeben.

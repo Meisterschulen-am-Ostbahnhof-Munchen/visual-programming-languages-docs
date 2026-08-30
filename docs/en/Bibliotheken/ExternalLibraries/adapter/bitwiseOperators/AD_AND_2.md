@@ -3,6 +3,7 @@
 ![AD_AND_2](./AD_AND_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 **AD_AND_2** is a generic function block for the bitwise AND operation across 2 input values of type `DWORD` (32-bit bit pattern (double word)). Unlike the Boolean operation on single truth values (as in the `AX_AND` blocks), every bit of the data word is combined independently here.

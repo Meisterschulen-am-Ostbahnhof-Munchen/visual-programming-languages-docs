@@ -3,9 +3,11 @@
 ![AL_TO_AS](./AL_TO_AS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AL_TO_AS** function block is a composite function block that converts a unidirectional AL adapter (LWORD data) into a unidirectional AS adapter (SINT data). It enables the seamless integration of components that work with different data types by converting the signals and passing them on via the respective adapter interfaces.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The **AL_TO_AS** function block is a composite function block that converts a un
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | Socket | AL_IN | Input | Unidirectional AL adapter that provides LWORD data. |
 | Plug | AS_OUT | Output | Unidirectional AS adapter that outputs the converted SINT data. |
 
@@ -61,7 +63,7 @@ The FB does not have its own state machine. Its behavior is purely combinatorial
 ## Comparison with Similar Function Blocks
 
 | Function Block | Input Type | Output Type | Special Feature |
-|----------|-------------|-------------|--------------|
+| ---------- | ------------- | ------------- | -------------- |
 | **AL_TO_AS** | LWORD (Adapter) | SINT (Adapter) | Composite; uses `F_LWORD_TO_SINT` |
 | `F_LWORD_TO_SINT` | LWORD (Data) | SINT (Data) | Data converter only, no adapter integration |
 | `F_LWORD_TO_DINT` | LWORD | DINT | Conversion to 32-bit integer |
@@ -75,6 +77,6 @@ The **AL_TO_AS** function block is a practical, standards-compliant converter mo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,6 +3,7 @@
 ![AD_D_FF](./AD_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_D_FF** realisiert ein **Data-Latch (D‑Flipflop)**. Er übernimmt einen Datenwert bei einem eingehenden Ereignis und hält diesen Wert bis zur nächsten Übernahme bereit. Die Schnittstelle ist ausschließlich über standardisierte **Adapter** definiert, was eine flexible Verkabelung in komplexen Automatisierungssystemen ermöglicht.
@@ -80,4 +81,4 @@ Der **AD_D_FF** ist ein schlanker, adapterbasierter D‑Flipflop‑Baustein für
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

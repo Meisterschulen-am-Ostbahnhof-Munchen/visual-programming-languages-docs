@@ -3,6 +3,7 @@
 ![SERVER_0_8](SERVER_0_8.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The `SERVER_0_8` function block is the generic server variant with 0 send and 8 receive data fields for communicating with a matching [CLIENT_8_0](CLIENT_8_0.md) block. It receives 8 data values (`RD_1` `RD_2` `RD_3` `RD_4` `RD_5` `RD_6` `RD_7` `RD_8`) from the client without sending any payload itself. Like all `SERVER_*` blocks, it is based on the generic `GEN_SERVER` implementation — the same C++ base as [CLIENT_1](CLIENT_1.md)/[SERVER_1](SERVER_1.md); only the number of send/receive fields differs per instantiation.

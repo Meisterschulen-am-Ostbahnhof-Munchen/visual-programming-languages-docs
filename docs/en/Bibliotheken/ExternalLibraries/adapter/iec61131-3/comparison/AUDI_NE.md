@@ -3,9 +3,11 @@
 ![AUDI_NE](./AUDI_NE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_NE** performs a not equal check. It compares two input values provided via adapters and outputs the comparison result as a Boolean value via an output adapter. This block is primarily used in automation systems that support adapter-based, event-driven communication.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -28,7 +30,7 @@ The output adapter **OUT** provides an event output (E1). This signals the compl
 ### **Adapter**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | IN1 | `adapter::types::unidirectional::AUDI` | Socket | Captures the first input value |
 | IN2 | `adapter::types::unidirectional::AUDI` | Socket | Receives the second input value |
 | OUT | `adapter::types::unidirectional::AX` | Plug | Outputs the comparison result |
@@ -75,4 +77,4 @@ The **AUDI_NE** is a practical function block for non-equal comparison in adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

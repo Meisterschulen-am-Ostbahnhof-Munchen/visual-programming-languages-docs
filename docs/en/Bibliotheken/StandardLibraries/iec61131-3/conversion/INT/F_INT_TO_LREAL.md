@@ -6,6 +6,7 @@
 
 The function block `F_INT_TO_LREAL` converts an integer value (INT) into a 64-bit floating-point number (LREAL). This block is particularly useful in applications where type conversion between these two data types is required.
 ![F_INT_TO_LREAL](F_INT_TO_LREAL.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -61,6 +62,6 @@ The `F_INT_TO_LREAL` function block is a simple and efficient building block for
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

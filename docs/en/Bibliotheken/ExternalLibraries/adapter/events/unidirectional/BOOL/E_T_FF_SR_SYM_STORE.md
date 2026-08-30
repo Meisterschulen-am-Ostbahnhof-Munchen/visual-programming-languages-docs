@@ -3,15 +3,17 @@
 ![E_T_FF_SR_SYM_STORE](./E_T_FF_SR_SYM_STORE.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `E_T_FF_SR_SYM_STORE` implements an event-driven bistable flip-flop with the functions **Set** (S), **Reset** (R), and **Toggle** (CLK). Its special feature is the **symmetrical start-up behavior**: The initial state of the output Q is set via an adapter (`Q_INIT`) during startup or after a `INIT` event. This ensures that the function block behaves deterministically and repeatably at every start time – an important property for safety-critical or predictable automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Name | Type | Comment |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | `S` | Event | Set output Q to TRUE |
 | `R` | Event | Reset output Q to FALSE |
 | `CLK` | Event | Toggle – switches Q (TRUE → FALSE or FALSE → TRUE) |
@@ -44,12 +46,15 @@ The internal process is controlled by the finite state machine (ECC):
 
 1. **START State:** After power is supplied or a system reset is performed, the function block is in state `START`.
 2. **Initialization (State `Init`):** As soon as the event `Q_INIT.EI1` occurs, state `Init` is reached. The following is then determined based on the Boolean value of `Q_INIT.DI1`:
+
 - `TRUE` → Transition to state `SET`
 - `FALSE` → Transition to state `RESET`
-3. **Operating states `SET` and `RESET`:**
+1. **Operating states `SET` and `RESET`:**
+
 - **SET:** Sets `Q := TRUE` and `Q_INIT.DO1 := TRUE`. Sends output event `EO` and adapter output event `Q_INIT.EO1`.
 - **RESET:** Sets `Q := FALSE` and `Q_INIT.DO1 := FALSE`. Also sends `EO` and `Q_INIT.EO1`.
-4. **Toggling between SET and RESET:**
+1. **Toggling between SET and RESET:**
+
 - Event `S` (when in RESET state) → toggles to SET.
 - Event `R` (when in SET state) → toggles to RESET.
 - Event `CLK` (always) → toggles between the two states.
@@ -68,7 +73,7 @@ The output `EO` is activated with every state change of Q.
 The state machine (ECC) comprises four states:
 
 | State | Description | Outgoing Transitions |
-|---------|--------------|--------------------------|
+| --------- | -------------- | -------------------------- |
 | `START` | Initial sleep state after power-on | → `Init` at `Q_INIT.EI1` |
 | `Init` | Initialization state – determines the start value | → `SET` at `TRUE = Q_INIT.DI1` <br> → `RESET` at `FALSE = Q_INIT.DI1` |
 | `SET` | Q = TRUE | → `RESET` at `R` or `CLK` |
@@ -85,7 +90,7 @@ After exiting `Init`, the state `SET` or `RESET` is reached; the states `START` 
 ## Comparison with Similar Blocks
 
 | Block | Properties | Difference to `E_T_FF_SR_SYM_STORE` |
-|----------|--------------|---------------------------------------|
+| ---------- | -------------- | --------------------------------------- |
 | `E_SR_FF` (Standard SR Flip-Flop) | Set, reset; usually no toggle, no configurable start value | Missing toggle function; start value often fixed at FALSE |
 | `E_RS_FF` | Set prioritized | Different prioritization; no toggle |
 | `E_D_FF` (D Flip-Flop) | Receives a data input with clock | No set/reset without data; no symmetric start |
@@ -101,7 +106,7 @@ The **E_T_FF_SR_SYM_STORE** is a powerful event-driven flip-flop component for t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

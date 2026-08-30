@@ -3,9 +3,11 @@
 ![AW_FIELDBUS_WORD_TO_SIGNAL](./AW_FIELDBUS_WORD_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AW_FIELDBUS_WORD_TO_SIGNAL** acts as a filter for fieldbus words. It mirrors the incoming signal (via the **IN** adapter) to the output (**OUT** adapter) if the signal is recognized as valid. Validity is indicated via a separate output adapter (**VALID**). This block is typically used in fieldbus environments to ensure that only valid data values are forwarded to subsequent components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -31,7 +33,7 @@ Data output is via the connected adapters.
 ### **Adapters**
 
 | Name | Type | Description |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | **IN** | `adapter::types::unidirectional::AW` (Socket) | Input of the word to be filtered. |
 | **OUT** | `adapter::types::unidirectional::AW` (Plug) | Output of the filtered word (only with a valid signal). |
 | **VALID** | `adapter::types::unidirectional::AX` (Plug) | Outputs the validity status of the output signal (`TRUE` = valid). |
@@ -60,7 +62,7 @@ Thus, a valid word is only output if the internal check of the incoming signal i
 The function block itself does not have an explicit state machine. The internal state is represented by the D flip-flop:
 
 | State | Meaning |
-|---------|-----------|
+| --------- | ----------- |
 | `VALID = FALSE` | The output value is invalid (old data or initial state). |
 | VALID = TRUE` | The output value is valid and was recognized as valid during the last processing cycle. |
 

@@ -2,13 +2,12 @@
 
 ## 🎧 Podcast
 
-* [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
-* [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
+- [Das Geheimnis des 2-Bit-Quarter: Effizienz im CAN-Bus für Nutzfahrzeuge](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Das-Geheimnis-des-2-Bit-Quarter-Effizienz-im-CAN-Bus-fr-Nutzfahrzeuge-e3673bk)
+- [QUARTER](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/QUARTER-e36741d)
 
----- 
+----
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
-* [Uebung_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
-
+- [Uebung_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
+- [Uebung_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)

@@ -3,10 +3,11 @@
 ![Uebung_006a4_AX_RS_network](./Uebung_006a4_AX_RS_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Diese Übung demonstriert den Einsatz des **Reset-dominanten Toggle-Flipflops (AX_FB_RS_T_FF)** mit Adapter-Schnittstelle in der 4diac-IDE.  
-Das Flipflop besitzt drei Eingänge (SET, RESET1, CLK) und einen Ausgang (Q1). Die Schaltung wird über digitale logiBUS-Eingänge (Input_I1 als SET, Input_I2 als RESET, Input_I3 als Takt) gesteuert. Das Ausgangssignal wird auf den logiBUS-Ausgang Output_Q1 gelegt.  
+Diese Übung demonstriert den Einsatz des **Reset-dominanten Toggle-Flipflops (AX_FB_RS_T_FF)** mit Adapter-Schnittstelle in der 4diac-IDE.
+Das Flipflop besitzt drei Eingänge (SET, RESET1, CLK) und einen Ausgang (Q1). Die Schaltung wird über digitale logiBUS-Eingänge (Input_I1 als SET, Input_I2 als RESET, Input_I3 als Takt) gesteuert. Das Ausgangssignal wird auf den logiBUS-Ausgang Output_Q1 gelegt.
 Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verstehen und die Verdrahtung mit Adapter-FBs nachzuvollziehen.
 
 ## Verwendete Funktionsbausteine (FBs)
@@ -20,7 +21,7 @@ Ziel ist es, das Verhalten eines **reset-dominanten** Toggle-Flipflops zu verste
 ### Parameter
 
 | FB | Parameter | Wert |
-|----|-----------|------|
+| ---- | ----------- | ------ |
 | DigitalInput_SET | `QI` | `TRUE` |
 | DigitalInput_SET | `Input` | `Input_I1` |
 | DigitalInput_RESET | `QI` | `TRUE` |
@@ -53,7 +54,7 @@ Die logiBUS-Eingänge werden über die Funktionsbausteine `DigitalInput_SET`, `D
 - Umgang mit Adapter-basierten Funktionsbausteinen in 4diac.
 - Einbindung logiBUS-Hardware-Eingänge/-Ausgänge in ein Automatisierungsprojekt.
 
-**Schwierigkeitsgrad:** Mittel  
+**Schwierigkeitsgrad:** Mittel
 **Vorkenntnisse:** Grundlegende Kenntnisse über Flipflops und die 4diac-IDE.
 
 ## Zusammenfassung
@@ -64,4 +65,4 @@ Die Übung `Uebung_006a4_AX_RS` realisiert ein reset-dominantes Toggle-Flipflop 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

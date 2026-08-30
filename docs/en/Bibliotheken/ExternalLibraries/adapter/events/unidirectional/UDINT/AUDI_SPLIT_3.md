@@ -3,9 +3,11 @@
 ![AUDI_SPLIT_3](./AUDI_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AUDI_SPLIT_3** is used to multiply an incoming **AUDI** adapter signal to three separate outputs. It is designed as a generic function block (Generic FB) and is particularly suitable for architectures where a signal (e.g., a control or data stream) needs to be distributed to multiple downstream components.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ The function block **AUDI_SPLIT_3** is used to multiply an incoming **AUDI** ada
 ### **Adapter**
 
 | Type | Name | Description |
-|-----|------|---------------|
+| ----- | ------ | --------------- |
 | Socket (adapter::types::unidirectional::AUDI) | **IN** | Input adapter for receiving the AUDI signal |
 | Plug (adapter::types::unidirectional::AUDI) | **OUT1** | First output adapter |
 | Plug (adapter::types::unidirectional::AUDI) | **OUT2** | Second output adapter |
@@ -72,5 +74,5 @@ The **AUDI_SPLIT_3** is a simple yet useful function block for distributing a un
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Total Resistance in Series & Parallel Circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Total Resistance in Series & Parallel Circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

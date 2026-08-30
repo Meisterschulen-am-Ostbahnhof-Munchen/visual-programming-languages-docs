@@ -3,6 +3,7 @@
 ![I_TD](./I_TD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **I_TD** (Time/Date) ist ein spezieller Baustein für den ISOBUS, der die Verarbeitung von Zeit- und Datumsinformationen gemäß dem Standard ISO 11783‑7 (PGN 65254) ermöglicht. Er dient dem Empfang und der Aufbereitung der im ISOBUS‑Netzwerk übertragenen aktuellen Uhrzeit sowie des Datums. Die Ausgangsdaten entsprechen den definierten SPNs (Suspect Parameter Numbers) des Protokolls und werden inklusive der zugehörigen Skalierungen und Offsets bereitgestellt.

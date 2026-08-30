@@ -3,9 +3,11 @@
 ![AQ_SPLIT_3](./AQ_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AQ_SPLIT_3` implements a 1-to-3 split (fan-out) of a unidirectional AQ adapter signal. An incoming AQ adapter signal is copied to three identical output adapters and made available in parallel.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -35,7 +37,7 @@ None.
 **Plug (Outputs)**
 
 | Name | Type | Description |
-|-------------|-------------------------------------------|--------------|
+| ------------- | ------------------------------------------- | -------------- |
 | `OUT1` | `adapter::types::unidirectional::AQ` | First output (copy of the input signal) |
 | `OUT2` | `adapter::types::unidirectional::AQ` | Second Output (Copy of Input Signal) |
 | `OUT3` | `adapter::types::unidirectional::AQ` | Third Output (Copy of Input Signal) |
@@ -79,6 +81,6 @@ AQ_SPLIT_3` is a simple, functional fan-out component for unidirectional AQ adap
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

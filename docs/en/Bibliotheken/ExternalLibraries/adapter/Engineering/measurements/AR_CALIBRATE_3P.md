@@ -3,9 +3,11 @@
 ![AR_CALIBRATE_3P](./AR_CALIBRATE_3P.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AR_CALIBRATE_3P** function block enables 3-point calibration of an analog input signal using adapters. It is specifically designed for joysticks that exhibit center drift and corrects this drift by linearizing between three reference points: minimum, mean, and maximum. The calibration points are saved and can be reset as needed.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -21,7 +23,7 @@ No explicit event outputs are available. Output is exclusively via the **Y** ada
 ### **Data Inputs**
 
 | Name | Data Type | Default Value | Comment |
-|------|----------|-------------|-----------|
+| ------ | ---------- | ------------- | ----------- |
 | MIN_REF | REAL | 0.0 | Target value for the smallest input value (Min). |
 | MID_REF | REAL | 50.0 | Target value for the middle value (Mid). |
 | MAX_REF | REAL | 100.0 | Target value for the largest input value (Max). |
@@ -33,7 +35,7 @@ No direct data outputs – all outputs are provided via **plugs** (output adapte
 ### **Adapters**
 
 | Direction | Name | Adapter Type | Comment |
-|----------|------|------------|-----------|
+| ---------- | ------ | ------------ | ----------- |
 | **Plug** (Output) | Y | `adapter::types::unidirectional::AR` | Calibrated output value (analog value plus event). |
 | **Plug** (Output) | X_MIN | `adapter::types::bidirectional::AR2` | Stored minimum value (from the raw value). |
 | **Plug** (Output) | X_MID | `adapter::types::bidirectional::AR2` | Stored average value (from the raw value). |
@@ -51,7 +53,7 @@ The calibration is based on piecewise linear interpolation between three stored 
 
 An event at one of the calibration inputs (`C_MIN.E1`, `C_MID.E1`, `C_MAX.E1`) saves the currently applied raw value (`X.D1`) to the corresponding stored value (`X_MIN.DO1`, `X_MID.DO1`, `X_MAX.DO1`). This requires that the supplied data signal (`C_MIN.D1`, etc.) is true.
 
-2. **Calculation of the Calibrated Value:**
+1. **Calculation of the Calibrated Value:**
 
 As soon as an event arrives from the raw value adapter (`X.E1`), the function block becomes active and executes the **REQ** algorithm. The raw value `X.D1` is then linearly mapped:
 
@@ -67,11 +69,11 @@ Y.D1 = MID_REF + (X.D1 – X_MID.DI1) * (MAX_REF – MID_REF) / (X_MAX.DI1 – X
 
 Here too, invalid intervals result in `MID_REF` being output.
 
-3. **Clipping:**
+1. **Clipping:**
 
 The calculated output value is clipped to the interval `[MIN_REF, MAX_REF]` to ensure physically meaningful results.
 
-4. **Output:**
+1. **Output:**
 
 The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`).
 
@@ -85,7 +87,7 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 ## State overview
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | **IDLE** | Waiting – no event pending. Transitions: For `SET` → IDLE (only set reference values); for `X_MIN.EI1`, `X_MID.EI1`, `X_MAX.EI1` → IDLE (no action); for `C_MIN.E1[C_MIN.D1]` → CAL_MIN; at `C_MID.E1[C_MID.D1]` → CAL_MID; at `C_MAX.E1[C_MAX.D1]` → CAL_MAX; at `X.E1` → REQ. |
 | **REQ** | Calculates the calibrated output value. Returns to IDLE immediately after execution. |
 | **CAL_MIN** | Stores the current raw value as the minimum (`X_MIN.DO1 := X.D1`). Returns to IDLE automatically. |
@@ -109,7 +111,7 @@ The calibrated value is output via the adapter `Y` (event `Y.E1` and data `Y.D1`
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-|----------|-------------|
+| ---------- | ------------- |
 | **AR_SCALE** | Simple linear scaling (2-point) – without correction of center nonlinearities. |
 | **AR_CALIBRATE_2P** | Two-point calibration (Min, Max) – cannot address center drift. |
 | **AR_CALIBRATE_3P** (this block) | Three-point calibration with separate center calibration – ideal for joysticks with center drift. |

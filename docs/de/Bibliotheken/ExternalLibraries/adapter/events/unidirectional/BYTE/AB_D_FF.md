@@ -5,6 +5,7 @@ Kein Bild vorhanden.
 ![AB_D_FF](./AB_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AB_D_FF** realisiert ein asynchrones Daten-Latch (D-Flipflop) auf Basis eines Adapter-Konzepts nach IEC 61499. Er übernimmt einen Datenwert über den Eingangsadapter **I**, sobald ein Ereignis anliegt, und gibt diesen Wert über den Ausgangsadapter **Q** aus. Der interne Zustand des Flipflops wird dabei durch einen standardisierten `E_D_FF_ANY`-Baustein abgebildet.
@@ -64,7 +65,7 @@ Der Funktionsblock besitzt keinen expliziten internen Zustandsautomaten, sondern
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung |
-|----------|--------------|
+| ---------- | -------------- |
 | **AB_SR_FF** | Set-Reset-Flipflop, speichert zwei Zustände (Set/Reset) ohne Datenwert. |
 | **AB_T_FF** | Toggle-Flipflop, wechselt den Ausgangszustand bei jedem Ereignis. |
 | **E_D_FF** | Standard-D-Flipflop ohne Adapter-Schnittstelle, direkte Ereignis- und Daten-Pins. |

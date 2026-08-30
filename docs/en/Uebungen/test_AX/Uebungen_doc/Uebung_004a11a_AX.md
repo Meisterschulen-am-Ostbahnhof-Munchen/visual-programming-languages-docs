@@ -3,9 +3,11 @@
 ![Uebung_004a11a_AX_network](./Uebung_004a11a_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a toggle flip-flop (T flip-flop) to control a digital output with a single button press. The last output state is automatically loaded from non-volatile memory and retained when the application starts. This ensures that the switching state is preserved even after a restart. Input is via a debouncing push button that triggers a **BUTTON_SINGLE_CLICK** event.
+
 ## Function Blocks Used (FBs)
 
 The subapplication uses the following predefined function blocks:
@@ -31,10 +33,12 @@ Memory chip for reading the stored state from an INI file (or similar persistent
 The subapplication has no dedicated input/output interfaces; all connections are implemented internally. The process is divided into two phases:
 
 1. **Initialization Phase (Start)**
+
 - The function block `INI_AX2` is activated and reads the value stored under the key `U004a11a_AX` from the INI file.
 - This value is then passed to the flip-flop via the adapter connection `AX_T_FF.Q_INIT → INI_AX2.VAL`, which sets its internal state accordingly.
 - The flip-flop then passes this state to the output via the adapter connection `AX_T_FF.Q → DigitalOutput_Q1.OUT`.
-2. **Operating Phase (Repeated Key Presses)**
+1. **Operating Phase (Repeated Key Presses)**
+
 - With each key press at input `Input_I1`, the function block `DigitalInput_CLK_I1` generates the event `IND`.
 - This event is passed to the flip-flop as a clock signal via the event connection `DigitalInput_CLK_I1.IND → AX_T_FF.CLK`.
 - The flip-flop then changes its state (from `TRUE` to `FALSE` or vice versa).
@@ -57,4 +61,4 @@ This exercise demonstrates the combination of a debounced push-button input with
 
 ### 🌐 Relevant topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

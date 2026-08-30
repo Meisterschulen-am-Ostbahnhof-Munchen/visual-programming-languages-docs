@@ -3,9 +3,11 @@
 ![AS_D_FF_HYS_TMIN](./AS_D_FF_HYS_TMIN.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (D flip-flop) with hysteresis and a minimal time delay between successive events. It serves for stable, debounced signal transmission in time-critical control sequences. The block uses adapters for unidirectional communication, with an input signal received via socket **I** and the latching output signal provided via plug **Q**.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,7 +25,7 @@ The function block **AS_D_FF_HYS_TMIN** implements a data-triggered flip-flop (D
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|------------|------|--------------------------------------------------|
+| ------------ | ------ | -------------------------------------------------- |
 | HYSTERESIS | SINT | Hysteresis band (integer value, e.g., 8 bits) |
 | Tmin | TIME | Minimum time between two events (e.g., for debouncing) |
 
@@ -34,7 +36,7 @@ No direct data outputs – the output signal is provided via the **Q** adapter.
 ### **Adapters**
 
 | Type | Name | Direction | Comment |
-|-----|-------------|----------|---------------------------------------|
+| ----- | ------------- | ---------- | --------------------------------------- |
 | AS | I (Socket) | Input | Unidirectional adapter for the signal to be latched (e.g., data + event line) |
 | AS | Q (Plug) | Output | Unidirectional adapter for the latching output signal |
 

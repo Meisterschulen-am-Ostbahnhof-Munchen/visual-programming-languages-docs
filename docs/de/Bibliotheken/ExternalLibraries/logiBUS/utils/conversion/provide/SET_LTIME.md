@@ -3,6 +3,7 @@
 ![SET_LTIME](./SET_LTIME.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **SET_LTIME** dient dazu, einen Eingangswert vom Typ `LTIME` in eine als InOut deklarierte Variable zu schreiben. Dies ermöglicht es, den Wert einer externen Referenz (z. B. einer Instanzvariablen oder eines anderen Bausteins) direkt zu setzen. Die Verwendung einer InOut-Variable erlaubt eine effiziente Übergabe, ohne einen separaten Datenausgang zu benötigen.
@@ -45,6 +46,7 @@ Bei einem Ereignis am Eingang **REQ** wird der Algorithmus `REQ` ausgeführt:
 - Anschließend wird das Ereignis **CNF** ausgegeben, um die erfolgreiche Zuweisung zu signalisieren.
 
 Die Logik ist denkbar einfach und besteht aus einer einzigen Zuweisung:
+
 ```
 OUT := IN;
 ```

@@ -5,6 +5,7 @@
 *Bild des Funktionsblocks nicht verfügbar*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der AUI_CTU ist ein ereignisgesteuerter Aufwärtszähler mit Adapterschnittstelle. Er zählt bei jedem positiven Flankenereignis am Eingang `CU` hoch und gibt das Zählergebnis über den Adapter `CV` aus. Die Ausgabe `Q` signalisiert, ob der Zählerstand (`CV`) den eingestellten Grenzwert (`PV`) erreicht oder überschritten hat. Das Besondere an dieser Implementierung ist die „On-Change“-Triggerung: Das Ereignis am Adapter `Q.E1` wird nur dann ausgelöst, wenn sich der logische Zustand von `Q` tatsächlich ändert. Dies reduziert unnötige Ereignisse in der nachfolgenden Verarbeitung.
@@ -36,7 +37,7 @@ Direkte Daten-Ausgänge sind nicht vorhanden. Der aktuelle Zählerwert (`CV`) un
 ### **Adapter**
 
 | Typ | Richtung | Name | Beschreibung |
-|-----|----------|------|--------------|
+| ----- | ---------- | ------ | -------------- |
 | `adapter::types::unidirectional::AX` | Plug (Ausgang) | `Q` | Gibt `TRUE` aus, wenn `CV >= PV`, sonst `FALSE`. Das Ereignis `Q.E1` wird nur bei Zustandsänderung gesendet. |
 | `adapter::types::unidirectional::AUI` | Plug (Ausgang) | `CV` | Liefert den aktuellen Zählerwert (vorzeichenloser Ganzzahl). Das Ereignis `CV.E1` wird nach jedem Hochzählen oder Rücksetzen ausgelöst. |
 | `adapter::types::unidirectional::AUI` | Socket (Eingang) | `PV` | Empfängt den Schwellwert (Grenzwert) vom Typ `UINT`. Eine Änderung dieses Wertes führt automatisch zur Neuberechnung von `Q`. |
@@ -52,8 +53,8 @@ Der Baustein implementiert eine endliche Zustandsmaschine (ECC) mit folgenden Al
 
 Ablauf:
 
-1. **Ereignis `CU`** (und `CV < 65535`): Übergang in Zustand `CU`. Es wird der Zähler inkrementiert, `Q` neu berechnet und `CV.E1` sowie das Ereignis `CUO` ausgegeben.  
-   - Wenn sich `Q` gegenüber dem letztgespeicherten Wert (`Q_OLD`) geändert hat, wechselt der Zustand nach `EMIT_Q`.  
+1. **Ereignis `CU`** (und `CV < 65535`): Übergang in Zustand `CU`. Es wird der Zähler inkrementiert, `Q` neu berechnet und `CV.E1` sowie das Ereignis `CUO` ausgegeben.
+   - Wenn sich `Q` gegenüber dem letztgespeicherten Wert (`Q_OLD`) geändert hat, wechselt der Zustand nach `EMIT_Q`.
    - Andernfalls kehrt der Baustein in den Zustand `START` zurück.
 
 2. **Ereignis `R`**: Übergang in Zustand `R`. Der Zähler wird zurückgesetzt, `Q` neu berechnet und `CV.E1` sowie `RO` ausgegeben. Anschließend wird analog zu `CU` entschieden, ob `EMIT_Q` erreicht wird oder zurück nach `START`.
@@ -72,18 +73,18 @@ Ablauf:
 ## Zustandsübersicht
 
 | Zustand | Beschreibung | Aktionen | Ausgehende Transitionen |
-|---------|--------------|----------|-------------------------|
+| --------- | -------------- | ---------- | ------------------------- |
 | `START` | Ruhezustand, wartet auf Ereignisse | – | `CU` → `CU`, `R` → `R`, `PV.E1` → `UPDATE_PV` |
 | `CU` | Hochzählen | `CU`-Algorithmus, sende `CV.E1` und `CUO` | `[Q != Q_OLD]` → `EMIT_Q`, `[Q == Q_OLD]` → `START` |
 | `R` | Rücksetzen | `R`-Algorithmus, sende `CV.E1` und `RO` | `[Q != Q_OLD]` → `EMIT_Q`, `[Q == Q_OLD]` → `START` |
 | `UPDATE_PV` | Neuberechnung nach PV-Änderung | `UPDATE`-Algorithmus | `[Q != Q_OLD]` → `EMIT_Q`, `[Q == Q_OLD]` → `START` |
 | `EMIT_Q` | Emission des Q-Ereignisses | `SAVE_Q`-Algorithmus, sende `Q.E1` | 1 → `START` |
 
-Die Transitionen sind durch Bedingungen ausgelöst:  
+Die Transitionen sind durch Bedingungen ausgelöst:
 
-- `CU[CV.D1 < 65535]`: Ereignis CU, wenn Zähler nicht am Maximum.  
-- `R`: Ereignis R, immer möglich.  
-- `PV.E1`: Ereignis vom Adapter PV.  
+- `CU[CV.D1 < 65535]`: Ereignis CU, wenn Zähler nicht am Maximum.
+- `R`: Ereignis R, immer möglich.
+- `PV.E1`: Ereignis vom Adapter PV.
 - `[Q.D1 <> Q_OLD]` / `[Q.D1 = Q_OLD]`: Vergleich des aktuellen Q mit dem gespeicherten vorherigen Wert.
 
 ## Anwendungsszenarien
@@ -96,7 +97,7 @@ Die Transitionen sind durch Bedingungen ausgelöst:
 ## Vergleich mit ähnlichen Bausteinen
 
 | Merkmal | `AUI_CTU` | Standard `CTU` (IEC 61131-3) | `CTUD` (Auf-/Abwärtszähler) |
-|---------|-----------|------------------------------|------------------------------|
+| --------- | ----------- | ------------------------------ | ------------------------------ |
 | Schnittstelle | Adapter-basiert | Direkte Ein-/Ausgänge | Direkte Ein-/Ausgänge |
 | Ereignis bei Q-Änderung | Ja (On-Change) | Nein (immer bei Zählereignis) | Nein |
 | Reaktion auf PV-Änderung | Automatisch | Nicht vorgesehen | Nicht vorgesehen |
@@ -113,4 +114,4 @@ Der `AUI_CTU` ist ein moderner, adapterbasierter Aufwärtszähler, der sich durc
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

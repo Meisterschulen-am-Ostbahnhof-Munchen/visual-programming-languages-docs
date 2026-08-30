@@ -20,8 +20,8 @@ Kapselung der ISOBUS-Kommunikation. Der Baustein verbirgt die Details des ISOBUS
 
 ![Uebung_003c_sub_network](./Uebung_003c_sub_network.svg)
 
-  * **`IX`**: Typ `logiBUS_IX`. Liest den lokalen Hardware-Pin (`Input`) ein.
-  * **`QX`**: Typ `Aux_QX`. Sendet den Zustand als ISOBUS-Nachricht für die gewählte Funktionsnummer (`iInpNr`).
+  - **`IX`**: Typ `logiBUS_IX`. Liest den lokalen Hardware-Pin (`Input`) ein.
+  - **`QX`**: Typ `Aux_QX`. Sendet den Zustand als ISOBUS-Nachricht für die gewählte Funktionsnummer (`iInpNr`).
 
 -----
 
@@ -29,12 +29,11 @@ Kapselung der ISOBUS-Kommunikation. Der Baustein verbirgt die Details des ISOBUS
 
 [cite_start]Der Baustein wird über zwei Parameter konfiguriert[cite: 1]:
 
-*   **`Input`**: Der physische Taster an der Steuerung.
-*   **`iInpNr`**: Die fortlaufende Nummer (Index) im ISOBUS-Auxiliary-Pool.
+-   **`Input`**: Der physische Taster an der Steuerung.
+-   **`iInpNr`**: Die fortlaufende Nummer (Index) im ISOBUS-Auxiliary-Pool.
 
 Jede Änderung am lokalen Taster führt sofort zu einer entsprechenden Status-Meldung im ISOBUS-Netzwerk, wodurch der Taster für andere Geräte (z.B. Task Controller) sichtbar wird.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_003c](Uebung_003c.md)
-
+- [Uebung_003c](Uebung_003c.md)

@@ -13,7 +13,7 @@ The FB_CTD (Down Counter) is a function block that acts as a down counter. It co
 - **Q (BOOL)**: Output - Signal activated when the counter value is ≤ 0.
 - **CV (INT)**: Count Value - Current counter value.
 
-##**Adapters**
+## **Adapters**
 No adapters available.
 
 ### **Adapter**
@@ -37,6 +37,7 @@ The FB_CTD performs the following operations:
 1. When the **LD** signal is active, the **PV** value is loaded into the counter (**CV**).
 2. When the **CD** signal is active and the counter value (**CV**) is greater than -32768, the counter is decremented by 1.
 3. The output signal **Q** is set to `TRUE` when the counter value (**CV**) is ≤ 0.
+
 - The counter value (**CV**) is a 16-bit integer with a range of -32768 to 32767.
 - The FB_CTD is a simple function block without an internal state machine.
 
@@ -49,6 +50,7 @@ The FB_CTD has no explicit states but reacts directly to the input signals.
 - **FB_CTUD (Up-Down Counter)**: Combines up and down counting in one function block.
 
 The FB_CTD is a simple and efficient function block for downcounting operations in automation applications. Its clear interface and simple functionality make it ideal for basic counting tasks.
+
 ## Technical Features
 
 ## State Overview

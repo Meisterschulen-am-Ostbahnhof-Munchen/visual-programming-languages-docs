@@ -3,9 +3,11 @@
 ![E_RS_SYM](./E_RS_SYM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **E_RS_SYM** is an event-driven, bistable flip-flop with symmetrical start behavior. It implements set-reset functionality, where the output Q is defined by both a set and a reset event. Unlike a classic RS flip-flop, this component has an explicit start state that reacts to both events equally.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,7 +58,7 @@ The symmetrical start behavior means that both a Set and a Reset event are accep
 The function block has three states:
 
 | State | Description |
-|---------|--------------|
+| --------- | -------------- |
 | START | Initial state after power-on; waits for the first S or R event. |
 | SET | Q = TRUE; can be switched to the RESET state by R. |
 | RESET | Q = FALSE; can be switched to the SET state by S. |
@@ -77,7 +79,7 @@ The function block has three states:
 ## Comparison with Similar Function Blocks
 
 | Function Block | Property |
-|----------|-------------|
+| ---------- | ------------- |
 | **E_RS** | Classic RS flip-flop with typically asymmetric start behavior (Q initial FALSE). |
 | **E_RS_SYM** | Like E_RS, but with symmetric start behavior – no preset value, start state accepts both events equally. |
 | **SR flip-flop** | Similar function, but often with priority for Set or Reset; E_RS_SYM is priority-neutral. |

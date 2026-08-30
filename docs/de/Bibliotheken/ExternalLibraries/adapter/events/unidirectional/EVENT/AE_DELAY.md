@@ -52,24 +52,24 @@ Der **AE_DELAY** Baustein agiert als Brücke zwischen der Adapter-Welt und dem k
 
 ## Technische Besonderheiten
 
-*   **Paket-Zugehörigkeit:** Der Baustein ist Teil des Pakets `adapter::events::unidirectional::timers`.
-*   **Kapselung:** Er enthält eine Instanz von `iec61499::events::E_DELAY`.
-*   **Adapter-Typ:** Verwendet den unidirektionalen Ereignis-Adapter `AE` (`adapter::types::unidirectional::AE`), der typischerweise ein einzelnes Ereignis (`E1`) transportiert.
+-   **Paket-Zugehörigkeit:** Der Baustein ist Teil des Pakets `adapter::events::unidirectional::timers`.
+-   **Kapselung:** Er enthält eine Instanz von `iec61499::events::E_DELAY`.
+-   **Adapter-Typ:** Verwendet den unidirektionalen Ereignis-Adapter `AE` (`adapter::types::unidirectional::AE`), der typischerweise ein einzelnes Ereignis (`E1`) transportiert.
 
 ## Zustandsübersicht
 
 Der Baustein selbst besitzt keine explizite Zustandsmaschine (ECC), da es sich um ein zusammengesetztes Netzwerk (Composite FB) handelt. Das Verhalten wird vollständig durch den internen `E_DELAY` bestimmt:
 
-*   **Idle:** Warten auf ein Ereignis am `START`-Adapter.
-*   **Timing:** Nach Empfang eines Signals an `START` läuft die Zeit `DT`.
-*   **Triggered:** Nach Ablauf von `DT` wird das Signal an `EO` gesendet und der Baustein kehrt in den Idle-Zustand zurück.
-*   **Reset:** Ein Signal an `STOP` während der Phase *Timing* setzt den Baustein sofort in den Idle-Zustand zurück.
+-   **Idle:** Warten auf ein Ereignis am `START`-Adapter.
+-   **Timing:** Nach Empfang eines Signals an `START` läuft die Zeit `DT`.
+-   **Triggered:** Nach Ablauf von `DT` wird das Signal an `EO` gesendet und der Baustein kehrt in den Idle-Zustand zurück.
+-   **Reset:** Ein Signal an `STOP` während der Phase *Timing* setzt den Baustein sofort in den Idle-Zustand zurück.
 
 ## Anwendungsszenarien
 
-*   **Adapter-basierte Steuerungen:** Ideal für Systeme, die stark auf Adapter-Verbindungen setzen, um den "Spaghetti-Code" von Einzelverbindungen zu reduzieren.
-*   **Verzögerte Signalketten:** Einfügen von Wartezeiten in einer Ereigniskette, die logisch durch Adapter gruppiert ist.
-*   **Prozesssteuerung:** Verzögertes Starten von Aggregaten oder Prozessen, die über standardisierte AE-Schnittstellen angesteuert werden.
+-   **Adapter-basierte Steuerungen:** Ideal für Systeme, die stark auf Adapter-Verbindungen setzen, um den "Spaghetti-Code" von Einzelverbindungen zu reduzieren.
+-   **Verzögerte Signalketten:** Einfügen von Wartezeiten in einer Ereigniskette, die logisch durch Adapter gruppiert ist.
+-   **Prozesssteuerung:** Verzögertes Starten von Aggregaten oder Prozessen, die über standardisierte AE-Schnittstellen angesteuert werden.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -87,4 +87,4 @@ Der **AE_DELAY** ist ein unverzichtbarer Hilfsbaustein für Entwickler, die die 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

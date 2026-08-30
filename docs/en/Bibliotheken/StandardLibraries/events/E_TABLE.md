@@ -33,17 +33,19 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 
 1. **Start of the sequence**: A `START` event triggers the function block. The number of events to be generated is determined by `N`.
 2. **Event generation**: The function block processes the table:
+
 - It waits for the time interval defined in `DT[0]`. Then, the first `EO` event is triggered, and `CV` is set to `0`.
 - It waits for the time interval defined in `DT[1]`. Then, the second `EO` event is triggered, and `CV` is set to `1`.
 - This process repeats until `N` events have been generated.
-3. **End of Sequence**: The sequence ends automatically after `N` events have been triggered.
-4. **Stop**: A `STOP` event immediately terminates the sequence at any point.
+1. **End of Sequence**: The sequence ends automatically after `N` events have been triggered.
+2. **Stop**: A `STOP` event immediately terminates the sequence at any point.
 
 **Example:**
 
 - `N` = 3
 - `DT` = `[T#2s, T#5s, T#1s]`
 - After a `START` event:
+
 1. After 2 seconds, `EO` is triggered with `CV=0`.
 2. 5 seconds later, `EO` is triggered with `CV=1`.
 3. 1 second later, `EO` is triggered with `CV=2`.
@@ -63,14 +65,14 @@ The `E_TABLE` (Event Table) is a function block according to IEC 61499 that gene
 ## ⚖️ Comparison with Similar Function Blocks
 
 | Feature | E_TABLE | E_CYCLE | E_N_TABLE |
-|--------------|-----------|---------|----------|
+| -------------- | ----------- | --------- | ---------- |
 | Event Interval | Variable (Array `DT`) | Fixed (`DT`) | Variable (Array `DT`) |
 | Outputs | One `EO` channel | One `EO` channel | Multiple (`EO0`..`EO3`) |
 | Counter Output (`CV`) | Yes | No | No (internal) |
 
 ## 🛠️ Related Exercises
 
-* [Exercise_093](../../../Uebungen/test_B/Uebungen_doc/Uebung_093.md)
+- [Exercise_093](../../../Uebungen/test_B/Uebungen_doc/Uebung_093.md)
 
 ## Conclusion
 

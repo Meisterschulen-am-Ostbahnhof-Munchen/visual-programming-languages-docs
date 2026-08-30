@@ -1,8 +1,9 @@
 # Exercise_009: Ticker
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
-This article describes the logiBUS® exercise `Uebung_009`. Here, we connect the time base with a counter function and a numeric display.
+This article describes the logiBUS® exercise `Uebung_009`. Here, we connect the time base with a counter function and a numeric display
 ----
+
 ## Objective of the Exercise
 
 To learn event-based counting (`E_CTUD`) and how to display values on a terminal.
@@ -17,10 +18,10 @@ To learn event-based counting (`E_CTUD`) and how to display values on a terminal
 
 ![Uebung_009_network](./Uebung_009_network.svg)
 
-* **`E_CYCLE` & `E_SR`**: Generate a continuous clock signal (as in Exercise 008).
-* **`E_PERMIT`**: An event gate. [cite_start]It only allows events at input `EI` to pass to output `EO` if the data input `PERMIT` is set to `TRUE`[cite: 1].
-* **`E_CTUD_UDINT`**: A forward/downward counter for large integers.
-* **`Q_NumericValue`**: An ISOBUS output module for displaying a number on the screen.
+- **`E_CYCLE` & `E_SR`**: Generate a continuous clock signal (as in Exercise 008).
+- **`E_PERMIT`**: An event gate. [cite_start]It only allows events at input `EI` to pass to output `EO` if the data input `PERMIT` is set to `TRUE`[cite: 1].
+- **`E_CTUD_UDINT`**: A forward/downward counter for large integers.
+- **`Q_NumericValue`**: An ISOBUS output module for displaying a number on the screen.
 
 -----
 
@@ -45,6 +46,6 @@ The controller counts the time intervals during which a specific condition (e.g.
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
 
 ]

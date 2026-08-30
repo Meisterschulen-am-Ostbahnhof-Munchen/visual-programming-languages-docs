@@ -3,6 +3,7 @@
 ![AD_SPLIT_3](./AD_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AD_SPLIT_3` dient als generischer Splitter für einen unidirektionalen Adapter (AD). Er nimmt einen eingehenden AD entgegen und leitet ihn an drei separate Ausgänge weiter. Dies ermöglicht eine Mehrfachnutzung desselben Daten- oder Signalpfades.
@@ -28,7 +29,7 @@ Keine.
 ### **Adapter**
 
 | Typ | Richtung | Bezeichnung | Beschreibung |
-|------|----------|-------------|--------------|
+| ------ | ---------- | ------------- | -------------- |
 | Socket (Eingang) | Input | IN | Unidirektionaler Adapter-Eingang, der auf die drei Ausgänge verteilt wird. |
 | Plug (Ausgang) | Output | OUT1 | Erster Ausgang mit dupliziertem Adapter-Signal. |
 | Plug (Ausgang) | Output | OUT2 | Zweiter Ausgang mit dupliziertem Adapter-Signal. |

@@ -3,9 +3,11 @@
 ![NVS_AX2](./NVS_AX2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NVS_AX2** is used to load and save REAL data to the non-volatile memory (NVS) of an ESP32 via an adapter. It encapsulates the initialization and access to a single NVS entry, which is identified by a key. The function block provides an initializing event interface and a bidirectional adapter interface through which the stored value can be accessed externally. The block is modeled according to IEC 61499 and optimized for use in distributed automation systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -23,15 +25,15 @@ The function block **NVS_AX2** is used to load and save REAL data to the non-vol
 ### **Data Inputs**
 
 | Name | Type | Comment |
-|----------------|--------|---------------------------------------------------------|
+| ---------------- | -------- | --------------------------------------------------------- |
 | `QI` | BOOL | Event Input Qualifier (Initialization Enabled) |
 | `KEY` | STRING | Key name for the NVS entry |
-| `DEFAULT_VALUE`| BOOL | Default value if the key does not exist in the NVS (default: FALSE) |
+| `DEFAULT_VALUE` | BOOL | Default value if the key does not exist in the NVS (default: FALSE) |
 
 ### **Data Outputs**
 
 | Name | Type | Comment |
-|----------|--------|----------------------------------|
+| ---------- | -------- | ---------------------------------- |
 | `QO` | BOOL | Event Output Qualifier |
 | `STATUS` | STRING | Service status |
 
@@ -88,7 +90,7 @@ The function block `NVS_AX2` is an efficient and standards-compliant solution fo
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-* [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
+- [🌐 MCU vs. MPU Comparison Guide on ms-muc-docs.de ](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
 
 ]

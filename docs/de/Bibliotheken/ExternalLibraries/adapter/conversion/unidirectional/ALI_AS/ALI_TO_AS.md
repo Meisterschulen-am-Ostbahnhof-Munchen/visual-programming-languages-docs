@@ -35,18 +35,18 @@ Keine. Das konvertierte SINT‑Signal wird über den AS‑Adapter ausgegeben.
 
 ## Funktionsweise
 
-Der Baustein arbeitet nach dem Prinzip eines reinen Datenflusses ohne eigenen Zustandsautomaten.  
+Der Baustein arbeitet nach dem Prinzip eines reinen Datenflusses ohne eigenen Zustandsautomaten.
 
-1. Über den **ALI_IN**‑Adapter wird das Ereignis **E1** empfangen und der zugehörige LINT‑Wert über das Datum **D1** bereitgestellt.  
-2. Dieses Ereignis triggert den internen Funktionsblock **F_LINT_TO_SINT**, der die Konvertierung durchführt.  
+1. Über den **ALI_IN**‑Adapter wird das Ereignis **E1** empfangen und der zugehörige LINT‑Wert über das Datum **D1** bereitgestellt.
+2. Dieses Ereignis triggert den internen Funktionsblock **F_LINT_TO_SINT**, der die Konvertierung durchführt.
 3. Nach Abschluss der Konvertierung wird das Ereignis **CNF** des Konvertierungsbausteins aktiviert, welches wiederum das Ausgangsereignis **E1** des **AS_OUT**‑Adapters auslöst und den konvertierten SINT‑Wert über das Datum **D1** weitergibt.
 
 Die Wandlung entspricht der IEC‑61131‑Funktion `LINT_TO_SINT`. Dabei kommt es bei Werten außerhalb des SINT‑Bereichs (-128…127) zu einem Überlauf – der Baustein führt keine zusätzliche Bereichsprüfung durch.
 
 ## Technische Besonderheiten
 
-- **Composite‑Struktur**: Der FB setzt sich ausschließlich aus einem einzigen Konvertierungsbaustein (`F_LINT_TO_SINT`) zusammen.  
-- **Unidirektionale Adapter**: Sowohl Eingangs‑ als auch Ausgangsschnittstelle sind als unidirektionale Adapter definiert – Daten fließen nur in eine Richtung.  
+- **Composite‑Struktur**: Der FB setzt sich ausschließlich aus einem einzigen Konvertierungsbaustein (`F_LINT_TO_SINT`) zusammen.
+- **Unidirektionale Adapter**: Sowohl Eingangs‑ als auch Ausgangsschnittstelle sind als unidirektionale Adapter definiert – Daten fließen nur in eine Richtung.
 - **Kein Zustandsautomat**: Aufgrund der einfachen Transformation wird auf einen internen Zustandsautomaten verzichtet; die Logik erschöpft sich in der Ereignis‑Daten‑Verkettung.
 
 ## Zustandsübersicht
@@ -55,13 +55,13 @@ Der Baustein besitzt **keinen** internen Zustandsautomaten. Er arbeitet rein dat
 
 ## Anwendungsszenarien
 
-- **Integration von LINT‑Datenquellen** (z.B. aus hochauflösenden Zählern, Zeitstempeln) in Systeme, die nur SINT‑Werte verarbeiten (z.B. einfache Aktoransteuerungen).  
+- **Integration von LINT‑Datenquellen** (z.B. aus hochauflösenden Zählern, Zeitstempeln) in Systeme, die nur SINT‑Werte verarbeiten (z.B. einfache Aktoransteuerungen).
 - **Brücken zwischen verschiedenen Adapter‑Typen** innerhalb einer 4diac‑Applikation, ohne dass manuelle Konvertierungsbausteine verschaltet werden müssen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **ALI_TO_INT**: Wandelt LINT nach INT (16‑Bit).  
-- **LINT_TO_DINT** o.ä.: Direkte Typumwandlungen ohne Adapter‑Kapselung.  
+- **ALI_TO_INT**: Wandelt LINT nach INT (16‑Bit).
+- **LINT_TO_DINT** o.ä.: Direkte Typumwandlungen ohne Adapter‑Kapselung.
 Der **ALI_TO_AS** zeichnet sich durch seine spezifische Adapter‑Schnittstelle aus; er vereinfacht die Wiederverwendung vorgefertigter Adapter‑Kopplungen in Modulen.
 
 ## Fazit
@@ -72,4 +72,4 @@ Der **ALI_TO_AS** ist ein spezialisierter Komposit‑Baustein zur verlustbehafte
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -27,7 +27,7 @@ The FB has no built-in data outputs. The result (BOOL) is output via the plug ad
 ### **Adapters**
 
 | Name | Type | Adapter Type | Direction | Comment |
-|------|-----|------------------|----------|-----------|
+| ------ | ----- | ------------------ | ---------- | ----------- |
 | `AUDI_IN` | `adapter::types::unidirectional::AUDI` | Socket | Input | Provides the UDINT value (D1) and the associated event (E1) |
 | `AX_OUT` | `adapter::types::unidirectional::AX` | Plug | Output | Provides the BOOL value (D1) and the acknowledgment event (E1) |
 
@@ -38,7 +38,8 @@ The internal process is divided into three steps:
 1. **Event Reception:** The event `E1` of the socket adapter `AUDI_IN` triggers the processing.
 2. **Comparison:** The received UDINT value (`AUDI_IN.D1`) is compared in the function block `F_NE` (IEC 61131-3: *not equal*) with the constant value `UDINT#0`.
 3. **Result Output:** The result of the comparison (`F_NE.OUT`) – a BOOL – is placed on the output data port `AX_OUT.D1`. Simultaneously, the event `F_NE.CNF` is forwarded to the event input `AX_OUT.E1`, so that the output adapter signals the result.
-3. **Result Output:** The result of the comparison (`F_NE.OUT`) – a BOOL – is placed on the output data port `AX_OUT.D1`. **Context:**
+4. **Result Output:** The result of the comparison (`F_NE.OUT`) – a BOOL – is placed on the output data port `AX_OUT.D1`. **Context:**
+
 - If the input value is not equal to 0 → Output `TRUE`
 - If the input value is equal to 0 → Output `FALSE`
 - **Library Used:** The core consists of the IEC 61131 function block `F_NE` (non-equal comparison). This is imported from the library `iec61131::comparison::F_NE`.
@@ -59,7 +60,7 @@ The `AUDI_TO_AX` function block is a specialized yet highly useful converter for
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

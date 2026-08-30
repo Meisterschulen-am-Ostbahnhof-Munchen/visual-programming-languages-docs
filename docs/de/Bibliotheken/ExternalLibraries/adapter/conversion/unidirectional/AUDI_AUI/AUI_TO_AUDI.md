@@ -3,6 +3,7 @@
 ![AUI_TO_AUDI](./AUI_TO_AUDI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_TO_AUDI** ist ein zusammengesetzter (Composite) Baustein, der einen AUI-Adapter (UINT) in einen AUDI-Adapter (UDINT) umwandelt. Er dient dazu, Daten und Ereignisse von einem Adaptertyp auf einen anderen zu übertragen, wobei die zugrundeliegenden Datentypen unterschiedlich sind (UINT → UDINT). Die Umwandlung erfolgt durch einfaches Durchreichen der Signale, ohne zusätzliche Logik.
@@ -72,4 +73,4 @@ Der **AUI_TO_AUDI**-Baustein ist ein einfacher, aber nützlicher Composite-FB zu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

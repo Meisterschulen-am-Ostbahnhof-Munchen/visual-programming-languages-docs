@@ -29,7 +29,7 @@ Keine direkten Daten-Ausgänge – das Ergebnis wird über den OUT-Adapter ausge
 ### **Adapter**
 
 | Name | Typ | Kommentar |
-|------|-----|-----------|
+| ------ | ----- | ----------- |
 | **Sockets** | | |
 | `WORD_00` | `adapter::types::unidirectional::AW` | Word 0 (niederwertigstes 16‑Bit‑Wort) |
 | `WORD_01` | `adapter::types::unidirectional::AW` | Word 1 |
@@ -42,7 +42,7 @@ Keine direkten Daten-Ausgänge – das Ergebnis wird über den OUT-Adapter ausge
 
 Der Baustein nutzt ein internes Netzwerk aus zwei Funktionsbausteinen:
 
-1. **`ASSEMBLE_LWORD_FROM_WORDS`** – übernimmt die logische Kombination der vier 16‑Bit‑Wörter (`WORD_00` bis `WORD_03`) zu einem 64‑Bit‑LWORD.  
+1. **`ASSEMBLE_LWORD_FROM_WORDS`** – übernimmt die logische Kombination der vier 16‑Bit‑Wörter (`WORD_00` bis `WORD_03`) zu einem 64‑Bit‑LWORD.
 2. **`E_D_FF_ANY`** – ein taktflankengesteuertes D‑Flip‑Flop, das den zusammengesetzten Wert nur dann auf den Ausgangsadapter `OUT` überträgt, wenn eine steigende Flanke am Takteingang anliegt.
 
 Die Ereignisse der vier Eingangsadapter (`WORD_00.E1` … `WORD_03.E1`) sind alle mit dem `REQ`-Ereigniseingang von `ASSEMBLE_LWORD_FROM_WORDS` verbunden. Sobald ein Ereignis an einem der Eingangsadapter eintrifft, wird die Kombination neu berechnet. Nach Abschluss (`CNF`) wird der `E_D_FF_ANY` getaktet, der den berechneten Wert in seinen internen Zustand übernimmt und über `OUT.D1` ausgibt. Das Ereignis am Ausgangsadapter (`OUT.E1`) signalisiert die Verfügbarkeit des neuen Werts.
@@ -66,7 +66,7 @@ Der Baustein besitzt kein eigenes ECC (Execution Control Chart), sondern besteht
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Beschreibung |
-|----------|-------------|
+| ---------- | ------------- |
 | `ASSEMBLE_AL_FROM_BYTES` | Setzt mehrere 8‑Bit‑Werte zu einem LWORD zusammen |
 | `ASSEMBLE_AL_FROM_DWORDS` | Kombiniert zwei 32‑Bit‑Doppelwörter zu einem 64‑Bit‑Wort |
 | `ASSEMBLE_AL_FROM_AW` (dieser) | Kombiniert vier 16‑Bit‑Wörter zu einem LWORD |
@@ -81,5 +81,5 @@ Alle diese Bausteine folgen dem gleichen Prinzip, unterscheiden sich jedoch in d
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 MCU vs. MPU Vergleichsguide auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/mpu-vs-mcu/mikroprozessor-mpu-vs-mikrocontroller-mcu/)

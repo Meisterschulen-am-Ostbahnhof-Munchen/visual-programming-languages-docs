@@ -3,6 +3,7 @@
 ![Uebung_004b3b_network](./Uebung_004b3b_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements **radio button logic** – two toggle flip-flops that interlock each other.
@@ -57,14 +58,16 @@ Two logiBUS digital inputs (`DigitalInput_CLK_I1` and `DigitalInput_CLK_I2`) are
 
 Both are configured to trigger the event `BUTTON_SINGLE_CLICK` – a key press triggers an event.
 
-2. **Event Connection**:
+1. **Event Connection**:
+
 - The event `IND` from `DigitalInput_CLK_I1` is routed to the sub-module `Uebung_004b3b_sub1.IND`.
 - The event `IND` from `DigitalInput_CLK_I2` is routed to `Uebung_004b3b_sub2.IND`.
 - The output `SET` from `sub1` is connected to the input `RESET` from `sub2`.
 - The output `SET` from `sub2` is connected to the input `RESET` from `sub1`.
 ... *This creates a mutual interlock: As soon as one flip-flop is set, the other is reset.*
 
-3. **Outputs**:
+1. **Outputs**:
+
 - The `Q` output of `sub1` is passed to the logiBUS digital output `DigitalOutput_Q1` (`Output_Q1`).
 - The `Q` output of `sub2` is passed to `DigitalOutput_Q2` (`Output_Q2`).
 - The output pulses (`EO`) of the sub-modules trigger the corresponding output modules via the `REQ` inputs.
@@ -97,6 +100,6 @@ Thanks to the modular sub-application, the logic can easily be extended to multi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

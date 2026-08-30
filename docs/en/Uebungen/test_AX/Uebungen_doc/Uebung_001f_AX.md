@@ -3,9 +3,11 @@
 ![Uebung_001f_AX_network](./Uebung_001f_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the negation of a digital input signal using the function block `AX_NOT_INIT`. The negated signal is output to a digital output. A special effect occurs during startup (BOOT): Since input I1 is not polled during system startup, `AX_NOT_INIT` initially returns a value of `TRUE`, regardless of the actual input state.
+
 ## Function Blocks Used
 
 This exercise consists of three function blocks connected within the SubApp network.
@@ -72,6 +74,6 @@ Exercise `Uebung_001f_AX` illustrates the negation of a digital input signal usi
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

@@ -3,9 +3,11 @@
 ![AX_FB_SR_T_FF](./AX_FB_SR_T_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AX_FB_SR_T_FF** implements a bistable, set-dominant latch (SR flip-flop) combined with a toggle function. All communication takes place via adapter interfaces that bundle both event and data signals.
+
 ## Interface Structure
 
 The block has no direct event or data inputs/outputs, but only adapters. These adapters each provide one event (`E1`) and one data value (`D1`) of type `BOOL`.
@@ -37,7 +39,7 @@ The output adapter **Q1** outputs the current state of the latch as a BOOL value
 ### **Adapters**
 
 | Adapter | Type | Direction | Description |
-|---------|-----|-----------|--------------|
+| --------- | ----- | ----------- | -------------- |
 | `SET1` | `adapter::types::unidirectional::AX` | Socket (Input) | Set Input |
 | `RESET` | `adapter::types::unidirectional::AX` | Socket (Input) | Reset Input |
 | `CLK` | `adapter::types::unidirectional::AX` | Socket (Input) | Clock Input for Toggle |

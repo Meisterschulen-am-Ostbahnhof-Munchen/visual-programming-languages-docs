@@ -3,6 +3,7 @@
 ![E_T_FF_SR_SYM_INIT_ecc](./E_T_FF_SR_SYM_INIT_ecc.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `E_T_FF_SR_SYM_INIT` extends [E_T_FF_SR_SYM](E_T_FF_SR_SYM.md) with an explicit `INIT`/`INITO` interface: the start value of `Q` is not determined by the first `S`, `R`, or `CLK` event, but is set deliberately via `Q_INIT`.
@@ -45,7 +46,7 @@
 ## State Overview
 
 | State | Meaning |
-|---|---|
+| --- | --- |
 | START | Unconfigured initial state |
 | Init | Initialization in progress, `QO := QI` |
 | DeInit | Deinitialization in progress, `QO := FALSE` |

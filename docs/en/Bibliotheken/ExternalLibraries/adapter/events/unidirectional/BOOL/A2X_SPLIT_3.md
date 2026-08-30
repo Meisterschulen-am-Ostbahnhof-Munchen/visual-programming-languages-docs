@@ -3,9 +3,11 @@
 ![A2X_SPLIT_3](./A2X_SPLIT_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **A2X_SPLIT_3** is used to split an incoming A2X adapter data stream into three identical outputs. It is implemented as a generic function block (FB) and is suitable for applications where a signal is required multiple times.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No data outputs available.
 ### **Adapter**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::A2X` | **IN** | Socket (Input) | Source adapter whose data stream is split. |
 | `adapter::types::unidirectional::A2X` | **OUT1** | Plug (Output) | First identical output. |
 | `adapter::types::unidirectional::A2X` | **OUT2** | Plug (Output) | Second identical output. |

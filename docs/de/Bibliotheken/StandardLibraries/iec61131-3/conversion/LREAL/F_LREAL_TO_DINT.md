@@ -3,6 +3,7 @@
 <img width="1448" height="210" alt="F_LREAL_TO_DINT" src="https://github.com/user-attachments/assets/ad2c6222-b7c0-4b49-b00b-e1ea330f724f" />
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `F_LREAL_TO_DINT` dient der Konvertierung eines LREAL-Wertes (64-Bit Fließkommazahl) in einen DINT-Wert (32-Bit Ganzzahl). Der Block ist Teil des `iec61131::conversion` Pakets und implementiert eine einfache Typumwandlung.

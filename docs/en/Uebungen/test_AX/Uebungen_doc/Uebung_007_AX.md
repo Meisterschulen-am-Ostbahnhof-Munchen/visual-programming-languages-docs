@@ -1,8 +1,9 @@
 # Exercise_007_AX: Flasher with E_CYCLE and E_T_FF
 
 [![NotebookLM](media/NotebookLM_logo.png)(https://notebooklm.google.com/notebook/041f4df4-b729-484d-b786-b6dcdf151961)
-This article describes the logiBUS® exercise `Uebung_007_AX`. It demonstrates how to generate time-controlled events.
+This article describes the logiBUS® exercise `Uebung_007_AX`. It demonstrates how to generate time-controlled events
 ----
+
 ## Objective of the Exercise
 
 Generating a periodic flashing signal.
@@ -17,9 +18,9 @@ Generating a periodic flashing signal.
 
 ![Uebung_007_AX_network](./Uebung_007_AX_network.svg)
 
-* **`E_CYCLE`**: An event generator. It periodically sends events to output `EO`. The parameter `DT` determines the period (here `T#1s`).
-* **`AX_T_FF`**: The toggle flip-flop.
-* **`DigitalOutput_Q1`**: The lamp.
+- **`E_CYCLE`**: An event generator. It periodically sends events to output `EO`. The parameter `DT` determines the period (here `T#1s`).
+- **`AX_T_FF`**: The toggle flip-flop.
+- **`DigitalOutput_Q1`**: The lamp.
 
 -----
 

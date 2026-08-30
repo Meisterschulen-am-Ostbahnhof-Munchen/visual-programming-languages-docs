@@ -29,7 +29,7 @@ Keine Daten-Ausgänge definiert.
 ### **Adapter**
 
 | Rolle | Name | Typ | Beschreibung |
-|-------|------|-----|--------------|
+| ------- | ------ | ----- | -------------- |
 | Socket | IN | adapter::types::unidirectional::AS | Eingangs-Adapter, der das zu verteilende AS-Signal empfängt. |
 | Plug | OUT1 | adapter::types::unidirectional::AS | Erster Ausgangs-Adapter für das verteilte Signal. |
 | Plug | OUT2 | adapter::types::unidirectional::AS | Zweiter Ausgangs-Adapter. |
@@ -74,4 +74,4 @@ Der AS_SPLIT_5 ist ein einfacher, aber effektiver Funktionsblock zur Vervielfach
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

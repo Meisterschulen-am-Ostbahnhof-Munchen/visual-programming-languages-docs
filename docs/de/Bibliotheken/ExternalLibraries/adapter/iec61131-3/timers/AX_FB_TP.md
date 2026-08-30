@@ -72,7 +72,7 @@ Im Vergleich zum [AX_PULSE](../../events/unidirectional/BOOL/timers/AX_PULSE.md)
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
+- [Uebung_020f2_AX](../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_020f2_AX.md)
 
 ## Fazit
 

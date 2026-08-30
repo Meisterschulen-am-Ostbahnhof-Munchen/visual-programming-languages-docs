@@ -33,16 +33,16 @@ Der Funktionsbaustein besitzt keine direkt herausgeführten Standard-Ereignis- o
 
 #### **Sockets (Eingangs-Schnittstellen)**
 
-* **IN0** (Typ: `adapter::types::unidirectional::ATM`): 
+- **IN0** (Typ: `adapter::types::unidirectional::ATM`):
   Der erste auswählbare Eingangsadapter (entspricht der Selektion bei logisch `FALSE`).
-* **IN1** (Typ: `adapter::types::unidirectional::ATM`): 
+- **IN1** (Typ: `adapter::types::unidirectional::ATM`):
   Der zweite auswählbare Eingangsadapter (entspricht der Selektion bei logisch `TRUE`).
-* **G** (Typ: `adapter::types::unidirectional::AX`): 
+- **G** (Typ: `adapter::types::unidirectional::AX`):
   Der Auswahladapter (Selector). Das hier anliegende Signal bestimmt, welcher der beiden Eingänge an den Ausgang durchgeschaltet wird.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::ATM`): 
+- **OUT** (Typ: `adapter::types::unidirectional::ATM`):
   Der Ausgangsadapter, der die Daten und Ereignisse des jeweils selektierten Eingangs (`IN0` oder `IN1`) führt.
 
 ---
@@ -57,8 +57,8 @@ Die interne Struktur des `ATM_AX_SEL_ATM` besteht aus einem Netzwerk standardisi
    Die Daten der Eingänge `IN0` und `IN1` werden über zwei `F_MOVE`-Bausteine (konfiguriert auf den Datentyp `TIME`) gepuffert und für die Selektionslogik bereitgestellt.
 3. **Auswahl (Selektion)**:
    Der Baustein `F_SEL` (ein Standard-Auswahlbaustein der IEC 61131-3) wertet den Zustand des Selektors `G` aus:
-   * Ist das Signal von `G` gleich `FALSE`, wird der Wert von `IN0` gewählt.
-   * Ist das Signal von `G` gleich `TRUE`, wird der Wert von `IN1` gewählt.
+   - Ist das Signal von `G` gleich `FALSE`, wird der Wert von `IN0` gewählt.
+   - Ist das Signal von `G` gleich `TRUE`, wird der Wert von `IN1` gewählt.
 4. **Ausgabe**:
    Der ausgewählte Wert wird über einen weiteren `F_MOVE`-Baustein an den Ausgangsadapter `OUT` übergeben, woraufhin zeitgleich das Ausgangsereignis (`OUT.E1`) ausgelöst wird.
 
@@ -66,9 +66,9 @@ Die interne Struktur des `ATM_AX_SEL_ATM` besteht aus einem Netzwerk standardisi
 
 ## Technische Besonderheiten
 
-* **Adapter-Kapselung**: Durch die Verwendung von Adaptern anstelle von Einzelpins wird die Anzahl der Verbindungslinien im übergeordneten Steuerungsdiagramm drastisch reduziert, was die Lesbarkeit des Gesamtsystems verbessert.
-* **Datentyp-Fokus**: Der Baustein ist intern durch die Parametrierung der `F_MOVE`-Bausteine speziell für den Datentyp `TIME` (Zeitwerte) optimiert.
-* **Ereignisintegrität**: Die Verwendung von Ereignis-Flip-Flops stellt sicher, dass keine Signaländerung verloren geht und der Ausgang nur dann aktualisiert wird, wenn sich tatsächlich relevante Eingangsdaten oder der Selektor ändern.
+- **Adapter-Kapselung**: Durch die Verwendung von Adaptern anstelle von Einzelpins wird die Anzahl der Verbindungslinien im übergeordneten Steuerungsdiagramm drastisch reduziert, was die Lesbarkeit des Gesamtsystems verbessert.
+- **Datentyp-Fokus**: Der Baustein ist intern durch die Parametrierung der `F_MOVE`-Bausteine speziell für den Datentyp `TIME` (Zeitwerte) optimiert.
+- **Ereignisintegrität**: Die Verwendung von Ereignis-Flip-Flops stellt sicher, dass keine Signaländerung verloren geht und der Ausgang nur dann aktualisiert wird, wenn sich tatsächlich relevante Eingangsdaten oder der Selektor ändern.
 
 ---
 
@@ -85,15 +85,15 @@ Da es sich um ein zusammengesetztes Funktionsbaustein-Netzwerk (Composite FB) ha
 
 ## Anwendungsszenarien
 
-* **Umschaltung von Prozesszeiten**: In industriellen oder landwirtschaftlichen Prozessen, bei denen zwischen zwei unterschiedlichen Takt-, Spül- oder Verzögerungszeiten (z. B. Sommer-/Winterbetrieb oder Rezeptur A/Rezeptur B) umgeschaltet werden muss.
-* **Sollwert-Umschaltung**: Dynamische Auswahl eines zeitbasierten Sollwerts aus zwei unterschiedlichen Quellen basierend auf einer übergeordneten Betriebsart.
+- **Umschaltung von Prozesszeiten**: In industriellen oder landwirtschaftlichen Prozessen, bei denen zwischen zwei unterschiedlichen Takt-, Spül- oder Verzögerungszeiten (z. B. Sommer-/Winterbetrieb oder Rezeptur A/Rezeptur B) umgeschaltet werden muss.
+- **Sollwert-Umschaltung**: Dynamische Auswahl eines zeitbasierten Sollwerts aus zwei unterschiedlichen Quellen basierend auf einer übergeordneten Betriebsart.
 
 ---
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Standard `F_SEL`**: Der klassische `F_SEL`-Baustein arbeitet direkt auf elementaren Datentypen und besitzt keine integrierte Ereignissteuerung für Adapter. `ATM_AX_SEL_ATM` verlagert diese Logik auf die strukturierte Adapter-Ebene.
-* **Standard-Multiplexer**: Im Gegensatz zu universellen Multiplexern, die oft komplexe Bus-Strukturen aufweisen, ist dieser Baustein hochspezialisiert, extrem leichtgewichtig und perfekt auf die Kombination aus `ATM`- und `AX`-Adaptern abgestimmt.
+- **Standard `F_SEL`**: Der klassische `F_SEL`-Baustein arbeitet direkt auf elementaren Datentypen und besitzt keine integrierte Ereignissteuerung für Adapter. `ATM_AX_SEL_ATM` verlagert diese Logik auf die strukturierte Adapter-Ebene.
+- **Standard-Multiplexer**: Im Gegensatz zu universellen Multiplexern, die oft komplexe Bus-Strukturen aufweisen, ist dieser Baustein hochspezialisiert, extrem leichtgewichtig und perfekt auf die Kombination aus `ATM`- und `AX`-Adaptern abgestimmt.
 
 ---
 

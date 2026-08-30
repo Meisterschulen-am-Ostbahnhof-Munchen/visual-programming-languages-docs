@@ -3,6 +3,7 @@
 ![ScrollFS](ScrollFS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ScrollFS` is the pure position engine of a scrollable VT list: it holds the current row
@@ -57,7 +58,7 @@ No adapters available.
    events map 1:1 to `RampLimitFS` events:
 
    | `ScrollFS` event | `RampLimitFS` event | Effect on `OUT` |
-   |---|---|---|
+   | --- | --- | --- |
    | `FIRST` | `ZERO` | `OUT := 0` |
    | `PAGE_UP` | `DOWN_FAST` | `OUT -= stObj.i32Step` (clamped at 0) |
    | `LINE_UP` | `DOWN_SLOW` | `OUT -= 1` (clamped at 0) |
@@ -112,7 +113,7 @@ change, never maintained separately.
 
 ## 🛠️ Related Exercises
 
-* No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
+- No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
   `4diac_training1`) for the full derivation against a real pool.
 
 ## Conclusion

@@ -3,6 +3,7 @@
 ![DualHysteresis_AR_AX](./DualHysteresis_AR_AX.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **DualHysteresis_AR_AX** führt eine zweiseitige Analog-Digital-Wandlung mit einstellbarer Hysterese durch.  
@@ -52,10 +53,10 @@ Damit wird ein sicheres Schaltverhalten mit verminderter Schaltfrequenz erreicht
 **Sockets (Eingangsadapter):**
 
 | Adapter | Typ | Beschreibung |
-|---------|-----|--------------|
+| --------- | ----- | -------------- |
 | `INPUT` | adapter::types::unidirectional::AR | Analoger Eingangswert (z. B. 0…1 oder anderer Bereich) |
-| `MI`    | adapter::types::unidirectional::AR | Zentrumspunkt (z. B. 0.5 für 50 %) |
-| `DEAD`  | adapter::types::unidirectional::AR | Totband (Absolutwert) – bestimmt die Ausschaltpunkte |
+| `MI` | adapter::types::unidirectional::AR | Zentrumspunkt (z. B. 0.5 für 50 %) |
+| `DEAD` | adapter::types::unidirectional::AR | Totband (Absolutwert) – bestimmt die Ausschaltpunkte |
 | `HYSTERESIS` | adapter::types::unidirectional::AR | Hysterese (Absolutwert) – erweitert die Ausschaltpunkte zu den Einschaltpunkten |
 
 **Plugs (Ausgangsadapter):**

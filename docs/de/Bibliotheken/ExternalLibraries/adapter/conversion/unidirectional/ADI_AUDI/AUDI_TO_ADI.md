@@ -3,6 +3,7 @@
 ![AUDI_TO_ADI](./AUDI_TO_ADI.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_TO_ADI** ist ein Composite-Baustein, der einen unidirektionalen AUDI‑Adapter (UDINT) in einen ADI‑Adapter (DINT) umwandelt. Er dient als Brücke zwischen Komponenten, die unterschiedliche Datentypen über Adapter-Schnittstellen verwenden. Die Konvertierung erfolgt durch den inneren Baustein `iec61131::conversion::F_UDINT_TO_DINT`.

@@ -3,9 +3,11 @@
 ![Uebung_008_AE_network](./Uebung_008_AE_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a simple flasher (alternating flasher) using adapter function blocks (FBs) for event-driven logic. The core consists of a cycle generator (AE_CYCLE), a toggle switch (AX_SWITCH), and an SR flip-flop (AX_SR). Feedback and output to a digital output are implemented via a split (AX_SPLIT_2) and a merger (AX_AE_MERGE). This exercise demonstrates the use of event and adapter connections in the 4diac IDE.
+
 ## Function Blocks (FBs) Used
 
 All function blocks used are adapter FBs from the libraries `adapter::events::unidirectional::timers` and `adapter::events::unidirectional`. Additionally, a hardware output (logiBUS) is used.
@@ -80,12 +82,15 @@ The blinker operates event-driven according to the following scheme:
 1. **Clock Generator**: The `AE_CYCLE` sends an event to its output `EO` every 1 second.
 2. **Event Feedback**: The event from `AE_CYCLE` is combined with the current state of the SR flip-flop. For this purpose, the state from `AX_SR` is routed via `AX_SPLIT_2` to `AX_AE_MERGE` (input `IN_AX`). The event from `AE_CYCLE` is applied to `IN_AE`. The `AX_AE_MERGE` outputs an adapter, `OUT`, which carries the current state and is delivered simultaneously with the event.
 3. **Switch**: The output `AX_AE_MERGE.OUT` is connected to the input `G` of the `AX_SWITCH`. The switch evaluates the incoming adapter state:
+
 - If the state `false` (flip-flop reset) is reached, an event is output to `EO0`.
 - If the state `true` (flip-flop set) is reached, an event is output to `EO1`.
-4. **SR Flip-Flop**:
+1. **SR Flip-Flop**:
+
 - An event from `AX_SWITCH.EO0` reaches the set input `S` of `AX_SR`. This sets the flip-flop → output `Q` becomes `true`.
 - An event from `AX_SWITCH.EO1` reaches the reset input `R` of `AX_SR`. This resets the flip-flop → output `Q` becomes `false`.
-5. **Output**: The state `Q` is distributed to two paths via `AX_SPLIT_2`:
+1. **Output**: The state `Q` is distributed to two paths via `AX_SPLIT_2`:
+
 - `OUT1` → Feedback to `AX_AE_MERGE` (as described)
 - `OUT2` → To the adapter input `OUT` of `DigitalOutput_Q1`. The output is switched on at `true` and switched off at `false`.
 
@@ -97,6 +102,6 @@ Exercise "Exercise_008_AE" demonstrates the construction of a blinker using 4dia
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

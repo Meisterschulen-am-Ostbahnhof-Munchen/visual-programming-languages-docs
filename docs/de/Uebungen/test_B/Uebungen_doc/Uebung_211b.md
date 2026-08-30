@@ -3,6 +3,7 @@
 ![Uebung_211b_network](./Uebung_211b_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 In dieser Übung wird der IEC 61131-3 Standard-Funktionsbaustein **FB_CTU_DINT** (Vorwärtszähler mit `DINT`-Datentyp) verwendet. Der Zähler wird durch einen Taster an einem Digitaleingang erhöht und über einen zweiten Taster zurückgesetzt. Der aktuelle Zählerstand wird zusätzlich über einen Terminal-Ausgabebaustein als physikalischer `LREAL`-Wert ausgegeben.
@@ -14,7 +15,7 @@ Ziel ist es, das Zusammenspiel zwischen einem Zähler, digitalen Ein-/Ausgängen
 Im SubApp-Netzwerk werden fünf Instanzen von vordefinierten Bausteintypen verwendet. Es sind keine weiteren Sub-Bausteine definiert.
 
 | Name | Typ | Beschreibung |
-|------|-----|--------------|
+| ------ | ----- | -------------- |
 | `Input_CU` | `logiBUS_IX` | Digitaler Eingang (logiBUS), der den Zählimpuls (CU) bereitstellt. |
 | `Input_R` | `logiBUS_IX` | Digitaler Eingang, der das Rücksetzsignal (R) bereitstellt. |
 | `FB_CTU_DINT` | `FB_CTU_DINT` | Vorwärtszähler (Counter Up) mit `DINT`-Datentyp. |
@@ -54,13 +55,13 @@ Im SubApp-Netzwerk werden fünf Instanzen von vordefinierten Bausteintypen verwe
 
 ### Ereignisverbindungen
 
-1. **Eingangssignale**  
-   - Wenn der Taster an `Input_I1` betätigt wird (steigende Flanke), sendet `Input_CU.IND` ein Ereignis an `FB_CTU_DINT.REQ`.  
+1. **Eingangssignale**
+   - Wenn der Taster an `Input_I1` betätigt wird (steigende Flanke), sendet `Input_CU.IND` ein Ereignis an `FB_CTU_DINT.REQ`.
    - Wenn der Taster an `Input_I2` betätigt wird, sendet `Input_R.IND` ebenfalls ein Ereignis an denselben `REQ`-Eingang des Zählers.
 
    *Hinweis: Beide Ereignisse werden auf den gleichen `REQ`-Eingang geführt, daher muss der Baustein intern unterscheiden, welcher Eingang (CU oder R) aktiv ist.*
 
-2. **Zählerausführung**  
+2. **Zählerausführung**
    Nachdem der Zähler das Ereignis verarbeitet hat (Ausführung der Funktion), sendet er über `CNF` zwei gleichzeitige Ereignisse:
 
    - an `Output_Q1.REQ` (Aktualisierung des digitalen Ausgangs)
@@ -101,4 +102,4 @@ Die Übung 211b demonstriert den praktischen Einsatz eines Vorwärtszählers (CT
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

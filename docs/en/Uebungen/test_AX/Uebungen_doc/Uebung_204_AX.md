@@ -3,6 +3,7 @@
 ![Uebung_204_AX_network](./Uebung_204_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements interlock logic with conflict detection and trip triggering using the function block **ILOCK_CONFLICT_TRIP_AX**.
@@ -21,7 +22,7 @@ The entire exercise is set up as a standalone sub-application. All FBs are used 
 ### Overview of FBs in the Network
 
 | Block Name | Type | Parameters | Event Connections | Adapter/Data Connections |
-|---|---|---|---|---|
+| --- | --- | --- | --- | --- |
 | **DigitalInput_I1** | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`<br>`Input = Input_I1` | – | Adapter `IN` → ILOCK_AX.UP_IN |
 | **DigitalInput_I2** | `logiBUS::io::DI::logiBUS_IXA` | `QI = TRUE`<br>`Input = Input_I2` | – | Adapter `IN` → ILOCK_AX.DOWN_IN |
 | **DigitalInput_Reset** | `logiBUS::io::DI::logiBUS_IE` | `QI = TRUE`<br>`Input = Input_I3`<br>`InputEvent = BUTTON_SINGLE_CLICK` | Event output `IND` → ILOCK_AX.EI_RESET | – |
@@ -33,19 +34,22 @@ The entire exercise is set up as a standalone sub-application. All FBs are used 
 ## Program Flow and Connections
 
 1. **Inputs**:
+
 - The digital inputs *Input_I1* (via function block "DigitalInput_I1") and *Input_I2* (via function block "DigitalInput_I2") provide the adapter interfaces `UP_IN` and `DOWN_IN`, respectively, for the ILOCK module.
 - The reset input *Input_I3* is evaluated as an event (single edge, parameter `BUTTON_SINGLE_CLICK`) via the function block "DigitalInput_Reset". The event `IND` triggers the reset input `EI_RESET` of the ILOCK module.
 
-2. **Interlock Logic**:
+1. **Interlock Logic**:
 
 - The function block **ILOCK_CONFLICT_TRIP_AX** monitors the two inputs and detects a conflict (e.g., simultaneous requests in both directions).
 - Under normal operation, it passes the signals unchanged to outputs `UP_OUT` and `DOWN_OUT`.
 - In case of a conflict, output `TRIP_OUT` is activated, and outputs `UP_OUT`/`DOWN_OUT` are put into a defined (locked) state.
-3. **Outputs**:
+1. **Outputs**:
+
 - The adapter output `UP_OUT` controls the digital output *Output_Q1* (FB "DigitalOutput_Q1").
 - The adapter output `DOWN_OUT` controls *Output_Q2* (FB "DigitalOutput_Q2").
 - The trip output `TRIP_OUT` activates *Output_Q4* (FB "Trip_Display").
-4. **Reset Behavior**:
+1. **Reset Behavior**:
+
 - As long as a trip is active, `TRIP_OUT` remains set. Triggering the reset input (single edge on *Input_I3*) resets the ILOCK block, and the outputs return to their normal state.
 
 ## Summary

@@ -6,6 +6,7 @@
 
 The function block `F_USINT_TO_BYTE` converts an unsigned 8-bit integer value (USINT) into a byte value (BYTE). This conversion is particularly necessary in scenarios where data needs to be exchanged between different formats or systems.
 ![F_USINT_TO_BYTE](F_USINT_TO_BYTE.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -56,7 +57,7 @@ The function block performs the conversion as soon as the event `REQ` is receive
 
 ## 🛠️ Related Exercises
 
-* [Exercise_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
+- [Exercise_126b_sub](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_126b_sub.md)
 
 ## Conclusion
 

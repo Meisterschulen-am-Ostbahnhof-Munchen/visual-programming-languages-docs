@@ -29,7 +29,7 @@ Der Funktionsblock `ALI_SPLIT_5` ist ein generischer Adapter‑Split‑Baustein.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang (Socket) | `IN` | `adapter::types::unidirectional::ALI` | Einziger Eingang: enthält die ALI‑Daten, die auf die fünf Ausgänge verteilt werden sollen. |
 | Ausgang (Plug) | `OUT1` | `adapter::types::unidirectional::ALI` | Erster Ausgang (identische Signale wie am Eingang). |
 | Ausgang (Plug) | `OUT2` | `adapter::types::unidirectional::ALI` | Zweiter Ausgang. |
@@ -76,4 +76,4 @@ Der `ALI_SPLIT_5` ist ein einfacher, aber essenzieller Baustein zur Vervielfachu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![Uebung_034a1_Q1_AX_network](./Uebung_034a1_Q1_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die einfache Verbindung einer **Numerischen Werteingabe** (ISOBUS-NumericValue) mit einem **PWM-Ausgang** über eine direkte Adapterverbindung. Der eingegebene Zahlenwert wird nach Bestätigung der Eingabe (OK-Taste) auf den PWM-Ausgang des logiBUS-Moduls (Kanal Q1) ausgegeben.
@@ -33,6 +34,7 @@ Die Übung ist als **SubAppType** realisiert und verwendet ausschließlich Adapt
 1. Der Benutzer gibt an einem ISOBUS-Terminal einen Zahlenwert über das Objekt `InputNumber_PWM_Value` ein.
 2. Nach Betätigen der OK-Taste wird der Wert vom FB `PWM_Value` übernommen und an seinem Adapterausgang `IN` bereitgestellt.
 3. Der Adapterausgang ist direkt mit dem Adaptereingang `OUT` des FB `PWMOutput_Q1` verbunden:
+
    ```
    Verbindung: PWM_Value.IN → PWMOutput_Q1.OUT
    ```
@@ -49,5 +51,5 @@ Die Übung zeigt eine **minimale Konfiguration zur Ansteuerung eines PWM-Ausgang
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-* [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Das PWM-Signal & Infografik auf ms-muc-docs.de](https://www.ms-muc-docs.de/automatisierung/das-pwm-signal-die-kunst-spannung-zu-zerhacken/das-pwm-signal-die-kunst-spannung-zu-zerhacken-website/)

@@ -3,6 +3,7 @@
 ![AUDI_SPLIT_5](./AUDI_SPLIT_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUDI_SPLIT_5** dient dazu, ein einzelnes eingehendes AUDI‑Signal auf fünf identische AUDI‑Ausgänge zu verteilen. Er ist als generischer Adapterbaustein konzipiert und erlaubt eine flexible Weiterverarbeitung des Signals in mehreren Pfaden.
@@ -28,7 +29,7 @@ Keine vorhanden.
 ### **Adapter**
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | **Socket** | `IN` | `adapter::types::unidirectional::AUDI` | Eingehendes AUDI‑Signal |
 | **Plug** | `OUT1` | `adapter::types::unidirectional::AUDI` | Erster Ausgang |
 | **Plug** | `OUT2` | `adapter::types::unidirectional::AUDI` | Zweiter Ausgang |

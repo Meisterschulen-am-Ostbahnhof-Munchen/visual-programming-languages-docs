@@ -1,6 +1,7 @@
 # Scaling
 
 Yes, in the **ISOBUS standard ISO 11783-6** (Part 6: **Virtual Terminal**), **scaling the implement screens** is indeed assigned to the **implement** and not to the virtual terminal (VT).
+
 - **ISO 11783-6** defines the communication between the **Virtual Terminal (VT)** and the connected **implements**.
 - The **user interface display** (screens, icons, text) is transferred from the implement to the VT via **object pools**.
 - **Scaling** the screens is necessary to ensure correct display on different VT screen sizes and resolutions.
@@ -14,11 +15,11 @@ The ISOBUS standard clearly assigns the responsibility for scaling the screens t
 
 ### Conclusion
 
-### Praktische Umsetzung:
+### Praktische Umsetzung
 
-### Zuständigkeit für das Skalieren:
+### Zuständigkeit für das Skalieren
 
-### Hintergrund:
+### Hintergrund
 
 ## Grundlegendes
 
@@ -31,10 +32,13 @@ This analysis describes the scaling logic for ISOBUS objects based on **object I
 ### **Core Principles**
 
 1. **DataMask Objects** (e.g., Inputs, Outputs, Graphics):
+
 - Always scaled (Examples: `InputNumber: 9000–9999`, `LinearBargraph: 18000–18599`)
-2. **SoftkeyMask/Auxiliary Objects**:
+1. **SoftkeyMask/Auxiliary Objects**:
+
 - Centered (no scaling, e.g., `0: Working Set Object`) or have special rules (e.g., `5000–5999: Softkey-Buttons`).
-3. **Hybrid Objects** (separate ID ranges):
+1. **Hybrid Objects** (separate ID ranges):
+
 - Scaling depends on the **object ID range**:
 - **DataMask Variant**: Scaling is active (e.g., `11000–11499: OutputString`).
 - **SoftkeyMask Variant**: Scaling is disabled or handled differently (e.g., `11500–11999: OutputString`).
@@ -85,29 +89,30 @@ Strict adherence to the ID ranges by the attachment is crucial.
 ## **Table**
 
 | DATA MASK | | SOFTKEY MASK & AUX |
-|-------------------------------------------------|---------|------------------------------------------------|
-| x |         | 0 - 0 - Centering - Working set object |
-| 1000 - 1999 - Scaling - DataMask |         | x |
-| 2000 - 2999 - Scaling - AlarmMask |         |                                                |
+| ------------------------------------------------- | --------- | ------------------------------------------------ |
+| x | | 0 - 0 - Centering - Working set object |
+| 1000 - 1999 - Scaling - DataMask | | x |
+| 2000 - 2999 - Scaling - AlarmMask | | |
 | 3000 - 3499 - Scaling - Containers | → | 3500 - 3999 - Scaling - Containers |
 | 6000 - 6999 - Scaling - Button | → | 5000 - 5999 - Centering – Softkeys |
-| 7000 - 7999 - Scaling - InputBoolean |         |                                                |
-| 8000 - 8999 - Scaling - InputString |         |                                                |
-| 9000 - 9999 - Scaling - InputNumber |         |                                                |
-| 10000 - 10999 - Scaling - InputList |         |                                                |
+| 7000 - 7999 - Scaling - InputBoolean | | |
+| 8000 - 8999 - Scaling - InputString | | |
+| 9000 - 9999 - Scaling - InputNumber | | |
+| 10000 - 10999 - Scaling - InputList | | |
 | 11000 - 11499 - Scaling - OutputString | → | 11500 - 11999 - Scaling – OutputString |
 | 12000 - 12499 - Scaling - OutputNumber | → | 12500 - 12999 - Scaling - OutputNumber |
 | 13000 - 13499 - Scaling - Line | → | 13500 - 13999 - Scaling Line |
 | 14000 - 14499 - Scaling - Rectangle | → | 14500 - 14999 - Scaling - Rectangle |
 | 15000 - 15499 - Scaling - Ellipse | → | 15500 - 15999 - Scaling - Ellipse |
 | 16000 - 16499 - Scaling - Polygon | → | 16500 - 16999 - Scaling – Polygon |
-| 17000 - 17599 - Scaling - Meter |         |                                                |
-| 18000 - 18599 - Scaling - LinearBargraph |         |                                                |
-| 19000 - 19599 - Scaling - ArchedBargraph |         |                                                |
+| 17000 - 17599 - Scaling - Meter | | |
+| 18000 - 18599 - Scaling - LinearBargraph | | |
+| 19000 - 19599 - Scaling - ArchedBargraph | | |
 | 20000 - 20499 - Scaling - PictureGraphic | → | 20500 - 20999 - Scaling - Working set bitmaps |
 | 23000 - 23499 - Scaling - FontAttributes | → | 23500 - 23999 - Scaling - FontAttributes |
 | 24000 - 24499 - Scaling - LineAttributes | → | 24500 - 24900 - Scaling - LineAttributes |
 | 25000 - 25499 - Scaling - FillAttributes | → | 25500 - 25999 - Scaling – FillAttributes |
-| 30000 - 30999 - Scaling – OutputList |         |                                                |
-|                                          |         | 31000 - 31999 - Centering - Auxiliary function |
+| 30000 - 30999 - Scaling – OutputList | | |
+| | | 31000 - 31999 - Centering - Auxiliary function |
+
 ---

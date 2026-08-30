@@ -3,9 +3,11 @@
 ![AD_TO_AR](./AD_TO_AR.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **AD_TO_AR** function block is a composite function block for converting a DWORD value from a unidirectional AD adapter (socket) into a REAL value, which is output via an AR adapter (plug). It encapsulates the conversion logic, thus enabling simple adapter-based data transfer between different data types.
+
 ## Interface Structure
 
 The function block has no direct (individual) event or data inputs/outputs. All communication takes place via two adapter interfaces:
@@ -29,7 +31,7 @@ The function block has no direct (individual) event or data inputs/outputs. All 
 ### **Adapters**
 
 | Name | Type | Direction | Description |
-|--------|--------------------------------------------|----------|----------------------------------------------------------------------------|
+| -------- | -------------------------------------------- | ---------- | ---------------------------------------------------------------------------- |
 | AD_IN | `adapter::types::unidirectional::AD` | Socket | Receives an event (E1) and a DWORD value (D1) for conversion. |
 | AR_OUT | `adapter::types::unidirectional::AR` | Plug | Sends an event (E1) with the converted REAL value (D1). |
 
@@ -78,6 +80,6 @@ The **AD_TO_AR** block offers a compact and standards-compliant solution for con
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

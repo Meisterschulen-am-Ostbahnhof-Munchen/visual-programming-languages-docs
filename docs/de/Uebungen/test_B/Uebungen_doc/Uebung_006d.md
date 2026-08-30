@@ -1,4 +1,4 @@
-# Uebung_006d: SR-Flip-Flop mit 2x IE und Doppelklick.
+# Uebung_006d: SR-Flip-Flop mit 2x IE und Doppelklick
 
 [![NotebookLM](media/NotebookLM_logo.png)](https://notebooklm.google.com/notebook/a6872e59-1dfc-4132-a118-aff1bc7bc944)
 
@@ -20,16 +20,16 @@ Kombination von komplexen Eingangsereignissen (Doppelklick) mit Speicherbaustein
 
 ![Uebung_006d_network](./Uebung_006d_network.svg)
 
-  * **`I1` (Set)**: Konfiguriert auf `BUTTON_DOUBLE_CLICK`.
-  * **`I2` (Reset)**: Konfiguriert auf `BUTTON_SINGLE_CLICK`.
-  * **`E_SR`**: Der Speicherbaustein.
+  - **`I1` (Set)**: Konfiguriert auf `BUTTON_DOUBLE_CLICK`.
+  - **`I2` (Reset)**: Konfiguriert auf `BUTTON_SINGLE_CLICK`.
+  - **`E_SR`**: Der Speicherbaustein.
 
 -----
 
 ## Funktionsweise
 
-*   **Einschalten**: Erfordert eine bewusste Handlung des Nutzers (Doppelklick auf `I1`). Ein einfaches Berühren reicht nicht aus.
-*   **Ausschalten**: Muss im Bedarfsfall schnell und einfach gehen (einfacher Klick auf `I2`).
+-   **Einschalten**: Erfordert eine bewusste Handlung des Nutzers (Doppelklick auf `I1`). Ein einfaches Berühren reicht nicht aus.
+-   **Ausschalten**: Muss im Bedarfsfall schnell und einfach gehen (einfacher Klick auf `I2`).
 
 Das Flip-Flop speichert den Zustand zwischen diesen Ereignissen.
 

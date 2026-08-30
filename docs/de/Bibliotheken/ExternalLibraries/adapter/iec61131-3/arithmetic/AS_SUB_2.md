@@ -6,9 +6,10 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein `AS_SUB_2` ist ein generischer Funktionsbaustein (Generic FB) für die Entwicklungsumgebung 4diac-ide. Er dient der Durchführung einer arithmetischen Subtraktion ($OUT = IN1 - IN2$). 
+Der Funktionsbaustein `AS_SUB_2` ist ein generischer Funktionsbaustein (Generic FB) für die Entwicklungsumgebung 4diac-ide. Er dient der Durchführung einer arithmetischen Subtraktion ($OUT = IN1 - IN2$).
 
 Im Gegensatz zu klassischen arithmetischen Bausteinen, die direkt mit standardmäßigen Daten- und Ereignis-Schnittstellen arbeiten, nutzt dieser Baustein unidirektionale Adapterverbindungen zur Kapselung von Daten und Steuerungsereignissen. Dies ermöglicht eine strukturierte und übersichtliche Verdrahtung in komplexen IEC 61499-Anwendungen.
 
@@ -34,15 +35,15 @@ Es sind keine direkten Daten-Ausgänge auf dem Baustein definiert. Das Ergebnis 
 
 Die gesamte Kommunikation des Funktionsbausteins wird über Adapter realisiert:
 
-* **Sockets (Eingangs-Adapter):**
-  * `IN1` (Typ: `adapter::types::unidirectional::AS`): Der erste Eingang (Minuend) für die Subtraktion.
-  * `IN2` (Typ: `adapter::types::unidirectional::AS`): Der zweite Eingang (Subtrahend) für die Subtraktion.
-* **Plugs (Ausgangs-Adapter):**
-  * `OUT` (Typ: `adapter::types::unidirectional::AS`): Das Ergebnis (Differenz) der arithmetischen Subtraktion.
+- **Sockets (Eingangs-Adapter):**
+  - `IN1` (Typ: `adapter::types::unidirectional::AS`): Der erste Eingang (Minuend) für die Subtraktion.
+  - `IN2` (Typ: `adapter::types::unidirectional::AS`): Der zweite Eingang (Subtrahend) für die Subtraktion.
+- **Plugs (Ausgangs-Adapter):**
+  - `OUT` (Typ: `adapter::types::unidirectional::AS`): Das Ergebnis (Differenz) der arithmetischen Subtraktion.
 
 ## Funktionsweise
 
-Sobald an den Eingangs-Adaptern `IN1` und `IN2` gültige Werte und die entsprechenden Trigger-Ereignisse anliegen, führt der Baustein die Berechnung aus. 
+Sobald an den Eingangs-Adaptern `IN1` und `IN2` gültige Werte und die entsprechenden Trigger-Ereignisse anliegen, führt der Baustein die Berechnung aus.
 
 Die mathematische Operation lautet:
 $$\text{Ergebnis} = \text{Wert von } IN1 - \text{Wert von } IN2$$
@@ -51,9 +52,9 @@ Das Ergebnis der Berechnung sowie das zugehörige Ausgangs-Ereignis werden ansch
 
 ## Technische Besonderheiten
 
-* **Generisches Verhalten:** Durch die Deklaration als generischer Baustein kann er für verschiedene numerische Datentypen (z. B. INT, REAL, LREAL) eingesetzt werden, abhängig von der Definition des verwendeten Adapters `adapter::types::unidirectional::AS`.
-* **Kompakte Struktur:** Durch die Verwendung von Adaptern wird die visuelle Komplexität im 4diac-Application-Editor stark reduziert, da Ereignis- und Datenleitungen in einer einzigen Adapterverbindung gebündelt sind.
-* **Unidirektionaler Datenfluss:** Die verwendeten Adapter weisen einen strikt unidirektionalen Signalfluss auf (von den Sockets zum Plug).
+- **Generisches Verhalten:** Durch die Deklaration als generischer Baustein kann er für verschiedene numerische Datentypen (z. B. INT, REAL, LREAL) eingesetzt werden, abhängig von der Definition des verwendeten Adapters `adapter::types::unidirectional::AS`.
+- **Kompakte Struktur:** Durch die Verwendung von Adaptern wird die visuelle Komplexität im 4diac-Application-Editor stark reduziert, da Ereignis- und Datenleitungen in einer einzigen Adapterverbindung gebündelt sind.
+- **Unidirektionaler Datenfluss:** Die verwendeten Adapter weisen einen strikt unidirektionalen Signalfluss auf (von den Sockets zum Plug).
 
 ## Zustandsübersicht
 
@@ -65,9 +66,9 @@ Die Ausführungslogik wird typischerweise durch Ereignisse auf den Eingangs-Adap
 
 ## Anwendungsszenarien
 
-* **Messwertkorrektur:** Subtraktion von Nullpunktfehlern oder Offsets bei analogen Sensorwerten.
-* **Soll-Ist-Vergleich:** Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen Soll- und Istwerte über standardisierte Adapterstrukturen übertragen werden.
-* **Füllstands- und Mengenberechnung:** Ermittlung von Differenzmengen in Prozessanlagen.
+- **Messwertkorrektur:** Subtraktion von Nullpunktfehlern oder Offsets bei analogen Sensorwerten.
+- **Soll-Ist-Vergleich:** Berechnung der Regelabweichung ($e = w - x$) in Regelungskreisen, bei denen Soll- und Istwerte über standardisierte Adapterstrukturen übertragen werden.
+- **Füllstands- und Mengenberechnung:** Ermittlung von Differenzmengen in Prozessanlagen.
 
 ## Vergleich mit ähnlichen Bausteinen
 

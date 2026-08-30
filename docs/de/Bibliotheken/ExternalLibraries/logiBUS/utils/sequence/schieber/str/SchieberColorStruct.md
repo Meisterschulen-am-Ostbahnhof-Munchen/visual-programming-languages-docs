@@ -1,6 +1,7 @@
 # SchieberColorStruct
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `SchieberColorStruct` ist eine strukturierte Datenstruktur, die zur Verwaltung von Farbwerten für verschiedene Zustände eines Schiebers (z. B. eines Ventils, einer Klappe oder eines Verschlusses) dient. Er definiert eine konsistente Farbkodierung für die visuelle Darstellung der Zustände `Unbekannt`, `Geschlossen`, `Öffnend`, `Geöffnet` und `Schließend` in einer Benutzeroberfläche oder Anzeige.
@@ -37,9 +38,9 @@ Die `SchieberColorStruct` ist ein reiner Datentyp. Sie dient als Container, um f
 
 ## Technische Besonderheiten
 
-*   **Importierte Konstante:** Die Struktur ist von der extern definierten Konstante `COLOR_WHITE` abhängig, die über den Compiler-Import `isobus::UT::Q::const::colours::COLOR_WHITE` bereitgestellt wird. Dies stellt sicher, dass ein projektweiter, einheitlicher Weißton verwendet wird.
-*   **Typensicherheit:** Die Verwendung eines strukturierten Typs anstelle von fünf einzelnen Variablen erhöht die Lesbarkeit und Wartbarkeit des Codes und verringert die Fehleranfälligkeit.
-*   **Hash-Attribut:** Die Struktur enthält das Attribut `eclipse4diac::core::TypeHash` mit einem leeren Wert. Dies wird vom 4diac-System für die Typidentifikation und -verwaltung genutzt.
+-   **Importierte Konstante:** Die Struktur ist von der extern definierten Konstante `COLOR_WHITE` abhängig, die über den Compiler-Import `isobus::UT::Q::const::colours::COLOR_WHITE` bereitgestellt wird. Dies stellt sicher, dass ein projektweiter, einheitlicher Weißton verwendet wird.
+-   **Typensicherheit:** Die Verwendung eines strukturierten Typs anstelle von fünf einzelnen Variablen erhöht die Lesbarkeit und Wartbarkeit des Codes und verringert die Fehleranfälligkeit.
+-   **Hash-Attribut:** Die Struktur enthält das Attribut `eclipse4diac::core::TypeHash` mit einem leeren Wert. Dies wird vom 4diac-System für die Typidentifikation und -verwaltung genutzt.
 
 ## Zustandsübersicht
 
@@ -47,9 +48,9 @@ Da es sich um einen statischen Datentyp handelt, besitzt die `SchieberColorStruc
 
 ## Anwendungsszenarien
 
-*   **Visualisierung in HMIs:** Übergabe der Farbkonfiguration an Visualisierungskomponenten, um den Zustand eines Schiebers farblich korrekt anzuzeigen (z. B. Rot für "Schließend", Grün für "Geöffnet").
-*   **Konfiguration von Funktionsblöcken:** Ein Funktionsblock, der einen physischen Schieber steuert, kann eine Instanz dieses Typs als konfigurierbaren Eingang besitzen, um benutzerdefinierte Farben für die Zustandsrückmeldung zu ermöglichen.
-*   **Datenkapselung:** Bündelung aller zustandsbezogenen Farbinformationen in einem einzigen Parameter, der zwischen verschiedenen Softwaremodulen (z. B. Steuerung und Visualisierung) ausgetauscht werden kann.
+-   **Visualisierung in HMIs:** Übergabe der Farbkonfiguration an Visualisierungskomponenten, um den Zustand eines Schiebers farblich korrekt anzuzeigen (z. B. Rot für "Schließend", Grün für "Geöffnet").
+-   **Konfiguration von Funktionsblöcken:** Ein Funktionsblock, der einen physischen Schieber steuert, kann eine Instanz dieses Typs als konfigurierbaren Eingang besitzen, um benutzerdefinierte Farben für die Zustandsrückmeldung zu ermöglichen.
+-   **Datenkapselung:** Bündelung aller zustandsbezogenen Farbinformationen in einem einzigen Parameter, der zwischen verschiedenen Softwaremodulen (z. B. Steuerung und Visualisierung) ausgetauscht werden kann.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -63,4 +64,4 @@ Die `SchieberColorStruct` ist ein einfacher, aber nützlicher strukturierter Dat
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

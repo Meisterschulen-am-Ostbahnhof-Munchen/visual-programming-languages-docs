@@ -10,6 +10,7 @@ Gemäß DIN EN 61131-3 werden die Datentypen in folgende Gruppen unterteilt:
 - **Gleitpunktzahlen**: REAL, LREAL
 - **Zeit und Datum**: TIME, DATE, TOD, DT
 - **Zeichenfolgen**: STRING, WSTRING
+
 ## 💾 Datentypen2
 
 [Integer (Datentyp) – Wikipedia](https://de.wikipedia.org/wiki/Integer_(Datentyp))
@@ -42,12 +43,12 @@ Siehe auch: IEC 61499, Table E.1
 | UINT | UI | 2 | 16 Bit | 0 | 65.535 |
 | UDINT | UDI | 4 | 32 Bit | 0 | 4.294.967.295 |
 | ULINT | ULI | 8 | 64 Bit | 0 | 18.446.744.073.709.551.615 |
-| REAL | R | 4 | 32 Bit |   |   |
-| LREAL | LR | 8 | 64 Bit |   |   |
-| DATE | D | 8 | 64 Bit |   |   |
-| TIME | T | 8 | 64 Bit |   |   |
-| TIME\_OF\_DAY | TOD | 12 | 96 Bit | 1970-01-01-00:00:00.000 |   |
-| DATE\_AND\_TIME | DT | 20 | 160 Bit | 1970-01-01-00:00:00.000 |   |
+| REAL | R | 4 | 32 Bit | | |
+| LREAL | LR | 8 | 64 Bit | | |
+| DATE | D | 8 | 64 Bit | | |
+| TIME | T | 8 | 64 Bit | | |
+| TIME\_OF\_DAY | TOD | 12 | 96 Bit | 1970-01-01-00:00:00.000 | |
+| DATE\_AND\_TIME | DT | 20 | 160 Bit | 1970-01-01-00:00:00.000 | |
 
 #### 💾 Datentypen für I/O (Input / Output)
 
@@ -93,7 +94,7 @@ In der folgenden Liste sind die elementaren Datentypen gemäß DIN EN 61131-3 au
 
 ## 🎧 Podcast
 
-* [Datenkommunikation in der Automatisierung: Die Geheimnisse der IEC 61499 Datentypen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datenkommunikation-in-der-Automatisierung-Die-Geheimnisse-der-IEC-61499-Datentypen-e3672lj)
-* [Datentypen der IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datentypen-der-IEC-61499-e3672jf)
-* [Universum der Datentypen, wie sie in der IEC 61131-3 und IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Universum-der-Datentypen--wie-sie-in-der-IEC-61131-3-und-IEC-61499-e3673kb)
-* [Digitale Logik Flip-Flops und Datentypen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Digitale-Logik-Flip-Flops-und-Datentypen-e3dic6t)
+- [Datenkommunikation in der Automatisierung: Die Geheimnisse der IEC 61499 Datentypen](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datenkommunikation-in-der-Automatisierung-Die-Geheimnisse-der-IEC-61499-Datentypen-e3672lj)
+- [Datentypen der IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Datentypen-der-IEC-61499-e3672jf)
+- [Universum der Datentypen, wie sie in der IEC 61131-3 und IEC 61499](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Universum-der-Datentypen--wie-sie-in-der-IEC-61131-3-und-IEC-61499-e3673kb)
+- [Digitale Logik Flip-Flops und Datentypen](https://podcasters.spotify.com/pod/show/ms-muc-lama/episodes/Digitale-Logik-Flip-Flops-und-Datentypen-e3dic6t)

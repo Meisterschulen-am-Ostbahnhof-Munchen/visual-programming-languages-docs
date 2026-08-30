@@ -3,6 +3,7 @@
 ![AUI_TO_AUS](./AUI_TO_AUS.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AUI_TO_AUS** dient als zusammengesetzter Baustein zur Umwandlung eines AUI-Adapters (Datentyp UINT) in einen AUS-Adapter (Datentyp USINT). Er wird typischerweise eingesetzt, um zwischen unterschiedlichen Adaptertypen in der 4diac-IDE zu vermitteln, wenn eine Größenreduktion des Wertebereichs oder eine Typanpassung erforderlich ist. Der Baustein kapselt die Konvertierungslogik und ermöglicht eine nahtlose Integration in bestehende Ablaufumgebungen.
@@ -80,4 +81,4 @@ Der **AUI_TO_AUS** ist ein kompakter und fokussierter Baustein zur Adapter‑Kon
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

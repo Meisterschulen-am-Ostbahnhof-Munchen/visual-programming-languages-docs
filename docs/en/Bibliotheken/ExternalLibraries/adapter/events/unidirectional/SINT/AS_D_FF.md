@@ -3,9 +3,11 @@
 ![AS_D_FF](./AS_D_FF.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AS_D_FF** implements a simple data latch (D flip-flop) based on adapters. It stores an incoming data value with each incoming event and outputs the stored value as a signal. The block encapsulates the logic of the 4diac standard block `E_D_FF_ANY` and provides its interfaces exclusively via unidirectional adapters of type `adapter::types::unidirectional::AS`. This enables modular and standardized integration into more complex systems.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ No direct data outputs. The stored data value is output via the **Q** (Plug) ada
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **I** | Socket (Input) | `adapter::types::unidirectional::AS` | Provides the input event (`E1`) and the data value to be latched (`D1`). |
 | **Q** | Plug (Output) | `adapter::types::unidirectional::AS` | Outputs an output event (`E1`) and the stored data value (`D1`). |
 
@@ -47,6 +49,7 @@ This logic is implemented by the internally used component `E_D_FF_ANY`:
 The component thus behaves like a classic D flip-flop, but with a standardized adapter interface instead of direct inputs/outputs.
 
 ...
+
 ## Technical Features
 
 - **Adapter-based encapsulation**: All data exchange occurs exclusively via unidirectional adapters of type `adapter::types::unidirectional::AS`. This facilitates reuse in different contexts and ensures a clear separation between event and data flows.
@@ -73,7 +76,7 @@ The state is switched to `I.E1` by an event (if the data value has changed) and 
 ## Comparison with Similar Modules
 
 | Module | Property | Difference from AS_D_FF |
-|----------|-------------|-------------------------|
+| ---------- | ------------- | ------------------------- |
 | **SR_FF** | Set-Reset Flip-Flop | Has separate set and reset inputs, no clock signal. |
 | **E_D_FF_ANY** | Pure D flip-flop with direct I/O | Does not offer an adapter interface; requires direct connections. |
 | **AS_FF_RS** (hypothetical) | RS flip-flop with adapters | Uses two adapters for set and reset, no clock signal. |
@@ -88,6 +91,6 @@ The **AS_D_FF** function block represents a practical encapsulation of a D flip-
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

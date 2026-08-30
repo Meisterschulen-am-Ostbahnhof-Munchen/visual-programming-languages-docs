@@ -3,6 +3,7 @@
 ![AUI_LT](./AUI_LT.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `AUI_LT` realisiert einen Kleiner-als-Vergleich (`<`) zwischen zwei Eingangswerten. Er wird über Adapter-Schnittstellen angesprochen und eignet sich für den Einsatz in komponentenbasierten Automatisierungssystemen nach IEC 61131-3. Der Baustein führt den Vergleich asynchron durch und gibt das Ergebnis als booleschen Wert über einen Ausgangsadapter aus.
@@ -37,11 +38,11 @@ Der Funktionsblock `AUI_LT` realisiert einen Kleiner-als-Vergleich (`<`) zwische
 
 ### **Adapter**
 
-| Bezeichnung | Typ               | Richtung | Beschreibung |
-|------------|-------------------|----------|--------------|
-| IN1        | AUI (unidirectional) | Socket   | Eingangsadapter für den ersten Wert und dessen Ereignis. |
-| IN2        | AUI (unidirectional) | Socket   | Eingangsadapter für den zweiten Wert und dessen Ereignis. |
-| OUT        | AX (unidirectional) | Plug     | Ausgangsadapter für das Vergleichsergebnis und das zugehörige Ereignis. |
+| Bezeichnung | Typ | Richtung | Beschreibung |
+| ------------ | ------------------- | ---------- | -------------- |
+| IN1 | AUI (unidirectional) | Socket | Eingangsadapter für den ersten Wert und dessen Ereignis. |
+| IN2 | AUI (unidirectional) | Socket | Eingangsadapter für den zweiten Wert und dessen Ereignis. |
+| OUT | AX (unidirectional) | Plug | Ausgangsadapter für das Vergleichsergebnis und das zugehörige Ereignis. |
 
 ## Funktionsweise
 

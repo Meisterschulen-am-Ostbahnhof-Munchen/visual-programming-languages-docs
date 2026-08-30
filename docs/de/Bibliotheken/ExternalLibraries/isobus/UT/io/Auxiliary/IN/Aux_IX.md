@@ -72,7 +72,7 @@ Im Vergleich zu einfachen digitalen Eingangsblöcken bietet Aux_IX erweiterte Se
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010b1](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b1.md)
+- [Uebung_010b1](../../../../../../../Uebungen/test_B/Uebungen_doc/Uebung_010b1.md)
 
 ## Fazit
 
@@ -82,4 +82,4 @@ Der Aux_IX Funktionsblock stellt eine robuste und flexible Lösung für die Inte
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -4,6 +4,7 @@
 
 The AS_S_TO_SINT function block is a composite function block used to convert the AS adapter format to a SINT value.
 ![AS_S_TO_SINT](AS_S_TO_SINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

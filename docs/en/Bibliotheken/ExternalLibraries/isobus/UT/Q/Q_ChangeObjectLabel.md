@@ -3,6 +3,7 @@
 ![Q_ChangeObjectLabel](https://user-images.githubusercontent.com/116869307/214146892-63ae12b3-94e1-400d-bbdc-57754ce825f2.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_ChangeObjectLabel** is a standards-compliant function block for changing object labels in Virtual Terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.50) specification for agricultural tax systems.
@@ -40,6 +41,7 @@ The **Q_ChangeObjectLabel** is a standards-compliant function block for changing
 The F.50 command addresses, in bytes 2,3, the **Object ID of the object to label** — per Annex F.51 (error bit 0) and B.21 this object must be **listed in the Object Label Reference List** (i.e. any pool object whose ID is an entry of the reference list).
 
 **Implementation note (VTClientHelper):** `iso_is_object_label_refer_list_id` accepts only the **ObjectLabelReferList** range (the Object Label Reference List object's own ID) — a known deviation from the Annex F.50 semantics:
+
 - **ObjectLabelReferList**: 40000 – 40999
 
 ID_NULL (65535) is not a valid command target but deactivates the FB when sent via `INIT`.
@@ -47,13 +49,16 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` with target object ID
 - `INITO` confirms operational readiness
-2. **Label Change**:
+1. **Label Change**:
+
 - `REQ` with new label parameters
 - Supports text (with font) or graphic symbols
 - `CNF` returns the result and the old values
-3. **Error Handling**:
+1. **Error Handling**:
+
 - ISO-standardized error codes
 - Detailed status messages
 
@@ -67,14 +72,14 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## Standard Parameters
 
 | Parameter | NULL value | Description |
-|--------------------|-----------|----------------------------|
+| -------------------- | ----------- | ---------------------------- |
 | u16ObIdStringVar | 0xFFFF | No text |
 | u16ObIdGrafic | 0xFFFF | No graphic |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Success |
 | -6 | VT_E_OVERFLOW | Buffer overflow (text too long) |
 | -128 | VT_E_HANDLE_INVALID | Invalid object ID |
@@ -89,7 +94,7 @@ ID_NULL (65535) is not a valid command target but deactivates the FB when sent v
 ## ⚖️ Comparison with similar building blocks
 
 | Feature | Q_ChangeObjectLabel | VtDynamicLabel | VtTextManager |
----------------|---------------------|----------------|---------------|
+--------------- | --------------------- | ---------------- | --------------- |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Labeling | Text + Graphics | Text Only | Text Only |
 | Font | Controllable | Fixed | Partial |

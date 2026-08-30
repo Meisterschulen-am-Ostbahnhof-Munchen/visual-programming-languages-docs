@@ -20,9 +20,9 @@ Der FB besitzt keine direkten Ereignis-Ausgänge. Ereignisse werden über die **
 
 ### **Daten-Eingänge**
 
-- **`G`** (Adapter Typ `adapter::types::unidirectional::AX`) – Boolescher Wert, der die Umschaltung steuert.  
-  * `G=0` → Ereignis wird an `EO0` geleitet  
-  * `G=1` → Ereignis wird an `EO1` geleitet
+- **`G`** (Adapter Typ `adapter::types::unidirectional::AX`) – Boolescher Wert, der die Umschaltung steuert.
+  - `G=0` → Ereignis wird an `EO0` geleitet
+  - `G=1` → Ereignis wird an `EO1` geleitet
 
 ### **Daten-Ausgänge**
 
@@ -81,4 +81,4 @@ Der `AE_AX_SWITCH` ist ein kompakter, effizienter Demultiplexer für Ereignisse 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

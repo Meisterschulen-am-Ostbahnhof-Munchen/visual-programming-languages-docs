@@ -3,6 +3,7 @@
 ![Uebung_001d2_AX_network](./Uebung_001d2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an alternative, interconnected control of two digital outputs (Q1, Q2) using two digital inputs (I1, I2). The circuit uses an interlocked (mutually exclusive) connection with logic gates and flip-flops, but without an explicit ECC (Execution Control Chart). It serves as an example of a more complex coupling of input and output signals based on the logiBUS IO system.
@@ -66,25 +67,26 @@ The circuit operates according to the following principle:
 
 The inputs I1 and I2 are read via the `logiBUS_IXA` function blocks and passed on as Boolean signals to the subsequent logic.
 
-2. **AND Circuit with Feedback**
+1. **AND Circuit with Feedback**
+
 - The output of DigitalInput_I1 is fed to the first input (IN1) of `AX_AND_2_Q1`.
 - The output of DigitalInput_I2 is fed to the second input (IN2) of `AX_AND_2_Q2`.
 - The AND gates each receive the second input from the *output of the other* D flip-flop:
-* `AX_AND_2_Q1.IN2` is connected to the output `Q` of `AX_D_FF_Q2`.
-* `AX_AND_2_Q2.IN1` is connected to the output `Q` of `AX_D_FF_Q1`.
+- `AX_AND_2_Q1.IN2` is connected to the output `Q` of `AX_D_FF_Q2`.
+- `AX_AND_2_Q2.IN1` is connected to the output `Q` of `AX_D_FF_Q1`.
 
 This cross-connection means that output Q1 can only be active when flip-flop Q2 is inactive (and vice versa). This creates a mutual interlock.
 
-3. **Signal Distribution and Negation**
+1. **Signal Distribution and Negation**
 
 - The outputs of the AND gates are split into two paths by the `AX_SPLIT_2` function blocks:
-* One path goes directly to the digital outputs:
+- One path goes directly to the digital outputs:
 
 AX_SPLIT_2_Q1.OUT1` → `DigitalOutput_Q1.OUT`
 
 AX_SPLIT_2_Q2.OUT2` → `DigitalOutput_Q2.OUT`
 
-* The other path goes via negation (`AX_NOT_INIT`) to the D flip-flops:
+- The other path goes via negation (`AX_NOT_INIT`) to the D flip-flops:
 
 AX_SPLIT_2_Q1.OUT2` → `AX_NOT_INIT_Q1.IN` → `AX_D_FF_Q1.I`
 
@@ -92,11 +94,11 @@ AX_SPLIT_2_Q2.OUT1` → `AX_NOT_INIT_Q2.IN` → `AX_D_FF_Q2.I`
 
 The negation ensures that the flip-flop stores the inverted value of the AND output at the next clock cycle, enabling mutual synchronization.
 
-4. **State Storage**
+1. **State Storage**
 
 The D flip-flops store the negated state of their respective AND gates and provide it as a feedback signal for the AND gates on the other side.
 
-5. **Result**
+1. **Result**
 
 The overall system is such that only one of the two outputs (Q1 or Q2) can be active at any given time. The active output changes as soon as the corresponding input is set and the other input is reset – the internal logic handles the switching via the flip-flop states.
 

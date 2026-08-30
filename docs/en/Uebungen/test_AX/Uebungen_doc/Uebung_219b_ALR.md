@@ -3,6 +3,7 @@
 ![Uebung_219b_ALR_network](./Uebung_219b_ALR_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements a countdown counter (CTD) according to IEC 61131-3 as an adapter version. The counter processes ULINT values and outputs the current count via a terminal output (PHYSA_LREAL). Additionally, a digital output is set when the count reaches zero.
@@ -84,19 +85,19 @@ The following description explains the data and event flow:
 
 At system startup (or after a reset), the event `INITO` of the input block `Input_LD` is triggered. This event triggers the conversion `AULI_ULINT_TO_ULI` via its `REQ` input. The module then outputs the value `ULINT#10` as the start value to the `PV` input of the counter `AULI_FB_CTD`.
 
-2. **Load Operation**
+1. **Load Operation**
 
 When the input `Input_LD` (button I2) is pressed, the counter loads the preset value (10) into its current counter value `CV`. This occurs via the adapter connection `Input_LD.IN` → `AULI_FB_CTD.LD`.
 
-3. **Countdown**
+1. **Countdown**
 
 Each rising edge at input `Input_CD` (button I1) decrements the counter value by 1. This is implemented via the connection `Input_CD.IN` → `AULI_FB_CTD.CD`.
 
-4. **Zero Detection**
+1. **Zero Detection**
 
 As soon as the counter value `CV` reaches zero, the counter sets its output `Q` to TRUE. This output is then forwarded via the connection `AULI_FB_CTD.Q` → `Output_Q1.OUT` to the physical output `Output_Q1`. A connected device (e.g., a lamp) signals the zero state.
 
-5. **Terminal Output**
+1. **Terminal Output**
 
 The current counter value `CV` is displayed on the terminal (object `OutputNumber_N3`) via the conversion chain `AULI_FB_CTD.CV` → `AULI_TO_ALR.AULI_IN` → `AULI_TO_ALR.ALR_OUT` → `Q_NumericValue_PHYSA_LREAL.lrPhys`. The ULINT value is converted to LREAL, allowing negative values (e.g., due to overflow) to be displayed (see the note in the diagram).
 
@@ -113,6 +114,6 @@ The exercise `Uebung_219b_ALR` implements an IEC 61131-3 compliant down counter 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

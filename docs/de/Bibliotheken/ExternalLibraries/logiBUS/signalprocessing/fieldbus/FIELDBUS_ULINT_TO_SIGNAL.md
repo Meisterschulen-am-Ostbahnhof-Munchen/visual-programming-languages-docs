@@ -3,6 +3,7 @@
 ![FIELDBUS_ULINT_TO_SIGNAL](./FIELDBUS_ULINT_TO_SIGNAL.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **FIELDBUS_ULINT_TO_SIGNAL** dient als Filterbaustein für Feldbussignale vom Typ `ULINT`. Er prüft, ob ein eingehender Wert innerhalb des gültigen Signalbereichs liegt und gibt diesen – je nach Ergebnis – entweder unverändert aus oder setzt den Ausgang auf einen definierten Ungültigkeitswert. Das VALID-Ausgangssignal zeigt den Status der Signalvalidität an.
@@ -46,15 +47,15 @@ Der Baustein besitzt keine Adapter-Schnittstellen.
 
 Nach einem Ereignis am Eingang **REQ** wird der folgende Algorithmus ausgeführt:
 
-1. Prüfung: **IN** ≤ `LWORD_TO_ULINT(VALID_SIGNAL_LW)`  
+1. Prüfung: **IN** ≤ `LWORD_TO_ULINT(VALID_SIGNAL_LW)`
    - `VALID_SIGNAL_LW` ist eine importierte Konstante aus der `FIELDBUS_SIGNAL`-Bibliothek und definiert die obere Grenze des gültigen Wertebereichs.
 
-2. **Fall – Eingang gültig** (Bedingung erfüllt):  
-   - `OUT` := `IN`  
+2. **Fall – Eingang gültig** (Bedingung erfüllt):
+   - `OUT` := `IN`
    - `VALID` := `TRUE`
 
-3. **Fall – Eingang ungültig** (Bedingung nicht erfüllt):  
-   - `OUT` := `0`  
+3. **Fall – Eingang ungültig** (Bedingung nicht erfüllt):
+   - `OUT` := `0`
    - `VALID` := `FALSE`
 
 Anschließend wird der Ereignisausgang **CNF** ausgelöst.
@@ -94,4 +95,4 @@ Der **FIELDBUS_ULINT_TO_SIGNAL** ist ein einfacher, aber zuverlässiger Funktion
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,6 +3,7 @@
 ![Uebung_201_AX_network](./Uebung_201_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the implementation of a mutual interlock using the function block `ILOCK_BLOCK_AX`. Two digital inputs are connected to the interlock block via adapters. The outputs are configured so that only one of the two outputs can be active at any given time – simultaneous switching is prevented. This is a typical safety function in automation technology, for example, to protect opposing drives.
@@ -66,18 +67,21 @@ The exercise proceeds as follows:
 
 1. The two digital input signals `Input_I1` and `Input_I2` are acquired by the `DigitalInput_I1` and `DigitalInput_I2` function blocks, respectively.
 2. The adapter outputs of these input blocks (`IN`) are connected to the corresponding inputs of `ILOCK_BLOCK_AX`:
+
 - `DigitalInput_I1.IN` → `ILOCK_BLOCK_AX.UP_IN`
 - `DigitalInput_I2.IN` → `ILOCK_BLOCK_AX.DOWN_IN`
-3. The interlock logic is executed in `ILOCK_BLOCK_AX`:
+1. The interlock logic is executed in `ILOCK_BLOCK_AX`:
+
 - When `UP_IN` is activated, `UP_OUT` is set to TRUE and `DOWN_OUT` is set to FALSE.
 
 - When `DOWN_IN` is activated, `DOWN_OUT` is set to TRUE and `UP_OUT` to FALSE.
 
 - If both inputs are active simultaneously, the internal logic ensures a defined priority (usually the one detected first).
-4. The output adapters of the interlock block are connected to the output modules:
+1. The output adapters of the interlock block are connected to the output modules:
+
 - `ILOCK_BLOCK_AX.UP_OUT` → `DigitalOutput_Q1.OUT`
 - `ILOCK_BLOCK_AX.DOWN_OUT` → `DigitalOutput_Q2.OUT`
-5. The output modules forward the signals to the physical outputs `Output_Q1` and `Output_Q2`.
+1. The output modules forward the signals to the physical outputs `Output_Q1` and `Output_Q2`.
 
 **Learning Objectives:**
 
@@ -95,4 +99,4 @@ This exercise implements the mutual locking of two outputs using the function bl
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

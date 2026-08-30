@@ -3,9 +3,11 @@
 ![AE_SPLIT_2](./AE_SPLIT_2.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AE_SPLIT_2** serves as a generic distributor for an incoming adapter event (AE). It receives a unidirectional event via socket `IN` and forwards it without delay or modification to the two output plugs `OUT1` and `OUT2`. The block is implemented as a generic FB (GenericClassName: `'GEN_AE_SPLIT'`), so it can theoretically be used for various adapter types – provided they conform to the unidirectional AE protocol.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Role | Name | Type | Description |
-|-------|------|-----|--------------|
+| ------- | ------ | ----- | -------------- |
 | Socket (Input) | `IN` | `adapter::types::unidirectional::AE` | Receives a unidirectional event, which is distributed to both outputs. |
 | Plug (Output 1) | `OUT1` | `adapter::types::unidirectional::AE` | First output for the duplicated event. |
 | Plug (Output 2) | `OUT2` | `adapter::types::unidirectional::AE` | Second output for the duplicated event. |
@@ -66,4 +68,4 @@ The **AE_SPLIT_2** is a minimal yet useful function block for easily distributin
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)
+- [🌐 Total resistance in series & parallel circuits on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/gesamtwiderstand-reihen-parallelschaltung/)

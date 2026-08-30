@@ -3,6 +3,7 @@
 ![AB_XOR_5](./AB_XOR_5.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **AB_XOR_5** ist ein generischer Funktionsblock zur bitweisen XOR (exklusives ODER)-Verknüpfung von 5 Eingangswerten vom Typ `BYTE` (8-Bit-Bitmuster (Byte)). Im Gegensatz zur booleschen Verknüpfung einzelner Wahrheitswerte (wie bei den `AX_XOR`-Bausteinen) wird hier jedes einzelne Bit des Datenworts unabhängig verknüpft.

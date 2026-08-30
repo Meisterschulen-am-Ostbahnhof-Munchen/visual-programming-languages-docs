@@ -31,6 +31,7 @@ The function block performs the following steps on each `REQ` event:
 1. If `R` is active (`TRUE`), the counter value (`CV`) is reset to `0`.
 2. If `CU` is active (`TRUE`) and the counter value (`CV`) is less than the maximum value (`4294967295`), the counter value is incremented by `1`.
 3. The output `Q` is set to `TRUE` when the counter reading (`CV`) reaches or exceeds the target value (`PV`).
+
 - The counter reading (`CV`) is of type `UDINT` and can take values between `0` and `4294967295`.
 - The function block is deterministic and performs the counting operation on every `REQ` event.
 
@@ -43,6 +44,7 @@ The function block has no internal states other than the current counter reading
 - Similar function blocks might offer additional features such as counting down or combined counting up/down.
 
 The `FB_CTU_UDINT` is a simple and efficient up counter for applications that require a large range of values. Its clear interface and deterministic functionality make it a reliable component in control applications.
+
 ## Technical Features
 
 ## State Overview

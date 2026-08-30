@@ -3,9 +3,11 @@
 ![AS_TO_AI](./AS_TO_AI.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_TO_AI` is a composite function block that converts an AS adapter (data type SINT) to an AI adapter (data type INT). It serves as a simple converter for connecting components with different adapter types within the 4diac IDE.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -68,4 +70,4 @@ The `AS_TO_AI` function block is a simple yet effective tool for ensuring adapte
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

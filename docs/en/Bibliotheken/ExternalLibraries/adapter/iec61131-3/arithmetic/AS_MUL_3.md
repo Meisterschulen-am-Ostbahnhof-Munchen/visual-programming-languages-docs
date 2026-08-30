@@ -3,6 +3,7 @@
 ![AS_MUL_3](./AS_MUL_3.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block `AS_MUL_3` is a generic function block (FB) for the 4diac IDE, used to perform arithmetic multiplication with three input values. It is based on the use of unidirectional adapters (`adapter::types::unidirectional::AS`), which enables clean structuring and encapsulation of data and control flows in IEC 61499 applications.
@@ -29,12 +30,12 @@ The function block `AS_MUL_3` is a generic function block (FB) for the 4diac IDE
 
 All communication for this function block is handled via adapters:
 
-* **Sockets (Input Adapters):**
-* **IN1** (Type: `adapter::types::unidirectional::AS`): The first input value (multiplicand 1) for multiplication.
-* **IN2** (Type: `adapter::types::unidirectional::AS`): The second input value (multiplicand 2) for multiplication.
-* **IN3** (Type: `adapter::types::unidirectional::AS`): The third input value (multiplicand 3) for the multiplication.
-* **Plugs (Output Adapters):**
-* **OUT** (Type: `adapter::types::unidirectional::AS`): The output adapter that provides the result of the multiplication.
+- **Sockets (Input Adapters):**
+- **IN1** (Type: `adapter::types::unidirectional::AS`): The first input value (multiplicand 1) for multiplication.
+- **IN2** (Type: `adapter::types::unidirectional::AS`): The second input value (multiplicand 2) for multiplication.
+- **IN3** (Type: `adapter::types::unidirectional::AS`): The third input value (multiplicand 3) for the multiplication.
+- **Plugs (Output Adapters):**
+- **OUT** (Type: `adapter::types::unidirectional::AS`): The output adapter that provides the result of the multiplication.
 
 ---
 
@@ -50,9 +51,9 @@ $$\text{OUT} = \text{IN1} \times \text{IN2} \times \text{IN3}$$
 
 ## Technical Features
 
-* **Generic Type:** The component is defined as a generic type (`GEN_AS_MUL`). This allows for flexible adaptation to different numeric data types (e.g., `INT`, `REAL`, `LREAL`) supported by the underlying adapter type.
-* **Adapter-Based Architecture:** By using unidirectional adapters (`AS`), the cabling effort in the 4diac IDE is drastically reduced, as event and data lines are bundled into a single connection.
-* **Adapter-Based Architecture:** ---
+- **Generic Type:** The component is defined as a generic type (`GEN_AS_MUL`). This allows for flexible adaptation to different numeric data types (e.g., `INT`, `REAL`, `LREAL`) supported by the underlying adapter type.
+- **Adapter-Based Architecture:** By using unidirectional adapters (`AS`), the cabling effort in the 4diac IDE is drastically reduced, as event and data lines are bundled into a single connection.
+- **Adapter-Based Architecture:** ---
 
 ## State Overview
 
@@ -62,9 +63,9 @@ This function block behaves like a classic stateless computation block. Executio
 
 ## Application Scenarios
 
-* **Sensor Scaling and Calibration:** Calculation of corrected measured values where a raw value must be multiplied by two different correction factors.
-* **Volume Calculations:** Multiplication of three dimensions (length × width × height) to determine a volume in process engineering.
-* **Multi-Stage Gain Control:** Cascaded signal amplification in control engineering.
+- **Sensor Scaling and Calibration:** Calculation of corrected measured values where a raw value must be multiplied by two different correction factors.
+- **Volume Calculations:** Multiplication of three dimensions (length × width × height) to determine a volume in process engineering.
+- **Multi-Stage Gain Control:** Cascaded signal amplification in control engineering.
 
 ---
 

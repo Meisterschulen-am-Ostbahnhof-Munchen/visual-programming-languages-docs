@@ -3,6 +3,7 @@
 ![Uebung_080e2_AX_network](./Uebung_080e2_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise demonstrates the use of an event-driven counter (E_CTU) in combination with an **event brake**, implemented using the function blocks `AX_D_FF` and `AUI_D_FF_TMIN`.
@@ -61,16 +62,20 @@ Digital output `Output_Q1`, controlled by the flip-flop `AX_D_FF`.
 The flow is controlled via event and adapter connections:
 
 1. **Input Processing**
+
 - `DigitalInput_CLK_I1` sends the clock signal (CLK) via `X_TO_B_I1` to `E_CYCLE.START` (event CNF).
 - `DigitalInput_RST_I2` sends the reset signal (RST) via `X_TO_B_I2` to `E_CTU.R` and simultaneously to `E_CYCLE.STOP`.
-2. **Cyclic Counter**
+1. **Cyclic Counter**
+
 - Every 1 ms, `E_CYCLE` generates an event `EO` as soon as `START` is active. This event is then passed to `E_CTU.CU`. The counter increments its value `CV` with each event.
 - When the reset input (RST) is activated, the counter is reset and the cycle is stopped.
-3. **Counter Value Output**
+1. **Counter Value Output**
+
 - The current counter value `CV` from `E_CTU` is passed to `AUI_D_FF_TMIN.I` via the adapter.
 - After a delay of at least 1 second, `AUI_D_FF_TMIN` passes this value as an event to `AUI_D_FF_TMIN.Q` (event brake).
 - Via `UI_TO_UDI_N1` (conversion), the value is passed to `Q_NumericValue` and output to the numeric output `N1`.
-4. **Digital Output**
+1. **Digital Output**
+
 - When the counter reaches its end value, `E_CTU.Q` sets an event. This is stored by `AX_D_FF` and passed to the digital output `DigitalOutput_Q1`.
 - The output remains set until a new event (e.g., a reset) changes its state.
 
@@ -90,7 +95,7 @@ The exercise `Uebung_080e2_AX` demonstrates how to combine an event-driven count
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter component on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 E_CTU Event Counter component on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

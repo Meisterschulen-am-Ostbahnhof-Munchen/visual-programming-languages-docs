@@ -31,7 +31,7 @@ Es sind keine Daten-Ausgänge vorhanden.
 Der Baustein besitzt einen Socket (Eingang) und fünf Plugs (Ausgänge):
 
 | Richtung | Name | Typ | Beschreibung |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Eingang | IN | `adapter::types::unidirectional::ALR` | Empfängt das zu verteilende ALR-Signal |
 | Ausgang | OUT1 | `adapter::types::unidirectional::ALR` | Erster Ausgang mit dem identischen ALR-Signal |
 | Ausgang | OUT2 | `adapter::types::unidirectional::ALR` | Zweiter Ausgang mit dem identischen ALR-Signal |
@@ -76,4 +76,4 @@ Der **ALR_SPLIT_5** ist ein einfacher, aber wertvoller Baustein zur Vervielfachu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

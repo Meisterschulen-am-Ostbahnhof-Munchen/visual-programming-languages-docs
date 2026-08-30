@@ -1,9 +1,11 @@
 Here is the generated documentation based on the provided XML code:
+
 # Exercise_039_sub_NumbDisplay: Mirror Sequence V2 with Step Chain SUB Num
 
 ![Uebung_039_sub_NumbAnzeig_network](./Uebung_039_sub_NumbAnzeig_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The sub-application **Exercise_039_sub_NumbDisplay** is a utility component designed to display numeric values within the context of a step chain (mirror sequence V2). Its main task is to receive a status number (`STATE_NR`), convert it into a suitable data format, and then send it to an output element (ISOBUS Universal Terminal).
@@ -40,21 +42,21 @@ The flow within this sub-module is strictly linear and event-driven:
 
 Processing begins when the event `CNF` is received by the sub-module. Simultaneously, the value for `STATE_NR` (the current step number) is passed.
 
-2. **Data Conversion**:
+1. **Data Conversion**:
 
 The event is forwarded to the module `F_SINT_TO_UINT`. This module reads the value from `STATE_NR`, converts it to the `UINT` format, and outputs the result to its output `OUT`.
 
-3. **Display Update**:
+1. **Display Update**:
 
 Once the conversion is confirmed (event `CNF` from `F_SINT_TO_UINT`), the function block `Q_NumericValue` is activated.
 
-* It adopts the converted value at input `u32NewValue`.
-* The parameter `u16ObjId` is fixed at `OutputNumber_N1`, meaning that this is the field that will be updated on the user interface.
+- It adopts the converted value at input `u32NewValue`.
+- The parameter `u16ObjId` is fixed at `OutputNumber_N1`, meaning that this is the field that will be updated on the user interface.
 
 **Connection Overview:**
 
-* **Event**: `CNF` (Input) → `F_SINT_TO_UINT.REQ` → `F_SINT_TO_UINT.CNF` → `Q_NumericValue.REQ`.
-* **Data**: `STATE_NR` (Input) → `F_SINT_TO_UINT.IN` → `F_SINT_TO_UINT.OUT` → `Q_NumericValue.u32NewValue`.
+- **Event**: `CNF` (Input) → `F_SINT_TO_UINT.REQ` → `F_SINT_TO_UINT.CNF` → `Q_NumericValue.REQ`.
+- **Data**: `STATE_NR` (Input) → `F_SINT_TO_UINT.IN` → `F_SINT_TO_UINT.OUT` → `Q_NumericValue.u32NewValue`.
 
 ## Summary
 
@@ -62,5 +64,5 @@ The exercise **Exercise_039_sub_NumbDisplay** demonstrates the encapsulation of 
 
 ## 🛠️ Related exercises
 
-* [Uebung_039](Uebung_039.md)
-* [Uebung_039a](Uebung_039a.md)
+- [Uebung_039](Uebung_039.md)
+- [Uebung_039a](Uebung_039a.md)

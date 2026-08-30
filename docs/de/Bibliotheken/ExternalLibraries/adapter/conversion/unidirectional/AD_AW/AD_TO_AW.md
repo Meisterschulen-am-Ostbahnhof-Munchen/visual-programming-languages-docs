@@ -3,6 +3,7 @@
 ![AD_TO_AW](./AD_TO_AW.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AD_TO_AW** ist ein zusammengesetzter (Composite) FB, der einen DWORD-Adapter (Typ `AD`) in einen WORD-Adapter (Typ `AW`) umwandelt. Er kapselt die Konvertierung eines DWORD‑Wertes in einen WORD‑Wert und stellt die entsprechende Ereignis‑ und Datenweiterleitung bereit. Die Implementierung basiert auf einem internen Aufruf des Standard‑Konvertierungsbausteins `F_DWORD_TO_WORD` aus der IEC 61131‑Bibliothek.

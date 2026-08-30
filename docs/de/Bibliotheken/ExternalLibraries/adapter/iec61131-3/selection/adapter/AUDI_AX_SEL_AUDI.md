@@ -6,9 +6,10 @@
 *(Kein Bild vorhanden)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
-Der Funktionsbaustein `AUDI_AX_SEL_AUDI` dient als binärer Selektor (Auswahlschalter) für unidirektionale Kommunikationsadapter. Er ermöglicht es, basierend auf dem Zustand eines Steuersignals an einem Selektor-Adapter, den Daten- und Ereignisstrom zwischen zwei alternativen Eingangs-Adaptern auf einen einzigen Ausgangs-Adapter umzuleiten. 
+Der Funktionsbaustein `AUDI_AX_SEL_AUDI` dient als binärer Selektor (Auswahlschalter) für unidirektionale Kommunikationsadapter. Er ermöglicht es, basierend auf dem Zustand eines Steuersignals an einem Selektor-Adapter, den Daten- und Ereignisstrom zwischen zwei alternativen Eingangs-Adaptern auf einen einzigen Ausgangs-Adapter umzuleiten.
 
 Der Baustein kapselt die dafür notwendige Synchronisations- und Konvertierungslogik, um eine saubere Trennung von Ereignissen und Datenflüssen innerhalb von IEC 61499 Anwendungen zu gewährleisten.
 
@@ -34,16 +35,16 @@ Der Baustein kapselt die dafür notwendige Synchronisations- und Konvertierungsl
 
 #### **Sockets (Eingangs-Anschlüsse)**
 
-* **IN0** (Typ: `adapter::types::unidirectional::AUDI`): 
+- **IN0** (Typ: `adapter::types::unidirectional::AUDI`):
   Erster auswählbarer Eingangs-Adapter. Die dort ankommenden Daten und Ereignisse werden an den Ausgang durchgereicht, wenn das Auswahlsignal `G` den logischen Zustand `FALSE` (bzw. `0`) besitzt.
-* **IN1** (Typ: `adapter::types::unidirectional::AUDI`): 
+- **IN1** (Typ: `adapter::types::unidirectional::AUDI`):
   Zweiter auswählbarer Eingangs-Adapter. Die dort ankommenden Daten und Ereignisse werden an den Ausgang durchgereicht, wenn das Auswahlsignal `G` den logischen Zustand `TRUE` (bzw. `1`) besitzt.
-* **G** (Typ: `adapter::types::unidirectional::AX`): 
+- **G** (Typ: `adapter::types::unidirectional::AX`):
   Selektor-Adapter. Das Signal auf diesem Adapter bestimmt, welcher der beiden Eingänge (`IN0` oder `IN1`) auf den Ausgang geschaltet wird.
 
 #### **Plugs (Ausgangs-Anschlüsse)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AUDI`): 
+- **OUT** (Typ: `adapter::types::unidirectional::AUDI`):
   Ausgangs-Adapter. Gibt die Daten und das dazugehörige Triggerereignis des aktuell ausgewählten Eingangs aus.
 
 ---
@@ -52,24 +53,24 @@ Der Baustein kapselt die dafür notwendige Synchronisations- und Konvertierungsl
 
 Das interne Verhalten des Bausteins wird durch ein Netzwerk aus Standard-Funktionsbausteinen realisiert:
 
-1. **Ereignis- und Datensynchronisation**: 
+1. **Ereignis- und Datensynchronisation**:
    Die über die Sockets eingehenden Signale (`IN0`, `IN1`, `G`) werden zunächst über flanken- bzw. pegelgesteuerte D-Flip-Flops (`E_D_FF` und `E_D_FF_ANY`) geführt. Dies stellt sicher, dass Datenwerte (`D1`) und Ereignisse (`E1`) synchron zueinander verarbeitet werden.
-2. **Datenkonvertierung**: 
+2. **Datenkonvertierung**:
    Die synchronisierten Datenwerte der beiden Eingänge werden über zwei Transfer-Bausteine (`F_MOVE` mit dem Datentyp `UDINT`) an den Auswahlbaustein übergeben.
-3. **Auswahlsteuerung**: 
+3. **Auswahlsteuerung**:
    Der Baustein `F_SEL` (IEC 61131-3 Selection) führt die eigentliche logische Umschaltung durch:
-   * Ist das Steuersignal des Adapters `G` auf `0` (`FALSE`), wird der Wert von `IN0` gewählt.
-   * Ist das Steuersignal des Adapters `G` auf `1` (`TRUE`), wird der Wert von `IN1` gewählt.
-4. **Ausgabe**: 
+   - Ist das Steuersignal des Adapters `G` auf `0` (`FALSE`), wird der Wert von `IN0` gewählt.
+   - Ist das Steuersignal des Adapters `G` auf `1` (`TRUE`), wird der Wert von `IN1` gewählt.
+4. **Ausgabe**:
    Das selektierte Ergebnis wird über einen weiteren Transfer-Baustein (`F_MOVE_OUT`) an das Ausgangs-Flip-Flop `E_D_FF_ANY_OUT` übertragen. Dieses generiert das Ausgangsereignis `OUT.E1` und stellt den selektierten Datenwert an `OUT.D1` bereit.
 
 ---
 
 ## Technische Besonderheiten
 
-* **UDINT-Datenverarbeitung**: Obwohl die Adapter vom generischen Typ `AUDI` sind, werden die Nutzdaten (`D1`) intern explizit als `UDINT` (Unsigned Double Integer / 32-Bit Ganzzahl) verarbeitet und übertragen.
-* **Ereignisgesteuertes Verhalten**: Jede Änderung an den Eingängen oder am Selektor führt über das interne Koppelnetzwerk zu einer Neuberechnung und triggert das Ausgangsereignis des Adapters `OUT`.
-* **Kapselung**: Durch die Verwendung von Adaptern statt loser Event- und Daten-Ports wird der Verdrahtungsaufwand im übergeordneten Systemdiagramm extrem minimiert.
+- **UDINT-Datenverarbeitung**: Obwohl die Adapter vom generischen Typ `AUDI` sind, werden die Nutzdaten (`D1`) intern explizit als `UDINT` (Unsigned Double Integer / 32-Bit Ganzzahl) verarbeitet und übertragen.
+- **Ereignisgesteuertes Verhalten**: Jede Änderung an den Eingängen oder am Selektor führt über das interne Koppelnetzwerk zu einer Neuberechnung und triggert das Ausgangsereignis des Adapters `OUT`.
+- **Kapselung**: Durch die Verwendung von Adaptern statt loser Event- und Daten-Ports wird der Verdrahtungsaufwand im übergeordneten Systemdiagramm extrem minimiert.
 
 ---
 
@@ -86,9 +87,9 @@ Da der Baustein als FB-Netzwerk aufgebaut ist, besitzt er keine klassische Zusta
 
 ## Anwendungsszenarien
 
-* **Sollwert-Umschaltung**: Wechsel zwischen einem Automatik-Sollwert (z.B. von einem PID-Regler an `IN1`) und einem Hand-Sollwert (z.B. von einer Visualisierung an `IN0`) über ein Auswahlsignal an `G`.
-* **Sensor-Redundanz**: Ausfallsichere Umschaltung zwischen einem Hauptsensor und einem Ersatzsensor bei Signalstörungen.
-* **Rezeptursteuerung**: Auswahl unterschiedlicher vordefinierter Parameter-Profile im laufenden Betrieb.
+- **Sollwert-Umschaltung**: Wechsel zwischen einem Automatik-Sollwert (z.B. von einem PID-Regler an `IN1`) und einem Hand-Sollwert (z.B. von einer Visualisierung an `IN0`) über ein Auswahlsignal an `G`.
+- **Sensor-Redundanz**: Ausfallsichere Umschaltung zwischen einem Hauptsensor und einem Ersatzsensor bei Signalstörungen.
+- **Rezeptursteuerung**: Auswahl unterschiedlicher vordefinierter Parameter-Profile im laufenden Betrieb.
 
 ---
 

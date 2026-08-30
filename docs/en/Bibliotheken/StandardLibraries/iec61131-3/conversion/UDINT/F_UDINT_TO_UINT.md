@@ -6,6 +6,7 @@
 
 The function block `F_UDINT_TO_UINT` converts a 32-bit unsigned integer value (UDINT) to a 16-bit unsigned integer value (UINT). This block is part of the `iec61131::conversion` package.
 ![F_UDINT_TO_UINT](F_UDINT_TO_UINT.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -53,7 +54,7 @@ The function block has no internal states. The conversion occurs immediately upo
 
 ## 🛠️ Related Exercises
 
-* [Exercise_103](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
+- [Exercise_103](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_103.md)
 
 ## Conclusion
 

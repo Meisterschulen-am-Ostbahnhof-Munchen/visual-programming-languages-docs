@@ -80,7 +80,7 @@ Compared to simple input blocks, TC_ID offers:
 
 ## 🛠️ Related Exercises
 
-* [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
+- [Exercise_060](../../../../../Uebungen/test_B/Uebungen_doc/Uebung_060.md)
 
 ## Conclusion
 

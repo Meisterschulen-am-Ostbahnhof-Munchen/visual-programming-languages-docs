@@ -3,9 +3,11 @@
 ![Uebung_204_network](./Uebung_204_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 This exercise implements an interlock function with conflict detection and trip triggering, which can be reset. It demonstrates the typical use of an interlock function block to prevent simultaneous, conflicting control signals (e.g., up/down movement). In the event of a conflict, the ILOCK_CONFLICT_TRIP generates a trip (fault output) and blocks the outputs until an explicit reset signal is received.
+
 ## Function Blocks Used (FBs)
 
 The exercise consists of the following function blocks, which are connected via event and data lines:
@@ -55,7 +57,7 @@ Digital output for displaying the trip status.
 The exercise is set up as a SubAppType, in which all the logic runs. The connections are as follows:
 
 | Event Connection | Source | Destination | Data Connection | Source | Destination |
-|-------------------|--------|------|-----------------|--------|------|
+| ------------------- | -------- | ------ | ----------------- | -------- | ------ |
 | IND → EI_UP | DigitalInput_I1 | ILOCK | IN → DI_UP | DigitalInput_I1 | ILOCK |
 | IND → EI_DOWN | DigitalInput_I2 | ILOCK | IN → DI_DOWN | DigitalInput_I2 | ILOCK |
 | IND → EI_RESET | DigitalInput_Reset | ILOCK | – | – | – |
@@ -67,9 +69,10 @@ The exercise is set up as a SubAppType, in which all the logic runs. The connect
 
 1. A rising edge on one of the inputs (I1 for UP, I2 for DOWN) generates an event that activates the ILOCK block at its corresponding event input.
 2. The ILOCK checks for a conflict (both inputs active simultaneously).
+
 - **No conflict:** The desired output (DO_UP or DO_DOWN) is set, and the corresponding output driver (Q1 or Q2) is switched.
 - **Conflict:** No output is set; instead, the trip output (DO_TRIP) is activated and output via `Trip_Anzeige`. Outputs Q1 and Q2 remain off.
-3. An applied reset signal (I3) can reset the trip and restore normal operation. As long as the conflict persists, a further reset will not release the device.
+1. An applied reset signal (I3) can reset the trip and restore normal operation. As long as the conflict persists, a further reset will not release the device.
 
 ## Summary
 
@@ -79,4 +82,4 @@ Exercise **Exercise_204** demonstrates the use of the interlock function block `
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

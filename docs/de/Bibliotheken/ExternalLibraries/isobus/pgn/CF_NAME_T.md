@@ -1,6 +1,7 @@
 # CF_NAME_T
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Datentyp `CF_NAME_T` ist ein strukturierter Datentyp, der in der 4diac-IDE zur Modellierung von ISO CF (Communication Function) oder Anwenderinformationsdaten-Arrays verwendet wird. Er dient als Typedef für ein Byte-Array fester Länge und wird typischerweise im Kontext von ISOBUS PGN (Parameter Group Number) Kommunikation eingesetzt.
@@ -19,7 +20,7 @@ Dieser Datentyp selbst hat keine Ausgänge. Er definiert die Struktur für Daten
 
 ### **Strukturierte Elemente**
 
-*   **`data`** (BYTE[0..7]): Ein Array aus genau 8 Bytes (`BYTE`). Jedes Element im Array wird bei der Initialisierung standardmäßig auf den Hexadezimalwert `16#FF` (dezimal 255) gesetzt. Dies repräsentiert einen typischen "ungültigen" oder "leeren" Anfangszustand in Kommunikationsprotokollen.
+-   **`data`** (BYTE[0..7]): Ein Array aus genau 8 Bytes (`BYTE`). Jedes Element im Array wird bei der Initialisierung standardmäßig auf den Hexadezimalwert `16#FF` (dezimal 255) gesetzt. Dies repräsentiert einen typischen "ungültigen" oder "leeren" Anfangszustand in Kommunikationsprotokollen.
 
 ## Funktionsweise
 
@@ -27,17 +28,17 @@ Der Datentyp `CF_NAME_T` kapselt ein Byte-Array mit einer festen Länge von 8 By
 
 ## Technische Besonderheiten
 
-*   **Feste Array-Größe:** Das Array ist auf die Indizes 0 bis 7 begrenzt, was einer festen Länge von 8 Bytes entspricht. Dies ist eine gängige Größe für viele Nachrichtenblöcke in Feldbussystemen.
-*   **Vordefinierte Initialisierung:** Alle Array-Elemente werden bei der Deklaration einer Variable dieses Typs automatisch mit dem Wert `16#FF` initialisiert, sofern nicht anders angegeben.
-*   **ISOBUS-Kontext:** Der Typ ist Teil des Pakets `isobus::pgn`, was auf seine spezifische Verwendung in landwirtschaftlichen und mobilen Maschinensteuerungen (ISOBUS, ISO 11783) hindeutet.
+-   **Feste Array-Größe:** Das Array ist auf die Indizes 0 bis 7 begrenzt, was einer festen Länge von 8 Bytes entspricht. Dies ist eine gängige Größe für viele Nachrichtenblöcke in Feldbussystemen.
+-   **Vordefinierte Initialisierung:** Alle Array-Elemente werden bei der Deklaration einer Variable dieses Typs automatisch mit dem Wert `16#FF` initialisiert, sofern nicht anders angegeben.
+-   **ISOBUS-Kontext:** Der Typ ist Teil des Pakets `isobus::pgn`, was auf seine spezifische Verwendung in landwirtschaftlichen und mobilen Maschinensteuerungen (ISOBUS, ISO 11783) hindeutet.
 
 ## Anwendungsszenarien
 
 Dieser Datentyp wird primär verwendet, um die Nutzdaten von ISOBUS PGN-Nachrichten innerhalb von Funktionsbausteinen (FBs) zu repräsentieren. Typische Anwendungen sind:
 
-*   Deklaration von Eingangs- oder Ausgangsvariablen in FBs, die ISOBUS-Nachrichten senden oder empfangen.
-*   Strukturierung von Daten für die Kommunikation zwischen verschiedenen Steuergeräten (ECUs) in einer mobilen Maschine.
-*   Verwendung als Teil eines größeren, strukturierten Datentyps, der mehrere Parameter einer komplexen Nachricht kombiniert.
+-   Deklaration von Eingangs- oder Ausgangsvariablen in FBs, die ISOBUS-Nachrichten senden oder empfangen.
+-   Strukturierung von Daten für die Kommunikation zwischen verschiedenen Steuergeräten (ECUs) in einer mobilen Maschine.
+-   Verwendung als Teil eines größeren, strukturierten Datentyps, der mehrere Parameter einer komplexen Nachricht kombiniert.
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
@@ -51,4 +52,4 @@ Der Datentyp `CF_NAME_T` ist ein spezialisiertes, wiederverwendbares Konstrukt f
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

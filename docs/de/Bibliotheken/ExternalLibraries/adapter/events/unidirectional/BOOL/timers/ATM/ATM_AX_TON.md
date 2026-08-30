@@ -3,6 +3,7 @@
 ![ATM_AX_TON](./ATM_AX_TON.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der **ATM_AX_TON** ist ein Funktionsblock zur Verzögerung beim Einschalten (On-Delay). Er realisiert eine Standard-Timer-Funktionalität nach IEC 61499-2, die über eine Adapter-Schnittstelle (AX/AT) angesteuert wird. Der Baustein ermöglicht es, einen Timer über einen Eingangsadapter zu starten und den Ausgangszustand sowie die Ablaufbestätigung über einen Ausgangsadapter bereitzustellen.
@@ -30,7 +31,7 @@ Der FB hat keine expliziten Daten-Ausgänge. Ausgabedaten werden über den Adapt
 ### **Adapter**
 
 | Richtung | Name | Typ | Kommentar |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Socket | IN | adapter::types::unidirectional::AX | Timer-Eingang (AX-Adapter) – liefert das boolsche Eingangssignal und den Startimpuls |
 | Socket | PT | adapter::types::unidirectional::ATM | Vorlaufzeit (AT-Adapter) – stellt die Verzögerungszeit bereit |
 | Plug | Q | adapter::types::unidirectional::AX | Timer-Ausgang (AX-Adapter) – gibt den Timer-Zustand und die Bestätigung aus |
@@ -39,19 +40,19 @@ Der FB hat keine expliziten Daten-Ausgänge. Ausgabedaten werden über den Adapt
 
 Der **ATM_AX_TON** kapselt einen standardmäßigen On-Delay-Timer (E_TON) aus der IEC 61499-Bibliothek. Die Funktionsweise im Detail:
 
-1. **Start der Zeitmessung:**  
+1. **Start der Zeitmessung:**
    Der Eingangsadapter **IN** liefert über sein Ereignis **E1** den Startimpuls (REQ) und über sein Datensignal **D1** den boolschen Wert **IN**. Wenn **IN.D1** auf WAHR wechselt, wird der Timer gestartet.
 
-2. **Verzögerungszeit:**  
+2. **Verzögerungszeit:**
    Die gewünschte Verzögerungszeit wird über den Adapter **PT** bereitgestellt (über **PT.D1**). Sobald der Timer läuft, wird nach Ablauf dieser Zeit der Ausgang **Q.D1** auf WAHR gesetzt.
 
-3. **Ausgangssignal und Bestätigung:**  
+3. **Ausgangssignal und Bestätigung:**
    Der Ausgangsadapter **Q** gibt über **Q.D1** den aktuellen Timer-Zustand aus (WAHR, wenn die Verzögerungszeit abgelaufen ist, FALSE, wenn der Eingang auf FALSE geht). Das Ereignis **Q.E1** wird nach jeder Zustandsänderung gesendet (CNF des internen E_TON).
 
-4. **Setzen der Vorlaufzeit ohne Auslösung:**  
+4. **Setzen der Vorlaufzeit ohne Auslösung:**
    Der Ereignis-Eingang **EIPT** dient laut Spezifikation dazu, die Vorlaufzeit **PT** zu setzen, ohne den Timer zu starten. Im vorliegenden FBNetzwerk wird dieser Eingang jedoch nicht intern verbunden – er steht für externe Nutzung zur Verfügung, falls eine Anwendung eine Vorabsetzung der Zeit benötigt.
 
-5. **Rückfall:**  
+5. **Rückfall:**
    Wenn **IN** auf FALSE geht, wird der Timer sofort zurückgesetzt und **Q.D1** wird FALSE (unverzögert).
 
 ## Technische Besonderheiten
@@ -66,7 +67,7 @@ Der **ATM_AX_TON** kapselt einen standardmäßigen On-Delay-Timer (E_TON) aus de
 Der FB selbst verwaltet keinen eigenen Zustandsautomaten – die Zustandslogik liegt im integrierten **E_TON**. Dennoch lässt sich das Verhalten wie folgt beschreiben:
 
 | Zustand des Eingangs IN | Verhalten | Ausgang Q.D1 |
-|-------------------------|-----------|--------------|
+| ------------------------- | ----------- | -------------- |
 | FALSE → TRUE (steigende Flanke) | Timer startet; nach Ablauf von PT wird Q TRUE | FALSE (bis PT abgelaufen) → TRUE |
 | TRUE (während Timer läuft) | Timer läuft weiter | FALSE |
 | TRUE → FALSE (fallende Flanke) | Timer wird sofort zurückgesetzt | TRUE → FALSE |
@@ -83,7 +84,7 @@ Der FB selbst verwaltet keinen eigenen Zustandsautomaten – die Zustandslogik l
 ## Vergleich mit ähnlichen Bausteinen
 
 | Baustein | Typ | Besonderheit |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | **E_TON** (IEC 61499) | Standard On-Delay | Klassische Ein-/Ausgangsschnittstelle; direkte Ereignis- und Datenports |
 | **ATM_AX_TON** | Adapter-basiert | Kapselt E_TON und bietet AX/AT-Adapter; zusätzlicher EIPT-Eingang (nicht verbunden) |
 | **E_TOF** | Off-Delay | Verzögerung beim Ausschalten (entgegengesetztes Verhalten) |
@@ -99,4 +100,4 @@ Der **ATM_AX_TON** ist ein fertig konfektionierter On-Delay-Timer mit einer mode
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter Baustein auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

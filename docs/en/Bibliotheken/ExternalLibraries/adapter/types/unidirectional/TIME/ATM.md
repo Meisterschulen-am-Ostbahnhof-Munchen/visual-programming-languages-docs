@@ -3,9 +3,11 @@
 ![ATM](./ATM.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ATM adapter** (short for "Adapter Time Message") is a unidirectional type according to IEC 61499-1 that provides an event-driven interface for transmitting a time value. It is used as an adapter to enable standardized, loosely coupled communication between function blocks (FBs). This adapter was developed by HR Agrartechnik GmbH and is available under the Eclipse Public License 2.0 (EPL-2.0).
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -57,7 +59,7 @@ Since the ATM adapter has no internal state machine (stateless adapter), a state
 ## Comparison with similar function blocks
 
 | Feature | ATM (this adapter) | Other unidirectional adapters (e.g., with multiple events/data) |
-|---------|----------------------|----------------------------------------------------------------|
+| --------- | ---------------------- | ---------------------------------------------------------------- |
 | Events | 1 (E1) | Usually multiple (e.g., INIT, REQ, IND, RSP) |
 | Data | 1 (TIME) | Often multiple data or different types |
 | Complexity | Low | Medium to high |
@@ -73,6 +75,6 @@ The ATM adapter is a minimal yet practically relevant component for the unidirec
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]

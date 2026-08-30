@@ -20,13 +20,13 @@ Realisierung einer Wende-Schütz-Steuerung mit Software-Verriegelung. Es darf ni
 
 ![Uebung_006a3_AX_network](./Uebung_006a3_AX_network.svg)
 
-  * **`I1` (Set)**: Einschalten (in die zuletzt gewählte Richtung oder Default).
-  * **`I2` (Reset)**: Ausschalten.
-  * **`I3` (Toggle)**: Start/Stopp.
-  * **`AX_T_FF_SR`**: Der Hauptspeicher "Motor Ein/Aus".
-  * **`AX_SPLIT_3`**: Verteilt das "Motor ist an"-Signal.
-  * **`AX_LinksRechts_T_FF` (SubApp)**: Speichert die aktuelle *Richtung* (Links oder Rechts).
-  * **2x `AX_AND_2`**: Verriegelungsgatter.
+  - **`I1` (Set)**: Einschalten (in die zuletzt gewählte Richtung oder Default).
+  - **`I2` (Reset)**: Ausschalten.
+  - **`I3` (Toggle)**: Start/Stopp.
+  - **`AX_T_FF_SR`**: Der Hauptspeicher "Motor Ein/Aus".
+  - **`AX_SPLIT_3`**: Verteilt das "Motor ist an"-Signal.
+  - **`AX_LinksRechts_T_FF` (SubApp)**: Speichert die aktuelle *Richtung* (Links oder Rechts).
+  - **2x `AX_AND_2`**: Verriegelungsgatter.
 
 -----
 

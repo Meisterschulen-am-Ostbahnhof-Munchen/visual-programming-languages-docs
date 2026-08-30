@@ -4,6 +4,7 @@
 
 The ALI_LINT_TO_LI function block is a composite function block used to convert a LINT value to the ALI adapter format.
 ![ALI_LINT_TO_LI](ALI_LINT_TO_LI.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

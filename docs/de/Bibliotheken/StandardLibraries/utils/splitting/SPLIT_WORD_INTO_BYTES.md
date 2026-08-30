@@ -3,6 +3,7 @@
 ![SPLIT_WORD_INTO_BYTES](https://github.com/user-attachments/assets/5c99635d-3f7d-4266-a108-12d075d58313)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock `SPLIT_WORD_INTO_BYTES` dient dazu, ein 16-Bit-Wort (WORD) in seine beiden 8-Bit-Bytes aufzuteilen. Dies ist besonders nützlich, wenn mit Daten gearbeitet wird, die als WORD übertragen werden, aber byteweise verarbeitet werden müssen.

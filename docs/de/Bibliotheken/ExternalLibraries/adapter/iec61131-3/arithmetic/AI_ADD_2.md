@@ -6,6 +6,7 @@
 *(Kein Bild verfügbar)*
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein (FB) **AI_ADD_2** ist ein generischer Baustein zur Durchführung einer arithmetischen Addition zweier analoger Eingangswerte. Er basiert auf dem Konzept generischer Funktionsbausteine (`GEN_AI_ADD`) und nutzt Adapter-Schnittstellen anstelle von klassischen, lose gekoppelten Daten- und Ereignis-Anschlüssen. Dies ermöglicht eine strukturierte, übersichtliche und modulare Signalverarbeitung innerhalb von 4diac-ide-basierten Steuerungsanwendungen.
@@ -32,12 +33,12 @@ Der Funktionsbaustein (FB) **AI_ADD_2** ist ein generischer Baustein zur Durchf�
 
 #### **Sockets (Eingangs-Schnittstellen)**
 
-* **IN1** (Typ: `adapter::types::unidirectional::AI`): Der erste Summand der Additionsoperation. Über diesen Adapter werden sowohl der Wert als auch das dazugehörige Aktualisierungsereignis empfangen.
-* **IN2** (Typ: `adapter::types::unidirectional::AI`): Der zweite Summand der Additionsoperation.
+- **IN1** (Typ: `adapter::types::unidirectional::AI`): Der erste Summand der Additionsoperation. Über diesen Adapter werden sowohl der Wert als auch das dazugehörige Aktualisierungsereignis empfangen.
+- **IN2** (Typ: `adapter::types::unidirectional::AI`): Der zweite Summand der Additionsoperation.
 
 #### **Plugs (Ausgangs-Schnittstellen)**
 
-* **OUT** (Typ: `adapter::types::unidirectional::AI`): Das Ergebnis der Addition ($OUT = IN1 + IN2$). Über diesen Adapter werden das Ergebnis und das entsprechende Aktualisierungsereignis an nachfolgende Bausteine weitergegeben.
+- **OUT** (Typ: `adapter::types::unidirectional::AI`): Das Ergebnis der Addition ($OUT = IN1 + IN2$). Über diesen Adapter werden das Ergebnis und das entsprechende Aktualisierungsereignis an nachfolgende Bausteine weitergegeben.
 
 ## Funktionsweise
 
@@ -45,15 +46,15 @@ Der Baustein **AI_ADD_2** fungiert als mathematischer Addierer. Sobald an einem 
 
 $$\text{OUT} = \text{IN1} + \text{IN2}$$
 
-Das berechnete Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergeben, und das zugehörige Aktualisierungsereignis wird ausgelöst, um nachfolgende Programmteile über den neuen Wert zu informieren. 
+Das berechnete Ergebnis wird unmittelbar an den Ausgangs-Adapter `OUT` übergeben, und das zugehörige Aktualisierungsereignis wird ausgelöst, um nachfolgende Programmteile über den neuen Wert zu informieren.
 
 Da es sich um einen generischen Funktionsbaustein (`GEN_AI_ADD`) handelt, ist der zugrundeliegende Datentyp (z. B. `REAL`, `INT`, `LREAL`) flexibel und wird durch die Belegung der verbundenen Adapter bestimmt.
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_AI_ADD`):** Der Baustein ist nicht auf einen festen Datentyp festgelegt, was seine Wiederverwendbarkeit für unterschiedliche analoge Signalbereiche erhöht.
-* **Unidirektionale Adapter:** Durch die Verwendung des Typs `adapter::types::unidirectional::AI` wird der Verdrahtungsaufwand in der 4diac-ide drastisch reduziert, da Werte und Events in einer einzigen Verbindung gebündelt sind.
-* **Saubere Kapselung:** Keine losen Event- und Datenleitungen auf der Oberfläche des Funktionsbausteins.
+- **Generischer Typ (`GEN_AI_ADD`):** Der Baustein ist nicht auf einen festen Datentyp festgelegt, was seine Wiederverwendbarkeit für unterschiedliche analoge Signalbereiche erhöht.
+- **Unidirektionale Adapter:** Durch die Verwendung des Typs `adapter::types::unidirectional::AI` wird der Verdrahtungsaufwand in der 4diac-ide drastisch reduziert, da Werte und Events in einer einzigen Verbindung gebündelt sind.
+- **Saubere Kapselung:** Keine losen Event- und Datenleitungen auf der Oberfläche des Funktionsbausteins.
 
 ## Zustandsübersicht
 
@@ -61,9 +62,9 @@ Der Funktionsbaustein verhält sich ereignisgesteuert und zustandslos. Es wird k
 
 ## Anwendungsszenarien
 
-* **Sensordaten-Aggregation:** Addition zweier Durchflussmengen (z. B. Hauptstrom und Nebenstrom) zu einem Gesamtdurchfluss.
-* **Sollwert-Offsetting:** Aufaddieren eines festen oder dynamischen Offsets (z. B. Kalibrierungswert) auf ein analoges Eingangssignal.
-* **Signalmischung:** Einfache mathematische Zusammenführung zweier analoger Steuersignale in der Prozessautomatisierung.
+- **Sensordaten-Aggregation:** Addition zweier Durchflussmengen (z. B. Hauptstrom und Nebenstrom) zu einem Gesamtdurchfluss.
+- **Sollwert-Offsetting:** Aufaddieren eines festen oder dynamischen Offsets (z. B. Kalibrierungswert) auf ein analoges Eingangssignal.
+- **Signalmischung:** Einfache mathematische Zusammenführung zweier analoger Steuersignale in der Prozessautomatisierung.
 
 ## Vergleich mit ähnlichen Bausteinen
 

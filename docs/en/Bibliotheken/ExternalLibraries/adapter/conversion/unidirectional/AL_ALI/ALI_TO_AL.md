@@ -36,7 +36,7 @@ Output data (LWORD) is provided via the plug adapter **AL_OUT** (data point D1).
 ### **Adapters**
 
 | Adapter | Direction | Type | Description |
-|---------|----------|-----|--------------|
+| --------- | ---------- | ----- | -------------- |
 | **ALI_IN** | Socket | `adapter::types::unidirectional::ALI` | Receives a LINT value and an event. |
 | **AL_OUT** | Plug | `adapter::types::unidirectional::AL` | Sends an LWORD value and an event. |
 
@@ -64,7 +64,7 @@ The composite function block **ALI_TO_AL** enables clean and standards-compliant
 
 ---
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
 
 ]
 

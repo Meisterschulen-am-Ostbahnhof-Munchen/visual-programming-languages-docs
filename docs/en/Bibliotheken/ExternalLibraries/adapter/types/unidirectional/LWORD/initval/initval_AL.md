@@ -3,6 +3,7 @@
 ![initval_AL](initval_AL.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `initval_AL` is the configurable initialization block for the [AL](../AL.md) adapter (data type `LWORD`, 64-bit bit pattern): it accepts a start value as a data input at initialization time and writes it to a `AL` adapter plug. This replaces the formerly common practice of feeding a constant comparison value in via a mixed adapter/elementary block.

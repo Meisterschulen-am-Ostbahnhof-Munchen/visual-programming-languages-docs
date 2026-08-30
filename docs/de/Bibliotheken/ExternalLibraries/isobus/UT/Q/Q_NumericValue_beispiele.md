@@ -1,6 +1,6 @@
 ### Q\_NumericValue
 
-![](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
+![Q_NumericValue Funktionsbaustein Übersicht](https://user-images.githubusercontent.com/113907471/204326982-47eea33a-9b9c-4107-8f96-97c85a945fbc.png)
 
 Normativen Referenz:
 
@@ -10,42 +10,42 @@ ACHTUNG: dieser Befehl kann so oft aufgerufen werden wie vom Anwendungsprogrammi
 
 Aufgabe dieses Bausteins ist es eine der folgenden Objekte die auf einem VT dargestellt werden zu aktualisieren:
 
-*   Boolean input field: 1 byte for TRUE/FALSE
+-   Boolean input field: 1 byte for TRUE/FALSE
 
-![](https://user-images.githubusercontent.com/69573151/227978868-275bbdb4-4a27-4325-b79a-e06a92a48244.png)
+![Boolean Eingabefeld Darstellung auf dem VT](https://user-images.githubusercontent.com/69573151/227978868-275bbdb4-4a27-4325-b79a-e06a92a48244.png)
 
-*   Number input field: 4 bytes for integer input
+-   Number input field: 4 bytes for integer input
 
-![](https://user-images.githubusercontent.com/69573151/227978954-813af40a-0d6b-4add-92ee-4adb9e6a1df9.png)
+![Zahlen-Eingabefeld auf dem Virtual Terminal](https://user-images.githubusercontent.com/69573151/227978954-813af40a-0d6b-4add-92ee-4adb9e6a1df9.png)
 
-*   List input field: 1 byte for list index
+-   List input field: 1 byte for list index
 
-![](https://user-images.githubusercontent.com/69573151/227979018-91510384-180d-450b-a34e-c8a8ec7c12ed.png)
+![Listen-Eingabefeld VT Objekt](https://user-images.githubusercontent.com/69573151/227979018-91510384-180d-450b-a34e-c8a8ec7c12ed.png)
 
-*   List output field: 1 byte for list index
-    *   (wie list Input field, jedoch in VT3 nicht vorhanden)
-*   Number output field: 4 bytes for integer output
+-   List output field: 1 byte for list index
+    -   (wie list Input field, jedoch in VT3 nicht vorhanden)
+-   Number output field: 4 bytes for integer output
 
-![](https://user-images.githubusercontent.com/69573151/227979612-e3538226-b587-42c3-b123-4790dce151f0.png)
+![Zahlen-Ausgabefeld auf dem VT](https://user-images.githubusercontent.com/69573151/227979612-e3538226-b587-42c3-b123-4790dce151f0.png)
 
-*   Meter: 2 bytes for integer value
+-   Meter: 2 bytes for integer value
 
-![](https://user-images.githubusercontent.com/69573151/227979569-f4270f16-58ba-442a-9833-7a794b6c9237.png)
+![Zeigerinstrument (Meter) Anzeigeobjekt](https://user-images.githubusercontent.com/69573151/227979569-f4270f16-58ba-442a-9833-7a794b6c9237.png)
 
-*   Linear bar graph: 2 bytes for integer value
+-   Linear bar graph: 2 bytes for integer value
 
-![](https://user-images.githubusercontent.com/69573151/227979543-375aee21-c7d6-4151-b027-16073846f320.png)
+![Linearer Balkengraph Objekt auf dem VT](https://user-images.githubusercontent.com/69573151/227979543-375aee21-c7d6-4151-b027-16073846f320.png)
 
-*   Arched bar graph: 2 bytes for integer value
+-   Arched bar graph: 2 bytes for integer value
 
-![](https://user-images.githubusercontent.com/69573151/227979499-dd27d3ff-2bd5-40ab-b204-89dd96728006.png)
+![Bogenförmiger Balkengraph (Arched bar graph)](https://user-images.githubusercontent.com/69573151/227979499-dd27d3ff-2bd5-40ab-b204-89dd96728006.png)
 
-*   Number variable: 4 bytes for integer value
-    *   Die Number Variable kann nicht direkt auf dem Display angezeigt werden, kann aber mit allen bisher genannen Objekten verknüpft werden; Vorteil: auch mehrfache Verknüpungen Möglich.
-*   Object pointer: 2 bytes for Object ID
-    *   Sinnvoll um andere Objekte an Stelle des Pointers ein& und auszublenden.
+-   Number variable: 4 bytes for integer value
+    -   Die Number Variable kann nicht direkt auf dem Display angezeigt werden, kann aber mit allen bisher genannen Objekten verknüpft werden; Vorteil: auch mehrfache Verknüpungen Möglich.
+-   Object pointer: 2 bytes for Object ID
+    -   Sinnvoll um andere Objekte an Stelle des Pointers ein& und auszublenden.
 
-![](https://user-images.githubusercontent.com/69573151/227979478-da0e0584-7714-442f-a5ba-ffce7d5b882b.png)
+![Objektzeiger (Object Pointer) Konfiguration](https://user-images.githubusercontent.com/69573151/227979478-da0e0584-7714-442f-a5ba-ffce7d5b882b.png)
 
 Querverweise:
 
@@ -53,4 +53,4 @@ BEISPIEL
 
 Zähler mit Rücksetzung
 
-![](https://user-images.githubusercontent.com/113907471/204327132-b1a058c2-7ccb-4374-af56-d309ae8798a5.png)
+![Schaltplanbeispiel Zähler mit Rücksetzung](https://user-images.githubusercontent.com/113907471/204327132-b1a058c2-7ccb-4374-af56-d309ae8798a5.png)

@@ -20,9 +20,9 @@ Demonstration der Konvertierung von Daten zu Ereignissen für Steuerungszwecke.
 
 ![Uebung_005_AX_network](./Uebung_005_AX_network.svg)
 
-  * **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Liefert kontinuierlich TRUE, wenn gedrückt.
-  * **`AX_SWITCH`**: Dient hier als Gatter.
-  * **`AX_T_FF`**: Das Toggle-Flip-Flop.
+  - **`DigitalInput_I1`**: Typ `logiBUS_IXA`. Liefert kontinuierlich TRUE, wenn gedrückt.
+  - **`AX_SWITCH`**: Dient hier als Gatter.
+  - **`AX_T_FF`**: Das Toggle-Flip-Flop.
 
 -----
 

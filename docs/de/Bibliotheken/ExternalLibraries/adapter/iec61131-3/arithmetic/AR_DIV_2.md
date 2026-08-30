@@ -6,6 +6,7 @@
 ![AR_DIV_2](./AR_DIV_2.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsbaustein `AR_DIV_2` ist ein generischer arithmetischer Baustein, der für die Durchführung von Divisionsoperationen (`DIV`) in IEC 61499-basierten Systemen entwickelt wurde. Im Gegensatz zu klassischen Funktionsbausteinen nutzt dieser Baustein Adapter (`unidirectional::AR`), um Daten und Ereignisse zu bündeln. Dies sorgt für eine übersichtlichere und modularere visuelle Programmierung innerhalb der 4diac-IDE.
@@ -48,9 +49,9 @@ Das berechnete Ergebnis wird anschließend an den Ausgangs-Adapter `OUT` überge
 
 ## Technische Besonderheiten
 
-* **Generischer Typ (`GEN_AR_DIV`):** Der Baustein ist intern als generischer Typ deklariert. Dies ermöglicht eine flexible Anpassung an verschiedene Datentypen (z. B. `REAL`, `LREAL`, `INT`), je nachdem, wie der zugrunde liegende `AR`-Adaptertyp definiert ist.
-* **Adapter-Kopplung:** Durch die Verwendung von unidirektionalen Adaptern (`unidirectional::AR`) wird die Anzahl der Verbindungslinien im Funktionsplan drastisch reduziert, was die Lesbarkeit komplexer mathematischer Berechnungen erhöht.
-* **Schutz vor Division durch Null:** Systemintegrierte Schutzmaßnahmen hängen von der spezifischen Laufzeitumgebung (Runtime) ab. Bei der Verwendung des Bausteins ist darauf zu achten, dass der Divisor (`IN2`) ungleich Null ist, um Berechnungsfehler oder Laufzeitabstürze zu vermeiden.
+- **Generischer Typ (`GEN_AR_DIV`):** Der Baustein ist intern als generischer Typ deklariert. Dies ermöglicht eine flexible Anpassung an verschiedene Datentypen (z. B. `REAL`, `LREAL`, `INT`), je nachdem, wie der zugrunde liegende `AR`-Adaptertyp definiert ist.
+- **Adapter-Kopplung:** Durch die Verwendung von unidirektionalen Adaptern (`unidirectional::AR`) wird die Anzahl der Verbindungslinien im Funktionsplan drastisch reduziert, was die Lesbarkeit komplexer mathematischer Berechnungen erhöht.
+- **Schutz vor Division durch Null:** Systemintegrierte Schutzmaßnahmen hängen von der spezifischen Laufzeitumgebung (Runtime) ab. Bei der Verwendung des Bausteins ist darauf zu achten, dass der Divisor (`IN2`) ungleich Null ist, um Berechnungsfehler oder Laufzeitabstürze zu vermeiden.
 
 ## Zustandsübersicht
 
@@ -62,14 +63,14 @@ Der Baustein verhält sich im Wesentlichen zustandslos (stateless) und reagiert 
 
 ## Anwendungsszenarien
 
-* **Messwertskalierung:** Division von Sensorrohdaten durch einen festen Skalierungsfaktor zur Umrechnung in physikalische Einheiten.
-* **Mittelwertberechnung:** Division einer Summe durch die Anzahl der Messwerte in komplexeren Berechnungsnetzwerken.
-* **Verhältnisberechnungen:** Bestimmung von prozentualen Anteilen oder Verhältnissen in verfahrenstechnischen Anlagen.
+- **Messwertskalierung:** Division von Sensorrohdaten durch einen festen Skalierungsfaktor zur Umrechnung in physikalische Einheiten.
+- **Mittelwertberechnung:** Division einer Summe durch die Anzahl der Messwerte in komplexeren Berechnungsnetzwerken.
+- **Verhältnisberechnungen:** Bestimmung von prozentualen Anteilen oder Verhältnissen in verfahrenstechnischen Anlagen.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-* **Klassischer `DIV`-Baustein:** Der klassische IEC 61131-3 `DIV`-Baustein besitzt dedizierte Pins für `IN1`, `IN2` und `OUT` sowie die dazugehörigen `REQ`- und `CNF`-Events. `AR_DIV_2` bündelt diese Signale in Adaptern, was die Verdrahtung in großen Projekten vereinfacht.
-* **`AR_MUL_2` / `AR_ADD_2`:** Diese Bausteine teilen sich dieselbe Adapter-Philosophie, führen jedoch Multiplikationen bzw. Additionen durch. Sie lassen sich nahtlos mit `AR_DIV_2` zu mathematischen Berechnungsbäumen verketten.
+- **Klassischer `DIV`-Baustein:** Der klassische IEC 61131-3 `DIV`-Baustein besitzt dedizierte Pins für `IN1`, `IN2` und `OUT` sowie die dazugehörigen `REQ`- und `CNF`-Events. `AR_DIV_2` bündelt diese Signale in Adaptern, was die Verdrahtung in großen Projekten vereinfacht.
+- **`AR_MUL_2` / `AR_ADD_2`:** Diese Bausteine teilen sich dieselbe Adapter-Philosophie, führen jedoch Multiplikationen bzw. Additionen durch. Sie lassen sich nahtlos mit `AR_DIV_2` zu mathematischen Berechnungsbäumen verketten.
 
 ## Änderungserkennung
 

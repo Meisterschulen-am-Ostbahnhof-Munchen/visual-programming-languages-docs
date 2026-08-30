@@ -3,6 +3,7 @@
 ![ASR_SWITCH](./ASR_SWITCH.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **ASR_SWITCH** dient als Demultiplexer für **ASR-Ereignisse** (SET/RESET). Er leitet die über den Adapter-Socket `EI` empfangenen Ereignisse wahlweise an den Adapter-Plug `EO0` oder `EO1` weiter – abhängig vom booleschen Wert des Eingangs `G`. Dadurch lassen sich zwei verschiedene Signalpfade in einer Automatisierungsanwendung umschalten.
@@ -41,18 +42,18 @@ Keine.
 
 Der **ASR_SWITCH** wird durch ein eingehendes Ereignis vom Adapter-Socket `EI` oder durch das Ereignis `EIG` aktiviert. Die Verarbeitung erfolgt in der **Ereignisgesteuerten Ablaufsteuerung (ECC)**:
 
-1. **Schalten von G:**  
+1. **Schalten von G:**
    Trifft das Ereignis `EIG` ein, wird der Wert von `G` übernommen. Der Baustein bleibt im Startzustand `START` und wartet auf die nächsten Ereignisse.
 
-2. **Weiterleitung von `EI.SET`:**  
-   - `EI.SET` und `G = FALSE`: Übergang in den Zustand `G0_SET`, dort wird `EO0.SET` ausgegeben.  
+2. **Weiterleitung von `EI.SET`:**
+   - `EI.SET` und `G = FALSE`: Übergang in den Zustand `G0_SET`, dort wird `EO0.SET` ausgegeben.
    - `EI.SET` und `G = TRUE` : Übergang in den Zustand `G1_SET`, dort wird `EO1.SET` ausgegeben.
 
-3. **Weiterleitung von `EI.RESET`:**  
-   - `EI.RESET` und `G = FALSE`: Übergang in den Zustand `G0_RESET`, dort wird `EO0.RESET` ausgegeben.  
+3. **Weiterleitung von `EI.RESET`:**
+   - `EI.RESET` und `G = FALSE`: Übergang in den Zustand `G0_RESET`, dort wird `EO0.RESET` ausgegeben.
    - `EI.RESET` und `G = TRUE` : Übergang in den Zustand `G1_RESET`, dort wird `EO1.RESET` ausgegeben.
 
-4. **Rückkehr:**  
+4. **Rückkehr:**
    Nach Ausgabe der Aktion springt die ECC sofort (Bedingung = `1`) zurück in den Startzustand `START`, um das nächste Ereignis zu verarbeiten.
 
 ## Technische Besonderheiten
@@ -96,4 +97,4 @@ Der **ASR_SWITCH** ist ein einfacher, aber effektiver Funktionsbaustein zur demu
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

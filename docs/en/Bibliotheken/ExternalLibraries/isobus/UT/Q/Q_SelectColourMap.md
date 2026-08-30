@@ -3,6 +3,7 @@
 ![Q_SelectColourMap](https://user-images.githubusercontent.com/116869307/214152861-d7ab7c89-b643-4672-9689-addd4eddc23a.png)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **Q_SelectColourMap** is a standards-compliant function block for managing color palettes in virtual terminals, developed under the EPL-2.0 license. Version 1.0 implements the ISO 11783-6 (Part 6 - F.60) specification for VT systems from version 4 onwards.
@@ -33,6 +34,7 @@ The **Q_SelectColourMap** is a standards-compliant function block for managing c
 ## Valid Object IDs
 
 `u16ObjIdColourMap` addresses (bytes 2,3) per Annex F.60:
+
 - **ColourMap**: 39000 – 39999 (VT version 4 and later)
 - **ColourPalette**: 45000 – 45999 (VT version 6 and later, Annex F.60)
 - **FFFF16**: restores the default colour table (A.3)
@@ -42,13 +44,16 @@ The **Q_SelectColourMap** is a standards-compliant function block for managing c
 ## Functionality
 
 1. **Initialization**:
+
 - `INIT` without parameters
 - `INITO` confirms operational readiness
-2. **Pallet Change**:
+1. **Pallet Change**:
+
 - `REQ` with target color palette ID
 - Global color management change
 - `CNF` provides operational status and previous palette
-3. **Special Values**:
+1. **Special Values**:
+
 - `0xFFFF`: Sets the default ISO color table
 
 ## Technical Features
@@ -61,14 +66,14 @@ The **Q_SelectColourMap** is a standards-compliant function block for managing c
 ## Color Palette Reference
 
 | Value | Meaning |
-|------------|-------------------------------|
-| 0x0001-FFFE| User-defined palettes |
+| ------------ | ------------------------------- |
+| 0x0001-FFFE | User-defined palettes |
 | 0xFFFF | ISO Standard Palette (A.3) |
 
 ## Return Codes (s16result)
 
 | Code | Constant | Meaning |
-|------|-------------------------|------------------------------------|
+| ------ | ------------------------- | ------------------------------------ |
 | 0 | VT_E_NO_ERR | Successful switch |
 | -6 | VT_E_OVERFLOW | Buffer Overflow |
 | -8 | VT_E_NOACT | VT Not Ready |
@@ -86,7 +91,7 @@ The **Q_SelectColourMap** is a standards-compliant function block for managing c
 ## ⚖️ Comparison with Similar Components
 
 | Feature | Q_SelectColourMap | VtColorManager | VtPaletteControl |
----------------|-------------------|----------------|------------------|
+--------------- | ------------------- | ---------------- | ------------------ |
 | ISO Standard | ✔ | ✖ | ✖ |
 | Global Effect | ✔ | ✖ | ✔ |
 | Standard Palette | ✔ | ✖ | ✖ |

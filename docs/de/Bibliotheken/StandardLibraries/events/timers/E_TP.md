@@ -14,7 +14,7 @@
 
 Der Baustein **E_TP** (auch bekannt als **Pulsgeber** oder **Timer-Puls**) ist ein standardisiertes Funktionsbaustein (FB) nach der Norm **IEC 61499** (DIN EN 61499). Dieser Baustein wird verwendet, um einen pulsierenden Ausgang zu erzeugen, der für eine bestimmte Zeit aktiviert wird, wenn ein Eingangssignal empfangen wird. Er ist besonders nützlich in Steuerungsanwendungen, bei denen zeitgesteuerte Aktionen erforderlich sind.
 
-### Beschreibung des Bausteins E_TP:
+### Beschreibung des Bausteins E_TP
 
 #### **Allgemeine Funktion:**
 
@@ -55,14 +55,13 @@ Der Baustein **E_TP** (auch bekannt als **Pulsgeber** oder **Timer-Puls**) ist e
 - **Version 1.0:** Ursprüngliche Version des Bausteins, erstellt von Franz Hoepfinger am 04.03.2024.
 - **Version 1.1:** Eine Reset-Funktion wurde hinzugefügt, um den Timer manuell zurücksetzen zu können. Diese Version wurde am 23.04.2024 veröffentlicht.
 
-### Zusammenfassung:
+### Zusammenfassung
 
 Der **E_TP**-Baustein ist ein nützliches Werkzeug in der IEC 61499-basierten Steuerungstechnik, um zeitgesteuerte Aktionen zu realisieren. Durch seine einfache Schnittstelle und das klare Verhalten ist er leicht in verschiedene Steuerungsanwendungen integrierbar. Die Reset-Funktion in Version 1.1 erhöht die Flexibilität des Bausteins, da der Timer nun manuell zurückgesetzt werden kann.
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_020f](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f.md)
-* [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
-* [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
-* [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)
-
+- [Uebung_020f](../../../../Uebungen/test_B/Uebungen_doc/Uebung_020f.md)
+- [Uebung_039b](../../../../Uebungen/test_B/Uebungen_doc/Uebung_039b.md)
+- [Uebung_177](../../../../Uebungen/test_B/Uebungen_doc/Uebung_177.md)
+- [Uebung_178](../../../../Uebungen/test_B/Uebungen_doc/Uebung_178.md)

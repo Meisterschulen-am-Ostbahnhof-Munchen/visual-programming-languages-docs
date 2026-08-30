@@ -3,6 +3,7 @@
 ![AX_SR_SYM](./AX_SR_SYM.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AX_SR_SYM** ist ein ereignisgesteuertes, bistabiles Flipflop mit symmetrischem Einschaltverhalten. Er implementiert einen Set-Reset-Speicher, der über die Ereignisse `S` (Set) und `R` (Reset) angesteuert wird. Im Gegensatz zu ähnlichen Bausteinen ist der Startzustand nicht vordefiniert; der Baustein reagiert auf das erste eintreffende Ereignis – unabhängig davon, ob es sich um `S` oder `R` handelt.

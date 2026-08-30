@@ -3,6 +3,7 @@
 ![Uebung_002a5b_AX_network](./Uebung_002a5b_AX_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Diese Übung demonstriert die grundlegende Verknüpfung von mehreren digitalen Eingängen mit mehreren digitalen Ausgängen. Dabei wird eine logische OR-Operation eingesetzt, um die Zustände der Eingänge zu verknüpfen. Das Ergebnis dieser Verknüpfung wird anschließend über einen Signalverteiler auf verschiedene digitale Ausgänge verteilt. Die Implementierung nutzt dabei das Konzept von Adapter-Funktionsbausteinen, um die boolesche Logik und die Signalverteilung zu realisieren.
@@ -59,24 +60,24 @@ Die Übung `Uebung_002a5b_AX` realisiert eine Steuerungslogik, bei der die Zust�
 
 1.  **Erfassung der Eingänge**: Die Funktionsbausteine `DigitalInput_I1`, `DigitalInput_I2` und `DigitalInput_I3` lesen kontinuierlich die Zustände der physikalischen Eingänge `Input_I1`, `Input_I2` und `Input_I3` ein. Ihre jeweiligen Datenausgänge (`DigitalInput_I1.IN`, `DigitalInput_I2.IN`, `DigitalInput_I3.IN`) stellen diese Zustände bereit.
 2.  **Logische OR-Verknüpfung**: Die Datenausgänge der drei Eingangsbausteine werden direkt mit den Dateneingängen des OR-Bausteins `AX_OR_3` verbunden:
-    *   `DigitalInput_I1.IN` ist mit `AX_OR_3.IN1` verbunden.
-    *   `DigitalInput_I2.IN` ist mit `AX_OR_3.IN2` verbunden.
-    *   `DigitalInput_I3.IN` ist mit `AX_OR_3.IN3` verbunden.
+    -   `DigitalInput_I1.IN` ist mit `AX_OR_3.IN1` verbunden.
+    -   `DigitalInput_I2.IN` ist mit `AX_OR_3.IN2` verbunden.
+    -   `DigitalInput_I3.IN` ist mit `AX_OR_3.IN3` verbunden.
     Der `AX_OR_3` Baustein verknüpft diese drei booleschen Werte logisch. Das Ergebnis (`TRUE`, wenn I1 ODER I2 ODER I3 `TRUE` ist) wird an seinem Datenausgang `AX_OR_3.OUT` zur Verfügung gestellt.
 
 3.  **Signalverteilung**: Der Datenausgang des OR-Bausteins (`AX_OR_3.OUT`) wird an den Dateneingang des Signalverteilers `AX_SPLIT_3` (`AX_SPLIT_3.IN`) angeschlossen. Der `AX_SPLIT_3` Baustein dupliziert dieses einzelne Steuersignal und leitet es an seine drei Datenausgänge (`AX_SPLIT_3.OUT1`, `AX_SPLIT_3.OUT2`, `AX_SPLIT_3.OUT3`) weiter.
 4.  **Ansteuerung der Ausgänge**: Die Ausgänge des Signalverteilers sind jeweils mit den Eingängen der digitalen Ausgangsbausteine verbunden:
-    *   `AX_SPLIT_3.OUT1` ist mit `DigitalOutput_Q1.OUT` verbunden.
-    *   `AX_SPLIT_3.OUT2` ist mit `DigitalOutput_Q2.OUT` verbunden.
-    *   `AX_SPLIT_3.OUT3` ist mit `DigitalOutput_Q3.OUT` verbunden.
+    -   `AX_SPLIT_3.OUT1` ist mit `DigitalOutput_Q1.OUT` verbunden.
+    -   `AX_SPLIT_3.OUT2` ist mit `DigitalOutput_Q2.OUT` verbunden.
+    -   `AX_SPLIT_3.OUT3` ist mit `DigitalOutput_Q3.OUT` verbunden.
     Dies bedeutet, dass alle drei digitalen Ausgänge `Output_Q1`, `Output_Q2` und `Output_Q3` den gleichen Zustand annehmen, der dem Ergebnis der OR-Verknüpfung der drei Eingänge entspricht.
 
 **Lernziele**:
 
-*   Verständnis und Anwendung von digitalen Eingangs- und Ausgangsbausteinen.
-*   Implementierung grundlegender logischer Operationen (OR) in 4diac-IDE.
-*   Nutzung von Signalverteilern (Splittern) zur effizienten Ansteuerung mehrerer Komponenten von einem einzigen Steuersignal.
-*   Kennenlernen des Konzepts von Adapter-Bausteinen für flexible Verbindungen.
+-   Verständnis und Anwendung von digitalen Eingangs- und Ausgangsbausteinen.
+-   Implementierung grundlegender logischer Operationen (OR) in 4diac-IDE.
+-   Nutzung von Signalverteilern (Splittern) zur effizienten Ansteuerung mehrerer Komponenten von einem einzigen Steuersignal.
+-   Kennenlernen des Konzepts von Adapter-Bausteinen für flexible Verbindungen.
 
 **Schwierigkeitsgrad**: Mittel. Grundkenntnisse in digitaler Logik und der Bedienung der 4diac-IDE sind von Vorteil.
 
@@ -92,4 +93,4 @@ Die Übung `Uebung_002a5b_AX` bietet eine praktische Einführung in die Verknüp
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -3,9 +3,11 @@
 ![AUS_SPLIT_9](./AUS_SPLIT_9.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **OFF_SPLIT_9** function block is a generic component that distributes an incoming OFF signal to nine separate outputs. It serves as a fan-out for unidirectional adapter connections and is particularly suitable for applications where a signal needs to be forwarded to multiple receivers in parallel.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -27,7 +29,7 @@ None.
 ### **Adapter**
 
 | Direction | Name | Type | Description |
-|----------|-----|-----|--------------|
+| ---------- | ----- | ----- | -------------- |
 | SOCKET | IN | `adapter::types::unidirectional::AUS` | Incoming OFF signal |
 | PLUG | OUT1 … OUT9 | `adapter::types::unidirectional::AUS` | Nine outgoing OFF signals |
 
@@ -54,7 +56,7 @@ The function block does not have its own states or event flow control (ECC). Sig
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Outputs | Special Feature |
-|----------|-----|-----------|--------------|
+| ---------- | ----- | ----------- | -------------- |
 | OFF_SPLIT_9 | Adapter | 9 | Generic, for unidirectional OFF adapters |
 | OFF_SPLIT_4 | Adapter | 4 | Fewer outputs |
 | SPLIT_1_2 (e.g., for data) | Data | any | Works with Data-Event Combinations |

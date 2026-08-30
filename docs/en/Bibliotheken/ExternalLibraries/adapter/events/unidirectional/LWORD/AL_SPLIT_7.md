@@ -4,6 +4,7 @@
 *(Image of function block not available)*
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **AL_SPLIT_7** serves as a generic distributor (splitter) for a unidirectional adapter of type `AL`. It accepts a single adapter at its socket `IN` and forwards the incoming data and events unchanged to seven identical adapter outputs (`OUT1` … `OUT7`). The block is implemented as a generic type (`GEN_AL_SPLIT`), thus enabling flexible use in control and automation applications.
@@ -29,7 +30,7 @@ Accordingly, there are no direct data outputs. The data is replicated via the se
 ### **Adapters**
 
 | Direction | Name | Type | Description |
-|----------|------|-----|--------------|
+| ---------- | ------ | ----- | -------------- |
 | Socket | `IN` | `adapter::types::unidirectional::AL` | Adapter input that provides the AL connection to be distributed. |
 | Plug | `OUT1` … `OUT7` | `adapter::types::unidirectional::AL` | Seven adapter outputs that provide an identical copy of the input adapter. |
 

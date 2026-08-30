@@ -13,7 +13,7 @@ Der Funktionsblock `AD_FIELDBUS_DWORD_TO_SIGNAL` dient dazu, ein eingehendes Dat
 Der FB besitzt ausschließlich Adapter-Schnittstellen, keine separaten Ereignis- oder Datenports auf oberster Ebene. Die folgenden Adapter definieren die Ein- und Ausgänge:
 
 | Adapter | Typ | Richtung | Beschreibung |
-|---------|-----|----------|--------------|
+| --------- | ----- | ---------- | -------------- |
 | `IN` | `adapter::types::unidirectional::AD` | Socket (Eingang) | Eingangsdatenwort und zugehöriges Ereignis |
 | `OUT` | `adapter::types::unidirectional::AD` | Plug (Ausgang) | Gefiltertes Ausgangsdatenwort (DWORD) |
 | `VALID` | `adapter::types::unidirectional::AX` | Plug (Ausgang) | Gültigkeitssignal (BOOL) des aktuellen Datenworts |

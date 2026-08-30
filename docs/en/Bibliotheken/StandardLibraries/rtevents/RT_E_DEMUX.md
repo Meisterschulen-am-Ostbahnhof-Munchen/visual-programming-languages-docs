@@ -1,10 +1,12 @@
 # RT_E_DEMUX
 
 * * * * * * * * * *
+
 ## Introduction
 
 Real-time version of the E_DEMUX block. Forwards an input event to one of several outputs.
 ![RT_E_DEMUX](RT_E_DEMUX.svg)
+
 ## Metadata
 
 | Attribute | Value |
@@ -17,4 +19,4 @@ Real-time version of the E_DEMUX block. Forwards an input event to one of severa
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

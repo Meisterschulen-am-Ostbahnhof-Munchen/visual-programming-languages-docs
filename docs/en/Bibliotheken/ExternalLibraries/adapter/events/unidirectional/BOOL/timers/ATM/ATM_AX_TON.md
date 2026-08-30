@@ -3,9 +3,11 @@
 ![ATM_AX_TON](./ATM_AX_TON.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The **ATM_AX_TON** is a function block for on-delay. It implements standard timer functionality according to IEC 61499-2, which is controlled via an adapter interface (AX/AT). The block allows a timer to be started via an input adapter and the output state and confirmation of completion to be provided via an output adapter.
+
 ## Interface Structure
 
 ### **Event Inputs**
@@ -29,7 +31,7 @@ The FB has no explicit data outputs. Output data is provided via the **Q** adapt
 ### **Adapters**
 
 | Direction | Name | Type | Comment |
-|----------|------|-----|-----------|
+| ---------- | ------ | ----- | ----------- |
 | Socket | IN | adapter::types::unidirectional::AX | Timer input (AX adapter) – provides the Boolean input signal and the start pulse |
 | Socket | PT | adapter::types::unidirectional::ATM | Lead time (AT adapter) – provides the delay time |
 | Plug | Q | adapter::types::unidirectional::AX | Timer output (AX adapter) – outputs the timer status and confirmation |
@@ -42,19 +44,19 @@ The **ATM_AX_TON** encapsulates a standard on-delay timer (E_TON) from the IEC 6
 
 The input adapter **IN** provides the start pulse (REQ) via its event **E1** and the Boolean value **IN** via its data signal **D1**. When **IN.D1** becomes TRUE, the timer starts.
 
-2. **Delay time:**
+1. **Delay time:**
 
 The desired delay time is provided via the adapter **PT** (via **PT.D1**). Once the timer is running, the output **Q.D1** is set to TRUE after this delay time has elapsed.
 
-3. **Output Signal and Acknowledgement:**
+1. **Output Signal and Acknowledgement:**
 
 The output adapter **Q** outputs the current timer state via **Q.D1** (TRUE when the delay time has elapsed, FALSE when the input goes to FALSE). The event **Q.E1** is sent after each state change (CNF of the internal E_TON).
 
-4. **Setting the Lead Time Without Triggering:**
+1. **Setting the Lead Time Without Triggering:**
 
 According to the specification, the event input **EIPT** is used to set the lead time **PT** without starting the timer. However, in this FBNetwork, this input is not connected internally – it is available for external use if an application requires a time preset.
 
-5. **Fallback:**
+1. **Fallback:**
 
 If **IN** goes to FALSE, the timer is immediately reset and **Q.D1** becomes FALSE (without delay).
 
@@ -70,7 +72,7 @@ If **IN** goes to FALSE, the timer is immediately reset and **Q.D1** becomes FAL
 The FB itself does not manage its own state machine – the state logic resides in the integrated **E_TON**. Nevertheless, its behavior can be described as follows:
 
 | Input IN State | Behavior | Output Q.D1 |
-|-------------------------|-----------|--------------|
+| ------------------------- | ----------- | -------------- |
 | FALSE → TRUE (rising edge) | Timer starts; after the timer expires, Q becomes TRUE | FALSE (until the timer expires) → TRUE |
 | TRUE (while the timer is running) | Timer continues running | FALSE |
 | TRUE → FALSE (falling edge) | Timer is immediately reset | TRUE → FALSE |
@@ -87,7 +89,7 @@ The FB itself does not manage its own state machine – the state logic resides 
 ## Comparison with Similar Function Blocks
 
 | Function Block | Type | Special Feature |
-|----------|-----|--------------|
+| ---------- | ----- | -------------- |
 | **E_TON** (IEC 61499) | Standard On-Delay | Classic input/output interface; direct event and data ports |
 | **ATM_AX_TON** | Adapter-based | Encapsulates E_TON and provides an AX/AT adapter; additional EIPT input (not connected) |
 | **E_TOF** | Off-Delay | Delay on power-off (opposite behavior) |
@@ -105,4 +107,4 @@ The **ATM_AX_TON** is a ready-to-use, adapter-based interface. ---
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)
+- [🌐 E_CTU Event Counter module on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/event-function-blocks/e_ctu/)

@@ -3,6 +3,7 @@
 ![ScrollFS_PHYS_Button](ScrollFS_PHYS_Button.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `ScrollFS_PHYS_Button` is structurally identical to [ScrollFS_PHYS](ScrollFS_PHYS.md) — the same
@@ -72,7 +73,7 @@ Same as [ScrollFS_PHYS](ScrollFS_PHYS.md) - no state of its own beyond what `Inn
 
 ## 🛠️ Related Exercises
 
-* No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
+- No standalone exercise example — see `Workspace_Scroll/SCROLL_KONZEPT.md` (project
   `4diac_training1`).
 
 ## Conclusion

@@ -3,9 +3,11 @@
 ![ASSEMBLE_AD_FROM_AX](./ASSEMBLE_AD_FROM_AX.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **ASSEMBLE_AD_FROM_AX** is used to combine up to 32 Boolean signals, provided via AX adapters (type: `adapter::types::unidirectional::AX`), into a 32-bit double word (DWORD) and output it via an AD adapter (type: `adapter::types::unidirectional::AD`). This enables the compact transmission of multiple discrete binary signals over a single data connection.
+
 ## Interface Structure
 
 The function block has only **adapter interfaces** (sockets and plugs). There are no direct event or data inputs/outputs at the top level.
@@ -35,7 +37,7 @@ No explicit data outputs. The composite DWORD is output via the data port (`D1`)
 ### **Adapters**
 
 | Type | Name | Direction | Description |
-|-----|------|----------|--------------|
+| ----- | ------ | ---------- | -------------- |
 | `adapter::types::unidirectional::AX` | `BIT_00` … `BIT_31` | Socket (Input) | 32 Boolean individual signals, each with its own event (data change) |
 | `adapter::types::unidirectional::AD` | `OUT` | Plug (Output) | Output of the compound double word with update event |
 
@@ -80,4 +82,4 @@ The `ASSEMBLE_AD_FROM_AX` is a useful building block for efficiently bundling a 
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

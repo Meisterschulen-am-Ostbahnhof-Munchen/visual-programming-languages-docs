@@ -4,29 +4,31 @@
 ![NumericValue_PHYS](./NumericValue_PHYS.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **NumericValue_PHYS** is an input service interface block according to ISO 11783-6. It returns a physical REAL value by reading a raw digital value (DWORD) from the ISOBUS object pool and converting it into a physical value, taking into account a predefined scaling and offset. The conversion is performed entirely in software (within the function block).
+
 ## Interface Structure
 
 ### **Event Inputs**
 
 | Event | Type | With Variables | Comment |
-|----------|-----|----------------|-----------|
+| ---------- | ----- | ---------------- | ----------- |
 | INIT | EInit | QI, PARAMS, stObj | Initialize the block |
 | REQ | Event | QI | Request a new physical value |
 
 ### **Event Outputs**
 
 | Event | Type | With variables | Comment |
-|----------|-----|---------------|------------|
+| ---------- | ----- | --------------- | ------------ |
 | INITO | EInit | QO, STATUS | Confirm initialization |
 | IND | Event | QO, STATUS, rPhys | Output the calculated physical value |
 
 ### **Data Inputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QI | BOOL | Input qualifier (enables processing) |
 | PARAMS | STRING | Service parameter (e.g., configuration string) |
 | stObj | logiBUS::utils::conversion::phys::NumericObjectPool_S | Object pool properties: Object ID (16 bits), scaling, offset, decimal places |
@@ -34,7 +36,7 @@ The function block **NumericValue_PHYS** is an input service interface block acc
 ### **Data Outputs**
 
 | Variable | Type | Comment |
-|----------|-----|-----------|
+| ---------- | ----- | ----------- |
 | QO | BOOL | Output qualifier (processing status) |
 | STATUS | STRING | Status message (error or success message) |
 | rPhys | REAL | Physical value after applying scaling/offset |
@@ -48,9 +50,11 @@ No adapters available.
 The internal process is controlled via the INIT and REQ events and utilizes four sub-function blocks:
 
 1. **INIT**
+
 - The passed structure parameter `stObj` is copied via the sub-function block `F_MOVE` (of type `iec61131::selection::F_MOVE`).
 - The copied value (`stObj.u16ObjId`) is forwarded to the sub-function block `NumericValue_ID`, which is thereby initialized (`NumericValue_ID.INIT`).
-2. **REQ** (or re-output after INIT)
+1. **REQ** (or re-output after INIT)
+
 - The sub-function block `NumericValue_ID` is triggered by `REQ`. It outputs a raw DWORD value from the ISOBUS object pool via its output `IN`.
 
 This DWORD value is converted into an unsigned 32-bit integer (`UDINT`) via `F_DWORD_TO_UDINT`.

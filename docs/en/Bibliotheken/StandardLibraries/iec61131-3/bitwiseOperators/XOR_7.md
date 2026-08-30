@@ -6,6 +6,7 @@
 
 The function block `XOR_7` performs a bitwise XOR operation on seven input values. It is a generic function block that can be used with various bit data types (e.g., BOOL, BYTE, WORD, DWORD, LWORD). The block is classified according to the IEC 61131-3 standard and is used for processing Boolean operations.
 ![XOR_7](XOR_7.svg)
+
 ## Interface Structure
 
 ### **Event Inputs**

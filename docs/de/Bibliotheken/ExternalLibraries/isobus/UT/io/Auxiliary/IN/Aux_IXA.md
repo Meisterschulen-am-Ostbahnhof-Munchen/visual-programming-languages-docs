@@ -74,7 +74,7 @@ Im Vergleich zu einfachen booleschen Eingangsblöcken bietet Aux_IXA:
 
 ## 🛠️ Zugehörige Übungen
 
-* [Uebung_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
+- [Uebung_010b1_AX](../../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_010b1_AX.md)
 
 ## Fazit
 

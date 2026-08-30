@@ -3,6 +3,7 @@
 ![AL_TO_AD](./AL_TO_AD.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **AL_TO_AD** ist ein Composite-FB, der einen unidirektionalen LWORD-Adapter (AL) in einen unidirektionalen DWORD-Adapter (AD) umwandelt. Er ermöglicht die Datenkonvertierung zwischen zwei unterschiedlichen Adaptertypen innerhalb der 4diac-IDE, basierend auf der IEC 61499-Norm.
@@ -28,9 +29,9 @@ Der Funktionsblock **AL_TO_AD** ist ein Composite-FB, der einen unidirektionalen
 ### **Adapter**
 
 | Typ | Name | Richtung | Beschreibung |
-|------|------|----------|--------------|
+| ------ | ------ | ---------- | -------------- |
 | Socket | AL_IN | Eingang | Unidirektionaler LWORD-Adapter mit einem Ereignis-Eingang (`E1`) und einem Daten-Eingang (`D1` vom Typ `LWORD`) |
-| Plug   | AD_OUT | Ausgang | Unidirektionaler DWORD-Adapter mit einem Ereignis-Ausgang (`E1`) und einem Daten-Ausgang (`D1` vom Typ `DWORD`) |
+| Plug | AD_OUT | Ausgang | Unidirektionaler DWORD-Adapter mit einem Ereignis-Ausgang (`E1`) und einem Daten-Ausgang (`D1` vom Typ `DWORD`) |
 
 ## Funktionsweise
 
@@ -77,4 +78,4 @@ Der **AL_TO_AD**-Funktionsblock stellt eine schlanke und standardkonforme Lösun
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

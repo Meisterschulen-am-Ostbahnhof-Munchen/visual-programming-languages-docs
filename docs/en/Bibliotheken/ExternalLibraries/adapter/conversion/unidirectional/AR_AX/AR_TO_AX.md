@@ -42,6 +42,8 @@ The internal function block `F_NE` is an IEC 61131-3 compliant comparator block 
 
 ## Technical Features
 
+- **Bit-reinterpretation**: extracts the IEEE754 bit pattern of the source value (intentional, e.g. for serialization), not its numeric value.
+
 - Uses a composite function block approach, where the logic consists of a single comparator block and adapter connections.
 - All inputs and outputs are implemented via standardized unidirectional adapters (`AR`, `AX`), enabling a modular and interchangeable interface definition.
 - The comparator value (0,0) is fixed in the function block and cannot be changed at runtime.

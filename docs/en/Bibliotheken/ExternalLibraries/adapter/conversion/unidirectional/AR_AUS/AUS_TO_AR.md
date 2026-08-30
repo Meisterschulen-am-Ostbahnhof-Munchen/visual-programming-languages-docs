@@ -42,6 +42,8 @@ Since no type conversion or other processing is implemented in the network, the 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite without internal logic**: The function block network consists exclusively of two direct connections; it contains no other function blocks or state machines.
 - **Adapter-based interface**: Instead of individual event/data inputs and outputs, all communication is handled via standardized unidirectional adapters. This facilitates reuse in modular adapter hierarchies.
 - **Incomplete implementation**: The block's name and comment suggest active conversion, which is not implemented in the current version (1.0). This can lead to runtime errors if the runtime environment does not support implicit type conversion.

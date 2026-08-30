@@ -54,6 +54,8 @@ This implements an asynchronous, event-driven translation of a BYTE value into a
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite FB**: The logic is completely encapsulated within the internal FB network structure. This facilitates maintenance and reuse.
 - **License**: This module is provided under the **Eclipse Public License 2.0** (SPDX license identifier: EPL-2.0).
 - **Version**: 1.0, released 2026.

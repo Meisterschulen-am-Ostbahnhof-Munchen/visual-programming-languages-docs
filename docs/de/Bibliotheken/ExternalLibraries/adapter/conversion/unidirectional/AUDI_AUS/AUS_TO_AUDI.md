@@ -41,6 +41,8 @@ Der Funktionsblock arbeitet als reine Durchreiche. Sobald am Socket `AUS_IN` das
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Schnittstelle**: Der Baustein besitzt keine klassischen Ein-/Ausgangsvariablen, sondern verwendet ausschließlich die standardisierten Adapter-Typen `AUS` und `AUDI` aus dem Paket `adapter::types::unidirectional`.
 - **Einfache Durchleitung**: Die Ereignis- und Datenverbindungen sind direkt und ohne zusätzliche Logik ausgeführt.
 - **Typaufweitung**: Die Konvertierung von USINT (0–255) nach UDINT (0–4294967295) erfolgt verlustfrei, da der gesamte USINT-Wertebereich in den UDINT-Bereich abbildbar ist.

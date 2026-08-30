@@ -51,6 +51,8 @@ The entire process is atomic within an event cycle: event in, data conversion, e
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block internally uses the IEC 61131 conversion function `F_SINT_TO_UINT`, which is derived from the `iec61131::conversion` library.
 - The adapters are designed as **unidirectional** types (AS for input, AUI for output), which clearly defines the data flow direction and avoids misunderstandings.
 - There are no internal states or timing behaviors – the conversion is purely combinatorial, controlled by the event.

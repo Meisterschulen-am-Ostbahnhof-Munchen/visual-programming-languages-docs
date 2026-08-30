@@ -52,6 +52,8 @@ No further processing (filtering, limiting, delaying) takes place.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block:** The conversion is implemented via a simple wire-through in the FB network – no state machine, no proprietary algorithms.
 - **Implicit Type Conversion:** DINT → LREAL is a lossless conversion (LREAL offers 64-bit accuracy).
 - **Unidirectional:** Data flows exclusively from the socket to the plug.

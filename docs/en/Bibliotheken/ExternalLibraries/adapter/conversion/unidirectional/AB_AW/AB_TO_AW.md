@@ -44,6 +44,8 @@ Since this is a simple pass-through, no data conversion in the sense of a value 
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - The function block is implemented as a **composite function block**, meaning its behavior is entirely defined by the internal network (FBNetwork).
 - The conversion is unidirectional: only from the AB adapter to the AW adapter.
 - The connection is established at the event and data level without intermediate storage or synchronization.

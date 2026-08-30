@@ -55,6 +55,8 @@ Der gesamte Vorgang ist ereignisgesteuert und erfolgt ohne jegliche Verzögerung
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑Struktur**: Der Baustein ist als Netzwerk aus einem einzigen Funktionsbaustein (`F_ULINT_TO_DWORD`) realisiert. Alle Verbindungen sind fest verdrahtet.
 - **Paket‑Import**: Die verwendete Konvertierungsfunktion stammt aus dem Paket `iec61131::conversion`. Der Baustein ist im Paket `adapter::conversion::unidirectional` organisiert.
 - **Keine Zustandshaltung**: Der Baustein ist rein kombinatorisch – jedes Eingangsereignis erzeugt sofort ein Ausgangsereignis mit dem umgewandelten Wert.

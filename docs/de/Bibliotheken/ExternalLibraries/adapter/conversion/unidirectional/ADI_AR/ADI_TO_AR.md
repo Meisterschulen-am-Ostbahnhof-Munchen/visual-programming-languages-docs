@@ -46,6 +46,8 @@ Der gesamte Vorgang erfolgt synchron und ohne Zwischenspeicherung – jede erfol
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Typkonvertierung nach IEC 61131-3**: Der interne Baustein `F_DINT_TO_REAL` garantiert eine standardkonforme Umwandlung von 32-Bit-Ganzzahlen in Gleitkommazahlen (einfache Genauigkeit).
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt. Eine Rückwärtskommunikation ist nicht vorgesehen, was die Implementierung vereinfacht und den Datenfluss eindeutig festlegt.
 - **Composite-Struktur**: Der Baustein besteht aus einem Netzwerk, das vollständig im FB selbst gekapselt ist. Er eignet sich daher besonders gut für modulare, wiederverwendbare Schnittstellen.

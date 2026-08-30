@@ -40,6 +40,8 @@ The function block forwards the event E1 from the AS_IN socket directly to the A
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The type conversion from SINT to INT is performed automatically by the 4diac runtime environment without requiring any additional code blocks.
 - The function block is implemented as a **Composite FB** and does not contain its own ECC (Execution Control Chart).
 - It is located in the package `adapter::conversion::unidirectional`, which indicates unidirectional adapter conversion.

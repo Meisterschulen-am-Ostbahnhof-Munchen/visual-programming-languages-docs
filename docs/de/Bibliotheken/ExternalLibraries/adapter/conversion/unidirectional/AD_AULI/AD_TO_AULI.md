@@ -32,6 +32,8 @@ Der Baustein nimmt ein DWORD über den AD_IN-Adapter entgegen. Ein Ereignis am E
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - Der Baustein ist als Composite realisiert und nutzt die Bibliothek `iec61131::conversion::F_DWORD_TO_ULINT`.
 - Es werden keine direkten Ereignis- oder Dateneingänge/-ausgänge verwendet; die gesamte Kommunikation erfolgt ausschließlich über Adapter.
 - Die Konvertierung erfolgt nach IEC 61499-Ereignissteuerung: Das Ausgangsereignis wird erst nach Abschluss der Konvertierung gesendet.

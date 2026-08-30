@@ -56,6 +56,8 @@ Die gesamte Wandlung erfolgt **ereignisgesteuert** und ohne eigene Zustandslogik
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Lizenz**: Der FB wird unter der **Eclipse Public License 2.0** bereitgestellt (siehe Copyright‑Hinweis).
 - **Standardkonformität**: Der intern verwendete Konvertierungsbaustein `F_LREAL_TO_ULINT` entspricht der IEC‑61131‑3‑Norm.
 - **Keine Zustandsmaschine**: Als Composite FB besitzt der Baustein keine eigene Zustandslogik – die Konvertierung ist rein kombinatorisch.

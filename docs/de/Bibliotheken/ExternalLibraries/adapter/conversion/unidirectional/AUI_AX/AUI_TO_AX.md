@@ -51,6 +51,8 @@ Somit gilt:
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Lizenz:** Eclipse Public License 2.0 (EPL-2.0)  
 - **Autor:** Franz Höpfinger, HR Agrartechnik GmbH  
 - **Paket:** `adapter::conversion::unidirectional`  

@@ -44,6 +44,8 @@ The function block has no direct event or data inputs/outputs at the FB level. A
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block** – It contains an internal instance of **F_ULINT_TO_USINT** from the IEC 61131 library.
 - **Adapter-Based Communication** – No direct data/events at the top-level function block; input/output is handled exclusively via the supplied adapters (AULI / AUS).
 - **Data loss possible** – Since the USINT data type only comprises 8 bits, values > 255 are lost (truncated or wrapped around, depending on the converter implementation).

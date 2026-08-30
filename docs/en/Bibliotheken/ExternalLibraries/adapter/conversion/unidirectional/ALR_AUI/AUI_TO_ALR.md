@@ -48,6 +48,8 @@ The FB AUI_TO_ALR functions purely as a coupling point. Events and data are forw
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Type:** The FB does not have its own Execution Control Chart (ECC), but consists solely of a network connection between its two adapters.
 - **Direct Pass-Through:** No internal logic, delays, or state changes – the function block is purely passive.
 - **Adapter-Based:** The adapters used are defined as unidirectional interfaces, each carrying one event and one data value.

@@ -35,6 +35,8 @@ The module is implemented as a composite and internally uses the IEC 61131 funct
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - The conversion follows the IEC 61131 function `WORD_TO_SINT`. An overflow occurs if the incoming WORD value is outside the valid SINT range (-128 … 127) – this must be taken into account in the application.
 - The function block operates purely event-driven: Conversion only occurs when an event is present at the input.
 - The adapters are unidirectional; conversion back from SINT to WORD is not supported.

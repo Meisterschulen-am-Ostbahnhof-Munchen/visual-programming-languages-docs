@@ -45,6 +45,8 @@ The function block internally uses an **F_NE** block (comparison for inequality)
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - The function block (FB) is implemented as a **Composite FB**, meaning its logic is represented by an internal network of standard function blocks.
 - It uses the **F_NE** comparison block, which is from the **iec61131::comparison** library.
 

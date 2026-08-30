@@ -39,6 +39,8 @@ Sobald am Socket **AR_IN.E1** ein Ereignis eintrifft, wird der Wert von **AR_IN.
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der FB ist vollständig ereignisgesteuert; er besitzt keine eigene Zustandsmaschine.
 - Die Konvertierung erfolgt laut IEC‑61131‑Standard: REAL wird auf INT abgebildet (Abschneiden der Nachkommastellen, entsprechend einer Typumwandlung).
 - Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt, was eine klare Trennung von anderen Konvertierungsbausteinen erlaubt.

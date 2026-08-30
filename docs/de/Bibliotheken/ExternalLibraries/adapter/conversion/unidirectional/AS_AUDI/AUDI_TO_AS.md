@@ -46,6 +46,8 @@ Der interne Ablauf ist rein kausal und benötigt keine eigenen Zustände oder Ti
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Schnittstelle**: Der FB kommuniziert ausschließlich über spezielle Adapter, was eine lose Kopplung und Wiederverwendbarkeit in unterschiedlichen Umgebungen ermöglicht.
 - **Datenverlust möglich**: Da `SINT` nur 8 Bit umfasst, gehen bei einem `UDINT`-Eingangswert über 127 Informationen verloren. Die genaue Abbildung (z. B. Beschneidung oder modulare Reduktion) hängt von der internen Konvertierungsfunktion ab.
 - **Keine Eigenlogik**: Der Baustein besteht vollständig aus der Verschaltung des vorhandenen Konvertierungs-FBs und zweier Adapter – ein reiner Kompositionstyp.

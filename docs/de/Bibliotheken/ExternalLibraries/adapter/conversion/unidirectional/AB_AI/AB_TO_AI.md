@@ -52,6 +52,8 @@ Die Konvertierung erfolgt ohne Wertebereichsverlust: BYTE (0…255) wird direkt 
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Composite-FB:** Die Logik wird vollständig durch ein internes Netzwerk aus einem einzigen Konvertierungsbaustein realisiert.
 - **Wiederverwendbar:** Der Baustein kann in Projekte eingebunden werden, die eine unidirektionale Adapter-Konvertierung benötigen.
 - **Lizenz:** Der Baustein und die zugehörigen Materialien stehen unter der **Eclipse Public License 2.0**.

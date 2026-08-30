@@ -48,6 +48,8 @@ Der gesamte Ablauf erfolgt damit synchron: Ein Impuls am WORD-Adapter führt zu 
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Reine Kopplung:** Der Baustein enthält keine eigene Logik, sondern verbindet lediglich die Adapter-Schnittstellen mit einem existierenden Konvertierungsbaustein.
 - **Verwendung von IEC 61131-Standardbausteinen:** Die eigentliche Konvertierung erfolgt durch `F_WORD_TO_DINT`, der eine definierte und normierte Umrechnung bietet.
 - **Unidirektionale Adapter:** Sowohl `AW_IN` als auch `ADI_OUT` sind als unidirektionale Adapter ausgelegt, d. h. sie transportieren Ereignis und Daten nur in eine Richtung.

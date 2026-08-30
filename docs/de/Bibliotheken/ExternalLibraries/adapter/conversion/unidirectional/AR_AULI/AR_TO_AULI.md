@@ -44,6 +44,8 @@ Die Ereignis- und Datenverbindungen sind direkt und ohne zusätzliche Logik verd
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Unidirektionalität:** Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt. Es erfolgt keine Rückmeldung oder Bestätigung vom Ausgang zum Eingang.
 - **Verwendeter Konverter:** Der eingebettete FB **F_REAL_TO_ULINT** implementiert die standardisierte IEC‑61131‑Konvertierung. Rundungs- und Überlaufverhalten entsprechen den IEC‑Normvorgaben.
 - **Ereignisgesteuerte Ausführung:** Die Konvertierung wird nur bei einem Ereignis am Eingang durchgeführt; ohne Ereignis bleibt der Ausgang unverändert.

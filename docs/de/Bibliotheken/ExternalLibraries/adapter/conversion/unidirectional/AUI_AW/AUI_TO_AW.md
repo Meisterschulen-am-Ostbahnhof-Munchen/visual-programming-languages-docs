@@ -49,6 +49,8 @@ Das Zusammenspiel von Ereignis- und Datenfluss sorgt für eine sichere und deter
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑Aufbau:** Der Baustein kapselt die komplette Umwandlungslogik in einem einzigen Funktionsblock, sodass in der Anwendung keine weiteren Konvertierungsschritte nötig sind.
 - **Typkonvertierung:** Die Konvertierung erfolgt mittels des standardisierten IEC‑61131‑Bausteins `F_UINT_TO_WORD`. UINT und WORD sind bitkompatibel, sodass keine Datenverluste auftreten.
 - **Adapter‑Schnittstelle:** Durch die Nutzung von Adaptern wird eine lose Kopplung der Komponenten erreicht. Der Baustein kann direkt in Adapter‑basierte Netzwerke eingefügt werden.

@@ -45,6 +45,8 @@ Type conversion is performed according to the IEC 61131 definition of `F_USINT_T
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The conversion logic is encapsulated and reusable.
 - **Adapter-Based**: Input/output is exclusively via adapters (`AUS` and `ALI`), which facilitates integration into adapter-oriented architectures.
 - **Unidirectional**: The function block supports only one data flow direction (OFF → ALI).

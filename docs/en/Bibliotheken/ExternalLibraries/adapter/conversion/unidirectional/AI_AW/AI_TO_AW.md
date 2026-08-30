@@ -42,6 +42,8 @@ Thus, the entire adapter conversion is controlled by a single event, and the dat
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Block**: The logic is implemented by an internal sub-block, allowing for a clear separation of conversion logic and interface adapters.
 - **Reusability**: The block is based on the standard block `iec61131::conversion::F_INT_TO_WORD` and can therefore be used in any IEC 61499-compliant environment.
 - **License**: The block is released under the Eclipse Public License 2.0 (EPL-2.0).

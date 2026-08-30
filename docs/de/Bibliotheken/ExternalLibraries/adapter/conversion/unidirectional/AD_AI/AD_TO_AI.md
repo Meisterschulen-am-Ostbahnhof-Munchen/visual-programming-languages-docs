@@ -51,6 +51,8 @@ Somit wird nach jedem eingehenden Ereignis am Socket automatisch ein konvertiert
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Komposition:** Der FB ist ein reiner Composite‑Baustein – er enthält keine eigene Logik, sondern delegiert die Umwandlung an den Standardbaustein `F_DWORD_TO_INT` aus der IEC‑61131‑Bibliothek.
 - **Datentypen:** DWORD ist ein 32‑Bit‑Wert, INT dagegen ein 16‑Bit‑Integer (vorzeichenbehaftet). Bei der Konvertierung können Datenverluste auftreten, wenn der DWORD‑Wert außerhalb des INT‑Bereichs (−32768 … 32767) liegt oder nicht in diesen Bereich passt. Der Anwender muss dies bei der Verwendung beachten.
 - **Adapter‑Kopplung:** Die Verbindung zwischen Socket und Plug erfolgt ausschließlich über die inneren Ereignis‑ und Datenflüsse. Die Adapter selbst sind vom Typ `unidirectional`, d. h. sie übertragen Daten nur in eine Richtung.

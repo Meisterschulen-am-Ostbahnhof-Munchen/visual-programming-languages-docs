@@ -43,6 +43,8 @@ The event and data connections are wired directly without additional logic, so t
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Unidirectionality:** Both the input and output adapters are unidirectional. There is no feedback or acknowledgment from the output to the input.
 - **Converter Used:** The embedded function block **F_REAL_TO_ULINT** implements the standardized IEC 61131 conversion. Rounding and overflow behavior comply with IEC standards.
 - **Event-Driven Execution:** The conversion is only performed when an event occurs at the input; without an event, the output remains unchanged.

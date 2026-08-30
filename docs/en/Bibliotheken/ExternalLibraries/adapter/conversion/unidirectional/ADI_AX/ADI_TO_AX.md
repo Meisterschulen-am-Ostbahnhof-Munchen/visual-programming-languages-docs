@@ -54,6 +54,8 @@ Thus, the function block implements a simple threshold logic: Any non-zero DINT 
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Adapter Coupling:** The function block is designed as a composite block that connects two unidirectional adapters. It can therefore be seamlessly integrated into an adapter-based communication architecture.
 - **No Internal States:** Since the function block has no internal state variables or timers, its behavior is purely combinatorial and deterministic.
 - **Direct Impedance:** The function block used, `F_NE` from the IEC 61131 library, is high-performance and does not require dynamic memory management.

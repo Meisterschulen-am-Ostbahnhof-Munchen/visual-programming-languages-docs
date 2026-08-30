@@ -48,6 +48,8 @@ Die gesamte Übersetzung erfolgt ereignisgesteuert: Ein eingehendes Ereignis lö
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - Der Baustein ist vollständig als Composite realisiert und benötigt keine eigene Laufzeitlogik.
 - Der interne Konverter `F_LINT_TO_DWORD` ist ein IEC‑61131‑3-Baustein, der eine bitgenaue Konvertierung eines 64‑Bit‑Ganzzahlwerts (LINT) in einen 32‑Bit‑Doppelwortwert (DWORD) vornimmt.
 - Die Adapter sind als unidirektional definiert, d. h. die Daten fließen ausschließlich vom Eingangs‑ zum Ausgangsadapter.

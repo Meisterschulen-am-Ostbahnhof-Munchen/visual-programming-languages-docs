@@ -55,6 +55,8 @@ Der gesamte Vorgang ist **ereignisgesteuert** und erfolgt innerhalb eines einzig
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Unidirektionaler Datenfluss**: Der FB konvertiert ausschließlich von AUDI (UDINT) zu AW (WORD); eine Rückwärtskonvertierung ist nicht vorgesehen.
 - **Composite-Architektur**: Die interne Logik ist vollständig durch einen einzelnen Standard-Konvertierungsbaustein realisiert, wodurch der FB leicht nachvollziehbar und wartbar ist.
 - **Verwendung von IEC 61131-Bibliotheken**: Der Baustein `F_UDINT_TO_WORD` stammt aus der `iec61131::conversion`-Bibliothek, was eine hohe Portabilität und Standardkonformität gewährleistet.

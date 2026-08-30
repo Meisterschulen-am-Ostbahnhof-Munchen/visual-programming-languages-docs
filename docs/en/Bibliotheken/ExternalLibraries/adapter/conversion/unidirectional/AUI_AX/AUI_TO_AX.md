@@ -50,6 +50,8 @@ Therefore:
 
 ## Technical Specifications
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **License:** Eclipse Public License 2.0 (EPL-2.0)
 - **Author:** Franz Höpfinger, HR Agrartechnik GmbH
 - **Package:** `adapter::conversion::unidirectional`

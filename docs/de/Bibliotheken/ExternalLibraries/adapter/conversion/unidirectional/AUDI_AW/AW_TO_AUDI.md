@@ -50,6 +50,8 @@ Datenfluss und Ereignissteuerung sind synchron: Jedes eingehende Ereignis erzeug
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Composite‑FB**: Der Baustein ist ausschließlich aus einem internen Netzwerk zusammengesetzt und besitzt keine eigene Zustandslogik.
 - **Adapter‑Kapselung**: Die gesamte Kommunikation erfolgt über die standardisierten unidirektionalen Adapter `AW` und `AUDI`. Dadurch kann der FB in beliebige Systeme integriert werden, die diese Adapter‑Schnittstellen unterstützen.
 - **Wiederverwendung**: Die intern verwendete Konvertierungsfunktion `F_WORD_TO_UDINT` ist Teil der IEC‑61131‑Bibliothek und gewährleistet eine standardkonforme Typumwandlung.

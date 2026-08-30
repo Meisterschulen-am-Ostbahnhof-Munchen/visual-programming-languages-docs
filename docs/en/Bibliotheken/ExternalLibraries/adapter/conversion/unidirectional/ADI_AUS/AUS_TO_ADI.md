@@ -44,6 +44,8 @@ All logic is represented as data flow within the internal function block network
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The block uses the IEC 61131 block `F_USINT_TO_DINT` (type conversion of unsigned 8-bit to signed 32-bit integer).
 - It is a pure **composite block** – its behavior is entirely defined by the internal function block network.
 - The adapters are designed to be **unidirectional**: data flows only from the socket to the plug.

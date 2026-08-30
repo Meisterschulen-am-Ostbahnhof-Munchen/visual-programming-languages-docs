@@ -49,6 +49,8 @@ Somit entsteht eine synchronisierte, ereignisgesteuerte Umwandlung: Jeder Eingan
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Die Implementierung nutzt einen internen Standard-FB aus der IEC 61131-Bibliothek, was Wartbarkeit und Wiederverwendung fördert.
 - **Unidirektionalität**: Die Adapter sind als unidirektional deklariert, d.h. die Daten fließen nur in eine Richtung (ALR → ADI).
 - **Paketstruktur**: Der Baustein ist im Paket `adapter::conversion::unidirectional` organisiert, was eine klare Einordnung in eine Bibliothek ermöglicht.

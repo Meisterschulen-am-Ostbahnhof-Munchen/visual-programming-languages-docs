@@ -42,6 +42,8 @@ Der FB besitzt keine direkten Daten-Ausgänge. Die konvertierten UDINT-Daten wer
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Composite-Architektur**: Der Baustein besteht ausschließlich aus der internen Verwendung des Funktionsblocks `F_LWORD_TO_UDINT` und den Adaptern. Es ist keine eigene Zustandslogik oder zusätzliche Steuerung vorhanden.
 - **Unidirektionale Adapter**: Sowohl `AL_IN` als auch `AUDI_OUT` sind unidirektionale Adapter (Richtung von Eingang zu Ausgang).
 - **IEC-61131-3-Konformität**: Die Konvertierung nutzt eine standardisierte IEC-61131-3-Funktion, was die Wiederverwendbarkeit und Austauschbarkeit erhöht.

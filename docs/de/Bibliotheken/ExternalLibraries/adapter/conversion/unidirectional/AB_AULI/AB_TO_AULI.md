@@ -40,6 +40,8 @@ Der FB wartet auf ein Ereignis am Eingangsadapter `AB_IN`. Sobald das Ereignis e
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - Der Baustein implementiert keine eigenen Zustände oder Algorithmen – er ist eine reine Verschaltung eines Standard-Konvertierungs-FBs.
 - Die Konvertierung erfolgt nach den Regeln der IEC 61131-3: Der BYTE-Wert wird als 8‑Bit-Darstellung eines ULINT interpretiert und in eine vorzeichenlose 64‑Bit-Ganzzahl umgewandelt.
 - Die Adapter basieren auf einem unidirektionalen Kommunikationsmuster, d. h. Daten und Ereignisse fließen nur in eine Richtung (vom Socket zum Plug).

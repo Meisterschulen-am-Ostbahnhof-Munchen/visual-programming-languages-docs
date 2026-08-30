@@ -46,6 +46,8 @@ Somit wird jeder eingehende INT-Wert durch ein Ereignis synchron in einen BYTE-W
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite FB:** Der Baustein kapselt die Logik in einem Netzwerk aus einem einzelnen Konvertierungs-FB. Er ist selbst kein elementarer Baustein, sondern nutzt die Wiederverwendung von `F_INT_TO_BYTE`.
 - **Adapterbasierte Schnittstelle:** Ereignisse und Daten werden ausschließlich über unidirektionale Adapter übertragen, wodurch eine lose Kopplung zwischen Quell- und Zielkomponenten erreicht wird.
 - **Typkonvertierung:** Die eigentliche Umwandlung `INT -> BYTE` folgt der IEC 61131-3 Konvention (z.B. Wertebereich <0,255>; bei Überschreitung erfolgt ein Overflow). Dies ist abhängig von der Implementierung des verwendeten `F_INT_TO_BYTE`-Bausteins.

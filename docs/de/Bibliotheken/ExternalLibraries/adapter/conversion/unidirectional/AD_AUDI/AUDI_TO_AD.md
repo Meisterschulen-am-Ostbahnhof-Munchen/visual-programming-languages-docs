@@ -21,6 +21,8 @@ Sobald am `AUDI_IN` ein Ereignis (`E1`) zusammen mit Daten (`D1`) eintrifft, wir
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 ✔ **Direkte Adapter-zu-Adapter Kopplung**.
 ✔ **Normgerechte Wandlung** durch Verwendung von `F_UDINT_TO_DWORD`.
 ✔ **Ereignisgesteuert**: Jede Aktualisierung am Eingang löst sofort eine Aktualisierung am Ausgang aus.

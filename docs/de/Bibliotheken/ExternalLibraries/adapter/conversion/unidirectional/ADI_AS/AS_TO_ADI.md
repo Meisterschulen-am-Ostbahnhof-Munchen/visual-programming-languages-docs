@@ -43,6 +43,8 @@ Da die Datentypen unterschiedlich sind (SINT → DINT), erfolgt eine implizite W
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Der FB besitzt kein eigenes Verhaltensmodell (ECC), sondern nur ein internes FBNetzwerk, das die Adapter verbindet.
 - **Typkonvertierung**: Die Konvertierung von SINT auf DINT erfolgt systemseitig durch die Laufzeitumgebung (Typkompatibilität bei Datenverbindungen).
 - **Paket**: Der FB ist im Paket `adapter::conversion::unidirectional` eingeordnet.

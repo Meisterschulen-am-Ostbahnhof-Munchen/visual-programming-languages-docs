@@ -45,6 +45,8 @@ The module is purely causal – it reacts to an incoming event and, after conver
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-based communication**: Instead of classic input/output pins, the interfaces are implemented via adapters (`AI` and `AUI`). This enables loose coupling in modular systems.
 - **Unidirectional data flow**: Both adapters are unidirectional, meaning they only transport data and events in one direction (input or output).
 - **Packaging**: The module is located in the package `adapter::conversion::unidirectional`, which indicates its role as a converter between adapter types.

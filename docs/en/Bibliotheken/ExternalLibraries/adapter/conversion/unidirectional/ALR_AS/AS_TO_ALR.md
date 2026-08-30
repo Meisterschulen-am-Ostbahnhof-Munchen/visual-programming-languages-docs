@@ -52,6 +52,8 @@ The function block has no state machine (ECC) and no internal algorithms; its en
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure**: The function block consists exclusively of an internal network (FBNetwork) with direct event and data connections between the adapters.
 - **Implicit Type Conversion**: Data conversion from SINT to LREAL is handled by the IEC 61499 runtime environment. Explicit type conversion is not required.
 - **Packaging**: The function block is organized in the package `adapter::conversion::unidirectional`, providing a clean separation between adapter and converter logic.

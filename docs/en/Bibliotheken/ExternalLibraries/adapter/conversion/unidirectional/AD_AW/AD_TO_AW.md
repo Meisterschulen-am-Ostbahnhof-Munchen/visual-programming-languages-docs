@@ -46,6 +46,8 @@ The entire process is event-driven and synchronous.
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Encapsulation**: The function block uses the standardized IEC 61131 function `F_DWORD_TO_WORD`, which ensures clean and portable conversion.
 - **Adapter-based**: Inputs and outputs are implemented exclusively via adapters – there are no separate event/data ports at the block level.
 - **Unidirectional**: The adapters used support only one direction of data flow, which simplifies handling in simple conversion chains.

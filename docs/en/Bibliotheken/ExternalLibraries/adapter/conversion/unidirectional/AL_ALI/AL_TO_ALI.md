@@ -40,6 +40,8 @@ The function block `AL_TO_ALI` is a composite function block (FB) for converting
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Type Conversion:** This function block converts an LWORD (64-bit sequence) into a LINT (64-bit signed integer). The conversion is bit-for-bit, meaning the binary representation is interpreted as a signed integer.
 - **Composition:** This is a composite function block that does not contain its own logic but relies on the standardized conversion function block `iec61131::conversion::F_LWORD_TO_LINT`.
 - **Adapter-Based Interface:** Input and output are exclusively via unidirectional adapters (`AL` and `ALI`), enabling a modular and type-checked connection in the 4diac IDE.

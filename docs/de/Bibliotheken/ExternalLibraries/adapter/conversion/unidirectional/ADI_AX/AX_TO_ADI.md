@@ -49,6 +49,8 @@ Die Ereigniskette ist damit vollständig durchgeschliffen:
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Reine Datenkonvertierung:** Der Baustein führt keine Zustandslogik oder zeitliche Verzögerung durch – jede Ereignisaktivierung am Eingang erzeugt sofort eine Ausgabe.
 - **Verwendung von IEC 61131-Bibliotheken:** Die Konvertierung basiert auf dem standardisierten Funktionsbaustein `F_BOOL_TO_DINT` aus der IEC 61131-Konvertierungsbibliothek.
 - **Unidirektionale Adapter:** Sowohl AX als auch ADI sind unidirektionale Adapter, d.h. sie unterstützen nur eine Richtung (hier Eingang bzw. Ausgang). Dies vereinfacht die Datenflusssteuerung.

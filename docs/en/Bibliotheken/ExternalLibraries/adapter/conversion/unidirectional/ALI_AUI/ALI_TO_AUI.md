@@ -44,6 +44,8 @@ Internally, this function block connects socket `ALI_IN` to the input of the con
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Data Type Conversion:** The internal module converts a 64-bit signed integer (LINT) to a 16-bit unsigned integer (UINT). Since the value range of UINT (0…65535) is significantly smaller than that of LINT, values outside this range result in an overflow/loss.
 - **Dependency:** The module requires the library `iec61131::conversion` (specifically the module `F_LINT_TO_UINT`).
 - **Adapter-Free Interface:** All data exchange occurs exclusively via adapters, enabling modular and reusable integration into larger networks.

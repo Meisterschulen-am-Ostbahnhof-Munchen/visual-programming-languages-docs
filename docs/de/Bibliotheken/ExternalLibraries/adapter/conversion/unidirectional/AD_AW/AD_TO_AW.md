@@ -47,6 +47,8 @@ Die gesamte Verarbeitung erfolgt ereignisgesteuert und synchron.
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Kapselung**: Der FB verwendet die standardisierte IEC‑61131‑Funktion `F_DWORD_TO_WORD`, die eine saubere und portierbare Konvertierung gewährleistet.
 - **Adapter‑basiert**: Ein‑ und Ausgänge sind ausschließlich über Adapter realisiert – es gibt keine separaten Event‑/Datenports auf Bausteinebene.
 - **Unidirektionalität**: Die verwendeten Adapter unterstützen nur eine Datenflussrichtung, was die Handhabung in einfachen Konvertierungsketten erleichtert.

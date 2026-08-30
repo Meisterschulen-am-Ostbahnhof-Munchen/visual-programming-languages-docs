@@ -45,6 +45,8 @@ Event and data flows are coupled entirely via the internal network; the user onl
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Reusable Converter**: The block uses the standardized **F_LINT_TO_USINT** (iec61131::conversion), so the conversion logic does not need to be reimplemented.
 - **Adapter-Based**: The entire interface is implemented as a unidirectional adapter, simplifying exchange and reuse in larger systems.
 - **License**: The block is provided under the **Eclipse Public License 2.0** (EPL-2.0).

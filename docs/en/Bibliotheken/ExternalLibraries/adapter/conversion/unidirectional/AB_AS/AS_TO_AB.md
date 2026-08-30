@@ -55,6 +55,8 @@ The conversion strictly adheres to IEC 61131 semantics: The SINT value is mapped
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite FB**: The function block encapsulates the conversion logic and provides it as an adapter converter.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional – data flows in only one direction.
 - **No Internal State**: The FB behaves like a pure function; each activation produces the correct result regardless of the previous state.

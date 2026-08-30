@@ -51,6 +51,8 @@ Der Ablauf:
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑FB**: Die Funktionalität wird durch einen eingebetteten Baustein realisiert, sodass keine eigene Zustandsmaschine (ECC) erforderlich ist.
 - **Unidirektional**: Der Datenfluss erfolgt ausschließlich vom Eingangs- zum Ausgangsadapter; eine Rückkopplung ist nicht vorgesehen.
 - **Typkonvertierung**: Der Baustein verwendet den standardisierten IEC‑61131‑Baustein `F_INT_TO_DWORD` und gewährleistet damit Kompatibilität mit vielen Automatisierungssystemen.

@@ -43,6 +43,8 @@ Die Konvertierung von LINT (64-Bit signed) nach UDINT (32-Bit unsigned) erfolgt 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite Funktionsblock**: Der FB besteht aus einem internen Netzwerk mit einem einzigen Konvertierungsbaustein.
 - **Unidirektionaler Adapter-zu-Adapter-Konverter**: Die Daten fließen nur von ALI_IN nach AUDI_OUT.
 - **Keine Zustandslogik**: Der FB besitzt keinen internen Zustandsautomaten; die Konvertierung erfolgt bei jedem Ereignis deterministisch.

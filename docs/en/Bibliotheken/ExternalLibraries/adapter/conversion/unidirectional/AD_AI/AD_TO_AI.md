@@ -52,6 +52,8 @@ Thus, after each incoming event at the socket, a converted data value is automat
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Composition:** The FB is a pure composite function block – it contains no internal logic but delegates the conversion to the standard function block `F_DWORD_TO_INT` from the IEC 61131 library.
 - **Data Types:** DWORD is a 32-bit value, while INT is a 16-bit signed integer. Data loss can occur during conversion if the DWORD value is outside the INT range (−32768 … 32767) or does not fit within this range. The user must take this into account when using the function block.
 - **Adapter Coupling:** The connection between the socket and the plug is established exclusively via the internal event and data flows. The adapters themselves are of type `unidirectional`, i.e., They only transfer data in one direction.

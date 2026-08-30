@@ -54,6 +54,8 @@ Der Baustein arbeit ohne eigene Zustandslogik – er führt die Konvertierung pr
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑Bauweise:** Der Baustein besteht ausschließlich aus einem internen Netzwerk mit einem einzelnen Funktionsbaustein (`F_USINT_TO_DWORD`) sowie direkten Ereignis‑ und Datenverbindungen.
 - **Wiederverwendung:** Die Konvertierung nutzt die IEC‑61131‑3‑Standardfunktion `F_USINT_TO_DWORD`, die in der Bibliothek `iec61131::conversion` enthalten ist.
 - **Adapter‑Schnittstellen:** Die Schnittstellen sind als unidirektionale Adapter (`adapter::types::unidirectional::AUS` bzw. `AD`) realisiert. Jeder Adapter besteht aus genau einem Ereignis‑ und einem Datenkanal.

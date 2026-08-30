@@ -50,6 +50,8 @@ Die Kommunikation zwischen den Adaptern und dem Konvertierungsbaustein erfolgt a
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Unidirektionale Adapter** – Der Baustein verwendet ausschließlich unidirektionale Adapter (Socket für Eingang, Plug für Ausgang), die eine klare Datenflussrichtung vorgeben.
 - **Interne Konvertierung** – Die eigentliche Typumwandlung wird durch den Standardbaustein `F_DINT_TO_LWORD` aus der IEC‑61131‑Bibliothek realisiert, sodass keine eigene Implementierung notwendig ist.
 - **Lizenz** – Der Baustein ist unter der Eclipse Public License 2.0 (EPL‑2.0) lizenziert und kann frei verwendet, modifiziert und weitergegeben werden.

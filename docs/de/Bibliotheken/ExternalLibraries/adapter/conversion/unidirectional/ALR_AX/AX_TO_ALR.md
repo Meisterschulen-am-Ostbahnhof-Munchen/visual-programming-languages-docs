@@ -56,6 +56,8 @@ Die Konvertierung erfolgt ereignisgesteuert: Jedes ankommende Ereignis bewirkt g
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapter‑Schnittstelle**: Der FB verwendet ausschließlich unidirektionale Adapter (Socket/Plug), wodurch er sich nahtlos in adapterbasierte Architekturen einfügt.
 - **Interner Einsatz von F_SEL**: Die IEC‑61131‑Standardfunktion garantiert ein deterministisches und portables Verhalten.
 - **Feste Schwellwerte**: Die Ausgangswerte sind auf `0.0` und `1.0` festgelegt. Eine Anpassung erfordert eine Modifikation des inneren Netzwerks.

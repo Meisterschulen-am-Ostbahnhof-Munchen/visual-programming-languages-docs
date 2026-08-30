@@ -55,6 +55,8 @@ Somit wird ein beliebiger LINT-Wert (auch negative Zahlen) in ein binäres Signa
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Reine Logik-Konvertierung**: Es findet keine Skalierung oder Schwellwertbildung statt. Jeder von Null verschiedene Wert wird als `TRUE` interpretiert.
 - **Nutzung von Composite-FB**: Der Baustein kapselt die Adapter-Konvertierung in einer wiederverwendbaren Einheit und erlaubt einfaches Einbinden in größere Netzwerke.
 - **Ereignisgesteuert**: Die Verarbeitung erfolgt nur bei einem eingehenden Ereignis (`ALI_IN.E1`). Der Ausgang wird nur nach einer erfolgreichen Verarbeitung aktualisiert.

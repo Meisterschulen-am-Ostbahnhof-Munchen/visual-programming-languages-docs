@@ -41,6 +41,8 @@ The conversion from LINT (64-bit signed) to UDINT (32-bit unsigned) is unsigned 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block**: The function block consists of an internal network with a single conversion block.
 - **Unidirectional Adapter-to-Adapter Converter**: Data flows only from ALI_IN to AUDI_OUT.
 - **No State Logic**: The function block has no internal state machine; the conversion occurs deterministically with each event.

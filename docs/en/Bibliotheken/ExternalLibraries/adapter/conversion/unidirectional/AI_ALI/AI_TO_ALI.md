@@ -45,6 +45,8 @@ The function block operates as a simple pass-through: The event and data signal 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - This is a composite function block (FB) that does not implement any functionality of its own, but simply connects two adapters.
 - The conversion from INT to LINT is lossless, as LINT (64-bit) covers the entire value range of INT (32-bit).
 - The FB is designed for use in unidirectional communication paths where data type adaptation between adapter interfaces is required.

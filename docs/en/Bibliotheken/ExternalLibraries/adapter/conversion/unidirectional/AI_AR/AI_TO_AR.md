@@ -48,6 +48,8 @@ The block itself does not perform any explicit type conversion; the conversion f
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The block does not contain its own event or data interface; all its communication takes place via the adapters.
 - There is no internal state machine (ECC) – the block operates purely event-driven through the connections.
 - The use of adapters achieves loose coupling between the inputs and outputs, increasing the reusability and interchangeability of the interfaces.

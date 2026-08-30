@@ -56,6 +56,8 @@ Der FB enthält ein internes Netzwerk mit einem einzigen Konvertierungsbaustein 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-FB**: Der Baustein selbst besitzt keine eigene Logik, sondern nutzt einen standardisierten IEC 61131-Konverter.
 - **Adapter-Konvertierung**: Ermöglicht die Verbindung von Komponenten, die auf unterschiedlichen Adapterdefinitionen basieren, ohne dass der Anwender die Konvertierung manuell vornehmen muss.
 - **Unidirektionale Datenfluss**: Die Konvertierung erfolgt nur in eine Richtung (ULINT → UDINT); eine Rückkonvertierung ist nicht integriert.

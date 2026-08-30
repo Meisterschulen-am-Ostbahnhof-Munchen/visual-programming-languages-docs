@@ -47,6 +47,8 @@ Der interne Ablauf ist in drei Schritte gegliedert:
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Verwendete Bibliothek:** Der Kern besteht aus dem IEC‑61131-Baustein `F_NE` (Ungleich-Vergleich). Dieser wird aus der Bibliothek `iec61131::comparison::F_NE` importiert.
 - **Kein eigener ECC:** Als Composite-FB besitzt `AUDI_TO_AX` keinen eigenen Ablaufzustand – die gesamte Logik ist rein datenflussgesteuert.
 - **Unidirektionale Adapter:** Sowohl der Eingangs- als auch der Ausgangsadapter sind als *unidirectional* ausgelegt, d.h. sie unterstützen nur einen festgelegten Daten- und Ereignisfluss von der Quelle zum Senke.

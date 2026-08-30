@@ -46,6 +46,8 @@ Der Baustein empfängt über den Socket `AUDI_IN` einen UDINT‑Wert zusammen mi
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der Baustein ist ein Composite‑FB und enthält keinen eigenen Algorithmus – die gesamte Logik wird an den eingebetteten `F_UDINT_TO_DINT` delegiert.
 - Die Konvertierung folgt der IEC‑61131‑3‑Definition von `UDINT_TO_DINT`, d. h. Werte außerhalb des DINT‑Bereichs (−2 147 483 648 … 2 147 483 647) werden auf den nächstliegenden gültigen Wert begrenzt (Clamping).
 - Die Ereignisweiterleitung erfolgt streng kausal: erst nach Abschluss der Konvertierung wird der Ausgangs‑Event aktiviert.

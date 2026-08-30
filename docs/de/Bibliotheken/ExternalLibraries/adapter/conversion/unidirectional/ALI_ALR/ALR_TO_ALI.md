@@ -54,6 +54,8 @@ Die Aufrufsteuerung erfolgt über die Ereignisverkettung (E1 → REQ → CNF →
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Struktur**: Der Baustein ist als Composite (Netzwerk) realisiert und nutzt intern den Standardbaustein `F_LREAL_TO_LINT` aus der IEC 61131-3-Bibliothek.
 - **Adapterkapselung**: Durch die Adaptertechnik können die konkreten LREAL- und LINT-Signale über standardisierte Schnittstellen (ALR, ALI) angebunden werden, was eine hohe Wiederverwendbarkeit und Austauschbarkeit ermöglicht.
 - **Lizenz**: Der Quelltext steht unter der Eclipse Public License 2.0 (EPL-2.0).

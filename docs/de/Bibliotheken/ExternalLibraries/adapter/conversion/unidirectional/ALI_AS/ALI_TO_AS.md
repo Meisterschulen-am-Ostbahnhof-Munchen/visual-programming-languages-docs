@@ -45,6 +45,8 @@ Die Wandlung entspricht der IEC‑61131‑Funktion `LINT_TO_SINT`. Dabei kommt e
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Struktur**: Der FB setzt sich ausschließlich aus einem einzigen Konvertierungsbaustein (`F_LINT_TO_SINT`) zusammen.  
 - **Unidirektionale Adapter**: Sowohl Eingangs‑ als auch Ausgangsschnittstelle sind als unidirektionale Adapter definiert – Daten fließen nur in eine Richtung.  
 - **Kein Zustandsautomat**: Aufgrund der einfachen Transformation wird auf einen internen Zustandsautomaten verzichtet; die Logik erschöpft sich in der Ereignis‑Daten‑Verkettung.

@@ -45,6 +45,8 @@ Der Funktionsblock arbeitet als reine Datenkonvertierungsschleife:
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - Es handelt sich um einen **Composite-Baustein**, der intern den Standard-Funktionsblock `iec61131::conversion::F_BYTE_TO_LINT` verwendet.
 - Die Konvertierung erfolgt **ereignisgesteuert** – jede Änderung am Eingang löst eine Verarbeitung aus.
 - Der Baustein ist für unidirektionale Adapter ausgelegt und unterstützt keine Rückwärtskonvertierung.

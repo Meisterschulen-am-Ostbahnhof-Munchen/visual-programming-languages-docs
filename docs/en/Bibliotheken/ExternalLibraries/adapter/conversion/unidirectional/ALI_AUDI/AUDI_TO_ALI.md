@@ -51,6 +51,8 @@ The entire processing is **event-driven** and takes place within a single execut
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block** – it contains no logic of its own but delegates the conversion entirely to the IEC 61131 block `F_UDINT_TO_LINT`.
 - **Adapter-oriented interface** – All inputs and outputs are handled via standardized unidirectional adapters (`AUDI` and `ALI`), enabling easy integration into existing adapter networks.
 - **License & Copyright** – This block is licensed under the **Eclipse Public License 2.0** and was developed by **HR Agrartechnik GmbH** (as of 2026).

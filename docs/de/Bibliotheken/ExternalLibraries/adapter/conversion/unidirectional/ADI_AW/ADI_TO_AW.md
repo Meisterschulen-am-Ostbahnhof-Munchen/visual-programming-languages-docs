@@ -59,6 +59,8 @@ Somit erfolgt die gesamte Konvertierung in einem strengen Ereignis-/Daten-Fluss 
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Adapterbasierte Kapselung:** Der FB nutzt ausschließlich Adapter für Ein- und Ausgabe, was eine modulare und wiederverwendbare Anbindung in 4diac-Projekten ermöglicht.
 - **Unidirektionale Konvertierung:** Es findet nur eine Datenwandlung vom Socket zum Plug statt; eine Rückwärtskonvertierung ist nicht vorgesehen.
 - **Verwendung von IEC 61131-Bibliotheken:** Die Kernfunktion `F_DINT_TO_WORD` stammt aus dem `iec61131::conversion`-Paket, sodass die Konvertierung standardkonform und performant ist.

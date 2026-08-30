@@ -47,6 +47,8 @@ The conversion is performed according to the IEC 61131-3 standard for the functi
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - The function block is implemented as a composite function block (FB) and does not contain its own state machines (ECCs). Its behavior is entirely determined by the integrated converter `F_UINT_TO_DWORD`.
 - The connection between the adapters and the internal converter is established via event and data connections.
 - The function block is designed for unidirectional data transfer – there is no reverse conversion from AD to AUI.

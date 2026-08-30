@@ -18,6 +18,8 @@ As soon as an event (`E1`) arrives at `AD_IN` along with data (`D1`), the DWORD 
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 ✔ **Direct adapter-to-adapter coupling**.
 
 ✔ **Standard-compliant conversion** through the use of `F_DWORD_TO_UDINT`.

@@ -51,6 +51,8 @@ The entire process is atomic within a single cycle – delays only occur due to 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Pure Adapter Coupling**: The block does not contain its own state logic or timing.
 - **Use of IEC 61131 Conversion**: The actual type conversion is performed by the standardized block `F_LINT_TO_INT`.
 - **Simple Composition**: All connections are direct and without intermediate logic.

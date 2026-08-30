@@ -45,6 +45,8 @@ Die Konvertierung gemäß IEC 61131-3 liefert standardmäßig das niederwertigst
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Unidirektionale Adapter**: Der Baustein arbeitet nur in einer Datenflussrichtung – vom Socket zum Plug.
 - **Integrierte Konvertierung**: Die eigentliche Umwandlung erfolgt durch den etablierten Baustein `F_WORD_TO_BYTE`, sodass keine eigene Logik implementiert werden muss.
 - **Datenverlust**: Da ein WORD (16 Bit) auf ein BYTE (8 Bit) abgebildet wird, gehen die oberen 8 Bit verloren. Dies muss bei der Anwendung berücksichtigt werden.

@@ -43,6 +43,8 @@ The conversion corresponds to the IEC 61131 function `LINT_TO_SINT`. For values 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure**: The function block consists exclusively of a single conversion block (`F_LINT_TO_SINT`).
 - **Unidirectional Adapters**: Both the input and output interfaces are defined as unidirectional adapters – data flows in only one direction.
 - **No State Machine**: Due to the simple transformation, an internal state machine is not used; the logic is limited to event-data chaining.

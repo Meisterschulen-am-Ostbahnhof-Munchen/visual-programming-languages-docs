@@ -21,6 +21,8 @@ Sobald am `AD_IN` ein Ereignis (`E1`) zusammen mit Daten (`D1`) eintrifft, wird 
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 ✔ **Direkte Adapter-zu-Adapter Kopplung**.
 ✔ **Normgerechte Wandlung** durch Verwendung von `F_DWORD_TO_UDINT`.
 ✔ **Ereignisgesteuert**: Jede Aktualisierung am Eingang löst sofort eine Aktualisierung am Ausgang aus.

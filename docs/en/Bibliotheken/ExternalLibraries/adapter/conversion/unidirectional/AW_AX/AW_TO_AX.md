@@ -50,6 +50,8 @@ This behavior is event-driven and follows the IEC 61499 execution semantics: An 
 -
 ## Technical Features
 
+- **Parity/LSB test** (odd value => TRUE), not a numeric value or full bit copy.
+
 - The function block is implemented as a **composite function block**, meaning its functionality is represented by an internal network consisting of a single **F_NE** function block.
 - It uses a **unidirectional adapter** (AW and AX) according to the adapter definition of the 4diac IDE.
 - The comparison logic is taken from the IEC 61131 library (`iec61131::comparison::F_NE`).

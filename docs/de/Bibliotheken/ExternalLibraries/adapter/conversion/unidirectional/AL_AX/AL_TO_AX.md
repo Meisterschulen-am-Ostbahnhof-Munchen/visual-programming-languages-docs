@@ -60,6 +60,8 @@ Somit wird bei jedem Ereignis am Eingang eine aktualisierte boolesche Ausgabe am
 
 ## Technische Besonderheiten
 
+- **Paritäts-/LSB-Test** (ungerader Wert ⇒ TRUE), kein Zahlenwert und keine vollständige Bit-Kopie.
+
 - **Typkonvertierung:** Der Baustein wandelt einen LWORD-Wert nicht bitweise, sondern als Ganzzahl in einen BOOL-Wert um. Jeder von Null verschiedene LWORD ergibt `TRUE`.
 - **Adapterbasiert:** Durch die Verwendung der standardisierten unidirektionalen Adapter (`AL` und `AX`) ist der Baustein in beliebigen 4diac-Netzwerken einsetzbar, die diese Adaptertypen unterstützen.
 - **Latenz:** Die Verarbeitung erfolgt synchron zum Eingangsereignis. Die Ausgabe wird im selben Ausführungszyklus aktualisiert.

@@ -47,6 +47,8 @@ Es findet eine synchrone 1:1‑Umsetzung statt – jede eingehende REAL‑Anford
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Wiederverwendbarkeit**: Der Baustein basiert auf dem Standard‑FB `F_REAL_TO_SINT` aus der IEC 61131‑Bibliothek. Dadurch ist die Konvertierungslogik normgerecht und auf vielen Plattformen verfügbar.
 - **Adapter‑Schnittstelle**: Die Verwendung von Adaptern erlaubt eine lose Kopplung zwischen Funktionsblöcken und erleichtert den Austausch oder die Erweiterung der Schnittstelle.
 - **Wertebereich**: Bei der Konvertierung von REAL (ca. ±3,4∙10³⁸) nach SINT (−128 … 127) kann es zu Wertebereichsüberschreitungen kommen. Der interne FB `F_REAL_TO_SINT` verhält sich dabei gemäß der IEC 61131‑Definition (Überlauf oder Verwendung des sättigenden Verhaltens). Der Anwender sollte die Eingangswerte entsprechend begrenzen.

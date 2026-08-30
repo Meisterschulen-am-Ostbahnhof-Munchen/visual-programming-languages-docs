@@ -49,6 +49,8 @@ Die gesamte Verarbeitung erfolgt ereignisgesteuert und ohne eigene Zustandslogik
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Die Logik wird ausschließlich durch die Verschaltung des standardisierten Konvertierungsbausteins `F_LINT_TO_LREAL` realisiert – kein eigener Algorithmus.
 - **Adapter-orientierte Schnittstelle**: Der FB kapselt die Konvertierung vollständig in die Adapter-Schnittstellen, sodass er in Umgebungen mit einheitlichen Adapter-Typen (unidirektional) eingesetzt werden kann.
 - **Kein Zustandsautomat**: Aufgrund der reinen Datenfluss-Struktur gibt es keinen internen Zustandsautomaten.

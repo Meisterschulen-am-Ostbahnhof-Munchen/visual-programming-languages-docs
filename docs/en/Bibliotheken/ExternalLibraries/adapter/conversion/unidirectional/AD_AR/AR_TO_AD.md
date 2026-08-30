@@ -48,6 +48,8 @@ The entire process occurs synchronously in a single step; that is, the FB is pur
 
 ## Technical Features
 
+- **Bit-reinterpretation**: extracts the IEEE754 bit pattern of the source value (intentional, e.g. for serialization), not its numeric value.
+
 - **Composite FB:** The logic is implemented exclusively through the combination of the internal `F_REAL_TO_DWORD` function block. There is no separate state machine or complex algorithms.
 - **Adapter Coupling:** The function block encapsulates the conversion at the adapter level, allowing it to be integrated into adapter-based architectures (e.g., distributed systems with 4diac) without additional modifications.
 - **IEC 61131-3 Compliance:** The actual conversion is performed by a standardized function block, which increases portability and standards compliance.

@@ -54,6 +54,8 @@ The function block operates according to the following scheme:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter Interface**: The function block uses only unidirectional adapters (socket/plug), allowing it to integrate seamlessly into adapter-based architectures.
 - **Internal Use of F_SEL**: The IEC 61131 standard function guarantees deterministic and portable behavior.
 - **Fixed Thresholds**: The output values are fixed at `0.0` and `1.0`. Adjusting these thresholds requires modifying the internal network.

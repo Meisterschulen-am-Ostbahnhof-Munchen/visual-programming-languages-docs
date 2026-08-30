@@ -63,6 +63,8 @@ All the logic is encapsulated in a composite function block, so the user only ne
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Function Block**: The function block consists of an internal network and does not have its own state machine (ECC). It performs the conversion strictly event-driven.
 - **Use of IEC 61131-3 standard function blocks**: Conversion is performed using the standardized function block `F_DINT_TO_BYTE`, ensuring portability and compliance with industry standards.
 - **Adapter-based input/output**: All data and events are routed via adapters – not individual ports. This simplifies integration with similar adapter interfaces in the 4diac environment.

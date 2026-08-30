@@ -40,6 +40,8 @@ The function block itself contains no internal logic or state machines – it fu
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Composite FB**: The implementation consists solely of wiring within the FB network, without any additional algorithms.
 - **Implicit Data Type Conversion**: The BOOL value is automatically converted to a DWORD value (bits 0-31: 0 or 1).
 - **Unidirectional Adapters**: Both the input and output use unidirectional adapters that support only one data and one event connection.

@@ -44,6 +44,8 @@ None.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The conversion uses an IEC 61131-3 standard function block (`F_UDINT_TO_REAL`), which is instantiated within the Composite FB.
 - The adapters are implemented as unidirectional interfaces, which enforces a clear data flow direction (from the AUDI to the AR adapter).
 - The Composite FB does not generate any state logic of its own, but delegates all processing to the internal conversion function block.

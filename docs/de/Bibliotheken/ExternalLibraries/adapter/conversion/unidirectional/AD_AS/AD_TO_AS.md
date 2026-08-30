@@ -55,6 +55,8 @@ Damit wird eine vollständige, unidirektionale Kopplung zwischen dem AD- und dem
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Wertebereichsverlust**: Die Konvertierung von DWORD (32 Bit, vorzeichenlos) zu SINT (8 Bit, vorzeichenbehaftet) kann zu Datenverlust führen. Es werden nur die unteren 8 Bit des DWORD verwendet; der Wertebereich von SINT liegt zwischen −128 und +127.
 - **Verwendete Bibliothek**: Der Baustein greift auf die IEC‑61131-Konvertierungsfunktion `F_DWORD_TO_SINT` zurück, die in der Paketgruppe `iec61131::conversion` definiert ist.
 - **Unidirektionaler Datenfluss**: Der Funktionsblock ermöglicht nur eine Datenrichtung (von AD zu AS) und besitzt keine Rückkopplung.

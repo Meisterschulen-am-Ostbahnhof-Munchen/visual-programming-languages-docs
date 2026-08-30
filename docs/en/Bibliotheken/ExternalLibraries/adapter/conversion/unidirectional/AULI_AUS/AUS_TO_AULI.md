@@ -38,6 +38,8 @@ This function block directly connects the elements of the incoming OFF adapter w
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block**: The function block does not contain its own ECC (Execution Control Chart) or state logic, but consists solely of an event and data connection.
 - **Implicit Type Conversion**: The conversion from USINT to ULINT is provided by the adapter definitions in the `adapter::types::unidirectional` library. Explicit type conversion in the function block (FB) is not required.
 - **Unidirectionality**: The FB only supports one direction of data flow (from AUS to AULI). Reverse conversion is not supported.

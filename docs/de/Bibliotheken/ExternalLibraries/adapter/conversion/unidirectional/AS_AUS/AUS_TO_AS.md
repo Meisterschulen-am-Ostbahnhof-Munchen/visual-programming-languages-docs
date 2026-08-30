@@ -59,6 +59,8 @@ Die Verbindungen im FBNetzwerk sind:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasiert:** Der Baustein fungiert als reiner Adapter-Konverter und kann nahtlos in bestehende adapterorientierte Systeme integriert werden.
 - **Composite-Struktur:** Die Umwandlung erfolgt durch einen internen, standardisierten IEC-61131-Konverter, was eine zuverlässige und zertifizierte Konvertierung gewährleistet.
 - **Unidirektionale Schnittstelle:** Die Daten- und Ereignisflüsse sind strikt von Eingang zu Ausgang gerichtet.

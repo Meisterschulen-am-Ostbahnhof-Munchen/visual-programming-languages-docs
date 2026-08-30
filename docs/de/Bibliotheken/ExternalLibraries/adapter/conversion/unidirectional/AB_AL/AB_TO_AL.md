@@ -48,6 +48,8 @@ Sobald am Socket-Adapter `AB_IN` ein Ereignis eintrifft, wird der zugehörige BY
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Reiner Kompositbaustein**: Kein Algorithmus, keine Zustandsmaschine – die Funktionalität ergibt sich ausschließlich aus der internen Verdrahtung.
 - **Unidirektionale Adapter**: Der Datenfluss ist nur von `AB_IN` zu `AL_OUT` möglich; eine Rückrichtung existiert nicht.
 - **Automatische Typkonvertierung**: Die 4diac-IDE führt die Umwandlung von BYTE nach LWORD implizit durch (Big-Endian-Erweiterung mit Nullen).

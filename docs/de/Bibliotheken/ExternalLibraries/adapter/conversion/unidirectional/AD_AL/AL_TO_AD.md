@@ -44,6 +44,8 @@ Die interne Netzwerkstruktur besteht aus:
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Standardkonformität**: Die Konvertierung erfolgt über den IEC 61131-konformen FB `F_LWORD_TO_DWORD`, der eine verlustfreie Umwandlung von 64-Bit zu 32-Bit (niedrigwertige 32 Bit) vorsieht.
 - **Unidirektionale Adapter**: Sowohl Eingangs- als auch Ausgangsadapter sind unidirektional ausgelegt, was die Komplexität reduziert und eine klar definierte Datenflussrichtung gewährleistet.
 - **Ereignisgesteuerte Kommunikation**: Die Konvertierung wird durch ein Ereignis am Eingangsadapter getriggert; das Ergebnis wird ebenfalls ereignisgesteuert weitergereicht.

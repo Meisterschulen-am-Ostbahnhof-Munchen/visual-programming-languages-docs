@@ -54,6 +54,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine (ECC) und keine internen Algo
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Komposit‑Struktur**: Der FB besteht ausschließlich aus einem internen Netzwerk (FBNetwork) mit direkten Ereignis‑ und Datenverbindungen zwischen den Adaptern.
 - **Implicite Typkonvertierung**: Die Datenkonvertierung von SINT nach LREAL wird von der IEC‑61499‑Laufzeitumgebung sichergestellt. Eine explizite Typanpassung ist nicht erforderlich.
 - **Paketierung**: Der Baustein ist im Paket `adapter::conversion::unidirectional` organisiert und bietet eine saubere Trennung zwischen Adapter‑ und Konverterlogik.

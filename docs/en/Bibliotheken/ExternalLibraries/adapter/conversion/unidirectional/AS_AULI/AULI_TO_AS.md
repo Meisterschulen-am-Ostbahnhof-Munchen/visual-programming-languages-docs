@@ -41,6 +41,8 @@ The processing is purely event-driven and occurs without intermediate storage of
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Value Range Loss:** Since `ULINT` covers a very large range of values (0 … 2⁶⁴−1), while `SINT` can only represent −128 … 127, conversion for values outside the SINT range leads to overflow or saturation (according to the IEC 61131 definition). This should be taken into account during application.
 - **Unidirectional Adapters:** The block is designed for data flow in one direction – from the input to the output adapter. It cannot be used for bidirectional communication.
 - **License:** The block is provided under the Eclipse Public License 2.0.

@@ -52,6 +52,8 @@ Das bedeutet: Sobald ein Ereignis am AUI_IN-Eingang eintrifft, wird das zugehör
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein:** Die Implementierung erfolgt rein über das Netzwerk aus Adapterverbindungen, ohne eigene Logik oder Zustandsautomaten.
 - **Keine Typumwandlung:** Der **AUI_TO_AR** führt keine explizite Konvertierung des Datentyps durch. Er setzt voraus, dass der **AUI_IN**-Adapter bereits REAL-konforme Daten liefert oder dass die Typumwandlung extern erfolgt.
 - **Unidirektionaler Adapter-Typ:** Beide Adapter sind unidirektional ausgelegt, d.h. sie übertragen Daten und Ereignisse nur in eine Richtung (von AUI_IN nach AR_OUT).

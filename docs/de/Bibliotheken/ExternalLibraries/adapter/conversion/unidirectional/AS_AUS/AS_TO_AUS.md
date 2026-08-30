@@ -45,6 +45,8 @@ Der FB arbeitet als reiner Datenfluss-Konverter:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Der FB enthält keine eigene Zustandslogik, sondern kombiniert den vorhandenen Standard-Konverter mit den vorgegebenen Adapter-Schnittstellen.
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt – die Daten und Ereignisse fließen nur in eine Richtung.
 - **Typkonvertierung**: Die Wandlung von SINT nach USINT ist verlustfrei, da der Wertebereich von USINT (0…255) den positiven Teil von SINT (−128…127) vollständig abdeckt. Negative SINT-Werte werden jedoch wie folgt interpretiert: z. B. −1 wird zu 255 (Zweierkomplement). Dieses Verhalten entspricht der IEC-61131-Funktion `SINT_TO_USINT`.

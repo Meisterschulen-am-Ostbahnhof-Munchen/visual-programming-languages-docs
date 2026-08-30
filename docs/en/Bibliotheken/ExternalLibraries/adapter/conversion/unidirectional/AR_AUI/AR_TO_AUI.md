@@ -42,6 +42,8 @@ The entire process occurs without intermediate storage or delay – each pulse t
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Stateless Design**: The block has no internal state memory; each conversion is independent of previous ones.
 - **Uniform Adapter Interface**: By using unidirectional standard adapters (AR and AUI), the function block can be easily integrated into various architectures.
 - **No Side Effects**: No global variables or system resources are affected.

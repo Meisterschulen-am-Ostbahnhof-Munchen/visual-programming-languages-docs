@@ -47,6 +47,8 @@ Der FB besitzt ein internes Netzwerk, das aus einer Instanz des Standardbaustein
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Composite‑Struktur**: Der FB ist als Composition realisiert, wodurch die interne Logik transparent und wiederverwendbar ist.
 - **Standard‑Konvertierung**: Verwendet den genormten FB `iec61131::conversion::F_BOOL_TO_SINT` aus der IEC‑61131‑Bibliothek.
 - **Adapter‑Schnittstelle**: Die Ein‑ und Ausgabe erfolgt ausschließlich über unidirektionale Adapter (Sockets/Plugs), was eine modulare Verbindung in Adapter‑basierten Architekturen ermöglicht.

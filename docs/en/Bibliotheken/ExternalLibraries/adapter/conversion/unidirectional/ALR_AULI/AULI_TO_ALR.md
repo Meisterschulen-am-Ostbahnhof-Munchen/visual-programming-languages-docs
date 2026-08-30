@@ -54,6 +54,8 @@ All logic runs within a function block network and is transparent to the user.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-based communication:** The function block encapsulates the type conversion in an adapter interface, allowing it to be seamlessly integrated into systems with standardized adapter types (e.g., AULI and ALR). This increases compatibility between components.
 - **Reuse of existing function blocks:** As a composite function block, it uses the standardized conversion block `F_ULINT_TO_LREAL`, ensuring the maintainability and correctness of the conversion logic.
 - **Compatibility with IEC 61499-2:** The function block complies with the standard and can be used in any 4diac IDE project.

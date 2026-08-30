@@ -51,6 +51,8 @@ Processing is strictly sequential: first, the Boolean input is processed, then t
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Adapter-based communication:** The block uses only adapter interfaces (socket and plug) and no traditional input/output ports. This enables loose coupling between components and easy reuse in different environments.
 - **Unidirectional Data Exchange:** The adapters used, `AX` and `AI`, are defined as unidirectional types, meaning data flows only in one direction – from the socket to the plug.
 - **External Library:** For conversion, the function block `F_BOOL_TO_INT` is imported from the library `iec61131::conversion`. This eliminates the need to implement custom conversion logic.

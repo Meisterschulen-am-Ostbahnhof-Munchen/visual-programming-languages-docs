@@ -53,6 +53,8 @@ The entire process is event-driven and occurs once per triggering event.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter Encapsulation:** The block combines two different adapter types (ALR and AUI), thus enabling type-safe communication between components that use these adapters.
 - **Unidirectional Adapters:** Both the input and output adapters are unidirectional, meaning there is only one direction of data and events (input → output).
 - **Internal Conversion:** The actual conversion is performed by the standardized IEC 61131 function block `F_LREAL_TO_UINT`. This ensures well-defined and platform-independent conversion behavior.

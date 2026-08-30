@@ -51,6 +51,8 @@ Der Baustein nutzt intern den Funktionsblock `iec61131::comparison::F_NE` (Ungle
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Typkonvertierung**: Der Baustein wandelt implizit einen SINT-Adapter in einen BOOL-Adapter um, ohne dass der Anwender direkte Typumwandlungslogik schreiben muss.  
 - **Verwendung von Standardbausteinen**: Intern kommt der bereits vorhandene IEC 61131-Baustein `F_NE` zum Einsatz, was Wiederverwendbarkeit und Testbarkeit erhöht.  
 - **Fester Vergleichswert**: Der Parameter `IN2` ist auf `SINT#0` voreingestellt – eine Änderung ist nur durch Anpassung des Composite-Bausteins möglich.

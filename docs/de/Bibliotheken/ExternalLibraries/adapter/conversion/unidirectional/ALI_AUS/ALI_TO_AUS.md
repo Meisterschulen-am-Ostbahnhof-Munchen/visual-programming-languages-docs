@@ -47,6 +47,8 @@ Die Kopplung von Ereignis- und Datenflüssen erfolgt vollständig über das inte
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Wiederverwendbarer Konverter**: Der Baustein setzt auf den standardisierten **F_LINT_TO_USINT** (iec61131::conversion), sodass die Konvertierungslogik nicht neu implementiert werden muss.
 - **Adapter‑basiert**: Die gesamte Schnittstelle ist als Uni‑Directional‑Adapter realisiert, vereinfacht den Austausch und die Wiederverwendung in größeren Systemen.
 - **Lizenz**: Der Baustein wird unter der **Eclipse Public License 2.0** bereitgestellt (EPL-2.0).

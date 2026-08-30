@@ -52,6 +52,8 @@ The entire process is **event-driven** and takes place within a single execution
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Unidirectional Data Flow**: The function block converts exclusively from AUDI (UDINT) to AW (WORD); reverse conversion is not supported.
 - **Composite Architecture**: The internal logic is fully implemented by a single standard conversion block, making the function block easy to understand and maintain.
 - **Use of IEC 61131 libraries**: The function block `F_UDINT_TO_WORD` is derived from the `iec61131::conversion` library, ensuring high portability and standards compliance.

@@ -65,6 +65,8 @@ The **AR_TO_AS** is a simple yet effective composite module for converting a REA
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 ## State Overview
 
 ## Application Scenarios

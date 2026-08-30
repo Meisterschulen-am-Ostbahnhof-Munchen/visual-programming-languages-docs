@@ -46,6 +46,8 @@ Process:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite structure** – enables reuse and encapsulation of the conversion logic.
 - **Adapter-based** – no direct inputs/outputs; communication occurs via unidirectional adapters (socket/plug).
 - **Use of the IEC 61131 standard function** `F_ULINT_TO_REAL` – guarantees platform-independent and correct type conversion.

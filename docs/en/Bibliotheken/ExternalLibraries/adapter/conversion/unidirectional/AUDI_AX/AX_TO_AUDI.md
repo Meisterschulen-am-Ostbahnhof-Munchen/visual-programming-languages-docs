@@ -46,6 +46,8 @@ The function block operates in an event-driven manner:
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite block (FB)** according to IEC 61499-2.
 - Uses the internal FB `iec61131::conversion::F_BOOL_TO_UDINT` for the actual conversion.
 - The adapter interfaces (`AX` and `AUDI`) enable modular and standardized integration with other blocks.

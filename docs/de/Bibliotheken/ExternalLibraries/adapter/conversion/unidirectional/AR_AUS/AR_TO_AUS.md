@@ -46,6 +46,8 @@ Der gesamte Daten- und Ereignisfluss ist unidirektional vom Eingangs- zum Ausgan
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der FB ist als Composite implementiert und verwendet den Baustein `iec61131::conversion::F_REAL_TO_USINT` aus der Bibliothek `adapter::conversion::unidirectional`.
 - Es findet keine Wertebereichsprüfung statt; die Konvertierung folgt den Regeln der IEC 61131 (REAL → USINT: Nachkommastellen werden abgeschnitten, Werte außerhalb des Bereichs 0…255 können zu undefiniertem Verhalten führen).
 - Der FB besitzt keine eigene Zustandsmaschine und arbeitet ereignisgesteuert.

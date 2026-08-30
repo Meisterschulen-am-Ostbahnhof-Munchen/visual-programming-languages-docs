@@ -37,6 +37,8 @@ Der AS_TO_ALI FB ist als Composite-Baustein realisiert. Bei Eintreffen eines Ere
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Struktur** – keine eigene Zustandslogik, reine Weiterleitung und Konvertierung.
 - **Synchronisierte Ereignis- und Datenpfade** – die Datenweitergabe erfolgt nur nach einem Ereignis.
 - **Implizite Typkonvertierung** – die Wandlung von SINT nach LINT geschieht automatisch im Netzwerk des Composite-Blocks.

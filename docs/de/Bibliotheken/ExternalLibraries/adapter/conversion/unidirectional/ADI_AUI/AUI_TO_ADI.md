@@ -38,6 +38,8 @@ Der FB empfängt über den Socket AUI_IN ein Ereignis sowie einen UINT-Wert. Die
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der FB ist als **Composite-Baustein** realisiert, d.h. seine Funktionalität basiert auf einem enthaltenen IEC‑61131‑Baustein (`F_UINT_TO_DINT`).
 - Die Kommunikation erfolgt ausschließlich über **unidirektionale Adapter** – es werden keine eigenständigen Ereignis- oder Dateneingänge/-ausgänge auf oberster Ebene benötigt.
 - Der interne Konverter arbeitet **ereignisgesteuert**: Jedes eingehende Ereignis am AUI_IN-Adapter löst eine Konvertierung aus.

@@ -42,6 +42,8 @@ No processing or intermediate storage takes place – the FB functions as a simp
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Composite Function Block without its own state logic:** The function block does not have an ECC (Execution Control Chart) and operates statelessly. All processes are determined by the direct connections within the function block network.
 - **Unidirectional operation:** Conversion only occurs in one direction (AW → AD). A separate function block would be required for the reverse direction.
 - **Implicit type conversion:** Data is cast from WORD to DWORD without explicit conversion logic. If a different mapping (e.g., sign handling) is required, a separate function block must be used.

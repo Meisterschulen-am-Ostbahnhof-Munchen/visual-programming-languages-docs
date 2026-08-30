@@ -31,6 +31,8 @@ The function block receives a DWORD via the AD_IN adapter. An event at the E1 in
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - The function block is implemented as a composite and uses the `iec61131::conversion::F_DWORD_TO_ULINT` library.
 - No direct event or data inputs/outputs are used; all communication takes place exclusively via adapters.
 - The conversion is performed according to IEC 61499 event control: The output event is only sent after the conversion is complete.

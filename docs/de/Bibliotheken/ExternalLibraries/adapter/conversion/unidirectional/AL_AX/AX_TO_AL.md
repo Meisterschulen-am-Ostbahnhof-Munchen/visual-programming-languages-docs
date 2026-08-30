@@ -49,6 +49,8 @@ Der Baustein selbst führt keine Wertumwandlung durch; die Konvertierung des boo
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Composite‑Architektur**: Der FB enthält kein internes ECC (Execution Control Chart) und keine eigene Logik. Er besteht lediglich aus zwei Adapterverbindungen und einfachen Durchleitungen.
 - **Typzuordnung**: Die Zuordnung von BOOL zu LWORD erfolgt implizit. Der Anwender muss sicherstellen, dass die angeschlossenen Adapter die Konvertierung korrekt unterstützen.
 - **Projektstruktur**: Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt, was seine Funktion als unidirektionaler Konvertierungsadapter kennzeichnet.

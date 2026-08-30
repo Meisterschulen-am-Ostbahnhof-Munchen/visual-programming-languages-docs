@@ -46,6 +46,8 @@ The conversion is performed according to IEC 61131-3: The least significant 8 bi
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - The module is implemented as a composite, meaning it does not contain its own state machine but delegates all logic to the internal base module.
 - Neither buffering nor error handling is implemented; data transfer occurs directly synchronously with the event.
 - This module is designed for use in systems that require a clear separation between adapters for different data widths.

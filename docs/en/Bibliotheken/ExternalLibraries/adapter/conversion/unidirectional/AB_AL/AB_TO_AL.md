@@ -46,6 +46,8 @@ As soon as an event arrives at the socket adapter `AB_IN`, the corresponding BYT
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Pure Composite Block**: No algorithm, no state machine – functionality is derived solely from the internal wiring.
 - **Unidirectional Adapters**: Data flow is only possible from `AB_IN` to `AL_OUT`; there is no reverse direction.
 - **Automatic Type Conversion**: The 4diac IDE implicitly performs the conversion from BYTE to LWORD (big-endian extension with zeros).

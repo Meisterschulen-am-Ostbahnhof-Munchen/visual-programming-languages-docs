@@ -51,6 +51,8 @@ Die Ereignispfade lauten:
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-Baustein:** Der `AI_TO_AL` ist als Composite implementiert und enthält keine eigene algorithmische Logik. Er delegiert die Konvertierung vollständig an den definierten Funktionsbaustein `F_INT_TO_LWORD`.
 - **Standardkonvertierung:** Die verwendete Konvertierungsfunktion ist Teil der IEC 61131-Bibliothek und gewährleistet eine standardkonforme Typumwandlung von INT (16-Bit) nach LWORD (64-Bit).
 - **Adapterbasiert:** Der Baustein arbeitet ausschließlich über die spezifizierten Adapter-Schnittstellen und kann daher nahtlos in eine adapterbasierte Architektur integriert werden.

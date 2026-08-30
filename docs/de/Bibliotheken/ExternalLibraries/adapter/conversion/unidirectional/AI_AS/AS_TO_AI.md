@@ -40,6 +40,8 @@ Der FB leitet das Ereignis E1 vom AS_IN-Socket direkt zum AI_OUT-Plug weiter. Pa
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Die Typkonvertierung von SINT zu INT wird automatisch von der 4diac‑Laufzeitumgebung durchgeführt, ohne dass zusätzliche Code‑Blöcke erforderlich sind.
 - Der Baustein ist als **Composite FB** realisiert und enthält kein eigenes ECC (Execution Control Chart).
 - Er ist im Paket `adapter::conversion::unidirectional` abgelegt, was auf unidirektionale Adapter-Konvertierung hinweist.

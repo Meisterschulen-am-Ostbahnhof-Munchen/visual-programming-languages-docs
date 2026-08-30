@@ -55,6 +55,8 @@ Damit ist eine synchronisierte, ereignisgesteuerte Datenweitergabe gewährleiste
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑FB**: Enthält keine eigene Zustandsmaschine; die gesamte Logik wird durch den internen FB `F_USINT_TO_BYTE` abgebildet.
 - **Unidirektionale Adapter**: Sowohl der eingehende als auch der ausgehende Adapter sind unidirektional – die Datenflüsse erfolgen ausschließlich in eine Richtung.
 - **Standardkonformität**: Der Baustein basiert auf IEC 61499‑2 und nutzt die IEC 61131‑Konvertierungsfunktion `F_USINT_TO_BYTE`. Dadurch ist er in kompatiblen Laufzeitumgebungen (z. B. 4diac‑FORTE) sofort einsetzbar.

@@ -44,6 +44,8 @@ Intern verwendet der Baustein den vordefinierten Konvertierungsbaustein `iec6113
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Composite-Baustein**: Der FB kapselt die Konvertierungslogik und stellt eine saubere, wiederverwendbare Schnittstelle über Adapter bereit.
 - **Plug/Socket‑Kopplung**: Der Baustein verwendet das Adapter‑Pattern (Socket für Eingang, Plug für Ausgang), was eine flexible Verbindung in einer IEC‑61499‑Applikation ermöglicht.
 - **Abhängigkeit**: Er importiert den Baustein `iec61131::conversion::F_BOOL_TO_USINT`, der Teil der IEC‑61131‑Konvertierungsbibliothek ist.

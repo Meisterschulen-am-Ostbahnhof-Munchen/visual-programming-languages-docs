@@ -38,6 +38,8 @@ Der FB arbeitet als transparenter Konverter zwischen den beiden Adaptern. Sobald
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Composite-Architektur**: Der FB verwendet intern einen standardisierten IEC 61131-3-Funktionsbaustein (`F_LWORD_TO_INT`), der plattformunabhängig implementiert werden kann.
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind vom Typ `unidirectional`, d. h. sie unterstützen nur eine Daten- und Ereignisrichtung (vom Socket zum Plug).
 - **Keine Eigenlogik**: Der FB enthält keine Zustandslogik oder Sequenzen; er fungiert ausschließlich als Koppler und Konverter.

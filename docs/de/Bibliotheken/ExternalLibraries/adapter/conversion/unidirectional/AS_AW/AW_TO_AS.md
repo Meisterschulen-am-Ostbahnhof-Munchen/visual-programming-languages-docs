@@ -36,6 +36,8 @@ Der Baustein ist als Composite realisiert und verwendet intern den IEC‑61131�
 
 ## Technische Besonderheiten  
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - Die Konvertierung folgt der IEC‑61131‑Funktion `WORD_TO_SINT`. Ein Überlauf tritt auf, wenn der eingehende WORD-Wert außerhalb des gültigen SINT-Bereichs (-128 … 127) liegt – dies muss in der Anwendung berücksichtigt werden.  
 - Der Baustein arbeitet rein ereignisgesteuert: Eine Wandlung erfolgt nur bei einem Ereignis am Eingang.  
 - Die Adapter sind unidirektional ausgelegt; eine Rückwandlung von SINT nach WORD ist nicht vorgesehen.

@@ -60,6 +60,8 @@ Der FB führt somit eine ereignisgesteuerte, unidirektionale Typkonvertierung vo
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Composite-Baustein**: Der FB kapselt einen bereits bestehenden Standard-Konvertierungsbaustein und zwei Adapter-Schnittstellen. Dies vereinfacht die Wiederverwendung in größeren Applikationen.
 - **Datentyp-Konvertierung**: Die Umwandlung von `DWORD` (32-Bit, vorzeichenlos) in `UINT` (16-Bit, vorzeichenlos) kann je nach Wertbereich zu Informationsverlust führen (z. B. wenn der DWORD-Wert größer als 65535 ist). Der Anwender ist für die Wertebereichsüberwachung verantwortlich.
 - **Unidirektionale Schnittstelle**: Sowohl der Eingangs- als auch der Ausgangs-Adapter sind unidirektional ausgelegt (nur eine Ereignis-/Datenrichtung).

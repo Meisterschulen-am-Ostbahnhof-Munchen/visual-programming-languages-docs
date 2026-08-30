@@ -50,6 +50,8 @@ Somit wird eine unidirektionale BYTE-zu-UDINT-Wandlung mit Ereignissteuerung rea
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt – Daten fließen nur in eine Richtung (BYTE → UDINT).
 - **Synchroner Betrieb**: Die Konvertierung erfolgt streng ereignisgesteuert: Jedes eingehende Ereignis `E1` löst genau eine Umwandlung und ein ausgehendes Ereignis aus.
 - **Standardkonvertierung**: Der interne Baustein `F_BYTE_TO_UDINT` ist ein etablierter IEC 61131-Baustein, sodass die Konvertierung normkonform und portabel ist.

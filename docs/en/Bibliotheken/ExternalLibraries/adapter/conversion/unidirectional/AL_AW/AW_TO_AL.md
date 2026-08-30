@@ -31,6 +31,8 @@ The function block implements a simple passthrough function: The event (E1) rece
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - The function block is implemented as a composite function block, meaning it contains an internal network that connects the adapters.
 - The type conversion from WORD to LWORD occurs automatically through the concatenation of the data lines (implicit type conversion).
 - The event and data paths are synchronized: Each incoming event triggers an outgoing event, accompanied by the current data value.

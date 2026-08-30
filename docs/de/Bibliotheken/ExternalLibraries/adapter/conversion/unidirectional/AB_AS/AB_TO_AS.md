@@ -51,6 +51,8 @@ Damit ist eine asynchrone, ereignisgesteuerte Übersetzung eines BYTE-Werts in e
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Composite-FB**: Die Logik ist vollständig in der internen FBNetzwerk-Struktur gekapselt. Dies erleichtert Wartung und Wiederverwendung.
 - **Lizenz**: Der Baustein wird unter der **Eclipse Public License 2.0** bereitgestellt (SPDX-Lizenzkennung: EPL-2.0).
 - **Version**: 1.0, veröffentlicht 2026.

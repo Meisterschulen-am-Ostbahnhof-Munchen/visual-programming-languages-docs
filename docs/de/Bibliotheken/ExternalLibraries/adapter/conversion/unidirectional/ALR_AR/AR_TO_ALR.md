@@ -44,6 +44,8 @@ Der Baustein verbindet die Adapterschnittstellen direkt. Ein eingehendes Ereigni
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Composite‑FB ohne eigene Logik (kein ECC)  
 - Verwendung unidirektionaler Adapter gemäß IEC 61499‑2  
 - Automatische Typumwandlung durch die 4diac‑Laufzeit (z. B. 4diac‑ide)  

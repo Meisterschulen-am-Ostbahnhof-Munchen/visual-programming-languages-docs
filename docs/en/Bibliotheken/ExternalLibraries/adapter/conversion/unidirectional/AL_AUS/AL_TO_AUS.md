@@ -50,6 +50,8 @@ The internal connections are:
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - The function block is implemented as a composite function block (FB) that utilizes the IEC 61131 conversion function `F_LWORD_TO_USINT`.
 - The adapters are unidirectional, meaning data and event flows only in one direction.
 - The conversion function block is from the library `iec61131::conversion`.

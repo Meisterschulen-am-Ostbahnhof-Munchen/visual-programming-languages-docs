@@ -42,6 +42,8 @@ Keine direkten Datenausgänge vorhanden. Der konvertierte WORD-Wert wird über d
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-Baustein**: Die Konvertierungslogik ist in einem eigenen Netzwerk gekapselt, was Wiederverwendung und Übersichtlichkeit fördert.
 - **Unidirektionale Adapter**: Die Adapter **AUS** und **AW** sind als reine Daten‑ und Ereignispipelines ausgelegt – eine Rückwärtskommunikation ist nicht vorgesehen.
 - **Standardkonvertierung**: Die eigentliche Typumwandlung basiert auf dem geprüften Baustein `F_USINT_TO_WORD` aus der IEC‑61131‑Bibliothek.

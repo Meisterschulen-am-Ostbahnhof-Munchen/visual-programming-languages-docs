@@ -50,6 +50,8 @@ The entire logic consists of a direct connection chain without intermediate stat
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Use of standardized IEC 61131 conversion** – Internally, the function block `F_LWORD_TO_WORD` from the IEC 61131 library is used.
 - **Adapter-based interface** – The function block is fully integrated into 4diac's adapter concepts and can be easily integrated into existing systems with unidirectional AL and AW adapters.
 - **No side effects** – The conversion occurs without storage or buffering; each incoming event triggers exactly one output.

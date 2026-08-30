@@ -43,6 +43,8 @@ Internally, the function block uses the predefined conversion function block `ie
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite Function Block**: The function block encapsulates the conversion logic and provides a clean, reusable interface via adapters.
 - **Plug/Socket Coupling**: The function block uses the adapter pattern (socket for input, plug for output), enabling flexible connectivity in an IEC 61499 application.
 - **Dependency**: It imports the function block `iec61131::conversion::F_BOOL_TO_USINT`, which is part of the IEC 61131 conversion library.

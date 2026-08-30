@@ -45,6 +45,8 @@ As soon as an event arrives at the event input **AR_IN.E1**, the REAL value pres
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block uses the data type converter `F_REAL_TO_DINT` from the IEC 61131 library.
 - It is a composite function block that does not have its own state logic; instead, the functionality is implemented through the internal function block.
 - The interface is purely adapter-based, allowing for easy integration into existing adapter networks.

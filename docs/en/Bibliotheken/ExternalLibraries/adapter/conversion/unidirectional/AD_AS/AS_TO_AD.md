@@ -50,6 +50,8 @@ The entire process is synchronous and without data buffering – each conversion
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Unidirectional Adapters**: The block uses only unidirectional adapters (socket for input, plug for output). Reverse communication is not supported.
 - **Reusable Standard Block**: The conversion is implemented using the IEC 61131-compliant block `F_SINT_TO_DWORD`, which is available in the library `iec61131::conversion`.
 - **Composite Architecture**: The block is implemented as a composite function block (FB) and allows for easy adaptation or reuse of the internal network.

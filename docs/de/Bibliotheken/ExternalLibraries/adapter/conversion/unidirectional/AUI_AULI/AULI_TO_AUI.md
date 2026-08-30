@@ -46,6 +46,8 @@ Die Umwandlung erfolgt gemäß IEC 61131‑Norm `F_ULINT_TO_UINT`. Bei Werten 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Kapselung**: Der Baustein erlaubt den nahtlosen Austausch von Adaptern in der 4diac-IDE, ohne die Logik des umgebenden Netzwerks zu ändern.
 - **Wiederverwendung der IEC‑Norm‑Konvertierung**: Die eigentliche Typumwandlung wird durch den standardisierten IEC‑Baustein `F_ULINT_TO_UINT` durchgeführt, was Portabilität und Korrektheit sicherstellt.
 - **Keine Zustandsspeicherung**: Der Baustein ist rein kombinatorisch – nach jeder Ausführung liegt das aktuelle Ergebnis am Ausgang an.

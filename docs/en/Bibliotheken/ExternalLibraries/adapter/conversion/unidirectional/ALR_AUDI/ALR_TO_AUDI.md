@@ -42,6 +42,8 @@ Thus, the conversion is strictly event-driven and data-synchronous.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based Encapsulation** – Data and events are exchanged via standardized adapters of type `unidirectional`, enabling a clean separation of interfaces and implementation.
 - **Unidirectional Communication** – The function block supports only one direction of data flow (LREAL → UDINT). Feedback or error status is not provided.
 - **Type Conversion** – The conversion from LREAL (64-bit floating-point) to UDINT (32-bit unsigned integer) can lead to rounding or overflow losses, but is performed according to the IEC 61131 standard.

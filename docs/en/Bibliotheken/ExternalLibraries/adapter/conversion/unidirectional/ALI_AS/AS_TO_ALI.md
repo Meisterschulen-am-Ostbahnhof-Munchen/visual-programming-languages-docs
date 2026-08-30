@@ -35,6 +35,8 @@ The AS_TO_ALI function block is implemented as a composite block. When an event 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure** – no independent state logic, only forwarding and conversion.
 - **Synchronized Event and Data Paths** – data is only passed after an event.
 - **Implicit Type Conversion** – the conversion from SINT to LINT occurs automatically within the composite block's network.

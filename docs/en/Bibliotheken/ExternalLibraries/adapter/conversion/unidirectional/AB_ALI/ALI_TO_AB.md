@@ -59,6 +59,8 @@ The conversion from LINT (64 bits) to BYTE (8 bits) is performed by truncating t
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Type Conversion with Loss of Value:** Since LINT is 64 bits wide, but BYTE is only 8 bits, only the lower 8 bits of the LINT value are retained. A value range of 0 to 255 is correctly represented; larger numbers are reduced modulo 256.
 - **Pure Adapter Interface:** The component has no direct inputs/outputs, but communicates exclusively via two unidirectional adapters. This enables loose coupling in adapter-based architectures.
 - **Standard Compliance:** The function block (FB) is based on the IEC 61131 block `F_LINT_TO_BYTE` and can therefore be used in environments that support this library.

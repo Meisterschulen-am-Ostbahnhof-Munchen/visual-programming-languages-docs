@@ -50,6 +50,8 @@ Der Baustein besitzt keine eigenen separaten Ereignis- oder Datenports, sondern 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Verwendete Bibliothek:** Der Baustein greift auf den IEC‑61131‑Standardbaustein `F_INT_TO_USINT` zurück, der eine typische Konvertierung mit möglicher Bereichsbegrenzung oder Überlaufverhalten implementiert.
 - **Adapter‑Kapselung:** Der Composite-Baustein abstrahiert die Konvertierung auf Adapterebene, sodass in der Netzwerkkonfiguration nur die beiden passenden Adapter verbunden werden müssen.
 - **Datenbereichskonflikt:** `INT` umfasst Werte von −32.768 bis +32.767, während `USINT` nur 0…255 darstellen kann. Bei Eingabewerten außerhalb des USINT-Bereichs hängt das Verhalten vom `F_INT_TO_USINT` ab (z. B. Sättigung auf 0 oder 255, oder modularer Überlauf). Die genaue Abbildungsvorschrift ist im konkreten Zielsystem zu prüfen.

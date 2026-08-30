@@ -43,6 +43,8 @@ Der FB arbeitet als reine Durchreiche: Das Ereignis- und Datensignal vom Eingang
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Es handelt sich um einen Composite-FB, der keine eigene Funktionalität implementiert, sondern lediglich zwei Adapter verdrahtet.
 - Die Konvertierung von INT nach LINT ist verlustfrei, da LINT (64-Bit) den gesamten Wertebereich von INT (32-Bit) abdeckt.
 - Der FB ist für den Einsatz in unidirektionalen Kommunikationspfaden vorgesehen, bei denen eine Anpassung des Datentyps zwischen Adapterschnittstellen erforderlich ist.

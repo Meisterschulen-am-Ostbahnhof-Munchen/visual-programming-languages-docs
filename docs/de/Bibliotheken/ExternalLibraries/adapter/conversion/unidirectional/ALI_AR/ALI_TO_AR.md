@@ -50,6 +50,8 @@ Die gesamte Umwandlung erfolgt ohne Zustandsspeicherung – jede Anforderung wir
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Baustein**: Der ALI_TO_AR ist ein zusammengesetzter Funktionsblock, der ausschließlich aus dem internen Standardbaustein `F_LINT_TO_REAL` besteht.
 - **Bibliothekseinbindung**: Die Konvertierung nutzt die IEC‑61131‑Bibliothek `iec61131::conversion::F_LINT_TO_REAL`, die als Import deklariert ist.
 - **Paketstruktur**: Der Baustein ist im Paket `adapter::conversion::unidirectional` organisiert.

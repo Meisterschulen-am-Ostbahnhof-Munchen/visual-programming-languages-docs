@@ -50,6 +50,8 @@ This means: As soon as an event arrives at the AUI_IN input, the corresponding *
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block:** The implementation is purely via the network of adapter connections, without any internal logic or state machines.
 - **No Type Conversion:** The **AUI_TO_AR** does not perform any explicit data type conversion. It assumes that the **AUI_IN** adapter already provides REAL-compliant data or that the type conversion is performed externally.
 - **Unidirectional Adapter Type:** Both adapters are unidirectional, meaning they only transmit data and events in one direction (from AUI_IN to AR_OUT).

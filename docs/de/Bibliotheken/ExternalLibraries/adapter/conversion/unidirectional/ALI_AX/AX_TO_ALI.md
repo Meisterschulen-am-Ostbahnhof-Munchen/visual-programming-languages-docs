@@ -48,6 +48,8 @@ Damit wird eine synchrone, ereignisgesteuerte Umsetzung von BOOL in LINT realisi
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Lizenz**: Der Baustein ist unter der **Eclipse Public License 2.0 (EPL‑2.0)** veröffentlicht.  
   Copyright © 2026 HR Agrartechnik GmbH.
 

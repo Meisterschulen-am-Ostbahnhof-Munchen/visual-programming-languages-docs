@@ -41,6 +41,8 @@ Der Baustein selbst enthält keine eigene Logik oder Zustandsautomaten – er fu
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Composite FB**: Die Implementierung besteht ausschließlich aus einer Verdrahtung im FBNetzwerk, ohne zusätzliche Algorithmen.
 - **Implizite Datentypkonvertierung**: Der BOOL-Wert wird automatisch in einen DWORD-Wert umgewandelt (Bits 0..31: 0 oder 1).
 - **Unidirektionale Adapter**: Sowohl Ein- als auch Ausgang verwenden unidirektionale Adapter, die nur eine Daten- und eine Ereignisverbindung unterstützen.

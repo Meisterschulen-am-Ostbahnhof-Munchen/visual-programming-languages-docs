@@ -48,6 +48,8 @@ Damit ist eine vollständige, ereignisgesteuerte Umwandlung von DINT nach SINT �
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Lizenz und Herkunft:** Der Baustein unterliegt der **Eclipse Public License 2.0** und stammt von der **HR Agrartechnik GmbH** (Version 1.0, Autor: Franz Höpfinger, Stand: 2026‑02‑17).
 - **Abhängigkeit:** Er nutzt den Bibliotheksbaustein `iec61131::conversion::F_DINT_TO_SINT` aus dem IEC‑61131‑Konvertierungspaket.
 - **Composite‑Struktur:** Es werden keine eigenen Zustände oder Algorithmen definiert – die gesamte Logik wird durch das innere Netzwerk ausgeführt.

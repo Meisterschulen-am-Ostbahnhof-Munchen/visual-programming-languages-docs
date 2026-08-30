@@ -56,6 +56,8 @@ Somit wird bei jeder steigenden Flanke des Eingangsereignisses der aktuelle BOOL
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Lizenz**: Der Quellcode steht unter der *Eclipse Public License 2.0* (EPL‑2.0).  
 - **Urheber**: Entwickelt von **Franz Höpfinger** für die **HR Agrartechnik GmbH** (Version 1.0, Stand 2026‑02‑17).  
 - **Paketstruktur**: Der Baustein ist im Paket `adapter::conversion::unidirectional` organisiert.  

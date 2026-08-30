@@ -54,6 +54,8 @@ Internally, the mapping logic is implemented by a single IEC 61131 component, re
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Structure**: The function block is implemented as a composite, meaning it contains an internal network with a single function block. This facilitates reuse and encapsulation.
 - **Adapter Concept**: Input and output are handled exclusively via typed adapters (`AUI` and `AB`). This enables loose coupling and easy exchange of communication protocols within the application.
 - **License**: The function block is licensed under the Eclipse Public License 2.0 (EPL-2.0). The source code is open and can be freely modified.

@@ -39,6 +39,8 @@ As soon as an event `E1` arrives at the adapter input `AI_IN`, the corresponding
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure**: The function block is implemented as a composite that uses the standard function block `F_INT_TO_SINT`. This enables easy reuse and a clear separation of the conversion logic.
 - **Adapter-based interface**: The inputs and outputs are implemented as unidirectional adapters (`AI` and `AS`), allowing flexible connection to other components with compatible adapter interfaces.
 - **No range check**: The underlying function block `F_INT_TO_SINT` does not perform explicit error handling when a value exceeds its range. If the value of `INT` is outside the range of `SINT`, unexpected results or overflows may occur (depending on the target platform).

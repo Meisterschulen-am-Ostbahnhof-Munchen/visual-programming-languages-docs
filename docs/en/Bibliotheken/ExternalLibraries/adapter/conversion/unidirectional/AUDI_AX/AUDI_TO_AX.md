@@ -65,6 +65,8 @@ The `AUDI_TO_AX` function block is a specialized yet highly useful converter for
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 ## State Overview
 
 ## Application Scenarios

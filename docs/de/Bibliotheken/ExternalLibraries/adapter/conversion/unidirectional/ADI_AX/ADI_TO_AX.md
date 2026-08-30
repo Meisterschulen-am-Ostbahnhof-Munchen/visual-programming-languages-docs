@@ -53,6 +53,8 @@ Damit realisiert der FB eine einfache „Schwellwertlogik“: Jeder von Null ver
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Adapter-Kopplung:** Der FB ist als Composite-Baustein konzipiert, der zwei unidirektionale Adapter miteinander verbindet. Er kann daher nahtlos in eine Adapter-basierte Kommunikationsarchitektur eingebunden werden.
 - **Keine eigenen Zustände:** Da der FB keinerlei interne Zustandsvariablen oder Timer besitzt, ist sein Verhalten rein kombinatorisch und deterministisch.
 - **Direkte Impedanz:** Der verwendete Baustein `F_NE` aus der IEC-61131-Bibliothek ist hochperformant und benötigt keine dynamische Speicherverwaltung.

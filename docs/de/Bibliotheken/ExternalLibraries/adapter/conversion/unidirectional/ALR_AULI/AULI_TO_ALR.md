@@ -57,6 +57,8 @@ Die gesamte Logik läuft innerhalb eines FB-Netzwerks ab und ist für den Anwend
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Kommunikation:** Der Baustein kapselt die Typkonvertierung in einer Adapterschnittstelle, sodass er in Systemen mit einheitlichen Adaptertypen (z. B. AULI und ALR) nahtlos eingesetzt werden kann. Dadurch wird die Kompatibilität zwischen Komponenten erhöht.
 - **Wiederverwendung vorhandener Bausteine:** Als Composite FB verwendet er den standardisierten Konvertierungsbaustein `F_ULINT_TO_LREAL`, was die Wartbarkeit und Korrektheit der Konvertierungslogik sicherstellt.
 - **Kompatibilität mit IEC 61499-2:** Der Baustein erfüllt die Norm und kann in beliebigen 4diac-IDE Projekten verwendet werden.

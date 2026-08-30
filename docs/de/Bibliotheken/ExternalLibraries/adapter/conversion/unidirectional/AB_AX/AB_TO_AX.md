@@ -30,6 +30,8 @@ Der Ablauf wird durch das Ereignis `AB_IN.E1` gestartet. Dieses triggert den `F_
 
 ## Technische Besonderheiten
 
+- **Paritäts-/LSB-Test** (ungerader Wert ⇒ TRUE), kein Zahlenwert und keine vollständige Bit-Kopie.
+
 - Der Baustein ist als Composite realisiert, d.h. seine Funktionalität ergibt sich aus der Verschaltung von Standard-FBs (hier `F_NE`).
 - Er ist für die Verwendung in der 4diac-IDE mit der Spezifikation IEC 61499-2 ausgelegt.
 - Die Adapter `AB` und `AX` sind unidirektional, sodass die Daten- und Ereignisflüsse klar getrennt sind.

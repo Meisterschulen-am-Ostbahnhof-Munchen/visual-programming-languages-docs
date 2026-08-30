@@ -49,6 +49,8 @@ The entire conversion process is performed without state storage – each reques
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The ALI_TO_AR is a composite function block consisting exclusively of the internal standard block `F_LINT_TO_REAL`.
 - **Library Integration**: The conversion utilizes the IEC 61131 library `iec61131::conversion::F_LINT_TO_REAL`, which is declared as an import.
 - **Package Structure**: The block is organized within the package `adapter::conversion::unidirectional`.

@@ -45,6 +45,8 @@ Keine.
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Die Umwandlung nutzt einen IEC‑61131‑3‑Standardbaustein (`F_UDINT_TO_REAL`), der innerhalb des Composite FB instanziiert wird.
 - Die Adapter sind als unidirektionale Schnittstellen ausgeführt, was eine klare Datenflussrichtung (vom AUDI‑ zum AR‑Adapter) erzwingt.
 - Der Composite FB erzeugt keinerlei eigene Zustandslogik, sondern delegiert die gesamte Verarbeitung an den internen Konvertierungsbaustein.

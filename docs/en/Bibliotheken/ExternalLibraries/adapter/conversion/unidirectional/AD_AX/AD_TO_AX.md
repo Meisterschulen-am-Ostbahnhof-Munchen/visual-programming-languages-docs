@@ -55,6 +55,8 @@ Thus, a BOOL value is derived from a DWORD value:
 
 ## Technical Features
 
+- **Parity/LSB test** (odd value => TRUE), not a numeric value or full bit copy.
+
 - **Composite Function Block**: The function block consists of an internal network that implements the actual logic – this facilitates reuse and encapsulation.
 - **Use of `F_NE`**: The comparison function block used, from the IEC 61131 library, is standardized and platform-independent.
 - **Adapter-based communication**: Instead of individual inputs/outputs, adapters are used, enabling structured connections to other adapter-compatible modules.

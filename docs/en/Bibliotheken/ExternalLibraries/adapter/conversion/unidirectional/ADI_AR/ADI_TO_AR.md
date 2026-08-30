@@ -45,6 +45,8 @@ The entire process is synchronous and without intermediate storage – each succ
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Type Conversion according to IEC 61131-3**: The internal function block `F_DINT_TO_REAL` guarantees standards-compliant conversion of 32-bit integers to floating-point numbers (single precision).
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional. Reverse communication is not supported, which simplifies implementation and clearly defines the data flow.
 - **Composite Structure**: The function block consists of a network that is completely encapsulated within the function block itself. It is therefore particularly well-suited for modular, reusable interfaces.

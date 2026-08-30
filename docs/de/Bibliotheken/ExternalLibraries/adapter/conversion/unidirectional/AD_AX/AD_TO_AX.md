@@ -56,6 +56,8 @@ Somit wird aus einem DWORD-Wert ein BOOL-Wert abgeleitet:
 
 ## Technische Besonderheiten
 
+- **Paritäts-/LSB-Test** (ungerader Wert ⇒ TRUE), kein Zahlenwert und keine vollständige Bit-Kopie.
+
 - **Composite-FB**: Der Baustein besteht aus einem internen Netzwerk, das die eigentliche Logik abbildet – dies erleichtert die Wiederverwendung und Kapselung.
 - **Verwendung von `F_NE`**: Der eingesetzte Vergleichsbaustein aus der IEC 61131-Bibliothek ist standardisiert und plattformunabhängig.
 - **Adapterbasierte Kommunikation**: Statt einzelner Ein-/Ausgänge werden Adapter verwendet, was die strukturierte Verbindung zu anderen Adapter-kompatiblen Bausteinen ermöglicht.

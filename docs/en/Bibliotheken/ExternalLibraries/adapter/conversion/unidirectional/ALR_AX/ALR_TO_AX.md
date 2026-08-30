@@ -37,6 +37,8 @@ The entire process takes place within a single cycle, as this is a composite blo
 
 ## Technical Details
 
+- **Bit-reinterpretation**: extracts the IEEE754 bit pattern of the source value (intentional, e.g. for serialization), not its numeric value.
+
 - **License & Origin**: The block is licensed under the Eclipse Public License 2.0 and was provided with version information 1.0.
 
 - **Libraries Used**: The comparison block *F_NE* is from the IEC 61131 library (*iec61131::comparison*).

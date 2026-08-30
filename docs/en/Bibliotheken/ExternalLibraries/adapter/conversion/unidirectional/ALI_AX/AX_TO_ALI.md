@@ -47,6 +47,8 @@ This enables synchronous, event-driven conversion from BOOL to LINT.
 
 ## Technical Specifications
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **License**: This function block is released under the **Eclipse Public License 2.0 (EPL-2.0)**.
 
 Copyright © 2026 HR Agrartechnik GmbH.

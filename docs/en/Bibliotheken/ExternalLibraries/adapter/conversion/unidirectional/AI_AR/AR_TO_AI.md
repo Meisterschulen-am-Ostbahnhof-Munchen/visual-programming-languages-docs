@@ -39,6 +39,8 @@ As soon as an event arrives at socket **AR_IN.E1**, the value of **AR_IN.D1** (R
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block (FB) is fully event-driven; it does not have its own state machine.
 - Conversion is performed according to the IEC 61131 standard: REAL is mapped to INT (decimal places are truncated, corresponding to a type conversion).
 - The function block is located in the package `adapter::conversion::unidirectional`, which allows for clear separation from other conversion function blocks.

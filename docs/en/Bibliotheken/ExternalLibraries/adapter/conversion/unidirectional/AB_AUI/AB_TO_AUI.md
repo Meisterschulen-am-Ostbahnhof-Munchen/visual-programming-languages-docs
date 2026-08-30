@@ -46,6 +46,8 @@ The entire process is strictly sequential and event-driven.
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Unidirectional Operation:** The function block only supports data flow from AB (BYTE) to AUI (UINT). Reverse conversion is not possible with this function block.
 - **Use of IEC 61131-3 Conversion:** The conversion is performed using the standardized function block `F_BYTE_TO_UINT` from the IEC 61131 library. This ensures reliable and portable conversion.
 - **Adapter-Based Interface:** The function block is intentionally designed as an adapter converter and not as a standalone function block with direct inputs/outputs. This allows for easy integration into existing adapter-based communication structures.

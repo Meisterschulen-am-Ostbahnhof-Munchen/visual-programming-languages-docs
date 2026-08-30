@@ -44,6 +44,8 @@ The function block (FB) operates purely event-driven and internally uses the com
 F_NE** is not a validation event.
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Function Block**: Functionality is achieved through internal interconnection of standard function blocks – in this case, only a single comparison block.
 - **Adapter Encapsulation**: Inputs and outputs are defined exclusively via adapters, enabling uniform and modular connectivity in adapter-based architectures.
 - **Use of IEC 61131 Library**: The **F_NE** function block used is from the IEC 61131-3 library, promoting compatibility and reusability.

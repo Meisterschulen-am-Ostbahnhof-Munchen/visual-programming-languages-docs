@@ -50,6 +50,8 @@ The function block internally uses the function block `iec61131::comparison::F_N
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Type Conversion**: The function block implicitly converts a SINT adapter to a BOOL adapter without requiring the user to write direct type conversion logic.
 - **Use of Standard Function Blocks**: Internally, the existing IEC 61131 function block `F_NE` is used, increasing reusability and testability.
 - **Fixed Comparison Value**: The parameter `IN2` is preset to `SINT#0` – a change is only possible by modifying the composite function block.

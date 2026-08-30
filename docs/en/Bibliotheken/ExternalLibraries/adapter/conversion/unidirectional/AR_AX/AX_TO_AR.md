@@ -51,6 +51,8 @@ The function block operates in an event-driven manner:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Reusability**: The function block is implemented as a composite function block and uses the standardized IEC 61131 function block `F_SEL` from the library `iec61131::selection`.
 - **Adapter Coupling**: All communication takes place via unidirectional adapters (`adapter::types::unidirectional::AX` and `adapter::types::unidirectional::AR`), enabling loose coupling and easy reuse in different contexts.
 - **Configuration**: The limit values (IN0=0.0, IN1=1.0) are fixed and can be changed as needed by adjusting the parameters of the internal F_SEL.

@@ -48,6 +48,8 @@ The entire process is event-driven and does not use its own state logic.
 ...
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The logic is implemented exclusively through the interconnection of the standardized conversion block `F_LINT_TO_LREAL` – no proprietary algorithm.
 - **Adapter-Oriented Interface**: The function block (FB) completely encapsulates the conversion within the adapter interfaces, allowing it to be used in environments with uniform adapter types (unidirectional).
 - **No State Machine**: Due to its pure data flow structure, there is no internal state machine.

@@ -54,6 +54,8 @@ The entire process is event-driven and occurs without any delay or state storage
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Structure**: The function block is implemented as a network consisting of a single function block (`F_ULINT_TO_DWORD`). All connections are hard-wired.
 - **Package Import**: The conversion function used comes from the package `iec61131::conversion`. The function block is organized in the package `adapter::conversion::unidirectional`.
 - **No State Storage**: The function block is purely combinatorial – each input event immediately generates an output event with the converted value.

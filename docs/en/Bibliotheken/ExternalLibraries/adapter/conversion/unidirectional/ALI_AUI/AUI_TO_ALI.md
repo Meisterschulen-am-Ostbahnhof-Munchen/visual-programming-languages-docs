@@ -35,6 +35,8 @@ The function block waits for an event at the input adapter AUI_IN (E1). As soon 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block (FB) is implemented as a composite type and encapsulates the conversion logic in a reusable adapter interface.
 - Uses the standardized function block F_UINT_TO_LINT from the IEC 61131 library.
 - License: Eclipse Public License 2.0 (EPL-2.0).

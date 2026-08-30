@@ -38,6 +38,8 @@ Der gesamte Ablauf erfolgt innerhalb eines einzigen Zyklus, da es sich um einen 
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**: extrahiert das IEEE754-Bitmuster des Quellwerts (beabsichtigt, z. B. zur Serialisierung), nicht dessen Zahlenwert.
+
 - **Lizenz & Herkunft**: Der Baustein ist unter der Eclipse Public License 2.0 lizenziert und wurde mit der Versionsinformation 1.0 bereitgestellt.  
 - **Verwendete Bibliotheken**: Der Vergleichsbaustein *F_NE* stammt aus der IEC‑61131-Bibliothek (*iec61131::comparison*).  
 - **Paketname**: Der FB gehört zum Paket *adapter::conversion::unidirectional*.  

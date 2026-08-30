@@ -59,6 +59,8 @@ Thus, the entire conversion occurs in a strict event/data flow without any addit
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Adapter-Based Encapsulation:** The function block (FB) uses adapters exclusively for input and output, enabling modular and reusable integration in 4diac projects.
 - **Unidirectional Conversion:** Data conversion only occurs from socket to plug; reverse conversion is not supported.
 - **Use of IEC 61131 Libraries:** The core function `F_DINT_TO_WORD` is derived from the `iec61131::conversion` package, ensuring standards-compliant and high-performance conversion.

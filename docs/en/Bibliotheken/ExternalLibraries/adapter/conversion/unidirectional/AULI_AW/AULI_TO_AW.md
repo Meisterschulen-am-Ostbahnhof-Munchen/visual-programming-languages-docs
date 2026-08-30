@@ -49,6 +49,8 @@ The function block internally uses the IEC 61131 function **F_ULINT_TO_WORD** to
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Unidirectional Adapters**: Both AULI_IN and AW_OUT are unidirectional adapters, meaning data flow is only in one direction.
 - **Composition**: The function block is built from a single integrated conversion function block, making it easy to understand and maintain.
 - **Type Conversion**: The conversion from ULINT (64-bit) to WORD (16-bit) results in an overflow for values greater than 65535 – the user must ensure that the input value is in the range 0…65535.

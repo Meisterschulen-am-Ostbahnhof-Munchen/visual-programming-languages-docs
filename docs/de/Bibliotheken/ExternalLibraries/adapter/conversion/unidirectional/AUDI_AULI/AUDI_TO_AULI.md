@@ -41,6 +41,8 @@ Der FB leitet eingehende Ereignisse und Daten vom AUDI_IN-Adapter direkt zum AUL
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite FB**: Enthält keine eigene Funktionsbausteinlogik oder Zustandsmaschine, sondern lediglich Verdrahtung zwischen zwei Adaptern.
 - **Paket**: `adapter::conversion::unidirectional`
 - **Version**: 1.0, erstellt am 2026‑02‑17.

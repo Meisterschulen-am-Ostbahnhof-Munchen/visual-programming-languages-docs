@@ -50,6 +50,8 @@ Since this is a composite function block, all internal connections are defined a
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Composite Type**: The function block is a pure network function block without its own algorithms. Conversion is achieved by connecting two different adapter types.
 - **Type Conversion**: The conversion from `BOOL` to `BYTE` is standards-compliant and uses the implicit cast function of the 4diac IDE. This eliminates the need for a separate conversion function block.
 - **Versioning**: The function block is version `1.0` dated February 17, 2026, and is intended for use in the package `adapter::conversion::unidirectional`.

@@ -54,6 +54,8 @@ Der gesamte Ablauf ist ereignisgesteuert und erfolgt pro auslösendem Ereignis e
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapter‑Kapselung:** Der Baustein verbindet zwei unterschiedliche Adaptertypen (ALR und AUI) und ermöglicht so eine typsichere Kommunikation zwischen Komponenten, die diese Adapter verwenden.
 - **Unidirektionale Adapter:** Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt, d.h. es gibt nur eine Daten- und Ereignisrichtung (Eingang → Ausgang).
 - **Interne Konvertierung:** Die eigentliche Wandlung wird durch den standardisierten IEC‑61131‑Baustein `F_LREAL_TO_UINT` durchgeführt. Dadurch ist das Konvertierungsverhalten wohldefiniert und plattformunabhängig.

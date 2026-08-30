@@ -46,6 +46,8 @@ Die gesamte Abfolge ist streng kausal: Die Konvertierung wird nur dann ausgelös
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite FB**: Der Baustein kapselt die Konvertierungslogik in einem wiederverwendbaren Adapter-Paar.
 - **Verwendete Bibliothek**: Die eigentliche Typumwandlung erfolgt durch `iec61131::conversion::F_USINT_TO_LWORD` aus der IEC‑61131‑Standardbibliothek.
 - **Kein Zustand**: Der Baustein ist rein kombinatorisch mit ereignisgesteuerter Ausführung; er speichert keine internen Zustände.

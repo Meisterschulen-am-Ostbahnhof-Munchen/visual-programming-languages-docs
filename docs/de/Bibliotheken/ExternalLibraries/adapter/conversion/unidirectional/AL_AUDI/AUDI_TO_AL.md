@@ -50,6 +50,8 @@ Der gesamte Ablauf ist ereignisgesteuert und ohne zusätzliche Laufzeitlogik inn
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - Der Baustein ist als **Composite-Funktionsblock** realisiert und verwendet ausschließlich die standardisierte IEC‑61131‑Konvertierungsfunktion `F_UDINT_TO_LWORD`.
 - Die Konvertierung erfolgt direkt: **UDINT** (32‑Bit unsigned integer) wird auf **LWORD** (64‑Bit logical word) abgebildet.  
   Hinweis: Bei der Umwandlung eines 32‑Bit‑Werts in ein 64‑Bit‑Wort werden die oberen 32 Bits auf Null gesetzt.

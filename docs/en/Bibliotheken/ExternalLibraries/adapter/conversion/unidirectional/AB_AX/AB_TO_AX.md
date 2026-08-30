@@ -31,6 +31,8 @@ The process is started by the event `AB_IN.E1`. This triggers the `F_NE` functio
 
 ## Technical Features
 
+- **Parity/LSB test** (odd value => TRUE), not a numeric value or full bit copy.
+
 - The function block is implemented as a composite, meaning its functionality results from the interconnection of standard function blocks (here, `F_NE`).
 - It is designed for use in the 4diac IDE with the IEC 61499-2 specification.
 - The adapters `AB` and `AX` are unidirectional, ensuring a clear separation of data and event flows.

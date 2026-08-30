@@ -47,6 +47,8 @@ The interaction of event and data flow ensures secure and deterministic data tra
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Structure:** The block encapsulates the complete conversion logic in a single function block, eliminating the need for any further conversion steps in the application.
 - **Type Conversion:** Conversion is performed using the standardized IEC 61131 function block `F_UINT_TO_WORD`. UINT and WORD are bit-compatible, so no data loss occurs.
 - **Adapter Interface:** The use of adapters enables loose coupling of the components. The function block can be directly integrated into adapter-based networks.

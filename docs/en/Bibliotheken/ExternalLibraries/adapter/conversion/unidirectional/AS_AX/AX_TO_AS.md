@@ -50,6 +50,8 @@ The function block (FB) has an internal network consisting of an instance of the
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite Structure**: The function block (FB) is implemented as a composition, making the internal logic transparent and reusable.
 - **Standard Conversion**: Uses the standardized FB `iec61131::conversion::F_BOOL_TO_SINT` from the IEC 61131 library.
 - **Adapter Interface**: Input and output are exclusively via unidirectional adapters (sockets/plugs), enabling modular connections in adapter-based architectures.

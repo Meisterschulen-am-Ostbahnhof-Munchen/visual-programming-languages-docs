@@ -5,7 +5,9 @@
 * * * * * * * * * *
 ## Introduction
 
-The function block **AL_TO_ALR** is a composite function block (FB) that converts a unidirectional AL adapter (LWORD) into a unidirectional ALR adapter (LREAL). Internally, it uses the conversion block `F_LWORD_TO_LREAL` to convert an incoming LWORD value (64-bit integer) into an LREAL value (64-bit floating-point number) and output it via the output adapter.
+The function block **AL_TO_ALR** is a composite function block (FB) that maps a unidirectional AL adapter (LWORD) onto a unidirectional ALR adapter (LREAL). Internally, it uses the block `F_LWORD_TO_LREAL`.
+
+> **⚠️ Warning — not a numeric value conversion:** `LWORD` is a bit-string type (not a signed integer), and `F_LWORD_TO_LREAL` in the FORTE core merely reinterprets the 64-bit pattern as an IEEE754 `LREAL` (a bit copy) — the same trap as [`AD_TO_AR`](../AD_AR/AD_TO_AR.md) (DWORD→REAL), just with the 64-bit counterparts. A raw counter or analog value will therefore **not** become the corresponding LREAL number, but a meaningless value. For an actual numeric conversion: chain `AL_TO_AULI` (bit-reinterpretation LWORD→ULINT, valid here since both share the same 64-bit unsigned-integer representation) followed by `AULI_TO_ALR` (a real numeric cast) — the same pattern as [`AD_TO_AR_NUM`](../AD_AR/AD_TO_AR_NUM.md) for the 32-bit case.
 ## Interface Structure
 
 ### **Event Inputs**
@@ -33,7 +35,7 @@ The function block has no direct data outputs. The converted LREAL value is outp
 
 ## Functionality
 
-The function block operates in a simple event-driven sequence:
+`F_LWORD_TO_LREAL` reinterprets the LWORD's 64-bit pattern as an IEEE754 `LREAL` (a bit copy) — **no** numeric value conversion takes place. The function block operates in a simple event-driven sequence:
 
 1. An incoming event at socket **AL_IN.E1** is forwarded to the `REQ` input of the internal function block `F_LWORD_TO_LREAL`.
 2. Simultaneously, the data value from **AL_IN.D1** (LWORD) is passed to the `IN` input of the converter.
@@ -48,7 +50,7 @@ The entire processing takes place within one clock cycle (no blocking).
 ## Technical Features
 
 - **Adapter-based interface**: The FB uses only unidirectional adapters (`AL` and `ALR`). This enables loose coupling between sender and receiver and easy reuse in different system architectures.
-- **Type Conversion**: The conversion from `LWORD` (64-bit unsigned integer) to `LREAL` (64-bit floating-point number according to IEEE 754) is performed without loss of precision, as long as the integer value is within the representable range of the floating-point number (max. 2⁵³‒1).
+- **⚠️ Bit-reinterpretation, not numeric conversion**: See the warning in the introduction — affects all bit-string source types converting to `AR`/REAL or `ALR`/LREAL; the only other instance in this library is [`AD_TO_AR`](../AD_AR/AD_TO_AR.md) (DWORD→REAL).
 - **Pass-Through Event Control**: The function block does not execute any internal state logic; it transparently forwards events and data. The call time corresponds to the execution time of the internal converter.
 
 ## State Overview
@@ -63,16 +65,21 @@ Since the internal function block operates in a single execution step, the state
 
 ## Application Scenarios
 
-- **Sensor Data Processing**: A sensor delivers measured values in LWORD format (e.g., counter readings, raw data). The function block converts these values into LREAL so they can be used in floating-point algorithms (e.g., control, filtering).
-- **Protocol Conversion**: In systems that exchange different data formats via adapters, `AL_TO_ALR` serves as a bridge between LWORD- and LREAL-based components.
-- **Testing and Simulation**: Generation of LREAL test data from predefined LWORD values or vice versa (using corresponding counterpart function blocks).
+- **Bit pattern pass-through**: `AL_IN` already carries a bit pattern meant to be interpreted as LREAL (e.g. serialized raw double data from a fieldbus/protocol).
+- **NOT suitable** for raw counter, analog, or other integer values meant to carry the same numeric value as LREAL — use `AL_TO_AULI` + `AULI_TO_ALR` for that.
 
 ## Comparison with Similar Function Blocks
 
-- **`LWORD_TO_LREAL`** – A simple conversion function block without an adapter interface. `AL_TO_ALR` encapsulates this function block and integrates it into an adapter-based architecture.
-- **`LINT_TO_LREAL`** – Converts signed 64-bit integers to LREAL. `AL_TO_ALR` works with unsigned LWORDs.
-- **`UDINT_TO_LREAL`** – Analogous for 32-bit width. This module is designed for 64-bit and uses unidirectional adapters.
+- **`AL_TO_AULI` + `AULI_TO_ALR`** (numeric, LWORD→ULINT→LREAL): the safe replacement when an actual numeric value is meant.
+- **`ALI_TO_ALR`/`AULI_TO_ALR`** (LINT/ULINT→LREAL): already numerically correct, since their source types are `ANY_INT` (not `ANY_BIT`) — no trap.
+- **[`AD_TO_AR`](../AD_AR/AD_TO_AR.md)** (DWORD→REAL): the same bit-reinterpretation trap, just with the 32-bit counterparts.
 
 ## Conclusion
 
-AL_TO_ALR` is a specialized composite module for the formal conversion of LWORD to LREAL data via unidirectional adapters. It simplifies the integration of integer-based components into floating-point environments and, through its adapter interface, promotes a modular, reusable system architecture. Its simple, event-driven operation makes it reliable and easy to understand.
+`AL_TO_ALR` offers a compact way to expose an LWORD bit pattern as LREAL via adapter interfaces — **but not a numeric value conversion**. For raw counter or analog values meant to carry the same numeric value in LREAL, use `AL_TO_AULI` + `AULI_TO_ALR`.
+
+---
+
+### 📖 Background
+
+* [Numeric vs. bitwise: the FORTE conversion trap](../Numeric_vs_Bitwise.md)

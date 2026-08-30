@@ -49,6 +49,8 @@ Somit entsteht eine kausale Kette: Ein eingehendes Ereignis am AUS_IN-Adapter l�
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Reine Adapterkopplung** – Der Baustein besitzt keine eigenen Ein‑/Ausgangsvariablen, sondern definiert nur Adapter-Schnittstellen (Socket/Plug). Dies folgt dem Konzept der adapterbasierten Kommunikation in IEC 61499.
 - **Unidirektionale Konvertierung** – Die Richtung ist festgelegt: von USINT nach INT. Eine Rückwärtskonvertierung ist nicht vorgesehen.
 - **Nutzung eines Standard‑IEC‑61131‑Bausteins** – Die eigentliche Typkonvertierung erfolgt durch den etablierten FB `F_USINT_TO_INT`, der bereits in vielen Laufzeitumgebungen verfügbar ist.

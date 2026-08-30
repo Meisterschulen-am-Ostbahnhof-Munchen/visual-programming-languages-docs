@@ -37,6 +37,8 @@ Der FB wartet auf ein Ereignis am Eingangsadapter AUI_IN (E1). Sobald dieses ein
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der FB ist als Composite-Typ realisiert und kapselt die Konvertierungslogik in einem wiederverwendbaren Adapter-Interface.
 - Verwendet den standardisierten Baustein F_UINT_TO_LINT aus der IEC 61131-Bibliothek.
 - Lizenz: Eclipse Public License 2.0 (EPL-2.0).

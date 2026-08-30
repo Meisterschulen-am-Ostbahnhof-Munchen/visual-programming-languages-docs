@@ -40,6 +40,8 @@ The adapter output **AUS_OUT** provides the converted USINT value (8-bit) via th
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Adapter Coupling:** The FB has no direct event or data inputs/outputs, but communicates exclusively via adapter interfaces. This enables loose coupling in a modular control architecture.
 - **Library Used:** The conversion is performed using the standardized function block `iec61131::conversion::F_DWORD_TO_USINT`. This ensures IEC 61131 compliance.
 - **Package name:** `adapter::conversion::unidirectional` (see CompilerInfo) places the function block (FB) in a specific adapter conversion library.

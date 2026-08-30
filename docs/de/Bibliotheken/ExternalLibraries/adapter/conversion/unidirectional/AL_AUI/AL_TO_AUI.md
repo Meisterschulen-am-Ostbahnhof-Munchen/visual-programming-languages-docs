@@ -46,6 +46,8 @@ Damit ist die gesamte Konvertierung in einem einzigen, unidirektionalen Durchlau
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Kompositstruktur**: Der FB enthält keinen eigenen Zustandsautomaten, sondern delegiert die gesamte Funktionalität an den eingebetteten Konvertierungsbaustein.
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind vom Typ `unidirectional`. Es findet nur eine Vorwärtskonvertierung statt; Rückwärtsrichtung oder Statusrückmeldungen sind nicht vorgesehen.
 - **Paketzuordnung**: Der FB befindet sich im Paket `adapter::conversion::unidirectional`, was auf seine Verwendung in modularen Adapterketten hinweist.

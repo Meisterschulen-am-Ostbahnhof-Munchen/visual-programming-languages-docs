@@ -46,6 +46,8 @@ Der Baustein arbeitet als reine Weiterleitung: Sobald am eingehenden Adapter `AI
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Implizite Typkonvertierung:** Der FB führt die Umwandlung von 16‑Bit Integer (INT) auf 32‑Bit Double Integer (DINT) ohne Datenverlust durch, da der Ziel-Datentyp größer ist.
 - **Composite-Implementierung:** Der Baustein ist als Composite-FB realisiert, d.h. er enthält ein internes Netzwerk, das die beiden Adapter direkt miteinander verbindet. Er kann wie ein primitiver FB in Steuerungsprojekten eingesetzt werden.
 - **Unidirektionale Kommunikation:** Beide Adapter sind unidirektional ausgelegt – die Daten fließen nur vom Eingang zum Ausgang.

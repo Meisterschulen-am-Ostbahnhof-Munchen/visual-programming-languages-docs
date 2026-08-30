@@ -53,6 +53,8 @@ Der gesamte Ablauf ist innerhalb eines Ereigniszyklus atomar: Ereignis rein, Dat
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der Baustein verwendet intern die IEC‑61131‑Konvertierungsfunktion `F_SINT_TO_UINT`, die aus der Bibliothek `iec61131::conversion` stammt.
 - Die Adapter sind als **unidirektionale** Typen ausgelegt (AS für Eingang, AUI für Ausgang), was die Datenflussrichtung klar definiert und Missverständnisse vermeidet.
 - Es gibt keine internen Zustände oder Zeitverhalten – die Konvertierung erfolgt rein kombinatorisch, gesteuert durch das Ereignis.

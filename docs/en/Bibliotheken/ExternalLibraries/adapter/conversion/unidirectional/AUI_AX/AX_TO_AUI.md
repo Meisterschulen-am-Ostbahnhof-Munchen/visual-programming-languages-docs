@@ -37,6 +37,8 @@ The function block operates as a simple pipeline: An incoming event at socket AX
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - The function block is implemented as a composite function block, meaning... It consists of a network of subordinate FB instances (here only `F_BOOL_TO_UINT`).
 - The conversion follows the IEC 61131-3 conversion rule: BOOL FALSE = 0, BOOL TRUE = 1.
 - The use of adapters enables loose coupling between components of different domains (BOOL control and UINT communication).

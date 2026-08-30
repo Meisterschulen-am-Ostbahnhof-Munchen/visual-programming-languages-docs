@@ -44,6 +44,8 @@ Somit erfolgt die Umwandlung streng ereignisgesteuert und datensynchron.
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Kapselung** – Daten und Ereignisse werden über standardisierte Adapter vom Typ `unidirectional` ausgetauscht, was eine saubere Trennung von Schnittstellen und Implementierung ermöglicht.
 - **Unidirektionale Kommunikation** – Der Baustein unterstützt nur eine Datenflussrichtung (LREAL → UDINT). Rückmeldungen oder Fehlerstatus sind nicht vorgesehen.
 - **Typumwandlung** – Die Konvertierung von LREAL (64-Bit-Gleitkomma) nach UDINT (32-Bit-Ganzzahl ohne Vorzeichen) kann zu Rundungs- oder Überlaufverlusten führen, wird aber gemäß IEC 61131-Standard durchgeführt.

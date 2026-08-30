@@ -68,6 +68,8 @@ Dadurch wird eine vollständige, synchronisierte Übertragung von Ereignis und D
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Kommunikation:** Der Baustein kapselt die Konvertierungslogik in einem Composite, sodass die angeschlossenen Komponenten nur die jeweiligen Adapter-Schnittstellen kennen müssen.
 - **Unidirektionaler Datentransfer:** Sowohl `AI` als auch `AULI` sind als unidirektionale Adapter ausgelegt; eine Rückrichtung ist nicht vorgesehen.
 - **Typkonvertierung:** Der interne Baustein `F_INT_TO_ULINT` führt eine erweiternde Umwandlung von 16‑Bit Integer (`INT`) zu 64‑Bit vorzeichenlosem Integer (`ULINT`) durch. Negative `INT`‑Werte werden dabei gemäß dem Zweierkomplement in große positive `ULINT`‑Werte umgewandelt (z. B. `-1` → `2^64-1`).

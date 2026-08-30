@@ -49,6 +49,8 @@ Damit realisiert der FB eine **unidirektionale, ereignisgesteuerte Übertragung*
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑FB**: Der Baustein kapselt die Konvertierungslogik vollständig und bietet eine aufgeräumte, wiederverwendbare Schnittstelle.  
 - **Verwendeter Kernbaustein**: `iec61131::conversion::F_DINT_TO_UINT` – eine standardisierte IEC 61131‑Funktion zur Umwandlung von DINT in UINT (Wertebereichsanpassung: DINT auf UINT wird ohne Vorzeichen betrachtet, negative Werte werden entsprechend umgesetzt).  
 - **Adapter‑Typen**: Die Adapter `ADI` und `AUI` sind als unidirektionale Adapter definiert (`adapter::types::unidirectional`). Sie stellen jeweils ein Ereignispaar (`E1`/`E1`) und einen Datenpunkt (`D1` im entsprechenden Datentyp) bereit.  

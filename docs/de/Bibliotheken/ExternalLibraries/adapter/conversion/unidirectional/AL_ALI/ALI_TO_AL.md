@@ -44,6 +44,8 @@ Der Konverter wandelt den LINT-Wert in einen LWORD-Wert um und signalisiert mit 
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-FB**: Die eigentliche Typumwandlung erfolgt durch den eingebetteten Baustein `F_LINT_TO_LWORD` aus der IEC-61131-Standardbibliothek.
 - **Unidirektionale Adapter**: Der Daten- und Ereignisfluss ist von ALI_IN zu AL_OUT festgelegt. Eine Rückwärtskommunikation ist nicht vorgesehen.
 - **Keine Eigenzustände**: Der Baustein besitzt keinen eigenen Ablaufzustand (kein ECC), sondern leitet Ereignisse und Daten direkt weiter.

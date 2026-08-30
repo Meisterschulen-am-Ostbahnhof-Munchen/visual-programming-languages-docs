@@ -39,6 +39,8 @@ The control is purely data flow-driven: Each event at the input adapter causes a
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite Block** – No dedicated state logic; instead, it uses the internal function block `F_BYTE_TO_DINT`.
 - **Adapter-Based** – The interfaces are defined as adapters, enabling high reusability and interchangeability with other function blocks.
 - **License** – The function block is released under the **Eclipse Public License 2.0**.

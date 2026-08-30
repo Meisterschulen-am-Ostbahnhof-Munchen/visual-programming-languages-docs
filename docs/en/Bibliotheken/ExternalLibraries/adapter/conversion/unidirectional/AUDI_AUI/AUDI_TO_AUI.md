@@ -52,6 +52,8 @@ The entire conversion takes place within a single event pass (synchronously).
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Architecture:** The function block is designed as a composite, meaning its functionality is entirely determined by the internal network. This facilitates reuse and adaptation.
 - **Standard Conversion Block:** The actual type conversion uses the IEC 61131 block `F_UDINT_TO_UINT`, which provides a platform-independent and tested implementation.
 - **License:** The block is licensed under the Eclipse Public License 2.0 (EPL-2.0).

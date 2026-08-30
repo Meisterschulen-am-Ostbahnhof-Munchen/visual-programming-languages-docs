@@ -43,6 +43,8 @@ The event then passes through the internal function block **F_LWORD_TO_DWORD**, 
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Standard Compliance**: The conversion is performed using the IEC 61131-compliant FB `F_LWORD_TO_DWORD`, which enables lossless conversion from 64-bit to 32-bit (low-order 32-bit) support.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional, reducing complexity and ensuring a clearly defined data flow direction.
 - **Event-driven Communication**: Conversion is triggered by an event at the input adapter; the result is also passed on in an event-driven manner.

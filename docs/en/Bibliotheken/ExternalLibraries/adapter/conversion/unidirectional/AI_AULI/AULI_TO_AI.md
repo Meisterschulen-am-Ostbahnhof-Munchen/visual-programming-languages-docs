@@ -44,6 +44,8 @@ This enables seamless, event-driven conversion from AULI to AI adapters.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composition:** The function block is implemented as a composite function block, meaning it encapsulates the logic in a clear and concise block and uses a standardized conversion block.
 - **Unidirectional Adapters:** Both `AULI_IN` and `AI_OUT` are unidirectional adapters that support data flow in only one direction.
 - **Event-driven:** The conversion process only starts upon an incoming event, enabling efficient processing.

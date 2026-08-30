@@ -49,6 +49,8 @@ Der Baustein verbindet die Adapter-Schnittstellen direkt mit einer internen Inst
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Keine eigene Zustandsmaschine**: Der FB ist ein reines Composite (Netzwerk) ohne ECC. Das Verhalten wird ausschließlich durch die interne Verbindung und den verwendeten Konvertierungsbaustein bestimmt.
 - **Typkonvertierung**: Die Umwandlung von DINT nach INT erfolgt gemäß IEC 61131-3 (Überlauf bei Wertebereichsüberschreitung wird nicht abgefangen; INT-Bereich: -32768 … 32767).
 - **Paket**: Der FB ist im Paket `adapter::conversion::unidirectional` organisiert.

@@ -56,6 +56,8 @@ The **AD_TO_ALI** offers a clean, reusable solution for converting DWORD adapter
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 ## State Overview
 
 ## Application Scenarios

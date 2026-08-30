@@ -45,6 +45,8 @@ Da es sich um eine reine Durchleitung handelt, erfolgt keine Datenumrechnung im 
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - Der Baustein ist als **Composite-Baustein** realisiert, d. h. sein Verhalten wird vollständig durch das interne Netzwerk (FBNetwork) definiert.
 - Die Konvertierung ist unidirektional: Nur vom AB-Adapter zum AW-Adapter.
 - Die Verbindung erfolgt auf Ereignis- und Datenebene ohne Zwischenspeicherung oder Synchronisation.

@@ -45,6 +45,8 @@ The function block waits for an event at the input adapter `ADI_IN.E1`. As soon 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based Interface:** The module uses only adapter plugs and sockets for input and output. This allows for clean encapsulation and reuse in modular control architectures.
 - **Unidirectional Adapters:** Both the ADI and AULI adapters are declared as unidirectional and transmit only in one direction (input or output).
 - **Internal Conversion:** The function block `F_DINT_TO_ULINT`, responsible for the actual conversion, is taken from the package `iec61131::conversion` and provides a standardized, sequence-invariant function.

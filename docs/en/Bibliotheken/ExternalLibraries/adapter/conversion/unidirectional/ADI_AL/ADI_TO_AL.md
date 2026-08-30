@@ -53,6 +53,8 @@ Communication between the adapters and the conversion function block is asynchro
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Unidirectional Adapters** – The block uses exclusively unidirectional adapters (socket for input, plug for output), which define a clear data flow direction.
 - **Internal Conversion** – The actual type conversion is handled by the standard block `F_DINT_TO_LWORD` from the IEC 61131 library, eliminating the need for a custom implementation.
 - **License** – The block is licensed under the Eclipse Public License 2.0 (EPL-2.0) and can be freely used, modified, and distributed.

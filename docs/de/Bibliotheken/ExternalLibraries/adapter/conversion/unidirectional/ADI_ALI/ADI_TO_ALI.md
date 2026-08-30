@@ -43,6 +43,8 @@ Der Baustein realisiert eine direkte Durchschleifung:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Kein interner Zustand** – Der Baustein ist vollständig kombinatorisch und besitzt kein Gedächtnis.  
 - **Automatische Typkonvertierung** durch die Datenverbindung; der Wertebereich von DINT wird von LINT vollständig abgedeckt, sodass keine Informationsverluste auftreten.  
 - **Adapterbasierte Kommunikation** gemäß IEC 61499‑2 ermöglicht lose Kopplung und Wiederverwendbarkeit.  

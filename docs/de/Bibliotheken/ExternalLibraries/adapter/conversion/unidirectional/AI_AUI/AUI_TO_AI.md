@@ -41,6 +41,8 @@ Der Baustein verbindet den AUI‑Adapter‑Socket über ein FBNetwork mit einem 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Composite‑FB ohne eigene Zustandslogik (kein ECC).
 - Verwendet den Standard‑Baustein `iec61131::conversion::F_UINT_TO_INT` für die Typkonvertierung.
 - Enthält Lizenzhinweise gemäß Eclipse Public License 2.0.

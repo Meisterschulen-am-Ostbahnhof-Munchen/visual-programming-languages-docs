@@ -37,6 +37,8 @@ Sobald ein Ereignis am Ereigniseingang `AW_IN.E1` eintrifft, wird der interne Ba
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - Der FB ist als Composite realisiert und kapselt die Konvertierungslogik vollständig.
 - Die verwendete Konvertierungsfunktion `F_WORD_TO_ULINT` entspricht der IEC 61131-3 Norm.
 - Die Schnittstellen basieren auf unidirektionalen Adaptern – Ereignis- und Datenfluss erfolgen nur in eine Richtung.

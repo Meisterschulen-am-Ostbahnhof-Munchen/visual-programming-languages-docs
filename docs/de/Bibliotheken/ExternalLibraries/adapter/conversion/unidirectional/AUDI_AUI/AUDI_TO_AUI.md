@@ -54,6 +54,8 @@ Die gesamte Konvertierung erfolgt innerhalb eines einzigen Ereignisdurchlaufs (s
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Architektur:** Der FB ist als Composite entworfen, d. h. seine Funktionalität wird vollständig durch das interne Netzwerk bestimmt. Dies erleichtert die Wiederverwendung und Anpassung.
 - **Standard‑Konvertierungsbaustein:** Die eigentliche Typumwandlung verwendet den IEC 61131‑Baustein `F_UDINT_TO_UINT`, der eine plattformunabhängige und getestete Implementierung bereitstellt.
 - **Lizenz:** Der Baustein steht unter der Eclipse Public License 2.0 (EPL‑2.0).

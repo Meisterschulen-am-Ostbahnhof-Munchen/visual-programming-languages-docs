@@ -49,6 +49,8 @@ The function block operates in an event-driven manner:
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Function Block (FB)**: The implementation hides the internal logic and facilitates reuse in larger adapter chains.
 - **Standard Conversion**: Uses the IEC 61131-compliant function `F_UINT_TO_LWORD`, making it portable and platform-independent.
 - **Unidirectional Transmission**: The adapters are designed for one-way data flow only (no return channel).

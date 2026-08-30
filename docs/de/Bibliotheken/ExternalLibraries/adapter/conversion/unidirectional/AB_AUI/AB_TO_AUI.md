@@ -47,6 +47,8 @@ Der gesamte Vorgang erfolgt streng sequenziell und ereignisgesteuert.
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Unidirektionaler Betrieb:** Der FB unterstützt nur die Datenflussrichtung von AB (BYTE) zu AUI (UINT). Eine Rückwandlung ist mit diesem Baustein nicht möglich.
 - **Verwendung der IEC 61131-3 Konvertierung:** Die Konvertierung erfolgt über den standardisierten FB `F_BYTE_TO_UINT` aus der IEC 61131-Bibliothek. Dies gewährleistet eine zuverlässige und portable Wandlung.
 - **Adapter-basierte Schnittstelle:** Der FB ist bewusst als Adapter-Konverter ausgelegt und nicht als eigenständiger FB mit direkten Ein-/Ausgängen. Dies ermöglicht eine einfache Integration in bestehende Adapter-basierte Kommunikationsstrukturen.

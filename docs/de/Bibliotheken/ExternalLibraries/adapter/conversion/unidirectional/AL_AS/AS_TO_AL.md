@@ -40,6 +40,8 @@ Der Baustein arbeitet intern mit dem IEC-61131-Konvertierungsbaustein **F_SINT_T
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Standardkonformität**: Entspricht IEC 61499-2.
 - **Urheberrechte**: Der Baustein unterliegt der Eclipse Public License 2.0 (Copyright 2026 HR Agrartechnik GmbH).
 - **Version**: 1.0, erstellt von Franz Höpfinger am 17.02.2026.

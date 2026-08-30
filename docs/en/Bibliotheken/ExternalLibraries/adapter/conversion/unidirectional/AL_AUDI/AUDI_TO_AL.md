@@ -49,6 +49,8 @@ The entire process is event-driven and requires no additional runtime logic with
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - The function block is implemented as a **composite function block** and uses only the standardized IEC 61131 conversion function `F_UDINT_TO_LWORD`.
 - The conversion is performed directly: **UDINT** (32-bit unsigned integer) is mapped to **LWORD** (64-bit logical word).
 

@@ -64,6 +64,8 @@ This event is passed to plug `AUDI_OUT` (event output `E1`), and the converted U
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block:** Simplifies the reuse and encapsulation of the conversion logic.
 - **Standard Conversion:** Uses the IEC 61131-3 block `F_INT_TO_UDINT`, which ensures clean and portable type conversion.
 - **Unidirectional Adapters:** Both the input and output adapters are implemented as unidirectional interfaces (socket and plug, respectively) – data flows in only one direction.

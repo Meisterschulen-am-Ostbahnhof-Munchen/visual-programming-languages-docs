@@ -46,6 +46,8 @@ The function block forwards the incoming event `E1` from socket `AUDI_IN` direct
 ...
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Pure Adapter Passthrough:** The module contains no logic or state machines of its own – it simply connects the corresponding channels of the two adapters.
 - **Unidirectional Communication:** Both the AUDI and ALR adapters support only one direction of data flow, which simplifies their use in simple sensor/actuator interfaces or when coupling different protocols.
 - **No Type Conversion in the Module:** The conversion from `UDINT` to `LREAL` is handled by the adapter infrastructure. The developer must ensure that the adapter implementations used provide the necessary conversion.

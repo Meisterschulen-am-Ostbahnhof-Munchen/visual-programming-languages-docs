@@ -41,6 +41,8 @@ Im inneren Netzwerk wird der FB `iec61131::conversion::F_REAL_TO_LINT` instanzii
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Reine Adapter‑Kopplung**: Der FB verwendet keine direkten Ereignis‑ oder Dateneingänge, sondern kommuniziert ausschließlich über die standardisierten unidirektionalen Adapter `AR` und `ALI`. Dadurch lässt er sich leicht in bestehende Adapter‑Strukturen einfügen.
 - **IEC 61131‑Konformität**: Der eingesetzte Konvertierungsbaustein `F_REAL_TO_LINT` entspricht der IEC‑Norm und stellt eine standardisierte, deterministische Umwandlung sicher.
 - **Laufzeitverhalten**: Die Konvertierung erfolgt ereignisgesteuert und ohne zusätzliche Verzögerung; die Ausgangsgröße liegt im selben Ausführungszyklus an, in dem das Eingangsereignis empfangen wird.

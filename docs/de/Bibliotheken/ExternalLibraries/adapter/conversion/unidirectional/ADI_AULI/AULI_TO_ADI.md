@@ -46,6 +46,8 @@ Der Baustein arbeitet als reine Kaskade:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasiert**: Der FB implementiert keine direkten Ein‑/Ausgangsvariablen, sondern nutzt ausschließlich Adapter‑Sockets und ‑Plugs für lose Kopplung.
 - **Typumwandlung**: Die Konvertierung erfolgt mittels des IEC‑61131‑Standardbausteins `F_ULINT_TO_DINT`. Dabei können ULINT‑Werte außerhalb des DINT‑Bereichs zu Überläufen oder unerwarteten Ergebnissen führen.
 - **Kompakte Struktur**: Da keine Zustandslogik oder Verzweigungen vorhanden sind, arbeitet der Baustein deterministisch und ohne Verzögerung jenseits der reinen Konvertierungszeit.

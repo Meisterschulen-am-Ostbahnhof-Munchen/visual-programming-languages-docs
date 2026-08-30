@@ -58,6 +58,8 @@ Thus, any LINT value (including negative numbers) is converted into a binary sig
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Pure Logic Conversion**: No scaling or thresholding takes place. Any non-zero value is interpreted as `TRUE`.
 - **Composite Function Block Use**: The function block encapsulates the adapter conversion in a reusable unit and allows for easy integration into larger networks.
 - **Event-Driven**: Processing only occurs upon an incoming event (`ALI_IN.E1`). The output is only updated after successful processing.

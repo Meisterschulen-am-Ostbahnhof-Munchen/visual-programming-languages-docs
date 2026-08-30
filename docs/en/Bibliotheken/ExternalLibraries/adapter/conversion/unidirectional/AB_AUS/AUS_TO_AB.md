@@ -53,6 +53,8 @@ This ensures synchronized, event-driven data transfer.
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite FB**: Does not contain its own state machine; all logic is implemented by the internal FB `F_USINT_TO_BYTE`.
 - **Unidirectional Adapters**: Both the incoming and outgoing adapters are unidirectional – data flows occur exclusively in one direction.
 - **Standard Compliance**: The block is based on IEC 61499-2 and uses the IEC 61131 conversion function `F_USINT_TO_BYTE`. This makes it immediately usable in compatible runtime environments (e.g., 4diac-FORTE).

@@ -40,6 +40,8 @@ The function block forwards incoming events and data from the AUDI_IN adapter di
 ...
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite FB**: Contains no function block logic or state machine, but merely wiring between two adapters.
 - **Package**: `adapter::conversion::unidirectional`
 - **Version**: 1.0, created on 2026-02-17.

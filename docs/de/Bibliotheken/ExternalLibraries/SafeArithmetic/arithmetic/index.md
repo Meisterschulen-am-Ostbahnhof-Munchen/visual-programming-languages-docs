@@ -1,0 +1,20 @@
+# Arithmetik-Funktionen
+
+Hier finden Sie die saturierenden (klemmenden) Arithmetik-Funktionsbausteine der
+SafeArithmetic-Bibliothek — sicherheitsorientierter Drop-in-Ersatz für die normalen
+Arithmetik-Bausteine der Standardbibliothek, die einen Über-/Unterlauf bzw. eine Division durch
+Null über `LIMIT_HIT` melden, statt still zu überlaufen (Integer) bzw. `INF`/`NaN` zu erzeugen
+(REAL/LREAL).
+
+```{toctree}
+:maxdepth: 1
+
+SAFE_ADD_2
+SAFE_ADD_3
+SAFE_ADD_4
+SAFE_DIV
+SAFE_MUL_2
+SAFE_MUL_3
+SAFE_MUL_4
+SAFE_SUB
+```

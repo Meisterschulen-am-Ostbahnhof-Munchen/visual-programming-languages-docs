@@ -69,8 +69,8 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- Gegenstück ist [`F_PERCENT_TO_FRACTION`](./F_PERCENT_TO_FRACTION.md) (Prozent → Anteil, für die Hinrichtung, inklusive Klemmen).
-- Einfachster denkbare Skalenwandler ohne jede Bereichsprüfung, da der Eingang bereits garantiert normiert ankommt.
+- Gegenstück ist [`F_PERCENT_TO_FRACTION`](./F_PERCENT_TO_FRACTION.md) (Prozent → Anteil, für die Vorwärtsrichtung, inklusive Klemmen).
+- Einfachste denkbare Skalenwandler ohne jede Bereichsprüfung, da der Eingang bereits garantiert normiert ankommt.
 
 ## Fazit
 

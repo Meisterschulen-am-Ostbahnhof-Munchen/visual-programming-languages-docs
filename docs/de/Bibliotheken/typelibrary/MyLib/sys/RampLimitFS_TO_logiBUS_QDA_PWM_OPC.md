@@ -39,7 +39,7 @@
 6. **Ausgabe (OPC-UA-Publish)**: `RampLimitFS.OUT` → `F_PWM_RAW_TO_PERCENT` (Rohwert → Anteil) → `F_FRACTION_TO_PERCENT_PUB` (Anteil → Prozent) → `AR_REAL_TO_R_PUB` → `AR_PUBLISH_1`.
 7. **Kanal-Schalter**: `Ramp6Buttons.IND_SWITCH` (VT-Taster) → `E_T_FF_SR_SWITCH.CLK` (togglet). `AX_SUBSCRIBE_SWITCH` (Web-Schreibzugriff, BOOL) → `AX_RF_TRIG_SWITCH` erkennt echten Flankenwechsel → `ER`→`S` / `EF`→`R` (setzt statt togglet, damit zwei gleiche Web-Schreibzugriffe nicht versehentlich invertieren). `bDefaultEnabled` speist `E_T_FF_SR_SWITCH.Q_INIT` für den Startzustand.
 8. **Statuskette**: `E_T_FF_SR_SWITCH.Q` → `logiBUS_QD_PWM.QI` (scharf/unscharf) und → `F_SEL_STATUS.G`. `logiBUS_QD_PWM.INITO`/`.QO` speisen `F_SEL_OK_FAULT` (Rot/Grün nach `QO`), dessen Ergebnis über `F_SEL_STATUS` (Weiß, falls deaktiviert) an `Q_BackgroundColour_STATUS` geht. Zusätzlich spiegeln `AX_BOOL_TO_X_SWITCH`/`AX_PUBLISH_SWITCH` und `AX_BOOL_TO_X_STATUS`/`AX_PUBLISH_STATUS` Enable-Zustand und `QO` per OPC-UA-Publish an den Web-Client.
-9. **Boot-Reihenfolge**: Die vier OPC-UA-Adapter werden strikt verkettet initialisiert (`AR_SUBSCRIBE_1.INITO → AR_PUBLISH_1.INIT → AX_SUBSCRIBE_SWITCH.INIT → AX_PUBLISH_SWITCH.INIT → AX_PUBLISH_STATUS.INIT`); erst danach feuert `AX_PUBLISH_STATUS.INITO` das `E_T_FF_SR_SWITCH.INIT`, damit der erste publizierte Enable-Zustand nicht von einem noch nicht bereiten Adapter verworfen wird.
+9. **Boot-Reihenfolge**: Die fünf OPC-UA-Adapter werden strikt verkettet initialisiert (`AR_SUBSCRIBE_1.INITO → AR_PUBLISH_1.INIT → AX_SUBSCRIBE_SWITCH.INIT → AX_PUBLISH_SWITCH.INIT → AX_PUBLISH_STATUS.INIT`); erst danach feuert `AX_PUBLISH_STATUS.INITO` das `E_T_FF_SR_SWITCH.INIT`, damit der erste publizierte Enable-Zustand nicht von einem noch nicht bereiten Adapter verworfen wird.
 
 ## Technische Besonderheiten
 
@@ -56,7 +56,7 @@
 
 ## Vergleich mit ähnlichen Bausteinen
 
-Gegenüber dem einfacheren, rein digitalen Pendant unterscheidet sich `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` durch den analogen Sollwert (Rampe statt Bit), die zusätzliche Skalierungskette (Prozent ↔ Anteil ↔ Fieldbus-Rohwert ↔ 13-Bit-PWM) und die 3-Farben- statt 2-Farben-Statuslogik.
+Gegenüber dem einfacheren, rein digitalen Pendant `RampLimitFS_TO_logiBUS_QDA_OPC` unterscheidet sich `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` durch den analogen Sollwert (Rampe statt Bit), die zusätzliche Skalierungskette (Prozent ↔ Anteil ↔ Fieldbus-Rohwert ↔ 13-Bit-PWM) und die 3-Farben- statt 2-Farben-Statuslogik.
 
 ## Zusammenfassung
 

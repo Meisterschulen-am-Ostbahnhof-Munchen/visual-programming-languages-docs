@@ -39,7 +39,7 @@
 6. **OPC-UA publish**: `RampLimitFS.OUT` → `F_PWM_RAW_TO_PERCENT` (raw value → fraction) → `F_FRACTION_TO_PERCENT_PUB` (fraction → percent) → `AR_REAL_TO_R_PUB` → `AR_PUBLISH_1`.
 7. **Channel switch**: `Ramp6Buttons.IND_SWITCH` (VT button) → `E_T_FF_SR_SWITCH.CLK` (toggles). `AX_SUBSCRIBE_SWITCH` (web write, BOOL) → `AX_RF_TRIG_SWITCH` detects a real edge change → `ER`→`S` / `EF`→`R` (sets instead of toggling, so two identical web writes cannot accidentally invert the state). `bDefaultEnabled` feeds `E_T_FF_SR_SWITCH.Q_INIT` for the initial state.
 8. **Status chain**: `E_T_FF_SR_SWITCH.Q` → `logiBUS_QD_PWM.QI` (armed/disarmed) and → `F_SEL_STATUS.G`. `logiBUS_QD_PWM.INITO`/`.QO` feed `F_SEL_OK_FAULT` (red/green based on `QO`), whose result goes through `F_SEL_STATUS` (white if disabled) to `Q_BackgroundColour_STATUS`. In addition, `AX_BOOL_TO_X_SWITCH`/`AX_PUBLISH_SWITCH` and `AX_BOOL_TO_X_STATUS`/`AX_PUBLISH_STATUS` mirror the enable state and `QO` to the web client via OPC-UA publish.
-9. **Boot sequence**: The four OPC-UA adapters are initialized in a strict chain (`AR_SUBSCRIBE_1.INITO → AR_PUBLISH_1.INIT → AX_SUBSCRIBE_SWITCH.INIT → AX_PUBLISH_SWITCH.INIT → AX_PUBLISH_STATUS.INIT`); only afterward does `AX_PUBLISH_STATUS.INITO` fire `E_T_FF_SR_SWITCH.INIT`, so the first published enable state is not dropped by an adapter that is not yet ready.
+9. **Boot sequence**: The five OPC-UA adapters are initialized in a strict chain (`AR_SUBSCRIBE_1.INITO → AR_PUBLISH_1.INIT → AX_SUBSCRIBE_SWITCH.INIT → AX_PUBLISH_SWITCH.INIT → AX_PUBLISH_STATUS.INIT`); only afterward does `AX_PUBLISH_STATUS.INITO` fire `E_T_FF_SR_SWITCH.INIT`, so the first published enable state is not dropped by an adapter that is not yet ready.
 
 ## Technical Details
 
@@ -56,7 +56,7 @@
 
 ## Comparison with Similar Blocks
 
-Compared to the simpler, purely digital counterpart, `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` differs in its analog setpoint (a ramp instead of a bit), the additional scaling chain (percent ↔ fraction ↔ fieldbus raw value ↔ 13-bit PWM), and the 3-color instead of 2-color status logic.
+Compared to the simpler, purely digital counterpart `RampLimitFS_TO_logiBUS_QDA_OPC`, `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` differs in its analog setpoint (a ramp instead of a bit), the additional scaling chain (percent ↔ fraction ↔ fieldbus raw value ↔ 13-bit PWM), and the 3-color instead of 2-color status logic.
 
 ## Summary
 

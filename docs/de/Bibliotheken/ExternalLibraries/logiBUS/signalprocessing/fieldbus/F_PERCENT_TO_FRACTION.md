@@ -72,7 +72,7 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ## Anwendungsszenarien
 
-- Umrechnung eines per OPC-UA-Subscribe empfangenen Web-Sollwerts (Prozent REAL) in den Anteil, den interne Fieldbus-Umrechnungsbausteine erwarten — z. B. im PWM-Trainingsbeispiel [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
+- Umrechnung eines per OPC-UA-Subscribe empfangenen Web-Sollwerts (Prozent REAL) in den Anteil, den interne Fieldbus-Umrechnungsbausteine erwarten — z. B. im PWM-Trainingsbeispiel [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
 - Allgemein: jede Schnittstelle, die extern in Prozent kommuniziert, intern aber mit einem normierten Anteil 0.0-1.0 rechnet.
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -86,7 +86,7 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ## 🛠️ Zugehörige Übungen
 
-* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
+* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
 * [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
 
 ---

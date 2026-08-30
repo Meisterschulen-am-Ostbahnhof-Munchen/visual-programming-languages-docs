@@ -19,7 +19,7 @@ The exercise is a pure top-level composite: it instantiates the 8 unchanged inpu
 | `Output_Q1` … `Output_Q12` | `MyLib::sys::RampLimitFS_TO_logiBUS_QDA_PWM_OPC` | One complete PWM channel each (VT + physical output + OPC-UA) |
 | `SystemTickSender` | `MyLib::sys::SystemTickSender` | Cyclic counter feeding the VT status display (`OutputNumber_Tick`) |
 
-All 12 `Output_Qxx` instances are the same reusable composite SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (see [sub-block](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) below) and differ only in their parameters:
+All 12 `Output_Qxx` instances are the same reusable composite SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (see [sub-block](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) below) and differ only in their parameters:
 
 ### Sub-block: RampLimitFS_TO_logiBUS_QDA_PWM_OPC
 

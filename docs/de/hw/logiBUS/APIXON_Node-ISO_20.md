@@ -39,6 +39,13 @@ Alle acht analogen Eingänge sind Combo-Pins, die sich den physischen Pin mit de
 gleichnamigen digitalen Eingang teilen (I1↔AnalogInput_I1 usw.) — pro Pin kann nur
 eine der beiden Funktionen gleichzeitig genutzt werden.
 
+**Roh-Vollausschlag:** `IN` (`logiBUS_AI_ID`/`logiBUS_AI_IDA`) liefert 0-4095
+(12 bit) — beim ESP32-P4 im hier verwendeten Continuous/DMA-ADC-Modus fix,
+keine andere Bit-Breite wählbar (`SOC_ADC_DIGI_MIN_BITWIDTH` =
+`SOC_ADC_DIGI_MAX_BITWIDTH` = 12 laut ESP-IDF `soc_caps.h`). Umrechnung
+Rohwert → Volt: `Vout = Dout × Vmax / 4096` (`Vmax` abhängig von der
+ADC-Dämpfung `ADC_ATTEN_DB_12`).
+
 `AnalogInput_I3` (GPIO54) liegt als einziger auf ADC2 statt ADC1. Das ist hier
 unproblematisch, da der ESP32-P4 kein eigenes WLAN-Radio besitzt und der
 ADC2/WLAN-Konflikt (der bei ESP32/ESP32-S2/ESP32-S3 mit WLAN besteht) auf diesem Chip

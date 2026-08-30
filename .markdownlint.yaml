@@ -7,10 +7,8 @@ default: true  # Standardmäßig sind alle Regeln aktiviert
 # MD043/required-headings : Required heading structure : https://github.com/DavidAnson/markdownlint/blob/v0.37.4/doc/md043.md
 MD043:
   # List of headings
-  headings: [
-    "# Head",
-    "*"
-]
+  headings:
+    - "# Head"
+    - "*"
   # Match case of headings
   match_case: false
-

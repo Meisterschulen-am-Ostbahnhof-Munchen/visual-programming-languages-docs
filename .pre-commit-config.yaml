@@ -12,7 +12,7 @@ exclude: >
 repos:
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.4.0
+    rev: v6.0.0
     hooks:
     - id: check-json
     - id: check-yaml
@@ -20,29 +20,29 @@ repos:
     - id: trailing-whitespace
 
   - repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.21.2
     hooks:
     - id: pyupgrade
       args: [--py37-plus]
 
   - repo: https://github.com/PyCQA/isort
-    rev: 5.11.4
+    rev: 9.0.1
     hooks:
     - id: isort
 
   - repo: https://github.com/psf/black
-    rev: 22.12.0
+    rev: 26.5.1
     hooks:
     - id: black
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
-    rev: v0.0.218
+    rev: v0.16.5
     hooks:
     - id: ruff
       args: ["--force-exclude"]
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.991
+    rev: v2.3.1
     hooks:
     - id: mypy
       args: [--config-file=pyproject.toml]
@@ -54,3 +54,8 @@ repos:
         (?x)^(
             myst_parser/.*py|
         )$
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.23.2
+    hooks:
+    - id: markdownlint-cli2

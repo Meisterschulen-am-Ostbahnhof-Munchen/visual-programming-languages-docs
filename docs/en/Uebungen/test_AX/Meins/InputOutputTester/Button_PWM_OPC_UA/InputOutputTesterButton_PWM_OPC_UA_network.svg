@@ -1,0 +1,1223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="633.1428571428571" height="1612.0000000000002" viewBox="0 0 633.1428571428571 1612.0000000000002">
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<rect x="0" y="0" width="633.1428571428571" height="1612.0000000000002" fill="#ffffff" />
+<defs>
+    
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<text x="316.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">InputOutputTesterButton_PWM_OPC_UA: PWM Tester (OPC-UA): 8 unveraenderte digitale Eingaenge + 12 PWM-Ausgaenge (VT-Zahlenfeld/Balken/6 Ramp-Tasten je Kanal)</text>
+<path d="M 396.14285714285717 182.42857142857144
+            L 530.1428571428571 182.42857142857144
+            A 3 3 0 0 1 533.1428571428571 185.42857142857144
+            L 533.1428571428571 209.42857142857144
+            A 3 3 0 0 1 530.1428571428571 212.42857142857144
+            L 527.1428571428571 212.42857142857144
+            L 527.1428571428571 252.42857142857144
+            L 530.1428571428571 252.42857142857144
+            A 3 3 0 0 1 533.1428571428571 255.42857142857144
+            L 533.1428571428571 315.42857142857144
+            A 3 3 0 0 1 530.1428571428571 318.42857142857144
+            L 396.14285714285717 318.42857142857144
+            A 3 3 0 0 1 393.14285714285717 315.42857142857144
+            L 393.14285714285717 255.42857142857144
+            A 3 3 0 0 1 396.14285714285717 252.42857142857144
+            L 399.14285714285717 252.42857142857144
+            L 399.14285714285717 212.42857142857144
+            L 396.14285714285717 212.42857142857144
+            A 3 3 0 0 1 393.14285714285717 209.42857142857144
+            L 393.14285714285717 185.42857142857144
+            A 3 3 0 0 1 396.14285714285717 182.42857142857144
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 223.42857142857144
+            L 436.64285714285717 223.42857142857144
+            A 1 1 0 0 1 437.64285714285717 224.42857142857144
+            L 437.64285714285717 227.92857142857144
+            L 435.64285714285717 227.92857142857144
+            L 435.64285714285717 230.92857142857144
+            L 437.64285714285717 230.92857142857144
+            L 437.64285714285717 240.42857142857144
+            A 1 1 0 0 1 436.64285714285717 241.42857142857144
+            L 420.64285714285717 241.42857142857144
+            A 1 1 0 0 1 419.64285714285717 240.42857142857144
+            L 419.64285714285717 230.92857142857144
+            L 421.64285714285717 230.92857142857144
+            L 421.64285714285717 227.92857142857144
+            L 419.64285714285717 227.92857142857144
+            L 419.64285714285717 224.42857142857144
+            A 1 1 0 0 1 420.64285714285717 223.42857142857144
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="237.42857142857144" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="237.42857142857144" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I1</text>
+<text x="463.14285714285717" y="252.42857142857144" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="256.42857142857144" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I01</text>
+<text x="463.14285714285717" y="268.42857142857144" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I1</text>
+<text x="463.14285714285717" y="280.42857142857144" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I1_WRITE</text>
+<path d="M 396.14285714285717 205.57142857142858
+            L 530.1428571428571 205.57142857142858
+            A 3 3 0 0 1 533.1428571428571 208.57142857142858
+            L 533.1428571428571 232.57142857142858
+            A 3 3 0 0 1 530.1428571428571 235.57142857142858
+            L 527.1428571428571 235.57142857142858
+            L 527.1428571428571 275.57142857142856
+            L 530.1428571428571 275.57142857142856
+            A 3 3 0 0 1 533.1428571428571 278.57142857142856
+            L 533.1428571428571 338.57142857142856
+            A 3 3 0 0 1 530.1428571428571 341.57142857142856
+            L 396.14285714285717 341.57142857142856
+            A 3 3 0 0 1 393.14285714285717 338.57142857142856
+            L 393.14285714285717 278.57142857142856
+            A 3 3 0 0 1 396.14285714285717 275.57142857142856
+            L 399.14285714285717 275.57142857142856
+            L 399.14285714285717 235.57142857142858
+            L 396.14285714285717 235.57142857142858
+            A 3 3 0 0 1 393.14285714285717 232.57142857142858
+            L 393.14285714285717 208.57142857142858
+            A 3 3 0 0 1 396.14285714285717 205.57142857142858
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 246.57142857142856
+            L 436.64285714285717 246.57142857142856
+            A 1 1 0 0 1 437.64285714285717 247.57142857142856
+            L 437.64285714285717 251.07142857142856
+            L 435.64285714285717 251.07142857142856
+            L 435.64285714285717 254.07142857142856
+            L 437.64285714285717 254.07142857142856
+            L 437.64285714285717 263.57142857142856
+            A 1 1 0 0 1 436.64285714285717 264.57142857142856
+            L 420.64285714285717 264.57142857142856
+            A 1 1 0 0 1 419.64285714285717 263.57142857142856
+            L 419.64285714285717 254.07142857142856
+            L 421.64285714285717 254.07142857142856
+            L 421.64285714285717 251.07142857142856
+            L 419.64285714285717 251.07142857142856
+            L 419.64285714285717 247.57142857142856
+            A 1 1 0 0 1 420.64285714285717 246.57142857142856
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="260.57142857142856" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="260.57142857142856" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I2</text>
+<text x="463.14285714285717" y="275.57142857142856" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="279.57142857142856" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I02</text>
+<text x="463.14285714285717" y="291.57142857142856" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I2</text>
+<text x="463.14285714285717" y="303.57142857142856" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I2_WRITE</text>
+<path d="M 396.14285714285717 228.71428571428572
+            L 530.1428571428571 228.71428571428572
+            A 3 3 0 0 1 533.1428571428571 231.71428571428572
+            L 533.1428571428571 255.71428571428572
+            A 3 3 0 0 1 530.1428571428571 258.7142857142857
+            L 527.1428571428571 258.7142857142857
+            L 527.1428571428571 298.7142857142857
+            L 530.1428571428571 298.7142857142857
+            A 3 3 0 0 1 533.1428571428571 301.7142857142857
+            L 533.1428571428571 361.7142857142857
+            A 3 3 0 0 1 530.1428571428571 364.7142857142857
+            L 396.14285714285717 364.7142857142857
+            A 3 3 0 0 1 393.14285714285717 361.7142857142857
+            L 393.14285714285717 301.7142857142857
+            A 3 3 0 0 1 396.14285714285717 298.7142857142857
+            L 399.14285714285717 298.7142857142857
+            L 399.14285714285717 258.7142857142857
+            L 396.14285714285717 258.7142857142857
+            A 3 3 0 0 1 393.14285714285717 255.71428571428572
+            L 393.14285714285717 231.71428571428572
+            A 3 3 0 0 1 396.14285714285717 228.71428571428572
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 269.7142857142857
+            L 436.64285714285717 269.7142857142857
+            A 1 1 0 0 1 437.64285714285717 270.7142857142857
+            L 437.64285714285717 274.2142857142857
+            L 435.64285714285717 274.2142857142857
+            L 435.64285714285717 277.2142857142857
+            L 437.64285714285717 277.2142857142857
+            L 437.64285714285717 286.7142857142857
+            A 1 1 0 0 1 436.64285714285717 287.7142857142857
+            L 420.64285714285717 287.7142857142857
+            A 1 1 0 0 1 419.64285714285717 286.7142857142857
+            L 419.64285714285717 277.2142857142857
+            L 421.64285714285717 277.2142857142857
+            L 421.64285714285717 274.2142857142857
+            L 419.64285714285717 274.2142857142857
+            L 419.64285714285717 270.7142857142857
+            A 1 1 0 0 1 420.64285714285717 269.7142857142857
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="283.7142857142857" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="283.7142857142857" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I3</text>
+<text x="463.14285714285717" y="298.7142857142857" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="302.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I03</text>
+<text x="463.14285714285717" y="314.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I3</text>
+<text x="463.14285714285717" y="326.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I3_WRITE</text>
+<path d="M 396.14285714285717 251.8571428571429
+            L 530.1428571428571 251.8571428571429
+            A 3 3 0 0 1 533.1428571428571 254.8571428571429
+            L 533.1428571428571 278.8571428571429
+            A 3 3 0 0 1 530.1428571428571 281.8571428571429
+            L 527.1428571428571 281.8571428571429
+            L 527.1428571428571 321.8571428571429
+            L 530.1428571428571 321.8571428571429
+            A 3 3 0 0 1 533.1428571428571 324.8571428571429
+            L 533.1428571428571 384.8571428571429
+            A 3 3 0 0 1 530.1428571428571 387.8571428571429
+            L 396.14285714285717 387.8571428571429
+            A 3 3 0 0 1 393.14285714285717 384.8571428571429
+            L 393.14285714285717 324.8571428571429
+            A 3 3 0 0 1 396.14285714285717 321.8571428571429
+            L 399.14285714285717 321.8571428571429
+            L 399.14285714285717 281.8571428571429
+            L 396.14285714285717 281.8571428571429
+            A 3 3 0 0 1 393.14285714285717 278.8571428571429
+            L 393.14285714285717 254.8571428571429
+            A 3 3 0 0 1 396.14285714285717 251.8571428571429
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 292.8571428571429
+            L 436.64285714285717 292.8571428571429
+            A 1 1 0 0 1 437.64285714285717 293.8571428571429
+            L 437.64285714285717 297.3571428571429
+            L 435.64285714285717 297.3571428571429
+            L 435.64285714285717 300.3571428571429
+            L 437.64285714285717 300.3571428571429
+            L 437.64285714285717 309.8571428571429
+            A 1 1 0 0 1 436.64285714285717 310.8571428571429
+            L 420.64285714285717 310.8571428571429
+            A 1 1 0 0 1 419.64285714285717 309.8571428571429
+            L 419.64285714285717 300.3571428571429
+            L 421.64285714285717 300.3571428571429
+            L 421.64285714285717 297.3571428571429
+            L 419.64285714285717 297.3571428571429
+            L 419.64285714285717 293.8571428571429
+            A 1 1 0 0 1 420.64285714285717 292.8571428571429
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="306.8571428571429" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="306.8571428571429" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I4</text>
+<text x="463.14285714285717" y="321.8571428571429" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="325.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I04</text>
+<text x="463.14285714285717" y="337.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I4</text>
+<text x="463.14285714285717" y="349.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I4_WRITE</text>
+<path d="M 396.14285714285717 275.0
+            L 530.1428571428571 275.0
+            A 3 3 0 0 1 533.1428571428571 278.0
+            L 533.1428571428571 302.0
+            A 3 3 0 0 1 530.1428571428571 305.0
+            L 527.1428571428571 305.0
+            L 527.1428571428571 345.0
+            L 530.1428571428571 345.0
+            A 3 3 0 0 1 533.1428571428571 348.0
+            L 533.1428571428571 408.0
+            A 3 3 0 0 1 530.1428571428571 411.0
+            L 396.14285714285717 411.0
+            A 3 3 0 0 1 393.14285714285717 408.0
+            L 393.14285714285717 348.0
+            A 3 3 0 0 1 396.14285714285717 345.0
+            L 399.14285714285717 345.0
+            L 399.14285714285717 305.0
+            L 396.14285714285717 305.0
+            A 3 3 0 0 1 393.14285714285717 302.0
+            L 393.14285714285717 278.0
+            A 3 3 0 0 1 396.14285714285717 275.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 316.0
+            L 436.64285714285717 316.0
+            A 1 1 0 0 1 437.64285714285717 317.0
+            L 437.64285714285717 320.5
+            L 435.64285714285717 320.5
+            L 435.64285714285717 323.5
+            L 437.64285714285717 323.5
+            L 437.64285714285717 333.0
+            A 1 1 0 0 1 436.64285714285717 334.0
+            L 420.64285714285717 334.0
+            A 1 1 0 0 1 419.64285714285717 333.0
+            L 419.64285714285717 323.5
+            L 421.64285714285717 323.5
+            L 421.64285714285717 320.5
+            L 419.64285714285717 320.5
+            L 419.64285714285717 317.0
+            A 1 1 0 0 1 420.64285714285717 316.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="330.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="330.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I5</text>
+<text x="463.14285714285717" y="345.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="349.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I05</text>
+<text x="463.14285714285717" y="361.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I5</text>
+<text x="463.14285714285717" y="373.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I5_WRITE</text>
+<path d="M 396.14285714285717 298.14285714285717
+            L 530.1428571428571 298.14285714285717
+            A 3 3 0 0 1 533.1428571428571 301.14285714285717
+            L 533.1428571428571 325.14285714285717
+            A 3 3 0 0 1 530.1428571428571 328.14285714285717
+            L 527.1428571428571 328.14285714285717
+            L 527.1428571428571 368.14285714285717
+            L 530.1428571428571 368.14285714285717
+            A 3 3 0 0 1 533.1428571428571 371.14285714285717
+            L 533.1428571428571 431.14285714285717
+            A 3 3 0 0 1 530.1428571428571 434.14285714285717
+            L 396.14285714285717 434.14285714285717
+            A 3 3 0 0 1 393.14285714285717 431.14285714285717
+            L 393.14285714285717 371.14285714285717
+            A 3 3 0 0 1 396.14285714285717 368.14285714285717
+            L 399.14285714285717 368.14285714285717
+            L 399.14285714285717 328.14285714285717
+            L 396.14285714285717 328.14285714285717
+            A 3 3 0 0 1 393.14285714285717 325.14285714285717
+            L 393.14285714285717 301.14285714285717
+            A 3 3 0 0 1 396.14285714285717 298.14285714285717
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 339.14285714285717
+            L 436.64285714285717 339.14285714285717
+            A 1 1 0 0 1 437.64285714285717 340.14285714285717
+            L 437.64285714285717 343.64285714285717
+            L 435.64285714285717 343.64285714285717
+            L 435.64285714285717 346.64285714285717
+            L 437.64285714285717 346.64285714285717
+            L 437.64285714285717 356.14285714285717
+            A 1 1 0 0 1 436.64285714285717 357.14285714285717
+            L 420.64285714285717 357.14285714285717
+            A 1 1 0 0 1 419.64285714285717 356.14285714285717
+            L 419.64285714285717 346.64285714285717
+            L 421.64285714285717 346.64285714285717
+            L 421.64285714285717 343.64285714285717
+            L 419.64285714285717 343.64285714285717
+            L 419.64285714285717 340.14285714285717
+            A 1 1 0 0 1 420.64285714285717 339.14285714285717
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="353.14285714285717" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="353.14285714285717" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I6</text>
+<text x="463.14285714285717" y="368.14285714285717" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="372.14285714285717" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I06</text>
+<text x="463.14285714285717" y="384.14285714285717" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I6</text>
+<text x="463.14285714285717" y="396.14285714285717" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I6_WRITE</text>
+<path d="M 396.14285714285717 321.28571428571433
+            L 530.1428571428571 321.28571428571433
+            A 3 3 0 0 1 533.1428571428571 324.28571428571433
+            L 533.1428571428571 348.28571428571433
+            A 3 3 0 0 1 530.1428571428571 351.28571428571433
+            L 527.1428571428571 351.28571428571433
+            L 527.1428571428571 391.28571428571433
+            L 530.1428571428571 391.28571428571433
+            A 3 3 0 0 1 533.1428571428571 394.28571428571433
+            L 533.1428571428571 454.28571428571433
+            A 3 3 0 0 1 530.1428571428571 457.28571428571433
+            L 396.14285714285717 457.28571428571433
+            A 3 3 0 0 1 393.14285714285717 454.28571428571433
+            L 393.14285714285717 394.28571428571433
+            A 3 3 0 0 1 396.14285714285717 391.28571428571433
+            L 399.14285714285717 391.28571428571433
+            L 399.14285714285717 351.28571428571433
+            L 396.14285714285717 351.28571428571433
+            A 3 3 0 0 1 393.14285714285717 348.28571428571433
+            L 393.14285714285717 324.28571428571433
+            A 3 3 0 0 1 396.14285714285717 321.28571428571433
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 362.28571428571433
+            L 436.64285714285717 362.28571428571433
+            A 1 1 0 0 1 437.64285714285717 363.28571428571433
+            L 437.64285714285717 366.78571428571433
+            L 435.64285714285717 366.78571428571433
+            L 435.64285714285717 369.78571428571433
+            L 437.64285714285717 369.78571428571433
+            L 437.64285714285717 379.28571428571433
+            A 1 1 0 0 1 436.64285714285717 380.28571428571433
+            L 420.64285714285717 380.28571428571433
+            A 1 1 0 0 1 419.64285714285717 379.28571428571433
+            L 419.64285714285717 369.78571428571433
+            L 421.64285714285717 369.78571428571433
+            L 421.64285714285717 366.78571428571433
+            L 419.64285714285717 366.78571428571433
+            L 419.64285714285717 363.28571428571433
+            A 1 1 0 0 1 420.64285714285717 362.28571428571433
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="376.28571428571433" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="376.28571428571433" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I7</text>
+<text x="463.14285714285717" y="391.28571428571433" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="395.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I07</text>
+<text x="463.14285714285717" y="407.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I7</text>
+<text x="463.14285714285717" y="419.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I7_WRITE</text>
+<path d="M 396.14285714285717 344.42857142857144
+            L 530.1428571428571 344.42857142857144
+            A 3 3 0 0 1 533.1428571428571 347.42857142857144
+            L 533.1428571428571 371.42857142857144
+            A 3 3 0 0 1 530.1428571428571 374.42857142857144
+            L 527.1428571428571 374.42857142857144
+            L 527.1428571428571 414.42857142857144
+            L 530.1428571428571 414.42857142857144
+            A 3 3 0 0 1 533.1428571428571 417.42857142857144
+            L 533.1428571428571 477.42857142857144
+            A 3 3 0 0 1 530.1428571428571 480.42857142857144
+            L 396.14285714285717 480.42857142857144
+            A 3 3 0 0 1 393.14285714285717 477.42857142857144
+            L 393.14285714285717 417.42857142857144
+            A 3 3 0 0 1 396.14285714285717 414.42857142857144
+            L 399.14285714285717 414.42857142857144
+            L 399.14285714285717 374.42857142857144
+            L 396.14285714285717 374.42857142857144
+            A 3 3 0 0 1 393.14285714285717 371.42857142857144
+            L 393.14285714285717 347.42857142857144
+            A 3 3 0 0 1 396.14285714285717 344.42857142857144
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 420.64285714285717 385.42857142857144
+            L 436.64285714285717 385.42857142857144
+            A 1 1 0 0 1 437.64285714285717 386.42857142857144
+            L 437.64285714285717 389.92857142857144
+            L 435.64285714285717 389.92857142857144
+            L 435.64285714285717 392.92857142857144
+            L 437.64285714285717 392.92857142857144
+            L 437.64285714285717 402.42857142857144
+            A 1 1 0 0 1 436.64285714285717 403.42857142857144
+            L 420.64285714285717 403.42857142857144
+            A 1 1 0 0 1 419.64285714285717 402.42857142857144
+            L 419.64285714285717 392.92857142857144
+            L 421.64285714285717 392.92857142857144
+            L 421.64285714285717 389.92857142857144
+            L 419.64285714285717 389.92857142857144
+            L 419.64285714285717 386.42857142857144
+            A 1 1 0 0 1 420.64285714285717 385.42857142857144
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="428.64285714285717" y="399.42857142857144" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="442.64285714285717" y="399.42857142857144" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Input_I8</text>
+<text x="463.14285714285717" y="414.42857142857144" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">logiBUS_IXA_BG_OPC</text>
+<text x="463.14285714285717" y="418.42857142857144" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=Button_I08</text>
+<text x="463.14285714285717" y="430.42857142857144" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Input=Input_I8</text>
+<text x="463.14285714285717" y="442.42857142857144" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=I8_WRITE</text>
+<path d="M 272.7142857142857 201.71428571428572
+            L 416.7142857142857 201.71428571428572
+            A 3 3 0 0 1 419.7142857142857 204.71428571428572
+            L 419.7142857142857 228.71428571428572
+            A 3 3 0 0 1 416.7142857142857 231.71428571428572
+            L 413.7142857142857 231.71428571428572
+            L 413.7142857142857 271.7142857142857
+            L 416.7142857142857 271.7142857142857
+            A 3 3 0 0 1 419.7142857142857 274.7142857142857
+            L 419.7142857142857 490.7142857142857
+            A 3 3 0 0 1 416.7142857142857 493.7142857142857
+            L 272.7142857142857 493.7142857142857
+            A 3 3 0 0 1 269.7142857142857 490.7142857142857
+            L 269.7142857142857 274.7142857142857
+            A 3 3 0 0 1 272.7142857142857 271.7142857142857
+            L 275.7142857142857 271.7142857142857
+            L 275.7142857142857 231.71428571428572
+            L 272.7142857142857 231.71428571428572
+            A 3 3 0 0 1 269.7142857142857 228.71428571428572
+            L 269.7142857142857 204.71428571428572
+            A 3 3 0 0 1 272.7142857142857 201.71428571428572
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 242.71428571428572
+            L 314.2142857142857 242.71428571428572
+            A 1 1 0 0 1 315.2142857142857 243.71428571428572
+            L 315.2142857142857 247.21428571428572
+            L 313.2142857142857 247.21428571428572
+            L 313.2142857142857 250.21428571428572
+            L 315.2142857142857 250.21428571428572
+            L 315.2142857142857 259.7142857142857
+            A 1 1 0 0 1 314.2142857142857 260.7142857142857
+            L 298.2142857142857 260.7142857142857
+            A 1 1 0 0 1 297.2142857142857 259.7142857142857
+            L 297.2142857142857 250.21428571428572
+            L 299.2142857142857 250.21428571428572
+            L 299.2142857142857 247.21428571428572
+            L 297.2142857142857 247.21428571428572
+            L 297.2142857142857 243.71428571428572
+            A 1 1 0 0 1 298.2142857142857 242.71428571428572
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="256.7142857142857" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="256.7142857142857" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q1</text>
+<text x="344.7142857142857" y="271.7142857142857" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="275.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q01</text>
+<text x="344.7142857142857" y="287.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q01_ZERO</text>
+<text x="344.7142857142857" y="299.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q01_DOWN_FAST</text>
+<text x="344.7142857142857" y="311.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q01_DOWN_SLOW</text>
+<text x="344.7142857142857" y="323.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q01_UP_SLOW</text>
+<text x="344.7142857142857" y="335.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q01_UP_FAST</text>
+<text x="344.7142857142857" y="347.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q01_FULL</text>
+<text x="344.7142857142857" y="359.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q01_SWITCH</text>
+<text x="344.7142857142857" y="371.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q01_STATUS</text>
+<text x="344.7142857142857" y="383.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="395.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q1</text>
+<text x="344.7142857142857" y="407.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q01_READ</text>
+<text x="344.7142857142857" y="419.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q01_WRITE</text>
+<text x="344.7142857142857" y="431.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q01_SWITCH_READ</text>
+<text x="344.7142857142857" y="443.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q01_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="455.7142857142857" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q01_STATUS_WRITE</text>
+<path d="M 272.7142857142857 294.28571428571433
+            L 416.7142857142857 294.28571428571433
+            A 3 3 0 0 1 419.7142857142857 297.28571428571433
+            L 419.7142857142857 321.28571428571433
+            A 3 3 0 0 1 416.7142857142857 324.28571428571433
+            L 413.7142857142857 324.28571428571433
+            L 413.7142857142857 364.28571428571433
+            L 416.7142857142857 364.28571428571433
+            A 3 3 0 0 1 419.7142857142857 367.28571428571433
+            L 419.7142857142857 583.2857142857143
+            A 3 3 0 0 1 416.7142857142857 586.2857142857143
+            L 272.7142857142857 586.2857142857143
+            A 3 3 0 0 1 269.7142857142857 583.2857142857143
+            L 269.7142857142857 367.28571428571433
+            A 3 3 0 0 1 272.7142857142857 364.28571428571433
+            L 275.7142857142857 364.28571428571433
+            L 275.7142857142857 324.28571428571433
+            L 272.7142857142857 324.28571428571433
+            A 3 3 0 0 1 269.7142857142857 321.28571428571433
+            L 269.7142857142857 297.28571428571433
+            A 3 3 0 0 1 272.7142857142857 294.28571428571433
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 335.28571428571433
+            L 314.2142857142857 335.28571428571433
+            A 1 1 0 0 1 315.2142857142857 336.28571428571433
+            L 315.2142857142857 339.78571428571433
+            L 313.2142857142857 339.78571428571433
+            L 313.2142857142857 342.78571428571433
+            L 315.2142857142857 342.78571428571433
+            L 315.2142857142857 352.28571428571433
+            A 1 1 0 0 1 314.2142857142857 353.28571428571433
+            L 298.2142857142857 353.28571428571433
+            A 1 1 0 0 1 297.2142857142857 352.28571428571433
+            L 297.2142857142857 342.78571428571433
+            L 299.2142857142857 342.78571428571433
+            L 299.2142857142857 339.78571428571433
+            L 297.2142857142857 339.78571428571433
+            L 297.2142857142857 336.28571428571433
+            A 1 1 0 0 1 298.2142857142857 335.28571428571433
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="349.28571428571433" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="349.28571428571433" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q2</text>
+<text x="344.7142857142857" y="364.28571428571433" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="368.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q02</text>
+<text x="344.7142857142857" y="380.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q02_ZERO</text>
+<text x="344.7142857142857" y="392.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q02_DOWN_FAST</text>
+<text x="344.7142857142857" y="404.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q02_DOWN_SLOW</text>
+<text x="344.7142857142857" y="416.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q02_UP_SLOW</text>
+<text x="344.7142857142857" y="428.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q02_UP_FAST</text>
+<text x="344.7142857142857" y="440.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q02_FULL</text>
+<text x="344.7142857142857" y="452.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q02_SWITCH</text>
+<text x="344.7142857142857" y="464.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q02_STATUS</text>
+<text x="344.7142857142857" y="476.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="488.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q2</text>
+<text x="344.7142857142857" y="500.28571428571433" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q02_READ</text>
+<text x="344.7142857142857" y="512.2857142857143" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q02_WRITE</text>
+<text x="344.7142857142857" y="524.2857142857143" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q02_SWITCH_READ</text>
+<text x="344.7142857142857" y="536.2857142857143" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q02_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="548.2857142857143" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q02_STATUS_WRITE</text>
+<path d="M 272.7142857142857 386.8571428571429
+            L 416.7142857142857 386.8571428571429
+            A 3 3 0 0 1 419.7142857142857 389.8571428571429
+            L 419.7142857142857 413.8571428571429
+            A 3 3 0 0 1 416.7142857142857 416.8571428571429
+            L 413.7142857142857 416.8571428571429
+            L 413.7142857142857 456.8571428571429
+            L 416.7142857142857 456.8571428571429
+            A 3 3 0 0 1 419.7142857142857 459.8571428571429
+            L 419.7142857142857 675.8571428571429
+            A 3 3 0 0 1 416.7142857142857 678.8571428571429
+            L 272.7142857142857 678.8571428571429
+            A 3 3 0 0 1 269.7142857142857 675.8571428571429
+            L 269.7142857142857 459.8571428571429
+            A 3 3 0 0 1 272.7142857142857 456.8571428571429
+            L 275.7142857142857 456.8571428571429
+            L 275.7142857142857 416.8571428571429
+            L 272.7142857142857 416.8571428571429
+            A 3 3 0 0 1 269.7142857142857 413.8571428571429
+            L 269.7142857142857 389.8571428571429
+            A 3 3 0 0 1 272.7142857142857 386.8571428571429
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 427.8571428571429
+            L 314.2142857142857 427.8571428571429
+            A 1 1 0 0 1 315.2142857142857 428.8571428571429
+            L 315.2142857142857 432.3571428571429
+            L 313.2142857142857 432.3571428571429
+            L 313.2142857142857 435.3571428571429
+            L 315.2142857142857 435.3571428571429
+            L 315.2142857142857 444.8571428571429
+            A 1 1 0 0 1 314.2142857142857 445.8571428571429
+            L 298.2142857142857 445.8571428571429
+            A 1 1 0 0 1 297.2142857142857 444.8571428571429
+            L 297.2142857142857 435.3571428571429
+            L 299.2142857142857 435.3571428571429
+            L 299.2142857142857 432.3571428571429
+            L 297.2142857142857 432.3571428571429
+            L 297.2142857142857 428.8571428571429
+            A 1 1 0 0 1 298.2142857142857 427.8571428571429
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="441.8571428571429" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="441.8571428571429" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q3</text>
+<text x="344.7142857142857" y="456.8571428571429" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="460.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q03</text>
+<text x="344.7142857142857" y="472.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q03_ZERO</text>
+<text x="344.7142857142857" y="484.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q03_DOWN_FAST</text>
+<text x="344.7142857142857" y="496.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q03_DOWN_SLOW</text>
+<text x="344.7142857142857" y="508.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q03_UP_SLOW</text>
+<text x="344.7142857142857" y="520.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q03_UP_FAST</text>
+<text x="344.7142857142857" y="532.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q03_FULL</text>
+<text x="344.7142857142857" y="544.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q03_SWITCH</text>
+<text x="344.7142857142857" y="556.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q03_STATUS</text>
+<text x="344.7142857142857" y="568.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="580.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q3</text>
+<text x="344.7142857142857" y="592.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q03_READ</text>
+<text x="344.7142857142857" y="604.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q03_WRITE</text>
+<text x="344.7142857142857" y="616.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q03_SWITCH_READ</text>
+<text x="344.7142857142857" y="628.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q03_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="640.8571428571429" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q03_STATUS_WRITE</text>
+<path d="M 272.7142857142857 479.42857142857144
+            L 416.7142857142857 479.42857142857144
+            A 3 3 0 0 1 419.7142857142857 482.42857142857144
+            L 419.7142857142857 506.42857142857144
+            A 3 3 0 0 1 416.7142857142857 509.42857142857144
+            L 413.7142857142857 509.42857142857144
+            L 413.7142857142857 549.4285714285714
+            L 416.7142857142857 549.4285714285714
+            A 3 3 0 0 1 419.7142857142857 552.4285714285714
+            L 419.7142857142857 768.4285714285714
+            A 3 3 0 0 1 416.7142857142857 771.4285714285714
+            L 272.7142857142857 771.4285714285714
+            A 3 3 0 0 1 269.7142857142857 768.4285714285714
+            L 269.7142857142857 552.4285714285714
+            A 3 3 0 0 1 272.7142857142857 549.4285714285714
+            L 275.7142857142857 549.4285714285714
+            L 275.7142857142857 509.42857142857144
+            L 272.7142857142857 509.42857142857144
+            A 3 3 0 0 1 269.7142857142857 506.42857142857144
+            L 269.7142857142857 482.42857142857144
+            A 3 3 0 0 1 272.7142857142857 479.42857142857144
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 520.4285714285714
+            L 314.2142857142857 520.4285714285714
+            A 1 1 0 0 1 315.2142857142857 521.4285714285714
+            L 315.2142857142857 524.9285714285714
+            L 313.2142857142857 524.9285714285714
+            L 313.2142857142857 527.9285714285714
+            L 315.2142857142857 527.9285714285714
+            L 315.2142857142857 537.4285714285714
+            A 1 1 0 0 1 314.2142857142857 538.4285714285714
+            L 298.2142857142857 538.4285714285714
+            A 1 1 0 0 1 297.2142857142857 537.4285714285714
+            L 297.2142857142857 527.9285714285714
+            L 299.2142857142857 527.9285714285714
+            L 299.2142857142857 524.9285714285714
+            L 297.2142857142857 524.9285714285714
+            L 297.2142857142857 521.4285714285714
+            A 1 1 0 0 1 298.2142857142857 520.4285714285714
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="534.4285714285714" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="534.4285714285714" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q4</text>
+<text x="344.7142857142857" y="549.4285714285714" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="553.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q04</text>
+<text x="344.7142857142857" y="565.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q04_ZERO</text>
+<text x="344.7142857142857" y="577.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q04_DOWN_FAST</text>
+<text x="344.7142857142857" y="589.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q04_DOWN_SLOW</text>
+<text x="344.7142857142857" y="601.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q04_UP_SLOW</text>
+<text x="344.7142857142857" y="613.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q04_UP_FAST</text>
+<text x="344.7142857142857" y="625.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q04_FULL</text>
+<text x="344.7142857142857" y="637.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q04_SWITCH</text>
+<text x="344.7142857142857" y="649.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q04_STATUS</text>
+<text x="344.7142857142857" y="661.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="673.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q4</text>
+<text x="344.7142857142857" y="685.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q04_READ</text>
+<text x="344.7142857142857" y="697.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q04_WRITE</text>
+<text x="344.7142857142857" y="709.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q04_SWITCH_READ</text>
+<text x="344.7142857142857" y="721.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q04_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="733.4285714285714" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q04_STATUS_WRITE</text>
+<path d="M 272.7142857142857 572.0
+            L 416.7142857142857 572.0
+            A 3 3 0 0 1 419.7142857142857 575.0
+            L 419.7142857142857 599.0
+            A 3 3 0 0 1 416.7142857142857 602.0
+            L 413.7142857142857 602.0
+            L 413.7142857142857 642.0
+            L 416.7142857142857 642.0
+            A 3 3 0 0 1 419.7142857142857 645.0
+            L 419.7142857142857 861.0
+            A 3 3 0 0 1 416.7142857142857 864.0
+            L 272.7142857142857 864.0
+            A 3 3 0 0 1 269.7142857142857 861.0
+            L 269.7142857142857 645.0
+            A 3 3 0 0 1 272.7142857142857 642.0
+            L 275.7142857142857 642.0
+            L 275.7142857142857 602.0
+            L 272.7142857142857 602.0
+            A 3 3 0 0 1 269.7142857142857 599.0
+            L 269.7142857142857 575.0
+            A 3 3 0 0 1 272.7142857142857 572.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 613.0
+            L 314.2142857142857 613.0
+            A 1 1 0 0 1 315.2142857142857 614.0
+            L 315.2142857142857 617.5
+            L 313.2142857142857 617.5
+            L 313.2142857142857 620.5
+            L 315.2142857142857 620.5
+            L 315.2142857142857 630.0
+            A 1 1 0 0 1 314.2142857142857 631.0
+            L 298.2142857142857 631.0
+            A 1 1 0 0 1 297.2142857142857 630.0
+            L 297.2142857142857 620.5
+            L 299.2142857142857 620.5
+            L 299.2142857142857 617.5
+            L 297.2142857142857 617.5
+            L 297.2142857142857 614.0
+            A 1 1 0 0 1 298.2142857142857 613.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="627.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="627.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q5</text>
+<text x="344.7142857142857" y="642.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="646.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q05</text>
+<text x="344.7142857142857" y="658.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q05_ZERO</text>
+<text x="344.7142857142857" y="670.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q05_DOWN_FAST</text>
+<text x="344.7142857142857" y="682.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q05_DOWN_SLOW</text>
+<text x="344.7142857142857" y="694.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q05_UP_SLOW</text>
+<text x="344.7142857142857" y="706.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q05_UP_FAST</text>
+<text x="344.7142857142857" y="718.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q05_FULL</text>
+<text x="344.7142857142857" y="730.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q05_SWITCH</text>
+<text x="344.7142857142857" y="742.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q05_STATUS</text>
+<text x="344.7142857142857" y="754.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="766.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q5</text>
+<text x="344.7142857142857" y="778.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q05_READ</text>
+<text x="344.7142857142857" y="790.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q05_WRITE</text>
+<text x="344.7142857142857" y="802.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q05_SWITCH_READ</text>
+<text x="344.7142857142857" y="814.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q05_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="826.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q05_STATUS_WRITE</text>
+<path d="M 272.7142857142857 664.5714285714287
+            L 416.7142857142857 664.5714285714287
+            A 3 3 0 0 1 419.7142857142857 667.5714285714287
+            L 419.7142857142857 691.5714285714287
+            A 3 3 0 0 1 416.7142857142857 694.5714285714287
+            L 413.7142857142857 694.5714285714287
+            L 413.7142857142857 734.5714285714287
+            L 416.7142857142857 734.5714285714287
+            A 3 3 0 0 1 419.7142857142857 737.5714285714287
+            L 419.7142857142857 953.5714285714287
+            A 3 3 0 0 1 416.7142857142857 956.5714285714287
+            L 272.7142857142857 956.5714285714287
+            A 3 3 0 0 1 269.7142857142857 953.5714285714287
+            L 269.7142857142857 737.5714285714287
+            A 3 3 0 0 1 272.7142857142857 734.5714285714287
+            L 275.7142857142857 734.5714285714287
+            L 275.7142857142857 694.5714285714287
+            L 272.7142857142857 694.5714285714287
+            A 3 3 0 0 1 269.7142857142857 691.5714285714287
+            L 269.7142857142857 667.5714285714287
+            A 3 3 0 0 1 272.7142857142857 664.5714285714287
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 705.5714285714287
+            L 314.2142857142857 705.5714285714287
+            A 1 1 0 0 1 315.2142857142857 706.5714285714287
+            L 315.2142857142857 710.0714285714287
+            L 313.2142857142857 710.0714285714287
+            L 313.2142857142857 713.0714285714287
+            L 315.2142857142857 713.0714285714287
+            L 315.2142857142857 722.5714285714287
+            A 1 1 0 0 1 314.2142857142857 723.5714285714287
+            L 298.2142857142857 723.5714285714287
+            A 1 1 0 0 1 297.2142857142857 722.5714285714287
+            L 297.2142857142857 713.0714285714287
+            L 299.2142857142857 713.0714285714287
+            L 299.2142857142857 710.0714285714287
+            L 297.2142857142857 710.0714285714287
+            L 297.2142857142857 706.5714285714287
+            A 1 1 0 0 1 298.2142857142857 705.5714285714287
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="719.5714285714287" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="719.5714285714287" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q6</text>
+<text x="344.7142857142857" y="734.5714285714287" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="738.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q06</text>
+<text x="344.7142857142857" y="750.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q06_ZERO</text>
+<text x="344.7142857142857" y="762.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q06_DOWN_FAST</text>
+<text x="344.7142857142857" y="774.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q06_DOWN_SLOW</text>
+<text x="344.7142857142857" y="786.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q06_UP_SLOW</text>
+<text x="344.7142857142857" y="798.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q06_UP_FAST</text>
+<text x="344.7142857142857" y="810.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q06_FULL</text>
+<text x="344.7142857142857" y="822.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q06_SWITCH</text>
+<text x="344.7142857142857" y="834.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q06_STATUS</text>
+<text x="344.7142857142857" y="846.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="858.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q6</text>
+<text x="344.7142857142857" y="870.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q06_READ</text>
+<text x="344.7142857142857" y="882.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q06_WRITE</text>
+<text x="344.7142857142857" y="894.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q06_SWITCH_READ</text>
+<text x="344.7142857142857" y="906.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q06_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="918.5714285714287" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q06_STATUS_WRITE</text>
+<path d="M 272.7142857142857 757.1428571428572
+            L 416.7142857142857 757.1428571428572
+            A 3 3 0 0 1 419.7142857142857 760.1428571428572
+            L 419.7142857142857 784.1428571428572
+            A 3 3 0 0 1 416.7142857142857 787.1428571428572
+            L 413.7142857142857 787.1428571428572
+            L 413.7142857142857 827.1428571428572
+            L 416.7142857142857 827.1428571428572
+            A 3 3 0 0 1 419.7142857142857 830.1428571428572
+            L 419.7142857142857 1046.1428571428573
+            A 3 3 0 0 1 416.7142857142857 1049.1428571428573
+            L 272.7142857142857 1049.1428571428573
+            A 3 3 0 0 1 269.7142857142857 1046.1428571428573
+            L 269.7142857142857 830.1428571428572
+            A 3 3 0 0 1 272.7142857142857 827.1428571428572
+            L 275.7142857142857 827.1428571428572
+            L 275.7142857142857 787.1428571428572
+            L 272.7142857142857 787.1428571428572
+            A 3 3 0 0 1 269.7142857142857 784.1428571428572
+            L 269.7142857142857 760.1428571428572
+            A 3 3 0 0 1 272.7142857142857 757.1428571428572
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 798.1428571428572
+            L 314.2142857142857 798.1428571428572
+            A 1 1 0 0 1 315.2142857142857 799.1428571428572
+            L 315.2142857142857 802.6428571428572
+            L 313.2142857142857 802.6428571428572
+            L 313.2142857142857 805.6428571428572
+            L 315.2142857142857 805.6428571428572
+            L 315.2142857142857 815.1428571428572
+            A 1 1 0 0 1 314.2142857142857 816.1428571428572
+            L 298.2142857142857 816.1428571428572
+            A 1 1 0 0 1 297.2142857142857 815.1428571428572
+            L 297.2142857142857 805.6428571428572
+            L 299.2142857142857 805.6428571428572
+            L 299.2142857142857 802.6428571428572
+            L 297.2142857142857 802.6428571428572
+            L 297.2142857142857 799.1428571428572
+            A 1 1 0 0 1 298.2142857142857 798.1428571428572
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="812.1428571428572" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="812.1428571428572" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q7</text>
+<text x="344.7142857142857" y="827.1428571428572" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="831.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q07</text>
+<text x="344.7142857142857" y="843.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q07_ZERO</text>
+<text x="344.7142857142857" y="855.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q07_DOWN_FAST</text>
+<text x="344.7142857142857" y="867.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q07_DOWN_SLOW</text>
+<text x="344.7142857142857" y="879.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q07_UP_SLOW</text>
+<text x="344.7142857142857" y="891.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q07_UP_FAST</text>
+<text x="344.7142857142857" y="903.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q07_FULL</text>
+<text x="344.7142857142857" y="915.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q07_SWITCH</text>
+<text x="344.7142857142857" y="927.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q07_STATUS</text>
+<text x="344.7142857142857" y="939.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="951.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q7</text>
+<text x="344.7142857142857" y="963.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q07_READ</text>
+<text x="344.7142857142857" y="975.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q07_WRITE</text>
+<text x="344.7142857142857" y="987.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q07_SWITCH_READ</text>
+<text x="344.7142857142857" y="999.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q07_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="1011.1428571428572" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q07_STATUS_WRITE</text>
+<path d="M 272.7142857142857 849.7142857142858
+            L 416.7142857142857 849.7142857142858
+            A 3 3 0 0 1 419.7142857142857 852.7142857142858
+            L 419.7142857142857 876.7142857142858
+            A 3 3 0 0 1 416.7142857142857 879.7142857142858
+            L 413.7142857142857 879.7142857142858
+            L 413.7142857142857 919.7142857142858
+            L 416.7142857142857 919.7142857142858
+            A 3 3 0 0 1 419.7142857142857 922.7142857142858
+            L 419.7142857142857 1138.7142857142858
+            A 3 3 0 0 1 416.7142857142857 1141.7142857142858
+            L 272.7142857142857 1141.7142857142858
+            A 3 3 0 0 1 269.7142857142857 1138.7142857142858
+            L 269.7142857142857 922.7142857142858
+            A 3 3 0 0 1 272.7142857142857 919.7142857142858
+            L 275.7142857142857 919.7142857142858
+            L 275.7142857142857 879.7142857142858
+            L 272.7142857142857 879.7142857142858
+            A 3 3 0 0 1 269.7142857142857 876.7142857142858
+            L 269.7142857142857 852.7142857142858
+            A 3 3 0 0 1 272.7142857142857 849.7142857142858
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 890.7142857142858
+            L 314.2142857142857 890.7142857142858
+            A 1 1 0 0 1 315.2142857142857 891.7142857142858
+            L 315.2142857142857 895.2142857142858
+            L 313.2142857142857 895.2142857142858
+            L 313.2142857142857 898.2142857142858
+            L 315.2142857142857 898.2142857142858
+            L 315.2142857142857 907.7142857142858
+            A 1 1 0 0 1 314.2142857142857 908.7142857142858
+            L 298.2142857142857 908.7142857142858
+            A 1 1 0 0 1 297.2142857142857 907.7142857142858
+            L 297.2142857142857 898.2142857142858
+            L 299.2142857142857 898.2142857142858
+            L 299.2142857142857 895.2142857142858
+            L 297.2142857142857 895.2142857142858
+            L 297.2142857142857 891.7142857142858
+            A 1 1 0 0 1 298.2142857142857 890.7142857142858
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="904.7142857142858" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="904.7142857142858" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q8</text>
+<text x="344.7142857142857" y="919.7142857142858" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="923.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q08</text>
+<text x="344.7142857142857" y="935.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q08_ZERO</text>
+<text x="344.7142857142857" y="947.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q08_DOWN_FAST</text>
+<text x="344.7142857142857" y="959.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q08_DOWN_SLOW</text>
+<text x="344.7142857142857" y="971.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q08_UP_SLOW</text>
+<text x="344.7142857142857" y="983.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q08_UP_FAST</text>
+<text x="344.7142857142857" y="995.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q08_FULL</text>
+<text x="344.7142857142857" y="1007.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q08_SWITCH</text>
+<text x="344.7142857142857" y="1019.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q08_STATUS</text>
+<text x="344.7142857142857" y="1031.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=TRUE</text>
+<text x="344.7142857142857" y="1043.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q8</text>
+<text x="344.7142857142857" y="1055.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q08_READ</text>
+<text x="344.7142857142857" y="1067.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q08_WRITE</text>
+<text x="344.7142857142857" y="1079.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q08_SWITCH_READ</text>
+<text x="344.7142857142857" y="1091.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q08_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="1103.7142857142858" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q08_STATUS_WRITE</text>
+<path d="M 272.7142857142857 942.2857142857143
+            L 416.7142857142857 942.2857142857143
+            A 3 3 0 0 1 419.7142857142857 945.2857142857143
+            L 419.7142857142857 969.2857142857143
+            A 3 3 0 0 1 416.7142857142857 972.2857142857143
+            L 413.7142857142857 972.2857142857143
+            L 413.7142857142857 1012.2857142857143
+            L 416.7142857142857 1012.2857142857143
+            A 3 3 0 0 1 419.7142857142857 1015.2857142857143
+            L 419.7142857142857 1231.2857142857142
+            A 3 3 0 0 1 416.7142857142857 1234.2857142857142
+            L 272.7142857142857 1234.2857142857142
+            A 3 3 0 0 1 269.7142857142857 1231.2857142857142
+            L 269.7142857142857 1015.2857142857143
+            A 3 3 0 0 1 272.7142857142857 1012.2857142857143
+            L 275.7142857142857 1012.2857142857143
+            L 275.7142857142857 972.2857142857143
+            L 272.7142857142857 972.2857142857143
+            A 3 3 0 0 1 269.7142857142857 969.2857142857143
+            L 269.7142857142857 945.2857142857143
+            A 3 3 0 0 1 272.7142857142857 942.2857142857143
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 298.2142857142857 983.2857142857143
+            L 314.2142857142857 983.2857142857143
+            A 1 1 0 0 1 315.2142857142857 984.2857142857143
+            L 315.2142857142857 987.7857142857143
+            L 313.2142857142857 987.7857142857143
+            L 313.2142857142857 990.7857142857143
+            L 315.2142857142857 990.7857142857143
+            L 315.2142857142857 1000.2857142857143
+            A 1 1 0 0 1 314.2142857142857 1001.2857142857143
+            L 298.2142857142857 1001.2857142857143
+            A 1 1 0 0 1 297.2142857142857 1000.2857142857143
+            L 297.2142857142857 990.7857142857143
+            L 299.2142857142857 990.7857142857143
+            L 299.2142857142857 987.7857142857143
+            L 297.2142857142857 987.7857142857143
+            L 297.2142857142857 984.2857142857143
+            A 1 1 0 0 1 298.2142857142857 983.2857142857143
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="306.2142857142857" y="997.2857142857143" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="320.2142857142857" y="997.2857142857143" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q9</text>
+<text x="344.7142857142857" y="1012.2857142857143" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="344.7142857142857" y="1016.2857142857143" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q09</text>
+<text x="344.7142857142857" y="1028.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q09_ZERO</text>
+<text x="344.7142857142857" y="1040.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q09_DOWN_FAST</text>
+<text x="344.7142857142857" y="1052.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q09_DOWN_SLOW</text>
+<text x="344.7142857142857" y="1064.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q09_UP_SLOW</text>
+<text x="344.7142857142857" y="1076.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q09_UP_FAST</text>
+<text x="344.7142857142857" y="1088.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q09_FULL</text>
+<text x="344.7142857142857" y="1100.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q09_SWITCH</text>
+<text x="344.7142857142857" y="1112.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q09_STATUS</text>
+<text x="344.7142857142857" y="1124.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=FALSE</text>
+<text x="344.7142857142857" y="1136.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q9</text>
+<text x="344.7142857142857" y="1148.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q09_READ</text>
+<text x="344.7142857142857" y="1160.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q09_WRITE</text>
+<text x="344.7142857142857" y="1172.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q09_SWITCH_READ</text>
+<text x="344.7142857142857" y="1184.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q09_SWITCH_WRITE</text>
+<text x="344.7142857142857" y="1196.2857142857142" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q09_STATUS_WRITE</text>
+<path d="M 272.7142857142857 1034.8571428571431
+            L 426.7142857142857 1034.8571428571431
+            A 3 3 0 0 1 429.7142857142857 1037.8571428571431
+            L 429.7142857142857 1061.8571428571431
+            A 3 3 0 0 1 426.7142857142857 1064.8571428571431
+            L 423.7142857142857 1064.8571428571431
+            L 423.7142857142857 1104.8571428571431
+            L 426.7142857142857 1104.8571428571431
+            A 3 3 0 0 1 429.7142857142857 1107.8571428571431
+            L 429.7142857142857 1323.8571428571431
+            A 3 3 0 0 1 426.7142857142857 1326.8571428571431
+            L 272.7142857142857 1326.8571428571431
+            A 3 3 0 0 1 269.7142857142857 1323.8571428571431
+            L 269.7142857142857 1107.8571428571431
+            A 3 3 0 0 1 272.7142857142857 1104.8571428571431
+            L 275.7142857142857 1104.8571428571431
+            L 275.7142857142857 1064.8571428571431
+            L 272.7142857142857 1064.8571428571431
+            A 3 3 0 0 1 269.7142857142857 1061.8571428571431
+            L 269.7142857142857 1037.8571428571431
+            A 3 3 0 0 1 272.7142857142857 1034.8571428571431
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 299.2142857142857 1075.8571428571431
+            L 315.2142857142857 1075.8571428571431
+            A 1 1 0 0 1 316.2142857142857 1076.8571428571431
+            L 316.2142857142857 1080.3571428571431
+            L 314.2142857142857 1080.3571428571431
+            L 314.2142857142857 1083.3571428571431
+            L 316.2142857142857 1083.3571428571431
+            L 316.2142857142857 1092.8571428571431
+            A 1 1 0 0 1 315.2142857142857 1093.8571428571431
+            L 299.2142857142857 1093.8571428571431
+            A 1 1 0 0 1 298.2142857142857 1092.8571428571431
+            L 298.2142857142857 1083.3571428571431
+            L 300.2142857142857 1083.3571428571431
+            L 300.2142857142857 1080.3571428571431
+            L 298.2142857142857 1080.3571428571431
+            L 298.2142857142857 1076.8571428571431
+            A 1 1 0 0 1 299.2142857142857 1075.8571428571431
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="307.2142857142857" y="1089.8571428571431" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="321.2142857142857" y="1089.8571428571431" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q10</text>
+<text x="349.7142857142857" y="1104.8571428571431" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="349.7142857142857" y="1108.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q10</text>
+<text x="349.7142857142857" y="1120.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q10_ZERO</text>
+<text x="349.7142857142857" y="1132.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q10_DOWN_FAST</text>
+<text x="349.7142857142857" y="1144.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q10_DOWN_SLOW</text>
+<text x="349.7142857142857" y="1156.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q10_UP_SLOW</text>
+<text x="349.7142857142857" y="1168.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q10_UP_FAST</text>
+<text x="349.7142857142857" y="1180.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q10_FULL</text>
+<text x="349.7142857142857" y="1192.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q10_SWITCH</text>
+<text x="349.7142857142857" y="1204.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q10_STATUS</text>
+<text x="349.7142857142857" y="1216.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=FALSE</text>
+<text x="349.7142857142857" y="1228.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q10</text>
+<text x="349.7142857142857" y="1240.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q10_READ</text>
+<text x="349.7142857142857" y="1252.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q10_WRITE</text>
+<text x="349.7142857142857" y="1264.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q10_SWITCH_READ</text>
+<text x="349.7142857142857" y="1276.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q10_SWITCH_WRITE</text>
+<text x="349.7142857142857" y="1288.8571428571431" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q10_STATUS_WRITE</text>
+<path d="M 272.7142857142857 1127.4285714285716
+            L 426.7142857142857 1127.4285714285716
+            A 3 3 0 0 1 429.7142857142857 1130.4285714285716
+            L 429.7142857142857 1154.4285714285716
+            A 3 3 0 0 1 426.7142857142857 1157.4285714285716
+            L 423.7142857142857 1157.4285714285716
+            L 423.7142857142857 1197.4285714285716
+            L 426.7142857142857 1197.4285714285716
+            A 3 3 0 0 1 429.7142857142857 1200.4285714285716
+            L 429.7142857142857 1416.4285714285716
+            A 3 3 0 0 1 426.7142857142857 1419.4285714285716
+            L 272.7142857142857 1419.4285714285716
+            A 3 3 0 0 1 269.7142857142857 1416.4285714285716
+            L 269.7142857142857 1200.4285714285716
+            A 3 3 0 0 1 272.7142857142857 1197.4285714285716
+            L 275.7142857142857 1197.4285714285716
+            L 275.7142857142857 1157.4285714285716
+            L 272.7142857142857 1157.4285714285716
+            A 3 3 0 0 1 269.7142857142857 1154.4285714285716
+            L 269.7142857142857 1130.4285714285716
+            A 3 3 0 0 1 272.7142857142857 1127.4285714285716
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 299.2142857142857 1168.4285714285716
+            L 315.2142857142857 1168.4285714285716
+            A 1 1 0 0 1 316.2142857142857 1169.4285714285716
+            L 316.2142857142857 1172.9285714285716
+            L 314.2142857142857 1172.9285714285716
+            L 314.2142857142857 1175.9285714285716
+            L 316.2142857142857 1175.9285714285716
+            L 316.2142857142857 1185.4285714285716
+            A 1 1 0 0 1 315.2142857142857 1186.4285714285716
+            L 299.2142857142857 1186.4285714285716
+            A 1 1 0 0 1 298.2142857142857 1185.4285714285716
+            L 298.2142857142857 1175.9285714285716
+            L 300.2142857142857 1175.9285714285716
+            L 300.2142857142857 1172.9285714285716
+            L 298.2142857142857 1172.9285714285716
+            L 298.2142857142857 1169.4285714285716
+            A 1 1 0 0 1 299.2142857142857 1168.4285714285716
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="307.2142857142857" y="1182.4285714285716" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="321.2142857142857" y="1182.4285714285716" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q11</text>
+<text x="349.7142857142857" y="1197.4285714285716" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="349.7142857142857" y="1201.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q11</text>
+<text x="349.7142857142857" y="1213.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q11_ZERO</text>
+<text x="349.7142857142857" y="1225.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q11_DOWN_FAST</text>
+<text x="349.7142857142857" y="1237.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q11_DOWN_SLOW</text>
+<text x="349.7142857142857" y="1249.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q11_UP_SLOW</text>
+<text x="349.7142857142857" y="1261.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q11_UP_FAST</text>
+<text x="349.7142857142857" y="1273.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q11_FULL</text>
+<text x="349.7142857142857" y="1285.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q11_SWITCH</text>
+<text x="349.7142857142857" y="1297.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q11_STATUS</text>
+<text x="349.7142857142857" y="1309.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=FALSE</text>
+<text x="349.7142857142857" y="1321.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q11</text>
+<text x="349.7142857142857" y="1333.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q11_READ</text>
+<text x="349.7142857142857" y="1345.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q11_WRITE</text>
+<text x="349.7142857142857" y="1357.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q11_SWITCH_READ</text>
+<text x="349.7142857142857" y="1369.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q11_SWITCH_WRITE</text>
+<text x="349.7142857142857" y="1381.4285714285716" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q11_STATUS_WRITE</text>
+<path d="M 272.7142857142857 1220.0000000000002
+            L 426.7142857142857 1220.0000000000002
+            A 3 3 0 0 1 429.7142857142857 1223.0000000000002
+            L 429.7142857142857 1247.0000000000002
+            A 3 3 0 0 1 426.7142857142857 1250.0000000000002
+            L 423.7142857142857 1250.0000000000002
+            L 423.7142857142857 1290.0000000000002
+            L 426.7142857142857 1290.0000000000002
+            A 3 3 0 0 1 429.7142857142857 1293.0000000000002
+            L 429.7142857142857 1509.0000000000002
+            A 3 3 0 0 1 426.7142857142857 1512.0000000000002
+            L 272.7142857142857 1512.0000000000002
+            A 3 3 0 0 1 269.7142857142857 1509.0000000000002
+            L 269.7142857142857 1293.0000000000002
+            A 3 3 0 0 1 272.7142857142857 1290.0000000000002
+            L 275.7142857142857 1290.0000000000002
+            L 275.7142857142857 1250.0000000000002
+            L 272.7142857142857 1250.0000000000002
+            A 3 3 0 0 1 269.7142857142857 1247.0000000000002
+            L 269.7142857142857 1223.0000000000002
+            A 3 3 0 0 1 272.7142857142857 1220.0000000000002
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 299.2142857142857 1261.0000000000002
+            L 315.2142857142857 1261.0000000000002
+            A 1 1 0 0 1 316.2142857142857 1262.0000000000002
+            L 316.2142857142857 1265.5000000000002
+            L 314.2142857142857 1265.5000000000002
+            L 314.2142857142857 1268.5000000000002
+            L 316.2142857142857 1268.5000000000002
+            L 316.2142857142857 1278.0000000000002
+            A 1 1 0 0 1 315.2142857142857 1279.0000000000002
+            L 299.2142857142857 1279.0000000000002
+            A 1 1 0 0 1 298.2142857142857 1278.0000000000002
+            L 298.2142857142857 1268.5000000000002
+            L 300.2142857142857 1268.5000000000002
+            L 300.2142857142857 1265.5000000000002
+            L 298.2142857142857 1265.5000000000002
+            L 298.2142857142857 1262.0000000000002
+            A 1 1 0 0 1 299.2142857142857 1261.0000000000002
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="307.2142857142857" y="1275.0000000000002" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="321.2142857142857" y="1275.0000000000002" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Output_Q12</text>
+<text x="349.7142857142857" y="1290.0000000000002" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">RampLimitFS_TO_logiBUS_QDA_PWM_OPC</text>
+<text x="349.7142857142857" y="1294.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_VALUEVAR=NumberVariable_PWM_Q12</text>
+<text x="349.7142857142857" y="1306.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_ZERO=Button_PWM_Q12_ZERO</text>
+<text x="349.7142857142857" y="1318.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_FAST=Button_PWM_Q12_DOWN_FAST</text>
+<text x="349.7142857142857" y="1330.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_DOWN_SLOW=Button_PWM_Q12_DOWN_SLOW</text>
+<text x="349.7142857142857" y="1342.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_SLOW=Button_PWM_Q12_UP_SLOW</text>
+<text x="349.7142857142857" y="1354.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_UP_FAST=Button_PWM_Q12_UP_FAST</text>
+<text x="349.7142857142857" y="1366.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_FULL=Button_PWM_Q12_FULL</text>
+<text x="349.7142857142857" y="1378.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_SWITCH=Button_PWM_Q12_SWITCH</text>
+<text x="349.7142857142857" y="1390.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId_STATUS=Button_PWM_Q12_STATUS</text>
+<text x="349.7142857142857" y="1402.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">bDefaultEnabled=FALSE</text>
+<text x="349.7142857142857" y="1414.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Output=Output_Q12</text>
+<text x="349.7142857142857" y="1426.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_READ=PWM_Q12_READ</text>
+<text x="349.7142857142857" y="1438.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=PWM_Q12_WRITE</text>
+<text x="349.7142857142857" y="1450.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_READ=PWM_Q12_SWITCH_READ</text>
+<text x="349.7142857142857" y="1462.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_SWITCH_WRITE=PWM_Q12_SWITCH_WRITE</text>
+<text x="349.7142857142857" y="1474.0000000000002" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_STATUS_WRITE=PWM_Q12_STATUS_WRITE</text>
+<path d="M 103.0 140.0
+            L 317.0 140.0
+            A 3 3 0 0 1 320.0 143.0
+            L 320.0 167.0
+            A 3 3 0 0 1 317.0 170.0
+            L 314.0 170.0
+            L 314.0 210.0
+            L 317.0 210.0
+            A 3 3 0 0 1 320.0 213.0
+            L 320.0 261.0
+            A 3 3 0 0 1 317.0 264.0
+            L 103.0 264.0
+            A 3 3 0 0 1 100.0 261.0
+            L 100.0 213.0
+            A 3 3 0 0 1 103.0 210.0
+            L 106.0 210.0
+            L 106.0 170.0
+            L 103.0 170.0
+            A 3 3 0 0 1 100.0 167.0
+            L 100.0 143.0
+            A 3 3 0 0 1 103.0 140.0
+            Z" fill="#FFFFFF" 
+            stroke="#A0A0A0" stroke-width="1.5" 
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 135.5 181.0
+            L 151.5 181.0
+            A 1 1 0 0 1 152.5 182.0
+            L 152.5 185.5
+            L 150.5 185.5
+            L 150.5 188.5
+            L 152.5 188.5
+            L 152.5 198.0
+            A 1 1 0 0 1 151.5 199.0
+            L 135.5 199.0
+            A 1 1 0 0 1 134.5 198.0
+            L 134.5 188.5
+            L 136.5 188.5
+            L 136.5 185.5
+            L 134.5 185.5
+            L 134.5 182.0
+            A 1 1 0 0 1 135.5 181.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="143.5" y="195.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
+<text x="157.5" y="195.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">SystemTickSender</text>
+<text x="210.0" y="210.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">SystemTickSender</text>
+<text x="210.0" y="214.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">u16ObjId=OutputNumber_Tick</text>
+<text x="210.0" y="226.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">ID_WRITE=Tick_WRITE</text>
+</svg>

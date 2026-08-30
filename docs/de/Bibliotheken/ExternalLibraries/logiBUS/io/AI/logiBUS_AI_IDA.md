@@ -45,7 +45,7 @@ Der Funktionsblock `logiBUS_AI_IDA` ist ein zusammengesetzter Baustein (Composit
 
 | Richtung | Name | Typ | Beschreibung |
 |----------|------|-----|--------------|
-| Plug     | IN   | adapter::types::unidirectional::AD | Empfängt die analogen Eingangsdaten von der Ressource. |
+| Plug     | IN   | adapter::types::unidirectional::AD | Empfängt die analogen Eingangsdaten von der Ressource — Rohwert 0-4095 (12 bit), auf dem ESP32-P4 fix (kein Auswahlspielraum im Continuous/DMA-ADC-Modus). |
 | Socket   | SREQ | adapter::types::unidirectional::AX | Ermöglicht die externe Anforderung eines Dienstes (Service-Request). |
 
 ## Funktionsweise
@@ -64,6 +64,7 @@ Die zyklische Verarbeitung erfolgt gemäß `TimeDelta`. Wenn `TimeDelta = 16#FFF
 
 ## Technische Besonderheiten
 
+- **Roh-Vollausschlag von `IN`**: 0-4095 (12 bit) — der ESP32-P4-ADC-Treiber (Continuous/DMA-Modus) hat auf diesem Chip keine wählbare Bit-Breite, `SOC_ADC_DIGI_MIN_BITWIDTH` = `SOC_ADC_DIGI_MAX_BITWIDTH` = 12. Umrechnung Rohwert → Volt: `Vout = Dout × Vmax / 4096` (`Vmax` abhängig von der ADC-Dämpfung `ADC_ATTEN_DB_12`).
 - **Hysterese (`AnalogInput_hysteresis`)**: Ist der Wert 0, muss die Zykluszeit (`TimeDelta`) zwingend ungleich 0 sein, da sonst keine Ereignisse ausgelöst werden können.
 - **Zeitsteuerung**: Mit `TimeDelta` und `TimeRateLimit` kann das Verhalten feinabgestimmt werden – z. B. zyklische Abfrage (TimeDelta > 0) oder reine Änderungsbenachrichtigung (TimeDelta = 0xFFFFFFFF).
 - **Externer Service-Request**: Über den Socket `SREQ` kann eine andere Komponente (z. B. ein übergeordneter Steuerungsbaustein) ein Update anfordern.

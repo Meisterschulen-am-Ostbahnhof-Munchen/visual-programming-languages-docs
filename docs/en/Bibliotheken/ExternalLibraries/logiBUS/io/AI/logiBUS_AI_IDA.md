@@ -32,38 +32,39 @@ The function block `logiBUS_AI_IDA` is a composite function block (FB) for proce
 | TimeDelta | DWORD | 250 | Cycle time in ms for cyclic processing (16#FFFFFFFF = only on change). |
 | TimeRateLimit | DWORD | 100 | Minimum interval in ms between two events (IND) (< TimeDelta). |
 
-### **Daten-Ausgänge**
+### **Data Outputs**
 
-| Name   | Typ    | Beschreibung |
+| Name   | Type   | Description |
 |--------|--------|--------------|
-| QO     | BOOL   | Ausgangsqualifier (z. B. gültiger Zustand nach INIT). |
-| STATUS | STRING | Statusmeldung (z. B. Initialisierungsfehler oder OK). |
+| QO     | BOOL   | Output qualifier (e.g., valid state after INIT). |
+| STATUS | STRING | Status message (e.g., initialization error or OK). |
 
 ### **Adapter**
 
-| Richtung | Name | Typ | Beschreibung |
+| Direction | Name | Type | Description |
 |----------|------|-----|--------------|
-| Plug     | IN   | adapter::types::unidirectional::AD | Empfängt die analogen Eingangsdaten von der Ressource. |
-| Socket   | SREQ | adapter::types::unidirectional::AX | Ermöglicht die externe Anforderung eines Dienstes (Service-Request). |
+| Plug     | IN   | adapter::types::unidirectional::AD | Receives the analog input data from the resource — raw value 0-4095 (12 bit), fixed on the ESP32-P4 (no other bit width selectable in continuous/DMA ADC mode). |
+| Socket   | SREQ | adapter::types::unidirectional::AX | Allows an external service request. |
 
-## Funktionsweise
+## Functionality
 
-Der Baustein kapselt den internen FB `logiBUS_AI_ID`, der die eigentliche Logik zur analogen Eingangsverarbeitung enthält. Das interne Netzwerk verbindet:
+The block encapsulates the internal FB `logiBUS_AI_ID`, which contains the actual analog input processing logic. The internal network connects:
 
-- **INIT** → **AI.INIT** startet die Ressourcenkonfiguration.
-- **AI.INITO** → **INITO** gibt die Initialisierungsbestätigung zurück.
-- **REQ** → **AI.REQ** löst eine sofortige Verarbeitung aus.
-- **SREQ.E1** (externes Service-Request-Ereignis) wird über den **E_R_TRIG** (Flankenerkennung) auf **AI.REQ** geleitet – dadurch kann auch ein externer Adapter eine Verarbeitung anstoßen.
-- **AI.IND** und **AI.CNF** – beide verbinden auf **IN.E1** (den Plug-Ausgang) und signalisieren nach außen, dass neue Daten am Adapter `IN` anliegen.
-- Die Daten‑Eingänge (QI, PARAMS, Input, Hysterese, TimeDelta, TimeRateLimit) werden direkt an den internen Baustein weitergeleitet.
-- Die Ausgänge QO und STATUS kommen vom internen Baustein.
+- **INIT** → **AI.INIT** starts the resource configuration.
+- **AI.INITO** → **INITO** returns the initialization confirmation.
+- **REQ** → **AI.REQ** triggers immediate processing.
+- **SREQ.E1** (external service request event) is routed via **E_R_TRIG** (edge detection) to **AI.REQ** — this lets an external adapter trigger processing as well.
+- **AI.IND** and **AI.CNF** — both connect to **IN.E1** (the plug output) and signal externally that new data is available on the `IN` adapter.
+- The data inputs (QI, PARAMS, Input, hysteresis, TimeDelta, TimeRateLimit) are passed straight through to the internal block.
+- The QO and STATUS outputs come from the internal block.
 
-Die zyklische Verarbeitung erfolgt gemäß `TimeDelta`. Wenn `TimeDelta = 16#FFFFFFFF` gesetzt ist, wird nur bei einer Änderung des analogen Werts (unter Berücksichtigung der Hysterese) ein Ereignis erzeugt.
+Cyclic processing follows `TimeDelta`. If `TimeDelta = 16#FFFFFFFF` is set, an event is only generated when the analog value changes (taking hysteresis into account).
 
-## Technische Besonderheiten
+## Technical Details
 
-- **Hysterese (`AnalogInput_hysteresis`)**: Ist der Wert 0, muss die Zykluszeit (`TimeDelta`) zwingend ungleich 0 sein, da sonst keine Ereignisse ausgelöst werden können.
-- **Zeitsteuerung**: Mit `TimeDelta` und `TimeRateLimit` kann das Verhalten feinabgestimmt werden – z. B. zyklische Abfrage (TimeDelta > 0) or pure change notification (TimeDelta = 0xFFFFFFFF).
+- **Raw full-scale value of `IN`**: 0-4095 (12 bit) — the ESP32-P4 ADC driver (continuous/DMA mode) has no selectable bit width on this chip, `SOC_ADC_DIGI_MIN_BITWIDTH` = `SOC_ADC_DIGI_MAX_BITWIDTH` = 12. Raw-to-volt conversion: `Vout = Dout × Vmax / 4096` (`Vmax` depends on the ADC attenuation `ADC_ATTEN_DB_12`).
+- **Hysteresis (`AnalogInput_hysteresis`)**: If the value is 0, the cycle time (`TimeDelta`) must be non-zero, otherwise no events can be triggered.
+- **Timing**: `TimeDelta` and `TimeRateLimit` allow fine-tuning the behavior — e.g., cyclic polling (TimeDelta > 0) or pure change notification (TimeDelta = 0xFFFFFFFF).
 - **External Service Request**: Another component (e.g., a higher-level control block) can request an update via socket `SREQ`.
 - **Composite Architecture**: The block is implemented as a composite, which allows reuse of the proven `logiBUS_AI_ID` and simultaneously extends the interface.
 

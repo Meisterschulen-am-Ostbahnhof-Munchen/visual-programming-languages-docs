@@ -34,7 +34,7 @@ Der logiBUS_AI_ID ist ein Service Interface Function Block für die Verarbeitung
 
 - **QO** (BOOL): Event Output Qualifier - Status des Service-Ausgangs
 - **STATUS** (STRING): Service-Statusinformationen
-- **IN** (DWORD): Eingabedaten vom Resource
+- **IN** (DWORD): Eingabedaten vom Resource — Rohwert 0-4095 (12 bit), auf dem ESP32-P4 im Continuous/DMA-ADC-Modus fix, keine andere Bit-Breite wählbar
 
 ### **Adapter**
 
@@ -46,6 +46,7 @@ Der Function Block ermöglicht die Kommunikation mit analogen Eingabegeräten ü
 
 ## Technische Besonderheiten
 
+- **Roh-Vollausschlag von `IN`**: 0-4095 (12 bit) — der ESP32-P4-ADC-Treiber (Continuous/DMA-Modus) hat auf diesem Chip keine wählbare Bit-Breite, `SOC_ADC_DIGI_MIN_BITWIDTH` = `SOC_ADC_DIGI_MAX_BITWIDTH` = 12. Umrechnung Rohwert → Volt: `Vout = Dout × Vmax / 4096` (`Vmax` abhängig von der ADC-Dämpfung `ADC_ATTEN_DB_12`).
 - Verwendet spezielle Datentypen aus dem logiBUS::io::AI-Package
 - Unterstützt Hysterese-Funktionalität für analoge Signale
 - Bietet sowohl synchrone (CNF) als auch asynchrone (IND) Betriebsmodi

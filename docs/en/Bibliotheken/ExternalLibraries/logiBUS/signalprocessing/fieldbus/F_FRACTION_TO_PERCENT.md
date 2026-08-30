@@ -64,7 +64,7 @@ There are no further waiting or initialization states.
 
 ## Application Scenarios
 
-- Converting an internally processed fraction (0.0-1.0) back into the percent value expected by a web client via OPC-UA publish — e.g. in the PWM training example [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
+- Converting an internally processed fraction (0.0-1.0) back into the percent value expected by a web client via OPC-UA publish — e.g. in the PWM training example [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
 - In general: any interface that computes internally with a normalized 0.0-1.0 fraction while communicating externally in percent.
 
 ## Comparison with Similar Blocks
@@ -78,7 +78,7 @@ There are no further waiting or initialization states.
 
 ## 🛠️ Related Exercises
 
-* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
+* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
 * [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
 
 ---

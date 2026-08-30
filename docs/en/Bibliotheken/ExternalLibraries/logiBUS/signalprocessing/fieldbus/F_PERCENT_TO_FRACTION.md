@@ -72,7 +72,7 @@ There are no further waiting or initialization states.
 
 ## Application Scenarios
 
-- Converting a web setpoint received via OPC-UA subscribe (percent REAL) into the fraction expected by internal fieldbus conversion blocks — e.g. in the PWM training example [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
+- Converting a web setpoint received via OPC-UA subscribe (percent REAL) into the fraction expected by internal fieldbus conversion blocks — e.g. in the PWM training example [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
 - In general: any interface that communicates externally in percent while computing internally with a normalized 0.0-1.0 fraction.
 
 ## Comparison with Similar Blocks
@@ -86,7 +86,7 @@ There are no further waiting or initialization states.
 
 ## 🛠️ Related Exercises
 
-* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
+* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
 * [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
 
 ---

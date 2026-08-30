@@ -46,6 +46,8 @@ Da es sich um einen Composite‑Baustein ohne eigenen Algorithmus oder Zustandsa
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Reine Durchleitstruktur:** Keine eigene Logik, keine Latenz oder Pufferung.
 - **Abhängigkeit von Adapterdefinitionen:** Die korrekte Funktion setzt voraus, dass die Adapter `AI` und `ALR` gemäß dem 4diac‑Standard definiert sind und die Konvertierung INT‑>LREAL enthalten.
 - **Komposit‑Baustein:** Einfach erweiterbar, z. B. durch zusätzliche Filter oder Skalierung im Netzwerk.

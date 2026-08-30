@@ -41,6 +41,8 @@ When an event is received via the adapter input `AUDI_IN.E1`, the corresponding 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - Uses a standardized IEC 61131 conversion block that can be implemented platform-independently.
 - The conversion from `UDINT` (32 unsigned bits) to `INT` (16 signed bits) is potentially lossy. Depending on the implementation of the conversion block, an overflow or limit may occur if the value range is exceeded.
 - The use of unidirectional adapters ensures a clean data flow and facilitates integration into modular systems.

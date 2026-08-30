@@ -47,6 +47,8 @@ Thus, every incoming INT value is synchronously converted into a BYTE value via 
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite FB:** The function block encapsulates the logic in a network consisting of a single conversion function block. It is not itself an elementary function block but utilizes the reuse of `F_INT_TO_BYTE`.
 - **Adapter-Based Interface:** Events and data are transmitted exclusively via unidirectional adapters, resulting in loose coupling between source and target components.
 - **Type Conversion:** The actual conversion of `INT -> BYTE` follows the IEC 61131-3 convention (e.g., value range <0,255>; an overflow occurs if the range is exceeded). This depends on the implementation of the `F_INT_TO_BYTE` function block used.

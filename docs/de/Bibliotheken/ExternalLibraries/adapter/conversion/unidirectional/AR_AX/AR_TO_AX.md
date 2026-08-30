@@ -44,6 +44,8 @@ Der interne Baustein `F_NE` ist ein IEC 61131-3-konformer Vergleichsbaustein und
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**: extrahiert das IEEE754-Bitmuster des Quellwerts (beabsichtigt, z. B. zur Serialisierung), nicht dessen Zahlenwert.
+
 - Verwendet einen Composite-FB-Ansatz, bei dem die Logik aus einem einzigen Vergleichsbaustein und Adapterverbindungen besteht.
 - Alle Ein- und Ausgänge sind über standardisierte unidirektionale Adapter (`AR`, `AX`) realisiert, was eine modulare und austauschbare Schnittstellendefinition ermöglicht.
 - Der Vergleichswert (0,0) ist fest im FB eingestellt und kann nicht zur Laufzeit geändert werden.

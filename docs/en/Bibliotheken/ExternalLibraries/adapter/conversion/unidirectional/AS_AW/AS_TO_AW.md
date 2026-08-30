@@ -56,6 +56,8 @@ Thus, a reliable, one-time conversion is performed upon each event arrival.
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite FB**: The function block utilizes 4diac's composite functionality to integrate an existing conversion function block (`F_SINT_TO_WORD`) into an adapter package.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional, meaning only one data and event direction is supported.
 - **IEC 61131-3 Conversion**: The actual type conversion is performed according to the IEC 61131-3 standard, which facilitates compatibility with other systems.

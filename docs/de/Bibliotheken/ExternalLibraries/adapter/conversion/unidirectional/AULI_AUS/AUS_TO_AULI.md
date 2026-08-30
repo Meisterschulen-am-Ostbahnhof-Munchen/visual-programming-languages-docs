@@ -40,6 +40,8 @@ Der Baustein verbindet die Elemente des eingehenden AUS-Adapters direkt mit den 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Der FB enthält kein eigenes ECC (Execution Control Chart) und keine Zustandslogik, sondern besteht ausschließlich aus einer Ereignis- und Datenverbindung.
 - **Implizite Typumwandlung**: Die Konvertierung von USINT nach ULINT wird durch die Adapterdefinitionen der Bibliothek `adapter::types::unidirectional` bereitgestellt. Eine explizite Typumwandlung im FB ist nicht erforderlich.
 - **Unidirektionalität**: Der FB unterstützt nur eine Datenflussrichtung (von AUS zu AULI). Eine Rückwärtskonvertierung ist nicht vorgesehen.

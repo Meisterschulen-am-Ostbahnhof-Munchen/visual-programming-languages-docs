@@ -56,6 +56,8 @@ The result is passed to the data output `AX_OUT.D1`, and simultaneously the even
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Block:** The `AI_TO_AX` consists of interconnected basic blocks, allowing it to be used as a reusable component in various projects.
 - **Use of IEC 61131 Blocks:** The comparison logic is implemented using the standardized block `F_NE`, which supports portability and compliance with the standard.
 - **No Independent State:** The block is stateless – each event pulse generates an immediate calculation without storing intermediate values.

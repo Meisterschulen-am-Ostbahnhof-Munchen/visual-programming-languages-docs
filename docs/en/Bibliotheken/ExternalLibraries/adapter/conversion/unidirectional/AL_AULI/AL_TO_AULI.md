@@ -49,6 +49,8 @@ The function block (FB) performs the conversion using an internal block `F_LWORD
 
 ## Technical Specifications
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **License:** This function block is provided under the **Eclipse Public License 2.0**.
 - **Version:** 1.0 (as of 2026-02-17)
 - **Dependencies:** It requires the function `F_LWORD_TO_ULINT` from the `iec61132::conversion` library.

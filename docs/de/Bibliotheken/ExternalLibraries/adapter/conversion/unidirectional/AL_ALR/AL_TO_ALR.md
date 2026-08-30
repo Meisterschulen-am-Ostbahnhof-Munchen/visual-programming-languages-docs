@@ -6,7 +6,9 @@
 
 ## Einleitung
 
-Der Funktionsblock **AL_TO_ALR** ist ein zusammengesetzter Baustein (Composite FB), der einen unidirektionalen AL‑Adapter (LWORD) in einen unidirektionalen ALR‑Adapter (LREAL) umwandelt. Er nutzt intern den Konvertierungsbaustein `F_LWORD_TO_LREAL`, um einen eingehenden LWORD‑Wert (64‑Bit‑Integer) in einen LREAL‑Wert (64‑Bit‑Gleitkommazahl) zu wandeln und diesen über den Ausgangsadapter bereitzustellen.
+Der Funktionsblock **AL_TO_ALR** ist ein zusammengesetzter Baustein (Composite FB), der einen unidirektionalen AL‑Adapter (LWORD) auf einen unidirektionalen ALR‑Adapter (LREAL) abbildet. Er nutzt intern den Baustein `F_LWORD_TO_LREAL`.
+
+> **⚠️ Achtung — keine numerische Wertumwandlung:** `LWORD` ist ein Bit-String-Typ (kein Integer mit Vorzeichen-Semantik), und `F_LWORD_TO_LREAL` reinterpretiert im FORTE-Kern lediglich das 64-Bit-Muster als IEEE754-`LREAL` (Bit-Kopie) — dieselbe Falle wie bei [`AD_TO_AR`](../AD_AR/AD_TO_AR.md) (DWORD→REAL), nur mit den 64-Bit-Pendants. Ein roher Zähler- oder Analogwert wird dadurch **nicht** zum entsprechenden LREAL-Zahlenwert, sondern zu einer bedeutungslosen Zahl. Für eine echte numerische Umwandlung: zweistufig über `AL_TO_AULI` (Bit-Reinterpretation LWORD→ULINT, hier gültig, da beide dieselbe 64-Bit-Darstellung eines vorzeichenlosen Integers teilen) gefolgt von `AULI_TO_ALR` (echter numerischer Cast) — dasselbe Muster wie [`AD_TO_AR_NUM`](../AD_AR/AD_TO_AR_NUM.md) für den 32-Bit-Fall.
 
 ## Schnittstellenstruktur
 
@@ -35,7 +37,7 @@ Der FB besitzt keine direkten Daten-Ausgänge. Der konvertierte LREAL‑Wert wir
 
 ## Funktionsweise
 
-Der Baustein arbeitet in einem einfachen ereignisgesteuerten Ablauf:
+`F_LWORD_TO_LREAL` reinterpretiert das 64-Bit-Muster des LWORD als IEEE754-`LREAL` (Bit-Kopie), es findet **keine** Zahlenwert-Konvertierung statt. Der Baustein arbeitet in einem einfachen ereignisgesteuerten Ablauf:
 
 1. Ein eingehendes Ereignis am Socket **AL_IN.E1** wird an den `REQ`-Eingang des internen Funktionsblocks `F_LWORD_TO_LREAL` weitergeleitet.
 2. Gleichzeitig wird der Datenwert von **AL_IN.D1** (LWORD) an den `IN`-Eingang des Konverters übergeben.
@@ -48,7 +50,7 @@ Die gesamte Verarbeitung erfolgt innerhalb eines Taktzyklus (keine Blockierung).
 ## Technische Besonderheiten
 
 - **Adapter‑basierte Schnittstelle**: Der FB nutzt ausschließlich unidirektionale Adapter (`AL` und `ALR`). Dies ermöglicht eine lose Kopplung zwischen Sender und Empfänger sowie eine einfache Wiederverwendung in verschiedenen Systemarchitekturen.
-- **Typkonvertierung**: Die Umwandlung von `LWORD` (64‑Bit‑Integer ohne Vorzeichen) in `LREAL` (64‑Bit‑Gleitkommazahl nach IEEE 754) erfolgt ohne Genauigkeitsverluste, solange der Integerwert im darstellbaren Bereich der Gleitkommazahl liegt (max. 2⁵³‑1).
+- **⚠️ Bit-Reinterpretation statt Zahlenwert-Umwandlung**: Siehe Warnhinweis in der Einleitung — betrifft alle Bit-String-Quelltypen beim Umwandeln in `AR`/REAL oder `ALR`/LREAL; der einzige weitere Fall in dieser Bibliothek ist [`AD_TO_AR`](../AD_AR/AD_TO_AR.md) (DWORD→REAL).
 - **Durchgereichte Ereignissteuerung**: Der Baustein führt keine interne Zustandslogik aus; er leitet Ereignisse und Daten transparent weiter. Die Laufzeit des Aufrufs entspricht der Ausführungszeit des internen Konverters.
 
 ## Zustandsübersicht
@@ -63,16 +65,21 @@ Da der innere FB in einem einzigen Ausführungsschritt arbeitet, sind die Zustä
 
 ## Anwendungsszenarien
 
-- **Sensordatenverarbeitung**: Ein Sensor liefert Messwerte im LWORD‑Format (z. B. Zählerstände, Rohdaten). Der Baustein wandelt diese in LREAL um, sodass sie in Gleitkomma‑Algorithmen (z. B. Regelung, Filterung) verwendet werden können.
-- **Protokoll‑Konvertierung**: In Systemen, die unterschiedliche Datenformate über Adapter austauschen, dient `AL_TO_ALR` als Brücke zwischen LWORD‑ und LREAL‑basierten Komponenten.
-- **Test und Simulation**: Erzeugung von LREAL‑Testdaten aus vordefinierten LWORD‑Werten oder umgekehrt (durch entsprechende Gegenbausteine).
+- **Bitmuster-Weitergabe**: `AL_IN` liefert bereits ein Bitmuster, das als LREAL interpretiert werden soll (z. B. serialisierte Double-Rohdaten aus einem Feldbus/Protokoll).
+- **NICHT geeignet** für rohe Zähler-, Analog- oder sonstige Ganzzahlwerte, die als derselbe Zahlenwert in LREAL vorliegen sollen — dafür `AL_TO_AULI` + `AULI_TO_ALR` verwenden.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **`LWORD_TO_LREAL`** – Ein einfacher Konvertierungsbaustein ohne Adapter‑Schnittstelle. `AL_TO_ALR` kapselt diesen Baustein und integriert ihn in eine adapterbasierte Architektur.
-- **`LINT_TO_LREAL`** – Konvertiert signed 64‑Bit‑Integer in LREAL. `AL_TO_ALR` arbeitet mit dem vorzeichenlosen LWORD.
-- **`UDINT_TO_LREAL`** – Analog für 32‑Bit‑Breite. Der vorliegende Baustein ist auf 64‑Bit ausgelegt und nutzt unidirektionale Adapter.
+- **`AL_TO_AULI` + `AULI_TO_ALR`** (numerisch, LWORD→ULINT→LREAL): der sichere Ersatz, wenn tatsächlich ein Zahlenwert gemeint ist.
+- **`ALI_TO_ALR`/`AULI_TO_ALR`** (LINT/ULINT→LREAL): bereits numerisch korrekt, da ihre Quelltypen `ANY_INT` (nicht `ANY_BIT`) sind — kein Trap.
+- **[`AD_TO_AR`](../AD_AR/AD_TO_AR.md)** (DWORD→REAL): dieselbe Bit-Reinterpretations-Falle, nur mit den 32-Bit-Pendants.
 
 ## Fazit
 
-`AL_TO_ALR` ist ein spezialisierter Composite‑Baustein zur formalen Umwandlung von LWORD‑ in LREAL‑Daten über unidirektionale Adapter. Er vereinfacht die Integration von Integer‑basierten Komponenten in Gleitkomma‑Umgebungen und fördert durch die Adapter‑Schnittstelle eine modulare, wiederverwendbare Systemstruktur. Die einfache ereignisgesteuerte Arbeitsweise macht ihn zuverlässig und leicht verständlich.
+`AL_TO_ALR` bietet eine kompakte Lösung, um ein LWORD-Bitmuster über Adapter-Schnittstellen als LREAL bereitzustellen — **aber keine numerische Wertumwandlung**. Für rohe Zähler- oder Analogwerte, die als derselbe Zahlenwert in LREAL vorliegen sollen, `AL_TO_AULI` + `AULI_TO_ALR` verwenden.
+
+---
+
+### 📖 Hintergrund
+
+* [Numerisch vs. bitweise: Die Konvertierungs-Falle in FORTE](../Numerisch_vs_Bitweise.md)

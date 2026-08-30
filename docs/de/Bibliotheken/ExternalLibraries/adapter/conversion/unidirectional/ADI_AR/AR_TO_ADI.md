@@ -44,6 +44,8 @@ Sobald am Ereigniseingang **AR_IN.E1** ein Ereignis eintrifft, wird der über **
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der Baustein verwendet den Datentyp‑Konverter `F_REAL_TO_DINT` aus der IEC‑61131‑Bibliothek.
 - Es handelt sich um einen Composite‑FB, der keine eigene Zustandslogik besitzt, sondern die Funktionalität durch den internen Baustein abbildet.
 - Die Schnittstelle ist rein adapterbasiert, sodass eine einfache Einbindung in bestehende Adapter‑Netzwerke möglich ist.

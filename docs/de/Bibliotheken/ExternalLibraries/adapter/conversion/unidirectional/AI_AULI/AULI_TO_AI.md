@@ -46,6 +46,8 @@ Damit wird eine nahtlose, ereignisgesteuerte Umwandlung von AULI- auf AI-Adapter
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Komposition:** Der Baustein ist als Composite FB realisiert, d.h. er kapselt die Logik in einem übersichtlichen Baustein und nutzt einen standardisierten Konvertierungsbaustein.
 - **Unidirektionale Adapter:** Sowohl `AULI_IN` als auch `AI_OUT` sind unidirektionale Adapter, die nur eine Datenflussrichtung unterstützen.
 - **Ereignisgesteuert:** Der Konvertierungsprozess startet nur bei einem eingehenden Ereignis, was eine effiziente Verarbeitung ermöglicht.

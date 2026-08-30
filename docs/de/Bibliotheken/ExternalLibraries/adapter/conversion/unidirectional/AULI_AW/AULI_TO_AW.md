@@ -51,6 +51,8 @@ Der Baustein verwendet intern die IEC‑61131‑Funktion **F_ULINT_TO_WORD**, um
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Unidirektionale Adapter**: Sowohl AULI_IN als auch AW_OUT sind unidirektionale Adapter, d.h. der Datenfluss erfolgt nur in eine Richtung.
 - **Komposition**: Der Baustein ist aus einem einzigen integrierten Konvertierungs‑FB aufgebaut, was ihn leicht nachvollziehbar und wartbar macht.
 - **Typkonvertierung**: Die Wandlung von ULINT (64‑Bit) nach WORD (16‑Bit) führt bei Werten größer als 65535 zu einem Überlauf – der Anwender muss sicherstellen, dass der Eingangswert im Bereich von 0…65535 liegt.

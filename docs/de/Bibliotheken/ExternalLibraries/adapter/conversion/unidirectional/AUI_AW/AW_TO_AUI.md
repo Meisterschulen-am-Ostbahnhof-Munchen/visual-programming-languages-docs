@@ -49,6 +49,8 @@ Die Umwandlung erfolgt nach der IEC 61131-3 Standardkonvertierung `WORD_TO_UINT`
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Reine Composite-Struktur**: Der FB besitzt keine eigene Zustandsmaschine oder Logik, sondern delegiert die gesamte Funktionalität an den eingebetteten Standardbaustein.
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind als unidirektionale Typen ausgelegt, was eine einfache und gerichtete Datenweitergabe ermöglicht.
 - **Wiederverwendbarkeit**: Der Baustein kann in Projekten eingesetzt werden, in denen eine Schnittstellenanpassung zwischen WORD- und UINT-basierten Komponenten erforderlich ist.

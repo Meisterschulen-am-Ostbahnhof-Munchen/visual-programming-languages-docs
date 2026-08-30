@@ -53,6 +53,8 @@ Der Baustein arbeitet ereignisgesteuert:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Wiederverwendung**: Der Baustein ist als Composite-FB realisiert und nutzt den standardisierten IEC‑61131‑Baustein `F_SEL` aus der Bibliothek `iec61131::selection`.
 - **Adapter‑Kopplung**: Die gesamte Kommunikation erfolgt über unidirektionale Adapter (`adapter::types::unidirectional::AX` und `adapter::types::unidirectional::AR`), was eine lose Kopplung und einfache Wiederverwendung in verschiedenen Kontexten ermöglicht.
 - **Konfiguration**: Die Grenzwerte (IN0=0.0, IN1=1.0) sind fest vorgegeben und können bei Bedarf durch Anpassung der Parameter des internen F_SEL geändert werden.

@@ -59,6 +59,8 @@ Die Umwandlung von LINT (64 Bit) nach BYTE (8 Bit) erfolgt durch Abschneiden der
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Typkonvertierung mit Werteverlust:** Da LINT 64 Bit breit ist, BYTE jedoch nur 8 Bit, werden nur die unteren 8 Bit des LINT-Werts übernommen. Ein Wertebereich von 0 … 255 wird korrekt abgebildet; größere Zahlen werden modulo 256 reduziert.
 - **Reine Adapter-Schnittstelle:** Der Baustein besitzt keine direkten Ein‑/Ausgänge, sondern kommuniziert ausschließlich über zwei unidirektionale Adapter. Dies ermöglicht eine lose Kopplung in adapterbasierten Architekturen.
 - **Standardkonformität:** Der FB setzt auf den IEC 61131‑Baustein `F_LINT_TO_BYTE` auf und ist daher in Umgebungen einsetzbar, die diese Bibliothek unterstützen.

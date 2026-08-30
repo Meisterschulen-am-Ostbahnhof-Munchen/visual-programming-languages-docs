@@ -47,6 +47,8 @@ Der Baustein selbst enthält keine Berechnungslogik und keine Zustandsmaschine; 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑FB**: Der Baustein ist als Komposit (Composite Function Block) realisiert, dessen internes Netzwerk nur zwei Verbindungen enthält.
 - **Keine eigene Logik**: Alle Funktionalität wird durch externe Bausteine oder die Adapter‑Implementierung bereitgestellt.
 - **Typkonformität**: Die Verbindung von `AUS.D1` (USINT) zu `ALR.D1` (LREAL) setzt voraus, dass die zugrundeliegende Adapter‑Implementierung eine implizite Typumwandlung erlaubt. Bei Vorsicht ist eine explizite Konvertierung außerhalb des FB notwendig.

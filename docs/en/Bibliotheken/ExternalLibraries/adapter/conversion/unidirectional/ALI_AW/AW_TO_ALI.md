@@ -53,11 +53,13 @@ This completes the data conversion at a safe, event-driven time.
 
 ## Technical Features
 
-- **Composite Block** – The conversion logic is completely encapsulated in an internal network consisting of only a single conversion function block. The block does not have its own ECC state machine.
-- **Adapter-Based Interface** – Instead of individual event/data inputs/outputs, adapters are used. This enables a modular, reusable connection in adapter-based control architectures.
-- **Package Structure** – The function block is located in the package `adapter::conversion::unidirectional` and uses the converter `iec61131::conversion::F_WORD_TO_LINT` from the IEC 61131 conversion library.
-- **Unidirectional Direction** – Data flows only from the input adapter to the output adapter; reverse communication is not supported.
-- **License** – The source code is licensed under the Eclipse Public License 2.0 (EPL-2.0), developed by HR Agrartechnik GmbH.
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
+* **Composite Block** – The conversion logic is completely encapsulated in an internal network consisting of only a single conversion function block. The block does not have its own ECC state machine.
+* **Adapter-Based Interface** – Instead of individual event/data inputs/outputs, adapters are used. This enables a modular, reusable connection in adapter-based control architectures.
+* **Package Structure** – The function block is located in the package `adapter::conversion::unidirectional` and uses the converter `iec61131::conversion::F_WORD_TO_LINT` from the IEC 61131 conversion library.
+* **Unidirectional Direction** – Data flows only from the input adapter to the output adapter; reverse communication is not supported.
+* **License** – The source code is licensed under the Eclipse Public License 2.0 (EPL-2.0), developed by HR Agrartechnik GmbH.
 
 ## State Overview
 

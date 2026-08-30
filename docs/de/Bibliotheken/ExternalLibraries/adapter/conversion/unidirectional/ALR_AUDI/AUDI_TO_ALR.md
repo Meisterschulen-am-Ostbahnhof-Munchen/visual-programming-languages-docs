@@ -47,6 +47,8 @@ Der Funktionsblock leitet das eingehende Ereignis `E1` vom Socket `AUDI_IN` dire
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Reine Adapter-Durchleitung:** Der Baustein enthält keinerlei eigene Logik oder Zustandsautomaten – er verbindet lediglich die gleichnamigen Kanäle der beiden Adapter.
 - **Unidirektionale Kommunikation:** Sowohl der AUDI- als auch der ALR-Adapter unterstützen nur eine Datenflussrichtung, was den Einsatz in einfachen Sensor-/Aktor-Schnittstellen oder bei der Kopplung unterschiedlicher Protokolle erleichtert.
 - **Keine Typkonvertierung im Baustein:** Die Wandlung von `UDINT` auf `LREAL` wird von der Infrastruktur der Adapter übernommen. Der Entwickler muss sicherstellen, dass die verwendeten Adapter-Implementierungen die nötige Konvertierung bereitstellen.

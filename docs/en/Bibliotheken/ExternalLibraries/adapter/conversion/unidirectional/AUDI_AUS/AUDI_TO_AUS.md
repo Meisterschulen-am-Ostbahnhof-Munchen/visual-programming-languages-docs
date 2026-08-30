@@ -37,6 +37,8 @@ The module is implemented as a simple pass-through. In the FBNetwork, the incomi
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - Uses the standard conversion block `iec61131::conversion::F_UDINT_TO_USINT` from the IEC 61131 library.
 - Pure event and data forwarding – no separate state machine required.
 - The conversion is lossy: A UDINT (32-bit) is mapped to a USINT (8-bit), meaning higher-order bits are lost (values > 255 are truncated or handled according to the manufacturer's definition).

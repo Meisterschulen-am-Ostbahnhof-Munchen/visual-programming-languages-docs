@@ -86,6 +86,8 @@ The **ALR_TO_AI** is a practical composite function block for the standardized c
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 ## State Overview
 
 ## Application Scenarios

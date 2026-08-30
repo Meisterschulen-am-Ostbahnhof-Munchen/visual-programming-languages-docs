@@ -45,6 +45,8 @@ Der gesamte Ablauf ist ereignisgesteuert: Nur bei einem Ereignis am `AL_IN` wird
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - Der FB ist als Composite implementiert und nutzt die vordefinierte Konvertierungsfunktion `F_LWORD_TO_SINT`, was eine hohe Wiederverwendbarkeit und Standardkonformität gewährleistet.
 - Die Konvertierung erfolgt **unidirektional** nur von LWORD zu SINT; eine Rückrichtung ist nicht vorgesehen.
 - Die Ereignisweiterleitung ist direkt: Ein Ereignis am Eingang führt zu genau einem Ereignis am Ausgang.

@@ -59,6 +59,8 @@ Der Funktionsblock arbeitet als reine Hülle (Composite) und enthält einen einz
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der Baustein ist als Composite FB realisiert und enthält selbst keine eigene Logik. Die gesamte Funktionalität wird durch den internen Konvertierungsbaustein bereitgestellt.
 - Die Adapter sind vom Typ "unidirectional", d.h. die Daten- und Ereignisflüsse sind gerichtet.
 - Der Baustein ist Teil der Adapter-Konvertierungsbibliothek und erleichtert die Anbindung von Komponenten mit unterschiedlichen Adapter-Datentypen.

@@ -48,6 +48,8 @@ Die Umwandlung erfolgt gemäß IEC 61131‑3: Die niederwertigen 8 Bit des einge
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - Der Baustein ist als Composite realisiert, d.h. er enthält keine eigene Zustandsmaschine, sondern delegiert die gesamte Logik an den internen Basisbaustein.
 - Weder Pufferung noch Fehlerbehandlung sind implementiert; die Datenübergabe erfolgt direkt synchron zum Ereignis.
 - Der Baustein ist für den Einsatz in Systemen vorgesehen, die eine klare Trennung zwischen Adaptern für unterschiedliche Datenbreiten erfordern.

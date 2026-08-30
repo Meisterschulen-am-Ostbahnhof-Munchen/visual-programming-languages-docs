@@ -47,6 +47,8 @@ Somit wird bei jedem Ereignis am Eingangsadapter der LINT-Wert in einen DINT-Wer
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Der FB kapselt die Konvertierung in einem wiederverwendbaren Adapter-zu-Adapter-Wandler.
 - **Datentypumwandlung**: Es findet eine 64‑Bit‑ zu 32‑Bit‑Integer‑Konvertierung statt. Bei Werten außerhalb des DINT-Bereichs (−2³¹ … 2³¹−1) kommt es zu einem Überlauf oder einer Begrenzung (implementierungsabhängig).
 - **Ereignissynchronisation**: Die Umwandlung erfolgt streng getaktet durch die Ereigniskette; ein neuer Wert wird nur nach einem vorherigen Ereignis verarbeitet.

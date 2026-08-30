@@ -53,6 +53,8 @@ Thus, the function block implements a **unidirectional, event-driven** transfer 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block**: The function block fully encapsulates the conversion logic and offers a clean, reusable interface.
 - **Core Function Block Used**: `iec61131::conversion::F_DINT_TO_UINT` – a standardized IEC 61131 function for converting DINT to UINT (value range adjustment: DINT to UINT is considered without a sign; negative values are converted accordingly).
 - **Adapter Types**: The adapters `ADI` and `AUI` are defined as unidirectional adapters (`adapter::types::unidirectional`). They each provide an event pair (`E1`/`E1`) and a data point (`D1` in the corresponding data type).

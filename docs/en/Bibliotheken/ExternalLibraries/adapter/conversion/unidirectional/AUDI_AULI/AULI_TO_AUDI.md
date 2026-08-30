@@ -62,6 +62,8 @@ The function block contains an internal network with a single conversion block, 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite FB**: The function block itself does not have its own logic but uses a standardized IEC 61131 converter.
 - **Adapter Conversion**: Enables the connection of components based on different adapter definitions without requiring manual conversion by the user.
 - **Unidirectional Data Flow**: Conversion is only performed in one direction (ULINT → UDINT); reverse conversion is not supported.

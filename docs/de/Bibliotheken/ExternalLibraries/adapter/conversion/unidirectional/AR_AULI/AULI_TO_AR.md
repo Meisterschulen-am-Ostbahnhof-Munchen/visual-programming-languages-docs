@@ -49,6 +49,8 @@ Ablauf:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Struktur** – ermöglicht Wiederverwendung und Kapselung der Konvertierungslogik.
 - **Adapter-basiert** – keine direkten Ein-/Ausgänge; die Kommunikation erfolgt über unidirektionale Adapter (Socket/Plug).
 - **Verwendung der IEC‑61131-Standardfunktion** `F_ULINT_TO_REAL` – garantiert plattformunabhängige und korrekte Typumwandlung.

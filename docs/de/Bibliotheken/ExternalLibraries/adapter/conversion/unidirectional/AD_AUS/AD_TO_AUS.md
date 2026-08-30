@@ -42,6 +42,8 @@ Der Adapter-Ausgang **AUS_OUT** stellt den konvertierten USINT-Wert (8‑Bit) ü
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Adapter‑Kopplung:** Der FB besitzt keine direkten Ereignis‑ oder Daten‑Ein‑/Ausgänge, sondern kommuniziert ausschließlich über Adapter-Schnittstellen. Dies ermöglicht eine lose Kopplung in einer modularen Steuerungsarchitektur.
 - **Verwendete Bibliothek:** Die Konvertierung erfolgt mit dem standardisierten Baustein `iec61131::conversion::F_DWORD_TO_USINT`. Dadurch wird die IEC‑61131‑Konformität gewährleistet.
 - **Paketname:** `adapter::conversion::unidirectional` (siehe CompilerInfo) ordnet den FB in eine spezifische Adapter‑Konvertierungs‑Bibliothek ein.

@@ -49,6 +49,8 @@ This results in a synchronized, event-driven conversion: Each input pulse genera
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The implementation uses an internal standard function block from the IEC 61131 library, which promotes maintainability and reusability.
 - **Unidirectionality**: The adapters are declared as unidirectional, meaning data flows in only one direction (ALR → ADI).
 - **Package Structure**: The function block is organized in the package `adapter::conversion::unidirectional`, which allows for clear integration into a library.

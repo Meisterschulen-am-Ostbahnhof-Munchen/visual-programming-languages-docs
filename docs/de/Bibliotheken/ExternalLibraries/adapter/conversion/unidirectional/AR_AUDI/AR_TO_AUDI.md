@@ -45,6 +45,8 @@ Die Umsetzung ist synchron: Jedes eingehende Ereignis löst genau eine Ausgabe a
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Zusammengesetzter Baustein** – Die Logik ist vollständig durch ein inneres Netzwerk realisiert; es existiert kein eigenständiger Algorithmus oder Zustandsautomat.
 - **Unidirektionale Adapter** – Sowohl Eingangs- als auch Ausgangsschnittstelle sind unidirektional und übertragen nur einen Ereignis‑/Datenkanal.
 - **Verwendete Bibliothek** – Die Konvertierung erfolgt über den IEC‑61131‑Baustein `F_REAL_TO_UDINT`, der hardwareunabhängig und weit verbreitet ist.

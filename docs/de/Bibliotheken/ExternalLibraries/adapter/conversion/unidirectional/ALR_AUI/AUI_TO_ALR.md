@@ -44,6 +44,8 @@ Der FB AUI_TO_ALR arbeitet als reine Koppelstelle. Ereignis und Daten werden vom
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Typ:** Der FB besitzt keinen eigenen Execution‑Control‑Chart (ECC), sondern besteht ausschließlich aus einer Netzwerkverbindung zwischen seinen beiden Adaptern.
 - **Direkte Durchleitung:** Keine interne Logik, Verzögerungen oder Zustandsänderungen – der FB ist rein passiv.
 - **Adapter‑basiert:** Die verwendeten Adapter sind als unidirektionale Schnittstellen definiert, die je ein Ereignis und einen Datenwert transportieren.

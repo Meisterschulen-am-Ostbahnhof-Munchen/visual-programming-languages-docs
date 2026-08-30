@@ -49,6 +49,8 @@ The function block operates as a pure data conversion loop:
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - This is a **composite function block** that internally uses the standard function block `iec61131::conversion::F_BYTE_TO_LINT`.
 - The conversion is **event-driven** – any change at the input triggers processing.
 - The function block is designed for unidirectional adapters and does not support reverse conversion.

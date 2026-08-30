@@ -47,6 +47,8 @@ The function block receives a UDINT value via socket `AUDI_IN` along with an eve
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The block is a composite function block and does not contain its own algorithm – all logic is delegated to the embedded `F_UDINT_TO_DINT`.
 - The conversion follows the IEC 61131-3 definition of `UDINT_TO_DINT`, meaning that values outside the DINT range (−2147483648 … 2147483647) are clamped to the nearest valid value.
 - Event forwarding is strictly causal: the output event is only activated after the conversion is complete.

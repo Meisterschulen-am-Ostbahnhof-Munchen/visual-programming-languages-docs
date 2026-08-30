@@ -44,6 +44,8 @@ The entire conversion is event-driven and performed in a single step.
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Unidirectional Adapter Coupling**: The function block connects two unidirectional adapters (ON → OFF) and ensures that the data flow direction is clearly defined.
 - **Reusable IEC Conversion**: Internally, the standardized function block `iec61131::conversion::F_BYTE_TO_USINT` is used.
 - **Composite Architecture**: The conversion logic is encapsulated and can be easily integrated into other projects or replaced by alternative converters.

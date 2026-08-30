@@ -45,6 +45,8 @@ This enables synchronous, event-driven conversion of an LREAL value to a SINT va
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure**: The function block completely encapsulates the conversion logic in a network, making the implementation transparent and easily extensible.
 - **Adapter-based**: Instead of individual event and data ports, standardized unidirectional adapters (`ALR` and `AS`) are used. This simplifies integration into existing adapter-based architectures.
 - **Reuse**: The internal function block `F_LREAL_TO_SINT` is a proven IEC function block and ensures correct conversion to the standard.

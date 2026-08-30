@@ -46,6 +46,8 @@ The conversion according to IEC 61131-3 returns the least significant byte (low 
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Unidirectional Adapter**: The module operates in only one data flow direction – from the socket to the plug.
 - **Integrated Conversion**: The actual conversion is performed by the established module `F_WORD_TO_BYTE`, so no custom logic needs to be implemented.
 - **Data Loss**: Since a WORD (16 bits) is mapped to a BYTE (8 bits), the upper 8 bits are lost. This must be taken into account in the application.

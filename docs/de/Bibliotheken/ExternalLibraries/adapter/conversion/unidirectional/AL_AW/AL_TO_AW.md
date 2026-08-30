@@ -50,6 +50,8 @@ Die gesamte Logik besteht aus einer direkten Verbindungskette ohne Zwischenzust�
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Verwendung standardisierter IEC 61131‑Konvertierung** – Intern wird der Baustein `F_LWORD_TO_WORD` aus der IEC 61131‑Bibliothek eingesetzt.
 - **Adapterbasierte Schnittstelle** – Der Baustein ist vollständig in die Adapter‑Konzepte von 4diac eingebettet und kann einfach in bestehende Systeme mit unidirektionalen AL‑ und AW‑Adaptern integriert werden.
 - **Keine Seiteneffekte** – Die Konvertierung erfolgt ohne Speicherung oder Zwischenpufferung; jedes eingehende Ereignis löst genau eine Ausgabe aus.

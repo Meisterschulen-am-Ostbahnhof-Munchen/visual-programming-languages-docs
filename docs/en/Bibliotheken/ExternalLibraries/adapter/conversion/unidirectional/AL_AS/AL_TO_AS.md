@@ -45,6 +45,8 @@ The entire process is event-driven: Only an event at `AL_IN` triggers the conver
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - The function block (FB) is implemented as a composite and uses the predefined conversion function `F_LWORD_TO_SINT`, ensuring high reusability and standards compliance.
 - Conversion is **unidirectional**, only from LWORD to SINT; a reverse direction is not supported.
 - Event forwarding is direct: An event at the input results in exactly one event at the output.

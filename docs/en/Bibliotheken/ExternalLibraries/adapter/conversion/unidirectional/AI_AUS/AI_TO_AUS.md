@@ -53,6 +53,8 @@ Description: Outputs the converted `USINT` value along with an event.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Library Used:** The function block uses the IEC 61131 standard function block `F_INT_TO_USINT`, which implements a typical conversion with possible range limitation or overflow behavior.
 - **Adapter Encapsulation:** The composite block abstracts the conversion at the adapter level, so only the two matching adapters need to be connected in the network configuration.
 - **Data Range Conflict:** `INT` encompasses values from -32,768 to +32,767, while `USINT` can only represent 0…255. For input values outside the USINT range, the behavior depends on `F_INT_TO_USINT` (e.g., saturation to 0 or 255, or modular overflow). The exact mapping rule must be verified in the specific target system.

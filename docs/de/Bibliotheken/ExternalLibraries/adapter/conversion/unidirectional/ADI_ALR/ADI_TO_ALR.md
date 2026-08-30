@@ -50,6 +50,8 @@ Es findet keine weitere Verarbeitung (Filterung, Begrenzung, Verzögerung) statt
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Baustein:** Die Konvertierung wird durch einen einfachen „Wire‑Through“ im FBNetzwerk realisiert – keine Zustandsmaschine, keine eigenen Algorithmen.
 - **Implizite Typumwandlung:** DINT → LREAL ist eine verlustfreie Umwandlung (LREAL bietet 64‑Bit Genauigkeit).
 - **Unidirektional:** Der Datenfluss erfolgt ausschließlich vom Socket zum Plug.

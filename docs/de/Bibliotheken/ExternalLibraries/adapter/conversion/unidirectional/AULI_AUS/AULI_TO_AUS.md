@@ -46,6 +46,8 @@ Der Baustein besitzt keine direkten Ereignis- oder Daten-Ein-/Ausgänge auf FB-E
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein** – Er enthält eine interne Instanz von **F_ULINT_TO_USINT** aus der IEC‑61131‑Bibliothek.
 - **Adapterbasierte Kommunikation** – Keine direkten Daten/Events auf der obersten FB‑Ebene; die Ein‑/Ausgabe erfolgt ausschließlich über die mitgelieferten Adapter (AULI / AUS).
 - **Datenverlust möglich** – Da der USINT‑Datentyp nur 8 Bit umfasst, gehen Werte > 255 verloren (abgeschnitten oder wrap‑around, je nach Implementierung des Konverters).

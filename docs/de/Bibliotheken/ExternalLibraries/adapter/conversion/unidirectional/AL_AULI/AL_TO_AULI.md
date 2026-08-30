@@ -49,10 +49,12 @@ Der FB realisiert die Konvertierung durch einen internen Baustein `F_LWORD_TO_UL
 
 ## Technische Besonderheiten
 
-- **Lizenz:** Der Baustein wird unter der **Eclipse Public License 2.0** bereitgestellt.
-- **Version:** 1.0 (Stand 2026-02-17)
-- **Abhängigkeiten:** Er benötigt die Funktion `F_LWORD_TO_ULINT` aus der Bibliothek `iec61132::conversion`.
-- **Portabilität:** Als Composite FB ist er plattformunabhängig und kann in jeder 4diac‑IDE‑Umgebung eingesetzt werden.
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
+- **Lizenz:** Der Baustein wird unter der **Eclipse Public License 2.0** bereitgestellt.  
+- **Version:** 1.0 (Stand 2026-02-17)  
+- **Abhängigkeiten:** Er benötigt die Funktion `F_LWORD_TO_ULINT` aus der Bibliothek `iec61132::conversion`.  
+- **Portabilität:** Als Composite FB ist er plattformunabhängig und kann in jeder 4diac‑IDE‑Umgebung eingesetzt werden.  
 - **Typ-Hash:** Der Baustein besitzt ein Attribut `eclipse4diac::core::TypeHash` zur eindeutigen Identifikation (Wert leer).
 
 ## Zustandsübersicht

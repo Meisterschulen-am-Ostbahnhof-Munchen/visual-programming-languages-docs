@@ -49,6 +49,8 @@ This enables complete, event-driven conversion from DINT to SINT via the adapter
 
 ## Technical Details
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **License and Origin:** This module is subject to the **Eclipse Public License 2.0** and is from **HR Agrartechnik GmbH** (Version 1.0, Author: Franz Höpfinger, Date: 2026-02-17).
 - **Dependency:** It uses the library module `iec61131::conversion::F_DINT_TO_SINT` from the IEC 61131 conversion package.
 - **Composite Structure:** No separate states or algorithms are defined – all logic is executed by the internal network.

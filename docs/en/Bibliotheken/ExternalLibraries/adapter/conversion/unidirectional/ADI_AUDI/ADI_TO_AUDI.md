@@ -59,6 +59,8 @@ The function block operates as a pure wrapper (composite) and contains a single 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block is implemented as a composite function block and does not contain any logic of its own. All functionality is provided by the internal conversion block.
 - The adapters are of type "unidirectional," meaning that data and event flows are directed.
 - The function block is part of the adapter conversion library and facilitates the connection of components with different adapter data types.

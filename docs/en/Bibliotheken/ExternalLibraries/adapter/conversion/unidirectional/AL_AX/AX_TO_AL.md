@@ -49,6 +49,8 @@ The function block itself does not perform any value conversion; the conversion 
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Composite Architecture**: The function block contains no internal ECC (Execution Control Chart) or its own logic. It consists solely of two adapter connections and simple passthroughs.
 - **Type Mapping**: The mapping from BOOL to LWORD is implicit. The user must ensure that the connected adapters correctly support the conversion.
 - **Project Structure**: The function block is located in the package `adapter::conversion::unidirectional`, which indicates its function as a unidirectional conversion adapter.

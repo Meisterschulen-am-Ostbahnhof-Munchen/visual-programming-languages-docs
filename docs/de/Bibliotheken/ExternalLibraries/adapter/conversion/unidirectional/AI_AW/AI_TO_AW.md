@@ -44,6 +44,8 @@ Somit wird die gesamte Adapter-Konvertierung durch ein einzelnes Ereignis gesteu
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-Baustein**: Die Logik ist durch einen internen Subbaustein realisiert, was eine klare Trennung von Konvertierungslogik und Schnittstellenadaptern ermöglicht.
 - **Wiederverwendbarkeit**: Der Baustein basiert auf dem Standardbaustein `iec61131::conversion::F_INT_TO_WORD` und kann daher in jeder IEC 61499-konformen Umgebung eingesetzt werden.
 - **Lizenz**: Der Baustein ist unter der Eclipse Public License 2.0 (EPL-2.0) veröffentlicht.

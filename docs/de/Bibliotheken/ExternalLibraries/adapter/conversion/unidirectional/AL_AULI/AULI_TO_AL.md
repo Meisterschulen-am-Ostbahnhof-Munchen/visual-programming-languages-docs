@@ -47,6 +47,8 @@ Der Baustein arbeitet als reine Weiterleitung: Ein eingehendes Ereignis an `AULI
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑Implementierung**: Der Baustein enthält keine eigene Ablauflogik (ECC), sondern besteht ausschließlich aus einem verknüpften Funktionsbaustein der IEC‑61131‑Bibliothek.
 - **Adapter‑Architektur**: Sowohl Eingang als auch Ausgang sind als unidirektionale Adapter (Socket/Plug) ausgelegt, was eine lose Kopplung und einfache Wiederverwendung in verschiedenen Applikationen ermöglicht.
 - **Typumwandlung**: Die Konvertierung von ULINT (vorzeichenloser 64‑Bit‑Integer) nach LWORD (64‑Bit‑Bitfeld) erfolgt nach IEC‑61131‑Norm.

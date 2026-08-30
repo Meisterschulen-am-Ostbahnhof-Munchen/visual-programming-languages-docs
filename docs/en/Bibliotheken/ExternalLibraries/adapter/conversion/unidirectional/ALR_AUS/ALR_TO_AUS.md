@@ -57,6 +57,8 @@ This enables synchronous, data-driven conversion without any additional delay.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure**: The block encapsulates the conversion logic in a reusable unit and utilizes the standardized adapter types `ALR` and `AUS`. This allows for seamless integration into existing unidirectional communication protocols.
 - **Standard-Compliant Conversion**: The actual conversion is performed by the IEC 61131 block `F_LREAL_TO_USINT`, which guarantees defined behavior (e.g., rounding or capping) according to the standard.
 - **EPL 2.0 License**: The block is released under the Eclipse Public License 2.0, which allows unrestricted use in proprietary and open-source projects.

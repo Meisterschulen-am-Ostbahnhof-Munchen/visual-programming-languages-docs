@@ -72,6 +72,8 @@ The **AUI_TO_AUS** is a compact and focused function block for adapter-based con
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 ## State Overview
 
 ## Application Scenarios

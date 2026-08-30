@@ -53,6 +53,8 @@ Die gesamte Verarbeitung ist **ereignisgesteuert** und erfolgt innerhalb eines e
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein** – er enthält keine eigene Logik, sondern delegiert die Konvertierung vollständig an den IEC-61131-Baustein `F_UDINT_TO_LINT`.
 - **Adapter-orientierte Schnittstelle** – alle Ein- und Ausgaben erfolgen über standardisierte unidirektionale Adapter (`AUDI` und `ALI`), was eine einfache Integration in bestehende Adapter-Netzwerke ermöglicht.
 - **Lizenz & Copyright** – Der Baustein unterliegt der **Eclipse Public License 2.0** und wurde von **HR Agrartechnik GmbH** entwickelt (Stand 2026).

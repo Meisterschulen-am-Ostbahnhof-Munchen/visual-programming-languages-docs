@@ -41,6 +41,8 @@ The function block internally uses the IEC 61131 conversion block **F_SINT_TO_LW
 
 ## Technical Specifications
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Standard Compliance**: Complies with IEC 61499-2.
 - **Copyright**: The function block is subject to the Eclipse Public License 2.0 (Copyright 2026 HR Agrartechnik GmbH).
 - **Version**: 1.0, created by Franz Höpfinger on February 17, 2026.

@@ -43,6 +43,8 @@ Transmission is strictly sequential: first the event, then the data flow – the
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The ALR_TO_AR encapsulates the conversion logic and simplifies reuse in different projects.
 - **IEC 61131 Function**: The actual type conversion is based on the standardized library function `F_LREAL_TO_REAL`.
 - **Adapter Types**: Both adapters are unidirectional and allow a clear separation of input and output sides.

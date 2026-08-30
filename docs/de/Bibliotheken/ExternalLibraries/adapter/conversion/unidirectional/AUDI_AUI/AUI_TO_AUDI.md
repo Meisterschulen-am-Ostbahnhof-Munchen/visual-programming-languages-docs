@@ -44,6 +44,8 @@ Der Baustein führt keine eigene Logik oder Umrechnung durch; er fungiert als re
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional, d.h. Daten und Ereignisse fließen nur in eine Richtung (vom Socket zum Plug).
 - **Composite-FB**: Der Baustein ist als Composite (zusammengesetzter FB) realisiert, der die Adapterverbindungen im FBNetwork abbildet.
 - **Implizite Typkonvertierung**: Die Konvertierung von UINT zu UDINT erfolgt automatisch im Rahmen der Datenverbindung, basierend auf den IEC 61499-Datentypregeln.

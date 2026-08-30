@@ -46,6 +46,8 @@ Since this is a composite component without its own algorithm or state machine, 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Pure Passthrough Structure:** No internal logic, no latency, and no buffering.
 - **Adapter Definition Dependency:** Correct operation requires that the adapters `AI` and `ALR` are defined according to the 4diac standard and include the INT>LREAL conversion.
 - **Composite Component:** Easily extensible, e.g., through additional filters or network scaling.

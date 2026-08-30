@@ -47,6 +47,8 @@ Der Baustein ist rein kausal – er reagiert auf ein eingehendes Ereignis und gi
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapter‑basierte Kommunikation**: Statt klassischer Ein‑/Ausgangspins werden die Schnittstellen über Adapter (`AI` und `AUI`) realisiert. Dies ermöglicht eine lose Kopplung in modularen Systemen.
 - **Unidirektionaler Datenfluss**: Beide Adapter sind unidirektional, d. h. sie transportieren Daten und Ereignisse nur in eine Richtung (Ein‑ oder Ausgang).
 - **Paketierung**: Der Baustein befindet sich im Paket `adapter::conversion::unidirectional`, was seine Rolle als Konverter zwischen Adapter‑Typen kennzeichnet.

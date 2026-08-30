@@ -45,6 +45,8 @@ Die gesamte Konvertierung erfolgt ereignisgesteuert und in einem Schritt.
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Unidirektionale Adapterkopplung**: Der FB verbindet zwei unidirektionale Adapter (AB → AUS) und stellt sicher, dass die Datenflussrichtung klar definiert ist.  
 - **Wiederverwendbare IEC-Konvertierung**: Intern wird der standardisierte Baustein `iec61131::conversion::F_BYTE_TO_USINT` verwendet.  
 - **Composite-Architektur**: Die Konvertierungslogik ist gekapselt und kann leicht in andere Projekte eingebunden oder durch alternative Konverter ersetzt werden.  

@@ -45,6 +45,8 @@ The FB does not have direct data outputs. The converted UDINT data is output via
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Composite Architecture**: The function block consists solely of the internal use of the function block `F_LWORD_TO_UDINT` and the adapters. It has no independent state logic or additional control.
 - **Unidirectional Adapters**: Both `AL_IN` and `AUDI_OUT` are unidirectional adapters (input to output).
 - **IEC 61131-3 Compliance**: The conversion uses a standardized IEC 61131-3 function, which increases reusability and interchangeability.

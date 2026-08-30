@@ -19,6 +19,8 @@ As soon as an event (`E1`) arrives at `AUDI_IN` along with data (`D1`), the UDIN
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 ✔ **Direct adapter-to-adapter coupling**.
 
 ✔ **Standard-compliant conversion** through the use of `F_UDINT_TO_DWORD`.

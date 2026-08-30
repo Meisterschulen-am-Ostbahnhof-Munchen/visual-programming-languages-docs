@@ -34,6 +34,8 @@ Der Funktionsblock **AL_TO_AB** ist ein Composite-FB, der eine unidirektionale K
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Einbindung von IEC‑61131‑3**: Die Konvertierung nutzt den standardisierten Baustein `F_LWORD_TO_BYTE` aus der IEC‑61131‑3-Bibliothek. Dadurch ist die Konvertierungslogik normkonform und portabel.
 - **Composite-Struktur**: Der FB besteht ausschließlich aus einem internen Netzwerk, besitzt keinen eigenen Ablaufzustand (ECC) und arbeitet daher ereignisgesteuert ohne Verzögerung.
 - **Unidirektionale Adapter**: Verwendet werden die unidirektionalen Adapter `AL` und `AB`, die eine klare Richtung der Daten- und Ereignisflüsse vorgeben.

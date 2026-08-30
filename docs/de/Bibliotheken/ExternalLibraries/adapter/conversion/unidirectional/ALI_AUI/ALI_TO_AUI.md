@@ -45,6 +45,8 @@ Der gesamte Ablauf ist ereignisgesteuert: Ein eingehendes Ereignis am ALI‑Adap
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Datentypkonvertierung:** Der interne Baustein wandelt einen 64‑Bit signed Integer (LINT) in einen 16‑Bit unsigned Integer (UINT) um. Da der Wertebereich von UINT (0…65535) deutlich kleiner ist als der von LINT, kommt es bei Werten außerhalb dieses Bereichs zu einem Überlauf/Verlust.
 - **Abhängigkeit:** Der Baustein benötigt die Bibliothek `iec61131::conversion` (insbesondere den Baustein `F_LINT_TO_UINT`).
 - **Adapterreine Schnittstelle:** Der gesamte Datenaustausch erfolgt ausschließlich über Adapter, was eine modulare und wiederverwendbare Einbindung in größere Netzwerke ermöglicht.

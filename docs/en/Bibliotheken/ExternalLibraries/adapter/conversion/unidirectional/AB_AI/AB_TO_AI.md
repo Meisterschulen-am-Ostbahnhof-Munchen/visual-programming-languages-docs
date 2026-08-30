@@ -52,6 +52,8 @@ The conversion is performed without loss of value range: BYTE (0…255) is direc
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite Function Block:** The logic is implemented entirely through an internal network consisting of a single conversion block.
 - **Reusable:** The block can be integrated into projects that require unidirectional adapter conversion.
 - **License:** The block and its associated materials are licensed under the **Eclipse Public License 2.0**.

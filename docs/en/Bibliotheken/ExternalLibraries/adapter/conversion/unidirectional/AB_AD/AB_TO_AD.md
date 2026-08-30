@@ -37,6 +37,8 @@ This function block connects the interfaces of a BYTE adapter (input) to those o
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Unidirectionality:** The function block supports only one direction of data flow, from the BYTE adapter to the DWORD adapter. Reverse data transfer is not supported.
 - **Data Width Adjustment:** The incoming BYTE value (1 byte) is embedded within a DWORD value (4 bytes). The least significant byte of the DWORD corresponds to the incoming BYTE; the more significant bytes are set to zero (or remain unchanged, depending on the implementation of the target adapter).
 - **Simple Coupling:** The FB is a pure connection block in the FBNetwork and does not require its own state machine or algorithms.

@@ -54,6 +54,8 @@ Der gesamte Ablauf erfolgt atomar innerhalb eines Zyklus – Verzögerungen ents
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Reine Adapterkopplung**: Der Baustein enthält keine eigene Zustandslogik oder Zeitsteuerung.  
 - **Verwendung von IEC‑61131‑Konvertierung**: Die eigentliche Typumwandlung erfolgt durch den standardisierten Baustein `F_LINT_TO_INT`.  
 - **Einfache Zusammensetzung**: Alle Verbindungen sind direkt und ohne zwischengeschaltete Logik.  

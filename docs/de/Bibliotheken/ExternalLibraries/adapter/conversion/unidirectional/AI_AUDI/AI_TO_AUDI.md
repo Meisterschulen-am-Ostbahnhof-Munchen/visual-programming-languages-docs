@@ -64,6 +64,8 @@ Die Verbindungen im FBNetwork sind:
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein:** Vereinfacht die Wiederverwendung und Kapselung der Konvertierungslogik.
 - **Standardkonvertierung:** Verwendet den IEC 61131-3 Baustein `F_INT_TO_UDINT`, der eine saubere und portable Typumwandlung gewährleistet.
 - **Unidirektionale Adapter:** Sowohl der Eingangs- als auch der Ausgangsadapter sind als unidirektionale Schnittstellen (Socket bzw. Plug) ausgeführt – die Daten fließen nur in eine Richtung.

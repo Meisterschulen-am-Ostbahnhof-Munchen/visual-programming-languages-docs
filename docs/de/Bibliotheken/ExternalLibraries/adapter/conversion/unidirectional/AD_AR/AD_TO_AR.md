@@ -6,7 +6,9 @@
 
 ## Einleitung
 
-Der Funktionsblock **AD_TO_AR** ist ein Composite-Baustein zur Umwandlung eines DWORD-Werts aus einem unidirektionalen AD-Adapter (Socket) in einen REAL-Wert, der über einen AR-Adapter (Plug) ausgegeben wird. Er kapselt die Konvertierungslogik und ermöglicht so eine einfache Adapter-basierte Datenübertragung zwischen unterschiedlichen Datentypen.
+Der Funktionsblock **AD_TO_AR** ist ein Composite-Baustein, der einen DWORD-Wert aus einem unidirektionalen AD-Adapter (Socket) auf einen REAL-Wert an einem AR-Adapter (Plug) abbildet.
+
+> **⚠️ Achtung — keine numerische Wertumwandlung:** `AD_TO_AR` nutzt intern `F_DWORD_TO_REAL`, was im FORTE-Kern für Bit-String-Quelltypen (BYTE/WORD/DWORD/LWORD) eine reine IEEE754-**Bit-Reinterpretation** ist, keine Zahlenwert-Umwandlung. Ein roher Zähler- oder Analogwert wie `DWORD#2048` wird dadurch **nicht** zu `REAL#2048.0`, sondern zu einer bedeutungslosen Zahl nahe Null. Für eine echte numerische DWORD→REAL-Umwandlung siehe [`AD_TO_AR_NUM`](./AD_TO_AR_NUM.md) (zweistufig über UDINT). `AD_TO_AR` ist nur dann korrekt, wenn `AD_IN` bereits ein Bitmuster ist, das als REAL interpretiert werden soll (z. B. das Ergebnis von `F_REAL_TO_DWORD`).
 
 ## Schnittstellenstruktur
 
@@ -44,10 +46,11 @@ Der Baustein arbeitet als ereignisgesteuerte Pipeline:
 3. Nach erfolgreicher Konvertierung signalisiert der interne Baustein ein Ausgangsereignis (**CNF**).
 4. Dieses Ereignis wird an den Plug **AR_OUT.E1** weitergeleitet und zeitgleich der konvertierte REAL-Wert über **AR_OUT.D1** ausgegeben.
 
-Die Wertumwandlung erfolgt gemäß der IEC-61131-Standardfunktion `DWORD_TO_REAL`.
+`F_DWORD_TO_REAL` reinterpretiert dabei lediglich das 32-Bit-Muster des DWORD als IEEE754-`REAL` (Bit-Kopie), es findet **keine** Zahlenwert-Konvertierung statt.
 
 ## Technische Besonderheiten
 
+- **⚠️ Bit-Reinterpretation statt Zahlenwert-Umwandlung**: Siehe Warnhinweis in der Einleitung. Betroffen sind alle Bit-String-Quelltypen (`AB`/BYTE, `AW`/WORD, `AD`/DWORD, `AL`/LWORD) beim Umwandeln in `AR`/REAL oder `ALR`/LREAL — der einzige weitere Fall in dieser Bibliothek ist [`AL_TO_ALR`](../AL_ALR/AL_TO_ALR.md) (LWORD→LREAL).
 - **Composite-Baustein**: Die Konvertierungslogik ist vollständig in einem internen Netzwerk aus einem einzigen Funktionsblock realisiert.
 - **Typkonvertierung über Adapter**: Der Baustein ermöglicht die Anbindung von Komponenten, die ausschließlich über Adapter-Schnittstellen kommunizieren, ohne dass zusätzliche manuelle Konvertierungen notwendig sind.
 - **Standardkonformität**: Verwendet die IEC-61131-Bibliotheksfunktion `F_DWORD_TO_REAL`, dadurch portabel und gut getestet.
@@ -59,22 +62,24 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Die Verarbeitung erfolgt 
 
 ## Anwendungsszenarien
 
-- **Adapter-Brücke**: Verbindung einer Komponente, die DWORD über Adapter liefert (z. B. aus einem binären Sensorwert), mit einer Komponente, die REAL über Adapter erwartet (z. B. eine Steuerung mit Fließkommaberechnung).
-- **Wertumwandlung in Adapter-Netzwerken**: Wenn in einer 4diac-IDE-Anwendung Adapter unterschiedlicher Datentypen aufeinandertreffen, kann dieser FB als einfacher Konverter dienen.
-- **Datenvorbereitung**: Vor der Weiterverarbeitung in Analyse- oder Visualisierungsblöcken, die REAL-Werte benötigen.
+- **Bitmuster-Weitergabe**: `AD_IN` liefert bereits ein Bitmuster, das als REAL interpretiert werden soll (z. B. das Ergebnis eines `F_REAL_TO_DWORD` an anderer Stelle im Netzwerk, oder deserialisierte Float-Rohdaten aus einem Feldbus/Protokoll).
+- **NICHT geeignet** für rohe Zähler-, Analog- oder sonstige Ganzzahlwerte, die als derselbe Zahlenwert in REAL vorliegen sollen — dafür [`AD_TO_AR_NUM`](./AD_TO_AR_NUM.md) verwenden.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-Ähnliche Konvertierungsbausteine existieren für andere Datentypen, z. B.:
-
-- `WORD_TO_REAL` oder `INT_TO_REAL` – direkt als Einzelfunktionsblöcke,
-- `AD_TO_AR` – als Composite mit Adapter-Schnittstelle.
-
-Der Vorteil des `AD_TO_AR` liegt in der nahtlosen Integration in adapterbasierte Architekturen, während reine IEC-61131-Bausteine oft manuelle Verbindungen erfordern.
+- **`AD_TO_AR_NUM`** (numerisch, DWORD→UDINT→REAL): der sichere Ersatz, wenn tatsächlich ein Zahlenwert gemeint ist.
+- **`AI_TO_AR`/`ADI_TO_AR`/`AUDI_TO_AR`** (INT/DINT/UDINT→REAL): diese sind bereits numerisch korrekt, da ihre Quelltypen `ANY_INT` (nicht `ANY_BIT`) sind — kein Trap.
+- **`AL_TO_ALR`** (LWORD→LREAL): dieselbe Bit-Reinterpretations-Falle, nur mit den 64-Bit-Pendants.
 
 ## Fazit
 
-Der **AD_TO_AR**-Baustein bietet eine kompakte und standardkonforme Lösung zur Umwandlung von DWORD- in REAL-Werte über Adapter-Schnittstellen. Durch die Kapselung als Composite erhöht er die Wiederverwendbarkeit und vereinfacht den Entwurf von adapterbasierten Automatisierungslösungen.
+Der **AD_TO_AR**-Baustein bietet eine kompakte Lösung, um ein DWORD-Bitmuster über Adapter-Schnittstellen als REAL bereitzustellen — **aber keine numerische Wertumwandlung**. Für rohe Zähler- oder Analogwerte, die als derselbe Zahlenwert in REAL vorliegen sollen, [`AD_TO_AR_NUM`](./AD_TO_AR_NUM.md) verwenden.
+
+---
+
+### 📖 Hintergrund
+
+* [Numerisch vs. bitweise: Die Konvertierungs-Falle in FORTE](../Numerisch_vs_Bitweise.md)
 
 ---
 

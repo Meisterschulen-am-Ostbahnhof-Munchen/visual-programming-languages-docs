@@ -50,6 +50,8 @@ Thus, the function block makes the data provided by the input adapter available 
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **IEC 61131-3 Conversion**: The actual conversion is performed using the standardized function block `F_LINT_TO_WORD`, which performs a lossy conversion from 64-bit (LINT) to 16-bit (WORD) (truncation or range checking depending on the implementation).
 - **Adapter-Based Interface**: The function block is fully embedded in 4diac's adapter technology and is suitable for unidirectional communication paths (package `adapter::conversion::unidirectional`).
 - **Versioning**: Version 1.0, released under the Eclipse Public License 2.0 (EPL-2.0).

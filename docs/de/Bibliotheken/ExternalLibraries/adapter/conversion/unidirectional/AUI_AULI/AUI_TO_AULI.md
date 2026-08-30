@@ -49,6 +49,8 @@ Der Baustein leitet eingehende Ereignisse und Daten vom Eingangsadapter `AUI_IN`
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Implizite Typkonvertierung:** Die Umwandlung von `UINT` nach `ULINT` erfolgt automatisch durch die 4diac-IDE und erfordert keinen expliziten Konvertierungsbaustein. Der Wertebereich von 0 bis 65535 (UINT) wird auf den entsprechenden ULINT-Bereich abgebildet.
 - **Durchreicheverhalten:** Ereignisse und Daten werden ohne Verzögerung oder Pufferung übertragen. Das Ausgangsereignis tritt zeitgleich mit dem Eingangsereignis auf.
 - **Unidirektionale Adapter:** Der Baustein unterstützt nur eine Datenflussrichtung (vom AUI-Eingang zum AULI-Ausgang). Eine Rückwärtskommunikation ist nicht vorgesehen.

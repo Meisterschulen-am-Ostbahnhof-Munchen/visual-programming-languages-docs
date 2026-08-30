@@ -48,6 +48,8 @@ Thus, with each event at the input adapter, the LINT value is converted to a DIN
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The function block encapsulates the conversion in a reusable adapter-to-adapter converter.
 - **Data Type Conversion**: A 64-bit to 32-bit integer conversion takes place. Values outside the DINT range (−2³¹ … 2³¹−1) result in an overflow or a limit (depending on the implementation).
 - **Event Synchronization**: The conversion is strictly timed through the event chain; a new value is only processed after a previous event.

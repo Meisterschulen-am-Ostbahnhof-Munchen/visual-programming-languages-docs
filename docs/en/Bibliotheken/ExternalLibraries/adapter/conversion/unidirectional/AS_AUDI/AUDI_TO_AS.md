@@ -47,6 +47,8 @@ The internal process is purely causal and requires no separate states or timings
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-based interface**: The function block communicates exclusively via special adapters, enabling loose coupling and reusability in different environments.
 - **Data loss possible**: Since `SINT` only contains 8 bits, over 127 bits of information are lost with a `UDINT` input value. The exact mapping (e.g., clipping or modular reduction) depends on the internal conversion function.
 - **No Internal Logic**: The function block consists entirely of the interconnection of the existing conversion function block and two adapters – a pure composition type.

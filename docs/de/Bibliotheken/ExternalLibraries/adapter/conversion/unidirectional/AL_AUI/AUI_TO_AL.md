@@ -49,6 +49,8 @@ Der Funktionsblock arbeitet ereignisgesteuert:
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Zusammengesetzter Baustein (Composite FB)**: Die Implementierung verbirgt die interne Logik und erleichtert die Wiederverwendung in größeren Adapterketten.
 - **Standardkonvertierung**: Verwendet die IEC 61131-konforme Funktion `F_UINT_TO_LWORD`, dadurch portabel und plattformunabhängig.
 - **Unidirektionale Übertragung**: Die Adapter sind ausschließlich für eine Datenflussrichtung ausgelegt (kein Rückkanal).

@@ -66,6 +66,8 @@ Thus, on each rising edge of the input event, the current BOOL value is converte
 
 ## Technical Specifications
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **License**: The source code is licensed under the Eclipse Public License 2.0 (EPL-2.0).
 - **Author**: Developed by **Franz Höpfinger** for **HR Agrartechnik GmbH** (Version 1.0, dated 2026-02-17).
 - **Package Structure**: The module is organized in the package `adapter::conversion::unidirectional`.

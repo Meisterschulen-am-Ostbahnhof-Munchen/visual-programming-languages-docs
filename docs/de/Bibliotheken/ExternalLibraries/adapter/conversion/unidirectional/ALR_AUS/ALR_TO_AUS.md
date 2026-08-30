@@ -53,6 +53,8 @@ Dadurch wird eine synchrone, datengekoppelte Umsetzung ohne zusätzliche Verzög
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Aufbau**: Der Block kapselt die Konvertierungslogik in einer wiederverwendbaren Einheit und nutzt die standardisierten Adaptertypen `ALR` und `AUS`. Dadurch kann er nahtlos in bestehende unidirektionale Kommunikationsprotokolle eingebunden werden.
 - **Standardkonforme Umwandlung**: Die eigentliche Konvertierung erfolgt durch den IEC 61131‑Baustein `F_LREAL_TO_USINT`, der ein definiertes Verhalten (z.B. Runden oder Kappen) gemäß der Norm garantiert.
 - **EPL‑2.0 Lizenz**: Der Baustein ist unter der Eclipse Public License 2.0 veröffentlicht, was eine uneingeschränkte Nutzung in proprietären und Open‑Source‑Projekten ermöglicht.

@@ -51,6 +51,8 @@ This creates a causal chain: An incoming event at the AUS_IN adapter triggers th
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Pure Adapter Coupling** – The block does not have its own input/output variables but only defines adapter interfaces (socket/plug). This follows the concept of adapter-based communication in IEC 61499.
 - **Unidirectional Conversion** – The direction is fixed: from USINT to INT. Reverse conversion is not supported.
 - **Use of a Standard IEC 61131 Function Block** – The actual type conversion is performed by the established function block `F_USINT_TO_INT`, which is already available in many runtime environments.

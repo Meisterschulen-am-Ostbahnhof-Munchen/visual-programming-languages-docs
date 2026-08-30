@@ -52,6 +52,8 @@ There are no internal function blocks or algorithms that manipulate the signal.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block**: It does not contain its own function block instances, but simply connects the adapter ports directly.
 - **Implicit Type Conversion**: The conversion from USINT to UINT is not explicitly implemented in the function block, but is supported by the runtime system. The 8-bit value is transferred to the less significant part of the 16-bit word.
 - **Unidirectional Adapters**: Both AUS and AUI are defined as unidirectional adapters, meaning data flows are only intended to occur in one direction.

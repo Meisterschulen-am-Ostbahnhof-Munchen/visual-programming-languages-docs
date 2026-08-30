@@ -57,6 +57,8 @@ The entire conversion is **event-driven** and without its own state logic.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **License**: The function block is provided under the **Eclipse Public License 2.0** (see copyright notice).
 - **Standard Compliance**: The internally used conversion block `F_LREAL_TO_ULINT` complies with the IEC 61131-3 standard.
 - **No State Machine**: As a composite function block (FB), this block has no inherent state logic – the conversion is purely combinatorial.

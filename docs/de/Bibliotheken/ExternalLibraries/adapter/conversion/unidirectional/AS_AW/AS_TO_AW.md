@@ -53,6 +53,8 @@ Somit wird eine zuverlässige, einmalige Konvertierung bei jeder Ereignisankunft
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite FB**: Der Baustein nutzt die Composite-Funktionalität von 4diac, um einen vorhandenen Konvertierungsbaustein (`F_SINT_TO_WORD`) in eine Adapter-Hülle zu integrieren.
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt, d.h. nur eine Daten- und Ereignisrichtung wird unterstützt.
 - **IEC 61131-3 Konvertierung**: Die eigentliche Typumwandlung erfolgt nach IEC 61131-3 Standard, was die Kompatibilität mit anderen Systemen erleichtert.

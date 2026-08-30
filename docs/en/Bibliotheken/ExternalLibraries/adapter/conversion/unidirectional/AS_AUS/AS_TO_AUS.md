@@ -45,6 +45,8 @@ The function block operates as a pure data flow converter:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: The function block (FB) does not contain its own state logic but combines the existing standard converter with the predefined adapter interfaces.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional – data and events flow in only one direction.
 - **Type Conversion**: The conversion from SINT to USINT is lossless, as the value range of USINT (0…255) completely covers the positive part of SINT (−128…127). However, negative SINT values are interpreted as follows: e.g., −1 becomes 255 (two's complement). This behavior corresponds to the IEC 61131 function `SINT_TO_USINT`.

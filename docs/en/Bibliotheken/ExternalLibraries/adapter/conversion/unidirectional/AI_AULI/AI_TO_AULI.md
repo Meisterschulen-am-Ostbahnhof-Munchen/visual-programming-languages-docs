@@ -68,6 +68,8 @@ This ensures a complete, synchronized transfer of the event and data.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based Communication:** The module encapsulates the conversion logic in a composite, so the connected components only need to know the respective adapter interfaces.
 - **Unidirectional Data Transfer:** Both `AI` and `AULI` are designed as unidirectional adapters; reverse data transfer is not supported.
 - **Type Conversion:** The internal module `F_INT_TO_ULINT` performs an extended conversion from 16-bit integer (`INT`) to 64-bit unsigned integer (`ULINT`). Negative `INT` values are converted into large positive `ULINT` values using two's complement (e.g., `-1` → `2^64-1`).

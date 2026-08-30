@@ -63,6 +63,8 @@ The AR_TO_AUS function block offers a simple, modular solution for converting a 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 ## State Overview
 
 ## Application Scenarios

@@ -52,6 +52,8 @@ The entire process is thus synchronous: A pulse at the WORD adapter results in a
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Pure Coupling:** The block contains no logic of its own, but simply connects the adapter interfaces to an existing conversion block.
 - **Use of IEC 61131 Standard Blocks:** The actual conversion is performed by `F_WORD_TO_DINT`, which provides a defined and standardized conversion.
 - **Unidirectional Adapters:** Both `AW_IN` and `ADI_OUT` are designed as unidirectional adapters, meaning they only transport events and data in one direction.

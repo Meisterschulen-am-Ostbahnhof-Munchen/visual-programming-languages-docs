@@ -50,6 +50,8 @@ The entire sequence is strictly causal: The conversion is only triggered when an
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite FB**: The function block encapsulates the conversion logic in a reusable adapter pair.
 - **Library Used**: The actual type conversion is performed by `iec61131::conversion::F_USINT_TO_LWORD` from the IEC 61131 standard library.
 - **No State**: The function block is purely combinatorial with event-driven execution; it does not store any internal states.

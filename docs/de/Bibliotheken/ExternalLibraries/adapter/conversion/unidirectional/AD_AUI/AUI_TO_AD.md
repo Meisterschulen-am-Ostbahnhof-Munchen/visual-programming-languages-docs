@@ -49,6 +49,8 @@ Die Umwandlung erfolgt nach der IEC 61131-3 Norm für die Funktion `UINT_TO_DWOR
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - Der Baustein ist als Composite FB realisiert und enthält keine eigene Zustandsautomaten (ECC). Das Verhalten wird vollständig durch den integrierten Konverter `F_UINT_TO_DWORD` bestimmt.
 - Die Verbindung zwischen den Adaptern und dem internen Konverter erfolgt über Ereignis- und Datenverbindungen.
 - Der Baustein ist für den unidirektionalen Datentransfer konzipiert – es gibt keine Rückwärtskonvertierung von AD zu AUI.

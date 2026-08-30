@@ -37,6 +37,8 @@ The function block is implemented as a composite FB. Upon an event at event inpu
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block uses an IEC 61131-compliant conversion block for type conversion from DINT to USINT.
 - It is a composite function block (nested block) that maps the logic in a network of a single Convert function block.
 - Communication takes place exclusively via adapter interfaces, which enables modular encapsulation.

@@ -47,6 +47,8 @@ Data flow and event control are synchronous: Each incoming event generates exact
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Composite Function Block**: The function block consists entirely of an internal network and has no state logic of its own.
 - **Adapter Encapsulation**: All communication takes place via the standardized unidirectional adapters `AW` and `AUDI`. This allows the function block to be integrated into any system that supports these adapter interfaces.
 - **Reuse**: The internally used conversion function `F_WORD_TO_UDINT` is part of the IEC 61131 library and ensures standards-compliant type conversion.

@@ -39,6 +39,8 @@ Der Baustein wartet auf ein Ereignis am **AD_IN**-Adapter (Ereignis *E1*). Sobal
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Reine Composite-Logik**: Der FB enthält keine eigene Zustandsmaschine, sondern realisiert die Konvertierung ausschließlich über die Verschaltung des eingebetteten FBs `F_DWORD_TO_LINT`.
 - **Standardkonformität**: Die verwendete Konvertierungsfunktion entspricht der IEC 61131-3 (Typkonvertierung `DWORD_TO_LINT`).
 - **Synchronität**: Ereignis und Daten werden innerhalb eines einzigen Ausführungszyklus vom Eingang zum Ausgang weitergeleitet (E1 → REQ → CNF → E1).

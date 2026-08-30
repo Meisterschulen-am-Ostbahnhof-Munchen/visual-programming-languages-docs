@@ -50,6 +50,8 @@ Der gesamte Vorgang erfolgt synchron in einem Schritt, d.h. der FB ist rein erei
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**: extrahiert das IEEE754-Bitmuster des Quellwerts (beabsichtigt, z. B. zur Serialisierung), nicht dessen Zahlenwert.
+
 - **Composite FB:** Die Logik wird ausschließlich durch die Verknüpfung des internen `F_REAL_TO_DWORD`-Bausteins realisiert. Es gibt keine eigene Zustandsmaschine oder komplexe Algorithmen.
 - **Adapter-Kopplung:** Der FB kapselt die Konvertierung auf Adapterebene, sodass er ohne zusätzliche Anpassungen in Adapter-basierte Architekturen (z.B. verteilte Systeme mit 4diac) eingefügt werden kann.
 - **IEC 61131-3 Konformität:** Die eigentliche Umwandlung erfolgt durch einen genormten Baustein, was die Portabilität und Standardkonformität erhöht.

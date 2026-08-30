@@ -37,6 +37,8 @@ Der Baustein realisiert eine einfache Durchschaltung: Das vom AW_IN-Adapter empf
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - Der Baustein ist als Composite-FB realisiert, d. h. er enthält ein internes Netzwerk, das die Adapter verbindet.
 - Die Typkonvertierung von WORD zu LWORD erfolgt automatisch durch die Verkettung der Datenleitungen (implizite Typumwandlung).
 - Ereignis- und Datenpfad sind synchron: Jedes eingehende Ereignis löst ein ausgehendes Ereignis aus, begleitet vom aktuellen Datenwert.

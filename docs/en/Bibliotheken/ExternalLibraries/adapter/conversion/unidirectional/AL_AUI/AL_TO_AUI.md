@@ -48,6 +48,8 @@ This completes the entire conversion in a single, unidirectional pass.
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Composite Structure**: The function block (FB) does not contain its own state machine but delegates all functionality to the embedded conversion block.
 - **Unidirectional Adapters**: Both the input and output adapters are of type `unidirectional`. Only forward conversion takes place; reverse conversion and status feedback are not supported.
 - **Package Assignment**: The FB is located in the package `adapter::conversion::unidirectional`, indicating its use in modular adapter chains.

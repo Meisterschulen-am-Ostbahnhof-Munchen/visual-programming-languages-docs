@@ -74,6 +74,8 @@ The Composite Function Block `AL_TO_ADI` provides a clean and standardized solut
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 ## State Overview
 
 ## Application Scenarios

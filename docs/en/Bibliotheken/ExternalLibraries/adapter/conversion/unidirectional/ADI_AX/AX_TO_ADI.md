@@ -51,6 +51,8 @@ AX_IN.E1` → Conversion → `ADI_OUT.E1`.
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Pure Data Conversion:** The function block does not perform any state logic or time delay – every event activation at the input immediately generates an output.
 - **Use of IEC 61131 Libraries:** The conversion is based on the standardized function block `F_BOOL_TO_DINT` from the IEC 61131 conversion library.
 - **Unidirectional Adapters:** Both AX and ADI are unidirectional adapters, meaning they only support one direction (input or output). This simplifies data flow control.

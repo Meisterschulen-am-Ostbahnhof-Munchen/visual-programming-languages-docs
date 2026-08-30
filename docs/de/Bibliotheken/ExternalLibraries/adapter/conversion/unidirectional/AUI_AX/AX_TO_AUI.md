@@ -39,6 +39,8 @@ Der FB arbeitet als einfache Pipeline: Ein eingehendes Ereignis am Socket AX_IN.
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - Der Baustein ist als Composite FB realisiert, d. h. er besteht aus einem Netzwerk untergeordneter FB-Instanzen (hier nur `F_BOOL_TO_UINT`).
 - Die Umwandlung folgt der IEC 61131-3 Konvertierungsregel: BOOL FALSE = 0, BOOL TRUE = 1.
 - Die Verwendung von Adaptern ermöglicht eine lose Kopplung zwischen Komponenten unterschiedlicher Domänen (BOOL-Steuerung und UINT-Kommunikation).

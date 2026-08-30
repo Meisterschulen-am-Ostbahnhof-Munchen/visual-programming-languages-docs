@@ -44,6 +44,8 @@ The function block does not perform any logic or conversion of its own; it simpl
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional, meaning data and events flow only in one direction (from the socket to the plug).
 - **Composite FB**: The function block is implemented as a composite function block (FB) that maps the adapter connections in the FBNetwork.
 - **Implicit Type Conversion**: The conversion from UINT to UDINT occurs automatically within the data connection, based on the IEC 61499 data type rules.

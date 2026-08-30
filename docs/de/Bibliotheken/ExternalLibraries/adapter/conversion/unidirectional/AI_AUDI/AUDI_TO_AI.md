@@ -38,6 +38,8 @@ Wird über den Adapter-Eingang `AUDI_IN.E1` ein Ereignis empfangen, wird der zug
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Nutzt einen standardisierten IEC 61131-Konvertierungsbaustein, der plattformunabhängig implementiert werden kann.
 - Die Umwandlung von `UDINT` (32 Bit ohne Vorzeichen) nach `INT` (16 Bit mit Vorzeichen) ist potenziell verlustbehaftet. Bei Wertebereichsüberschreitung kann je nach Implementierung des Konvertierungsbausteins ein Überlauf oder eine Begrenzung auftreten.
 - Die Verwendung unidirektionaler Adapter stellt einen klaren Datenfluss sicher und erleichtert die Integration in modulare Systeme.

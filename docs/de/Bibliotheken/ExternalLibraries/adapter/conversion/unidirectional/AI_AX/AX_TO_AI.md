@@ -50,6 +50,8 @@ Die Abarbeitung erfolgt streng sequentiell: erst die boolesche Eingabe verarbeit
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Adapterbasierte Kommunikation:** Der Baustein verwendet ausschließlich Adapter-Schnittstellen (Socket und Plug) und keine klassischen Ein-/Ausgangsports. Dies ermöglicht eine lose Kopplung zwischen Komponenten und eine einfache Wiederverwendung in verschiedenen Umgebungen.
 - **Unidirektionaler Datenaustausch:** Die verwendeten Adapter `AX` und `AI` sind als unidirektionale Typen definiert, d.h. die Daten fließen nur in eine Richtung – vom Socket zum Plug.
 - **Externe Bibliothek:** Für die Konvertierung wird der Baustein `F_BOOL_TO_INT` aus der Bibliothek `iec61131::conversion` importiert. Dadurch müssen keine eigenen Konvertierungslogiken implementiert werden.

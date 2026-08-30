@@ -49,6 +49,8 @@ Damit wird eine transparente, ereignisgesteuerte Konvertierung zwischen den Adap
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Typkonvertierung**: Die eigentliche Umwandlung erfolgt über den standardisierten IEC 61131-Baustein `F_DINT_TO_DWORD`, der eine bitidentische Übertragung des Integer-Werts in den DWORD-Raum sicherstellt (keine logische Interpretation, nur Typanpassung).
 - **Unidirektionalität**: Der FB ist strikt unidirektional aufgebaut und erwartet genau einen Eingangs- und einen Ausgangsadapter. Eine Rückwärtskonvertierung ist nicht vorgesehen.
 - **Paketstruktur**: Der FB ist im Paket `adapter::conversion::unidirectional` organisiert und importiert die entsprechende IEC-Bibliothek.

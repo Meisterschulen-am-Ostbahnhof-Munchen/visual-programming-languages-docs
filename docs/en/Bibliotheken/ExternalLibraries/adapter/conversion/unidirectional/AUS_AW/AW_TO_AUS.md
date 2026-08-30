@@ -48,6 +48,8 @@ This results in a synchronous, event-driven conversion from a `WORD` value to a 
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Composite Pattern**: The block is implemented as a composite function block (FB) that encapsulates the existing standard function `F_WORD_TO_USINT`.
 - **Adapter Coupling**: The function block simplifies integration into existing systems that rely on the adapters `AW` and `AUS` by consolidating the conversion into a single block.
 - **No Own State Logic**: All logic is delegated; the function block itself has no integrated event control (ECC) and behaves purely directionally.

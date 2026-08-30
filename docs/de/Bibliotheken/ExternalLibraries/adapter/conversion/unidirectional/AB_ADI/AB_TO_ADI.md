@@ -41,6 +41,8 @@ Die Ansteuerung erfolgt rein datenflussgesteuert: Jedes Ereignis am Eingangsadap
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Zusammengesetzter Baustein** – Keine eigene Zustandslogik, sondern alleinige Nutzung des internen FBs `F_BYTE_TO_DINT`.
 - **Adapter-basiert** – Die Schnittstellen sind als Adapter definiert, was eine hohe Wiederverwendbarkeit und Austauschbarkeit mit anderen Bausteinen ermöglicht.
 - **Lizenz** – Der Baustein ist unter der **Eclipse Public License 2.0** veröffentlicht.

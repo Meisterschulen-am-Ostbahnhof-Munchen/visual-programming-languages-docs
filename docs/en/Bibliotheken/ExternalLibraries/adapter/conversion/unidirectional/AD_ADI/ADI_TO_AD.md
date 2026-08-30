@@ -49,6 +49,8 @@ This enables transparent, event-driven conversion between the adapter types.
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Type Conversion**: The actual conversion is performed using the standardized IEC 61131 function block `F_DINT_TO_DWORD`, which ensures bit-perfect transfer of the integer value to the DWORD space (no logical interpretation, only type conversion).
 - **Unidirectionality**: The function block is strictly unidirectional and expects exactly one input and one output adapter. Reverse conversion is not supported.
 - **Package Structure**: The function block is organized in the package `adapter::conversion::unidirectional` and imports the corresponding IEC library.

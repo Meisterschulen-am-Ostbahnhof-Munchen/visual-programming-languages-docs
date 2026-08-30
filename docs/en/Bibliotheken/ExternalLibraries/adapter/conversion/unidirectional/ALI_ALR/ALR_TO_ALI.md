@@ -55,6 +55,8 @@ Call control is achieved via event chaining (E1 → REQ → CNF → E1), ensurin
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Structure**: The function block is implemented as a composite (network) and internally uses the standard function block `F_LREAL_TO_LINT` from the IEC 61131-3 library.
 - **Adapter Encapsulation**: The adapter technology allows the specific LREAL and LINT signals to be connected via standardized interfaces (ALR, ALI), enabling high reusability and interchangeability.
 - **License**: The source code is licensed under the Eclipse Public License 2.0 (EPL-2.0).

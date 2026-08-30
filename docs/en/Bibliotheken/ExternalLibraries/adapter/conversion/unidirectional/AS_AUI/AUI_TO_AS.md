@@ -53,6 +53,8 @@ This enables end-to-end, event-driven conversion from a UINT adapter to a SINT a
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block:** All connections are encapsulated within a network. The internal logic remains hidden from the calling environment.
 - **Use of the Standard Conversion Function:** The actual conversion is performed by the IEC 61131 block `F_UINT_TO_SINT`. This block is externally referenced and imported as a library block.
 - **Unidirectional Adapters:** Both the input and output adapters are unidirectional, meaning data flows in only one direction (from input to output).

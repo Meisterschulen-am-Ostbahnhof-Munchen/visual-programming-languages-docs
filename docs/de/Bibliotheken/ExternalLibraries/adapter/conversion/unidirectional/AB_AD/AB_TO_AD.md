@@ -37,6 +37,8 @@ Der Baustein verbindet die Schnittstellen eines BYTE-Adapters (Eingang) mit dene
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Unidirektionalität:** Der Baustein unterstützt nur eine Datenflussrichtung vom BYTE-Adapter zum DWORD-Adapter. Eine Rückwärtsübertragung ist nicht vorgesehen.
 - **Datenbreitenanpassung:** Der eingehende BYTE-Wert (1 Byte) wird in einen DWORD-Wert (4 Byte) eingebettet. Das niederwertigste Byte des DWORD entspricht dem eingehenden BYTE; die höherwertigen Bytes werden auf Null gesetzt (bzw. bleiben je nach Implementierung des Zieladapters erhalten).
 - **Einfache Kopplung:** Der FB ist ein reiner Verbindungsbaustein im FBNetwork und benötigt keine eigene Zustandsmaschine oder Algorithmen.

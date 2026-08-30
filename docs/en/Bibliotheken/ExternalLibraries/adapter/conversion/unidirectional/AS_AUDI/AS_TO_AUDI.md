@@ -56,6 +56,8 @@ This ensures that the converted UDINT value is only available at the output when
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Pattern**: The function block is implemented as a composite (composed functional block) that encapsulates a single conversion function block. This results in a reusable and encapsulated unit.
 - **Use of IEC 61131 Function Blocks**: The conversion utilizes the standardized function `F_SINT_TO_UDINT`, which promotes portability and traceability.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional (no feedback). This simplifies the data flow direction.

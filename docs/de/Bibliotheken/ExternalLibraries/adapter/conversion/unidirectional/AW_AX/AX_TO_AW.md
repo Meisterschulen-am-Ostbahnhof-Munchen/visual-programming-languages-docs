@@ -41,6 +41,8 @@ Der Baustein leitet das vom Socket `AX_IN` empfangene Ereignis (`E1`) direkt an 
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Composite FB:** Der Baustein besitzt keinen eigenen Zustandsautomaten (ECC), sondern besteht ausschließlich aus einer Verdrahtung der enthaltenen Adapter-Schnittstellen.
 - **Typkonvertierung:** Die Konvertierung von `BOOL` nach `WORD` erfolgt automatisch durch die Datenverbindung zwischen den Adaptern. Es ist keine explizite Konvertierungslogik implementiert.
 - **Performance:** Durch die direkte Kopplung werden keine zusätzlichen Verarbeitungsschritte eingeführt, was eine minimale Latenz gewährleistet.

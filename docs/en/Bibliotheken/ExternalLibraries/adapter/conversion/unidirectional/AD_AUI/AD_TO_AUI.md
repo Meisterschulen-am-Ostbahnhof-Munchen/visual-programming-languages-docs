@@ -64,6 +64,8 @@ The function block thus performs an event-driven, unidirectional type conversion
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Composite Block**: The function block encapsulates an existing standard conversion block and two adapter interfaces. This simplifies reuse in larger applications.
 - **Data Type Conversion**: The conversion from `DWORD` (32-bit, unsigned) to `UINT` (16-bit, unsigned) can lead to information loss depending on the value range (e.g., if the DWORD value is greater than 65535). The user is responsible for monitoring the value range.
 - **Unidirectional Interface**: Both the input and output adapters are unidirectional (only one event/data direction).

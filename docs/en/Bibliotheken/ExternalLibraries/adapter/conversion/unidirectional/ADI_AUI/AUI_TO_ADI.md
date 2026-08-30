@@ -39,6 +39,8 @@ The function block receives an event and a UINT value via the AUI_IN socket. Thi
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - The function block (FB) is implemented as a **composite block**, meaning its functionality is based on an integrated IEC 61131 block (`F_UINT_TO_DINT`).
 - Communication occurs exclusively via **unidirectional adapters** – no separate event or data inputs/outputs are required at the top level.
 - The internal converter operates **event-driven**: Every incoming event at the AUI_IN adapter triggers a conversion.

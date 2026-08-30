@@ -37,6 +37,8 @@ Der Baustein ist als Composite FB realisiert. Bei einem Ereignis am Ereigniseing
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der FB verwendet einen IEC 61131-konformen Konvertierungsbaustein für die Typumwandlung von DINT zu USINT.
 - Es handelt sich um einen Composite FB (verschachtelter Baustein), der die Logik in einem Netzwerk aus einem einzelnen Convert-FB abbildet.
 - Die Kommunikation erfolgt ausschließlich über Adapter-Schnittstellen, was eine modulare Kapselung ermöglicht.

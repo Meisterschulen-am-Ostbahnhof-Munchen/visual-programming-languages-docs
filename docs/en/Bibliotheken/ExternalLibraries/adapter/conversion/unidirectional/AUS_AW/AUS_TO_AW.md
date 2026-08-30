@@ -42,6 +42,8 @@ No direct data outputs are available. The converted WORD value is output via the
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Block**: The conversion logic is encapsulated in its own network, promoting reuse and clarity.
 - **Unidirectional Adapters**: The **OFF** and **AW** adapters are designed as pure data and event pipelines – reverse communication is not supported.
 - **Standard Conversion**: The actual type conversion is based on the tested block `F_USINT_TO_WORD` from the IEC 61131 library.

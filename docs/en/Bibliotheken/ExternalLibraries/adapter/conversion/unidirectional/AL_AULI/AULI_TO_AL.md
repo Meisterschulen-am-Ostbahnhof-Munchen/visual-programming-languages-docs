@@ -47,6 +47,8 @@ This function block operates as a simple forwarder: An incoming event at `AULI_I
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Implementation**: The function block does not contain its own execution control logic (ECC) but consists exclusively of a linked function block from the IEC 61131 library.
 - **Adapter Architecture**: Both the input and output are designed as unidirectional adapters (socket/plug), enabling loose coupling and easy reuse in various applications.
 - **Type Conversion**: The conversion from ULINT (unsigned 64-bit integer) to LWORD (64-bit bit field) is performed according to the IEC 61131 standard.

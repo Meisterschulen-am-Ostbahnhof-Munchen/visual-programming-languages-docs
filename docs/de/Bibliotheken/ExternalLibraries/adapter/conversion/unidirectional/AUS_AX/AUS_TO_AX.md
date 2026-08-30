@@ -47,6 +47,8 @@ Der FB nutzt intern einen **F_NE**-Baustein (Vergleich auf Ungleichheit) aus der
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - Der FB ist als **Composite-FB** realisiert, d.h. seine Logik wird durch ein internes Netzwerk aus Standardbausteinen abgebildet.
 - Er verwendet den **F_NE**-Vergleichsbaustein, der der Bibliothek **iec61131::comparison** entstammt.
 - Die Paketorganisation lautet **adapter::conversion::unidirectional**, was die Verwendung als Adapter-Konverter kennzeichnet.

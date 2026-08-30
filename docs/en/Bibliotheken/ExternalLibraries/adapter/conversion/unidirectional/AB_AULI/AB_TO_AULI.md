@@ -42,6 +42,8 @@ The function block (FB) waits for an event at the input adapter `AB_IN`. As soon
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - The function block does not implement any states or algorithms of its own – it is simply a standard conversion FB interconnect.
 - The conversion is performed according to the rules of IEC 61131-3: The BYTE value is interpreted as an 8-bit representation of a ULINT and converted into an unsigned 64-bit integer.
 - The adapters are based on a unidirectional communication pattern, meaning that data and events flow only in one direction (from the socket to the plug).

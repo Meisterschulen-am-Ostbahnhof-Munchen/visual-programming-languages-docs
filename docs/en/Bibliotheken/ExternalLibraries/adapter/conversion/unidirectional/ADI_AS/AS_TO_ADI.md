@@ -45,6 +45,8 @@ Since the data types are different (SINT → DINT), implicit value preservation 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block**: The function block does not have its own behavior model (ECC) but only an internal function block network that connects the adapters.
 - **Type Conversion**: The conversion from SINT to DINT is handled system-wide by the runtime environment (type compatibility for data connections).
 - **Package**: The function block is located in the package `adapter::conversion::unidirectional`.

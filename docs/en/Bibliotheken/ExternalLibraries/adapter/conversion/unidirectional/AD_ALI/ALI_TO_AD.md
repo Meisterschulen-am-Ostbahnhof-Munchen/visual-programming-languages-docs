@@ -48,6 +48,8 @@ The entire conversion process is event-driven: An incoming event triggers the co
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - The module is fully implemented as a composite and requires no dedicated runtime logic.
 - The internal converter `F_LINT_TO_DWORD` is an IEC 61131-3 module that performs a bit-perfect conversion of a 64-bit integer value (LINT) to a 32-bit double-word value (DWORD).
 - The adapters are defined as unidirectional, meaning that data flows exclusively from the input to the output adapter.

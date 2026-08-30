@@ -63,6 +63,8 @@ All processing is strictly event-driven: Conversion only occurs when a new event
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Pure Data Conversion:** No states are stored, nor is any additional logic executed.
 - **Standard Library:** The `F_WORD_TO_INT` used is an established conversion module and ensures a correct mapping of the WORD value (0…65535) to the INT value (-32768…32767).
 - **Unidirectional:** Both the input and output adapters are unidirectional, meaning they transmit event and data flows in only one direction (input → output).

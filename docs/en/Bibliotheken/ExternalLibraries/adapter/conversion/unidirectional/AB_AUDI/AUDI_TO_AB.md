@@ -53,6 +53,8 @@ The **AUDI_TO_AB** function block is a composite function block (FB) that conver
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Structure**: The function block is implemented as a network of sub-functions. It uses the predefined conversion function block `F_UDINT_TO_BYTE` from the IEC 61131 library, ensuring standardized and testable conversion.
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional. This reduces coupling and enables easy integration into data flows that only require one direction.
 - **No State Storage**: The function block is purely combinatorial (no internal states). It reacts to each incoming event immediately and outputs the result without delay.

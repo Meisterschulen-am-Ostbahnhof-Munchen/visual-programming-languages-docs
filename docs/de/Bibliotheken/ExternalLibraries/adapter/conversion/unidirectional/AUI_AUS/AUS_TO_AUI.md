@@ -52,8 +52,10 @@ Es existieren keine internen Funktionsbausteine oder Algorithmen, die das Signal
 
 ## Technische Besonderheiten
 
-- **Composite-Baustein**: Enthält keine eigenen FB-Instanzen, sondern verbindet lediglich die Adapterports direkt miteinander.
-- **Implizite Typkonvertierung**: Die Konvertierung von USINT zu UINT wird nicht explizit im FB abgebildet, sondern durch das Laufzeitsystem unterstützt. Dabei wird der 8‑Bit-Wert in den niederwertigen Teil des 16‑Bit-Worts übernommen.
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
+- **Composite-Baustein**: Enthält keine eigenen FB-Instanzen, sondern verbindet lediglich die Adapterports direkt miteinander.  
+- **Implizite Typkonvertierung**: Die Konvertierung von USINT zu UINT wird nicht explizit im FB abgebildet, sondern durch das Laufzeitsystem unterstützt. Dabei wird der 8‑Bit-Wert in den niederwertigen Teil des 16‑Bit-Worts übernommen.  
 - **Unidirektionale Adapter**: Sowohl AUS als auch AUI sind als unidirektionale Adapter definiert, d.h. die Datenflüsse sind nur in eine Richtung vorgesehen.
 
 ## Zustandsübersicht

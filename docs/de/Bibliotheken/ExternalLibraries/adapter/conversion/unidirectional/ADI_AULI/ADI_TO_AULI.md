@@ -47,6 +47,8 @@ Der Baustein wartet auf ein Ereignis am Eingangsadapter `ADI_IN.E1`. Sobald dies
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Schnittstelle:** Der Baustein verwendet ausschließlich Adapter‑Plugs und ‑Sockets für die Ein‑ und Ausgabe. Dies erlaubt eine saubere Kapselung und Wiederverwendung in modularen Steuerungsarchitekturen.
 - **Unidirektionale Adapter:** Sowohl der ADI‑ als auch der AULI‑Adapter sind als unidirektional deklariert und übertragen nur in eine Richtung (Eingang oder Ausgang).
 - **Interne Konvertierung:** Der für die eigentliche Wandlung zuständige FB `F_DINT_TO_ULINT` ist dem Paket `iec61131::conversion` entnommen und stellt eine standardisierte, ablaufinvariante Funktion bereit.

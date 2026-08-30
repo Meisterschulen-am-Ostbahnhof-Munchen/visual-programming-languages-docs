@@ -47,10 +47,12 @@ Der `AS_TO_AR`‑Baustein verhält sich als reine Typkonvertierungs‑Durchleitu
 
 ## Technische Besonderheiten
 
-- **Composite‑Baustein**: Die Konvertierung wird allein durch die Verschaltung von Adaptern im Funktionsnetzwerk realisiert. Eine eigene Zustandsmaschine (ECC) ist nicht vorhanden.
-- **Paket‑Zugehörigkeit**: Der Baustein ist im Paket `adapter::conversion::unidirectional` eingeordnet.
-- **Keine Datenhaltung**: Alle Werte werden instantan weitergeleitet; der Baustein besitzt kein internes Gedächtnis.
-- **Implizite Typumwandlung**: Die Konvertierung von Ganzzahl (SINT) in Gleitkommazahl (REAL) findet in der Peripherie der Adapter‑Typen statt.
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
+- **Composite‑Baustein**: Die Konvertierung wird allein durch die Verschaltung von Adaptern im Funktionsnetzwerk realisiert. Eine eigene Zustandsmaschine (ECC) ist nicht vorhanden.  
+- **Paket‑Zugehörigkeit**: Der Baustein ist im Paket `adapter::conversion::unidirectional` eingeordnet.  
+- **Keine Datenhaltung**: Alle Werte werden instantan weitergeleitet; der Baustein besitzt kein internes Gedächtnis.  
+- **Implizite Typumwandlung**: Die Konvertierung von Ganzzahl (SINT) in Gleitkommazahl (REAL) findet in der Peripherie der Adapter‑Typen statt.  
 
 ## Zustandsübersicht
 

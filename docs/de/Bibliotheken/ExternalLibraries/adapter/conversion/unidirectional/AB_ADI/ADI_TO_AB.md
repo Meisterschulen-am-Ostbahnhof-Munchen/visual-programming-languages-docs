@@ -63,6 +63,8 @@ Die gesamte Logik ist in einem Composite‑FB gekapselt, sodass der Anwender nur
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite‑FB**: Der Baustein besteht aus einem internen Netzwerk und besitzt keine eigene Zustandsmaschine (ECC). Er führt die Konvertierung streng ereignisgesteuert aus.
 - **Verwendung von IEC‑61131‑3‑Standard‑Bausteinen**: Die Konvertierung erfolgt mit dem normierten Baustein `F_DINT_TO_BYTE`, was Portabilität und Einhaltung von Industriestandards gewährleistet.
 - **Adapter‑basierte Ein‑/Ausgabe**: Alle Daten und Ereignisse werden über Adapter – und nicht über einzelne Ports – geführt. Dies vereinfacht die Anbindung an gleichartige Adapter‑Schnittstellen in der 4diac‑Umgebung.

@@ -52,6 +52,8 @@ This enables unidirectional BYTE-to-UDINT conversion with event-driven control.
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Unidirectional Adapters**: Both the input and output adapters are unidirectional – data flows in only one direction (BYTE → UDINT).
 - **Synchronous Operation**: The conversion is strictly event-driven: Each incoming event `E1` triggers exactly one conversion and one outgoing event.
 - **Standard Conversion**: The internal function block `F_BYTE_TO_UDINT` is an established IEC 61131 function block, ensuring that the conversion is standards-compliant and portable.

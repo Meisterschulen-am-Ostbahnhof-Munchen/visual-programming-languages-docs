@@ -54,6 +54,8 @@ Das Ergebnis wird an den Datenausgang `AX_OUT.D1` weitergegeben und gleichzeitig
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-Baustein:** Der `AI_TO_AX` besteht aus verschalteten Grundbausteinen, wodurch er als wiederverwendbare Komponente in verschiedenen Projekten eingesetzt werden kann.
 - **Verwendung von IEC‑61131‑Bausteinen:** Die Vergleichslogik wird durch den standardisierten Baustein `F_NE` realisiert, was Portabilität und Einhaltung der Norm unterstützt.
 - **Kein eigenständiger Zustand:** Der Baustein ist zustandslos – jeder Ereignis-Impuls erzeugt eine aktuelle Berechnung ohne Speicherung von Zwischenwerten.

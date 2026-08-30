@@ -46,6 +46,8 @@ Der Baustein arbeitet ereignisgesteuert:
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Zusammengesetzter Baustein (Composite FB)** nach IEC 61499‑2.
 - Verwendet den internen FB `iec61131::conversion::F_BOOL_TO_UDINT` für die eigentliche Konvertierung.
 - Die Adapter‑Schnittstellen (`AX` und `AUDI`) ermöglichen eine modulare und standardisierte Anbindung an andere Bausteine.

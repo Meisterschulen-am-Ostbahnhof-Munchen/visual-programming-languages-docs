@@ -37,6 +37,8 @@ As soon as an event arrives at event input `AW_IN.E1`, the internal function blo
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - The function block (FB) is implemented as a composite and fully encapsulates the conversion logic.
 - The conversion function used, `F_WORD_TO_ULINT`, complies with the IEC 61131-3 standard.
 - The interfaces are based on unidirectional adapters – event and data flow is one-way only.

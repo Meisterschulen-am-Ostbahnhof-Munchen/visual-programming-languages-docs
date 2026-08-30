@@ -48,6 +48,8 @@ Die gesamte Kopplung erfolgt über die Ereignis- und Datenverbindungen im FBNetz
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Bereichseinschränkung**: Die Konvertierung von UINT (0…65535) auf USINT (0…255) führt zwangsläufig zu einem Informationsverlust, sofern der Eingangswert größer als 255 ist. Anwender müssen sicherstellen, dass der Wertebereich des Eingangs den Erwartungen entspricht.
 - **Keine Zustandsspeicherung**: Der FB ist zustandslos – jede Verarbeitung erfolgt unabhängig von vorherigen Umwandlungen.
 - **Wiederverwendbarkeit**: Der Baustein ist als gekapselte Komponente ausgelegt und kann in verschiedenen Projekten eingesetzt werden, ohne dass die Konvertierungslogik erneut implementiert werden muss.

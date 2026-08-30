@@ -53,11 +53,13 @@ Damit ist die Datenkonvertierung zu einem sicheren, ereignisgesteuerten Zeitpunk
 
 ## Technische Besonderheiten
 
--   **Composite‑Baustein** – Die Konvertierungslogik ist vollständig in einem inneren Netzwerk gekapselt, das nur aus einem einzigen Konvertierungs‑FB besteht. Der Baustein besitzt keinen eigenen ECC‑Zustandsautomaten.
--   **Adapter‑basierte Schnittstelle** – Statt einzelner Ereignis‑/Daten‑Ein‑/Ausgänge werden Adapter verwendet. Dies ermöglicht eine modulare, wieder verwendbare Verbindung in Adapter‑basierten Steuerungsarchitekturen.
--   **Paket‑Struktur** – Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt und verwendet den Konverter `iec61131::conversion::F_WORD_TO_LINT` aus der IEC‑61131‑Konvertierungsbibliothek.
--   **Unidirektionale Richtung** – Daten fließen nur vom Eingangsadapter zum Ausgangsadapter; Rückwärtskommunikation ist nicht vorgesehen.
--   **Lizenz** – Der Quellcode unterliegt der Eclipse Public License 2.0 (EPL‑2.0), entwickelt von der HR Agrartechnik GmbH.
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
+*   **Composite‑Baustein** – Die Konvertierungslogik ist vollständig in einem inneren Netzwerk gekapselt, das nur aus einem einzigen Konvertierungs‑FB besteht. Der Baustein besitzt keinen eigenen ECC‑Zustandsautomaten.
+*   **Adapter‑basierte Schnittstelle** – Statt einzelner Ereignis‑/Daten‑Ein‑/Ausgänge werden Adapter verwendet. Dies ermöglicht eine modulare, wieder verwendbare Verbindung in Adapter‑basierten Steuerungsarchitekturen.
+*   **Paket‑Struktur** – Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt und verwendet den Konverter `iec61131::conversion::F_WORD_TO_LINT` aus der IEC‑61131‑Konvertierungsbibliothek.
+*   **Unidirektionale Richtung** – Daten fließen nur vom Eingangsadapter zum Ausgangsadapter; Rückwärtskommunikation ist nicht vorgesehen.
+*   **Lizenz** – Der Quellcode unterliegt der Eclipse Public License 2.0 (EPL‑2.0), entwickelt von der HR Agrartechnik GmbH.
 
 ## Zustandsübersicht
 

@@ -44,6 +44,8 @@ Da keine Typkonvertierung oder sonstige Verarbeitung im Netzwerk abgebildet ist,
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite ohne innere Logik**: Das FBNetzwerk besteht ausschließlich aus zwei direkten Verbindungen; es sind keine weiteren Funktionsblöcke oder Zustandsautomaten enthalten.
 - **Adapterbasierte Schnittstelle**: Statt einzelner Ereignis-/Dateneingänge und -ausgänge wird die gesamte Kommunikation über standardisierte unidirektionale Adapter abgewickelt. Dies erleichtert die Wiederverwendung in modularen Adapter-Hierarchien.
 - **Unvollständige Implementierung**: Der Name und der Kommentar des Bausteins suggerieren eine aktive Konvertierung, die in der vorliegenden Version (1.0) jedoch nicht umgesetzt ist. Dies kann zu Laufzeitfehlern führen, wenn die Laufzeitumgebung keine implizite Typumwandlung unterstützt.

@@ -49,6 +49,8 @@ Die Typumwandlung erfolgt implizit durch die Kopplung der Adapter; eine explizit
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Composite-Baustein:** Der FB enthält keine eigene Logik (keine Zustandsmaschine, keine Algorithmen) und besteht ausschließlich aus internen Verbindungen.
 - **Unidirektionalität:** Die Adapter sind unidirektional ausgelegt (nur eine Daten- und eine Ereignisrichtung).
 - **Paketstruktur:** Der FB ist im Paket `adapter::conversion::unidirectional` abgelegt.

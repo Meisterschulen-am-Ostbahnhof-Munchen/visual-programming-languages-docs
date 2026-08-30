@@ -47,6 +47,8 @@ The entire process occurs synchronously within one execution cycle of the compos
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Block**: The logic is implemented entirely through the internal network of predefined blocks – there is no separate ECC (Execution Control Chart).
 - **License and Copyright**: The block is licensed under the Eclipse Public License 2.0 (EPL-2.0) and is subject to third-party copyright.
 - **Dependencies**: It requires the IEC 61131 function block `F_ULINT_TO_BYTE` from the library `iec61131::conversion`.

@@ -50,6 +50,8 @@ The conversion is performed according to the IEC 61131-3 standard conversion `WO
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **Pure Composite Structure**: The function block (FB) does not have its own state machine or logic, but delegates all functionality to the embedded standard function block.
 - **Unidirectional Adapters**: Both the input and output adapters are designed as unidirectional types, enabling simple and directional data transfer.
 - **Reusability**: The function block can be used in projects where interface adaptation between WORD- and UINT-based components is required.

@@ -43,6 +43,8 @@ Die Verarbeitung ist rein ereignisgesteuert und erfolgt ohne Zwischenspeicherung
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Wertebereichsverlust:** Da `ULINT` einen sehr großen Wertevorrat (0 … 2⁶⁴−1) abdeckt, während `SINT` nur −128 … 127 darstellen kann, führt die Konvertierung bei Werte außerhalb des SINT‑Bereichs zu einem Überlauf bzw. zur Sättigung (gemäß IEC‑61131‑Definition). Dies sollte bei der Anwendung bedacht werden.
 - **Unidirektionale Adapter:** Der Baustein ist für Datenfluss in einer Richtung ausgelegt – vom Eingangs‑ zum Ausgangsadapter. Er kann nicht für bidirektionale Kommunikation verwendet werden.
 - **Lizenz:** Der Baustein wird unter der Eclipse Public License 2.0 bereitgestellt.

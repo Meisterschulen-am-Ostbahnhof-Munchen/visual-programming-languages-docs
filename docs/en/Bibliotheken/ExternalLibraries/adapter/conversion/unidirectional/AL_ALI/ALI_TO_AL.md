@@ -70,6 +70,8 @@ The composite function block **ALI_TO_AL** enables clean and standards-compliant
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 ## State Overview
 
 ## Application Scenarios

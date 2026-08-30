@@ -52,6 +52,8 @@ Die Verbindungen im Inneren sind:
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - Der Baustein ist als Composite-FB realisiert, der auf die IEC-61131-Konvertierungsfunktion `F_LWORD_TO_USINT` zurückgreift.
 - Die Adapter sind unidirektional ausgelegt, d.h. die Daten- und Ereignisflüsse verlaufen nur in eine Richtung.
 - Der Konvertierungsbaustein stammt aus der Bibliothek `iec61131::conversion`.

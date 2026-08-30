@@ -47,6 +47,8 @@ Der gesamte Ablauf erfolgt synchron innerhalb eines Ausführungszyklus des Compo
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-Baustein**: Die Logik wird vollständig durch das interne Netzwerk aus vordefinierten Bausteinen realisiert – es existiert kein eigenes ECC (Execution Control Chart).
 - **Lizenz und Copyright**: Der Baustein ist unter der Eclipse Public License 2.0 (EPL-2.0) lizenziert und unterliegt dem Urheberrecht eines Drittanbieters.
 - **Abhängigkeiten**: Er setzt den IEC‑61131-Baustein `F_ULINT_TO_BYTE` aus der Bibliothek `iec61131::conversion` voraus.

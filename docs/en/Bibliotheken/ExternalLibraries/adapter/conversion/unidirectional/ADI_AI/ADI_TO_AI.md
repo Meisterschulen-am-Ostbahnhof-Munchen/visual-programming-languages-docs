@@ -52,6 +52,8 @@ This function block connects the adapter interfaces directly to an internal inst
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **No Dedicated State Machine**: The function block is a pure composite (network) without ECC. Its behavior is determined solely by the internal connection and the conversion block used.
 - **Type Conversion**: The conversion from DINT to INT is performed according to IEC 61131-3 (overflow on value range exceeding is not handled; INT range: -32768 … 32767).
 - **Package**: The function block (FB) is organized in the package `adapter::conversion::unidirectional`.

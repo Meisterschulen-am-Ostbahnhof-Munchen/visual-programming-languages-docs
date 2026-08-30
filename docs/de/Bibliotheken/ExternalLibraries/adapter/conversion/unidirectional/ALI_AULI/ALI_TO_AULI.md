@@ -48,6 +48,8 @@ Somit wird eine vollständige, ereignisgesteuerte und datensynchrone Umwandlung 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Verwendeter Unterbaustein**: `iec61131::conversion::F_LINT_TO_ULINT` – standardkonforme Typkonvertierung gemäß IEC 61131‑3.
 - **Adapter‑Kopplung**: Der Baustein setzt auf das unidirektionale Adapter‑Konzept von 4diac und ermöglicht die lose Kopplung zwischen verschiedenen Datentypschnittstellen.
 - **Keine Zustandshaltung**: Als Composite‑Baustein besitzt `ALI_TO_AULI` keinen eigenen internen Zustand; alle Entscheidungen werden durch den Unterbaustein getroffen.

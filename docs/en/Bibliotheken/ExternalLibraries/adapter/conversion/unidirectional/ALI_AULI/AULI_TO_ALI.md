@@ -45,6 +45,8 @@ The module internally uses the IEC 61131 conversion module `F_ULINT_TO_LINT`. As
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based Encapsulation**: The function block completely encapsulates the conversion logic behind standardized unidirectional adapters (AULI/ALI), allowing for easy integration into existing adapter-based data flows.
 - **Composite Structure**: Because it is a composite function block, no separate state machine is required; the logic is implemented by linking the sub-function block `F_ULINT_TO_LINT`.
 - **Type Safety**: The conversion from ULINT to LINT preserves the value range as long as the ULINT value is not greater than `LINT#9223372036854775807` (maximum LINT). Exceeding this limit results in undefined behavior (no error handling in the function block).

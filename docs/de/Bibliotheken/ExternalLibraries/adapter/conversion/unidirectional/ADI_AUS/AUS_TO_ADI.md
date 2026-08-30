@@ -46,6 +46,8 @@ Die gesamte Logik ist als Datenfluss im enthaltenen FBNetzwerk abgebildet – es
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der Baustein verwendet den IEC 61131‑Baustein `F_USINT_TO_DINT` (Typkonvertierung vorzeichenloser 8‑Bit zu vorzeichenbehaftetem 32‑Bit Integer).
 - Es handelt sich um einen reinen **Composite‑Baustein** – das Verhalten wird vollständig durch das interne FBNetzwerk definiert.
 - Die Adapter sind **unidirektional** ausgelegt: Daten fließen nur vom Socket zum Plug.

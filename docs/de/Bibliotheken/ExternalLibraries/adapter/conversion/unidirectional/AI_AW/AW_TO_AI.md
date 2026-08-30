@@ -63,6 +63,8 @@ Die gesamte Verarbeitung erfolgt streng ereignisgesteuert: Nur bei einem neuen E
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Reine Datenkonvertierung:** Es werden keine Zustände gespeichert oder zusätzliche Logik ausgeführt.
 - **Standardbibliothek:** Der verwendete `F_WORD_TO_INT` ist ein etablierter Konvertierungsbaustein und stellt eine korrekte Abbildung des WORD‑Wertes (0…65535) auf den INT‑Wert (-32768…32767) sicher.
 - **Unidirektional:** Sowohl der Eingangs‑ als auch der Ausgangsadapter sind unidirektional ausgelegt, d.h. sie übertragen Ereignis‑ und Datenflüsse nur in eine Richtung (Eingang → Ausgang).

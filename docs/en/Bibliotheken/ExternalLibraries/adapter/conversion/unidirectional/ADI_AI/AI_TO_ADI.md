@@ -47,6 +47,8 @@ This function block operates as a simple forwarder: As soon as the event `E1` is
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Implicit Type Conversion:** The function block (FB) performs the conversion from 16-bit integer (INT) to 32-bit double integer (DINT) without data loss, as the target data type is larger.
 - **Composite Implementation:** The function block is implemented as a composite FB, meaning it contains an internal network that directly connects the two adapters. It can be used in control projects like a primitive FB.
 - **Unidirectional Communication:** Both adapters are designed to be unidirectional – data flows only from input to output.

@@ -59,6 +59,8 @@ When an event **E1** arrives at socket `ALR_IN`, the internal module `F_LREAL_TO
 
 ## Technical Features
 
+- **Bit-reinterpretation**: extracts the IEEE754 bit pattern of the source value (intentional, e.g. for serialization), not its numeric value.
+
 - **Composite Block**: The functionality is implemented by an internal network circuit that uses the block `F_LREAL_TO_LWORD`.
 - **Packaging**: The block is stored in the package `adapter::conversion::unidirectional`, indicating its use in unidirectional adapter chains.
 - **Import**: `iec61131::conversion::F_LREAL_TO_LWORD` must be available in the project.

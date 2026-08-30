@@ -46,6 +46,8 @@ Dadurch entsteht eine synchrone, ereignisgesteuerte Umwandlung von einem `WORD`-
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - **Composite Pattern**: Der Baustein ist als Composite FB realisiert, der die vorhandene Standardfunktion `F_WORD_TO_USINT` kapselt.
 - **Adapter-Kopplung**: Der FB vereinfacht die Integration in bestehende Systeme, die auf die Adapter `AW` und `AUS` angewiesen sind, indem er die Konvertierung in einem einzigen Block zusammenfasst.
 - **Keine eigene Zustandslogik**: Die gesamte Logik wird delegiert; der Baustein selbst hat keine eigene Ablaufsteuerung (ECC) und verhält sich rein direktional.

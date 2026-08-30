@@ -39,6 +39,8 @@ The FB acts as a transparent converter between the two adapters. As soon as the 
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Composite Architecture**: The function block (FB) internally uses a standardized IEC 61131-3 function block (`F_LWORD_TO_INT`), which can be implemented platform-independently.
 - **Unidirectional Adapters**: Both the input and output adapters are of type `unidirectional`, meaning they only support one data and event direction (from socket to plug).
 - **No Internal Logic**: The FB contains no state logic or sequences; it functions solely as a coupler and converter.

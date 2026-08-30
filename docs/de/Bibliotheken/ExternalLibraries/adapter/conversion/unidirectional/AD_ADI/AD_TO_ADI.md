@@ -46,6 +46,8 @@ Dadurch verhält sich der Composite-FB aus Sicht der Applikation wie ein direkte
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **IEC‑61131‑3‑Kompatibilität** – Die Konvertierung erfolgt via der standardisierten Bibliotheksfunktion `F_DWORD_TO_DINT`, die für gängige SPS‑Systeme verfügbar ist.
 - **Unidirektionale Adapter** – Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional ausgelegt; Rückmeldungen oder Gegenrichtungsdaten werden nicht unterstützt.
 - **Keine Zustandsinformationen** – Der Composite selbst besitzt keine internen Zustandsvariablen; jede Konvertierung ist atomar und zeitlich unabhängig.

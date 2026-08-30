@@ -48,6 +48,8 @@ The conversion is synchronous: Each incoming event triggers exactly one output.
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block** – The logic is implemented entirely through an internal network; there is no standalone algorithm or state machine.
 - **Unidirectional Adapters** – Both the input and output interfaces are unidirectional and transmit only one event/data channel.
 - **Library Used** – Conversion is performed using the IEC 61131 block `F_REAL_TO_UDINT`, which is hardware-independent and widely used.

@@ -49,6 +49,8 @@ Type conversion occurs implicitly through the coupling of the adapters; no expli
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Composite Function Block:** The function block contains no internal logic (no state machine, no algorithms) and consists exclusively of internal connections.
 - **Unidirectionality:** The adapters are designed to be unidirectional (only one data direction and one event direction).
 - **Package Structure:** The function block (FB) is located in the package `adapter::conversion::unidirectional`.

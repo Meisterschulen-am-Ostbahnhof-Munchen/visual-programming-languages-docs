@@ -42,6 +42,8 @@ Der Funktionsblock `AL_TO_ALI` ist ein zusammengesetzter Baustein (Composite FB)
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation, werterhaltend** (Zielbreite ist gleich groß oder größer als der Quell-Bit-String).
+
 - **Typkonvertierung:** Der Baustein wandelt einen LWORD (64‑Bit‑Bitfolge) in einen LINT (64‑Bit‑Ganzzahl mit Vorzeichen) um. Die Umwandlung erfolgt bit‑identisch, d.h. die Binärdarstellung wird als vorzeichenbehaftete Ganzzahl interpretiert.
 - **Komposition:** Es handelt sich um einen Composite-FB, der keine eigene Logik enthält, sondern auf den standardisierten Konvertierungsbaustein `iec61131::conversion::F_LWORD_TO_LINT` zurückgreift.
 - **Adapterbasierte Schnittstelle:** Die Ein‑ und Ausgabe erfolgt ausschließlich über unidirektionale Adapter (`AL` und `ALI`), was eine modulare und typengeprüfte Verbindung in der 4diac‑IDE ermöglicht.

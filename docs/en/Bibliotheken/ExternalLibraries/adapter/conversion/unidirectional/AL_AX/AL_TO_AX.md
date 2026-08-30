@@ -61,6 +61,8 @@ Thus, with each event at the input, an updated Boolean output is provided at the
 
 ## Technical Features
 
+- **Parity/LSB test** (odd value => TRUE), not a numeric value or full bit copy.
+
 - **Type Conversion:** The function block converts an LWORD value not bitwise, but as an integer into a BOOL value. Any non-zero LWORD results in `TRUE`.
 - **Adapter-Based:** By using the standardized unidirectional adapters (`AL` and `AX`), the function block can be used in any 4diac network that supports these adapter types.
 - **Latency:** Processing occurs synchronously with the input event. The output is updated in the same execution cycle.

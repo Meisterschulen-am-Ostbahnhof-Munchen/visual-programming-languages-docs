@@ -40,6 +40,8 @@ This component forwards the event (`E1`) received from socket `AX_IN` directly t
 
 ## Technical Features
 
+- **Bit-reinterpretation** (structural copy between bit-string types; truncates on narrowing, zero-extends on widening).
+
 - **Composite FB:** The function block does not have its own state machine (ECC) but consists solely of wiring the included adapter interfaces.
 - **Type Conversion:** The conversion from `BOOL` to `WORD` occurs automatically via the data connection between the adapters. No explicit conversion logic is implemented.
 - **Performance:** Direct coupling eliminates the need for additional processing steps, ensuring minimal latency.

@@ -47,6 +47,8 @@ As a result, from the application's perspective, the composite function block be
 
 ## Technical Features
 
+- **Bit-reinterpretation, value-preserving** (destination is same width or wider than the source bit-string).
+
 - **IEC 61131-3 Compatibility** – The conversion is performed via the standardized library function `F_DWORD_TO_DINT`, which is available for common PLC systems.
 - **Unidirectional Adapters** – Both the input and output adapters are unidirectional; feedback or reverse-direction data is not supported.
 - **No State Information** – The composite itself has no internal state variables; each conversion is atomic and time-independent.

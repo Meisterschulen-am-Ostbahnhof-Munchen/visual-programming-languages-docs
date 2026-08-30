@@ -45,6 +45,8 @@ Damit wird eine synchrone, ereignisgesteuerte Umwandlung eines LREAL‑Werts in 
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite‑Struktur**: Der Baustein kapselt die Konvertierungslogik vollständig in einem Netzwerk, sodass die Implementierung transparent und leicht erweiterbar ist.
 - **Adapter‑basiert**: Statt einzelner Ereignis‑ und Datenports werden standardisierte uni‑direktionale Adapter (`ALR` und `AS`) verwendet. Dies vereinfacht die Integration in bestehende Adapter‑basierten Architekturen.
 - **Wiederverwendung**: Der interne FB `F_LREAL_TO_SINT` ist ein bewährter IEC‑Baustein und stellt die korrekte Konvertierung nach Norm sicher.

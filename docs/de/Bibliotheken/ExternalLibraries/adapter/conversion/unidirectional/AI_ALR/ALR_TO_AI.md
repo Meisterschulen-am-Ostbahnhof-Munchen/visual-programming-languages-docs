@@ -62,9 +62,11 @@ Der gesamte Ablauf erfolgt synchron in einem Schritt.
 
 ## Technische Besonderheiten
 
-- Der FB ist ein **Composite-Baustein** – er besitzt keine eigene Zustandsmaschine (ECC), sondern realisiert die Logik über ein internes Subnetzwerk.
-- Die Konvertierung folgt der IEC 61131-3-Funktion `LREAL_TO_INT`: Nachkommastellen werden abgeschnitten (Abschneiden gegen Null), Über- oder Unterläufe sind implementierungsabhängig.
-- Der Baustein ist als unidirektionale Adapter-Kopplung ausgelegt – es werden keine Rückkanäle unterstützt.
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
+* Der FB ist ein **Composite-Baustein** – er besitzt keine eigene Zustandsmaschine (ECC), sondern realisiert die Logik über ein internes Subnetzwerk.
+* Die Konvertierung folgt der IEC 61131-3-Funktion `LREAL_TO_INT`: Nachkommastellen werden abgeschnitten (Abschneiden gegen Null), Über- oder Unterläufe sind implementierungsabhängig.
+* Der Baustein ist als unidirektionale Adapter-Kopplung ausgelegt – es werden keine Rückkanäle unterstützt.
 
 ## Zustandsübersicht
 

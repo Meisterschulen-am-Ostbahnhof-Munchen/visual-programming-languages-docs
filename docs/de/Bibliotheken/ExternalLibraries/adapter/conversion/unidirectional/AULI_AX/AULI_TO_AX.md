@@ -45,6 +45,8 @@ Der FB arbeitet rein ereignisgesteuert und nutzt intern den Vergleichsbaustein *
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-FB**: Die Funktionalität wird durch eine interne Verschaltung von Standardbausteinen erreicht – hier nur ein einziger Vergleichsbaustein.
 - **Adapter-Kapselung**: Ein- und Ausgänge sind ausschließlich über Adapter definiert, was eine einheitliche und modulare Anbindung in Adapter-basierten Architekturen ermöglicht.
 - **Verwendung von IEC 61131-Bibliothek**: Der genutzte **F_NE**-Baustein stammt aus der IEC 61131-3-Bibliothek, was Kompatibilität und Wiederverwendbarkeit fördert.

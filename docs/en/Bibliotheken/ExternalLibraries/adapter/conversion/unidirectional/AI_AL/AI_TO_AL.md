@@ -54,6 +54,8 @@ The event paths are:
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Block:** The `AI_TO_AL` is implemented as a composite and does not contain its own algorithmic logic. It delegates the conversion entirely to the defined function block `F_INT_TO_LWORD`.
 - **Standard Conversion:** The conversion function used is part of the IEC 61131 library and ensures standards-compliant type conversion from INT (16-bit) to LWORD (64-bit).
 - **Adapter-Based:** The function block operates exclusively via the specified adapter interfaces and can therefore be seamlessly integrated into an adapter-based architecture.

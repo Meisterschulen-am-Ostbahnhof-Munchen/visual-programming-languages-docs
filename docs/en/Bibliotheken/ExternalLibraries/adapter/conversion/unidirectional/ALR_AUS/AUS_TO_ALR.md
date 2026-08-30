@@ -47,6 +47,8 @@ The function block itself contains no computation logic or state machine; it con
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Function Block**: The function block is implemented as a composite function block (CFB) whose internal network contains only two connections.
 - **No Internal Logic**: All functionality is provided by external function blocks or the adapter implementation.
 - **Type Compliance**: The connection between `AUS.D1` (USINT) and `ALR.D1` (LREAL) requires that the underlying adapter implementation allows implicit type conversion. For caution, explicit conversion outside the function block is necessary.

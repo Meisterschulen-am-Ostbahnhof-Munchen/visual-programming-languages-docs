@@ -41,6 +41,8 @@ The function block `iec61131::conversion::F_REAL_TO_LINT` is instantiated within
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Pure Adapter Coupling**: The function block does not use direct event or data inputs, but communicates exclusively via the standardized unidirectional adapters `AR` and `ALI`. This makes it easy to integrate into existing adapter structures.
 - **IEC 61131 Compliance**: The conversion block used, `F_REAL_TO_LINT`, complies with the IEC standard and ensures a standardized, deterministic conversion.
 - **Runtime Behavior**: The conversion is event-driven and occurs without any additional delay. The output value is available in the same execution cycle in which the input event is received.

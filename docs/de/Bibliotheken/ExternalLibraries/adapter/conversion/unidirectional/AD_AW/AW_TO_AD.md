@@ -44,6 +44,8 @@ Es findet keine eigene Verarbeitung oder Zwischenspeicherung statt – der FB fu
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation** (strukturelle Kopie zwischen Bit-String-Typen; schneidet bei Verengung ab, erweitert mit Nullen bei Erweiterung).
+
 - **Composite FB ohne eigene Zustandslogik:** Der Baustein besitzt keinen ECC (Execution Control Chart) und arbeitet zustandslos. Alle Abläufe werden durch die direkten Verbindungen im FBNetzwerk bestimmt.
 - **Unidirektionale Richtung:** Die Konvertierung erfolgt nur in eine Richtung (AW → AD). Für die umgekehrte Richtung wäre ein separater Baustein erforderlich.
 - **Implizite Typkonvertierung:** Die Daten werden ohne explizite Konvertierungslogik von WORD nach DWORD gecastet. Falls eine andere Abbildung (z. B. Vorzeichenbehandlung) gewünscht wird, muss ein eigener Funktionsbaustein verwendet werden.

@@ -43,6 +43,8 @@ This function block connects the AUI adapter socket to a conversion function blo
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - Composite function block without its own state logic (no ECC).
 - Uses the standard function block `iec61131::conversion::F_UINT_TO_INT` for type conversion.
 - Contains license information according to the Eclipse Public License 2.0.

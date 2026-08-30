@@ -48,6 +48,8 @@ Thus, a complete, event-driven, and data-synchronous conversion is achieved with
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Sub-block used**: `iec61131::conversion::F_LINT_TO_ULINT` – standard-compliant type conversion according to IEC 61131-3.
 - **Adapter coupling**: The block utilizes 4diac's unidirectional adapter concept and enables loose coupling between different data type interfaces.
 - **No state management**: As a composite block, `ALI_TO_AULI` does not have its own internal state; all decisions are made by the sub-block.

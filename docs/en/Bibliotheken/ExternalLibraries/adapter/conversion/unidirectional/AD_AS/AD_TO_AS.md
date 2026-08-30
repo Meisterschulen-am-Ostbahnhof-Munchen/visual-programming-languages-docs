@@ -62,6 +62,8 @@ This establishes a complete, unidirectional coupling between the AD and AS adapt
 
 ## Technical Features
 
+- **Bit-reinterpretation**, value-preserving only if the source value fits the narrower destination width (otherwise the upper bits are silently dropped).
+
 - **Value Range Loss**: Converting DWORD (32-bit, unsigned) to SINT (8-bit, signed) can result in data loss. Only the lower 8 bits of the DWORD are used; the SINT value range is between -128 and +127.
 - **Library Used**: The function block uses the IEC 61131 conversion function `F_DWORD_TO_SINT`, which is defined in the package group `iec61131::conversion`.
 - **Unidirectional Data Flow**: The function block only allows data flow in one direction (from AD to AS) and has no feedback.

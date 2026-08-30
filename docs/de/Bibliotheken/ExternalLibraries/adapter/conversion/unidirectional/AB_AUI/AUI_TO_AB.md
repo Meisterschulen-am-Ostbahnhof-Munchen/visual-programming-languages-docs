@@ -56,6 +56,8 @@ Intern wird die Mapping-Logik durch einen einzigen IEC 61131-Baustein realisiert
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-Struktur**: Der FB ist als Composite implementiert, d.h. er enthält ein internes Netzwerk mit einem einzigen Funktionsblock. Dies erleichtert die Wiederverwendung und Kapselung.
 - **Adapter-Konzept**: Die Ein- und Ausgabe erfolgt ausschliesslich über typisierte Adapter (`AUI` und `AB`). Dies ermöglicht eine lose Kopplung und den einfachen Austausch von Kommunikationsprotokollen in der Applikation.
 - **Lizenz**: Der Baustein steht unter der Eclipse Public License 2.0 (EPL-2.0). Der Quellcode ist offen und kann frei angepasst werden.

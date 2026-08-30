@@ -46,6 +46,8 @@ This function block implements direct passthrough:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **No internal state** – The function block is entirely combinatorial and has no memory.
 - **Automatic type conversion** via the data connection; the value range of DINT is fully covered by LINT, so no information loss occurs.
 - **Adapter-based communication** according to IEC 61499-2 enables loose coupling and reusability.

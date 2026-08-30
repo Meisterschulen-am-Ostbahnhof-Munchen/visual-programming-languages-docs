@@ -47,6 +47,8 @@ The conversion is performed according to IEC 61131 standard `F_ULINT_TO_UINT`. V
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based Encapsulation**: The module allows for the seamless replacement of adapters in the 4diac IDE without changing the logic of the surrounding network.
 - **Reuse of IEC standard conversion**: The actual type conversion is performed by the standardized IEC function block `F_ULINT_TO_UINT`, ensuring portability and correctness.
 - **No state storage**: The function block is purely combinatorial – after each execution, the current result is available at the output.

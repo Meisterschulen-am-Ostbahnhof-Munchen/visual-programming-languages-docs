@@ -47,6 +47,8 @@ The module operates as a pure cascade:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-based**: The function block does not implement direct input/output variables, but uses only adapter sockets and plugs for loose coupling.
 - **Type conversion**: The conversion is performed using the IEC 61131 standard function block `F_ULINT_TO_DINT`. ULINT values outside the DINT range can lead to overflows or unexpected results.
 - **Compact Structure**: Since there is no state logic or branching, the function block operates deterministically and without delay beyond the pure conversion time.

@@ -51,6 +51,8 @@ Dadurch wird eine durchgängige, ereignisgesteuerte Konvertierung von einem UINT
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein:** Alle Verbindungen sind innerhalb eines Netzwerks gekapselt. Die interne Logik bleibt für die aufrufende Umgebung verborgen.
 - **Verwendung der Standard-Konvertierungsfunktion:** Die eigentliche Umwandlung erfolgt durch den IEC-61131-Baustein `F_UINT_TO_SINT`. Dieser ist extern referenziert und wird als Bibliotheksbaustein importiert.
 - **Unidirektionale Adapter:** Sowohl Ein- als auch Ausgangsadapter sind unidirektional ausgelegt, d.h. die Daten fließen nur in eine Richtung (vom Eingang zum Ausgang).

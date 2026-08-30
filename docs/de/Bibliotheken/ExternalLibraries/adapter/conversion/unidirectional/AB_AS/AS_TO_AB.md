@@ -56,6 +56,8 @@ Die Konvertierung erfolgt streng nach IEC‑61131-Semantik: Der SINT-Wert wird b
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Composite-FB**: Der Baustein kapselt die Konvertierungslogik und stellt sie als Adapter-Konverter bereit.  
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangs-Adapter sind unidirektional ausgelegt – Daten fließen nur in eine Richtung.  
 - **Kein interner Zustand**: Der FB verhält sich wie eine reine Funktion; jede Aktivierung erzeugt unabhängig vom vorherigen Zustand das korrekte Ergebnis.  

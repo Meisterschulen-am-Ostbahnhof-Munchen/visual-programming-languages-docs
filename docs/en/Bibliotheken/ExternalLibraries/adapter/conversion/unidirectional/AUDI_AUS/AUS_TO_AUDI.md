@@ -41,6 +41,8 @@ This functional block operates as a simple pass-through. As soon as the event `E
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based Interface**: The function block does not have traditional input/output variables, but uses only the standardized adapter types `AUS` and `AUDI` from the `adapter::types::unidirectional` package.
 - **Simple Passthrough**: Event and data connections are implemented directly without additional logic.
 - **Type Expansion**: Conversion from USINT (0–255) to UDINT (0–4294967295) is lossless, as the entire USINT value range can be mapped to the UDINT range.

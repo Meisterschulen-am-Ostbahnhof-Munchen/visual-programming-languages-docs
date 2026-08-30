@@ -51,6 +51,8 @@ Damit wird sichergestellt, dass der konvertierte UDINT-Wert erst dann am Ausgang
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Pattern**: Der Baustein ist als Composite (zusammengesetzter Funktionsblock) realisiert, der einen einzelnen Konvertierungsbaustein kapselt. Dadurch entsteht eine wiederverwendbare und gekapselte Einheit.
 - **Verwendung von IEC 61131-Bausteinen**: Die Konvertierung nutzt die standardisierte Funktion `F_SINT_TO_UDINT`, was Portabilität und Nachvollziehbarkeit fördert.
 - **Unidirektionale Adapter**: Sowohl der Eingangs- als auch der Ausgangsadapter sind unidirektional (keine Rückmeldung). Dies vereinfacht die Datenflussrichtung.

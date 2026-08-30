@@ -54,6 +54,8 @@ The function block operates without its own state logic – it performs the conv
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Design:** The function block consists solely of an internal network with a single function block (`F_USINT_TO_DWORD`) and direct event and data connections.
 - **Reuse:** The conversion uses the IEC 61131-3 standard function `F_USINT_TO_DWORD`, which is included in the library `iec61131::conversion`.
 - **Adapter Interfaces:** The interfaces are implemented as unidirectional adapters (`adapter::types::unidirectional::AUS` and `AD`, respectively). Each adapter consists of exactly one event channel and one data channel.

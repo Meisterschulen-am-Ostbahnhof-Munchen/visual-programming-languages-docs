@@ -40,6 +40,8 @@ Sobald am Adapter-Eingang `AI_IN` ein Ereignis `E1` eintrifft, wird der zugehör
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Struktur**: Der FB ist als Composite realisiert, der auf den Standard-Baustein `F_INT_TO_SINT` zurückgreift. Dies ermöglicht eine einfache Wiederverwendung und klare Trennung der Konvertierungslogik.
 - **Adapter-basierte Schnittstelle**: Die Ein- und Ausgänge sind als unidirektionale Adapter (`AI` und `AS`) ausgeführt, was eine flexible Anbindung an andere Komponenten mit kompatiblen Adapterschnittstellen erlaubt.
 - **Keine Bereichsüberprüfung**: Der zugrunde liegende Baustein `F_INT_TO_SINT` führt keine explizite Fehlerbehandlung bei Wertebereichsüberschreitung durch. Liegt der `INT`-Wert außerhalb des `SINT`-Bereichs, kann es zu unerwarteten Ergebnissen oder Überläufen kommen (abhängig von der Zielplattform).

@@ -50,6 +50,8 @@ Die gesamte Verarbeitung erfolgt synchron und ohne Datenpufferung – jede Umwan
 
 ## Technische Besonderheiten
 
+- **Speichert das Bitmuster des Ganzzahlwerts**, wie für ein Bit-String-Ziel erwartet (schneidet ab, falls das Ziel schmaler ist als die Quelle).
+
 - **Unidirektionale Adapter**: Der Baustein nutzt ausschließlich unidirektionale Adapter (Socket für Eingang, Plug für Ausgang). Eine Rückwärtskommunikation ist nicht vorgesehen.
 - **Wiederverwendbarer Standard-Baustein**: Die Konvertierung wird durch den IEC-61131-konformen Baustein `F_SINT_TO_DWORD` realisiert, der in der Bibliothek `iec61131::conversion` bereitsteht.
 - **Composite-Architektur**: Der Baustein ist als Composite FB implementiert und erlaubt eine einfache Anpassung oder Wiederverwendung des internen Netzwerks.

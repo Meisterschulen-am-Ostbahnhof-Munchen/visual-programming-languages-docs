@@ -47,6 +47,8 @@ The `AS_TO_AR` block behaves as a pure type conversion passthrough. Within the i
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Composite Block**: Conversion is achieved solely through the interconnection of adapters in the function network. It does not have its own state machine (ECC).
 - **Package Membership**: The block is included in the package `adapter::conversion::unidirectional`.
 - **No Data Storage**: All values are passed on instantly; the block has no internal memory.

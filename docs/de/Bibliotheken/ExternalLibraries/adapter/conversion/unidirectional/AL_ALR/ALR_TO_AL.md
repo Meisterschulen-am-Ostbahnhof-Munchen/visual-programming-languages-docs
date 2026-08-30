@@ -59,6 +59,8 @@ Die Konvertierung selbst entspricht der IEC 61131-3-Funktion `LREAL_TO_LWORD`, d
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**: extrahiert das IEEE754-Bitmuster des Quellwerts (beabsichtigt, z. B. zur Serialisierung), nicht dessen Zahlenwert.
+
 - **Composite-Baustein**: Die Funktionalität wird durch eine interne Netzwerkschaltung realisiert, die den Baustein `F_LREAL_TO_LWORD` verwendet.
 - **Paketierung**: Der Baustein ist im Paket `adapter::conversion::unidirectional` abgelegt, was auf seine Verwendung in unidirektionalen Adapterketten hinweist.
 - **Import**: `iec61131::conversion::F_LREAL_TO_LWORD` muss im Projekt verfügbar sein.

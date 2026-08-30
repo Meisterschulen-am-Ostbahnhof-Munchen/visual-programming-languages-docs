@@ -53,6 +53,8 @@ Process:
 
 ## Technical Features
 
+- **Stores the integer's bit pattern**, as expected for a bit-string destination (truncates if the destination is narrower than the source).
+
 - **Composite Function Block**: The functionality is implemented by an embedded function block, so no separate state machine (ECC) is required.
 - **Unidirectional**: Data flows exclusively from the input to the output adapter; feedback is not provided.
 - **Type Conversion**: The function block uses the standardized IEC 61131 function block `F_INT_TO_DWORD`, ensuring compatibility with many automation systems.

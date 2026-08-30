@@ -45,6 +45,8 @@ Der Baustein verwendet intern den IEC‑61131‑Konvertierungsbaustein `F_ULINT_
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Adapterbasierte Kapselung**: Der Baustein kapselt die Konvertierungslogik vollständig hinter standardisierten unidirektionalen Adaptern (AULI/ALI), sodass er leicht in bestehende Adapter‑basierten Datenflüsse integriert werden kann.
 - **Composite‑Aufbau**: Da es sich um einen Composite‑FB handelt, wird keine eigene Zustandsmaschine benötigt; die Logik wird durch die Verknüpfung des Unterbausteins `F_ULINT_TO_LINT` realisiert.
 - **Typensicherheit**: Die Wandlung von ULINT nach LINT ist wertebereichserhaltend, solange der ULINT‑Wert nicht größer als `LINT#9223372036854775807` (maximaler LINT) ist. Bei Überschreitung kommt es zu einem undefinierten Verhalten (keine Fehlerbehandlung im Baustein).

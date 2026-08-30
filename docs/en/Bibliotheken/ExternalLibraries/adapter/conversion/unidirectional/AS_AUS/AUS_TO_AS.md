@@ -59,6 +59,8 @@ The connections in the FBNetwork are:
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Adapter-Based:** The module functions as a pure adapter converter and can be seamlessly integrated into existing adapter-oriented systems.
 - Event: `AUS_IN.D1` → `Convert.IN`
 - Data: `Convert.OUT` → `AS_OUT.D1`

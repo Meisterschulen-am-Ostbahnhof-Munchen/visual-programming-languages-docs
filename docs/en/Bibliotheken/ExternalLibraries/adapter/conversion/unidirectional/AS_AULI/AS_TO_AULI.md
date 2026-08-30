@@ -58,6 +58,8 @@ The conversion is performed according to the IEC 61131-3 standard: The SINT valu
 
 ## Technical Specifications
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - **Standard Compliance**: The component is specified according to IEC 61499-2.
 - **License**: Eclipse Public License 2.0 (EPL-2.0).
 - **Dependency**: Imports the IEC 61131 component `F_SINT_TO_ULINT` from the package `iec61131::conversion`.

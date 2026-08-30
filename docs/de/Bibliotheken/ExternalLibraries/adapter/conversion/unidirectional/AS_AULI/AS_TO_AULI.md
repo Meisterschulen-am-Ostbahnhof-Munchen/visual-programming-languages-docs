@@ -59,6 +59,8 @@ Die Konvertierung erfolgt nach den Regeln der IEC 61131-3: Der SINT-Wert (8‑Bi
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Standardkonformität**: Der Baustein ist gemäß IEC 61499-2 spezifiziert.
 - **Lizenz**: Eclipse Public License 2.0 (EPL-2.0).
 - **Abhängigkeit**: Importiert den IEC 61131-Baustein `F_SINT_TO_ULINT` aus dem Paket `iec61131::conversion`.

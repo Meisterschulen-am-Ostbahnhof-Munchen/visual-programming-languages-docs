@@ -45,6 +45,8 @@ This function block connects the adapter interfaces directly. An incoming event 
 
 ## Technical Features
 
+- **Numeric conversion**: value-preserving cast (narrowing may truncate, widening/sign-extension is safe).
+
 - Composite function block without its own logic (no ECC)
 - Use of unidirectional adapters according to IEC 61499-2
 - Automatic type conversion via the 4diac runtime (e.g., 4diac-ide)

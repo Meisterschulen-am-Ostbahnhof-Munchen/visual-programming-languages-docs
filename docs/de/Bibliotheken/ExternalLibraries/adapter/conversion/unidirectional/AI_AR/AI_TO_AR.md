@@ -50,6 +50,8 @@ Der Baustein führt selbst keine explizite Typkonvertierung durch; die Anpassung
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Der Baustein enthält keinen eigenen Event‑oder Data‑Interface; seine gesamte Kommunikation läuft über die Adapter.
 - Es ist kein interner Zustandsautomat (ECC) vorhanden – der Block arbeitet rein ereignisgesteuert durch die Verbindungen.
 - Durch die Verwendung von Adaptern wird eine lose Kopplung zwischen den Ein‑ und Ausgängen erreicht, was die Wiederverwendbarkeit und Austauschbarkeit der Schnittstellen erhöht.

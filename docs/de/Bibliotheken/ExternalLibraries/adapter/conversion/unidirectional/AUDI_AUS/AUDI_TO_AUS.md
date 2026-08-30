@@ -37,6 +37,8 @@ Der Baustein ist als reines „Durchreichen“ implementiert. Im FBNetzwerk wird
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - Verwendet den Standard-Konvertierungsbaustein `iec61131::conversion::F_UDINT_TO_USINT` aus der IEC‑61131‑Bibliothek.
 - Reine Ereignis- und Datenweiterleitung – keine eigene Zustandsmaschine erforderlich.
 - Die Konvertierung ist verlustbehaftet: Ein UDINT (32‑Bit) wird auf einen USINT (8‑Bit) abgebildet, d.h. höherwertige Bits gehen verloren (Werte > 255 werden abgeschnitten oder nach Herstellerdefinition behandelt).

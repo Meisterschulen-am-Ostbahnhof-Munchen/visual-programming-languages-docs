@@ -47,6 +47,8 @@ Die Typkonvertierung erfolgt gemäß der IEC 61131-Definition von `F_USINT_TO_LI
 
 ## Technische Besonderheiten
 
+- **Numerische Umwandlung**: wertgetreue Zahlenwert-Konvertierung (Verengung kann abschneiden, Erweiterung/Vorzeichenerweiterung ist sicher).
+
 - **Composite-Baustein**: Die Konvertierungslogik ist gekapselt und wiederverwendbar.
 - **Adapter-basiert**: Die Ein-/Ausgabe erfolgt ausschließlich über Adapter (`AUS` und `ALI`), was die Integration in adapterorientierte Architekturen erleichtert.
 - **Unidirektional**: Der Baustein unterstützt nur eine Datenflussrichtung (AUS → ALI).

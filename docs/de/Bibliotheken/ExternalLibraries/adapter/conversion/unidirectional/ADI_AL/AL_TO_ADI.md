@@ -51,6 +51,8 @@ Damit wird eine vollständige und zeitlich korrekte Umwandlung von einem LWORD-A
 
 ## Technische Besonderheiten
 
+- **Bit-Reinterpretation**, werterhaltend nur, wenn der Quellwert in die schmalere Zielbreite passt (sonst werden die oberen Bits stillschweigend verworfen).
+
 - Der FB nutzt die IEC‑61131‑3 Funktion `F_LWORD_TO_DINT` – eine standardisierte und zuverlässige Typkonvertierung.
 - Es handelt sich um eine reine **unidirektionale** Konvertierung: Daten und Ereignisse fließen nur vom Socket (`AL_IN`) zum Plug (`ADI_OUT`).
 - Der FB ist als Composite modelliert, was eine klare Trennung von Konvertierungslogik und Adapterschnittstellen ermöglicht und die Wiederverwendung fördert.

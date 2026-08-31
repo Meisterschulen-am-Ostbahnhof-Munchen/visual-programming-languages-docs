@@ -64,6 +64,32 @@ nicht existiert.
 | Input_I7 | 22            |
 | Input_I8 | 21            |
 
+### Puls-Eingänge (Frequenzmessung)
+
+| Eingang:        | PIN (ESP32P4) |
+|-----------------|---------------|
+| PulseInput_I1   | 18            |
+| PulseInput_I2   | 17            |
+| PulseInput_I3   | 54            |
+| PulseInput_I4   | 19            |
+| PulseInput_I5   | 16            |
+| PulseInput_I6   | 23            |
+| PulseInput_I7   | 22            |
+| PulseInput_I8   | 21            |
+
+Auch die Puls-Eingänge sind Combo-Pins, die sich den physischen Pin mit dem
+gleichnamigen digitalen Eingang teilen (nutzt intern dieselbe `EPinDigitalIn`-Pin-Tabelle
+über die ESP32-PCNT-Hardware, siehe `IOHandleESP32PulseIN.cpp`).
+
+**Beobachtung aus dem Live-Test (2026-08-30, noch nicht ursachengeklärt):**
+
+- `PulseInput_I1`/`_I2` messen deutlich höhere Frequenzen (~23 kHz im Test) als die
+  übrigen sechs Kanäle (~2 kHz im Test) — I1/I2 verhalten sich wie "schnelle" Pins,
+  I3-I8 wie "langsame" Pins.
+- Es funktionieren nur **4 von 8** Puls-Eingängen gleichzeitig zuverlässig (analog zur
+  PWM-Beobachtung, bei der nur 8 von 12 Ausgängen gleichzeitig liefen). Vermutlich ein
+  Pin-/Peripherie-Sharing-Limit auf ESP32-Seite, aber die genaue Ursache ist noch offen.
+
 ### Digitale Ausgänge
 
 | Ausgang:   | PIN (ESP32P4) |

@@ -1,6 +1,6 @@
-![AI](AI.svg)
-
 # AI (INT)
+
+![AI](AI.svg)
 
 ## 🎧 Podcast
 
@@ -28,5 +28,3 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | INT | Indication (or Request) Data from Plug |
-
-### Data

@@ -1,6 +1,6 @@
-![AE2](AE2.svg)
-
 # AE2
+
+![AE2](AE2.svg)
 
 bidirectional Adapter Interface for 1 Event
 

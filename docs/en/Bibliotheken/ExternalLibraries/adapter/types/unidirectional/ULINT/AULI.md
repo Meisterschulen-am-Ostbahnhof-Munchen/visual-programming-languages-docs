@@ -1,6 +1,6 @@
-![AULI](AULI.svg)
-
 # AULI (ULINT)
+
+![AULI](AULI.svg)
 
 ## 🎧 Podcast
 
@@ -23,5 +23,3 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | ULINT | Indication (or Request) Data from Plug |
-
-### Data

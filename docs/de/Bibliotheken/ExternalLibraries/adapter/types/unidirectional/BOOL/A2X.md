@@ -1,6 +1,6 @@
-![A2X](A2X.svg)
-
 # A2X (BOOL)
+
+![A2X](A2X.svg)
 
 unidirectional Adapter Interface for 2 Events and 2 Bools
 

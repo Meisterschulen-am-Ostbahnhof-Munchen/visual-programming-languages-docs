@@ -1,6 +1,6 @@
-![AW](AW.svg)
-
 # AW (WORD)
+
+![AW](AW.svg)
 
 ## 🎧 Podcast
 
@@ -19,5 +19,3 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | WORD | Indication (or Request) Data from Plug |
-
-### Data

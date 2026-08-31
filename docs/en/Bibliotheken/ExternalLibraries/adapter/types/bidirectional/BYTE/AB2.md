@@ -1,6 +1,6 @@
-![AB2](AB2.svg)
-
 # AB2
+
+![AB2](AB2.svg)
 
 bidirectional adapter interface for 1 event and 1 byte
 

@@ -1,6 +1,6 @@
-![A2X](A2X.svg)
-
 # A2X (BOOL)
+
+![A2X](A2X.svg)
 
 Unidirectional adapter interface for 2 events and 2 bools
 
@@ -19,5 +19,3 @@ Unidirectional adapter interface for 2 events and 2 bools
 | :--- | :--- | :--- |
 | UP | BOOL | TRUE = forward, up, right, clockwise |
 | DOWN | BOOL | TRUE = backward, down, left, counter-clockwise |
-
-### Data

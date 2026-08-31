@@ -3,24 +3,28 @@
 ![AUDI_MUL_4](./AUDI_MUL_4.svg)
 
 * * * * * * * * * *
+
+## Introduction
+
 The function block **AUDI_MUL_4** performs an arithmetic multiplication based on four input values. It is a generic function block (FB) that operates via adapter interfaces with a unidirectional data structure of type `adapter::types::unidirectional::AUDI`. The block is specified according to IEC 61499-2 and is used particularly in automation solutions where scalable multiplication of multiple input variables is required.
-None
-
-The block does not have any traditional data inputs. All input values are provided via adapter interfaces.
-
-This function block does not have traditional data outputs. The multiplication result is output via an adapter plug.
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
-
-### Event Inputs
 
 ## Interface Structure
 
-## Introduction
+### Event Inputs
+
+*The block does not have traditional event inputs. Control is integrated into the input adapters.*
+
+### Event Outputs
+
+*The block does not have traditional event outputs. Control is integrated into the output adapter.*
+
+### Data Inputs
+
+*The block does not have any traditional data inputs. All input values are provided via adapter interfaces.*
+
+### Data Outputs
+
+*This function block does not have traditional data outputs. The multiplication result is output via an adapter plug.*
 
 ### **Adapter**
 

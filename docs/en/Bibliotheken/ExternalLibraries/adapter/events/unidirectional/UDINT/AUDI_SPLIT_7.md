@@ -31,12 +31,12 @@ None
 | Name | Type | Direction |
 | -------- | -------------------------------- | ---------- |
 | `IN` | `adapter::types::unidirectional::AUDI` | Socket (Input) |
-| OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-| OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-| OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-| OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-| OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
-| OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| `OUT1` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| `OUT2` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| `OUT3` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| `OUT4` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| `OUT5` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
+| `OUT6` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 | `OUT7` | `adapter::types::unidirectional::AUDI` | Plug (Output) |
 
 All adapters are of the unidirectional type `AUDI` and transmit data exclusively from the socket to the plugs.
@@ -44,8 +44,6 @@ All adapters are of the unidirectional type `AUDI` and transmit data exclusively
 ## Functionality
 
 The module copies the AUDIO data received via socket `IN` unchanged to all seven plug outputs `OUT1` to `OUT7`. No processing or conversion of the data takes place – the function is limited to a simple 1-to-7 distribution (fan-out). Since there are no events or explicit data ports, the signal behavior is entirely defined by the connected adapters.
-
-# Functionality #
 
 - **Generic Type**: The component is marked as generic via the attribute `eclipse4diac::core::GenericClassName` (`'GEN_AUDI_SPLIT'`). This allows it to be used for various specific implementations of the AUDI adapter without requiring a separate implementation.
 - **No Runtime Dependency**: The component has no algorithm and no state diagram; signal transmission occurs purely structurally through the adapter wiring.
@@ -64,7 +62,7 @@ The component does not contain a state machine (ECC). Its behavior is completely
 ## Comparison with Similar Components
 
 | Component | Distribution | Adapter Type |
------------------- | -------------------------- | ------------------------ |
+| ------------------ | -------------------------- | ------------------------ |
 | `AUDI_SPLIT_7` | 1 input → 7 outputs | Unidirectional `AUDI` |
 | `SPLIT_1_TO_2` (analog) | 1 → 2 | Any (generic) |
 | `AUDI_MERGE` | Multiple Inputs → 1 | Unidirectional `AUDI` |

@@ -45,7 +45,7 @@ No data outputs available.
 
 The module operates as a pure signal distributor: The AI value present at adapter socket `IN` is passed on unchanged and simultaneously to all nine adapter plugs `OUT1` … `OUT9`. No signal processing, scaling, or other manipulation takes place. The distribution is continuous and without internal state behavior – the output follows the input without delay.
 
-# Functionality ## Technical Features
+## Technical Features
 
 - **Generic Block:** The function block is typed as `GEN_AI_SPLIT` and utilizes the generics mechanisms of Eclipse 4diac (`GenericClassName`, `TypeHash`). This allows for flexible use in type hierarchies and libraries.
 - **Adapter-Based Interface:** Instead of individual data ports, adapters are used that provide an encapsulated, reusable interface for analog inputs (`AI`). This simplifies the interconnection concept in 4diac applications.

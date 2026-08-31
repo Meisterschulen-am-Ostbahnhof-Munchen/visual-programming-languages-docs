@@ -1,23 +1,30 @@
-# OFF_SPLIT_4
+# AUS_SPLIT_4
 
 ![AUS_SPLIT_4](./AUS_SPLIT_4.svg)
 
 * * * * * * * * * *
+
+## Introduction
+
 The function block `AUS_SPLIT_4` distributes an incoming **OFF** signal (typically a binary control signal for "Off") to four identical output signals. It serves as a generic splitter and allows a single command or state to be forwarded to multiple downstream components without requiring separate branching logic.
-
-None.
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
-
-### Event Inputs
 
 ## Interface Structure
 
-## Introduction
+### Event Inputs
+
+*No direct event inputs are available. Control is integrated into the input adapter.*
+
+### Event Outputs
+
+*No direct event outputs are available. Control is integrated into the output adapters.*
+
+### Data Inputs
+
+*No direct data inputs are available. Data is received via the input adapter.*
+
+### Data Outputs
+
+*No direct data outputs are available. Data is provided via the output adapters.*
 
 ### **Adapters**
 
@@ -41,12 +48,18 @@ The module operates as a pure signal distributor: As soon as an OFF signal is pr
 - **Adapter-Based**: Communication takes place exclusively via adapters, not via traditional event or data ports. This allows the function block to be seamlessly integrated into an adapter-based architecture.
 - **No State Machine**: There is no internal state logic – the distribution is purely combinatorial.
 
+## Technical Features
+
 The module does not have a state machine. The output signals follow the input signal directly. Therefore, a graphical state overview is not available.
+
+## State Overview
 
 - **Feedback of OFF Signals**: A central "off" command from a controller should simultaneously switch off multiple actuators or subsystems.
 - **Redundant Monitoring**: Distributing an OFF signal to multiple monitoring units that must react to the command independently.
 - **Modular Machine Structure**: In a modular system, an OFF signal, once detected, is routed to multiple modules via buses or coupling elements. `AUS_SPLIT_4` replaces complex wiring or logical OR operations.
 - **Testing and Simulation**: For simultaneously controlling multiple simulated components with the same signal.
+
+## Application Scenarios
 
 | Function Block | Function | Special Feature |
 | ---------- | ---------- | -------------- |
@@ -55,17 +68,9 @@ The module does not have a state machine. The output signals follow the input si
 | `AUS_SPLIT_N` | Configurable splitter (e.g., via generic adapter lists) | More flexible number, but more complex to configure. |
 | `AUS_MERGE` | Combines multiple OFF inputs into one output | Counterpart to the splitter. |
 
-The `AUS_SPLIT_4` sits between a simple 2-way splitter and a fully configurable splitter. It is ideal when exactly four outputs are needed – without any additional configuration.
-
-The `AUS_SPLIT_4` is a simple yet useful generic function block for distributing an OFF signal to four parallel paths. Its adapter-based interface and clear separation of logic and signal transmission make it a robust component in IEC 61499-based automation. Thanks to its generic declaration, it can be easily integrated into various projects and, if necessary, adapted to custom signal types.
-
-## Technical Features
-
-## State Overview
-
-## Application Scenarios
-
 ## Comparison with Similar Function Blocks
+
+The `AUS_SPLIT_4` sits between a simple 2-way splitter and a fully configurable splitter. It is ideal when exactly four outputs are needed – without any additional configuration.
 
 ## Change Detection
 
@@ -73,3 +78,5 @@ Each output plug is updated independently: the incoming value is written to a gi
 
 
 ## Conclusion
+
+The `AUS_SPLIT_4` is a simple yet useful generic function block for distributing an OFF signal to four parallel paths. Its adapter-based interface and clear separation of logic and signal transmission make it a robust component in IEC 61499-based automation. Thanks to its generic declaration, it can be easily integrated into various projects and, if necessary, adapted to custom signal types.

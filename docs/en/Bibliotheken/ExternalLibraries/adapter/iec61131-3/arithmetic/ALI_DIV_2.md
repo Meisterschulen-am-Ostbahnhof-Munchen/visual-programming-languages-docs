@@ -57,9 +57,9 @@ Since `ALI_DIV_2` is a data- and event-driven block, it does not have a complex 
 
 1. **Waiting for Trigger:** The block waits for an update event at input adapters `IN1` or `IN2`.
 
-# State Overview 2. **Calculation:** Upon signal reception, the data is read and divided
+2. **Calculation:** Upon signal reception, the data is read and divided
 
-1. **Output:** The result is assigned to `OUT`, and the corresponding event is signaled via the output adapter.
+3. **Output:** The result is assigned to `OUT`, and the corresponding event is signaled via the output adapter.
 
 ## Application Scenarios
 

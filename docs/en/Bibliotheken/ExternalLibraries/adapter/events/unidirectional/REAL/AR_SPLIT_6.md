@@ -42,7 +42,7 @@ No data outputs are available.
 
 The function block forwards the signals from the incoming AR adapter (socket **IN**) unchanged to all six output adapters (**OUT1** … **OUT6**). No logical or timing processing takes place – any change at the input is immediately visible on all outputs. The function block operates purely passively and does not require event control.
 
-# Functionality ## Technical Features
+## Technical Features
 
 - **Generic Function Block (FB):** The FB is declared as a generic type (`eclipse4diac::core::GenericClassName = 'GEN_AR_SPLIT'`), allowing it to be reused in different contexts without having to redefine the underlying AR type.
 - **Unidirectional Adapters:** All adapters used are of type `adapter::types::unidirectional::AR`, meaning data flows only from the socket to the plugs.

@@ -1,28 +1,30 @@
 # AUDI_MUL_2
 
 ![AUDI_MUL_2](./AUDI_MUL_2.svg)
-**Image:** No image available.
 
 * * * * * * * * * *
+
+## Introduction
+
 The function block `AUDI_MUL_2` is a generic function block for calculating the arithmetic product of two numeric values. It receives its operands via two input adapters and outputs the result via one output adapter. Its generic design allows the use of different data types (e.g., integers, floating-point numbers), which are defined by the specific adapter type.
-
-None.
-
-No direct data ports. The input values are transmitted via the adapters `IN1` and `IN2`.
-
-No direct data ports. The result is output via the adapter `OUT`.
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
-
-### Event Inputs
 
 ## Interface Structure
 
-## Introduction
+### Event Inputs
+
+*No direct event inputs are available. Control is integrated into the input adapters `IN1` and `IN2`.*
+
+### Event Outputs
+
+*No direct event outputs are available. Control is integrated into the output adapter `OUT`.*
+
+### Data Inputs
+
+*No direct data ports. The input values are transmitted via the adapters `IN1` and `IN2`.*
+
+### Data Outputs
+
+*No direct data ports. The result is output via the adapter `OUT`.*
 
 ### **Adapters**
 

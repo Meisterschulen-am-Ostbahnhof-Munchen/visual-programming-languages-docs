@@ -68,6 +68,8 @@ Da der FB keine Zustandsmaschine besitzt, existieren keine expliziten Zustände.
 
 Gegenüber diesen Alternativen bietet AR_SPLIT_4 eine feste Anzahl von vier Ausgängen, was eine kompakte und übersichtliche Implementierung ohne Konfigurationsaufwand ermöglicht.
 
+- **[`AR_SPLIT_4_UNGATED`](AR_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

@@ -65,6 +65,8 @@ Da der FB weder Ereigniseingänge noch einen Ausführungszustand besitzt, existi
 - **A2X_MERGE**: Führt mehrere A2X-Eingänge zu einem Ausgang zusammen – gegensätzliche Funktion.
 - **A2X_SELECT**: Selektiert einen von mehreren A2X-Eingängen, während der Splitter alle Ausgänge gleichzeitig bedient.
 
+- **[`A2X_SPLIT_8_UNGATED`](A2X_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der A2X_SPLIT_8 ist ein einfacher, aber nützlicher Baustein zur Vervielfältigung von A2X-Signalen in Automatisierungsprojekten. Durch seine generische Auslegung und die klare Trennung von Eingang und Ausgängen bietet er eine saubere und wiederverwendbare Lösung.

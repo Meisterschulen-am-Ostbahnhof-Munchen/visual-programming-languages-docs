@@ -39,7 +39,7 @@ All adapters are unidirectional and transmit data and, optionally, associated ev
 
 The module functions as a pure splitter without logic or buffering. An AUI signal present at socket **IN** is copied in parallel and unchanged to all five plugs **OUT1** to **OUT5**. The forwarding is instantaneous, i.e., without delay due to internal processing. The individual outputs are not galvanically or logically isolated – a change at the input immediately affects all outputs.
 
-# Functionality ## Technical Features
+## Technical Features
 
 - **Generic Type**: The function block (FB) is declared as a generic block (attribute `eclipse4diac::core::GenericClassName` = `'GEN_AUI_SPLIT'`). This allows for later type adaptation or instantiation with a specific AUI type.
 - **No State Maintenance**: Since there are no events or data that react to changes, the FB is stateless. A state machine is not required.

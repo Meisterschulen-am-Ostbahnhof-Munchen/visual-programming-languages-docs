@@ -3,25 +3,28 @@
 ![AD_SPLIT_5](./AD_SPLIT_5.svg)
 
 * * * * * * * * * *
+
+## Introduction
+
 The function block `AD_SPLIT_5` is a generic function block that splits an incoming unidirectional adapter (type `adapter::types::unidirectional::AD`) into five identical output adapters. It serves to forward an adapter signal in parallel to multiple subsequent function blocks without requiring the input to be connected multiple times.
-
-None available.
-
-None available. All communication takes place via the adapter socket.
-
-None available. Outputs are exclusively via the adapter plugs.
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
-
-### Event Inputs
 
 ## Interface Structure
 
-## Introduction
+### Event Inputs
+
+*No direct event inputs are available. All communication takes place via the adapter socket.*
+
+### Event Outputs
+
+*No direct event outputs are available. Outputs are exclusively via the adapter plugs.*
+
+### Data Inputs
+
+*No direct data inputs are available. Data is received via the adapter socket.*
+
+### Data Outputs
+
+*No direct data outputs are available. Data is provided via the adapter plugs.*
 
 ### **Adapters**
 

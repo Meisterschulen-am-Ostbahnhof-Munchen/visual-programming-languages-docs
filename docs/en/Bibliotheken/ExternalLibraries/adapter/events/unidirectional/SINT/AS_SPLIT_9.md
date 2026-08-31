@@ -45,7 +45,7 @@ The function block **AS_SPLIT_9** is used to split an incoming **AS adapter** (u
 
 The module receives an AS connection via socket `IN`. Internal logic forwards this incoming signal without modification to all nine plug outputs (`OUT1` … `OUT9`). This ensures that the same AS data and/or events are always available at all outputs. There is no separate state machine or internal processing – distribution occurs directly and without delay.
 
-# Functionality ## Technical Features
+## Technical Features
 
 - **Generic Function Block** – The function block is classified as **GEN_AS_SPLIT** and can be parameterized as needed (e.g., for a variable number of outputs).
 - **Unidirectional Adapters** – Both inputs and outputs use the type `adapter::types::unidirectional::AS`. This ensures that the data/event direction from IN to OUT is strictly maintained.

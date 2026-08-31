@@ -62,6 +62,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten. Die Signalverteilung erf
 
 Da AS_SPLIT_5 für eine spezifische Adapterarchitektur (unidirectional AS) konzipiert ist, existieren typischerweise ähnliche Bausteine wie z. B. "AS_SPLIT_2", "AS_SPLIT_3" oder verallgemeinerte Splitter mit variabler Anzahl von Ausgängen. Der vorliegende Baustein unterscheidet sich durch die feste Anzahl von fünf Ausgängen und die reine Adapter-Schnittstelle ohne Daten- oder Ereignisports.
 
+- **[`AS_SPLIT_5_UNGATED`](AS_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

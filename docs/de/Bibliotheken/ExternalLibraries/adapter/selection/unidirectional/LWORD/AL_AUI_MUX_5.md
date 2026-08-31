@@ -71,6 +71,8 @@ Vergleich mit `AL_MUX_5` (gleiche Auswahllogik, Index jedoch klassisch über **R
 
 Für die Anzahl der Eingänge existiert kein datenbasiertes `F_MUX`-Pendant in der `iec61131-3`-Bibliothek.
 
+- **[`AL_AUI_MUX_5_UNGATED`](AL_AUI_MUX_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AL_AUI_MUX_5` überträgt die Multiplexer-Logik von `AL_MUX_5` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

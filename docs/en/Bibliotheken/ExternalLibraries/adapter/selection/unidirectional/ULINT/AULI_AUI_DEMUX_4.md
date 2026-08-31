@@ -70,6 +70,8 @@ Compare with `AULI_DEMUX_4` (same distribution logic, but the index arrives thro
 
 Compare with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), which demultiplexes purely on events without any adapter concept.
 
+- **[`AULI_AUI_DEMUX_4_UNGATED`](AULI_AUI_DEMUX_4_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Conclusion
 
 `AULI_AUI_DEMUX_4` carries the demultiplexer logic of the `AULI_DEMUX_4` family over to a purely adapter-based index supply. This makes it the right choice whenever the selection index is already available as an `AUI` adapter from another block and no additional event/data wiring for the index is wanted.

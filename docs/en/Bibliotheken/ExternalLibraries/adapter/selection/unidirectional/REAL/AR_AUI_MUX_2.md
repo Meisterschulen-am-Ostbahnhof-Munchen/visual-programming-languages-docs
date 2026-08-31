@@ -68,6 +68,8 @@ Compare with `AR_MUX_2` (same selection logic, but the index arrives through a c
 
 Compare with [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_2.md), which performs the same 2:1 selection purely on data, without any adapter/event concept.
 
+- **[`AR_AUI_MUX_2_UNGATED`](AR_AUI_MUX_2_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Conclusion
 
 `AR_AUI_MUX_2` carries the multiplexer logic of the `AR_MUX_2` family over to a purely adapter-based index supply. This makes it the right choice whenever the selection index is already available as an `AUI` adapter from another block and no additional event/data wiring for the index is wanted.

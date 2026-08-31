@@ -66,6 +66,8 @@ Der Baustein besitzt keine Zustandsmaschine. Es existieren keine internen Zustä
 - **AUS_MERGE / AUS_JOIN**: Führen mehrere Signale zusammen – funktional das Gegenteil.
 - **AUS_ROUTER**: Kann ein Signal wahlweise auf einen von mehreren Ausgängen leiten, während der Splitter immer alle Ausgänge aktiviert.
 
+- **[`AUS_SPLIT_8_UNGATED`](AUS_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

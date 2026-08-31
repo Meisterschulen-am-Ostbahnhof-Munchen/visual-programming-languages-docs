@@ -59,6 +59,8 @@ Der Funktionsblock besitzt kein explizites Zustandsdiagramm und arbeitet zustand
 - **AR_MERGE_X**: Führt mehrere AR-Signale zu einem zusammen – gegensätzliche Funktion.
 - **SPLIT_* für andere Adaptertypen**: Es existieren Split-Bausteine für andere unidirektionale bzw. bidirektionale Adapterdefinitionen, die eine ähnliche Aufteilungslogik umsetzen.
 
+- **[`AR_SPLIT_8_UNGATED`](AR_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

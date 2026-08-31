@@ -68,6 +68,8 @@ Vergleich mit `AIS_DEMUX_2` (gleiche Verteillogik, Index jedoch klassisch über 
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
+- **[`AIS_AUI_DEMUX_2_UNGATED`](AIS_AUI_DEMUX_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AIS_AUI_DEMUX_2` überträgt die Demultiplexer-Logik von `AIS_DEMUX_2` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

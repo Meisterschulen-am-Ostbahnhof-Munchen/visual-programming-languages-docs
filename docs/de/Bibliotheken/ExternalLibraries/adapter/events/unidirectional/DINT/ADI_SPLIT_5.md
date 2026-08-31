@@ -20,16 +20,16 @@ Keine
 
 ### **Daten-Eingänge**
 
-- **IN** (Socket, Typ: `adapter::types::unidirectional::ADI`)  
+- **IN** (Socket, Typ: `adapter::types::unidirectional::ADI`)
   Eingangs-Adapter, der das zu verteilende Signal liefert.
 
 ### **Daten-Ausgänge**
 
-- **OUT1** (Plug, Typ: `adapter::types::unidirectional::ADI`)  
-- **OUT2** (Plug, Typ: `adapter::types::unidirectional::ADI`)  
-- **OUT3** (Plug, Typ: `adapter::types::unidirectional::ADI`)  
-- **OUT4** (Plug, Typ: `adapter::types::unidirectional::ADI`)  
-- **OUT5** (Plug, Typ: `adapter::types::unidirectional::ADI`)  
+- **OUT1** (Plug, Typ: `adapter::types::unidirectional::ADI`)
+- **OUT2** (Plug, Typ: `adapter::types::unidirectional::ADI`)
+- **OUT3** (Plug, Typ: `adapter::types::unidirectional::ADI`)
+- **OUT4** (Plug, Typ: `adapter::types::unidirectional::ADI`)
+- **OUT5** (Plug, Typ: `adapter::types::unidirectional::ADI`)
 
 Alle Ausgänge sind unabhängige Instanzen des gleichen Adaptertyps und erhalten identische Daten.
 
@@ -63,6 +63,8 @@ Der **ADI_SPLIT_5** besitzt keine eigenen Zustände. Er ist ein rein kombinatori
 ## Vergleich mit ähnlichen Bausteinen
 
 Im IEC 61499‑Umfeld existieren häufig Varianten wie **SPLIT_2**, **SPLIT_3** oder **SPLIT_N**, die eine unterschiedliche Anzahl von Ausgängen bereitstellen. Der **ADI_SPLIT_5** ist eine spezielle Realisierung für exakt fünf Ausgänge unter Verwendung von unidirektionalen ADI‑Adapter‑Schnittstellen. Im Gegensatz zu ereignisbasierten Split‑Bausteinen (z. B. `E_SPLIT`) erfolgt hier die Verteilung über Adapter, was eine typengebundene und typischerweise datenorientierte Kommunikation ermöglicht.
+
+- **[`ADI_SPLIT_5_UNGATED`](ADI_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

@@ -59,6 +59,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten (ECC). Die Funktionalit
 - **AQ_SELECT**: Ein Multiplexer, der aus mehreren Eingängen einen auswählt – eher Gegenteil der Split-Funktion.
 - **DQ_SPLIT_8**: Analoger Baustein für digitale Signale (DQ-Typ) – strukturell identisch, aber für andere Signalart.
 
+- **[`AQ_SPLIT_8_UNGATED`](AQ_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

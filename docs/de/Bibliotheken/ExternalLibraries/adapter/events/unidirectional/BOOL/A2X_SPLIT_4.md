@@ -61,6 +61,8 @@ Der FB besitzt keine Zustandsautomaten (ECC) und kein internes Verhalten, das ze
 - **A2X_SPLIT_2** / **A2X_SPLIT_3** / **A2X_SPLIT_N** – Diese Bausteine bieten dieselbe Funktionalität mit einer anderen Anzahl von Ausgängen.
 - Im Gegensatz zu einem **Multiplexer** oder **Demultiplexer** findet hier keine Selektion statt – das Signal wird immer auf alle Ausgänge dupliziert.
 
+- **[`A2X_SPLIT_4_UNGATED`](A2X_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der **A2X_SPLIT_4** ist ein einfacher, aber nützlicher Baustein zur Vervielfältigung eines unidirektionalen A2X-Adaptersignals. Durch seine generische Auslegung und die klare Schnittstelle lässt er sich leicht in bestehende 4diac-IDE-Projekte integrieren und trägt zur Modularisierung von Steuerungsapplikationen bei.

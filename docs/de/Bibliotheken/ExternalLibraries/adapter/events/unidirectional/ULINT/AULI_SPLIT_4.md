@@ -61,6 +61,8 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten (keine ECC‑Zustände). E
 
 Der **AULI_SPLIT_4** ist ein spezialisierter Split-Baustein ausschließlich für den unidirektionalen AULI‑Adaptertyp. Im Gegensatz zu allgemeinen Split-Bausteinen (z. B. `SPLIT` für verschiedene Datentypen) ist er auf genau eine Adapter‑Schnittstelle festgelegt, was die Typklarheit erhöht und Fehlkonfigurationen vermeidet. Er unterscheidet sich von aktiven Verteilern (z. B. `MUX` oder `DEMUX`) durch seine passive, verlustfreie Verteilung ohne Umschaltlogik oder Adressierung.
 
+- **[`AULI_SPLIT_4_UNGATED`](AULI_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

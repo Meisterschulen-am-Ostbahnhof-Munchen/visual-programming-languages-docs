@@ -61,6 +61,8 @@ Da der FB über keine Ereignis-Eingänge verfügt, besitzt er keinen expliziten 
 - **AUDI_SPLIT_2**: Ein auf zwei Ausgänge reduzierter Splitter; der vorliegende Block erweitert dies auf drei Abzweigungen.
 - **Generische Splitter**: In vielen Bibliotheken existieren Splitt-Varianten für andere Adaptertypen (z. B. `DATA_SPLIT`), die jedoch datentypspezifisch sind.
 
+- **[`AUDI_SPLIT_3_UNGATED`](AUDI_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

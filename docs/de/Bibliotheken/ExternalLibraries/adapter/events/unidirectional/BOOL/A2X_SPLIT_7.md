@@ -59,6 +59,8 @@ Der FB besitzt keine eigene Zustandsmaschine (ECC). Die Ausgangssignale sind ste
 - **A2X_SPLIT_2, A2X_SPLIT_3, …** : Diese Bausteine verteilen das Eingangssignal auf zwei, drei bzw. mehr Ausgänge. Der vorliegende FB ist speziell auf sieben Ausgänge ausgelegt und kann als Spezialisierung eines generischen Split-Bausteins betrachtet werden.
 - **Manuelle Vervielfachung per Verbindung**: Theoretisch könnte ein A2X-Signal durch mehrfaches Verbinden eines Ausgangs ebenfalls verteilt werden – der Split-FB sorgt jedoch für eine saubere, strukturierte und wiederverwendbare Lösung.
 
+- **[`A2X_SPLIT_7_UNGATED`](A2X_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der **A2X_SPLIT_7** ist ein einfacher, aber nützlicher Funktionsbaustein zur Signalvervielfachung in A2X-basierten Adaptersystemen. Durch seinen generischen Charakter und die klare Schnittstelle eignet er sich hervorragend für modulare Automatisierungslösungen mit der 4diac-IDE.

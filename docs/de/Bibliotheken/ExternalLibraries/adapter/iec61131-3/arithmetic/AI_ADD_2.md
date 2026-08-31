@@ -70,6 +70,8 @@ Der Funktionsbaustein verhält sich ereignisgesteuert und zustandslos. Es wird k
 
 Im Vergleich zum Standard-IEC-61131-3-Additionsbaustein (`ADD`), welcher mit klassischen Daten-Pins (z. B. `IN1`, `IN2` vom Typ `ANY_NUM`) und expliziten Kontroll-Events (`REQ` / `CNF`) arbeitet, bietet **AI_ADD_2** eine deutlich aufgeräumtere visuelle Darstellung. Durch die Kapselung in Adaptern entfällt das manuelle Ziehen separater Event-Linien, was das Fehlerrisiko bei der Applikationserstellung minimiert.
 
+- **[`AI_ADD_2_UNGATED`](AI_ADD_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

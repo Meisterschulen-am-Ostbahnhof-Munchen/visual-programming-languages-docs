@@ -73,6 +73,8 @@ Im Vergleich zu Standard-AND-Blöcken bietet AX_AND_3:
 
 Vergleich mit [AND_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_3.md)
 
+- **[`AX_AND_3_UNGATED`](AX_AND_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## 🛠️ Zugehörige Übungen
 
 - [Uebung_002a6_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a6_AX.md)

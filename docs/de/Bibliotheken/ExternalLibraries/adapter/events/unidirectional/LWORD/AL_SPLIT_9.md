@@ -61,6 +61,8 @@ Der Baustein verfügt über keinen internen Zustandsautomaten. Er arbeitet zusta
 - **AL_SPLIT_2, AL_SPLIT_4:** Bausteine mit analoger Funktionalität, die das Eingangssignal auf 2 bzw. 4 Ausgänge verteilen. `AL_SPLIT_9` deckt eine größere Anzahl von Ausgängen ab, was insbesondere in komplexen Verteilstrukturen nützlich ist.
 - **Einfache Kopplung (z. B. direkte Verbindung):** Ohne Split-Baustein müsste der Absender mehrere Adapterverbindungen selbst bereitstellen. Der Split-Baustein kapselt diese Logik und vereinfacht die Gesamtarchitektur.
 
+- **[`AL_SPLIT_9_UNGATED`](AL_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

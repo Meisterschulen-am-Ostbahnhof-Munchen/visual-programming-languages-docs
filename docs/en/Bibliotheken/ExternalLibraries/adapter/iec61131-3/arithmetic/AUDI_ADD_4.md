@@ -62,6 +62,8 @@ The function block has no explicit states. The processing is data-driven: As soo
 - **`AUDI_ADD_2`**: A hypothetical function block with only two adapter inputs – `AUDI_ADD_4` extends this to four summands.
 - **Generic Function Blocks**: The attribute `GenericClassName` makes this function block similar to the generic approach of IEC 61499, where the data type is only determined at runtime.
 
+- **[`AUDI_ADD_4_UNGATED`](AUDI_ADD_4_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.

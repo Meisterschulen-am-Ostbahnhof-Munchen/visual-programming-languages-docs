@@ -61,6 +61,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten und kein ECC (Execution C
 - **AS_MERGE (theoretisch)**: Im Gegensatz zu einem Merge-Baustein, der mehrere Eingänge zu einem Ausgang zusammenführt, realisiert AS_SPLIT_3 die umgekehrte Funktion (1 → N).
 - **Generische Split-FBs**: Ähnliche Konzepte existieren für Daten-Eingänge (z.B. SPLIT_INT), jedoch arbeiten diese auf Elementardaten, während AS_SPLIT_3 Adapter (komplexe Datentypen) verarbeitet.
 
+- **[`AS_SPLIT_3_UNGATED`](AS_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

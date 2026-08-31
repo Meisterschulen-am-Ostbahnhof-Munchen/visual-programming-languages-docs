@@ -67,6 +67,8 @@ Im Vergleich zu anderen Verteilungsbausteinen bietet AX_SPLIT_2 eine spezifische
 
 Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+- **[`AX_SPLIT_2_UNGATED`](AX_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## 🛠️ Zugehörige Übungen
 
 - [Uebung_002_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002_AX.md)

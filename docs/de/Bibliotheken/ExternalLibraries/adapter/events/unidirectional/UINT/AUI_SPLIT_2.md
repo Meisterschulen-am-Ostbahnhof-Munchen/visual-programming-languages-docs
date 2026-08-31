@@ -62,6 +62,8 @@ Der AUI_SPLIT_2 verfügt über **keine Zustandsmaschine**. Es gibt keine interne
 - **AUI_MERGE_2**: Führt zwei AUI-Eingänge zu einem Ausgang zusammen (ggf. mit Arbitration). Der Splitter arbeitet in die entgegengesetzte Richtung.
 - **AUI_PASS**: Ein reiner 1:1-Durchgangsadapter ohne Verzweigung.
 
+- **[`AUI_SPLIT_2_UNGATED`](AUI_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

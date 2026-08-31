@@ -70,6 +70,8 @@ Der Baustein verfügt über **keine** Zustandsmaschine oder internen Zustände. 
 
 Gemeinsam ist allen Split‑Bausteinen, dass sie das Eingangssignal ohne Veränderung an alle Ausgänge weiterleiten. Der AI_SPLIT_3 stellt eine typische 3‑fach‑Ausführung dar.
 
+- **[`AI_SPLIT_3_UNGATED`](AI_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

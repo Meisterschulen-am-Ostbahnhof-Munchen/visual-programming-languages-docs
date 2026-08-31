@@ -66,6 +66,8 @@ Der Funktionsbaustein verhält sich rein zustandslos (bzw. kombinatorisch). Es e
 
 Im Vergleich zu einem Standard-Multiplikationsbaustein (wie z. B. dem klassischen `MUL`-Baustein aus der IEC 61131-3-Bibliothek), der mit expliziten Daten-Pins (`IN1`, `IN2`, `OUT`) und Ereignissen (`REQ`, `CNF`) arbeitet, entfällt beim `ADI_MUL_2` die manuelle Verdrahtung von Trigger-Ereignissen. Dies erhöht die Wiederverwendbarkeit und sorgt für ein saubereres Software-Design.
 
+- **[`ADI_MUL_2_UNGATED`](ADI_MUL_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

@@ -69,6 +69,8 @@ Vergleich mit `AUS_DEMUX_3` (gleiche Verteillogik, Index jedoch klassisch über 
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
+- **[`AUS_AUI_DEMUX_3_UNGATED`](AUS_AUI_DEMUX_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AUS_AUI_DEMUX_3` überträgt die Demultiplexer-Logik von `AUS_DEMUX_3` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

@@ -91,6 +91,8 @@ The function block operates in an event-driven and stateless (i.e., purely react
 
 ---
 
+- **[`AUI_ADD_3_UNGATED`](AUI_ADD_3_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.

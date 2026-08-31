@@ -3,27 +3,28 @@
 ![ADI_SPLIT_7](./ADI_SPLIT_7.svg)
 
 * * * * * * * * * *
+
+## Introduction
+
 The function block **ADI_SPLIT_7** is used to split an incoming **ADI** adapter signal into seven identical outputs. It is implemented as a generic function block (Generic FB) and enables the unidirectional distribution of data via one adapter socket to seven adapter plugs.
-
-None – the function block has no event inputs. Data is transmitted exclusively via the adapter interface.
-
-None – the function block has no event outputs. The output adapters are supplied directly with the received data.
-
-None – the data is not provided via separate data inputs, but rather via the adapter socket IN.
-
-None – the data is not output via separate data outputs, but rather via the adapter plugs OUT1 … OUT7.
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
-
-### Event Inputs
 
 ## Interface Structure
 
-## Introduction
+### Event Inputs
+
+None – the function block has no event inputs. Data is transmitted exclusively via the adapter interface.
+
+### Event Outputs
+
+None – the function block has no event outputs. The output adapters are supplied directly with the received data.
+
+### Data Inputs
+
+None – the data is not provided via separate data inputs, but rather via the adapter socket IN.
+
+### Data Outputs
+
+None – the data is not output via separate data outputs, but rather via the adapter plugs OUT1 … OUT7.
 
 ### **Adapters**
 

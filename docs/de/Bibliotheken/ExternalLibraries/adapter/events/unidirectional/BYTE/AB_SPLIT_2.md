@@ -59,6 +59,8 @@ Der FB besitzt keinen Zustandsautomaten. Die Ausgangsadapter spiegeln stets den 
 
 Im Vergleich zu dedizierten **SPLIT-FBs** mit Ereignis-/Datenports arbeitet `AB_SPLIT_2` rein adapterbasiert. Während klassische Split-Bausteine oft getriggerte Datenkopien erfordern, erfolgt die Verteilung hier kontinuierlich und ohne explizite Aktivierung. Ähnliche Funktionalität bieten Adapter-Multiplexer oder Buskoppler, jedoch mit komplexerer Konfiguration. Der vorliegende Baustein ist speziell auf den unidirektionalen `AB`-Adapter zugeschnitten.
 
+- **[`AB_SPLIT_2_UNGATED`](AB_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

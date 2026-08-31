@@ -69,6 +69,8 @@ Durch die generische Auslegung kann der Baustein in verschiedenen Kontexten eing
 - **AB_SPLIT_N**: Verallgemeinerung mit parametrierbarer Anzahl an Ausgängen, falls verfügbar. AB_SPLIT_7 ist eine feste 1:7-Aufteilung.
 - **Direkte Verdrahtung ohne Splitter**: Bei Bedarf an mehreren identischen Kopien müsste der Quell-FB mehrfach instanziiert werden, was den Entwurf aufbläht. Der Splitter reduziert Redundanz auf Ebene der Adapterverbindungen.
 
+- **[`AB_SPLIT_7_UNGATED`](AB_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

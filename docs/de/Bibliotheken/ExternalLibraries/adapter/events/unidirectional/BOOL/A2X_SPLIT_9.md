@@ -59,6 +59,8 @@ Eine Zustandsübersicht entfällt, da der Baustein keinen internen Zustand besit
 - **A2X_MERGE**: Der umgekehrte Baustein, der mehrere Eingänge zu einem Ausgang zusammenführt (z. B. für Bus-Topologien).
 - **Ereignisbasierte Splitter**: Bausteine wie `SPLIT` oder `E_SPLIT` arbeiten mit Ereignissignalen und erfordern Steuerlogik – der **A2X_SPLIT_9** kommt ohne Ereignisse aus.
 
+- **[`A2X_SPLIT_9_UNGATED`](A2X_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der **A2X_SPLIT_9** ist ein einfacher, aber effektiver Funktionsblock zur Verteilung eines A2X-Signals auf neun identische Ausgänge. Durch seine generische Natur und das Fehlen interner Logik ist er leichtgewichtig und ideal für reine Verdrahtungsszenarien in der 4diac-IDE. Er eignet sich besonders für Anwendungen, bei denen ein Signal mehrfach benötigt wird, ohne zusätzliche Programmierarbeit.

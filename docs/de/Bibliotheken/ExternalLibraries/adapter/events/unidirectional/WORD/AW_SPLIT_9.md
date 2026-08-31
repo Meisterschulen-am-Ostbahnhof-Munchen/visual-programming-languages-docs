@@ -67,6 +67,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine, da keine Ereignisse oder Alg
 - **Daten‑Split‑Bausteine**: Bausteine, die Daten‑Eingänge (z. B. `INT`, `REAL`) aufteilen. `AW_SPLIT_9` arbeitet ausschließlich auf Adapterebene und nicht auf einzelnen Datenpunkten.
 - **Multiplexer (MUX)**: Ein Multiplexer wählt einen von mehreren Eingängen aus, während dieser Baustein einen Eingang auf viele Ausgänge verteilt (Fan‑Out).
 
+- **[`AW_SPLIT_9_UNGATED`](AW_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

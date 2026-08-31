@@ -61,6 +61,8 @@ Da der Baustein keinerlei Zustandslogik besitzt, existiert keine Zustandsmaschin
 - **Ereignis-basierte Splitter**: Im Gegensatz zu Bausteinen mit Ereignis-Eingängen (z.B. `E_SPLIT`) arbeitet `AUS_SPLIT_2` ausschließlich über Adapter und eignet sich daher für reine Signalverteilung ohne Steuerlogik.
 - **Merge-Bausteine**: Während Splitter Signale vervielfältigen, fassen Merge-Bausteine mehrere Signale zu einem zusammen (z.B. `AUS_MERGE_2`).
 
+- **[`AUS_SPLIT_2_UNGATED`](AUS_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

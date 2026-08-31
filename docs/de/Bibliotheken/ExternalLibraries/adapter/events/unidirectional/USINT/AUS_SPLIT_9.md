@@ -60,7 +60,10 @@ Der Baustein besitzt keine eigenen Zustände oder eine Ereignisablaufsteuerung (
 | AUS_SPLIT_9 | Adapter | 9 | Generisch, für unidirektionale AUS‑Adapter |
 | AUS_SPLIT_4 | Adapter | 4 | Geringere Ausgangsanzahl |
 | SPLIT_1_2 (z.B. für Daten) | Daten | beliebig | Arbeitet mit Daten‑Ereignis‑Kombinationen |
+
 Im Gegensatz zu datenbasierten Split‑Bausteinen benötigt AUS_SPLIT_9 keine Ereignissteuerung, da die Adapterverbindung die Datenweitergabe implizit abwickelt.
+
+- **[`AUS_SPLIT_9_UNGATED`](AUS_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

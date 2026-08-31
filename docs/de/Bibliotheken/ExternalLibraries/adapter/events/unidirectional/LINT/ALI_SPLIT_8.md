@@ -28,12 +28,12 @@ Keine Daten-Ausgänge vorhanden.
 
 ### **Adapter**
 
-- **Socket (Eingang):**  
-  `IN` – vom Typ `adapter::types::unidirectional::ALI`  
+- **Socket (Eingang):**
+  `IN` – vom Typ `adapter::types::unidirectional::ALI`
   Nimmt das eingehende ALI-Signal auf.
 
-- **Plugs (Ausgänge):**  
-  `OUT1` … `OUT8` – jeweils vom Typ `adapter::types::unidirectional::ALI`  
+- **Plugs (Ausgänge):**
+  `OUT1` … `OUT8` – jeweils vom Typ `adapter::types::unidirectional::ALI`
   Stellen die acht identischen Kopien des Eingangssignals bereit.
 
 ## Funktionsweise
@@ -60,6 +60,8 @@ Der Baustein besitzt keine internen Zustände oder sequentielle Logik. Die Signa
 ## Vergleich mit ähnlichen Bausteinen
 
 Andere Splitter-Bausteine wie `ALI_SPLIT_2`, `ALI_SPLIT_4` oder `ALI_SPLIT_N` unterscheiden sich lediglich in der Anzahl der Ausgänge. Der `ALI_SPLIT_8` bietet die maximale Verteilung in der Standardfamilie. Im Gegensatz zu einem Multiplexer (`ALI_MUX`) oder einer Weiche (`ALI_SWITCH`) wird hier **jeder Ausgang mit dem gleichen Signal** versorgt – es findet keine Auswahl oder Umschaltung statt.
+
+- **[`ALI_SPLIT_8_UNGATED`](ALI_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

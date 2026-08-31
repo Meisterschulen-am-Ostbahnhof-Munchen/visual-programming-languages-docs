@@ -61,6 +61,8 @@ Der `AW_SPLIT_7` verfügt über keinen internen Zustandsautomaten. Das Verhalten
 - **Adapter-Multiplexer**: Im Gegensatz zu Multiplexern, die zwischen mehreren Eingängen wählen, verteilt der `AW_SPLIT_7` einen Eingang ohne Selektion.
 - **Daten-Split-FBs**: Falls der Baustein Daten- und Ereignisports hätte, müsste er Daten kopieren. Adapter-basierte Splits arbeiten effizienter, da nur Referenzen weitergegeben werden.
 
+- **[`AW_SPLIT_7_UNGATED`](AW_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

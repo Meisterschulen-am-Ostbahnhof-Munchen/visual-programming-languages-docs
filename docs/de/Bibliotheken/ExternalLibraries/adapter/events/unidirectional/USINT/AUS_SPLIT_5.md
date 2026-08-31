@@ -62,6 +62,8 @@ Der Baustein hat keinen internen Zustand. Er arbeitet deterministisch und durchg
 - **AUS_SPLIT_2 / AUS_SPLIT_3** – Bausteine mit gleicher Funktionalität, aber unterschiedlicher Anzahl an Ausgängen (2 bzw. 3).
 - **E_SPLIT** – Ein Standard-Ereignis-Split-Baustein, der Ereignis-Eingänge und -Ausgänge statt Adapter nutzt. `AUS_SPLIT_5` ist adapterbasiert und daher flexibler in der Wiederverwendung mit verschiedenen Protokollen.
 
+- **[`AUS_SPLIT_5_UNGATED`](AUS_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

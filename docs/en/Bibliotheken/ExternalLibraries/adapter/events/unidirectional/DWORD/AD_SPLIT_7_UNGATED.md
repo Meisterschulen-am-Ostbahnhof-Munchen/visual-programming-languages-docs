@@ -1,0 +1,105 @@
+# AD_SPLIT_7_UNGATED
+
+> ℹ️ **UNGATED variant:** This block is the ungated version of [`AD_SPLIT_7`](AD_SPLIT_7.md). It suppresses **no** unchanged repeats – every newly computed result is forwarded unconditionally, even without a value change. This matters for consumers that need a periodic cadence regardless of value change (e.g. derivative/frequency calculations that would otherwise fail to decay toward zero). Any change-detection/gating statements further down this page do **not** apply to this block.
+
+![AD_SPLIT_7_UNGATED](./AD_SPLIT_7_UNGATED.svg)
+
+* * * * * * * * * *
+
+## Introduction
+
+The function block **AD_SPLIT_7_UNGATED** is a generic function block for splitting an incoming adapter of type `AD` (unidirectional) into seven separate output adapters. It allows a single adapter signal to be forwarded in parallel to multiple downstream components without modifying or buffering the data. The function block is specifically designed for use in control engineering (e.g., agricultural machinery) and is licensed under the Eclipse Public License 2.0.
+
+---
+
+## Interface Structure
+
+### **Event Inputs**
+
+None.
+
+#### **Event Outputs**
+
+None.
+
+#### **Data Inputs**
+
+None.
+
+#### **Data Outputs**
+
+None.
+
+#### **Adapters**
+
+| Direction | Name | Type | Description |
+| ---------- | ------ | ----- | -------------- |
+| Socket (Input) | `IN` | `adapter::types::unidirectional::AD` | Receives the adapter signal to be distributed. |
+| Plug (Output) 1 | `OUT1` | `adapter::types::unidirectional::AD` | First output – identical copy of the input signal. |
+| Plug (Output) 2 | `OUT2` | `adapter::types::unidirectional::AD` | Second output. |
+| Plug (Output) 3 | `OUT3` | `adapter::types::unidirectional::AD` | Third output. |
+| Plug (Output) 4 | `OUT4` | `adapter::types::unidirectional::AD` | Fourth output. |
+| Plug (Output) 5 | `OUT5` | `adapter::types::unidirectional::AD` | Fifth output. |
+| Plug (Output) 6 | `OUT6` | `adapter::types::unidirectional::AD` | Sixth output. |
+| Plug (Output) 7 | `OUT7` | `adapter::types::unidirectional::AD` | Seventh output. |
+
+---
+
+## Functionality
+
+The function block forwards the adapter signal (type `AD`) present at socket `IN` unchanged to all seven plugs (`OUT1` … `OUT7`). No data manipulation, synchronization, or buffering takes place. The outputs are always simultaneous and identical to the input. The function block operates purely on a data flow basis without events or state logic.
+
+--
+
+## Technical Features
+
+- **Generic Function Block**: The function block is declared as a generic type (GenericClassName = `'GEN_AD_SPLIT'`), which allows reuse with different adapter variants.
+- **Unidirectional Adapters**: All adapters used are unidirectional (direction from the socket to the plugs).
+- **No Internal States**: There is no state machine – the outputs are continuously derived from the input.
+- **Type Hash**: An empty type hash (`''`) is set, but can be used for version control if needed.
+
+---
+
+## State Overview
+
+The function block has no states or state machines. Its behavior is purely combinatorial: As soon as a valid signal is present at the input, it is immediately mirrored to all outputs.
+
+---
+
+## Application Scenarios
+
+- **Distributing Sensor Data**: A single sensor (e.g., speed, pressure) should supply several independent evaluation units in parallel.
+- **Parallel Operation of Actuators**: A control signal is simultaneously transmitted to several identical actuators (e.g., valves, motors).
+- **Redundancy Setup**: The same data stream is sent to multiple redundant processing paths.
+- **Test and Simulation Environments**: A simulated adapter signal is distributed across various test modules.
+
+---
+
+## Comparison with Similar Components
+
+| Component | Number of Outputs | Special Feature |
+| ---------- | ----------------- | -------------- |
+| `AD_SPLIT_2` | 2 | Simple 1:2 distribution |
+| `AD_SPLIT_4` | 4 | Typical for 4-channel systems |
+| **`AD_SPLIT_7_UNGATED`** | **7** | Extended distribution for seven parallel paths |
+| `AD_MERGE` | – | Combines multiple inputs into one output |
+
+Unlike a merge function block, `AD_SPLIT_7_UNGATED` is used exclusively for duplicating a signal without combining data.
+
+---
+
+## Change Detection
+
+This block performs **no** change detection. Every newly computed result is written to the output and its adapter event fired unconditionally, regardless of whether the value differs from the previous run.
+
+## Conclusion
+
+AD_SPLIT_7_UNGATED` is a simple yet useful function block for passive signal duplication in adapter-based 4diac applications. Its generic nature and independence from events make it ideal for pure dataflow architectures. For applications requiring a higher number of parallel outputs, the function block can be extended by adjusting the GenericClassName.
+
+---
+
+### 🌐 Related topic subpages on ms-muc-docs.de
+
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de ](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+
+]

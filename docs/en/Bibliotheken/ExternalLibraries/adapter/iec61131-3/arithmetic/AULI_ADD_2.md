@@ -11,29 +11,30 @@ IN2 ==| (Socket)                      |
 ![AULI_ADD_2](./AULI_ADD_2.svg)
 
 * * * * * * * * * *
+
+## Introduction
+
 The function block `AULI_ADD_2` is a generic arithmetic block for the IEC 61499 environment (4diac-ide). It performs the mathematical addition of two input values transmitted via standardized, unidirectional adapters. The calculated result is passed to a corresponding output adapter.
 
 The block does not have any classic, discrete event or data inputs at the top level. All communication and value transmissions are handled via adapters.
 
-*No direct event inputs are available.* (Event control is encapsulated within the adapters).
-
-*No direct event outputs are available.* (Event control is encapsulated within the adapters).
-
-*No direct data inputs available.*
-
-*No direct data outputs available.*
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
+## Interface Structure
 
 ### Event Inputs
 
-## Interface Structure
+*No direct event inputs are available.* (Event control is encapsulated within the adapters).
 
-## Introduction
+### Event Outputs
+
+*No direct event outputs are available.* (Event control is encapsulated within the adapters).
+
+### Data Inputs
+
+*No direct data inputs available.*
+
+### Data Outputs
+
+*No direct data outputs available.*
 
 ### **Adapters**
 

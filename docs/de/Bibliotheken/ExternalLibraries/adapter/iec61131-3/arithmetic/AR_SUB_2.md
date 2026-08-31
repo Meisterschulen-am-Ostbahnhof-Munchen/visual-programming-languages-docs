@@ -67,6 +67,8 @@ Der Baustein besitzt keine komplexe interne Zustandsmaschine (kein Execution Con
 
 Im Vergleich zum Standard-Subtraktionsbaustein `SUB` (aus den klassischen IEC 61131-3 Elementen), welcher mit diskreten Eingängen wie `IN1` und `IN2` sowie expliziten Events (`REQ` / `CNF`) arbeitet, bietet `AR_SUB_2` durch die Nutzung von Adaptern eine wesentlich höhere Abstraktion. Dies spart Entwicklungszeit bei der Kopplung komplexer Signalglieder, erfordert jedoch eine konsistente Verwendung von Adaptern im gesamten Projekt.
 
+- **[`AR_SUB_2_UNGATED`](AR_SUB_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

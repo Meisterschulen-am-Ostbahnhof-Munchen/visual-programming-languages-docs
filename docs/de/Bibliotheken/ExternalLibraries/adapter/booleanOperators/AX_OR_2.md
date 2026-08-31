@@ -67,6 +67,8 @@ Im Vergleich zu anderen ODER-Bausteinen zeichnet sich AX_OR_2 durch seine Adapte
 
 Vergleich mit [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md)
 
+- **[`AX_OR_2_UNGATED`](AX_OR_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## 🛠️ Zugehörige Übungen
 
 - [Uebung_002a3_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a3_AX.md)

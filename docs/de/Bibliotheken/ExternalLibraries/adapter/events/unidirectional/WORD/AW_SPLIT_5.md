@@ -59,6 +59,8 @@ Der FB besitzt keine interne Zustandsmaschine (ECC). Es gibt keine definierten Z
 - **AW_SPLIT_N** – Ein weiterer generischer Split‑FB, der auf eine variable Anzahl von Ausgängen erweiterbar ist. `AW_SPLIT_5` ist eine spezialisierte Variante mit fest fünf Ausgängen.
 - **Reine Daten‑Splitter** – Diese arbeiten auf Datentypen wie `INT` oder `BOOL` und nutzen andere Schnittstellentypen. `AW_SPLIT_5` ist speziell für den AW‑Adapter konzipiert.
 
+- **[`AW_SPLIT_5_UNGATED`](AW_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

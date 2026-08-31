@@ -38,7 +38,6 @@ None.
 | Plug (Output) | `OUT5` | `adapter::types::unidirectional::ALI` | Fifth Output Adapter. |
 | Plug (Output) | `OUT6` | `adapter::types::unidirectional::ALI` | Sixth Output Adapter. |
 | Plug (Output) | `OUT7` | `adapter::types::unidirectional::ALI` | Seventh Output Adapter. |
-...
 
 ## Functionality
 

@@ -67,6 +67,8 @@ Es existieren in der 4diac-IDE verschiedene Splitter-Bausteine für unterschiedl
 
 Der `AL_SPLIT_2` ist speziell für Adapter-Schnittstellen optimiert und bietet damit eine saubere Möglichkeit, komplexe, adapterbasierte Verbindungen aufzutrennen, ohne in die Daten- oder Ereignisebene einzugreifen.
 
+- **[`AL_SPLIT_2_UNGATED`](AL_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

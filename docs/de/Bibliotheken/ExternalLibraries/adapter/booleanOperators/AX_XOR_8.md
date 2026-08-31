@@ -73,6 +73,8 @@ Im Vergleich zu einfachen XOR-Bausteinen mit weniger Eingängen bietet AX_XOR_8 
 
 Vergleich mit [XOR_8](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_8.md)
 
+- **[`AX_XOR_8_UNGATED`](AX_XOR_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

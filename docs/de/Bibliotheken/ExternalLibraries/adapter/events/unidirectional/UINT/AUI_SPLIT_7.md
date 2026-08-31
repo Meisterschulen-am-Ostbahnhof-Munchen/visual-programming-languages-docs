@@ -65,6 +65,8 @@ Es existiert keine Zustandsmaschine. Der Baustein ist rein datenflussgesteuert u
 - **AUI_SPLIT_2, AUI_SPLIT_4** – Bausteine mit gleicher Funktionsweise, jedoch auf 2 bzw. 4 Ausgänge reduziert. Der `AUI_SPLIT_7` bietet die größte Anzahl an Ausgängen und deckt damit umfangreichere Verteilungsanforderungen ab.
 - **AUI_MERGE** – das Gegenstück, das mehrere AUI‑Eingänge zu einem Ausgang zusammenführt. Im Gegensatz dazu ist der `SPLIT` rein passiv und aggregiert keine Daten.
 
+- **[`AUI_SPLIT_7_UNGATED`](AUI_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

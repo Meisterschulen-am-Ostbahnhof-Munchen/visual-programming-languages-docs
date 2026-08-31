@@ -73,6 +73,8 @@ Eine genauere Zustandsbeschreibung ist aus den Adapterdefinitionen abzuleiten.
 - **Allgemeine Splitter (z. B. für andere Adaptertypen):** Es existieren Splitter für verschiedene Adapter-Datentypen (z. B. `BOOL_SPLIT`, `INT_SPLIT`), die analoge Struktur aufweisen, aber unterschiedliche Adapter-Schnittstellen besitzen.
 - **Multicast-Bausteine:** Komplexere Bausteine können zusätzlich Filter-, Priorisierungs- oder Pufferfunktionen bieten; `AW_SPLIT_8` ist absichtlich minimalistisch gehalten, um keine unerwünschten Seiteneffekte zu erzeugen.
 
+- **[`AW_SPLIT_8_UNGATED`](AW_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

@@ -65,6 +65,8 @@ The function block has no ECC (Execution Control Chart) and no internal states. 
 - **Event-based splitters (e.g., E_SPLIT)** – operate with event/data separation, while ALR_SPLIT_6 uses adapters exclusively.
 - **Data multiplexers** – select one output; ALR_SPLIT_6 always activates all outputs.
 
+- **[`ALR_SPLIT_6_UNGATED`](ALR_SPLIT_6_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.

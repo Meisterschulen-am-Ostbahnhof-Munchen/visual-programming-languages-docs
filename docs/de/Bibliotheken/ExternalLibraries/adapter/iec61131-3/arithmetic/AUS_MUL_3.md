@@ -74,6 +74,8 @@ Der Baustein verhält sich rein zustandslos (bzw. reagiert ereignisgesteuert auf
 - **Standard-MUL-Baustein (IEC 61131-3):** Der klassische `MUL`-Baustein nutzt direkte Daten- und Ereignis-Pins. `AUS_MUL_3` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung in großen Projekten vereinfacht.
 - **AUS_MUL_2 (Zwei-Eingangs-Variante):** Während eine hypothetische Variante mit zwei Eingängen nur zwei Faktoren multiplizieren kann, spart `AUS_MUL_3` bei der Multiplikation von drei Werten einen zusätzlichen Kaskadierungs-Baustein ein.
 
+- **[`AUS_MUL_3_UNGATED`](AUS_MUL_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

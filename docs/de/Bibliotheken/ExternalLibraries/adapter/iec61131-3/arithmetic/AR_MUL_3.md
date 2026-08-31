@@ -72,6 +72,8 @@ Der Baustein verhält sich rein funktional und besitzt im Wesentlichen folgende 
 - **Standard-`MUL` (IEC 61131-3):** Klassische Multiplikationsbausteine arbeiten mit diskreten Daten- und Ereignis-Pins. `AR_MUL_3` nutzt stattdessen Adapter, was das Design übersichtlicher macht.
 - **`AR_MUL_2`:** Multipliziert lediglich zwei Werte. `AR_MUL_3` spart einen zusätzlichen Kaskadierungs-Baustein ein, wenn drei Variablen multipliziert werden müssen, was die Performance und Übersichtlichkeit optimiert.
 
+- **[`AR_MUL_3_UNGATED`](AR_MUL_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

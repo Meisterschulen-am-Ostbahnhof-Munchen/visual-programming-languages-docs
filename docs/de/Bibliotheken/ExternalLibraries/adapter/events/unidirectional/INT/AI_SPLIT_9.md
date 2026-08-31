@@ -67,6 +67,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten (kein ECC). Er verhält s
 - **AI_MERGE**: Führt mehrere AI‑Eingänge zu einem Ausgang zusammen – die gegenteilige Operation.
 - **Direkte Adapter‑Verknüpfung**: In 4diac kann ein einzelner Adapter‑Port konzeptionell auch mehrfach verbunden werden, jedoch ist die explizite Splittung mit diesem FB dokumentierter und klarer strukturiert.
 
+- **[`AI_SPLIT_9_UNGATED`](AI_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

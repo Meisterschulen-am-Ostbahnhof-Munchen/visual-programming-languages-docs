@@ -74,6 +74,8 @@ Im Vergleich zu einem Standard-Ganzzahl-Divisionsbaustein (wie dem IEC 61131-3 `
 - **Adapterbasierte Kopplung:** Standard-FBs benötigen separate Pins für Daten und Events (REQ/CNF). `AUS_DIV_2` bündelt diese logisch in den `AUS`-Adaptern.
 - **Datentyp-Flexibilität:** Während klassische Bausteine oft fest für z. B. `REAL` (e.g., `R_DIV`) definiert sind, passt sich dieser generische Baustein dem verwendeten Adaptertyp an.
 
+- **[`AUS_DIV_2_UNGATED`](AUS_DIV_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

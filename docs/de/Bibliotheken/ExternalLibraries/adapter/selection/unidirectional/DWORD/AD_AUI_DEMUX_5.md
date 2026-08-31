@@ -71,6 +71,8 @@ Vergleich mit `AD_DEMUX_5` (gleiche Verteillogik, Index jedoch klassisch über *
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
+- **[`AD_AUI_DEMUX_5_UNGATED`](AD_AUI_DEMUX_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AD_AUI_DEMUX_5` überträgt die Demultiplexer-Logik von `AD_DEMUX_5` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

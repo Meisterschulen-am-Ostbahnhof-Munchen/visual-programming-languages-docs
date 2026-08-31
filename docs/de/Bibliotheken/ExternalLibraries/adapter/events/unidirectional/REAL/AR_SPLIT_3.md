@@ -37,7 +37,7 @@ Keine – alle Daten werden über die drei Ausgangsadapter (`OUT1`, `OUT2`, `OUT
 
 ## Funktionsweise
 
-Der Baustein realisiert eine **1:3-Verteilung** auf Adapterebene. Ein an `IN` anliegender `AR`-Adapter (unidirektional) wird intern auf die drei Ausgangsadapter `OUT1`, `OUT2` und `OUT3` aufgeschaltet.  
+Der Baustein realisiert eine **1:3-Verteilung** auf Adapterebene. Ein an `IN` anliegender `AR`-Adapter (unidirektional) wird intern auf die drei Ausgangsadapter `OUT1`, `OUT2` und `OUT3` aufgeschaltet.
 Jedes an `IN` eingehende Ereignis oder Datenpaket wird gleichzeitig an alle drei Ausgänge weitergeleitet. Die Verteilung erfolgt ohne Verzögerung und ohne Datenveränderung. Der Baustein ist generisch und kann mit beliebigen `AR`-Adapterprofilen verwendet werden – seine interne Logik passt sich automatisch der Struktur des eingesetzten Adaptertyps an.
 
 ## Technische Besonderheiten
@@ -67,6 +67,8 @@ Der Baustein ist **zustandslos** (kombinatorisch). Es gibt keine internen Zustä
 | **AR_CONNECT** | Einfache 1:1-Verbindung (keine Verteilung).                                 |
 
 Im Gegensatz zu dedizierten Splittern mit Daten‑ oder Ereignis‑Ein‑/Ausgängen arbeitet der `AR_SPLIT_3` ausschließlich über Adapter, was ihn besonders flexibel und typenunabhängig macht.
+
+- **[`AR_SPLIT_3_UNGATED`](AR_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

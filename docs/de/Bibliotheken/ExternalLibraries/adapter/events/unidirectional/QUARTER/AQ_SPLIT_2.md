@@ -60,6 +60,8 @@ Der FB besitzt keine internen Zustände. Er ist zustandslos (kombinatorisch) und
 - **Ereignisgesteuerte Split-Bausteine**: Diese benötigen oft Trigger-Ereignisse und führen dann eine Signalweitergabe durch. `AQ_SPLIT_2` arbeitet dagegen rein signalgetrieben ohne Ereignisse.
 - **Bus-basierte Splitter**: Diese verteilen mehrere Signale über einen gemeinsamen Bus (z.B. über Multicast). `AQ_SPLIT_2` arbeitet punktuell und einzeln über Adapter.
 
+- **[`AQ_SPLIT_2_UNGATED`](AQ_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

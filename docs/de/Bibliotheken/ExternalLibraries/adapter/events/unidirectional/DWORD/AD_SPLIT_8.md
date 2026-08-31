@@ -69,6 +69,8 @@ Der Funktionsblock besitzt keine Zustandsmaschine (ECC). Er arbeitet statisch un
 
 Im Gegensatz zu diesen Bausteinen erfolgt bei **AD_SPLIT_8** keine Auswahl – alle Ausgänge erhalten stets das gleiche Signal.
 
+- **[`AD_SPLIT_8_UNGATED`](AD_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

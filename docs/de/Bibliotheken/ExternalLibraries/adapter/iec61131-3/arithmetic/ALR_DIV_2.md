@@ -67,6 +67,8 @@ Der Baustein besitzt kein komplexes internes Zustandsdiagramm (ECC). Er arbeitet
 
 Im Vergleich zum Standard-IEC-61131-3-Kompaktbaustein `DIV` besitzt der `ALR_DIV_2` keine direkten Datenpins (wie `IN1`, `IN2` als `ANY_NUM`). Während der Standard-`DIV`-Baustein für einfache, punktuelle Berechnungen optimiert ist, eignet sich der `ALR_DIV_2` primär für serviceorientierte Architekturen und Anwendungen, die konsequent auf eine lose Kopplung mittels Adapterstrukturen setzen.
 
+- **[`ALR_DIV_2_UNGATED`](ALR_DIV_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

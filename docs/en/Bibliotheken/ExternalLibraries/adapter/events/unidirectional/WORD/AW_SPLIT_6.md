@@ -1,6 +1,5 @@
 # AW_SPLIT_6
 
-Image not available
 ![AW_SPLIT_6](./AW_SPLIT_6.svg)
 
 * * * * * * * * * *
@@ -38,7 +37,7 @@ None
 
 The module receives a unidirectional **AW** signal via the **IN** socket. This signal is internally duplicated to all six output plugs (**OUT1** to **OUT6**). The signal is passed through without delay or data manipulation – the value of the incoming adapter is made directly available at each of the six outputs. The module has no state logic or event control of its own; it operates purely passively and simply passes the signal through.
 
-# Functionality ## Technical Features
+## Technical Features
 
 - **Generic Type**: The function block is implemented as a generic function block (`GEN_AW_SPLIT`), allowing for flexible reuse in different projects.
 - **Type Hash**: The type hash property is empty, meaning that no automatic type identity check is performed during instantiation.
@@ -72,5 +71,3 @@ The **AW_SPLIT_6** is a simple yet useful function block for multiplying a unidi
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
 - [🌐 Eclipse 4diac IDE & Color Reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-]

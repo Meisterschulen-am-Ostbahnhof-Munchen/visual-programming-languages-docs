@@ -69,6 +69,8 @@ Vergleich mit [AND_4](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND
 
 Im Vergleich zu einfachen UND-Bausteinen mit weniger Eingängen bietet AX_AND_4 die Möglichkeit, vier Signale direkt zu verknüpfen, ohne zusätzliche Verkettungen. Gegenüber ODER-Verknüpfungen stellt die UND-Verknüpfung strengere Anforderungen an die Aktivierung.
 
+- **[`AX_AND_4_UNGATED`](AX_AND_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

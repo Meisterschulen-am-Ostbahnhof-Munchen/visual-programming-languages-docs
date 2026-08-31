@@ -64,6 +64,8 @@ Da der Funktionsblock keine interne Logik oder Zustandsmaschine enthält, existi
 
 Während **AULI_SPLIT_2** eine feste 1‑zu‑2‑Aufteilung vornimmt, erlauben generische Splitter eine flexible Anzahl von Ausgängen. Zusammenführer wie **AULI_MERGE** lösen die umgekehrte Aufgabe.
 
+- **[`AULI_SPLIT_2_UNGATED`](AULI_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

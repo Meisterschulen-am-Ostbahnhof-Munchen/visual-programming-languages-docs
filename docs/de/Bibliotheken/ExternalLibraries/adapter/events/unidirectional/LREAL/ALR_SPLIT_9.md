@@ -59,6 +59,8 @@ Der FB besitzt keine Zustandsmaschine, da er keine interne Logik oder Speicherve
 - **Daten‑Typ‑Splittern (z. B. `SPLIT_INT`):** Diese arbeiten auf Datenebene, während `ALR_SPLIT_9` auf der Adapterebene (Signal‑/Ereignisweitergabe) operiert.
 - **Adapter‑Multiplexer/Demultiplexer:** Im Gegensatz zu diesen wählt oder kombiniert `ALR_SPLIT_9` keine Signale, sondern leitet das eingehende Signal ausschließlich 1:9 weiter.
 
+- **[`ALR_SPLIT_9_UNGATED`](ALR_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

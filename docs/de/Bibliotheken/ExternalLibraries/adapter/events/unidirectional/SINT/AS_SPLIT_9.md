@@ -47,8 +47,8 @@ Der Baustein empfängt über den Socket `IN` eine AS‑Verbindung. Interne Logik
 
 ## Technische Besonderheiten
 
-- **Generischer Baustein** – Der FB wird als **GEN_AS_SPLIT** klassifiziert und kann bei Bedarf parametrisiert werden (z. B. für eine variable Anzahl von Ausgängen).  
-- **Unidirektionale Adapter** – Sowohl Ein‑ als auch Ausgänge nutzen den Typ `adapter::types::unidirectional::AS`. Dies stellt sicher, dass die Daten‑/Ereignisrichtung von IN zu OUT strikt eingehalten wird.  
+- **Generischer Baustein** – Der FB wird als **GEN_AS_SPLIT** klassifiziert und kann bei Bedarf parametrisiert werden (z. B. für eine variable Anzahl von Ausgängen).
+- **Unidirektionale Adapter** – Sowohl Ein‑ als auch Ausgänge nutzen den Typ `adapter::types::unidirectional::AS`. Dies stellt sicher, dass die Daten‑/Ereignisrichtung von IN zu OUT strikt eingehalten wird.
 - Keine eigenen Ereignis‑ oder Dateneingänge erforderlich – die gesamte Schnittstelle besteht ausschließlich aus Adaptern.
 
 ## Zustandsübersicht
@@ -57,16 +57,18 @@ Der FB besitzt keine explizite Zustandsmaschine (ECC). Die Verteilung erfolgt re
 
 ## Anwendungsszenarien
 
-- **Signalverteilung** – Ein AS‑Sensor oder eine Steuerung muss mehrere Aktoren oder überwachte Komponenten gleichzeitig versorgen.  
-- **Parallelbetrieb** – An ein AS‑Netzwerk sollen mehrere Teilnehmer angeschlossen werden, ohne dass eine aktive Replikation erforderlich ist.  
+- **Signalverteilung** – Ein AS‑Sensor oder eine Steuerung muss mehrere Aktoren oder überwachte Komponenten gleichzeitig versorgen.
+- **Parallelbetrieb** – An ein AS‑Netzwerk sollen mehrere Teilnehmer angeschlossen werden, ohne dass eine aktive Replikation erforderlich ist.
 - **Test- und Simulationsumgebungen** – Ein ausgehendes AS‑Signal wird auf mehrere Prüfmodule oder Analysewerkzeuge aufgeteilt.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **AS_SPLIT_2**, **AS_SPLIT_4** u. Ä. – Diese Bausteine bieten eine geringere Anzahl von Ausgängen (2, 4 usw.) und sind für kleinere Verteilungen optimiert.  
-- **AS_MUX** – Ein Multiplexer, der mehrere Eingänge auf einen Ausgang legt; das Gegenteil des Splitters.  
-- **AS_COPY** – Kopiert ein Signal auf einen zweiten Ausgang; entspricht einem 1:2‑Split.  
+- **AS_SPLIT_2**, **AS_SPLIT_4** u. Ä. – Diese Bausteine bieten eine geringere Anzahl von Ausgängen (2, 4 usw.) und sind für kleinere Verteilungen optimiert.
+- **AS_MUX** – Ein Multiplexer, der mehrere Eingänge auf einen Ausgang legt; das Gegenteil des Splitters.
+- **AS_COPY** – Kopiert ein Signal auf einen zweiten Ausgang; entspricht einem 1:2‑Split.
 - **AS_SPLIT_9** stellt mit neun Ausgängen die größte Standardvariante dar und deckt umfangreiche Verteilungsanforderungen ab.
+
+- **[`AS_SPLIT_9_UNGATED`](AS_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

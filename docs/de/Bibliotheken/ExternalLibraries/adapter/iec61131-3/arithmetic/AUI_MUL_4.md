@@ -74,6 +74,8 @@ Der Baustein arbeitet rein ereignisgesteuert und besitzt keinen internen Zustand
 - **Standard-MUL-Bausteine (IEC 61131-3):** Klassische Multiplizierer arbeiten mit direkten elementaren Datentypen (wie `REAL` oder `INT`) und benötigen separate Event-Eingänge (`REQ`) und Event-Ausgänge (`CNF`). `AUI_MUL_4` vereinfacht dies durch die Kapselung in Adaptern.
 - **AUI_MUL_2 / AUI_MUL_3:** Ähnliche Bausteine mit weniger Eingängen. `AUI_MUL_4` eignet sich speziell dann, wenn exakt vier Faktoren multipliziert werden müssen, ohne mehrere Multiplikationsbausteine hintereinander schalten zu müssen (was Ressourcen und Latenz im Ausführungsmodell spart).
 
+- **[`AUI_MUL_4_UNGATED`](AUI_MUL_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

@@ -72,6 +72,8 @@ Der Baustein verhält sich im Wesentlichen zustandslos (stateless) und reagiert 
 - **Klassischer `DIV`-Baustein:** Der klassische IEC 61131-3 `DIV`-Baustein besitzt dedizierte Pins für `IN1`, `IN2` und `OUT` sowie die dazugehörigen `REQ`- und `CNF`-Events. `AR_DIV_2` bündelt diese Signale in Adaptern, was die Verdrahtung in großen Projekten vereinfacht.
 - **`AR_MUL_2` / `AR_ADD_2`:** Diese Bausteine teilen sich dieselbe Adapter-Philosophie, führen jedoch Multiplikationen bzw. Additionen durch. Sie lassen sich nahtlos mit `AR_DIV_2` zu mathematischen Berechnungsbäumen verketten.
 
+- **[`AR_DIV_2_UNGATED`](AR_DIV_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

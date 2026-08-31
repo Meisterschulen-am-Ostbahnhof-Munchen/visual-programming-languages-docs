@@ -66,6 +66,8 @@ Im Vergleich zu standardmäßigen UND-Bausteinen verwendet AX_AND_2 Adapter-basi
 
 Vergleich [AND_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/AND_2.md)
 
+- **[`AX_AND_2_UNGATED`](AX_AND_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## 🛠️ Zugehörige Übungen
 
 - [Uebung_002a_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a_AX.md)

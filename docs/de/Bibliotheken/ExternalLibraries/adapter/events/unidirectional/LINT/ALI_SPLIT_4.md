@@ -63,6 +63,8 @@ Der Baustein besitzt keine eigenen Zustände oder Steuerlogik. Das Verhalten ist
 - **ALI_MERGE**: Führt mehrere ALI-Eingänge zu einem Ausgang zusammen – die inverse Funktion zum Split.
 - **ALI_SELECT**: Wählt basierend auf einem Steuersignal einen von mehreren Eingängen aus und leitet ihn an einen Ausgang weiter (keine Parallelverteilung).
 
+- **[`ALI_SPLIT_4_UNGATED`](ALI_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

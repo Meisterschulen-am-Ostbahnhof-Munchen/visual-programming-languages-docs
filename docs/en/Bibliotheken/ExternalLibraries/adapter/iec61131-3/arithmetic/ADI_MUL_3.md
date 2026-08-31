@@ -75,6 +75,8 @@ The function block is designed as a purely mathematical, stateless block. It doe
 
 Compared to classic IEC 61131-3 `MUL` blocks, the `ADI_MUL_3` offers the advantage of encapsulating events and data logically in a single connection through the use of adapters. This significantly reduces wiring effort in the 4diac IDE. Compared to a dual multiplier (`ADI_MUL_2`), this block also eliminates the need to cascade blocks, which reduces execution time and makes the application diagram clearer.
 
+- **[`ADI_MUL_3_UNGATED`](ADI_MUL_3_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.

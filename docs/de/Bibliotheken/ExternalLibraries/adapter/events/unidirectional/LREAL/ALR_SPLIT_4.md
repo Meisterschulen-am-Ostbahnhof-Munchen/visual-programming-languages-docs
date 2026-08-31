@@ -59,6 +59,8 @@ Der Baustein besitzt keine eigenen Zustände. Die Signalweitergabe erfolgt konti
 - **Event‑Splitter**: Teilen Ereignisse auf, arbeiten aber auf reiner Event‑Ebene. ALR_SPLIT_4 hingegen verteilt komplette Adapter‑Signale (Ereignisse und Daten gekapselt).
 - **Daten‑Splitter**: Verteilen einzelne Datenwerte, jedoch ohne Adapter‑Kapselung. ALR_SPLIT_4 ist speziell für die Verwendung mit unidirektionalen ALR‑Adaptertypen optimiert.
 
+- **[`ALR_SPLIT_4_UNGATED`](ALR_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

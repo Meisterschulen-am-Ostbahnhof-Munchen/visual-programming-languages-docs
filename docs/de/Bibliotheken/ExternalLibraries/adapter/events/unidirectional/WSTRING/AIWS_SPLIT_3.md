@@ -61,6 +61,8 @@ Der Baustein besitzt keine Zustandsmaschine (ECC), daher gibt es keine Zustände
 - **ALL_SPLIT (für Daten):** Ein generischer Baustein zum Aufteilen von Daten-Ein-/Ausgängen, nicht spezifisch für Adapter. AIWS_SPLIT_3 ist dagegen speziell für den AIWS-Adapter-Typ optimiert und arbeitet auf Adapterebene.
 - **AIWS_JOIN_3:** Der inverse Baustein, der drei AIWS-Eingänge zu einem Ausgang zusammenführt.
 
+- **[`AIWS_SPLIT_3_UNGATED`](AIWS_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

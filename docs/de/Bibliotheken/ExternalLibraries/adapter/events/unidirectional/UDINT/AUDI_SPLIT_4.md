@@ -38,7 +38,7 @@ Keine Daten-Ausgänge vorhanden.
 
 ## Funktionsweise
 
-Der Baustein arbeitet **ereignislos** und **kontinuierlich**:  
+Der Baustein arbeitet **ereignislos** und **kontinuierlich**:
 Sobald der Socket `IN` mit einem AUDI-Adapter verbunden ist, werden die über diesen Adapter übertragenen Daten oder Signale unverändert an alle vier Ausgangsadapter (`OUT1` bis `OUT4`) weitergeleitet. Es findet keine Verarbeitung oder Umwandlung der Daten statt – der Baustein fungiert ausschließlich als passiver Verteiler (Splitter). Da keine Ereignisse oder Zustandsänderungen beteiligt sind, erfolgt die Verteilung implizit durch die Verbindungsstruktur.
 
 ## Technische Besonderheiten
@@ -66,6 +66,8 @@ Der Baustein verfügt über **keine Zustandsmaschine (ECC)**, da er keine Ereign
 | `AUDI_SPLIT_4` | Verteilt ein AUDI‑Signal auf vier Ausgänge. | Vorliegender Baustein, einfacher 1:4‑Splitter. |
 | `AUDI_MERGE` | Fasst mehrere AUDI‑Eingänge zu einem Ausgang zusammen. | Umkehrung des Splitters (1:1‑Mapping, aber invers). |
 | Generische Splitter | Können über Typ-Parameter auf andere Adapter angewendet werden. | Bieten mehr Flexibilität als fest verdrahtete Varianten. |
+
+- **[`AUDI_SPLIT_4_UNGATED`](AUDI_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

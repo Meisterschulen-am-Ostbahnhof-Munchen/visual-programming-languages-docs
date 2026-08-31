@@ -6,29 +6,29 @@
 
 * * * * * * * * * *
 
+## Introduction
+
 The `ALI_MUL_3` function block is a generic arithmetic block for the 4diac IDE, used for multiplying three input values. It is characterized by the fact that the inputs and outputs are not implemented via classic data and event pins, but entirely via unidirectional adapters of type `ALI`. This enables structured, modular, and clear encapsulation of signal and data flows in IEC 61499 applications.
 
 Since this functional block is entirely based on adapter technology, it has no direct, traditional event or data channels at the main level.
 
-*No direct event inputs are available (signal processing is handled by the adapters).*
-
-*No direct event outputs are available (signal forwarding is handled by the output adapter).*
-
-*No direct data inputs are available.*
-
-*No direct data outputs are available.*
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
+## Interface Structure
 
 ### Event Inputs
 
-## Interface Structure
+*No direct event inputs are available (signal processing is handled by the adapters).*
 
-## Introduction
+### Event Outputs
+
+*No direct event outputs are available (signal forwarding is handled by the output adapter).*
+
+### Data Inputs
+
+*No direct data inputs are available.*
+
+### Data Outputs
+
+*No direct data outputs are available.*
 
 ### **Adapters**
 

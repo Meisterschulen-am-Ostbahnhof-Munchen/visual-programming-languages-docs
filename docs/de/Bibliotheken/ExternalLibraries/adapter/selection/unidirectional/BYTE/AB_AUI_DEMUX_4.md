@@ -70,6 +70,8 @@ Vergleich mit `AB_DEMUX_4` (gleiche Verteillogik, Index jedoch klassisch über *
 
 Vergleich mit [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), das rein ereignisbasiert ohne Adapterkonzept demultiplext.
 
+- **[`AB_AUI_DEMUX_4_UNGATED`](AB_AUI_DEMUX_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AB_AUI_DEMUX_4` überträgt die Demultiplexer-Logik von `AB_DEMUX_4` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

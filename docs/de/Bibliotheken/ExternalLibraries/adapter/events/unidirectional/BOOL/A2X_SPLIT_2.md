@@ -60,6 +60,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten und ist vollständig **st
 - **A2X_MERGE**: Führt zwei A2X-Signale zu einem zusammen – gegensätzliche Funktionalität.
 - **Generische Splitter (z. B. für andere Adaptertypen)**: Funktionsprinzip gleich, aber Adaptertyp angepasst.
 
+- **[`A2X_SPLIT_2_UNGATED`](A2X_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `A2X_SPLIT_2` ist ein einfacher, aber nützlicher Baustein zur Signalverteilung in 4diac-Anwendungen. Seine generische Natur ermöglicht eine flexible Nutzung ohne zusätzliche Konfiguration. Er eignet sich besonders für Szenarien, in denen ein A2X-Signal an mehrere Empfänger weitergegeben werden muss, ohne dass die Signalintegrität beeinträchtigt wird.

@@ -64,6 +64,8 @@ Der Baustein besitzt keine eigene Zustandsmaschine (ECC). Sein Verhalten ist det
 
 Im 4diac-Framework existieren möglicherweise andere Split-Bausteine, die sich in der Anzahl der Ausgänge oder im Datentyp unterscheiden. `AIS_SPLIT_6` ist speziell auf die AIS-Adapter-Schnittstelle und sechs Ausgänge zugeschnitten. Andere Splitter könnten eventuell über zusätzliche Ereignisse oder Konfigurationsparameter verfügen (z. B. selektives Weiterleiten), während dieser Baustein bewusst einfach und ohne Konfiguration gehalten ist.
 
+- **[`AIS_SPLIT_6_UNGATED`](AIS_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

@@ -68,6 +68,8 @@ Der `ADI_SPLIT_8` FB besitzt keine internen Zustände oder einen ECC (Execution 
 - **FORK-FBs**: Einige IEC 61499 Implementierungen bieten Fork-Bausteine für Adapter, die jedoch oft ereignisgesteuert sind. Dieser FB hier zeichnet sich durch den Verzicht auf Ereignisse und die feste Anzahl von acht Ausgängen aus.
 - **Manuelle Verdrahtung**: Ohne diesen FB müsste jede Zielverbindung einzeln über Koppeladapter oder manuelle Verzweigungen realisiert werden – aufwändiger und fehleranfälliger.
 
+- **[`ADI_SPLIT_8_UNGATED`](ADI_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

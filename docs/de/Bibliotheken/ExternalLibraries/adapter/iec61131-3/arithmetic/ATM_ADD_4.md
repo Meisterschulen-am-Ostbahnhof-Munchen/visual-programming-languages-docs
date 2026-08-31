@@ -63,6 +63,8 @@ Der Baustein besitzt keinen Zustandsautomaten. Die Berechnung wird rein ereignis
 
 Im Vergleich zu `AR_ADD_2` (Addition zweier `REAL`-Werte über Adapter) ist `ATM_ADD_4` auf den Datentyp `TIME` spezialisiert. Anders als `AR_MULTIME`/`ATM_AR_MULTIME`, die einen Zeitwert mit einem numerischen Faktor multiplizieren, addiert `ATM_ADD_4` zwei gleichartige Zeitwerte.
 
+- **[`ATM_ADD_4_UNGATED`](ATM_ADD_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

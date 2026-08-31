@@ -68,6 +68,8 @@ Since this is a combinational logic block, AQ_OR_6 has no internal states. The o
 
 Unlike `AX_OR_6`, which combines individual Boolean truth values, `AQ_OR_6` operates on the full bit pattern of a `BYTE` value. Compared to the standard block [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md), `AQ_OR_6` uses adapter-based interfaces instead of direct data/event inputs/outputs, enabling more flexible integration into adapter-based system architectures.
 
+- **[`AQ_OR_6_UNGATED`](AQ_OR_6_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.

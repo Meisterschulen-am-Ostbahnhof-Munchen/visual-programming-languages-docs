@@ -70,6 +70,8 @@ Der **AIWS_SPLIT_5** besitzt keine explizite Zustandsmaschine. Seine Funktionali
 
 Alle Split‑Varianten basieren auf demselben Prinzip und unterscheiden sich lediglich in der Anzahl der Ausgangsadapter. Der **AIWS_SPLIT_5** deckt einen mittleren Verteilungsbedarf ab und ist besonders dann vorteilhaft, wenn genau fünf parallele Ausgänge benötigt werden.
 
+- **[`AIWS_SPLIT_5_UNGATED`](AIWS_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

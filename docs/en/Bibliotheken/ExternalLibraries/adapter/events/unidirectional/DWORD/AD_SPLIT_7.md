@@ -6,7 +6,8 @@
 
 ## Introduction
 
-The function block **AD_SPLIT_7** is a generic function block for splitting an incoming adapter of type `AD` (unidirectional) into seven separate output adapters. It allows a single adapter signal to be forwarded in parallel to multiple downstream components without modifying or buffering the data. The function block is specifically designed for use in control engineering (e.g., agricultural machinery) and is licensed under the Eclipse Public License 2.0
+The function block **AD_SPLIT_7** is a generic function block for splitting an incoming adapter of type `AD` (unidirectional) into seven separate output adapters. It allows a single adapter signal to be forwarded in parallel to multiple downstream components without modifying or buffering the data. The function block is specifically designed for use in control engineering (e.g., agricultural machinery) and is licensed under the Eclipse Public License 2.0.
+
 ---
 
 ## Interface Structure
@@ -75,7 +76,7 @@ The function block has no states or state machines. Its behavior is purely combi
 ## Comparison with Similar Components
 
 | Component | Number of Outputs | Special Feature |
----------- | ----------------- | -------------- |
+| ---------- | ----------------- | -------------- |
 | `AD_SPLIT_2` | 2 | Simple 1:2 distribution |
 | `AD_SPLIT_4` | 4 | Typical for 4-channel systems |
 | **`AD_SPLIT_7`** | **7** | Extended distribution for seven parallel paths |

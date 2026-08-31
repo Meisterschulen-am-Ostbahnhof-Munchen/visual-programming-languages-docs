@@ -68,6 +68,8 @@ Der **AIS_SPLIT_9** besitzt keine internen Zustände oder Ablaufsteuerungen. Sei
 - **AIS_MERGE**: Im Gegensatz zum Split‑Baustein fasst ein Merge‑Baustein mehrere Eingänge zu einem Ausgang zusammen. **AIS_SPLIT_9** realisiert den umgekehrten Datenfluss.
 - **Direkte Kopplung**: Anstelle eines Split‑Bausteins könnte man auch eine manuelle Verdrahtung (mehrere OUT‑Adapter) in der 4diac‑IDE vornehmen. Der **AIS_SPLIT_9** vereinfacht jedoch die grafische Darstellung und reduziert die Komplexität des Netzwerks.
 
+- **[`AIS_SPLIT_9_UNGATED`](AIS_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

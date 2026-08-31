@@ -6,7 +6,7 @@
 
 ## Introduction
 
-The A2X_AND_2 function block computes the logical AND of two [A2X](../../../types/unidirectional/BOOL/A2X.md) adapters — separately for the UP and DOWN channels. Unlike the single-channel, generic `AX_AND` blocks, A2X_AND_2 is a hand-built composite function block that internally wires two standard `AND_BOOL_2` blocks, one per channel.
+The A2X_AND_2 function block computes the logical AND of two [A2X](../types/unidirectional/BOOL/A2X.md) adapters — separately for the UP and DOWN channels. Unlike the single-channel, generic `AX_AND` blocks, A2X_AND_2 is a hand-built composite function block that internally wires two standard `AND_BOOL_2` blocks, one per channel.
 
 ## Interface Structure
 

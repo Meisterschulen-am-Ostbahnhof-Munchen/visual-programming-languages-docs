@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der Funktionsblock A2X_AND_2 berechnet die logische UND-Verknüpfung zweier [A2X](../../../types/unidirectional/BOOL/A2X.md)-Adapter – getrennt für den UP- und den DOWN-Kanal. Im Gegensatz zu den einkanaligen, generischen `AX_AND`-Bausteinen ist A2X_AND_2 ein handgebauter Composite-Funktionsblock, der zwei Standard-Bausteine `AND_BOOL_2` intern verdrahtet, einen je Kanal.
+Der Funktionsblock A2X_AND_2 berechnet die logische UND-Verknüpfung zweier [A2X](../types/unidirectional/BOOL/A2X.md)-Adapter – getrennt für den UP- und den DOWN-Kanal. Im Gegensatz zu den einkanaligen, generischen `AX_AND`-Bausteinen ist A2X_AND_2 ein handgebauter Composite-Funktionsblock, der zwei Standard-Bausteine `AND_BOOL_2` intern verdrahtet, einen je Kanal.
 
 ## Schnittstellenstruktur
 

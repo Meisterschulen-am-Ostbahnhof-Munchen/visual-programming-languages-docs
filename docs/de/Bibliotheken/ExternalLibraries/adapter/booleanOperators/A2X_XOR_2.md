@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der Funktionsblock A2X_XOR_2 berechnet die logische EXKLUSIV-ODER-Verknüpfung zweier [A2X](../../../types/unidirectional/BOOL/A2X.md)-Adapter – getrennt für den UP- und den DOWN-Kanal. Wie [A2X_AND_2](A2X_AND_2.md) und [A2X_OR_2](A2X_OR_2.md) ist er ein handgebauter Composite-Funktionsblock, der zwei Standard-Bausteine `XOR_BOOL_2` intern verdrahtet, einen je Kanal.
+Der Funktionsblock A2X_XOR_2 berechnet die logische EXKLUSIV-ODER-Verknüpfung zweier [A2X](../types/unidirectional/BOOL/A2X.md)-Adapter – getrennt für den UP- und den DOWN-Kanal. Wie [A2X_AND_2](A2X_AND_2.md) und [A2X_OR_2](A2X_OR_2.md) ist er ein handgebauter Composite-Funktionsblock, der zwei Standard-Bausteine `XOR_BOOL_2` intern verdrahtet, einen je Kanal.
 
 ## Schnittstellenstruktur
 

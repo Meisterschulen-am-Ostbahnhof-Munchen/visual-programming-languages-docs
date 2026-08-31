@@ -6,7 +6,7 @@
 
 ## Introduction
 
-The A2X_OR_2 function block computes the logical OR of two [A2X](../../../types/unidirectional/BOOL/A2X.md) adapters — separately for the UP and DOWN channels. Like [A2X_AND_2](A2X_AND_2.md), it is a hand-built composite function block that internally wires two standard `OR_BOOL_2` blocks, one per channel.
+The A2X_OR_2 function block computes the logical OR of two [A2X](../types/unidirectional/BOOL/A2X.md) adapters — separately for the UP and DOWN channels. Like [A2X_AND_2](A2X_AND_2.md), it is a hand-built composite function block that internally wires two standard `OR_BOOL_2` blocks, one per channel.
 
 ## Interface Structure
 

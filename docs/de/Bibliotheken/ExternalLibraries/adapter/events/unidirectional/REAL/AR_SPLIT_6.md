@@ -64,6 +64,8 @@ Dieser FB enthält keine Zustandsmaschine. Er arbeitet datengetrieben und stellt
 - **Allgemeine Split-FBs:** Es existieren weitere Split-Bausteine für Datentypen (z.B. INT_SPLIT), die jedoch auf spezifische Datenformate ausgelegt sind. Dieser FB arbeitet ausschließlich auf Adapterebene und ist dadurch flexibler, wenn der Datenaustausch über Adapter erfolgt.
 - **Eigene Implementierung:** Alternativ könnte die Aufteilung auch durch manuelles Verkabeln mehrerer Adapterknoten erfolgen, was jedoch die Übersichtlichkeit und Wartbarkeit verschlechtert.
 
+- **[`AR_SPLIT_6_UNGATED`](AR_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

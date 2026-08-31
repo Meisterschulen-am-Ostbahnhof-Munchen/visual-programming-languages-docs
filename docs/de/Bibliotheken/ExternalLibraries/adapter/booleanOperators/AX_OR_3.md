@@ -71,6 +71,8 @@ Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_3 den Vorteil von drei Ein
 
 Vergleich mit [OR_3](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_3.md)
 
+- **[`AX_OR_3_UNGATED`](AX_OR_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## 🛠️ Zugehörige Übungen
 
 - [Uebung_002a5_AX](../../../../Uebungen/test_AX/Uebungen_doc/Uebung_002a5_AX.md)

@@ -78,6 +78,8 @@ Im Vergleich zu einem Standard-Subtraktionsbaustein (wie z.B. dem klassischen `S
 - **Weniger Verbindungslinien:** Daten und Ereignisse sind im `ADI`-Adapter gebündelt, was das Anwendungsdiagramm in 4diac übersichtlicher macht.
 - **Standardisierte Schnittstellen:** Erleichtert den Austausch von Berechnungs- und Verarbeitungsblöcken, da nur noch die Adapter verbunden werden müssen.
 
+- **[`ADI_SUB_2_UNGATED`](ADI_SUB_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

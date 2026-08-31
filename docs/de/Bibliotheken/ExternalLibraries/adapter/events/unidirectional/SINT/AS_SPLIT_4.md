@@ -65,6 +65,8 @@ Der FB besitzt keine Zustandsautomaten. Das Verhalten ist zeitlos und gleichblei
 - **AS_SPLIT_2:** Gleiche Funktionalität, aber nur zwei Ausgänge. `AS_SPLIT_4` erweitert dies auf vier.
 - **Ereignis-basierte Splitter (z. B. E_SPLIT):** Arbeiten mit Ereignis- und Dateneingängen/-ausgängen und verbreiten Ereignisse. `AS_SPLIT_4` operiert dagegen auf Adapterebene und leitet den gesamten Adaptervertrag (inkl. aller darin enthaltenen Ereignisse und Daten) weiter.
 
+- **[`AS_SPLIT_4_UNGATED`](AS_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

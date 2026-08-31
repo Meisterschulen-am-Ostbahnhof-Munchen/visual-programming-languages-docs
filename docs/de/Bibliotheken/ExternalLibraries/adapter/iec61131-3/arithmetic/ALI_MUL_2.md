@@ -64,6 +64,8 @@ Da es sich um einen rein datenfluss- und adapterbasierten Funktionsbaustein hand
 
 Im Vergleich zu klassischen mathematischen Bausteinen der IEC 61131-3 (wie z. B. einem Standard-`MUL`-Baustein mit diskreten `REQ` / `CNF` Events und separaten Datenleitungen) entfällt beim `ALI_MUL_2` das manuelle Verknüpfen von Event- und Datenpfaden. Dies verhindert Fehler bei der Event-Daten-Zuordnung und führt zu einem wesentlich aufgeräumteren und lesbareren Applikationsdiagramm in 4diac-ide.
 
+- **[`ALI_MUL_2_UNGATED`](ALI_MUL_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

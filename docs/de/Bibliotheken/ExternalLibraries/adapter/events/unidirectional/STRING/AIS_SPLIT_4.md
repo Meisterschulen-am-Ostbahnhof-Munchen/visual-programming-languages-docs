@@ -61,6 +61,8 @@ Der Baustein besitzt keine Zustandsmaschine – er arbeitet kontinuierlich und z
 - **Datenbasierte Splitter (z. B. SPLIT_INT):** Im Unterschied zu adapterbasierten Splittern arbeiten datenbasierte Splitter mit konkreten Datentypen (z. B. Ganzzahlen) und benötigen meist Ereignisse zur Auslösung. Der AIS_SPLIT_4 ist reiner Adapter-split und benötigt keine explizite Triggerung.
 - **Adapter-Multiplexer (z. B. AIS_MUX):** Ein Multiplexer wählt aus mehreren Eingängen einen aus, während der Splitter einen Eingang auf mehrere Ausgänge verteilt.
 
+- **[`AIS_SPLIT_4_UNGATED`](AIS_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

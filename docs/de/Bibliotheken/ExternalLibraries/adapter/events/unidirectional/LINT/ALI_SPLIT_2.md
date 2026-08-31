@@ -65,6 +65,8 @@ Da der Baustein keine Ereignis‑Eingänge/Ausgänge oder internen Zustände bes
 | **ALI_MERGE_2** | Fasst zwei ALI‑Eingänge zu einem ALI‑Ausgang zusammen. | Gegenteilige Funktion (Join). |
 | **ALI_FILTER** | Leitet nur bestimmte Daten/Ereignisse weiter. | Enthält Filterlogik. |
 
+- **[`ALI_SPLIT_2_UNGATED`](ALI_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

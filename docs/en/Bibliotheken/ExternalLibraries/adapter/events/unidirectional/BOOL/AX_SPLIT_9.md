@@ -63,6 +63,8 @@ Compared to simpler splitter blocks, AX_SPLIT_9 offers a higher number of output
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+- **[`AX_SPLIT_9_UNGATED`](AX_SPLIT_9_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.

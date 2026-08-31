@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="1280" height="187" viewBox="-540 -20 1280 187">
+
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+<defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+<path d="M 3 0
+            L 197 0
+            A 3 3 0 0 1 200 3
+            L 200 27
+            A 3 3 0 0 1 197 30
+            L 194 30
+            L 194 70
+            L 197 70
+            A 3 3 0 0 1 200 73
+            L 200 134
+            A 3 3 0 0 1 197 137
+            L 3 137
+            A 3 3 0 0 1 0 134
+            L 0 73
+            A 3 3 0 0 1 3 70
+            L 6 70
+            L 6 30
+            L 3 30
+            A 3 3 0 0 1 0 27
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z" fill="#FFFFFF"
+            stroke="#A0A0A0" stroke-width="1.5"
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+<path d="M 25.5 41.0
+            L 41.5 41.0
+            A 1 1 0 0 1 42.5 42.0
+            L 42.5 45.5
+            L 40.5 45.5
+            L 40.5 48.5
+            L 42.5 48.5
+            L 42.5 58.0
+            A 1 1 0 0 1 41.5 59.0
+            L 25.5 59.0
+            A 1 1 0 0 1 24.5 58.0
+            L 24.5 48.5
+            L 26.5 48.5
+            L 26.5 45.5
+            L 24.5 45.5
+            L 24.5 42.0
+            A 1 1 0 0 1 25.5 41.0
+            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
+<text x="33.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
+<text x="47.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AB_AND_2_UNGATED</text>
+<text x="100.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
+<path d="M -5.0 82.0
+            L 0.0 82.0
+            L 0.0 83.66666666666667
+            L 2.5 83.66666666666667
+            L 2.5 82.0
+            L 5.0 82.0
+            L 5.0 92.0
+            L 2.5 92.0
+            L 2.5 90.33333333333333
+            L 0.0 90.33333333333333
+            L 0.0 92.0
+            L -5.0 92.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="91" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN1</text>
+<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AB</text>
+<text x="-71" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">AND input 1</text>
+<path d="M -5.0 108.0
+            L 0.0 108.0
+            L 0.0 109.66666666666667
+            L 2.5 109.66666666666667
+            L 2.5 108.0
+            L 5.0 108.0
+            L 5.0 118.0
+            L 2.5 118.0
+            L 2.5 116.33333333333333
+            L 0.0 116.33333333333333
+            L 0.0 118.0
+            L -5.0 118.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1" />
+<text x="12" y="117" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN2</text>
+<text x="-15" y="116" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AB</text>
+<text x="-71" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">AND input 2</text>
+<path d="M 195.0 82.0
+            L 197.5 82.0
+            L 197.5 83.66666666666667
+            L 200.0 83.66666666666667
+            L 200.0 82.0
+            L 205.0 82.0
+            L 205.0 92.0
+            L 200.0 92.0
+            L 200.0 90.33333333333333
+            L 197.5 90.33333333333333
+            L 197.5 92.0
+            L 195.0 92.0
+            Z" fill="#845DAF" stroke="none" />
+<text x="188" y="91" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
+<text x="215" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AB</text>
+<text x="285" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">AND result</text>
+</svg>

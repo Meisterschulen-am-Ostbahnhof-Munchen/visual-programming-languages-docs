@@ -65,6 +65,8 @@ Der `AD_SPLIT_3` verfügt über kein eigenes Zustandsdiagramm (ECC). Die Ausgän
 - **AD_MERGE**: Führt mehrere Adapter-Eingänge zu einem Ausgang zusammen – funktionell das Gegenteil.
 - **Spezifische Daten-Splitter**: Bausteine wie `SPLIT_INT` oder `SPLIT_BOOL` arbeiten auf Daten-Ebene, nicht auf Adapter-Ebene. `AD_SPLIT_3` ist für vollständige Adapterstrukturen (Daten plus Ereignisse) gedacht.
 
+- **[`AD_SPLIT_3_UNGATED`](AD_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

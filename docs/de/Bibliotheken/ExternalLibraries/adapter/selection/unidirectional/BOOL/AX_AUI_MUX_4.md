@@ -70,6 +70,8 @@ Vergleich mit `AX_MUX_4` (gleiche Auswahllogik, Index jedoch klassisch über **R
 
 Vergleich mit [F_MUX_4](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_4.md), das dieselbe 4:1-Auswahl rein datenbasiert ohne Adapter/Ereigniskonzept ausführt.
 
+- **[`AX_AUI_MUX_4_UNGATED`](AX_AUI_MUX_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AX_AUI_MUX_4` überträgt die Multiplexer-Logik von `AX_MUX_4` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

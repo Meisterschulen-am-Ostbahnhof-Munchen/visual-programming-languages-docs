@@ -64,6 +64,8 @@ Der Funktionsblock besitzt keine explizite Zustandslogik oder Zustandsmaschine. 
 - **ALR_SPLIT_2, ALR_SPLIT_3, ALR_SPLIT_4:** Diese Bausteine teilen ein ALR-Signal auf zwei, drei bzw. vier Ausgänge auf. Der vorliegende FB erweitert dies auf fünf Ausgänge.
 - **Allgemeine Split-FBs (z.B. DATA_SPLIT):** Ähnliche Bausteine existieren für andere Datentypen. Die Funktionsweise ist identisch, lediglich der verwendete Adaptertyp unterscheidet sich. Der Vorteil des ALR_SPLIT_5 liegt in der direkten Nutzung des ALR-Adapterprotokolls ohne zusätzliche Typkonvertierung.
 
+- **[`ALR_SPLIT_5_UNGATED`](ALR_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

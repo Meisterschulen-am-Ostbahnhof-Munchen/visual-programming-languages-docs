@@ -60,6 +60,8 @@ Der Baustein besitzt kein explizites Zustandsdiagramm (ECC). Es handelt sich um 
 
 **AR_ADD_2 / AR_ADD_4 etc.:** Diese Bausteine unterscheiden sich lediglich in der Anzahl der Eingänge (zwei bzw. vier). `AR_ADD_3` ist speziell für die Addition von genau drei Werten optimiert. Der generische Ansatz erlaubt es, alle diese Varianten bei Bedarf durch Parametrisierung eines gemeinsamen Basistyps zu realisieren.
 
+- **[`AR_ADD_3_UNGATED`](AR_ADD_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

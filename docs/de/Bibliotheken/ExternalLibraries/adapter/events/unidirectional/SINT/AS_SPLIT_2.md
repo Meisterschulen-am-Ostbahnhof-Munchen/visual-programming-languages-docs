@@ -58,6 +58,8 @@ Der Baustein besitzt keine inneren Zustände oder sequentielle Logik. Er verhäl
 
 Im Gegensatz zu einem einfachen Verbindungsknoten (der nur eine 1:1-Leitung realisiert) ermöglicht `AS_SPLIT_2` eine saubere, konfigurierbare Aufteilung auf zwei Ausgänge. Gegenüber einem **AS_MUX** oder **AS_DEMUX** fehlen diesem Baustein Auswahl- oder Priorisierungslogik – er verteilt immer alle eingehenden Daten an alle Ausgänge. Ähnliche Blöcke wie `AS_SPLIT_3` oder `AS_SPLIT_N` erweitern die Anzahl der Ausgänge entsprechend.
 
+- **[`AS_SPLIT_2_UNGATED`](AS_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

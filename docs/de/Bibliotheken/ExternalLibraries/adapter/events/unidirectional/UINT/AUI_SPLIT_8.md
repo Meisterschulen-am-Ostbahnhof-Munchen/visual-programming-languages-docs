@@ -66,6 +66,8 @@ Der Baustein besitzt keine Zustände. Er verhält sich statisch und leitet immer
 - **`AUI_SPLIT_2`, `AUI_SPLIT_4`**: Gleiche Funktionalität mit geringerer Ausgangsanzahl.
 - **Ereignis-Splitter (z. B. `E_SPLIT`)**: Verteilen nur Ereignisse ohne die mitgeführten Daten eines Adapters. `AUI_SPLIT_8` hingegen repliziert den gesamten Adapter-Inhalt.
 
+- **[`AUI_SPLIT_8_UNGATED`](AUI_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

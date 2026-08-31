@@ -79,6 +79,8 @@ Aufgrund der rein datengetriebenen und ereignislosen Arbeitsweise besitzt der Ba
 
 Der Baustein **AR_ADD_4** hebt sich durch die reine Adapter-Kommunikation und die generische Auslegung von klassischen IEC 61499-Arithmetikbausteinen ab. Er eignet sich besonders für Systeme, die bereits auf Adapter-Technologie setzen und keine explizite Ereignissteuerung benötigen.
 
+- **[`AR_ADD_4_UNGATED`](AR_ADD_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

@@ -75,6 +75,8 @@ Der Baustein verhält sich im Wesentlichen zustandslos (analogen Charakter aufwe
 
 Im Vergleich zum Standard-IEC-61131-3-Baustein `MUL` entfällt beim `AI_MUL_2` die manuelle Verdrahtung von Trigger-Ereignissen (wie `REQ` und `CNF`) sowie der einzelnen Daten-Pins. Während ein klassischer `MUL`-Baustein für jede Verbindung separate Linien für Daten und Events benötigt, bündelt der `AI_MUL_2` diese über die `AI`-Adapter. Dies eignet sich besonders für fortgeschrittene, objektorientierte oder modularisierte Softwarearchitekturen in 4diac.
 
+- **[`AI_MUL_2_UNGATED`](AI_MUL_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

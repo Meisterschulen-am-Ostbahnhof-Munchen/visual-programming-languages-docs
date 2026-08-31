@@ -60,6 +60,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten (ECC), da er keinerlei 
 - **Adapter-Multiplexer (z. B. AIS_MERGE)** – Während ein Splitter einen Eingang auf mehrere Ausgänge verteilt, fasst ein Merger mehrere Eingänge zu einem Ausgang zusammen. Der AIS_SPLIT_7 ist das Gegenstück dazu.
 - **Event-Splitter** – Unterscheiden sich durch die Verarbeitung von Ereignissen; der AIS_SPLIT_7 arbeitet hingegen rein adapterbasiert ohne separate Ereigniskanäle.
 
+- **[`AIS_SPLIT_7_UNGATED`](AIS_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

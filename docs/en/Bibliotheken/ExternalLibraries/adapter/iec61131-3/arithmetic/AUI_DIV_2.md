@@ -11,27 +11,27 @@
 
 * * * * * * * * * *
 
+## Introduction
+
 The function block `AUI_DIV_2` is a generic function block for performing an arithmetic division of two input values. The block uses an adapter-based concept, where data and event streams are bundled in unidirectional adapters. This enables clean, modularized, and clear modeling within IEC 61499 applications in 4diac.
-
-*No direct event inputs are defined. Event control is implicit via the adapter interfaces.*
-
-*No direct event outputs are defined. Event control is implicit via the adapter interfaces.*
-
-*No direct data inputs are defined. Data is transferred via the input adapters.*
-
-*No direct data outputs are defined. Data is transferred via the output adapter.*
-
-### Data Outputs
-
-### Data Inputs
-
-### Event Outputs
-
-### Event Inputs
 
 ## Interface Structure
 
-## Introduction
+### Event Inputs
+
+*No direct event inputs are defined. Event control is implicit via the adapter interfaces.*
+
+### Event Outputs
+
+*No direct event outputs are defined. Event control is implicit via the adapter interfaces.*
+
+### Data Inputs
+
+*No direct data inputs are defined. Data is transferred via the input adapters.*
+
+### Data Outputs
+
+*No direct data outputs are defined. Data is transferred via the output adapter.*
 
 ### **Adapters**
 

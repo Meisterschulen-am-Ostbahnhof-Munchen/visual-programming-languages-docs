@@ -66,6 +66,8 @@ Da der Funktionsblock über keinen Zustandsautomaten (ECC – Execution Control 
 - **AIWS_SPLIT_2, AIWS_SPLIT_4** – Bausteine mit gleicher Funktionalität, jedoch unterschiedlicher Anzahl an Ausgängen (2 bzw. 4). AIWS_SPLIT_7 bietet die maximale Anzahl an Ausgängen im Rahmen dieser Splitter-Familie.
 - **Generische 1:N-Splitter** – In anderen IEC 61499-Bibliotheken existieren oft generische Splitter für Datentypen wie `ANY`. AIWS_SPLIT_7 ist speziell für den Adaptertyp `AIWS` ausgelegt und benötigt daher keine Typkonvertierung.
 
+- **[`AIWS_SPLIT_7_UNGATED`](AIWS_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

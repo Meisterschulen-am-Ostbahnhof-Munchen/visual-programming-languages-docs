@@ -64,6 +64,8 @@ Da keine Zustandsmaschine (ECC) vorhanden ist, besitzt der Baustein keine intern
 
 Die 4diac-Bibliothek enthält Splitter-Bausteine für verschiedene Ausgangszahlen, z.B. `AULI_SPLIT_3` oder `AULI_SPLIT_5`. Der `AULI_SPLIT_7` unterscheidet sich lediglich durch die Anzahl der Ausgänge (7). Bausteine zur Aufteilung anderer Adaptertypen (z.B. `BOOL_SPLIT`, `INT_SPLIT`) haben eine ähnliche Logik, arbeiten jedoch mit unterschiedlichen Daten- bzw. Adapterformaten.
 
+- **[`AULI_SPLIT_7_UNGATED`](AULI_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

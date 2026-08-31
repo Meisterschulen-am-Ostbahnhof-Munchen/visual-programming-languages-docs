@@ -63,6 +63,8 @@ Der FB besitzt keine Zustandsmaschine (kein ECC) und daher keinen definierten Zu
 - **AL_SPLIT_2, AL_SPLIT_4** … **AL_SPLIT_N**: Diese Bausteine unterscheiden sich lediglich in der Anzahl der Ausgangskanäle. Die Funktionsweise ist identisch – eine einfache 1:N‑Aufteilung.
 - **Andere Split‑Bausteine mit Ereignissen oder Daten:** Im Unterschied zu diesen besitzt **AL_SPLIT_6** keine Daten‑ oder Ereignisschnittstellen, sondern arbeitet rein über Adapter. Das vereinfacht die Konfiguration, schränkt aber die Typvielfalt ein.
 
+- **[`AL_SPLIT_6_UNGATED`](AL_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

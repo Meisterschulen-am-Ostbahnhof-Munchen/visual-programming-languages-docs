@@ -61,6 +61,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Das Verhalten ist dete
 
 Im Gegensatz zu Bausteinen wie `AUDI_MERGE_5` (zusammenführen mehrerer Signale) oder `AUDI_SPLIT_2` (nur zwei Ausgänge) bietet `AUDI_SPLIT_5` eine spezifische Aufteilung auf genau fünf Ausgänge. Generische Split‑Bausteine für andere Anzahlen (z. B. `AUDI_SPLIT_N`) existieren oft als Template, während dieser FB eine feste, aber häufig benötigte Konfiguration abdeckt.
 
+- **[`AUDI_SPLIT_5_UNGATED`](AUDI_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

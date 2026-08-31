@@ -69,6 +69,8 @@ Compare with `AUS_DEMUX_3` (same distribution logic, but the index arrives throu
 
 Compare with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), which demultiplexes purely on events without any adapter concept.
 
+- **[`AUS_AUI_DEMUX_3_UNGATED`](AUS_AUI_DEMUX_3_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Conclusion
 
 `AUS_AUI_DEMUX_3` carries the demultiplexer logic of the `AUS_DEMUX_3` family over to a purely adapter-based index supply. This makes it the right choice whenever the selection index is already available as an `AUI` adapter from another block and no additional event/data wiring for the index is wanted.

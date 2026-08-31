@@ -62,6 +62,8 @@ Der FB besitzt keine Zustandsmaschine (keine ECC-Elemente in der XML). Das Verha
 - **MUL_3:** Multipliziert drei Werte – im Gegensatz zur Addition.
 Alle genannten Bausteine verwenden das gleiche Adapter-Konzept und sind generisch.
 
+- **[`AUDI_ADD_3_UNGATED`](AUDI_ADD_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

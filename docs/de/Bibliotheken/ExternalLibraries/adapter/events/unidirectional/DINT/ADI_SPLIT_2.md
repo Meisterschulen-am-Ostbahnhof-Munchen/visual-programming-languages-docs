@@ -40,8 +40,8 @@ Der Baustein leitet den über den Socket `IN` empfangenen ADI‑Adapter ohne Än
 
 ## Technische Besonderheiten
 
-- **Generischer Baustein:** Der FB ist als generischer Typ (`GEN_ADI_SPLIT`) deklariert und kann in unterschiedlichen ADI‑Umgebungen wiederverwendet werden.  
-- **Kein Zustandsautomat:** Aufgrund der reinen Signalweiterleitung besitzt der FB keinen eigenen Zustandsautomaten (ECC).  
+- **Generischer Baustein:** Der FB ist als generischer Typ (`GEN_ADI_SPLIT`) deklariert und kann in unterschiedlichen ADI‑Umgebungen wiederverwendet werden.
+- **Kein Zustandsautomat:** Aufgrund der reinen Signalweiterleitung besitzt der FB keinen eigenen Zustandsautomaten (ECC).
 - **Adapter‑basiert:** Der gesamte Datenaustausch erfolgt ausschließlich über Adapter, nicht über einzelne Daten- oder Ereignis-Ports.
 
 ## Zustandsübersicht
@@ -50,14 +50,16 @@ Dieser Funktionsblock besitzt keinen internen Zustandsautomaten. Die Weiterleitu
 
 ## Anwendungsszenarien
 
-- **Signalvervielfältigung:** Wenn ein von einem Sensor oder einer Steuerung gelieferter ADI‑Adapter an mehrere nachfolgende Funktionseinheiten (z. B. zur Anzeige, Protokollierung oder parallelen Verarbeitung) verteilt werden soll.  
-- **Architekturentkopplung:** In Systemen, in denen ein Ausgangssignal mehrfach benötigt wird, ohne dass der Quellbaustein die Anzahl der Senken kennen muss.  
+- **Signalvervielfältigung:** Wenn ein von einem Sensor oder einer Steuerung gelieferter ADI‑Adapter an mehrere nachfolgende Funktionseinheiten (z. B. zur Anzeige, Protokollierung oder parallelen Verarbeitung) verteilt werden soll.
+- **Architekturentkopplung:** In Systemen, in denen ein Ausgangssignal mehrfach benötigt wird, ohne dass der Quellbaustein die Anzahl der Senken kennen muss.
 - **Prototypen und Testaufbauten:** Schnelle Erweiterung einer bestehenden Adapter‑Verschaltung um einen zweiten Abzweig.
 
 ## Vergleich mit ähnlichen Bausteinen
 
-- **Ereignis‑/Daten‑Splitter:** Konventionelle Splitter-FBs (z. B. `SPLIT` für `BOOL`) arbeiten auf einzelnen Daten‑ und Ereignis‑Kanälen. `ADI_SPLIT_2` hingegen kopiert einen gesamten Adapter inklusive aller enthaltenen Daten und Ereignisse.  
+- **Ereignis‑/Daten‑Splitter:** Konventionelle Splitter-FBs (z. B. `SPLIT` für `BOOL`) arbeiten auf einzelnen Daten‑ und Ereignis‑Kanälen. `ADI_SPLIT_2` hingegen kopiert einen gesamten Adapter inklusive aller enthaltenen Daten und Ereignisse.
 - **Mux/Demux‑Bausteine:** Multiplexer und Demultiplexer führen eine Zusammenführung oder Verteilung mit Auswahl durch; `ADI_SPLIT_2` verteilt starr und ohne Selektion.
+
+- **[`ADI_SPLIT_2_UNGATED`](ADI_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

@@ -57,6 +57,8 @@ The function block does not contain an internal state machine. There are no dist
 
 The 4diac IDE often includes blocks such as `SPLIT_2`, `SPLIT_4`, or generic split blocks for event/data lines. `AULI_SPLIT_8` specializes in this for the AULI adapter and offers a compact 1:8 distribution without additional data type conversion. Compared to manually chaining simpler split blocks, it reduces wiring complexity and improves clarity.
 
+- **[`AULI_SPLIT_8_UNGATED`](AULI_SPLIT_8_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.

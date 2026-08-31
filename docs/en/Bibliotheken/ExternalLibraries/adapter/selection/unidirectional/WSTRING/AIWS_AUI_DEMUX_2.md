@@ -68,6 +68,8 @@ Compare with `AIWS_DEMUX_2` (same distribution logic, but the index arrives thro
 
 Compare with [E_DEMUX](../../../../../StandardLibraries/events/E_DEMUX.md), which demultiplexes purely on events without any adapter concept.
 
+- **[`AIWS_AUI_DEMUX_2_UNGATED`](AIWS_AUI_DEMUX_2_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Conclusion
 
 `AIWS_AUI_DEMUX_2` carries the demultiplexer logic of the `AIWS_DEMUX_2` family over to a purely adapter-based index supply. This makes it the right choice whenever the selection index is already available as an `AUI` adapter from another block and no additional event/data wiring for the index is wanted.

@@ -46,10 +46,10 @@ Der generische Charakter des Bausteins (erkennbar am Attribut `GenericClassName 
 
 ## Technische Besonderheiten
 
-- **Lizenz**: Der Quellcode unterliegt der **Eclipse Public License 2.0** (EPL-2.0).  
-- **Urheber**: Entwickelt von **HR Agrartechnik GmbH**, Version 1.0 vom 24.01.2025.  
-- **Generische Implementierung**: Der Baustein ist als generischer FB deklariert (`GenericClassName` = `'GEN_AUS_SPLIT'`), was eine einfache Anpassung an verschiedene Signaltypen oder Konfigurationen ermöglicht.  
-- **Adapterbasiert**: Die Kommunikation erfolgt ausschließlich über Adapter, nicht über klassische Ereignis- oder Datenports. Dadurch kann der Baustein in einer adapterbasierten Architektur nahtlos integriert werden.  
+- **Lizenz**: Der Quellcode unterliegt der **Eclipse Public License 2.0** (EPL-2.0).
+- **Urheber**: Entwickelt von **HR Agrartechnik GmbH**, Version 1.0 vom 24.01.2025.
+- **Generische Implementierung**: Der Baustein ist als generischer FB deklariert (`GenericClassName` = `'GEN_AUS_SPLIT'`), was eine einfache Anpassung an verschiedene Signaltypen oder Konfigurationen ermöglicht.
+- **Adapterbasiert**: Die Kommunikation erfolgt ausschließlich über Adapter, nicht über klassische Ereignis- oder Datenports. Dadurch kann der Baustein in einer adapterbasierten Architektur nahtlos integriert werden.
 - **Keine Zustandsmaschine**: Es existiert keine interne Zustandslogik – die Verteilung ist rein kombinatorisch.
 
 ## Zustandsübersicht
@@ -58,9 +58,9 @@ Der Baustein besitzt keine Zustandsmaschine. Die Ausgangssignale folgen direkt d
 
 ## Anwendungsszenarien
 
-- **Rückkopplung von AUS-Signalen**: Ein zentrales „Aus“-Kommando einer Steuerung soll gleichzeitig mehrere Aktoren oder Subsysteme abschalten.  
-- **Redundante Überwachung**: Verteilen eines AUS-Signals an mehrere Überwachungseinheiten, die unabhängig voneinander auf den Befehl reagieren müssen.  
-- **Modulare Maschinenstruktur**: In einer modularen Anlage wird ein einmal erfasstes AUS-Signal über Busse oder Koppelelemente zu mehreren Modulen geführt. `AUS_SPLIT_4` ersetzt aufwändige Verdrahtung oder logische ODER-Verknüpfungen.  
+- **Rückkopplung von AUS-Signalen**: Ein zentrales „Aus“-Kommando einer Steuerung soll gleichzeitig mehrere Aktoren oder Subsysteme abschalten.
+- **Redundante Überwachung**: Verteilen eines AUS-Signals an mehrere Überwachungseinheiten, die unabhängig voneinander auf den Befehl reagieren müssen.
+- **Modulare Maschinenstruktur**: In einer modularen Anlage wird ein einmal erfasstes AUS-Signal über Busse oder Koppelelemente zu mehreren Modulen geführt. `AUS_SPLIT_4` ersetzt aufwändige Verdrahtung oder logische ODER-Verknüpfungen.
 - **Test und Simulation**: Zum gleichzeitigen Ansteuern mehrerer simulierter Komponenten mit demselben Signal.
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -73,6 +73,8 @@ Der Baustein besitzt keine Zustandsmaschine. Die Ausgangssignale folgen direkt d
 | `AUS_MERGE` | Fasst mehrere AUS-Eingänge zu einem Ausgang zusammen | Gegenstück zum Splitter. |
 
 Der `AUS_SPLIT_4` liegt in der Mitte zwischen einem einfachen 2‑fach-Splitter und einem vollparametrierbaren Splitter. Er ist ideal, wenn exakt vier Ausgänge benötigt werden – ohne zusätzliche Konfiguration.
+
+- **[`AUS_SPLIT_4_UNGATED`](AUS_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
 
 ## Änderungserkennung
 

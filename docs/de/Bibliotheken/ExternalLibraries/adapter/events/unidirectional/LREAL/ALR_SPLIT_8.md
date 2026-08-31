@@ -64,6 +64,8 @@ Der FB besitzt keine Ereignisse und keinen internen Zustandsautomaten. Die Ausf�
 
 Andere Splitter-FBs (z. B. SPLIT_4 oder SPLIT_16) unterscheiden sich lediglich in der Anzahl der Ausgänge. Der ALR_SPLIT_8 ist speziell für den ALR-Adaptertyp ausgelegt, während generische Splitter (z. B. ANY_SPLIT) für beliebige Datentypen verwendet werden können. Der vorliegende Baustein bietet eine optimierte, typsichere Lösung für ALR-Verteilanwendungen.
 
+- **[`ALR_SPLIT_8_UNGATED`](ALR_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

@@ -70,6 +70,8 @@ Der Baustein besitzt keine Zustandsmaschine. Es gibt keine internen Zustände od
 
 Gemeinsam ist allen Split-Bausteinen die unveränderte Weitergabe des Signals; sie unterscheiden sich nur in der Anzahl der Ausgänge.
 
+- **[`AIWS_SPLIT_8_UNGATED`](AIWS_SPLIT_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

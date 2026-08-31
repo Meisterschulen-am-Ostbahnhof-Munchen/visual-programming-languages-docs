@@ -56,6 +56,8 @@ Der Baustein besitzt keine expliziten Zustände, da er keine sequentielle oder e
 - **AI_SPLIT_N:** Bausteine wie `AI_SPLIT_2` oder `AI_SPLIT_3` unterscheiden sich nur in der Anzahl der Ausgangsadapter. `AI_SPLIT_7` bietet die maximale Verteilung auf sieben Kanäle.
 - **Andere Splitter:** Im Gegensatz zu ereignisgesteuerten Splittern (z. B. `E_SPLIT`) arbeitet dieser FB rein analog ohne Triggerung durch Ereignisse. Er ist für kontinuierliche analoge Signale optimiert.
 
+- **[`AI_SPLIT_7_UNGATED`](AI_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

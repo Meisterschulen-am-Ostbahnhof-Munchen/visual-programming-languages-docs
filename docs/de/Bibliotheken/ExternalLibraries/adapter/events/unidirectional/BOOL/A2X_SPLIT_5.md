@@ -63,6 +63,8 @@ Der Baustein besitzt keine internen Zustände oder Zustandsautomaten. Er arbeite
 - **A2X_MERGE:** Während der Splitter einen Eingang auf viele Ausgänge verteilt, fasst der Merge-Baustein mehrere A2X-Eingänge zu einem Ausgang zusammen.
 - **Datensplitter (z. B. SPLIT_INT):** Letztere arbeiten auf Daten-Ebene (z. B. ganze Zahlen) und nicht auf Adapterebene. Der hier beschriebene Baustein operiert auf der Adapterebene, was eine strukturelle Entkopplung ermöglicht.
 
+- **[`A2X_SPLIT_5_UNGATED`](A2X_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `A2X_SPLIT_5` ist ein einfacher, aber nützlicher Adapter-Splitter für A2X-Schnittstellen. Durch seine generische Natur und die reine Adapter-Kommunikation fügt er sich nahtlos in IEC 61499‑basierte Steuerungssysteme ein. Er eignet sich besonders für Anwendungen, bei denen ein A2X-Signal auf mehrere Pfade verteilt werden muss, ohne zusätzliche Logik oder Zustände zu erfordern.

@@ -61,6 +61,8 @@ Der Baustein besitzt keine Zustandsmaschine (ECC) und führt keine aktiven Opera
 - **AI_SPLIT_2 / AI_SPLIT_4**: Diese Bausteine teilen einen AI‑Eingang auf zwei bzw. vier Ausgänge. **AI_SPLIT_6** stellt die Variante mit sechs Ausgängen dar. Alle Splitter haben identische Funktionsweise und unterscheiden sich nur in der Anzahl der Ausgangsadapter.
 - **AI_DUPLICATE (hypothetisch)**: Ein Baustein, der den Wert zu Kopierzwecken dupliziert, jedoch meist mit Datenports arbeitet. AI_SPLIT_6 nutzt dagegen ausschließlich Adapter, was die direkte Kopplung ohne zusätzliche Ereignissteuerung erlaubt.
 
+- **[`AI_SPLIT_6_UNGATED`](AI_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

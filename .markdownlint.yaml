@@ -18,3 +18,19 @@ fenced-code-language: false
 # Falsche Verschachtelung (z.B. # gefolgt von ### ohne ##) erkennt stattdessen
 # MD001/heading-increment, das über "default: true" aktiv bleibt.
 MD043: false
+
+# MD060/table-column-style and MD035/hr-style are pure layout/whitespace
+# conventions (pipe alignment in tables, horizontal-rule character choice)
+# with no effect on rendering - same "noise without content value" category
+# as the whitespace/layout rules already disabled above. Found to fire
+# thousands of times across the pre-existing docs when adding the UNGATED
+# adapter FB family docs.
+MD060: false
+MD035: false
+
+# MD036/no-emphasis-as-heading fires on the many italic "(no image
+# available)"/"(Bild nicht verfügbar)" placeholder captions used throughout
+# the docs (dozens of distinct wordings, DE and EN, for missing FB/exercise/
+# datatype images) - these are intentional inline captions, not headings
+# masquerading as emphasis, so the rule is pure noise here.
+MD036: false

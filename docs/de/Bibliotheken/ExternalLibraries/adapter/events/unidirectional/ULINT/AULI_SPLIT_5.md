@@ -70,6 +70,8 @@ Der FB besitzt **keinen internen Zustandsautomaten**. Es existieren keine Zustä
 
 Der `AULI_SPLIT_5` ist im Gegensatz zu ereignisbasierten Splittern **ereignislos** und rein adapterbasiert. Er lässt sich daher besonders in Datenflusssystemen ohne Taktsignal einsetzen.
 
+- **[`AULI_SPLIT_5_UNGATED`](AULI_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

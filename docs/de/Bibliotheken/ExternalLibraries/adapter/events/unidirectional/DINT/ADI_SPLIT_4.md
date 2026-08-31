@@ -64,6 +64,8 @@ Der Funktionsblock besitzt keine explizite Zustandsmaschine (ECC). Da er ausschl
 - **ADI_MERGE** – Führt mehrere ADI-Eingänge zu einem Ausgang zusammen (Gegenstück zum Splitter).
 - **Manuelle Verdrahtung** – Alternativ könnte die Verteilung auch durch mehrfaches Anschließen des gleichen Ausgangs erfolgen, jedoch ist der Splitter in der 4diac-IDE die sauberere und wiederverwendbare Lösung.
 
+- **[`ADI_SPLIT_4_UNGATED`](ADI_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

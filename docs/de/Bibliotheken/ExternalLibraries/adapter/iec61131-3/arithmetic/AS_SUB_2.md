@@ -74,6 +74,8 @@ Die Ausführungslogik wird typischerweise durch Ereignisse auf den Eingangs-Adap
 
 Im Vergleich zu einem Standard-Subtraktionsbaustein (z. B. `SUB` aus der IEC 61131-3-Bibliothek), der mit expliziten Eingängen wie `REQ`, `IN1` und `IN2` arbeitet, bietet der `AS_SUB_2` durch die Kapselung in Adaptern eine wesentlich höhere Modularität. Er eignet sich besonders für fortgeschrittene Softwarearchitekturen in IEC 61499, bei denen Daten- und Signalflüsse als logische Einheiten (Schnittstellen) zusammengefasst werden sollen.
 
+- **[`AS_SUB_2_UNGATED`](AS_SUB_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

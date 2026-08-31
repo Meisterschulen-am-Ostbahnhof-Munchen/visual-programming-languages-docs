@@ -68,6 +68,8 @@ Vergleich mit `AB_MUX_2` (gleiche Auswahllogik, Index jedoch klassisch über **R
 
 Vergleich mit [F_MUX_2](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_2.md), das dieselbe 2:1-Auswahl rein datenbasiert ohne Adapter/Ereigniskonzept ausführt.
 
+- **[`AB_AUI_MUX_2_UNGATED`](AB_AUI_MUX_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AB_AUI_MUX_2` überträgt die Multiplexer-Logik von `AB_MUX_2` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

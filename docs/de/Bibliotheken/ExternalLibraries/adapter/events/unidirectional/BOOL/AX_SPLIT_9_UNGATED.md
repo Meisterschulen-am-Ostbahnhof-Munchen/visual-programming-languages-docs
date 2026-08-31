@@ -1,0 +1,79 @@
+# AX_SPLIT_9_UNGATED
+
+> ℹ️ **UNGATED-Variante:** Dieser Baustein ist die ungegatete Version von [`AX_SPLIT_9`](AX_SPLIT_9.md). Er unterdrückt **keine** unveränderten Wiederholungen – jedes neu berechnete Ergebnis wird bedingungslos weitergegeben, auch ohne Wertänderung. Das ist wichtig für Verbraucher, die eine periodische Kadenz unabhängig von Wertänderung brauchen (z. B. Ableitungs-/Frequenzberechnungen, die sonst nicht gegen Null abklingen). Alle Angaben zu Änderungserkennung/Change-Gating weiter unten auf dieser Seite gelten **nicht** für diesen Baustein.
+
+<img width="618" height="438" alt="image" src="https://github.com/user-attachments/assets/12cd00f4-dd8c-4d77-8da8-187b2aef4a83" />
+
+* * * * * * * * * *
+
+## Einleitung
+
+Der AX_SPLIT_9_UNGATED Funktionsblock ist ein generischer Baustein, der einen einzelnen AX-Adapter auf neun separate AX-Ausgänge aufteilt. Der Block dient als Verteiler für unidirektionale Adapterverbindungen und ermöglicht die Verteilung eines Eingangssignals auf multiple Ausgangskanäle.
+
+![AX_SPLIT_9_UNGATED](AX_SPLIT_9_UNGATED.svg)
+
+## Schnittstellenstruktur
+
+### **Ereignis-Eingänge**
+
+*Keine direkten Ereigniseingänge vorhanden*
+
+### **Ereignis-Ausgänge**
+
+*Keine direkten Ereignisausgänge vorhanden*
+
+### **Daten-Eingänge**
+
+*Keine direkten Dateneingänge vorhanden*
+
+### **Daten-Ausgänge**
+
+*Keine direkten Datenausgänge vorhanden*
+
+### **Adapter**
+
+**Eingangsadapter:**
+
+- `IN` - Unidirektionaler AX-Adapter (Socket)
+
+**Ausgangsadapter:**
+
+- `OUT1` bis `OUT9` - Neun unidirektionale AX-Adapter (Plugs)
+
+## Funktionsweise
+
+Der AX_SPLIT_9_UNGATED Block fungiert als Adapter-Splitter, der eingehende Signale und Daten vom Eingangsadapter `IN` parallel auf alle neun Ausgangsadapter (`OUT1` bis `OUT9`) verteilt. Jeder Ausgang erhält dabei eine identische Kopie des Eingangssignals.
+
+## Technische Besonderheiten
+
+- Generische Implementierung für maximale Wiederverwendbarkeit
+- Unidirektionale Adapterarchitektur
+- Parallele Signalverteilung ohne Verzögerung
+- Keine Datenverarbeitung oder -modifikation
+
+## Zustandsübersicht
+
+Der Funktionsblock besitzt einen einfachen Zustand: Bei Aktivierung des Eingangsadapters werden alle neun Ausgangsadapter gleichzeitig aktiviert.
+
+## Anwendungsszenarien
+
+- Verteilung von Steuersignalen auf multiple Aktoren
+- Aufteilung von Sensorwerten auf verschiedene Verarbeitungseinheiten
+- Signalverteilung in komplexen Steuerungssystemen
+- Redundante Signalweiterleitung
+
+## ⚖️ Vergleich mit ähnlichen Bausteinen
+
+Im Vergleich zu einfacheren Splitter-Blöcken bietet AX_SPLIT_9_UNGATED eine höhere Anzahl an Ausgängen (9 statt typischerweise 2-4). Gegenüber seriellen Verteilern ermöglicht er eine gleichzeitige Aktivierung aller Ausgänge ohne sequentielle Verzögerung.
+
+Vergleich mit [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
+
+- **[`AX_SPLIT_9`](AX_SPLIT_9.md)**: Die gegatete Variante – aktualisiert den Ausgang nur bei tatsächlicher Wertänderung.
+
+## Änderungserkennung
+
+Dieser Baustein führt **keine** Änderungserkennung durch. Jedes neu berechnete Ergebnis wird bedingungslos auf den Ausgang geschrieben und das zugehörige Adapter-Event gesendet, unabhängig davon, ob sich der Wert gegenüber dem vorherigen Durchlauf geändert hat.
+
+## Fazit
+
+Der AX_SPLIT_9_UNGATED Funktionsblock stellt eine effiziente Lösung für die parallele Verteilung unidirektionaler Adaptersignale dar. Seine generische Natur und die hohe Anzahl an Ausgängen machen ihn besonders geeignet für komplexe Steuerungsanwendungen, bei denen ein Signal an multiple Empfänger verteilt werden muss.

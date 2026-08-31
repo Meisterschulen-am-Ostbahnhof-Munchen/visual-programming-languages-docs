@@ -69,6 +69,8 @@ Since this is a combinational logic block, AD_XOR_7 has no internal states. The 
 
 Unlike `AX_XOR_7`, which combines individual Boolean truth values, `AD_XOR_7` operates on the full bit pattern of a `DWORD` value. Compared to the standard block [XOR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/XOR_2.md), `AD_XOR_7` uses adapter-based interfaces instead of direct data/event inputs/outputs, enabling more flexible integration into adapter-based system architectures.
 
+- **[`AD_XOR_7_UNGATED`](AD_XOR_7_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.

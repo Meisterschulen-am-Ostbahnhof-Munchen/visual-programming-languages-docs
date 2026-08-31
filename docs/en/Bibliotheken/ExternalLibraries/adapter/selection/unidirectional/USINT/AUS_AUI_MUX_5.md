@@ -71,6 +71,8 @@ Compare with `AUS_MUX_5` (same selection logic, but the index arrives through a 
 
 No purely data-based `F_MUX` counterpart exists for this input count in the `iec61131-3` library.
 
+- **[`AUS_AUI_MUX_5_UNGATED`](AUS_AUI_MUX_5_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Conclusion
 
 `AUS_AUI_MUX_5` carries the multiplexer logic of the `AUS_MUX_5` family over to a purely adapter-based index supply. This makes it the right choice whenever the selection index is already available as an `AUI` adapter from another block and no additional event/data wiring for the index is wanted.

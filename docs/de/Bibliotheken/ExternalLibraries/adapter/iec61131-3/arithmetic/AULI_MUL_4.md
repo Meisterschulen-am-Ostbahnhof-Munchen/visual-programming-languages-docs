@@ -71,6 +71,8 @@ Der Funktionsbaustein verhält sich im Wesentlichen zustandslos (*stateless*). D
 -   **Standard-MUL-Baustein (IEC 61131-3 / IEC 61499):** Standard-Multiplizierer besitzen meist dedizierte Pins wie `REQ`, `CNF` sowie klassische Daten-Eingänge (z. B. `IN1`, `IN2`). `AULI_MUL_4` vereinfacht das Schnittstellendesign durch die Nutzung von Adaptern erheblich.
 -   **Kaskadierte 2-fach Multiplizierer:** Um vier Werte mit Standardbausteinen zu multiplizieren, müssten drei herkömmliche `MUL`-Bausteine kaskadiert werden. `AULI_MUL_4` bündelt diese Logik in einem einzigen Baustein, was Ressourcen spart und die Übersichtlichkeit erhöht.
 
+- **[`AULI_MUL_4_UNGATED`](AULI_MUL_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

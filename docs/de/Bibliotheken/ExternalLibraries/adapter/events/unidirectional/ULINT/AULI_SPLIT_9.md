@@ -62,6 +62,8 @@ Der Baustein besitzt keinen expliziten Zustandsautomaten. Er befindet sich stets
 - **AULI_SPLIT_4 / AULI_SPLIT_8**: Diese Varianten unterscheiden sich lediglich in der Anzahl der Ausgangskanäle. Der hier beschriebene Baustein bietet mit 9 Ausgängen eine besonders hohe Verteilungsdichte.
 - **Generische Splitter‑FBs für andere Adaptertypen**: Prinzipiell existieren analoge Splitter für z. B. `AULI`-Adapter mit geringerer Ausgangszahl. Allen gemeinsam ist die zustandslose 1:n‑Vervielfältigung.
 
+- **[`AULI_SPLIT_9_UNGATED`](AULI_SPLIT_9_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

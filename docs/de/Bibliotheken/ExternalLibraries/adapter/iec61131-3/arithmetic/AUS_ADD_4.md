@@ -78,6 +78,8 @@ Der Baustein verhält sich wie ein kombinatorisches Glied (bzw. ein zustandslose
 
 Im Vergleich zu einem Standard-Addierer (z. B. dem klassischen `ADD`-Baustein aus der IEC 61131-3-Bibliothek), der direkt mit elementaren Datentypen (wie `REAL` oder `INT`) arbeitet, setzt `AUS_ADD_4` vollständig auf Adapter-Kopplung. Dies spart Zeit bei der Instanziierung und Verdrahtung, setzt jedoch voraus, dass die Quell- und Zielsignale im Adaptertyp `AUS` gekapselt vorliegen.
 
+- **[`AUS_ADD_4_UNGATED`](AUS_ADD_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

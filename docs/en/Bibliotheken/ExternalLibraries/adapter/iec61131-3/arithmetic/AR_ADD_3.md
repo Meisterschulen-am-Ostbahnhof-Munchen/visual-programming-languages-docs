@@ -60,6 +60,8 @@ The block does not have an explicit state diagram (ECC). It is a purely combinat
 
 **AR_ADD_2 / AR_ADD_4 etc.:** These blocks differ only in the number of inputs (two or four). `AR_ADD_3` is specifically optimized for adding exactly three values. The generic approach allows all these variants to be implemented, if needed, by parameterizing a common base type.
 
+- **[`AR_ADD_3_UNGATED`](AR_ADD_3_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 The result is only written to the output plug (`OUT`) and its adapter event only sent if the newly computed value differs from the value currently held on `OUT`. If the result is unchanged, no adapter event is sent, avoiding redundant updates on downstream peers.

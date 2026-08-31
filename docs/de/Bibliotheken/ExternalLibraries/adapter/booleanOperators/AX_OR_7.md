@@ -74,6 +74,8 @@ Im Vergleich zu Standard-ODER-Bausteinen bietet AX_OR_7 die Besonderheit von sie
 
 Vergleich mit [OR_7](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_7.md)
 
+- **[`AX_OR_7_UNGATED`](AX_OR_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

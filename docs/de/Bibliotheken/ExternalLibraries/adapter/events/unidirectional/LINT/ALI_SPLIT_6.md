@@ -69,6 +69,8 @@ Der FB besitzt keine eigenen Zustände oder Verhaltensmodi, da er nur eine struk
 
 Der ALI_SPLIT_6 unterscheidet sich von anderen Split-Varianten lediglich durch die Anzahl der Ausgänge. Alle Bausteine dieser Familie arbeiten nach dem gleichen passiven Verteilerprinzip. Der hier beschriebene FB ist als generischer Baustein ausgeführt, während andere Varianten möglicherweise als einfache FB-Typen ohne Generizität implementiert sind.
 
+- **[`ALI_SPLIT_6_UNGATED`](ALI_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

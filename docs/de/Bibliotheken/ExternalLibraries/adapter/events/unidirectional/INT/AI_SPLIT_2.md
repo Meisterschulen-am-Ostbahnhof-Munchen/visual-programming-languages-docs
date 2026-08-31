@@ -63,6 +63,8 @@ Der Baustein besitzt kein internes Zustandsverhalten. Die Ausgänge folgen direk
 - **AI_MERGE**: Fasst mehrere AI-Signale zu einem zusammen (z. B. Mittelwert).
   AI_SPLIT_2 ist spezialisiert auf die einfache 1-zu-2-Verteilung ohne Logik oder Konfiguration.
 
+- **[`AI_SPLIT_2_UNGATED`](AI_SPLIT_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

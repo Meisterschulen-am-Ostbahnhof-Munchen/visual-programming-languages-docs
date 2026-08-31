@@ -62,6 +62,8 @@ Der AR_SPLIT_5 verfügt über keinen eigenen Zustandsautomaten. Sein Verhalten i
 - **AR_SPLIT_2, AR_SPLIT_3, AR_SPLIT_4**: Diese Bausteine teilen einen AR-Adapter auf zwei, drei bzw. vier Ausgänge auf. Der AR_SPLIT_5 ist die Erweiterung auf fünf Ausgänge.
 - **AR_MERGE_***: Im Gegensatz zu Split-Bausteinen führen Merge-Bausteine mehrere AR-Adapter zu einem zusammen.
 
+- **[`AR_SPLIT_5_UNGATED`](AR_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

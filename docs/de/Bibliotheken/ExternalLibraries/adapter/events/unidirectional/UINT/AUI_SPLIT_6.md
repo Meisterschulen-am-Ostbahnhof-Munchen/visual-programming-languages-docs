@@ -66,6 +66,8 @@ Der Baustein besitzt **keine Zustände**. Er arbeitet kontinuierlich und ohne in
 - **AUI_SPLIT_2 / AUI_SPLIT_4**: Diese Bausteine teilen ein Signal auf zwei bzw. vier Ausgänge auf. **AUI_SPLIT_6** bietet die größte Anzahl (6) an Ausgängen und deckt damit Anwendungen mit vielen parallelen Zielen ab.
 - **AUI_MERGE_***: Im Gegensatz zu Splittern fassen Merge-Bausteine mehrere AUI-Signale zu einem zusammen.
 
+- **[`AUI_SPLIT_6_UNGATED`](AUI_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

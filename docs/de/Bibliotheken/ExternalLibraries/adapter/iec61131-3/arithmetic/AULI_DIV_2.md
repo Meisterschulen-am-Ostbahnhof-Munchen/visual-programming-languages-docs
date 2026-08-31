@@ -80,6 +80,8 @@ Da es sich bei diesem Baustein um einen grundlegenden arithmetischen Baustein ha
 -   **Standard `DIV`-Baustein**: Ein klassischer IEC 61131-3 / IEC 61499 `DIV`-Baustein nutzt direkte Dateneingänge (`IN1`, `IN2`) und Event-Ports (`REQ`, `CNF`). Der `AULI_DIV_2` hingegen bündelt diese Signale in Adaptern, was die Verdrahtung bei komplexen Signalstrukturen erheblich vereinfacht.
 -   **Andere AULI-Arithmetikbausteine** (z. B. `AULI_ADD`, `AULI_SUB`): Nutzen dieselbe Schnittstellenphilosophie mit Sockets und Plugs, führen jedoch andere mathematische Operationen aus.
 
+- **[`AULI_DIV_2_UNGATED`](AULI_DIV_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

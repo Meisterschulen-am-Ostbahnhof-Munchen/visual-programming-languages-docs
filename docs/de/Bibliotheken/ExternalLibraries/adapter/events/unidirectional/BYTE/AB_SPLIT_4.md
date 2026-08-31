@@ -61,6 +61,8 @@ Der Baustein besitzt keinen internen Zustandsautomaten (ECC – Execution Contro
 
 Ähnliche Splitter-Bausteine existieren für andere Adaptertypen oder für datenbasierte Weiterleitungen. Der `AB_SPLIT_4` zeichnet sich durch seine spezifische Passform für den Adaptertyp `AB` und die unidirektionale Auslegung aus. Im Gegensatz zu Bausteinen mit Ereignis- oder Datenschnittstellen benötigt er keine zusätzliche Taktung oder Synchronisation – die Aufteilung erfolgt implizit durch die Verbindungstopologie.
 
+- **[`AB_SPLIT_4_UNGATED`](AB_SPLIT_4_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

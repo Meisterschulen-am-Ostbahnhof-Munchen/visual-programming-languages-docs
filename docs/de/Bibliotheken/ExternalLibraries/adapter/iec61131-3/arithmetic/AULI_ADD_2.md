@@ -84,6 +84,8 @@ Da es sich bei diesem Baustein um einen rein funktionalen/mathematischen Koppler
 
 Im Vergleich zu einem Standard-Additionsbaustein (wie dem IEC 61131-3 konformen `ADD`-Baustein), welcher mit diskreten Pins für `REQ`, `CNF`, `IN1`, `IN2` und `OUT` arbeitet, entfällt beim `AULI_ADD_2` die explizite Verdrahtung von Kontrollflüssen (Events) und Datenleitungen. Dies erhöht die Übersichtlichkeit in der 4diac-Entwicklungsumgebung signifikant, da pro Signalquelle nur noch eine einzige Adapterlinie gezogen werden muss.
 
+- **[`AULI_ADD_2_UNGATED`](AULI_ADD_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

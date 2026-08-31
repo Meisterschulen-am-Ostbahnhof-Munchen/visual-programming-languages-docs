@@ -71,6 +71,8 @@ Im Vergleich zu einfacheren ODER-Bausteinen mit weniger Eingängen bietet AX_OR_
 
 Vergleich mit [OR_6](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_6.md)
 
+- **[`AX_OR_6_UNGATED`](AX_OR_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

@@ -65,6 +65,8 @@ Der Baustein besitzt keinen eigenen Zustandsautomaten. Er ist jederzeit passiv u
 - **A2X_MERGE** – Im Gegensatz zum Splitter fasst dieser Baustein mehrere A2X-Eingänge zu einem Ausgang zusammen.
 - **Standard-Daten-Splitter** (z. B. für einfache Datentypen) – Adapterbasierte Splitter wie dieser arbeiten auf einer höheren Abstraktionsebene und kapseln komplexe Signalbündel.
 
+- **[`A2X_SPLIT_6_UNGATED`](A2X_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `A2X_SPLIT_6` ist ein einfacher, aber nützlicher Funktionsblock zur Vervielfachung von A2X-Adapter-Signalen. Durch seinen generischen Aufbau und die reine Verteilerfunktion eignet er sich besonders für Szenarien, in denen ein Signal ohne Verarbeitungslogik an mehrere Empfänger gesendet werden muss. Die Abwesenheit von Ereignissen und Zuständen macht ihn leicht verständlich und ressourcenschonend einsetzbar.

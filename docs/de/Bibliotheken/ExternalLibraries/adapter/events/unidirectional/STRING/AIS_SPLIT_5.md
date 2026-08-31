@@ -61,6 +61,8 @@ Der Baustein besitzt keine eigene Zustandslogik (kein ECC). Es gibt keinen inter
 
 Es gibt weitere Splitter-Bausteine wie `AIS_SPLIT_2`, `AIS_SPLIT_3` oder `AIS_SPLIT_4`, die eine geringere Anzahl an Ausgängen bereitstellen. Gemeinsam ist allen, dass sie ein einzelnes AIS-Eingangssignal auf mehrere Ausgänge verteilen. Der `AIS_SPLIT_5` bietet die maximale Anzahl von fünf Ausgängen dieser Familie. Je nach Bedarf kann der passende Splitter gewählt werden, um unnötige Verkabelung zu vermeiden.
 
+- **[`AIS_SPLIT_5_UNGATED`](AIS_SPLIT_5_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

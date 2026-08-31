@@ -70,6 +70,8 @@ Compared to other split blocks, AX_SPLIT_8 offers a fixed number of eight output
 
 Comparison with [E_SPLIT](../../../../../StandardLibraries/events/E_SPLIT.md)
 
+- **[`AX_SPLIT_8_UNGATED`](AX_SPLIT_8_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.

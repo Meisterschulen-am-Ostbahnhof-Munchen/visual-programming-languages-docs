@@ -65,6 +65,8 @@ Der Baustein besitzt keine internen Zustände, da er keine sequentielle Logik od
 - **Manuelles Duplizieren**: Ohne Splitter müsste der Architekt den Quell-Adapter mehrfach in der Konfiguration referenzieren, was die Lesbarkeit und Wartbarkeit verringert.
 - **Generische Splitter**: Andere Splitting-Bausteine (z.B. für Daten- oder Ereignisadapter) folgen dem gleichen Prinzip, sind aber auf andere Adaptertypen spezialisiert.
 
+- **[`A2X_SPLIT_3_UNGATED`](A2X_SPLIT_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der **A2X_SPLIT_3** ist ein einfacher, aber nützlicher generischer Funktionsbaustein zur Vervielfältigung eines A2X-Datenstroms auf drei Pfade. Durch seinen generischen Charakter passt er sich flexibel an unterschiedliche Datenstrukturen an und erleichtert die modulare Verschaltung in IEC 61499-basierten Automatisierungssystemen.

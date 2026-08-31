@@ -69,6 +69,8 @@ Vergleich mit `AD_MUX_3` (gleiche Auswahllogik, Index jedoch klassisch über **R
 
 Vergleich mit [F_MUX_3](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_3.md), das dieselbe 3:1-Auswahl rein datenbasiert ohne Adapter/Ereigniskonzept ausführt.
 
+- **[`AD_AUI_MUX_3_UNGATED`](AD_AUI_MUX_3_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Fazit
 
 Der `AD_AUI_MUX_3` überträgt die Multiplexer-Logik von `AD_MUX_3` auf eine rein adapterbasierte Indexversorgung. Das macht ihn zur passenden Wahl, wenn der Auswahlindex bereits als `AUI`-Adapter aus einem anderen Baustein zur Verfügung steht und keine zusätzliche Ereignis-/Datenverdrahtung für den Index gewünscht ist.

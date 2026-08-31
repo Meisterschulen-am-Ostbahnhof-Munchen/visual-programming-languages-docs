@@ -70,6 +70,8 @@ Compare with `AD_MUX_4` (same selection logic, but the index arrives through a c
 
 Compare with [F_MUX_4](../../../../../StandardLibraries/iec61131-3/selection/F_MUX_4.md), which performs the same 4:1 selection purely on data, without any adapter/event concept.
 
+- **[`AD_AUI_MUX_4_UNGATED`](AD_AUI_MUX_4_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Conclusion
 
 `AD_AUI_MUX_4` carries the multiplexer logic of the `AD_MUX_4` family over to a purely adapter-based index supply. This makes it the right choice whenever the selection index is already available as an `AUI` adapter from another block and no additional event/data wiring for the index is wanted.

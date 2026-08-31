@@ -61,6 +61,8 @@ Since the FB has no event inputs, it does not have an explicit state machine. Si
 - **AUDI_SPLIT_2**: A splitter reduced to two outputs; this block extends this to three outputs.
 - **Generic Splitters**: Many libraries contain split variants for other adapter types (e.g., `DATA_SPLIT`), but these are data-type specific.
 
+- **[`AUDI_SPLIT_3_UNGATED`](AUDI_SPLIT_3_UNGATED.md)**: Ungated variant – updates the output on every run, even without a value change.
+
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.

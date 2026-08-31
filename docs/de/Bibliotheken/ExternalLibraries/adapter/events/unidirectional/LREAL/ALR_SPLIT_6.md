@@ -65,6 +65,8 @@ Der Baustein besitzt keinen ECC (Execution Control Chart) und keine internen Zus
 - **Ereignisbasierte Splitter (z. B. E_SPLIT)** – arbeiten mit Ereignis-/Datenseparierung, während ALR_SPLIT_6 ausschließlich Adapter nutzt.
 - **Daten-Multiplexer** – wählen einen Ausgang aus; ALR_SPLIT_6 aktiviert immer alle Ausgänge.
 
+- **[`ALR_SPLIT_6_UNGATED`](ALR_SPLIT_6_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

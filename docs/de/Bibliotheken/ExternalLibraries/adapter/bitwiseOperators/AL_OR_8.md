@@ -70,6 +70,8 @@ Da es sich um einen kombinatorischen Logikbaustein handelt, besitzt der AL_OR_8 
 
 Im Gegensatz zu `AX_OR_8`, der einzelne boolesche Wahrheitswerte verknüpft, arbeitet `AL_OR_8` auf dem vollständigen Bitmuster eines `LWORD`-Werts. Verglichen mit dem Standard-Baustein [OR_2](../../../StandardLibraries/iec61131-3/bitwiseOperators/OR_2.md) verwendet `AL_OR_8` Adapter-basierte Schnittstellen anstelle direkter Daten-/Ereignisein-/ausgänge, was eine flexiblere Integration in Adapter-basierte Systemarchitekturen ermöglicht.
 
+- **[`AL_OR_8_UNGATED`](AL_OR_8_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

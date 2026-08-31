@@ -62,6 +62,8 @@ Der Funktionsblock verfügt über keinen Zustandsautomaten. Das Ausgangssignal j
 - Im Gegensatz zu Daten-Splittern (z. B. `SPLIT_INT`, `SPLIT_BOOL`) arbeitet dieser Baustein ausschließlich mit Adaptern und nicht mit elementaren Datentypen. Dadurch eignet er sich besonders für protokollbasierte oder typsichere Verbindungen.
 - Bausteine mit Ereignis-Schnittstellen (z. B. `E_SPLIT`) verteilen Ereignisse, nicht Signale. AUS_SPLIT_7 verteilt dagegen einen kontinuierlichen Signalwert.
 
+- **[`AUS_SPLIT_7_UNGATED`](AUS_SPLIT_7_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Jeder Ausgangs-Plug wird unabhängig aktualisiert: Der eingehende Wert wird nur dann auf einen Ausgang geschrieben und dessen Adapter-Event gesendet, wenn er sich vom aktuellen Wert dieses Ausgangs unterscheidet. Bereits synchrone Ausgänge bleiben still, während ein gerade erst verbundener (oder nicht mehr synchroner) Ausgang weiterhin die nötige Aktualisierung erhält.

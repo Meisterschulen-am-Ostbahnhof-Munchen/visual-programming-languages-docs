@@ -80,6 +80,8 @@ Da es sich um einen generischen Funktionsbaustein (`GEN_AUI_DIV`) handelt, kann 
 
 Im Vergleich zu einem klassischen Standard-DIV-Baustein (z. B. aus der Standardbibliothek der IEC 61131-3), welcher mit einzelnen Pins für `REQ`, `CNF`, `IN1`, `IN2` und `OUT` arbeitet, bietet der `AUI_DIV_2` eine signifikant sauberere visuelle Darstellung im Funktionsplan. Durch die Kapselung in Adaptern wird die Fehleranfälligkeit bei der manuellen Verdrahtung von Event-zu-Daten-Zuordnungen minimiert.
 
+- **[`AUI_DIV_2_UNGATED`](AUI_DIV_2_UNGATED.md)**: Ungegatete Variante – aktualisiert den Ausgang bei jedem Durchlauf, auch ohne Wertänderung.
+
 ## Änderungserkennung
 
 Das Ergebnis wird nur auf den Ausgangs-Plug (`OUT`) geschrieben und dessen Adapter-Event nur gesendet, wenn sich der neu berechnete Wert vom aktuell auf `OUT` gehaltenen Wert unterscheidet. Bleibt das Ergebnis unverändert, wird kein Adapter-Event gesendet -- so werden überflüssige Updates bei nachgeschalteten Peers vermieden.

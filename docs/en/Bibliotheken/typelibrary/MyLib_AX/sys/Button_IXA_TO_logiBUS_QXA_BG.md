@@ -3,9 +3,10 @@
 ![Button_IXA_TO_logiBUS_QXA_BG_network](./Button_IXA_TO_logiBUS_QXA_BG_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
-`Button_IXA_TO_logiBUS_QXA_BG` extends [`Button_IXA_TO_logiBUS_QXA`](./Button_IXA_TO_logiBUS_QXA.md) with a VT status color: the button state not only switches the physical output but also the button's own background color (green/white). The OPC-UA-capable follow-up is [`Button_IXA_TO_logiBUS_QXA_BG_OPC`](../../typelibrary/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC.md).
+`Button_IXA_TO_logiBUS_QXA_BG` extends [`Button_IXA_TO_logiBUS_QXA`](./Button_IXA_TO_logiBUS_QXA.md) with a VT status color: the button state not only switches the physical output but also the button's own background color (green/white). The OPC-UA-capable follow-up is [`Button_IXA_TO_logiBUS_QXA_BG_OPC`](Button_IXA_TO_logiBUS_QXA_BG_OPC.md).
 
 ## Function Blocks (FBs) Used
 
@@ -36,4 +37,4 @@ Adds a VT status color to the simple button-to-output wiring — the precursor t
 
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

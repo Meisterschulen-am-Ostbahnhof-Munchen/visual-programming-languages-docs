@@ -85,8 +85,6 @@ The data is converted into a physical value (`rPhys`). If the conversion is succ
 - Integration of a quality block for monitoring.
 - Development of a sub-app with multiple function blocks and event/data connections.
 
-### Difficulty Level: Medium
-
 ### Prerequisites
 
 - Basic operation of the 4diac IDE.

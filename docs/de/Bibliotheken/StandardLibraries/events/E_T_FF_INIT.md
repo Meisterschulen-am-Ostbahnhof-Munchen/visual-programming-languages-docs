@@ -60,7 +60,7 @@ Der `E_T_FF_INIT` (Toggle-Flipflop mit Initialisierung) kombiniert das Umschaltv
 
 - **`E_T_FF`**: dieselbe Toggle-Grundfunktion ohne `INIT`/`INITO`-Schnittstelle.
 - **[E_RS_SYM_INIT](E_RS_SYM_INIT.md) / [E_SR_SYM_INIT](E_SR_SYM_INIT.md)**: dieselbe INIT/DeInit-Struktur, aber mit getrenntem Set-/Reset-Eingang statt eines einzelnen Takteingangs.
-- **[E_T_FF_SR_SYM](../E_T_FF_SR_SYM.md) / [E_T_FF_SR_SYM_INIT](../E_T_FF_SR_SYM_INIT.md)**: kombinieren zusätzlich `S`/`R`-Eingänge mit dem Toggle-Verhalten.
+- **[E_T_FF_SR_SYM](E_T_FF_SR_SYM.md) / [E_T_FF_SR_SYM_INIT](E_T_FF_SR_SYM_INIT.md)**: kombinieren zusätzlich `S`/`R`-Eingänge mit dem Toggle-Verhalten.
 
 ## Fazit
 

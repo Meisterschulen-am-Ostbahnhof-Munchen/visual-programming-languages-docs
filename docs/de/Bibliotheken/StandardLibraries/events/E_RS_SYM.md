@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der `E_RS_SYM` (Event-driven RS Flip-Flop, symmetrisches Start-Up-Verhalten) ist ein ereignisgesteuertes, bistabiles Speicherelement nach IEC 61499. Er verhält sich funktional wie [E_RS](../E_RS.md)/[E_SR](../E_SR.md), unterscheidet sich aber im Startzustand: Während `E_RS`/`E_SR` erst nach dem ersten `S`- oder `R`-Ereignis einen definierten Ausgang liefern, reagiert `E_RS_SYM` bereits im Anfangszustand `START` symmetrisch auf beide Ereignisse und wechselt sofort in den passenden `SET`- bzw. `RESET`-Zustand.
+Der `E_RS_SYM` (Event-driven RS Flip-Flop, symmetrisches Start-Up-Verhalten) ist ein ereignisgesteuertes, bistabiles Speicherelement nach IEC 61499. Er verhält sich funktional wie [E_RS](E_RS.md)/[E_SR](E_SR.md), unterscheidet sich aber im Startzustand: Während `E_RS`/`E_SR` erst nach dem ersten `S`- oder `R`-Ereignis einen definierten Ausgang liefern, reagiert `E_RS_SYM` bereits im Anfangszustand `START` symmetrisch auf beide Ereignisse und wechselt sofort in den passenden `SET`- bzw. `RESET`-Zustand.
 
 ![E_RS_SYM](E_RS_SYM.svg)
 
@@ -50,7 +50,7 @@ Die ECC besitzt drei Zustände: `START`, `SET` und `RESET`. Aus `START` führt s
 
 ## ⚖️ Vergleich mit ähnlichen Bausteinen
 
-- **[E_RS](../E_RS.md) / [E_SR](../E_SR.md)**: funktional nahezu identisch, aber ohne symmetrisches Start-Up-Verhalten — im Anfangszustand reagiert nur eines der beiden Ereignisse.
+- **[E_RS](E_RS.md) / [E_SR](E_SR.md)**: funktional nahezu identisch, aber ohne symmetrisches Start-Up-Verhalten — im Anfangszustand reagiert nur eines der beiden Ereignisse.
 - **[E_RS_SYM_INIT](E_RS_SYM_INIT.md)**: dieselbe Grundfunktion, erweitert um eine explizite `INIT`/`INITO`-Schnittstelle zum gezielten Setzen des Startwerts.
 - **[E_SR_SYM](E_SR_SYM.md)**: funktional identisch, lediglich die Reihenfolge von `S`/`R` in der Schnittstellendefinition ist vertauscht (Namenskonvention analog zu `E_RS`/`E_SR`).
 

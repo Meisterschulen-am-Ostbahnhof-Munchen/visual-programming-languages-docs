@@ -60,7 +60,7 @@
 
 - **`E_T_FF`**: the same basic toggle functionality without an `INIT`/`INITO` interface.
 - **[E_RS_SYM_INIT](E_RS_SYM_INIT.md) / [E_SR_SYM_INIT](E_SR_SYM_INIT.md)**: the same INIT/DeInit structure, but with separate set/reset inputs instead of a single clock input.
-- **[E_T_FF_SR_SYM](../E_T_FF_SR_SYM.md) / [E_T_FF_SR_SYM_INIT](../E_T_FF_SR_SYM_INIT.md)**: additionally combine `S`/`R` inputs with the toggle behaviour.
+- **[E_T_FF_SR_SYM](E_T_FF_SR_SYM.md) / [E_T_FF_SR_SYM_INIT](E_T_FF_SR_SYM_INIT.md)**: additionally combine `S`/`R` inputs with the toggle behaviour.
 
 ## Conclusion
 

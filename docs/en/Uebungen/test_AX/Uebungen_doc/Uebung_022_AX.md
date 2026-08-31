@@ -19,8 +19,6 @@ The digital outputs Q1 and Q2 control the end positions of the cylinders (e.g., 
 
 The exercise consists of a SubApp network with seven function blocks and an event splitter.
 
-### Sub-Blocks
-
 ### DigitalOutput_Q1, DigitalOutput_Q2
 
 - **Type**: `logiBUS::io::DQ::logiBUS_QXA`
@@ -57,14 +55,14 @@ The exercise consists of a SubApp network with seven function blocks and an even
 The flow is determined by the adapter connections in the SubApp network:
 
 1. **F1 (SoftKey_UP_F1)** → sets `AX_FB_SR_Ausfahren_Cyl_1` (via `SET1`).
+   - The output `Q1` from Cyl_1 becomes `TRUE` and activates **DigitalOutput_Q1** (cylinder 1 extends).
 
-- The output `Q1` from Cyl_1 becomes `TRUE` and activates **DigitalOutput_Q1** (cylinder 1 extends).
-1. **F2 (SoftKey_F2_DOWN)** → is distributed via `AX_SPLIT_2` to two paths:
+2. **F2 (SoftKey_F2_DOWN)** → is distributed via `AX_SPLIT_2` to two paths:
+   - **OUT1** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_1` → cylinder 1 retracts (Q1 = FALSE).
+   - **OUT2** → `SET1` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 extends (Q2 = TRUE).
+   - This achieves the mirroring: The active cylinder switches from 1 to 2.
 
-- **OUT1** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_1` → cylinder 1 retracts (Q1 = FALSE).
-- **OUT2** → `SET1` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 extends (Q2 = TRUE).
-- This achieves the mirroring: The active cylinder switches from 1 to 2.
-1. **F3 (SoftKey_F3_DOWN)** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 retracts (Q2 = FALSE).
+3. **F3 (SoftKey_F3_DOWN)** → `RESET` from `AX_FB_SR_Ausfahren_Cyl_2` → Cylinder 2 retracts (Q2 = FALSE).
 
 **Overview of signal flows:**
 

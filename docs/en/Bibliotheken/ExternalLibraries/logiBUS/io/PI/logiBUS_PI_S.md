@@ -14,9 +14,6 @@ As a data type (STRUCT), `logiBUS_PI_S` does not have event-driven interfaces, b
 
 Not applicable – this is a data type, not an executable function block.
 
-### **Data Outputs**
-
-
 ### **Internal Structure (Variables)**
 
 The structure consists of a single member:

@@ -6,7 +6,7 @@
 
 ## Einleitung
 
-Der `E_SR_SYM` (Event-driven SR Flip-Flop, symmetrisches Start-Up-Verhalten) ist funktional identisch zu [E_RS_SYM](E_RS_SYM.md) — beide Bausteine existieren, analog zu [E_RS](../E_RS.md)/[E_SR](../E_SR.md), lediglich zur Wahrung der Namenskonvention aus der IEC 61131-3 (`SR` = Set-dominant benannt, `RS` = Reset-dominant benannt), ohne dass in der IEC 61499 eine echte Dominanz zwischen Ereignissen existiert.
+Der `E_SR_SYM` (Event-driven SR Flip-Flop, symmetrisches Start-Up-Verhalten) ist funktional identisch zu [E_RS_SYM](E_RS_SYM.md) — beide Bausteine existieren, analog zu [E_RS](E_RS.md)/[E_SR](E_SR.md), lediglich zur Wahrung der Namenskonvention aus der IEC 61131-3 (`SR` = Set-dominant benannt, `RS` = Reset-dominant benannt), ohne dass in der IEC 61499 eine echte Dominanz zwischen Ereignissen existiert.
 
 ![E_SR_SYM](E_SR_SYM.svg)
 
@@ -51,7 +51,7 @@ Siehe [E_RS_SYM](E_RS_SYM.md) — identische Anwendungsfälle, `E_SR_SYM` wird b
 
 - **[E_RS_SYM](E_RS_SYM.md)**: funktional identisch, lediglich vertauschte Reihenfolge von `S`/`R` im Symbol.
 - **[E_SR_SYM_INIT](E_SR_SYM_INIT.md)**: dieselbe Grundfunktion, erweitert um eine `INIT`/`INITO`-Schnittstelle.
-- **[E_SR](../E_SR.md)**: ohne symmetrisches Start-Up-Verhalten.
+- **[E_SR](E_SR.md)**: ohne symmetrisches Start-Up-Verhalten.
 
 ## Fazit
 

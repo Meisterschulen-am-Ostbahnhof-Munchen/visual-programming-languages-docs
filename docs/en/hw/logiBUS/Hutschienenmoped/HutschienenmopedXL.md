@@ -46,8 +46,6 @@ ADC1_CHANNEL_8,     /*!< ADC1 channel 8 is GPIO9  */
 | Output_Q7 | 1 |
 | Output_Q8 | 2 |
 
-### LED Strip
-
 ## More Information
 
 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS_Hardware/tree/master/Hutschienenmoped-XL>

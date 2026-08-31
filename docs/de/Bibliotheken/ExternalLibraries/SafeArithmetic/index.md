@@ -7,8 +7,4 @@ REAL/LREAL `INF`/`NaN` — beides gefährlich für reale Messwerte. Jeder Bauste
 klemmt das Ergebnis stattdessen auf den gültigen Bereich und meldet die Grenzwertverletzung über
 einen `LIMIT_HIT`-Ausgang.
 
-```{toctree}
-:maxdepth: 1
-
-arithmetic/index
-```
+- [Arithmetik-Funktionen](arithmetic/index.md)

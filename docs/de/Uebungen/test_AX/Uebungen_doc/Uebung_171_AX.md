@@ -1,5 +1,3 @@
-Hier ist die Dokumentation für die Übung `Uebung_171_AX` basierend auf den bereitgestellten Daten.
-
 # Uebung_171_AX: Exercise for ASR_AX_SR
 
 * * * * * * * * * *
@@ -11,8 +9,6 @@ Diese Übung behandelt die Verwendung von Adaptern im Kontext von Set/Reset-Logi
 ## Verwendete Funktionsbausteine (FBs)
 
 In dieser Übung werden spezifische Bausteine zur Eingabeverarbeitung, Adapter-Konvertierung und Ausgabesteuerung verwendet.
-
-### Sub-Bausteine
 
 ### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 

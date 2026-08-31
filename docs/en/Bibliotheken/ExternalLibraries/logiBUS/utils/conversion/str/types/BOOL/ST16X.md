@@ -62,8 +62,6 @@ A data type like ST16X does not have an active 'function' in the sense of an alg
 - **Comment:** Each variable is assigned a comment ("BIT xx") that clarifies the bit position.
 - **Modularity:** Promotes code modularity and reusability by bundling complex status information.
 
-## State Overview: As a pure data type, ST16X itself does not have a 'state overview' in the sense of a finite automaton or internal logic. The 'state' is represented by the current values of the 16 included BOOL variables, each of which can be either `TRUE` or `FALSE`. The combination of these 16 Boolean values results in 2^16 (65,536) possible states for an instance of the data type
-
 ## Application Scenarios
 
 - **Status Registers:** Represents the state of up to 16 different components, sensors, or functions (e.g., "Motor ON," "Fault Active," "Limit Reached").

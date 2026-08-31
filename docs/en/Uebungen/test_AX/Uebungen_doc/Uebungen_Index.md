@@ -2,8 +2,6 @@
 
 Here you will find the documentation for the exercises for logiBUS® with the **AX Adapter**. The exercises are grouped by topic to optimally support your learning progress.
 
-## Topics
-
 ## 🎧 Podcast
 
 - [DIN EN 61499-1 Decoded: The Blueprint for Modular, Distributed Control Systems ](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/DIN-EN-61499-1-Entschlsselt-Der-Bauplan-fr-modulare--verteilte-Steuerungssysteme-e367nmj)

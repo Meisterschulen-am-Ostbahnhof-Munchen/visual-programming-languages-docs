@@ -61,7 +61,7 @@ Aus `START` führt `INIT` mit `QI = TRUE` in den Zustand `Init`, der `QO := QI` 
 
 - **[E_RS_SYM](E_RS_SYM.md)**: dieselbe Grundfunktion ohne `INIT`/`INITO`-Schnittstelle.
 - **[E_SR_SYM_INIT](E_SR_SYM_INIT.md)**: funktional identisch, nur die Reihenfolge von `S`/`R` in der Schnittstelle ist vertauscht.
-- **[E_T_FF_INIT](../E_T_FF_INIT.md)**: dieselbe INIT/DeInit-Struktur, aber mit Toggle- statt Set/Reset-Verhalten im laufenden Betrieb.
+- **[E_T_FF_INIT](E_T_FF_INIT.md)**: dieselbe INIT/DeInit-Struktur, aber mit Toggle- statt Set/Reset-Verhalten im laufenden Betrieb.
 
 ## Fazit
 

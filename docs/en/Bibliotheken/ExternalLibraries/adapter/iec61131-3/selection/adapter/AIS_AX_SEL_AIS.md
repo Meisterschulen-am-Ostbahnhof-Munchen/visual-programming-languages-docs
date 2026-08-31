@@ -30,8 +30,6 @@ The function block uses an adapter-based interface design. It has no directly ac
 
 *No direct data outputs are available.*
 
-#### **Adapters**
-
 #### **Sockets (Input Interfaces)**
 
 - **G** (Type: `adapter::types::unidirectional::AX`):
@@ -71,6 +69,7 @@ The core function block `F_SEL` (type `iec61131::selection::F_SEL`) evaluates th
 
 - If `G` = `FALSE`, the value of `IN0` is selected.
 - If `G` = `TRUE`, the value of `IN1` is selected.
+
 1. **Output Transfer:**
 
 The selection result is transferred via the function block `F_MOVE_OUT` to the output flip-flop `E_D_FF_ANY_OUT`. This triggers the event `E1` at the output adapter `OUT` and places the selected data value at the output `D1`.

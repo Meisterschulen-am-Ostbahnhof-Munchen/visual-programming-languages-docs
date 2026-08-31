@@ -24,9 +24,6 @@ The function block **ALI_SPLIT_3_UNGATED** is used to distribute an incoming uni
 
 – None (all communication takes place via the adapter interfaces)
 
-### **Data Outputs**
-
-
 ### **Adapter**
 
 | Direction | Name | Type | Description |

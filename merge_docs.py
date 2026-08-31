@@ -1,63 +1,89 @@
+import hashlib
 import os
 import re
 import sys
-import yaml
-import hashlib
 import urllib.parse
 import urllib.request
 from unittest.mock import MagicMock
 
 # Mock weasyprint before importing mkdocs to avoid GObject/GTK loading errors on Windows and CI
-sys.modules['weasyprint'] = MagicMock()
+sys.modules["weasyprint"] = MagicMock()
 
 import mkdocs.config
 import mkdocs.config.config_options
+
 # No-op validation to allow docs_dir: . and site_dir inside docs_dir during merge
-mkdocs.config.config_options.DocsDir.post_validation = lambda self, config, key_name: None
-mkdocs.config.config_options.SiteDir.post_validation = lambda self, config, key_name: None
+mkdocs.config.config_options.DocsDir.post_validation = (
+    lambda self, config, key_name: None
+)
+mkdocs.config.config_options.SiteDir.post_validation = (
+    lambda self, config, key_name: None
+)
 
 from mkdocs.structure.files import get_files
 from mkdocs.structure.nav import get_navigation
 
+
 def clean_id(path):
     # Convert path like "Allgemeines/Zahlen.md" to a clean anchor id "allgemeines-zahlen"
-    p = path.replace('\\', '/').lower()
-    if p.endswith('.md'):
-        p = p[:-3]
+    p = path.replace("\\", "/").lower()
+    p = p.removesuffix(".md")
     # Replace anything that's not alphanumeric, hyphen or underscore with hyphen
-    p = re.sub(r'[^a-z0-9/_-]', '', p)
-    p = p.replace('/', '-').replace('_', '-')
+    p = re.sub(r"[^a-z0-9/_-]", "", p)
+    p = p.replace("/", "-").replace("_", "-")
     # Collapse multiple hyphens
-    p = re.sub(r'-+', '-', p)
-    return p.strip('-')
+    p = re.sub(r"-+", "-", p)
+    return p.strip("-")
+
+
+def heading_slug(text):
+    # Slugify a heading's own text (not a path) into the id fragment that
+    # shift_headings() attaches to that heading, so link anchors resolve to
+    # the same label. Mirrors typical Markdown TOC slugify behaviour
+    # (lowercase, strip markup/punctuation, spaces -> hyphens, keep unicode
+    # letters) rather than clean_id()'s path-oriented rules (which delete
+    # spaces instead of hyphenating them and would mangle multi-word titles).
+    t = text.strip()
+    t = re.sub(r"\{#[^}]+\}", "", t).strip()
+    t = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", t)  # markdown links -> text
+    t = re.sub(r"[`*_]", "", t)  # inline code/bold/italic markers
+    t = t.lower()
+    t = re.sub(r"[^\w\s-]", "", t, flags=re.UNICODE)
+    t = re.sub(r"[\s_]+", "-", t)
+    t = re.sub(r"-+", "-", t)
+    return t.strip("-")
+
 
 def build_path_to_id_map(pages):
     path_to_id = {}
     for page in pages:
-        src = page.file.src_path.replace('\\', '/') # relative to docs/ e.g. "4diac/index.md"
+        src = page.file.src_path.replace(
+            "\\", "/"
+        )  # relative to docs/ e.g. "4diac/index.md"
         cid = clean_id(src)
         path_to_id[src] = cid
         path_to_id[src.lower()] = cid
     return path_to_id
 
+
 def _detect_image_ext(data):
     """Detect image format from magic bytes, returns extension like '.png'."""
-    if data[:8] == b'\x89PNG\r\n\x1a\n':
-        return '.png'
-    if data[:2] == b'\xff\xd8':
-        return '.jpg'
-    if data[:6] in (b'GIF87a', b'GIF89a'):
-        return '.gif'
-    if data[:4] == b'RIFF' and data[8:12] == b'WEBP':
-        return '.webp'
-    if data[:2] == b'BM':
-        return '.bmp'
-    if b'<svg' in data[:200] or b'<?xml' in data[:200]:
-        return '.svg'
+    if data[:8] == b"\x89PNG\r\n\x1a\n":
+        return ".png"
+    if data[:2] == b"\xff\xd8":
+        return ".jpg"
+    if data[:6] in (b"GIF87a", b"GIF89a"):
+        return ".gif"
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        return ".webp"
+    if data[:2] == b"BM":
+        return ".bmp"
+    if b"<svg" in data[:200] or b"<?xml" in data[:200]:
+        return ".svg"
     return None
 
 
-IMAGE_EXTENSIONS = ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.bmp', '.webp', '.pdf')
+IMAGE_EXTENSIONS = (".png", ".jpg", ".jpeg", ".gif", ".svg", ".bmp", ".webp", ".pdf")
 
 
 def resolve_local_image(target_src, docs_dir):
@@ -76,26 +102,27 @@ def resolve_local_image(target_src, docs_dir):
             return candidate
     return target_src
 
+
 def download_remote_image(url, docs_dir):
     # Create downloaded directory under docs/img/downloaded
-    downloaded_dir = os.path.join(docs_dir, 'img', 'downloaded')
+    downloaded_dir = os.path.join(docs_dir, "img", "downloaded")
     os.makedirs(downloaded_dir, exist_ok=True)
 
     # Generate unique local filename based on URL hash
-    url_hash = hashlib.md5(url.encode('utf-8')).hexdigest()
+    url_hash = hashlib.md5(url.encode("utf-8")).hexdigest()
 
     content_type_map = {
-        'image/jpeg': '.jpg',
-        'image/jpg': '.jpg',
-        'image/png': '.png',
-        'image/gif': '.gif',
-        'image/svg+xml': '.svg',
-        'image/webp': '.webp',
-        'image/bmp': '.bmp',
+        "image/jpeg": ".jpg",
+        "image/jpg": ".jpg",
+        "image/png": ".png",
+        "image/gif": ".gif",
+        "image/svg+xml": ".svg",
+        "image/webp": ".webp",
+        "image/bmp": ".bmp",
     }
 
     # Check if a file with this hash and any known extension already exists
-    for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.bmp']:
+    for ext in [".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".bmp"]:
         local_path = os.path.join(downloaded_dir, f"{url_hash}{ext}")
         if os.path.exists(local_path):
             return f"img/downloaded/{url_hash}{ext}"
@@ -103,7 +130,9 @@ def download_remote_image(url, docs_dir):
     try:
         req = urllib.request.Request(
             url,
-            headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            },
         )
         print(f"Downloading remote image: {url}")
         with urllib.request.urlopen(req, timeout=15) as response:
@@ -114,12 +143,12 @@ def download_remote_image(url, docs_dir):
                 ext = content_type_map.get(content_type.lower())
 
             if not ext:
-                clean_url = url.split('?')[0]
+                clean_url = url.split("?")[0]
                 url_ext = os.path.splitext(clean_url)[1].lower()
                 if url_ext and len(url_ext) <= 5:
                     ext = url_ext
                 else:
-                    ext = '.png'
+                    ext = ".png"
 
             # Override extension if magic bytes reveal a different actual format
             actual_ext = _detect_image_ext(data)
@@ -129,118 +158,199 @@ def download_remote_image(url, docs_dir):
             local_name = f"{url_hash}{ext}"
             local_path = os.path.join(downloaded_dir, local_name)
 
-            with open(local_path, 'wb') as out_file:
+            with open(local_path, "wb") as out_file:
                 out_file.write(data)
 
             return f"img/downloaded/{local_name}"
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001 - best-effort, falls back to a placeholder
         print(f"Error downloading {url}: {e}")
         # Write a placeholder black 1x1 PNG if download fails
-        placeholder_path = os.path.join(downloaded_dir, 'placeholder.png')
+        placeholder_path = os.path.join(downloaded_dir, "placeholder.png")
         if not os.path.exists(placeholder_path):
-            minimal_png = bytes([
-                137, 80, 78, 71, 13, 10, 26, 10, 0, 0, 0, 13, 73, 72, 68, 82,
-                0, 0, 0, 1, 0, 0, 0, 1, 8, 0, 0, 0, 0, 58, 126, 155, 85,
-                0, 0, 0, 10, 73, 68, 65, 84, 120, 156, 99, 96, 0, 0, 0, 2,
-                0, 1, 72, 175, 164, 113, 0, 0, 0, 0, 73, 69, 78, 68, 174, 66, 130
-            ])
+            minimal_png = bytes(
+                [
+                    137,
+                    80,
+                    78,
+                    71,
+                    13,
+                    10,
+                    26,
+                    10,
+                    0,
+                    0,
+                    0,
+                    13,
+                    73,
+                    72,
+                    68,
+                    82,
+                    0,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                    0,
+                    1,
+                    8,
+                    0,
+                    0,
+                    0,
+                    0,
+                    58,
+                    126,
+                    155,
+                    85,
+                    0,
+                    0,
+                    0,
+                    10,
+                    73,
+                    68,
+                    65,
+                    84,
+                    120,
+                    156,
+                    99,
+                    96,
+                    0,
+                    0,
+                    0,
+                    2,
+                    0,
+                    1,
+                    72,
+                    175,
+                    164,
+                    113,
+                    0,
+                    0,
+                    0,
+                    0,
+                    73,
+                    69,
+                    78,
+                    68,
+                    174,
+                    66,
+                    130,
+                ]
+            )
             try:
-                with open(placeholder_path, 'wb') as f:
+                with open(placeholder_path, "wb") as f:
                     f.write(minimal_png)
-            except Exception as write_err:
+            except Exception as write_err:  # noqa: BLE001 - best effort
                 print(f"Error writing placeholder image: {write_err}")
         return "img/downloaded/placeholder.png"
 
 
 def rewrite_content(content, file_src_path, path_to_id, docs_dir):
     # file_src_path is e.g. "4diac/Installation-4diac.md"
-    file_dir = os.path.dirname(file_src_path).replace('\\', '/')
-    
+    file_dir = os.path.dirname(file_src_path).replace("\\", "/")
+    own_page_id = path_to_id.get(
+        file_src_path, path_to_id.get(file_src_path.lower(), clean_id(file_src_path))
+    )
+
     # Rewrite images and links
     # 1. Markdown syntax: ![alt](path) or [text](path)
     def rewrite_single_link(prefix, text, url_part):
         url_part = url_part.strip()
         # Strip an optional Markdown title, e.g. ![](url "title")
-        url_part = re.sub(r'\s+"[^"]*"\s*$', '', url_part)
-        url_part_clean = urllib.parse.unquote(url_part).strip('<>')
-        
+        url_part = re.sub(r'\s+"[^"]*"\s*$', "", url_part)
+        url_part_clean = urllib.parse.unquote(url_part).strip("<>")
+
         # Split anchor
-        if '#' in url_part_clean:
-            url_path, anchor = url_part_clean.split('#', 1)
+        if "#" in url_part_clean:
+            url_path, anchor = url_part_clean.split("#", 1)
         else:
-            url_path, anchor = url_part_clean, ''
-            
+            url_path, anchor = url_part_clean, ""
+
         # Safeguard: demote image prefix if target does not look like an image
-        if prefix == '![':
-            is_remote = url_path.startswith(('http://', 'https://'))
+        if prefix == "![":
+            is_remote = url_path.startswith(("http://", "https://"))
             if not is_remote:
-                image_extensions = ('.png', '.jpg', '.jpeg', '.gif', '.svg', '.bmp', '.webp', '.pdf')
+                image_extensions = (
+                    ".png",
+                    ".jpg",
+                    ".jpeg",
+                    ".gif",
+                    ".svg",
+                    ".bmp",
+                    ".webp",
+                    ".pdf",
+                )
                 if not url_path.lower().endswith(image_extensions):
-                    prefix = '['
+                    prefix = "["
 
         if not url_path and not anchor:
             # Empty image reference or link!
             # If it's an image, replace it with empty string to avoid rendering in Typst
-            if prefix == '![':
+            if prefix == "![":
                 return ""
             else:
                 return f"[{text}]"
-                
+
         if not url_path and anchor:
-            # Local anchor link in same file
-            return f"{prefix}{text}](#{anchor.lower()})"
-            
+            # Local anchor link in same file - after merging, this heading's
+            # actual label carries the page id prefix too (see shift_headings).
+            return f"{prefix}{text}](#{own_page_id}-{heading_slug(anchor)})"
+
         # Check for remote URL
-        is_remote = url_path.startswith(('http://', 'https://'))
-        
+        is_remote = url_path.startswith(("http://", "https://"))
+
         if is_remote:
-            if prefix == '![':
+            if prefix == "![":
                 # It is an image! Download it.
                 local_rel_path = download_remote_image(url_path, docs_dir)
                 anchor_str = f"#{anchor}" if anchor else ""
                 dest = f"{local_rel_path}{anchor_str}"
-                if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):
+                if " " in dest and not (dest.startswith("<") and dest.endswith(">")):
                     dest = f"<{dest}>"
                 return f"{prefix}{text}]({dest})"
             else:
                 # It is a normal link, keep it remote
                 dest = url_part
-                if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):
+                if " " in dest and not (dest.startswith("<") and dest.endswith(">")):
                     dest = f"<{dest}>"
                 return f"{prefix}{text}]({dest})"
-                
-        if url_path.startswith(('mailto:', 'ftp:', 'www.', '/')):
+
+        if url_path.startswith(("mailto:", "ftp:", "www.", "/")):
             dest = url_part
-            if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):
+            if " " in dest and not (dest.startswith("<") and dest.endswith(">")):
                 dest = f"<{dest}>"
             return f"{prefix}{text}]({dest})"
-            
+
         # Target path relative to docs/
-        target_src = os.path.normpath(os.path.join(file_dir, url_path)).replace('\\', '/')
-        
+        target_src = os.path.normpath(os.path.join(file_dir, url_path)).replace(
+            "\\", "/"
+        )
+
         # Check if the target is a markdown file
-        no_ext = target_src[:-3] if target_src.endswith('.md') else target_src
-        target_src_md = no_ext + '.md'
-        
-        target_key = target_src_md if target_src_md in path_to_id else target_src_md.lower()
+        no_ext = target_src.removesuffix(".md")
+        target_src_md = no_ext + ".md"
+
+        target_key = (
+            target_src_md if target_src_md in path_to_id else target_src_md.lower()
+        )
         if target_key not in path_to_id:
-            norm_key = target_src_md.replace('_', '-').lower()
+            norm_key = target_src_md.replace("_", "-").lower()
             for k in path_to_id:
-                if k.replace('_', '-').lower() == norm_key:
+                if k.replace("_", "-").lower() == norm_key:
                     target_key = k
                     break
         if target_key in path_to_id:
             target_id = path_to_id[target_key]
-            anchor_str = f"-{clean_id(anchor)}" if anchor else ""
+            anchor_str = f"-{heading_slug(anchor)}" if anchor else ""
             return f"{prefix}{text}](#{target_id}{anchor_str})"
-            
+
         # If it's an image or resource, rewrite the path to be relative to the docs/ directory
         # so that Pandoc running in docs/ can find it.
-        if prefix == '![':
+        if prefix == "![":
             target_src = resolve_local_image(target_src, docs_dir)
         anchor_str = f"#{anchor}" if anchor else ""
         dest = f"{target_src}{anchor_str}"
-        if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):
+        if " " in dest and not (dest.startswith("<") and dest.endswith(">")):
             dest = f"<{dest}>"
         return f"{prefix}{text}]({dest})"
 
@@ -249,19 +359,23 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         if match.group(1) is not None:
             inner_img_markdown = match.group(1)
             outer_url = match.group(2)
-            
+
             # Rewrite the inner image
-            inner_match = re.match(r'(!\[)([^]]*)\]\(([^)]*)\)', inner_img_markdown)
+            inner_match = re.match(r"(!\[)([^]]*)\]\(([^)]*)\)", inner_img_markdown)
             if inner_match:
-                rewritten_inner = rewrite_single_link(inner_match.group(1), inner_match.group(2), inner_match.group(3))
+                rewritten_inner = rewrite_single_link(
+                    inner_match.group(1), inner_match.group(2), inner_match.group(3)
+                )
             else:
                 rewritten_inner = inner_img_markdown
-                
+
             # Rewrite the outer link url
-            rewritten_outer_md = rewrite_single_link('[', 'dummy', outer_url)
-            outer_url_match = re.match(r'\[dummy\]\(([^)]*)\)', rewritten_outer_md)
-            rewritten_outer_url = outer_url_match.group(1) if outer_url_match else outer_url
-            
+            rewritten_outer_md = rewrite_single_link("[", "dummy", outer_url)
+            outer_url_match = re.match(r"\[dummy\]\(([^)]*)\)", rewritten_outer_md)
+            rewritten_outer_url = (
+                outer_url_match.group(1) if outer_url_match else outer_url
+            )
+
             return f"[{rewritten_inner}]({rewritten_outer_url})"
         else:
             # Otherwise, it's a simple link or image
@@ -269,10 +383,10 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
             text = match.group(4)
             url_part = match.group(5)
             return rewrite_single_link(prefix, text, url_part)
-            
-    pattern = r'(?:\[(!\[[^]]*\]\((?:[^()]+|\([^()]*\))*\))\]\(((?:[^()]+|\([^()]*\))*)\))|(?:(!?\[)([^]]*)\]\(((?:[^()]+|\([^()]*\))*)\))'
+
+    pattern = r"(?:\[(!\[[^]]*\]\((?:[^()]+|\([^()]*\))*\))\]\(((?:[^()]+|\([^()]*\))*)\))|(?:(!?\[)([^]]*)\]\(((?:[^()]+|\([^()]*\))*)\))"
     content = re.sub(pattern, replace_any_link, content)
-    
+
     # 2. HTML image sources <img src="path" ...> to Markdown image syntax
     def replace_html_img(match):
         attrs = match.group(0)
@@ -280,18 +394,20 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
         if not src_match:
             return match.group(0)
         url_part = src_match.group(1).strip()
-        
+
         if not url_part:
             return ""
-            
-        if url_part.startswith(('http://', 'https://')):
+
+        if url_part.startswith(("http://", "https://")):
             # Download remote image
             target_src = download_remote_image(url_part, docs_dir)
-        elif url_part.startswith(('mailto:', 'ftp:', 'www.', '/')):
+        elif url_part.startswith(("mailto:", "ftp:", "www.", "/")):
             return match.group(0)
         else:
-            target_src = os.path.normpath(os.path.join(file_dir, url_part)).replace('\\', '/')
-        
+            target_src = os.path.normpath(os.path.join(file_dir, url_part)).replace(
+                "\\", "/"
+            )
+
         # Check if there is a width attribute
         width_match = re.search(r'width=["\']([^"\']+)["\']', attrs)
         width_attr = ""
@@ -300,74 +416,90 @@ def rewrite_content(content, file_src_path, path_to_id, docs_dir):
             # if it's just a number, append pt
             if width_val.isdigit():
                 width_attr = f"{{width={width_val}pt}}"
-            elif width_val.endswith('px'):
+            elif width_val.endswith("px"):
                 val_num = width_val[:-2].strip()
                 width_attr = f"{{width={val_num}pt}}"
             else:
                 width_attr = f"{{width={width_val}}}"
-                
+
         dest = target_src
-        if ' ' in dest and not (dest.startswith('<') and dest.endswith('>')):
+        if " " in dest and not (dest.startswith("<") and dest.endswith(">")):
             dest = f"<{dest}>"
         return f"![Image]({dest}){width_attr}"
-        
+
     # Match any <img ...> tag
-    content = re.sub(r'<img\s+[^>]*>', replace_html_img, content)
-    
+    content = re.sub(r"<img\s+[^>]*>", replace_html_img, content)
+
     return content
 
+
 def shift_headings(markdown_text, shift, page_id):
-    # Also attach the unique ID to the first level-1 heading in the file
+    # Attach a unique Typst label to every heading in the file: the first
+    # level-1 heading gets the bare page_id (what whole-page links resolve
+    # to), every later heading gets "{page_id}-{heading_slug(title)}" (what
+    # rewrite_content's anchor-fragment links resolve to). Without a label on
+    # every heading, sub-section anchor links break since Pandoc's own
+    # auto-generated ids for unlabelled headings are plain per-text slugs
+    # (not page-id-prefixed), which cannot be predicted or matched when the
+    # same heading text (e.g. "Technische Besonderheiten") repeats across
+    # many pages of the merged book.
     lines = markdown_text.splitlines()
     in_code_block = False
     code_block_char = None
-    
+
     new_lines = []
     attached_id = False
-    
+    used_slugs = {}
+
     for line in lines:
         stripped = line.strip()
         if not in_code_block:
-            if stripped.startswith('```'):
+            if stripped.startswith("```"):
                 in_code_block = True
-                code_block_char = '```'
-            elif stripped.startswith('~~~'):
+                code_block_char = "```"
+            elif stripped.startswith("~~~"):
                 in_code_block = True
-                code_block_char = '~~~'
+                code_block_char = "~~~"
         else:
             if stripped.startswith(code_block_char):
                 in_code_block = False
                 code_block_char = None
-                
+
         if not in_code_block:
-            match = re.match(r'^#+[ \t]+(.*)$', line)
+            match = re.match(r"^#+[ \t]+(.*)$", line)
             if match:
                 # Count leading hashes
-                hashes = line[:len(line)-len(line.lstrip('#'))]
+                hashes = line[: len(line) - len(line.lstrip("#"))]
                 title = match.group(1)
-                
-                # Check if we should attach the target ID to the first heading we see in the file
-                id_suffix = ""
+                # Strip any existing id if present in the header
+                title = re.sub(r"\{#[^}]+\}", "", title).strip()
+
                 if not attached_id:
-                    # Strip any existing id if present in the header
-                    title = re.sub(r'\{#[^}]+\}', '', title).strip()
                     id_suffix = f" {{#{page_id}}}"
                     attached_id = True
-                    
+                else:
+                    slug = heading_slug(title) or "section"
+                    count = used_slugs.get(slug, 0)
+                    used_slugs[slug] = count + 1
+                    if count:
+                        slug = f"{slug}-{count + 1}"
+                    id_suffix = f" {{#{page_id}-{slug}}}"
+
                 if shift > 0:
                     new_level = min(len(hashes) + shift, 6)
-                    new_hashes = '#' * new_level
+                    new_hashes = "#" * new_level
                     line = f"{new_hashes} {title}{id_suffix}"
                 else:
                     line = f"{hashes} {title}{id_suffix}"
-                    
+
         new_lines.append(line)
-        
+
     # If no heading was found in the file, we prepend a target anchor
     if not attached_id:
         new_lines.insert(0, f"\n# {page_id.replace('-', ' ').title()} {{#{page_id}}}\n")
-        
-    return '\n'.join(new_lines)
+
+    return "\n".join(new_lines)
+
 
 def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
     for item in items:
@@ -377,19 +509,20 @@ def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
             has_index = False
             if first_child and first_child.is_page:
                 basename = os.path.basename(first_child.file.src_path).lower()
-                has_index = (basename == 'index.md' or 
-                             clean_id(first_child.file.src_path) == clean_id(item.title))
-            
+                has_index = basename == "index.md" or clean_id(
+                    first_child.file.src_path
+                ) == clean_id(item.title)
+
             if not has_index:
                 # If there's no index page, output a heading for the section
                 header_level = depth + 1
-                hashes = '#' * header_level
+                hashes = "#" * header_level
                 section_id = clean_id(item.title)
                 output_file.write(f"\n\n{hashes} {item.title} {{#{section_id}}}\n\n")
-                
+
             # Process children recursively
             process_nav(item.children, path_to_id, docs_dir, output_file, depth + 1)
-            
+
         elif item.is_page:
             # Determine if this page is the index page of its parent section
             parent = item.parent
@@ -398,63 +531,68 @@ def process_nav(items, path_to_id, docs_dir, output_file, depth=0):
                 first_child = parent.children[0]
                 if first_child == item:
                     basename = os.path.basename(item.file.src_path).lower()
-                    is_index = (basename == 'index.md' or
-                                clean_id(item.file.src_path) == clean_id(parent.title))
-            
+                    is_index = basename == "index.md" or clean_id(
+                        item.file.src_path
+                    ) == clean_id(parent.title)
+
             # Heading shift:
             # Index pages represent the section, so their depth is effectively depth - 1
             # Normal pages are at depth
             shift = (depth - 1) if is_index else depth
             shift = max(0, shift)
-            
+
             abs_path = item.file.abs_src_path
-            src_path = item.file.src_path.replace('\\', '/')
-            if src_path.lower() == 'combined.md' or src_path.lower().endswith('/combined.md'):
+            src_path = item.file.src_path.replace("\\", "/")
+            if src_path.lower() == "combined.md" or src_path.lower().endswith(
+                "/combined.md"
+            ):
                 continue
             page_id = path_to_id.get(src_path, clean_id(src_path))
-            
+
             try:
-                with open(abs_path, 'r', encoding='utf-8') as f:
+                with open(abs_path, encoding="utf-8") as f:
                     content = f.read()
-            except Exception as e:
+            except Exception as e:  # noqa: BLE001 - skip unreadable page
                 print(f"Error reading {abs_path}: {e}")
                 continue
-                
+
             # Rewrite paths and links
             content = rewrite_content(content, src_path, path_to_id, docs_dir)
-            
+
             # Shift headings and attach page ID
             content = shift_headings(content, shift, page_id)
-            
+
             # Append to output
             output_file.write(f"\n\n<!-- PAGE_START: {src_path} -->\n")
             output_file.write(content)
             output_file.write(f"\n<!-- PAGE_END: {src_path} -->\n")
 
+
 def main():
-    config_file = sys.argv[1] if len(sys.argv) > 1 else 'mkdocs.yml'
+    config_file = sys.argv[1] if len(sys.argv) > 1 else "mkdocs.yml"
     if not os.path.exists(config_file):
         print(f"Error: Configuration file {config_file} not found.")
         sys.exit(1)
-        
+
     print(f"Loading MkDocs configuration from {config_file}...")
     cfg = mkdocs.config.load_config(config_file=config_file)
-    
+
     files = get_files(cfg)
     nav = get_navigation(files, cfg)
-    
+
     print(f"Building path-to-id map for {len(nav.pages)} pages...")
     path_to_id = build_path_to_id_map(nav.pages)
-    
+
     docs_dir = os.path.abspath(cfg.docs_dir)
-    output_path = os.path.join(docs_dir, 'combined.md')
-    
+    output_path = os.path.join(docs_dir, "combined.md")
+
     print(f"Generating combined markdown file: {output_path}")
-    with open(output_path, 'w', encoding='utf-8') as out_f:
+    with open(output_path, "w", encoding="utf-8") as out_f:
         out_f.write("<!-- Generated by merge_docs.py -->\n")
         process_nav(nav.items, path_to_id, docs_dir, out_f, depth=0)
-        
+
     print("Merge completed successfully!")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

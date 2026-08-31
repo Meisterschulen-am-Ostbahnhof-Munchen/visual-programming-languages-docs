@@ -1,6 +1,7 @@
 # CONSTANTS_MATH
 
 CONSTANTS_MATH
+
 ## Structure
 
 | Name | Type | Initial Value | Comment |
@@ -15,5 +16,3 @@ CONSTANTS_MATH
 | E_INV | REAL | 0.367879441171442 | 1/e |
 | SQ2 | REAL | 1.4142135623731 | root of 2 |
 | FACTS | DINT | [1,1,2,6,24,120,720,5040,40320,362880,3628800,39916800,479001600] | Factorials Array 0..12 |
-
-## Structure

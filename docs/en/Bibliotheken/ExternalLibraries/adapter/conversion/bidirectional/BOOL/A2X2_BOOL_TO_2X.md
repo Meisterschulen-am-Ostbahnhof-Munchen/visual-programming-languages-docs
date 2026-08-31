@@ -36,7 +36,7 @@ The A2X2_BOOL_TO_2X function block is a composite function block that translates
 
 ## Functionality
 
-When a `REQ_UP` event arrives, the current value of `OUT_UP` is sent out via `A2X2_OUT.EO_UP`/`A2X2_OUT.DO_UP`; the same happens for `REQ_DOWN`/`OUT_DOWN` via `EO_DOWN`/`DO_DOWN`. Conversely, whatever the adapter receives on its request side (`A2X2_OUT.EI_UP`/`A2X2_OUT.EI_DOWN` with `DI_UP`/`DI_DOWN`) is forwarded unchanged as `CNF_UP`/`IN_UP` and `CNF_DOWN`/`IN_DOWN` respectively. Both channels operate completely independently of each other.
+When a `REQ_UP` event arrives, the current value of `OUT_UP` is sent out via `A2X2_OUT.EO_UP`/`A2X2_OUT.DO_UP`; the same happens for `REQ_DOWN`/`OUT_DOWN` via `EO_DOWN`/`DO_DOWN`. Conversely, whatever the adapter receives on its confirmation side (`A2X2_OUT.EI_UP`/`A2X2_OUT.EI_DOWN` with `DI_UP`/`DI_DOWN`) is forwarded unchanged as `CNF_UP`/`IN_UP` and `CNF_DOWN`/`IN_DOWN` respectively. Both channels operate completely independently of each other.
 
 ## Technical Details
 

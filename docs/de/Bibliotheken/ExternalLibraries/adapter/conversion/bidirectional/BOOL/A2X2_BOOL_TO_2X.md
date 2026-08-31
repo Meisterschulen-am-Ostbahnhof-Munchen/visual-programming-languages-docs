@@ -36,7 +36,7 @@ Der Funktionsblock A2X2_BOOL_TO_2X ist ein Composite-Funktionsblock, der zwei ei
 
 ## Funktionsweise
 
-Trifft ein `REQ_UP`-Ereignis ein, wird der aktuelle Wert von `OUT_UP` über `A2X2_OUT.EO_UP`/`A2X2_OUT.DO_UP` gesendet; analog für `REQ_DOWN`/`OUT_DOWN` über `EO_DOWN`/`DO_DOWN`. Umgekehrt wird alles, was der Adapter auf seiner Anfrage-Seite empfängt (`A2X2_OUT.EI_UP`/`A2X2_OUT.EI_DOWN` mit `DI_UP`/`DI_DOWN`), unverändert als `CNF_UP`/`IN_UP` bzw. `CNF_DOWN`/`IN_DOWN` nach außen weitergereicht. Beide Kanäle laufen komplett unabhängig voneinander.
+Trifft ein `REQ_UP`-Ereignis ein, wird der aktuelle Wert von `OUT_UP` über `A2X2_OUT.EO_UP`/`A2X2_OUT.DO_UP` gesendet; analog für `REQ_DOWN`/`OUT_DOWN` über `EO_DOWN`/`DO_DOWN`. Umgekehrt wird alles, was der Adapter auf seiner Bestätigungs-Seite empfängt (`A2X2_OUT.EI_UP`/`A2X2_OUT.EI_DOWN` mit `DI_UP`/`DI_DOWN`), unverändert als `CNF_UP`/`IN_UP` bzw. `CNF_DOWN`/`IN_DOWN` nach außen weitergereicht. Beide Kanäle laufen komplett unabhängig voneinander.
 
 ## Technische Besonderheiten
 

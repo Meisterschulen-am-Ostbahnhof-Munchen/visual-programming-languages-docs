@@ -6,8 +6,4 @@ arithmetic silently wraps around on overflow/underflow for integer types, and pr
 for REAL/LREAL — both dangerous for real measurement values. Every block in this library instead
 clamps the result into the valid range and reports the limit condition via a `LIMIT_HIT` output.
 
-```{toctree}
-:maxdepth: 1
-
-arithmetic/index
-```
+- [Arithmetic Functions](arithmetic/index.md)

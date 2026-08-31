@@ -63,6 +63,32 @@ exists on Wi-Fi-capable chips (ESP32/ESP32-S2/ESP32-S3) doesn't apply.
 | Input_I7 | 22            |
 | Input_I8 | 21            |
 
+### Pulse Inputs (Frequency Measurement)
+
+| Input:          | PIN (ESP32P4) |
+|-----------------|---------------|
+| PulseInput_I1   | 18            |
+| PulseInput_I2   | 17            |
+| PulseInput_I3   | 54            |
+| PulseInput_I4   | 19            |
+| PulseInput_I5   | 16            |
+| PulseInput_I6   | 23            |
+| PulseInput_I7   | 22            |
+| PulseInput_I8   | 21            |
+
+The pulse inputs are also combo pins that share the physical pin with the digital
+input of the same number (uses the same `EPinDigitalIn` pin table internally, via the
+ESP32 PCNT hardware, see `IOHandleESP32PulseIN.cpp`).
+
+**Observation from live testing (2026-08-30, root cause not yet confirmed):**
+
+- `PulseInput_I1`/`_I2` measure noticeably higher frequencies (~23 kHz in testing) than
+  the other six channels (~2 kHz in testing) — I1/I2 behave like "fast" pins, I3-I8
+  like "slow" pins.
+- Only **4 of 8** pulse inputs work reliably at the same time (similar to the PWM
+  observation, where only 8 of 12 outputs worked simultaneously). Likely a pin/peripheral
+  sharing limit on the ESP32 side, but the exact cause is still open.
+
 ### Digital Outputs
 
 | Output:    | PIN (ESP32P4) |

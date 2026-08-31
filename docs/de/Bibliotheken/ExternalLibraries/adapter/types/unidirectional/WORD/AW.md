@@ -1,6 +1,6 @@
-![AW](AW.svg)
-
 # AW (WORD)
+
+![AW](AW.svg)
 
 ## 🎧 Podcast
 

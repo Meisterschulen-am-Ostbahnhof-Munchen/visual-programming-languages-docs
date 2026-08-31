@@ -1,6 +1,6 @@
-![AUS](AUS.svg)
-
 # AUS (USINT)
+
+![AUS](AUS.svg)
 
 ## 🎧 Podcast
 

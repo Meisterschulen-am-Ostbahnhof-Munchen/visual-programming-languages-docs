@@ -1,8 +1,8 @@
-![AX2](AX2.svg)
 # AX2
-bidirectional adapter interface for 1 event and 1 bool
 
-# AX2
+![AX2](AX2.svg)
+
+bidirectional adapter interface for 1 event and 1 bool
 
 ## Interface
 

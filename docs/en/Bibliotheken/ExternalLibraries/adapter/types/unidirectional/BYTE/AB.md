@@ -1,6 +1,6 @@
-![AB](AB.svg)
-
 # AB (BYTE)
+
+![AB](AB.svg)
 
 ## 🎧 Podcast
 

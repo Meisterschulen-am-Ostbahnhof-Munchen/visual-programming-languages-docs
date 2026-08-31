@@ -1,6 +1,6 @@
-![ADI](ADI.svg)
-
 # ADI (DINT)
+
+![ADI](ADI.svg)
 
 ## 🎧 Podcast
 

@@ -1,6 +1,6 @@
-![AUI](AUI.svg)
-
 # AUI (UINT)
+
+![AUI](AUI.svg)
 
 unidirectional Adapter Interface for 1 Event and 1 Uint
 

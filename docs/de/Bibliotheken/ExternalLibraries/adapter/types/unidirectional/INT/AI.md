@@ -1,6 +1,6 @@
-![AI](AI.svg)
-
 # AI (INT)
+
+![AI](AI.svg)
 
 ## 🎧 Podcast
 

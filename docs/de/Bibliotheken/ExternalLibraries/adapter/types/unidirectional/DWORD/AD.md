@@ -1,6 +1,6 @@
-![AD](AD.svg)
-
 # AD (DWORD)
+
+![AD](AD.svg)
 
 ## 🎧 Podcast
 

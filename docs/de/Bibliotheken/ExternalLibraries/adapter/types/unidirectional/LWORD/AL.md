@@ -1,6 +1,6 @@
-![AL](AL.svg)
-
 # AL (LWORD)
+
+![AL](AL.svg)
 
 ## 🎧 Podcast
 

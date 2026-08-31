@@ -1,6 +1,6 @@
-![AX](AX.svg)
-
 # AX (BOOL)
+
+![AX](AX.svg)
 
 ## 🎧 Podcast
 
@@ -23,6 +23,8 @@
 | Name | Type | Comment |
 | :--- | :--- | :--- |
 | D1 | BOOL | Indication (or Request) Data from Plug |
+
+## 🛠️ Related Exercises
 
 - [Uebung_003b2_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b2_AX.md)
 - [Uebung_003b3_AX](../../../../../../Uebungen/test_AX/Uebungen_doc/Uebung_003b3_AX.md)
@@ -48,10 +50,6 @@
 
 ---
 
+### 🌐 Related Topic Pages on ms-muc-docs.de
+
 - [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
-
-### Data
-
-## 🛠️ Zugehörige Übungen
-
-### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de

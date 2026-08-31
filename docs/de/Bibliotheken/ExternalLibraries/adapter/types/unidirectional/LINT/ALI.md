@@ -1,6 +1,6 @@
-![ALI](ALI.svg)
-
 # ALI (LINT)
+
+![ALI](ALI.svg)
 
 ## 🎧 Podcast
 

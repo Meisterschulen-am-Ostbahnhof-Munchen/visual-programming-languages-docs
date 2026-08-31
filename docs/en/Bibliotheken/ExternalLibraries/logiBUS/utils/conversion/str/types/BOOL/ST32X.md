@@ -16,9 +16,6 @@ Since `ST32X` is a data type and not a function block, it does not have event- o
 
 Not applicable, as `ST32X` is a user-defined data type and not a function block.
 
-### **Event Outputs**
-
-
 ### **Data Inputs**
 
 The structure consists of the following 32 BOOL elements, which can be considered "inputs" internally, as they receive the values from which the structure is formed:

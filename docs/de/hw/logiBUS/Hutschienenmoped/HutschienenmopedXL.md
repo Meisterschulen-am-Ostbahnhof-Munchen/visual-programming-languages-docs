@@ -49,8 +49,6 @@ Spannungsteiler ist im Controller:
 | Output_Q7 |  1            |
 | Output_Q8 |  2            |
 
-### LED Strip
-
 ## Weitere Infos
 
 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS_Hardware/tree/master/Hutschienenmoped-XL>

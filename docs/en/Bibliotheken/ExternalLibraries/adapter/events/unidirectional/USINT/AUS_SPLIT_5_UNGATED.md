@@ -16,9 +16,6 @@ The function block `AUS_SPLIT_5_UNGATED` distributes an incoming OFF event (e.g.
 
 None (signal exchange occurs exclusively via adapters).
 
-### **Event Outputs**
-
-
 ### **Data Inputs**
 
 None.

@@ -39,8 +39,6 @@ The voltage divider is NOT in the controller but in the Angle! Caution: If you c
 | Output_Q3 | 33 |
 | Output_Q4 | 25 |
 
-### LED Strip
-
 ## Further Information
 
 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS_Hardware/tree/master/Hutschienenmoped>

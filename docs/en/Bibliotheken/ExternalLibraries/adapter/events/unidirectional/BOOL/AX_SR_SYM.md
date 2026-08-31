@@ -25,14 +25,11 @@ None (the output value is provided via an adapter).
 
 None.
 
-### **Data Outputs**
-
-
 ### **Adapter**
 
 | Name | Type | Description |
 |------|----------------------------------------------|---------------------------------------|
-| Q | `adapter::types::unidirectional::AX` | Provides the current binary state. The adapter provides an event (`E1`) and a data value (`D1`). After each state change, `Q.E1` is triggered, and the new value is output to `Q.D1`.
+| Q | `adapter::types::unidirectional::AX` | Provides the current binary state. The adapter provides an event (`E1`) and a data value (`D1`). After each state change, `Q.E1` is triggered, and the new value is output to `Q.D1`. |
 
 ## Functionality
 

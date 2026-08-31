@@ -1,14 +1,12 @@
-![E_TP](E_TP.svg)
-
 # E_TP
+
+![E_TP](E_TP.svg)
 
 **Important note: This function block requires only one event and no cyclic calls. It does not have an output ET and does not display the elapsed time.**
 
 ## Image
 
 ![image](https://github.com/user-attachments/assets/8d531305-da9a-42e8-b44d-afab3a955be6)
-
-## Text
 
 ## Description
 
@@ -28,13 +26,16 @@ The **E_TP** function block (also known as **Pulse Generator** or **Timer Pulse*
 
 - **REQ (Service Request):** This event is triggered when the timer is to be started. It is linked to the input variables **IN** and **PT**.
 - **R (Reset):** This event is triggered to reset the timer. It is linked to the input variable **IN**.
+
 1. **Output Events:**
 
 - **CNF (Confirmation of Requested Service):** This event is triggered when the timer expires and the output **Q** is reset. It is linked to the output variable **Q**.
+
 1. **Input Variables:**
 
 - **IN (BOOL):** The input that starts the timer. When **IN** is set to **TRUE**, the timer starts.
 - **PT (TIME):** The specified duration for which the output **Q** is activated.
+
 1. **Output Variables:**
 
 - **Q (BOOL):** The output that is set to **TRUE** for the duration **PT** after **IN** has been activated.

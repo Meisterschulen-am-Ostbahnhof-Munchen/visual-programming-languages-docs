@@ -38,8 +38,6 @@ Spannungsteiler ist NICHT im Controller sondern im Angle!!! Achtung wenn man den
 | Output_Q3 | 33            |
 | Output_Q4 | 25            |
 
-### LED Strip
-
 ## Weitere Infos
 
 <https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/ISOBUS_Hardware/tree/master/Hutschienenmoped>

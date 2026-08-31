@@ -1,14 +1,12 @@
-![E_TONOF](E_TONOF.svg)
-
 # E_TONOF
+
+![E_TONOF](E_TONOF.svg)
 
 **Wichtiger Hinweis: Dieser Baustein benötigt nur ein Ereignis (Event) und keine zyklischen Aufrufe. Er besitzt keinen Ausgang ET und zeigt die verstrichene Zeit nicht an.**
 
 ## Bild
 
 ![image](https://github.com/user-attachments/assets/e09eae11-e153-429f-8eaf-6bfff456f35a)
-
-## Text
 
 ## Beschreibung
 

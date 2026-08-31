@@ -22,9 +22,6 @@ The function block **ALI_SPLIT_3** is used to distribute an incoming unidirectio
 
 – None (all communication takes place via the adapter interfaces)
 
-### **Data Outputs**
-
-
 ### **Adapter**
 
 | Direction | Name | Type | Description |
@@ -65,7 +62,6 @@ The function block has no state machines or state memory. Its behavior is determ
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
-
 
 ## Conclusion
 

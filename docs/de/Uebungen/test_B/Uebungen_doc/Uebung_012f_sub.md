@@ -82,8 +82,6 @@ Die Subapplikation besteht aus drei internen Funktionsbausteinen, die zusammen d
 - Einbindung eines Qualitätsbausteins zur Überwachung.
 - Aufbau einer SubApp mit mehreren Funktionsbausteinen und Ereignis-/Datenverknüpfungen.
 
-### Schwierigkeitsgrad: Mittel
-
 ### Vorkenntnisse
 
 - Grundlegende Bedienung der 4diac-IDE.

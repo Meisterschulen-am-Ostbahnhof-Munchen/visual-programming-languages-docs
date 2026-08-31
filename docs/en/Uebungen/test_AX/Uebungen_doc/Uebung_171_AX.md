@@ -1,5 +1,3 @@
-Here is the documentation for exercise `Uebung_171_AX` based on the provided data.
-
 # Exercise_171_AX: Exercise for ASR_AX_SR
 
 * * * * * * * * * *
@@ -11,8 +9,6 @@ This exercise covers the use of adapters in the context of set/reset logic (SR f
 ## Function Blocks (FBs) Used
 
 This exercise uses specific function blocks for input processing, adapter conversion, and output control.
-
-### Sub-modules
 
 ### DigitalInput_CLK_I1 & DigitalInput_CLK_I2
 
@@ -63,11 +59,13 @@ The exercise proceeds as follows:
 
 - The function block `DigitalInput_CLK_I1` monitors the input `I1`. A click triggers the event `IND`.
 - The function block `DigitalInput_CLK_I2` monitors the input `I2`. A click triggers the event `IND`.
+
 1. **Signal Processing and Conversion**:
 
 - The `IND` event of `DigitalInput_CLK_I1` is connected to the input `SET` of the function block `ASR_2EVENTS_TO_SR`.
 - The `IND` event from `DigitalInput_CLK_I2` is connected to the input `RESET` of the function block `ASR_2EVENTS_TO_SR`.
 - The function block `ASR_2EVENTS_TO_SR` converts these events into commands on the adapter line `ASR_OUT`.
+
 1. **Logic and Output**:
 
 - The adapter connection runs from `ASR_2EVENTS_TO_SR.ASR_OUT` to `ASR_AX_SR_1.S_R`. The state is stored here (set or reset).

@@ -14,9 +14,6 @@ The function block `AUS_SPLIT_5` distributes an incoming OFF event (e.g., a sign
 
 None (signal exchange occurs exclusively via adapters).
 
-### **Event Outputs**
-
-
 ### **Data Inputs**
 
 None.
@@ -64,7 +61,6 @@ The component has no internal state. It operates deterministically and entirely 
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
-
 
 ## Conclusion
 

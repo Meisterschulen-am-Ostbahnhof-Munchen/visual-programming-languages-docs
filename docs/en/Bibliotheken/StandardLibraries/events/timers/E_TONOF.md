@@ -1,14 +1,12 @@
-![E_TONOF](E_TONOF.svg)
-
 # E_TONOF
+
+![E_TONOF](E_TONOF.svg)
 
 **Important note: This function block requires only one event and no cyclic calls. It does not have an output ET and does not display the elapsed time.**
 
 ## Image
 
 ![image](https://github.com/user-attachments/assets/e09eae11-e153-429f-8eaf-6bfff456f35a)
-
-## Text
 
 ## Description
 
@@ -35,6 +33,7 @@ The **E_TONOF** function block is a standardized function block type (FBType) ac
 - **IN**: The input value that starts the timer.
 - **PT_ON**: The preset duration for the on-delay.
 - **PT_OFF**: The preset duration for the off-delay.
+
 1. **R** (Reset):
 
 - **Type**: Event
@@ -55,10 +54,12 @@ The **E_TONOF** function block is a standardized function block type (FBType) ac
 
 - **Type**: BOOL
 - **Description**: The input value that starts the timer. When **IN** is set to `TRUE`, the on-delay starts. When **IN** is set to `FALSE`, the off-delay starts.
+
 1. **PT_ON**:
 
 - **Type**: TIME
 - **Description**: The preset duration for the on-delay. This time is measured from the moment **IN** is set to `TRUE`.
+
 1. **PT_OFF**:
 
 - **Type**: TIME
@@ -79,10 +80,12 @@ The **E_TONOF** function block is a standardized function block type (FBType) ac
 
 - When **IN** is set to `TRUE`, the On-Delay timer (**PT_ON**) starts.
 - After **PT_ON** expires, **Q** is set to `TRUE`.
+
 1. **Off-Delay**:
 
 - When **IN** is set to `FALSE`, the off-delay timer (**PT_OFF**) starts.
 - **Q** remains at `TRUE` until **PT_OFF** expires, and is then reset to `FALSE`.
+
 1. **Reset**:
 
 - When the **R** event is triggered, the timer is reset, and **Q** is immediately set to `FALSE`.

@@ -14,9 +14,6 @@ The function block **ALI_TO_AUI** is a composite block for converting an ALI ada
 
 Not present – event control is handled by the adapters.
 
-#### **Event Outputs**
-
-
 #### **Data Inputs**
 
 Not present – data transfer is handled by the adapters.

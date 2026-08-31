@@ -28,8 +28,6 @@ There are no direct data inputs at the block level.
 
 There are no direct data outputs at the block level.
 
-#### **Adapters**
-
 #### **Sockets (Input Interfaces)**
 
 - **G** (Type: `adapter::types::unidirectional::AX`):
@@ -54,6 +52,7 @@ The module is internally based on a network of standard function blocks to imple
 
 - If `G.Q` = `FALSE`, the value of `IN0` is passed to the output.
 - If `G.Q` = `TRUE`, the value of `IN1` is passed to the output.
+
 1. **Output Triggering:** Any change to the inputs or the selector triggers the process via the event connections. The selected value is passed from the output buffer `E_D_FF_ANY_OUT` to the output plug `OUT`, and the corresponding output event `OUT.E1` is triggered.
 
 ## Technical Features

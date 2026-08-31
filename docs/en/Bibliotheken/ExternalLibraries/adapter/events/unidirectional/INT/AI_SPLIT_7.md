@@ -31,10 +31,6 @@ Direct data outputs are not available. The analog values are output via the seve
 - **IN** (Socket): Type `adapter::types::unidirectional::AI` – Input for the analog signal.
 - **OUT1** to **OUT7** (plugs): Type `adapter::types::unidirectional::AI` – Seven outputs that forward the incoming value identically.
 
-## Functionality
-
-
-
 ## Technical Features
 
 **AI_SPLIT_7** operates as a pure data distributor. An analog value present at the **IN** adapter is copied to all seven output adapters (**OUT1** to **OUT7**) without delay or transformation. This ensures that all connected components receive the same analog value. The internal logic is designed for unidirectional data transmission.
@@ -59,7 +55,6 @@ The function block has no explicit states because it contains no sequential or e
 ## Change Detection
 
 Each output plug is updated independently: the incoming value is written to a given output, and its adapter event sent, only if it differs from that output's current value. Outputs that are already in sync stay quiet, while an output that was just connected (or has drifted out of sync) still receives the update it needs.
-
 
 ## Conclusion
 

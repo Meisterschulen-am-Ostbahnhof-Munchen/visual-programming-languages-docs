@@ -6,7 +6,7 @@
 
 ## Introduction
 
-`E_RS_SYM` (Event-driven RS Flip-Flop, symmetric start-up behaviour) is an event-driven, bistable memory element according to IEC 61499. It behaves functionally like [E_RS](../E_RS.md)/[E_SR](../E_SR.md), but differs in its initial state: while `E_RS`/`E_SR` only produce a defined output after the first `S` or `R` event, `E_RS_SYM` already reacts symmetrically to both events in its initial state `START` and immediately transitions into the matching `SET` or `RESET` state.
+`E_RS_SYM` (Event-driven RS Flip-Flop, symmetric start-up behaviour) is an event-driven, bistable memory element according to IEC 61499. It behaves functionally like [E_RS](E_RS.md)/[E_SR](E_SR.md), but differs in its initial state: while `E_RS`/`E_SR` only produce a defined output after the first `S` or `R` event, `E_RS_SYM` already reacts symmetrically to both events in its initial state `START` and immediately transitions into the matching `SET` or `RESET` state.
 
 ![E_RS_SYM](E_RS_SYM.svg)
 
@@ -50,7 +50,7 @@ The ECC has three states: `START`, `SET`, and `RESET`. From `START`, both an `S`
 
 ## Comparison with similar function blocks
 
-- **[E_RS](../E_RS.md) / [E_SR](../E_SR.md)**: functionally nearly identical, but without symmetric start-up behaviour — in the initial state only one of the two events has an effect.
+- **[E_RS](E_RS.md) / [E_SR](E_SR.md)**: functionally nearly identical, but without symmetric start-up behaviour — in the initial state only one of the two events has an effect.
 - **[E_RS_SYM_INIT](E_RS_SYM_INIT.md)**: the same base functionality, extended with an explicit `INIT`/`INITO` interface for setting a defined start value.
 - **[E_SR_SYM](E_SR_SYM.md)**: functionally identical, only the order of `S`/`R` in the interface definition is swapped (naming convention analogous to `E_RS`/`E_SR`).
 

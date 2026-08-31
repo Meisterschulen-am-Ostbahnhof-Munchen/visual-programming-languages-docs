@@ -3,9 +3,10 @@
 ![Button_IXA_TO_logiBUS_QXA_BG_network](./Button_IXA_TO_logiBUS_QXA_BG_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
-`Button_IXA_TO_logiBUS_QXA_BG` erweitert [`Button_IXA_TO_logiBUS_QXA`](./Button_IXA_TO_logiBUS_QXA.md) um eine VT-Statusfarbe: Der Taster-Zustand schaltet nicht nur den physischen Ausgang, sondern zusätzlich die Hintergrundfarbe des Tasters selbst (Grün/Weiß). Die OPC-UA-fähige Weiterentwicklung ist [`Button_IXA_TO_logiBUS_QXA_BG_OPC`](../../typelibrary/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC.md).
+`Button_IXA_TO_logiBUS_QXA_BG` erweitert [`Button_IXA_TO_logiBUS_QXA`](./Button_IXA_TO_logiBUS_QXA.md) um eine VT-Statusfarbe: Der Taster-Zustand schaltet nicht nur den physischen Ausgang, sondern zusätzlich die Hintergrundfarbe des Tasters selbst (Grün/Weiß). Die OPC-UA-fähige Weiterentwicklung ist [`Button_IXA_TO_logiBUS_QXA_BG_OPC`](Button_IXA_TO_logiBUS_QXA_BG_OPC.md).
 
 ## Verwendete Funktionsbausteine (FBs)
 
@@ -36,4 +37,4 @@ Fügt der einfachen Taster-zu-Ausgang-Verdrahtung eine VT-Statusfarbe hinzu — 
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="2254.0" height="1079.0" viewBox="0 0 2254.0 1079.0">
-<defs>
-    
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="-17.5 -151.0 1264.7 588.0"
+     width="1265" height="588">
   <style>
     @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-family: "TGL 0-17_std";
+      src: local("TGL 0-17_std");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
-      font-style: italic;
+      font-family: "TGL 0-17";
+      src: local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-16_std";
+      src: local("TGL 0-16_std");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-16";
+      src: local("TGL 0-16");
+      font-style: normal;
       font-weight: normal;
     }
   </style>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,346 +40,400 @@
       </feMerge>
     </filter>
   </defs>
-<rect x="0" y="0" width="2254.0" height="1079.0" fill="#ffffff" />
-<defs>
-    
-  <style>
-    @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
-      font-style: normal;
-      font-weight: normal;
-    }
-    @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
-      font-style: italic;
-      font-weight: normal;
-    }
-  </style>
-    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
-      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
-      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
-      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
-      <feMerge>
-        <feMergeNode in="shadow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-<text x="1127.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">F_AI_RAW_TO_PERCENT_AD: Volladapterbasierte Alternative zu F_AI_RAW_TO_PERCENT: Analog-Rohwert (AD-Adapter, DWORD 0-4095) linear in Prozent (AR-Adapter, REAL 0.0-100.0) umrechnen, gleiches Ergebnis wie die datenbasierte Variante. WICHTIG: AD_TO_AR/F_DWORD_TO_REAL waere hier FALSCH - das ist eine Bit-Reinterpretation (IEEE754-Cast), keine numerische Umwandlung (siehe forte_real.cpp CIEC_REAL::setValue, case e_DWORD: setValueSimple). Der korrekte Weg ist AD_TO_AUDI (Bit-Reinterpretation DWORD-UDINT, hier gueltig, gleiche Bitbreite/Darstellung) gefolgt von AUDI_TO_AR (nutzt intern F_UDINT_TO_REAL, echte numerische Umwandlung).</text>
-<path d="M287.0,227.0 C509.0,227.0,805.0,227.0,1027.0,227.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
-<path d="M1187.0,227.0 C1409.0,227.0,1705.0,227.0,1927.0,227.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
-<path d="M1217.0,938.0 C1430.0,938.0,1714.0,253.0,1927.0,253.0" stroke="#845DAF" stroke-width="1.5" fill="none" />
-<path d="M 130.0 140.0
-            L 284.0 140.0
-            A 3 3 0 0 1 287.0 143.0
-            L 287.0 167.0
-            A 3 3 0 0 1 284.0 170.0
-            L 281.0 170.0
-            L 281.0 210.0
-            L 284.0 210.0
-            A 3 3 0 0 1 287.0 213.0
-            L 287.0 253.0
-            A 3 3 0 0 1 284.0 256.0
-            L 130.0 256.0
-            A 3 3 0 0 1 127.0 253.0
-            L 127.0 213.0
-            A 3 3 0 0 1 130.0 210.0
-            L 133.0 210.0
-            L 133.0 170.0
-            L 130.0 170.0
-            A 3 3 0 0 1 127.0 167.0
-            L 127.0 143.0
-            A 3 3 0 0 1 130.0 140.0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
+  <rect x="-17.5" y="-151.0" width="1264.7" height="588.0" fill="white"/>
+  <rect x="-10.5" y="-144.0" width="1250.7" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-10.5" y="-144.0" width="1250.7" height="25.0" fill="white" stroke="none"/>
+  <line x1="-10.5" y1="-119.5" x2="1240.1" y2="-119.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-5.5" y="-127.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Volladapterbasierte Alternative zu F_AI_RAW_TO_PERCENT: Analog-Rohwert (AD-Adapter, DWORD 0-4095) linear in Prozent (AR-Adapter, REAL 0.0-100.0) umrechnen, gleiches Ergebnis wie die datenbasierte Variante. WICHTIG: AD_TO_AR/F_DWORD_TO_REAL waere hier FALSCH - das ist eine Bit-Reinterpretation (IEEE754-Cast), keine numerische Umwandlung (siehe forte_real.cpp CIEC_REAL::setValue, case e_DWORD: setValueSimple). Der korrekte Weg ist AD_TO_AUDI (Bit-Reinterpretation DWORD-UDINT, hier gueltig, gleiche Bitbreite/Darstellung) gefolgt von AUDI_TO_AR (nutzt intern F_UDINT_TO_REAL, echte numerische Umwandlung).</text>
+  <g id="sidebars">
+    <rect x="-10.5" y="-119.0" width="50.5" height="549.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="40.0" y1="-119.0" x2="40.0" y2="430.0" stroke="#A0A0A0" stroke-width="0.5"/>
+    <rect x="1152.0" y="-119.0" width="88.1" height="549.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="1152.0" y1="-119.0" x2="1152.0" y2="430.0" stroke="#A0A0A0" stroke-width="0.5"/>
+  </g>
+  <g id="connections">
+    <polyline points="40.0,-84.0 98.0,-84.0 103.0,-79.0 103.0,113.5 108.0,118.5 403.3,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="40.0,-84.0 98.0,-84.0 103.0,-79.0 103.0,113.5 108.0,118.5 403.3,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="514.4,118.5 583.3,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="514.4,118.5 583.3,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="694.4,118.5 766.2,118.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="694.4,118.5 766.2,118.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="677.5,271.5 735.5,271.5 740.5,266.5 740.5,140.5 745.5,135.5 766.2,135.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="677.5,271.5 735.5,271.5 740.5,266.5 740.5,140.5 745.5,135.5 766.2,135.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="859.7,118.5 917.7,118.5 922.7,113.5 922.7,-79.0 927.7,-84.0 1152.0,-84.0" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="859.7,118.5 917.7,118.5 922.7,113.5 922.7,-79.0 927.7,-84.0 1152.0,-84.0" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+  </g>
+  <g id="interface_ports">
+    <path d="M 30.0 -89.0 L 32.5 -89.0 L 32.5 -87.33333333333333 L 35.0 -87.33333333333333 L 35.0 -89.0 L 40.0 -89.0 L 40.0 -79.0 L 35.0 -79.0 L 35.0 -80.66666666666667 L 32.5 -80.66666666666667 L 32.5 -79.0 L 30.0 -79.0 Z" fill="#845DAF"/>
+    <text x="27.0" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">RAW_IN</text>
+    <path d="M 1152.0 -89.0 L 1157.0 -89.0 L 1157.0 -87.33333333333333 L 1159.5 -87.33333333333333 L 1159.5 -89.0 L 1162.0 -89.0 L 1162.0 -79.0 L 1159.5 -79.0 L 1159.5 -80.66666666666667 L 1157.0 -80.66666666666667 L 1157.0 -79.0 L 1152.0 -79.0 Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="1165.0" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">PERCENT_OUT</text>
+  </g>
+  <g id="instances">
+    <g id="fb_AD_TO_AUDI" transform="translate(403.3, 75.0)">
+      <path d="M 3 0
+            L 108.15234375 0
+            A 3 3 0 0 1 111.15234375 3
+            L 111.15234375 18
+            A 3 3 0 0 1 108.15234375 21
+            L 102.15234375 21
+            L 102.15234375 35
+            L 108.15234375 35
+            A 3 3 0 0 1 111.15234375 38
+            L 111.15234375 52
+            A 3 3 0 0 1 108.15234375 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 156.5 181.0
-            L 172.5 181.0
-            A 1 1 0 0 1 173.5 182.0
-            L 173.5 185.5
-            L 171.5 185.5
-            L 171.5 188.5
-            L 173.5 188.5
-            L 173.5 198.0
-            A 1 1 0 0 1 172.5 199.0
-            L 156.5 199.0
-            A 1 1 0 0 1 155.5 198.0
-            L 155.5 188.5
-            L 157.5 188.5
-            L 157.5 185.5
-            L 155.5 185.5
-            L 155.5 182.0
-            A 1 1 0 0 1 156.5 181.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="164.5" y="195.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="178.5" y="195.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AD_TO_AUDI</text>
-<text x="207.0" y="210.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AD_TO_AUDI</text>
-<path d="M 122.0 222.0
-            L 127.0 222.0
-            L 127.0 223.66666666666666
-            L 129.5 223.66666666666666
-            L 129.5 222.0
-            L 132.0 222.0
-            L 132.0 232.0
-            L 129.5 232.0
-            L 129.5 230.33333333333334
-            L 127.0 230.33333333333334
-            L 127.0 232.0
-            L 122.0 232.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="139.0" y="231.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">AD_IN</text>
-<text x="112.0" y="230.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AD</text>
-<path d="M 282.0 222.0
-            L 284.5 222.0
-            L 284.5 223.66666666666666
-            L 287.0 223.66666666666666
-            L 287.0 222.0
-            L 292.0 222.0
-            L 292.0 232.0
-            L 287.0 232.0
-            L 287.0 230.33333333333334
-            L 284.5 230.33333333333334
-            L 284.5 232.0
-            L 282.0 232.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="275.0" y="231.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">AUDI_OUT</text>
-<text x="302.0" y="230.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUDI</text>
-<path d="M 1030.0 140.0
-            L 1184.0 140.0
-            A 3 3 0 0 1 1187.0 143.0
-            L 1187.0 167.0
-            A 3 3 0 0 1 1184.0 170.0
-            L 1181.0 170.0
-            L 1181.0 210.0
-            L 1184.0 210.0
-            A 3 3 0 0 1 1187.0 213.0
-            L 1187.0 253.0
-            A 3 3 0 0 1 1184.0 256.0
-            L 1030.0 256.0
-            A 3 3 0 0 1 1027.0 253.0
-            L 1027.0 213.0
-            A 3 3 0 0 1 1030.0 210.0
-            L 1033.0 210.0
-            L 1033.0 170.0
-            L 1030.0 170.0
-            A 3 3 0 0 1 1027.0 167.0
-            L 1027.0 143.0
-            A 3 3 0 0 1 1030.0 140.0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
+      <!-- Name Section -->
+      <path d="M 17.5849609375 20.0
+            L 31.5849609375 20.0
+            A 1 1 0 0 1 32.5849609375 21.0
+            L 32.5849609375 24.0
+            L 31.0849609375 24.0
+            L 31.0849609375 26.666666666666668
+            L 32.5849609375 26.666666666666668
+            L 32.5849609375 35.0
+            A 1 1 0 0 1 31.5849609375 36.0
+            L 17.5849609375 36.0
+            A 1 1 0 0 1 16.5849609375 35.0
+            L 16.5849609375 26.666666666666668
+            L 18.0849609375 26.666666666666668
+            L 18.0849609375 24.0
+            L 16.5849609375 24.0
+            L 16.5849609375 21.0
+            A 1 1 0 0 1 17.5849609375 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="24.5849609375" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">C</text>
+      <text x="34.5849609375" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">AD_TO_AUDI</text>
+
+
+
+      <path d="M 0 38.5
+            L 5.0 38.5
+            L 5.0 40.166666666666664
+            L 7.5 40.166666666666664
+            L 7.5 38.5
+            L 10 38.5
+            L 10 48.5
+            L 7.5 48.5
+            L 7.5 46.833333333333336
+            L 5.0 46.833333333333336
+            L 5.0 48.5
+            L 0 48.5
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+      <text x="13" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">AD_IN</text>
+      <path d="M 101.15234375 38.5
+            L 103.65234375 38.5
+            L 103.65234375 40.166666666666664
+            L 106.15234375 40.166666666666664
+            L 106.15234375 38.5
+            L 111.15234375 38.5
+            L 111.15234375 48.5
+            L 106.15234375 48.5
+            L 106.15234375 46.833333333333336
+            L 103.65234375 46.833333333333336
+            L 103.65234375 48.5
+            L 101.15234375 48.5
+            Z" fill="#845DAF"/>
+      <text x="98.15234375" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">AUDI_OUT</text>
+      <!-- Instance Name -->
+      <text x="55.576171875" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">AD_TO_AUDI</text>
+    </g>
+    <g id="fb_AUDI_TO_AR" transform="translate(583.3, 75.0)">
+      <path d="M 3 0
+            L 108.193359375 0
+            A 3 3 0 0 1 111.193359375 3
+            L 111.193359375 18
+            A 3 3 0 0 1 108.193359375 21
+            L 102.193359375 21
+            L 102.193359375 35
+            L 108.193359375 35
+            A 3 3 0 0 1 111.193359375 38
+            L 111.193359375 52
+            A 3 3 0 0 1 108.193359375 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 1056.5 181.0
-            L 1072.5 181.0
-            A 1 1 0 0 1 1073.5 182.0
-            L 1073.5 185.5
-            L 1071.5 185.5
-            L 1071.5 188.5
-            L 1073.5 188.5
-            L 1073.5 198.0
-            A 1 1 0 0 1 1072.5 199.0
-            L 1056.5 199.0
-            A 1 1 0 0 1 1055.5 198.0
-            L 1055.5 188.5
-            L 1057.5 188.5
-            L 1057.5 185.5
-            L 1055.5 185.5
-            L 1055.5 182.0
-            A 1 1 0 0 1 1056.5 181.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="1064.5" y="195.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="1078.5" y="195.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AUDI_TO_AR</text>
-<text x="1107.0" y="210.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AUDI_TO_AR</text>
-<path d="M 1022.0 222.0
-            L 1027.0 222.0
-            L 1027.0 223.66666666666666
-            L 1029.5 223.66666666666666
-            L 1029.5 222.0
-            L 1032.0 222.0
-            L 1032.0 232.0
-            L 1029.5 232.0
-            L 1029.5 230.33333333333334
-            L 1027.0 230.33333333333334
-            L 1027.0 232.0
-            L 1022.0 232.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="1039.0" y="231.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">AUDI_IN</text>
-<text x="1012.0" y="230.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUDI</text>
-<path d="M 1182.0 222.0
-            L 1184.5 222.0
-            L 1184.5 223.66666666666666
-            L 1187.0 223.66666666666666
-            L 1187.0 222.0
-            L 1192.0 222.0
-            L 1192.0 232.0
-            L 1187.0 232.0
-            L 1187.0 230.33333333333334
-            L 1184.5 230.33333333333334
-            L 1184.5 232.0
-            L 1182.0 232.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="1175.0" y="231.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">AR_OUT</text>
-<text x="1202.0" y="230.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AR</text>
-<path d="M 1030.0 815.0
-            L 1214.0 815.0
-            A 3 3 0 0 1 1217.0 818.0
-            L 1217.0 878.0
-            A 3 3 0 0 1 1214.0 881.0
-            L 1211.0 881.0
-            L 1211.0 921.0
-            L 1214.0 921.0
-            A 3 3 0 0 1 1217.0 924.0
-            L 1217.0 976.0
-            A 3 3 0 0 1 1214.0 979.0
-            L 1030.0 979.0
-            A 3 3 0 0 1 1027.0 976.0
-            L 1027.0 924.0
-            A 3 3 0 0 1 1030.0 921.0
-            L 1033.0 921.0
-            L 1033.0 881.0
-            L 1030.0 881.0
-            A 3 3 0 0 1 1027.0 878.0
-            L 1027.0 818.0
-            A 3 3 0 0 1 1030.0 815.0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
+      <!-- Name Section -->
+      <path d="M 17.6259765625 20.0
+            L 31.6259765625 20.0
+            A 1 1 0 0 1 32.6259765625 21.0
+            L 32.6259765625 24.0
+            L 31.1259765625 24.0
+            L 31.1259765625 26.666666666666668
+            L 32.6259765625 26.666666666666668
+            L 32.6259765625 35.0
+            A 1 1 0 0 1 31.6259765625 36.0
+            L 17.6259765625 36.0
+            A 1 1 0 0 1 16.6259765625 35.0
+            L 16.6259765625 26.666666666666668
+            L 18.1259765625 26.666666666666668
+            L 18.1259765625 24.0
+            L 16.6259765625 24.0
+            L 16.6259765625 21.0
+            A 1 1 0 0 1 17.6259765625 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="24.6259765625" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">C</text>
+      <text x="34.6259765625" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">AUDI_TO_AR</text>
+
+
+
+      <path d="M 0 38.5
+            L 5.0 38.5
+            L 5.0 40.166666666666664
+            L 7.5 40.166666666666664
+            L 7.5 38.5
+            L 10 38.5
+            L 10 48.5
+            L 7.5 48.5
+            L 7.5 46.833333333333336
+            L 5.0 46.833333333333336
+            L 5.0 48.5
+            L 0 48.5
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+      <text x="13" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">AUDI_IN</text>
+      <path d="M 101.193359375 38.5
+            L 103.693359375 38.5
+            L 103.693359375 40.166666666666664
+            L 106.193359375 40.166666666666664
+            L 106.193359375 38.5
+            L 111.193359375 38.5
+            L 111.193359375 48.5
+            L 106.193359375 48.5
+            L 106.193359375 46.833333333333336
+            L 103.693359375 46.833333333333336
+            L 103.693359375 48.5
+            L 101.193359375 48.5
+            Z" fill="#845DAF"/>
+      <text x="98.193359375" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">AR_OUT</text>
+      <!-- Instance Name -->
+      <text x="55.5966796875" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">AUDI_TO_AR</text>
+    </g>
+    <g id="fb_INITVAL_SCALE" transform="translate(583.3, 210.0)">
+      <path d="M 3 0
+            L 91.234375 0
+            A 3 3 0 0 1 94.234375 3
+            L 94.234375 18
+            A 3 3 0 0 1 91.234375 21
+            L 85.234375 21
+            L 85.234375 35
+            L 91.234375 35
+            A 3 3 0 0 1 94.234375 38
+            L 94.234375 69
+            A 3 3 0 0 1 91.234375 72
+            L 3 72
+            A 3 3 0 0 1 0 69
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 1059.5 892.0
-            L 1075.5 892.0
-            A 1 1 0 0 1 1076.5 893.0
-            L 1076.5 896.5
-            L 1074.5 896.5
-            L 1074.5 899.5
-            L 1076.5 899.5
-            L 1076.5 909.0
-            A 1 1 0 0 1 1075.5 910.0
-            L 1059.5 910.0
-            A 1 1 0 0 1 1058.5 909.0
-            L 1058.5 899.5
-            L 1060.5 899.5
-            L 1060.5 896.5
-            L 1058.5 896.5
-            L 1058.5 893.0
-            A 1 1 0 0 1 1059.5 892.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="1067.5" y="906.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="1081.5" y="906.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">INITVAL_SCALE</text>
-<text x="1122.0" y="921.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">initval_AR</text>
-<text x="1122.0" y="925.0" font-size="9" fill="#888" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">INIT_VAL=REAL#0.0244200244</text>
-<path d="M1022.0,852.0 L1022.0,862.0 L1027.0,857.0 Z" fill="#63B31F" stroke="none" />
-<text x="1039.0" y="861.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="1012.0" y="860.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M1022.0,933.0 L1022.0,943.0 L1027.0,938.0 Z" fill="#DBB418" stroke="none" />
-<text x="1039.0" y="942.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT_VAL</text>
-<text x="1012.0" y="941.0" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">REAL</text>
-<path d="M1222.0,852.0 L1222.0,862.0 L1217.0,857.0 Z" fill="#63B31F" stroke="none" />
-<text x="1205.0" y="861.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="1232.0" y="860.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M 1212.0 933.0
-            L 1214.5 933.0
-            L 1214.5 934.6666666666666
-            L 1217.0 934.6666666666666
-            L 1217.0 933.0
-            L 1222.0 933.0
-            L 1222.0 943.0
-            L 1217.0 943.0
-            L 1217.0 941.3333333333334
-            L 1214.5 941.3333333333334
-            L 1214.5 943.0
-            L 1212.0 943.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="1205.0" y="942.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
-<text x="1232.0" y="941.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AR</text>
-<path d="M 1930.0 140.0
-            L 2124.0 140.0
-            A 3 3 0 0 1 2127.0 143.0
-            L 2127.0 167.0
-            A 3 3 0 0 1 2124.0 170.0
-            L 2121.0 170.0
-            L 2121.0 210.0
-            L 2124.0 210.0
-            A 3 3 0 0 1 2127.0 213.0
-            L 2127.0 279.0
-            A 3 3 0 0 1 2124.0 282.0
-            L 1930.0 282.0
-            A 3 3 0 0 1 1927.0 279.0
-            L 1927.0 213.0
-            A 3 3 0 0 1 1930.0 210.0
-            L 1933.0 210.0
-            L 1933.0 170.0
-            L 1930.0 170.0
-            A 3 3 0 0 1 1927.0 167.0
-            L 1927.0 143.0
-            A 3 3 0 0 1 1930.0 140.0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
+      <!-- Name Section -->
+      <path d="M 13.83984375 20.0
+            L 27.83984375 20.0
+            A 1 1 0 0 1 28.83984375 21.0
+            L 28.83984375 24.0
+            L 27.33984375 24.0
+            L 27.33984375 26.666666666666668
+            L 28.83984375 26.666666666666668
+            L 28.83984375 35.0
+            A 1 1 0 0 1 27.83984375 36.0
+            L 13.83984375 36.0
+            A 1 1 0 0 1 12.83984375 35.0
+            L 12.83984375 26.666666666666668
+            L 14.33984375 26.666666666666668
+            L 14.33984375 24.0
+            L 12.83984375 24.0
+            L 12.83984375 21.0
+            A 1 1 0 0 1 13.83984375 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.83984375" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">C</text>
+      <text x="30.83984375" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">initval_AR</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT</text>
+      <polygon points="89.234375,5.5 94.234375,10.5 89.234375,15.5" fill="#63B31F"/>
+      <text x="88.234375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">INITO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#DBB418"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">INIT_VAL</text>
+      <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">REAL#0.0244200244</text>
+      <path d="M 84.234375 56.5
+            L 86.734375 56.5
+            L 86.734375 58.166666666666664
+            L 89.234375 58.166666666666664
+            L 89.234375 56.5
+            L 94.234375 56.5
+            L 94.234375 66.5
+            L 89.234375 66.5
+            L 89.234375 64.83333333333333
+            L 86.734375 64.83333333333333
+            L 86.734375 66.5
+            L 84.234375 66.5
+            Z" fill="#845DAF"/>
+      <text x="81.234375" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">OUT</text>
+      <!-- Instance Name -->
+      <text x="47.1171875" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">INITVAL_SCALE</text>
+    </g>
+    <g id="fb_AR_MUL_PERCENT" transform="translate(766.2, 75.0)">
+      <path d="M 3 0
+            L 90.544921875 0
+            A 3 3 0 0 1 93.544921875 3
+            L 93.544921875 18
+            A 3 3 0 0 1 90.544921875 21
+            L 84.544921875 21
+            L 84.544921875 35
+            L 90.544921875 35
+            A 3 3 0 0 1 93.544921875 38
+            L 93.544921875 69
+            A 3 3 0 0 1 90.544921875 72
+            L 3 72
+            A 3 3 0 0 1 0 69
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 1960.5 181.0
-            L 1976.5 181.0
-            A 1 1 0 0 1 1977.5 182.0
-            L 1977.5 185.5
-            L 1975.5 185.5
-            L 1975.5 188.5
-            L 1977.5 188.5
-            L 1977.5 198.0
-            A 1 1 0 0 1 1976.5 199.0
-            L 1960.5 199.0
-            A 1 1 0 0 1 1959.5 198.0
-            L 1959.5 188.5
-            L 1961.5 188.5
-            L 1961.5 185.5
-            L 1959.5 185.5
-            L 1959.5 182.0
-            A 1 1 0 0 1 1960.5 181.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="1968.5" y="195.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="1982.5" y="195.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AR_MUL_PERCENT</text>
-<text x="2027.0" y="210.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">AR_MUL_2</text>
-<path d="M 1922.0 222.0
-            L 1927.0 222.0
-            L 1927.0 223.66666666666666
-            L 1929.5 223.66666666666666
-            L 1929.5 222.0
-            L 1932.0 222.0
-            L 1932.0 232.0
-            L 1929.5 232.0
-            L 1929.5 230.33333333333334
-            L 1927.0 230.33333333333334
-            L 1927.0 232.0
-            L 1922.0 232.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="1939.0" y="231.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN1</text>
-<text x="1912.0" y="230.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AR</text>
-<path d="M 1922.0 248.0
-            L 1927.0 248.0
-            L 1927.0 249.66666666666666
-            L 1929.5 249.66666666666666
-            L 1929.5 248.0
-            L 1932.0 248.0
-            L 1932.0 258.0
-            L 1929.5 258.0
-            L 1929.5 256.3333333333333
-            L 1927.0 256.3333333333333
-            L 1927.0 258.0
-            L 1922.0 258.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="1939.0" y="257.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN2</text>
-<text x="1912.0" y="256.0" font-size="11" text-anchor="end" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AR</text>
-<path d="M 2122.0 222.0
-            L 2124.5 222.0
-            L 2124.5 223.66666666666666
-            L 2127.0 223.66666666666666
-            L 2127.0 222.0
-            L 2132.0 222.0
-            L 2132.0 232.0
-            L 2127.0 232.0
-            L 2127.0 230.33333333333334
-            L 2124.5 230.33333333333334
-            L 2124.5 232.0
-            L 2122.0 232.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="2115.0" y="231.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
-<text x="2142.0" y="230.0" font-size="11" text-anchor="start" fill="#845DAF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AR</text>
+      <!-- Name Section -->
+      <path d="M 13.0 20.0
+            L 27.0 20.0
+            A 1 1 0 0 1 28.0 21.0
+            L 28.0 24.0
+            L 26.5 24.0
+            L 26.5 26.666666666666668
+            L 28.0 26.666666666666668
+            L 28.0 35.0
+            A 1 1 0 0 1 27.0 36.0
+            L 13.0 36.0
+            A 1 1 0 0 1 12.0 35.0
+            L 12.0 26.666666666666668
+            L 13.5 26.666666666666668
+            L 13.5 24.0
+            L 12.0 24.0
+            L 12.0 21.0
+            A 1 1 0 0 1 13.0 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.0" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">Si</text>
+      <text x="30.0" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">AR_MUL_2</text>
+
+
+
+      <path d="M 0 38.5
+            L 5.0 38.5
+            L 5.0 40.166666666666664
+            L 7.5 40.166666666666664
+            L 7.5 38.5
+            L 10 38.5
+            L 10 48.5
+            L 7.5 48.5
+            L 7.5 46.833333333333336
+            L 5.0 46.833333333333336
+            L 5.0 48.5
+            L 0 48.5
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+      <text x="13" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">IN1</text>
+      <path d="M 0 55.5
+            L 5.0 55.5
+            L 5.0 57.166666666666664
+            L 7.5 57.166666666666664
+            L 7.5 55.5
+            L 10 55.5
+            L 10 65.5
+            L 7.5 65.5
+            L 7.5 63.833333333333336
+            L 5.0 63.833333333333336
+            L 5.0 65.5
+            L 0 65.5
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+      <text x="13" y="64.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">IN2</text>
+      <path d="M 83.544921875 38.5
+            L 86.044921875 38.5
+            L 86.044921875 40.166666666666664
+            L 88.544921875 40.166666666666664
+            L 88.544921875 38.5
+            L 93.544921875 38.5
+            L 93.544921875 48.5
+            L 88.544921875 48.5
+            L 88.544921875 46.833333333333336
+            L 86.044921875 46.833333333333336
+            L 86.044921875 48.5
+            L 83.544921875 48.5
+            Z" fill="#845DAF"/>
+      <text x="80.544921875" y="47.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">OUT</text>
+      <!-- Instance Name -->
+      <text x="46.7724609375" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">AR_MUL_PERCENT</text>
+    </g>
+  </g>
 </svg>

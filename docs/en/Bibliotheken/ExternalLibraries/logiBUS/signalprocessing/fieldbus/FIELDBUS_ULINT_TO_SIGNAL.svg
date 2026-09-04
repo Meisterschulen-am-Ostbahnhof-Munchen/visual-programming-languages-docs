@@ -1,43 +1,178 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1376" height="223" viewBox="-548 -20 1376 223">
-<defs>
-</defs>
-<rect x="3" y="3" width="280" height="173" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H280 V66 H274 V106 H280 V173 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L280,30" stroke="#000000" stroke-width="1" />
-<text x="140.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">FIELDBUS_ULINT_TO_SIGNAL</text>
-<text x="140.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-104" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#18519E" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">ULINT</text>
-<text x="-104" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input</text>
-<path d="M280,37 L280,47 L285,42 Z" fill="#63B31F" stroke="none" />
-<text x="268" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="303" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="373" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmation</text>
-<path d="M280,118 L280,128 L285,123 Z" fill="#18519E" stroke="none" />
-<text x="268" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="303" y="126" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">ULINT</text>
-<text x="373" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Output Filtered</text>
-<path d="M280,144 L280,154 L285,149 Z" fill="#9FA48A" stroke="none" />
-<text x="268" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">VALID</text>
-<text x="303" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="373" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE if Signal is VALID</text>
-<path d="M-12,42 L-12,123" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#404040" />
-<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M292,42 L292,149" stroke="#404040" stroke-width="1" />
-<path d="M280,42 L292,42" stroke="#404040" />
-<rect x="290" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M292,123 L285,123" stroke="#404040" />
-<rect x="290" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M292,149 L285,149" stroke="#404040" />
-<rect x="290" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 703.2470703125 132.0"
+     width="703.2470703125" height="132.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(242.2314453125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 234.1318359375 0
+            A 3 3 0 0 1 237.1318359375 3
+            L 237.1318359375 23.0
+            A 3 3 0 0 1 234.1318359375 26.0
+            L 227.1318359375 26.0
+            L 227.1318359375 66.0
+            L 234.1318359375 66.0
+            A 3 3 0 0 1 237.1318359375 69.0
+            L 237.1318359375 109.0
+            A 3 3 0 0 1 234.1318359375 112.0
+            L 3 112.0
+            A 3 3 0 0 1 0 109.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="230.6318359375,11.0 235.6318359375,16.0 230.6318359375,21.0" fill="#63B31F"/>
+    <text x="227.6318359375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">S</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">FIELDBUS_ULINT_TO_SIGNAL</text>
+
+    <text x="118.56591796875" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#18519E"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN</text>
+
+    <polygon points="230.6318359375,71.0 235.6318359375,76.0 230.6318359375,81.0" fill="#18519E"/>
+    <text x="227.6318359375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT</text>
+
+    <polygon points="230.6318359375,91.0 235.6318359375,96.0 230.6318359375,101.0" fill="#A3B08F"/>
+    <text x="227.6318359375" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">VALID</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="242.1318359375" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="242.1318359375" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="247.1318359375" y1="16.0" x2="247.1318359375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="242.1318359375" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="247.1318359375" y1="16.0" x2="247.1318359375" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="237.1318359375" y1="16.0" x2="257.1318359375" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="237.1318359375" y1="76.0" x2="257.1318359375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="237.1318359375" y1="96.0" x2="257.1318359375" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Normal Execution Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="262.1318359375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Execution Confirmation</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ULINT</tspan></text>
+
+    <text x="262.1318359375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ULINT</tspan> – Output Filtered</text>
+
+    <text x="262.1318359375" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – TRUE if Signal is VALID</text>
+  </g>
 </svg>

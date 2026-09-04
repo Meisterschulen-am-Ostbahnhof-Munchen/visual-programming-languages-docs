@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1230" height="161" viewBox="-540 -20 1230 161">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 539.3623046875 132.0"
+     width="539.3623046875" height="132.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,81 +28,116 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 147 0
-            A 3 3 0 0 1 150 3
-            L 150 27
-            A 3 3 0 0 1 147 30
-            L 144 30
-            L 144 70
-            L 147 70
-            A 3 3 0 0 1 150 73
-            L 150 108
-            A 3 3 0 0 1 147 111
-            L 3 111
-            A 3 3 0 0 1 0 108
-            L 0 73
-            A 3 3 0 0 1 3 70
-            L 6 70
-            L 6 30
-            L 3 30
-            A 3 3 0 0 1 0 27
+  <g transform="translate(184.3994140625, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 139.939453125 0
+            A 3 3 0 0 1 142.939453125 3
+            L 142.939453125 23.0
+            A 3 3 0 0 1 139.939453125 26.0
+            L 132.939453125 26.0
+            L 132.939453125 66.0
+            L 139.939453125 66.0
+            A 3 3 0 0 1 142.939453125 69.0
+            L 142.939453125 109.0
+            A 3 3 0 0 1 139.939453125 112.0
+            L 3 112.0
+            A 3 3 0 0 1 0 109.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 20.5 41.0
-            L 36.5 41.0
-            A 1 1 0 0 1 37.5 42.0
-            L 37.5 45.5
-            L 35.5 45.5
-            L 35.5 48.5
-            L 37.5 48.5
-            L 37.5 58.0
-            A 1 1 0 0 1 36.5 59.0
-            L 20.5 59.0
-            A 1 1 0 0 1 19.5 58.0
-            L 19.5 48.5
-            L 21.5 48.5
-            L 21.5 45.5
-            L 19.5 45.5
-            L 19.5 42.0
-            A 1 1 0 0 1 20.5 41.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="28.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="42.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AUI_TO_AUDI</text>
-<text x="75.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 82.0
-            L 0.0 82.0
-            L 0.0 83.66666666666667
-            L 2.5 83.66666666666667
-            L 2.5 82.0
-            L 5.0 82.0
-            L 5.0 92.0
-            L 2.5 92.0
-            L 2.5 90.33333333333333
-            L 0.0 90.33333333333333
-            L 0.0 92.0
-            L -5.0 92.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="91" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">AUI_IN</text>
-<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUI</text>
-<text x="-90" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">UINT Adapter Input</text>
-<path d="M 145.0 82.0
-            L 147.5 82.0
-            L 147.5 83.66666666666667
-            L 150.0 83.66666666666667
-            L 150.0 82.0
-            L 155.0 82.0
-            L 155.0 92.0
-            L 150.0 92.0
-            L 150.0 90.33333333333333
-            L 147.5 90.33333333333333
-            L 147.5 92.0
-            L 145.0 92.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="138" y="91" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">AUDI_OUT</text>
-<text x="165" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUDI</text>
-<text x="235" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">UDINT Adapter Output</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 24.42822265625 37.0
+            L 40.42822265625 37.0
+            A 1 1 0 0 1 41.42822265625 38.0
+            L 41.42822265625 41.5
+            L 39.42822265625 41.5
+            L 39.42822265625 44.5
+            L 41.42822265625 44.5
+            L 41.42822265625 54.0
+            A 1 1 0 0 1 40.42822265625 55.0
+            L 24.42822265625 55.0
+            A 1 1 0 0 1 23.42822265625 54.0
+            L 23.42822265625 44.5
+            L 25.42822265625 44.5
+            L 25.42822265625 41.5
+            L 23.42822265625 41.5
+            L 23.42822265625 38.0
+            A 1 1 0 0 1 24.42822265625 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="32.42822265625" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="46.42822265625" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AUI_TO_AUDI</text>
+
+    <text x="71.4697265625" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">AUI_IN</text>
+
+    <path d="M 131.439453125 97.0
+            L 133.939453125 97.0
+            L 133.939453125 98.66666666666667
+            L 136.439453125 98.66666666666667
+            L 136.439453125 97.0
+            L 141.439453125 97.0
+            L 141.439453125 107.0
+            L 136.439453125 107.0
+            L 136.439453125 105.33333333333333
+            L 133.939453125 105.33333333333333
+            L 133.939453125 107.0
+            L 131.439453125 107.0
+            Z" fill="#845DAF"/>
+    <text x="128.439453125" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">AUDI_OUT</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">UINT Adapter Input – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AUI</tspan></text>
+
+    <text x="167.939453125" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AUDI</tspan> – UDINT Adapter Output</text>
+  </g>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1296" height="197" viewBox="-548 -20 1296 197">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 646.9052734375 112.0"
+     width="646.9052734375" height="112.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,73 +28,135 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 197 0
-            A 3 3 0 0 1 200 3
-            L 200 63
-            A 3 3 0 0 1 197 66
-            L 194 66
-            L 194 106
-            L 197 106
-            A 3 3 0 0 1 200 109
-            L 200 144
-            A 3 3 0 0 1 197 147
-            L 3 147
-            A 3 3 0 0 1 0 144
-            L 0 109
-            A 3 3 0 0 1 3 106
-            L 6 106
-            L 6 66
-            L 3 66
-            A 3 3 0 0 1 0 63
+  <g transform="translate(242.2314453125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 179.7177734375 0
+            A 3 3 0 0 1 182.7177734375 3
+            L 182.7177734375 23.0
+            A 3 3 0 0 1 179.7177734375 26.0
+            L 172.7177734375 26.0
+            L 172.7177734375 66.0
+            L 179.7177734375 66.0
+            A 3 3 0 0 1 182.7177734375 69.0
+            L 182.7177734375 89.0
+            A 3 3 0 0 1 179.7177734375 92.0
+            L 3 92.0
+            A 3 3 0 0 1 0 89.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 25.5 77.0
-            L 41.5 77.0
-            A 1 1 0 0 1 42.5 78.0
-            L 42.5 81.5
-            L 40.5 81.5
-            L 40.5 84.5
-            L 42.5 84.5
-            L 42.5 94.0
-            A 1 1 0 0 1 41.5 95.0
-            L 25.5 95.0
-            A 1 1 0 0 1 24.5 94.0
-            L 24.5 84.5
-            L 26.5 84.5
-            L 26.5 81.5
-            L 24.5 81.5
-            L 24.5 78.0
-            A 1 1 0 0 1 25.5 77.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="33.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">S</text>
-<text x="47.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">F_LWORD_TO_UDINT</text>
-<text x="100.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-104" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Normal Execution Request</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#82A3A9" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">LWORD</text>
-<path d="M200,37 L200,47 L205,42 Z" fill="#63B31F" stroke="none" />
-<text x="188" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="223" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="293" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Execution Confirmation</text>
-<path d="M200,118 L200,128 L205,123 Z" fill="#18519E" stroke="none" />
-<text x="188" y="127" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
-<text x="223" y="126" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UDINT</text>
-<path d="M-12,42 L-12,123" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#000000" />
-<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M212,42 L212,123" stroke="#000000" stroke-width="1" />
-<path d="M200,42 L212,42" stroke="#000000" />
-<rect x="210" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M212,123 L205,123" stroke="#000000" />
-<rect x="210" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="176.2177734375,11.0 181.2177734375,16.0 176.2177734375,21.0" fill="#63B31F"/>
+    <text x="173.2177734375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">S</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">F_LWORD_TO_UDINT</text>
+
+    <text x="91.35888671875" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">3.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#82A3A9"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN</text>
+
+    <polygon points="176.2177734375,71.0 181.2177734375,76.0 176.2177734375,81.0" fill="#18519E"/>
+    <text x="173.2177734375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="187.7177734375" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="187.7177734375" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="192.7177734375" y1="16.0" x2="192.7177734375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="182.7177734375" y1="16.0" x2="202.7177734375" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="182.7177734375" y1="76.0" x2="202.7177734375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Normal Execution Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="207.7177734375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Execution Confirmation</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">LWORD</tspan></text>
+
+    <text x="207.7177734375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UDINT</tspan></text>
+  </g>
 </svg>

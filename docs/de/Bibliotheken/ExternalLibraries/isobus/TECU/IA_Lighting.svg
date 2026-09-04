@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1478" height="1055" viewBox="-548 -20 1478 1055">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 879.7958984375 772.0"
+     width="879.7958984375" height="772.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,592 +28,760 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 379 0
-            A 3 3 0 0 1 382 3
-            L 382 63
-            A 3 3 0 0 1 379 66
-            L 376 66
-            L 376 106
-            L 379 106
-            A 3 3 0 0 1 382 109
-            L 382 1002
-            A 3 3 0 0 1 379 1005
-            L 3 1005
-            A 3 3 0 0 1 0 1002
-            L 0 109
-            A 3 3 0 0 1 3 106
-            L 6 106
-            L 6 66
-            L 3 66
-            A 3 3 0 0 1 0 63
+  <g transform="translate(204.4287109375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 358.5908203125 0
+            A 3 3 0 0 1 361.5908203125 3
+            L 361.5908203125 23.0
+            A 3 3 0 0 1 358.5908203125 26.0
+            L 351.5908203125 26.0
+            L 351.5908203125 66.0
+            L 358.5908203125 66.0
+            A 3 3 0 0 1 361.5908203125 69.0
+            L 361.5908203125 749.0
+            A 3 3 0 0 1 358.5908203125 752.0
+            L 3 752.0
+            A 3 3 0 0 1 0 749.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 136.5 77.0
-            L 152.5 77.0
-            A 1 1 0 0 1 153.5 78.0
-            L 153.5 81.5
-            L 151.5 81.5
-            L 151.5 84.5
-            L 153.5 84.5
-            L 153.5 94.0
-            A 1 1 0 0 1 152.5 95.0
-            L 136.5 95.0
-            A 1 1 0 0 1 135.5 94.0
-            L 135.5 84.5
-            L 137.5 84.5
-            L 137.5 81.5
-            L 135.5 81.5
-            L 135.5 78.0
-            A 1 1 0 0 1 136.5 77.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="144.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="158.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">IA_Lighting</text>
-<text x="191.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-103" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M382,37 L382,47 L387,42 Z" fill="#63B31F" stroke="none" />
-<text x="370" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="405" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="475" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M 377.0 118.0
-            L 379.5 118.0
-            L 379.5 119.66666666666667
-            L 382.0 119.66666666666667
-            L 382.0 118.0
-            L 387.0 118.0
-            L 387.0 128.0
-            L 382.0 128.0
-            L 382.0 126.33333333333333
-            L 379.5 126.33333333333333
-            L 379.5 128.0
-            L 377.0 128.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="127" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DAYTIME_RUNNING_LIGHTS</text>
-<text x="405" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Daytime Running Lights</text>
-<path d="M 377.0 144.0
-            L 379.5 144.0
-            L 379.5 145.66666666666666
-            L 382.0 145.66666666666666
-            L 382.0 144.0
-            L 387.0 144.0
-            L 387.0 154.0
-            L 382.0 154.0
-            L 382.0 152.33333333333334
-            L 379.5 152.33333333333334
-            L 379.5 154.0
-            L 377.0 154.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ALTERNATE_HEADLIGHTS</text>
-<text x="405" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Alternate Headlights</text>
-<path d="M 377.0 170.0
-            L 379.5 170.0
-            L 379.5 171.66666666666666
-            L 382.0 171.66666666666666
-            L 382.0 170.0
-            L 387.0 170.0
-            L 387.0 180.0
-            L 382.0 180.0
-            L 382.0 178.33333333333334
-            L 379.5 178.33333333333334
-            L 379.5 180.0
-            L 377.0 180.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">LOW_BEAM_HEADLIGHTS</text>
-<text x="405" y="178" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Low Beam Headlights</text>
-<path d="M 377.0 196.0
-            L 379.5 196.0
-            L 379.5 197.66666666666666
-            L 382.0 197.66666666666666
-            L 382.0 196.0
-            L 387.0 196.0
-            L 387.0 206.0
-            L 382.0 206.0
-            L 382.0 204.33333333333334
-            L 379.5 204.33333333333334
-            L 379.5 206.0
-            L 377.0 206.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">HIGH_BEAM_HEADLIGHTS</text>
-<text x="405" y="204" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">High Beam Headlights</text>
-<path d="M 377.0 222.0
-            L 379.5 222.0
-            L 379.5 223.66666666666666
-            L 382.0 223.66666666666666
-            L 382.0 222.0
-            L 387.0 222.0
-            L 387.0 232.0
-            L 382.0 232.0
-            L 382.0 230.33333333333334
-            L 379.5 230.33333333333334
-            L 379.5 232.0
-            L 377.0 232.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_FRONT_FOG_LIGHTS</text>
-<text x="405" y="230" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Front Fog Lights</text>
-<path d="M 377.0 248.0
-            L 379.5 248.0
-            L 379.5 249.66666666666666
-            L 382.0 249.66666666666666
-            L 382.0 248.0
-            L 387.0 248.0
-            L 387.0 258.0
-            L 382.0 258.0
-            L 382.0 256.3333333333333
-            L 379.5 256.3333333333333
-            L 379.5 258.0
-            L 377.0 258.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="257" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ROTATING_BEACON_LIGHT</text>
-<text x="405" y="256" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Rotating Beacon Light</text>
-<path d="M 377.0 274.0
-            L 379.5 274.0
-            L 379.5 275.6666666666667
-            L 382.0 275.6666666666667
-            L 382.0 274.0
-            L 387.0 274.0
-            L 387.0 284.0
-            L 382.0 284.0
-            L 382.0 282.3333333333333
-            L 379.5 282.3333333333333
-            L 379.5 284.0
-            L 377.0 284.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RIGHT_TURN_SIGNAL_LIGHTS</text>
-<text x="405" y="282" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Right Turn Signal Lights</text>
-<path d="M 377.0 300.0
-            L 379.5 300.0
-            L 379.5 301.6666666666667
-            L 382.0 301.6666666666667
-            L 382.0 300.0
-            L 387.0 300.0
-            L 387.0 310.0
-            L 382.0 310.0
-            L 382.0 308.3333333333333
-            L 379.5 308.3333333333333
-            L 379.5 310.0
-            L 377.0 310.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">LEFT_TURN_SIGNAL_LIGHTS</text>
-<text x="405" y="308" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Left Turn Signal Lights</text>
-<path d="M 377.0 326.0
-            L 379.5 326.0
-            L 379.5 327.6666666666667
-            L 382.0 327.6666666666667
-            L 382.0 326.0
-            L 387.0 326.0
-            L 387.0 336.0
-            L 382.0 336.0
-            L 382.0 334.3333333333333
-            L 379.5 334.3333333333333
-            L 379.5 336.0
-            L 377.0 336.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">BACK_UP_LIGHTS_AND_ALARM_HORN</text>
-<text x="405" y="334" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Back Up Lights And Alarm Horn</text>
-<path d="M 377.0 352.0
-            L 379.5 352.0
-            L 379.5 353.6666666666667
-            L 382.0 353.6666666666667
-            L 382.0 352.0
-            L 387.0 352.0
-            L 387.0 362.0
-            L 382.0 362.0
-            L 382.0 360.3333333333333
-            L 379.5 360.3333333333333
-            L 379.5 362.0
-            L 377.0 362.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="361" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CENTER_STOP_LIGHTS</text>
-<text x="405" y="360" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Center Stop Lights</text>
-<path d="M 377.0 378.0
-            L 379.5 378.0
-            L 379.5 379.6666666666667
-            L 382.0 379.6666666666667
-            L 382.0 378.0
-            L 387.0 378.0
-            L 387.0 388.0
-            L 382.0 388.0
-            L 382.0 386.3333333333333
-            L 379.5 386.3333333333333
-            L 379.5 388.0
-            L 377.0 388.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="387" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RIGHT_STOP_LIGHTS</text>
-<text x="405" y="386" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Right Stop Lights</text>
-<path d="M 377.0 404.0
-            L 379.5 404.0
-            L 379.5 405.6666666666667
-            L 382.0 405.6666666666667
-            L 382.0 404.0
-            L 387.0 404.0
-            L 387.0 414.0
-            L 382.0 414.0
-            L 382.0 412.3333333333333
-            L 379.5 412.3333333333333
-            L 379.5 414.0
-            L 377.0 414.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="413" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">LEFT_STOP_LIGHTS</text>
-<text x="405" y="412" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Left Stop Lights</text>
-<path d="M 377.0 430.0
-            L 379.5 430.0
-            L 379.5 431.6666666666667
-            L 382.0 431.6666666666667
-            L 382.0 430.0
-            L 387.0 430.0
-            L 387.0 440.0
-            L 382.0 440.0
-            L 382.0 438.3333333333333
-            L 379.5 438.3333333333333
-            L 379.5 440.0
-            L 377.0 440.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="439" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_CLEARANCE_LIGHTS</text>
-<text x="405" y="438" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Clearance Lights</text>
-<path d="M 377.0 456.0
-            L 379.5 456.0
-            L 379.5 457.6666666666667
-            L 382.0 457.6666666666667
-            L 382.0 456.0
-            L 387.0 456.0
-            L 387.0 466.0
-            L 382.0 466.0
-            L 382.0 464.3333333333333
-            L 379.5 464.3333333333333
-            L 379.5 466.0
-            L 377.0 466.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="465" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_CLEARANCE_LIGHTS</text>
-<text x="405" y="464" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Clearance Lights</text>
-<path d="M 377.0 482.0
-            L 379.5 482.0
-            L 379.5 483.6666666666667
-            L 382.0 483.6666666666667
-            L 382.0 482.0
-            L 387.0 482.0
-            L 387.0 492.0
-            L 382.0 492.0
-            L 382.0 490.3333333333333
-            L 379.5 490.3333333333333
-            L 379.5 492.0
-            L 377.0 492.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="491" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_MARKER_LIGHTS</text>
-<text x="405" y="490" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Marker Lights</text>
-<path d="M 377.0 508.0
-            L 379.5 508.0
-            L 379.5 509.6666666666667
-            L 382.0 509.6666666666667
-            L 382.0 508.0
-            L 387.0 508.0
-            L 387.0 518.0
-            L 382.0 518.0
-            L 382.0 516.3333333333334
-            L 379.5 516.3333333333334
-            L 379.5 518.0
-            L 377.0 518.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="517" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_MARKER_LIGHTS</text>
-<text x="405" y="516" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Marker Lights</text>
-<path d="M 377.0 534.0
-            L 379.5 534.0
-            L 379.5 535.6666666666666
-            L 382.0 535.6666666666666
-            L 382.0 534.0
-            L 387.0 534.0
-            L 387.0 544.0
-            L 382.0 544.0
-            L 382.0 542.3333333333334
-            L 379.5 542.3333333333334
-            L 379.5 544.0
-            L 377.0 544.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="543" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">REAR_FOG_LIGHTS</text>
-<text x="405" y="542" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Rear Fog Lights</text>
-<path d="M 377.0 560.0
-            L 379.5 560.0
-            L 379.5 561.6666666666666
-            L 382.0 561.6666666666666
-            L 382.0 560.0
-            L 387.0 560.0
-            L 387.0 570.0
-            L 382.0 570.0
-            L 382.0 568.3333333333334
-            L 379.5 568.3333333333334
-            L 379.5 570.0
-            L 377.0 570.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="569" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="568" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Underside Mounted Work Lights</text>
-<path d="M 377.0 586.0
-            L 379.5 586.0
-            L 379.5 587.6666666666666
-            L 382.0 587.6666666666666
-            L 382.0 586.0
-            L 387.0 586.0
-            L 387.0 596.0
-            L 382.0 596.0
-            L 382.0 594.3333333333334
-            L 379.5 594.3333333333334
-            L 379.5 596.0
-            L 377.0 596.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="595" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="594" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="594" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Rear Low Mounted Work Lights</text>
-<path d="M 377.0 612.0
-            L 379.5 612.0
-            L 379.5 613.6666666666666
-            L 382.0 613.6666666666666
-            L 382.0 612.0
-            L 387.0 612.0
-            L 387.0 622.0
-            L 382.0 622.0
-            L 382.0 620.3333333333334
-            L 379.5 620.3333333333334
-            L 379.5 622.0
-            L 377.0 622.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="621" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="620" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="620" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Rear High Mounted Work Lights</text>
-<path d="M 377.0 638.0
-            L 379.5 638.0
-            L 379.5 639.6666666666666
-            L 382.0 639.6666666666666
-            L 382.0 638.0
-            L 387.0 638.0
-            L 387.0 648.0
-            L 382.0 648.0
-            L 382.0 646.3333333333334
-            L 379.5 646.3333333333334
-            L 379.5 648.0
-            L 377.0 648.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="647" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="646" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="646" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Side Low Mounted Work Lights</text>
-<path d="M 377.0 664.0
-            L 379.5 664.0
-            L 379.5 665.6666666666666
-            L 382.0 665.6666666666666
-            L 382.0 664.0
-            L 387.0 664.0
-            L 387.0 674.0
-            L 382.0 674.0
-            L 382.0 672.3333333333334
-            L 379.5 672.3333333333334
-            L 379.5 674.0
-            L 377.0 674.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="673" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="672" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="672" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Side High Mounted Work Lights</text>
-<path d="M 377.0 690.0
-            L 379.5 690.0
-            L 379.5 691.6666666666666
-            L 382.0 691.6666666666666
-            L 382.0 690.0
-            L 387.0 690.0
-            L 387.0 700.0
-            L 382.0 700.0
-            L 382.0 698.3333333333334
-            L 379.5 698.3333333333334
-            L 379.5 700.0
-            L 377.0 700.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="699" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="698" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="698" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Front Low Mounted Work Lights</text>
-<path d="M 377.0 716.0
-            L 379.5 716.0
-            L 379.5 717.6666666666666
-            L 382.0 717.6666666666666
-            L 382.0 716.0
-            L 387.0 716.0
-            L 387.0 726.0
-            L 382.0 726.0
-            L 382.0 724.3333333333334
-            L 379.5 724.3333333333334
-            L 379.5 726.0
-            L 377.0 726.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="725" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS</text>
-<text x="405" y="724" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="724" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor Front High Mounted Work Lights</text>
-<path d="M 377.0 742.0
-            L 379.5 742.0
-            L 379.5 743.6666666666666
-            L 382.0 743.6666666666666
-            L 382.0 742.0
-            L 387.0 742.0
-            L 387.0 752.0
-            L 382.0 752.0
-            L 382.0 750.3333333333334
-            L 379.5 750.3333333333334
-            L 379.5 752.0
-            L 377.0 752.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="751" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_OEM_OPTION_2_LIGHT</text>
-<text x="405" y="750" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="750" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Oem Option 2 Light</text>
-<path d="M 377.0 768.0
-            L 379.5 768.0
-            L 379.5 769.6666666666666
-            L 382.0 769.6666666666666
-            L 382.0 768.0
-            L 387.0 768.0
-            L 387.0 778.0
-            L 382.0 778.0
-            L 382.0 776.3333333333334
-            L 379.5 776.3333333333334
-            L 379.5 778.0
-            L 377.0 778.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="777" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_OEM_OPTION_1_LIGHT</text>
-<text x="405" y="776" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="776" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Oem Option 1 Light</text>
-<path d="M 377.0 794.0
-            L 379.5 794.0
-            L 379.5 795.6666666666666
-            L 382.0 795.6666666666666
-            L 382.0 794.0
-            L 387.0 794.0
-            L 387.0 804.0
-            L 382.0 804.0
-            L 382.0 802.3333333333334
-            L 379.5 802.3333333333334
-            L 379.5 804.0
-            L 377.0 804.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="803" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS</text>
-<text x="405" y="802" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="802" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Right Forward Work Lights</text>
-<path d="M 377.0 820.0
-            L 379.5 820.0
-            L 379.5 821.6666666666666
-            L 382.0 821.6666666666666
-            L 382.0 820.0
-            L 387.0 820.0
-            L 387.0 830.0
-            L 382.0 830.0
-            L 382.0 828.3333333333334
-            L 379.5 828.3333333333334
-            L 379.5 830.0
-            L 377.0 830.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="829" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS</text>
-<text x="405" y="828" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="828" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Left Forward Work Lights</text>
-<path d="M 377.0 846.0
-            L 379.5 846.0
-            L 379.5 847.6666666666666
-            L 382.0 847.6666666666666
-            L 382.0 846.0
-            L 387.0 846.0
-            L 387.0 856.0
-            L 382.0 856.0
-            L 382.0 854.3333333333334
-            L 379.5 854.3333333333334
-            L 379.5 856.0
-            L 377.0 856.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="855" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_RIGHT_FACING_WORK_LIGHTS</text>
-<text x="405" y="854" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="854" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Right Facing Work Lights</text>
-<path d="M 377.0 872.0
-            L 379.5 872.0
-            L 379.5 873.6666666666666
-            L 382.0 873.6666666666666
-            L 382.0 872.0
-            L 387.0 872.0
-            L 387.0 882.0
-            L 382.0 882.0
-            L 382.0 880.3333333333334
-            L 379.5 880.3333333333334
-            L 379.5 882.0
-            L 377.0 882.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="881" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_LEFT_FACING_WORK_LIGHTS</text>
-<text x="405" y="880" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="880" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Left Facing Work Lights</text>
-<path d="M 377.0 898.0
-            L 379.5 898.0
-            L 379.5 899.6666666666666
-            L 382.0 899.6666666666666
-            L 382.0 898.0
-            L 387.0 898.0
-            L 387.0 908.0
-            L 382.0 908.0
-            L 382.0 906.3333333333334
-            L 379.5 906.3333333333334
-            L 379.5 908.0
-            L 377.0 908.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="907" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_REAR_WORK_LIGHTS</text>
-<text x="405" y="906" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="906" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement Rear Work Lights</text>
-<path d="M 377.0 924.0
-            L 379.5 924.0
-            L 379.5 925.6666666666666
-            L 382.0 925.6666666666666
-            L 382.0 924.0
-            L 387.0 924.0
-            L 387.0 934.0
-            L 382.0 934.0
-            L 382.0 932.3333333333334
-            L 379.5 932.3333333333334
-            L 379.5 934.0
-            L 377.0 934.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="370" y="933" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TIMEOUT</text>
-<text x="405" y="932" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="475" y="932" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Timeout Status</text>
-<path d="M382,950 L382,960 L387,955 Z" fill="#A3B08F" stroke="none" />
-<text x="370" y="959" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="405" y="958" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="475" y="958" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M382,976 L382,986 L387,981 Z" fill="#BD8663" stroke="none" />
-<text x="370" y="985" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="405" y="984" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<path d="M-12,42 L-12,123" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#000000" />
-<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M394,42 L394,981" stroke="#000000" stroke-width="1" />
-<path d="M382,42 L394,42" stroke="#000000" />
-<rect x="392" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M394,955 L387,955" stroke="#000000" />
-<rect x="392" y="953" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M394,981 L387,981" stroke="#000000" />
-<rect x="392" y="979" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="355.0908203125,11.0 360.0908203125,16.0 355.0908203125,21.0" fill="#63B31F"/>
+    <text x="352.0908203125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 137.4248046875 37.0
+            L 153.4248046875 37.0
+            A 1 1 0 0 1 154.4248046875 38.0
+            L 154.4248046875 41.5
+            L 152.4248046875 41.5
+            L 152.4248046875 44.5
+            L 154.4248046875 44.5
+            L 154.4248046875 54.0
+            A 1 1 0 0 1 153.4248046875 55.0
+            L 137.4248046875 55.0
+            A 1 1 0 0 1 136.4248046875 54.0
+            L 136.4248046875 44.5
+            L 138.4248046875 44.5
+            L 138.4248046875 41.5
+            L 136.4248046875 41.5
+            L 136.4248046875 38.0
+            A 1 1 0 0 1 137.4248046875 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="145.4248046875" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="159.4248046875" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">IA_Lighting</text>
+
+    <text x="180.79541015625" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#A3B08F"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="355.0908203125,71.0 360.0908203125,76.0 355.0908203125,81.0" fill="#A3B08F"/>
+    <text x="352.0908203125" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="355.0908203125,91.0 360.0908203125,96.0 355.0908203125,101.0" fill="#BD8663"/>
+    <text x="352.0908203125" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 350.0908203125 117.0
+            L 352.5908203125 117.0
+            L 352.5908203125 118.66666666666667
+            L 355.0908203125 118.66666666666667
+            L 355.0908203125 117.0
+            L 360.0908203125 117.0
+            L 360.0908203125 127.0
+            L 355.0908203125 127.0
+            L 355.0908203125 125.33333333333333
+            L 352.5908203125 125.33333333333333
+            L 352.5908203125 127.0
+            L 350.0908203125 127.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DAYTIME_RUNNING_LIGHTS</text>
+
+    <path d="M 350.0908203125 137.0
+            L 352.5908203125 137.0
+            L 352.5908203125 138.66666666666666
+            L 355.0908203125 138.66666666666666
+            L 355.0908203125 137.0
+            L 360.0908203125 137.0
+            L 360.0908203125 147.0
+            L 355.0908203125 147.0
+            L 355.0908203125 145.33333333333334
+            L 352.5908203125 145.33333333333334
+            L 352.5908203125 147.0
+            L 350.0908203125 147.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ALTERNATE_HEADLIGHTS</text>
+
+    <path d="M 350.0908203125 157.0
+            L 352.5908203125 157.0
+            L 352.5908203125 158.66666666666666
+            L 355.0908203125 158.66666666666666
+            L 355.0908203125 157.0
+            L 360.0908203125 157.0
+            L 360.0908203125 167.0
+            L 355.0908203125 167.0
+            L 355.0908203125 165.33333333333334
+            L 352.5908203125 165.33333333333334
+            L 352.5908203125 167.0
+            L 350.0908203125 167.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LOW_BEAM_HEADLIGHTS</text>
+
+    <path d="M 350.0908203125 177.0
+            L 352.5908203125 177.0
+            L 352.5908203125 178.66666666666666
+            L 355.0908203125 178.66666666666666
+            L 355.0908203125 177.0
+            L 360.0908203125 177.0
+            L 360.0908203125 187.0
+            L 355.0908203125 187.0
+            L 355.0908203125 185.33333333333334
+            L 352.5908203125 185.33333333333334
+            L 352.5908203125 187.0
+            L 350.0908203125 187.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">HIGH_BEAM_HEADLIGHTS</text>
+
+    <path d="M 350.0908203125 197.0
+            L 352.5908203125 197.0
+            L 352.5908203125 198.66666666666666
+            L 355.0908203125 198.66666666666666
+            L 355.0908203125 197.0
+            L 360.0908203125 197.0
+            L 360.0908203125 207.0
+            L 355.0908203125 207.0
+            L 355.0908203125 205.33333333333334
+            L 352.5908203125 205.33333333333334
+            L 352.5908203125 207.0
+            L 350.0908203125 207.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="203.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_FRONT_FOG_LIGHTS</text>
+
+    <path d="M 350.0908203125 217.0
+            L 352.5908203125 217.0
+            L 352.5908203125 218.66666666666666
+            L 355.0908203125 218.66666666666666
+            L 355.0908203125 217.0
+            L 360.0908203125 217.0
+            L 360.0908203125 227.0
+            L 355.0908203125 227.0
+            L 355.0908203125 225.33333333333334
+            L 352.5908203125 225.33333333333334
+            L 352.5908203125 227.0
+            L 350.0908203125 227.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="223.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ROTATING_BEACON_LIGHT</text>
+
+    <path d="M 350.0908203125 237.0
+            L 352.5908203125 237.0
+            L 352.5908203125 238.66666666666666
+            L 355.0908203125 238.66666666666666
+            L 355.0908203125 237.0
+            L 360.0908203125 237.0
+            L 360.0908203125 247.0
+            L 355.0908203125 247.0
+            L 355.0908203125 245.33333333333334
+            L 352.5908203125 245.33333333333334
+            L 352.5908203125 247.0
+            L 350.0908203125 247.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="243.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">RIGHT_TURN_SIGNAL_LIGHTS</text>
+
+    <path d="M 350.0908203125 257.0
+            L 352.5908203125 257.0
+            L 352.5908203125 258.6666666666667
+            L 355.0908203125 258.6666666666667
+            L 355.0908203125 257.0
+            L 360.0908203125 257.0
+            L 360.0908203125 267.0
+            L 355.0908203125 267.0
+            L 355.0908203125 265.3333333333333
+            L 352.5908203125 265.3333333333333
+            L 352.5908203125 267.0
+            L 350.0908203125 267.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="263.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LEFT_TURN_SIGNAL_LIGHTS</text>
+
+    <path d="M 350.0908203125 277.0
+            L 352.5908203125 277.0
+            L 352.5908203125 278.6666666666667
+            L 355.0908203125 278.6666666666667
+            L 355.0908203125 277.0
+            L 360.0908203125 277.0
+            L 360.0908203125 287.0
+            L 355.0908203125 287.0
+            L 355.0908203125 285.3333333333333
+            L 352.5908203125 285.3333333333333
+            L 352.5908203125 287.0
+            L 350.0908203125 287.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="283.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">BACK_UP_LIGHTS_AND_ALARM_HORN</text>
+
+    <path d="M 350.0908203125 297.0
+            L 352.5908203125 297.0
+            L 352.5908203125 298.6666666666667
+            L 355.0908203125 298.6666666666667
+            L 355.0908203125 297.0
+            L 360.0908203125 297.0
+            L 360.0908203125 307.0
+            L 355.0908203125 307.0
+            L 355.0908203125 305.3333333333333
+            L 352.5908203125 305.3333333333333
+            L 352.5908203125 307.0
+            L 350.0908203125 307.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="303.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CENTER_STOP_LIGHTS</text>
+
+    <path d="M 350.0908203125 317.0
+            L 352.5908203125 317.0
+            L 352.5908203125 318.6666666666667
+            L 355.0908203125 318.6666666666667
+            L 355.0908203125 317.0
+            L 360.0908203125 317.0
+            L 360.0908203125 327.0
+            L 355.0908203125 327.0
+            L 355.0908203125 325.3333333333333
+            L 352.5908203125 325.3333333333333
+            L 352.5908203125 327.0
+            L 350.0908203125 327.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="323.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">RIGHT_STOP_LIGHTS</text>
+
+    <path d="M 350.0908203125 337.0
+            L 352.5908203125 337.0
+            L 352.5908203125 338.6666666666667
+            L 355.0908203125 338.6666666666667
+            L 355.0908203125 337.0
+            L 360.0908203125 337.0
+            L 360.0908203125 347.0
+            L 355.0908203125 347.0
+            L 355.0908203125 345.3333333333333
+            L 352.5908203125 345.3333333333333
+            L 352.5908203125 347.0
+            L 350.0908203125 347.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="343.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LEFT_STOP_LIGHTS</text>
+
+    <path d="M 350.0908203125 357.0
+            L 352.5908203125 357.0
+            L 352.5908203125 358.6666666666667
+            L 355.0908203125 358.6666666666667
+            L 355.0908203125 357.0
+            L 360.0908203125 357.0
+            L 360.0908203125 367.0
+            L 355.0908203125 367.0
+            L 355.0908203125 365.3333333333333
+            L 352.5908203125 365.3333333333333
+            L 352.5908203125 367.0
+            L 350.0908203125 367.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="363.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_CLEARANCE_LIGHTS</text>
+
+    <path d="M 350.0908203125 377.0
+            L 352.5908203125 377.0
+            L 352.5908203125 378.6666666666667
+            L 355.0908203125 378.6666666666667
+            L 355.0908203125 377.0
+            L 360.0908203125 377.0
+            L 360.0908203125 387.0
+            L 355.0908203125 387.0
+            L 355.0908203125 385.3333333333333
+            L 352.5908203125 385.3333333333333
+            L 352.5908203125 387.0
+            L 350.0908203125 387.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="383.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_CLEARANCE_LIGHTS</text>
+
+    <path d="M 350.0908203125 397.0
+            L 352.5908203125 397.0
+            L 352.5908203125 398.6666666666667
+            L 355.0908203125 398.6666666666667
+            L 355.0908203125 397.0
+            L 360.0908203125 397.0
+            L 360.0908203125 407.0
+            L 355.0908203125 407.0
+            L 355.0908203125 405.3333333333333
+            L 352.5908203125 405.3333333333333
+            L 352.5908203125 407.0
+            L 350.0908203125 407.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="403.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_MARKER_LIGHTS</text>
+
+    <path d="M 350.0908203125 417.0
+            L 352.5908203125 417.0
+            L 352.5908203125 418.6666666666667
+            L 355.0908203125 418.6666666666667
+            L 355.0908203125 417.0
+            L 360.0908203125 417.0
+            L 360.0908203125 427.0
+            L 355.0908203125 427.0
+            L 355.0908203125 425.3333333333333
+            L 352.5908203125 425.3333333333333
+            L 352.5908203125 427.0
+            L 350.0908203125 427.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="423.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_MARKER_LIGHTS</text>
+
+    <path d="M 350.0908203125 437.0
+            L 352.5908203125 437.0
+            L 352.5908203125 438.6666666666667
+            L 355.0908203125 438.6666666666667
+            L 355.0908203125 437.0
+            L 360.0908203125 437.0
+            L 360.0908203125 447.0
+            L 355.0908203125 447.0
+            L 355.0908203125 445.3333333333333
+            L 352.5908203125 445.3333333333333
+            L 352.5908203125 447.0
+            L 350.0908203125 447.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="443.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">REAR_FOG_LIGHTS</text>
+
+    <path d="M 350.0908203125 457.0
+            L 352.5908203125 457.0
+            L 352.5908203125 458.6666666666667
+            L 355.0908203125 458.6666666666667
+            L 355.0908203125 457.0
+            L 360.0908203125 457.0
+            L 360.0908203125 467.0
+            L 355.0908203125 467.0
+            L 355.0908203125 465.3333333333333
+            L 352.5908203125 465.3333333333333
+            L 352.5908203125 467.0
+            L 350.0908203125 467.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="463.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 477.0
+            L 352.5908203125 477.0
+            L 352.5908203125 478.6666666666667
+            L 355.0908203125 478.6666666666667
+            L 355.0908203125 477.0
+            L 360.0908203125 477.0
+            L 360.0908203125 487.0
+            L 355.0908203125 487.0
+            L 355.0908203125 485.3333333333333
+            L 352.5908203125 485.3333333333333
+            L 352.5908203125 487.0
+            L 350.0908203125 487.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="483.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 497.0
+            L 352.5908203125 497.0
+            L 352.5908203125 498.6666666666667
+            L 355.0908203125 498.6666666666667
+            L 355.0908203125 497.0
+            L 360.0908203125 497.0
+            L 360.0908203125 507.0
+            L 355.0908203125 507.0
+            L 355.0908203125 505.3333333333333
+            L 352.5908203125 505.3333333333333
+            L 352.5908203125 507.0
+            L 350.0908203125 507.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="503.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 517.0
+            L 352.5908203125 517.0
+            L 352.5908203125 518.6666666666666
+            L 355.0908203125 518.6666666666666
+            L 355.0908203125 517.0
+            L 360.0908203125 517.0
+            L 360.0908203125 527.0
+            L 355.0908203125 527.0
+            L 355.0908203125 525.3333333333334
+            L 352.5908203125 525.3333333333334
+            L 352.5908203125 527.0
+            L 350.0908203125 527.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="523.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 537.0
+            L 352.5908203125 537.0
+            L 352.5908203125 538.6666666666666
+            L 355.0908203125 538.6666666666666
+            L 355.0908203125 537.0
+            L 360.0908203125 537.0
+            L 360.0908203125 547.0
+            L 355.0908203125 547.0
+            L 355.0908203125 545.3333333333334
+            L 352.5908203125 545.3333333333334
+            L 352.5908203125 547.0
+            L 350.0908203125 547.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="543.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 557.0
+            L 352.5908203125 557.0
+            L 352.5908203125 558.6666666666666
+            L 355.0908203125 558.6666666666666
+            L 355.0908203125 557.0
+            L 360.0908203125 557.0
+            L 360.0908203125 567.0
+            L 355.0908203125 567.0
+            L 355.0908203125 565.3333333333334
+            L 352.5908203125 565.3333333333334
+            L 352.5908203125 567.0
+            L 350.0908203125 567.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="563.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 577.0
+            L 352.5908203125 577.0
+            L 352.5908203125 578.6666666666666
+            L 355.0908203125 578.6666666666666
+            L 355.0908203125 577.0
+            L 360.0908203125 577.0
+            L 360.0908203125 587.0
+            L 355.0908203125 587.0
+            L 355.0908203125 585.3333333333334
+            L 352.5908203125 585.3333333333334
+            L 352.5908203125 587.0
+            L 350.0908203125 587.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="583.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 597.0
+            L 352.5908203125 597.0
+            L 352.5908203125 598.6666666666666
+            L 355.0908203125 598.6666666666666
+            L 355.0908203125 597.0
+            L 360.0908203125 597.0
+            L 360.0908203125 607.0
+            L 355.0908203125 607.0
+            L 355.0908203125 605.3333333333334
+            L 352.5908203125 605.3333333333334
+            L 352.5908203125 607.0
+            L 350.0908203125 607.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="603.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_OEM_OPTION_2_LIGHT</text>
+
+    <path d="M 350.0908203125 617.0
+            L 352.5908203125 617.0
+            L 352.5908203125 618.6666666666666
+            L 355.0908203125 618.6666666666666
+            L 355.0908203125 617.0
+            L 360.0908203125 617.0
+            L 360.0908203125 627.0
+            L 355.0908203125 627.0
+            L 355.0908203125 625.3333333333334
+            L 352.5908203125 625.3333333333334
+            L 352.5908203125 627.0
+            L 350.0908203125 627.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="623.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_OEM_OPTION_1_LIGHT</text>
+
+    <path d="M 350.0908203125 637.0
+            L 352.5908203125 637.0
+            L 352.5908203125 638.6666666666666
+            L 355.0908203125 638.6666666666666
+            L 355.0908203125 637.0
+            L 360.0908203125 637.0
+            L 360.0908203125 647.0
+            L 355.0908203125 647.0
+            L 355.0908203125 645.3333333333334
+            L 352.5908203125 645.3333333333334
+            L 352.5908203125 647.0
+            L 350.0908203125 647.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="643.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 657.0
+            L 352.5908203125 657.0
+            L 352.5908203125 658.6666666666666
+            L 355.0908203125 658.6666666666666
+            L 355.0908203125 657.0
+            L 360.0908203125 657.0
+            L 360.0908203125 667.0
+            L 355.0908203125 667.0
+            L 355.0908203125 665.3333333333334
+            L 352.5908203125 665.3333333333334
+            L 352.5908203125 667.0
+            L 350.0908203125 667.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="663.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 677.0
+            L 352.5908203125 677.0
+            L 352.5908203125 678.6666666666666
+            L 355.0908203125 678.6666666666666
+            L 355.0908203125 677.0
+            L 360.0908203125 677.0
+            L 360.0908203125 687.0
+            L 355.0908203125 687.0
+            L 355.0908203125 685.3333333333334
+            L 352.5908203125 685.3333333333334
+            L 352.5908203125 687.0
+            L 350.0908203125 687.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="683.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_RIGHT_FACING_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 697.0
+            L 352.5908203125 697.0
+            L 352.5908203125 698.6666666666666
+            L 355.0908203125 698.6666666666666
+            L 355.0908203125 697.0
+            L 360.0908203125 697.0
+            L 360.0908203125 707.0
+            L 355.0908203125 707.0
+            L 355.0908203125 705.3333333333334
+            L 352.5908203125 705.3333333333334
+            L 352.5908203125 707.0
+            L 350.0908203125 707.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="703.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_LEFT_FACING_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 717.0
+            L 352.5908203125 717.0
+            L 352.5908203125 718.6666666666666
+            L 355.0908203125 718.6666666666666
+            L 355.0908203125 717.0
+            L 360.0908203125 717.0
+            L 360.0908203125 727.0
+            L 355.0908203125 727.0
+            L 355.0908203125 725.3333333333334
+            L 352.5908203125 725.3333333333334
+            L 352.5908203125 727.0
+            L 350.0908203125 727.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="723.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_REAR_WORK_LIGHTS</text>
+
+    <path d="M 350.0908203125 737.0
+            L 352.5908203125 737.0
+            L 352.5908203125 738.6666666666666
+            L 355.0908203125 738.6666666666666
+            L 355.0908203125 737.0
+            L 360.0908203125 737.0
+            L 360.0908203125 747.0
+            L 355.0908203125 747.0
+            L 355.0908203125 745.3333333333334
+            L 352.5908203125 745.3333333333334
+            L 352.5908203125 747.0
+            L 350.0908203125 747.0
+            Z" fill="#845DAF"/>
+    <text x="347.0908203125" y="743.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TIMEOUT</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="366.5908203125" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="366.5908203125" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="371.5908203125" y1="16.0" x2="371.5908203125" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="366.5908203125" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="371.5908203125" y1="16.0" x2="371.5908203125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="361.5908203125" y1="16.0" x2="381.5908203125" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="361.5908203125" y1="76.0" x2="381.5908203125" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="361.5908203125" y1="96.0" x2="381.5908203125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="386.5908203125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="386.5908203125" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="386.5908203125" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan></text>
+
+    <text x="386.5908203125" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Daytime Running Lights</text>
+
+    <text x="386.5908203125" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Alternate Headlights</text>
+
+    <text x="386.5908203125" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Low Beam Headlights</text>
+
+    <text x="386.5908203125" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – High Beam Headlights</text>
+
+    <text x="386.5908203125" y="203.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Front Fog Lights</text>
+
+    <text x="386.5908203125" y="223.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Rotating Beacon Light</text>
+
+    <text x="386.5908203125" y="243.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Right Turn Signal Lights</text>
+
+    <text x="386.5908203125" y="263.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Left Turn Signal Lights</text>
+
+    <text x="386.5908203125" y="283.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Back Up Lights And Alarm Horn</text>
+
+    <text x="386.5908203125" y="303.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Center Stop Lights</text>
+
+    <text x="386.5908203125" y="323.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Right Stop Lights</text>
+
+    <text x="386.5908203125" y="343.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Left Stop Lights</text>
+
+    <text x="386.5908203125" y="363.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Clearance Lights</text>
+
+    <text x="386.5908203125" y="383.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Clearance Lights</text>
+
+    <text x="386.5908203125" y="403.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Marker Lights</text>
+
+    <text x="386.5908203125" y="423.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Marker Lights</text>
+
+    <text x="386.5908203125" y="443.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Rear Fog Lights</text>
+
+    <text x="386.5908203125" y="463.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Underside Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="483.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Rear Low Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="503.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Rear High Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="523.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Side Low Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="543.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Side High Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="563.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Front Low Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="583.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Tractor Front High Mounted Work Lights</text>
+
+    <text x="386.5908203125" y="603.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Oem Option 2 Light</text>
+
+    <text x="386.5908203125" y="623.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Oem Option 1 Light</text>
+
+    <text x="386.5908203125" y="643.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Right Forward Work Lights</text>
+
+    <text x="386.5908203125" y="663.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Left Forward Work Lights</text>
+
+    <text x="386.5908203125" y="683.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Right Facing Work Lights</text>
+
+    <text x="386.5908203125" y="703.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Left Facing Work Lights</text>
+
+    <text x="386.5908203125" y="723.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Implement Rear Work Lights</text>
+
+    <text x="386.5908203125" y="743.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Timeout Status</text>
+  </g>
 </svg>

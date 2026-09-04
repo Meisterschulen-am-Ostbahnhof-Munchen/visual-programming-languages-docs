@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1494" height="1159" viewBox="-548 -20 1494 1159">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1209.5654296875 852.0"
+     width="1209.5654296875" height="852.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,333 +28,745 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 379 0
-            A 3 3 0 0 1 382 3
-            L 382 115
-            A 3 3 0 0 1 379 118
-            L 376 118
-            L 376 158
-            L 379 158
-            A 3 3 0 0 1 382 161
-            L 382 1106
-            A 3 3 0 0 1 379 1109
-            L 3 1109
-            A 3 3 0 0 1 0 1106
-            L 0 161
-            A 3 3 0 0 1 3 158
-            L 6 158
-            L 6 118
-            L 3 118
-            A 3 3 0 0 1 0 115
+  <g transform="translate(204.4287109375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 353.5908203125 0
+            A 3 3 0 0 1 356.5908203125 3
+            L 356.5908203125 63.0
+            A 3 3 0 0 1 353.5908203125 66.0
+            L 346.5908203125 66.0
+            L 346.5908203125 106.0
+            L 353.5908203125 106.0
+            A 3 3 0 0 1 356.5908203125 109.0
+            L 356.5908203125 829.0
+            A 3 3 0 0 1 353.5908203125 832.0
+            L 3 832.0
+            A 3 3 0 0 1 0 829.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 140.5 129.0
-            L 156.5 129.0
-            A 1 1 0 0 1 157.5 130.0
-            L 157.5 133.5
-            L 155.5 133.5
-            L 155.5 136.5
-            L 157.5 136.5
-            L 157.5 146.0
-            A 1 1 0 0 1 156.5 147.0
-            L 140.5 147.0
-            A 1 1 0 0 1 139.5 146.0
-            L 139.5 136.5
-            L 141.5 136.5
-            L 141.5 133.5
-            L 139.5 133.5
-            L 139.5 130.0
-            A 1 1 0 0 1 140.5 129.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="148.5" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="162.5" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">I_Lighting</text>
-<text x="191.0" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-103" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M382,37 L382,47 L387,42 Z" fill="#63B31F" stroke="none" />
-<text x="370" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="421" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="491" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M382,63 L382,73 L387,68 Z" fill="#63B31F" stroke="none" />
-<text x="370" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
-<text x="421" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="491" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Indication from Resource</text>
-<path d="M382,89 L382,99 L387,94 Z" fill="#63B31F" stroke="none" />
-<text x="370" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TIMEOUT</text>
-<text x="421" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M382,170 L382,180 L387,175 Z" fill="#A3B08F" stroke="none" />
-<text x="370" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="421" y="178" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="491" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M382,196 L382,206 L387,201 Z" fill="#BD8663" stroke="none" />
-<text x="370" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="421" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<path d="M382,222 L382,232 L387,227 Z" fill="#A3B08F" stroke="none" />
-<text x="370" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q_timeout</text>
-<text x="421" y="230" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<path d="M382,248 L382,258 L387,253 Z" fill="#18519E" stroke="none" />
-<text x="370" y="257" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_timeout</text>
-<text x="421" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M382,274 L382,284 L387,279 Z" fill="#18519E" stroke="none" />
-<text x="370" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_data</text>
-<text x="421" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M382,300 L382,310 L387,305 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DAYTIME_RUNNING_LIGHTS</text>
-<text x="421" y="308" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Daytime running lights 2-bit QUARTER value (see</text>
-<text x="491" y="320" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,326 L382,336 L387,331 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ALTERNATE_HEADLIGHTS</text>
-<text x="421" y="334" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Alternate headlights 2-bit QUARTER value (see</text>
-<text x="491" y="346" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,352 L382,362 L387,357 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="361" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">LOW_BEAM_HEADLIGHTS</text>
-<text x="421" y="360" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Low-beam headlights 2-bit QUARTER value (see</text>
-<text x="491" y="372" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,378 L382,388 L387,383 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="387" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">HIGH_BEAM_HEADLIGHTS</text>
-<text x="421" y="386" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">High-beam headlights 2-bit QUARTER value (see</text>
-<text x="491" y="398" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,404 L382,414 L387,409 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="413" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_FRONT_FOG_LIGHTS</text>
-<text x="421" y="412" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor front fog lights 2-bit QUARTER value (see</text>
-<text x="491" y="424" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,430 L382,440 L387,435 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="439" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ROTATING_BEACON_LIGHT</text>
-<text x="421" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Rotating beacon light 2-bit QUARTER value (see</text>
-<text x="491" y="450" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,456 L382,466 L387,461 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="465" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RIGHT_TURN_SIGNAL_LIGHTS</text>
-<text x="421" y="464" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Right-turn signal lights 2-bit QUARTER value (see</text>
-<text x="491" y="476" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,482 L382,492 L387,487 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="491" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">LEFT_TURN_SIGNAL_LIGHTS</text>
-<text x="421" y="490" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Left-turn signal lights 2-bit QUARTER value (see</text>
-<text x="491" y="502" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,508 L382,518 L387,513 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="517" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">BACK_UP_LIGHTS_AND_ALARM_HORN</text>
-<text x="421" y="516" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Back-up lights and alarm horn 2-bit QUARTER value</text>
-<text x="491" y="528" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">(see Attributes for Details)</text>
-<path d="M382,534 L382,544 L387,539 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="543" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CENTER_STOP_LIGHTS</text>
-<text x="421" y="542" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Center stop lights 2-bit QUARTER value (see</text>
-<text x="491" y="554" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,560 L382,570 L387,565 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="569" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RIGHT_STOP_LIGHTS</text>
-<text x="421" y="568" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Right stop lights 2-bit QUARTER value (see</text>
-<text x="491" y="580" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,586 L382,596 L387,591 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="595" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">LEFT_STOP_LIGHTS</text>
-<text x="421" y="594" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="594" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Left stop lights 2-bit QUARTER value (see</text>
-<text x="491" y="606" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,612 L382,622 L387,617 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="621" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_CLEARANCE_LIGHTS</text>
-<text x="421" y="620" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="620" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement clearance lights 2-bit QUARTER value</text>
-<text x="491" y="632" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">(see Attributes for Details)</text>
-<path d="M382,638 L382,648 L387,643 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="647" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_CLEARANCE_LIGHTS</text>
-<text x="421" y="646" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="646" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor clearance lights 2-bit QUARTER value (see</text>
-<text x="491" y="658" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,664 L382,674 L387,669 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="673" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_MARKER_LIGHTS</text>
-<text x="421" y="672" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="672" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement marker (position) lights 2-bit QUARTER</text>
-<text x="491" y="684" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,690 L382,700 L387,695 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="699" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_MARKER_LIGHTS</text>
-<text x="421" y="698" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="698" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor marker (position) lights 2-bit QUARTER</text>
-<text x="491" y="710" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,716 L382,726 L387,721 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="725" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">REAR_FOG_LIGHTS</text>
-<text x="421" y="724" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="724" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Rear fog lights 2-bit QUARTER value (see</text>
-<text x="491" y="736" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M382,742 L382,752 L387,747 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="751" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="750" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="750" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor underside-mounted work lights 2-bit</text>
-<text x="491" y="762" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">QUARTER value (see Attributes for Details)</text>
-<path d="M382,768 L382,778 L387,773 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="777" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="776" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="776" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor rear low-mounted work lights 2-bit QUARTER</text>
-<text x="491" y="788" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,794 L382,804 L387,799 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="803" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="802" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="802" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor rear high-mounted work lights 2-bit</text>
-<text x="491" y="814" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">QUARTER value (see Attributes for Details)</text>
-<path d="M382,820 L382,830 L387,825 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="829" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="828" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="828" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor side low-mounted work lights 2-bit QUARTER</text>
-<text x="491" y="840" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,846 L382,856 L387,851 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="855" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="854" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="854" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor side high-mounted work lights 2-bit</text>
-<text x="491" y="866" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">QUARTER value (see Attributes for Details)</text>
-<path d="M382,872 L382,882 L387,877 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="881" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="880" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="880" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor front low-mounted work lights 2-bit</text>
-<text x="491" y="892" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">QUARTER value (see Attributes for Details)</text>
-<path d="M382,898 L382,908 L387,903 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="907" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS</text>
-<text x="421" y="906" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="906" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Tractor front high-mounted work lights 2-bit</text>
-<text x="491" y="918" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">QUARTER value (see Attributes for Details)</text>
-<path d="M382,924 L382,934 L387,929 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="933" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_OEM_OPTION_2_LIGHT</text>
-<text x="421" y="932" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="932" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement OEM option 2 light 2-bit QUARTER value</text>
-<text x="491" y="944" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">(see Attributes for Details)</text>
-<path d="M382,950 L382,960 L387,955 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="959" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_OEM_OPTION_1_LIGHT</text>
-<text x="421" y="958" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="958" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement OEM option 1 light 2-bit QUARTER value</text>
-<text x="491" y="970" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">(see Attributes for Details)</text>
-<path d="M382,976 L382,986 L387,981 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="985" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS</text>
-<text x="421" y="984" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="984" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement right forward work lights 2-bit QUARTER</text>
-<text x="491" y="996" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,1002 L382,1012 L387,1007 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="1011" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS</text>
-<text x="421" y="1010" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="1010" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement left forward work lights 2-bit QUARTER</text>
-<text x="491" y="1022" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,1028 L382,1038 L387,1033 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="1037" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_RIGHT_FACING_WORK_LIGHTS</text>
-<text x="421" y="1036" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="1036" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement right-facing work lights 2-bit QUARTER</text>
-<text x="491" y="1048" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,1054 L382,1064 L387,1059 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="1063" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_LEFT_FACING_WORK_LIGHTS</text>
-<text x="421" y="1062" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="1062" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement left-facing work lights 2-bit QUARTER</text>
-<text x="491" y="1074" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value (see Attributes for Details)</text>
-<path d="M382,1080 L382,1090 L387,1085 Z" fill="#82A3A9" stroke="none" />
-<text x="370" y="1089" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IMPLEMENT_REAR_WORK_LIGHTS</text>
-<text x="421" y="1088" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="491" y="1088" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Implement rear work lights 2-bit QUARTER value</text>
-<text x="491" y="1100" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">(see Attributes for Details)</text>
-<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M394,42 L394,201" stroke="#000000" stroke-width="1" />
-<path d="M382,42 L394,42" stroke="#000000" />
-<rect x="392" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M394,175 L387,175" stroke="#000000" />
-<rect x="392" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M394,201 L387,201" stroke="#000000" />
-<rect x="392" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,68 L402,1085" stroke="#000000" stroke-width="1" />
-<path d="M382,68 L402,68" stroke="#000000" />
-<rect x="400" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,175 L387,175" stroke="#000000" />
-<rect x="400" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,279 L387,279" stroke="#000000" />
-<rect x="400" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,201 L387,201" stroke="#000000" />
-<rect x="400" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,227 L387,227" stroke="#000000" />
-<rect x="400" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,305 L387,305" stroke="#000000" />
-<rect x="400" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,331 L387,331" stroke="#000000" />
-<rect x="400" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,357 L387,357" stroke="#000000" />
-<rect x="400" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,383 L387,383" stroke="#000000" />
-<rect x="400" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,409 L387,409" stroke="#000000" />
-<rect x="400" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,435 L387,435" stroke="#000000" />
-<rect x="400" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,461 L387,461" stroke="#000000" />
-<rect x="400" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,487 L387,487" stroke="#000000" />
-<rect x="400" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,513 L387,513" stroke="#000000" />
-<rect x="400" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,539 L387,539" stroke="#000000" />
-<rect x="400" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,565 L387,565" stroke="#000000" />
-<rect x="400" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,591 L387,591" stroke="#000000" />
-<rect x="400" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,617 L387,617" stroke="#000000" />
-<rect x="400" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,643 L387,643" stroke="#000000" />
-<rect x="400" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,669 L387,669" stroke="#000000" />
-<rect x="400" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,695 L387,695" stroke="#000000" />
-<rect x="400" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,721 L387,721" stroke="#000000" />
-<rect x="400" y="719" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,747 L387,747" stroke="#000000" />
-<rect x="400" y="745" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,773 L387,773" stroke="#000000" />
-<rect x="400" y="771" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,799 L387,799" stroke="#000000" />
-<rect x="400" y="797" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,825 L387,825" stroke="#000000" />
-<rect x="400" y="823" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,851 L387,851" stroke="#000000" />
-<rect x="400" y="849" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,877 L387,877" stroke="#000000" />
-<rect x="400" y="875" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,903 L387,903" stroke="#000000" />
-<rect x="400" y="901" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,929 L387,929" stroke="#000000" />
-<rect x="400" y="927" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,955 L387,955" stroke="#000000" />
-<rect x="400" y="953" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,981 L387,981" stroke="#000000" />
-<rect x="400" y="979" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,1007 L387,1007" stroke="#000000" />
-<rect x="400" y="1005" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,1033 L387,1033" stroke="#000000" />
-<rect x="400" y="1031" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,1059 L387,1059" stroke="#000000" />
-<rect x="400" y="1057" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M402,1085 L387,1085" stroke="#000000" />
-<rect x="400" y="1083" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M410,94 L410,253" stroke="#000000" stroke-width="1" />
-<path d="M382,94 L410,94" stroke="#000000" />
-<rect x="408" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M410,253 L387,253" stroke="#000000" />
-<rect x="408" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M410,201 L387,201" stroke="#000000" />
-<rect x="408" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M410,227 L387,227" stroke="#000000" />
-<rect x="408" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="350.0908203125,11.0 355.0908203125,16.0 350.0908203125,21.0" fill="#63B31F"/>
+    <text x="347.0908203125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="350.0908203125,31.0 355.0908203125,36.0 350.0908203125,41.0" fill="#63B31F"/>
+    <text x="347.0908203125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IND</text>
+
+    <polygon points="350.0908203125,51.0 355.0908203125,56.0 350.0908203125,61.0" fill="#63B31F"/>
+    <text x="347.0908203125" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TIMEOUT</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 138.8759765625 77.0
+            L 154.8759765625 77.0
+            A 1 1 0 0 1 155.8759765625 78.0
+            L 155.8759765625 81.5
+            L 153.8759765625 81.5
+            L 153.8759765625 84.5
+            L 155.8759765625 84.5
+            L 155.8759765625 94.0
+            A 1 1 0 0 1 154.8759765625 95.0
+            L 138.8759765625 95.0
+            A 1 1 0 0 1 137.8759765625 94.0
+            L 137.8759765625 84.5
+            L 139.8759765625 84.5
+            L 139.8759765625 81.5
+            L 137.8759765625 81.5
+            L 137.8759765625 78.0
+            A 1 1 0 0 1 138.8759765625 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="146.8759765625" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="160.8759765625" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">I_Lighting</text>
+
+    <text x="178.29541015625" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#A3B08F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="350.0908203125,111.0 355.0908203125,116.0 350.0908203125,121.0" fill="#A3B08F"/>
+    <text x="347.0908203125" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="350.0908203125,131.0 355.0908203125,136.0 350.0908203125,141.0" fill="#BD8663"/>
+    <text x="347.0908203125" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="350.0908203125,151.0 355.0908203125,156.0 350.0908203125,161.0" fill="#A3B08F"/>
+    <text x="347.0908203125" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q_timeout</text>
+
+    <polygon points="350.0908203125,171.0 355.0908203125,176.0 350.0908203125,181.0" fill="#18519E"/>
+    <text x="347.0908203125" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_timeout</text>
+
+    <polygon points="350.0908203125,191.0 355.0908203125,196.0 350.0908203125,201.0" fill="#18519E"/>
+    <text x="347.0908203125" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_data</text>
+
+    <polygon points="350.0908203125,211.0 355.0908203125,216.0 350.0908203125,221.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DAYTIME_RUNNING_LIGHTS</text>
+
+    <polygon points="350.0908203125,231.0 355.0908203125,236.0 350.0908203125,241.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ALTERNATE_HEADLIGHTS</text>
+
+    <polygon points="350.0908203125,251.0 355.0908203125,256.0 350.0908203125,261.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LOW_BEAM_HEADLIGHTS</text>
+
+    <polygon points="350.0908203125,271.0 355.0908203125,276.0 350.0908203125,281.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">HIGH_BEAM_HEADLIGHTS</text>
+
+    <polygon points="350.0908203125,291.0 355.0908203125,296.0 350.0908203125,301.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_FRONT_FOG_LIGHTS</text>
+
+    <polygon points="350.0908203125,311.0 355.0908203125,316.0 350.0908203125,321.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ROTATING_BEACON_LIGHT</text>
+
+    <polygon points="350.0908203125,331.0 355.0908203125,336.0 350.0908203125,341.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">RIGHT_TURN_SIGNAL_LIGHTS</text>
+
+    <polygon points="350.0908203125,351.0 355.0908203125,356.0 350.0908203125,361.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LEFT_TURN_SIGNAL_LIGHTS</text>
+
+    <polygon points="350.0908203125,371.0 355.0908203125,376.0 350.0908203125,381.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">BACK_UP_LIGHTS_AND_ALARM_HORN</text>
+
+    <polygon points="350.0908203125,391.0 355.0908203125,396.0 350.0908203125,401.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="397.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CENTER_STOP_LIGHTS</text>
+
+    <polygon points="350.0908203125,411.0 355.0908203125,416.0 350.0908203125,421.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="417.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">RIGHT_STOP_LIGHTS</text>
+
+    <polygon points="350.0908203125,431.0 355.0908203125,436.0 350.0908203125,441.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LEFT_STOP_LIGHTS</text>
+
+    <polygon points="350.0908203125,451.0 355.0908203125,456.0 350.0908203125,461.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_CLEARANCE_LIGHTS</text>
+
+    <polygon points="350.0908203125,471.0 355.0908203125,476.0 350.0908203125,481.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_CLEARANCE_LIGHTS</text>
+
+    <polygon points="350.0908203125,491.0 355.0908203125,496.0 350.0908203125,501.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_MARKER_LIGHTS</text>
+
+    <polygon points="350.0908203125,511.0 355.0908203125,516.0 350.0908203125,521.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_MARKER_LIGHTS</text>
+
+    <polygon points="350.0908203125,531.0 355.0908203125,536.0 350.0908203125,541.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">REAR_FOG_LIGHTS</text>
+
+    <polygon points="350.0908203125,551.0 355.0908203125,556.0 350.0908203125,561.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_UNDERSIDE_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,571.0 355.0908203125,576.0 350.0908203125,581.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_REAR_LOW_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,591.0 355.0908203125,596.0 350.0908203125,601.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_REAR_HIGH_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,611.0 355.0908203125,616.0 350.0908203125,621.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_SIDE_LOW_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,631.0 355.0908203125,636.0 350.0908203125,641.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_SIDE_HIGH_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,651.0 355.0908203125,656.0 350.0908203125,661.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_FRONT_LOW_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,671.0 355.0908203125,676.0 350.0908203125,681.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRACTOR_FRONT_HIGH_MOUNTED_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,691.0 355.0908203125,696.0 350.0908203125,701.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="697.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_OEM_OPTION_2_LIGHT</text>
+
+    <polygon points="350.0908203125,711.0 355.0908203125,716.0 350.0908203125,721.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="717.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_OEM_OPTION_1_LIGHT</text>
+
+    <polygon points="350.0908203125,731.0 355.0908203125,736.0 350.0908203125,741.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="737.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_RIGHT_FORWARD_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,751.0 355.0908203125,756.0 350.0908203125,761.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="757.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_LEFT_FORWARD_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,771.0 355.0908203125,776.0 350.0908203125,781.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="777.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_RIGHT_FACING_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,791.0 355.0908203125,796.0 350.0908203125,801.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="797.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_LEFT_FACING_WORK_LIGHTS</text>
+
+    <polygon points="350.0908203125,811.0 355.0908203125,816.0 350.0908203125,821.0" fill="#82A3A9"/>
+    <text x="347.0908203125" y="817.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IMPLEMENT_REAR_WORK_LIGHTS</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="361.5908203125" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="361.5908203125" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="366.5908203125" y1="16.0" x2="366.5908203125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="361.5908203125" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="366.5908203125" y1="16.0" x2="366.5908203125" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="291.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="311.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="331.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="351.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="371.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="391.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="396.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="411.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="416.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="431.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="451.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="471.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="491.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="511.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="531.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="551.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="571.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="591.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="611.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="631.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="651.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="671.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="691.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="696.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="711.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="716.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="731.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="736.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="751.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="756.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="771.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="776.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="791.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="796.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="375.5908203125" y="811.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="380.5908203125" y1="36.0" x2="380.5908203125" y2="816.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="389.5908203125" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="389.5908203125" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="394.5908203125" y1="56.0" x2="394.5908203125" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="389.5908203125" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="394.5908203125" y1="56.0" x2="394.5908203125" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="389.5908203125" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="394.5908203125" y1="56.0" x2="394.5908203125" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="16.0" x2="376.5908203125" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="36.0" x2="390.5908203125" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="56.0" x2="404.5908203125" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="116.0" x2="390.5908203125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="136.0" x2="404.5908203125" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="196.0" x2="390.5908203125" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="156.0" x2="404.5908203125" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="216.0" x2="390.5908203125" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="236.0" x2="390.5908203125" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="256.0" x2="390.5908203125" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="276.0" x2="390.5908203125" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="296.0" x2="390.5908203125" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="316.0" x2="390.5908203125" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="336.0" x2="390.5908203125" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="356.0" x2="390.5908203125" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="376.0" x2="390.5908203125" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="396.0" x2="390.5908203125" y2="396.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="416.0" x2="390.5908203125" y2="416.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="436.0" x2="390.5908203125" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="456.0" x2="390.5908203125" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="476.0" x2="390.5908203125" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="496.0" x2="390.5908203125" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="516.0" x2="390.5908203125" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="536.0" x2="390.5908203125" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="556.0" x2="390.5908203125" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="576.0" x2="390.5908203125" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="596.0" x2="390.5908203125" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="616.0" x2="390.5908203125" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="636.0" x2="390.5908203125" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="656.0" x2="390.5908203125" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="676.0" x2="390.5908203125" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="696.0" x2="390.5908203125" y2="696.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="716.0" x2="390.5908203125" y2="716.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="736.0" x2="390.5908203125" y2="736.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="756.0" x2="390.5908203125" y2="756.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="776.0" x2="390.5908203125" y2="776.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="796.0" x2="390.5908203125" y2="796.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="816.0" x2="390.5908203125" y2="816.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.5908203125" y1="176.0" x2="404.5908203125" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="409.5908203125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="409.5908203125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Indication from Resource</text>
+
+    <text x="409.5908203125" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="409.5908203125" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="409.5908203125" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan></text>
+
+    <text x="409.5908203125" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="409.5908203125" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="409.5908203125" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="409.5908203125" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Daytime running lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Alternate headlights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Low-beam headlights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – High-beam headlights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor front fog lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Rotating beacon light 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Right-turn signal lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Left-turn signal lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Back-up lights and alarm horn 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="397.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Center stop lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="417.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Right stop lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Left stop lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement clearance lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor clearance lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement marker (position) lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor marker (position) lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Rear fog lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor underside-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor rear low-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor rear high-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor side low-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor side high-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor front low-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Tractor front high-mounted work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="697.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement OEM option 2 light 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="717.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement OEM option 1 light 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="737.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement right forward work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="757.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement left forward work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="777.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement right-facing work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="797.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement left-facing work lights 2-bit QUARTER value (see Attributes for Details)</text>
+
+    <text x="409.5908203125" y="817.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Implement rear work lights 2-bit QUARTER value (see Attributes for Details)</text>
+  </g>
 </svg>

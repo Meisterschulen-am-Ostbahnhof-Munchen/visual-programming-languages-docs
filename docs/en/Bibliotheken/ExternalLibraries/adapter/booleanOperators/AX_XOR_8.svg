@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1210" height="343" viewBox="-540 -20 1210 343">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 394.2080078125 272.0"
+     width="394.2080078125" height="272.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,193 +28,249 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 127 0
-            A 3 3 0 0 1 130 3
-            L 130 27
-            A 3 3 0 0 1 127 30
-            L 124 30
-            L 124 70
-            L 127 70
-            A 3 3 0 0 1 130 73
-            L 130 290
-            A 3 3 0 0 1 127 293
-            L 3 293
-            A 3 3 0 0 1 0 290
-            L 0 73
-            A 3 3 0 0 1 3 70
-            L 6 70
-            L 6 30
-            L 3 30
-            A 3 3 0 0 1 0 27
+  <g transform="translate(138.345703125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 120.607421875 0
+            A 3 3 0 0 1 123.607421875 3
+            L 123.607421875 23.0
+            A 3 3 0 0 1 120.607421875 26.0
+            L 113.607421875 26.0
+            L 113.607421875 66.0
+            L 120.607421875 66.0
+            A 3 3 0 0 1 123.607421875 69.0
+            L 123.607421875 249.0
+            A 3 3 0 0 1 120.607421875 252.0
+            L 3 252.0
+            A 3 3 0 0 1 0 249.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 22.5 41.0
-            L 38.5 41.0
-            A 1 1 0 0 1 39.5 42.0
-            L 39.5 45.5
-            L 37.5 45.5
-            L 37.5 48.5
-            L 39.5 48.5
-            L 39.5 58.0
-            A 1 1 0 0 1 38.5 59.0
-            L 22.5 59.0
-            A 1 1 0 0 1 21.5 58.0
-            L 21.5 48.5
-            L 23.5 48.5
-            L 23.5 45.5
-            L 21.5 45.5
-            L 21.5 42.0
-            A 1 1 0 0 1 22.5 41.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="30.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="44.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AX_XOR_8</text>
-<text x="65.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 82.0
-            L 0.0 82.0
-            L 0.0 83.66666666666667
-            L 2.5 83.66666666666667
-            L 2.5 82.0
-            L 5.0 82.0
-            L 5.0 92.0
-            L 2.5 92.0
-            L 2.5 90.33333333333333
-            L 0.0 90.33333333333333
-            L 0.0 92.0
-            L -5.0 92.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="91" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN1</text>
-<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 1</text>
-<path d="M -5.0 108.0
-            L 0.0 108.0
-            L 0.0 109.66666666666667
-            L 2.5 109.66666666666667
-            L 2.5 108.0
-            L 5.0 108.0
-            L 5.0 118.0
-            L 2.5 118.0
-            L 2.5 116.33333333333333
-            L 0.0 116.33333333333333
-            L 0.0 118.0
-            L -5.0 118.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="117" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN2</text>
-<text x="-15" y="116" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 2</text>
-<path d="M -5.0 134.0
-            L 0.0 134.0
-            L 0.0 135.66666666666666
-            L 2.5 135.66666666666666
-            L 2.5 134.0
-            L 5.0 134.0
-            L 5.0 144.0
-            L 2.5 144.0
-            L 2.5 142.33333333333334
-            L 0.0 142.33333333333334
-            L 0.0 144.0
-            L -5.0 144.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="143" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN3</text>
-<text x="-15" y="142" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="142" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 3</text>
-<path d="M -5.0 160.0
-            L 0.0 160.0
-            L 0.0 161.66666666666666
-            L 2.5 161.66666666666666
-            L 2.5 160.0
-            L 5.0 160.0
-            L 5.0 170.0
-            L 2.5 170.0
-            L 2.5 168.33333333333334
-            L 0.0 168.33333333333334
-            L 0.0 170.0
-            L -5.0 170.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="169" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN4</text>
-<text x="-15" y="168" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="168" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 4</text>
-<path d="M -5.0 186.0
-            L 0.0 186.0
-            L 0.0 187.66666666666666
-            L 2.5 187.66666666666666
-            L 2.5 186.0
-            L 5.0 186.0
-            L 5.0 196.0
-            L 2.5 196.0
-            L 2.5 194.33333333333334
-            L 0.0 194.33333333333334
-            L 0.0 196.0
-            L -5.0 196.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="195" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN5</text>
-<text x="-15" y="194" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="194" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 5</text>
-<path d="M -5.0 212.0
-            L 0.0 212.0
-            L 0.0 213.66666666666666
-            L 2.5 213.66666666666666
-            L 2.5 212.0
-            L 5.0 212.0
-            L 5.0 222.0
-            L 2.5 222.0
-            L 2.5 220.33333333333334
-            L 0.0 220.33333333333334
-            L 0.0 222.0
-            L -5.0 222.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="221" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN6</text>
-<text x="-15" y="220" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="220" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 6</text>
-<path d="M -5.0 238.0
-            L 0.0 238.0
-            L 0.0 239.66666666666666
-            L 2.5 239.66666666666666
-            L 2.5 238.0
-            L 5.0 238.0
-            L 5.0 248.0
-            L 2.5 248.0
-            L 2.5 246.33333333333334
-            L 0.0 246.33333333333334
-            L 0.0 248.0
-            L -5.0 248.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="247" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN7</text>
-<text x="-15" y="246" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="246" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 7</text>
-<path d="M -5.0 264.0
-            L 0.0 264.0
-            L 0.0 265.6666666666667
-            L 2.5 265.6666666666667
-            L 2.5 264.0
-            L 5.0 264.0
-            L 5.0 274.0
-            L 2.5 274.0
-            L 2.5 272.3333333333333
-            L 0.0 272.3333333333333
-            L 0.0 274.0
-            L -5.0 274.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="273" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN8</text>
-<text x="-15" y="272" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-71" y="272" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR input 8</text>
-<path d="M 125.0 82.0
-            L 127.5 82.0
-            L 127.5 83.66666666666667
-            L 130.0 83.66666666666667
-            L 130.0 82.0
-            L 135.0 82.0
-            L 135.0 92.0
-            L 130.0 92.0
-            L 130.0 90.33333333333333
-            L 127.5 90.33333333333333
-            L 127.5 92.0
-            L 125.0 92.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="118" y="91" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
-<text x="145" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="215" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">XOR result</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AX_XOR_8</text>
+
+    <text x="61.8037109375" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN1</text>
+
+    <path d="M 1.5 117.0
+            L 6.5 117.0
+            L 6.5 118.66666666666667
+            L 9.0 118.66666666666667
+            L 9.0 117.0
+            L 11.5 117.0
+            L 11.5 127.0
+            L 9.0 127.0
+            L 9.0 125.33333333333333
+            L 6.5 125.33333333333333
+            L 6.5 127.0
+            L 1.5 127.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN2</text>
+
+    <path d="M 1.5 137.0
+            L 6.5 137.0
+            L 6.5 138.66666666666666
+            L 9.0 138.66666666666666
+            L 9.0 137.0
+            L 11.5 137.0
+            L 11.5 147.0
+            L 9.0 147.0
+            L 9.0 145.33333333333334
+            L 6.5 145.33333333333334
+            L 6.5 147.0
+            L 1.5 147.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN3</text>
+
+    <path d="M 1.5 157.0
+            L 6.5 157.0
+            L 6.5 158.66666666666666
+            L 9.0 158.66666666666666
+            L 9.0 157.0
+            L 11.5 157.0
+            L 11.5 167.0
+            L 9.0 167.0
+            L 9.0 165.33333333333334
+            L 6.5 165.33333333333334
+            L 6.5 167.0
+            L 1.5 167.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN4</text>
+
+    <path d="M 1.5 177.0
+            L 6.5 177.0
+            L 6.5 178.66666666666666
+            L 9.0 178.66666666666666
+            L 9.0 177.0
+            L 11.5 177.0
+            L 11.5 187.0
+            L 9.0 187.0
+            L 9.0 185.33333333333334
+            L 6.5 185.33333333333334
+            L 6.5 187.0
+            L 1.5 187.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN5</text>
+
+    <path d="M 1.5 197.0
+            L 6.5 197.0
+            L 6.5 198.66666666666666
+            L 9.0 198.66666666666666
+            L 9.0 197.0
+            L 11.5 197.0
+            L 11.5 207.0
+            L 9.0 207.0
+            L 9.0 205.33333333333334
+            L 6.5 205.33333333333334
+            L 6.5 207.0
+            L 1.5 207.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="203.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN6</text>
+
+    <path d="M 1.5 217.0
+            L 6.5 217.0
+            L 6.5 218.66666666666666
+            L 9.0 218.66666666666666
+            L 9.0 217.0
+            L 11.5 217.0
+            L 11.5 227.0
+            L 9.0 227.0
+            L 9.0 225.33333333333334
+            L 6.5 225.33333333333334
+            L 6.5 227.0
+            L 1.5 227.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="223.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN7</text>
+
+    <path d="M 1.5 237.0
+            L 6.5 237.0
+            L 6.5 238.66666666666666
+            L 9.0 238.66666666666666
+            L 9.0 237.0
+            L 11.5 237.0
+            L 11.5 247.0
+            L 9.0 247.0
+            L 9.0 245.33333333333334
+            L 6.5 245.33333333333334
+            L 6.5 247.0
+            L 1.5 247.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="243.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN8</text>
+
+    <path d="M 112.107421875 97.0
+            L 114.607421875 97.0
+            L 114.607421875 98.66666666666667
+            L 117.107421875 98.66666666666667
+            L 117.107421875 97.0
+            L 122.107421875 97.0
+            L 122.107421875 107.0
+            L 117.107421875 107.0
+            L 117.107421875 105.33333333333333
+            L 114.607421875 105.33333333333333
+            L 114.607421875 107.0
+            L 112.107421875 107.0
+            Z" fill="#845DAF"/>
+    <text x="109.107421875" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 1 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 2 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 3 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 4 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 5 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="203.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 6 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="223.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 7 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="243.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">XOR input 8 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="148.607421875" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – XOR result</text>
+  </g>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1276" height="249" viewBox="-548 -20 1276 249">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 796.25 152.0"
+     width="796.25" height="152.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,89 +28,165 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 177 0
-            A 3 3 0 0 1 180 3
-            L 180 89
-            A 3 3 0 0 1 177 92
-            L 174 92
-            L 174 132
-            L 177 132
-            A 3 3 0 0 1 180 135
-            L 180 196
-            A 3 3 0 0 1 177 199
-            L 3 199
-            A 3 3 0 0 1 0 196
-            L 0 135
-            A 3 3 0 0 1 3 132
-            L 6 132
-            L 6 92
-            L 3 92
-            A 3 3 0 0 1 0 89
+  <g transform="translate(343.6220703125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 158.1298828125 0
+            A 3 3 0 0 1 161.1298828125 3
+            L 161.1298828125 43.0
+            A 3 3 0 0 1 158.1298828125 46.0
+            L 151.1298828125 46.0
+            L 151.1298828125 86.0
+            L 158.1298828125 86.0
+            A 3 3 0 0 1 161.1298828125 89.0
+            L 161.1298828125 129.0
+            A 3 3 0 0 1 158.1298828125 132.0
+            L 3 132.0
+            A 3 3 0 0 1 0 129.0
+            L 0 89.0
+            A 3 3 0 0 1 3 86.0
+            L 10 86.0
+            L 10 46.0
+            L 3 46.0
+            A 3 3 0 0 1 0 43.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 23.5 103.0
-            L 39.5 103.0
-            A 1 1 0 0 1 40.5 104.0
-            L 40.5 107.5
-            L 38.5 107.5
-            L 38.5 110.5
-            L 40.5 110.5
-            L 40.5 120.0
-            A 1 1 0 0 1 39.5 121.0
-            L 23.5 121.0
-            A 1 1 0 0 1 22.5 120.0
-            L 22.5 110.5
-            L 24.5 110.5
-            L 24.5 107.5
-            L 22.5 107.5
-            L 22.5 104.0
-            A 1 1 0 0 1 23.5 103.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="31.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="45.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Q_ExecuteMacro</text>
-<text x="90.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-145" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-145" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Request</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#18519E" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">u16ObjId</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="-145" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Object ID of Macro object ( max. value 255 ) </text>
-<path d="M180,37 L180,47 L185,42 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="203" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="273" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M180,63 L180,73 L185,68 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="203" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="273" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirmation of Requested Service</text>
-<path d="M180,144 L180,154 L185,149 Z" fill="#BD8663" stroke="none" />
-<text x="168" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="203" y="152" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<text x="273" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
-<path d="M180,170 L180,180 L185,175 Z" fill="#18519E" stroke="none" />
-<text x="168" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">s16result</text>
-<text x="203" y="178" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">INT</text>
-<text x="273" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">retval see description</text>
-<path d="M-12,42 L-12,149" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#000000" />
-<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,68 L192,175" stroke="#000000" stroke-width="1" />
-<path d="M180,68 L192,68" stroke="#000000" />
-<rect x="190" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,149 L185,149" stroke="#000000" />
-<rect x="190" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,175 L185,175" stroke="#000000" />
-<rect x="190" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="154.6298828125,11.0 159.6298828125,16.0 154.6298828125,21.0" fill="#63B31F"/>
+    <text x="151.6298828125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="154.6298828125,31.0 159.6298828125,36.0 154.6298828125,41.0" fill="#63B31F"/>
+    <text x="151.6298828125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 57.0
+            L 37.0 57.0
+            A 1 1 0 0 1 38.0 58.0
+            L 38.0 61.5
+            L 36.0 61.5
+            L 36.0 64.5
+            L 38.0 64.5
+            L 38.0 74.0
+            A 1 1 0 0 1 37.0 75.0
+            L 21.0 75.0
+            A 1 1 0 0 1 20.0 74.0
+            L 20.0 64.5
+            L 22.0 64.5
+            L 22.0 61.5
+            L 20.0 61.5
+            L 20.0 58.0
+            A 1 1 0 0 1 21.0 57.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">Q_ExecuteMacro</text>
+
+    <text x="80.56494140625" y="86.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#18519E"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">u16ObjId</text>
+
+    <polygon points="154.6298828125,91.0 159.6298828125,96.0 154.6298828125,101.0" fill="#BD8663"/>
+    <text x="151.6298828125" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="154.6298828125,111.0 159.6298828125,116.0 154.6298828125,121.0" fill="#18519E"/>
+    <text x="151.6298828125" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">s16result</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="166.1298828125" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="166.1298828125" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="171.1298828125" y1="36.0" x2="171.1298828125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="166.1298828125" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="171.1298828125" y1="36.0" x2="171.1298828125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="161.1298828125" y1="36.0" x2="181.1298828125" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="161.1298828125" y1="96.0" x2="181.1298828125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="161.1298828125" y1="116.0" x2="181.1298828125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="186.1298828125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="186.1298828125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation of Requested Service</text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Object ID of Macro object ( max. value 255 )  – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan></text>
+
+    <text x="186.1298828125" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan> – Service Status</text>
+
+    <text x="186.1298828125" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">INT</tspan> – retval see description</text>
+  </g>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1396" height="301" viewBox="-548 -20 1396 301">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1263.5068359375 192.0"
+     width="1263.5068359375" height="192.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,115 +28,208 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 297 0
-            A 3 3 0 0 1 300 3
-            L 300 89
-            A 3 3 0 0 1 297 92
-            L 294 92
-            L 294 132
-            L 297 132
-            A 3 3 0 0 1 300 135
-            L 300 248
-            A 3 3 0 0 1 297 251
-            L 3 251
-            A 3 3 0 0 1 0 248
-            L 0 135
-            A 3 3 0 0 1 3 132
-            L 6 132
-            L 6 92
-            L 3 92
-            A 3 3 0 0 1 0 89
+  <g transform="translate(426.740234375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 247.072265625 0
+            A 3 3 0 0 1 250.072265625 3
+            L 250.072265625 43.0
+            A 3 3 0 0 1 247.072265625 46.0
+            L 240.072265625 46.0
+            L 240.072265625 86.0
+            L 247.072265625 86.0
+            A 3 3 0 0 1 250.072265625 89.0
+            L 250.072265625 169.0
+            A 3 3 0 0 1 247.072265625 172.0
+            L 3 172.0
+            A 3 3 0 0 1 0 169.0
+            L 0 89.0
+            A 3 3 0 0 1 3 86.0
+            L 10 86.0
+            L 10 46.0
+            L 3 46.0
+            A 3 3 0 0 1 0 43.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF"
-            stroke="#A0A0A0" stroke-width="1.5"
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 35.5 103.0
-            L 51.5 103.0
-            A 1 1 0 0 1 52.5 104.0
-            L 52.5 107.5
-            L 50.5 107.5
-            L 50.5 110.5
-            L 52.5 110.5
-            L 52.5 120.0
-            A 1 1 0 0 1 51.5 121.0
-            L 35.5 121.0
-            A 1 1 0 0 1 34.5 120.0
-            L 34.5 110.5
-            L 36.5 110.5
-            L 36.5 107.5
-            L 34.5 107.5
-            L 34.5 104.0
-            A 1 1 0 0 1 35.5 103.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="43.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="57.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AE_AX_CLIENT_0_SUBSCRIBE_1</text>
-<text x="150.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization</text>
-<path d="M -5.0 144.0
-            L 0.0 144.0
-            L 0.0 145.66666666666666
-            L 2.5 145.66666666666666
-            L 2.5 144.0
-            L 5.0 144.0
-            L 5.0 154.0
-            L 2.5 154.0
-            L 2.5 152.33333333333334
-            L 0.0 152.33333333333334
-            L 0.0 154.0
-            L -5.0 154.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">TRIGGER</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AE_AX</text>
-<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Trigger (out), Zustand (in)</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ID</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="-153" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Remote-Methodenadresse fuer den Trigger-Aufruf</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ID_STATE</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="-153" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Lokal ueberwachter Zustandsknoten (ACTION=READ)</text>
-<path d="M300,37 L300,47 L305,42 Z" fill="#63B31F" stroke="none" />
-<text x="288" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="323" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="393" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M300,63 L300,73 L305,68 Z" fill="#63B31F" stroke="none" />
-<text x="288" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="323" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="393" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">QO/STATUS updated</text>
-<path d="M300,144 L300,154 L305,149 Z" fill="#A3B08F" stroke="none" />
-<text x="288" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="323" y="152" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="393" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">TRUE nur wenn CLIENT_0_1 und STATE_SUBSCRIBE</text>
-<text x="393" y="164" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">aktuell beide QO=TRUE melden</text>
-<path d="M300,170 L300,180 L305,175 Z" fill="#BD8663" stroke="none" />
-<text x="288" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS_TRIGGER</text>
-<text x="323" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="393" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">STATUS von CLIENT_0_1</text>
-<path d="M300,196 L300,206 L305,201 Z" fill="#BD8663" stroke="none" />
-<text x="288" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS_STATE</text>
-<text x="323" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="393" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">STATUS von STATE_SUBSCRIBE</text>
-<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,68 L312,201" stroke="#000000" stroke-width="1" />
-<path d="M300,68 L312,68" stroke="#000000" />
-<rect x="310" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,149 L305,149" stroke="#000000" />
-<rect x="310" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,175 L305,175" stroke="#000000" />
-<rect x="310" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M312,201 L305,201" stroke="#000000" />
-<rect x="310" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="243.572265625,11.0 248.572265625,16.0 243.572265625,21.0" fill="#63B31F"/>
+    <text x="240.572265625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="243.572265625,31.0 248.572265625,36.0 243.572265625,41.0" fill="#63B31F"/>
+    <text x="240.572265625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 57.0
+            L 37.0 57.0
+            A 1 1 0 0 1 38.0 58.0
+            L 38.0 61.5
+            L 36.0 61.5
+            L 36.0 64.5
+            L 38.0 64.5
+            L 38.0 74.0
+            A 1 1 0 0 1 37.0 75.0
+            L 21.0 75.0
+            A 1 1 0 0 1 20.0 74.0
+            L 20.0 64.5
+            L 22.0 64.5
+            L 22.0 61.5
+            L 20.0 61.5
+            L 20.0 58.0
+            A 1 1 0 0 1 21.0 57.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AE_AX_CLIENT_0_SUBSCRIBE_1</text>
+
+    <text x="125.0361328125" y="86.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#A3B08F"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#BD8663"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ID</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#BD8663"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ID_STATE</text>
+
+    <polygon points="243.572265625,91.0 248.572265625,96.0 243.572265625,101.0" fill="#A3B08F"/>
+    <text x="240.572265625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="243.572265625,111.0 248.572265625,116.0 243.572265625,121.0" fill="#BD8663"/>
+    <text x="240.572265625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS_TRIGGER</text>
+
+    <polygon points="243.572265625,131.0 248.572265625,136.0 243.572265625,141.0" fill="#BD8663"/>
+    <text x="240.572265625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS_STATE</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 157.0
+            L 6.5 157.0
+            L 6.5 158.66666666666666
+            L 9.0 158.66666666666666
+            L 9.0 157.0
+            L 11.5 157.0
+            L 11.5 167.0
+            L 9.0 167.0
+            L 9.0 165.33333333333334
+            L 6.5 165.33333333333334
+            L 6.5 167.0
+            L 1.5 167.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">TRIGGER</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="255.072265625" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="255.072265625" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="260.072265625" y1="36.0" x2="260.072265625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="255.072265625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="260.072265625" y1="36.0" x2="260.072265625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="255.072265625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="260.072265625" y1="36.0" x2="260.072265625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="250.072265625" y1="36.0" x2="270.072265625" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="250.072265625" y1="96.0" x2="270.072265625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="250.072265625" y1="116.0" x2="270.072265625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="250.072265625" y1="136.0" x2="270.072265625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="275.072265625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="275.072265625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – QO/STATUS updated</text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Remote-Methodenadresse fuer den Trigger-Aufruf – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan></text>
+
+    <text x="-25" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Lokal ueberwachter Zustandsknoten (ACTION=READ) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan></text>
+
+    <text x="275.072265625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – TRUE nur wenn CLIENT_0_1 und STATE_SUBSCRIBE aktuell beide QO=TRUE melden</text>
+
+    <text x="275.072265625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan> – STATUS von CLIENT_0_1</text>
+
+    <text x="275.072265625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan> – STATUS von STATE_SUBSCRIBE</text>
+
+    <text x="-25" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Trigger (out), Zustand (in) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AE_AX</tspan></text>
+  </g>
 </svg>

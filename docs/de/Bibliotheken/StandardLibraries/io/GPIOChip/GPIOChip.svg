@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1261" height="379" viewBox="-548 -20 1261 379">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1030.744140625 252.0"
+     width="1030.744140625" height="252.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,129 +28,272 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 154 0
-            A 3 3 0 0 1 157 3
-            L 157 89
-            A 3 3 0 0 1 154 92
-            L 151 92
-            L 151 132
-            L 154 132
-            A 3 3 0 0 1 157 135
-            L 157 326
-            A 3 3 0 0 1 154 329
-            L 3 329
-            A 3 3 0 0 1 0 326
-            L 0 135
-            A 3 3 0 0 1 3 132
-            L 6 132
-            L 6 92
-            L 3 92
-            A 3 3 0 0 1 0 89
+  <g transform="translate(598.0009765625, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 182.0361328125 0
+            A 3 3 0 0 1 185.0361328125 3
+            L 185.0361328125 43.0
+            A 3 3 0 0 1 182.0361328125 46.0
+            L 175.0361328125 46.0
+            L 175.0361328125 86.0
+            L 182.0361328125 86.0
+            A 3 3 0 0 1 185.0361328125 89.0
+            L 185.0361328125 229.0
+            A 3 3 0 0 1 182.0361328125 232.0
+            L 3 232.0
+            A 3 3 0 0 1 0 229.0
+            L 0 89.0
+            A 3 3 0 0 1 3 86.0
+            L 10 86.0
+            L 10 46.0
+            L 3 46.0
+            A 3 3 0 0 1 0 43.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 36.0 103.0
-            L 52.0 103.0
-            A 1 1 0 0 1 53.0 104.0
-            L 53.0 107.5
-            L 51.0 107.5
-            L 51.0 110.5
-            L 53.0 110.5
-            L 53.0 120.0
-            A 1 1 0 0 1 52.0 121.0
-            L 36.0 121.0
-            A 1 1 0 0 1 35.0 120.0
-            L 35.0 110.5
-            L 37.0 110.5
-            L 37.0 107.5
-            L 35.0 107.5
-            L 35.0 104.0
-            A 1 1 0 0 1 36.0 103.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="44.0" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="58.0" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">GPIOChip</text>
-<text x="78.5" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">VALUE</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="-153" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Receiver IX/QX block name</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#18519E" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ChipNumber</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="-153" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">ID of /dev/gpiochipX device</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#18519E" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">LineNumber</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="-153" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">ID of GPIO line within selected chip</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#18519E" stroke="none" />
-<text x="12" y="257" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ReadWriteMode</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="-153" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reading/Writing mode of line (0=read, 1=write</text>
-<text x="-153" y="268" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">push/pull, 2=open drain, 3=open source)</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#18519E" stroke="none" />
-<text x="12" y="283" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">BiasMode</text>
-<text x="-23" y="282" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="-153" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Bias mode of line (0=none, 1=pull up, 2=pull down)</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="309" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ActiveLow</text>
-<text x="-23" y="308" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-153" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">True if a logic 1 corresponds to low voltage</text>
-<path d="M157,37 L157,47 L162,42 Z" fill="#63B31F" stroke="none" />
-<text x="145" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="188" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="258" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M157,63 L157,73 L162,68 Z" fill="#63B31F" stroke="none" />
-<text x="145" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
-<text x="188" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="258" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Indication from Resource</text>
-<path d="M157,144 L157,154 L162,149 Z" fill="#A3B08F" stroke="none" />
-<text x="145" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="188" y="152" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="258" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M157,170 L157,180 L162,175 Z" fill="#BD8663" stroke="none" />
-<text x="145" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="188" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="258" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
-<path d="M-12,42 L-12,305" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#000000" />
-<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#000000" />
-<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#000000" />
-<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,253 L-5,253" stroke="#000000" />
-<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,279 L-5,279" stroke="#000000" />
-<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,305 L-5,305" stroke="#000000" />
-<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M169,42 L169,175" stroke="#000000" stroke-width="1" />
-<path d="M157,42 L169,42" stroke="#000000" />
-<rect x="167" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M169,149 L162,149" stroke="#000000" />
-<rect x="167" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M169,175 L162,175" stroke="#000000" />
-<rect x="167" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M177,68 L177,175" stroke="#000000" stroke-width="1" />
-<path d="M157,68 L177,68" stroke="#000000" />
-<rect x="175" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M177,149 L162,149" stroke="#000000" />
-<rect x="175" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M177,175 L162,175" stroke="#000000" />
-<rect x="175" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="178.5361328125,11.0 183.5361328125,16.0 178.5361328125,21.0" fill="#63B31F"/>
+    <text x="175.5361328125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="178.5361328125,31.0 183.5361328125,36.0 178.5361328125,41.0" fill="#63B31F"/>
+    <text x="175.5361328125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IND</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 54.9169921875 57.0
+            L 70.9169921875 57.0
+            A 1 1 0 0 1 71.9169921875 58.0
+            L 71.9169921875 61.5
+            L 69.9169921875 61.5
+            L 69.9169921875 64.5
+            L 71.9169921875 64.5
+            L 71.9169921875 74.0
+            A 1 1 0 0 1 70.9169921875 75.0
+            L 54.9169921875 75.0
+            A 1 1 0 0 1 53.9169921875 74.0
+            L 53.9169921875 64.5
+            L 55.9169921875 64.5
+            L 55.9169921875 61.5
+            L 53.9169921875 61.5
+            L 53.9169921875 58.0
+            A 1 1 0 0 1 54.9169921875 57.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="62.9169921875" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="76.9169921875" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">GPIOChip</text>
+
+    <text x="92.51806640625" y="86.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">3.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#A3B08F"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#BD8663"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">VALUE</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#18519E"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ChipNumber</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#18519E"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">LineNumber</text>
+
+    <polygon points="1.5,171.0 6.5,176.0 1.5,181.0" fill="#18519E"/>
+    <text x="9.5" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ReadWriteMode</text>
+
+    <polygon points="1.5,191.0 6.5,196.0 1.5,201.0" fill="#18519E"/>
+    <text x="9.5" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">BiasMode</text>
+
+    <polygon points="1.5,211.0 6.5,216.0 1.5,221.0" fill="#A3B08F"/>
+    <text x="9.5" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ActiveLow</text>
+
+    <polygon points="178.5361328125,91.0 183.5361328125,96.0 178.5361328125,101.0" fill="#A3B08F"/>
+    <text x="175.5361328125" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="178.5361328125,111.0 183.5361328125,116.0 178.5361328125,121.0" fill="#BD8663"/>
+    <text x="175.5361328125" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="190.0361328125" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="190.0361328125" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="195.0361328125" y1="16.0" x2="195.0361328125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="190.0361328125" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="195.0361328125" y1="16.0" x2="195.0361328125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="204.0361328125" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="204.0361328125" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="209.0361328125" y1="36.0" x2="209.0361328125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="204.0361328125" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="209.0361328125" y1="36.0" x2="209.0361328125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-20" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-20" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="176.0" x2="-20" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="196.0" x2="-20" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="216.0" x2="-20" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="185.0361328125" y1="16.0" x2="205.0361328125" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="185.0361328125" y1="36.0" x2="219.0361328125" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="185.0361328125" y1="96.0" x2="219.0361328125" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="185.0361328125" y1="116.0" x2="219.0361328125" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="224.0361328125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="224.0361328125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Indication from Resource</text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Receiver IX/QX block name – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan></text>
+
+    <text x="-25" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ID of /dev/gpiochipX device – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan></text>
+
+    <text x="-25" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ID of GPIO line within selected chip – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan></text>
+
+    <text x="-25" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Reading/Writing mode of line (0=read, 1=write push/pull, 2=open drain, 3=open source) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan></text>
+
+    <text x="-25" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Bias mode of line (0=none, 1=pull up, 2=pull down) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan></text>
+
+    <text x="-25" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">True if a logic 1 corresponds to low voltage – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="224.0361328125" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="224.0361328125" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan> – Service Status</text>
+  </g>
 </svg>

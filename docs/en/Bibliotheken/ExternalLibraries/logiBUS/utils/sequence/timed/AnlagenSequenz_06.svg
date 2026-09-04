@@ -1,255 +1,915 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1394" height="769" viewBox="-588 -20 1394 769">
-<defs>
-</defs>
-<rect x="3" y="3" width="210" height="719" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H210 V248 H204 V288 H210 V719 H0 V288 H6 V248 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L210,30" stroke="#000000" stroke-width="1" />
-<text x="105.0" y="266.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AnlagenSequenz_06</text>
-<text x="105.0" y="280.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">0.6</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">EIN</text>
-<text x="-63" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Startsequenz auslösen; nur wirksam wenn</text>
-<text x="-193" y="57" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">EINSCHALTBEREIT=TRUE; quittiert dabei zugleich</text>
-<text x="-193" y="69" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">eine anstehende Störungsanzeige</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">AUS</text>
-<text x="-63" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Stopsequenz auslösen, aus jedem Schritt der</text>
-<text x="-193" y="83" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Vorlauf-Kette oder aus S_LAEUFT</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M1</text>
-<text x="-63" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 1 hat sich geändert</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="124" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M2</text>
-<text x="-63" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 2 hat sich geändert</text>
-<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="150" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M3</text>
-<text x="-63" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="149" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 3 hat sich geändert</text>
-<path d="M-5,167 L-5,177 L0,172 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="176" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M4</text>
-<text x="-63" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="175" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 4 hat sich geändert</text>
-<path d="M-5,193 L-5,203 L0,198 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="202" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M5</text>
-<text x="-63" y="201" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="201" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 5 hat sich geändert</text>
-<path d="M-5,219 L-5,229 L0,224 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="228" font-size="12" text-anchor="start" font-family="Consolas, monospace">EI_M6</text>
-<text x="-63" y="227" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-193" y="227" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Störungsstatus Motor 6 hat sich geändert</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="309" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE1_EIN</text>
-<text x="-63" y="308" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR1 zu S_VOR2, M5 startet (Vorlauf)</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="335" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE2_EIN</text>
-<text x="-63" y="334" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR2 zu S_VOR3, M4 startet (Vorlauf)</text>
-<path d="M-5,352 L-5,362 L0,357 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="361" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE3_EIN</text>
-<text x="-63" y="360" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR3 zu S_VOR4, M3 startet (Vorlauf)</text>
-<path d="M-5,378 L-5,388 L0,383 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="387" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE4_EIN</text>
-<text x="-63" y="386" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="386" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR4 zu S_VOR5, M2 startet (Vorlauf)</text>
-<path d="M-5,404 L-5,414 L0,409 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="413" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE5_EIN</text>
-<text x="-63" y="412" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="412" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_VOR5 zu S_LAEUFT, M1 startet (Vorlauf)</text>
-<path d="M-5,430 L-5,440 L0,435 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="439" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE1_AUS</text>
-<text x="-63" y="438" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="438" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH1 zu S_NACH2, M2 stoppt (Nachlauf)</text>
-<path d="M-5,456 L-5,466 L0,461 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="465" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE2_AUS</text>
-<text x="-63" y="464" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="464" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH2 zu S_NACH3, M3 stoppt (Nachlauf)</text>
-<path d="M-5,482 L-5,492 L0,487 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="491" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE3_AUS</text>
-<text x="-63" y="490" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="490" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH3 zu S_NACH4, M4 stoppt (Nachlauf)</text>
-<path d="M-5,508 L-5,518 L0,513 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="517" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE4_AUS</text>
-<text x="-63" y="516" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="516" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH4 zu S_NACH5, M5 stoppt (Nachlauf)</text>
-<path d="M-5,534 L-5,544 L0,539 Z" fill="#0000FF" stroke="none" />
-<text x="12" y="543" font-size="12" text-anchor="start" font-family="Consolas, monospace">ZE5_AUS</text>
-<text x="-63" y="542" font-size="11" text-anchor="end" fill="#0000FF" font-style="italic" font-family="Verdana, sans-serif">TIME</text>
-<text x="-193" y="542" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">S_NACH5 zu S_AUS, M6 stoppt (Nachlauf)</text>
-<path d="M-5,560 L-5,570 L0,565 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="569" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M1</text>
-<text x="-63" y="568" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-193" y="568" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 1 hat aktuell eine Störung anstehen</text>
-<path d="M-5,586 L-5,596 L0,591 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="595" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M2</text>
-<text x="-63" y="594" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-193" y="594" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 2 hat aktuell eine Störung anstehen</text>
-<path d="M-5,612 L-5,622 L0,617 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="621" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M3</text>
-<text x="-63" y="620" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-193" y="620" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 3 hat aktuell eine Störung anstehen</text>
-<path d="M-5,638 L-5,648 L0,643 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="647" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M4</text>
-<text x="-63" y="646" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-193" y="646" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 4 hat aktuell eine Störung anstehen</text>
-<path d="M-5,664 L-5,674 L0,669 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="673" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M5</text>
-<text x="-63" y="672" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-193" y="672" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 5 hat aktuell eine Störung anstehen</text>
-<path d="M-5,690 L-5,700 L0,695 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="699" font-size="12" text-anchor="start" font-family="Consolas, monospace">STOERUNG_M6</text>
-<text x="-63" y="698" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-193" y="698" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Motor 6 hat aktuell eine Störung anstehen</text>
-<path d="M210,37 L210,47 L215,42 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="281" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Ausführungsbestätigung, mit jedem Zustands-Update</text>
-<path d="M210,63 L210,73 L215,68 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M1</text>
-<text x="281" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 1 aktualisiert (analog EO_Sx in</text>
-<text x="351" y="83" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">sequence_T_04/_08)</text>
-<path d="M210,89 L210,99 L215,94 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M2</text>
-<text x="281" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 2 aktualisiert</text>
-<path d="M210,115 L210,125 L215,120 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="124" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M3</text>
-<text x="281" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="123" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 3 aktualisiert</text>
-<path d="M210,141 L210,151 L215,146 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="150" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M4</text>
-<text x="281" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="149" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 4 aktualisiert</text>
-<path d="M210,167 L210,177 L215,172 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="176" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M5</text>
-<text x="281" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="175" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 5 aktualisiert</text>
-<path d="M210,193 L210,203 L215,198 Z" fill="#63B31F" stroke="none" />
-<text x="198" y="202" font-size="12" text-anchor="end" font-family="Consolas, monospace">EO_M6</text>
-<text x="281" y="201" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="351" y="201" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 6 aktualisiert</text>
-<rect x="205.0" y="300.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="198" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">timeOut</text>
-<text x="281" y="308" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">ATimeOut</text>
-<text x="351" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">timeOut Adapter</text>
-<path d="M210,326 L210,336 L215,331 Z" fill="#18519E" stroke="none" />
-<text x="198" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS_BETRIEB</text>
-<text x="281" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
-<text x="351" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">0=Aus 1=Hochfahren 2=Läuft 3=Herunterfahren</text>
-<path d="M210,352 L210,362 L215,357 Z" fill="#18519E" stroke="none" />
-<text x="198" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS_STOERUNG</text>
-<text x="281" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
-<text x="351" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">0=keine 4=aktiv, verriegelt bis EIN</text>
-<path d="M210,378 L210,388 L215,383 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">EINSCHALTBEREIT</text>
-<text x="281" y="386" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">TRUE nur wenn alle Motoren stehen UND alle Motoren</text>
-<text x="351" y="398" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">störungsfrei sind</text>
-<path d="M210,404 L210,414 L215,409 Z" fill="#18519E" stroke="none" />
-<text x="198" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">ZAEHLSTAND</text>
-<text x="281" y="412" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="Verdana, sans-serif">SINT</text>
-<text x="351" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">0..6, Anzahl aktuell laufender Motoren, s. Konzept</text>
-<path d="M210,430 L210,440 L215,435 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M1</text>
-<text x="281" y="438" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 1</text>
-<path d="M210,456 L210,466 L215,461 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M2</text>
-<text x="281" y="464" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 2</text>
-<path d="M210,482 L210,492 L215,487 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M3</text>
-<text x="281" y="490" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 3</text>
-<path d="M210,508 L210,518 L215,513 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M4</text>
-<text x="281" y="516" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 4</text>
-<path d="M210,534 L210,544 L215,539 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M5</text>
-<text x="281" y="542" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 5</text>
-<path d="M210,560 L210,570 L215,565 Z" fill="#9FA48A" stroke="none" />
-<text x="198" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">DO_M6</text>
-<text x="281" y="568" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="351" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Laufbefehl Motor 6</text>
-<path d="M-12,94 L-12,565" stroke="#404040" stroke-width="1" />
-<path d="M0,94 L-12,94" stroke="#404040" />
-<rect x="-14" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,565 L-5,565" stroke="#404040" />
-<rect x="-14" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,120 L-20,591" stroke="#404040" stroke-width="1" />
-<path d="M0,120 L-20,120" stroke="#404040" />
-<rect x="-22" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,591 L-5,591" stroke="#404040" />
-<rect x="-22" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,146 L-28,617" stroke="#404040" stroke-width="1" />
-<path d="M0,146 L-28,146" stroke="#404040" />
-<rect x="-30" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,617 L-5,617" stroke="#404040" />
-<rect x="-30" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-36,172 L-36,643" stroke="#404040" stroke-width="1" />
-<path d="M0,172 L-36,172" stroke="#404040" />
-<rect x="-38" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-36,643 L-5,643" stroke="#404040" />
-<rect x="-38" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-44,198 L-44,669" stroke="#404040" stroke-width="1" />
-<path d="M0,198 L-44,198" stroke="#404040" />
-<rect x="-46" y="196" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-44,669 L-5,669" stroke="#404040" />
-<rect x="-46" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-52,224 L-52,695" stroke="#404040" stroke-width="1" />
-<path d="M0,224 L-52,224" stroke="#404040" />
-<rect x="-54" y="222" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-52,695 L-5,695" stroke="#404040" />
-<rect x="-54" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M222,42 L222,409" stroke="#404040" stroke-width="1" />
-<path d="M210,42 L222,42" stroke="#404040" />
-<rect x="220" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M222,331 L215,331" stroke="#404040" />
-<rect x="220" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M222,357 L215,357" stroke="#404040" />
-<rect x="220" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M222,409 L215,409" stroke="#404040" />
-<rect x="220" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M222,383 L215,383" stroke="#404040" />
-<rect x="220" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M230,68 L230,435" stroke="#404040" stroke-width="1" />
-<path d="M210,68 L230,68" stroke="#404040" />
-<rect x="228" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M230,435 L215,435" stroke="#404040" />
-<rect x="228" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M238,94 L238,461" stroke="#404040" stroke-width="1" />
-<path d="M210,94 L238,94" stroke="#404040" />
-<rect x="236" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M238,461 L215,461" stroke="#404040" />
-<rect x="236" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M246,120 L246,487" stroke="#404040" stroke-width="1" />
-<path d="M210,120 L246,120" stroke="#404040" />
-<rect x="244" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M246,487 L215,487" stroke="#404040" />
-<rect x="244" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M254,146 L254,513" stroke="#404040" stroke-width="1" />
-<path d="M210,146 L254,146" stroke="#404040" />
-<rect x="252" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M254,513 L215,513" stroke="#404040" />
-<rect x="252" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M262,172 L262,539" stroke="#404040" stroke-width="1" />
-<path d="M210,172 L262,172" stroke="#404040" />
-<rect x="260" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M262,539 L215,539" stroke="#404040" />
-<rect x="260" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M270,198 L270,565" stroke="#404040" stroke-width="1" />
-<path d="M210,198 L270,198" stroke="#404040" />
-<rect x="268" y="196" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M270,565 L215,565" stroke="#404040" />
-<rect x="268" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 2193.8583984375 792.0"
+     width="2193.8583984375" height="792.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(1060.4384765625, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 249.4521484375 0
+            A 3 3 0 0 1 252.4521484375 3
+            L 252.4521484375 383.0
+            A 3 3 0 0 1 249.4521484375 386.0
+            L 242.4521484375 386.0
+            L 242.4521484375 426.0
+            L 249.4521484375 426.0
+            A 3 3 0 0 1 252.4521484375 429.0
+            L 252.4521484375 769.0
+            A 3 3 0 0 1 249.4521484375 772.0
+            L 3 772.0
+            A 3 3 0 0 1 0 769.0
+            L 0 429.0
+            A 3 3 0 0 1 3 426.0
+            L 10 426.0
+            L 10 386.0
+            L 3 386.0
+            A 3 3 0 0 1 0 383.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EIN</text>
+
+    <polygon points="1.5,51.0 6.5,56.0 1.5,61.0" fill="#63B31F"/>
+    <text x="9.5" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">AUS</text>
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#63B31F"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE1_EIN</text>
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#63B31F"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE2_EIN</text>
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#63B31F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE3_EIN</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#63B31F"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE4_EIN</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#63B31F"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE5_EIN</text>
+
+    <polygon points="1.5,171.0 6.5,176.0 1.5,181.0" fill="#63B31F"/>
+    <text x="9.5" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE1_AUS</text>
+
+    <polygon points="1.5,191.0 6.5,196.0 1.5,201.0" fill="#63B31F"/>
+    <text x="9.5" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE2_AUS</text>
+
+    <polygon points="1.5,211.0 6.5,216.0 1.5,221.0" fill="#63B31F"/>
+    <text x="9.5" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE3_AUS</text>
+
+    <polygon points="1.5,231.0 6.5,236.0 1.5,241.0" fill="#63B31F"/>
+    <text x="9.5" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE4_AUS</text>
+
+    <polygon points="1.5,251.0 6.5,256.0 1.5,261.0" fill="#63B31F"/>
+    <text x="9.5" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET_ZE5_AUS</text>
+
+    <polygon points="1.5,271.0 6.5,276.0 1.5,281.0" fill="#63B31F"/>
+    <text x="9.5" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI_M1</text>
+
+    <polygon points="1.5,291.0 6.5,296.0 1.5,301.0" fill="#63B31F"/>
+    <text x="9.5" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI_M2</text>
+
+    <polygon points="1.5,311.0 6.5,316.0 1.5,321.0" fill="#63B31F"/>
+    <text x="9.5" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI_M3</text>
+
+    <polygon points="1.5,331.0 6.5,336.0 1.5,341.0" fill="#63B31F"/>
+    <text x="9.5" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI_M4</text>
+
+    <polygon points="1.5,351.0 6.5,356.0 1.5,361.0" fill="#63B31F"/>
+    <text x="9.5" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI_M5</text>
+
+    <polygon points="1.5,371.0 6.5,376.0 1.5,381.0" fill="#63B31F"/>
+    <text x="9.5" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI_M6</text>
+
+    <polygon points="245.9521484375,11.0 250.9521484375,16.0 245.9521484375,21.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="245.9521484375,31.0 250.9521484375,36.0 245.9521484375,41.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <polygon points="245.9521484375,51.0 250.9521484375,56.0 245.9521484375,61.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_M1</text>
+
+    <polygon points="245.9521484375,71.0 250.9521484375,76.0 245.9521484375,81.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_M2</text>
+
+    <polygon points="245.9521484375,91.0 250.9521484375,96.0 245.9521484375,101.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_M3</text>
+
+    <polygon points="245.9521484375,111.0 250.9521484375,116.0 245.9521484375,121.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_M4</text>
+
+    <polygon points="245.9521484375,131.0 250.9521484375,136.0 245.9521484375,141.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_M5</text>
+
+    <polygon points="245.9521484375,151.0 250.9521484375,156.0 245.9521484375,161.0" fill="#63B31F"/>
+    <text x="242.9521484375" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_M6</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 57.001953125 397.0
+            L 73.001953125 397.0
+            A 1 1 0 0 1 74.001953125 398.0
+            L 74.001953125 401.5
+            L 72.001953125 401.5
+            L 72.001953125 404.5
+            L 74.001953125 404.5
+            L 74.001953125 414.0
+            A 1 1 0 0 1 73.001953125 415.0
+            L 57.001953125 415.0
+            A 1 1 0 0 1 56.001953125 414.0
+            L 56.001953125 404.5
+            L 58.001953125 404.5
+            L 58.001953125 401.5
+            L 56.001953125 401.5
+            L 56.001953125 398.0
+            A 1 1 0 0 1 57.001953125 397.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="65.001953125" y="411.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">B</text>
+
+    <!-- Block Name -->
+    <text x="79.001953125" y="411.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AnlagenSequenz_06</text>
+
+    <text x="126.22607421875" y="426.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">0.6</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,431.0 6.5,436.0 1.5,441.0" fill="#3366FF"/>
+    <text x="9.5" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE1_EIN</text>
+
+    <polygon points="1.5,451.0 6.5,456.0 1.5,461.0" fill="#3366FF"/>
+    <text x="9.5" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE2_EIN</text>
+
+    <polygon points="1.5,471.0 6.5,476.0 1.5,481.0" fill="#3366FF"/>
+    <text x="9.5" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE3_EIN</text>
+
+    <polygon points="1.5,491.0 6.5,496.0 1.5,501.0" fill="#3366FF"/>
+    <text x="9.5" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE4_EIN</text>
+
+    <polygon points="1.5,511.0 6.5,516.0 1.5,521.0" fill="#3366FF"/>
+    <text x="9.5" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE5_EIN</text>
+
+    <polygon points="1.5,531.0 6.5,536.0 1.5,541.0" fill="#3366FF"/>
+    <text x="9.5" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE1_AUS</text>
+
+    <polygon points="1.5,551.0 6.5,556.0 1.5,561.0" fill="#3366FF"/>
+    <text x="9.5" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE2_AUS</text>
+
+    <polygon points="1.5,571.0 6.5,576.0 1.5,581.0" fill="#3366FF"/>
+    <text x="9.5" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE3_AUS</text>
+
+    <polygon points="1.5,591.0 6.5,596.0 1.5,601.0" fill="#3366FF"/>
+    <text x="9.5" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE4_AUS</text>
+
+    <polygon points="1.5,611.0 6.5,616.0 1.5,621.0" fill="#3366FF"/>
+    <text x="9.5" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ZE5_AUS</text>
+
+    <polygon points="1.5,631.0 6.5,636.0 1.5,641.0" fill="#A3B08F"/>
+    <text x="9.5" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">STOERUNG_M1</text>
+
+    <polygon points="1.5,651.0 6.5,656.0 1.5,661.0" fill="#A3B08F"/>
+    <text x="9.5" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">STOERUNG_M2</text>
+
+    <polygon points="1.5,671.0 6.5,676.0 1.5,681.0" fill="#A3B08F"/>
+    <text x="9.5" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">STOERUNG_M3</text>
+
+    <polygon points="1.5,691.0 6.5,696.0 1.5,701.0" fill="#A3B08F"/>
+    <text x="9.5" y="697.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">STOERUNG_M4</text>
+
+    <polygon points="1.5,711.0 6.5,716.0 1.5,721.0" fill="#A3B08F"/>
+    <text x="9.5" y="717.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">STOERUNG_M5</text>
+
+    <polygon points="1.5,731.0 6.5,736.0 1.5,741.0" fill="#A3B08F"/>
+    <text x="9.5" y="737.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">STOERUNG_M6</text>
+
+    <polygon points="245.9521484375,431.0 250.9521484375,436.0 245.9521484375,441.0" fill="#18519E"/>
+    <text x="242.9521484375" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS_BETRIEB</text>
+
+    <polygon points="245.9521484375,451.0 250.9521484375,456.0 245.9521484375,461.0" fill="#18519E"/>
+    <text x="242.9521484375" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS_STOERUNG</text>
+
+    <polygon points="245.9521484375,471.0 250.9521484375,476.0 245.9521484375,481.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EINSCHALTBEREIT</text>
+
+    <polygon points="245.9521484375,491.0 250.9521484375,496.0 245.9521484375,501.0" fill="#18519E"/>
+    <text x="242.9521484375" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ZAEHLSTAND</text>
+
+    <polygon points="245.9521484375,511.0 250.9521484375,516.0 245.9521484375,521.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ANLAGE_AUS</text>
+
+    <polygon points="245.9521484375,531.0 250.9521484375,536.0 245.9521484375,541.0" fill="#18519E"/>
+    <text x="242.9521484375" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRANSIT_MOTOR</text>
+
+    <polygon points="245.9521484375,551.0 250.9521484375,556.0 245.9521484375,561.0" fill="#18519E"/>
+    <text x="242.9521484375" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TRANSIT_ART</text>
+
+    <polygon points="245.9521484375,571.0 250.9521484375,576.0 245.9521484375,581.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_M1</text>
+
+    <polygon points="245.9521484375,591.0 250.9521484375,596.0 245.9521484375,601.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_M2</text>
+
+    <polygon points="245.9521484375,611.0 250.9521484375,616.0 245.9521484375,621.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_M3</text>
+
+    <polygon points="245.9521484375,631.0 250.9521484375,636.0 245.9521484375,641.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_M4</text>
+
+    <polygon points="245.9521484375,651.0 250.9521484375,656.0 245.9521484375,661.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_M5</text>
+
+    <polygon points="245.9521484375,671.0 250.9521484375,676.0 245.9521484375,681.0" fill="#A3B08F"/>
+    <text x="242.9521484375" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_M6</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 240.9521484375 757.0
+            L 243.4521484375 757.0
+            L 243.4521484375 758.6666666666666
+            L 245.9521484375 758.6666666666666
+            L 245.9521484375 757.0
+            L 250.9521484375 757.0
+            L 250.9521484375 767.0
+            L 245.9521484375 767.0
+            L 245.9521484375 765.3333333333334
+            L 243.4521484375 765.3333333333334
+            L 243.4521484375 767.0
+            L 240.9521484375 767.0
+            Z" fill="#845DAF"/>
+    <text x="237.9521484375" y="763.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timeOut</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="431.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="76.0" x2="-10.0" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="451.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-24.0" y1="96.0" x2="-24.0" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="471.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-38.0" y1="116.0" x2="-38.0" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-57" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-57" y="491.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-52.0" y1="136.0" x2="-52.0" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-71" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-71" y="511.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-66.0" y1="156.0" x2="-66.0" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-85" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-85" y="531.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-80.0" y1="176.0" x2="-80.0" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-99" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-99" y="551.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-94.0" y1="196.0" x2="-94.0" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-113" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-113" y="571.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-108.0" y1="216.0" x2="-108.0" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-127" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-127" y="591.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-122.0" y1="236.0" x2="-122.0" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-141" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-141" y="611.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-136.0" y1="256.0" x2="-136.0" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-155" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-155" y="631.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-150.0" y1="276.0" x2="-150.0" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-169" y="291.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-169" y="651.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-164.0" y1="296.0" x2="-164.0" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-183" y="311.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-183" y="671.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-178.0" y1="316.0" x2="-178.0" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-197" y="331.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-197" y="691.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-192.0" y1="336.0" x2="-192.0" y2="696.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-211" y="351.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-211" y="711.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-206.0" y1="356.0" x2="-206.0" y2="716.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-225" y="371.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-225" y="731.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-220.0" y1="376.0" x2="-220.0" y2="736.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="431.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="451.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="491.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="471.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="511.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="531.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="257.4521484375" y="551.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="262.4521484375" y1="36.0" x2="262.4521484375" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="271.4521484375" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="271.4521484375" y="571.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="276.4521484375" y1="56.0" x2="276.4521484375" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="285.4521484375" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="285.4521484375" y="591.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="290.4521484375" y1="76.0" x2="290.4521484375" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="299.4521484375" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="299.4521484375" y="611.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="304.4521484375" y1="96.0" x2="304.4521484375" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="313.4521484375" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="313.4521484375" y="631.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="318.4521484375" y1="116.0" x2="318.4521484375" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="327.4521484375" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="327.4521484375" y="651.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.4521484375" y1="136.0" x2="332.4521484375" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="341.4521484375" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="341.4521484375" y="671.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="346.4521484375" y1="156.0" x2="346.4521484375" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-34" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-48" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-62" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-76" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="176.0" x2="-90" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="196.0" x2="-104" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="216.0" x2="-118" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="236.0" x2="-132" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="256.0" x2="-146" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="276.0" x2="-160" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="296.0" x2="-174" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="316.0" x2="-188" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="336.0" x2="-202" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="356.0" x2="-216" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="376.0" x2="-230" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="436.0" x2="-20" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="456.0" x2="-34" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="476.0" x2="-48" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="496.0" x2="-62" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="516.0" x2="-76" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="536.0" x2="-90" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="556.0" x2="-104" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="576.0" x2="-118" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="596.0" x2="-132" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="616.0" x2="-146" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="636.0" x2="-160" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="656.0" x2="-174" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="676.0" x2="-188" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="696.0" x2="-202" y2="696.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="716.0" x2="-216" y2="716.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="736.0" x2="-230" y2="736.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="36.0" x2="272.4521484375" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="56.0" x2="286.4521484375" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="76.0" x2="300.4521484375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="96.0" x2="314.4521484375" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="116.0" x2="328.4521484375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="136.0" x2="342.4521484375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="156.0" x2="356.4521484375" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="436.0" x2="272.4521484375" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="456.0" x2="272.4521484375" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="496.0" x2="272.4521484375" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="476.0" x2="272.4521484375" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="516.0" x2="272.4521484375" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="536.0" x2="272.4521484375" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="556.0" x2="272.4521484375" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="576.0" x2="286.4521484375" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="596.0" x2="300.4521484375" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="616.0" x2="314.4521484375" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="636.0" x2="328.4521484375" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="656.0" x2="342.4521484375" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="252.4521484375" y1="676.0" x2="356.4521484375" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-235" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Initialization Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Startsequenz auslösen; nur wirksam wenn EINSCHALTBEREIT=TRUE; quittiert dabei zugleich eine anstehende Störungsanzeige – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Stopsequenz auslösen, aus jedem Schritt der Vorlauf-Kette oder aus S_LAEUFT – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE1_EIN independently of EIN – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE2_EIN independently of EIN – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE3_EIN independently of EIN – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE4_EIN independently of EIN – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE5_EIN independently of EIN – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE1_AUS independently of AUS – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE2_AUS independently of AUS – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE3_AUS independently of AUS – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE4_AUS independently of AUS – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Update ZE5_AUS independently of AUS – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Störungsstatus Motor 1 hat sich geändert – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Störungsstatus Motor 2 hat sich geändert – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Störungsstatus Motor 3 hat sich geändert – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Störungsstatus Motor 4 hat sich geändert – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Störungsstatus Motor 5 hat sich geändert – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-235" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Störungsstatus Motor 6 hat sich geändert – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="361.4521484375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="361.4521484375" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Ausführungsbestätigung, mit jedem Zustands-Update</text>
+
+    <text x="361.4521484375" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Laufbefehl Motor 1 aktualisiert (analog EO_Sx in sequence_T_04/_08)</text>
+
+    <text x="361.4521484375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Laufbefehl Motor 2 aktualisiert</text>
+
+    <text x="361.4521484375" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Laufbefehl Motor 3 aktualisiert</text>
+
+    <text x="361.4521484375" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Laufbefehl Motor 4 aktualisiert</text>
+
+    <text x="361.4521484375" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Laufbefehl Motor 5 aktualisiert</text>
+
+    <text x="361.4521484375" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Laufbefehl Motor 6 aktualisiert</text>
+
+    <text x="-235" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_VOR1 zu S_VOR2, M5 startet (Vorlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_VOR2 zu S_VOR3, M4 startet (Vorlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_VOR3 zu S_VOR4, M3 startet (Vorlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_VOR4 zu S_VOR5, M2 startet (Vorlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_VOR5 zu S_LAEUFT, M1 startet (Vorlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_NACH1 zu S_NACH2, M2 stoppt (Nachlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_NACH2 zu S_NACH3, M3 stoppt (Nachlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_NACH3 zu S_NACH4, M4 stoppt (Nachlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_NACH4 zu S_NACH5, M5 stoppt (Nachlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">S_NACH5 zu S_AUS, M6 stoppt (Nachlauf) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-235" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Motor 1 hat aktuell eine Störung anstehen – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-235" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Motor 2 hat aktuell eine Störung anstehen – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-235" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Motor 3 hat aktuell eine Störung anstehen – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-235" y="697.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Motor 4 hat aktuell eine Störung anstehen – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-235" y="717.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Motor 5 hat aktuell eine Störung anstehen – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-235" y="737.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Motor 6 hat aktuell eine Störung anstehen – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="361.4521484375" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">SINT</tspan> – 0=Aus 1=Hochfahren 2=Läuft 3=Herunterfahren</text>
+
+    <text x="361.4521484375" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">SINT</tspan> – 0=keine 4=aktiv, verriegelt bis EIN</text>
+
+    <text x="361.4521484375" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – TRUE nur wenn alle Motoren stehen UND alle Motoren störungsfrei sind</text>
+
+    <text x="361.4521484375" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">SINT</tspan> – 0..6, Anzahl aktuell laufender Motoren, s. Konzept</text>
+
+    <text x="361.4521484375" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – TRUE nur in S_AUS (STATUS_BETRIEB = Aus) - Voraussetzung fuer Handbetrieb</text>
+
+    <text x="361.4521484375" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">SINT</tspan> – 0 = keiner (S_AUS/S_LAEUFT), 1..6 = Motor-Nr., der nach Ablauf der aktuellen Zeit startet/stoppt (siehe TRANSIT_ART)</text>
+
+    <text x="361.4521484375" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">SINT</tspan> – anlagenSequenz::TRANSIT_ART_KEINE/_VORLAUF/_NACHLAUF</text>
+
+    <text x="361.4521484375" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Laufbefehl Motor 1</text>
+
+    <text x="361.4521484375" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Laufbefehl Motor 2</text>
+
+    <text x="361.4521484375" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Laufbefehl Motor 3</text>
+
+    <text x="361.4521484375" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Laufbefehl Motor 4</text>
+
+    <text x="361.4521484375" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Laufbefehl Motor 5</text>
+
+    <text x="361.4521484375" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Laufbefehl Motor 6</text>
+
+    <text x="361.4521484375" y="763.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ATimeOut</tspan> – timeOut Adapter</text>
+  </g>
 </svg>

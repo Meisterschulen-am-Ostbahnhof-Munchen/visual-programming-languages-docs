@@ -1,81 +1,270 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1308" height="301" viewBox="-564 -20 1308 301">
-<defs>
-</defs>
-<rect x="3" y="3" width="180" height="251" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H180 V118 H174 V158 H180 V251 H0 V158 H6 V118 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L180,30" stroke="#000000" stroke-width="1" />
-<text x="90.0" y="136.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">E_CALIBRATE_SQ</text>
-<text x="90.0" y="150.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="-39" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-169" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Normal Execution Request (berechnet Y)</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="Consolas, monospace">EICO</text>
-<text x="-39" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-169" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Calibrate Offset (speichert OFFSET := Y_Offset /</text>
-<text x="-169" y="83" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">SCALE - X)</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="Consolas, monospace">EICS</text>
-<text x="-39" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-169" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Calibrate Scale (speichert SCALE und korrigiert</text>
-<text x="-169" y="109" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">OFFSET basierend auf beiden Punkten)</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">X</text>
-<text x="-39" y="178" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-169" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Raw input value</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">Y_Offset</text>
-<text x="-39" y="204" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-169" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Target output Y at low calibration point (offset)</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#DBB418" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">Y_Scale</text>
-<text x="-39" y="230" font-size="11" text-anchor="end" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="-169" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Target output Y at high calibration point (scale)</text>
-<path d="M180,37 L180,47 L185,42 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="219" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="289" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Execution Confirmed</text>
-<path d="M180,63 L180,73 L185,68 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="72" font-size="12" text-anchor="end" font-family="Consolas, monospace">EOCO</text>
-<text x="219" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="289" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Offset Calibrated</text>
-<path d="M180,89 L180,99 L185,94 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="98" font-size="12" text-anchor="end" font-family="Consolas, monospace">EOCS</text>
-<text x="219" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="289" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Scale Calibrated</text>
-<path d="M180,170 L180,180 L185,175 Z" fill="#DBB418" stroke="none" />
-<text x="168" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">Y</text>
-<text x="219" y="178" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="Verdana, sans-serif">REAL</text>
-<text x="289" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Calibrated output: Y = (X + OFFSET) * SCALE</text>
-<path d="M-12,42 L-12,227" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#404040" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#404040" />
-<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#404040" />
-<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,68 L-20,201" stroke="#404040" stroke-width="1" />
-<path d="M0,68 L-20,68" stroke="#404040" />
-<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,175 L-5,175" stroke="#404040" />
-<rect x="-22" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,201 L-5,201" stroke="#404040" />
-<rect x="-22" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,94 L-28,227" stroke="#404040" stroke-width="1" />
-<path d="M0,94 L-28,94" stroke="#404040" />
-<rect x="-30" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,175 L-5,175" stroke="#404040" />
-<rect x="-30" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,227 L-5,227" stroke="#404040" />
-<rect x="-30" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,42 L192,175" stroke="#404040" stroke-width="1" />
-<path d="M180,42 L192,42" stroke="#404040" />
-<rect x="190" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,175 L185,175" stroke="#404040" />
-<rect x="190" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1198.06640625 192.0"
+     width="1198.06640625" height="192.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(643.6171875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 163.6669921875 0
+            A 3 3 0 0 1 166.6669921875 3
+            L 166.6669921875 63.0
+            A 3 3 0 0 1 163.6669921875 66.0
+            L 156.6669921875 66.0
+            L 156.6669921875 106.0
+            L 163.6669921875 106.0
+            A 3 3 0 0 1 166.6669921875 109.0
+            L 166.6669921875 169.0
+            A 3 3 0 0 1 163.6669921875 172.0
+            L 3 172.0
+            A 3 3 0 0 1 0 169.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EICO</text>
+
+    <polygon points="1.5,51.0 6.5,56.0 1.5,61.0" fill="#63B31F"/>
+    <text x="9.5" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EICS</text>
+
+    <polygon points="160.1669921875,11.0 165.1669921875,16.0 160.1669921875,21.0" fill="#63B31F"/>
+    <text x="157.1669921875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <polygon points="160.1669921875,31.0 165.1669921875,36.0 160.1669921875,41.0" fill="#63B31F"/>
+    <text x="157.1669921875" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EOCO</text>
+
+    <polygon points="160.1669921875,51.0 165.1669921875,56.0 160.1669921875,61.0" fill="#63B31F"/>
+    <text x="157.1669921875" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EOCS</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 77.0
+            L 37.0 77.0
+            A 1 1 0 0 1 38.0 78.0
+            L 38.0 81.5
+            L 36.0 81.5
+            L 36.0 84.5
+            L 38.0 84.5
+            L 38.0 94.0
+            A 1 1 0 0 1 37.0 95.0
+            L 21.0 95.0
+            A 1 1 0 0 1 20.0 94.0
+            L 20.0 84.5
+            L 22.0 84.5
+            L 22.0 81.5
+            L 20.0 81.5
+            L 20.0 78.0
+            A 1 1 0 0 1 21.0 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">B</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">E_CALIBRATE_SQ</text>
+
+    <text x="83.33349609375" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#DBB418"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">X</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#DBB418"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">Y_Offset</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#DBB418"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">Y_Scale</text>
+
+    <polygon points="160.1669921875,111.0 165.1669921875,116.0 160.1669921875,121.0" fill="#DBB418"/>
+    <text x="157.1669921875" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Y</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-24.0" y1="36.0" x2="-24.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-24.0" y1="36.0" x2="-24.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-38.0" y1="56.0" x2="-38.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-38.0" y1="56.0" x2="-38.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="171.6669921875" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="171.6669921875" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="176.6669921875" y1="16.0" x2="176.6669921875" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="185.6669921875" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="199.6669921875" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="36.0" x2="-34" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="56.0" x2="-48" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-48" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-34" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-48" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="166.6669921875" y1="16.0" x2="186.6669921875" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="166.6669921875" y1="36.0" x2="200.6669921875" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="166.6669921875" y1="56.0" x2="214.6669921875" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="166.6669921875" y1="116.0" x2="186.6669921875" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-53" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Normal Execution Request (berechnet Y) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-53" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Calibrate Offset (speichert OFFSET := Y_Offset / SCALE - X) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-53" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Calibrate Scale (speichert SCALE und korrigiert OFFSET basierend auf beiden Punkten) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="219.6669921875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Execution Confirmed</text>
+
+    <text x="219.6669921875" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Offset Calibrated</text>
+
+    <text x="219.6669921875" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Scale Calibrated</text>
+
+    <text x="-53" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Raw input value – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">REAL</tspan></text>
+
+    <text x="-53" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Target output Y at low calibration point (offset) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">REAL</tspan></text>
+
+    <text x="-53" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Target output Y at high calibration point (scale) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">REAL</tspan></text>
+
+    <text x="219.6669921875" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">REAL</tspan> – Calibrated output: Y = (X + OFFSET) * SCALE</text>
+  </g>
 </svg>

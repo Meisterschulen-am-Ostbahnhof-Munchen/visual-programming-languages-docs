@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1476" height="509" viewBox="-548 -20 1476 509">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 934.0361328125 352.0"
+     width="934.0361328125" height="352.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,153 +28,345 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 361 0
-            A 3 3 0 0 1 364 3
-            L 364 115
-            A 3 3 0 0 1 361 118
-            L 358 118
-            L 358 158
-            L 361 158
-            A 3 3 0 0 1 364 161
-            L 364 456
-            A 3 3 0 0 1 361 459
-            L 3 459
-            A 3 3 0 0 1 0 456
-            L 0 161
-            A 3 3 0 0 1 3 158
-            L 6 158
-            L 6 118
-            L 3 118
-            A 3 3 0 0 1 0 115
+  <g transform="translate(204.4287109375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 329.1181640625 0
+            A 3 3 0 0 1 332.1181640625 3
+            L 332.1181640625 63.0
+            A 3 3 0 0 1 329.1181640625 66.0
+            L 322.1181640625 66.0
+            L 322.1181640625 106.0
+            L 329.1181640625 106.0
+            A 3 3 0 0 1 332.1181640625 109.0
+            L 332.1181640625 329.0
+            A 3 3 0 0 1 329.1181640625 332.0
+            L 3 332.0
+            A 3 3 0 0 1 0 329.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 151.5 129.0
-            L 167.5 129.0
-            A 1 1 0 0 1 168.5 130.0
-            L 168.5 133.5
-            L 166.5 133.5
-            L 166.5 136.5
-            L 168.5 136.5
-            L 168.5 146.0
-            A 1 1 0 0 1 167.5 147.0
-            L 151.5 147.0
-            A 1 1 0 0 1 150.5 146.0
-            L 150.5 136.5
-            L 152.5 136.5
-            L 152.5 133.5
-            L 150.5 133.5
-            L 150.5 130.0
-            A 1 1 0 0 1 151.5 129.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="159.5" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="173.5" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">I_FHS</text>
-<text x="182.0" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-103" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M364,37 L364,47 L369,42 Z" fill="#63B31F" stroke="none" />
-<text x="352" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="403" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="473" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M364,63 L364,73 L369,68 Z" fill="#63B31F" stroke="none" />
-<text x="352" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
-<text x="403" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="473" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Indication from Resource</text>
-<path d="M364,89 L364,99 L369,94 Z" fill="#63B31F" stroke="none" />
-<text x="352" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TIMEOUT</text>
-<text x="403" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M364,170 L364,180 L369,175 Z" fill="#A3B08F" stroke="none" />
-<text x="352" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="403" y="178" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="473" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M364,196 L364,206 L369,201 Z" fill="#BD8663" stroke="none" />
-<text x="352" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="403" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<text x="473" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
-<path d="M364,222 L364,232 L369,227 Z" fill="#A3B08F" stroke="none" />
-<text x="352" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q_timeout</text>
-<text x="403" y="230" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<path d="M364,248 L364,258 L369,253 Z" fill="#18519E" stroke="none" />
-<text x="352" y="257" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_timeout</text>
-<text x="403" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M364,274 L364,284 L369,279 Z" fill="#18519E" stroke="none" />
-<text x="352" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_data</text>
-<text x="403" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M364,300 L364,310 L369,305 Z" fill="#18519E" stroke="none" />
-<text x="352" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_HITCH_POSITION</text>
-<text x="403" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">USINT</text>
-<text x="473" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Hitch Position (see Attributes for Details)</text>
-<path d="M364,326 L364,336 L369,331 Z" fill="#82A3A9" stroke="none" />
-<text x="352" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_HITCH_WORK_INDICATION</text>
-<text x="403" y="334" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="473" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Hitch In-work Indication</text>
-<path d="M364,352 L364,362 L369,357 Z" fill="#82A3A9" stroke="none" />
-<text x="352" y="361" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_HITCH_POS_LIMIT_STATUS</text>
-<text x="403" y="360" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="473" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Hitch Position Limit status</text>
-<path d="M364,378 L364,388 L369,383 Z" fill="#18519E" stroke="none" />
-<text x="352" y="387" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_HITCH_NOMINAL_LOWER_LINK_FORCE</text>
-<text x="403" y="386" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">USINT</text>
-<text x="473" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Nominal Lower Link Force</text>
-<path d="M364,404 L364,414 L369,409 Z" fill="#18519E" stroke="none" />
-<text x="352" y="413" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_HITCH_DRAFT</text>
-<text x="403" y="412" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="473" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Draft</text>
-<path d="M364,430 L364,440 L369,435 Z" fill="#82A3A9" stroke="none" />
-<text x="352" y="439" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_HITCH_EXIT_REASON_CODE</text>
-<text x="403" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="473" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front hitch exit/reason code</text>
-<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M376,42 L376,201" stroke="#000000" stroke-width="1" />
-<path d="M364,42 L376,42" stroke="#000000" />
-<rect x="374" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M376,175 L369,175" stroke="#000000" />
-<rect x="374" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M376,201 L369,201" stroke="#000000" />
-<rect x="374" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,68 L384,435" stroke="#000000" stroke-width="1" />
-<path d="M364,68 L384,68" stroke="#000000" />
-<rect x="382" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,175 L369,175" stroke="#000000" />
-<rect x="382" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,279 L369,279" stroke="#000000" />
-<rect x="382" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,201 L369,201" stroke="#000000" />
-<rect x="382" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,227 L369,227" stroke="#000000" />
-<rect x="382" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,305 L369,305" stroke="#000000" />
-<rect x="382" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,331 L369,331" stroke="#000000" />
-<rect x="382" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,357 L369,357" stroke="#000000" />
-<rect x="382" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,383 L369,383" stroke="#000000" />
-<rect x="382" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,409 L369,409" stroke="#000000" />
-<rect x="382" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M384,435 L369,435" stroke="#000000" />
-<rect x="382" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M392,94 L392,253" stroke="#000000" stroke-width="1" />
-<path d="M364,94 L392,94" stroke="#000000" />
-<rect x="390" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M392,253 L369,253" stroke="#000000" />
-<rect x="390" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M392,201 L369,201" stroke="#000000" />
-<rect x="390" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M392,227 L369,227" stroke="#000000" />
-<rect x="390" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="325.6181640625,11.0 330.6181640625,16.0 325.6181640625,21.0" fill="#63B31F"/>
+    <text x="322.6181640625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="325.6181640625,31.0 330.6181640625,36.0 325.6181640625,41.0" fill="#63B31F"/>
+    <text x="322.6181640625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IND</text>
+
+    <polygon points="325.6181640625,51.0 330.6181640625,56.0 325.6181640625,61.0" fill="#63B31F"/>
+    <text x="322.6181640625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TIMEOUT</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 138.4794921875 77.0
+            L 154.4794921875 77.0
+            A 1 1 0 0 1 155.4794921875 78.0
+            L 155.4794921875 81.5
+            L 153.4794921875 81.5
+            L 153.4794921875 84.5
+            L 155.4794921875 84.5
+            L 155.4794921875 94.0
+            A 1 1 0 0 1 154.4794921875 95.0
+            L 138.4794921875 95.0
+            A 1 1 0 0 1 137.4794921875 94.0
+            L 137.4794921875 84.5
+            L 139.4794921875 84.5
+            L 139.4794921875 81.5
+            L 137.4794921875 81.5
+            L 137.4794921875 78.0
+            A 1 1 0 0 1 138.4794921875 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="146.4794921875" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="160.4794921875" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">I_FHS</text>
+
+    <text x="166.05908203125" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#A3B08F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="325.6181640625,111.0 330.6181640625,116.0 325.6181640625,121.0" fill="#A3B08F"/>
+    <text x="322.6181640625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="325.6181640625,131.0 330.6181640625,136.0 325.6181640625,141.0" fill="#BD8663"/>
+    <text x="322.6181640625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="325.6181640625,151.0 330.6181640625,156.0 325.6181640625,161.0" fill="#A3B08F"/>
+    <text x="322.6181640625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q_timeout</text>
+
+    <polygon points="325.6181640625,171.0 330.6181640625,176.0 325.6181640625,181.0" fill="#18519E"/>
+    <text x="322.6181640625" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_timeout</text>
+
+    <polygon points="325.6181640625,191.0 330.6181640625,196.0 325.6181640625,201.0" fill="#18519E"/>
+    <text x="322.6181640625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_data</text>
+
+    <polygon points="325.6181640625,211.0 330.6181640625,216.0 325.6181640625,221.0" fill="#18519E"/>
+    <text x="322.6181640625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_HITCH_POSITION</text>
+
+    <polygon points="325.6181640625,231.0 330.6181640625,236.0 325.6181640625,241.0" fill="#82A3A9"/>
+    <text x="322.6181640625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_HITCH_WORK_INDICATION</text>
+
+    <polygon points="325.6181640625,251.0 330.6181640625,256.0 325.6181640625,261.0" fill="#82A3A9"/>
+    <text x="322.6181640625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_HITCH_POS_LIMIT_STATUS</text>
+
+    <polygon points="325.6181640625,271.0 330.6181640625,276.0 325.6181640625,281.0" fill="#18519E"/>
+    <text x="322.6181640625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_HITCH_NOMINAL_LOWER_LINK_FORCE</text>
+
+    <polygon points="325.6181640625,291.0 330.6181640625,296.0 325.6181640625,301.0" fill="#18519E"/>
+    <text x="322.6181640625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_HITCH_DRAFT</text>
+
+    <polygon points="325.6181640625,311.0 330.6181640625,316.0 325.6181640625,321.0" fill="#82A3A9"/>
+    <text x="322.6181640625" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_HITCH_EXIT_REASON_CODE</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="337.1181640625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="337.1181640625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="342.1181640625" y1="16.0" x2="342.1181640625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="337.1181640625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="342.1181640625" y1="16.0" x2="342.1181640625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="291.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="351.1181640625" y="311.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="356.1181640625" y1="36.0" x2="356.1181640625" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="365.1181640625" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="365.1181640625" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="370.1181640625" y1="56.0" x2="370.1181640625" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="365.1181640625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="370.1181640625" y1="56.0" x2="370.1181640625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="365.1181640625" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="370.1181640625" y1="56.0" x2="370.1181640625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="16.0" x2="352.1181640625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="36.0" x2="366.1181640625" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="56.0" x2="380.1181640625" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="116.0" x2="366.1181640625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="136.0" x2="380.1181640625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="196.0" x2="366.1181640625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="156.0" x2="380.1181640625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="216.0" x2="366.1181640625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="236.0" x2="366.1181640625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="256.0" x2="366.1181640625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="276.0" x2="366.1181640625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="296.0" x2="366.1181640625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="316.0" x2="366.1181640625" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="332.1181640625" y1="176.0" x2="380.1181640625" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="385.1181640625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="385.1181640625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Indication from Resource</text>
+
+    <text x="385.1181640625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="385.1181640625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="385.1181640625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan> – Service Status</text>
+
+    <text x="385.1181640625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="385.1181640625" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="385.1181640625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="385.1181640625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">USINT</tspan> – Front Hitch Position (see Attributes for Details)</text>
+
+    <text x="385.1181640625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front Hitch In-work Indication</text>
+
+    <text x="385.1181640625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front Hitch Position Limit status</text>
+
+    <text x="385.1181640625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">USINT</tspan> – Front Nominal Lower Link Force</text>
+
+    <text x="385.1181640625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Front Draft</text>
+
+    <text x="385.1181640625" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front hitch exit/reason code</text>
+  </g>
 </svg>

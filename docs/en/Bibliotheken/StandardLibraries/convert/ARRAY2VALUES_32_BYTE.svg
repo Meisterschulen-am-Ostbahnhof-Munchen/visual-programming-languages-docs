@@ -1,223 +1,658 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1336" height="1003" viewBox="-548 -20 1336 1003">
-<defs>
-</defs>
-<rect x="3" y="3" width="240" height="953" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H240 V66 H234 V106 H240 V953 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L240,30" stroke="#000000" stroke-width="1" />
-<text x="120.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">ARRAY2VALUES_32_BYTE</text>
-<text x="120.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-91" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#82A3A9" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="-91" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Array input</text>
-<path d="M240,37 L240,47 L245,42 Z" fill="#63B31F" stroke="none" />
-<text x="228" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="263" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="333" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
-<path d="M240,118 L240,128 L245,123 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_1</text>
-<text x="263" y="126" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 1</text>
-<path d="M240,144 L240,154 L245,149 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_2</text>
-<text x="263" y="152" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 2</text>
-<path d="M240,170 L240,180 L245,175 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_3</text>
-<text x="263" y="178" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 3</text>
-<path d="M240,196 L240,206 L245,201 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="205" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_4</text>
-<text x="263" y="204" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 4</text>
-<path d="M240,222 L240,232 L245,227 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="231" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_5</text>
-<text x="263" y="230" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 5</text>
-<path d="M240,248 L240,258 L245,253 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="257" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_6</text>
-<text x="263" y="256" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="256" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 6</text>
-<path d="M240,274 L240,284 L245,279 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="283" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_7</text>
-<text x="263" y="282" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 7</text>
-<path d="M240,300 L240,310 L245,305 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="309" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_8</text>
-<text x="263" y="308" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 8</text>
-<path d="M240,326 L240,336 L245,331 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="335" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_9</text>
-<text x="263" y="334" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 9</text>
-<path d="M240,352 L240,362 L245,357 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="361" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_10</text>
-<text x="263" y="360" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 10</text>
-<path d="M240,378 L240,388 L245,383 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="387" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_11</text>
-<text x="263" y="386" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 11</text>
-<path d="M240,404 L240,414 L245,409 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="413" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_12</text>
-<text x="263" y="412" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 12</text>
-<path d="M240,430 L240,440 L245,435 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="439" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_13</text>
-<text x="263" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 13</text>
-<path d="M240,456 L240,466 L245,461 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="465" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_14</text>
-<text x="263" y="464" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 14</text>
-<path d="M240,482 L240,492 L245,487 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="491" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_15</text>
-<text x="263" y="490" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 15</text>
-<path d="M240,508 L240,518 L245,513 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="517" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_16</text>
-<text x="263" y="516" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 16</text>
-<path d="M240,534 L240,544 L245,539 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="543" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_17</text>
-<text x="263" y="542" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 17</text>
-<path d="M240,560 L240,570 L245,565 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="569" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_18</text>
-<text x="263" y="568" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="568" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 18</text>
-<path d="M240,586 L240,596 L245,591 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="595" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_19</text>
-<text x="263" y="594" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="594" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 19</text>
-<path d="M240,612 L240,622 L245,617 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="621" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_20</text>
-<text x="263" y="620" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="620" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 20</text>
-<path d="M240,638 L240,648 L245,643 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="647" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_21</text>
-<text x="263" y="646" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="646" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 21</text>
-<path d="M240,664 L240,674 L245,669 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="673" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_22</text>
-<text x="263" y="672" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="672" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 22</text>
-<path d="M240,690 L240,700 L245,695 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="699" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_23</text>
-<text x="263" y="698" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="698" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 23</text>
-<path d="M240,716 L240,726 L245,721 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="725" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_24</text>
-<text x="263" y="724" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="724" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 24</text>
-<path d="M240,742 L240,752 L245,747 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="751" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_25</text>
-<text x="263" y="750" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="750" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 25</text>
-<path d="M240,768 L240,778 L245,773 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="777" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_26</text>
-<text x="263" y="776" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="776" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 26</text>
-<path d="M240,794 L240,804 L245,799 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="803" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_27</text>
-<text x="263" y="802" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="802" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 27</text>
-<path d="M240,820 L240,830 L245,825 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="829" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_28</text>
-<text x="263" y="828" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="828" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 28</text>
-<path d="M240,846 L240,856 L245,851 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="855" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_29</text>
-<text x="263" y="854" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="854" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 29</text>
-<path d="M240,872 L240,882 L245,877 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="881" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_30</text>
-<text x="263" y="880" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="880" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 30</text>
-<path d="M240,898 L240,908 L245,903 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="907" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_31</text>
-<text x="263" y="906" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="906" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 31</text>
-<path d="M240,924 L240,934 L245,929 Z" fill="#82A3A9" stroke="none" />
-<text x="228" y="933" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT_32</text>
-<text x="263" y="932" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="Verdana, sans-serif">BYTE</text>
-<text x="333" y="932" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">output number 32</text>
-<path d="M-12,42 L-12,123" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#404040" />
-<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,42 L252,929" stroke="#404040" stroke-width="1" />
-<path d="M240,42 L252,42" stroke="#404040" />
-<rect x="250" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,123 L245,123" stroke="#404040" />
-<rect x="250" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,149 L245,149" stroke="#404040" />
-<rect x="250" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,175 L245,175" stroke="#404040" />
-<rect x="250" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,201 L245,201" stroke="#404040" />
-<rect x="250" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,227 L245,227" stroke="#404040" />
-<rect x="250" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,253 L245,253" stroke="#404040" />
-<rect x="250" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,279 L245,279" stroke="#404040" />
-<rect x="250" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,305 L245,305" stroke="#404040" />
-<rect x="250" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,331 L245,331" stroke="#404040" />
-<rect x="250" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,357 L245,357" stroke="#404040" />
-<rect x="250" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,383 L245,383" stroke="#404040" />
-<rect x="250" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,409 L245,409" stroke="#404040" />
-<rect x="250" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,435 L245,435" stroke="#404040" />
-<rect x="250" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,461 L245,461" stroke="#404040" />
-<rect x="250" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,487 L245,487" stroke="#404040" />
-<rect x="250" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,513 L245,513" stroke="#404040" />
-<rect x="250" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,539 L245,539" stroke="#404040" />
-<rect x="250" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,565 L245,565" stroke="#404040" />
-<rect x="250" y="563" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,591 L245,591" stroke="#404040" />
-<rect x="250" y="589" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,617 L245,617" stroke="#404040" />
-<rect x="250" y="615" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,643 L245,643" stroke="#404040" />
-<rect x="250" y="641" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,669 L245,669" stroke="#404040" />
-<rect x="250" y="667" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,695 L245,695" stroke="#404040" />
-<rect x="250" y="693" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,721 L245,721" stroke="#404040" />
-<rect x="250" y="719" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,747 L245,747" stroke="#404040" />
-<rect x="250" y="745" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,773 L245,773" stroke="#404040" />
-<rect x="250" y="771" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,799 L245,799" stroke="#404040" />
-<rect x="250" y="797" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,825 L245,825" stroke="#404040" />
-<rect x="250" y="823" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,851 L245,851" stroke="#404040" />
-<rect x="250" y="849" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,877 L245,877" stroke="#404040" />
-<rect x="250" y="875" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,903 L245,903" stroke="#404040" />
-<rect x="250" y="901" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M252,929 L245,929" stroke="#404040" />
-<rect x="250" y="927" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 766.96484375 732.0"
+     width="766.96484375" height="732.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(259.560546875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 212.90625 0
+            A 3 3 0 0 1 215.90625 3
+            L 215.90625 23.0
+            A 3 3 0 0 1 212.90625 26.0
+            L 205.90625 26.0
+            L 205.90625 66.0
+            L 212.90625 66.0
+            A 3 3 0 0 1 215.90625 69.0
+            L 215.90625 709.0
+            A 3 3 0 0 1 212.90625 712.0
+            L 3 712.0
+            A 3 3 0 0 1 0 709.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="209.40625,11.0 214.40625,16.0 209.40625,21.0" fill="#63B31F"/>
+    <text x="206.40625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">ARRAY2VALUES_32_BYTE</text>
+
+    <text x="107.953125" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#82A3A9"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN</text>
+
+    <polygon points="209.40625,71.0 214.40625,76.0 209.40625,81.0" fill="#82A3A9"/>
+    <text x="206.40625" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_1</text>
+
+    <polygon points="209.40625,91.0 214.40625,96.0 209.40625,101.0" fill="#82A3A9"/>
+    <text x="206.40625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_2</text>
+
+    <polygon points="209.40625,111.0 214.40625,116.0 209.40625,121.0" fill="#82A3A9"/>
+    <text x="206.40625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_3</text>
+
+    <polygon points="209.40625,131.0 214.40625,136.0 209.40625,141.0" fill="#82A3A9"/>
+    <text x="206.40625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_4</text>
+
+    <polygon points="209.40625,151.0 214.40625,156.0 209.40625,161.0" fill="#82A3A9"/>
+    <text x="206.40625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_5</text>
+
+    <polygon points="209.40625,171.0 214.40625,176.0 209.40625,181.0" fill="#82A3A9"/>
+    <text x="206.40625" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_6</text>
+
+    <polygon points="209.40625,191.0 214.40625,196.0 209.40625,201.0" fill="#82A3A9"/>
+    <text x="206.40625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_7</text>
+
+    <polygon points="209.40625,211.0 214.40625,216.0 209.40625,221.0" fill="#82A3A9"/>
+    <text x="206.40625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_8</text>
+
+    <polygon points="209.40625,231.0 214.40625,236.0 209.40625,241.0" fill="#82A3A9"/>
+    <text x="206.40625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_9</text>
+
+    <polygon points="209.40625,251.0 214.40625,256.0 209.40625,261.0" fill="#82A3A9"/>
+    <text x="206.40625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_10</text>
+
+    <polygon points="209.40625,271.0 214.40625,276.0 209.40625,281.0" fill="#82A3A9"/>
+    <text x="206.40625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_11</text>
+
+    <polygon points="209.40625,291.0 214.40625,296.0 209.40625,301.0" fill="#82A3A9"/>
+    <text x="206.40625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_12</text>
+
+    <polygon points="209.40625,311.0 214.40625,316.0 209.40625,321.0" fill="#82A3A9"/>
+    <text x="206.40625" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_13</text>
+
+    <polygon points="209.40625,331.0 214.40625,336.0 209.40625,341.0" fill="#82A3A9"/>
+    <text x="206.40625" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_14</text>
+
+    <polygon points="209.40625,351.0 214.40625,356.0 209.40625,361.0" fill="#82A3A9"/>
+    <text x="206.40625" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_15</text>
+
+    <polygon points="209.40625,371.0 214.40625,376.0 209.40625,381.0" fill="#82A3A9"/>
+    <text x="206.40625" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_16</text>
+
+    <polygon points="209.40625,391.0 214.40625,396.0 209.40625,401.0" fill="#82A3A9"/>
+    <text x="206.40625" y="397.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_17</text>
+
+    <polygon points="209.40625,411.0 214.40625,416.0 209.40625,421.0" fill="#82A3A9"/>
+    <text x="206.40625" y="417.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_18</text>
+
+    <polygon points="209.40625,431.0 214.40625,436.0 209.40625,441.0" fill="#82A3A9"/>
+    <text x="206.40625" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_19</text>
+
+    <polygon points="209.40625,451.0 214.40625,456.0 209.40625,461.0" fill="#82A3A9"/>
+    <text x="206.40625" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_20</text>
+
+    <polygon points="209.40625,471.0 214.40625,476.0 209.40625,481.0" fill="#82A3A9"/>
+    <text x="206.40625" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_21</text>
+
+    <polygon points="209.40625,491.0 214.40625,496.0 209.40625,501.0" fill="#82A3A9"/>
+    <text x="206.40625" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_22</text>
+
+    <polygon points="209.40625,511.0 214.40625,516.0 209.40625,521.0" fill="#82A3A9"/>
+    <text x="206.40625" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_23</text>
+
+    <polygon points="209.40625,531.0 214.40625,536.0 209.40625,541.0" fill="#82A3A9"/>
+    <text x="206.40625" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_24</text>
+
+    <polygon points="209.40625,551.0 214.40625,556.0 209.40625,561.0" fill="#82A3A9"/>
+    <text x="206.40625" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_25</text>
+
+    <polygon points="209.40625,571.0 214.40625,576.0 209.40625,581.0" fill="#82A3A9"/>
+    <text x="206.40625" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_26</text>
+
+    <polygon points="209.40625,591.0 214.40625,596.0 209.40625,601.0" fill="#82A3A9"/>
+    <text x="206.40625" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_27</text>
+
+    <polygon points="209.40625,611.0 214.40625,616.0 209.40625,621.0" fill="#82A3A9"/>
+    <text x="206.40625" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_28</text>
+
+    <polygon points="209.40625,631.0 214.40625,636.0 209.40625,641.0" fill="#82A3A9"/>
+    <text x="206.40625" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_29</text>
+
+    <polygon points="209.40625,651.0 214.40625,656.0 209.40625,661.0" fill="#82A3A9"/>
+    <text x="206.40625" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_30</text>
+
+    <polygon points="209.40625,671.0 214.40625,676.0 209.40625,681.0" fill="#82A3A9"/>
+    <text x="206.40625" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_31</text>
+
+    <polygon points="209.40625,691.0 214.40625,696.0 209.40625,701.0" fill="#82A3A9"/>
+    <text x="206.40625" y="697.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT_32</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="291.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="311.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="331.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="351.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="371.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="391.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="396.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="411.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="416.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="431.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="451.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="471.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="491.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="511.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="531.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="551.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="571.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="591.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="611.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="631.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="651.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="671.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.90625" y="691.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.90625" y1="16.0" x2="225.90625" y2="696.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="16.0" x2="235.90625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="76.0" x2="235.90625" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="96.0" x2="235.90625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="116.0" x2="235.90625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="136.0" x2="235.90625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="156.0" x2="235.90625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="176.0" x2="235.90625" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="196.0" x2="235.90625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="216.0" x2="235.90625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="236.0" x2="235.90625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="256.0" x2="235.90625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="276.0" x2="235.90625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="296.0" x2="235.90625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="316.0" x2="235.90625" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="336.0" x2="235.90625" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="356.0" x2="235.90625" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="376.0" x2="235.90625" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="396.0" x2="235.90625" y2="396.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="416.0" x2="235.90625" y2="416.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="436.0" x2="235.90625" y2="436.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="456.0" x2="235.90625" y2="456.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="476.0" x2="235.90625" y2="476.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="496.0" x2="235.90625" y2="496.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="516.0" x2="235.90625" y2="516.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="536.0" x2="235.90625" y2="536.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="556.0" x2="235.90625" y2="556.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="576.0" x2="235.90625" y2="576.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="596.0" x2="235.90625" y2="596.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="616.0" x2="235.90625" y2="616.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="636.0" x2="235.90625" y2="636.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="656.0" x2="235.90625" y2="656.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="676.0" x2="235.90625" y2="676.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="215.90625" y1="696.0" x2="235.90625" y2="696.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="240.90625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation of Requested Service</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Array input – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ARRAY [0..31] OF BYTE</tspan></text>
+
+    <text x="240.90625" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 1</text>
+
+    <text x="240.90625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 2</text>
+
+    <text x="240.90625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 3</text>
+
+    <text x="240.90625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 4</text>
+
+    <text x="240.90625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 5</text>
+
+    <text x="240.90625" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 6</text>
+
+    <text x="240.90625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 7</text>
+
+    <text x="240.90625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 8</text>
+
+    <text x="240.90625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 9</text>
+
+    <text x="240.90625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 10</text>
+
+    <text x="240.90625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 11</text>
+
+    <text x="240.90625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 12</text>
+
+    <text x="240.90625" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 13</text>
+
+    <text x="240.90625" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 14</text>
+
+    <text x="240.90625" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 15</text>
+
+    <text x="240.90625" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 16</text>
+
+    <text x="240.90625" y="397.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 17</text>
+
+    <text x="240.90625" y="417.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 18</text>
+
+    <text x="240.90625" y="437.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 19</text>
+
+    <text x="240.90625" y="457.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 20</text>
+
+    <text x="240.90625" y="477.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 21</text>
+
+    <text x="240.90625" y="497.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 22</text>
+
+    <text x="240.90625" y="517.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 23</text>
+
+    <text x="240.90625" y="537.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 24</text>
+
+    <text x="240.90625" y="557.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 25</text>
+
+    <text x="240.90625" y="577.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 26</text>
+
+    <text x="240.90625" y="597.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 27</text>
+
+    <text x="240.90625" y="617.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 28</text>
+
+    <text x="240.90625" y="637.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 29</text>
+
+    <text x="240.90625" y="657.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 30</text>
+
+    <text x="240.90625" y="677.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 31</text>
+
+    <text x="240.90625" y="697.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – output number 32</text>
+  </g>
 </svg>

@@ -5,25 +5,25 @@
   <style>
     @font-face {
       font-family: "TGL 0-17_std";
-      src: local("TGL 0-17_std");
+      src: local("TGL 0-17_std"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-17";
-      src: local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-16_std";
-      src: local("TGL 0-16_std");
+      src: local("TGL 0-16_std"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL 0-16";
-      src: local("TGL 0-16");
+      src: local("TGL 0-16"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
@@ -56,8 +56,8 @@
     <polyline points="40.0,-67.0 642.0,-67.0 647.0,-62.0 647.0,195.5 652.0,200.5 978.7,200.5" fill="none" stroke="#CCD8FF" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="640.3,187.5 675.0,187.5 680.0,192.5 680.0,233.5 685.0,238.5 723.7,238.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="640.3,187.5 675.0,187.5 680.0,192.5 680.0,233.5 685.0,238.5 723.7,238.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
-    <polyline points="825.0,238.5 896.7,238.5 898.3,236.9 898.3,236.1 899.9,234.5 978.7,234.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
-    <polyline points="825.0,238.5 896.7,238.5 898.3,236.9 898.3,236.1 899.9,234.5 978.7,234.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
+    <polyline points="825.0,238.5 893.3,238.5 898.3,233.5 898.3,222.5 903.3,217.5 978.7,217.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
+    <polyline points="825.0,238.5 893.3,238.5 898.3,233.5 898.3,222.5 903.3,217.5 978.7,217.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="825.0,255.5 893.3,255.5 898.3,260.5 898.3,345.5 903.3,350.5 979.4,350.5" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="825.0,255.5 893.3,255.5 898.3,260.5 898.3,345.5 903.3,350.5 979.4,350.5" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
   </g>
@@ -80,10 +80,10 @@
             L 102.58203125 52
             L 108.58203125 52
             A 3 3 0 0 1 111.58203125 55
-            L 111.58203125 137
-            A 3 3 0 0 1 108.58203125 140
-            L 3 140
-            A 3 3 0 0 1 0 137
+            L 111.58203125 120
+            A 3 3 0 0 1 108.58203125 123
+            L 3 123
+            A 3 3 0 0 1 0 120
             L 0 55
             A 3 3 0 0 1 3 52
             L 9 52
@@ -139,9 +139,6 @@
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#3366FF"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">Output</text>
-      <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
-      <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">QO</text>
       <polygon points="106.58203125,56.5 111.58203125,61.5 106.58203125,66.5" fill="#A3B08F"/>
       <text x="105.58203125" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">QO</text>
@@ -149,21 +146,20 @@
       <text x="105.58203125" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">STATUS</text>
       <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">TRUE</text>
-      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end"></text>
-      <path d="M 0 124.5
-            L 5.0 124.5
-            L 5.0 126.16666666666667
-            L 7.5 126.16666666666667
-            L 7.5 124.5
-            L 10 124.5
-            L 10 134.5
-            L 7.5 134.5
-            L 7.5 132.83333333333334
-            L 5.0 132.83333333333334
-            L 5.0 134.5
-            L 0 134.5
+      <path d="M 0 107.5
+            L 5.0 107.5
+            L 5.0 109.16666666666667
+            L 7.5 109.16666666666667
+            L 7.5 107.5
+            L 10 107.5
+            L 10 117.5
+            L 7.5 117.5
+            L 7.5 115.83333333333333
+            L 5.0 115.83333333333333
+            L 5.0 117.5
+            L 0 117.5
             Z" fill="none" stroke="#845DAF" stroke-width="1"/>
-      <text x="13" y="133.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+      <text x="13" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">OUT</text>
       <!-- Instance Name -->
       <text x="55.791015625" y="-5"

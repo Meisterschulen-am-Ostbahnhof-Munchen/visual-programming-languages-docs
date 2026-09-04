@@ -53,7 +53,7 @@
     <polyline points="861.4,136.5 985.8,136.5 987.4,134.9 987.4,134.1 989.0,132.5 1110.0,132.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="861.4,85.5 868.6,85.5 873.4,80.7 873.4,54.5 868.4,49.5 698.0,49.5 693.0,54.5 693.0,114.7 697.8,119.5 705.0,119.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="187.5,232.5 228.5,232.5 233.5,227.5 233.5,199.5 238.5,194.5 300.0,194.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="447.4,194.5 567.4,194.5 572.4,199.5 572.4,233.5 577.4,238.5 705.0,238.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="447.4,194.5 567.4,194.5 572.4,199.5 572.4,233.5 577.4,238.5 705.0,238.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="861.4,221.5 982.4,221.5 987.4,216.5 987.4,188.5 992.4,183.5 1110.0,183.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
@@ -116,10 +116,10 @@
       <polygon points="142.427734375,5.5 147.427734375,10.5 142.427734375,15.5" fill="#63B31F"/>
       <text x="141.427734375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#82A3A9"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
-      <polygon points="142.427734375,39.5 147.427734375,44.5 142.427734375,49.5" fill="#3366FF"/>
+      <polygon points="142.427734375,39.5 147.427734375,44.5 142.427734375,49.5" fill="#18519E"/>
       <text x="141.427734375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
 

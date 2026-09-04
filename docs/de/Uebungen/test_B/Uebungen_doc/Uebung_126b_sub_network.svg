@@ -59,8 +59,8 @@
     <polyline points="1161.7,149.5 1332.7,149.5 1337.7,154.5 1337.7,159.6 1342.6,164.5 1350.0,164.5" fill="none" stroke="#3366FF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="1161.7,149.5 1332.7,149.5 1337.7,154.5 1337.7,159.6 1342.6,164.5 1350.0,164.5" fill="none" stroke="#CCD8FF" stroke-width="1" stroke-linejoin="round"/>
     <polyline points="875.7,164.5 946.7,164.5 951.7,159.5 951.7,154.5 956.7,149.5 1050.0,149.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="614.0,164.5 735.0,164.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="399.4,164.5 480.0,164.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="614.0,164.5 735.0,164.5" fill="none" stroke="#82A3A9" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="399.4,164.5 480.0,164.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="145.8,170.5 194.4,170.5 196.8,168.1 196.8,166.9 199.2,164.5 255.0,164.5" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="1452.1,181.5 2164.1,181.5 2169.1,176.5 2169.1,-79.0 2174.1,-84.0 2189.1,-84.0" fill="none" stroke="#845DAF" stroke-width="3" stroke-linejoin="round"/>
     <polyline points="1452.1,181.5 2164.1,181.5 2169.1,176.5 2169.1,-79.0 2174.1,-84.0 2189.1,-84.0" fill="none" stroke="#DED4EA" stroke-width="1" stroke-linejoin="round"/>
@@ -199,7 +199,7 @@
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
       <text x="20.0" y="32.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">B</text>
+            fill="#000000" text-anchor="middle">Si</text>
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">STRUCT_MUX</text>
@@ -477,10 +477,10 @@
       <polygon points="139.427734375,5.5 144.427734375,10.5 139.427734375,15.5" fill="#63B31F"/>
       <text x="138.427734375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#DBB418"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
-      <polygon points="139.427734375,39.5 144.427734375,44.5 139.427734375,49.5" fill="#3366FF"/>
+      <polygon points="139.427734375,39.5 144.427734375,44.5 139.427734375,49.5" fill="#18519E"/>
       <text x="138.427734375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
 
@@ -547,10 +547,10 @@
       <polygon points="129.015625,5.5 134.015625,10.5 129.015625,15.5" fill="#63B31F"/>
       <text x="128.015625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
-      <polygon points="129.015625,39.5 134.015625,44.5 129.015625,49.5" fill="#3366FF"/>
+      <polygon points="129.015625,39.5 134.015625,44.5 129.015625,49.5" fill="#82A3A9"/>
       <text x="128.015625" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
 

@@ -54,7 +54,7 @@
     <polyline points="266.8,449.5 422.8,449.5 427.8,454.5 427.8,590.5 432.8,595.5 455.2,595.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="266.8,629.5 422.8,629.5 427.8,624.5 427.8,600.5 432.8,595.5 455.2,595.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="566.9,595.5 625.9,595.5 630.9,600.5 630.9,605.5 635.9,610.5 680.2,610.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="828.8,644.5 888.8,644.5 893.8,649.5 893.8,675.5 898.8,680.5 965.2,680.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="828.8,661.5 888.8,661.5 893.8,666.5 893.8,675.5 898.8,680.5 965.2,680.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="266.8,187.5 368.8,187.5 373.8,192.5 373.8,624.5 378.8,629.5 455.2,629.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="266.8,352.5 339.8,352.5 344.8,357.5 344.8,641.5 349.8,646.5 455.2,646.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="266.8,517.5 304.8,517.5 309.8,522.5 309.8,658.5 314.8,663.5 455.2,663.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
@@ -568,7 +568,7 @@
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
       <text x="20.0" y="32.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">B</text>
+            fill="#000000" text-anchor="middle">Si</text>
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">GET_STRUCT_VALU…</text>
@@ -581,11 +581,14 @@
       <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">in_struct</text>
-      <polygon points="0,56.5 5,61.5 0,66.5" fill="#3366FF"/>
+      <polygon points="0,56.5 5,61.5 0,66.5" fill="#BD8663"/>
       <text x="6" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">member</text>
-      <polygon points="143.640625,39.5 148.640625,44.5 143.640625,49.5" fill="#3366FF"/>
+      <polygon points="143.640625,39.5 148.640625,44.5 143.640625,49.5" fill="#A3B08F"/>
       <text x="142.640625" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">QO</text>
+      <polygon points="143.640625,56.5 148.640625,61.5 143.640625,66.5" fill="#3366FF"/>
+      <text x="142.640625" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">output</text>
       <text x="-3" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">'X_00'</text>
 
@@ -641,7 +644,7 @@
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
       <text x="20.0" y="32.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">B</text>
+            fill="#000000" text-anchor="middle">Si</text>
       <text x="30.0" y="32.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">STRUCT_MUX</text>

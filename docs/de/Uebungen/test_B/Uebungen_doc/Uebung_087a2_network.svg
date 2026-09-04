@@ -53,11 +53,11 @@
     <polyline points="311.8,344.5 440.8,344.5 445.8,339.5 445.8,107.5 450.8,102.5 500.2,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="311.8,494.5 462.8,494.5 467.8,489.5 467.8,124.5 472.8,119.5 500.2,119.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="311.8,644.5 482.8,644.5 487.8,639.5 487.8,141.5 492.8,136.5 500.2,136.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="723.6,85.5 748.6,85.5 753.6,90.5 753.6,637.5 758.6,642.5 920.2,642.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="723.6,102.5 763.6,102.5 768.6,107.5 768.6,487.5 773.6,492.5 920.2,492.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="723.6,119.5 790.6,119.5 795.6,124.5 795.6,337.5 800.6,342.5 920.2,342.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="723.6,136.5 817.6,136.5 822.6,141.5 822.6,202.5 827.6,207.5 920.2,207.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="588.7,170.5 620.2,170.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="723.6,136.5 748.6,136.5 753.6,141.5 753.6,637.5 758.6,642.5 920.2,642.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="723.6,119.5 763.6,119.5 768.6,124.5 768.6,487.5 773.6,492.5 920.2,492.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="723.6,102.5 790.6,102.5 795.6,107.5 795.6,337.5 800.6,342.5 920.2,342.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="723.6,85.5 817.6,85.5 822.6,90.5 822.6,202.5 827.6,207.5 920.2,207.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="588.7,170.5 620.2,170.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="311.8,277.5 615.2,277.5 616.0,276.7 616.0,276.3 616.8,275.5 920.2,275.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="311.8,412.5 615.2,412.5 616.0,411.7 616.0,411.3 616.8,410.5 920.2,410.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="311.8,562.5 615.2,562.5 616.0,561.7 616.0,561.3 616.8,560.5 920.2,560.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
@@ -837,7 +837,7 @@
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
       <text x="20.0" y="83.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">B</text>
+            fill="#000000" text-anchor="middle">Si</text>
       <text x="30.0" y="83.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">E_DEMUX_4</text>
@@ -846,17 +846,17 @@
             fill="#000000">EI</text>
       <polygon points="98.37109375,5.5 103.37109375,10.5 98.37109375,15.5" fill="#63B31F"/>
       <text x="97.37109375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">EO4</text>
+            fill="#000000" text-anchor="end">EO1</text>
       <polygon points="98.37109375,22.5 103.37109375,27.5 98.37109375,32.5" fill="#63B31F"/>
       <text x="97.37109375" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">EO3</text>
+            fill="#000000" text-anchor="end">EO2</text>
       <polygon points="98.37109375,39.5 103.37109375,44.5 98.37109375,49.5" fill="#63B31F"/>
       <text x="97.37109375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">EO2</text>
+            fill="#000000" text-anchor="end">EO3</text>
       <polygon points="98.37109375,56.5 103.37109375,61.5 98.37109375,66.5" fill="#63B31F"/>
       <text x="97.37109375" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000" text-anchor="end">EO1</text>
-      <polygon points="0,90.5 5,95.5 0,100.5" fill="#3366FF"/>
+            fill="#000000" text-anchor="end">EO4</text>
+      <polygon points="0,90.5 5,95.5 0,100.5" fill="#18519E"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">K</text>
 
@@ -913,7 +913,7 @@
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
       <text x="20.0" y="83.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">B</text>
+            fill="#000000" text-anchor="middle">Si</text>
       <text x="30.0" y="83.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">E_MUX_4</text>
@@ -932,7 +932,7 @@
       <polygon points="83.44140625,5.5 88.44140625,10.5 83.44140625,15.5" fill="#63B31F"/>
       <text x="82.44140625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">EO</text>
-      <polygon points="83.44140625,90.5 88.44140625,95.5 83.44140625,100.5" fill="#3366FF"/>
+      <polygon points="83.44140625,90.5 88.44140625,95.5 83.44140625,100.5" fill="#18519E"/>
       <text x="82.44140625" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">K</text>
 

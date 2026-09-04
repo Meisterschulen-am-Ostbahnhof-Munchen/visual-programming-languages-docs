@@ -307,10 +307,10 @@
       <polygon points="125.5234375,5.5 130.5234375,10.5 125.5234375,15.5" fill="#63B31F"/>
       <text x="124.5234375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">CNF</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
-      <polygon points="125.5234375,39.5 130.5234375,44.5 125.5234375,49.5" fill="#3366FF"/>
+      <polygon points="125.5234375,39.5 130.5234375,44.5 125.5234375,49.5" fill="#18519E"/>
       <text x="124.5234375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
 

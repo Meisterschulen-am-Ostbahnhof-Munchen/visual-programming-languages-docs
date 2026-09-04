@@ -55,9 +55,9 @@
     <polyline points="356.2,205.5 365.0,205.5 368.2,208.7 368.2,210.3 365.0,213.5 276.6,213.5 273.0,217.1 273.0,218.9 276.6,222.5 285.0,222.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="356.2,222.5 406.2,222.5 411.2,227.5 411.2,245.5 416.2,250.5 480.0,250.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="356.2,222.5 404.2,222.5 409.2,227.5 409.2,330.5 414.2,335.5 475.0,335.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="610.5,284.5 659.5,284.5 664.5,279.5 664.5,188.5 669.5,183.5 735.0,183.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="610.5,284.5 659.5,284.5 664.5,279.5 664.5,205.5 669.5,200.5 735.0,200.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
     <polyline points="832.5,183.5 917.5,183.5 922.5,178.5 922.5,173.5 927.5,168.5 1065.0,168.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
-    <polyline points="605.5,369.5 675.5,369.5 680.5,364.5 680.5,205.5 685.5,200.5 735.0,200.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="605.5,369.5 675.5,369.5 680.5,364.5 680.5,222.5 685.5,217.5 735.0,217.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
   </g>
   <g id="interface_ports">
   </g>
@@ -302,10 +302,13 @@
       <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
       <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">REQ</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="125.5234375,5.5 130.5234375,10.5 125.5234375,15.5" fill="#63B31F"/>
+      <text x="124.5234375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">CNF</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
-      <polygon points="125.5234375,39.5 130.5234375,44.5 125.5234375,49.5" fill="#3366FF"/>
+      <polygon points="125.5234375,39.5 130.5234375,44.5 125.5234375,49.5" fill="#18519E"/>
       <text x="124.5234375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
       <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_A1</text>
@@ -362,7 +365,7 @@
             fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
       <text x="20.0" y="66.0"
             font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
-            fill="#000000" text-anchor="middle">B</text>
+            fill="#000000" text-anchor="middle">Si</text>
       <text x="30.0" y="66.0"
             font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">F_SEL_E_3</text>
@@ -380,17 +383,17 @@
             fill="#000000" text-anchor="end">CNF</text>
       <polygon points="0,73.5 5,78.5 0,83.5" fill="#3366FF"/>
       <text x="6" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">IN2</text>
+            fill="#000000">IN1</text>
       <polygon points="0,90.5 5,95.5 0,100.5" fill="#3366FF"/>
       <text x="6" y="99.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">IN3</text>
+            fill="#000000">IN2</text>
       <polygon points="0,107.5 5,112.5 0,117.5" fill="#3366FF"/>
       <text x="6" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
-            fill="#000000">IN1</text>
+            fill="#000000">IN3</text>
       <polygon points="92.517578125,73.5 97.517578125,78.5 92.517578125,83.5" fill="#3366FF"/>
       <text x="91.517578125" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
-      <text x="-3" y="116.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">ID_NULL</text>
+      <text x="-3" y="82.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">ID_NULL</text>
 
       <!-- Instance Name -->
       <text x="48.7587890625" y="-5"
@@ -629,10 +632,13 @@
       <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
       <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">REQ</text>
-      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <polygon points="125.5234375,5.5 130.5234375,10.5 125.5234375,15.5" fill="#63B31F"/>
+      <text x="124.5234375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">CNF</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#18519E"/>
       <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000">IN</text>
-      <polygon points="125.5234375,39.5 130.5234375,44.5 125.5234375,49.5" fill="#3366FF"/>
+      <polygon points="125.5234375,39.5 130.5234375,44.5 125.5234375,49.5" fill="#18519E"/>
       <text x="124.5234375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
             fill="#000000" text-anchor="end">OUT</text>
       <text x="-3" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" fill="#000000" text-anchor="end">Button_A2</text>

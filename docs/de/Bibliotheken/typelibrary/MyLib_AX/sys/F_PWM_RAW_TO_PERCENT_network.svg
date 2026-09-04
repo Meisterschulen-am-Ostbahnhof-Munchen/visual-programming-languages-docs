@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="2290.0" height="382.0" viewBox="0 0 2290.0 382.0">
-<defs>
-    
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="4.3 -151.0 1183.4 588.0"
+     width="1183" height="588">
   <style>
     @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      font-family: "TGL 0-17_std";
+      src: local("TGL 0-17_std");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
-      font-style: italic;
+      font-family: "TGL 0-17";
+      src: local("TGL 0-17"), local("TGL 0-17 alt");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-16_std";
+      src: local("TGL 0-16_std");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-16";
+      src: local("TGL 0-16");
+      font-style: normal;
       font-weight: normal;
     }
   </style>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,149 +40,179 @@
       </feMerge>
     </filter>
   </defs>
-<rect x="0" y="0" width="2290.0" height="382.0" fill="#ffffff" />
-<defs>
-    
-  <style>
-    @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
-      font-style: normal;
-      font-weight: normal;
-    }
-    @font-face {
-      font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
-      font-style: italic;
-      font-weight: normal;
-    }
-  </style>
-    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
-      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
-      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
-      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
-      <feMerge>
-        <feMergeNode in="shadow"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-  </defs>
-<text x="1145.0" y="25" font-size="16" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" fill="#000000" text-anchor="middle" dominant-baseline="central">F_PWM_RAW_TO_PERCENT: Fieldbus-Rohwert (DINT, 0-64255) in PWM-Sollwert-Anteil (REAL 0.0-1.0) umrechnen, Gegenstueck zu F_PWM_PERCENT_TO_RAW, fuer RampLimitFS.OUT</text>
-<path d="M345.0,182.0 C795.0,182.0,1395.0,182.0,1845.0,182.0" stroke="#404040" stroke-width="1.5" fill="none" />
-<path d="M345.0,263.0 C795.0,263.0,1395.0,263.0,1845.0,263.0" stroke="#404040" stroke-width="1.5" fill="none" />
-<path d="M 148.0 140.0
-            L 342.0 140.0
-            A 3 3 0 0 1 345.0 143.0
-            L 345.0 203.0
-            A 3 3 0 0 1 342.0 206.0
-            L 339.0 206.0
-            L 339.0 246.0
-            L 342.0 246.0
-            A 3 3 0 0 1 345.0 249.0
-            L 345.0 279.0
-            A 3 3 0 0 1 342.0 282.0
-            L 148.0 282.0
-            A 3 3 0 0 1 145.0 279.0
-            L 145.0 249.0
-            A 3 3 0 0 1 148.0 246.0
-            L 151.0 246.0
-            L 151.0 206.0
-            L 148.0 206.0
-            A 3 3 0 0 1 145.0 203.0
-            L 145.0 143.0
-            A 3 3 0 0 1 148.0 140.0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
+  <rect x="4.3" y="-151.0" width="1183.4" height="588.0" fill="white"/>
+  <rect x="11.3" y="-144.0" width="1169.4" height="574.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="11.3" y="-144.0" width="1169.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="11.3" y1="-119.5" x2="1180.7" y2="-119.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="16.3" y="-127.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Fieldbus-Rohwert (DINT, 0-64255) in PWM-Sollwert-Anteil (REAL 0.0-1.0) umrechnen, Gegenstueck zu F_PWM_PERCENT_TO_RAW, fuer RampLimitFS.OUT</text>
+  <g id="sidebars">
+    <rect x="11.3" y="-119.0" width="28.7" height="549.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="40.0" y1="-119.0" x2="40.0" y2="430.0" stroke="#A0A0A0" stroke-width="0.5"/>
+    <rect x="1152.0" y="-119.0" width="28.7" height="549.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="1152.0" y1="-119.0" x2="1152.0" y2="430.0" stroke="#A0A0A0" stroke-width="0.5"/>
+  </g>
+  <g id="connections">
+    <polyline points="40.0,-84.0 212.0,-84.0 217.0,-79.0 217.0,80.5 222.0,85.5 362.5,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="492.7,85.5 624.9,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="775.5,85.5 1072.5,85.5 1077.5,80.5 1077.5,-79.0 1082.5,-84.0 1152.0,-84.0" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="40.0,-67.0 179.0,-67.0 184.0,-62.0 184.0,114.5 189.0,119.5 362.5,119.5" fill="none" stroke="#18519E" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="492.7,119.5 624.9,119.5" fill="none" stroke="#3366FF" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="775.5,119.5 1072.5,119.5 1077.5,114.5 1077.5,-62.0 1082.5,-67.0 1152.0,-67.0" fill="none" stroke="#DBB418" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <g id="interface_ports">
+    <polygon points="35.0,-89.0 40.0,-84.0 35.0,-79.0" fill="#63B31F"/>
+    <text x="34.0" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">REQ</text>
+    <polygon points="1157.0,-89.0 1152.0,-84.0 1157.0,-79.0" fill="#63B31F"/>
+    <text x="1158.0" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">CNF</text>
+    <polygon points="35.0,-72.0 40.0,-67.0 35.0,-62.0" fill="#18519E"/>
+    <text x="34.0" y="-62.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">IN</text>
+    <polygon points="1157.0,-72.0 1152.0,-67.0 1157.0,-62.0" fill="#DBB418"/>
+    <text x="1158.0" y="-62.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">OUT</text>
+  </g>
+  <g id="instances">
+    <g id="fb_F_DINT_TO_WORD" transform="translate(362.5, 75.0)">
+      <path d="M 3 0
+            L 127.2890625 0
+            A 3 3 0 0 1 130.2890625 3
+            L 130.2890625 18
+            A 3 3 0 0 1 127.2890625 21
+            L 121.2890625 21
+            L 121.2890625 35
+            L 127.2890625 35
+            A 3 3 0 0 1 130.2890625 38
+            L 130.2890625 52
+            A 3 3 0 0 1 127.2890625 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 178.5 217.0
-            L 194.5 217.0
-            A 1 1 0 0 1 195.5 218.0
-            L 195.5 221.5
-            L 193.5 221.5
-            L 193.5 224.5
-            L 195.5 224.5
-            L 195.5 234.0
-            A 1 1 0 0 1 194.5 235.0
-            L 178.5 235.0
-            A 1 1 0 0 1 177.5 234.0
-            L 177.5 224.5
-            L 179.5 224.5
-            L 179.5 221.5
-            L 177.5 221.5
-            L 177.5 218.0
-            A 1 1 0 0 1 178.5 217.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="186.5" y="231.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="200.5" y="231.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">F_DINT_TO_WORD</text>
-<text x="245.0" y="246.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">F_DINT_TO_WORD</text>
-<path d="M140.0,177.0 L140.0,187.0 L145.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="157.0" y="186.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="130.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M140.0,258.0 L140.0,268.0 L145.0,263.0 Z" fill="#3366FF" stroke="none" />
-<text x="157.0" y="267.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
-<text x="130.0" y="266.0" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
-<path d="M350.0,177.0 L350.0,187.0 L345.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="333.0" y="186.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="360.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M350.0,258.0 L350.0,268.0 L345.0,263.0 Z" fill="#3366FF" stroke="none" />
-<text x="333.0" y="267.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT</text>
-<text x="360.0" y="266.0" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
-<path d="M 1848.0 140.0
-            L 2142.0 140.0
-            A 3 3 0 0 1 2145.0 143.0
-            L 2145.0 203.0
-            A 3 3 0 0 1 2142.0 206.0
-            L 2139.0 206.0
-            L 2139.0 246.0
-            L 2142.0 246.0
-            A 3 3 0 0 1 2145.0 249.0
-            L 2145.0 279.0
-            A 3 3 0 0 1 2142.0 282.0
-            L 1848.0 282.0
-            A 3 3 0 0 1 1845.0 279.0
-            L 1845.0 249.0
-            A 3 3 0 0 1 1848.0 246.0
-            L 1851.0 246.0
-            L 1851.0 206.0
-            L 1848.0 206.0
-            A 3 3 0 0 1 1845.0 203.0
-            L 1845.0 143.0
-            A 3 3 0 0 1 1848.0 140.0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
+      <!-- Name Section -->
+      <path d="M 13.0 20.0
+            L 27.0 20.0
+            A 1 1 0 0 1 28.0 21.0
+            L 28.0 24.0
+            L 26.5 24.0
+            L 26.5 26.666666666666668
+            L 28.0 26.666666666666668
+            L 28.0 35.0
+            A 1 1 0 0 1 27.0 36.0
+            L 13.0 36.0
+            A 1 1 0 0 1 12.0 35.0
+            L 12.0 26.666666666666668
+            L 13.5 26.666666666666668
+            L 13.5 24.0
+            L 12.0 24.0
+            L 12.0 21.0
+            A 1 1 0 0 1 13.0 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.0" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">B</text>
+      <text x="30.0" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">F_DINT_TO_WORD</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">REQ</text>
+      <polygon points="125.2890625,5.5 130.2890625,10.5 125.2890625,15.5" fill="#63B31F"/>
+      <text x="124.2890625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">CNF</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">IN</text>
+      <polygon points="125.2890625,39.5 130.2890625,44.5 125.2890625,49.5" fill="#3366FF"/>
+      <text x="124.2890625" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">OUT</text>
+
+
+      <!-- Instance Name -->
+      <text x="65.14453125" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">F_DINT_TO_WORD</text>
+    </g>
+    <g id="fb_FIELDBUS_WORD_TO_PERCENT" transform="translate(624.9, 75.0)">
+      <path d="M 3 0
+            L 147.662109375 0
+            A 3 3 0 0 1 150.662109375 3
+            L 150.662109375 18
+            A 3 3 0 0 1 147.662109375 21
+            L 141.662109375 21
+            L 141.662109375 35
+            L 147.662109375 35
+            A 3 3 0 0 1 150.662109375 38
+            L 150.662109375 52
+            A 3 3 0 0 1 147.662109375 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
             stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 1888.5 217.0
-            L 1904.5 217.0
-            A 1 1 0 0 1 1905.5 218.0
-            L 1905.5 221.5
-            L 1903.5 221.5
-            L 1903.5 224.5
-            L 1905.5 224.5
-            L 1905.5 234.0
-            A 1 1 0 0 1 1904.5 235.0
-            L 1888.5 235.0
-            A 1 1 0 0 1 1887.5 234.0
-            L 1887.5 224.5
-            L 1889.5 224.5
-            L 1889.5 221.5
-            L 1887.5 221.5
-            L 1887.5 218.0
-            A 1 1 0 0 1 1888.5 217.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="1896.5" y="231.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="1910.5" y="231.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">FIELDBUS_WORD_TO_PERCENT</text>
-<text x="1995.0" y="246.0" font-size="10" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">FIELDBUS_WORD_TO_PERCENT</text>
-<path d="M1840.0,177.0 L1840.0,187.0 L1845.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="1857.0" y="186.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="1830.0" y="185.0" font-size="11" text-anchor="end" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M1840.0,258.0 L1840.0,268.0 L1845.0,263.0 Z" fill="#3366FF" stroke="none" />
-<text x="1857.0" y="267.0" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">WI</text>
-<text x="1830.0" y="266.0" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
-<path d="M2150.0,177.0 L2150.0,187.0 L2145.0,182.0 Z" fill="#63B31F" stroke="none" />
-<text x="2133.0" y="186.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="2160.0" y="185.0" font-size="11" text-anchor="start" fill="#63B31F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M2150.0,258.0 L2150.0,268.0 L2145.0,263.0 Z" fill="#3366FF" stroke="none" />
-<text x="2133.0" y="267.0" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif"></text>
-<text x="2160.0" y="266.0" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
+      <!-- Name Section -->
+      <path d="M 13.0 20.0
+            L 27.0 20.0
+            A 1 1 0 0 1 28.0 21.0
+            L 28.0 24.0
+            L 26.5 24.0
+            L 26.5 26.666666666666668
+            L 28.0 26.666666666666668
+            L 28.0 35.0
+            A 1 1 0 0 1 27.0 36.0
+            L 13.0 36.0
+            A 1 1 0 0 1 12.0 35.0
+            L 12.0 26.666666666666668
+            L 13.5 26.666666666666668
+            L 13.5 24.0
+            L 12.0 24.0
+            L 12.0 21.0
+            A 1 1 0 0 1 13.0 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.0" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">B</text>
+      <text x="30.0" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">FIELDBUS_WORD_T…</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">REQ</text>
+      <polygon points="145.662109375,5.5 150.662109375,10.5 145.662109375,15.5" fill="#63B31F"/>
+      <text x="144.662109375" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">CNF</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">WI</text>
+      <polygon points="145.662109375,39.5 150.662109375,44.5 145.662109375,49.5" fill="#3366FF"/>
+      <text x="144.662109375" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end"></text>
+
+
+      <!-- Instance Name -->
+      <text x="75.3310546875" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">FIELDBUS_WORD_TO_PERCENT</text>
+    </g>
+  </g>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1395" height="457" viewBox="-548 -20 1395 457">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1145.8271484375 312.0"
+     width="1145.8271484375" height="312.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,143 +28,313 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 280 0
-            A 3 3 0 0 1 283 3
-            L 283 115
-            A 3 3 0 0 1 280 118
-            L 277 118
-            L 277 158
-            L 280 158
-            A 3 3 0 0 1 283 161
-            L 283 404
-            A 3 3 0 0 1 280 407
-            L 3 407
-            A 3 3 0 0 1 0 404
-            L 0 161
-            A 3 3 0 0 1 3 158
-            L 6 158
-            L 6 118
-            L 3 118
-            A 3 3 0 0 1 0 115
+  <g transform="translate(204.4287109375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 237.044921875 0
+            A 3 3 0 0 1 240.044921875 3
+            L 240.044921875 63.0
+            A 3 3 0 0 1 237.044921875 66.0
+            L 230.044921875 66.0
+            L 230.044921875 106.0
+            L 237.044921875 106.0
+            A 3 3 0 0 1 240.044921875 109.0
+            L 240.044921875 289.0
+            A 3 3 0 0 1 237.044921875 292.0
+            L 3 292.0
+            A 3 3 0 0 1 0 289.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 111.0 129.0
-            L 127.0 129.0
-            A 1 1 0 0 1 128.0 130.0
-            L 128.0 133.5
-            L 126.0 133.5
-            L 126.0 136.5
-            L 128.0 136.5
-            L 128.0 146.0
-            A 1 1 0 0 1 127.0 147.0
-            L 111.0 147.0
-            A 1 1 0 0 1 110.0 146.0
-            L 110.0 136.5
-            L 112.0 136.5
-            L 112.0 133.5
-            L 110.0 133.5
-            L 110.0 130.0
-            A 1 1 0 0 1 111.0 129.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="119.0" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="133.0" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">I_VDS</text>
-<text x="141.5" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-103" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M283,37 L283,47 L288,42 Z" fill="#63B31F" stroke="none" />
-<text x="271" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="322" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="392" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M283,63 L283,73 L288,68 Z" fill="#63B31F" stroke="none" />
-<text x="271" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
-<text x="322" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="392" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Indication from Resource</text>
-<path d="M283,89 L283,99 L288,94 Z" fill="#63B31F" stroke="none" />
-<text x="271" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TIMEOUT</text>
-<text x="322" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M283,170 L283,180 L288,175 Z" fill="#A3B08F" stroke="none" />
-<text x="271" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="322" y="178" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="392" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M283,196 L283,206 L288,201 Z" fill="#BD8663" stroke="none" />
-<text x="271" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="322" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<path d="M283,222 L283,232 L288,227 Z" fill="#A3B08F" stroke="none" />
-<text x="271" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q_timeout</text>
-<text x="322" y="230" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<path d="M283,248 L283,258 L288,253 Z" fill="#18519E" stroke="none" />
-<text x="271" y="257" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_timeout</text>
-<text x="322" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M283,274 L283,284 L288,279 Z" fill="#18519E" stroke="none" />
-<text x="271" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_data</text>
-<text x="322" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M283,300 L283,310 L288,305 Z" fill="#18519E" stroke="none" />
-<text x="271" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CompassBearing</text>
-<text x="322" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="392" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Present compass bearing of vehicle.</text>
-<path d="M283,326 L283,336 L288,331 Z" fill="#18519E" stroke="none" />
-<text x="271" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">NavigationBasedVehicleSpeed</text>
-<text x="322" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="392" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Speed of the vehicle as calculated from a device</text>
-<text x="392" y="346" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">such as a Global Positioning System (GPS).</text>
-<path d="M283,352 L283,362 L288,357 Z" fill="#18519E" stroke="none" />
-<text x="271" y="361" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Pitch</text>
-<text x="322" y="360" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="392" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Pitch (rotation about the y-axis) of the vehicle</text>
-<text x="392" y="372" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">as calculated by the navigation device(s).</text>
-<path d="M283,378 L283,388 L288,383 Z" fill="#18519E" stroke="none" />
-<text x="271" y="387" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Altitude</text>
-<text x="322" y="386" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="392" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Altitude of the vehicle referenced to sea level at</text>
-<text x="392" y="398" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">standard atmospheric pressure and temperature.</text>
-<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M295,42 L295,201" stroke="#000000" stroke-width="1" />
-<path d="M283,42 L295,42" stroke="#000000" />
-<rect x="293" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M295,175 L288,175" stroke="#000000" />
-<rect x="293" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M295,201 L288,201" stroke="#000000" />
-<rect x="293" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,68 L303,383" stroke="#000000" stroke-width="1" />
-<path d="M283,68 L303,68" stroke="#000000" />
-<rect x="301" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,175 L288,175" stroke="#000000" />
-<rect x="301" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,279 L288,279" stroke="#000000" />
-<rect x="301" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,305 L288,305" stroke="#000000" />
-<rect x="301" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,331 L288,331" stroke="#000000" />
-<rect x="301" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,357 L288,357" stroke="#000000" />
-<rect x="301" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,201 L288,201" stroke="#000000" />
-<rect x="301" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,227 L288,227" stroke="#000000" />
-<rect x="301" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M303,383 L288,383" stroke="#000000" />
-<rect x="301" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M311,94 L311,253" stroke="#000000" stroke-width="1" />
-<path d="M283,94 L311,94" stroke="#000000" />
-<rect x="309" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M311,253 L288,253" stroke="#000000" />
-<rect x="309" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M311,201 L288,201" stroke="#000000" />
-<rect x="309" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M311,227 L288,227" stroke="#000000" />
-<rect x="309" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="233.544921875,11.0 238.544921875,16.0 233.544921875,21.0" fill="#63B31F"/>
+    <text x="230.544921875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="233.544921875,31.0 238.544921875,36.0 233.544921875,41.0" fill="#63B31F"/>
+    <text x="230.544921875" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IND</text>
+
+    <polygon points="233.544921875,51.0 238.544921875,56.0 233.544921875,61.0" fill="#63B31F"/>
+    <text x="230.544921875" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TIMEOUT</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 93.04443359375 77.0
+            L 109.04443359375 77.0
+            A 1 1 0 0 1 110.04443359375 78.0
+            L 110.04443359375 81.5
+            L 108.04443359375 81.5
+            L 108.04443359375 84.5
+            L 110.04443359375 84.5
+            L 110.04443359375 94.0
+            A 1 1 0 0 1 109.04443359375 95.0
+            L 93.04443359375 95.0
+            A 1 1 0 0 1 92.04443359375 94.0
+            L 92.04443359375 84.5
+            L 94.04443359375 84.5
+            L 94.04443359375 81.5
+            L 92.04443359375 81.5
+            L 92.04443359375 78.0
+            A 1 1 0 0 1 93.04443359375 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="101.04443359375" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="115.04443359375" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">I_VDS</text>
+
+    <text x="120.0224609375" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#A3B08F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="233.544921875,111.0 238.544921875,116.0 233.544921875,121.0" fill="#A3B08F"/>
+    <text x="230.544921875" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="233.544921875,131.0 238.544921875,136.0 233.544921875,141.0" fill="#BD8663"/>
+    <text x="230.544921875" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="233.544921875,151.0 238.544921875,156.0 233.544921875,161.0" fill="#A3B08F"/>
+    <text x="230.544921875" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q_timeout</text>
+
+    <polygon points="233.544921875,171.0 238.544921875,176.0 233.544921875,181.0" fill="#18519E"/>
+    <text x="230.544921875" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_timeout</text>
+
+    <polygon points="233.544921875,191.0 238.544921875,196.0 233.544921875,201.0" fill="#18519E"/>
+    <text x="230.544921875" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_data</text>
+
+    <polygon points="233.544921875,211.0 238.544921875,216.0 233.544921875,221.0" fill="#18519E"/>
+    <text x="230.544921875" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CompassBearing</text>
+
+    <polygon points="233.544921875,231.0 238.544921875,236.0 233.544921875,241.0" fill="#18519E"/>
+    <text x="230.544921875" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">NavigationBasedVehicleSpeed</text>
+
+    <polygon points="233.544921875,251.0 238.544921875,256.0 233.544921875,261.0" fill="#18519E"/>
+    <text x="230.544921875" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Pitch</text>
+
+    <polygon points="233.544921875,271.0 238.544921875,276.0 233.544921875,281.0" fill="#18519E"/>
+    <text x="230.544921875" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Altitude</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="245.044921875" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="245.044921875" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="250.044921875" y1="16.0" x2="250.044921875" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="245.044921875" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="250.044921875" y1="16.0" x2="250.044921875" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="259.044921875" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="264.044921875" y1="36.0" x2="264.044921875" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="273.044921875" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="273.044921875" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="278.044921875" y1="56.0" x2="278.044921875" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="273.044921875" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="278.044921875" y1="56.0" x2="278.044921875" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="273.044921875" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="278.044921875" y1="56.0" x2="278.044921875" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="16.0" x2="260.044921875" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="36.0" x2="274.044921875" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="56.0" x2="288.044921875" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="116.0" x2="274.044921875" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="136.0" x2="288.044921875" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="196.0" x2="274.044921875" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="216.0" x2="274.044921875" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="236.0" x2="274.044921875" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="256.0" x2="274.044921875" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="156.0" x2="288.044921875" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="276.0" x2="274.044921875" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="240.044921875" y1="176.0" x2="288.044921875" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="293.044921875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="293.044921875" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Indication from Resource</text>
+
+    <text x="293.044921875" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="293.044921875" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="293.044921875" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan></text>
+
+    <text x="293.044921875" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="293.044921875" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="293.044921875" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="293.044921875" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Present compass bearing of vehicle.</text>
+
+    <text x="293.044921875" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Speed of the vehicle as calculated from a device such as a Global Positioning System (GPS).</text>
+
+    <text x="293.044921875" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Pitch (rotation about the y-axis) of the vehicle as calculated by the navigation device(s).</text>
+
+    <text x="293.044921875" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Altitude of the vehicle referenced to sea level at standard atmospheric pressure and temperature.</text>
+  </g>
 </svg>

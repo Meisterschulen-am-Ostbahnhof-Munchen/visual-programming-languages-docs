@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1258" height="249" viewBox="-548 -20 1258 249">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 696.021484375 152.0"
+     width="696.021484375" height="152.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,102 +28,159 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 167 0
-            A 3 3 0 0 1 170 3
-            L 170 63
-            A 3 3 0 0 1 167 66
-            L 164 66
-            L 164 106
-            L 167 106
-            A 3 3 0 0 1 170 109
-            L 170 196
-            A 3 3 0 0 1 167 199
-            L 3 199
-            A 3 3 0 0 1 0 196
-            L 0 109
-            A 3 3 0 0 1 3 106
-            L 6 106
-            L 6 66
-            L 3 66
-            A 3 3 0 0 1 0 63
+  <g transform="translate(355.46875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 155.2177734375 0
+            A 3 3 0 0 1 158.2177734375 3
+            L 158.2177734375 23.0
+            A 3 3 0 0 1 155.2177734375 26.0
+            L 148.2177734375 26.0
+            L 148.2177734375 66.0
+            L 155.2177734375 66.0
+            A 3 3 0 0 1 158.2177734375 69.0
+            L 158.2177734375 129.0
+            A 3 3 0 0 1 155.2177734375 132.0
+            L 3 132.0
+            A 3 3 0 0 1 0 129.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 22.5 77.0
-            L 38.5 77.0
-            A 1 1 0 0 1 39.5 78.0
-            L 39.5 81.5
-            L 37.5 81.5
-            L 37.5 84.5
-            L 39.5 84.5
-            L 39.5 94.0
-            A 1 1 0 0 1 38.5 95.0
-            L 22.5 95.0
-            A 1 1 0 0 1 21.5 94.0
-            L 21.5 84.5
-            L 23.5 84.5
-            L 23.5 81.5
-            L 21.5 81.5
-            L 21.5 78.0
-            A 1 1 0 0 1 22.5 77.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="30.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="44.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AUS_D_FF_TMIN</text>
-<text x="85.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-135" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Init Request</text>
-<path d="M -5.0 118.0
-            L 0.0 118.0
-            L 0.0 119.66666666666667
-            L 2.5 119.66666666666667
-            L 2.5 118.0
-            L 5.0 118.0
-            L 5.0 128.0
-            L 2.5 128.0
-            L 2.5 126.33333333333333
-            L 0.0 126.33333333333333
-            L 0.0 128.0
-            L -5.0 128.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">I</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUS</text>
-<text x="-135" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Value to latch</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">HYSTERESIS</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY_NUM</text>
-<text x="-135" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Hysteresis band</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Tmin</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
-<text x="-135" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Minimum inter-arrival time between EI events</text>
-<path d="M170,37 L170,47 L175,42 Z" fill="#63B31F" stroke="none" />
-<text x="158" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="185" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="255" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Init Confirmation</text>
-<path d="M 165.0 118.0
-            L 167.5 118.0
-            L 167.5 119.66666666666667
-            L 170.0 119.66666666666667
-            L 170.0 118.0
-            L 175.0 118.0
-            L 175.0 128.0
-            L 170.0 128.0
-            L 170.0 126.33333333333333
-            L 167.5 126.33333333333333
-            L 167.5 128.0
-            L 165.0 128.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="158" y="127" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q</text>
-<text x="185" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUS</text>
-<text x="255" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Latched value</text>
-<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="151.7177734375,11.0 156.7177734375,16.0 151.7177734375,21.0" fill="#63B31F"/>
+    <text x="148.7177734375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AUS_D_FF_TMIN</text>
+
+    <text x="79.10888671875" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#18519E"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">HYSTERESIS</text>
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#3366FF"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">Tmin</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 117.0
+            L 6.5 117.0
+            L 6.5 118.66666666666667
+            L 9.0 118.66666666666667
+            L 9.0 117.0
+            L 11.5 117.0
+            L 11.5 127.0
+            L 9.0 127.0
+            L 9.0 125.33333333333333
+            L 6.5 125.33333333333333
+            L 6.5 127.0
+            L 1.5 127.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">I</text>
+
+    <path d="M 146.7177734375 117.0
+            L 149.2177734375 117.0
+            L 149.2177734375 118.66666666666667
+            L 151.7177734375 118.66666666666667
+            L 151.7177734375 117.0
+            L 156.7177734375 117.0
+            L 156.7177734375 127.0
+            L 151.7177734375 127.0
+            L 151.7177734375 125.33333333333333
+            L 149.2177734375 125.33333333333333
+            L 149.2177734375 127.0
+            L 146.7177734375 127.0
+            Z" fill="#845DAF"/>
+    <text x="143.7177734375" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Init Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="183.2177734375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Init Confirmation</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Hysteresis band – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY_NUM</tspan></text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Minimum inter-arrival time between EI events – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-25" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Value to latch – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AUS</tspan></text>
+
+    <text x="183.2177734375" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AUS</tspan> – Latched value</text>
+  </g>
 </svg>

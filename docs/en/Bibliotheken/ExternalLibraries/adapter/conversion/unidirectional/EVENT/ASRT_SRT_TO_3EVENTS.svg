@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1310" height="249" viewBox="-540 -20 1310 249">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 592.6826171875 172.0"
+     width="592.6826171875" height="172.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,77 +28,118 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 227 0
-            A 3 3 0 0 1 230 3
-            L 230 115
-            A 3 3 0 0 1 227 118
-            L 224 118
-            L 224 158
-            L 227 158
-            A 3 3 0 0 1 230 161
-            L 230 196
-            A 3 3 0 0 1 227 199
-            L 3 199
-            A 3 3 0 0 1 0 196
-            L 0 161
-            A 3 3 0 0 1 3 158
-            L 6 158
-            L 6 118
-            L 3 118
-            A 3 3 0 0 1 0 115
+  <g transform="translate(164.58203125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 204.12890625 0
+            A 3 3 0 0 1 207.12890625 3
+            L 207.12890625 63.0
+            A 3 3 0 0 1 204.12890625 66.0
+            L 197.12890625 66.0
+            L 197.12890625 106.0
+            L 204.12890625 106.0
+            A 3 3 0 0 1 207.12890625 109.0
+            L 207.12890625 149.0
+            A 3 3 0 0 1 204.12890625 152.0
+            L 3 152.0
+            A 3 3 0 0 1 0 149.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF"
-            stroke="#A0A0A0" stroke-width="1.5"
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 28.5 129.0
-            L 44.5 129.0
-            A 1 1 0 0 1 45.5 130.0
-            L 45.5 133.5
-            L 43.5 133.5
-            L 43.5 136.5
-            L 45.5 136.5
-            L 45.5 146.0
-            A 1 1 0 0 1 44.5 147.0
-            L 28.5 147.0
-            A 1 1 0 0 1 27.5 146.0
-            L 27.5 136.5
-            L 29.5 136.5
-            L 29.5 133.5
-            L 27.5 133.5
-            L 27.5 130.0
-            A 1 1 0 0 1 28.5 129.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="36.5" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="50.5" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">ASRT_SRT_TO_3EVENTS</text>
-<text x="115.0" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 170.0
-            L 0.0 170.0
-            L 0.0 171.66666666666666
-            L 2.5 171.66666666666666
-            L 2.5 170.0
-            L 5.0 170.0
-            L 5.0 180.0
-            L 2.5 180.0
-            L 2.5 178.33333333333334
-            L 0.0 178.33333333333334
-            L 0.0 180.0
-            L -5.0 180.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ASRT_IN</text>
-<text x="-15" y="178" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ASRT</text>
-<text x="-87" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Adapter Input</text>
-<path d="M230,37 L230,47 L235,42 Z" fill="#63B31F" stroke="none" />
-<text x="218" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">SET</text>
-<text x="245" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="315" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Set / Switch on</text>
-<path d="M230,63 L230,73 L235,68 Z" fill="#63B31F" stroke="none" />
-<text x="218" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RESET</text>
-<text x="245" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="315" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset / Switch off</text>
-<path d="M230,89 L230,99 L235,94 Z" fill="#63B31F" stroke="none" />
-<text x="218" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TOGGLE</text>
-<text x="245" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="315" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Toggle / Switch output</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="200.62890625,11.0 205.62890625,16.0 200.62890625,21.0" fill="#63B31F"/>
+    <text x="197.62890625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">SET</text>
+
+    <polygon points="200.62890625,31.0 205.62890625,36.0 200.62890625,41.0" fill="#63B31F"/>
+    <text x="197.62890625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">RESET</text>
+
+    <polygon points="200.62890625,51.0 205.62890625,56.0 200.62890625,61.0" fill="#63B31F"/>
+    <text x="197.62890625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TOGGLE</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 77.0
+            L 37.0 77.0
+            A 1 1 0 0 1 38.0 78.0
+            L 38.0 81.5
+            L 36.0 81.5
+            L 36.0 84.5
+            L 38.0 84.5
+            L 38.0 94.0
+            A 1 1 0 0 1 37.0 95.0
+            L 21.0 95.0
+            A 1 1 0 0 1 20.0 94.0
+            L 20.0 84.5
+            L 22.0 84.5
+            L 22.0 81.5
+            L 20.0 81.5
+            L 20.0 78.0
+            A 1 1 0 0 1 21.0 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">ASRT_SRT_TO_3EVENTS</text>
+
+    <text x="103.564453125" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 137.0
+            L 6.5 137.0
+            L 6.5 138.66666666666666
+            L 9.0 138.66666666666666
+            L 9.0 137.0
+            L 11.5 137.0
+            L 11.5 147.0
+            L 9.0 147.0
+            L 9.0 145.33333333333334
+            L 6.5 145.33333333333334
+            L 6.5 147.0
+            L 1.5 147.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ASRT_IN</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="232.12890625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Set / Switch on</text>
+
+    <text x="232.12890625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Reset / Switch off</text>
+
+    <text x="232.12890625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Toggle / Switch output</text>
+
+    <text x="-25" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Adapter Input – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ASRT</tspan></text>
+  </g>
 </svg>

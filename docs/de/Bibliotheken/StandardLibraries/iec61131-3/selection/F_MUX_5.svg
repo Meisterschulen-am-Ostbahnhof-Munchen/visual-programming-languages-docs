@@ -1,68 +1,242 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1226" height="327" viewBox="-548 -20 1226 327">
-<defs>
-</defs>
-<rect x="3" y="3" width="130" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H130 V66 H124 V106 H130 V277 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L130,30" stroke="#000000" stroke-width="1" />
-<text x="65.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">F_MUX_5</text>
-<text x="65.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">REQ</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-100" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Request</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#000000" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">K</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY_INT</text>
-<text x="-100" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Select one of n inputs</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#000000" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN1</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<text x="-100" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 1</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#000000" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN2</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<text x="-100" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 2</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#000000" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN3</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<text x="-100" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 3</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#000000" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN4</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<text x="-100" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 4</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#000000" stroke="none" />
-<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN5</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<text x="-100" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 5</text>
-<path d="M130,37 L130,47 L135,42 Z" fill="#63B31F" stroke="none" />
-<text x="118" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="153" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="223" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Requested Service</text>
-<path d="M130,118 L130,128 L135,123 Z" fill="#000000" stroke="none" />
-<text x="118" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="153" y="126" font-size="11" text-anchor="start" fill="#000000" font-style="italic" font-family="Verdana, sans-serif">ANY</text>
-<text x="223" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN1 for K = 0, IN2 for K = 1, IN3 for K = 2, IN4</text>
-<text x="223" y="138" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">for K = 3, IN5 for K = 4</text>
-<path d="M-12,42 L-12,253" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#404040" />
-<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#404040" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#404040" />
-<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#404040" />
-<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,253 L-5,253" stroke="#404040" />
-<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#404040" />
-<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M142,42 L142,123" stroke="#404040" stroke-width="1" />
-<path d="M130,42 L142,42" stroke="#404040" />
-<rect x="140" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M142,123 L135,123" stroke="#404040" />
-<rect x="140" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 826.9912109375 212.0"
+     width="826.9912109375" height="212.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(227.431640625, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 114.3388671875 0
+            A 3 3 0 0 1 117.3388671875 3
+            L 117.3388671875 23.0
+            A 3 3 0 0 1 114.3388671875 26.0
+            L 107.3388671875 26.0
+            L 107.3388671875 66.0
+            L 114.3388671875 66.0
+            A 3 3 0 0 1 117.3388671875 69.0
+            L 117.3388671875 189.0
+            A 3 3 0 0 1 114.3388671875 192.0
+            L 3 192.0
+            A 3 3 0 0 1 0 189.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="110.8388671875,11.0 115.8388671875,16.0 110.8388671875,21.0" fill="#63B31F"/>
+    <text x="107.8388671875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">F_MUX_5</text>
+
+    <text x="58.66943359375" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#18519E"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">K</text>
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#3366FF"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN1</text>
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#3366FF"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN2</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#3366FF"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN3</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#3366FF"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN4</text>
+
+    <polygon points="1.5,171.0 6.5,176.0 1.5,181.0" fill="#3366FF"/>
+    <text x="9.5" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN5</text>
+
+    <polygon points="110.8388671875,71.0 115.8388671875,76.0 110.8388671875,81.0" fill="#3366FF"/>
+    <text x="107.8388671875" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="122.3388671875" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="122.3388671875" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="127.3388671875" y1="16.0" x2="127.3388671875" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-20" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-20" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="176.0" x2="-20" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="117.3388671875" y1="16.0" x2="137.3388671875" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="117.3388671875" y1="76.0" x2="137.3388671875" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="142.3388671875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation of Requested Service</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Select one of n inputs – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY_INT</tspan></text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 1 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 2 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan></text>
+
+    <text x="-25" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 3 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan></text>
+
+    <text x="-25" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 4 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan></text>
+
+    <text x="-25" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 5 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan></text>
+
+    <text x="142.3388671875" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan> – IN1 for K = 0, IN2 for K = 1, IN3 for K = 2, IN4 for K = 3, IN5 for K = 4</text>
+  </g>
 </svg>

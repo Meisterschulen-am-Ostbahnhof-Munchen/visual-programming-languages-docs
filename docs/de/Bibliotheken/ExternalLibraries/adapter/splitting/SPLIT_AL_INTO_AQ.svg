@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1280" height="967" viewBox="-540 -20 1280 967">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 455.861328125 752.0"
+     width="455.861328125" height="752.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,577 +28,705 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 197 0
-            A 3 3 0 0 1 200 3
-            L 200 27
-            A 3 3 0 0 1 197 30
-            L 194 30
-            L 194 70
-            L 197 70
-            A 3 3 0 0 1 200 73
-            L 200 914
-            A 3 3 0 0 1 197 917
-            L 3 917
-            A 3 3 0 0 1 0 914
-            L 0 73
-            A 3 3 0 0 1 3 70
-            L 6 70
-            L 6 30
-            L 3 30
-            A 3 3 0 0 1 0 27
+  <g transform="translate(144.3544921875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 175.609375 0
+            A 3 3 0 0 1 178.609375 3
+            L 178.609375 23.0
+            A 3 3 0 0 1 175.609375 26.0
+            L 168.609375 26.0
+            L 168.609375 66.0
+            L 175.609375 66.0
+            A 3 3 0 0 1 178.609375 69.0
+            L 178.609375 729.0
+            A 3 3 0 0 1 175.609375 732.0
+            L 3 732.0
+            A 3 3 0 0 1 0 729.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 25.5 41.0
-            L 41.5 41.0
-            A 1 1 0 0 1 42.5 42.0
-            L 42.5 45.5
-            L 40.5 45.5
-            L 40.5 48.5
-            L 42.5 48.5
-            L 42.5 58.0
-            A 1 1 0 0 1 41.5 59.0
-            L 25.5 59.0
-            A 1 1 0 0 1 24.5 58.0
-            L 24.5 48.5
-            L 26.5 48.5
-            L 26.5 45.5
-            L 24.5 45.5
-            L 24.5 42.0
-            A 1 1 0 0 1 25.5 41.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="33.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="47.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">SPLIT_AL_INTO_AQ</text>
-<text x="100.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 82.0
-            L 0.0 82.0
-            L 0.0 83.66666666666667
-            L 2.5 83.66666666666667
-            L 2.5 82.0
-            L 5.0 82.0
-            L 5.0 92.0
-            L 2.5 92.0
-            L 2.5 90.33333333333333
-            L 0.0 90.33333333333333
-            L 0.0 92.0
-            L -5.0 92.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="91" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
-<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AL</text>
-<text x="-69" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">LWORD Input</text>
-<path d="M 195.0 82.0
-            L 197.5 82.0
-            L 197.5 83.66666666666667
-            L 200.0 83.66666666666667
-            L 200.0 82.0
-            L 205.0 82.0
-            L 205.0 92.0
-            L 200.0 92.0
-            L 200.0 90.33333333333333
-            L 197.5 90.33333333333333
-            L 197.5 92.0
-            L 195.0 92.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="91" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_00</text>
-<text x="215" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 0</text>
-<path d="M 195.0 108.0
-            L 197.5 108.0
-            L 197.5 109.66666666666667
-            L 200.0 109.66666666666667
-            L 200.0 108.0
-            L 205.0 108.0
-            L 205.0 118.0
-            L 200.0 118.0
-            L 200.0 116.33333333333333
-            L 197.5 116.33333333333333
-            L 197.5 118.0
-            L 195.0 118.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="117" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_01</text>
-<text x="215" y="116" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="116" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 1</text>
-<path d="M 195.0 134.0
-            L 197.5 134.0
-            L 197.5 135.66666666666666
-            L 200.0 135.66666666666666
-            L 200.0 134.0
-            L 205.0 134.0
-            L 205.0 144.0
-            L 200.0 144.0
-            L 200.0 142.33333333333334
-            L 197.5 142.33333333333334
-            L 197.5 144.0
-            L 195.0 144.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="143" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_02</text>
-<text x="215" y="142" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="142" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 2</text>
-<path d="M 195.0 160.0
-            L 197.5 160.0
-            L 197.5 161.66666666666666
-            L 200.0 161.66666666666666
-            L 200.0 160.0
-            L 205.0 160.0
-            L 205.0 170.0
-            L 200.0 170.0
-            L 200.0 168.33333333333334
-            L 197.5 168.33333333333334
-            L 197.5 170.0
-            L 195.0 170.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="169" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_03</text>
-<text x="215" y="168" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="168" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 3</text>
-<path d="M 195.0 186.0
-            L 197.5 186.0
-            L 197.5 187.66666666666666
-            L 200.0 187.66666666666666
-            L 200.0 186.0
-            L 205.0 186.0
-            L 205.0 196.0
-            L 200.0 196.0
-            L 200.0 194.33333333333334
-            L 197.5 194.33333333333334
-            L 197.5 196.0
-            L 195.0 196.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="195" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_04</text>
-<text x="215" y="194" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="194" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 4</text>
-<path d="M 195.0 212.0
-            L 197.5 212.0
-            L 197.5 213.66666666666666
-            L 200.0 213.66666666666666
-            L 200.0 212.0
-            L 205.0 212.0
-            L 205.0 222.0
-            L 200.0 222.0
-            L 200.0 220.33333333333334
-            L 197.5 220.33333333333334
-            L 197.5 222.0
-            L 195.0 222.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="221" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_05</text>
-<text x="215" y="220" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="220" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 5</text>
-<path d="M 195.0 238.0
-            L 197.5 238.0
-            L 197.5 239.66666666666666
-            L 200.0 239.66666666666666
-            L 200.0 238.0
-            L 205.0 238.0
-            L 205.0 248.0
-            L 200.0 248.0
-            L 200.0 246.33333333333334
-            L 197.5 246.33333333333334
-            L 197.5 248.0
-            L 195.0 248.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="247" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_06</text>
-<text x="215" y="246" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="246" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 6</text>
-<path d="M 195.0 264.0
-            L 197.5 264.0
-            L 197.5 265.6666666666667
-            L 200.0 265.6666666666667
-            L 200.0 264.0
-            L 205.0 264.0
-            L 205.0 274.0
-            L 200.0 274.0
-            L 200.0 272.3333333333333
-            L 197.5 272.3333333333333
-            L 197.5 274.0
-            L 195.0 274.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="273" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_07</text>
-<text x="215" y="272" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="272" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 7</text>
-<path d="M 195.0 290.0
-            L 197.5 290.0
-            L 197.5 291.6666666666667
-            L 200.0 291.6666666666667
-            L 200.0 290.0
-            L 205.0 290.0
-            L 205.0 300.0
-            L 200.0 300.0
-            L 200.0 298.3333333333333
-            L 197.5 298.3333333333333
-            L 197.5 300.0
-            L 195.0 300.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="299" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_08</text>
-<text x="215" y="298" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="298" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 8</text>
-<path d="M 195.0 316.0
-            L 197.5 316.0
-            L 197.5 317.6666666666667
-            L 200.0 317.6666666666667
-            L 200.0 316.0
-            L 205.0 316.0
-            L 205.0 326.0
-            L 200.0 326.0
-            L 200.0 324.3333333333333
-            L 197.5 324.3333333333333
-            L 197.5 326.0
-            L 195.0 326.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="325" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_09</text>
-<text x="215" y="324" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="324" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 9</text>
-<path d="M 195.0 342.0
-            L 197.5 342.0
-            L 197.5 343.6666666666667
-            L 200.0 343.6666666666667
-            L 200.0 342.0
-            L 205.0 342.0
-            L 205.0 352.0
-            L 200.0 352.0
-            L 200.0 350.3333333333333
-            L 197.5 350.3333333333333
-            L 197.5 352.0
-            L 195.0 352.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="351" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_10</text>
-<text x="215" y="350" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="350" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 10</text>
-<path d="M 195.0 368.0
-            L 197.5 368.0
-            L 197.5 369.6666666666667
-            L 200.0 369.6666666666667
-            L 200.0 368.0
-            L 205.0 368.0
-            L 205.0 378.0
-            L 200.0 378.0
-            L 200.0 376.3333333333333
-            L 197.5 376.3333333333333
-            L 197.5 378.0
-            L 195.0 378.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="377" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_11</text>
-<text x="215" y="376" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="376" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 11</text>
-<path d="M 195.0 394.0
-            L 197.5 394.0
-            L 197.5 395.6666666666667
-            L 200.0 395.6666666666667
-            L 200.0 394.0
-            L 205.0 394.0
-            L 205.0 404.0
-            L 200.0 404.0
-            L 200.0 402.3333333333333
-            L 197.5 402.3333333333333
-            L 197.5 404.0
-            L 195.0 404.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="403" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_12</text>
-<text x="215" y="402" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="402" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 12</text>
-<path d="M 195.0 420.0
-            L 197.5 420.0
-            L 197.5 421.6666666666667
-            L 200.0 421.6666666666667
-            L 200.0 420.0
-            L 205.0 420.0
-            L 205.0 430.0
-            L 200.0 430.0
-            L 200.0 428.3333333333333
-            L 197.5 428.3333333333333
-            L 197.5 430.0
-            L 195.0 430.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="429" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_13</text>
-<text x="215" y="428" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="428" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 13</text>
-<path d="M 195.0 446.0
-            L 197.5 446.0
-            L 197.5 447.6666666666667
-            L 200.0 447.6666666666667
-            L 200.0 446.0
-            L 205.0 446.0
-            L 205.0 456.0
-            L 200.0 456.0
-            L 200.0 454.3333333333333
-            L 197.5 454.3333333333333
-            L 197.5 456.0
-            L 195.0 456.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="455" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_14</text>
-<text x="215" y="454" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="454" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 14</text>
-<path d="M 195.0 472.0
-            L 197.5 472.0
-            L 197.5 473.6666666666667
-            L 200.0 473.6666666666667
-            L 200.0 472.0
-            L 205.0 472.0
-            L 205.0 482.0
-            L 200.0 482.0
-            L 200.0 480.3333333333333
-            L 197.5 480.3333333333333
-            L 197.5 482.0
-            L 195.0 482.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="481" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_15</text>
-<text x="215" y="480" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="480" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 15</text>
-<path d="M 195.0 498.0
-            L 197.5 498.0
-            L 197.5 499.6666666666667
-            L 200.0 499.6666666666667
-            L 200.0 498.0
-            L 205.0 498.0
-            L 205.0 508.0
-            L 200.0 508.0
-            L 200.0 506.3333333333333
-            L 197.5 506.3333333333333
-            L 197.5 508.0
-            L 195.0 508.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="507" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_16</text>
-<text x="215" y="506" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="506" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 16</text>
-<path d="M 195.0 524.0
-            L 197.5 524.0
-            L 197.5 525.6666666666666
-            L 200.0 525.6666666666666
-            L 200.0 524.0
-            L 205.0 524.0
-            L 205.0 534.0
-            L 200.0 534.0
-            L 200.0 532.3333333333334
-            L 197.5 532.3333333333334
-            L 197.5 534.0
-            L 195.0 534.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="533" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_17</text>
-<text x="215" y="532" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="532" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 17</text>
-<path d="M 195.0 550.0
-            L 197.5 550.0
-            L 197.5 551.6666666666666
-            L 200.0 551.6666666666666
-            L 200.0 550.0
-            L 205.0 550.0
-            L 205.0 560.0
-            L 200.0 560.0
-            L 200.0 558.3333333333334
-            L 197.5 558.3333333333334
-            L 197.5 560.0
-            L 195.0 560.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="559" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_18</text>
-<text x="215" y="558" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="558" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 18</text>
-<path d="M 195.0 576.0
-            L 197.5 576.0
-            L 197.5 577.6666666666666
-            L 200.0 577.6666666666666
-            L 200.0 576.0
-            L 205.0 576.0
-            L 205.0 586.0
-            L 200.0 586.0
-            L 200.0 584.3333333333334
-            L 197.5 584.3333333333334
-            L 197.5 586.0
-            L 195.0 586.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="585" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_19</text>
-<text x="215" y="584" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="584" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 19</text>
-<path d="M 195.0 602.0
-            L 197.5 602.0
-            L 197.5 603.6666666666666
-            L 200.0 603.6666666666666
-            L 200.0 602.0
-            L 205.0 602.0
-            L 205.0 612.0
-            L 200.0 612.0
-            L 200.0 610.3333333333334
-            L 197.5 610.3333333333334
-            L 197.5 612.0
-            L 195.0 612.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="611" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_20</text>
-<text x="215" y="610" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="610" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 20</text>
-<path d="M 195.0 628.0
-            L 197.5 628.0
-            L 197.5 629.6666666666666
-            L 200.0 629.6666666666666
-            L 200.0 628.0
-            L 205.0 628.0
-            L 205.0 638.0
-            L 200.0 638.0
-            L 200.0 636.3333333333334
-            L 197.5 636.3333333333334
-            L 197.5 638.0
-            L 195.0 638.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="637" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_21</text>
-<text x="215" y="636" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="636" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 21</text>
-<path d="M 195.0 654.0
-            L 197.5 654.0
-            L 197.5 655.6666666666666
-            L 200.0 655.6666666666666
-            L 200.0 654.0
-            L 205.0 654.0
-            L 205.0 664.0
-            L 200.0 664.0
-            L 200.0 662.3333333333334
-            L 197.5 662.3333333333334
-            L 197.5 664.0
-            L 195.0 664.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="663" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_22</text>
-<text x="215" y="662" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="662" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 22</text>
-<path d="M 195.0 680.0
-            L 197.5 680.0
-            L 197.5 681.6666666666666
-            L 200.0 681.6666666666666
-            L 200.0 680.0
-            L 205.0 680.0
-            L 205.0 690.0
-            L 200.0 690.0
-            L 200.0 688.3333333333334
-            L 197.5 688.3333333333334
-            L 197.5 690.0
-            L 195.0 690.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="689" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_23</text>
-<text x="215" y="688" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="688" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 23</text>
-<path d="M 195.0 706.0
-            L 197.5 706.0
-            L 197.5 707.6666666666666
-            L 200.0 707.6666666666666
-            L 200.0 706.0
-            L 205.0 706.0
-            L 205.0 716.0
-            L 200.0 716.0
-            L 200.0 714.3333333333334
-            L 197.5 714.3333333333334
-            L 197.5 716.0
-            L 195.0 716.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="715" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_24</text>
-<text x="215" y="714" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="714" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 24</text>
-<path d="M 195.0 732.0
-            L 197.5 732.0
-            L 197.5 733.6666666666666
-            L 200.0 733.6666666666666
-            L 200.0 732.0
-            L 205.0 732.0
-            L 205.0 742.0
-            L 200.0 742.0
-            L 200.0 740.3333333333334
-            L 197.5 740.3333333333334
-            L 197.5 742.0
-            L 195.0 742.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="741" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_25</text>
-<text x="215" y="740" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="740" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 25</text>
-<path d="M 195.0 758.0
-            L 197.5 758.0
-            L 197.5 759.6666666666666
-            L 200.0 759.6666666666666
-            L 200.0 758.0
-            L 205.0 758.0
-            L 205.0 768.0
-            L 200.0 768.0
-            L 200.0 766.3333333333334
-            L 197.5 766.3333333333334
-            L 197.5 768.0
-            L 195.0 768.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="767" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_26</text>
-<text x="215" y="766" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="766" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 26</text>
-<path d="M 195.0 784.0
-            L 197.5 784.0
-            L 197.5 785.6666666666666
-            L 200.0 785.6666666666666
-            L 200.0 784.0
-            L 205.0 784.0
-            L 205.0 794.0
-            L 200.0 794.0
-            L 200.0 792.3333333333334
-            L 197.5 792.3333333333334
-            L 197.5 794.0
-            L 195.0 794.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="793" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_27</text>
-<text x="215" y="792" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="792" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 27</text>
-<path d="M 195.0 810.0
-            L 197.5 810.0
-            L 197.5 811.6666666666666
-            L 200.0 811.6666666666666
-            L 200.0 810.0
-            L 205.0 810.0
-            L 205.0 820.0
-            L 200.0 820.0
-            L 200.0 818.3333333333334
-            L 197.5 818.3333333333334
-            L 197.5 820.0
-            L 195.0 820.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="819" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_28</text>
-<text x="215" y="818" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="818" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 28</text>
-<path d="M 195.0 836.0
-            L 197.5 836.0
-            L 197.5 837.6666666666666
-            L 200.0 837.6666666666666
-            L 200.0 836.0
-            L 205.0 836.0
-            L 205.0 846.0
-            L 200.0 846.0
-            L 200.0 844.3333333333334
-            L 197.5 844.3333333333334
-            L 197.5 846.0
-            L 195.0 846.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="845" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_29</text>
-<text x="215" y="844" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="844" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 29</text>
-<path d="M 195.0 862.0
-            L 197.5 862.0
-            L 197.5 863.6666666666666
-            L 200.0 863.6666666666666
-            L 200.0 862.0
-            L 205.0 862.0
-            L 205.0 872.0
-            L 200.0 872.0
-            L 200.0 870.3333333333334
-            L 197.5 870.3333333333334
-            L 197.5 872.0
-            L 195.0 872.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="871" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_30</text>
-<text x="215" y="870" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="870" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 30</text>
-<path d="M 195.0 888.0
-            L 197.5 888.0
-            L 197.5 889.6666666666666
-            L 200.0 889.6666666666666
-            L 200.0 888.0
-            L 205.0 888.0
-            L 205.0 898.0
-            L 200.0 898.0
-            L 200.0 896.3333333333334
-            L 197.5 896.3333333333334
-            L 197.5 898.0
-            L 195.0 898.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="188" y="897" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QUARTER_BYTE_31</text>
-<text x="215" y="896" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AQ</text>
-<text x="285" y="896" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Quarter 31</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 24.14794921875 37.0
+            L 40.14794921875 37.0
+            A 1 1 0 0 1 41.14794921875 38.0
+            L 41.14794921875 41.5
+            L 39.14794921875 41.5
+            L 39.14794921875 44.5
+            L 41.14794921875 44.5
+            L 41.14794921875 54.0
+            A 1 1 0 0 1 40.14794921875 55.0
+            L 24.14794921875 55.0
+            A 1 1 0 0 1 23.14794921875 54.0
+            L 23.14794921875 44.5
+            L 25.14794921875 44.5
+            L 25.14794921875 41.5
+            L 23.14794921875 41.5
+            L 23.14794921875 38.0
+            A 1 1 0 0 1 24.14794921875 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="32.14794921875" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="46.14794921875" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">SPLIT_AL_INTO_AQ</text>
+
+    <text x="89.3046875" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN</text>
+
+    <path d="M 167.109375 97.0
+            L 169.609375 97.0
+            L 169.609375 98.66666666666667
+            L 172.109375 98.66666666666667
+            L 172.109375 97.0
+            L 177.109375 97.0
+            L 177.109375 107.0
+            L 172.109375 107.0
+            L 172.109375 105.33333333333333
+            L 169.609375 105.33333333333333
+            L 169.609375 107.0
+            L 167.109375 107.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_00</text>
+
+    <path d="M 167.109375 117.0
+            L 169.609375 117.0
+            L 169.609375 118.66666666666667
+            L 172.109375 118.66666666666667
+            L 172.109375 117.0
+            L 177.109375 117.0
+            L 177.109375 127.0
+            L 172.109375 127.0
+            L 172.109375 125.33333333333333
+            L 169.609375 125.33333333333333
+            L 169.609375 127.0
+            L 167.109375 127.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_01</text>
+
+    <path d="M 167.109375 137.0
+            L 169.609375 137.0
+            L 169.609375 138.66666666666666
+            L 172.109375 138.66666666666666
+            L 172.109375 137.0
+            L 177.109375 137.0
+            L 177.109375 147.0
+            L 172.109375 147.0
+            L 172.109375 145.33333333333334
+            L 169.609375 145.33333333333334
+            L 169.609375 147.0
+            L 167.109375 147.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_02</text>
+
+    <path d="M 167.109375 157.0
+            L 169.609375 157.0
+            L 169.609375 158.66666666666666
+            L 172.109375 158.66666666666666
+            L 172.109375 157.0
+            L 177.109375 157.0
+            L 177.109375 167.0
+            L 172.109375 167.0
+            L 172.109375 165.33333333333334
+            L 169.609375 165.33333333333334
+            L 169.609375 167.0
+            L 167.109375 167.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_03</text>
+
+    <path d="M 167.109375 177.0
+            L 169.609375 177.0
+            L 169.609375 178.66666666666666
+            L 172.109375 178.66666666666666
+            L 172.109375 177.0
+            L 177.109375 177.0
+            L 177.109375 187.0
+            L 172.109375 187.0
+            L 172.109375 185.33333333333334
+            L 169.609375 185.33333333333334
+            L 169.609375 187.0
+            L 167.109375 187.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_04</text>
+
+    <path d="M 167.109375 197.0
+            L 169.609375 197.0
+            L 169.609375 198.66666666666666
+            L 172.109375 198.66666666666666
+            L 172.109375 197.0
+            L 177.109375 197.0
+            L 177.109375 207.0
+            L 172.109375 207.0
+            L 172.109375 205.33333333333334
+            L 169.609375 205.33333333333334
+            L 169.609375 207.0
+            L 167.109375 207.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="203.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_05</text>
+
+    <path d="M 167.109375 217.0
+            L 169.609375 217.0
+            L 169.609375 218.66666666666666
+            L 172.109375 218.66666666666666
+            L 172.109375 217.0
+            L 177.109375 217.0
+            L 177.109375 227.0
+            L 172.109375 227.0
+            L 172.109375 225.33333333333334
+            L 169.609375 225.33333333333334
+            L 169.609375 227.0
+            L 167.109375 227.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="223.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_06</text>
+
+    <path d="M 167.109375 237.0
+            L 169.609375 237.0
+            L 169.609375 238.66666666666666
+            L 172.109375 238.66666666666666
+            L 172.109375 237.0
+            L 177.109375 237.0
+            L 177.109375 247.0
+            L 172.109375 247.0
+            L 172.109375 245.33333333333334
+            L 169.609375 245.33333333333334
+            L 169.609375 247.0
+            L 167.109375 247.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="243.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_07</text>
+
+    <path d="M 167.109375 257.0
+            L 169.609375 257.0
+            L 169.609375 258.6666666666667
+            L 172.109375 258.6666666666667
+            L 172.109375 257.0
+            L 177.109375 257.0
+            L 177.109375 267.0
+            L 172.109375 267.0
+            L 172.109375 265.3333333333333
+            L 169.609375 265.3333333333333
+            L 169.609375 267.0
+            L 167.109375 267.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="263.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_08</text>
+
+    <path d="M 167.109375 277.0
+            L 169.609375 277.0
+            L 169.609375 278.6666666666667
+            L 172.109375 278.6666666666667
+            L 172.109375 277.0
+            L 177.109375 277.0
+            L 177.109375 287.0
+            L 172.109375 287.0
+            L 172.109375 285.3333333333333
+            L 169.609375 285.3333333333333
+            L 169.609375 287.0
+            L 167.109375 287.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="283.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_09</text>
+
+    <path d="M 167.109375 297.0
+            L 169.609375 297.0
+            L 169.609375 298.6666666666667
+            L 172.109375 298.6666666666667
+            L 172.109375 297.0
+            L 177.109375 297.0
+            L 177.109375 307.0
+            L 172.109375 307.0
+            L 172.109375 305.3333333333333
+            L 169.609375 305.3333333333333
+            L 169.609375 307.0
+            L 167.109375 307.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="303.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_10</text>
+
+    <path d="M 167.109375 317.0
+            L 169.609375 317.0
+            L 169.609375 318.6666666666667
+            L 172.109375 318.6666666666667
+            L 172.109375 317.0
+            L 177.109375 317.0
+            L 177.109375 327.0
+            L 172.109375 327.0
+            L 172.109375 325.3333333333333
+            L 169.609375 325.3333333333333
+            L 169.609375 327.0
+            L 167.109375 327.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="323.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_11</text>
+
+    <path d="M 167.109375 337.0
+            L 169.609375 337.0
+            L 169.609375 338.6666666666667
+            L 172.109375 338.6666666666667
+            L 172.109375 337.0
+            L 177.109375 337.0
+            L 177.109375 347.0
+            L 172.109375 347.0
+            L 172.109375 345.3333333333333
+            L 169.609375 345.3333333333333
+            L 169.609375 347.0
+            L 167.109375 347.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="343.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_12</text>
+
+    <path d="M 167.109375 357.0
+            L 169.609375 357.0
+            L 169.609375 358.6666666666667
+            L 172.109375 358.6666666666667
+            L 172.109375 357.0
+            L 177.109375 357.0
+            L 177.109375 367.0
+            L 172.109375 367.0
+            L 172.109375 365.3333333333333
+            L 169.609375 365.3333333333333
+            L 169.609375 367.0
+            L 167.109375 367.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="363.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_13</text>
+
+    <path d="M 167.109375 377.0
+            L 169.609375 377.0
+            L 169.609375 378.6666666666667
+            L 172.109375 378.6666666666667
+            L 172.109375 377.0
+            L 177.109375 377.0
+            L 177.109375 387.0
+            L 172.109375 387.0
+            L 172.109375 385.3333333333333
+            L 169.609375 385.3333333333333
+            L 169.609375 387.0
+            L 167.109375 387.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="383.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_14</text>
+
+    <path d="M 167.109375 397.0
+            L 169.609375 397.0
+            L 169.609375 398.6666666666667
+            L 172.109375 398.6666666666667
+            L 172.109375 397.0
+            L 177.109375 397.0
+            L 177.109375 407.0
+            L 172.109375 407.0
+            L 172.109375 405.3333333333333
+            L 169.609375 405.3333333333333
+            L 169.609375 407.0
+            L 167.109375 407.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="403.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_15</text>
+
+    <path d="M 167.109375 417.0
+            L 169.609375 417.0
+            L 169.609375 418.6666666666667
+            L 172.109375 418.6666666666667
+            L 172.109375 417.0
+            L 177.109375 417.0
+            L 177.109375 427.0
+            L 172.109375 427.0
+            L 172.109375 425.3333333333333
+            L 169.609375 425.3333333333333
+            L 169.609375 427.0
+            L 167.109375 427.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="423.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_16</text>
+
+    <path d="M 167.109375 437.0
+            L 169.609375 437.0
+            L 169.609375 438.6666666666667
+            L 172.109375 438.6666666666667
+            L 172.109375 437.0
+            L 177.109375 437.0
+            L 177.109375 447.0
+            L 172.109375 447.0
+            L 172.109375 445.3333333333333
+            L 169.609375 445.3333333333333
+            L 169.609375 447.0
+            L 167.109375 447.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="443.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_17</text>
+
+    <path d="M 167.109375 457.0
+            L 169.609375 457.0
+            L 169.609375 458.6666666666667
+            L 172.109375 458.6666666666667
+            L 172.109375 457.0
+            L 177.109375 457.0
+            L 177.109375 467.0
+            L 172.109375 467.0
+            L 172.109375 465.3333333333333
+            L 169.609375 465.3333333333333
+            L 169.609375 467.0
+            L 167.109375 467.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="463.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_18</text>
+
+    <path d="M 167.109375 477.0
+            L 169.609375 477.0
+            L 169.609375 478.6666666666667
+            L 172.109375 478.6666666666667
+            L 172.109375 477.0
+            L 177.109375 477.0
+            L 177.109375 487.0
+            L 172.109375 487.0
+            L 172.109375 485.3333333333333
+            L 169.609375 485.3333333333333
+            L 169.609375 487.0
+            L 167.109375 487.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="483.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_19</text>
+
+    <path d="M 167.109375 497.0
+            L 169.609375 497.0
+            L 169.609375 498.6666666666667
+            L 172.109375 498.6666666666667
+            L 172.109375 497.0
+            L 177.109375 497.0
+            L 177.109375 507.0
+            L 172.109375 507.0
+            L 172.109375 505.3333333333333
+            L 169.609375 505.3333333333333
+            L 169.609375 507.0
+            L 167.109375 507.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="503.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_20</text>
+
+    <path d="M 167.109375 517.0
+            L 169.609375 517.0
+            L 169.609375 518.6666666666666
+            L 172.109375 518.6666666666666
+            L 172.109375 517.0
+            L 177.109375 517.0
+            L 177.109375 527.0
+            L 172.109375 527.0
+            L 172.109375 525.3333333333334
+            L 169.609375 525.3333333333334
+            L 169.609375 527.0
+            L 167.109375 527.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="523.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_21</text>
+
+    <path d="M 167.109375 537.0
+            L 169.609375 537.0
+            L 169.609375 538.6666666666666
+            L 172.109375 538.6666666666666
+            L 172.109375 537.0
+            L 177.109375 537.0
+            L 177.109375 547.0
+            L 172.109375 547.0
+            L 172.109375 545.3333333333334
+            L 169.609375 545.3333333333334
+            L 169.609375 547.0
+            L 167.109375 547.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="543.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_22</text>
+
+    <path d="M 167.109375 557.0
+            L 169.609375 557.0
+            L 169.609375 558.6666666666666
+            L 172.109375 558.6666666666666
+            L 172.109375 557.0
+            L 177.109375 557.0
+            L 177.109375 567.0
+            L 172.109375 567.0
+            L 172.109375 565.3333333333334
+            L 169.609375 565.3333333333334
+            L 169.609375 567.0
+            L 167.109375 567.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="563.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_23</text>
+
+    <path d="M 167.109375 577.0
+            L 169.609375 577.0
+            L 169.609375 578.6666666666666
+            L 172.109375 578.6666666666666
+            L 172.109375 577.0
+            L 177.109375 577.0
+            L 177.109375 587.0
+            L 172.109375 587.0
+            L 172.109375 585.3333333333334
+            L 169.609375 585.3333333333334
+            L 169.609375 587.0
+            L 167.109375 587.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="583.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_24</text>
+
+    <path d="M 167.109375 597.0
+            L 169.609375 597.0
+            L 169.609375 598.6666666666666
+            L 172.109375 598.6666666666666
+            L 172.109375 597.0
+            L 177.109375 597.0
+            L 177.109375 607.0
+            L 172.109375 607.0
+            L 172.109375 605.3333333333334
+            L 169.609375 605.3333333333334
+            L 169.609375 607.0
+            L 167.109375 607.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="603.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_25</text>
+
+    <path d="M 167.109375 617.0
+            L 169.609375 617.0
+            L 169.609375 618.6666666666666
+            L 172.109375 618.6666666666666
+            L 172.109375 617.0
+            L 177.109375 617.0
+            L 177.109375 627.0
+            L 172.109375 627.0
+            L 172.109375 625.3333333333334
+            L 169.609375 625.3333333333334
+            L 169.609375 627.0
+            L 167.109375 627.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="623.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_26</text>
+
+    <path d="M 167.109375 637.0
+            L 169.609375 637.0
+            L 169.609375 638.6666666666666
+            L 172.109375 638.6666666666666
+            L 172.109375 637.0
+            L 177.109375 637.0
+            L 177.109375 647.0
+            L 172.109375 647.0
+            L 172.109375 645.3333333333334
+            L 169.609375 645.3333333333334
+            L 169.609375 647.0
+            L 167.109375 647.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="643.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_27</text>
+
+    <path d="M 167.109375 657.0
+            L 169.609375 657.0
+            L 169.609375 658.6666666666666
+            L 172.109375 658.6666666666666
+            L 172.109375 657.0
+            L 177.109375 657.0
+            L 177.109375 667.0
+            L 172.109375 667.0
+            L 172.109375 665.3333333333334
+            L 169.609375 665.3333333333334
+            L 169.609375 667.0
+            L 167.109375 667.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="663.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_28</text>
+
+    <path d="M 167.109375 677.0
+            L 169.609375 677.0
+            L 169.609375 678.6666666666666
+            L 172.109375 678.6666666666666
+            L 172.109375 677.0
+            L 177.109375 677.0
+            L 177.109375 687.0
+            L 172.109375 687.0
+            L 172.109375 685.3333333333334
+            L 169.609375 685.3333333333334
+            L 169.609375 687.0
+            L 167.109375 687.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="683.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_29</text>
+
+    <path d="M 167.109375 697.0
+            L 169.609375 697.0
+            L 169.609375 698.6666666666666
+            L 172.109375 698.6666666666666
+            L 172.109375 697.0
+            L 177.109375 697.0
+            L 177.109375 707.0
+            L 172.109375 707.0
+            L 172.109375 705.3333333333334
+            L 169.609375 705.3333333333334
+            L 169.609375 707.0
+            L 167.109375 707.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="703.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_30</text>
+
+    <path d="M 167.109375 717.0
+            L 169.609375 717.0
+            L 169.609375 718.6666666666666
+            L 172.109375 718.6666666666666
+            L 172.109375 717.0
+            L 177.109375 717.0
+            L 177.109375 727.0
+            L 172.109375 727.0
+            L 172.109375 725.3333333333334
+            L 169.609375 725.3333333333334
+            L 169.609375 727.0
+            L 167.109375 727.0
+            Z" fill="#845DAF"/>
+    <text x="164.109375" y="723.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QUARTER_BYTE_31</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">LWORD Input – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AL</tspan></text>
+
+    <text x="203.609375" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 0</text>
+
+    <text x="203.609375" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 1</text>
+
+    <text x="203.609375" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 2</text>
+
+    <text x="203.609375" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 3</text>
+
+    <text x="203.609375" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 4</text>
+
+    <text x="203.609375" y="203.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 5</text>
+
+    <text x="203.609375" y="223.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 6</text>
+
+    <text x="203.609375" y="243.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 7</text>
+
+    <text x="203.609375" y="263.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 8</text>
+
+    <text x="203.609375" y="283.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 9</text>
+
+    <text x="203.609375" y="303.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 10</text>
+
+    <text x="203.609375" y="323.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 11</text>
+
+    <text x="203.609375" y="343.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 12</text>
+
+    <text x="203.609375" y="363.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 13</text>
+
+    <text x="203.609375" y="383.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 14</text>
+
+    <text x="203.609375" y="403.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 15</text>
+
+    <text x="203.609375" y="423.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 16</text>
+
+    <text x="203.609375" y="443.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 17</text>
+
+    <text x="203.609375" y="463.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 18</text>
+
+    <text x="203.609375" y="483.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 19</text>
+
+    <text x="203.609375" y="503.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 20</text>
+
+    <text x="203.609375" y="523.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 21</text>
+
+    <text x="203.609375" y="543.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 22</text>
+
+    <text x="203.609375" y="563.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 23</text>
+
+    <text x="203.609375" y="583.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 24</text>
+
+    <text x="203.609375" y="603.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 25</text>
+
+    <text x="203.609375" y="623.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 26</text>
+
+    <text x="203.609375" y="643.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 27</text>
+
+    <text x="203.609375" y="663.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 28</text>
+
+    <text x="203.609375" y="683.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 29</text>
+
+    <text x="203.609375" y="703.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 30</text>
+
+    <text x="203.609375" y="723.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AQ</tspan> – Quarter 31</text>
+  </g>
 </svg>

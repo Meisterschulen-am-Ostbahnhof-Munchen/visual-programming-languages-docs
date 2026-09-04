@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1316" height="275" viewBox="-548 -20 1316 275">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1475.3125 172.0"
+     width="1475.3125" height="172.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,97 +28,181 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 217 0
-            A 3 3 0 0 1 220 3
-            L 220 89
-            A 3 3 0 0 1 217 92
-            L 214 92
-            L 214 132
-            L 217 132
-            A 3 3 0 0 1 220 135
-            L 220 222
-            A 3 3 0 0 1 217 225
-            L 3 225
-            A 3 3 0 0 1 0 222
-            L 0 135
-            A 3 3 0 0 1 3 132
-            L 6 132
-            L 6 92
-            L 3 92
-            A 3 3 0 0 1 0 89
+  <g transform="translate(586.2705078125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 277.3359375 0
+            A 3 3 0 0 1 280.3359375 3
+            L 280.3359375 43.0
+            A 3 3 0 0 1 277.3359375 46.0
+            L 270.3359375 46.0
+            L 270.3359375 86.0
+            L 277.3359375 86.0
+            A 3 3 0 0 1 280.3359375 89.0
+            L 280.3359375 149.0
+            A 3 3 0 0 1 277.3359375 152.0
+            L 3 152.0
+            A 3 3 0 0 1 0 149.0
+            L 0 89.0
+            A 3 3 0 0 1 3 86.0
+            L 10 86.0
+            L 10 46.0
+            L 3 46.0
+            A 3 3 0 0 1 0 43.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 31.5 103.0
-            L 47.5 103.0
-            A 1 1 0 0 1 48.5 104.0
-            L 48.5 107.5
-            L 46.5 107.5
-            L 46.5 110.5
-            L 48.5 110.5
-            L 48.5 120.0
-            A 1 1 0 0 1 47.5 121.0
-            L 31.5 121.0
-            A 1 1 0 0 1 30.5 120.0
-            L 30.5 110.5
-            L 32.5 110.5
-            L 32.5 107.5
-            L 30.5 107.5
-            L 30.5 104.0
-            A 1 1 0 0 1 31.5 103.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="39.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="53.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">Q_SelectColourMap</text>
-<text x="110.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Request</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#18519E" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">u16ObjIdColourMap</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Object ID of Colour map object or FFFF to restore</text>
-<text x="-153" y="164" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">the default colour table (see A.3) </text>
-<path d="M220,37 L220,47 L225,42 Z" fill="#63B31F" stroke="none" />
-<text x="208" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="243" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="313" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M220,63 L220,73 L225,68 Z" fill="#63B31F" stroke="none" />
-<text x="208" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="243" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="313" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirmation of Requested Service</text>
-<path d="M220,144 L220,154 L225,149 Z" fill="#BD8663" stroke="none" />
-<text x="208" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="243" y="152" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<text x="313" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Status</text>
-<path d="M220,170 L220,180 L225,175 Z" fill="#18519E" stroke="none" />
-<text x="208" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">u16OldObjIdColourMap</text>
-<text x="243" y="178" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="313" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Old object ID of Colour map object or FFFF to</text>
-<text x="313" y="190" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">restore the default colour table (see A.3) </text>
-<path d="M220,196 L220,206 L225,201 Z" fill="#18519E" stroke="none" />
-<text x="208" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">s16result</text>
-<text x="243" y="204" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">INT</text>
-<text x="313" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">retval see description</text>
-<path d="M-12,68 L-12,149" stroke="#000000" stroke-width="1" />
-<path d="M0,68 L-12,68" stroke="#000000" />
-<rect x="-14" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#000000" />
-<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,68 L232,201" stroke="#000000" stroke-width="1" />
-<path d="M220,68 L232,68" stroke="#000000" />
-<rect x="230" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,149 L225,149" stroke="#000000" />
-<rect x="230" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,201 L225,201" stroke="#000000" />
-<rect x="230" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,175 L225,175" stroke="#000000" />
-<rect x="230" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="273.8359375,11.0 278.8359375,16.0 273.8359375,21.0" fill="#63B31F"/>
+    <text x="270.8359375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="273.8359375,31.0 278.8359375,36.0 273.8359375,41.0" fill="#63B31F"/>
+    <text x="270.8359375" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 73.0458984375 57.0
+            L 89.0458984375 57.0
+            A 1 1 0 0 1 90.0458984375 58.0
+            L 90.0458984375 61.5
+            L 88.0458984375 61.5
+            L 88.0458984375 64.5
+            L 90.0458984375 64.5
+            L 90.0458984375 74.0
+            A 1 1 0 0 1 89.0458984375 75.0
+            L 73.0458984375 75.0
+            A 1 1 0 0 1 72.0458984375 74.0
+            L 72.0458984375 64.5
+            L 74.0458984375 64.5
+            L 74.0458984375 61.5
+            L 72.0458984375 61.5
+            L 72.0458984375 58.0
+            A 1 1 0 0 1 73.0458984375 57.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="81.0458984375" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="95.0458984375" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">Q_SelectColourMap</text>
+
+    <text x="140.16796875" y="86.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#18519E"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">u16ObjIdColourMap</text>
+
+    <polygon points="273.8359375,91.0 278.8359375,96.0 273.8359375,101.0" fill="#BD8663"/>
+    <text x="270.8359375" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="273.8359375,111.0 278.8359375,116.0 273.8359375,121.0" fill="#18519E"/>
+    <text x="270.8359375" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">u16OldObjIdColourMap</text>
+
+    <polygon points="273.8359375,131.0 278.8359375,136.0 273.8359375,141.0" fill="#18519E"/>
+    <text x="270.8359375" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">s16result</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="36.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="285.3359375" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="285.3359375" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="290.3359375" y1="36.0" x2="290.3359375" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="285.3359375" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="290.3359375" y1="36.0" x2="290.3359375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="285.3359375" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="290.3359375" y1="36.0" x2="290.3359375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="36.0" x2="-20" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="280.3359375" y1="36.0" x2="300.3359375" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="280.3359375" y1="96.0" x2="300.3359375" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="280.3359375" y1="136.0" x2="300.3359375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="280.3359375" y1="116.0" x2="300.3359375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="305.3359375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="305.3359375" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation of Requested Service</text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Object ID of Colour map object or FFFF to restore the default colour table (see A.3)  – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan></text>
+
+    <text x="305.3359375" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan> – Service Status</text>
+
+    <text x="305.3359375" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Old object ID of Colour map object or FFFF to restore the default colour table (see A.3) </text>
+
+    <text x="305.3359375" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">INT</tspan> – retval see description</text>
+  </g>
 </svg>

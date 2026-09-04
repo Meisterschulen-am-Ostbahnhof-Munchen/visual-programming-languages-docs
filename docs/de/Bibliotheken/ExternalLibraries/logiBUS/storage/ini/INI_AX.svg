@@ -1,76 +1,281 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1253" height="327" viewBox="-548 -20 1253 327">
-<defs>
-</defs>
-<rect x="3" y="3" width="157" height="277" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H157 V66 H151 V106 H157 V277 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L157,30" stroke="#000000" stroke-width="1" />
-<text x="78.5" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">INI_AX</text>
-<text x="78.5" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="Consolas, monospace">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Service Initialization</text>
-<rect x="-5.0" y="118.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">AX_IN</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="-153" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Value to store (SET)</text>
-<path d="M-5,144 L-5,154 L0,149 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">QI</text>
-<text x="-23" y="152" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-153" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Event Input Qualifier</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">SETM</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-153" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Enable Mirroring on SET</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">SECTION</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<text x="-153" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Section name.</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="Consolas, monospace">KEY</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<text x="-153" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Key name.</text>
-<path d="M-5,248 L-5,258 L0,253 Z" fill="#9FA48A" stroke="none" />
-<text x="12" y="257" font-size="12" text-anchor="start" font-family="Consolas, monospace">DEFAULT_VALUE</text>
-<text x="-23" y="256" font-size="11" text-anchor="end" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="-153" y="256" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">The value to read if there is nothing in the</text>
-<text x="-153" y="268" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">settings.ini</text>
-<path d="M157,37 L157,47 L162,42 Z" fill="#63B31F" stroke="none" />
-<text x="145" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">INITO</text>
-<text x="180" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="250" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Initialization Confirm</text>
-<rect x="152.0" y="118.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="145" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">AX_OUT</text>
-<text x="180" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AX</text>
-<text x="250" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Stored value output (GETO)</text>
-<path d="M157,144 L157,154 L162,149 Z" fill="#9FA48A" stroke="none" />
-<text x="145" y="153" font-size="12" text-anchor="end" font-family="Consolas, monospace">QO</text>
-<text x="180" y="152" font-size="11" text-anchor="start" fill="#9FA48A" font-style="italic" font-family="Verdana, sans-serif">BOOL</text>
-<text x="250" y="152" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Event Output Qualifier</text>
-<path d="M157,170 L157,180 L162,175 Z" fill="#BD8663" stroke="none" />
-<text x="145" y="179" font-size="12" text-anchor="end" font-family="Consolas, monospace">STATUS</text>
-<text x="180" y="178" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="Verdana, sans-serif">STRING</text>
-<text x="250" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Service Status</text>
-<path d="M-12,42 L-12,253" stroke="#404040" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#404040" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,149 L-5,149" stroke="#404040" />
-<rect x="-14" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#404040" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#404040" />
-<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#404040" />
-<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,253 L-5,253" stroke="#404040" />
-<rect x="-14" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M169,42 L169,175" stroke="#404040" stroke-width="1" />
-<path d="M157,42 L169,42" stroke="#404040" />
-<rect x="167" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M169,149 L162,149" stroke="#404040" />
-<rect x="167" y="147" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M169,175 L162,175" stroke="#404040" />
-<rect x="167" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 833.6259765625 212.0"
+     width="833.6259765625" height="212.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(403.34765625, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 193.0244140625 0
+            A 3 3 0 0 1 196.0244140625 3
+            L 196.0244140625 23.0
+            A 3 3 0 0 1 193.0244140625 26.0
+            L 186.0244140625 26.0
+            L 186.0244140625 66.0
+            L 193.0244140625 66.0
+            A 3 3 0 0 1 196.0244140625 69.0
+            L 196.0244140625 189.0
+            A 3 3 0 0 1 193.0244140625 192.0
+            L 3 192.0
+            A 3 3 0 0 1 0 189.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="189.5244140625,11.0 194.5244140625,16.0 189.5244140625,21.0" fill="#63B31F"/>
+    <text x="186.5244140625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 68.82958984375 37.0
+            L 84.82958984375 37.0
+            A 1 1 0 0 1 85.82958984375 38.0
+            L 85.82958984375 41.5
+            L 83.82958984375 41.5
+            L 83.82958984375 44.5
+            L 85.82958984375 44.5
+            L 85.82958984375 54.0
+            A 1 1 0 0 1 84.82958984375 55.0
+            L 68.82958984375 55.0
+            A 1 1 0 0 1 67.82958984375 54.0
+            L 67.82958984375 44.5
+            L 69.82958984375 44.5
+            L 69.82958984375 41.5
+            L 67.82958984375 41.5
+            L 67.82958984375 38.0
+            A 1 1 0 0 1 68.82958984375 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="76.82958984375" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="90.82958984375" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">INI_AX</text>
+
+    <text x="98.01220703125" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#A3B08F"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#A3B08F"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SETM</text>
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#BD8663"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SECTION</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#BD8663"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">KEY</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#A3B08F"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">DEFAULT_VALUE</text>
+
+    <polygon points="189.5244140625,71.0 194.5244140625,76.0 189.5244140625,81.0" fill="#A3B08F"/>
+    <text x="186.5244140625" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="189.5244140625,91.0 194.5244140625,96.0 189.5244140625,101.0" fill="#BD8663"/>
+    <text x="186.5244140625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 177.0
+            L 6.5 177.0
+            L 6.5 178.66666666666666
+            L 9.0 178.66666666666666
+            L 9.0 177.0
+            L 11.5 177.0
+            L 11.5 187.0
+            L 9.0 187.0
+            L 9.0 185.33333333333334
+            L 6.5 185.33333333333334
+            L 6.5 187.0
+            L 1.5 187.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">AX_IN</text>
+
+    <path d="M 184.5244140625 177.0
+            L 187.0244140625 177.0
+            L 187.0244140625 178.66666666666666
+            L 189.5244140625 178.66666666666666
+            L 189.5244140625 177.0
+            L 194.5244140625 177.0
+            L 194.5244140625 187.0
+            L 189.5244140625 187.0
+            L 189.5244140625 185.33333333333334
+            L 187.0244140625 185.33333333333334
+            L 187.0244140625 187.0
+            L 184.5244140625 187.0
+            Z" fill="#845DAF"/>
+    <text x="181.5244140625" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">AX_OUT</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="201.0244140625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="201.0244140625" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="206.0244140625" y1="16.0" x2="206.0244140625" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="201.0244140625" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="206.0244140625" y1="16.0" x2="206.0244140625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="96.0" x2="-20" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-20" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-20" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="196.0244140625" y1="16.0" x2="216.0244140625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="196.0244140625" y1="76.0" x2="216.0244140625" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="196.0244140625" y1="96.0" x2="216.0244140625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="221.0244140625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Enable Mirroring on SET – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Section name. – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan></text>
+
+    <text x="-25" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Key name. – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan></text>
+
+    <text x="-25" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">The value to read if there is nothing in the settings.ini – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="221.0244140625" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="221.0244140625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan> – Service Status</text>
+
+    <text x="-25" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Value to store (SET) – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="221.0244140625" y="183.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Stored value output (GETO)</text>
+  </g>
 </svg>

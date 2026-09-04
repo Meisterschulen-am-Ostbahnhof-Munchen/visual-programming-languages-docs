@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1260" height="213" viewBox="-540 -20 1260 213">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 547.1826171875 172.0"
+     width="547.1826171875" height="172.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,129 +28,173 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 177 0
-            A 3 3 0 0 1 180 3
-            L 180 27
-            A 3 3 0 0 1 177 30
-            L 174 30
-            L 174 70
-            L 177 70
-            A 3 3 0 0 1 180 73
-            L 180 160
-            A 3 3 0 0 1 177 163
-            L 3 163
-            A 3 3 0 0 1 0 160
-            L 0 73
-            A 3 3 0 0 1 3 70
-            L 6 70
-            L 6 30
-            L 3 30
-            A 3 3 0 0 1 0 27
+  <g transform="translate(198.8984375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 163.1748046875 0
+            A 3 3 0 0 1 166.1748046875 3
+            L 166.1748046875 23.0
+            A 3 3 0 0 1 163.1748046875 26.0
+            L 156.1748046875 26.0
+            L 156.1748046875 66.0
+            L 163.1748046875 66.0
+            A 3 3 0 0 1 166.1748046875 69.0
+            L 166.1748046875 149.0
+            A 3 3 0 0 1 163.1748046875 152.0
+            L 3 152.0
+            A 3 3 0 0 1 0 149.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 23.5 41.0
-            L 39.5 41.0
-            A 1 1 0 0 1 40.5 42.0
-            L 40.5 45.5
-            L 38.5 45.5
-            L 38.5 48.5
-            L 40.5 48.5
-            L 40.5 58.0
-            A 1 1 0 0 1 39.5 59.0
-            L 23.5 59.0
-            A 1 1 0 0 1 22.5 58.0
-            L 22.5 48.5
-            L 24.5 48.5
-            L 24.5 45.5
-            L 22.5 45.5
-            L 22.5 42.0
-            A 1 1 0 0 1 23.5 41.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="31.5" y="55.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="45.5" y="55.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">ILOCK_FB_RS_AX</text>
-<text x="90.0" y="70.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 82.0
-            L 0.0 82.0
-            L 0.0 83.66666666666667
-            L 2.5 83.66666666666667
-            L 2.5 82.0
-            L 5.0 82.0
-            L 5.0 92.0
-            L 2.5 92.0
-            L 2.5 90.33333333333333
-            L 0.0 90.33333333333333
-            L 0.0 92.0
-            L -5.0 92.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="91" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">SET1</text>
-<text x="-15" y="90" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-98" y="90" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Set</text>
-<path d="M -5.0 108.0
-            L 0.0 108.0
-            L 0.0 109.66666666666667
-            L 2.5 109.66666666666667
-            L 2.5 108.0
-            L 5.0 108.0
-            L 5.0 118.0
-            L 2.5 118.0
-            L 2.5 116.33333333333333
-            L 0.0 116.33333333333333
-            L 0.0 118.0
-            L -5.0 118.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="117" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">RESET</text>
-<text x="-15" y="116" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="-98" y="116" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset</text>
-<path d="M -5.0 134.0
-            L 0.0 134.0
-            L 0.0 135.66666666666666
-            L 2.5 135.66666666666666
-            L 2.5 134.0
-            L 5.0 134.0
-            L 5.0 144.0
-            L 2.5 144.0
-            L 2.5 142.33333333333334
-            L 0.0 142.33333333333334
-            L 0.0 144.0
-            L -5.0 144.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="143" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ILOCK_IN</text>
-<text x="-15" y="142" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX2</text>
-<text x="-98" y="142" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Interlock from above</text>
-<path d="M 175.0 82.0
-            L 177.5 82.0
-            L 177.5 83.66666666666667
-            L 180.0 83.66666666666667
-            L 180.0 82.0
-            L 185.0 82.0
-            L 185.0 92.0
-            L 180.0 92.0
-            L 180.0 90.33333333333333
-            L 177.5 90.33333333333333
-            L 177.5 92.0
-            L 175.0 92.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="168" y="91" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q1</text>
-<text x="195" y="90" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX</text>
-<text x="265" y="90" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output</text>
-<path d="M 175.0 108.0
-            L 177.5 108.0
-            L 177.5 109.66666666666667
-            L 180.0 109.66666666666667
-            L 180.0 108.0
-            L 185.0 108.0
-            L 185.0 118.0
-            L 180.0 118.0
-            L 180.0 116.33333333333333
-            L 177.5 116.33333333333333
-            L 177.5 118.0
-            L 175.0 118.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="168" y="117" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">ILOCK_OUT</text>
-<text x="195" y="116" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AX2</text>
-<text x="265" y="116" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Interlock to below</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">B</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">ILOCK_FB_RS_AX</text>
+
+    <text x="83.08740234375" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SET1</text>
+
+    <path d="M 1.5 117.0
+            L 6.5 117.0
+            L 6.5 118.66666666666667
+            L 9.0 118.66666666666667
+            L 9.0 117.0
+            L 11.5 117.0
+            L 11.5 127.0
+            L 9.0 127.0
+            L 9.0 125.33333333333333
+            L 6.5 125.33333333333333
+            L 6.5 127.0
+            L 1.5 127.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">RESET</text>
+
+    <path d="M 1.5 137.0
+            L 6.5 137.0
+            L 6.5 138.66666666666666
+            L 9.0 138.66666666666666
+            L 9.0 137.0
+            L 11.5 137.0
+            L 11.5 147.0
+            L 9.0 147.0
+            L 9.0 145.33333333333334
+            L 6.5 145.33333333333334
+            L 6.5 147.0
+            L 1.5 147.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ILOCK_IN</text>
+
+    <path d="M 154.6748046875 97.0
+            L 157.1748046875 97.0
+            L 157.1748046875 98.66666666666667
+            L 159.6748046875 98.66666666666667
+            L 159.6748046875 97.0
+            L 164.6748046875 97.0
+            L 164.6748046875 107.0
+            L 159.6748046875 107.0
+            L 159.6748046875 105.33333333333333
+            L 157.1748046875 105.33333333333333
+            L 157.1748046875 107.0
+            L 154.6748046875 107.0
+            Z" fill="#845DAF"/>
+    <text x="151.6748046875" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q1</text>
+
+    <path d="M 154.6748046875 117.0
+            L 157.1748046875 117.0
+            L 157.1748046875 118.66666666666667
+            L 159.6748046875 118.66666666666667
+            L 159.6748046875 117.0
+            L 164.6748046875 117.0
+            L 164.6748046875 127.0
+            L 159.6748046875 127.0
+            L 159.6748046875 125.33333333333333
+            L 157.1748046875 125.33333333333333
+            L 157.1748046875 127.0
+            L 154.6748046875 127.0
+            Z" fill="#845DAF"/>
+    <text x="151.6748046875" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">ILOCK_OUT</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Set – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Reset – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan></text>
+
+    <text x="-25" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Interlock from above – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX2</tspan></text>
+
+    <text x="191.1748046875" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX</tspan> – Output</text>
+
+    <text x="191.1748046875" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AX2</tspan> – Interlock to below</text>
+  </g>
 </svg>

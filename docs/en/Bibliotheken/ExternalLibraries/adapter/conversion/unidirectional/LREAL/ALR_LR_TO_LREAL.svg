@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1278" height="197" viewBox="-540 -20 1278 197">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 579.578125 132.0"
+     width="579.578125" height="132.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,78 +28,126 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 187 0
-            A 3 3 0 0 1 190 3
-            L 190 63
-            A 3 3 0 0 1 187 66
-            L 184 66
-            L 184 106
-            L 187 106
-            A 3 3 0 0 1 190 109
-            L 190 144
-            A 3 3 0 0 1 187 147
-            L 3 147
-            A 3 3 0 0 1 0 144
-            L 0 109
-            A 3 3 0 0 1 3 106
-            L 6 106
-            L 6 66
-            L 3 66
-            A 3 3 0 0 1 0 63
+  <g transform="translate(156.9189453125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 172.8271484375 0
+            A 3 3 0 0 1 175.8271484375 3
+            L 175.8271484375 23.0
+            A 3 3 0 0 1 172.8271484375 26.0
+            L 165.8271484375 26.0
+            L 165.8271484375 66.0
+            L 172.8271484375 66.0
+            A 3 3 0 0 1 175.8271484375 69.0
+            L 175.8271484375 109.0
+            A 3 3 0 0 1 172.8271484375 112.0
+            L 3 112.0
+            A 3 3 0 0 1 0 109.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 24.5 77.0
-            L 40.5 77.0
-            A 1 1 0 0 1 41.5 78.0
-            L 41.5 81.5
-            L 39.5 81.5
-            L 39.5 84.5
-            L 41.5 84.5
-            L 41.5 94.0
-            A 1 1 0 0 1 40.5 95.0
-            L 24.5 95.0
-            A 1 1 0 0 1 23.5 94.0
-            L 23.5 84.5
-            L 25.5 84.5
-            L 25.5 81.5
-            L 23.5 81.5
-            L 23.5 78.0
-            A 1 1 0 0 1 24.5 77.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="32.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">C</text>
-<text x="46.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">ALR_LR_TO_LREAL</text>
-<text x="95.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 118.0
-            L 0.0 118.0
-            L 0.0 119.66666666666667
-            L 2.5 119.66666666666667
-            L 2.5 118.0
-            L 5.0 118.0
-            L 5.0 128.0
-            L 2.5 128.0
-            L 2.5 126.33333333333333
-            L 0.0 126.33333333333333
-            L 0.0 128.0
-            L -5.0 128.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ALR_IN</text>
-<text x="-15" y="126" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ALR</text>
-<text x="-83" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Adapter Input</text>
-<path d="M190,37 L190,47 L195,42 Z" fill="#63B31F" stroke="none" />
-<text x="178" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="213" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="283" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirmation from Adapter</text>
-<path d="M190,118 L190,128 L195,123 Z" fill="#DBB418" stroke="none" />
-<text x="178" y="127" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
-<text x="213" y="126" font-size="11" text-anchor="start" fill="#DBB418" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">LREAL</text>
-<text x="283" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Input data from Adapter</text>
-<path d="M202,42 L202,123" stroke="#000000" stroke-width="1" />
-<path d="M190,42 L202,42" stroke="#000000" />
-<rect x="200" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M202,123 L195,123" stroke="#000000" />
-<rect x="200" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="169.3271484375,11.0 174.3271484375,16.0 169.3271484375,21.0" fill="#63B31F"/>
+    <text x="166.3271484375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">C</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">ALR_LR_TO_LREAL</text>
+
+    <text x="87.91357421875" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="169.3271484375,71.0 174.3271484375,76.0 169.3271484375,81.0" fill="#DBB418"/>
+    <text x="166.3271484375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IN</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ALR_IN</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="180.8271484375" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="180.8271484375" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="185.8271484375" y1="16.0" x2="185.8271484375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="175.8271484375" y1="16.0" x2="195.8271484375" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="175.8271484375" y1="76.0" x2="195.8271484375" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="200.8271484375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation from Adapter</text>
+
+    <text x="200.8271484375" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">LREAL</tspan> – Input data from Adapter</text>
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Adapter Input – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ALR</tspan></text>
+  </g>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1298" height="301" viewBox="-564 -20 1298 301">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 635.1201171875 192.0"
+     width="635.1201171875" height="192.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,143 +28,299 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 167 0
-            A 3 3 0 0 1 170 3
-            L 170 115
-            A 3 3 0 0 1 167 118
-            L 164 118
-            L 164 158
-            L 167 158
-            A 3 3 0 0 1 170 161
-            L 170 248
-            A 3 3 0 0 1 167 251
-            L 3 251
-            A 3 3 0 0 1 0 248
-            L 0 161
-            A 3 3 0 0 1 3 158
-            L 6 158
-            L 6 118
-            L 3 118
-            A 3 3 0 0 1 0 115
+  <g transform="translate(237.1865234375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 151.9365234375 0
+            A 3 3 0 0 1 154.9365234375 3
+            L 154.9365234375 63.0
+            A 3 3 0 0 1 151.9365234375 66.0
+            L 144.9365234375 66.0
+            L 144.9365234375 106.0
+            L 151.9365234375 106.0
+            A 3 3 0 0 1 154.9365234375 109.0
+            L 154.9365234375 169.0
+            A 3 3 0 0 1 151.9365234375 172.0
+            L 3 172.0
+            A 3 3 0 0 1 0 169.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 22.5 129.0
-            L 38.5 129.0
-            A 1 1 0 0 1 39.5 130.0
-            L 39.5 133.5
-            L 37.5 133.5
-            L 37.5 136.5
-            L 39.5 136.5
-            L 39.5 146.0
-            A 1 1 0 0 1 38.5 147.0
-            L 22.5 147.0
-            A 1 1 0 0 1 21.5 146.0
-            L 21.5 136.5
-            L 23.5 136.5
-            L 23.5 133.5
-            L 21.5 133.5
-            L 21.5 130.0
-            A 1 1 0 0 1 22.5 129.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="30.5" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="44.5" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">SEND_RECV_1_1</text>
-<text x="85.0" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-39" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-119" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="-39" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-119" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Send Request</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">RSP</text>
-<text x="-39" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-119" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Receive Request</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-39" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-119" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#BD8663" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">ID</text>
-<text x="-39" y="204" font-size="11" text-anchor="end" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="-119" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Channel Identifier</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">SD_1</text>
-<text x="-39" y="230" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
-<text x="-119" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Data to Send</text>
-<path d="M170,37 L170,47 L175,42 Z" fill="#63B31F" stroke="none" />
-<text x="158" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="209" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="279" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M170,63 L170,73 L175,68 Z" fill="#63B31F" stroke="none" />
-<text x="158" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="209" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="279" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Send Confirm</text>
-<path d="M170,89 L170,99 L175,94 Z" fill="#63B31F" stroke="none" />
-<text x="158" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
-<text x="209" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="279" y="97" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Receive Indication</text>
-<path d="M170,170 L170,180 L175,175 Z" fill="#A3B08F" stroke="none" />
-<text x="158" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="209" y="178" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="279" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M170,196 L170,206 L175,201 Z" fill="#BD8663" stroke="none" />
-<text x="158" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="209" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WSTRING</text>
-<text x="279" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Channel Status</text>
-<path d="M170,222 L170,232 L175,227 Z" fill="#3366FF" stroke="none" />
-<text x="158" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">RD_1</text>
-<text x="209" y="230" font-size="11" text-anchor="start" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ANY</text>
-<text x="279" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Received Data</text>
-<path d="M-12,42 L-12,201" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#000000" />
-<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,68 L-20,227" stroke="#000000" stroke-width="1" />
-<path d="M0,68 L-20,68" stroke="#000000" />
-<rect x="-22" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,175 L-5,175" stroke="#000000" />
-<rect x="-22" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-20,227 L-5,227" stroke="#000000" />
-<rect x="-22" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,94 L-28,227" stroke="#000000" stroke-width="1" />
-<path d="M0,94 L-28,94" stroke="#000000" />
-<rect x="-30" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,175 L-5,175" stroke="#000000" />
-<rect x="-30" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-28,227 L-5,227" stroke="#000000" />
-<rect x="-30" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M182,42 L182,201" stroke="#000000" stroke-width="1" />
-<path d="M170,42 L182,42" stroke="#000000" />
-<rect x="180" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M182,175 L175,175" stroke="#000000" />
-<rect x="180" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M182,201 L175,201" stroke="#000000" />
-<rect x="180" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M190,68 L190,227" stroke="#000000" stroke-width="1" />
-<path d="M170,68 L190,68" stroke="#000000" />
-<rect x="188" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M190,175 L175,175" stroke="#000000" />
-<rect x="188" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M190,201 L175,201" stroke="#000000" />
-<rect x="188" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M190,227 L175,227" stroke="#000000" />
-<rect x="188" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M198,94 L198,227" stroke="#000000" stroke-width="1" />
-<path d="M170,94 L198,94" stroke="#000000" />
-<rect x="196" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M198,175 L175,175" stroke="#000000" />
-<rect x="196" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M198,201 L175,201" stroke="#000000" />
-<rect x="196" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M198,227 L175,227" stroke="#000000" />
-<rect x="196" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="1.5,51.0 6.5,56.0 1.5,61.0" fill="#63B31F"/>
+    <text x="9.5" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">RSP</text>
+
+    <polygon points="148.4365234375,11.0 153.4365234375,16.0 148.4365234375,21.0" fill="#63B31F"/>
+    <text x="145.4365234375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="148.4365234375,31.0 153.4365234375,36.0 148.4365234375,41.0" fill="#63B31F"/>
+    <text x="145.4365234375" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <polygon points="148.4365234375,51.0 153.4365234375,56.0 148.4365234375,61.0" fill="#63B31F"/>
+    <text x="145.4365234375" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IND</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 77.0
+            L 37.0 77.0
+            A 1 1 0 0 1 38.0 78.0
+            L 38.0 81.5
+            L 36.0 81.5
+            L 36.0 84.5
+            L 38.0 84.5
+            L 38.0 94.0
+            A 1 1 0 0 1 37.0 95.0
+            L 21.0 95.0
+            A 1 1 0 0 1 20.0 94.0
+            L 20.0 84.5
+            L 22.0 84.5
+            L 22.0 81.5
+            L 20.0 81.5
+            L 20.0 78.0
+            A 1 1 0 0 1 21.0 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">SEND_RECV_1_1</text>
+
+    <text x="77.46826171875" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">3.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#A3B08F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#BD8663"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">ID</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#3366FF"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">SD_1</text>
+
+    <polygon points="148.4365234375,111.0 153.4365234375,116.0 148.4365234375,121.0" fill="#A3B08F"/>
+    <text x="145.4365234375" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="148.4365234375,131.0 153.4365234375,136.0 148.4365234375,141.0" fill="#BD8663"/>
+    <text x="145.4365234375" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="148.4365234375,151.0 153.4365234375,156.0 148.4365234375,161.0" fill="#3366FF"/>
+    <text x="145.4365234375" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">RD_1</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-24.0" y1="36.0" x2="-24.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-29" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-24.0" y1="36.0" x2="-24.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-38.0" y1="56.0" x2="-38.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-43" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-38.0" y1="56.0" x2="-38.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="159.9365234375" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="159.9365234375" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="164.9365234375" y1="16.0" x2="164.9365234375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="159.9365234375" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="164.9365234375" y1="16.0" x2="164.9365234375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="173.9365234375" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="173.9365234375" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="178.9365234375" y1="36.0" x2="178.9365234375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="173.9365234375" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="178.9365234375" y1="36.0" x2="178.9365234375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="173.9365234375" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="178.9365234375" y1="36.0" x2="178.9365234375" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="187.9365234375" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="187.9365234375" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="192.9365234375" y1="56.0" x2="192.9365234375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="187.9365234375" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="192.9365234375" y1="56.0" x2="192.9365234375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="187.9365234375" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="192.9365234375" y1="56.0" x2="192.9365234375" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="36.0" x2="-34" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="56.0" x2="-48" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-48" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-20" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-48" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="154.9365234375" y1="16.0" x2="174.9365234375" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="154.9365234375" y1="36.0" x2="188.9365234375" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="154.9365234375" y1="56.0" x2="202.9365234375" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="154.9365234375" y1="116.0" x2="202.9365234375" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="154.9365234375" y1="136.0" x2="202.9365234375" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="154.9365234375" y1="156.0" x2="202.9365234375" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-53" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-53" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Send Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-53" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Receive Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="207.9365234375" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="207.9365234375" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Send Confirm</text>
+
+    <text x="207.9365234375" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Receive Indication</text>
+
+    <text x="-53" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-53" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Channel Identifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan></text>
+
+    <text x="-53" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Data to Send – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan></text>
+
+    <text x="207.9365234375" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="207.9365234375" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WSTRING</tspan> – Channel Status</text>
+
+    <text x="207.9365234375" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ANY</tspan> – Received Data</text>
+  </g>
 </svg>

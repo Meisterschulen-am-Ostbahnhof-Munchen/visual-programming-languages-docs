@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1316" height="509" viewBox="-548 -20 1316 509">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1048.2099609375 352.0"
+     width="1048.2099609375" height="352.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,203 +28,406 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 177 0
-            A 3 3 0 0 1 180 3
-            L 180 219
-            A 3 3 0 0 1 177 222
-            L 174 222
-            L 174 262
-            L 177 262
-            A 3 3 0 0 1 180 265
-            L 180 456
-            A 3 3 0 0 1 177 459
-            L 3 459
-            A 3 3 0 0 1 0 456
-            L 0 265
-            A 3 3 0 0 1 3 262
-            L 6 262
-            L 6 222
-            L 3 222
-            A 3 3 0 0 1 0 219
+  <g transform="translate(405.3984375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 184.4765625 0
+            A 3 3 0 0 1 187.4765625 3
+            L 187.4765625 143.0
+            A 3 3 0 0 1 184.4765625 146.0
+            L 177.4765625 146.0
+            L 177.4765625 186.0
+            L 184.4765625 186.0
+            A 3 3 0 0 1 187.4765625 189.0
+            L 187.4765625 329.0
+            A 3 3 0 0 1 184.4765625 332.0
+            L 3 332.0
+            A 3 3 0 0 1 0 329.0
+            L 0 189.0
+            A 3 3 0 0 1 3 186.0
+            L 10 186.0
+            L 10 146.0
+            L 3 146.0
+            A 3 3 0 0 1 0 143.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 23.5 233.0
-            L 39.5 233.0
-            A 1 1 0 0 1 40.5 234.0
-            L 40.5 237.5
-            L 38.5 237.5
-            L 38.5 240.5
-            L 40.5 240.5
-            L 40.5 250.0
-            A 1 1 0 0 1 39.5 251.0
-            L 23.5 251.0
-            A 1 1 0 0 1 22.5 250.0
-            L 22.5 240.5
-            L 24.5 240.5
-            L 24.5 237.5
-            L 22.5 237.5
-            L 22.5 234.0
-            A 1 1 0 0 1 23.5 233.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="31.5" y="247.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="45.5" y="247.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">sequence_ET_05</text>
-<text x="90.0" y="262.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">START_S1</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">jump from START to State_01</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S1_S2</text>
-<text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">jump from State_01 to State_02</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S2_S3</text>
-<text x="-23" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">jump from State_02 to State_03</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="124" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S3_S4</text>
-<text x="-23" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">jump from State_03 to State_04</text>
-<path d="M-5,141 L-5,151 L0,146 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="150" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S4_S5</text>
-<text x="-23" y="149" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="149" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">jump from State_04 to State_05</text>
-<path d="M-5,167 L-5,177 L0,172 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="176" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S5_START</text>
-<text x="-23" y="175" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="175" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">jump from State_05 to START</text>
-<path d="M-5,193 L-5,203 L0,198 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="202" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">RESET</text>
-<text x="-23" y="201" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-153" y="201" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset from any State to START</text>
-<path d="M-5,274 L-5,284 L0,279 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="283" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DT_S1_S2</text>
-<text x="-23" y="282" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
-<text x="-153" y="282" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">State_01 to State_02 timed, set to NO_TIME to</text>
-<text x="-153" y="294" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">disable</text>
-<path d="M-5,300 L-5,310 L0,305 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="309" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DT_S2_S3</text>
-<text x="-23" y="308" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
-<text x="-153" y="308" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">State_02 to State_03 timed, set to NO_TIME to</text>
-<text x="-153" y="320" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">disable</text>
-<path d="M-5,326 L-5,336 L0,331 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="335" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DT_S3_S4</text>
-<text x="-23" y="334" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
-<text x="-153" y="334" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">State_03 to State_04 timed, set to NO_TIME to</text>
-<text x="-153" y="346" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">disable</text>
-<path d="M-5,352 L-5,362 L0,357 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="361" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DT_S4_S5</text>
-<text x="-23" y="360" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
-<text x="-153" y="360" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">State_04 to State_05 timed, set to NO_TIME to</text>
-<text x="-153" y="372" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">disable</text>
-<path d="M-5,378 L-5,388 L0,383 Z" fill="#3366FF" stroke="none" />
-<text x="12" y="387" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">DT_S5_START</text>
-<text x="-23" y="386" font-size="11" text-anchor="end" fill="#3366FF" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">TIME</text>
-<text x="-153" y="386" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">State_05 to START timed, set to NO_TIME to disable</text>
-<path d="M180,37 L180,47 L185,42 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="243" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="313" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Execution Confirmation</text>
-<path d="M180,63 L180,73 L185,68 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_S1</text>
-<text x="243" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M180,89 L180,99 L185,94 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_S2</text>
-<text x="243" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M180,115 L180,125 L185,120 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="124" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_S3</text>
-<text x="243" y="123" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M180,141 L180,151 L185,146 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="150" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_S4</text>
-<text x="243" y="149" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M180,167 L180,177 L185,172 Z" fill="#63B31F" stroke="none" />
-<text x="168" y="176" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO_S5</text>
-<text x="243" y="175" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M 175.0 274.0
-            L 177.5 274.0
-            L 177.5 275.6666666666667
-            L 180.0 275.6666666666667
-            L 180.0 274.0
-            L 185.0 274.0
-            L 185.0 284.0
-            L 180.0 284.0
-            L 180.0 282.3333333333333
-            L 177.5 282.3333333333333
-            L 177.5 284.0
-            L 175.0 284.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="168" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timeOut</text>
-<text x="243" y="282" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">ATimeOut</text>
-<text x="313" y="282" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">timeOut Adapter</text>
-<path d="M180,300 L180,310 L185,305 Z" fill="#18519E" stroke="none" />
-<text x="168" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATE_NR</text>
-<text x="243" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">SINT</text>
-<text x="313" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">State Number, START = 0, State_01 = 1 and so on. </text>
-<path d="M180,326 L180,336 L185,331 Z" fill="#A3B08F" stroke="none" />
-<text x="168" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_S1</text>
-<text x="243" y="334" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="313" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output if State_01 is active</text>
-<path d="M180,352 L180,362 L185,357 Z" fill="#A3B08F" stroke="none" />
-<text x="168" y="361" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_S2</text>
-<text x="243" y="360" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="313" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output if State_02 is active</text>
-<path d="M180,378 L180,388 L185,383 Z" fill="#A3B08F" stroke="none" />
-<text x="168" y="387" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_S3</text>
-<text x="243" y="386" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="313" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output if State_03 is active</text>
-<path d="M180,404 L180,414 L185,409 Z" fill="#A3B08F" stroke="none" />
-<text x="168" y="413" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_S4</text>
-<text x="243" y="412" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="313" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output if State_04 is active</text>
-<path d="M180,430 L180,440 L185,435 Z" fill="#A3B08F" stroke="none" />
-<text x="168" y="439" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">DO_S5</text>
-<text x="243" y="438" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="313" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output if State_05 is active</text>
-<path d="M-12,42 L-12,383" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,279 L-5,279" stroke="#000000" />
-<rect x="-14" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,305 L-5,305" stroke="#000000" />
-<rect x="-14" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,331 L-5,331" stroke="#000000" />
-<rect x="-14" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,357 L-5,357" stroke="#000000" />
-<rect x="-14" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,383 L-5,383" stroke="#000000" />
-<rect x="-14" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,42 L192,305" stroke="#000000" stroke-width="1" />
-<path d="M180,42 L192,42" stroke="#000000" />
-<rect x="190" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M192,305 L185,305" stroke="#000000" />
-<rect x="190" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M200,68 L200,331" stroke="#000000" stroke-width="1" />
-<path d="M180,68 L200,68" stroke="#000000" />
-<rect x="198" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M200,331 L185,331" stroke="#000000" />
-<rect x="198" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M208,94 L208,357" stroke="#000000" stroke-width="1" />
-<path d="M180,94 L208,94" stroke="#000000" />
-<rect x="206" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M208,357 L185,357" stroke="#000000" />
-<rect x="206" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M216,120 L216,383" stroke="#000000" stroke-width="1" />
-<path d="M180,120 L216,120" stroke="#000000" />
-<rect x="214" y="118" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M216,383 L185,383" stroke="#000000" />
-<rect x="214" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M224,146 L224,409" stroke="#000000" stroke-width="1" />
-<path d="M180,146 L224,146" stroke="#000000" />
-<rect x="222" y="144" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M224,409 L185,409" stroke="#000000" />
-<rect x="222" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,172 L232,435" stroke="#000000" stroke-width="1" />
-<path d="M180,172 L232,172" stroke="#000000" />
-<rect x="230" y="170" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,435 L185,435" stroke="#000000" />
-<rect x="230" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">START_S1</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">S1_S2</text>
+
+    <polygon points="1.5,51.0 6.5,56.0 1.5,61.0" fill="#63B31F"/>
+    <text x="9.5" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">S2_S3</text>
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#63B31F"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">S3_S4</text>
+
+    <polygon points="1.5,91.0 6.5,96.0 1.5,101.0" fill="#63B31F"/>
+    <text x="9.5" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">S4_S5</text>
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#63B31F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">S5_START</text>
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#63B31F"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">RESET</text>
+
+    <polygon points="180.9765625,11.0 185.9765625,16.0 180.9765625,21.0" fill="#63B31F"/>
+    <text x="177.9765625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <polygon points="180.9765625,31.0 185.9765625,36.0 180.9765625,41.0" fill="#63B31F"/>
+    <text x="177.9765625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_S1</text>
+
+    <polygon points="180.9765625,51.0 185.9765625,56.0 180.9765625,61.0" fill="#63B31F"/>
+    <text x="177.9765625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_S2</text>
+
+    <polygon points="180.9765625,71.0 185.9765625,76.0 180.9765625,81.0" fill="#63B31F"/>
+    <text x="177.9765625" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_S3</text>
+
+    <polygon points="180.9765625,91.0 185.9765625,96.0 180.9765625,101.0" fill="#63B31F"/>
+    <text x="177.9765625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_S4</text>
+
+    <polygon points="180.9765625,111.0 185.9765625,116.0 180.9765625,121.0" fill="#63B31F"/>
+    <text x="177.9765625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO_S5</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 35.62939453125 157.0
+            L 51.62939453125 157.0
+            A 1 1 0 0 1 52.62939453125 158.0
+            L 52.62939453125 161.5
+            L 50.62939453125 161.5
+            L 50.62939453125 164.5
+            L 52.62939453125 164.5
+            L 52.62939453125 174.0
+            A 1 1 0 0 1 51.62939453125 175.0
+            L 35.62939453125 175.0
+            A 1 1 0 0 1 34.62939453125 174.0
+            L 34.62939453125 164.5
+            L 36.62939453125 164.5
+            L 36.62939453125 161.5
+            L 34.62939453125 161.5
+            L 34.62939453125 158.0
+            A 1 1 0 0 1 35.62939453125 157.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="43.62939453125" y="171.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">B</text>
+
+    <!-- Block Name -->
+    <text x="57.62939453125" y="171.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">sequence_ET_05</text>
+
+    <text x="93.73828125" y="186.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,191.0 6.5,196.0 1.5,201.0" fill="#3366FF"/>
+    <text x="9.5" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">DT_S1_S2</text>
+
+    <polygon points="1.5,211.0 6.5,216.0 1.5,221.0" fill="#3366FF"/>
+    <text x="9.5" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">DT_S2_S3</text>
+
+    <polygon points="1.5,231.0 6.5,236.0 1.5,241.0" fill="#3366FF"/>
+    <text x="9.5" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">DT_S3_S4</text>
+
+    <polygon points="1.5,251.0 6.5,256.0 1.5,261.0" fill="#3366FF"/>
+    <text x="9.5" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">DT_S4_S5</text>
+
+    <polygon points="1.5,271.0 6.5,276.0 1.5,281.0" fill="#3366FF"/>
+    <text x="9.5" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">DT_S5_START</text>
+
+    <polygon points="180.9765625,191.0 185.9765625,196.0 180.9765625,201.0" fill="#18519E"/>
+    <text x="177.9765625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATE_NR</text>
+
+    <polygon points="180.9765625,211.0 185.9765625,216.0 180.9765625,221.0" fill="#A3B08F"/>
+    <text x="177.9765625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_S1</text>
+
+    <polygon points="180.9765625,231.0 185.9765625,236.0 180.9765625,241.0" fill="#A3B08F"/>
+    <text x="177.9765625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_S2</text>
+
+    <polygon points="180.9765625,251.0 185.9765625,256.0 180.9765625,261.0" fill="#A3B08F"/>
+    <text x="177.9765625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_S3</text>
+
+    <polygon points="180.9765625,271.0 185.9765625,276.0 180.9765625,281.0" fill="#A3B08F"/>
+    <text x="177.9765625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_S4</text>
+
+    <polygon points="180.9765625,291.0 185.9765625,296.0 180.9765625,301.0" fill="#A3B08F"/>
+    <text x="177.9765625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">DO_S5</text>
+
+    <!-- Adapter Ports -->
+
+    <path d="M 175.9765625 317.0
+            L 178.4765625 317.0
+            L 178.4765625 318.6666666666667
+            L 180.9765625 318.6666666666667
+            L 180.9765625 317.0
+            L 185.9765625 317.0
+            L 185.9765625 327.0
+            L 180.9765625 327.0
+            L 180.9765625 325.3333333333333
+            L 178.4765625 325.3333333333333
+            L 178.4765625 327.0
+            L 175.9765625 327.0
+            Z" fill="#845DAF"/>
+    <text x="172.9765625" y="323.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timeOut</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="192.4765625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="192.4765625" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="197.4765625" y1="16.0" x2="197.4765625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="206.4765625" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="206.4765625" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="211.4765625" y1="36.0" x2="211.4765625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.4765625" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="220.4765625" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="225.4765625" y1="56.0" x2="225.4765625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="234.4765625" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="234.4765625" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="239.4765625" y1="76.0" x2="239.4765625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="248.4765625" y="91.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="248.4765625" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="253.4765625" y1="96.0" x2="253.4765625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="262.4765625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="262.4765625" y="291.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="267.4765625" y1="116.0" x2="267.4765625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="196.0" x2="-20" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="216.0" x2="-20" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="236.0" x2="-20" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="256.0" x2="-20" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="276.0" x2="-20" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="16.0" x2="207.4765625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="36.0" x2="221.4765625" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="56.0" x2="235.4765625" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="76.0" x2="249.4765625" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="96.0" x2="263.4765625" y2="96.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="116.0" x2="277.4765625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="196.0" x2="207.4765625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="216.0" x2="221.4765625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="236.0" x2="235.4765625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="256.0" x2="249.4765625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="276.0" x2="263.4765625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="187.4765625" y1="296.0" x2="277.4765625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">jump from START to State_01 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">jump from State_01 to State_02 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">jump from State_02 to State_03 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">jump from State_03 to State_04 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">jump from State_04 to State_05 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">jump from State_05 to START – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Reset from any State to START – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="282.4765625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Execution Confirmation</text>
+
+    <text x="282.4765625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="282.4765625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="282.4765625" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="282.4765625" y="97.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="282.4765625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">State_01 to State_02 timed, set to NO_TIME to disable – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-25" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">State_02 to State_03 timed, set to NO_TIME to disable – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-25" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">State_03 to State_04 timed, set to NO_TIME to disable – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-25" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">State_04 to State_05 timed, set to NO_TIME to disable – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="-25" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">State_05 to START timed, set to NO_TIME to disable – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">TIME</tspan></text>
+
+    <text x="282.4765625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">SINT</tspan> – State Number, START = 0, State_01 = 1 and so on. </text>
+
+    <text x="282.4765625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Output if State_01 is active</text>
+
+    <text x="282.4765625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Output if State_02 is active</text>
+
+    <text x="282.4765625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Output if State_03 is active</text>
+
+    <text x="282.4765625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Output if State_04 is active</text>
+
+    <text x="282.4765625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Output if State_05 is active</text>
+
+    <text x="282.4765625" y="323.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">ATimeOut</tspan> – timeOut Adapter</text>
+  </g>
 </svg>

@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1324" height="301" viewBox="-548 -20 1324 301">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 712.6943359375 192.0"
+     width="712.6943359375" height="192.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,106 +28,201 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 217 0
-            A 3 3 0 0 1 220 3
-            L 220 141
-            A 3 3 0 0 1 217 144
-            L 214 144
-            L 214 184
-            L 217 184
-            A 3 3 0 0 1 220 187
-            L 220 248
-            A 3 3 0 0 1 217 251
-            L 3 251
-            A 3 3 0 0 1 0 248
-            L 0 187
-            A 3 3 0 0 1 3 184
-            L 6 184
-            L 6 144
-            L 3 144
-            A 3 3 0 0 1 0 141
+  <g transform="translate(295.8046875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 183.0947265625 0
+            A 3 3 0 0 1 186.0947265625 3
+            L 186.0947265625 83.0
+            A 3 3 0 0 1 183.0947265625 86.0
+            L 176.0947265625 86.0
+            L 176.0947265625 126.0
+            L 183.0947265625 126.0
+            A 3 3 0 0 1 186.0947265625 129.0
+            L 186.0947265625 169.0
+            A 3 3 0 0 1 183.0947265625 172.0
+            L 3 172.0
+            A 3 3 0 0 1 0 169.0
+            L 0 129.0
+            A 3 3 0 0 1 3 126.0
+            L 10 126.0
+            L 10 86.0
+            L 3 86.0
+            A 3 3 0 0 1 0 83.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 27.5 155.0
-            L 43.5 155.0
-            A 1 1 0 0 1 44.5 156.0
-            L 44.5 159.5
-            L 42.5 159.5
-            L 42.5 162.5
-            L 44.5 162.5
-            L 44.5 172.0
-            A 1 1 0 0 1 43.5 173.0
-            L 27.5 173.0
-            A 1 1 0 0 1 26.5 172.0
-            L 26.5 162.5
-            L 28.5 162.5
-            L 28.5 159.5
-            L 26.5 159.5
-            L 26.5 156.0
-            A 1 1 0 0 1 27.5 155.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="35.5" y="169.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">B</text>
-<text x="49.5" y="169.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">E_T_FF_SR_SYM_INIT</text>
-<text x="110.0" y="184.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-122" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Request</text>
-<path d="M-5,63 L-5,73 L0,68 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="72" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">S</text>
-<text x="-23" y="71" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-122" y="71" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Set output Q</text>
-<path d="M-5,89 L-5,99 L0,94 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="98" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">R</text>
-<text x="-23" y="97" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-122" y="97" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Reset output Q</text>
-<path d="M-5,115 L-5,125 L0,120 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="124" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">CLK</text>
-<text x="-23" y="123" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-122" y="123" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Clock for triggering a output toggle</text>
-<path d="M-5,196 L-5,206 L0,201 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="204" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-122" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Input event qualifier</text>
-<path d="M-5,222 L-5,232 L0,227 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="231" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">Q_INIT</text>
-<text x="-23" y="230" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-122" y="230" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Value of Q at INIT</text>
-<path d="M220,37 L220,47 L225,42 Z" fill="#63B31F" stroke="none" />
-<text x="208" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="251" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="321" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M220,63 L220,73 L225,68 Z" fill="#63B31F" stroke="none" />
-<text x="208" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO</text>
-<text x="251" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="321" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output Q has changed</text>
-<path d="M220,196 L220,206 L225,201 Z" fill="#A3B08F" stroke="none" />
-<text x="208" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="251" y="204" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="321" y="204" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Output event qualifier</text>
-<path d="M220,222 L220,232 L225,227 Z" fill="#A3B08F" stroke="none" />
-<text x="208" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q</text>
-<text x="251" y="230" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="321" y="230" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">value of flip flop</text>
-<path d="M-12,42 L-12,227" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,201 L-5,201" stroke="#000000" />
-<rect x="-14" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,227 L-5,227" stroke="#000000" />
-<rect x="-14" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,42 L232,201" stroke="#000000" stroke-width="1" />
-<path d="M220,42 L232,42" stroke="#000000" />
-<rect x="230" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M232,201 L225,201" stroke="#000000" />
-<rect x="230" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M240,68 L240,227" stroke="#000000" stroke-width="1" />
-<path d="M220,68 L240,68" stroke="#000000" />
-<rect x="238" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M240,227 L225,227" stroke="#000000" />
-<rect x="238" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="1.5,31.0 6.5,36.0 1.5,41.0" fill="#63B31F"/>
+    <text x="9.5" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">S</text>
+
+    <polygon points="1.5,51.0 6.5,56.0 1.5,61.0" fill="#63B31F"/>
+    <text x="9.5" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">R</text>
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#63B31F"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">CLK</text>
+
+    <polygon points="179.5947265625,11.0 184.5947265625,16.0 179.5947265625,21.0" fill="#63B31F"/>
+    <text x="176.5947265625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="179.5947265625,31.0 184.5947265625,36.0 179.5947265625,41.0" fill="#63B31F"/>
+    <text x="176.5947265625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 97.0
+            L 37.0 97.0
+            A 1 1 0 0 1 38.0 98.0
+            L 38.0 101.5
+            L 36.0 101.5
+            L 36.0 104.5
+            L 38.0 104.5
+            L 38.0 114.0
+            A 1 1 0 0 1 37.0 115.0
+            L 21.0 115.0
+            A 1 1 0 0 1 20.0 114.0
+            L 20.0 104.5
+            L 22.0 104.5
+            L 22.0 101.5
+            L 20.0 101.5
+            L 20.0 98.0
+            A 1 1 0 0 1 21.0 97.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="111.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">B</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="111.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">E_T_FF_SR_SYM_INIT</text>
+
+    <text x="93.04736328125" y="126.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,131.0 6.5,136.0 1.5,141.0" fill="#A3B08F"/>
+    <text x="9.5" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="1.5,151.0 6.5,156.0 1.5,161.0" fill="#A3B08F"/>
+    <text x="9.5" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">Q_INIT</text>
+
+    <polygon points="179.5947265625,131.0 184.5947265625,136.0 179.5947265625,141.0" fill="#A3B08F"/>
+    <text x="176.5947265625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="179.5947265625,151.0 184.5947265625,156.0 179.5947265625,161.0" fill="#A3B08F"/>
+    <text x="176.5947265625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="191.0947265625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="191.0947265625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="196.0947265625" y1="16.0" x2="196.0947265625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="205.0947265625" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="205.0947265625" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="210.0947265625" y1="36.0" x2="210.0947265625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="136.0" x2="-20" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="156.0" x2="-20" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="186.0947265625" y1="16.0" x2="206.0947265625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="186.0947265625" y1="36.0" x2="220.0947265625" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="186.0947265625" y1="136.0" x2="206.0947265625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="186.0947265625" y1="156.0" x2="220.0947265625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Initialization Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Set output Q – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Reset output Q – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Clock for triggering a output toggle – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="225.0947265625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="225.0947265625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Output Q has changed</text>
+
+    <text x="-25" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input event qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="-25" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Value of Q at INIT – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="225.0947265625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Output event qualifier</text>
+
+    <text x="225.0947265625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – value of flip flop</text>
+  </g>
 </svg>

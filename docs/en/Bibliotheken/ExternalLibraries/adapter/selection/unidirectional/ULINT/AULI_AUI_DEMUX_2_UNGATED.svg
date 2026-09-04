@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1360" height="223" viewBox="-540 -20 1360 223">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 722.5859375 152.0"
+     width="722.5859375" height="152.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,115 +28,161 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 277 0
-            A 3 3 0 0 1 280 3
-            L 280 63
-            A 3 3 0 0 1 277 66
-            L 274 66
-            L 274 106
-            L 277 106
-            A 3 3 0 0 1 280 109
-            L 280 170
-            A 3 3 0 0 1 277 173
-            L 3 173
-            A 3 3 0 0 1 0 170
-            L 0 109
-            A 3 3 0 0 1 3 106
-            L 6 106
-            L 6 66
-            L 3 66
-            A 3 3 0 0 1 0 63
+  <g transform="translate(233.1943359375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 237.556640625 0
+            A 3 3 0 0 1 240.556640625 3
+            L 240.556640625 23.0
+            A 3 3 0 0 1 237.556640625 26.0
+            L 230.556640625 26.0
+            L 230.556640625 66.0
+            L 237.556640625 66.0
+            A 3 3 0 0 1 240.556640625 69.0
+            L 240.556640625 129.0
+            A 3 3 0 0 1 237.556640625 132.0
+            L 3 132.0
+            A 3 3 0 0 1 0 129.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF"
-            stroke="#A0A0A0" stroke-width="1.5"
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 33.5 77.0
-            L 49.5 77.0
-            A 1 1 0 0 1 50.5 78.0
-            L 50.5 81.5
-            L 48.5 81.5
-            L 48.5 84.5
-            L 50.5 84.5
-            L 50.5 94.0
-            A 1 1 0 0 1 49.5 95.0
-            L 33.5 95.0
-            A 1 1 0 0 1 32.5 94.0
-            L 32.5 84.5
-            L 34.5 84.5
-            L 34.5 81.5
-            L 32.5 81.5
-            L 32.5 78.0
-            A 1 1 0 0 1 33.5 77.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="41.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="55.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">AULI_AUI_DEMUX_2_UNGATED</text>
-<text x="140.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M -5.0 118.0
-            L 0.0 118.0
-            L 0.0 119.66666666666667
-            L 2.5 119.66666666666667
-            L 2.5 118.0
-            L 5.0 118.0
-            L 5.0 128.0
-            L 2.5 128.0
-            L 2.5 126.33333333333333
-            L 0.0 126.33333333333333
-            L 0.0 128.0
-            L -5.0 128.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">K</text>
-<text x="-15" y="126" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AUI</text>
-<text x="-95" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">index</text>
-<path d="M -5.0 144.0
-            L 0.0 144.0
-            L 0.0 145.66666666666666
-            L 2.5 145.66666666666666
-            L 2.5 144.0
-            L 5.0 144.0
-            L 5.0 154.0
-            L 2.5 154.0
-            L 2.5 152.33333333333334
-            L 0.0 152.33333333333334
-            L 0.0 154.0
-            L -5.0 154.0
-            Z" fill="none" stroke="#845DAF" stroke-width="1" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
-<text x="-15" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AULI</text>
-<text x="-95" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Input Value to demultiplex</text>
-<path d="M280,37 L280,47 L285,42 Z" fill="#63B31F" stroke="none" />
-<text x="268" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="295" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="365" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Confirmation of Set Index K</text>
-<path d="M 275.0 118.0
-            L 277.5 118.0
-            L 277.5 119.66666666666667
-            L 280.0 119.66666666666667
-            L 280.0 118.0
-            L 285.0 118.0
-            L 285.0 128.0
-            L 280.0 128.0
-            L 280.0 126.33333333333333
-            L 277.5 126.33333333333333
-            L 277.5 128.0
-            L 275.0 128.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="268" y="127" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT1</text>
-<text x="295" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AULI</text>
-<path d="M 275.0 144.0
-            L 277.5 144.0
-            L 277.5 145.66666666666666
-            L 280.0 145.66666666666666
-            L 280.0 144.0
-            L 285.0 144.0
-            L 285.0 154.0
-            L 280.0 154.0
-            L 280.0 152.33333333333334
-            L 277.5 152.33333333333334
-            L 277.5 154.0
-            L 275.0 154.0
-            Z" fill="#845DAF" stroke="none" />
-<text x="268" y="153" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">OUT2</text>
-<text x="295" y="152" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">AULI</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="234.056640625,11.0 239.056640625,16.0 234.056640625,21.0" fill="#63B31F"/>
+    <text x="231.056640625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AULI_AUI_DEMUX_2_UNGATED</text>
+
+    <text x="120.2783203125" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">K</text>
+
+    <path d="M 1.5 117.0
+            L 6.5 117.0
+            L 6.5 118.66666666666667
+            L 9.0 118.66666666666667
+            L 9.0 117.0
+            L 11.5 117.0
+            L 11.5 127.0
+            L 9.0 127.0
+            L 9.0 125.33333333333333
+            L 6.5 125.33333333333333
+            L 6.5 127.0
+            L 1.5 127.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN</text>
+
+    <path d="M 229.056640625 97.0
+            L 231.556640625 97.0
+            L 231.556640625 98.66666666666667
+            L 234.056640625 98.66666666666667
+            L 234.056640625 97.0
+            L 239.056640625 97.0
+            L 239.056640625 107.0
+            L 234.056640625 107.0
+            L 234.056640625 105.33333333333333
+            L 231.556640625 105.33333333333333
+            L 231.556640625 107.0
+            L 229.056640625 107.0
+            Z" fill="#845DAF"/>
+    <text x="226.056640625" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT1</text>
+
+    <path d="M 229.056640625 117.0
+            L 231.556640625 117.0
+            L 231.556640625 118.66666666666667
+            L 234.056640625 118.66666666666667
+            L 234.056640625 117.0
+            L 239.056640625 117.0
+            L 239.056640625 127.0
+            L 234.056640625 127.0
+            L 234.056640625 125.33333333333333
+            L 231.556640625 125.33333333333333
+            L 231.556640625 127.0
+            L 229.056640625 127.0
+            Z" fill="#845DAF"/>
+    <text x="226.056640625" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT2</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="265.556640625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation of Set Index K</text>
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">index – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AUI</tspan></text>
+
+    <text x="-25" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input Value to demultiplex – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AULI</tspan></text>
+
+    <text x="265.556640625" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AULI</tspan></text>
+
+    <text x="265.556640625" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AULI</tspan></text>
+  </g>
 </svg>

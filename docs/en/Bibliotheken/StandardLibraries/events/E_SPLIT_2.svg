@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1210" height="197" viewBox="-540 -20 1210 197">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 480.716796875 132.0"
+     width="480.716796875" height="132.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,61 +28,98 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 127 0
-            A 3 3 0 0 1 130 3
-            L 130 89
-            A 3 3 0 0 1 127 92
-            L 124 92
-            L 124 132
-            L 127 132
-            A 3 3 0 0 1 130 135
-            L 130 144
-            A 3 3 0 0 1 127 147
-            L 3 147
-            A 3 3 0 0 1 0 144
-            L 0 135
-            A 3 3 0 0 1 3 132
-            L 6 132
-            L 6 92
-            L 3 92
-            A 3 3 0 0 1 0 89
+  <g transform="translate(149.8779296875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 120.689453125 0
+            A 3 3 0 0 1 123.689453125 3
+            L 123.689453125 43.0
+            A 3 3 0 0 1 120.689453125 46.0
+            L 113.689453125 46.0
+            L 113.689453125 86.0
+            L 120.689453125 86.0
+            A 3 3 0 0 1 123.689453125 89.0
+            L 123.689453125 109.0
+            A 3 3 0 0 1 120.689453125 112.0
+            L 3 112.0
+            A 3 3 0 0 1 0 109.0
+            L 0 89.0
+            A 3 3 0 0 1 3 86.0
+            L 10 86.0
+            L 10 46.0
+            L 3 46.0
+            A 3 3 0 0 1 0 43.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 18.5 103.0
-            L 34.5 103.0
-            A 1 1 0 0 1 35.5 104.0
-            L 35.5 107.5
-            L 33.5 107.5
-            L 33.5 110.5
-            L 35.5 110.5
-            L 35.5 120.0
-            A 1 1 0 0 1 34.5 121.0
-            L 18.5 121.0
-            A 1 1 0 0 1 17.5 120.0
-            L 17.5 110.5
-            L 19.5 110.5
-            L 19.5 107.5
-            L 17.5 107.5
-            L 17.5 104.0
-            A 1 1 0 0 1 18.5 103.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="26.5" y="117.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="40.5" y="117.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">E_SPLIT_2</text>
-<text x="65.0" y="132.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">3.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">EI</text>
-<text x="-15" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-74" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Input event</text>
-<path d="M130,37 L130,47 L135,42 Z" fill="#63B31F" stroke="none" />
-<text x="118" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO1</text>
-<text x="145" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="215" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">First output event</text>
-<path d="M130,63 L130,73 L135,68 Z" fill="#63B31F" stroke="none" />
-<text x="118" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">EO2</text>
-<text x="145" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="215" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Second output event</text>
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">EI</text>
+
+    <polygon points="117.189453125,11.0 122.189453125,16.0 117.189453125,21.0" fill="#63B31F"/>
+    <text x="114.189453125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO1</text>
+
+    <polygon points="117.189453125,31.0 122.189453125,36.0 117.189453125,41.0" fill="#63B31F"/>
+    <text x="114.189453125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">EO2</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 57.0
+            L 37.0 57.0
+            A 1 1 0 0 1 38.0 58.0
+            L 38.0 61.5
+            L 36.0 61.5
+            L 36.0 64.5
+            L 38.0 64.5
+            L 38.0 74.0
+            A 1 1 0 0 1 37.0 75.0
+            L 21.0 75.0
+            A 1 1 0 0 1 20.0 74.0
+            L 20.0 64.5
+            L 22.0 64.5
+            L 22.0 61.5
+            L 20.0 61.5
+            L 20.0 58.0
+            A 1 1 0 0 1 21.0 57.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="71.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">E_SPLIT_2</text>
+
+    <text x="61.8447265625" y="86.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">3.0</text>
+
+    <!-- Data Ports -->
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input event – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="148.689453125" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – First output event</text>
+
+    <text x="148.689453125" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Second output event</text>
+  </g>
 </svg>

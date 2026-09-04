@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1431" height="613" viewBox="-548 -20 1431 613">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 1037.8193359375 432.0"
+     width="1037.8193359375" height="432.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,186 +28,409 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 316 0
-            A 3 3 0 0 1 319 3
-            L 319 115
-            A 3 3 0 0 1 316 118
-            L 313 118
-            L 313 158
-            L 316 158
-            A 3 3 0 0 1 319 161
-            L 319 560
-            A 3 3 0 0 1 316 563
-            L 3 563
-            A 3 3 0 0 1 0 560
-            L 0 161
-            A 3 3 0 0 1 3 158
-            L 6 158
-            L 6 118
-            L 3 118
-            A 3 3 0 0 1 0 115
+  <g transform="translate(204.4287109375, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 304.5087890625 0
+            A 3 3 0 0 1 307.5087890625 3
+            L 307.5087890625 63.0
+            A 3 3 0 0 1 304.5087890625 66.0
+            L 297.5087890625 66.0
+            L 297.5087890625 106.0
+            L 304.5087890625 106.0
+            A 3 3 0 0 1 307.5087890625 109.0
+            L 307.5087890625 409.0
+            A 3 3 0 0 1 304.5087890625 412.0
+            L 3 412.0
+            A 3 3 0 0 1 0 409.0
+            L 0 109.0
+            A 3 3 0 0 1 3 106.0
+            L 10 106.0
+            L 10 66.0
+            L 3 66.0
+            A 3 3 0 0 1 0 63.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 125.0 129.0
-            L 141.0 129.0
-            A 1 1 0 0 1 142.0 130.0
-            L 142.0 133.5
-            L 140.0 133.5
-            L 140.0 136.5
-            L 142.0 136.5
-            L 142.0 146.0
-            A 1 1 0 0 1 141.0 147.0
-            L 125.0 147.0
-            A 1 1 0 0 1 124.0 146.0
-            L 124.0 136.5
-            L 126.0 136.5
-            L 126.0 133.5
-            L 124.0 133.5
-            L 124.0 130.0
-            A 1 1 0 0 1 125.0 129.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="133.0" y="143.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">Si</text>
-<text x="147.0" y="143.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">I_FPTO</text>
-<text x="159.5" y="158.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">INIT</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-103" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Service Initialization</text>
-<path d="M-5,170 L-5,180 L0,175 Z" fill="#A3B08F" stroke="none" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">QI</text>
-<text x="-23" y="178" font-size="11" text-anchor="end" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="-103" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Input Qualifier</text>
-<path d="M319,37 L319,47 L324,42 Z" fill="#63B31F" stroke="none" />
-<text x="307" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">INITO</text>
-<text x="358" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="428" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Initialization Confirm</text>
-<path d="M319,63 L319,73 L324,68 Z" fill="#63B31F" stroke="none" />
-<text x="307" y="72" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">IND</text>
-<text x="358" y="71" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="428" y="71" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Indication from Resource</text>
-<path d="M319,89 L319,99 L324,94 Z" fill="#63B31F" stroke="none" />
-<text x="307" y="98" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">TIMEOUT</text>
-<text x="358" y="97" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<path d="M319,170 L319,180 L324,175 Z" fill="#A3B08F" stroke="none" />
-<text x="307" y="179" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">QO</text>
-<text x="358" y="178" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<text x="428" y="178" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Event Output Qualifier</text>
-<path d="M319,196 L319,206 L324,201 Z" fill="#BD8663" stroke="none" />
-<text x="307" y="205" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">STATUS</text>
-<text x="358" y="204" font-size="11" text-anchor="start" fill="#BD8663" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">STRING</text>
-<path d="M319,222 L319,232 L324,227 Z" fill="#A3B08F" stroke="none" />
-<text x="307" y="231" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">Q_timeout</text>
-<text x="358" y="230" font-size="11" text-anchor="start" fill="#A3B08F" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BOOL</text>
-<path d="M319,248 L319,258 L324,253 Z" fill="#18519E" stroke="none" />
-<text x="307" y="257" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_timeout</text>
-<text x="358" y="256" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M319,274 L319,284 L324,279 Z" fill="#18519E" stroke="none" />
-<text x="307" y="283" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">timestamp_data</text>
-<text x="358" y="282" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">DINT</text>
-<path d="M319,300 L319,310 L324,305 Z" fill="#18519E" stroke="none" />
-<text x="307" y="309" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_OUTP_SHAFT_SPEED</text>
-<text x="358" y="308" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="428" y="308" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO output shaft speed (see Attributes for</text>
-<text x="428" y="320" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Details)</text>
-<path d="M319,326 L319,336 L324,331 Z" fill="#18519E" stroke="none" />
-<text x="307" y="335" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_OUTP_SH_SPEED_SET</text>
-<text x="358" y="334" font-size="11" text-anchor="start" fill="#18519E" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">UINT</text>
-<text x="428" y="334" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO Output Shaft Speed Set Point (see</text>
-<text x="428" y="346" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M319,352 L319,362 L324,357 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="361" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_ENGAGEMENT</text>
-<text x="358" y="360" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="360" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Power Take Off Engagement (see Attributes</text>
-<text x="428" y="372" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">for Details)</text>
-<path d="M319,378 L319,388 L324,383 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="387" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_MODE</text>
-<text x="358" y="386" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="386" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Power Take Off Mode (see Attributes for</text>
-<text x="428" y="398" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Details)</text>
-<path d="M319,404 L319,414 L324,409 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="413" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_ECONOMY_MODE</text>
-<text x="358" y="412" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="412" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front Power Take Off Economy Mode (see Attributes</text>
-<text x="428" y="424" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">for Details)</text>
-<path d="M319,430 L319,440 L324,435 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="439" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_ENGAGEMENT_REQ</text>
-<text x="358" y="438" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="438" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO engagement request status (see</text>
-<text x="428" y="450" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M319,456 L319,466 L324,461 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="465" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_MODE_REQ_STATUS</text>
-<text x="358" y="464" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="464" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO mode request status (see Attributes for</text>
-<text x="428" y="476" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Details)</text>
-<path d="M319,482 L319,492 L324,487 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="491" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_ECONOMY_MODE_REQ_STAT</text>
-<text x="358" y="490" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="490" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO Economy mode request status (see</text>
-<text x="428" y="502" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Attributes for Details)</text>
-<path d="M319,508 L319,518 L324,513 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="517" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_SH_SPEED_LIMIT_STAT</text>
-<text x="358" y="516" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="516" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO shaft speed limit status (see Attributes</text>
-<text x="428" y="528" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">for Details)</text>
-<path d="M319,534 L319,544 L324,539 Z" fill="#82A3A9" stroke="none" />
-<text x="307" y="543" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">FRONT_PTO_EXIT_REASON_CODE</text>
-<text x="358" y="542" font-size="11" text-anchor="start" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">BYTE</text>
-<text x="428" y="542" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Front PTO exit/reason code (see Attributes for</text>
-<text x="428" y="554" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Details)</text>
-<path d="M-12,42 L-12,175" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,175 L-5,175" stroke="#000000" />
-<rect x="-14" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M331,42 L331,201" stroke="#000000" stroke-width="1" />
-<path d="M319,42 L331,42" stroke="#000000" />
-<rect x="329" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M331,175 L324,175" stroke="#000000" />
-<rect x="329" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M331,201 L324,201" stroke="#000000" />
-<rect x="329" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,68 L339,539" stroke="#000000" stroke-width="1" />
-<path d="M319,68 L339,68" stroke="#000000" />
-<rect x="337" y="66" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,175 L324,175" stroke="#000000" />
-<rect x="337" y="173" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,279 L324,279" stroke="#000000" />
-<rect x="337" y="277" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,201 L324,201" stroke="#000000" />
-<rect x="337" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,227 L324,227" stroke="#000000" />
-<rect x="337" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,305 L324,305" stroke="#000000" />
-<rect x="337" y="303" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,331 L324,331" stroke="#000000" />
-<rect x="337" y="329" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,357 L324,357" stroke="#000000" />
-<rect x="337" y="355" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,383 L324,383" stroke="#000000" />
-<rect x="337" y="381" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,409 L324,409" stroke="#000000" />
-<rect x="337" y="407" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,435 L324,435" stroke="#000000" />
-<rect x="337" y="433" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,461 L324,461" stroke="#000000" />
-<rect x="337" y="459" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,487 L324,487" stroke="#000000" />
-<rect x="337" y="485" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,513 L324,513" stroke="#000000" />
-<rect x="337" y="511" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M339,539 L324,539" stroke="#000000" />
-<rect x="337" y="537" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M347,94 L347,253" stroke="#000000" stroke-width="1" />
-<path d="M319,94 L347,94" stroke="#000000" />
-<rect x="345" y="92" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M347,253 L324,253" stroke="#000000" />
-<rect x="345" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M347,201 L324,201" stroke="#000000" />
-<rect x="345" y="199" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M347,227 L324,227" stroke="#000000" />
-<rect x="345" y="225" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">INIT</text>
+
+    <polygon points="301.0087890625,11.0 306.0087890625,16.0 301.0087890625,21.0" fill="#63B31F"/>
+    <text x="298.0087890625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">INITO</text>
+
+    <polygon points="301.0087890625,31.0 306.0087890625,36.0 301.0087890625,41.0" fill="#63B31F"/>
+    <text x="298.0087890625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">IND</text>
+
+    <polygon points="301.0087890625,51.0 306.0087890625,56.0 301.0087890625,61.0" fill="#63B31F"/>
+    <text x="298.0087890625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">TIMEOUT</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 123.04052734375 77.0
+            L 139.04052734375 77.0
+            A 1 1 0 0 1 140.04052734375 78.0
+            L 140.04052734375 81.5
+            L 138.04052734375 81.5
+            L 138.04052734375 84.5
+            L 140.04052734375 84.5
+            L 140.04052734375 94.0
+            A 1 1 0 0 1 139.04052734375 95.0
+            L 123.04052734375 95.0
+            A 1 1 0 0 1 122.04052734375 94.0
+            L 122.04052734375 84.5
+            L 124.04052734375 84.5
+            L 124.04052734375 81.5
+            L 122.04052734375 81.5
+            L 122.04052734375 78.0
+            A 1 1 0 0 1 123.04052734375 77.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="131.04052734375" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="145.04052734375" y="91.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">I_FPTO</text>
+
+    <text x="153.75439453125" y="106.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,111.0 6.5,116.0 1.5,121.0" fill="#A3B08F"/>
+    <text x="9.5" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">QI</text>
+
+    <polygon points="301.0087890625,111.0 306.0087890625,116.0 301.0087890625,121.0" fill="#A3B08F"/>
+    <text x="298.0087890625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">QO</text>
+
+    <polygon points="301.0087890625,131.0 306.0087890625,136.0 301.0087890625,141.0" fill="#BD8663"/>
+    <text x="298.0087890625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">STATUS</text>
+
+    <polygon points="301.0087890625,151.0 306.0087890625,156.0 301.0087890625,161.0" fill="#A3B08F"/>
+    <text x="298.0087890625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Q_timeout</text>
+
+    <polygon points="301.0087890625,171.0 306.0087890625,176.0 301.0087890625,181.0" fill="#18519E"/>
+    <text x="298.0087890625" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_timeout</text>
+
+    <polygon points="301.0087890625,191.0 306.0087890625,196.0 301.0087890625,201.0" fill="#18519E"/>
+    <text x="298.0087890625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">timestamp_data</text>
+
+    <polygon points="301.0087890625,211.0 306.0087890625,216.0 301.0087890625,221.0" fill="#18519E"/>
+    <text x="298.0087890625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_OUTP_SHAFT_SPEED</text>
+
+    <polygon points="301.0087890625,231.0 306.0087890625,236.0 301.0087890625,241.0" fill="#18519E"/>
+    <text x="298.0087890625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_OUTP_SH_SPEED_SET</text>
+
+    <polygon points="301.0087890625,251.0 306.0087890625,256.0 301.0087890625,261.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_ENGAGEMENT</text>
+
+    <polygon points="301.0087890625,271.0 306.0087890625,276.0 301.0087890625,281.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_MODE</text>
+
+    <polygon points="301.0087890625,291.0 306.0087890625,296.0 301.0087890625,301.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_ECONOMY_MODE</text>
+
+    <polygon points="301.0087890625,311.0 306.0087890625,316.0 301.0087890625,321.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_ENGAGEMENT_REQ</text>
+
+    <polygon points="301.0087890625,331.0 306.0087890625,336.0 301.0087890625,341.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_MODE_REQ_STATUS</text>
+
+    <polygon points="301.0087890625,351.0 306.0087890625,356.0 301.0087890625,361.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_ECONOMY_MODE_REQ_STAT</text>
+
+    <polygon points="301.0087890625,371.0 306.0087890625,376.0 301.0087890625,381.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_SH_SPEED_LIMIT_STAT</text>
+
+    <polygon points="301.0087890625,391.0 306.0087890625,396.0 301.0087890625,401.0" fill="#82A3A9"/>
+    <text x="298.0087890625" y="397.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">FRONT_PTO_EXIT_REASON_CODE</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="312.5087890625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="312.5087890625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="317.5087890625" y1="16.0" x2="317.5087890625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="312.5087890625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="317.5087890625" y1="16.0" x2="317.5087890625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="31.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="111.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="191.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="211.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="231.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="251.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="271.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="291.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="311.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="331.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="351.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="371.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="326.5087890625" y="391.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="331.5087890625" y1="36.0" x2="331.5087890625" y2="396.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="340.5087890625" y="51.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="340.5087890625" y="171.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="345.5087890625" y1="56.0" x2="345.5087890625" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="340.5087890625" y="131.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="345.5087890625" y1="56.0" x2="345.5087890625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="340.5087890625" y="151.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="345.5087890625" y1="56.0" x2="345.5087890625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="116.0" x2="-20" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="16.0" x2="327.5087890625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="36.0" x2="341.5087890625" y2="36.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="56.0" x2="355.5087890625" y2="56.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="116.0" x2="341.5087890625" y2="116.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="136.0" x2="355.5087890625" y2="136.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="196.0" x2="341.5087890625" y2="196.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="156.0" x2="355.5087890625" y2="156.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="216.0" x2="341.5087890625" y2="216.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="236.0" x2="341.5087890625" y2="236.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="256.0" x2="341.5087890625" y2="256.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="276.0" x2="341.5087890625" y2="276.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="296.0" x2="341.5087890625" y2="296.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="316.0" x2="341.5087890625" y2="316.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="336.0" x2="341.5087890625" y2="336.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="356.0" x2="341.5087890625" y2="356.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="376.0" x2="341.5087890625" y2="376.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="396.0" x2="341.5087890625" y2="396.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="307.5087890625" y1="176.0" x2="355.5087890625" y2="176.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Service Initialization – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="360.5087890625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Initialization Confirm</text>
+
+    <text x="360.5087890625" y="37.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Indication from Resource</text>
+
+    <text x="360.5087890625" y="57.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="-25" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Event Input Qualifier – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="360.5087890625" y="117.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan> – Event Output Qualifier</text>
+
+    <text x="360.5087890625" y="137.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">STRING</tspan></text>
+
+    <text x="360.5087890625" y="157.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BOOL</tspan></text>
+
+    <text x="360.5087890625" y="177.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="360.5087890625" y="197.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">DINT</tspan></text>
+
+    <text x="360.5087890625" y="217.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Front PTO output shaft speed (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="237.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">UINT</tspan> – Front PTO Output Shaft Speed Set Point (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="257.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front Power Take Off Engagement (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="277.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front Power Take Off Mode (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="297.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front Power Take Off Economy Mode (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="317.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front PTO engagement request status (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="337.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front PTO mode request status (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="357.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front PTO Economy mode request status (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="377.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front PTO shaft speed limit status (see Attributes for Details)</text>
+
+    <text x="360.5087890625" y="397.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">BYTE</tspan> – Front PTO exit/reason code (see Attributes for Details)</text>
+  </g>
 </svg>

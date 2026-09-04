@@ -1,35 +1,207 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1240" height="275" viewBox="-540 -20 1240 275">
-<defs>
-</defs>
-<rect x="3" y="3" width="160" height="225" fill="#000000" fill-opacity="0.1" rx="2" ry="2" />
-<path d="M0,0 H160 V66 H154 V106 H160 V225 H0 V106 H6 V66 H0 Z" fill="#ffffff" stroke="#000000" stroke-width="2" />
-<path d="M0,30 L160,30" stroke="#000000" stroke-width="1" />
-<text x="80.0" y="84.0" font-size="14" fontWeight="bold" font-family="Verdana, sans-serif" font-style="italic" text-anchor="middle" dominant-baseline="central">AD_AUI_MUX_3</text>
-<text x="80.0" y="98.0" font-size="10" fill="#000" font-family="Consolas, monospace" text-anchor="middle" dominant-baseline="central">1.0</text>
-<rect x="-5.0" y="118.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="Consolas, monospace">K</text>
-<text x="-15" y="126" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AUI</text>
-<text x="-74" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">index</text>
-<rect x="-5.0" y="144.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="153" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN1</text>
-<text x="-15" y="152" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AD</text>
-<text x="-74" y="152" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 1</text>
-<rect x="-5.0" y="170.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="179" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN2</text>
-<text x="-15" y="178" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AD</text>
-<text x="-74" y="178" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 2</text>
-<rect x="-5.0" y="196.0" width="10" height="10" fill="white" stroke="#845DAF" stroke-width="2.5" />
-<text x="12" y="205" font-size="12" text-anchor="start" font-family="Consolas, monospace">IN3</text>
-<text x="-15" y="204" font-size="11" text-anchor="end" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AD</text>
-<text x="-74" y="204" font-size="11" text-anchor="end" fill="#666666" font-family="Verdana, sans-serif">Input value 3</text>
-<path d="M160,37 L160,47 L165,42 Z" fill="#63B31F" stroke="none" />
-<text x="148" y="46" font-size="12" text-anchor="end" font-family="Consolas, monospace">CNF</text>
-<text x="175" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="Verdana, sans-serif">Event</text>
-<text x="245" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">Confirmation of Set Index K</text>
-<rect x="155.0" y="118.0" width="10" height="10" fill="#845DAF" stroke="none" />
-<text x="148" y="127" font-size="12" text-anchor="end" font-family="Consolas, monospace">OUT</text>
-<text x="175" y="126" font-size="11" text-anchor="start" fill="#000" font-style="italic" font-family="Verdana, sans-serif">AD</text>
-<text x="245" y="126" font-size="11" text-anchor="start" fill="#666666" font-family="Verdana, sans-serif">IN1 for K = 0, IN2 for K = 1, IN3 for K = 2</text>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 597.6728515625 192.0"
+     width="597.6728515625" height="192.0">
+  <style>
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL";
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: italic;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g transform="translate(142.8232421875, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 146.2763671875 0
+            A 3 3 0 0 1 149.2763671875 3
+            L 149.2763671875 23.0
+            A 3 3 0 0 1 146.2763671875 26.0
+            L 139.2763671875 26.0
+            L 139.2763671875 66.0
+            L 146.2763671875 66.0
+            A 3 3 0 0 1 149.2763671875 69.0
+            L 149.2763671875 169.0
+            A 3 3 0 0 1 146.2763671875 172.0
+            L 3 172.0
+            A 3 3 0 0 1 0 169.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="142.7763671875,11.0 147.7763671875,16.0 142.7763671875,21.0" fill="#63B31F"/>
+    <text x="139.7763671875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">Si</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">AD_AUI_MUX_3</text>
+
+    <text x="74.63818359375" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <!-- Adapter Ports -->
+
+    <path d="M 1.5 97.0
+            L 6.5 97.0
+            L 6.5 98.66666666666667
+            L 9.0 98.66666666666667
+            L 9.0 97.0
+            L 11.5 97.0
+            L 11.5 107.0
+            L 9.0 107.0
+            L 9.0 105.33333333333333
+            L 6.5 105.33333333333333
+            L 6.5 107.0
+            L 1.5 107.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">K</text>
+
+    <path d="M 1.5 117.0
+            L 6.5 117.0
+            L 6.5 118.66666666666667
+            L 9.0 118.66666666666667
+            L 9.0 117.0
+            L 11.5 117.0
+            L 11.5 127.0
+            L 9.0 127.0
+            L 9.0 125.33333333333333
+            L 6.5 125.33333333333333
+            L 6.5 127.0
+            L 1.5 127.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN1</text>
+
+    <path d="M 1.5 137.0
+            L 6.5 137.0
+            L 6.5 138.66666666666666
+            L 9.0 138.66666666666666
+            L 9.0 137.0
+            L 11.5 137.0
+            L 11.5 147.0
+            L 9.0 147.0
+            L 9.0 145.33333333333334
+            L 6.5 145.33333333333334
+            L 6.5 147.0
+            L 1.5 147.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN2</text>
+
+    <path d="M 1.5 157.0
+            L 6.5 157.0
+            L 6.5 158.66666666666666
+            L 9.0 158.66666666666666
+            L 9.0 157.0
+            L 11.5 157.0
+            L 11.5 167.0
+            L 9.0 167.0
+            L 9.0 165.33333333333334
+            L 6.5 165.33333333333334
+            L 6.5 167.0
+            L 1.5 167.0
+            Z" fill="none" stroke="#845DAF" stroke-width="1"/>
+    <text x="14.5" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN3</text>
+
+    <path d="M 137.7763671875 97.0
+            L 140.2763671875 97.0
+            L 140.2763671875 98.66666666666667
+            L 142.7763671875 98.66666666666667
+            L 142.7763671875 97.0
+            L 147.7763671875 97.0
+            L 147.7763671875 107.0
+            L 142.7763671875 107.0
+            L 142.7763671875 105.33333333333333
+            L 140.2763671875 105.33333333333333
+            L 140.2763671875 107.0
+            L 137.7763671875 107.0
+            Z" fill="#845DAF"/>
+    <text x="134.7763671875" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">OUT</text>
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <!-- Horizontal Connection Lines -->
+
+    <!-- External Labels -->
+
+    <text x="174.2763671875" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Confirmation of Set Index K</text>
+
+    <text x="-25" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">index – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AUI</tspan></text>
+
+    <text x="-25" y="123.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 1 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AD</tspan></text>
+
+    <text x="-25" y="143.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 2 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AD</tspan></text>
+
+    <text x="-25" y="163.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Input value 3 – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AD</tspan></text>
+
+    <text x="174.2763671875" y="103.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">AD</tspan> – IN1 for K = 0, IN2 for K = 1, IN3 for K = 2</text>
+  </g>
 </svg>

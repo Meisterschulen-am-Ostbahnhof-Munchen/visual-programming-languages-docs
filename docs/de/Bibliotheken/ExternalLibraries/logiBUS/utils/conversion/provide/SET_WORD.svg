@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     width="1226" height="197" viewBox="-548 -20 1226 197">
-
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 592.8603515625 112.0"
+     width="592.8603515625" height="112.0">
   <style>
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt");
+      src: local("TGL 0-17_std"), local("TGL 0-17"), local("TGL 0-17 alt"), url("../../../../../../_static/fonts/TGL-0-17_std.ttf") format("truetype");
       font-style: normal;
       font-weight: normal;
     }
     @font-face {
       font-family: "TGL";
-      src: local("TGL 0-16_std"), local("TGL 0-16");
+      src: local("TGL 0-16_std"), local("TGL 0-16"), url("../../../../../../_static/fonts/TGL-0-16_std.ttf") format("truetype");
       font-style: italic;
       font-weight: normal;
     }
   </style>
-<defs>
+  <defs>
     <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
       <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
@@ -28,66 +28,119 @@
       </feMerge>
     </filter>
   </defs>
-<path d="M 3 0
-            L 127 0
-            A 3 3 0 0 1 130 3
-            L 130 63
-            A 3 3 0 0 1 127 66
-            L 124 66
-            L 124 106
-            L 127 106
-            A 3 3 0 0 1 130 109
-            L 130 144
-            A 3 3 0 0 1 127 147
-            L 3 147
-            A 3 3 0 0 1 0 144
-            L 0 109
-            A 3 3 0 0 1 3 106
-            L 6 106
-            L 6 66
-            L 3 66
-            A 3 3 0 0 1 0 63
+  <g transform="translate(242.2314453125, 10)">
+
+    <!-- Block Outline -->
+    <path d="M 3 0
+            L 125.6728515625 0
+            A 3 3 0 0 1 128.6728515625 3
+            L 128.6728515625 23.0
+            A 3 3 0 0 1 125.6728515625 26.0
+            L 118.6728515625 26.0
+            L 118.6728515625 66.0
+            L 125.6728515625 66.0
+            A 3 3 0 0 1 128.6728515625 69.0
+            L 128.6728515625 89.0
+            A 3 3 0 0 1 125.6728515625 92.0
+            L 3 92.0
+            A 3 3 0 0 1 0 89.0
+            L 0 69.0
+            A 3 3 0 0 1 3 66.0
+            L 10 66.0
+            L 10 26.0
+            L 3 26.0
+            A 3 3 0 0 1 0 23.0
             L 0 3
             A 3 3 0 0 1 3 0
-            Z" fill="#FFFFFF" 
-            stroke="#A0A0A0" stroke-width="1.5" 
-            stroke-linejoin="round" filter="url(#dropShadow)"/>
-<path d="M 22.5 77.0
-            L 38.5 77.0
-            A 1 1 0 0 1 39.5 78.0
-            L 39.5 81.5
-            L 37.5 81.5
-            L 37.5 84.5
-            L 39.5 84.5
-            L 39.5 94.0
-            A 1 1 0 0 1 38.5 95.0
-            L 22.5 95.0
-            A 1 1 0 0 1 21.5 94.0
-            L 21.5 84.5
-            L 23.5 84.5
-            L 23.5 81.5
-            L 21.5 81.5
-            L 21.5 78.0
-            A 1 1 0 0 1 22.5 77.0
-            Z" fill="#87CEEB" stroke="#1565C0" stroke-width="1" />
-<text x="30.5" y="91.0" font-size="12" font-weight="bold" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">S</text>
-<text x="44.5" y="91.0" font-size="14" font-family="TGL, 'Times New Roman', Times, serif" font-style="italic">SET_WORD</text>
-<text x="65.0" y="106.0" font-size="12" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif" text-anchor="middle" dominant-baseline="central">1.0</text>
-<path d="M-5,37 L-5,47 L0,42 Z" fill="#63B31F" stroke="none" />
-<text x="12" y="46" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">REQ</text>
-<text x="-23" y="45" font-size="11" text-anchor="end" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="-104" y="45" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Normal Execution Request</text>
-<path d="M-5,118 L-5,128 L0,123 Z" fill="#82A3A9" stroke="none" />
-<text x="12" y="127" font-size="12" text-anchor="start" font-family="TGL, 'Times New Roman', Times, serif">IN</text>
-<text x="-23" y="126" font-size="11" text-anchor="end" fill="#82A3A9" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">WORD</text>
-<text x="-104" y="126" font-size="11" text-anchor="end" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Value to be written</text>
-<path d="M130,37 L130,47 L135,42 Z" fill="#63B31F" stroke="none" />
-<text x="118" y="46" font-size="12" text-anchor="end" font-family="TGL, 'Times New Roman', Times, serif">CNF</text>
-<text x="153" y="45" font-size="11" text-anchor="start" fill="#888" font-style="italic" font-family="TGL, 'Times New Roman', Times, serif">Event</text>
-<text x="223" y="45" font-size="11" text-anchor="start" fill="#666666" font-family="TGL, 'Times New Roman', Times, serif">Execution Confirmation</text>
-<path d="M-12,42 L-12,123" stroke="#000000" stroke-width="1" />
-<path d="M0,42 L-12,42" stroke="#000000" />
-<rect x="-14" y="40" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
-<path d="M-12,123 L-5,123" stroke="#000000" />
-<rect x="-14" y="121" width="4" height="4" fill="white" stroke="black" stroke-width="1" />
+            Z"
+          fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+          stroke-linejoin="round" filter="url(#dropShadow)"/>
+
+    <!-- Event Ports -->
+
+    <polygon points="1.5,11.0 6.5,16.0 1.5,21.0" fill="#63B31F"/>
+    <text x="9.5" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">REQ</text>
+
+    <polygon points="122.1728515625,11.0 127.1728515625,16.0 122.1728515625,21.0" fill="#63B31F"/>
+    <text x="119.1728515625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">CNF</text>
+
+    <!-- Name Section -->
+    <!-- FB Type Icon -->
+    <path d="M 21.0 37.0
+            L 37.0 37.0
+            A 1 1 0 0 1 38.0 38.0
+            L 38.0 41.5
+            L 36.0 41.5
+            L 36.0 44.5
+            L 38.0 44.5
+            L 38.0 54.0
+            A 1 1 0 0 1 37.0 55.0
+            L 21.0 55.0
+            A 1 1 0 0 1 20.0 54.0
+            L 20.0 44.5
+            L 22.0 44.5
+            L 22.0 41.5
+            L 20.0 41.5
+            L 20.0 38.0
+            A 1 1 0 0 1 21.0 37.0
+            Z"
+          fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+    <text x="29.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12" font-weight="bold"
+          fill="#000000" text-anchor="middle">S</text>
+
+    <!-- Block Name -->
+    <text x="43.0" y="51.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" font-style="italic">SET_WORD</text>
+
+    <text x="64.33642578125" y="66.0"
+          font-family="TGL, 'Times New Roman', Times, serif" font-size="12"
+          fill="#666666" text-anchor="middle">1.0</text>
+
+    <!-- Data Ports -->
+
+    <polygon points="1.5,71.0 6.5,76.0 1.5,81.0" fill="#82A3A9"/>
+    <text x="9.5" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle">IN</text>
+
+
+    <!-- Event-Data Association Connectors and Lines -->
+
+    <rect x="-15" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <rect x="-15" y="71.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <line x1="-10.0" y1="16.0" x2="-10.0" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <rect x="133.6728515625" y="11.0" width="10" height="10"
+          fill="#FFFFFF" stroke="#000000" stroke-width="1"/>
+
+    <!-- Horizontal Connection Lines -->
+
+    <line x1="0" y1="16.0" x2="-20" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="0" y1="76.0" x2="-20" y2="76.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <line x1="128.6728515625" y1="16.0" x2="148.6728515625" y2="16.0"
+          stroke="#000000" stroke-width="1"/>
+
+    <!-- External Labels -->
+
+    <text x="-25" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Normal Execution Request – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan></text>
+
+    <text x="153.6728515625" y="17.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" dominant-baseline="middle"><tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">Event</tspan> – Execution Confirmation</text>
+
+    <text x="-25" y="77.0" font-family="TGL, 'Times New Roman', Times, serif" font-size="14"
+          fill="#000000" text-anchor="end" dominant-baseline="middle">Value to be written – <tspan font-family="TGL, 'Times New Roman', Times, serif" font-style="italic" dominant-baseline="middle">WORD</tspan></text>
+  </g>
 </svg>

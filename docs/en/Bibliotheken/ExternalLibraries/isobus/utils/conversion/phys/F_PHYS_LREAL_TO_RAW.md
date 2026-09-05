@@ -55,6 +55,7 @@ The function block performs the following steps:
 
 - Lower limit: `i32Offset * r32Scale`
 - Upper limit: `(i32Offset + 4294967295) * r32Scale`
+
 1. **Comparison and saturation:**
 
 - If `lrPhys > obere Grenze` is present → Raw value = **UDINT#4294967295**, `xOver = TRUE`.
@@ -62,6 +63,7 @@ The function block performs the following steps:
 If `lrPhys < untere Grenze` is present → Raw value = **0**, `xUnder = TRUE`.
 
 - Otherwise → Raw value = `DINT_TO_UDINT( LREAL_TO_DINT( lrPhys / r32Scale ) - i32Offset )`, no overflow/underflow message.
+
 1. **Output:** The calculated raw value is provided at the unnamed `UDINT` output, and the event `CNF` is triggered.
 
 ## Technical Features

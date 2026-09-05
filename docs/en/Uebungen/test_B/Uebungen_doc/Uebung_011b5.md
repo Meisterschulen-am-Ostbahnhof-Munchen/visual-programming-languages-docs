@@ -7,7 +7,7 @@
 
 Exercise **Exercise_011b5** performs a multiplication of two numeric values read from the ISOBUS
 network, using
-[SAFE_MUL_2](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_MUL_2.md)
+[SAFE_MUL_2](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_MUL_2/)
 instead of the plain `F_MUL` (compare [Exercise_011b2](Uebung_011b2.md), which uses `F_MUL` for
 the same layout). `SAFE_MUL_2.LIMIT_HIT` is converted to `UDINT` and written to
 `OutputNumber_N2`, so an overflow is directly visible on the ISOBUS network as `1` (clamped) or

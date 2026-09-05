@@ -7,7 +7,7 @@
 
 Übung **Uebung_011b7** führt eine Division zweier über das ISOBUS-Netzwerk eingelesener
 numerischer Werte durch, unter Verwendung von
-[SAFE_DIV](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_DIV.md). Es
+[SAFE_DIV](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_DIV/). Es
 gibt in dieser Reihe keine normale, nicht-sichere `F_DIV`-Vorgänger-Übung — Integer-Division
 durch Null ist in reinem C++ undefiniertes Verhalten und würde ein natives `F_DIV` zum Absturz
 bringen, daher existiert diese Übung ausschließlich, um das Division-durch-Null-Verhalten von

@@ -13,8 +13,8 @@ IEC 61131-3 spezifizierten Zweierkomplement-Wraparound, und für den hier verwen
 `InputNumber_I1 = 1` und `InputNumber_I2 = 12` gibt die Übung `UDINT#4294967285` aus statt des
 mathematisch erwarteten `-11` — weil `UDINT` keine negative Zahl darstellen kann und die normale
 Subtraktion überläuft, statt den Unterlauf zu melden. Dieser Befund hat direkt die
-[SafeArithmetic](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/index.md)-Bibliothek und
-ihren [SAFE_SUB](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB.md)-Baustein
+[SafeArithmetic](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/)-Bibliothek und
+ihren [SAFE_SUB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB/)-Baustein
 motiviert — siehe [Übung_011b6](Uebung_011b6.md) für dasselbe Szenario, erneut ausgeführt mit
 `SAFE_SUB`.
 

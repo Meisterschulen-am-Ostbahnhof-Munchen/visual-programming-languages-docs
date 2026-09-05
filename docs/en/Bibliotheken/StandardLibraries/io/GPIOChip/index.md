@@ -1,3 +1,0 @@
-![GPIOChip](GPIOChip.svg)
-
-# GPIOChip

@@ -72,21 +72,21 @@ The following table lists the corresponding adapters and I/O blocks for each dat
 
 | Data Type | Abbreviation | Adapter | Input | Output |
 | --- | --- | --- | --- | --- |
-| BOOL | X | [AX](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BOOL/AX.md) | [IX](../../Bibliotheken/StandardLibraries/io/IX.md) | [QX](../../Bibliotheken/StandardLibraries/io/QX.md) |
-| BYTE | B | [AB](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/BYTE/AB.md) | [IB](../../Bibliotheken/StandardLibraries/io/IB.md) | [QB](../../Bibliotheken/StandardLibraries/io/QB.md) |
-| WORD | W | [AW](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/WORD/AW.md) | [IW](../../Bibliotheken/StandardLibraries/io/IW.md) | [QW](../../Bibliotheken/StandardLibraries/io/QW.md) |
-| DWORD | D | [AD](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DWORD/AD.md) | [ID](../../Bibliotheken/StandardLibraries/io/ID.md) | [QD](../../Bibliotheken/StandardLibraries/io/QD.md) |
-| LWORD | L | [AL](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LWORD/AL.md) | [IL](../../Bibliotheken/StandardLibraries/io/IL.md) | [QL](../../Bibliotheken/StandardLibraries/io/QL.md) |
-| SINT | S | [AS](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/SINT/AS.md) | — | — |
-| INT | I | [AI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/INT/AI.md) | — | — |
-| DINT | DI | [ADI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/DINT/ADI.md) | — | — |
-| LINT | LI | [ALI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LINT/ALI.md) | — | — |
-| USINT | US | [AUS](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/USINT/AUS.md) | — | — |
-| UINT | UI | [AUI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UINT/AUI.md) | — | — |
-| UDINT | UDI | [AUDI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/UDINT/AUDI.md) | — | — |
-| ULINT | ULI | [AULI](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/ULINT/AULI.md) | — | — |
-| REAL | R | [AR](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/REAL/AR.md) | — | — |
-| LREAL | LR | [ALR](../../Bibliotheken/ExternalLibraries/adapter/types/unidirectional/LREAL/ALR.md) | — | — |
+| BOOL | X | [AX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/BOOL/AX/) | [IX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/IX/) | [QX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/QX/) |
+| BYTE | B | [AB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/BYTE/AB/) | [IB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/IB/) | [QB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/QB/) |
+| WORD | W | [AW](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/WORD/AW/) | [IW](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/IW/) | [QW](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/QW/) |
+| DWORD | D | [AD](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/DWORD/AD/) | [ID](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/ID/) | [QD](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/QD/) |
+| LWORD | L | [AL](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/LWORD/AL/) | [IL](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/IL/) | [QL](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/StandardLibraries/io/QL/) |
+| SINT | S | [AS](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/SINT/AS/) | — | — |
+| INT | I | [AI](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/INT/AI/) | — | — |
+| DINT | DI | [ADI](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/DINT/ADI/) | — | — |
+| LINT | LI | [ALI](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/LINT/ALI/) | — | — |
+| USINT | US | [AUS](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/USINT/AUS/) | — | — |
+| UINT | UI | [AUI](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/UINT/AUI/) | — | — |
+| UDINT | UDI | [AUDI](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/UDINT/AUDI/) | — | — |
+| ULINT | ULI | [AULI](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/ULINT/AULI/) | — | — |
+| REAL | R | [AR](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/REAL/AR/) | — | — |
+| LREAL | LR | [ALR](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/types/unidirectional/LREAL/ALR/) | — | — |
 | DATE | D | — | — | — |
 | TIME | T | — | — | — |
 | TIME_OF_DAY | TOD | — | — | — |

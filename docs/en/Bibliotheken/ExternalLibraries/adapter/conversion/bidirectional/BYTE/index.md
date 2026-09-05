@@ -1,4 +1,0 @@
-# Numerical Index (bidirectional)
-
-Here you will find all exercises from the `bidirectional` workspace in ascending order.
-...#

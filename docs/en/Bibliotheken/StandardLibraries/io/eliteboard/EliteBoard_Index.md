@@ -1,3 +1,0 @@
-![EliteBoard](EliteBoard.svg)
-
-# eliteboard

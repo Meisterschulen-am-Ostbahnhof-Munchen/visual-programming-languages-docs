@@ -20,7 +20,7 @@ Die Übung ist ein reines Top-Level-Composite: Sie instanziiert die 8 unverände
 | `Output_Q1` … `Output_Q12` | `MyLib::sys::RampLimitFS_TO_logiBUS_QDA_PWM_OPC` | Je ein vollständiger PWM-Kanal (VT + physischer Ausgang + OPC-UA) |
 | `SystemTickSender` | `MyLib::sys::SystemTickSender` | Zyklischer Zähler für die VT-Statusanzeige (`OutputNumber_Tick`) |
 
-Alle 12 `Output_Qxx`-Instanzen sind dieselbe wiederverwendbare Composite-SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (siehe [Sub-Baustein](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) unten) und unterscheiden sich nur durch ihre Parameter:
+Alle 12 `Output_Qxx`-Instanzen sind dieselbe wiederverwendbare Composite-SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (siehe [Sub-Baustein](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC/) unten) und unterscheiden sich nur durch ihre Parameter:
 
 ### Sub-Baustein: RampLimitFS_TO_logiBUS_QDA_PWM_OPC
 

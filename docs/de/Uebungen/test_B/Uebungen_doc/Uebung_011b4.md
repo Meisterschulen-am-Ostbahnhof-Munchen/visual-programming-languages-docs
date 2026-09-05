@@ -7,7 +7,7 @@
 
 Übung **Uebung_011b4** führt eine Addition zweier über das ISOBUS-Netzwerk eingelesener
 numerischer Werte durch, unter Verwendung von
-[SAFE_ADD_2](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_ADD_2.md)
+[SAFE_ADD_2](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_ADD_2/)
 statt des normalen `ADD_2`/`F_ADD`. Anders als die vorherigen Übungen dieser Reihe zeigt sie
 einen zweiten Ausgang: `SAFE_ADD_2.LIMIT_HIT` wird nach `UDINT` konvertiert und auf
 `OutputNumber_N2` geschrieben, sodass ein Overflow direkt auf dem ISOBUS-Netzwerk sichtbar wird

@@ -7,7 +7,7 @@
 
 Exercise **Exercise_011b6** is the direct fix for [Exercise_011b3](Uebung_011b3.md): the same
 subtraction of two numeric values read from the ISOBUS network, but using
-[SAFE_SUB](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB.md)
+[SAFE_SUB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB/)
 instead of plain `F_SUB`. `SAFE_SUB.LIMIT_HIT` is converted to `UDINT` and written to
 `OutputNumber_N2`, so the underflow that `Exercise_011b3` produced silently is now directly
 visible on the ISOBUS network.

@@ -1,2 +1,0 @@
-# MyLib (test_AX)
-

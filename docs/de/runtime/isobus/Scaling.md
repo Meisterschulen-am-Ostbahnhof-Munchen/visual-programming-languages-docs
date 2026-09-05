@@ -92,9 +92,11 @@ Die strikte Einhaltung der ID-Bereiche durch das Anbaugerät ist entscheidend.
 | DATA MASK                                |         | SOFTKEY MASK & AUX                             |
 |------------------------------------------|---------|------------------------------------------------|
 | x                                        |         | 0 -    0 - Centering - Working set object      |
+| 1 - 999 - Macro (*)                      |         | x                                              |
 | 1000 - 1999 - Scaling - DataMask         |         | x                                              |
 | 2000 - 2999 - Scaling - AlarmMask        |         |                                                |
 | 3000 - 3499 - Scaling - Container        | →       | 3500 - 3999 - Scaling - Container              |
+|                                          |         | 4000 - 4999 - SoftKeyMask                      |
 | 6000 - 6999 - Scaling - Button           | →       | 5000 - 5999 - Centering – Softkeys             |
 | 7000 - 7999 - Scaling - InputBoolean     |         |                                                |
 | 8000 - 8999 - Scaling - InputString      |         |                                                |
@@ -106,14 +108,29 @@ Die strikte Einhaltung der ID-Bereiche durch das Anbaugerät ist entscheidend.
 | 14000 - 14499 - Scaling - Rectangle      | →       | 14500 - 14999 - Scaling - Rectangle            |
 | 15000 - 15499 - Scaling - Ellipse        | →       | 15500 - 15999 - Scaling - Ellipse              |
 | 16000 - 16499 - Scaling - Polygon        | →       | 16500 - 16999 - Scaling – Polygon              |
-| 17000 - 17599 - Scaling - Meter          |         |                                                |
-| 18000 - 18599 - Scaling - LinearBargraph |         |                                                |
-| 19000 - 19599 - Scaling - ArchedBargraph |         |                                                |
+| 17000 - 17999 - Scaling - Meter          |         |                                                |
+| 18000 - 18999 - Scaling - LinearBargraph |         |                                                |
+| 19000 - 19999 - Scaling - ArchedBargraph |         |                                                |
 | 20000 - 20499 - Scaling - PictureGraphic | →       | 20500 - 20999 - Scaling - Working set bitmaps  |
+| 21000 - 21999 - NumberVariable           |         |                                                |
+| 22000 - 22999 - StringVariable           |         |                                                |
 | 23000 - 23499 - Scaling - FontAttributes | →       | 23500 - 23999 - Scaling - FontAttributes       |
-| 24000 - 24499 - Scaling - LineAttributes | →       | 24500 - 24900 - Scaling - LineAttributes       |
+| 24000 - 24499 - Scaling - LineAttributes | →       | 24500 - 24999 - Scaling - LineAttributes       |
 | 25000 - 25499 - Scaling - FillAttributes | →       | 25500 - 25999 - Scaling – FillAttributes       |
-| 30000 - 30999 - Scaling – OutputList     |         |                                                |
-|                                          |         | 31000 - 31999 - Centering - Auxiliary function |
+| 26000 - 26999 - InputAttributes         |         |                                                |
+| 27000 - 27999 - ObjectPointer           |         |                                                |
+|                                          |         | 29000 - 29999 - AuxFunction1 (**)              |
+|                                          |         | 30000 - 30999 - AuxInput1 (**)                 |
+|                                          |         | 31000 - 31999 - Centering - AuxFunction2       |
+|                                          |         | 32000 - 32999 - Centering - AuxInput2          |
+|                                          |         | 33000 - 33999 - AuxObjectPointer               |
+|                                          |         | 35000 - 35999 - Centering - KeyGroup           |
+| 37000 - 37999 - Scaling – OutputList     |         |                                                |
+
+Wo keine Operation (Scaling, Centering) angegeben ist, wird das Objekt nicht manipuliert.
+
+**(\*) Sonderfall Macro:** Das Macro-Objekt selbst hat keine Pixel-Felder, kann aber Befehle mit fest codierten Pixelwerten enthalten (z. B. Change Child Position). Diese eingebetteten Werte werden vom ID-Bereichs-Scaling-Mechanismus nicht erfasst, da dieser nur Objekt-Definitionen beim Pool-Load skaliert, nicht den Befehls-Bytestrom innerhalb eines Macros.
+
+**(\*\*) V1-Aux-Objekte (AuxFunction1, AuxInput1):** logiBUS konvertiert diese immer per `AuxToV2` aus dem jeweiligen V2-Pendant (`AuxFunction2`/`AuxInput2`) — sie kommen in einem Pool daher nie tatsächlich vor, nur der Vollständigkeit halber gelistet.
 
 ---

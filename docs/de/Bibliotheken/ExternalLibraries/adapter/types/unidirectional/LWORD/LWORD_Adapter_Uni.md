@@ -1,2 +1,0 @@
-# Unidirectional LWORD Adapter
-

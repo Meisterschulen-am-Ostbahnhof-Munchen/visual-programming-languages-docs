@@ -18,12 +18,12 @@ Die Übung ist ein reines Top-Level-Composite: Sie instanziiert 8 Eingangs-Baust
 | `Output_Q1` … `Output_Q12` | `MyLib::sys::Button_IXA_TO_logiBUS_QXA_BG_OPC` | Digitaler Ausgang, bidirektional über VT-Taster UND OPC-UA schaltbar |
 | `SystemTickSender` | `MyLib::sys::SystemTickSender` | Zyklischer Zähler für die VT-Statusanzeige (`OutputNumber_Tick`) |
 
-### Sub-Baustein: [logiBUS_IXA_BG_OPC](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/logiBUS_IXA_BG_OPC.md) (Eingänge)
+### Sub-Baustein: [logiBUS_IXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/logiBUS_IXA_BG_OPC/) (Eingänge)
 
 - **Typ**: SubAppType (`MyLib::sys`)
 - **Funktionsweise**: Liest einen physischen digitalen Eingang (`logiBUS_IXA`) und verzweigt das Adapter-Signal über `AX_SPLIT_2` in zwei Richtungen: an `GreenWhiteBackground1_AX` (VT-Hintergrundfarbe Grün/Weiß je nach Zustand) und an `AX_PUBLISH_1` (OPC-UA-Publish an den Web-Client). Reiner Einweg-Datenfluss physisch → VT/Web, keine Rückschreibmöglichkeit vom Web aus (Eingänge sind nicht extern schaltbar).
 
-### Sub-Baustein: [Button_IXA_TO_logiBUS_QXA_BG_OPC](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC.md) (Ausgänge)
+### Sub-Baustein: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (Ausgänge)
 
 - **Typ**: SubAppType (`MyLib::sys`)
 - **Funktionsweise**: Anders als bei den Eingängen kann ein Ausgang **von zwei Seiten** geschaltet werden — per VT-Taster (`Button_IXA`) oder per OPC-UA-Schreibzugriff (`AX_SUBSCRIBE_1`). Beide Quellen laufen über je einen `AX_RF_TRIG` (Flankenerkennung) auf ein gemeinsames `AX_SR`-Flipflop (Set/Reset), dessen Ausgang über `AX_SPLIT_3` dreifach verteilt wird: an den physischen Ausgang (`logiBUS_QXA`), an die VT-Statusfarbe (`GreenWhiteBackground1_AX`) und zurück an `AX_PUBLISH_1` (OPC-UA-Echo, damit der Web-Client den tatsächlichen Zustand sieht).

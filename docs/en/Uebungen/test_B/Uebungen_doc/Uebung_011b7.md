@@ -7,7 +7,7 @@
 
 Exercise **Exercise_011b7** performs a division of two numeric values read from the ISOBUS
 network, using
-[SAFE_DIV](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_DIV.md). There
+[SAFE_DIV](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_DIV/). There
 is no plain, non-safe `F_DIV` predecessor exercise in this series — integer division by zero is
 undefined behavior in plain C++ and would crash a native `F_DIV`, so this exercise exists purely
 to demonstrate `SAFE_DIV`'s division-by-zero handling directly. `SAFE_DIV.LIMIT_HIT` is

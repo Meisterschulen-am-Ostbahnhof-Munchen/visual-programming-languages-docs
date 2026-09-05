@@ -12,7 +12,7 @@ flip-flop, OPC-UA write-back), but instead of individual `CLIENT_0`/
 `SERVER_0`/`AX_CLIENT_1_0` instances with manual data wiring, it uses the
 combined adapter blocks from the `adapter-3.0.0` library (see the
 adapter-3.0.0 FB family, documented under
-[`Bibliotheken/ExternalLibraries/adapter`](../../../../Bibliotheken/ExternalLibraries/adapter/index.md)).
+[`Bibliotheken/ExternalLibraries/adapter`](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/adapter/)).
 Same OPC-UA addresses as Training_04 (`SR1_*`).
 
 ## Composites Used

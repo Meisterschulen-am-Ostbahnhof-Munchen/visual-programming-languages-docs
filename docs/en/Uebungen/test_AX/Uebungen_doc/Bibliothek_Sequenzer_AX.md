@@ -45,8 +45,8 @@ The pattern sequencers (`sequence_Pattern_xx_AX`) allow you to define an individ
 
 ### Available Types
 
-- **[sequence_Pattern_04_04_loop_AX](../../../Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX.md)**: 4 steps, 4 outputs, cyclic.
-- **[sequence_Pattern_08_08_loop_AX](../../../Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX.md)**: 8 steps, 8 outputs, cyclic.
+- **[sequence_Pattern_04_04_loop_AX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX/)**: 4 steps, 4 outputs, cyclic.
+- **[sequence_Pattern_08_08_loop_AX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX/)**: 8 steps, 8 outputs, cyclic.
 
 ### Functionality
 

@@ -18,12 +18,12 @@ The exercise is a pure top-level composite: it instantiates 8 input blocks, 12 o
 | `Output_Q1` … `Output_Q12` | `MyLib::sys::Button_IXA_TO_logiBUS_QXA_BG_OPC` | Digital output, switchable bidirectionally via VT button AND OPC-UA |
 | `SystemTickSender` | `MyLib::sys::SystemTickSender` | Cyclic counter feeding the VT status display (`OutputNumber_Tick`) |
 
-### Sub-block: [logiBUS_IXA_BG_OPC](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/logiBUS_IXA_BG_OPC.md) (inputs)
+### Sub-block: [logiBUS_IXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/logiBUS_IXA_BG_OPC/) (inputs)
 
 - **Type**: SubAppType (`MyLib::sys`)
 - **Functionality**: Reads a physical digital input (`logiBUS_IXA`) and splits the adapter signal via `AX_SPLIT_2` into two directions: to `GreenWhiteBackground1_AX` (VT background color green/white based on state) and to `AX_PUBLISH_1` (OPC-UA publish to the web client). Purely one-way data flow physical → VT/web, no write-back path from the web (inputs cannot be set externally).
 
-### Sub-block: [Button_IXA_TO_logiBUS_QXA_BG_OPC](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC.md) (outputs)
+### Sub-block: [Button_IXA_TO_logiBUS_QXA_BG_OPC](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/MyLib_AX/sys/Button_IXA_TO_logiBUS_QXA_BG_OPC/) (outputs)
 
 - **Type**: SubAppType (`MyLib::sys`)
 - **Functionality**: Unlike the inputs, an output can be switched **from two sides** — via a VT button (`Button_IXA`) or via an OPC-UA write (`AX_SUBSCRIBE_1`). Both sources run through their own `AX_RF_TRIG` (edge detection) into a shared `AX_SR` flip-flop (set/reset), whose output is distributed three ways via `AX_SPLIT_3`: to the physical output (`logiBUS_QXA`), to the VT status color (`GreenWhiteBackground1_AX`), and back to `AX_PUBLISH_1` (OPC-UA echo, so the web client sees the actual state).

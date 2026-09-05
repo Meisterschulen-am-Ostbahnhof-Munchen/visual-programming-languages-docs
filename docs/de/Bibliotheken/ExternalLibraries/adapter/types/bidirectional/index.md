@@ -1,2 +1,0 @@
-# Bidirectional Adapters
-

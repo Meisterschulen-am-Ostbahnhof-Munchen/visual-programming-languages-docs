@@ -1,3 +1,0 @@
-# Numerical Index (iec61131-3)
-
-Here you will find all exercises from the `iec61131-3` workspace in ascending order.

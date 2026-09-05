@@ -13,8 +13,8 @@ measurement values (setpoint differences, remaining-distance calculations). With
 `InputNumber_I1 = 1` and `InputNumber_I2 = 12`, the exercise outputs `UDINT#4294967285`
 instead of the mathematically expected `-11` — because `UDINT` cannot represent a negative
 number, and plain subtraction wraps around instead of reporting the underflow. This finding
-directly motivated the [SafeArithmetic](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/index.md)
-library and its [SAFE_SUB](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB.md)
+directly motivated the [SafeArithmetic](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/)
+library and its [SAFE_SUB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB/)
 block — see [Exercise_011b6](Uebung_011b6.md) for the same scenario re-run with `SAFE_SUB`.
 
 ## Function Blocks (FBs) Used

@@ -46,8 +46,8 @@ Die Pattern-Sequenzer (`sequence_Pattern_xx_AX`) ermöglichen es, für jeden Sch
 
 ### Verfügbare Typen
 
-- **[sequence_Pattern_04_04_loop_AX](../../../Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX.md)**: 4 Schritte, 4 Ausgänge, zyklisch.
-- **[sequence_Pattern_08_08_loop_AX](../../../Bibliotheken/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX.md)**: 8 Schritte, 8 Ausgänge, zyklisch.
+- **[sequence_Pattern_04_04_loop_AX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_04_04_loop_AX/)**: 4 Schritte, 4 Ausgänge, zyklisch.
+- **[sequence_Pattern_08_08_loop_AX](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/logiBUS/utils/sequence/pattern/sequence_Pattern_08_08_loop_AX/)**: 8 Schritte, 8 Ausgänge, zyklisch.
 
 ### Funktionsweise
 

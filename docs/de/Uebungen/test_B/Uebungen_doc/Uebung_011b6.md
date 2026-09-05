@@ -7,7 +7,7 @@
 
 Übung **Uebung_011b6** ist die direkte Behebung von [Übung_011b3](Uebung_011b3.md): dieselbe
 Subtraktion zweier über das ISOBUS-Netzwerk eingelesener numerischer Werte, aber mit
-[SAFE_SUB](../../../Bibliotheken/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB.md) statt
+[SAFE_SUB](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/ExternalLibraries/SafeArithmetic/arithmetic/SAFE_SUB/) statt
 normalem `F_SUB`. `SAFE_SUB.LIMIT_HIT` wird nach `UDINT` konvertiert und auf `OutputNumber_N2`
 geschrieben, sodass der Unterlauf, den `Uebung_011b3` still erzeugt hat, jetzt direkt auf dem
 ISOBUS-Netzwerk sichtbar ist.

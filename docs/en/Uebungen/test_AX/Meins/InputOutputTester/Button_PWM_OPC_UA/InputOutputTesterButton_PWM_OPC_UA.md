@@ -3,6 +3,7 @@
 ![InputOutputTesterButton_PWM_OPC_UA_network](./InputOutputTesterButton_PWM_OPC_UA_network.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 `InputOutputTesterButton_PWM_OPC_UA` is the PWM training example for **12 analog outputs (0–100 % duty cycle)**, controllable both via the ISOBUS Virtual Terminal and via OPC-UA (web client). It is the direct counterpart to the existing DI/DO example `Meins::InputOutputTester::Button_DIDO_OPC_UA`: the 8 digital inputs (`Input_I1`…`Input_I8`) stay unchanged, while the previously purely digital outputs are replaced here by **12 PWM channels**, each with a VT number field, bar graph, 6 ramp buttons, a channel enable/disable switch, and a 3-color status indicator.
@@ -19,7 +20,7 @@ The exercise is a pure top-level composite: it instantiates the 8 unchanged inpu
 | `Output_Q1` … `Output_Q12` | `MyLib::sys::RampLimitFS_TO_logiBUS_QDA_PWM_OPC` | One complete PWM channel each (VT + physical output + OPC-UA) |
 | `SystemTickSender` | `MyLib::sys::SystemTickSender` | Cyclic counter feeding the VT status display (`OutputNumber_Tick`) |
 
-All 12 `Output_Qxx` instances are the same reusable composite SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (see [sub-block](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) below) and differ only in their parameters:
+All 12 `Output_Qxx` instances are the same reusable composite SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (see [sub-block](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) below) and differ only in their parameters:
 
 ### Sub-block: RampLimitFS_TO_logiBUS_QDA_PWM_OPC
 
@@ -78,4 +79,4 @@ Internally, the exercise consistently uses the SAE J1939/ISO 11783 fieldbus conv
 
 ### 🌐 Related topic pages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

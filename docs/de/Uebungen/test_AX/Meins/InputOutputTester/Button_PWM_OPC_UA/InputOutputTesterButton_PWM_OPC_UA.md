@@ -3,6 +3,7 @@
 ![InputOutputTesterButton_PWM_OPC_UA_network](./InputOutputTesterButton_PWM_OPC_UA_network.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 `InputOutputTesterButton_PWM_OPC_UA` ist das PWM-Trainingsbeispiel zu **12 analogen Ausgängen (0–100 % Duty)**, steuerbar sowohl über den ISOBUS-Virtual-Terminal als auch über OPC-UA (Web-Client). Es ist das direkte Pendant zum bestehenden DI/DO-Beispiel `Meins::InputOutputTester::Button_DIDO_OPC_UA`: Die 8 digitalen Eingänge (`Input_I1`…`Input_I8`) bleiben unverändert, die früher rein digitalen Ausgänge werden hier durch **12 PWM-Kanäle** ersetzt, jeder mit VT-Zahlenfeld, Balkengrafik, 6 Ramp-Tasten, Kanal-Ein/Aus-Schalter und 3-Farben-Statusanzeige.
@@ -19,7 +20,7 @@ Die Übung ist ein reines Top-Level-Composite: Sie instanziiert die 8 unverände
 | `Output_Q1` … `Output_Q12` | `MyLib::sys::RampLimitFS_TO_logiBUS_QDA_PWM_OPC` | Je ein vollständiger PWM-Kanal (VT + physischer Ausgang + OPC-UA) |
 | `SystemTickSender` | `MyLib::sys::SystemTickSender` | Zyklischer Zähler für die VT-Statusanzeige (`OutputNumber_Tick`) |
 
-Alle 12 `Output_Qxx`-Instanzen sind dieselbe wiederverwendbare Composite-SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (siehe [Sub-Baustein](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) unten) und unterscheiden sich nur durch ihre Parameter:
+Alle 12 `Output_Qxx`-Instanzen sind dieselbe wiederverwendbare Composite-SubApp `RampLimitFS_TO_logiBUS_QDA_PWM_OPC` (siehe [Sub-Baustein](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md) unten) und unterscheiden sich nur durch ihre Parameter:
 
 ### Sub-Baustein: RampLimitFS_TO_logiBUS_QDA_PWM_OPC
 
@@ -78,4 +79,4 @@ Intern rechnet die Übung durchgängig in der SAE-J1939/ISO-11783-Fieldbus-Konve
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

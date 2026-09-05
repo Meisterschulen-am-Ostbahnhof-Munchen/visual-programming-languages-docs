@@ -10,10 +10,10 @@
 
 ## 🛠️ Related Exercises
 
-- [Uebung_026_sub](../../../Uebungen/test_B/Uebungen_doc/Uebung_026_sub.md)
-- [Uebung_039_sub_NumbAnsicht](../../../Uebungen/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig.md)
-- [Uebung_039a_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_039a_sub_Outputs.md)
-- [Uebung_060_sub_Outputs](../../../Uebungen/test_B/Uebungen_doc/Uebung_060_sub_Outputs.md)
+- [Uebung_026_sub](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_026_sub/)
+- [Uebung_039_sub_NumbAnsicht](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
+- [Uebung_039a_sub_Outputs](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_039a_sub_Outputs/)
+- [Uebung_060_sub_Outputs](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_060_sub_Outputs/)
 
 ---
 

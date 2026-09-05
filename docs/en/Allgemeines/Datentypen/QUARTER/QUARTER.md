@@ -36,5 +36,5 @@ Since **QUARTER** is not a standard data type in the IEC standards, it is often 
 
 ## 🛠️ Related Exercises
 
-- [Exercise_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
-- [Exercise_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
+- [Exercise_055](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_055/)
+- [Exercise_056](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_056/)

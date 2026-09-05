@@ -59,12 +59,11 @@ Modern agricultural and construction machinery are highly networked, decentraliz
 | **Wiki 2** | **ISOBUS Virtual Terminal**<br> User interfaces, ISO Designer & VT objects. | [🖥️ Open](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-vt-objects-docs/en/latest/) |
 | **Wiki 3** | **ISOBUS Technology & Machine Systems** <br> Hydraulics, pneumatics, motors, high-voltage technology, gearboxes & machine safety. | [📡 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/isobus-other-docs/en/latest/) |
 | **Wiki 4** | **Visual Programming Languages** <br> Low-code development, IEC 61499 & 4diac IDE (main curriculum topic). | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/) |
+| **Wiki 4.1** | **4diac Library Reference** <br> Function block & adapter reference for the 4diac libraries. | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-de/en/latest/) |
+| **Wiki 4.2** | **4diac Exercises: Training Solutions** <br> Exercises and sample solutions for training with 4diac. | [🧩 Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/) |
 | **Wiki 5** | **Electronic Tools & Measuring Instruments** <br> Handbook for crimping technology, soldering stations, oscilloscopes & microscopes. | [🛠️ Open ](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/werkzeug-docs/en/latest/) |
 
-**Wiki 4**
-... ---
+---
 
 > 🌐 **Central Portal of the Munich Master Schools:**
 > Visit the main platform: [**www.ms-muc-docs.de**](https://www.ms-muc-docs.de/) | [📋 Interactive Curriculum Framework 2025](https://www.ms-muc-docs.de/infos/interaktiver-rahmenlehrplan) | [📚 Wiki Overview](https://www.ms-muc-docs.de/wikis) | [📄 PDF Downloads](https://www.ms-muc-docs.de/wikis/alle-pdfs)
-
-]

@@ -23,9 +23,11 @@ The ISOBUS standard clearly assigns the responsibility for scaling the screens t
 
 ## Grundlegendes
 
-## **Scaling Rules for ISOBUS Objects (ISO 11783-6)**
+## **Scaling Rules for ISOBUS Object IDs (project-internal convention)**
 
 This analysis describes the scaling logic for ISOBUS objects based on **object ID ranges** according to the reference table. The rules distinguish between *DataMask* (scaled display) and *SoftkeyMask/Auxiliary* (centered or context-dependent handling).
+
+*Note: ISO 11783-6 itself does not define any subdivision of the Type IDs into ID subranges per mask type, nor any scaling/centering assignment by object ID range - this is a purely project-internal convention (of this project's object pool generator) that builds on the official Type IDs (Table A.1) but is not part of the standard.*
 
 ---
 
@@ -80,7 +82,7 @@ This analysis describes the scaling logic for ISOBUS objects based on **object I
 
 - **Arrows (→)**: Mark corresponding ID ranges for hybrid objects.
 - **"x"**: No mapping in this context.
-- **ISO Compliance**: The table follows ISO 11783-6, with the scaling load on the attachment.
+- **ISO Compliance**: The Type IDs used correspond to ISO 11783-6 (Table A.1); the ID subranges and the scaling/centering assignment per range are, however, a project-internal convention and not a standard requirement. That the scaling load lies with the implement in general follows from the standard's general VT concept (see the introduction above).
 
 Strict adherence to the ID ranges by the attachment is crucial.
 

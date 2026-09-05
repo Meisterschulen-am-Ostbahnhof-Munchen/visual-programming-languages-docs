@@ -3,6 +3,7 @@
 ![F_PERCENT_TO_FRACTION](./F_PERCENT_TO_FRACTION.svg)
 
 * * * * * * * * * *
+
 ## Einleitung
 
 Der Funktionsblock **F_PERCENT_TO_FRACTION** rechnet einen Prozentwert (REAL 0.0–100.0), wie er z. B. über OPC-UA-Subscribe von einem Web-Client empfangen wird, in einen Anteil (REAL 0.0–1.0) um, wie ihn `MyLib::sys::F_PWM_PERCENT_TO_RAW` als Eingang erwartet. Außerhalb des gültigen Bereichs liegende Werte werden geklemmt statt einen Fehler zu erzeugen.
@@ -72,7 +73,7 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ## Anwendungsszenarien
 
-- Umrechnung eines per OPC-UA-Subscribe empfangenen Web-Sollwerts (Prozent REAL) in den Anteil, den interne Fieldbus-Umrechnungsbausteine erwarten — z. B. im PWM-Trainingsbeispiel [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
+- Umrechnung eines per OPC-UA-Subscribe empfangenen Web-Sollwerts (Prozent REAL) in den Anteil, den interne Fieldbus-Umrechnungsbausteine erwarten — z. B. im PWM-Trainingsbeispiel [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
 - Allgemein: jede Schnittstelle, die extern in Prozent kommuniziert, intern aber mit einem normierten Anteil 0.0-1.0 rechnet.
 
 ## Vergleich mit ähnlichen Bausteinen
@@ -86,11 +87,11 @@ Es gibt keine weiteren Warte- oder Initialisierungszustände.
 
 ## 🛠️ Zugehörige Übungen
 
-* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
-* [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
+- [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
+- [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
 
 ---
 
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & Farb-Referenz auf ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

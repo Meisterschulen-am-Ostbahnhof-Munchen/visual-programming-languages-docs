@@ -3,6 +3,7 @@
 ![F_FRACTION_TO_PERCENT](./F_FRACTION_TO_PERCENT.svg)
 
 * * * * * * * * * *
+
 ## Introduction
 
 The function block **F_FRACTION_TO_PERCENT** is the counterpart to [`F_PERCENT_TO_FRACTION`](./F_PERCENT_TO_FRACTION.md): it converts a fraction (REAL 0.0–1.0), such as one delivered by `MyLib::sys::F_PWM_RAW_TO_PERCENT`, into a percent value (REAL 0.0–100.0), e.g. for sending to a web client via OPC-UA publish.
@@ -64,7 +65,7 @@ There are no further waiting or initialization states.
 
 ## Application Scenarios
 
-- Converting an internally processed fraction (0.0-1.0) back into the percent value expected by a web client via OPC-UA publish — e.g. in the PWM training example [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
+- Converting an internally processed fraction (0.0-1.0) back into the percent value expected by a web client via OPC-UA publish — e.g. in the PWM training example [`RampLimitFS_TO_logiBUS_QDA_PWM_OPC`](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md).
 - In general: any interface that computes internally with a normalized 0.0-1.0 fraction while communicating externally in percent.
 
 ## Comparison with Similar Blocks
@@ -78,11 +79,11 @@ There are no further waiting or initialization states.
 
 ## 🛠️ Related Exercises
 
-* [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/typelibrary/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
-* [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
+- [RampLimitFS_TO_logiBUS_QDA_PWM_OPC](../../../../../Bibliotheken/ExternalLibraries/MyLib_AX/sys/RampLimitFS_TO_logiBUS_QDA_PWM_OPC.md)
+- [InputOutputTesterButton_PWM_OPC_UA](../../../../../Uebungen/test_AX/Meins/InputOutputTester/Button_PWM_OPC_UA/InputOutputTesterButton_PWM_OPC_UA.md)
 
 ---
 
 ### 🌐 Related topic pages on ms-muc-docs.de
 
-* [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)
+- [🌐 Eclipse 4diac IDE & color reference on ms-muc-docs.de](https://www.ms-muc-docs.de/iec-61499/eclipse-4diac/)

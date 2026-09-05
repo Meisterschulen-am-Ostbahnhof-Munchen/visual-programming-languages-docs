@@ -26,9 +26,11 @@ Ja, im **ISOBUS-Standard ISO 11783-6** (Teil 6: **Virtual Terminal**) ist das **
 
 Die ISOBUS-Norm weist die Verantwortung für das Skalieren der Masken klar dem **Anbaugerät** zu, während das VT primär für die korrekte Darstellung der übermittelten Daten zuständig ist. Dies ermöglicht eine flexible Anpassung an verschiedene Terminalgrößen, erfordert aber eine korrekte Implementierung seitens der Anbaugeräte-Hersteller.
 
-## **Skalierungsregeln für ISOBUS-Objekte (ISO 11783-6)**
+## **Skalierungsregeln für ISOBUS-Objekt-IDs (projektinterne Konvention)**
 
 Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf **Objekt-ID-Bereichen** gemäß der Referenztabelle. Die Regeln unterscheiden zwischen *DataMask* (skalierte Darstellung) und *SoftkeyMask/Auxiliary* (zentrierte oder kontextabhängige Behandlung).
+
+*Hinweis: Die ISO 11783-6 selbst kennt keine Unterteilung der Type-IDs in ID-Subranges pro Maskentyp und keine Scaling-/Centering-Zuordnung nach Objekt-ID-Bereich – das ist eine reine Konvention dieses Projekts (Object-Pool-Generator), die auf den offiziellen Type-IDs (Table A.1) aufbaut, aber nicht Teil der Norm ist.*
 
 ---
 
@@ -83,7 +85,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 
 - **Pfeile (→)**: Markieren korrespondierende ID-Bereiche für Hybrid-Objekte.
 - **"x"**: Keine Zuordnung in diesem Kontext.
-- **ISO-Konformität**: Die Tabelle folgt ISO 11783-6, wobei die Skalierungslast beim Anbaugerät liegt.
+- **ISO-Konformität**: Die verwendeten Type-IDs entsprechen ISO 11783-6 (Table A.1); die ID-Subranges und die Scaling-/Centering-Zuordnung je Bereich sind jedoch eine projektinterne Konvention und keine Norm-Vorgabe. Dass die Skalierungslast grundsätzlich beim Anbaugerät liegt, folgt aus dem allgemeinen VT-Konzept der Norm (siehe „Grundlegendes" oben).
 
 Die strikte Einhaltung der ID-Bereiche durch das Anbaugerät ist entscheidend.
 

@@ -17,9 +17,16 @@ Unsere Inhalte richten sich sowohl an Anfänger als auch an Fortgeschrittene und
 Die vollständige und gerenderte Dokumentation finden Sie unter:
 👉 <https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/>
 
-- [📖 Dokumentation (ReadTheDocs)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/)
-- [📄 PDF herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/pdf/visual-programming-languages-docs.pdf)
+- [📖 Dokumentation (ReadTheDocs)](https://docs.ms-muc-docs.de/projects/visual-programming-languages-docs/de/latest/)
+- [📄 PDF herunterladen (Deutsch)](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/de/pdf/visual-programming-languages-docs-de.pdf)
+- [📄 PDF download (English)](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
 - [GitHub Repository](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs)
+
+Dieses Wiki ist Teil 1 von 3: die Function-Block-/Adapter-Referenz wurde nach
+[Wiki 4.1 – 4diac-library-reference-docs](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-library-reference-docs)
+ausgelagert, die Übungsaufgaben-Musterlösungen nach
+[Wiki 4.2 – 4diac-exercises-docs](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/4diac-exercises-docs)
+(beide wegen ReadTheDocs-Build-Zeitlimits bei über 1.000 Dateien pro Sprache).
 
 
 ## Community & Support

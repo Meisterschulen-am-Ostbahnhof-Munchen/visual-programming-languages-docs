@@ -21,8 +21,8 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `REAL#...
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
-- [Uebung_151](../../../Uebungen/test_B/Uebungen_doc/Uebung_151.md)
-- [Uebung_151_AX](../../../Uebungen/test_AX/Uebungen_doc/Uebung_151_AX.md)
-- [Uebung_152](../../../Uebungen/test_B/Uebungen_doc/Uebung_152.md)
-- [Uebung_153](../../../Uebungen/test_B/Uebungen_doc/Uebung_153.md)
+- [Uebung_072c](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_072c/)
+- [Uebung_151](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_151/)
+- [Uebung_151_AX](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_AX/Uebungen_doc/Uebung_151_AX/)
+- [Uebung_152](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_152/)
+- [Uebung_153](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_153/)

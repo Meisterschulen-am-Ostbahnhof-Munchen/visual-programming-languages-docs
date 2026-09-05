@@ -37,6 +37,7 @@ This documentation is part of the knowledge base of the Meisterschulen at Munich
 - [🔍 Super Search (all wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/)
 - [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
 - 📚 **[Wiki 4.1: 4diac Function Block & Adapter Library Reference](https://docs.ms-muc-docs.de/projects/4diac-library-reference-docs/en/latest/)** (moved out of this wiki to keep builds fast)
+- 📝 **[Wiki 4.2: Exercises – 4diac Training Solutions](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/)** (moved out of this wiki to keep builds fast)
 
 ---
 

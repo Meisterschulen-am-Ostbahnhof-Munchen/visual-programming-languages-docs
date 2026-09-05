@@ -21,4 +21,4 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `LINT#...
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_072c](../../../Uebungen/test_B/Uebungen_doc/Uebung_072c.md)
+- [Uebung_072c](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_072c/)

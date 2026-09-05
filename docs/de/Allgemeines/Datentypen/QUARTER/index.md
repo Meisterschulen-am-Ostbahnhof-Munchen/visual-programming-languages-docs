@@ -9,5 +9,5 @@
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_055](../../../Uebungen/test_B/Uebungen_doc/Uebung_055.md)
-- [Uebung_056](../../../Uebungen/test_B/Uebungen_doc/Uebung_056.md)
+- [Uebung_055](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_055/)
+- [Uebung_056](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_056/)

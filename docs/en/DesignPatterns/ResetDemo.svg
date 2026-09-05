@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="-135.0 -151.0 1257.4 610.0"
+     width="1257" height="610">
+  <style>
+    @font-face {
+      font-family: "TGL 0-17_std";
+      src: local("TGL 0-17_std"), url("../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-17";
+      src: local("TGL 0-17"), local("TGL 0-17 alt"), url("../_static/fonts/TGL-0-17_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-16_std";
+      src: local("TGL 0-16_std"), url("../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+    @font-face {
+      font-family: "TGL 0-16";
+      src: local("TGL 0-16"), url("../_static/fonts/TGL-0-16_std.ttf") format("truetype");
+      font-style: normal;
+      font-weight: normal;
+    }
+  </style>
+  <defs>
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" result="blur"/>
+      <feOffset in="blur" dx="1" dy="1" result="offsetBlur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.5" result="shadowColor"/>
+      <feComposite in="shadowColor" in2="offsetBlur" operator="in" result="shadow"/>
+      <feMerge>
+        <feMergeNode in="shadow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect x="-135.0" y="-151.0" width="1257.4" height="610.0" fill="white"/>
+  <rect x="-128.0" y="-144.0" width="1243.4" height="596.0" fill="none" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="-128.0" y="-144.0" width="1243.4" height="25.0" fill="white" stroke="none"/>
+  <line x1="-128.0" y1="-119.5" x2="1115.4" y2="-119.5" stroke="#A0A0A0" stroke-width="1"/>
+  <text x="-123.0" y="-127.3" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12" font-weight="bold" fill="#333333">Reset pattern demo: RESET drives its own TrueUntil directly, bypassing the E_SR/E_PERMIT start/stop gate that guards the normal TRIGGER path</text>
+  <g id="sidebars">
+    <rect x="-128.0" y="-119.0" width="55.1" height="571.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="-72.9" y1="-119.0" x2="-72.9" y2="452.0" stroke="#A0A0A0" stroke-width="0.5"/>
+    <rect x="1039.1" y="-119.0" width="76.3" height="571.0" fill="#EEF5FF" stroke="none"/>
+    <line x1="1039.1" y1="-119.0" x2="1039.1" y2="452.0" stroke="#A0A0A0" stroke-width="0.5"/>
+  </g>
+  <g id="connections">
+    <polyline points="-72.9,-84.0 -17.9,-84.0 -12.9,-79.0 -12.9,80.5 -7.9,85.5 95.7,85.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="-72.9,-67.0 -17.9,-67.0 -12.9,-62.0 -12.9,97.5 -7.9,102.5 95.7,102.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="-72.9,-50.0 -17.9,-50.0 -12.9,-45.0 -12.9,155.5 -7.9,160.5 324.6,160.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="417.9,160.5 472.9,160.5 477.9,165.5 477.9,170.5 482.9,175.5 834.6,175.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="934.6,175.5 989.6,175.5 994.6,170.5 994.6,-79.0 999.6,-84.0 1039.1,-84.0" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="-72.9,-33.0 46.1,-33.0 51.1,-28.0 51.1,275.5 56.1,280.5 444.6,280.5" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="544.6,280.5 599.6,280.5 604.6,275.5 604.6,-62.0 609.6,-67.0 1039.1,-67.0" fill="none" stroke="#63B31F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="164.0,136.5 264.0,136.5 269.0,141.5 269.0,189.5 274.0,194.5 324.6,194.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="164.0,136.5 219.0,136.5 224.0,131.5 224.0,-45.0 229.0,-50.0 1039.1,-50.0" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="-72.9,-16.0 -42.9,-16.0 -37.9,-11.0 -37.9,204.5 -32.9,209.5 834.6,209.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+    <polyline points="-72.9,1.0 -53.9,1.0 -48.9,6.0 -48.9,309.5 -43.9,314.5 444.6,314.5" fill="none" stroke="#A3B08F" stroke-width="1.5" stroke-linejoin="round"/>
+  </g>
+  <g id="interface_ports">
+    <polygon points="-77.85987499999999,-89.0 -72.85987499999999,-84.0 -77.85987499999999,-79.0" fill="#63B31F"/>
+    <text x="-78.85987499999999" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">START</text>
+    <polygon points="-77.85987499999999,-72.0 -72.85987499999999,-67.0 -77.85987499999999,-62.0" fill="#63B31F"/>
+    <text x="-78.85987499999999" y="-62.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">STOP</text>
+    <polygon points="-77.85987499999999,-55.0 -72.85987499999999,-50.0 -77.85987499999999,-45.0" fill="#63B31F"/>
+    <text x="-78.85987499999999" y="-45.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">TRIGGER</text>
+    <polygon points="-77.85987499999999,-38.0 -72.85987499999999,-33.0 -77.85987499999999,-28.0" fill="#63B31F"/>
+    <text x="-78.85987499999999" y="-28.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">RESET</text>
+    <polygon points="1044.140125,-89.0 1039.140125,-84.0 1044.140125,-79.0" fill="#63B31F"/>
+    <text x="1045.140125" y="-79.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">DONE</text>
+    <polygon points="1044.140125,-72.0 1039.140125,-67.0 1044.140125,-62.0" fill="#63B31F"/>
+    <text x="1045.140125" y="-62.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">RESET_DONE</text>
+    <polygon points="-77.85987499999999,-21.0 -72.85987499999999,-16.0 -77.85987499999999,-11.0" fill="#A3B08F"/>
+    <text x="-78.85987499999999" y="-11.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">InPosition</text>
+    <polygon points="-77.85987499999999,-4.0 -72.85987499999999,1.0 -77.85987499999999,6.0" fill="#A3B08F"/>
+    <text x="-78.85987499999999" y="5.2" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="end">AtHome</text>
+    <polygon points="1044.140125,-55.0 1039.140125,-50.0 1044.140125,-45.0" fill="#A3B08F"/>
+    <text x="1045.140125" y="-45.8" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+          fill="#000000" text-anchor="start">Running</text>
+  </g>
+  <g id="instances">
+    <g id="fb_StartStopHandle" transform="translate(95.7, 75.0)">
+      <path d="M 3 0
+            L 65.3203125 0
+            A 3 3 0 0 1 68.3203125 3
+            L 68.3203125 35
+            A 3 3 0 0 1 65.3203125 38
+            L 59.3203125 38
+            L 59.3203125 52
+            L 65.3203125 52
+            A 3 3 0 0 1 68.3203125 55
+            L 68.3203125 69
+            A 3 3 0 0 1 65.3203125 72
+            L 3 72
+            A 3 3 0 0 1 0 69
+            L 0 55
+            A 3 3 0 0 1 3 52
+            L 9 52
+            L 9 38
+            L 3 38
+            A 3 3 0 0 1 0 35
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+      <!-- Name Section -->
+      <path d="M 13.0 37.0
+            L 27.0 37.0
+            A 1 1 0 0 1 28.0 38.0
+            L 28.0 41.0
+            L 26.5 41.0
+            L 26.5 43.666666666666664
+            L 28.0 43.666666666666664
+            L 28.0 52.0
+            A 1 1 0 0 1 27.0 53.0
+            L 13.0 53.0
+            A 1 1 0 0 1 12.0 52.0
+            L 12.0 43.666666666666664
+            L 13.5 43.666666666666664
+            L 13.5 41.0
+            L 12.0 41.0
+            L 12.0 38.0
+            A 1 1 0 0 1 13.0 37.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.0" y="49.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">B</text>
+      <text x="30.0" y="49.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">E_SR</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">S</text>
+      <polygon points="0,22.5 5,27.5 0,32.5" fill="#63B31F"/>
+      <text x="6" y="31.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">R</text>
+      <polygon points="63.3203125,5.5 68.3203125,10.5 63.3203125,15.5" fill="#63B31F"/>
+      <text x="62.3203125" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">EO</text>
+      <polygon points="63.3203125,56.5 68.3203125,61.5 63.3203125,66.5" fill="#A3B08F"/>
+      <text x="62.3203125" y="65.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">Q</text>
+
+
+      <!-- Instance Name -->
+      <text x="34.16015625" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">StartStopHandle</text>
+    </g>
+    <g id="fb_Gate" transform="translate(324.6, 150.0)">
+      <path d="M 3 0
+            L 90.310546875 0
+            A 3 3 0 0 1 93.310546875 3
+            L 93.310546875 18
+            A 3 3 0 0 1 90.310546875 21
+            L 84.310546875 21
+            L 84.310546875 35
+            L 90.310546875 35
+            A 3 3 0 0 1 93.310546875 38
+            L 93.310546875 52
+            A 3 3 0 0 1 90.310546875 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+      <!-- Name Section -->
+      <path d="M 13.0 20.0
+            L 27.0 20.0
+            A 1 1 0 0 1 28.0 21.0
+            L 28.0 24.0
+            L 26.5 24.0
+            L 26.5 26.666666666666668
+            L 28.0 26.666666666666668
+            L 28.0 35.0
+            A 1 1 0 0 1 27.0 36.0
+            L 13.0 36.0
+            A 1 1 0 0 1 12.0 35.0
+            L 12.0 26.666666666666668
+            L 13.5 26.666666666666668
+            L 13.5 24.0
+            L 12.0 24.0
+            L 12.0 21.0
+            A 1 1 0 0 1 13.0 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="20.0" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">B</text>
+      <text x="30.0" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">E_PERMIT</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">EI</text>
+      <polygon points="88.310546875,5.5 93.310546875,10.5 88.310546875,15.5" fill="#63B31F"/>
+      <text x="87.310546875" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">EO</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#A3B08F"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">PERMIT</text>
+
+
+      <!-- Instance Name -->
+      <text x="46.6552734375" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">Gate</text>
+    </g>
+    <g id="fb_Worker" transform="translate(834.6, 165.0)">
+      <path d="M 3 0
+            L 97.015625 0
+            A 3 3 0 0 1 100.015625 3
+            L 100.015625 18
+            A 3 3 0 0 1 97.015625 21
+            L 91.015625 21
+            L 91.015625 35
+            L 97.015625 35
+            A 3 3 0 0 1 100.015625 38
+            L 100.015625 52
+            A 3 3 0 0 1 97.015625 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+      <!-- Name Section -->
+      <path d="M 18.4033203125 20.0
+            L 32.4033203125 20.0
+            A 1 1 0 0 1 33.4033203125 21.0
+            L 33.4033203125 24.0
+            L 31.9033203125 24.0
+            L 31.9033203125 26.666666666666668
+            L 33.4033203125 26.666666666666668
+            L 33.4033203125 35.0
+            A 1 1 0 0 1 32.4033203125 36.0
+            L 18.4033203125 36.0
+            A 1 1 0 0 1 17.4033203125 35.0
+            L 17.4033203125 26.666666666666668
+            L 18.9033203125 26.666666666666668
+            L 18.9033203125 24.0
+            L 17.4033203125 24.0
+            L 17.4033203125 21.0
+            A 1 1 0 0 1 18.4033203125 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="25.4033203125" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">B</text>
+      <text x="35.4033203125" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">TrueUntil</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">TRIGGER</text>
+      <polygon points="95.015625,5.5 100.015625,10.5 95.015625,15.5" fill="#63B31F"/>
+      <text x="94.015625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">DONE</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">inPosition</text>
+
+
+      <!-- Instance Name -->
+      <text x="50.0078125" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">Worker</text>
+    </g>
+    <g id="fb_ResetWorker" transform="translate(444.6, 270.0)">
+      <path d="M 3 0
+            L 97.015625 0
+            A 3 3 0 0 1 100.015625 3
+            L 100.015625 18
+            A 3 3 0 0 1 97.015625 21
+            L 91.015625 21
+            L 91.015625 35
+            L 97.015625 35
+            A 3 3 0 0 1 100.015625 38
+            L 100.015625 52
+            A 3 3 0 0 1 97.015625 55
+            L 3 55
+            A 3 3 0 0 1 0 52
+            L 0 38
+            A 3 3 0 0 1 3 35
+            L 9 35
+            L 9 21
+            L 3 21
+            A 3 3 0 0 1 0 18
+            L 0 3
+            A 3 3 0 0 1 3 0
+            Z"
+            fill="#FFFFFF" stroke="#A0A0A0" stroke-width="1.5"
+            stroke-linejoin="round" filter="url(#dropShadow)"/>
+      <!-- Name Section -->
+      <path d="M 18.4033203125 20.0
+            L 32.4033203125 20.0
+            A 1 1 0 0 1 33.4033203125 21.0
+            L 33.4033203125 24.0
+            L 31.9033203125 24.0
+            L 31.9033203125 26.666666666666668
+            L 33.4033203125 26.666666666666668
+            L 33.4033203125 35.0
+            A 1 1 0 0 1 32.4033203125 36.0
+            L 18.4033203125 36.0
+            A 1 1 0 0 1 17.4033203125 35.0
+            L 17.4033203125 26.666666666666668
+            L 18.9033203125 26.666666666666668
+            L 18.9033203125 24.0
+            L 17.4033203125 24.0
+            L 17.4033203125 21.0
+            A 1 1 0 0 1 18.4033203125 20.0
+            Z"
+            fill="#87CEEB" stroke="#1565C0" stroke-width="1"/>
+      <text x="25.4033203125" y="32.0"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="10" font-weight="bold"
+            fill="#000000" text-anchor="middle">B</text>
+      <text x="35.4033203125" y="32.0"
+            font-family="'TGL 0-16_std', 'TGL 0-16', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">TrueUntil</text>
+      <polygon points="0,5.5 5,10.5 0,15.5" fill="#63B31F"/>
+      <text x="6" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">TRIGGER</text>
+      <polygon points="95.015625,5.5 100.015625,10.5 95.015625,15.5" fill="#63B31F"/>
+      <text x="94.015625" y="14.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="end">DONE</text>
+      <polygon points="0,39.5 5,44.5 0,49.5" fill="#3366FF"/>
+      <text x="6" y="48.7" font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000">inPosition</text>
+
+
+      <!-- Instance Name -->
+      <text x="50.0078125" y="-5"
+            font-family="'TGL 0-17_std', 'TGL 0-17', 'Times New Roman', Times, serif" font-size="12"
+            fill="#000000" text-anchor="middle">ResetWorker</text>
+    </g>
+  </g>
+</svg>

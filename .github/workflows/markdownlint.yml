@@ -12,6 +12,9 @@ on:
       - '**/*.md'
       - '.markdownlint.yaml'
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     runs-on: ubuntu-24.04

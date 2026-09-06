@@ -44,15 +44,16 @@ Diese Adapter werden sowohl unter Windows 10 als auch unter Ubuntu 22.04 LTS get
 
 | Typ | Link | Windows 10 | Ubuntu 22.04 LTS | CCI.OS-2.0.3 | CCI.OS-3.3.0 |
 | --- | --- | --- | --- | --- | --- |
-| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz | [link](https://www.amazon.de/gp/product/B004CJ7JC2) | nicht getestet | nicht getestet | nicht getestet | nicht getestet |
-| Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [link](https://amzn.eu/d/5MxkOMx) | geht | geht | nicht funktional | geht |
-| Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 | [link](https://www.amazon.de/gp/product/B003MTTJOY) | geht | geht | geht | geht |
-| Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick | [link](https://amzn.eu/d/hnTHa3d) | geht | nicht funktional | nicht funktional | nicht funktional |
+| Hama N150 Nano-WLAN-USB-Stick, 2,4 GHz | [Produktseite](https://www.amazon.de/gp/product/B004CJ7JC2) | nicht getestet | nicht getestet | nicht getestet | nicht getestet |
+| Edimax EW-7811Un V2 Wi-Fi 4 nano Adapter, Version 2 | [Produktseite](https://amzn.eu/d/5MxkOMx) | geht | geht | nicht funktional | geht |
+| Edimax EW-7811UN Super Mini WLAN USB-Stick (150MBit), Version 1 | [Produktseite](https://www.amazon.de/gp/product/B003MTTJOY) | geht | geht | geht | geht |
+| Cudy WU650S AC 650Mbit/s drahtloser USB WLAN Stick | [Produktseite](https://amzn.eu/d/hnTHa3d) | geht | nicht funktional | nicht funktional | nicht funktional |
 | ALL-WA1200AC | EOL | geht | geht | nicht funktional | nicht funktional |
 | ALL-WA0300AC | EOL | geht | nicht funktional | nicht funktional | nicht funktional |
 | ALL-WA0150N (MTK7601) | EOL | geht | geht | nicht funktional | nicht funktional |
-| ALL-WA0100N (RTL8188EU) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0100N-RTL8188EU/119387) | geht | geht | nicht getestet | nicht getestet |
-| ALL-WA0150N (MTK7601) | [link](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0150N-MTK7601/111798) | geht | geht | nicht getestet | nicht getestet |
+| ALL-WA0100N (RTL8188EU) | [Produktseite](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0100N-RTL8188EU/119387) | geht | geht | nicht getestet | nicht getestet |
+| ALL-WA0150N (MTK7601) | [Produktseite](https://shop.allnet.de/ALLNET-Wireless-N-100Mbit-USB-WLAN-Nano-Stick-ALL-WA0150N-MTK7601/111798) | geht | geht | nicht getestet | nicht getestet |
+
 *EOL = End of Life, Produkt nicht mehr Erhältlich.
 
 ## Beschreibung der Verschiedenen Adapter

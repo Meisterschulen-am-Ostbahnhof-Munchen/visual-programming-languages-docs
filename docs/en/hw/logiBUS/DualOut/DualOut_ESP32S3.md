@@ -11,11 +11,11 @@ This version is identifiable by its 6-pin SKEDD connector and an additional 4-pi
 | Output_Q1 | 21 |
 | Output_Q2 | 46 |
 
-# DualOut ESP32S3 (old version)
+## DualOut ESP32S3 (old version)
 
-## 🔌 IO
+### 🔌 IO (old version)
 
-### Digital Outputs
+#### Digital Outputs (old version)
 
 This version is identifiable by its single 6-pin SKEDD connector.
 
@@ -26,8 +26,6 @@ This version is identifiable by its single 6-pin SKEDD connector.
 
 ---
 
-### 🌐 Related topic subpages on ms-muc-docs.de
+## 🌐 Related topic subpages on ms-muc-docs.de
 
 - [🌐 ESP32 & ESP32-S3 DevKit on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/mikroelektronik/esp32/esp32-s3-devkit/)
-
-]

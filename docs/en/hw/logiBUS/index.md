@@ -1,7 +1,5 @@
 # logiBUS®
 
-# logiBUS®
-
 ## 📺 Video
 
 - [LogiBUS project update](https://www.youtube.com/watch?v=kVNTJ9ZejFM)

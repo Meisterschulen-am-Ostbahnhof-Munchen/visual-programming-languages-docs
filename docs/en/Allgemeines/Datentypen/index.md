@@ -1,6 +1,6 @@
 # 💾 Data Types (Overview)
 
-### Summary of Categories
+## Summary of Categories
 
 According to DIN EN 61131-3, data types are divided into the following groups:
 

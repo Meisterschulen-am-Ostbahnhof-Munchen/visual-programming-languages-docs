@@ -1,8 +1,8 @@
-## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten
-
 # Übungsaufgaben
 
-#### Inputs IX / QX (all momentary)
+## Die Aufgaben bauen aufeinander auf, so dass es sich empfiehlt diese in der angegebenen Reihenfolge zu bearbeiten
+
+### Inputs IX / QX (all momentary)
 
 Connect input I1 to output Q1 so that pressing I1 activates the actuator at Q1.
 

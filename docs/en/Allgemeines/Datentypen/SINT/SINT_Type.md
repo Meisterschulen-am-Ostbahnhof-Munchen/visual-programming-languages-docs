@@ -6,4 +6,4 @@
 
 ## 🛠️ Related Exercises
 
-- [Exercise_039_sub_NumbDisplay](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
+- [Exercise_039_sub_NumbDisplay](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)

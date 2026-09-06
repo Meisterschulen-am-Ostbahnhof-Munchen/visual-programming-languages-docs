@@ -10,10 +10,10 @@
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_026_sub](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_026_sub/)
-- [Uebung_039_sub_NumbAnzeig](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
-- [Uebung_039a_sub_Outputs](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_039a_sub_Outputs/)
-- [Uebung_060_sub_Outputs](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_060_sub_Outputs/)
+- [Uebung_026_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_026_sub/)
+- [Uebung_039_sub_NumbAnzeig](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
+- [Uebung_039a_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_039a_sub_Outputs/)
+- [Uebung_060_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_060_sub_Outputs/)
 
 
 

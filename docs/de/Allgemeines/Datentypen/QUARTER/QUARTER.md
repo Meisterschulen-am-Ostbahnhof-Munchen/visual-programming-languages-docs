@@ -36,5 +36,5 @@ Da **QUARTER** kein Standard-Datentyp der IEC-Normen ist, wird er in Programmier
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_055](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_055/)
-- [Uebung_056](https://docs.ms-muc-docs.de/projects/4diac-exercises-docs/en/latest/test_B/Uebungen_doc/Uebung_056/)
+- [Uebung_055](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_055/)
+- [Uebung_056](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_056/)

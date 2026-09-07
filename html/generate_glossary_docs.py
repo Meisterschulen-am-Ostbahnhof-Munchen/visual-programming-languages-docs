@@ -158,7 +158,8 @@ def generate_excel(data):
             try:
                 if len(str(cell.value)) > max_length:
                     max_length = len(str(cell.value))
-            except Exception:
+            except TypeError:
+                # Merged cells report as openpyxl.cell.cell.MergedCell; skip them.
                 pass
         adjusted_width = (max_length + 2)
         if adjusted_width > 50:

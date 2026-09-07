@@ -1,5 +1,4 @@
 import json
-import os
 
 file_path = 'html/Abkuerzungen_und_Bedeutungen.json'
 

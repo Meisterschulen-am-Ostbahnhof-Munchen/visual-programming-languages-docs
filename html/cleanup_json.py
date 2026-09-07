@@ -15,7 +15,8 @@ def get_actual_title(rel_path):
             for line in f:
                 if line.startswith('# '):
                     return line[2:].strip()
-    except:
+    except (OSError, UnicodeDecodeError):
+        # Best-effort title lookup - fall through to None on unreadable/non-UTF-8 files.
         pass
     return None
 

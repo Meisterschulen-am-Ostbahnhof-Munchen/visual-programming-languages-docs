@@ -1,0 +1,12 @@
+extends: default
+
+rules:
+  # Config files here are single YAML documents; a literal "---" marker
+  # adds no value and MegaLinter's own default config already omits it.
+  document-start: disable
+  # YAML 1.1 treats a bare "on" as boolean true, which is exactly the
+  # key GitHub Actions workflows require - not something to fix.
+  truthy:
+    check-keys: false
+  line-length:
+    max: 200

@@ -9,7 +9,7 @@ def has_toctree(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
             return '```{toctree}' in content or '.. toctree::' in content
-    except:
+    except Exception:
         return False
 
 def get_all_md_files():
@@ -153,9 +153,7 @@ def main():
     
     # Store physical moves to perform: (src, dst)
     moves = []
-    
-    processed_dirs = set()
-    
+
     # Sort files to ensure deterministic processing?
     files.sort()
     
@@ -265,7 +263,8 @@ def main():
     # Let's reconstruct the specific overrides.
     for root, _, filenames in os.walk(DOCS_ROOT):
         for filename in filenames:
-            if not filename.endswith('.md'): continue
+            if not filename.endswith('.md'):
+                continue
             file_path = os.path.join(root, filename)
             
             # Same checks
@@ -377,7 +376,8 @@ def update_references_split(file_path, toc_replacements, link_replacements):
             
             # Resolve entry
             entry_path = os.path.join(file_dir, entry)
-            if not entry_path.endswith('.md'): entry_path += '.md'
+            if not entry_path.endswith('.md'):
+                entry_path += '.md'
             entry_path = os.path.normpath(entry_path)
             
             rel_entry = os.path.relpath(entry_path, DOCS_ROOT).replace('\\', '/')

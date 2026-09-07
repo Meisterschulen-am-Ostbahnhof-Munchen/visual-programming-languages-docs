@@ -1,5 +1,4 @@
 import json
-import os
 
 file_path = 'html/Abkuerzungen_und_Bedeutungen.json'
 
@@ -115,16 +114,20 @@ def update_json(path):
                     # 1. Exact match
                     if term in link_map:
                         mapped_de, mapped_en = link_map[term]
-                        if not new_de: new_de = f'<a href="{mapped_de}" target="_blank">Wikipedia (DE)</a>'
-                        if not new_en: new_en = f'<a href="{mapped_en}" target="_blank">Wikipedia (EN)</a>'
+                        if not new_de:
+                            new_de = f'<a href="{mapped_de}" target="_blank">Wikipedia (DE)</a>'
+                        if not new_en:
+                            new_en = f'<a href="{mapped_en}" target="_blank">Wikipedia (EN)</a>'
                     
                     # 2. Cleaned match
                     else:
                         clean = clean_term(term)
                         if clean in link_map:
                             mapped_de, mapped_en = link_map[clean]
-                            if not new_de: new_de = f'<a href="{mapped_de}" target="_blank">Wikipedia (DE)</a>'
-                            if not new_en: new_en = f'<a href="{mapped_en}" target="_blank">Wikipedia (EN)</a>'
+                            if not new_de:
+                                new_de = f'<a href="{mapped_de}" target="_blank">Wikipedia (DE)</a>'
+                            if not new_en:
+                                new_en = f'<a href="{mapped_en}" target="_blank">Wikipedia (EN)</a>'
                     
                     # Apply changes if any
                     if new_de != ext_de or new_en != ext_en:

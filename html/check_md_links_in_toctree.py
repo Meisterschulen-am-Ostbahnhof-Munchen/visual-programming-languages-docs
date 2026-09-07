@@ -49,27 +49,9 @@ def check_md_links():
         
         # Fixing logic: Remove .md extension
         print("\nFixing issues...")
-        for issue in issues_found:
-            path = issue['abs_path']
-            with open(path, 'r', encoding='utf-8') as f:
-                content = f.read()
-            
-            # Simple replace might be dangerous if context isn't checked, 
-            # but since we identified the specific line in logic, let's try to be precise.
-            # However, reading lines again is safer.
-            
-            with open(path, 'r', encoding='utf-8') as f:
-                lines = f.readlines()
-            
-            # The line index corresponds to the original read.
-            # If we process multiple issues in same file, indices might shift if we deleted lines, 
-            # but we are only modifying content.
-            
-            # Actually, `issues_found` might contain multiple entries for same file.
-            # Better to process file by file.
-            pass
 
-        # Re-processing by file to fix
+        # Process file by file (an issue's abs_path can repeat, and line
+        # indices would shift across duplicate reads otherwise).
         files_with_issues = set(issue['abs_path'] for issue in issues_found)
         
         for file_path in files_with_issues:

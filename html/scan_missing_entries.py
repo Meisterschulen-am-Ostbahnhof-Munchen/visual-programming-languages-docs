@@ -22,7 +22,8 @@ def get_linked_files_and_dirs(data):
         cat_id = category.get('id')
         for entry in category.get('data', []):
             link_int = entry.get('link_int', '')
-            if not link_int: continue
+            if not link_int:
+                continue
             
             match = re.search(r'href="([^"]+)"', link_int)
             if match:

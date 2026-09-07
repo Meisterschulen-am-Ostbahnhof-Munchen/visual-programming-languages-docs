@@ -1,0 +1,6 @@
+# Pin ruff to its own documented defaults explicitly (E4, E7, E9, F),
+# rather than relying on whatever bundled default MegaLinter or a local
+# install happens to ship. This keeps `ruff check .` reproducible
+# between local runs and CI.
+[lint]
+select = ["E4", "E7", "E9", "F"]

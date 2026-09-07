@@ -60,7 +60,7 @@ def fix_files():
         index_added = False
         
         # Scan current state
-        has_index = any('{index}' in l for l in lines)
+        has_index = any('{index}' in line for line in lines)
         
         for i, line in enumerate(lines):
             stripped = line.strip()

@@ -200,7 +200,8 @@ def replace_in_file(file_path, replacements):
             entry = line.strip()
             # Resolve
             entry_path = os.path.join(file_dir, entry)
-            if not entry_path.endswith('.md'): entry_path += '.md'
+            if not entry_path.endswith('.md'):
+                entry_path += '.md'
             entry_path = os.path.normpath(entry_path)
             rel_entry = os.path.relpath(entry_path, DOCS_ROOT).replace('\\', '/')
             
@@ -241,7 +242,8 @@ def replace_in_file(file_path, replacements):
         if in_toctree and line.strip() and not line.strip().startswith(':'):
             entry = line.strip()
             entry_path = os.path.join(file_dir, entry)
-            if not entry_path.endswith('.md'): entry_path += '.md'
+            if not entry_path.endswith('.md'):
+                entry_path += '.md'
             entry_path = os.path.normpath(entry_path)
             rel_entry = os.path.relpath(entry_path, DOCS_ROOT).replace('\\', '/')
             
@@ -271,12 +273,14 @@ def check_headings(replacements):
     """
     for old_rel, new_rel in replacements.items():
         abs_new = os.path.join(DOCS_ROOT, new_rel.replace('/', os.sep))
-        if not os.path.exists(abs_new): continue
+        if not os.path.exists(abs_new):
+            continue
         
         with open(abs_new, 'r', encoding='utf-8') as f:
             lines = f.readlines()
         
-        if not lines: continue
+        if not lines:
+            continue
         
         # Simple heuristic: First line is heading?
         # Sometimes there is metadata before.

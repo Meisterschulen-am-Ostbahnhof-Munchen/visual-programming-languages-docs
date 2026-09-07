@@ -19,10 +19,16 @@ JSON_PATH = os.path.join(SCRIPT_DIR, JSON_FILE)
 PDF_PATH = os.path.join(SCRIPT_DIR, PDF_FILE)
 EXCEL_PATH = os.path.join(SCRIPT_DIR, EXCEL_FILE)
 
-# Paths for scanning exercises
+# .SUB files (raw 4diac-IDE sub-application definitions used here to detect
+# which exercise uses which FB) only ever existed in the actual IDE workspace,
+# never in the docs mirror - the generated docs/de/Uebungen/*/Uebungen_doc/
+# folders (in this repo before the split, now in 4diac-exercises-docs) only
+# ever contained the rendered .md/.svg output. Point at the real workspace
+# in the sibling 4diac_training1 checkout (expects `ms-docs` and `ms-train`
+# to be siblings under the same parent directory).
 SEARCH_DIRS = [
-    os.path.join(SCRIPT_DIR, r"../docs/Uebungen/test_B/Uebungen_doc"),
-    os.path.join(SCRIPT_DIR, r"../docs/Uebungen/test_AX/Uebungen_doc")
+    os.path.join(SCRIPT_DIR, r"../../../ms-train/4diac_training1/Ventilsteuerung/4diacIDE-workspace/test_B/Uebungen"),
+    os.path.join(SCRIPT_DIR, r"../../../ms-train/4diac_training1/Ventilsteuerung/4diacIDE-workspace/test_AX/Uebungen")
 ]
 
 def clean_html(raw_html):
@@ -94,7 +100,7 @@ def update_json_with_exercises():
     if not data:
         return
 
-    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Uebungen/"
+    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/de/latest/Uebungen/"
 
     for cat in data.get('categories', []):
         for item in cat.get('data', []):

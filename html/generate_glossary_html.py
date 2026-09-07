@@ -197,9 +197,9 @@ HTML_HEADER = """<!DOCTYPE html>
 
     <div class="header-container">
         <h1>Wiki / Glossar</h1>
-		<h2>Abkuerzungen_und_Bedeutungen</h2>
-		<a href="https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen" target="_blank"> zur Offline-version</a>
-		
+        <h2>Abkuerzungen_und_Bedeutungen</h2>
+        <a href="https://www.ms-muc-docs.de/iec-61499/abk%C3%BCrzungen-und-bedeutungen" target="_blank"> zur Offline-version</a>
+
         <input type="text" id="searchInput" placeholder="Suchbegriff eingeben... (Filtert über alle Kategorien)" onkeyup="filterAllTables()">
         <div style="margin-top:5px; font-size: 0.9em; color: #666;">
             Gesamt gefundene Einträge: <span id="globalCount">0</span>

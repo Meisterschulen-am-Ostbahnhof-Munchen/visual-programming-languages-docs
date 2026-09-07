@@ -3,7 +3,9 @@ import os
 import re
 
 JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkuerzungen_und_Bedeutungen.json')
-DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
+# BASE_URL already includes the /de/ language segment (RTD), so DOCS_ROOT
+# must match it - otherwise every internal link false-positives as broken.
+DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs', 'de'))
 BASE_URL = 'https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/'
 
 # We can re-use the RENAME_MAP from refine_structure.py ideally, but let's just use the logic of scanning.

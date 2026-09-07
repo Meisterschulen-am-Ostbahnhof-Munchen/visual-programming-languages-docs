@@ -21,7 +21,7 @@ Bei der Verwendung als Literal kann ein Präfix verwendet werden, z.B. `INT#...`
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_026_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_026_sub/)
-- [Uebung_039_sub_NumbAnzeig](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
-- [Uebung_039a_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_039a_sub_Outputs/)
-- [Uebung_060_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-en/en/latest/test_B/Uebungen_doc/Uebung_060_sub_Outputs/)
+- [Uebung_026_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_026_sub/)
+- [Uebung_039_sub_NumbAnzeig](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
+- [Uebung_039a_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_039a_sub_Outputs/)
+- [Uebung_060_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_060_sub_Outputs/)

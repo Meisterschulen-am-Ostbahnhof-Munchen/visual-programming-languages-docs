@@ -15,9 +15,9 @@ Unsere Inhalte richten sich sowohl an Anfänger als auch an Fortgeschrittene und
 ## Dokumentation
 
 Die vollständige und gerenderte Dokumentation finden Sie unter:
-👉 <https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs-de/de/latest/>
+👉 <https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/>
 
-- [📖 Dokumentation (ReadTheDocs)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs-de/de/latest/)
+- [📖 Dokumentation (ReadTheDocs)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/)
 - [📄 PDF herunterladen (Deutsch)](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/de/pdf/visual-programming-languages-docs-de.pdf)
 - [📄 PDF download (English)](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
 - [GitHub Repository](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs)

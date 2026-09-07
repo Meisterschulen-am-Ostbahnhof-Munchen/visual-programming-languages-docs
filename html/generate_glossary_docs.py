@@ -93,9 +93,38 @@ def scan_for_all_exercises():
                     print(f"Error reading {filepath}: {e}")
     return fb_usage
 
+def parse_existing_exercise_names(ex_html):
+    """Extract exercise names already linked in an item's 'ex' field."""
+    return set(re.findall(r'target="_blank">([^<]+)</a>', ex_html or ''))
+
+PUBLISHED_EX_DIRS = [
+    os.path.join(SCRIPT_DIR, r"..", "..", "4diac-exercises-docs", "docs", "de", "Uebungen", "test_B", "Uebungen_doc"),
+    os.path.join(SCRIPT_DIR, r"..", "..", "4diac-exercises-docs", "docs", "de", "Uebungen", "test_AX", "Uebungen_doc"),
+]
+
+def published_exercise_names():
+    """Maps exercise name -> its actual subfolder ('test_B'/'test_AX'), for
+    every exercise that has a rendered doc page. The .SUB scan walks the raw
+    4diac-IDE workspace, which also holds adapter-typed variant
+    sub-applications (e.g. '..._AUI', '..._AUDI', '..._ALR') that were never
+    written up as their own doc page - only test_B/test_AX ever got
+    published, and NOT always into the subfolder its name would suggest
+    (e.g. 'Uebung_071_AUI' has no '_AX' in its name but is filed under
+    test_AX/, not test_B/) - so the subfolder must be looked up, not guessed."""
+    names = {}
+    for docs_dir in PUBLISHED_EX_DIRS:
+        if not os.path.isdir(docs_dir):
+            continue
+        subfolder = os.path.basename(os.path.dirname(docs_dir))
+        for fn in os.listdir(docs_dir):
+            if fn.endswith('.md'):
+                names[fn[:-3]] = subfolder
+    return names
+
 def update_json_with_exercises():
     print("Scanning exercises to update JSON...")
     usage = scan_for_all_exercises()
+    published = published_exercise_names()
     data = load_data()
     if not data:
         return
@@ -106,21 +135,28 @@ def update_json_with_exercises():
         for item in cat.get('data', []):
             term = item.get('term', '')
             clean_term = term.split('/')[0].strip()
-            
-            if clean_term in usage:
-                exercises = usage[clean_term]
-                links = []
-                for ex in sorted(exercises):
-                    # Determine subfolder based on exercise name or search dir
-                    # For simplicity, we check if it exists in test_B or test_AX
-                    subfolder = "test_B"
-                    if "_AX" in ex:
-                        subfolder = "test_AX"
-                    
-                    url = f"{base_url}{subfolder}/Uebungen_doc/{ex}/"
-                    links.append(f'<a href="{url}" target="_blank">{ex}</a>')
-                
-                item['ex'] = ", ".join(links)
+
+            if clean_term not in usage:
+                continue
+
+            # Merge with whatever is already curated - the .SUB scan only
+            # matches FB-instance Type="..." attributes, so it misses a term
+            # used as a plain variable type (e.g. BOOL) and would otherwise
+            # silently drop real, already-verified exercise links on overwrite.
+            # Only add newly-detected usage that has an actual published page.
+            detected = {ex for ex in usage[clean_term] if ex in published}
+            all_exercises = parse_existing_exercise_names(item.get('ex', '')) | detected
+            links = []
+            for ex in sorted(all_exercises):
+                # Look up the real subfolder; a name-based guess ("_AX" in
+                # ex) misses adapter-variant names like 'Uebung_071_AUI'
+                # that are filed under test_AX/ without containing '_AX'.
+                subfolder = published.get(ex, "test_AX" if "_AX" in ex else "test_B")
+
+                url = f"{base_url}{subfolder}/Uebungen_doc/{ex}/"
+                links.append(f'<a href="{url}" target="_blank">{ex}</a>')
+
+            item['ex'] = ", ".join(links)
 
     save_data(data)
 

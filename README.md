@@ -1,5 +1,7 @@
 # Visuelle Programmiersprachen: Low-Code (4)
 
+[![MegaLinter](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/actions/workflows/megalinter.yml/badge.svg)](https://github.com/Meisterschulen-am-Ostbahnhof-Munchen/visual-programming-languages-docs/actions/workflows/megalinter.yml)
+
 Willkommen im Dokumentations-Repository für visuelle Programmiersprachen! Dieses Projekt bietet umfassende Informationen, Ressourcen und Tutorials für verschiedene visuelle Programmiersprachen und Standards.
 
 ## Über das Projekt

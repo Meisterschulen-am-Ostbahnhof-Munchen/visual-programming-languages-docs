@@ -14,47 +14,47 @@ repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v6.0.0
     hooks:
-    - id: check-json
-    - id: check-yaml
-    - id: end-of-file-fixer
-    - id: trailing-whitespace
+      - id: check-json
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v3.21.2
     hooks:
-    - id: pyupgrade
-      args: [--py37-plus]
+      - id: pyupgrade
+        args: [--py37-plus]
 
   - repo: https://github.com/PyCQA/isort
     rev: 9.0.1
     hooks:
-    - id: isort
+      - id: isort
 
   - repo: https://github.com/psf/black
     rev: 26.5.1
     hooks:
-    - id: black
+      - id: black
 
   - repo: https://github.com/charliermarsh/ruff-pre-commit
     rev: v0.16.5
     hooks:
-    - id: ruff
+      - id: ruff
 
   - repo: https://github.com/pre-commit/mirrors-mypy
     rev: v2.3.1
     hooks:
-    - id: mypy
-      args: [--config-file=pyproject.toml]
-      additional_dependencies:
-      - sphinx~=5.0
-      - markdown-it-py>=1.0.0,<3.0.0
-      - mdit-py-plugins~=0.3.1
-      files: >
-        (?x)^(
-            myst_parser/.*py|
-        )$
+      - id: mypy
+        args: [--config-file=pyproject.toml]
+        additional_dependencies:
+          - sphinx~=5.0
+          - markdown-it-py>=1.0.0,<3.0.0
+          - mdit-py-plugins~=0.3.1
+        files: >
+          (?x)^(
+              myst_parser/.*py|
+          )$
 
   - repo: https://github.com/DavidAnson/markdownlint-cli2
     rev: v0.23.2
     hooks:
-    - id: markdownlint-cli2
+      - id: markdownlint-cli2

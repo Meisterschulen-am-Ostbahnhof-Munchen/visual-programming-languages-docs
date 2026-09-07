@@ -1,0 +1,15 @@
+# Codacy configuration
+# https://docs.codacy.com/repositories-configure/codacy-configuration-file/
+#
+# Codacy engines can't be enabled/disabled from this file (that's a
+# Code patterns dashboard setting we don't have access to here) - only
+# exclude_paths is committable. Excluding these two JS files: they're
+# already enforced by the MegaLinter CI workflow using JavaScript
+# Standard Style, and Codacy's bundled ESLint preset (Prettier + Ember
+# + compat plugins) actively contradicts Standard's conventions
+# (semicolons vs. none, quote style) and flags Ember-specific jQuery
+# rules that don't apply here, producing duplicate, contradictory
+# findings instead of useful ones.
+exclude_paths:
+  - "docs/de/_static/js/expand_tabs.js"
+  - "docs/en/_static/js/expand_tabs.js"

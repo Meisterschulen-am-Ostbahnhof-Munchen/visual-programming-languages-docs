@@ -5,13 +5,14 @@
  * - docs.readthedocs.io/?tab=Name#section
  * Where 'Name' is the title of the tab (case sensitive).
 */
-$( document ).ready(function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const tabName = urlParams.get('tab');
+/* global $ */
+$(document).ready(function () {
+  const urlParams = new URLSearchParams(window.location.search)
+  const tabName = urlParams.get('tab')
   if (tabName !== null) {
-    const tab = $('button.sphinx-tabs-tab:contains("' + tabName + '")');
+    const tab = $('button.sphinx-tabs-tab:contains("' + tabName + '")')
     if (tab.length > 0) {
-      tab.click();
+      tab.click()
     }
   }
-});
+})

@@ -15,7 +15,7 @@ def get_actual_title(rel_path):
             for line in f:
                 if line.startswith('# '):
                     return line[2:].strip()
-    except:
+    except Exception:
         pass
     return None
 

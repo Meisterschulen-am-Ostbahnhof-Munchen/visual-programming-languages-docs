@@ -1,6 +1,5 @@
 import json
 import os
-import re
 
 # Configuration
 file_name = 'Abkuerzungen_und_Bedeutungen.json'
@@ -34,12 +33,18 @@ def find_item(category, term):
     return None
 
 def get_type_for_dt(dt_name):
-    if dt_name == "BOOL": return "bool"
-    if dt_name in ["BYTE", "WORD", "DWORD", "LWORD", "QUARTER"]: return "any_bit"
-    if dt_name in ["SINT", "INT", "DINT", "LINT", "USINT", "UINT", "UDINT", "ULINT"]: return "any_int"
-    if dt_name in ["REAL", "LREAL"]: return "any_real"
-    if dt_name in ["STRING", "WSTRING", "CHAR", "WCHAR"]: return "any_string"
-    if dt_name in ["TIME", "LTIME", "DATE", "LDATE", "TIME_OF_DAY", "LTOD", "DATE_AND_TIME", "LDT", "CAN_MSG"]: return "time"
+    if dt_name == "BOOL":
+        return "bool"
+    if dt_name in ["BYTE", "WORD", "DWORD", "LWORD", "QUARTER"]:
+        return "any_bit"
+    if dt_name in ["SINT", "INT", "DINT", "LINT", "USINT", "UINT", "UDINT", "ULINT"]:
+        return "any_int"
+    if dt_name in ["REAL", "LREAL"]:
+        return "any_real"
+    if dt_name in ["STRING", "WSTRING", "CHAR", "WCHAR"]:
+        return "any_string"
+    if dt_name in ["TIME", "LTIME", "DATE", "LDATE", "TIME_OF_DAY", "LTOD", "DATE_AND_TIME", "LDT", "CAN_MSG"]:
+        return "time"
     return ""
 
 def update_or_add(category, item_def):
@@ -81,7 +86,8 @@ def update_or_add(category, item_def):
 def modify_data(data):
     # 1. Categories
     cat_types = find_category(data, 'cat_types')
-    if cat_types: cat_types['title'] = "Standard-Datentypen"
+    if cat_types:
+        cat_types['title'] = "Standard-Datentypen"
     
     cat_adapter = find_category(data, 'cat_adapter')
     if not cat_adapter:
@@ -152,7 +158,8 @@ def modify_data(data):
     for term, t, ex in ffs:
         path = "StandardLibraries/iec61131-3/bistableElements" if term.startswith("FB_") else ("ExternalLibraries/adapter/events/unidirectional" if term.startswith("AX_") else "StandardLibraries/events")
         link = f'{base_url}Bibliotheken/{path}/{term}/'
-        if term == "AX_SR": link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/events/unidirectional/ASR_AX_SR/'
+        if term == "AX_SR":
+            link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/events/unidirectional/ASR_AX_SR/'
         update_or_add(cat_ff, {"term": term, "link": link, "type": t, "ex": ex})
 
     # 7. Sequences (cat_sequence)
@@ -162,14 +169,18 @@ def modify_data(data):
                 term = f"sequence_{t}_{steps}{suffix}"
                 # Mapping exercises (simplified)
                 ex = ""
-                if term == "sequence_ET_04": ex = "Uebung_035, Uebung_036"
-                elif term == "sequence_ET_05": ex = "Uebung_039"
-                elif term == "sequence_E_08_loop": ex = "Uebung_040"
+                if term == "sequence_ET_04":
+                    ex = "Uebung_035, Uebung_036"
+                elif term == "sequence_ET_05":
+                    ex = "Uebung_039"
+                elif term == "sequence_E_08_loop":
+                    ex = "Uebung_040"
                 
                 group = "event" if t == "E" else ("timed" if t == "T" else "combi")
                 lib = "ExternalLibraries/logiBUS" if "AX" in suffix else "StandardLibraries"
                 link = f'{base_url}Bibliotheken/{lib}/utils/sequence-control/{group}/{term}/'
-                if "AX" in suffix: link = f'{base_url}Bibliotheken/{lib}/utils/sequence/{group}/{term}/'
+                if "AX" in suffix:
+                    link = f'{base_url}Bibliotheken/{lib}/utils/sequence/{group}/{term}/'
                 update_or_add(cat_sequence, {"term": term, "link": link, "ex": ex})
 
     # Special Sequences
@@ -248,7 +259,8 @@ def modify_data(data):
     for term, mean in isobus_blocks:
         # 1. Remove from other categories to avoid duplicates
         for cat in data['categories']:
-            if cat['id'] == 'cat_isobus': continue
+            if cat['id'] == 'cat_isobus':
+                continue
             existing = find_item(cat, term)
             if existing:
                 cat['data'].remove(existing)
@@ -334,8 +346,10 @@ def modify_data(data):
     for term, mean, t in new_logic_types:
         lib = "ExternalLibraries/adapter" if t == "adapter" else "StandardLibraries"
         path = f"{lib}/utils" if not term.startswith("FB_") and term != "F_MUX_32" and term != "F_NOT_BOOL_INIT" else f"{lib}/iec61131-3"
-        if term == "FB_MM710_IMU": path = "ExternalLibraries/logiBUS/sensors"
-        if term in ("hsv2rgb", "strip_set_pixel"): path = "ExternalLibraries/logiBUS/utils"
+        if term == "FB_MM710_IMU":
+            path = "ExternalLibraries/logiBUS/sensors"
+        if term in ("hsv2rgb", "strip_set_pixel"):
+            path = "ExternalLibraries/logiBUS/utils"
         link = f'{base_url}Bibliotheken/{path}/{term}/'
         update_or_add(cat_logic, {"term": term, "link": link, "mean": mean, "type": t})
 
@@ -387,8 +401,10 @@ def modify_data(data):
     ]
     for term, mean in signal_adapters:
         link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/utils/{term}/'
-        if "TON" in term: link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/timers/{term}/'
-        if term in ("AR_ADD_2", "AR_MULTIME", "AUDI_ADD_2", "AD_SHL"): link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/arithmetic/{term}/'
+        if "TON" in term:
+            link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/iec61131/timers/{term}/'
+        if term in ("AR_ADD_2", "AR_MULTIME", "AUDI_ADD_2", "AD_SHL"):
+            link = f'{base_url}Bibliotheken/ExternalLibraries/adapter/arithmetic/{term}/'
         update_or_add(cat_adapter, {"term": term, "link": link, "mean": mean, "type": "adapter"})
 
     # 19. New Hardware IO Adapter Types (cat_hw)
@@ -425,7 +441,8 @@ def modify_data(data):
     ]
     for term, mean in new_isobus_types:
         link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/UT/{term}/'
-        if term.startswith("IA_"): link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/TECU/{term}/'
+        if term.startswith("IA_"):
+            link = f'{base_url}Bibliotheken/ExternalLibraries/isobus/TECU/{term}/'
         update_or_add(cat_isobus, {"term": term, "link": link, "mean": mean, "type": "io", "title": f"ISOBUS: {mean}"})
 
     # 21. Add Interlock Category (cat_interlock)
@@ -491,7 +508,8 @@ def modify_data(data):
     ]
     for term, mean in storage_types:
         lib = "eclipse4diac/storage" if term.startswith("INI") else "logiBUS/storage/esp32_nvs"
-        if term.startswith("E_"): lib = "StandardLibraries/events"
+        if term.startswith("E_"):
+            lib = "StandardLibraries/events"
         link = f'{base_url}Bibliotheken/{lib}/{term}/'
         t = "event" if term.startswith("E_") else "adapter"
         update_or_add(cat_storage, {"term": term, "link": link, "mean": mean, "type": t})
@@ -523,21 +541,24 @@ def make_exercises_clickable(data):
                 exercises = [e.strip() for e in ex_str.split(',')]
                 links = []
                 for ex in exercises:
-                    if not ex: continue
+                    if not ex:
+                        continue
                     path = "test_AX/Uebungen_doc/" if '_AX' in ex else "test_B/Uebungen_doc/"
                     links.append(f'<a href="{ex_base_url}{path}{ex}/" target="_blank">{ex}</a>')
                 item['ex'] = ', '.join(links)
     return data
 
 def main():
-    if not os.path.exists(file_path): return
+    if not os.path.exists(file_path):
+        return
     try:
         data = load_json(file_path)
         data = modify_data(data)
         data = make_exercises_clickable(data)
         save_json(file_path, data)
         print("Done.")
-    except Exception as e: print(f"Error: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
 
 if __name__ == "__main__":
     main()

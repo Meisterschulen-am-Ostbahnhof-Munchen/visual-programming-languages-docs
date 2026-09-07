@@ -1,6 +1,6 @@
 import os
 import re
-from scan_for_exercises import scan_files, target_fbs, search_dirs
+from scan_for_exercises import search_dirs
 
 # Configuration
 DOCS_ROOT = r"visual-programming-languages-docs/docs"

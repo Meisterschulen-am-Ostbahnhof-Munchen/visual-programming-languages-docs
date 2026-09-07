@@ -20,13 +20,16 @@ def fix_json_final_refine():
     for category in data.get('categories', []):
         for entry in category.get('data', []):
             link_int = entry.get('link_int', '')
-            if not link_int: continue
+            if not link_int:
+                continue
             
             match = re.search(r'href="([^"]+)"', link_int)
-            if not match: continue
+            if not match:
+                continue
             
             url = match.group(1)
-            if not url.startswith(BASE_URL): continue
+            if not url.startswith(BASE_URL):
+                continue
             
             rel_url = url[len(BASE_URL):]
             rel_url_clean = rel_url.split('#')[0]

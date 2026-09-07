@@ -1,0 +1,35 @@
+name: MegaLinter
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  megalinter:
+    name: MegaLinter
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+
+      - name: MegaLinter Runner
+        uses: oxsecurity/megalinter@e08c2b05e3dbc40af4c23f41172ef1e068a7d651  # v8.8.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          VALIDATE_ALL_CODEBASE: true
+          # ENABLE_LINTERS (as a YAML list in .mega-linter.yml, then as a
+          # CSV env var here) did not restrict execution either way -
+          # every sub-linter for each enabled language still ran. Using
+          # the denylist form instead: explicitly turn off the redundant
+          # linters within each already-enabled language, keeping one
+          # per language (ruff, htmlhint, yamllint; ACTION/CSS/JS only
+          # ever had one linter each).
+          DISABLE_LINTERS: PYTHON_BANDIT,PYTHON_BLACK,PYTHON_FLAKE8,PYTHON_ISORT,PYTHON_MYPY,PYTHON_PYLINT,PYTHON_PYRIGHT,HTML_DJLINT,YAML_PRETTIER,YAML_V8R

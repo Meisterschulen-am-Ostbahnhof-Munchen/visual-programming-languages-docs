@@ -1,7 +1,6 @@
 import json
 import os
 import re
-from pathlib import Path
 
 # Configuration
 JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkuerzungen_und_Bedeutungen.json')

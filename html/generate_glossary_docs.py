@@ -6,8 +6,6 @@ from reportlab.lib import colors
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib.units import cm
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill
 
@@ -51,7 +49,8 @@ def scan_for_all_exercises():
     """Scans for all FB usage in exercises. Returns a dict {FB_NAME: [EX1, EX2, ...]}"""
     # We collect all terms from the JSON to know what to look for
     data = load_data()
-    if not data: return {}
+    if not data:
+        return {}
     
     target_fbs = []
     for cat in data.get('categories', []):
@@ -92,7 +91,8 @@ def update_json_with_exercises():
     print("Scanning exercises to update JSON...")
     usage = scan_for_all_exercises()
     data = load_data()
-    if not data: return
+    if not data:
+        return
 
     base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/Uebungen/"
 
@@ -158,10 +158,11 @@ def generate_excel(data):
             try:
                 if len(str(cell.value)) > max_length:
                     max_length = len(str(cell.value))
-            except:
+            except Exception:
                 pass
         adjusted_width = (max_length + 2)
-        if adjusted_width > 50: adjusted_width = 50 # Cap width
+        if adjusted_width > 50:
+            adjusted_width = 50 # Cap width
         ws.column_dimensions[column].width = adjusted_width
 
     print(f"Saving Excel to {EXCEL_PATH}...")
@@ -219,8 +220,10 @@ def generate_pdf(data):
                 ex_str = ", ".join(ex_list[:5]) + " ..."
             
             combined_ex = []
-            if type_str: combined_ex.append(f"<b>Typ:</b> {type_str}")
-            if ex_str: combined_ex.append(f"<b>Bsp:</b> {ex_str}")
+            if type_str:
+                combined_ex.append(f"<b>Typ:</b> {type_str}")
+            if ex_str:
+                combined_ex.append(f"<b>Bsp:</b> {ex_str}")
             
             ex_p = Paragraph("<br/>".join(combined_ex), cell_style)
 

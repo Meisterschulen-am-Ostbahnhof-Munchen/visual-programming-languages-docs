@@ -1,5 +1,4 @@
 import os
-import re
 
 # Configuration
 DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))

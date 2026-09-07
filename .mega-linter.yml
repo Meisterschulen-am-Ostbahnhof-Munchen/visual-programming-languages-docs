@@ -1,0 +1,30 @@
+# Configuration for MegaLinter
+# https://megalinter.io/latest/config-file/
+#
+# Scoped to the languages/formats actually present in this repo
+# (checked via `git ls-files`: .py, .yml/.yaml, .css, .js, .html,
+# plus the GitHub Actions workflows themselves). Markdown and secrets
+# scanning are intentionally left out of this list - they're already
+# covered by this repo's dedicated markdownlint CI workflow (tuned
+# config) and the DeepSource "secrets" analyzer, so enabling them
+# here too would just produce duplicate/conflicting feedback on the
+# same files.
+ENABLE:
+  - ACTION
+  - CSS
+  - HTML
+  - JAVASCRIPT
+  - PYTHON
+  - YAML
+
+# Each language above is further restricted to one linter (PYTHON_RUFF,
+# CSS_STYLELINT, HTML_HTMLHINT, JAVASCRIPT_STANDARD, YAML_YAMLLINT,
+# ACTION_ACTIONLINT) instead of every linter MegaLinter knows for that
+# language (e.g. 7 different Python linters at once). That restriction
+# is set via ENABLE_LINTERS as an env var on the workflow step, not
+# here - the YAML-list form of ENABLE_LINTERS in this file was not
+# being honored by the runner (every sub-linter still ran regardless).
+# See .github/workflows/megalinter.yml.
+
+SHOW_ELAPSED_TIME: true
+FILEIO_REPORTER: false

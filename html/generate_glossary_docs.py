@@ -129,7 +129,7 @@ def update_json_with_exercises():
     if not data:
         return
 
-    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/de/latest/Uebungen/"
+    base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/de/latest/Uebungen/"
 
     for cat in data.get('categories', []):
         for item in cat.get('data', []):

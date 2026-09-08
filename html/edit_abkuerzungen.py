@@ -12,8 +12,8 @@ file_path = os.path.join(script_dir, file_name)
 # identical, so only the RTD project base needs to change here.
 base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/"
 dt_base_url = base_url + "Allgemeines/Datentypen/"
-lib_base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-de/de/latest/"
-ex_base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/de/latest/Uebungen/"
+lib_base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/"
+ex_base_url = "https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/de/latest/Uebungen/"
 
 def load_json(path):
     print(f"Loading {path}...")

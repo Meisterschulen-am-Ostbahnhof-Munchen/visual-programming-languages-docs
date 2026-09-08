@@ -308,6 +308,21 @@ HTML_FOOTER = """
                     <td>${safe(row.ext_en)}</td>
                     <td>${safe(row.title)}</td>
                 `;
+                // Precompute the lowercase search text once, here, instead of
+                // reading it back out on every keystroke in filterAllTables().
+                // textContent (unlike innerText) never forces a layout, but
+                // the bigger win is doing this exactly once per row instead
+                // of once per row per keystroke. Join per-cell, not
+                // tr.textContent as a whole: textContent has no concept of
+                // cell/block boundaries and would glue adjacent cells
+                // together with zero separator (e.g. term "...abc" next to
+                // mean "xyz..." becomes "abcxyz", matchable by a query that
+                // spans both), whereas the original row.innerText inserted a
+                // line break at each cell boundary and never allowed that.
+                tr.dataset.search = Array.from(tr.children)
+                    .map(td => td.textContent)
+                    .join('\\n')
+                    .toLowerCase();
                 tbody.appendChild(tr);
             });
 
@@ -334,8 +349,7 @@ HTML_FOOTER = """
             let catVisibleCount = 0;
 
             rows.forEach(row => {
-                const text = row.innerText.toLowerCase();
-                if (text.includes(input)) {
+                if (row.dataset.search.includes(input)) {
                     row.classList.remove('hidden');
                     catVisibleCount++;
                 } else {

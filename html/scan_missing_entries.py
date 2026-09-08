@@ -4,13 +4,16 @@ import re
 
 # Configuration
 JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkuerzungen_und_Bedeutungen.json')
-DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
+# BASE_URL already includes the /de/ language segment (RTD), so DOCS_ROOT
+# must match it - otherwise every file appears "missing" from the JSON.
+DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs', 'de'))
 BASE_URL = 'https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/'
 
 # Files to ignore (not content blocks)
 IGNORE_FILES = {
-    'index.md', 'README.md', 'conf.py', 'requirements.txt', 'make.bat', 'Makefile', 
-    'Welcome.md', 'Literatur.md', 'Übungsaufgaben.md', 'Visuelle-Programmiersprachen.md'
+    'index.md', 'README.md', 'conf.py', 'requirements.txt', 'make.bat', 'Makefile',
+    'Welcome.md', 'Literatur.md', 'Übungsaufgaben.md', 'Visuelle-Programmiersprachen.md',
+    'README_std_fonts.md'
 }
 
 def get_linked_files_and_dirs(data):

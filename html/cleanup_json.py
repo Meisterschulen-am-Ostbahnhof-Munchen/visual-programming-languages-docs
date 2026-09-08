@@ -3,8 +3,24 @@ import os
 import re
 
 JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkuerzungen_und_Bedeutungen.json')
-DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
+# BASE_URL already includes the /de/ language segment (RTD), so DOCS_ROOT
+# must match it - otherwise every existence check below false-positives as
+# "missing" and this script would delete every valid entry.
+DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs', 'de'))
 BASE_URL = 'https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/'
+
+def resolve_md_path(rel_url_path):
+    """Resolve a docs URL path to the source .md file, handling both the
+    explicit '.html' form and MkDocs' pretty-URL trailing-slash form
+    (page.md served at 'page/'), which a bare '.html'->'.md' replace
+    silently ignores (a trailing slash has no '.html' to replace)."""
+    if rel_url_path.endswith('.html'):
+        return rel_url_path.replace('.html', '.md')
+
+    trimmed = rel_url_path[:-1] if rel_url_path.endswith('/') else rel_url_path
+    if os.path.exists(os.path.join(DOCS_ROOT, (trimmed + '.md').replace('/', os.sep))):
+        return trimmed + '.md'
+    return (trimmed + '/index.md') if trimmed else 'index.md'
 
 def get_actual_title(rel_path):
     abs_path = os.path.join(DOCS_ROOT, rel_path.replace('/', os.sep))
@@ -50,7 +66,7 @@ def cleanup_json():
                 continue
             
             rel_url = url[len(BASE_URL):].split('#')[0]
-            rel_md = rel_url.replace('.html', '.md')
+            rel_md = resolve_md_path(rel_url)
             abs_md = os.path.join(DOCS_ROOT, rel_md.replace('/', os.sep))
             
             # 1. Remove if link is dead and no Index variant exists
@@ -69,7 +85,10 @@ def cleanup_json():
             # Skip structural names for term comparison
             clean_filename = filename_no_ext.replace('_Index', '').replace('_Type', '').replace('_Conv', '').replace('_Adapter', '')
             
-            if entry['term'] == "BOOL" and clean_filename != "BOOL":
+            if entry['term'] == "BOOL" and clean_filename != "BOOL" and clean_filename.lower() != "index":
+                 # 'index.md' is a directory landing page (e.g. BOOL/index.md
+                 # served at BOOL/), not a page named after the term - never
+                 # rename the term to match it.
                  # Correct the term to the actual filename
                  print(f"[FIX TERM] '{entry['term']}' -> '{filename_no_ext}' (Path: {rel_md})")
                  entry['term'] = filename_no_ext

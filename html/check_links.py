@@ -4,7 +4,9 @@ import re
 
 # Configuration
 JSON_PATH = os.path.join(os.path.dirname(__file__), 'Abkuerzungen_und_Bedeutungen.json')
-DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs'))
+# BASE_URL already includes the /de/ language segment (RTD), so DOCS_ROOT
+# must match it - otherwise every internal link false-positives as broken.
+DOCS_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', 'docs', 'de'))
 BASE_URL = 'https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/'
 
 def normalize_term(term):
@@ -12,6 +14,24 @@ def normalize_term(term):
     # Remove common prefixes/suffixes if needed, or take first word
     # E.g. "E_T_FF / Flip-Flop" -> "E_T_FF"
     return term.split(' ')[0].split('/')[0].strip()
+
+def resolve_md_path(rel_url_path, docs_root):
+    """Resolve a docs URL path to the source .md file, handling both the
+    explicit '.html' form and MkDocs' pretty-URL trailing-slash form
+    (page.md served at 'page/'), which the old '.html'->'.md' replace
+    silently ignored (a bare trailing slash has no '.html' to replace)."""
+    if rel_url_path.endswith('.html'):
+        rel_md_path = rel_url_path.replace('.html', '.md')
+        return rel_md_path, os.path.join(docs_root, rel_md_path.replace('/', os.sep))
+
+    trimmed = rel_url_path[:-1] if rel_url_path.endswith('/') else rel_url_path
+    candidate_md = trimmed + '.md'
+    abs_candidate_md = os.path.join(docs_root, candidate_md.replace('/', os.sep))
+    if os.path.exists(abs_candidate_md):
+        return candidate_md, abs_candidate_md
+
+    candidate_index = trimmed + '/index.md' if trimmed else 'index.md'
+    return candidate_index, os.path.join(docs_root, candidate_index.replace('/', os.sep))
 
 def check_and_fix_links():
     print(f"Checking links in {JSON_PATH}...")
@@ -43,11 +63,8 @@ def check_and_fix_links():
                 # Remove anchor # if present
                 rel_url_path = rel_url_path.split('#')[0]
                 
-                # Convert .html to .md
-                rel_md_path = rel_url_path.replace('.html', '.md')
-                
-                abs_file_path = os.path.join(DOCS_ROOT, rel_md_path.replace('/', os.sep))
-                
+                rel_md_path, abs_file_path = resolve_md_path(rel_url_path, DOCS_ROOT)
+
                 # Check 1: Does the file exist?
                 if not os.path.exists(abs_file_path):
                     # Check for _Index variant

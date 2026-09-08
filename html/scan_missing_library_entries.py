@@ -25,7 +25,7 @@ IGNORE_FILES = {
 def url_to_rel_path(url):
     """Normalize a LIB_BASE_URL-prefixed link (pretty '/' URL or '.html') back
     to the source-relative '.md' path it was generated from."""
-    rel_path = url[len(LIB_BASE_URL):].split('#')[0]
+    rel_path = urllib.parse.unquote(url[len(LIB_BASE_URL):].split('#')[0])
     if rel_path.endswith('/'):
         return rel_path[:-1] + '.md'
     if '.html' in rel_path:

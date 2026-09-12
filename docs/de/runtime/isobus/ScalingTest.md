@@ -143,7 +143,54 @@ CCI-Colour: manufCode=339 forceCCI=2 passthrough=0 solidTest=0/0
 
 `passthrough=1` bedeutet, dass Farben unverändert durchgereicht werden (CCI erkannt oder `forceCCI = 1`). Bei `passthrough=0` kommt es auf `solidTest` an: `solidTest=0` bedeutet, dass die Lookup-Tabelle angewendet wird (Normalfall Nicht-CCI, oder `forceCCI = 2`); `solidTest=1` bedeutet, dass stattdessen jeder Farbindex 232-255 durch die feste Testfarbe (`forceCCIColor`) ersetzt wird (`forceCCI = 3`).
 
+## Farbtiefen-Simulation (16-Farben / monochrome VTs)
+
+### Hintergrund
+
+Unabhängig vom CCI-Farbfallback erkennt der VT-Client automatisch, wenn ein angeschlossenes VT selbst **weniger Farben** unterstützt als der Object Pool (z. B. nur 16 Farben oder nur Schwarz/Weiß), und reduziert die Pool-Farben dann passend - siehe [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) für Hintergrund und die vollständigen Zuordnungstabellen. Das läuft im Normalbetrieb komplett automatisch anhand der vom VT gemeldeten Fähigkeiten.
+
+Mit `forceColourDepth` lässt sich dieses Verhalten am SCALING-TEST gezielt simulieren, auch wenn tatsächlich ein volles 256-Farben-VT angeschlossen ist - nützlich, um zu prüfen, wie ein Pool auf einem einfacheren VT aussehen wird, ohne dessen Hardware zu benötigen. Bilder/Icons im Pool werden dabei direkt in der reduzierten Farbtiefe erzeugt; für alle anderen Objekte (Hintergrund-, Rahmen- und Textfarben) gilt dieselbe Zuordnung wie in [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) beschrieben.
+
+### Werte für die Farbtiefe
+
+`forceColourDepth` verwendet dieselben Werte, mit denen auch ein VT selbst seine Farbfähigkeit meldet:
+
+| Wert | Bedeutung |
+|---|---|
+| `0` | Monochrom (nur Schwarz/Weiß) |
+| `1` | 16 Farben |
+| `2` | 256 Farben (= Aus, keine Simulation - Normalverhalten) |
+
+### Schlüssel (Farbtiefen-Simulation)
+
+| Schlüssel           | Bedeutung                                              | Gültige Werte                                                              | Default (wenn nicht gesetzt) |
+|----------------------|------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------|
+| `forceColourDepth`   | Simuliert ein VT mit weniger Farben                        | `0` = Monochrom, `1` = 16 Farben, `2` = 256 Farben (Aus) - siehe Tabelle oben | `2` (Aus)                       |
+
+`forceColourDepth` wird **nur ausgewertet, wenn `enable = 1` gesetzt ist**, und wirkt zusätzlich zum CCI-Farbfallback (also auch auf bereits umgemappte Farbindizes 232-255).
+
+### Beispiel: 16-Farben-VT simulieren
+
+```ini
+[ScalingTest]
+enable = 1
+forceColourDepth = 1
+```
+
+### Verifikation / erwartete Debug-Ausgabe (Farbtiefe)
+
+```text
+CCI-Colour: manufCode=339 forceCCI=0 passthrough=1 solidTest=0/0 forceColourDepth=1
+```
+
+Wird ein ungültiger Wert gesetzt (z. B. `forceColourDepth = 5`), erscheint stattdessen:
+
+```text
+CCI-Colour: ignoring out-of-range forceColourDepth=5 (valid 0=monochrome/1=colour_16/2=colour_256), using 2
+```
+
 ## Siehe auch
 
 - [Scaling](Scaling.md) — Hintergrund zur Skalierungslogik nach ISO 11783-6
 - [SoftKey Reduction](SoftKeyReduction.md) — Hintergrund zur Softkey-Reduktion
+- [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) — vollständige 256→16- und 16→2-Zuordnungstabellen

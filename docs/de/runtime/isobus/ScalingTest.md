@@ -2,15 +2,16 @@
 
 ## Zweck
 
-Der **SCALING-TEST** ist ein Test-Feature im VT-Client (`App_VTClient.c`), mit dem sich die [Skalierung](Scaling.md) der Object Pools und die [Softkey-Reduktion](SoftKeyReduction.md) gezielt durchtesten lassen, **ohne den Quellcode zu ändern oder neu zu kompilieren**.
+Der **SCALING-TEST** ist ein Test-Feature im VT-Client, mit dem sich die [Skalierung](Scaling.md) der Object Pools, die [Softkey-Reduktion](SoftKeyReduction.md) und der [CCI-Farbfallback](#cci-farbfallback-farbindizes-232-255) gezielt durchtesten lassen, **ohne den Quellcode zu ändern oder neu zu kompilieren**.
 
 Normalerweise werden folgende Werte beim Verbindungsaufbau live vom angeschlossenen Virtual Terminal (VT) abgefragt:
 
 - der **Data-Mask-Skalierungsfaktor** (`PoolDataMaskScalFaktor`)
 - der **Softkey-Mask-Skalierungsfaktor** (`PoolSoftKeyMaskScalFaktor`)
 - die **Anzahl der physischen Softkeys** (`VT_PHYSICALSOFTKEYS`)
+- der **Manufacturer Code** des VT (NAME-Feld aus dem ISO 11783-5-Adressclaim), der entscheidet, ob Farbindizes 232-255 unverändert durchgereicht oder umgemappt werden
 
-Um das Verhalten für unterschiedliche VT-Bildschirmgrößen, Skalierungsfaktoren oder Softkey-Anzahlen zu testen, müsste man bisher einen echten VT mit den entsprechenden Eigenschaften anschließen. Mit dem SCALING-TEST können diese drei Werte stattdessen über eine Einstellung in `settings.ini` überschrieben werden.
+Um das Verhalten für unterschiedliche VT-Bildschirmgrößen, Skalierungsfaktoren, Softkey-Anzahlen oder VT-Hersteller zu testen, müsste man bisher einen echten VT mit den entsprechenden Eigenschaften anschließen. Mit dem SCALING-TEST können diese Werte stattdessen über eine Einstellung in `settings.ini` überschrieben werden.
 
 !!! warning "Nur für Testzwecke"
     Der SCALING-TEST ist ein Entwickler-/Testwerkzeug. Er ist standardmäßig **deaktiviert** und darf in Produktivgeräten nicht dauerhaft aktiviert bleiben, da er absichtlich die normale Sicherheitsgrenze für die Skalierung (siehe unten) umgeht.
@@ -32,7 +33,7 @@ dmScal = 12000
 softkeys = 8
 ```
 
-### Schlüssel
+### Schlüssel (Skalierung und Softkeys)
 
 | Schlüssel  | Bedeutung                                              | Gültige Werte                          | Default (wenn nicht gesetzt)          |
 |------------|----------------------------------------------------------|-----------------------------------------|----------------------------------------|
@@ -49,7 +50,7 @@ softkeys = 8
 - **Ungültige Softkey-Anzahl wird verworfen**: Die Softkey-Reduktion (siehe [SoftKey Reduction](SoftKeyReduction.md)) unterstützt nur die Werte 6 bis 11. Wird `softkeys` außerhalb dieses Bereichs gesetzt (z. B. `20` oder `3`), wird der Override ignoriert, eine Debug-Meldung ausgegeben und stattdessen der live vom VT abgefragte Wert verwendet.
 - **Kein Neustart des Geräts nötig, aber ein VT-Reconnect**: Die Werte werden bei jedem Laden des Object Pools ausgewertet (VT-Verbindungsaufbau bzw. Reconnect). Nach einer Änderung von `settings.ini` muss also die Verbindung zum VT neu aufgebaut werden (oder das Gerät neu gestartet werden), damit die neuen Werte greifen.
 
-## Verifikation / erwartete Debug-Ausgabe
+## Verifikation / erwartete Debug-Ausgabe (Skalierung)
 
 Ist der SCALING-TEST aktiv, erscheint in den Debug-Logs beim Pool-Laden zusätzlich folgende Zeile:
 
@@ -78,7 +79,118 @@ SCALING-TEST: ignoring out-of-range softkeys override=20 (valid 6..11), using li
 4. Am angeschlossenen VT visuell prüfen: Data-Mask-Objekte erscheinen mit dem Faktor `dmScal`, Softkey-Mask-Objekte mit dem Faktor `skmScal` skaliert bzw. zentriert; bei `softkeys = 8` werden aus einem für 12 Softkeys ausgelegten Pool nur noch 8 Softkeys angezeigt.
 5. Zum Abschluss `enable = 0` setzen (oder die Sektion entfernen), um wieder das normale, live vom VT abgeleitete Verhalten zu erhalten.
 
+## CCI-Farbfallback (Farbindizes 232-255)
+
+### Hintergrund (CCI-Farbfallback)
+
+Nach ISO 11783-6 Annex A ("VT standard colour palette", Table A.4) sind nur die Farbindizes **0-231** als einheitliche Standardpalette garantiert - jedes ISOBUS-VT muss sie identisch rendern. Die Indizes **232-255** sind laut Norm ausdrücklich **"Proprietary"**: wie ein bestimmtes VT sie darstellt, ist herstellerabhängig und nicht festgelegt.
+
+Der Object Pool nutzt an einigen Stellen Farbindizes aus diesem Bereich (z. B. für ein dezentes Zeilen-Grau in Tabellen). Auf einem **CCI-VT** (Competence Center ISOBUS e.V., Manufacturer Code `339`) ist das Aussehen bereits geprüft und gewünscht - dort werden diese Farbwerte **unverändert durchgereicht**. Auf **allen anderen VTs** (z. B. FENDT/AGCO - im Hardware-Test bestätigt abweichend) werden die Farbindizes 232-255 stattdessen über eine **Lookup-Tabelle** auf den jeweils nächstliegenden Standardfarbindex (0-231) umgemappt, bevor der Pool gesendet wird.
+
+Die Erkennung, ob ein CCI-VT angeschlossen ist, läuft automatisch über den Manufacturer Code im NAME-Feld des VT (ISO 11783-5-Adressclaim) - **kein manuelles Eingreifen im Normalbetrieb nötig**. Der SCALING-TEST erlaubt es, dieses Verhalten gezielt zu erzwingen bzw. zu simulieren.
+
+### Umrechnungstabelle (Farbindizes 232-255 → 0-231)
+
+Die Indizes 232-255 bilden im Object Pool eine 24-stufige Graustufen-Rampe (verifiziert in Bucher ISO Designer sowie auf echter CCI- und Bucher-VT-Hardware). Auf einem Nicht-CCI-VT (`forceCCI = 2`, oder automatisch erkannt) wird jeder dieser Werte fest auf den nächstliegenden Standardfarbindex (0-231, per euklidischem RGB-Abstand nach ISO 11783-6 Annex A, Table A.4) abgebildet:
+
+| Farbindex (Pool) | → Standard-Index | Standardfarbe                    |
+|-------------------|--------------------|------------------------------------|
+| 232, 233           | `0`                | Schwarz (`#000000`)                |
+| 234–238             | `59`               | Dunkelgrau (`#333333`)              |
+| 239–243             | `102`              | Grau (`#666666`)                    |
+| 244–247             | `8`                | Grau (`#999999`)                    |
+| 248–252             | `7`                | Silber (`#CCCCCC`)                  |
+| 253–255             | `1`                | Weiß (`#FFFFFF`)                    |
+
+Diese Zuordnung gilt für die aktuell im Object Pool tatsächlich genutzten Farbindizes (u. a. das Zeilen-Grau in Tabellen). Wird künftig ein Pool-Objekt mit einer **nicht-grauen** Farbe aus 232-255 angelegt, muss die Zuordnung um diesen Index erweitert werden - sonst erscheint auf Nicht-CCI-VTs stattdessen ein Grauton.
+
+### Schlüssel (CCI-Farbfallback)
+
+| Schlüssel        | Bedeutung                                                                 | Gültige Werte                                                                                                  | Default (wenn nicht gesetzt)     |
+|-------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------|
+| `forceCCI`        | Überschreibt das Ergebnis der CCI-Erkennung                                | `0` = Auto (echte Erkennung über Manufacturer Code), `1` = CCI erzwingen (Farben unverändert), `2` = Nicht-CCI erzwingen (Lookup-Tabelle), `3` = FENDT/AGCO-Simulation (jeder Farbindex 232-255 wird durch `forceCCIColor` ersetzt) | `0` (Auto)                         |
+| `manufCode`       | Überschreibt den ausgelesenen Manufacturer Code des VT                     | beliebiger Manufacturer Code, z. B. `339` (CCI) oder `102` (AGCO)                                                  | der live vom VT gelesene Wert      |
+| `forceCCIColor`   | Testfarbe für den Modus `forceCCI = 3`                                    | Farbindex `0`-`231`                                                                                                | `0` (Schwarz)                      |
+
+`forceCCI`, `manufCode` und `forceCCIColor` werden **nur ausgewertet, wenn `enable = 1` gesetzt ist** (dieselbe Sektion, derselbe Master-Schalter wie bei den Skalierungs-Optionen oben).
+
+### Beispiel: Nicht-CCI-VT simulieren
+
+```ini
+[ScalingTest]
+enable = 1
+forceCCI = 2
+```
+
+### Beispiel: FENDT/AGCO-Simulation mit Signalfarbe
+
+Zeigt jedes Objekt, das eigentlich einen Farbindex 232-255 nutzt, in einer festen Testfarbe an - so lassen sich alle betroffenen Objekte auf einen Blick am Bildschirm erkennen:
+
+```ini
+[ScalingTest]
+enable = 1
+forceCCI = 3
+forceCCIColor = 12
+```
+
+(Farbindex `12` = Rot; siehe die Standard-Farbtabelle nach ISO 11783-6 Annex A.)
+
+### Verifikation / erwartete Debug-Ausgabe (Farbfallback)
+
+```text
+CCI-Colour: manufCode=339 forceCCI=2 passthrough=0 solidTest=0/0
+```
+
+`passthrough=1` bedeutet, dass Farben unverändert durchgereicht werden (CCI erkannt oder `forceCCI = 1`). Bei `passthrough=0` kommt es auf `solidTest` an: `solidTest=0` bedeutet, dass die Lookup-Tabelle angewendet wird (Normalfall Nicht-CCI, oder `forceCCI = 2`); `solidTest=1` bedeutet, dass stattdessen jeder Farbindex 232-255 durch die feste Testfarbe (`forceCCIColor`) ersetzt wird (`forceCCI = 3`).
+
+## Farbtiefen-Simulation (16-Farben / monochrome VTs)
+
+### Hintergrund (Farbtiefen-Simulation)
+
+Unabhängig vom CCI-Farbfallback erkennt der VT-Client automatisch, wenn ein angeschlossenes VT selbst **weniger Farben** unterstützt als der Object Pool (z. B. nur 16 Farben oder nur Schwarz/Weiß), und reduziert die Pool-Farben dann passend - siehe [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) für Hintergrund und die vollständigen Zuordnungstabellen. Das läuft im Normalbetrieb komplett automatisch anhand der vom VT gemeldeten Fähigkeiten.
+
+Mit `forceColourDepth` lässt sich dieses Verhalten am SCALING-TEST gezielt simulieren, auch wenn tatsächlich ein volles 256-Farben-VT angeschlossen ist - nützlich, um zu prüfen, wie ein Pool auf einem einfacheren VT aussehen wird, ohne dessen Hardware zu benötigen. Bilder/Icons im Pool werden dabei direkt in der reduzierten Farbtiefe erzeugt; für alle anderen Objekte (Hintergrund-, Rahmen- und Textfarben) gilt dieselbe Zuordnung wie in [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) beschrieben.
+
+### Werte für die Farbtiefe
+
+`forceColourDepth` verwendet dieselben Werte, mit denen auch ein VT selbst seine Farbfähigkeit meldet:
+
+| Wert | Bedeutung |
+|---|---|
+| `0` | Monochrom (nur Schwarz/Weiß) |
+| `1` | 16 Farben |
+| `2` | 256 Farben (= Aus, keine Simulation - Normalverhalten) |
+
+### Schlüssel (Farbtiefen-Simulation)
+
+| Schlüssel           | Bedeutung                                              | Gültige Werte                                                              | Default (wenn nicht gesetzt) |
+|----------------------|------------------------------------------------------------|---------------------------------------------------------------------------------|---------------------------------|
+| `forceColourDepth`   | Simuliert ein VT mit weniger Farben                        | `0` = Monochrom, `1` = 16 Farben, `2` = 256 Farben (Aus) - siehe Tabelle oben | `2` (Aus)                       |
+
+`forceColourDepth` wird **nur ausgewertet, wenn `enable = 1` gesetzt ist**, und wirkt zusätzlich zum CCI-Farbfallback (also auch auf bereits umgemappte Farbindizes 232-255).
+
+### Beispiel: 16-Farben-VT simulieren
+
+```ini
+[ScalingTest]
+enable = 1
+forceColourDepth = 1
+```
+
+### Verifikation / erwartete Debug-Ausgabe (Farbtiefe)
+
+```text
+CCI-Colour: manufCode=339 forceCCI=0 passthrough=1 solidTest=0/0 forceColourDepth=1
+```
+
+Wird ein ungültiger Wert gesetzt (z. B. `forceColourDepth = 5`), erscheint stattdessen:
+
+```text
+CCI-Colour: ignoring out-of-range forceColourDepth=5 (valid 0=monochrome/1=colour_16/2=colour_256), using 2
+```
+
 ## Siehe auch
 
 - [Scaling](Scaling.md) — Hintergrund zur Skalierungslogik nach ISO 11783-6
 - [SoftKey Reduction](SoftKeyReduction.md) — Hintergrund zur Softkey-Reduktion
+- [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) — vollständige 256→16- und 16→2-Zuordnungstabellen

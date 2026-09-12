@@ -33,7 +33,7 @@ dmScal = 12000
 softkeys = 8
 ```
 
-### Schlüssel
+### Schlüssel (Skalierung und Softkeys)
 
 | Schlüssel  | Bedeutung                                              | Gültige Werte                          | Default (wenn nicht gesetzt)          |
 |------------|----------------------------------------------------------|-----------------------------------------|----------------------------------------|
@@ -50,7 +50,7 @@ softkeys = 8
 - **Ungültige Softkey-Anzahl wird verworfen**: Die Softkey-Reduktion (siehe [SoftKey Reduction](SoftKeyReduction.md)) unterstützt nur die Werte 6 bis 11. Wird `softkeys` außerhalb dieses Bereichs gesetzt (z. B. `20` oder `3`), wird der Override ignoriert, eine Debug-Meldung ausgegeben und stattdessen der live vom VT abgefragte Wert verwendet.
 - **Kein Neustart des Geräts nötig, aber ein VT-Reconnect**: Die Werte werden bei jedem Laden des Object Pools ausgewertet (VT-Verbindungsaufbau bzw. Reconnect). Nach einer Änderung von `settings.ini` muss also die Verbindung zum VT neu aufgebaut werden (oder das Gerät neu gestartet werden), damit die neuen Werte greifen.
 
-## Verifikation / erwartete Debug-Ausgabe
+## Verifikation / erwartete Debug-Ausgabe (Skalierung)
 
 Ist der SCALING-TEST aktiv, erscheint in den Debug-Logs beim Pool-Laden zusätzlich folgende Zeile:
 
@@ -104,7 +104,7 @@ Die Indizes 232-255 bilden im Object Pool eine 24-stufige Graustufen-Rampe (veri
 
 Diese Zuordnung gilt für die aktuell im Object Pool tatsächlich genutzten Farbindizes (u. a. das Zeilen-Grau in Tabellen). Wird künftig ein Pool-Objekt mit einer **nicht-grauen** Farbe aus 232-255 angelegt, muss die Zuordnung um diesen Index erweitert werden - sonst erscheint auf Nicht-CCI-VTs stattdessen ein Grauton.
 
-### Schlüssel
+### Schlüssel (CCI-Farbfallback)
 
 | Schlüssel        | Bedeutung                                                                 | Gültige Werte                                                                                                  | Default (wenn nicht gesetzt)     |
 |-------------------|----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------|------------------------------------|
@@ -135,7 +135,7 @@ forceCCIColor = 12
 
 (Farbindex `12` = Rot; siehe die Standard-Farbtabelle nach ISO 11783-6 Annex A.)
 
-### Verifikation / erwartete Debug-Ausgabe
+### Verifikation / erwartete Debug-Ausgabe (Farbfallback)
 
 ```text
 CCI-Colour: manufCode=339 forceCCI=2 passthrough=0 solidTest=0/0

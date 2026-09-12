@@ -89,6 +89,21 @@ Der Object Pool nutzt an einigen Stellen Farbindizes aus diesem Bereich (z. B. f
 
 Die Erkennung, ob ein CCI-VT angeschlossen ist, läuft automatisch über den Manufacturer Code im NAME-Feld des VT (ISO 11783-5-Adressclaim) - **kein manuelles Eingreifen im Normalbetrieb nötig**. Der SCALING-TEST erlaubt es, dieses Verhalten gezielt zu erzwingen bzw. zu simulieren.
 
+### Umrechnungstabelle (Farbindizes 232-255 → 0-231)
+
+Die Indizes 232-255 bilden im Object Pool eine 24-stufige Graustufen-Rampe (verifiziert in Bucher ISO Designer sowie auf echter CCI- und Bucher-VT-Hardware). Auf einem Nicht-CCI-VT (`forceCCI = 2`, oder automatisch erkannt) wird jeder dieser Werte fest auf den nächstliegenden Standardfarbindex (0-231, per euklidischem RGB-Abstand nach ISO 11783-6 Annex A, Table A.4) abgebildet:
+
+| Farbindex (Pool) | → Standard-Index | Standardfarbe                    |
+|-------------------|--------------------|------------------------------------|
+| 232, 233           | `0`                | Schwarz (`#000000`)                |
+| 234–238             | `59`               | Dunkelgrau (`#333333`)              |
+| 239–243             | `102`              | Grau (`#666666`)                    |
+| 244–247             | `8`                | Grau (`#999999`)                    |
+| 248–252             | `7`                | Silber (`#CCCCCC`)                  |
+| 253–255             | `1`                | Weiß (`#FFFFFF`)                    |
+
+Diese Zuordnung gilt für die aktuell im Object Pool tatsächlich genutzten Farbindizes (u. a. das Zeilen-Grau in Tabellen). Wird künftig ein Pool-Objekt mit einer **nicht-grauen** Farbe aus 232-255 angelegt, muss die Zuordnung um diesen Index erweitert werden - sonst erscheint auf Nicht-CCI-VTs stattdessen ein Grauton.
+
 ### Schlüssel
 
 | Schlüssel        | Bedeutung                                                                 | Gültige Werte                                                                                                  | Default (wenn nicht gesetzt)     |

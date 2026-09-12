@@ -89,6 +89,21 @@ The object pool uses colour indices from this range in a few places (e.g. a subt
 
 Detecting whether a CCI VT is connected happens automatically via the manufacturer code in the VT's NAME field (ISO 11783-5 address claim) - **no manual intervention needed in normal operation**. The SCALING-TEST lets you force or simulate this behavior on demand.
 
+### Remapping table (colour indices 232-255 → 0-231)
+
+Indices 232-255 form a 24-step greyscale ramp in the object pool (verified in Bucher ISO Designer and on real CCI and Bucher VT hardware). On a non-CCI VT (`forceCCI = 2`, or auto-detected), each of these values is mapped to a fixed nearest standard colour index (0-231, by Euclidean RGB distance per ISO 11783-6 Annex A, Table A.4):
+
+| Colour index (pool) | → Standard index | Standard colour                  |
+|-----------------------|---------------------|--------------------------------------|
+| 232, 233               | `0`                  | Black (`#000000`)                    |
+| 234–238                 | `59`                 | Dark grey (`#333333`)                |
+| 239–243                 | `102`                | Grey (`#666666`)                     |
+| 244–247                 | `8`                  | Grey (`#999999`)                     |
+| 248–252                 | `7`                  | Silver (`#CCCCCC`)                   |
+| 253–255                 | `1`                  | White (`#FFFFFF`)                    |
+
+This mapping covers the colour indices currently used in the object pool (e.g. the grey table row background). If a future pool object ever uses a **non-grey** colour from 232-255, the mapping needs to be extended for that index - otherwise a shade of grey would appear instead on non-CCI VTs.
+
 ### Keys
 
 | Key               | Meaning                                                                   | Valid values                                                                                                        | Default (if not set)              |

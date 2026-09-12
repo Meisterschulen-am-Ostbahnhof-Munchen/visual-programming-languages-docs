@@ -2,7 +2,7 @@
 
 ## Purpose
 
-The **SCALING-TEST** is a test feature in the VT client (`App_VTClient.c`) that lets you exercise [scaling](Scaling.md) of the object pools, [softkey reduction](SoftKeyReduction.md), and the [CCI colour fallback](#cci-colour-fallback-colour-indices-232-255) in a targeted way, **without changing the source code or recompiling**.
+The **SCALING-TEST** is a test feature in the VT client that lets you exercise [scaling](Scaling.md) of the object pools, [softkey reduction](SoftKeyReduction.md), and the [CCI colour fallback](#cci-colour-fallback-colour-indices-232-255) in a targeted way, **without changing the source code or recompiling**.
 
 Normally, the following values are read live from the connected Virtual Terminal (VT) when the connection is established:
 

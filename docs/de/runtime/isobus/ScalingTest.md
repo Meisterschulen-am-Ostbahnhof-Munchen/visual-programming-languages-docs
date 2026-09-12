@@ -2,7 +2,7 @@
 
 ## Zweck
 
-Der **SCALING-TEST** ist ein Test-Feature im VT-Client (`App_VTClient.c`), mit dem sich die [Skalierung](Scaling.md) der Object Pools, die [Softkey-Reduktion](SoftKeyReduction.md) und der [CCI-Farbfallback](#cci-farbfallback-farbindizes-232-255) gezielt durchtesten lassen, **ohne den Quellcode zu ändern oder neu zu kompilieren**.
+Der **SCALING-TEST** ist ein Test-Feature im VT-Client, mit dem sich die [Skalierung](Scaling.md) der Object Pools, die [Softkey-Reduktion](SoftKeyReduction.md) und der [CCI-Farbfallback](#cci-farbfallback-farbindizes-232-255) gezielt durchtesten lassen, **ohne den Quellcode zu ändern oder neu zu kompilieren**.
 
 Normalerweise werden folgende Werte beim Verbindungsaufbau live vom angeschlossenen Virtual Terminal (VT) abgefragt:
 

@@ -40,14 +40,14 @@ softkeys = 8
 | `enable`   | Master-Schalter für den SCALING-TEST                     | `0` = aus, `1` = an                     | `0` (aus, Normalverhalten)              |
 | `skmScal`  | Überschreibt den Softkey-Mask-Skalierungsfaktor            | ganzzahliger Faktor, Einheit 1/10000 (`10000` = 100 %, `15000` = 150 %) | der live vom VT gelesene Wert          |
 | `dmScal`   | Überschreibt den Data-Mask-Skalierungsfaktor               | wie `skmScal`                            | der live vom VT gelesene Wert          |
-| `softkeys` | Überschreibt die Anzahl der physischen Softkeys (`sknu`)  | `6` bis `11`                              | der live vom VT gelesene Wert          |
+| `softkeys` | Überschreibt die Anzahl der physischen Softkeys (`sknu`)  | `6` bis `12`                              | der live vom VT gelesene Wert          |
 
 `skmScal`, `dmScal` und `softkeys` werden **nur ausgewertet, wenn `enable = 1` gesetzt ist**. Fehlt die Sektion `[ScalingTest]` komplett oder ist `enable = 0`, verhält sich der VT-Client exakt wie ohne dieses Feature.
 
 ## Besonderheiten
 
 - **111 %-Klemme wird übersprungen**: Im Normalbetrieb wird ein Softkey-Mask-Skalierungsfaktor zwischen 90 % und 111,11 % auf 100 % zurückgesetzt (damit z. B. 80×80- und 72×72-Softkeys nicht unnötig skaliert werden, siehe [Scaling](Scaling.md)). Ist der SCALING-TEST aktiv, wird dieser Schutz bewusst **nicht** angewendet, damit der gesetzte Testwert exakt wie konfiguriert sichtbar wird.
-- **Ungültige Softkey-Anzahl wird verworfen**: Die Softkey-Reduktion (siehe [SoftKey Reduction](SoftKeyReduction.md)) unterstützt nur die Werte 6 bis 11. Wird `softkeys` außerhalb dieses Bereichs gesetzt (z. B. `20` oder `3`), wird der Override ignoriert, eine Debug-Meldung ausgegeben und stattdessen der live vom VT abgefragte Wert verwendet.
+- **Ungültige Softkey-Anzahl wird verworfen**: Die Softkey-Reduktion (siehe [SoftKey Reduction](SoftKeyReduction.md)) unterstützt nur die Werte 6 bis 12 (12 bedeutet: keine Reduktion nötig, der Pool passt bereits). Wird `softkeys` außerhalb dieses Bereichs gesetzt (z. B. `20` oder `3`), wird der Override ignoriert, eine Debug-Meldung ausgegeben und stattdessen der live vom VT abgefragte Wert verwendet.
 - **Kein Neustart des Geräts nötig, aber ein VT-Reconnect**: Die Werte werden bei jedem Laden des Object Pools ausgewertet (VT-Verbindungsaufbau bzw. Reconnect). Nach einer Änderung von `settings.ini` muss also die Verbindung zum VT neu aufgebaut werden (oder das Gerät neu gestartet werden), damit die neuen Werte greifen.
 
 ## Verifikation / erwartete Debug-Ausgabe (Skalierung)
@@ -68,8 +68,10 @@ PoolSoftKeyMaskScalFaktor =  15000
 Wird ein ungültiger Softkey-Override gesetzt (z. B. `softkeys = 20`), erscheint stattdessen:
 
 ```text
-SCALING-TEST: ignoring out-of-range softkeys override=20 (valid 6..11), using live value=12
+SCALING-TEST: SoftKeyMask 4000: ignoring out-of-range softkeys override=20 (valid 6..12), using live value=12
 ```
+
+Die Objekt-ID (hier `4000`) identifiziert die konkrete `SoftKeyMask`, die die Meldung ausgelöst hat - ein Pool enthält oft mehrere davon (z. B. eine pro Bildschirm), daher kann dieselbe Meldung mehrfach mit unterschiedlichen IDs erscheinen.
 
 ### Beispielablauf
 

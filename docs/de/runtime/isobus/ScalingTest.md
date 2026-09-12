@@ -81,7 +81,7 @@ SCALING-TEST: ignoring out-of-range softkeys override=20 (valid 6..11), using li
 
 ## CCI-Farbfallback (Farbindizes 232-255)
 
-### Hintergrund
+### Hintergrund (CCI-Farbfallback)
 
 Nach ISO 11783-6 Annex A ("VT standard colour palette", Table A.4) sind nur die Farbindizes **0-231** als einheitliche Standardpalette garantiert - jedes ISOBUS-VT muss sie identisch rendern. Die Indizes **232-255** sind laut Norm ausdrücklich **"Proprietary"**: wie ein bestimmtes VT sie darstellt, ist herstellerabhängig und nicht festgelegt.
 
@@ -145,7 +145,7 @@ CCI-Colour: manufCode=339 forceCCI=2 passthrough=0 solidTest=0/0
 
 ## Farbtiefen-Simulation (16-Farben / monochrome VTs)
 
-### Hintergrund
+### Hintergrund (Farbtiefen-Simulation)
 
 Unabhängig vom CCI-Farbfallback erkennt der VT-Client automatisch, wenn ein angeschlossenes VT selbst **weniger Farben** unterstützt als der Object Pool (z. B. nur 16 Farben oder nur Schwarz/Weiß), und reduziert die Pool-Farben dann passend - siehe [Farbreduktion für Virtual Terminals mit weniger Farben](ColourReduction.md) für Hintergrund und die vollständigen Zuordnungstabellen. Das läuft im Normalbetrieb komplett automatisch anhand der vom VT gemeldeten Fähigkeiten.
 

@@ -141,7 +141,7 @@ forceCCIColor = 12
 CCI-Colour: manufCode=339 forceCCI=2 passthrough=0 solidTest=0/0
 ```
 
-`passthrough=1` means colours are passed through unchanged (CCI detected, or `forceCCI = 1`); `passthrough=0` means the lookup table is applied.
+`passthrough=1` means colours are passed through unchanged (CCI detected, or `forceCCI = 1`). When `passthrough=0`, check `solidTest`: `solidTest=0` means the lookup table is applied (normal non-CCI case, or `forceCCI = 2`); `solidTest=1` means every colour index 232-255 is instead replaced by the fixed test colour (`forceCCIColor`) (`forceCCI = 3`).
 
 ## See also
 

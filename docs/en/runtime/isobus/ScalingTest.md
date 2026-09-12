@@ -2,15 +2,16 @@
 
 ## Purpose
 
-The **SCALING-TEST** is a test feature in the VT client (`App_VTClient.c`) that lets you exercise [scaling](Scaling.md) of the object pools and [softkey reduction](SoftKeyReduction.md) in a targeted way, **without changing the source code or recompiling**.
+The **SCALING-TEST** is a test feature in the VT client (`App_VTClient.c`) that lets you exercise [scaling](Scaling.md) of the object pools, [softkey reduction](SoftKeyReduction.md), and the [CCI colour fallback](#cci-colour-fallback-colour-indices-232-255) in a targeted way, **without changing the source code or recompiling**.
 
 Normally, the following values are read live from the connected Virtual Terminal (VT) when the connection is established:
 
 - the **Data Mask scaling factor** (`PoolDataMaskScalFaktor`)
 - the **Softkey Mask scaling factor** (`PoolSoftKeyMaskScalFaktor`)
 - the **number of physical softkeys** (`VT_PHYSICALSOFTKEYS`)
+- the VT's **manufacturer code** (NAME field from the ISO 11783-5 address claim), which decides whether colour indices 232-255 are passed through unchanged or remapped
 
-To test the behavior for different VT screen sizes, scaling factors, or softkey counts, you previously had to connect a real VT with the matching properties. With the SCALING-TEST, these three values can instead be overridden through a setting in `settings.ini`.
+To test the behavior for different VT screen sizes, scaling factors, softkey counts, or VT manufacturers, you previously had to connect a real VT with the matching properties. With the SCALING-TEST, these values can instead be overridden through a setting in `settings.ini`.
 
 !!! warning "Test purposes only"
     The SCALING-TEST is a developer/test tool. It is **disabled** by default and must not be left permanently enabled on production devices, since it deliberately bypasses the normal scaling safety clamp (see below).
@@ -77,6 +78,55 @@ SCALING-TEST: ignoring out-of-range softkeys override=20 (valid 6..11), using li
 3. Check the debug log (see above).
 4. Visually verify on the connected VT: Data Mask objects are scaled by the `dmScal` factor, Softkey Mask objects are scaled/centered by the `skmScal` factor; with `softkeys = 8`, a pool authored for 12 softkeys now shows only 8 softkeys.
 5. When done, set `enable = 0` (or remove the section) to restore normal, VT-derived behavior.
+
+## CCI colour fallback (colour indices 232-255)
+
+### Background
+
+Per ISO 11783-6 Annex A ("VT standard colour palette", Table A.4), only colour indices **0-231** are guaranteed as a uniform standard palette - every ISOBUS VT must render them identically. Indices **232-255** are explicitly marked **"Proprietary"** by the standard: how a given VT displays them is manufacturer-specific and not defined.
+
+The object pool uses colour indices from this range in a few places (e.g. a subtle grey row background in tables). On a **CCI VT** (Competence Center ISOBUS e.V., manufacturer code `339`) the appearance has already been checked and is as intended - there, these colour values are **passed through unchanged**. On **every other VT** (e.g. FENDT/AGCO - confirmed to render differently in a hardware test), colour indices 232-255 are instead **remapped to the nearest standard colour index (0-231)** via a lookup table before the pool is sent.
+
+Detecting whether a CCI VT is connected happens automatically via the manufacturer code in the VT's NAME field (ISO 11783-5 address claim) - **no manual intervention needed in normal operation**. The SCALING-TEST lets you force or simulate this behavior on demand.
+
+### Keys
+
+| Key               | Meaning                                                                   | Valid values                                                                                                        | Default (if not set)              |
+|--------------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+| `forceCCI`         | Overrides the result of the CCI detection                                    | `0` = auto (real detection via manufacturer code), `1` = force CCI (colours unchanged), `2` = force non-CCI (lookup table), `3` = FENDT/AGCO simulation (every colour index 232-255 is replaced by `forceCCIColor`) | `0` (auto)                          |
+| `manufCode`        | Overrides the manufacturer code read from the VT                             | any manufacturer code, e.g. `339` (CCI) or `102` (AGCO)                                                            | the value read live from the VT     |
+| `forceCCIColor`    | Test colour for `forceCCI = 3` mode                                          | colour index `0`-`231`                                                                                              | `0` (black)                         |
+
+`forceCCI`, `manufCode`, and `forceCCIColor` are **only evaluated when `enable = 1` is set** (same section, same master switch as the scaling options above).
+
+### Example: simulating a non-CCI VT
+
+```ini
+[ScalingTest]
+enable = 1
+forceCCI = 2
+```
+
+### Example: FENDT/AGCO simulation with a signal colour
+
+Shows every object that would normally use a colour index 232-255 in one fixed test colour, so all affected objects are visible at a glance on screen:
+
+```ini
+[ScalingTest]
+enable = 1
+forceCCI = 3
+forceCCIColor = 12
+```
+
+(Colour index `12` = red; see the standard colour table per ISO 11783-6 Annex A.)
+
+### Verification / expected debug output
+
+```text
+CCI-Colour: manufCode=339 forceCCI=2 passthrough=0 solidTest=0/0
+```
+
+`passthrough=1` means colours are passed through unchanged (CCI detected, or `forceCCI = 1`); `passthrough=0` means the lookup table is applied.
 
 ## See also
 

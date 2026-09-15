@@ -491,10 +491,11 @@ def modify_data(data):
                 cat["data"].remove(existing)
 
         # 2. Add/Update in cat_isobus
-        sub_dir = "I" if term.startswith("I_") or term.startswith("Attribute_") else "Q"
-        link = (
-            f"{lib_base_url}Bibliotheken/ExternalLibraries/isobus/UT/{sub_dir}/{term}/"
-        )
+        if term.startswith("Attribute_"):
+            link = f"{lib_base_url}Bibliotheken/ExternalLibraries/isobus/UT/io/Attribute/{term}/"
+        else:
+            sub_dir = "I" if term.startswith("I_") else "Q"
+            link = f"{lib_base_url}Bibliotheken/ExternalLibraries/isobus/UT/{sub_dir}/{term}/"
         # Check specific exercises (simplified map, or let scan find them next time)
         # Using a few known ones
         ex = ""

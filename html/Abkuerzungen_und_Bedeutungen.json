@@ -57159,6 +57159,32 @@
                "ext_en": "",
                "title": "ISOBUS UT Command: Get Attribute Value",
                "type": "io"
+            },
+            {
+               "nr": "",
+               "term": "Attribute_ID",
+               "mean": "Attribute Indication/Input",
+               "ex": "",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/isobus/UT/I/Attribute_ID/\" target=\"_blank\">Attribute_ID</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "ISOBUS UT Command: Attribute Indication/Input",
+               "type": "io"
+            },
+            {
+               "nr": "",
+               "term": "Attribute_IDA",
+               "mean": "Attribute Indication/Input Adapter",
+               "ex": "",
+               "exdoc": "",
+               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/isobus/UT/I/Attribute_IDA/\" target=\"_blank\">Attribute_IDA</a>",
+               "vid": "",
+               "ext_de": "",
+               "ext_en": "",
+               "title": "ISOBUS UT Command: Attribute Indication/Input Adapter",
+               "type": "io"
             }
          ]
       },

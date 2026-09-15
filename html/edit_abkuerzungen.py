@@ -455,6 +455,8 @@ def modify_data(data):
         ("Q_FillAttributes", "Change Fill Attributes"),
         ("Q_FontAttributes", "Change Font Attributes"),
         ("I_GetAttribute", "Get Attribute Value"),
+        ("Attribute_ID", "Attribute Indication/Input"),
+        ("Attribute_IDA", "Attribute Indication/Input Adapter"),
         ("Q_GraphicsContext", "Graphics Context"),
         ("Q_LineAttributes", "Change Line Attributes"),
         ("Q_ListItem", "Change List Item"),
@@ -489,7 +491,7 @@ def modify_data(data):
                 cat["data"].remove(existing)
 
         # 2. Add/Update in cat_isobus
-        sub_dir = "I" if term.startswith("I_") else "Q"
+        sub_dir = "I" if term.startswith("I_") or term.startswith("Attribute_") else "Q"
         link = (
             f"{lib_base_url}Bibliotheken/ExternalLibraries/isobus/UT/{sub_dir}/{term}/"
         )

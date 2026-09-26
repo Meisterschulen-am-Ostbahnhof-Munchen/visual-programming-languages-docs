@@ -73,7 +73,7 @@ Verwenden Sie stattdessen die **symmetrischen Varianten** (*Symmetric Start-up B
 | Baustein | "Falscher Freund" wegen | Empfohlene Alternative / Abhilfe |
 | :--- | :--- | :--- |
 | **`NOT` / `F_NOT`** | Vor dem ersten `REQ`-Event sind Eingang und Ausgang `FALSE`. | **`NOT_INIT`**, **`AX_NOT_INIT`** oder gezieltes Start-Event-Triggering |
-| **`E_RS` / `E_SR`** | Nur ein `S`-Event macht den Baustein aus dem `START`-Zustand betriebsfähig; `R` beim Start wird ignoriert. | **`E_RS_SYM`**, **`E_SR_SYM`** oder **`E_RS_SYM_INIT`** |
+| **`E_RS` / `E_SR`** | Im `START`-Zustand belässt ein `R`-Event `Q = FALSE` ohne Transition/`EO`-Event; erst `S` löst einen Übergang aus. | **`E_RS_SYM`**, **`E_SR_SYM`** oder **`E_RS_SYM_INIT`** |
 
 ---
 

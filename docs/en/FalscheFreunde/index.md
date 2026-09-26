@@ -73,7 +73,7 @@ Use the **symmetric variants** (*Symmetric Start-up Behavior*) instead:
 | Function Block | "False Friend" Due To | Recommended Alternative / Remedy |
 | :--- | :--- | :--- |
 | **`NOT` / `F_NOT`** | Input and output are both `FALSE` before the first `REQ` event. | **`NOT_INIT`**, **`AX_NOT_INIT`**, or explicit startup event triggering |
-| **`E_RS` / `E_SR`** | Only an `S` event activates the block from `START` state; `R` at startup is ignored. | **`E_RS_SYM`**, **`E_SR_SYM`**, or **`E_RS_SYM_INIT`** |
+| **`E_RS` / `E_SR`** | In `START` state, an `R` event leaves `Q = FALSE` without transition/`EO` event; only `S` triggers a transition. | **`E_RS_SYM`**, **`E_SR_SYM`**, or **`E_RS_SYM_INIT`** |
 
 ---
 

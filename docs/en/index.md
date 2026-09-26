@@ -35,9 +35,11 @@ This documentation is part of the knowledge base of the Meisterschulen at Munich
 - 📋 **[This is in the curriculum (Curriculum 2025)](./das_steht_im_lehrplan.md)**
 - [🏠 Main Menu](https://www.ms-muc-docs.de/)
 - [🔍 Super Search (all wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/en/latest/)
-- [📄 Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)
+- 📄 **[Download PDF Handbook](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/en/pdf/visual-programming-languages-docs-en.pdf)**
 - 📚 **[Wiki 4.1: 4diac Function Block & Adapter Library Reference](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-de/en/latest/)** (moved out of this wiki to keep builds fast)
 - 📝 **[Wiki 4.2: Exercises – 4diac Training Solutions](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/)** (moved out of this wiki to keep builds fast)
+- ⚠️ **[False Friends (IEC 61499 Pitfalls)](./FalscheFreunde/index.md)** – Typical pitfalls & remedies (`NOT` vs. `NOT_INIT`, `E_RS` / `E_SR` vs. `E_RS_SYM`)
+- 🧩 **[Design Patterns (IEC 61499 Patterns)](./DesignPatterns/index.md)** – Reusable architecture patterns for 4diac
 
 ---
 

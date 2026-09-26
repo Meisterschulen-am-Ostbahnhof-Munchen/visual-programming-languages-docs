@@ -35,9 +35,11 @@ Diese Dokumentation ist Teil der Wissensdatenbank der Meisterschulen am Ostbahnh
 - 📋 **[Das steht im Lehrplan (Lehrplan 2025)](./das_steht_im_lehrplan.md)**
 - [🏠 Hauptmenü](https://www.ms-muc-docs.de/)
 - [🔍 Super-Suche (alle Wikis)](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/)
-- [📄 PDF-Handbuch herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/de/pdf/visual-programming-languages-docs-de.pdf)
+- 📄 **[PDF-Handbuch herunterladen](https://meisterschulen-am-ostbahnhof-munchen.github.io/visual-programming-languages-docs/de/pdf/visual-programming-languages-docs-de.pdf)**
 - 📚 **[Wiki 4.1: 4diac Bibliotheken – FB- & Adapter-Referenz](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs-de/de/latest/)** (ausgelagert aus diesem Wiki, damit die Builds schnell bleiben)
 - 📝 **[Wiki 4.2: Übungsaufgaben – 4diac Trainingslösungen](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/de/latest/)** (ausgelagert aus diesem Wiki, damit die Builds schnell bleiben)
+- ⚠️ **[Falsche Freunde (IEC 61499 Fallstricke)](./FalscheFreunde/index.md)** – Typische Fallen & Abhilfen (`NOT` vs. `NOT_INIT`, `E_RS` / `E_SR` vs. `E_RS_SYM`)
+- 🧩 **[Design Patterns (IEC 61499 Entwurfsmuster)](./DesignPatterns/index.md)** – Wiederverwendbare Architekturmuster für 4diac
 
 ---
 

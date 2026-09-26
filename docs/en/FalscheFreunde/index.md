@@ -46,22 +46,24 @@ For signals that require a defined state upon system startup, use function block
 
 Developers expect a flip-flop to react deterministically to set (`S`) and reset (`R`) signals regardless of its current state.
 
-Standard IEC 61499 blocks like **`E_RS`** and **`E_SR`** begin after deployment in the uninitialized `START` state of their Event Execution Control Chart (ECC). In this `START` state, many standard implementations react **exclusively to an `S` (Set) event**:
+Standard IEC 61499 blocks like **`E_RS`** and **`E_SR`** begin after deployment in the initial `START` state of their Event Execution Control Chart (ECC) with `Q = FALSE`. In this `START` state, standard implementations (per IEC 61499-1 Table A.1) define **exclusively a transition for an `S` (Set) event**:
 
-* Arrival of `S`: The block transitions to state `SET`, sets `Q := TRUE`, and emits `EO`.
-* Arrival of `R` in `START` state: If a **`R` (Reset) event** arrives as the first event after startup, the block remains in `START` or ignores the event. The flip-flop fails to become operational and does not respond to reset commands as expected.
+* **Arrival of `S`**: The block transitions to state `SET`, sets `Q := TRUE`, and emits `EO`.
+* **Arrival of `R` in `START` state**: If an **`R` (Reset) event** arrives as the first event after startup, there is no transition defined for `R` in the `START` state. The block remains in state `START` (`Q` stays `FALSE`), but **no `EO` output event** is generated.
+
+If downstream logic depends on an output event (`EO`) upon reset, the event processing chain remains un-triggered.
 
 ```text
-START State (after deployment):
-Receiving 'S' ──► State SET (Q := TRUE)  ✅
-Receiving 'R' ──► Remains in START / ignored ❌
+START State (after deployment, Q = FALSE):
+Receiving 'S' ──► State SET (Q := TRUE, emits EO)        ✅
+Receiving 'R' ──► No transition (Q stays FALSE, no EO)   ❌
 ```
 
 ### ✅ Solution: `E_RS_SYM` and `E_SR_SYM` (or `E_RS_SYM_INIT`)
 
 Use the **symmetric variants** (*Symmetric Start-up Behavior*) instead:
 
-* **`E_RS_SYM` / `E_SR_SYM`**: Right from the initial `START` state, **both `S` and `R`** lead to well-defined follow-up states (`SET` and `RESET` respectively). An incoming reset event at startup immediately transitions the block cleanly to `RESET` (`Q := FALSE`, `EO`).
+* **`E_RS_SYM` / `E_SR_SYM`**: Right from the initial `START` state, **both `S` and `R`** lead to well-defined follow-up states (`SET` and `RESET` respectively). An incoming reset event at startup immediately transitions the block cleanly to `RESET` (`Q := FALSE`) and confirms this via `EO`.
 * **`E_RS_SYM_INIT` / `E_SR_SYM_INIT`**: Provide additional explicit startup value initialization via an `INIT` event and `Q_INIT` data input.
 
 ---

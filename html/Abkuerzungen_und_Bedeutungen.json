@@ -47916,19 +47916,6 @@
             },
             {
                "nr": "",
-               "term": "AX_CYCLE",
-               "mean": "AX_CYCLE",
-               "ex": "",
-               "exdoc": "",
-               "link_int": "<a href=\"https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/adapter/events/unidirectional/timers/AX_CYCLE/\" target=\"_blank\">AX_CYCLE</a>",
-               "vid": "",
-               "ext_de": "",
-               "ext_en": "",
-               "title": "AX_CYCLE",
-               "type": "adapter"
-            },
-            {
-               "nr": "",
                "term": "timers",
                "mean": "timers",
                "ex": "",

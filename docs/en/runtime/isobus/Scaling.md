@@ -13,13 +13,14 @@ Yes, in the **ISOBUS standard ISO 11783-6** (Part 6: **Virtual Terminal**), **sc
 ### Responsibility for scaling
 
 - **The implement is responsible** for scaling its masks, since it provides the **object pools** and defines the logical structure of the user interface.
-- The VT does not perform scaling on its own; it uses the data supplied by the implement.
+- The VT does not scale positions and sizes on its own; it uses the data supplied by the implement (ISO 11783-6, 4.6.16.2). Exception: **Picture Graphic objects** are scaled automatically by the VT according to their width attribute (4.6.16.4).
 - If the VT has a different resolution than the implement expects, the implement must adjust the **scaling factors** (e.g. by dynamically generating the object pools or using **scaled objects**).
 
 ### Practical implementation
 
 - The implement can provide **scalable objects** (e.g. **softkeys, numeric fields, graphics**).
-- The **VT resolution** is communicated in the **device descriptor**, so the implement can adapt its masks accordingly.
+- The implement queries the **VT capabilities** (Data Mask area size, soft key designator, fonts, colours) with the **Get Hardware** and **Get Memory** messages and adapts its object pool accordingly (ISO 11783-6, 4.6.16.1). The device descriptor is not part of ISO 11783-6.
+- A **best-fit algorithm** applies to fonts; the smallest font size is 6×8. If the scaled font is smaller than 6×8, the 6×8 font is used, which can cause clipping or text overlap (4.6.16.3).
 - If no automatic scaling occurs, display problems can result (e.g. clipped elements on small displays).
 
 ### Conclusion
@@ -37,7 +38,7 @@ This analysis describes the scaling logic for ISOBUS objects based on **object I
 ### **Core principles**
 
 1. **DataMask objects** (e.g. inputs, outputs, graphics):
-   - Always scaled (examples: `InputNumber: 9000–9999`, `LinearBargraph: 18000–18599`)
+   - Always scaled (examples: `InputNumber: 9000–9999`, `LinearBargraph: 18000–18999`)
 2. **SoftKeyMask/Auxiliary objects**:
    - Centered (no scaling, e.g. `0: Working Set Object`) or have special rules (e.g. `5000–5999: softkey buttons`).
 3. **Hybrid objects** (separate ID ranges):
@@ -54,7 +55,7 @@ This analysis describes the scaling logic for ISOBUS objects based on **object I
 - **Problem**:
   - Objects such as `Container` or `OutputString` exist in both mask types, but with different ID ranges (e.g. `11000–11499` vs. `11500–11999`).
   - **Question**: May an `OutputString` with ID `11000` (actually DataMask) also be used in a *SoftKeyMask*?
-    - *ISO 11783-6 rule*: Mask membership is primarily defined by the **parent-object context** (e.g. an `OutputString` inside a `SoftKeyMask` container). The ID ranges are **recommended defaults**, but not mandatory.
+    - *Note*: ISO 11783-6 defines no ID ranges per mask (object IDs only have to be unique, 0–65534; 65535 is the NULL object ID). Mask membership follows from the **parent-object context** (e.g. an `OutputString` inside a `SoftKeyMask` container). The ID ranges are a **project-internal convention**.
   - **Recommendation**:
     - When in doubt, check the **parent object type** (e.g. `SoftKeyMask` container → centering).
     - For deviating IDs, log a **warning**, but scale based on context.
@@ -64,8 +65,8 @@ This analysis describes the scaling logic for ISOBUS objects based on **object I
 - **Special case**:
   - The **PictureGraphic** objects in the SoftKeyMask range (`20500–20999`) are declared as *Working Set Bitmaps* - unlike the DataMask variant (`20000–20499`).
   - **Why "Scaling" anyway?**
-    - These bitmaps are treated as part of the *Working Set*, but are nevertheless subject to **limited scaling** (e.g. for resolution adjustments or icon-size control).
-    - *Difference from DataMask*: scaling here is **not viewport-relative**, but follows internal rules (e.g. fixed scaling factors for menu icons).
+    - According to ISO 11783-6 (4.6.16.4) the **VT** scales Picture Graphics automatically based on the **width attribute** in the object. The implement therefore only has to adjust the width (and position), not the bitmap data.
+    - That softkey bitmaps are subject to "limited scaling" under internal rules is **not a requirement of the standard**; in this project the ID range alone decides the handling.
 
 #### **3. Auxiliary Functions (`31000–31999`) - centering requirement**
 
@@ -129,7 +130,7 @@ Strict adherence to the ID ranges by the implement is essential.
 |                                          |         | 35000 - 35999 - Centering - KeyGroup           |
 | 37000 - 37999 - Scaling – OutputList     |         |                                                |
 
-Where no operation (Scaling, Centering) is listed, the object is not manipulated.
+Where no operation (Scaling, Centering) is listed, the object is not manipulated. The table does not contain every object type of ISO 11783-6 Table A.1 (e.g. Window Mask, Graphics Context, Extended Input Attributes, Colour Map, Animation are missing); no ID-range-based manipulation takes place for them.
 
 **(\*) Special case Macro:** the Macro object itself has no pixel fields, but it can contain commands with hardcoded pixel values (e.g. Change Child Position). These embedded values are not covered by the ID-range scaling mechanism, since it only scales object *definitions* at pool load, not the command byte stream inside a macro.
 

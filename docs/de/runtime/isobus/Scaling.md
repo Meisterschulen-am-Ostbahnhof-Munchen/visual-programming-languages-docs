@@ -13,13 +13,14 @@ Ja, im **ISOBUS-Standard ISO 11783-6** (Teil 6: **Virtual Terminal**) ist das **
 ### Zuständigkeit für das Skalieren
 
 - **Das Anbaugerät ist verantwortlich** für die Skalierung seiner Masken, da es die **Object Pools** bereitstellt und die logische Struktur der Benutzeroberfläche definiert.
-- Das VT führt die Skalierung nicht eigenständig durch, sondern nutzt die vom Anbaugerät gelieferten Daten.
+- Das VT skaliert Positionen und Größen nicht eigenständig, sondern nutzt die vom Anbaugerät gelieferten Daten (ISO 11783-6, 4.6.16.2). Ausnahme: **Picture-Graphic-Objekte** werden vom VT automatisch anhand ihres Breiten-Attributs skaliert (4.6.16.4).
 - Falls das VT eine andere Auflösung hat als vom Anbaugerät erwartet, muss das Anbaugerät die **Skalierungsfaktoren anpassen** (z. B. durch dynamische Generierung der Object Pools oder Nutzung von **Scaled Objects**).
 
 ### Praktische Umsetzung
 
 - Das Anbaugerät kann **skalierbare Objekte** (z. B. **Softkeys, Zahlenfelder, Grafiken**) bereitstellen.
-- Die **VT-Auflösung** wird im **Device-Descriptor** kommuniziert, sodass das Anbaugerät die Masken entsprechend anpassen kann.
+- Die **VT-Fähigkeiten** (Größe der Data-Mask-Fläche, Softkey-Designator, Schriften, Farben) fragt das Anbaugerät über die Nachrichten **Get Hardware** und **Get Memory** ab und passt danach seine Object Pools an (ISO 11783-6, 4.6.16.1). Der Device Descriptor gehört nicht zu ISO 11783-6.
+- Für Schriften gilt ein **Best-Fit-Algorithmus**; die kleinste Schriftgröße ist 6×8. Unterschreitet die skalierte Schrift 6×8, wird 6×8 verwendet, was zu Clipping oder Textüberlappung führen kann (4.6.16.3).
 - Falls keine automatische Skalierung erfolgt, kann es zu Darstellungsproblemen kommen (z. B. abgeschnittene Elemente auf kleinen Displays).
 
 ### Fazit
@@ -37,7 +38,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 ### **Kernprinzipien**
 
 1. **DataMask-Objekte** (z. B. Inputs, Outputs, Grafiken):
-   - Immer skaliert (Beispiele: `InputNumber: 9000–9999`, `LinearBargraph: 18000–18599`)
+   - Immer skaliert (Beispiele: `InputNumber: 9000–9999`, `LinearBargraph: 18000–18999`)
 2. **SoftkeyMask/Auxiliary-Objekte**:
    - Zentriert (keine Skalierung, z. B. `0: Working Set Object`) oder haben spezielle Regeln (z. B. `5000–5999: Softkey-Buttons`).
 3. **Hybrid-Objekte** (getrennte ID-Bereiche):
@@ -54,7 +55,7 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 - **Problem**:
   - Objekte wie `Container` oder `OutputString` existieren in beiden Masken, aber mit unterschiedlichen ID-Bereichen (z. B. `11000–11499` vs. `11500–11999`).
   - **Frage**: Darf ein `OutputString` mit ID `11000` (eigentlich DataMask) auch in einer *SoftkeyMask* verwendet werden?
-    - *ISO 11783-6-Regel*: Die Maskenzugehörigkeit wird primär durch den **Parent-Object-Kontext** definiert (z. B. ein `OutputString` in einem `SoftKeyMask`-Container). Die ID-Bereiche sind **empfohlene Defaults**, aber nicht zwingend.
+    - *Hinweis*: ISO 11783-6 definiert keine ID-Bereiche pro Maske (Object IDs müssen lediglich eindeutig sein, 0–65534; 65535 ist die NULL-Object-ID). Die Maskenzugehörigkeit ergibt sich aus dem **Parent-Object-Kontext** (z. B. ein `OutputString` in einem `SoftKeyMask`-Container). Die ID-Bereiche sind eine **projektinterne Konvention**.
   - **Empfehlung**:
     - Im Zweifel den **Parent-Object-Typ** prüfen (z. B. `SoftKeyMask`-Container → Zentrierung).
     - Bei abweichenden IDs ein **Warning-Log** ausgeben, aber Skalierung anhand des Kontexts durchführen.
@@ -64,13 +65,13 @@ Diese Analyse beschreibt die Skalierungslogik für ISOBUS-Objekte basierend auf 
 - **Besonderheit**:
   - Die **PictureGraphic**-Objekte im SoftkeyMask-Bereich (`20500–20999`) sind als *Working Set Bitmaps* deklariert – im Gegensatz zur DataMask-Variante (`20000–20499`).
   - **Warum "Scaling" trotzdem?**
-    - Diese Bitmaps werden zwar als Teil des *Working Sets* behandelt, unterliegen aber dennoch einer **begrenzten Skalierung** (z. B. für Auflösungsanpassungen oder Symbolgrößen-Steuerung).
-    - *Unterschied zur DataMask*: Die Skalierung ist hier **nicht viewport-relativ**, sondern folgt internen Regeln (z. B. feste Skalierungsfaktoren für Menü-Icons).
+    - Nach ISO 11783-6 (4.6.16.4) skaliert das **VT** Picture Graphics automatisch anhand des **Breiten-Attributs** im Objekt. Das Anbaugerät muss daher nur die Breite (und die Position) anpassen, nicht die Bitmap-Daten.
+    - Dass für Softkey-Bitmaps „begrenzte Skalierung“ nach internen Regeln gelte, ist **keine Vorgabe der Norm**; im Projekt entscheidet allein der ID-Bereich über die Behandlung.
 
 #### **3. Auxiliary Functions (`31000–31999`) – Zentrierungspflicht**
 
 - **Problem**:
-  - Auxiliary-Objekte müssen laut Norm **immer zentriert** werden (keine Skalierung).
+  - Auxiliary-Objekte müssen laut Projektkonvention **immer zentriert** werden (keine Skalierung; die Norm schreibt das nicht vor).
   - **Risiko**: Wenn ein Auxiliary-Object fälschlich im DataMask-Bereich platziert wird (z. B. ID `31500`), könnte die Skalierung die Darstellung brechen.
 
 #### **4. Fehlende Klarheit bei "Working Set Object" (ID 0)**
@@ -129,7 +130,7 @@ Die strikte Einhaltung der ID-Bereiche durch das Anbaugerät ist entscheidend.
 |                                          |         | 35000 - 35999 - Centering - KeyGroup           |
 | 37000 - 37999 - Scaling – OutputList     |         |                                                |
 
-Wo keine Operation (Scaling, Centering) angegeben ist, wird das Objekt nicht manipuliert.
+Wo keine Operation (Scaling, Centering) angegeben ist, wird das Objekt nicht manipuliert. Die Tabelle enthält nicht alle Objekttypen aus ISO 11783-6 Table A.1 (z. B. Window Mask, Graphics Context, Extended Input Attributes, Colour Map, Animation fehlen); für diese erfolgt keine ID-bereichsbasierte Manipulation.
 
 **(\*) Sonderfall Macro:** Das Macro-Objekt selbst hat keine Pixel-Felder, kann aber Befehle mit fest codierten Pixelwerten enthalten (z. B. Change Child Position). Diese eingebetteten Werte werden vom ID-Bereichs-Scaling-Mechanismus nicht erfasst, da dieser nur Objekt-Definitionen beim Pool-Load skaliert, nicht den Befehls-Bytestrom innerhalb eines Macros.
 

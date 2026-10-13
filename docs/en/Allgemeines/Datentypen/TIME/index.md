@@ -44,5 +44,5 @@ The following units can be combined (in descending order):
 
 ## 🛠️ Related Exercises
 
-- [Exercise_020j2_AX_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AX_SPLIT_TO_2x_AX_TP/)
+- [AX_SPLIT_TO_2x_AX_TP](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AX_SPLIT_TO_2x_AX_TP/)
 - [Exercise_072c](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/en/latest/Uebungen/test_B/Uebungen_doc/Uebung_072c/)

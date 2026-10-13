@@ -8,12 +8,12 @@
 - [Simplifying Industrial Control: Your Deep Dive into Eclipse 4diac and IEC 61499](https://podcasters.spotify.com/pod/show/eclipse-4diac-en/episodes/Simplifying-Industrial-Control-Your-Deep-Dive-into-Eclipse-4diac-and-IEC-61499-e3681v8)
 - [Events and IEC 61499: The Starting Point for Intelligent Systems](https://podcasters.spotify.com/pod/show/iec-61499-grundkurs-de/episodes/Ereignisse-und-IEC-61499-Der-Startschuss-fr-intelligente-Systeme-e368461)
 
-## 🛠️ Related Exercises
+## 🛠️ Related Library Blocks
 
-- [Uebung_026_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_026_sub/)
-- [Uebung_039_sub_NumbAnsicht](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
-- [Uebung_039a_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_039a_sub_Outputs/)
-- [Uebung_060_sub_Outputs](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_060_sub_Outputs/)
+- [SR_TO_QX_TRIG_EO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/SR_TO_QX_TRIG_EO/)
+- [SINT_TO_Q_NumericValue](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/SINT_TO_Q_NumericValue/)
+- [Softkey_T_FF_ILOCK_TO_QX_BG](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/Softkey_T_FF_ILOCK_TO_QX_BG/)
+- [Bool8_TO_logiBUS_QX8](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/Bool8_TO_logiBUS_QX8/)
 
 ---
 

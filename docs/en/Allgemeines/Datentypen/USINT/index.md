@@ -22,10 +22,9 @@ When used as a literal, a prefix can be used, e.g., `USINT#...`.
 
 ## 🛠️ Related exercises
 
-- [Uebung_003b2_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_003b2_sub/)
-- [Uebung_003b2_sub_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_AX/Uebungen_doc/Uebung_003b2_sub_AX/)
-- [Uebung_003b3_sub_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_AX/Uebungen_doc/Uebung_003b3_sub_AX/)
-- [Uebung_003c_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_003c_sub/)
-- [Uebung_003c_sub_AX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_AX/Uebungen_doc/Uebung_003c_sub_AX/)
-- [Uebung_033_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_033_sub/)
-- [Uebung_126b_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_126b_sub/)
+- [Funk_IX_TO_DataPanel_MI_QX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/Funk_IX_TO_DataPanel_MI_QX/)
+- [Funk_IXA_TO_DataPanel_MI_QXA](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/Funk_IXA_TO_DataPanel_MI_QXA/)
+- [IX_TO_Aux_QX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/IX_TO_Aux_QX/)
+- [IXA_TO_Aux_QXA](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/IXA_TO_Aux_QXA/)
+- [IX_TO_logiBUS_LED_strip_QX](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/IX_TO_logiBUS_LED_strip_QX/)
+- [SIN_TO_PCAN_Callback_Byte](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/SIN_TO_PCAN_Callback_Byte/)

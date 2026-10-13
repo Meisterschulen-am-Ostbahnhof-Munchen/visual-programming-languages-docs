@@ -6,4 +6,4 @@
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_039_sub_NumbAnzeig](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_039_sub_NumbAnzeig/)
+- [SINT_TO_Q_NumericValue](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_B/sys/SINT_TO_Q_NumericValue/)

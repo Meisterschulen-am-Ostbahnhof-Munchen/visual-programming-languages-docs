@@ -44,5 +44,5 @@ Folgende Einheiten können kombiniert werden (Reihenfolge absteigend):
 
 ## 🛠️ Zugehörige Übungen
 
-- [Uebung_020j2_AX_sub](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_AX/Uebungen_doc/Uebung_020j2_AX_sub/)
-- [Uebung_072c](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs-de/en/latest/test_B/Uebungen_doc/Uebung_072c/)
+- [AX_SPLIT_TO_2x_AX_TP](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/MyLib_AX/sys/AX_SPLIT_TO_2x_AX_TP/)
+- [Uebung_072c](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/de/latest/Uebungen/test_B/Uebungen_doc/Uebung_072c/)

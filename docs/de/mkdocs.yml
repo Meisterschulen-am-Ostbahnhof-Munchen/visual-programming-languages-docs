@@ -1,6 +1,6 @@
 docs_dir: .
 site_name: 'Visuelle Programmiersprachen: Low-Code (4)'
-site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs-de/
+site_url: https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/visual-programming-languages-docs/de/latest/
 extra:
   alternate:
     - lang: de

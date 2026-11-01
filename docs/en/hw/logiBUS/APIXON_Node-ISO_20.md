@@ -11,6 +11,27 @@ No second CAN bus (CAN2) on this board.
 
 ## 🔌 I/O
 
+### Input Circuit (I1-I8)
+
+All eight inputs have the same input stage (voltage divider with low-pass filter). Only the last capacitor distinguishes the "fast" inputs I1/I2 from the "slow" inputs I3-I8:
+
+```text
+I n ──┬────────┬──── 47k ───┬──── 4.7k ───┬──── to the ESP32-P4
+      │        │            │             │
+    33 nF     47k          22k        100 pF  (I1, I2)
+      │        │            │         100 nF  (I3 … I8)
+     GND      GND          GND           GND
+```
+
+| Inputs | Capacitor after the divider | Time constant | Cut-off frequency (−3 dB) |
+|---|---|---|---|
+| `I1`, `I2` ("fast") | 100 pF | about 2 µs | about 81 kHz |
+| `I3`-`I8` ("slow") | 100 nF | about 2 ms | about 81 Hz |
+
+- **Formula:** f_c = 1 / (2π · R · C) with R = (47 kΩ ‖ 22 kΩ) + 4.7 kΩ ≈ 19.7 kΩ (divider with an ideal source plus the series resistor).
+- **Divider ratio:** 22 / (47 + 22) ≈ 0.32 by calculation. The schematic states "2.6 V at 12 V" instead; this difference is not resolved.
+- **Assembly:** The bill of materials (JLCPCB export for version v107, 2026-10-30) matches the schematic for all eight input stages: same values, nothing missing.
+
 ### Analog Inputs
 
 | Input:         | PIN (ESP32P4) |
@@ -50,6 +71,23 @@ conversion: `Vout = Dout × Vmax / 4096` (`Vmax` depends on the ADC attenuation
 because the ESP32-P4 has no on-chip Wi-Fi radio, so the ADC2/Wi-Fi conflict that
 exists on Wi-Fi-capable chips (ESP32/ESP32-S2/ESP32-S3) doesn't apply.
 
+**Limit frequency of the analog input (measurement 2026-10-30):** The measurement was taken on `I1` (square wave 0–10 V). "Captured exactly" here means: the frequency counted from the AI values matches the hardware counter of a pulse input (`I2`) within 2 Hz; amplitude was not assessed. This is the observed limit up to which edges are detected cleanly, not a filter cutoff: up to about 90 Hz both frequencies agree, from 100 Hz edges are lost, above that aliasing occurs. The cause is the averaging in the driver, not the input circuit. Inputs `I3`–`I8` were not measured. There the low-pass of about 81 Hz (−3 dB, see "Input Circuit") is added: a 90 Hz signal is already attenuated there (fundamental about −3.5 dB, square wave rounded off), so the `I1` value does not apply to these inputs. The driver delivers at most about 312 averaged values per second (one value every 3.2 ms). For frequency measurements above about 90 Hz, use a pulse input. Measurement setup: exercise [`Uebung_250_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/en/latest/Uebungen/test_AX/Uebungen_doc/Uebung_250_AX/).
+
+Measurement series (square wave 0–10 V on `I1` as AI and `I2` as PI, gate time 1 s; frequencies in Hz, `SAMPLES_S` in AI values per second, `OK` = deviation at most 2 Hz):
+
+| f | F_AI | F_PI | SAMPLES_S | OK |
+|-------:|-----:|-----:|------------------------:|----|
+| 1 | 1 | 1 | 132 | TRUE |
+| 10 | 10 | 10 | 196 | TRUE |
+| 30 | 30 | 30 | 252 | TRUE |
+| 50 | 50 | 50 | 286 | TRUE |
+| 60 | 60 | 60 | 287 | TRUE |
+| 70 | 70 | 70 | 303 | TRUE |
+| 80 | 80 | 80 | 312 | TRUE |
+| 90 | 90 | 90 | 313 | TRUE |
+| 100 | 87 | 100 | 312 | FALSE |
+| 110 | 81 | 110 | 312 | FALSE |
+
 ### Digital Inputs
 
 | Input:   | PIN (ESP32P4) |
@@ -80,14 +118,30 @@ The pulse inputs are also combo pins that share the physical pin with the digita
 input of the same number (uses the same `EPinDigitalIn` pin table internally, via the
 ESP32 PCNT hardware, see `IOHandleESP32PulseIN.cpp`).
 
-**Observation from live testing (2026-08-30, root cause not yet confirmed):**
+**Pulse input measurement (2026-08-30):** square wave 12 V, FNIRSI SG-003A signal generator in Pulse mode (Level, 12.0 V peak), frequency read at the generator and in the 4diac program.
 
-- `PulseInput_I1`/`_I2` measure noticeably higher frequencies (~23 kHz in testing) than
-  the other six channels (~2 kHz in testing) — I1/I2 behave like "fast" pins, I3-I8
-  like "slow" pins.
-- Only **4 of 8** pulse inputs work reliably at the same time (similar to the PWM
-  observation, where only 8 of 12 outputs worked simultaneously). Likely a pin/peripheral
-  sharing limit on the ESP32 side, but the exact cause is still open.
+**Note on the input voltage:** The 12 V is the test condition, not a specification. A permissible input voltage range and the protection behavior of the inputs are not verified here. By calculation, about 3.8 V appear behind the divider at 12 V (the schematic states 2.6 V, unresolved, see above), which is above the 3.3 V supply of the ESP32-P4. The measurement result must therefore not be read as a permissible operating range; the permissible input voltage has to be clarified with the board manufacturer.
+
+| Inputs | Result |
+|---|---|
+| `PulseInput_I1`, `_I2` ("fast") | good up to 20 kHz, no longer good at 23 kHz |
+| `PulseInput_I3`-`_I8` ("slow") | up to about 2.3 kHz |
+
+Above these frequencies the input loses edges and counts inaccurately; it does not stop and is not damaged. The generator's output impedance and duty cycle are not documented.
+
+**Why the "slow" inputs count up to about 2.3 kHz despite a cut-off frequency of about 81 Hz:** The 81 Hz is the −3 dB frequency of the filter, not the counting limit. The counter does not need half the amplitude, only a signal that still crosses the switching threshold. Behind the divider, the 12 V square wave has about 3.8 V peak. The 100 nF filter leaves a residual ripple of it (calculation for 50 % duty cycle):
+
+| Frequency | Residual ripple `I3`-`I8` (100 nF) | `I1`, `I2` (100 pF) |
+|---|---|---|
+| 81 Hz | about 3.5 V | about 3.8 V |
+| 500 Hz | about 0.95 V | about 3.8 V |
+| 2.3 kHz | about 0.21 V | about 3.8 V |
+| 5 kHz | about 0.10 V | about 3.8 V |
+| 20 kHz | about 0.02 V | about 3.8 V |
+
+At 2.3 kHz about 0.2 V of ripple remains around the mean value; this fits an input hysteresis of about 0.2 V. This is a conclusion from the calculation; the input's threshold and hysteresis are not known. With a different duty cycle the mean value shifts and the limit would be lower. The filter sets no limit for the fast inputs at 20 kHz (full amplitude); there, the 33 nF at the input together with the generator's output impedance, or the firmware, probably limit it. This is not verified either.
+
+**Open observation from live testing (2026-08-30):** Only **4 of 8** pulse inputs work reliably at the same time (similar to the PWM observation, where only 8 of 12 outputs worked simultaneously). Likely a pin/peripheral sharing limit on the ESP32 side, but the exact cause is still open.
 
 ### Digital Outputs
 
@@ -105,6 +159,33 @@ ESP32 PCNT hardware, see `IOHandleESP32PulseIN.cpp`).
 | Output_Q10 | 15            |
 | Output_Q11 | 14            |
 | Output_Q12 |  6            |
+
+### Comparison with Common Small Controllers
+
+The competitor values come from the manufacturer manuals ([LOGO! 8 system manual](https://cache.industry.siemens.com/dl/files/041/109741041/att_924627/v1/logo_system_manual_de-DE_de-DE.pdf), [LOGO! product information 05/2024](https://cache.industry.siemens.com/dl/files/848/109971848/att_1286527/v1/Product_Information_for_LOGO_System_Manual_de-DE_de-DE.pdf), [easyE4 manual MN050009](https://es-assets.eaton.com/DOCUMENTATION/AWB_MANUALS/MN050009_EN.pdf)), the APIXON Node-ISO 20 values from the measurements above.
+
+**Analog input (0-10 V)**
+
+| | APIXON Node-ISO 20 | Siemens LOGO! 8 | Eaton easyE4 |
+|---|---|---|---|
+| Resolution | 12 bit | Base module: not specified (error limit ±1.5 %); AM2: 10 bit, normalized to 0-1000 | 12 bit (0-4095) |
+| Update | up to about 312 values/s (every 3.2 ms) | Base module 300 ms, AM2 50 ms | adjustable in easySoft; no fixed figure found |
+| Filter | Averaging in the driver (64 samples) | Analog filter and average function blocks | Noise suppression and averaging adjustable, PT1 filter block |
+| Square wave measured cleanly up to | about 90 Hz on `I1` (measurement 2026-10-30; `I3`–`I8` not measured) | not specified | not specified |
+
+**Pulse input**
+
+| | Result |
+|---|---|
+| APIXON Node-ISO 20, `I1`/`I2` ("fast") | good up to 20 kHz, no longer good at 23 kHz (square wave 12 V, 2026-08-30) |
+| APIXON Node-ISO 20, `I3`-`I8` ("slow") | up to about 2.3 kHz, deliberately filtered for slower, analog-type signals |
+| Siemens LOGO! 8 | max. 5 kHz on `I3`-`I6` (12/24RCE/RCEo and 24CE/24CEo only, directly at the counter) |
+| Eaton easyE4 | counter and frequency meter max. 5 kHz |
+
+- The fast pulse input at 20 kHz is about four times the 5 kHz of both small controllers. The "slow" inputs are not meant for fast counting and are not compared with the competitors' fast counter inputs.
+- The competitors state the maximum of the counter function. For the APIXON it is the frequency up to which the input still counts cleanly; above it the input loses edges.
+- For the analog input, neither manufacturer specifies a usable signal frequency. On the LOGO! 8 the analog value cycle time (300 ms or 50 ms) limits sampling much more strongly.
+- The easyE4 data sheets state conversion "each CPU cycle", the manual only an adjustable update rate. One device data sheet gives 10 kHz counting frequency, the manual 5 kHz; this is not resolved.
 
 ## 🌐 Ethernet
 

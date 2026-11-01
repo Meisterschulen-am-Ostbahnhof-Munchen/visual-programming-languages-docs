@@ -71,7 +71,22 @@ conversion: `Vout = Dout × Vmax / 4096` (`Vmax` depends on the ADC attenuation
 because the ESP32-P4 has no on-chip Wi-Fi radio, so the ADC2/Wi-Fi conflict that
 exists on Wi-Fi-capable chips (ESP32/ESP32-S2/ESP32-S3) doesn't apply.
 
-**Limit frequency of the analog input (measurement 2026-10-30):** A square wave is captured exactly up to about 90 Hz; from 100 Hz edges are lost, above that aliasing occurs. The driver delivers at most about 312 averaged values per second (one value every 3.2 ms). For frequency measurements above about 90 Hz, use a pulse input. The measurement series is in the exercise `Uebung_250_AX` (exercises documentation).
+**Limit frequency of the analog input (measurement 2026-10-30):** The measurement was taken on `I1` (square wave 0–10 V). "Captured exactly" here means: the frequency counted from the AI values matches the hardware counter of a pulse input (`I2`) within 2 Hz; amplitude was not assessed. This is the observed limit up to which edges are detected cleanly, not a filter cutoff: up to about 90 Hz both frequencies agree, from 100 Hz edges are lost, above that aliasing occurs. The cause is the averaging in the driver, not the input circuit. Inputs `I3`–`I8` were not measured. There the low-pass of about 81 Hz (−3 dB, see "Input Circuit") is added: a 90 Hz signal is already attenuated there (fundamental about −3.5 dB, square wave rounded off), so the `I1` value does not apply to these inputs. The driver delivers at most about 312 averaged values per second (one value every 3.2 ms). For frequency measurements above about 90 Hz, use a pulse input. Measurement setup: exercise [`Uebung_250_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/en/latest/Uebungen/test_AX/Uebungen_doc/Uebung_250_AX/).
+
+Measurement series (square wave 0–10 V on `I1` as AI and `I2` as PI, gate time 1 s; frequencies in Hz, `SAMPLES_S` in AI values per second, `OK` = deviation at most 2 Hz):
+
+| f | F_AI | F_PI | SAMPLES_S | OK |
+|-------:|-----:|-----:|------------------------:|----|
+| 1 | 1 | 1 | 132 | TRUE |
+| 10 | 10 | 10 | 196 | TRUE |
+| 30 | 30 | 30 | 252 | TRUE |
+| 50 | 50 | 50 | 286 | TRUE |
+| 60 | 60 | 60 | 287 | TRUE |
+| 70 | 70 | 70 | 303 | TRUE |
+| 80 | 80 | 80 | 312 | TRUE |
+| 90 | 90 | 90 | 313 | TRUE |
+| 100 | 87 | 100 | 312 | FALSE |
+| 110 | 81 | 110 | 312 | FALSE |
 
 ### Digital Inputs
 
@@ -104,6 +119,8 @@ input of the same number (uses the same `EPinDigitalIn` pin table internally, vi
 ESP32 PCNT hardware, see `IOHandleESP32PulseIN.cpp`).
 
 **Pulse input measurement (2026-08-30):** square wave 12 V, FNIRSI SG-003A signal generator in Pulse mode (Level, 12.0 V peak), frequency read at the generator and in the 4diac program.
+
+**Note on the input voltage:** The 12 V is the test condition, not a specification. A permissible input voltage range and the protection behavior of the inputs are not verified here. By calculation, about 3.8 V appear behind the divider at 12 V (the schematic states 2.6 V, unresolved, see above), which is above the 3.3 V supply of the ESP32-P4. The measurement result must therefore not be read as a permissible operating range; the permissible input voltage has to be clarified with the board manufacturer.
 
 | Inputs | Result |
 |---|---|
@@ -154,7 +171,7 @@ The competitor values come from the manufacturer manuals ([LOGO! 8 system manual
 | Resolution | 12 bit | Base module: not specified (error limit ±1.5 %); AM2: 10 bit, normalized to 0-1000 | 12 bit (0-4095) |
 | Update | up to about 312 values/s (every 3.2 ms) | Base module 300 ms, AM2 50 ms | adjustable in easySoft; no fixed figure found |
 | Filter | Averaging in the driver (64 samples) | Analog filter and average function blocks | Noise suppression and averaging adjustable, PT1 filter block |
-| Square wave measured cleanly up to | about 90 Hz (measurement 2026-10-30) | not specified | not specified |
+| Square wave measured cleanly up to | about 90 Hz on `I1` (measurement 2026-10-30; `I3`–`I8` not measured) | not specified | not specified |
 
 **Pulse input**
 

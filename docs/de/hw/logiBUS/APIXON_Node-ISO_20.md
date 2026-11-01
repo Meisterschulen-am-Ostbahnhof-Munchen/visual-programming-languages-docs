@@ -72,7 +72,22 @@ unproblematisch, da der ESP32-P4 kein eigenes WLAN-Radio besitzt und der
 ADC2/WLAN-Konflikt (der bei ESP32/ESP32-S2/ESP32-S3 mit WLAN besteht) auf diesem Chip
 nicht existiert.
 
-**Grenzfrequenz am Analogeingang (Messung 2026-10-30):** Ein Rechtecksignal wird bis ca. 90 Hz exakt erfasst, ab 100 Hz gehen Flanken verloren, darüber tritt Aliasing auf. Der Treiber liefert höchstens ca. 312 gemittelte Werte pro Sekunde (ein Wert alle 3,2 ms). Für Frequenzmessungen über ca. 90 Hz ist ein Puls-Eingang zu verwenden. Die Messreihe steht in der Übung `Uebung_250_AX` (Übungen-Doku).
+**Grenzfrequenz am Analogeingang (Messung 2026-10-30):** Gemessen wurde an `I1` (Rechteck 0–10 V). „Exakt erfasst“ heißt hier: Die aus den AI-Werten gezählte Frequenz stimmt mit dem Hardware-Zähler eines Pulseingangs (`I2`) bis auf 2 Hz überein; die Amplitude wurde nicht bewertet. Das ist die beobachtete Grenze, bis zu der Flanken sauber erkannt werden, keine Filtergrenze: Bis ca. 90 Hz stimmen beide Frequenzen überein, ab 100 Hz gehen Flanken verloren, darüber tritt Aliasing auf. Die Ursache liegt in der Mittelung im Treiber, nicht in der Eingangsbeschaltung. Für `I3`–`I8` wurde nicht gemessen. Dort kommt der Tiefpass mit ca. 81 Hz (−3 dB, siehe „Eingangsbeschaltung“) hinzu: Ein 90-Hz-Signal wird dort bereits gedämpft (Grundschwingung ca. −3,5 dB, Rechteck verschliffen), der Wert von `I1` gilt für diese Eingänge nicht. Der Treiber liefert höchstens ca. 312 gemittelte Werte pro Sekunde (ein Wert alle 3,2 ms). Für Frequenzmessungen über ca. 90 Hz ist ein Puls-Eingang zu verwenden. Aufbau der Messung: Übung [`Uebung_250_AX`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-exercises-docs/de/latest/Uebungen/test_AX/Uebungen_doc/Uebung_250_AX/).
+
+Messreihe (Rechteck 0–10 V auf `I1` als AI und `I2` als PI, Torzeit 1 s; Frequenzen in Hz, `SAMPLES_S` in AI-Werten pro Sekunde, `OK` = Abweichung höchstens 2 Hz):
+
+| f | F_AI | F_PI | SAMPLES_S | OK |
+|-------:|-----:|-----:|------------------------:|----|
+| 1 | 1 | 1 | 132 | TRUE |
+| 10 | 10 | 10 | 196 | TRUE |
+| 30 | 30 | 30 | 252 | TRUE |
+| 50 | 50 | 50 | 286 | TRUE |
+| 60 | 60 | 60 | 287 | TRUE |
+| 70 | 70 | 70 | 303 | TRUE |
+| 80 | 80 | 80 | 312 | TRUE |
+| 90 | 90 | 90 | 313 | TRUE |
+| 100 | 87 | 100 | 312 | FALSE |
+| 110 | 81 | 110 | 312 | FALSE |
 
 ### Digitale Eingänge
 
@@ -105,6 +120,8 @@ gleichnamigen digitalen Eingang teilen (nutzt intern dieselbe `EPinDigitalIn`-Pi
 über die ESP32-PCNT-Hardware, siehe `IOHandleESP32PulseIN.cpp`).
 
 **Messung am Puls-Eingang (2026-08-30):** Rechteck 12 V, Signalgenerator FNIRSI SG-003A im Modus Pulse (Level, 12,0 V Spitze), Frequenz am Generator und im 4diac-Programm abgelesen.
+
+**Hinweis zur Eingangsspannung:** Die 12 V sind die Messbedingung, keine Spezifikation. Ein zulässiger Eingangsspannungsbereich und das Schutzverhalten der Eingänge sind hier nicht verifiziert. Rechnerisch liegen hinter dem Teiler bei 12 V ca. 3,8 V an (der Schaltplan nennt 2,6 V, ungeklärt, siehe oben), was über der 3,3-V-Versorgung des ESP32-P4 liegt. Das Messergebnis ist daher nicht als zulässiger Betriebsbereich zu verstehen; die zulässige Eingangsspannung ist beim Hersteller der Platine zu klären.
 
 | Eingänge | Ergebnis |
 |---|---|
@@ -155,7 +172,7 @@ Die Werte der Wettbewerber stammen aus den Herstellerhandbüchern ([LOGO! 8 Syst
 | Auflösung | 12 Bit | Basismodul: nicht angegeben (Fehlergrenze ±1,5 %); AM2: 10 Bit, normiert auf 0–1000 | 12 Bit (0–4095) |
 | Aktualisierung | bis ca. 312 Werte/s (alle 3,2 ms) | Basismodul 300 ms, AM2 50 ms | in easySoft einstellbar; feste Angabe nicht gefunden |
 | Filter | Mittelung im Treiber (64 Samples) | Funktionsblöcke Analogfilter und Mittelwert | Rauschunterdrückung und Mittelung einstellbar, PT1-Filterbaustein |
-| Rechteck sauber messbar bis | ca. 90 Hz (Messung 2026-10-30) | nicht angegeben | nicht angegeben |
+| Rechteck sauber messbar bis | ca. 90 Hz an `I1` (Messung 2026-10-30; `I3`–`I8` nicht gemessen) | nicht angegeben | nicht angegeben |
 
 **Puls-Eingang**
 

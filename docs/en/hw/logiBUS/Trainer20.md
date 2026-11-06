@@ -124,6 +124,10 @@ Q07 and Q08 share their pins with the SD card slot, see above.
     GPIO40 is not an ADC pin, so there is no analog input for I8 (AnalogInput_I8 is not assigned).
     I8 is the joystick button and is only used digitally.
 
+### Power stage
+
+The Trainer20 has no power stage. Limits for the PWM frequency and the turn-off energy: [Power stages of the outputs](Leistungsstufen.md).
+
 ### RGB LED
 
 Addressable RGB LED of the CoreBoard on **GPIO60**.

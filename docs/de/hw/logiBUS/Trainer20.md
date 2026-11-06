@@ -126,6 +126,10 @@ Q07 und Q08 teilen sich die Pins mit dem SD-Karten-Slot, siehe oben.
     GPIO40. GPIO40 ist kein ADC-Pin, deshalb gibt es für I8 keinen Analogeingang (AnalogInput_I8 ist nicht
     belegt). I8 ist der Taster des Joysticks und wird nur digital genutzt.
 
+### Leistungsstufe
+
+Der Trainer20 hat keine Leistungsstufe. Grenzen für PWM-Frequenz und Abschaltenergie: [Leistungsstufen der Ausgänge](Leistungsstufen.md).
+
 ### RGB-LED
 
 Adressierbare RGB-LED des CoreBoards an **GPIO60**.

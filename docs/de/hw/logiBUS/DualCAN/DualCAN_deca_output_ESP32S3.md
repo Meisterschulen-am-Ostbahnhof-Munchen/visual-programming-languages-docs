@@ -58,6 +58,10 @@ Diese Eingänge haben einen Spannungsteiler im Controller: 47/13 --> und einen S
 
 ---
 
+### Leistungsstufe
+
+Die Ausgänge schalten über BTS7030-2EPA. Grenzen für PWM-Frequenz und Abschaltenergie: [Leistungsstufen der Ausgänge](../Leistungsstufen.md).
+
 ### 🌐 Passende Themen-Unterseiten auf ms-muc-docs.de
 
 - [🌐 Belasteter & Unbelasteter Spannungsteiler auf ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/spannungsteiler/)

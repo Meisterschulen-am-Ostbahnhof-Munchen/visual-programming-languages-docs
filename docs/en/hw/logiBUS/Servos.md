@@ -23,7 +23,7 @@ Suitable values for the block:
 | `PULSE_MIN` | `T#500us` |
 | `PULSE_MAX` | `T#2500us` |
 
-The center is at 1.5 ms. With these values the servo travels exactly 90° in each direction. With the initial values of the block (`T#1000us` to `T#2000us`) it is only about ±35°.
+The center (neutral position) of this servo is at 1.5 ms. With these values the servo travels exactly 90° in each direction. With the initial values of the block (`T#1000us` to `T#2000us`) it is only about ±35°.
 
 ## Recommendation for exercises on the trainer
 
@@ -42,7 +42,11 @@ General notes:
 
 - **Supply:** never feed servos from the 3.3 V regulator of the ESP, but from a 5 V source of their own with enough current. Plan about 0.5 to 1 A peak per 9 g servo, more for standard size (rule of thumb, not measured). Common ground with the board.
 - **Signal:** 3.3 V from the ESP is enough for most servos. Take the signal before the power stage.
-- **Pulse width:** the values differ from model to model. Set `PULSE_MIN` and `PULSE_MAX` per servo, preferably with the oscilloscope and carefully up to just before the mechanical stop, symmetrically around 1.5 ms.
+- **Pulse width:** the values differ from model to model. Set `PULSE_MIN` and `PULSE_MAX` per servo, each limit on its own, preferably with the oscilloscope and carefully up to just before the mechanical stop. Take the center from the servo's data: for many servos it is 1.5 ms, some digital servos have a different neutral position.
+
+## Setting in the block
+
+`FREQ`, `PULSE_MIN` and `PULSE_MAX` are data inputs of the block [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/) (or `logiBUS_QWA_SERVO`). They are entered in the 4diac IDE as parameters of the block instance (for example `FREQ` = `50`, `PULSE_MIN` = `T#500us`, `PULSE_MAX` = `T#2500us`) and read at `INIT`. A later change only takes effect at the next `INIT`.
 
 ## Connection
 
@@ -52,7 +56,7 @@ General notes:
 
 ## Note on the mechanical stop
 
-If a servo drives against the mechanical stop with too large a range, it hums and gets warm. Then reduce `PULSE_MIN` and `PULSE_MAX` symmetrically around 1.5 ms.
+If a servo drives against the mechanical stop with too large a range, it hums and gets warm. Then **increase** `PULSE_MIN` and **decrease** `PULSE_MAX`, each limit on its own, until the servo no longer hits the stop. Do not move both values down, that only shifts the range.
 
 ## Other servos
 

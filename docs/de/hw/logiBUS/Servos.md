@@ -23,7 +23,7 @@ Passende Werte für den Baustein:
 | `PULSE_MIN` | `T#500us` |
 | `PULSE_MAX` | `T#2500us` |
 
-Die Mitte liegt bei 1,5 ms. Mit diesen Werten fährt der Servo exakt 90° in jede Richtung. Mit den Initialwerten des Bausteins (`T#1000us` bis `T#2000us`) sind es nur etwa ±35°.
+Die Mitte (Neutralstellung) liegt bei diesem Servo bei 1,5 ms. Mit diesen Werten fährt der Servo exakt 90° in jede Richtung. Mit den Initialwerten des Bausteins (`T#1000us` bis `T#2000us`) sind es nur etwa ±35°.
 
 ## Empfehlung für Übungen am Trainer
 
@@ -42,7 +42,11 @@ Allgemeine Hinweise:
 
 - **Versorgung:** Servos nie aus dem 3,3-V-Regler des ESP speisen, sondern aus einer eigenen 5-V-Quelle mit genug Strom. Pro 9-g-Servo etwa 0,5 bis 1 A Spitze einplanen, für Standardgröße mehr (Richtwert, nicht gemessen). Gemeinsame Masse mit dem Board.
 - **Signal:** 3,3 V vom ESP reichen den meisten Servos. Das Signal vor der Leistungsstufe abgreifen.
-- **Pulsbreite:** Die Werte unterscheiden sich je nach Modell. `PULSE_MIN` und `PULSE_MAX` pro Servo einstellen, am besten mit dem Oszilloskop und vorsichtig bis kurz vor den mechanischen Anschlag, symmetrisch um 1,5 ms.
+- **Pulsbreite:** Die Werte unterscheiden sich je nach Modell. `PULSE_MIN` und `PULSE_MAX` pro Servo einstellen, jede Grenze für sich, am besten mit dem Oszilloskop und vorsichtig bis kurz vor den mechanischen Anschlag. Die Mitte nimmt man aus den Angaben des Servos: Sie liegt bei vielen Servos bei 1,5 ms, manche Digitalservos haben eine andere Neutralstellung.
+
+## Einstellung im Baustein
+
+`FREQ`, `PULSE_MIN` und `PULSE_MAX` sind Dateneingänge des Bausteins [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/) (beziehungsweise `logiBUS_QWA_SERVO`). Sie werden in der 4diac IDE als Parameter der Bausteininstanz eingetragen (zum Beispiel `FREQ` = `50`, `PULSE_MIN` = `T#500us`, `PULSE_MAX` = `T#2500us`) und bei `INIT` gelesen. Eine spätere Änderung wirkt erst bei einem erneuten `INIT`.
 
 ## Anschluss
 
@@ -52,7 +56,7 @@ Allgemeine Hinweise:
 
 ## Hinweis zum mechanischen Anschlag
 
-Fährt ein Servo mit zu großer Spanne gegen den mechanischen Anschlag, brummt er und wird warm. Dann `PULSE_MIN` und `PULSE_MAX` symmetrisch um 1,5 ms zurücknehmen.
+Fährt ein Servo mit zu großer Spanne gegen den mechanischen Anschlag, brummt er und wird warm. Dann `PULSE_MIN` **erhöhen** und `PULSE_MAX` **verringern**, jede Grenze für sich, bis der Servo nicht mehr anschlägt. Nicht beide Werte nach unten verschieben, das verschiebt nur den Bereich.
 
 ## Weitere Servos
 

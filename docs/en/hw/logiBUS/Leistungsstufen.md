@@ -44,9 +44,9 @@ The limits are documented anyway, because they matter for a diode failure or for
 
 | Switch | Family | Clamp voltage | Single pulse `EAS` | Repetitive `EAR` / note | Datasheet |
 |---|---|---|---|---|---|
-| BTS7030-2EPA | PROFET+2 12 V, 2 × 30 mΩ | `VDS(CLAMP)` at least 35 V | at most 38 mJ at `IL` = 2 · `IL(NOM)` | at most 18 mJ at `IL(NOM)`, `TJ(0)` = 85 °C | 2024-07-29 |
+| BTS7030-2EPA | PROFET+2 12 V, 2 × 30 mΩ | `VDS(CLAMP)` at least 35 V | at most 38 mJ at `IL` = 2 · `IL(NOM)`, `TJ(0)` = 150 °C, `VS` = 28 V | at most 18 mJ at `IL(NOM)`, `TJ(0)` = 85 °C, `VS` = 13.5 V, 1 million cycles | 2024-07-29 |
 | BTT6030-2ERA | PROFET+2 12/24 V, 2 × 30 mΩ | `VDS(AZ)` 66 to 75 V | at most 85 mJ at `IL(0)` = 4 A, `TJ(0)` = 150 °C, `VS` = 28 V | protection functions not designed for continuous repetitive operation | Rev. 2019-03-09 |
-| BTH6070-2EPV | PROFET+ 48 V, 2 × 60 mΩ (on DualOut 48V) | `VDS(CLAMP)` 65 to 75 V | at most 40 mJ at `IL(NOM)` = 2.17 A | also not designed for repetitive operation | Rev. 1.00, 2025-11-15 |
+| BTH6070-2EPV | PROFET+ 48 V, 2 × 60 mΩ (on DualOut 48V) | `VDS(CLAMP)` 65 to 75 V | at most 40 mJ at `IL(NOM)` = 2.17 A, `VS` = 54 V | also not designed for repetitive operation | Rev. 1.00, 2025-11-15 |
 | BTH50030-1LUA | Power PROFET+ 24/48 V, 3 mΩ, 25 A | Smart Clamp with fast turn-off | limit curve `EAS`/`EAR` over `IL` (datasheet, Figure 6) | switching energy at high load about 9 to 12.5 mJ on and 7 to 10 mJ off; `fIN` at most 100 Hz | – |
 | BTM9010EP (H-bridge) | bridge with its own freewheeling diodes | – | – | diode forward voltage `Vf` at most 0.9 V at 2 A, 150 °C | – |
 

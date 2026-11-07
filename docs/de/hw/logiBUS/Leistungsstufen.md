@@ -44,9 +44,9 @@ Die Grenzen sind trotzdem hier dokumentiert, weil sie bei einem Diodenausfall od
 
 | Schalter | Familie | Klemmspannung | Einzelpuls `EAS` | Wiederholt `EAR` / Hinweis | Datenblatt |
 |---|---|---|---|---|---|
-| BTS7030-2EPA | PROFET+2 12 V, 2 × 30 mΩ | `VDS(CLAMP)` mindestens 35 V | höchstens 38 mJ bei `IL` = 2 · `IL(NOM)` | höchstens 18 mJ bei `IL(NOM)`, `TJ(0)` = 85 °C | 2024-07-29 |
+| BTS7030-2EPA | PROFET+2 12 V, 2 × 30 mΩ | `VDS(CLAMP)` mindestens 35 V | höchstens 38 mJ bei `IL` = 2 · `IL(NOM)`, `TJ(0)` = 150 °C, `VS` = 28 V | höchstens 18 mJ bei `IL(NOM)`, `TJ(0)` = 85 °C, `VS` = 13,5 V, 1 Mio. Zyklen | 2024-07-29 |
 | BTT6030-2ERA | PROFET+2 12/24 V, 2 × 30 mΩ | `VDS(AZ)` 66 bis 75 V | höchstens 85 mJ bei `IL(0)` = 4 A, `TJ(0)` = 150 °C, `VS` = 28 V | Schutzfunktionen nicht für dauernden wiederholten Betrieb ausgelegt | Rev. 2019-03-09 |
-| BTH6070-2EPV | PROFET+ 48 V, 2 × 60 mΩ (auf DualOut 48V) | `VDS(CLAMP)` 65 bis 75 V | höchstens 40 mJ bei `IL(NOM)` = 2,17 A | ebenfalls nicht für wiederholten Betrieb ausgelegt | Rev. 1.00, 2025-11-15 |
+| BTH6070-2EPV | PROFET+ 48 V, 2 × 60 mΩ (auf DualOut 48V) | `VDS(CLAMP)` 65 bis 75 V | höchstens 40 mJ bei `IL(NOM)` = 2,17 A, `VS` = 54 V | ebenfalls nicht für wiederholten Betrieb ausgelegt | Rev. 1.00, 2025-11-15 |
 | BTH50030-1LUA | Power PROFET+ 24/48 V, 3 mΩ, 25 A | Smart Clamp mit schnellem Abschalten | Grenzkurve `EAS`/`EAR` über `IL` (Datenblatt, Figure 6) | Schaltenergie bei hoher Last etwa 9 bis 12,5 mJ ein und 7 bis 10 mJ aus; `fIN` höchstens 100 Hz | – |
 | BTM9010EP (H-Brücke) | Brücke mit eigenen Freilaufdioden | – | – | Durchlassspannung der Diode `Vf` höchstens 0,9 V bei 2 A, 150 °C | – |
 

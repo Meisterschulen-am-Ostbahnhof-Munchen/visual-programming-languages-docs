@@ -50,6 +50,10 @@ Link to the devkit: <https://docs.espressif.com/projects/esp-dev-kits/en/latest/
 
 Compared to the Hutschienenmoped XL, Q3/Q4 are on different pins (11/10 instead of 39/40). Q56 (GPIO16) is the low side of Q5 and Q6, and Q78 (GPIO15) is the low side of Q7 and Q8 — these are not independent outputs, but the shared low-side switch for each output pair.
 
+### Power stage
+
+Q1–Q4 switch through BTS7030-2EPA. Q5–Q8 run through two BTM9010EP (H-bridge), PWM on the low side Q56 and Q78. Limits for the PWM frequency and the turn-off energy: [Power stages of the outputs](../Leistungsstufen.md).
+
 ### LED Strip
 
 | Signal:   | PIN (ESP32S3) |

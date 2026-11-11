@@ -160,6 +160,10 @@ At 2.3 kHz about 0.2 V of ripple remains around the mean value; this fits an inp
 | Output_Q11 | 14            |
 | Output_Q12 |  6            |
 
+### Power stage
+
+Outputs Q1–Q12 switch through BTT6030-2ERA. Limits for the PWM frequency and the turn-off energy: [Power stages of the outputs](Leistungsstufen.md).
+
 ### Comparison with Common Small Controllers
 
 The competitor values come from the manufacturer manuals ([LOGO! 8 system manual](https://cache.industry.siemens.com/dl/files/041/109741041/att_924627/v1/logo_system_manual_de-DE_de-DE.pdf), [LOGO! product information 05/2024](https://cache.industry.siemens.com/dl/files/848/109971848/att_1286527/v1/Product_Information_for_LOGO_System_Manual_de-DE_de-DE.pdf), [easyE4 manual MN050009](https://es-assets.eaton.com/DOCUMENTATION/AWB_MANUALS/MN050009_EN.pdf)), the APIXON Node-ISO 20 values from the measurements above.

@@ -54,6 +54,10 @@ These inputs have a voltage divider in the controller: 47/13 --> and a Schmitt t
 
 ---
 
+### Power stage
+
+The outputs switch through BTS7030-2EPA. Limits for the PWM frequency and the turn-off energy: [Power stages of the outputs](../Leistungsstufen.md).
+
 ### 🌐 Related topic subpages on ms-muc-docs.de
 
 - [🌐 Loaded & Unloaded Voltage Divider on ms-muc-docs.de](https://www.ms-muc-docs.de/elektrotechnik/elektrik/widerstand/widerstand-theorie/spannungsteiler/)

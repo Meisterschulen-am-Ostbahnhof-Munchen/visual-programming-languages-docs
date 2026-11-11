@@ -161,6 +161,10 @@ Bei 2,3 kHz bleiben also noch ca. 0,2 V Welligkeit um den Mittelwert; das passt 
 | Output_Q11 | 14            |
 | Output_Q12 |  6            |
 
+### Leistungsstufe
+
+Die Ausgänge Q1–Q12 schalten über BTT6030-2ERA. Grenzen für PWM-Frequenz und Abschaltenergie: [Leistungsstufen der Ausgänge](Leistungsstufen.md).
+
 ### Vergleich mit gängigen Kleinsteuerungen
 
 Die Werte der Wettbewerber stammen aus den Herstellerhandbüchern ([LOGO! 8 Systemhandbuch](https://cache.industry.siemens.com/dl/files/041/109741041/att_924627/v1/logo_system_manual_de-DE_de-DE.pdf), [LOGO! Produktinformation 05/2024](https://cache.industry.siemens.com/dl/files/848/109971848/att_1286527/v1/Product_Information_for_LOGO_System_Manual_de-DE_de-DE.pdf), [easyE4 Handbuch MN050009](https://es-assets.eaton.com/DOCUMENTATION/AWB_MANUALS/MN050009_EN.pdf)), die Werte des APIXON Node-ISO 20 aus den oben genannten Messungen.

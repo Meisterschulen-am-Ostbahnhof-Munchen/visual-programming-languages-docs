@@ -53,6 +53,10 @@ Spannungsteiler ist im Controller:
 
 Im Vergleich zum Hutschienenmoped XL sind Q3/Q4 auf andere Pins (11/10 statt 39/40) gelegt. Q56 (GPIO16) ist die Low-Side von Q5 und Q6, Q78 (GPIO15) die Low-Side von Q7 und Q8 — keine eigenständigen Ausgänge, sondern die gemeinsame Low-Side-Schaltung für jeweils ein Ausgangspaar.
 
+### Leistungsstufe
+
+Q1–Q4 schalten über BTS7030-2EPA. Q5–Q8 laufen über zwei BTM9010EP (H-Brücke), PWM auf der Low-Side Q56 und Q78. Grenzen für PWM-Frequenz und Abschaltenergie: [Leistungsstufen der Ausgänge](../Leistungsstufen.md).
+
 ### LED Strip
 
 | Signal:    | PIN (ESP32S3) |

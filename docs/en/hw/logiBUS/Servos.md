@@ -3,7 +3,7 @@
 This page describes how model servos are connected to a logiBUS output and which values for `FREQ`, `PULSE_MIN` and `PULSE_MAX` of the block [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/) fit.
 
 !!! note "Origin of the data"
-    The manufacturer data comes from the product description. Franz tested the values for the 9 g servo on the setup (the servo travels 90° in each direction). Franz measured the pulse widths of the driver with an oscilloscope (2026-11-06). I did not verify any of this myself.
+    The manufacturer data comes from the product description. The values for the 9 g servo were tested on the setup (the servo travels 90° in each direction). The pulse widths of the driver were measured with an oscilloscope (2026-11-06). The manufacturer data was not checked against datasheets.
 
 ## 9 g servo, 180°
 
@@ -28,7 +28,7 @@ The center (neutral position) of this servo is at 1.5 ms. With these values the 
 ## Recommendation for exercises on the trainer
 
 !!! warning "Unverified values"
-    This list is a recommendation from general knowledge (Claude), not a measurement and not a datasheet. Torque, pulse range and current were not looked up. Only the 9 g servo above (B0H3BC3PSS) is tested on hardware with 500/2500 µs at 50 Hz.
+    This list is a recommendation from general experience, not a measurement and not a datasheet. Torque, pulse range and current were not looked up. Only the 9 g servo above (B0H3BC3PSS) is tested on hardware with 500/2500 µs at 50 Hz.
 
 | Use | Recommendation | Why |
 |---|---|---|
@@ -42,7 +42,7 @@ General notes:
 
 - **Supply:** never feed servos from the 3.3 V regulator of the ESP, but from a 5 V source of their own with enough current. Plan about 0.5 to 1 A peak per 9 g servo, more for standard size (rule of thumb, not measured). Common ground with the board.
 - **Signal:** 3.3 V from the ESP is enough for most servos. Take the signal before the power stage.
-- **Pulse width:** the values differ from model to model. Set `PULSE_MIN` and `PULSE_MAX` per servo, each limit on its own, preferably with the oscilloscope and carefully up to just before the mechanical stop. Take the center from the servo's data: for many servos it is 1.5 ms, some digital servos have a different neutral position.
+- **Pulse width:** the values differ from model to model. Set `PULSE_MIN` and `PULSE_MAX` per servo, each limit on its own, preferably with the oscilloscope and carefully up to just before the mechanical stop. With an unknown servo, start with the initial values of the block (`T#1000us` to `T#2000us`) and widen the range only step by step: values that are too large drive the servo against its stop and can damage the gear. Take the center from the servo's data: for many servos it is 1.5 ms, some digital servos have a different neutral position.
 
 ## Setting in the block
 
@@ -60,4 +60,4 @@ If a servo drives against the mechanical stop with too large a range, it hums an
 
 ## Other servos
 
-Other servo types with their values (for example car servos at 250 Hz) are in the table on the page of the block [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/).
+Other servo types (for example car servos at 250 Hz) need different values for `FREQ`, `PULSE_MIN` and `PULSE_MAX`. They are given in the datasheet of the respective servo. The parameters of the block are described on the page [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/).

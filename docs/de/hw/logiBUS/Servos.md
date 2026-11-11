@@ -3,7 +3,7 @@
 Diese Seite beschreibt, wie Modellbau-Servos an einen logiBUS-Ausgang angeschlossen werden und welche Werte für `FREQ`, `PULSE_MIN` und `PULSE_MAX` des Bausteins [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/) passen.
 
 !!! note "Herkunft der Angaben"
-    Die Herstellerangaben stammen aus der Produktbeschreibung. Die Werte für den 9-g-Servo hat Franz am Aufbau getestet (Servo fährt 90° in jede Richtung). Die Impulsbreiten des Treibers hat Franz am Oszilloskop gemessen (2026-11-06). Ich habe nichts davon selbst geprüft.
+    Die Herstellerangaben stammen aus der Produktbeschreibung. Die Werte für den 9-g-Servo wurden am Aufbau getestet (Servo fährt 90° in jede Richtung). Die Impulsbreiten des Treibers wurden am Oszilloskop gemessen (2026-11-06). Die Herstellerangaben wurden nicht gegen Datenblätter nachgeprüft.
 
 ## 9-g-Servo, 180°
 
@@ -28,7 +28,7 @@ Die Mitte (Neutralstellung) liegt bei diesem Servo bei 1,5 ms. Mit diesen Werten
 ## Empfehlung für Übungen am Trainer
 
 !!! warning "Keine geprüften Werte"
-    Diese Liste ist eine Empfehlung aus allgemeinem Wissen (Claude), keine Messung und kein Datenblatt. Drehmoment, Pulsbereich und Strom sind nicht nachgeschlagen. Nur der 9-g-Servo oben (B0H3BC3PSS) ist mit 500/2500 µs bei 50 Hz auf der Hardware getestet.
+    Diese Liste ist eine Empfehlung aus allgemeiner Erfahrung, keine Messung und kein Datenblatt. Drehmoment, Pulsbereich und Strom sind nicht nachgeschlagen. Nur der 9-g-Servo oben (B0H3BC3PSS) ist mit 500/2500 µs bei 50 Hz auf der Hardware getestet.
 
 | Einsatz | Empfehlung | Warum |
 |---|---|---|
@@ -42,7 +42,7 @@ Allgemeine Hinweise:
 
 - **Versorgung:** Servos nie aus dem 3,3-V-Regler des ESP speisen, sondern aus einer eigenen 5-V-Quelle mit genug Strom. Pro 9-g-Servo etwa 0,5 bis 1 A Spitze einplanen, für Standardgröße mehr (Richtwert, nicht gemessen). Gemeinsame Masse mit dem Board.
 - **Signal:** 3,3 V vom ESP reichen den meisten Servos. Das Signal vor der Leistungsstufe abgreifen.
-- **Pulsbreite:** Die Werte unterscheiden sich je nach Modell. `PULSE_MIN` und `PULSE_MAX` pro Servo einstellen, jede Grenze für sich, am besten mit dem Oszilloskop und vorsichtig bis kurz vor den mechanischen Anschlag. Die Mitte nimmt man aus den Angaben des Servos: Sie liegt bei vielen Servos bei 1,5 ms, manche Digitalservos haben eine andere Neutralstellung.
+- **Pulsbreite:** Die Werte unterscheiden sich je nach Modell. `PULSE_MIN` und `PULSE_MAX` pro Servo einstellen, jede Grenze für sich, am besten mit dem Oszilloskop und vorsichtig bis kurz vor den mechanischen Anschlag. Bei einem unbekannten Servo mit den Initialwerten des Bausteins (`T#1000us` bis `T#2000us`) beginnen und den Bereich nur schrittweise erweitern: Zu große Werte fahren den Servo gegen den Anschlag und können das Getriebe beschädigen. Die Mitte nimmt man aus den Angaben des Servos: Sie liegt bei vielen Servos bei 1,5 ms, manche Digitalservos haben eine andere Neutralstellung.
 
 ## Einstellung im Baustein
 
@@ -60,4 +60,4 @@ Fährt ein Servo mit zu großer Spanne gegen den mechanischen Anschlag, brummt e
 
 ## Weitere Servos
 
-Weitere Servotypen mit ihren Werten (zum Beispiel Autoservos mit 250 Hz) stehen in der Tabelle auf der Seite des Bausteins [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/).
+Weitere Servotypen (zum Beispiel Autoservos mit 250 Hz) brauchen andere Werte für `FREQ`, `PULSE_MIN` und `PULSE_MAX`. Sie stehen im Datenblatt des jeweiligen Servos. Die Parameter des Bausteins sind auf der Seite [logiBUS_QW_SERVO](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/DO-Servo/logiBUS_QW_SERVO/) beschrieben.

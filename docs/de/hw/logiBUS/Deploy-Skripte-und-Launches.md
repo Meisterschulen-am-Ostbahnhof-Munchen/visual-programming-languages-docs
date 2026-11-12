@@ -19,7 +19,7 @@ Für den Online-Deploy muss der Knoten vorher mit der ELF-Grundausstattung vorbe
 
 ## Python-Skripte in `scripts_central/`
 
-Alle Skripte sind reines Python (nur Standardbibliothek, keine `pip`-Installation nötig).
+Alle Skripte sind reines Python (nur Standardbibliothek, keine `pip`-Installation nötig). Die Befehlsbeispiele auf dieser Seite sind aus dem Ordner `Ventilsteuerung/` aufzurufen. Die `.bat`-Skripte und Launches setzen das Arbeitsverzeichnis selbst.
 
 ### Deploy und Bibliotheken
 
@@ -61,6 +61,9 @@ Grenzen der Firmware: höchstens 64 Bibliotheken je Knoten und höchstens 8 `req
 !!! warning "Das Skript startet den Knoten nicht neu"
     Neue Dateien werden erst nach einem Neustart aktiv, zum Beispiel über den Reboot-Button auf `http://<ip>/`. Meldet die Zusammenfassung einen Fehler für einen Knoten, diesen **nicht** neu starten, sondern das Deploy wiederholen.
 
+!!! note "Nur für das Übungsnetz"
+    Die Skripte übertragen unverschlüsselt per HTTP und ohne Anmeldung. Das ist für das abgeschirmte Übungsnetz gedacht. In produktiven IoT/OT-Systemen braucht es Transportverschlüsselung (HTTPS/TLS) und Zugriffskontrolle.
+
 !!! warning "Es gibt keinen Trockenlauf"
     Das Skript lädt wirklich auf den Knoten hoch. Vor wiederholten Testläufen den freien Speicher unter `http://<ip>/space/` prüfen. Ein fast volles Dateisystem kann bei weiteren Uploads beschädigt werden und wird beim nächsten Start neu formatiert. Dabei sind alle Dateien weg.
 
@@ -68,8 +71,8 @@ Grenzen der Firmware: höchstens 64 Bibliotheken je Knoten und höchstens 8 `req
 
 `make_4diac_training1_elf_preload.py` kopiert die Grundausstattung (`PRELOAD_LIBS` in `deploy_common.py`, plus deren `requires`) nach `/data/elf-libs/` und legt ein eigenes Manifest ohne Boot-Datei an. Alle anderen Manifeste und alle `.fboot`-Dateien auf dem Knoten werden dabei **gelöscht**: FORTE startet danach leer, aber mit geladenen Bibliotheken, und die Übung kommt per Online-Deploy aus der IDE.
 
-    python make_4diac_training1_elf_preload.py                                 # logibus.local
-    python make_4diac_training1_elf_preload.py 192.168.178.45   # bestimmter Knoten
+    python scripts_central/make_4diac_training1_elf_preload.py                                 # logibus.local
+    python scripts_central/make_4diac_training1_elf_preload.py 192.168.178.45   # bestimmter Knoten
 
 Nicht zur Grundausstattung gehören `Funk`, `DataPanel`, `BlinkMarine` und `logiBUS_bosch`. Das Board „Trainer“ hat kein CAN2. Auch hier gilt: Neue Dateien werden erst nach einem Neustart des Knotens aktiv.
 
@@ -115,14 +118,14 @@ Die Build-Skripte gibt es für diese Pools: `BuildAX` (Standardpool), `BuildEmpt
 
 **Neue Übung schnell testen (Online-Deploy)**
 
-1. Einmalig: `RunSkript_PreloadELF_AX` ausführen und den Knoten neu starten.
+1. Einmalig: `RunSkript_PreloadELF_AX` ausführen und den Knoten neu starten. **Achtung:** Das löscht alle `.fboot`-Dateien und Manifeste auf dem Knoten. Eine dauerhaft installierte Übung ist danach weg.
 2. In der IDE `Deploy_App_AX` ausführen.
 
 **Übung dauerhaft installieren**
 
 1. Boot-Datei aus der 4diac IDE exportieren.
 2. `RunSkript_DeployAX` ausführen.
-3. Knoten neu starten (Reboot-Button auf `http://<ip>/`).
+3. Nur wenn das Deploy ohne Fehler endet: Knoten neu starten (Reboot-Button auf `http://<ip>/`). Bei einem Fehler das Deploy wiederholen und erst danach neu starten.
 
 **Pool im ISO-Designer geändert**
 

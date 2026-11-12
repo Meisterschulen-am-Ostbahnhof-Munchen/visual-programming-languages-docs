@@ -19,7 +19,7 @@ For the online deploy, the node must first be prepared with the basic set of ELF
 
 ## Python scripts in `scripts_central/`
 
-All scripts are plain Python (standard library only, no `pip` installation needed).
+All scripts are plain Python (standard library only, no `pip` installation needed). The command examples on this page are to be run from the `Ventilsteuerung/` folder. The `.bat` scripts and launches set the working directory themselves.
 
 ### Deploy and libraries
 
@@ -61,6 +61,9 @@ Firmware limits: at most 64 libraries per node and at most 8 `requires` per libr
 !!! warning "The script does not restart the node"
     New files only become active after a restart, for example with the Reboot button on `http://<ip>/`. If the summary reports an error for a node, do **not** restart it. Repeat the deploy instead.
 
+!!! note "For the training network only"
+    The scripts transfer unencrypted over HTTP and without login. This is intended for the isolated training network. Productive IoT/OT systems need transport encryption (HTTPS/TLS) and access control.
+
 !!! warning "There is no dry run"
     The script really uploads to the node. Before repeated test runs, check the free memory at `http://<ip>/space/`. An almost full file system can be corrupted by further uploads and is reformatted on the next start. All files are then gone.
 
@@ -68,8 +71,8 @@ Firmware limits: at most 64 libraries per node and at most 8 `requires` per libr
 
 `make_4diac_training1_elf_preload.py` copies the basic set (`PRELOAD_LIBS` in `deploy_common.py`, plus their `requires`) to `/data/elf-libs/` and creates a manifest of its own without a boot file. All other manifests and all `.fboot` files on the node are **deleted**: FORTE then starts empty but with the libraries loaded, and the exercise arrives via online deploy from the IDE.
 
-    python make_4diac_training1_elf_preload.py                                 # logibus.local
-    python make_4diac_training1_elf_preload.py 192.168.178.45   # specific node
+    python scripts_central/make_4diac_training1_elf_preload.py                                 # logibus.local
+    python scripts_central/make_4diac_training1_elf_preload.py 192.168.178.45   # specific node
 
 `Funk`, `DataPanel`, `BlinkMarine` and `logiBUS_bosch` are not part of the basic set. The "Trainer" board has no CAN2. Here too, new files only become active after a restart of the node.
 
@@ -115,14 +118,14 @@ Build scripts exist for these pools: `BuildAX` (standard pool), `BuildEmpty`, `B
 
 **Quickly test a new exercise (online deploy)**
 
-1. Once: run `RunSkript_PreloadELF_AX` and restart the node.
+1. Once: run `RunSkript_PreloadELF_AX` and restart the node. **Caution:** This deletes all `.fboot` files and manifests on the node. A permanently installed exercise is gone afterwards.
 2. Run `Deploy_App_AX` in the IDE.
 
 **Install an exercise permanently**
 
 1. Export the boot file from the 4diac IDE.
 2. Run `RunSkript_DeployAX`.
-3. Restart the node (Reboot button on `http://<ip>/`).
+3. Only if the deploy finishes without errors: restart the node (Reboot button on `http://<ip>/`). If it reports an error, repeat the deploy and restart only afterwards.
 
 **Pool changed in ISO Designer**
 

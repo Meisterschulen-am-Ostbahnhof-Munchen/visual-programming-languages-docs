@@ -116,7 +116,12 @@ The settings are INI files in the node's `/data/` directory:
 | --- | --- | --- |
 | `/data/ethernet.ini` | Ethernet: sections `[ETH_INT]` (internal Ethernet), `[ETH_SPI1]` and `[ETH_SPI2]` (SPI Ethernet chips, S3 boards with `_1ETH` or `_2ETH`) | builds with Ethernet |
 | `/data/wlan.ini` | WLAN client and access point: `[general]`, `[WIFI_STA]`, `[WIFI_AP]` | S3 only |
-| `/data/settings.ini` | General settings, including `[mDNS]` with `Hostname` | all |
+| `/data/settings.ini` | General settings (hostname, ISOBUS address, object pool, custom values from 4diac) | all |
+| `/data/settingsReadOnly.ini` | Fixed values that take precedence over `settings.ini` | all |
+| `/data/functionalities.ini` | Which ISOBUS clients log in (VT, AUX, TC) | all |
+| `/data/device.ini` | ISOBUS NAME of the control function | all |
+
+These are all INI files of the firmware, there are no others. All are in the node's file system under `/data/`.
 
 Internal Ethernet (`[ETH_INT]`) is found on the P4 (NodeISO20) and S31 (Trainer20). These two have no WLAN and therefore no access point.
 
@@ -152,15 +157,133 @@ The firmware does not create the INI files itself. They are uploaded from outsid
 
 1. Create the file locally, for example `ethernet.ini`.
 2. Use the upload form on the node's web interface (`http://<ip>/`). Internally this is `POST /upload/<name>`, for example `/upload/ethernet.ini`.
-3. Restart the node (Reboot button or `/reboot/`). The files are only read at startup.
+3. Restart the node (Reboot button or `/reboot/`). `wlan.ini`, `ethernet.ini`, `functionalities.ini` and `device.ini` are only read at startup.
+
+The firmware keeps `settings.ini` in memory and overwrites it with that state at the next save. After uploading it, restart immediately. To fix a value permanently, use `settingsReadOnly.ini` instead.
 
 Deleting works via `/delete/<name>`. The deploy and preload scripts on this page do not touch INI files. The preload only deletes `.fboot` files and foreign manifests.
 
 !!! warning "Pitfalls"
     - **Boolean values** such as `DHCP_CLIENT`, `SNTP_SYNC` or `DHCP_SERVER` must be `1` or `0`. `true` or `yes` is read as `0`. Writing `DHCP_CLIENT=true` gives you a static IP.
     - **Invalid values** are not reported. An invalid IP address results in `0.0.0.0`, an unknown value for `mode` falls back to `WIFI_MODE_AP`.
-    - **Missing file:** The defaults apply. The log shows `Can't load '/data/ethernet.ini', using defaults`.
+    - **Missing file:** The defaults apply. The log is no proof that the file is present: it also shows `Successfully loaded '/data/….ini'` when the file is missing.
     - **Wrong static IP:** The node is then only reachable at that address. To get back, upload a file with `DHCP_CLIENT=1` via another interface (on the S3, for example via the access point `192.168.4.1`) or reflash the file system.
+
+### Further INI files
+
+**`functionalities.ini`: which ISOBUS clients start**
+
+    [functionalities]
+    PART_6=1
+    PART_10=1
+    PART_10_TC_LOGIN_DELAY=0
+
+| Key | Default | Effect |
+| --- | --- | --- |
+| `PART_6` | `1` | Log in the VT client (ISO 11783-6) |
+| `PART_6_AUX_INPUT` | `0` | If `1`, the VT client logs in as an AUX input device instead of a normal VT client |
+| `PART_10` | `0` | Log in the task controller client (ISO 11783-10) |
+| `PART_10_TC_LOGIN_DELAY` | `0` | Delay of the TC login (number 0 to 65535, unit not verified) |
+| `PART_13`, `PART_14` | `0` | are read but not evaluated anywhere, currently without effect |
+
+`PART_6`, `PART_6_AUX_INPUT` and `PART_10` only take effect if the firmware was built with the matching option (VT client or task controller client). Write boolean values as `1` or `0`.
+
+**`device.ini`: ISOBUS NAME**
+
+    [ControlFunction01]
+    Function=128
+    Function_instance=1
+    Identity_number=4711
+
+| Key | Default | Meaning |
+| --- | --- | --- |
+| `Selfconfigurable` | `1` | Self-configurable |
+| `Industry_group` | `2` | Industry group (2 = agriculture) |
+| `Device_class` | `5` | Device class |
+| `Device_class_instance` | `0` | Device class instance |
+| `Function` | `128` | Function |
+| `Function_instance` | `0` | Function instance |
+| `ECU_instance` | `0` | ECU instance |
+| `Manufacturer_code` | `1116` | Manufacturer code |
+| `Identity_number` | `0` | If `0`, the firmware uses the device's serial number, otherwise this value |
+
+!!! warning "Value ranges are not checked"
+    The firmware does not check the bit widths of the ISO standard (for example 3 bits for the industry group, 21 bits for the identity number). The value goes into the NAME field unchanged. On a bus the NAMEs of all devices must differ. With `Identity_number=0` the serial number takes care of that. If you enter fixed values, you must watch this yourself.
+
+**`settings.ini`: general settings**
+
+    [mDNS]
+    Hostname=workshop-left
+
+    [SSDP]
+    FriendlyName=Workshop left
+
+    [CF-A]
+    NODE1_SA=128
+    bootTimeVT=120
+
+| Section and key | Default | Meaning |
+| --- | --- | --- |
+| `[mDNS]` `Hostname` | empty (then `logibus-<MAC>`) | Hostname of the node, see above |
+| `[SSDP]` `FriendlyName` | `logiBUS Controller` | Name used for device discovery on the network. Provisional, the key may still change |
+| `[CF-A]` `NODE1_SA` | firmware's preferred address | Preferred ISOBUS source address. The firmware writes the value back if the node gets a different address during address claiming |
+| `[CF-A]` `NODE2_SA` | as `NODE1_SA` | the same for the second node (whether the build contains it was not verified) |
+| `[CF-A]` `preferredVT` | `0xFFFFFFFFFFFFFFFF` | NAME of the terminal used last. Written by the firmware |
+| `[CF-A]` `bootTimeVT` | `120` | Boot time of the terminal. Written by the firmware |
+| `[ObjectPool]` `file_de` | `pools/pool_de.iop` | no effect: the firmware reads the value but does not use it. Which pool is loaded is described below under `*.iop`. |
+| `[ScalingTest]` | `enable=0` | Test and developer switch, not meant for class |
+
+In addition, the 4diac function block `INI` and the `INI_A*` adapters read and write arbitrary section/key pairs in `settings.ini`. It is saved after every write and read.
+
+The firmware writes `settings.ini` itself: every access with a default value adds a missing key together with its default, and it is saved at the next save operation (address change, VT login, access by the INI block). That is why the file comes into existence on its own over time, even without an upload.
+
+**`settingsReadOnly.ini`: fixing values**
+
+Same sections and keys as `settings.ini`, but read-only:
+
+    [CF-A]
+    NODE1_SA = 128
+    bootTimeVT = 90
+
+- If a key is present here, this value applies on every read.
+- Write attempts on such a key are rejected (log: `write rejected, key is read-only`). The 4diac `INI` block then reports `Key is read-only`.
+- When loading, the firmware deletes the same keys from `settings.ini`.
+- The firmware never creates the file itself. If it is missing, that is not an error, and everything is writable.
+
+!!! note "Being reworked"
+    `[mDNS]` `Hostname` and the `hostname` keys of the network INIs (new hostname state) as well as `[SSDP]` `FriendlyName` are currently being reworked. According to the firmware state, the other files and keys are not.
+
+### Further files in `/data/`
+
+Besides the INI files, the `/data/` directory holds further files. Of these, the firmware only writes `settings.ini` and `AuxAssignOfApp.txt`. Everything else comes from outside, by upload or via the deploy and preload scripts.
+
+| File | Content | Source |
+| --- | --- | --- |
+| `*.fboot` | Boot file of the 4diac application | deploy script or upload |
+| `*.libs.json` | Manifest of the ELF libraries. Without a manifest, no ELF libraries are loaded. | deploy or preload script |
+| `*.elf` | the ELF libraries, referenced by the manifest | deploy or preload script |
+| `*.iop` | VT object pool (ISO 11783-6), the name is free | upload or deploy |
+| `<poolname>.vis.json` | Mask visibility table, placed next to the pool with the pool's name | upload or deploy |
+| `*.lic`, `*.key` | License and key files, read at startup | upload |
+| `*.bin` | Firmware images | upload |
+| `AuxAssignOfApp.txt` | preferred AUX assignment (see below) | the firmware, created at the terminal |
+
+The firmware writes no log files to `/data/`. The file server computes SHA-256 hashes of the files in memory only (available at `/sha256/<file>`), no hash files are created.
+
+!!! warning "For `.fboot`, `.libs.json` and `.iop` the alphabetically first file wins"
+    If several files with the same extension are in `/data/`, the firmware uses only the alphabetically first one and warns in the log. An old file with a "smaller" name therefore silently beats a new one. Delete old files (`/delete/<name>`). The deploy script cleans up old boot files and manifests itself.
+
+    Without an `.iop`, the firmware looks for `/data/DefaultPool.iop` and reports it as missing (`no object pool *.iop in /data`).
+
+**`AuxAssignOfApp.txt`: preferred AUX assignment**
+
+The file holds the "preferred assignment" (ISO 11783-6): which AUX functions of the object pool are assigned to which AUX input device (for example a joystick). It has nothing to do with `PART_6_AUX_INPUT`, that is, with the node itself acting as an AUX input device. It exists only in builds with a VT client.
+
+- **Who writes it:** the firmware. If you assign at the terminal and mark the assignment as "store as preferred", the firmware rewrites the entire current assignment into the file. Uploading it is not intended.
+- **Format:** text, one line per assignment, line ending CRLF. Six fields separated by spaces: manufacturer code of the input device, ModelIdentificationCode, AUX type, object ID of the AUX function, object ID of the AUX input (all decimal) and the 64-bit NAME of the input device as 16 hexadecimal characters.
+- **If the file is missing:** There are no preferred assignments, and the assignment is made again at the terminal. The console shows `Error opening AuxAssignOfApp.txt`. This is not a crash.
+- **Resetting the assignment:** delete the file (`/delete/AuxAssignOfApp.txt`). Afterwards the preferred assignment is missing until you assign again at the terminal and store it as preferred. Whether a restart is needed was not verified.
+- **Invalid lines** are not reported: fields are read as numbers, nonsense gives 0.
 
 ## Launch configurations in the 4diac IDE
 

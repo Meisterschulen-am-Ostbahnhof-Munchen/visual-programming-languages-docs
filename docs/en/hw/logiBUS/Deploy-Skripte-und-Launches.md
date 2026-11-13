@@ -100,7 +100,7 @@ A node announces itself via mDNS under a name ending in `.local`. The scripts us
     On devices with older firmware, **all** boards are called `logibus.local`. Which board answers is then random. In that case connect only one board at a time or address the node by its IP address. The DHCP hostname there is `espressif-eth-int`, `espressif-eth-spi1`, `espressif-eth-spi2` or `espressif`.
 
 !!! note "State of the firmware"
-    The unique names are a recent firmware change. It had not yet been tested on hardware when this page was written. If in doubt, use `ping logibus.local` or the router's web interface to check under which name and IP the node reports.
+    The unique names exist from firmware `v0.27-alpha-b-160-gaaaec75b` on. The alias `logibus.local` belongs to one device on the network only (lowest IP wins, checked every minute). If in doubt, use `ping logibus.local` or the router's web interface to check under which name and IP the node reports.
 
 ### Which address does the node get?
 
@@ -212,6 +212,8 @@ This file only exists on the S3. Here too the firmware only reads the keys liste
 
 !!! warning "The log shows the WLAN password in clear text"
     When connecting, the firmware writes the SSID **and** the password to the log in clear text (`connected to ap SSID:… password:…`), also on failure. Do not pass on logs together with `wlan.ini` credentials.
+
+The former keys `IP_DI`, `IP_DI_PIN` and `hostname_DI` no longer exist from firmware `v0.27-alpha-b-160-gaaaec75b` on. If they are still in a `wlan.ini`, they are silently ignored. The hostname is always `hostname`, empty or `espressif` means device name.
 
 **`[WIFI_AP]`** (node as access point)
 
@@ -384,7 +386,10 @@ The file holds the "preferred assignment" (ISO 11783-6): which AUX functions of 
 - **Format:** text, one line per assignment, line ending CRLF. Six fields separated by spaces: manufacturer code of the input device, ModelIdentificationCode, AUX type, object ID of the AUX function, object ID of the AUX input (all decimal) and the 64-bit NAME of the input device as 16 hexadecimal characters.
 - **If the file is missing:** There are no preferred assignments, and the assignment is made again at the terminal. The console shows `Error opening AuxAssignOfApp.txt`. This is not a crash.
 - **Resetting the assignment:** delete the file (`/delete/AuxAssignOfApp.txt`). Afterwards the preferred assignment is missing until you assign again at the terminal and store it as preferred. Whether a restart is needed was not verified.
-- **Invalid lines** are not reported: fields are read as numbers, nonsense gives 0.
+- **More lines than AUX functions:** From firmware `v0.27-alpha-b-160-gaaaec75b` on, the firmware accepts at most as many lines as the instance has AUX functions. The rest is ignored and reported in the log (`more than N assignments, rest ignored`).
+- **The NAME** (sixth field) is also read at the end of a line from this firmware on. **Incomplete lines** are skipped.
+- **Invalid lines** are otherwise not reported: fields are read as numbers, nonsense gives 0.
+- **Older firmware:** These limits and reading the NAME at the end of a line do not apply there. The file should contain at most as many lines as the object pool has AUX functions.
 
 ## Launch configurations in the 4diac IDE
 

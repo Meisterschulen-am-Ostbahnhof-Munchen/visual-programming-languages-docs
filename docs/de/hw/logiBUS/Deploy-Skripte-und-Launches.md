@@ -100,7 +100,7 @@ Ein Knoten meldet sich per mDNS unter einem Namen mit der Endung `.local`. Die S
     Auf Geräten mit älterer Firmware heißen **alle** Platinen `logibus.local`. Welche Platine antwortet, ist dann Zufall. In diesem Fall nur eine Platine gleichzeitig anschließen oder den Knoten über seine IP-Adresse ansprechen. Der DHCP-Hostname lautet dort `espressif-eth-int`, `espressif-eth-spi1`, `espressif-eth-spi2` beziehungsweise `espressif`.
 
 !!! note "Stand der Firmware"
-    Die eindeutigen Namen sind eine neuere Firmware-Änderung. Sie war beim Schreiben dieser Seite noch nicht auf Hardware getestet. Im Zweifel mit `ping logibus.local` oder der Weboberfläche des Routers prüfen, unter welchem Namen und welcher IP sich der Knoten meldet.
+    Die eindeutigen Namen gibt es ab der Firmware `v0.27-alpha-b-160-gaaaec75b`. Der Alias `logibus.local` gehört nur einem Gerät im Netz (niedrigste IP gewinnt, die Prüfung läuft jede Minute). Im Zweifel mit `ping logibus.local` oder der Weboberfläche des Routers prüfen, unter welchem Namen und welcher IP sich der Knoten meldet.
 
 ### Welche Adresse bekommt der Knoten?
 
@@ -212,6 +212,8 @@ Die Datei gibt es nur beim S3. Auch hier liest die Firmware nur die genannten Sc
 
 !!! warning "Das Log zeigt das WLAN-Passwort im Klartext"
     Beim Verbinden schreibt die Firmware SSID **und** Passwort im Klartext ins Log (`connected to ap SSID:… password:…`), ebenso bei einem Fehlschlag. Logs mit `wlan.ini`-Zugangsdaten deshalb nicht weitergeben.
+
+Die früheren Schlüssel `IP_DI`, `IP_DI_PIN` und `hostname_DI` gibt es ab Firmware `v0.27-alpha-b-160-gaaaec75b` nicht mehr. Stehen sie noch in einer `wlan.ini`, werden sie still ignoriert. Der Hostname ist immer `hostname`, leer oder `espressif` bedeutet Gerätename.
 
 **`[WIFI_AP]`** (Knoten als Access Point)
 
@@ -384,7 +386,10 @@ Die Datei enthält die „bevorzugte AUX-Zuordnung“ (Preferred Assignment, ISO
 - **Format:** Text, eine Zeile pro Zuordnung, Zeilenende CRLF. Sechs Felder, durch Leerzeichen getrennt: Herstellercode des Eingabegeräts, ModelIdentificationCode, AUX-Typ, Objekt-ID der AUX-Funktion, Objekt-ID des AUX-Eingangs (alle dezimal) und der 64-Bit-NAME des Eingabegeräts als 16 Hexadezimalzeichen.
 - **Fehlt die Datei:** Es gibt keine bevorzugten Zuordnungen, die Zuordnung erfolgt neu am Terminal. Auf der Konsole steht `Error opening AuxAssignOfApp.txt`. Das ist kein Absturz.
 - **Zuordnung zurücksetzen:** Datei löschen (`/delete/AuxAssignOfApp.txt`). Danach fehlt die bevorzugte Zuordnung, bis am Terminal neu zugeordnet und als bevorzugt gespeichert wird. Ob dafür ein Neustart nötig ist, wurde nicht geprüft.
-- **Ungültige Zeilen** werden nicht gemeldet: Felder werden als Zahlen gelesen, Unsinn ergibt 0.
+- **Mehr Zeilen als AUX-Funktionen:** Ab der Firmware `v0.27-alpha-b-160-gaaaec75b` übernimmt die Firmware höchstens so viele Zeilen, wie die Instanz AUX-Funktionen hat. Der Rest wird ignoriert und im Log gemeldet (`more than N assignments, rest ignored`).
+- **Der NAME** (sechstes Feld) wird ab dieser Firmware auch am Zeilenende gelesen. **Unvollständige Zeilen** werden übersprungen.
+- **Ungültige Zeilen** werden sonst nicht gemeldet: Felder werden als Zahlen gelesen, Unsinn ergibt 0.
+- **Ältere Firmware:** Dort gelten diese Grenzen und das Lesen des NAMENs am Zeilenende nicht. Die Datei sollte höchstens so viele Zeilen enthalten, wie der Objektpool AUX-Funktionen hat.
 
 ## Launch-Konfigurationen in der 4diac IDE
 

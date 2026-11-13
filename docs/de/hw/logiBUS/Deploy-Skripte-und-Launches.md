@@ -203,18 +203,12 @@ Die Datei gibt es nur beim S3. Auch hier liest die Firmware nur die genannten Sc
 | `MAIN_DNS_SERVER` | `192.168.4.1` | Erster DNS-Server |
 | `BACKUP_DNS_SERVER` | `0.0.0.0` | Zweiter DNS-Server |
 | `FALLBACK_DNS_SERVER` | `0.0.0.0` | Dritter DNS-Server |
-| `IP_DI` | `0` | Nur bei `DHCP_CLIENT=0`: Der Pegel des Pins `IP_DI_PIN` (0 oder 1, einmal beim Start gelesen) wird ins **letzte Oktett** der statischen IP geodert. Beispiel: `IP_ADDR=192.168.4.16`, Pin high ergibt `192.168.4.17`. Ist das letzte Oktett schon ungerade, ändert sich nichts. Es ist nur ein Bit, also nur zwei Adressen |
-| `IP_DI_PIN` | `-1` | GPIO-Nummer für `IP_DI` und `hostname_DI`. Der Pin wird beim Start als Eingang mit Pull-Down konfiguriert. Welche Pins zulässig sind, prüft die Firmware nicht (ungeprüft) |
 | `hostname` | `espressif` | DHCP-Hostname im WLAN-Client-Netz. Leer oder `espressif` bedeutet, dass der Gerätename benutzt wird |
-| `hostname_DI` | `0` | `1`: Hängt den Pegel (0 oder 1) des Pins `IP_DI_PIN` an den DHCP-Hostnamen an, zum Beispiel `logibus-3a7f210` |
 | `SNTP_SYNC` | `0` | `1`: SNTP starten. Die Firmware wartet dann bis zu 10 × 2 s auf die Uhrzeit, **vor** dem WLAN-Start. Der Start verzögert sich um bis zu etwa 18 s |
 | `SNTP_SERVER_0` | `pool.ntp.org` | SNTP-Server |
 | `TZ` | `CET-1CEST,M3.5.0,M10.5.0/3` | Zeitzone als POSIX-TZ-Text, wird nach der SNTP-Synchronisation gesetzt |
 | `STATIC_DNS_RESOLVE_TEST` | `0` | Diagnose: Bei `1` wird einmal `RESOLVE_DOMAIN` aufgelöst und das Ergebnis ins Log geschrieben. Das passiert **vor** dem WLAN-Start, ohne Verbindung schlägt der Test praktisch immer fehl |
 | `RESOLVE_DOMAIN` | `www.google.com` | Domain für diesen Test |
-
-!!! warning "`IP_DI_PIN` muss gesetzt sein"
-    Ist `IP_DI=1` oder `hostname_DI=1` und `IP_DI_PIN` bleibt bei `-1`, ist das Verhalten der Firmware undefiniert. Dann immer einen gültigen Pin eintragen.
 
 !!! warning "Das Log zeigt das WLAN-Passwort im Klartext"
     Beim Verbinden schreibt die Firmware SSID **und** Passwort im Klartext ins Log (`connected to ap SSID:… password:…`), ebenso bei einem Fehlschlag. Logs mit `wlan.ini`-Zugangsdaten deshalb nicht weitergeben.

@@ -203,18 +203,12 @@ This file only exists on the S3. Here too the firmware only reads the keys liste
 | `MAIN_DNS_SERVER` | `192.168.4.1` | First DNS server |
 | `BACKUP_DNS_SERVER` | `0.0.0.0` | Second DNS server |
 | `FALLBACK_DNS_SERVER` | `0.0.0.0` | Third DNS server |
-| `IP_DI` | `0` | Only with `DHCP_CLIENT=0`: the level of the pin `IP_DI_PIN` (0 or 1, read once at startup) is ORed into the **last octet** of the static IP. Example: `IP_ADDR=192.168.4.16`, pin high gives `192.168.4.17`. If the last octet is already odd, nothing changes. It is only one bit, so only two addresses |
-| `IP_DI_PIN` | `-1` | GPIO number for `IP_DI` and `hostname_DI`. The pin is configured as an input with pull-down at startup. The firmware does not check which pins are allowed (not verified) |
 | `hostname` | `espressif` | DHCP hostname in the WLAN client network. Empty or `espressif` means the device name is used |
-| `hostname_DI` | `0` | `1`: appends the level (0 or 1) of the pin `IP_DI_PIN` to the DHCP hostname, for example `logibus-3a7f210` |
 | `SNTP_SYNC` | `0` | `1`: start SNTP. The firmware then waits up to 10 × 2 s for the time, **before** starting WLAN. Startup is delayed by up to about 18 s |
 | `SNTP_SERVER_0` | `pool.ntp.org` | SNTP server |
 | `TZ` | `CET-1CEST,M3.5.0,M10.5.0/3` | Time zone as POSIX TZ string, set after SNTP synchronisation |
 | `STATIC_DNS_RESOLVE_TEST` | `0` | Diagnostics: with `1`, `RESOLVE_DOMAIN` is resolved once and the result is written to the log. This happens **before** WLAN starts, so without a connection the test practically always fails |
 | `RESOLVE_DOMAIN` | `www.google.com` | Domain for this test |
-
-!!! warning "`IP_DI_PIN` must be set"
-    If `IP_DI=1` or `hostname_DI=1` and `IP_DI_PIN` stays at `-1`, the firmware's behaviour is undefined. Always enter a valid pin then.
 
 !!! warning "The log shows the WLAN password in clear text"
     When connecting, the firmware writes the SSID **and** the password to the log in clear text (`connected to ap SSID:… password:…`), also on failure. Do not pass on logs together with `wlan.ini` credentials.

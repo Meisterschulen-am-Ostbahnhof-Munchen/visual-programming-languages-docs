@@ -159,7 +159,10 @@ The firmware does not create the INI files itself. They are uploaded from outsid
 2. Use the upload form on the node's web interface (`http://<ip>/`). Internally this is `POST /upload/<name>`, for example `/upload/ethernet.ini`.
 3. Restart the node (Reboot button or `/reboot/`). `wlan.ini`, `ethernet.ini`, `functionalities.ini` and `device.ini` are only read at startup.
 
-The firmware keeps `settings.ini` in memory and overwrites it with that state at the next save. After uploading it, restart immediately. To fix a value permanently, use `settingsReadOnly.ini` instead.
+!!! warning "Upload only in the internal network"
+    The upload uses unencrypted HTTP. For `wlan.ini` this sends the WLAN password (`WIFI_REMOTE_AP_PASSWORD`) over the network in clear text. Only upload in a network that all participants trust (for example the training network), not over foreign or public networks.
+
+The firmware keeps `settings.ini` in memory and overwrites it with that state at the next save. A save can also happen between the upload and the restart (for example after an address change or a VT login) and replace the uploaded file with the old state. Restarting immediately only reduces this risk, it does not rule it out. To fix a value permanently, use `settingsReadOnly.ini` instead: it takes precedence and is never written by the firmware.
 
 Deleting works via `/delete/<name>`. The deploy and preload scripts on this page do not touch INI files. The preload only deletes `.fboot` files and foreign manifests.
 
@@ -167,7 +170,7 @@ Deleting works via `/delete/<name>`. The deploy and preload scripts on this page
     - **Boolean values** such as `DHCP_CLIENT`, `SNTP_SYNC` or `DHCP_SERVER` must be `1` or `0`. `true` or `yes` is read as `0`. Writing `DHCP_CLIENT=true` gives you a static IP.
     - **Invalid values** are not reported. An invalid IP address results in `0.0.0.0`, an unknown value for `mode` falls back to `WIFI_MODE_AP`.
     - **Missing file:** The defaults apply. The log is no proof that the file is present: it also shows `Successfully loaded '/data/….ini'` when the file is missing.
-    - **Wrong static IP:** The node is then only reachable at that address. To get back, upload a file with `DHCP_CLIENT=1` via another interface (on the S3, for example via the access point `192.168.4.1`) or reflash the file system.
+    - **Wrong static IP:** The node is then only reachable at that address. To get back, upload a file with `DHCP_CLIENT=1` via another interface or reflash the file system. The S3's access point `192.168.4.1` is only an option if `mode` enables it (`WIFI_MODE_AP` or `WIFI_MODE_APSTA`). With `WIFI_MODE_STA`, as in the example above, there is no access point.
 
 ### Further INI files
 

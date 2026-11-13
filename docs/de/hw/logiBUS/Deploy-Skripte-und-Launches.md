@@ -159,7 +159,10 @@ Die Firmware legt die INI-Dateien nicht selbst an. Sie werden von außen hochgel
 2. Auf der Weboberfläche des Knotens (`http://<ip>/`) das Upload-Formular benutzen. Intern ist das `POST /upload/<name>`, zum Beispiel `/upload/ethernet.ini`.
 3. Knoten neu starten (Reboot-Button oder `/reboot/`). `wlan.ini`, `ethernet.ini`, `functionalities.ini` und `device.ini` werden nur beim Start gelesen.
 
-Die `settings.ini` hält die Firmware im Speicher und überschreibt sie beim nächsten Speichervorgang mit diesem Stand. Nach dem Hochladen deshalb sofort neu starten. Wer einen Wert fest vorgeben will, nimmt besser die `settingsReadOnly.ini`.
+!!! warning "Upload nur im internen Netz"
+    Der Upload läuft über unverschlüsseltes HTTP. Bei `wlan.ini` geht damit das WLAN-Passwort (`WIFI_REMOTE_AP_PASSWORD`) im Klartext über das Netz. Nur in einem Netz hochladen, dem alle Teilnehmer vertrauen (zum Beispiel das Übungsnetz), nicht über fremde oder öffentliche Netze.
+
+Die `settings.ini` hält die Firmware im Speicher und überschreibt sie beim nächsten Speichervorgang mit diesem Stand. Ein Speichervorgang kann auch zwischen Upload und Neustart passieren (zum Beispiel nach einer Adressänderung oder einem VT-Login) und die hochgeladene Datei durch den alten Stand ersetzen. Sofortiges Neustarten verkleinert dieses Risiko nur, es schließt es nicht aus. Wer einen Wert fest vorgeben will, nimmt besser die `settingsReadOnly.ini`: Sie hat Vorrang und wird von der Firmware nie geschrieben.
 
 Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Seite fassen INI-Dateien nicht an. Der Preload löscht nur `.fboot`-Dateien und fremde Manifeste.
 
@@ -167,7 +170,7 @@ Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Sei
     - **Wahrheitswerte** wie `DHCP_CLIENT`, `SNTP_SYNC` oder `DHCP_SERVER` müssen `1` oder `0` sein. `true` oder `yes` wird als `0` gelesen. Wer `DHCP_CLIENT=true` schreibt, bekommt eine statische IP.
     - **Ungültige Werte** werden nicht gemeldet. Eine ungültige IP-Adresse ergibt `0.0.0.0`, ein unbekannter Wert bei `mode` fällt auf `WIFI_MODE_AP` zurück.
     - **Fehlende Datei:** Es gelten die Standardwerte. Das Log ist dafür kein Beweis, dass die Datei da ist: Es steht auch bei fehlender Datei `Successfully loaded '/data/….ini'`.
-    - **Falsche statische IP:** Der Knoten ist dann nur noch unter dieser Adresse erreichbar. Zurück kommt man, indem man eine Datei mit `DHCP_CLIENT=1` über eine andere Schnittstelle hochlädt (beim S3 zum Beispiel über den Access Point `192.168.4.1`) oder das Dateisystem neu flasht.
+    - **Falsche statische IP:** Der Knoten ist dann nur noch unter dieser Adresse erreichbar. Zurück kommt man, indem man eine Datei mit `DHCP_CLIENT=1` über eine andere Schnittstelle hochlädt oder das Dateisystem neu flasht. Der Access Point `192.168.4.1` des S3 ist dafür nur eine Möglichkeit, wenn `mode` ihn einschaltet (`WIFI_MODE_AP` oder `WIFI_MODE_APSTA`). Bei `WIFI_MODE_STA` wie im Beispiel oben gibt es keinen Access Point.
 
 ### Weitere INI-Dateien
 

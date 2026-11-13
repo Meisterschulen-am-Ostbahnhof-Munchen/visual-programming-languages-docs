@@ -172,6 +172,8 @@ Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Sei
     - **Fehlende Datei:** Es gelten die Standardwerte. Das Log ist dafür kein Beweis, dass die Datei da ist: Es steht auch bei fehlender Datei `Successfully loaded '/data/….ini'`.
     - **Falsche statische IP:** Der Knoten ist dann nur noch unter dieser Adresse erreichbar. Zurück kommt man, indem man eine Datei mit `DHCP_CLIENT=1` über eine andere Schnittstelle hochlädt oder das Dateisystem neu flasht. Der Access Point `192.168.4.1` des S3 ist dafür nur eine Möglichkeit, wenn `mode` ihn einschaltet (`WIFI_MODE_AP` oder `WIFI_MODE_APSTA`). Bei `WIFI_MODE_STA` wie im Beispiel oben gibt es keinen Access Point.
 
+    Die BOOT-Taste setzt nichts zurück: Die Firmware wertet sie im aktuellen Stand weder beim Start noch im Betrieb aus. Zum Zurücksetzen gibt es zwei Wege (aus dem Code, im Betrieb nicht getestet): Einzelne Dateien über `/delete/<name>` löschen und neu starten, dann gelten für diese Datei die Standardwerte. Oder in der Weboberfläche „Formatieren“ (`/format_file_system/`): Das löscht **alles** in `/data/`, auch `.fboot`, `.libs.json`, `.elf`, `.iop`, Lizenzen und `AuxAssignOfApp.txt`. Danach gelten überall die Standardwerte: beim S3 der Access Point `xx` unter `192.168.4.1`, beim Ethernet DHCP und ohne DHCP-Server eine Link-Local-Adresse.
+
 ### Weitere INI-Dateien
 
 **`functionalities.ini`: welche ISOBUS-Clients starten**

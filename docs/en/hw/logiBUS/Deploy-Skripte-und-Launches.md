@@ -172,6 +172,8 @@ Deleting works via `/delete/<name>`. The deploy and preload scripts on this page
     - **Missing file:** The defaults apply. The log is no proof that the file is present: it also shows `Successfully loaded '/data/….ini'` when the file is missing.
     - **Wrong static IP:** The node is then only reachable at that address. To get back, upload a file with `DHCP_CLIENT=1` via another interface or reflash the file system. The S3's access point `192.168.4.1` is only an option if `mode` enables it (`WIFI_MODE_AP` or `WIFI_MODE_APSTA`). With `WIFI_MODE_STA`, as in the example above, there is no access point.
 
+    The BOOT button does not reset anything: in the current state the firmware evaluates it neither at startup nor during operation. There are two ways to reset (from the code, not tested in operation): delete individual files via `/delete/<name>` and restart, after which the defaults apply for that file. Or use "Format" in the web interface (`/format_file_system/`): this deletes **everything** in `/data/`, including `.fboot`, `.libs.json`, `.elf`, `.iop`, licenses and `AuxAssignOfApp.txt`. Afterwards the defaults apply everywhere: on the S3 the access point `xx` at `192.168.4.1`, on Ethernet DHCP and, without a DHCP server, a link-local address.
+
 ### Further INI files
 
 **`functionalities.ini`: which ISOBUS clients start**

@@ -80,6 +80,88 @@ A later normal deploy replaces the preload manifest with its own. The ELF files 
 
 The node addresses are kept in `deploy_common.py` and `elf_libs_manifest_lib.py`. If a node is replaced, they must be adjusted there.
 
+## Finding the node and setting its IP address
+
+### Hostname and mDNS
+
+A node announces itself via mDNS under a name ending in `.local`. The scripts use `logibus.local` as the default target when no node is given.
+
+- Each board is called `logibus-<xxxxxx>.local`. `<xxxxxx>` are the last three bytes of the MAC address, for example `logibus-3a7f21.local`. The name is therefore unique per board.
+- The same name is the DHCP hostname on all interfaces and the hostname of the OPC UA endpoint (`opc.tcp://logibus-xxxxxx.local:4840`).
+- `logibus.local` remains as an additional name, but only if **one** board is on the network. If two devices announce the name, the board with the lower IP keeps it.
+- To use a name of your own, enter it in `/data/settings.ini`:
+
+        [mDNS]
+        Hostname=my-board
+
+  If the entry is empty or contains the old value `logibus`, the automatic name applies. A custom name is cleaned to the characters `A–Z`, `a–z`, `0–9` and `-`.
+
+!!! warning "Older firmware"
+    On devices with older firmware, **all** boards are called `logibus.local`. Which board answers is then random. In that case connect only one board at a time or address the node by its IP address. The DHCP hostname there is `espressif-eth-int`, `espressif-eth-spi1`, `espressif-eth-spi2` or `espressif`.
+
+!!! note "State of the firmware"
+    The unique names are a recent firmware change. It had not yet been tested on hardware when this page was written. If in doubt, use `ping logibus.local` or the router's web interface to check under which name and IP the node reports.
+
+### Which address does the node get?
+
+1. **DHCP** (default, `DHCP_CLIENT=1`): The node gets its address from the DHCP server on the network.
+2. **Link-local:** If no DHCP server answers after two attempts, the node assigns itself an address from `169.254.x.x`. This applies only with `DHCP_CLIENT=1`. If the DHCP client keeps asking and a server appears, the node takes over its address.
+3. **Static** (`DHCP_CLIENT=0`): The address is set in the INI file.
+
+### INI files
+
+The settings are INI files in the node's `/data/` directory:
+
+| File | Content | Applies to |
+| --- | --- | --- |
+| `/data/ethernet.ini` | Ethernet: sections `[ETH_INT]` (internal Ethernet), `[ETH_SPI1]` and `[ETH_SPI2]` (SPI Ethernet chips, S3 boards with `_1ETH` or `_2ETH`) | builds with Ethernet |
+| `/data/wlan.ini` | WLAN client and access point: `[general]`, `[WIFI_STA]`, `[WIFI_AP]` | S3 only |
+| `/data/settings.ini` | General settings, including `[mDNS]` with `Hostname` | all |
+
+Internal Ethernet (`[ETH_INT]`) is found on the P4 (NodeISO20) and S31 (Trainer20). These two have no WLAN and therefore no access point.
+
+**Static IP on Ethernet:**
+
+    [ETH_INT]
+    DHCP_CLIENT=0
+    IP_ADDR=192.168.1.50
+    NETMASK=255.255.255.0
+    GATEWAY=192.168.1.1
+    MAIN_DNS_SERVER=192.168.1.1
+
+`IP_ADDR`, `NETMASK`, `GATEWAY` and the DNS servers only take effect with `DHCP_CLIENT=0`. Further keys per section: `BACKUP_DNS_SERVER`, `FALLBACK_DNS_SERVER`, `hostname` (DHCP hostname), `SNTP_SYNC`, `SNTP_SERVER_0` and `TZ`. Missing keys get their default value. The default IP of `[ETH_INT]` is `192.168.4.17`, that of `[ETH_SPI1]` is in the `192.168.5.x` network and that of `[ETH_SPI2]` in `192.168.6.x`.
+
+**WLAN client with DHCP (S3):**
+
+    [general]
+    mode=WIFI_MODE_STA
+
+    [WIFI_STA]
+    WIFI_REMOTE_AP_SSID=MyNetwork
+    WIFI_REMOTE_AP_PASSWORD=secret
+    DHCP_CLIENT=1
+
+Possible values for `mode`: `WIFI_MODE_AP` (default), `WIFI_MODE_STA`, `WIFI_MODE_APSTA` and `WIFI_MODE_NULL`.
+
+!!! warning "By default every S3 opens an access point"
+    Without a `wlan.ini`, an S3 runs as an access point with the SSID `xx`, the password `esp32_pwd`, the IP `192.168.4.1` and a DHCP server. Several S3 boards without their own `wlan.ini` therefore share the same SSID and the same IP. In class, give each node its own `wlan.ini` or switch on only one at a time.
+
+### Getting an INI file onto the node
+
+The firmware does not create the INI files itself. They are uploaded from outside:
+
+1. Create the file locally, for example `ethernet.ini`.
+2. Use the upload form on the node's web interface (`http://<ip>/`). Internally this is `POST /upload/<name>`, for example `/upload/ethernet.ini`.
+3. Restart the node (Reboot button or `/reboot/`). The files are only read at startup.
+
+Deleting works via `/delete/<name>`. The deploy and preload scripts on this page do not touch INI files. The preload only deletes `.fboot` files and foreign manifests.
+
+!!! warning "Pitfalls"
+    - **Boolean values** such as `DHCP_CLIENT`, `SNTP_SYNC` or `DHCP_SERVER` must be `1` or `0`. `true` or `yes` is read as `0`. Writing `DHCP_CLIENT=true` gives you a static IP.
+    - **Invalid values** are not reported. An invalid IP address results in `0.0.0.0`, an unknown value for `mode` falls back to `WIFI_MODE_AP`.
+    - **Missing file:** The defaults apply. The log shows `Can't load '/data/ethernet.ini', using defaults`.
+    - **Wrong static IP:** The node is then only reachable at that address. To get back, upload a file with `DHCP_CLIENT=1` via another interface (on the S3, for example via the access point `192.168.4.1`) or reflash the file system.
+
 ## Launch configurations in the 4diac IDE
 
 The files in `Launches/` appear in the IDE under *Run As* or *Run Configurations*. There are three kinds:

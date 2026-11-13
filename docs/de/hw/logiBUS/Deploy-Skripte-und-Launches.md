@@ -80,6 +80,88 @@ Ein späteres normales Deploy ersetzt das Preload-Manifest durch sein eigenes. D
 
 Die Knotenadressen stehen in `deploy_common.py` und `elf_libs_manifest_lib.py`. Wird ein Knoten ersetzt, müssen sie dort angepasst werden.
 
+## Knoten finden und IP-Adresse einstellen
+
+### Hostname und mDNS
+
+Ein Knoten meldet sich per mDNS unter einem Namen mit der Endung `.local`. Die Skripte nutzen `logibus.local` als Standardziel, wenn kein Knoten angegeben wird.
+
+- Jede Platine heißt `logibus-<xxxxxx>.local`. `<xxxxxx>` sind die letzten drei Bytes der MAC-Adresse, zum Beispiel `logibus-3a7f21.local`. Der Name ist damit je Platine eindeutig.
+- Dieser Name ist auch der DHCP-Hostname auf allen Schnittstellen und der Hostname des OPC-UA-Endpoints (`opc.tcp://logibus-xxxxxx.local:4840`).
+- `logibus.local` bleibt als Zusatzname erhalten, aber nur, wenn **eine** Platine im Netz ist. Melden zwei Geräte den Namen, behält ihn die Platine mit der niedrigeren IP.
+- Wer einen eigenen Namen will, trägt ihn in der `/data/settings.ini` ein:
+
+        [mDNS]
+        Hostname=meine-platine
+
+  Ist der Eintrag leer oder steht dort der alte Wert `logibus`, gilt der automatische Name. Ein eigener Name wird auf die Zeichen `A–Z`, `a–z`, `0–9` und `-` bereinigt.
+
+!!! warning "Ältere Firmware"
+    Auf Geräten mit älterer Firmware heißen **alle** Platinen `logibus.local`. Welche Platine antwortet, ist dann Zufall. In diesem Fall nur eine Platine gleichzeitig anschließen oder den Knoten über seine IP-Adresse ansprechen. Der DHCP-Hostname lautet dort `espressif-eth-int`, `espressif-eth-spi1`, `espressif-eth-spi2` beziehungsweise `espressif`.
+
+!!! note "Stand der Firmware"
+    Die eindeutigen Namen sind eine neuere Firmware-Änderung. Sie war beim Schreiben dieser Seite noch nicht auf Hardware getestet. Im Zweifel mit `ping logibus.local` oder der Weboberfläche des Routers prüfen, unter welchem Namen und welcher IP sich der Knoten meldet.
+
+### Welche Adresse bekommt der Knoten?
+
+1. **DHCP** (Standard, `DHCP_CLIENT=1`): Der Knoten bekommt seine Adresse vom DHCP-Server im Netz.
+2. **Link-Local:** Antwortet nach zwei Versuchen kein DHCP-Server, vergibt sich der Knoten selbst eine Adresse aus `169.254.x.x`. Das gilt nur mit `DHCP_CLIENT=1`. Fragt der DHCP-Client weiter und taucht ein Server auf, übernimmt der Knoten dessen Adresse.
+3. **Statisch** (`DHCP_CLIENT=0`): Die Adresse steht in der INI-Datei.
+
+### INI-Dateien
+
+Die Einstellungen liegen als INI-Dateien im Verzeichnis `/data/` des Knotens:
+
+| Datei | Inhalt | Gilt für |
+| --- | --- | --- |
+| `/data/ethernet.ini` | Ethernet: Abschnitte `[ETH_INT]` (internes Ethernet), `[ETH_SPI1]` und `[ETH_SPI2]` (SPI-Ethernet-Chips, S3-Boards mit `_1ETH` beziehungsweise `_2ETH`) | Builds mit Ethernet |
+| `/data/wlan.ini` | WLAN-Client und Access Point: `[general]`, `[WIFI_STA]`, `[WIFI_AP]` | nur S3 |
+| `/data/settings.ini` | Allgemeine Einstellungen, darunter `[mDNS]` mit `Hostname` | alle |
+
+Das interne Ethernet (`[ETH_INT]`) haben P4 (NodeISO20) und S31 (Trainer20). Diese beiden haben kein WLAN und damit keinen Access Point.
+
+**Statische IP am Ethernet:**
+
+    [ETH_INT]
+    DHCP_CLIENT=0
+    IP_ADDR=192.168.1.50
+    NETMASK=255.255.255.0
+    GATEWAY=192.168.1.1
+    MAIN_DNS_SERVER=192.168.1.1
+
+`IP_ADDR`, `NETMASK`, `GATEWAY` und die DNS-Server wirken nur bei `DHCP_CLIENT=0`. Weitere Schlüssel je Abschnitt: `BACKUP_DNS_SERVER`, `FALLBACK_DNS_SERVER`, `hostname` (DHCP-Hostname), `SNTP_SYNC`, `SNTP_SERVER_0` und `TZ`. Fehlende Schlüssel bekommen ihren Standardwert. Die Standard-IP von `[ETH_INT]` ist `192.168.4.17`, bei `[ETH_SPI1]` aus dem Netz `192.168.5.x` und bei `[ETH_SPI2]` aus `192.168.6.x`.
+
+**WLAN-Client mit DHCP (S3):**
+
+    [general]
+    mode=WIFI_MODE_STA
+
+    [WIFI_STA]
+    WIFI_REMOTE_AP_SSID=MeinNetz
+    WIFI_REMOTE_AP_PASSWORD=geheim
+    DHCP_CLIENT=1
+
+Mögliche Werte für `mode`: `WIFI_MODE_AP` (Standard), `WIFI_MODE_STA`, `WIFI_MODE_APSTA` und `WIFI_MODE_NULL`.
+
+!!! warning "Standardmäßig spannt jeder S3 einen Access Point auf"
+    Ohne `wlan.ini` läuft ein S3 als Access Point mit der SSID `xx`, dem Passwort `esp32_pwd`, der IP `192.168.4.1` und einem DHCP-Server. Mehrere S3 ohne eigene `wlan.ini` haben also dieselbe SSID und dieselbe IP. Im Unterricht jedem Knoten eine eigene `wlan.ini` geben oder nur einen gleichzeitig einschalten.
+
+### INI-Datei auf den Knoten bringen
+
+Die Firmware legt die INI-Dateien nicht selbst an. Sie werden von außen hochgeladen:
+
+1. Datei lokal anlegen, zum Beispiel `ethernet.ini`.
+2. Auf der Weboberfläche des Knotens (`http://<ip>/`) das Upload-Formular benutzen. Intern ist das `POST /upload/<name>`, zum Beispiel `/upload/ethernet.ini`.
+3. Knoten neu starten (Reboot-Button oder `/reboot/`). Die Dateien werden nur beim Start gelesen.
+
+Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Seite fassen INI-Dateien nicht an. Der Preload löscht nur `.fboot`-Dateien und fremde Manifeste.
+
+!!! warning "Stolperfallen"
+    - **Wahrheitswerte** wie `DHCP_CLIENT`, `SNTP_SYNC` oder `DHCP_SERVER` müssen `1` oder `0` sein. `true` oder `yes` wird als `0` gelesen. Wer `DHCP_CLIENT=true` schreibt, bekommt eine statische IP.
+    - **Ungültige Werte** werden nicht gemeldet. Eine ungültige IP-Adresse ergibt `0.0.0.0`, ein unbekannter Wert bei `mode` fällt auf `WIFI_MODE_AP` zurück.
+    - **Fehlende Datei:** Es gelten die Standardwerte. Im Log steht `Can't load '/data/ethernet.ini', using defaults`.
+    - **Falsche statische IP:** Der Knoten ist dann nur noch unter dieser Adresse erreichbar. Zurück kommt man, indem man eine Datei mit `DHCP_CLIENT=1` über eine andere Schnittstelle hochlädt (beim S3 zum Beispiel über den Access Point `192.168.4.1`) oder das Dateisystem neu flasht.
+
 ## Launch-Konfigurationen in der 4diac IDE
 
 Die Dateien in `Launches/` erscheinen in der IDE unter *Run As* beziehungsweise *Run Configurations*. Es gibt drei Arten:

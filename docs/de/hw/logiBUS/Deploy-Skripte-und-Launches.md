@@ -76,6 +76,8 @@ Grenzen der Firmware: höchstens 64 Bibliotheken je Knoten und höchstens 8 `req
 
 Nicht zur Grundausstattung gehören `Funk`, `DataPanel`, `BlinkMarine` und `logiBUS_bosch`. Das Board „Trainer“ hat kein CAN2. Auch hier gilt: Neue Dateien werden erst nach einem Neustart des Knotens aktiv.
 
+Eine Schritt-für-Schritt-Anleitung mit Fehlersuche steht unter [Fehlende ELFs auf das Trainer-Board laden](ELFs-auf-das-Board-laden.md).
+
 Ein späteres normales Deploy ersetzt das Preload-Manifest durch sein eigenes. Die ELF-Dateien der Grundausstattung bleiben liegen und werden per Hash übersprungen.
 
 Die Knotenadressen stehen in `deploy_common.py` und `elf_libs_manifest_lib.py`. Wird ein Knoten ersetzt, müssen sie dort angepasst werden.

@@ -76,6 +76,8 @@ Firmware limits: at most 64 libraries per node and at most 8 `requires` per libr
 
 `Funk`, `DataPanel`, `BlinkMarine` and `logiBUS_bosch` are not part of the basic set. The "Trainer" board has no CAN2. Here too, new files only become active after a restart of the node.
 
+A step-by-step guide with troubleshooting is on the page [Loading missing ELFs onto the trainer board](ELFs-auf-das-Board-laden.md).
+
 A later normal deploy replaces the preload manifest with its own. The ELF files of the basic set stay in place and are skipped by hash.
 
 The node addresses are kept in `deploy_common.py` and `elf_libs_manifest_lib.py`. If a node is replaced, they must be adjusted there.

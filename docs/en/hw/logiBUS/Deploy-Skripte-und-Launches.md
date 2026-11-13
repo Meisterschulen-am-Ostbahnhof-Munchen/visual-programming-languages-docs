@@ -151,6 +151,108 @@ Possible values for `mode`: `WIFI_MODE_AP` (default), `WIFI_MODE_STA`, `WIFI_MOD
 !!! warning "By default every S3 opens an access point"
     Without a `wlan.ini`, an S3 runs as an access point with the SSID `xx`, the password `esp32_pwd`, the IP `192.168.4.1` and a DHCP server. Several S3 boards without their own `wlan.ini` therefore share the same SSID and the same IP. In class, give each node its own `wlan.ini` or switch on only one at a time.
 
+### `ethernet.ini`: all keys
+
+The three sections `[ETH_INT]`, `[ETH_SPI1]` and `[ETH_SPI2]` have the same keys. They only differ in their default values. The firmware only reads the keys listed here, there are no others. Entries marked "not verified" are not backed by the firmware code.
+
+| Key | Default `ETH_INT` | Default `ETH_SPI1` | Default `ETH_SPI2` | Effect |
+| --- | --- | --- | --- | --- |
+| `DHCP_CLIENT` | `1` | `1` | `1` | `1`: address via DHCP, `0`: static address from this file |
+| `IP_ADDR` | `192.168.4.17` | `192.168.5.17` | `192.168.6.17` | Static IP address |
+| `NETMASK` | `255.255.255.0` | `255.255.255.0` | `255.255.255.0` | Netmask |
+| `GATEWAY` | `192.168.4.1` | `192.168.5.1` | `192.168.6.1` | Gateway |
+| `MAIN_DNS_SERVER` | `192.168.4.1` | `192.168.5.1` | `192.168.6.1` | First DNS server |
+| `BACKUP_DNS_SERVER` | `0.0.0.0` | `0.0.0.0` | `0.0.0.0` | Second DNS server |
+| `FALLBACK_DNS_SERVER` | `0.0.0.0` | `0.0.0.0` | `0.0.0.0` | Third DNS server |
+| `hostname` | `espressif-eth-int` | `espressif-eth-spi1` | `espressif-eth-spi2` | DHCP hostname of this port, **not** the mDNS name (see below) |
+| `SNTP_SYNC` | `0` | `0` | `0` | `1`: get the time via SNTP |
+| `SNTP_SERVER_0` | `pool.ntp.org` | `pool.ntp.org` | `pool.ntp.org` | SNTP server |
+| `TZ` | `CET-1CEST,M3.5.0,M10.5.0/3` | same | same | Time zone as POSIX TZ string |
+
+- `IP_ADDR`, `NETMASK`, `GATEWAY`, `MAIN_DNS_SERVER` and `BACKUP_DNS_SERVER` only apply with `DHCP_CLIENT=0`. `FALLBACK_DNS_SERVER` is also set with DHCP.
+- `hostname`: An empty value or the old default (`espressif-eth-int`, `espressif-eth-spi1`, `espressif-eth-spi2`) means the device name is used. The mDNS name does not depend on this key, see [Hostname and mDNS](#hostname-and-mdns).
+- **SNTP and `TZ` effectively apply to the whole node, not per port.** The first port with `SNTP_SYNC=1` starts SNTP with its server and its time zone, all further ones are skipped. If SNTP was already started from `wlan.ini` (WLAN starts before Ethernet), WLAN wins. Without `SNTP_SYNC=1` somewhere, `TZ` is not set anywhere.
+
+### `wlan.ini`: all keys
+
+This file only exists on the S3. Here too the firmware only reads the keys listed. The `[WIFI_STA]` section applies with `mode=WIFI_MODE_STA` and `WIFI_MODE_APSTA`, the `[WIFI_AP]` section with `WIFI_MODE_AP` and `WIFI_MODE_APSTA`.
+
+**`[general]`**
+
+| Key | Default | Effect |
+| --- | --- | --- |
+| `mode` | `WIFI_MODE_AP` | `WIFI_MODE_NULL`, `WIFI_MODE_STA`, `WIFI_MODE_AP` or `WIFI_MODE_APSTA` |
+
+**`[WIFI_STA]`** (node as WLAN client)
+
+| Key | Default | Effect |
+| --- | --- | --- |
+| `WIFI_REMOTE_AP_SSID` | `WLAN-SSID` | Name of the WLAN the node connects to |
+| `WIFI_REMOTE_AP_PASSWORD` | `PASSWORD` | Password of this WLAN |
+| `SCAN_METHOD` | `WIFI_FAST_SCAN` | `WIFI_FAST_SCAN` or `WIFI_ALL_CHANNEL_SCAN` |
+| `MAXIMUM_RETRY` | `5` | Passed to ESP-IDF (`failure_retry_cnt`). According to ESP-IDF: retries per access point when connecting before the next one is tried (not verified) |
+| `CNN_MAXIMUM_RETRY` | `5` | The firmware's own limit: after every disconnect it reconnects until this number is reached. After that the firmware does **not** reconnect any more until the next restart. With an IP address the counter is reset. At startup the firmware waits until the connection is up or the attempts are used up |
+| `WIFI_SCAN_AUTH_MODE_THRESHOLD` | `WIFI_AUTH_WPA2_PSK` | Weakest encryption the node accepts (text values see below) |
+| `RSSIThreshold` | `-127` | Minimum signal strength in dBm. `-127` means no limit (not verified) |
+| `SAE_PWE_H2E` | `WPA3_SAE_PWE_BOTH` | WPA3 SAE method (text values see below) |
+| `SAE_H2E_IDENTIFIER` | empty | Passed to ESP-IDF, according to ESP-IDF the password identifier for WPA3 H2E (not verified) |
+| `DHCP_CLIENT` | `1` | `1`: address via DHCP, `0`: static address from this file |
+| `IP_ADDR` | `192.168.4.16` | Static IP address |
+| `NETMASK` | `255.255.255.0` | Netmask |
+| `GATEWAY` | `192.168.4.1` | Gateway |
+| `MAIN_DNS_SERVER` | `192.168.4.1` | First DNS server |
+| `BACKUP_DNS_SERVER` | `0.0.0.0` | Second DNS server |
+| `FALLBACK_DNS_SERVER` | `0.0.0.0` | Third DNS server |
+| `IP_DI` | `0` | Only with `DHCP_CLIENT=0`: the level of the pin `IP_DI_PIN` (0 or 1, read once at startup) is ORed into the **last octet** of the static IP. Example: `IP_ADDR=192.168.4.16`, pin high gives `192.168.4.17`. If the last octet is already odd, nothing changes. It is only one bit, so only two addresses |
+| `IP_DI_PIN` | `-1` | GPIO number for `IP_DI` and `hostname_DI`. The pin is configured as an input with pull-down at startup. The firmware does not check which pins are allowed (not verified) |
+| `hostname` | `espressif` | DHCP hostname in the WLAN client network. Empty or `espressif` means the device name is used |
+| `hostname_DI` | `0` | `1`: appends the level (0 or 1) of the pin `IP_DI_PIN` to the DHCP hostname, for example `logibus-3a7f210` |
+| `SNTP_SYNC` | `0` | `1`: start SNTP. The firmware then waits up to 10 × 2 s for the time, **before** starting WLAN. Startup is delayed by up to about 18 s |
+| `SNTP_SERVER_0` | `pool.ntp.org` | SNTP server |
+| `TZ` | `CET-1CEST,M3.5.0,M10.5.0/3` | Time zone as POSIX TZ string, set after SNTP synchronisation |
+| `STATIC_DNS_RESOLVE_TEST` | `0` | Diagnostics: with `1`, `RESOLVE_DOMAIN` is resolved once and the result is written to the log. This happens **before** WLAN starts, so without a connection the test practically always fails |
+| `RESOLVE_DOMAIN` | `www.google.com` | Domain for this test |
+
+!!! warning "`IP_DI_PIN` must be set"
+    If `IP_DI=1` or `hostname_DI=1` and `IP_DI_PIN` stays at `-1`, the firmware's behaviour is undefined. Always enter a valid pin then.
+
+!!! warning "The log shows the WLAN password in clear text"
+    When connecting, the firmware writes the SSID **and** the password to the log in clear text (`connected to ap SSID:… password:…`), also on failure. Do not pass on logs together with `wlan.ini` credentials.
+
+**`[WIFI_AP]`** (node as access point)
+
+| Key | Default | Effect |
+| --- | --- | --- |
+| `WIFI_AP_SSID` | `xx` | Name of the access point. For exactly `xx` (the default) the firmware sets the first two bytes of the SSID to `0xFF`: the SSID then consists of two non-printable bytes and is not `xx`. How it is displayed on a phone or PC is not verified |
+| `WIFI_AP_PASSWORD` | `esp32_pwd` | Password. If it is empty, an **open network** is forced (`WIFI_AUTH_OPEN`) |
+| `WIFI_AP_CHANNEL` | `1` | WLAN channel. The permitted range is not verified (usually 1 to 13, depending on the country setting) |
+| `MAX_STA_CONN_AP` | `4` | Maximum number of simultaneous clients. The upper limit comes from ESP-IDF (not verified) |
+| `WIFI_AUTH_MODE` | `WIFI_AUTH_WPA2_PSK` | Encryption of the access point (text values see below) |
+| `SAE_PWE_H2E` | `WPA3_SAE_PWE_BOTH` | WPA3 SAE method of the access point |
+| `PMF_CFG` | `0` | `1`: clients **must** support protected management frames |
+| `IP_ADDR` | `192.168.4.1` | IP address of the access point, always applies |
+| `GATEWAY` | `192.168.4.1` | Gateway |
+| `NETMASK` | `255.255.255.0` | Netmask |
+| `MAIN_DNS_SERVER` | `192.168.4.1` | DNS server, only handed out to clients with `DHCP_SERVER=1` |
+| `DHCP_SERVER` | `1` | DHCP server on or off |
+| `hostname` | `espressif` | Set on the AP interface, empty or `espressif` means device name. A visible effect in AP mode is not verified, this value does not apply to mDNS |
+
+!!! warning "An invalid channel or client count restarts the node"
+    `WIFI_AP_CHANNEL` and `MAX_STA_CONN_AP` are passed to ESP-IDF without checking. If ESP-IDF rejects the value, the firmware aborts and restarts the node, possibly in a loop. In that case delete the file (see below).
+
+**Text values of the enumerations**
+
+The values are compared exactly: upper and lower case matter, and so do spaces around the value. An unknown value gives **no error**, but a fixed replacement value.
+
+| Key | Allowed values | Replacement for unknown text |
+| --- | --- | --- |
+| `mode` | `WIFI_MODE_NULL`, `WIFI_MODE_STA`, `WIFI_MODE_AP`, `WIFI_MODE_APSTA` | `WIFI_MODE_AP` |
+| `SCAN_METHOD` | `WIFI_FAST_SCAN`, `WIFI_ALL_CHANNEL_SCAN` | `WIFI_FAST_SCAN` |
+| `WIFI_SCAN_AUTH_MODE_THRESHOLD`, `WIFI_AUTH_MODE` | `WIFI_AUTH_OPEN`, `WIFI_AUTH_WEP`, `WIFI_AUTH_WPA_PSK`, `WIFI_AUTH_WPA2_PSK`, `WIFI_AUTH_WPA_WPA2_PSK`, `WIFI_AUTH_WPA3_PSK`, `WIFI_AUTH_WPA2_WPA3_PSK`, `WIFI_AUTH_WAPI_PSK` | `WIFI_AUTH_WPA_WPA2_PSK` |
+| `SAE_PWE_H2E` | `WPA3_SAE_PWE_UNSPECIFIED`, `WPA3_SAE_PWE_HUNT_AND_PECK`, `WPA3_SAE_PWE_HASH_TO_ELEMENT`, `WPA3_SAE_PWE_BOTH` | `WPA3_SAE_PWE_BOTH` |
+
+For the encryption mode the replacement value is **not** the default: the default is `WIFI_AUTH_WPA2_PSK`, but a typo gives `WIFI_AUTH_WPA_WPA2_PSK`. Numbers and boolean values are read without range checking, IP addresses with `ip4addr_aton`.
+
 ### Getting an INI file onto the node
 
 The firmware does not create the INI files itself. They are uploaded from outside:

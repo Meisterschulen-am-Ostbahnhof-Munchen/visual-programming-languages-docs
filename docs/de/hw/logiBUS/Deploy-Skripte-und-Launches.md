@@ -80,6 +80,216 @@ Ein späteres normales Deploy ersetzt das Preload-Manifest durch sein eigenes. D
 
 Die Knotenadressen stehen in `deploy_common.py` und `elf_libs_manifest_lib.py`. Wird ein Knoten ersetzt, müssen sie dort angepasst werden.
 
+## Knoten finden und IP-Adresse einstellen
+
+### Hostname und mDNS
+
+Ein Knoten meldet sich per mDNS unter einem Namen mit der Endung `.local`. Die Skripte nutzen `logibus.local` als Standardziel, wenn kein Knoten angegeben wird.
+
+- Jede Platine heißt `logibus-<xxxxxx>.local`. `<xxxxxx>` sind die letzten drei Bytes der MAC-Adresse, zum Beispiel `logibus-3a7f21.local`. Der Name ist damit je Platine eindeutig.
+- Dieser Name ist auch der DHCP-Hostname auf allen Schnittstellen und der Hostname des OPC-UA-Endpoints (`opc.tcp://logibus-xxxxxx.local:4840`).
+- `logibus.local` bleibt als Zusatzname erhalten, aber nur, wenn **eine** Platine im Netz ist. Melden zwei Geräte den Namen, behält ihn die Platine mit der niedrigeren IP.
+- Wer einen eigenen Namen will, trägt ihn in der `/data/settings.ini` ein:
+
+        [mDNS]
+        Hostname=meine-platine
+
+  Ist der Eintrag leer oder steht dort der alte Wert `logibus`, gilt der automatische Name. Ein eigener Name wird auf die Zeichen `A–Z`, `a–z`, `0–9` und `-` bereinigt.
+
+!!! warning "Ältere Firmware"
+    Auf Geräten mit älterer Firmware heißen **alle** Platinen `logibus.local`. Welche Platine antwortet, ist dann Zufall. In diesem Fall nur eine Platine gleichzeitig anschließen oder den Knoten über seine IP-Adresse ansprechen. Der DHCP-Hostname lautet dort `espressif-eth-int`, `espressif-eth-spi1`, `espressif-eth-spi2` beziehungsweise `espressif`.
+
+!!! note "Stand der Firmware"
+    Die eindeutigen Namen sind eine neuere Firmware-Änderung. Sie war beim Schreiben dieser Seite noch nicht auf Hardware getestet. Im Zweifel mit `ping logibus.local` oder der Weboberfläche des Routers prüfen, unter welchem Namen und welcher IP sich der Knoten meldet.
+
+### Welche Adresse bekommt der Knoten?
+
+1. **DHCP** (Standard, `DHCP_CLIENT=1`): Der Knoten bekommt seine Adresse vom DHCP-Server im Netz.
+2. **Link-Local:** Antwortet nach zwei Versuchen kein DHCP-Server, vergibt sich der Knoten selbst eine Adresse aus `169.254.x.x`. Das gilt nur mit `DHCP_CLIENT=1`. Fragt der DHCP-Client weiter und taucht ein Server auf, übernimmt der Knoten dessen Adresse.
+3. **Statisch** (`DHCP_CLIENT=0`): Die Adresse steht in der INI-Datei.
+
+### INI-Dateien
+
+Die Einstellungen liegen als INI-Dateien im Verzeichnis `/data/` des Knotens:
+
+| Datei | Inhalt | Gilt für |
+| --- | --- | --- |
+| `/data/ethernet.ini` | Ethernet: Abschnitte `[ETH_INT]` (internes Ethernet), `[ETH_SPI1]` und `[ETH_SPI2]` (SPI-Ethernet-Chips, S3-Boards mit `_1ETH` beziehungsweise `_2ETH`) | Builds mit Ethernet |
+| `/data/wlan.ini` | WLAN-Client und Access Point: `[general]`, `[WIFI_STA]`, `[WIFI_AP]` | nur S3 |
+| `/data/settings.ini` | Allgemeine Einstellungen (Hostname, ISOBUS-Adresse, Objektpool, eigene Werte aus 4diac) | alle |
+| `/data/settingsReadOnly.ini` | Fest vorgegebene Werte, die Vorrang vor `settings.ini` haben | alle |
+| `/data/functionalities.ini` | Welche ISOBUS-Clients sich anmelden (VT, AUX, TC) | alle |
+| `/data/device.ini` | ISOBUS-NAME der Control Function | alle |
+
+Das sind alle INI-Dateien der Firmware, es gibt keine weiteren. Alle liegen im Dateisystem des Knotens unter `/data/`.
+
+Das interne Ethernet (`[ETH_INT]`) haben P4 (NodeISO20) und S31 (Trainer20). Diese beiden haben kein WLAN und damit keinen Access Point.
+
+**Statische IP am Ethernet:**
+
+    [ETH_INT]
+    DHCP_CLIENT=0
+    IP_ADDR=192.168.1.50
+    NETMASK=255.255.255.0
+    GATEWAY=192.168.1.1
+    MAIN_DNS_SERVER=192.168.1.1
+
+`IP_ADDR`, `NETMASK`, `GATEWAY` und die DNS-Server wirken nur bei `DHCP_CLIENT=0`. Weitere Schlüssel je Abschnitt: `BACKUP_DNS_SERVER`, `FALLBACK_DNS_SERVER`, `hostname` (DHCP-Hostname), `SNTP_SYNC`, `SNTP_SERVER_0` und `TZ`. Fehlende Schlüssel bekommen ihren Standardwert. Die Standard-IP von `[ETH_INT]` ist `192.168.4.17`, bei `[ETH_SPI1]` aus dem Netz `192.168.5.x` und bei `[ETH_SPI2]` aus `192.168.6.x`.
+
+**WLAN-Client mit DHCP (S3):**
+
+    [general]
+    mode=WIFI_MODE_STA
+
+    [WIFI_STA]
+    WIFI_REMOTE_AP_SSID=MeinNetz
+    WIFI_REMOTE_AP_PASSWORD=geheim
+    DHCP_CLIENT=1
+
+Mögliche Werte für `mode`: `WIFI_MODE_AP` (Standard), `WIFI_MODE_STA`, `WIFI_MODE_APSTA` und `WIFI_MODE_NULL`.
+
+!!! warning "Standardmäßig spannt jeder S3 einen Access Point auf"
+    Ohne `wlan.ini` läuft ein S3 als Access Point mit der SSID `xx`, dem Passwort `esp32_pwd`, der IP `192.168.4.1` und einem DHCP-Server. Mehrere S3 ohne eigene `wlan.ini` haben also dieselbe SSID und dieselbe IP. Im Unterricht jedem Knoten eine eigene `wlan.ini` geben oder nur einen gleichzeitig einschalten.
+
+### INI-Datei auf den Knoten bringen
+
+Die Firmware legt die INI-Dateien nicht selbst an. Sie werden von außen hochgeladen:
+
+1. Datei lokal anlegen, zum Beispiel `ethernet.ini`.
+2. Auf der Weboberfläche des Knotens (`http://<ip>/`) das Upload-Formular benutzen. Intern ist das `POST /upload/<name>`, zum Beispiel `/upload/ethernet.ini`.
+3. Knoten neu starten (Reboot-Button oder `/reboot/`). `wlan.ini`, `ethernet.ini`, `functionalities.ini` und `device.ini` werden nur beim Start gelesen.
+
+!!! warning "Upload nur im internen Netz"
+    Der Upload läuft über unverschlüsseltes HTTP. Bei `wlan.ini` geht damit das WLAN-Passwort (`WIFI_REMOTE_AP_PASSWORD`) im Klartext über das Netz. Nur in einem Netz hochladen, dem alle Teilnehmer vertrauen (zum Beispiel das Übungsnetz), nicht über fremde oder öffentliche Netze.
+
+Die `settings.ini` hält die Firmware im Speicher und überschreibt sie beim nächsten Speichervorgang mit diesem Stand. Ein Speichervorgang kann auch zwischen Upload und Neustart passieren (zum Beispiel nach einer Adressänderung oder einem VT-Login) und die hochgeladene Datei durch den alten Stand ersetzen. Sofortiges Neustarten verkleinert dieses Risiko nur, es schließt es nicht aus. Wer einen Wert fest vorgeben will, nimmt besser die `settingsReadOnly.ini`: Sie hat Vorrang und wird von der Firmware nie geschrieben.
+
+Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Seite fassen INI-Dateien nicht an. Der Preload löscht nur `.fboot`-Dateien und fremde Manifeste.
+
+!!! warning "Stolperfallen"
+    - **Wahrheitswerte** wie `DHCP_CLIENT`, `SNTP_SYNC` oder `DHCP_SERVER` müssen `1` oder `0` sein. `true` oder `yes` wird als `0` gelesen. Wer `DHCP_CLIENT=true` schreibt, bekommt eine statische IP.
+    - **Ungültige Werte** werden nicht gemeldet. Eine ungültige IP-Adresse ergibt `0.0.0.0`, ein unbekannter Wert bei `mode` fällt auf `WIFI_MODE_AP` zurück.
+    - **Fehlende Datei:** Es gelten die Standardwerte. Das Log ist dafür kein Beweis, dass die Datei da ist: Es steht auch bei fehlender Datei `Successfully loaded '/data/….ini'`.
+    - **Falsche statische IP:** Der Knoten ist dann nur noch unter dieser Adresse erreichbar. Zurück kommt man, indem man eine Datei mit `DHCP_CLIENT=1` über eine andere Schnittstelle hochlädt oder das Dateisystem neu flasht. Der Access Point `192.168.4.1` des S3 ist dafür nur eine Möglichkeit, wenn `mode` ihn einschaltet (`WIFI_MODE_AP` oder `WIFI_MODE_APSTA`). Bei `WIFI_MODE_STA` wie im Beispiel oben gibt es keinen Access Point.
+
+    Die BOOT-Taste setzt nichts zurück: Die Firmware wertet sie im aktuellen Stand weder beim Start noch im Betrieb aus. Zum Zurücksetzen gibt es zwei Wege (aus dem Code, im Betrieb nicht getestet): Einzelne Dateien über `/delete/<name>` löschen und neu starten, dann gelten für diese Datei die Standardwerte. Oder in der Weboberfläche „Formatieren“ (`/format_file_system/`): Das löscht **alles** in `/data/`, auch `.fboot`, `.libs.json`, `.elf`, `.iop`, Lizenzen und `AuxAssignOfApp.txt`. Danach gelten überall die Standardwerte: beim S3 der Access Point `xx` unter `192.168.4.1`, beim Ethernet DHCP und ohne DHCP-Server eine Link-Local-Adresse.
+
+### Weitere INI-Dateien
+
+**`functionalities.ini`: welche ISOBUS-Clients starten**
+
+    [functionalities]
+    PART_6=1
+    PART_10=1
+    PART_10_TC_LOGIN_DELAY=0
+
+| Schlüssel | Standard | Wirkung |
+| --- | --- | --- |
+| `PART_6` | `1` | VT-Client (ISO 11783-6) anmelden |
+| `PART_6_AUX_INPUT` | `0` | Bei `1` meldet sich der VT-Client als AUX-Input-Gerät statt als normaler VT-Client an |
+| `PART_10` | `0` | Task-Controller-Client (ISO 11783-10) anmelden |
+| `PART_10_TC_LOGIN_DELAY` | `0` | Verzögerung des TC-Logins (Zahl 0 bis 65535, Einheit nicht geprüft) |
+| `PART_13`, `PART_14` | `0` | werden gelesen, aber nirgends ausgewertet, derzeit ohne Wirkung |
+
+`PART_6`, `PART_6_AUX_INPUT` und `PART_10` wirken nur, wenn die Firmware mit der passenden Option gebaut wurde (VT-Client beziehungsweise Task-Controller-Client). Wahrheitswerte als `1` oder `0` schreiben.
+
+**`device.ini`: ISOBUS-NAME**
+
+    [ControlFunction01]
+    Function=128
+    Function_instance=1
+    Identity_number=4711
+
+| Schlüssel | Standard | Bedeutung |
+| --- | --- | --- |
+| `Selfconfigurable` | `1` | Selbstkonfigurierend |
+| `Industry_group` | `2` | Industriegruppe (2 = Landtechnik) |
+| `Device_class` | `5` | Geräteklasse |
+| `Device_class_instance` | `0` | Instanz der Geräteklasse |
+| `Function` | `128` | Funktion |
+| `Function_instance` | `0` | Funktionsinstanz |
+| `ECU_instance` | `0` | ECU-Instanz |
+| `Manufacturer_code` | `1116` | Herstellercode |
+| `Identity_number` | `0` | Bei `0` nimmt die Firmware die Seriennummer des Geräts, sonst diesen Wert |
+
+!!! warning "Wertebereiche werden nicht geprüft"
+    Die Firmware prüft die Bitbreiten des ISO-Standards nicht (zum Beispiel 3 Bit bei der Industriegruppe, 21 Bit bei der Identity Number). Der Wert geht unverändert ins NAME-Feld. Auf einem Bus müssen die NAMEs aller Geräte verschieden sein. Mit `Identity_number=0` sorgt die Seriennummer dafür. Wer feste Werte einträgt, muss selbst darauf achten.
+
+**`settings.ini`: allgemeine Einstellungen**
+
+    [mDNS]
+    Hostname=werkstatt-links
+
+    [SSDP]
+    FriendlyName=Werkstatt links
+
+    [CF-A]
+    NODE1_SA=128
+    bootTimeVT=120
+
+| Abschnitt und Schlüssel | Standard | Bedeutung |
+| --- | --- | --- |
+| `[mDNS]` `Hostname` | leer (dann `logibus-<MAC>`) | Hostname des Knotens, siehe oben |
+| `[SSDP]` `FriendlyName` | `logiBUS Controller` | Name bei der Geräteerkennung im Netz. Vorläufig, der Schlüssel kann sich noch ändern |
+| `[CF-A]` `NODE1_SA` | bevorzugte Adresse der Firmware | Bevorzugte ISOBUS-Quelladresse. Die Firmware schreibt den Wert zurück, wenn der Knoten bei der Adressvergabe eine andere Adresse bekommt |
+| `[CF-A]` `NODE2_SA` | wie `NODE1_SA` | dasselbe für den zweiten Knoten (ob der Build ihn enthält, nicht geprüft) |
+| `[CF-A]` `preferredVT` | `0xFFFFFFFFFFFFFFFF` | NAME des zuletzt benutzten Terminals. Wird von der Firmware geschrieben |
+| `[CF-A]` `bootTimeVT` | `120` | Bootzeit des Terminals. Wird von der Firmware geschrieben |
+| `[ObjectPool]` `file_de` | `pools/pool_de.iop` | ohne Wirkung: Die Firmware liest den Wert, benutzt ihn aber nicht. Welcher Pool geladen wird, steht unten bei `*.iop`. |
+| `[ScalingTest]` | `enable=0` | Test- und Entwicklerschalter, nicht für den Unterricht gedacht |
+
+Zusätzlich lesen und schreiben der 4diac-Funktionsbaustein `INI` und die `INI_A*`-Adapter beliebige Abschnitt/Schlüssel-Paare in der `settings.ini`. Nach jedem Schreiben und Lesen wird gespeichert.
+
+Die Firmware schreibt die `settings.ini` selbst: Jeder Zugriff mit Standardwert trägt einen fehlenden Schlüssel samt Standardwert ein, gespeichert wird beim nächsten Speichervorgang (Adresswechsel, VT-Login, Zugriff des INI-Bausteins). Deshalb entsteht die Datei auch ohne Upload mit der Zeit von selbst.
+
+**`settingsReadOnly.ini`: Werte fest vorgeben**
+
+Gleiche Abschnitte und Schlüssel wie `settings.ini`, aber nur zum Lesen:
+
+    [CF-A]
+    NODE1_SA = 128
+    bootTimeVT = 90
+
+- Steht ein Schlüssel hier, gilt bei jedem Lesen dieser Wert.
+- Schreibversuche auf so einen Schlüssel werden abgelehnt (Log: `write rejected, key is read-only`). Der 4diac-Baustein `INI` meldet dann `Key is read-only`.
+- Beim Laden löscht die Firmware dieselben Schlüssel aus der `settings.ini`.
+- Die Firmware legt die Datei nie selbst an. Fehlt sie, ist das kein Fehler, dann ist alles beschreibbar.
+
+!!! note "Im Umbau"
+    `[mDNS]` `Hostname` und die `hostname`-Schlüssel der Netzwerk-INIs (neuer Hostname-Stand) sowie `[SSDP]` `FriendlyName` werden gerade überarbeitet. Die übrigen Dateien und Schlüssel sind es laut Firmware-Stand nicht.
+
+### Weitere Dateien in `/data/`
+
+Neben den INI-Dateien liegen im Verzeichnis `/data/` weitere Dateien. Die Firmware schreibt davon nur die `settings.ini` und die `AuxAssignOfApp.txt`. Alles andere kommt von außen, per Upload oder über die Deploy- und Preload-Skripte.
+
+| Datei | Inhalt | Woher |
+| --- | --- | --- |
+| `*.fboot` | Boot-Datei der 4diac-Anwendung | Deploy-Skript oder Upload |
+| `*.libs.json` | Manifest der ELF-Bibliotheken. Ohne Manifest werden keine ELF-Bibliotheken geladen. | Deploy- oder Preload-Skript |
+| `*.elf` | die ELF-Bibliotheken, vom Manifest referenziert | Deploy- oder Preload-Skript |
+| `*.iop` | VT-Objektpool (ISO 11783-6), der Name ist frei | Upload oder Deploy |
+| `<Poolname>.vis.json` | Tabelle zur Masken-Sichtbarkeit, liegt mit dem Namen des Pools neben diesem | Upload oder Deploy |
+| `*.lic`, `*.key` | Lizenz- und Schlüsseldateien, werden beim Start eingelesen | Upload |
+| `*.bin` | Firmware-Images | Upload |
+| `AuxAssignOfApp.txt` | bevorzugte AUX-Zuordnung (siehe unten) | die Firmware, am Terminal erzeugt |
+
+Die Firmware schreibt keine Logdateien nach `/data/`. SHA-256-Hashes der Dateien berechnet der Dateiserver nur im Arbeitsspeicher (abrufbar unter `/sha256/<datei>`), es entstehen keine Hash-Dateien.
+
+!!! warning "Bei `.fboot`, `.libs.json` und `.iop` gewinnt die alphabetisch erste Datei"
+    Liegen mehrere Dateien mit derselben Endung in `/data/`, benutzt die Firmware nur die alphabetisch erste und warnt im Log. Eine alte Datei mit „kleinerem“ Namen gewinnt dadurch still gegen eine neue. Alte Dateien deshalb löschen (`/delete/<name>`). Das Deploy-Skript räumt alte Boot-Dateien und Manifeste selbst auf.
+
+    Ohne `.iop` sucht die Firmware `/data/DefaultPool.iop` und meldet sie als fehlend (`no object pool *.iop in /data`).
+
+**`AuxAssignOfApp.txt`: bevorzugte AUX-Zuordnung**
+
+Die Datei enthält die „bevorzugte AUX-Zuordnung“ (Preferred Assignment, ISO 11783-6): welche AUX-Funktionen des Objektpools welchem AUX-Eingabegerät (zum Beispiel einem Joystick) zugeordnet sind. Sie hat nichts mit `PART_6_AUX_INPUT` zu tun, also damit, dass der Knoten selbst als AUX-Eingabegerät auftritt. Es gibt sie nur in Builds mit VT-Client.
+
+- **Wer schreibt:** die Firmware. Ordnet man am Terminal zu und markiert die Zuordnung als bevorzugt zu speichern, schreibt die Firmware die gesamte aktuelle Zuordnung neu in die Datei. Es ist nicht vorgesehen, sie hochzuladen.
+- **Format:** Text, eine Zeile pro Zuordnung, Zeilenende CRLF. Sechs Felder, durch Leerzeichen getrennt: Herstellercode des Eingabegeräts, ModelIdentificationCode, AUX-Typ, Objekt-ID der AUX-Funktion, Objekt-ID des AUX-Eingangs (alle dezimal) und der 64-Bit-NAME des Eingabegeräts als 16 Hexadezimalzeichen.
+- **Fehlt die Datei:** Es gibt keine bevorzugten Zuordnungen, die Zuordnung erfolgt neu am Terminal. Auf der Konsole steht `Error opening AuxAssignOfApp.txt`. Das ist kein Absturz.
+- **Zuordnung zurücksetzen:** Datei löschen (`/delete/AuxAssignOfApp.txt`). Danach fehlt die bevorzugte Zuordnung, bis am Terminal neu zugeordnet und als bevorzugt gespeichert wird. Ob dafür ein Neustart nötig ist, wurde nicht geprüft.
+- **Ungültige Zeilen** werden nicht gemeldet: Felder werden als Zahlen gelesen, Unsinn ergibt 0.
+
 ## Launch-Konfigurationen in der 4diac IDE
 
 Die Dateien in `Launches/` erscheinen in der IDE unter *Run As* beziehungsweise *Run Configurations*. Es gibt drei Arten:

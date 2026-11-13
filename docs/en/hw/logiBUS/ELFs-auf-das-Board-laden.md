@@ -22,7 +22,7 @@ One run of `RunSkript_PreloadELF_AX` is therefore enough. The same applies to ex
 
 - The training project is up to date (`git pull` or latest release). Only then do the ELFs match the blocks in the IDE.
 - Python 3 is installed and `python` is in the path. No further packages are needed.
-- The trainer board is connected to the PC by network cable. **Connect only one board at a time**: all boards announce themselves under the same name `logibus.local`, and it is a matter of chance which one answers (see [Hostname and mDNS](Deploy-Skripte-und-Launches.md#hostname-and-mdns)).
+- The trainer board is connected to the PC by network cable. From firmware `v0.27-alpha-b-160-gaaaec75b` on, every board is called `logibus-<MAC>.local` (for example `logibus-e0c4f1.local`), and the name `logibus.local` belongs to only one device on the network (see [Hostname and mDNS](Deploy-Skripte-und-Launches.md#hostname-and-mdns)). With older firmware **all** boards announce themselves as `logibus.local`, and it is a matter of chance which one answers. In that case **connect only one board at a time**. With several boards on the same network, give the name or IP address of the board you want.
 - `http://logibus.local/` opens the board's web interface in the browser. If not, the board is not reachable: check the cable and the network adapter.
 
 ## Step 1: Load the basic set

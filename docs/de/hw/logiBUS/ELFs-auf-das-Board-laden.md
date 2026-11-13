@@ -22,7 +22,7 @@ Ein Durchlauf von `RunSkript_PreloadELF_AX` genügt also. Dasselbe gilt für die
 
 - Das Trainingsprojekt ist auf dem aktuellen Stand (`git pull` oder neuestes Release). Nur dann passen die ELFs zu den Bausteinen in der IDE.
 - Python 3 ist installiert und `python` steht im Pfad. Weitere Pakete braucht es nicht.
-- Das Trainer-Board hängt per Netzwerkkabel am PC. **Nur ein Board gleichzeitig anschließen**: Alle Boards melden sich unter demselben Namen `logibus.local`, und es ist Zufall, welches antwortet (siehe [Hostname und mDNS](Deploy-Skripte-und-Launches.md#hostname-und-mdns)).
+- Das Trainer-Board hängt per Netzwerkkabel am PC. Ab der Firmware `v0.27-alpha-b-160-gaaaec75b` heißt jedes Board `logibus-<MAC>.local` (zum Beispiel `logibus-e0c4f1.local`), und der Name `logibus.local` gehört immer nur einem Gerät im Netz (siehe [Hostname und mDNS](Deploy-Skripte-und-Launches.md#hostname-und-mdns)). Mit älterer Firmware melden sich **alle** Boards unter `logibus.local`, und es ist Zufall, welches antwortet. Dann **nur ein Board gleichzeitig anschließen**. Bei mehreren Boards am selben Netz den Namen oder die IP-Adresse des gewünschten Boards angeben.
 - Im Browser öffnet sich `http://logibus.local/` mit der Weboberfläche des Boards. Wenn nicht, ist das Board nicht erreichbar: Kabel und Netzwerkadapter prüfen.
 
 ## Schritt 1: Grundausstattung aufspielen

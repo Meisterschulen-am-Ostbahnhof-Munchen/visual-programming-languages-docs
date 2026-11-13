@@ -17,6 +17,8 @@ This page describes how programs get from the 4diac IDE onto the logiBUS® train
 
 For the online deploy, the node must first be prepared with the basic set of ELF libraries (see [Preparing a node](#preparing-a-node-preload)). Otherwise FORTE reports `UNSUPPORTED_TYPE` for function blocks whose library is missing.
 
+Step-by-step guides: [Loading missing ELFs onto the trainer board](ELFs-auf-das-Board-laden.md) (online deploy) and [Deploy with a boot file](Deploy-mit-Boot-Datei.md) (boot file deploy).
+
 ## Python scripts in `scripts_central/`
 
 All scripts are plain Python (standard library only, no `pip` installation needed). The command examples on this page are to be run from the `Ventilsteuerung/` folder. The `.bat` scripts and launches set the working directory themselves.

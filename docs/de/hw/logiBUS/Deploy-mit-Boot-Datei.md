@@ -57,7 +57,7 @@ FORTE liest das `.fboot` nur beim Start. Das Board von Hand neu starten, zum Bei
 
 ## Welche Knoten kennt das Skript?
 
-Das Deploy-Skript wertet keine Argumente aus. Die Knoten stehen fest in `scripts_central/deploy_common.py`: `NODE_BASES` ordnet jeder Knoten-Adresse ihre Dateien zu, `NODE_ORDER` legt die Reihenfolge fest. Derzeit gibt es dort für `test_AX` nur den Knoten `192.168.178.45` mit `test_AX_FORTE_PC_AX.fboot`. Für ein beliebiges Trainer-Board unter `logibus.local` geht dieser Weg also nicht ohne Weiteres. Dafür gibt es den Online-Deploy.
+Das Deploy-Skript wertet keine Argumente aus. Die Knoten stehen fest in `scripts_central/deploy_common.py`: `NODE_BASES` ordnet jeder Knoten-Adresse ihre Dateien zu, `NODE_ORDER` legt die Reihenfolge fest. Derzeit gibt es dort für `test_AX` nur einen fest eingetragenen Knoten mit `test_AX_FORTE_PC_AX.fboot`. Seine Adresse hängt vom jeweiligen Netz ab (zum Beispiel von der DHCP-Vergabe des Routers) und steht nur im Skript. Für ein beliebiges Trainer-Board unter `logibus.local` geht dieser Weg also nicht ohne Weiteres. Dafür gibt es den Online-Deploy.
 
 Einen neuen Knoten trägt man nach Lesen des Codes so ein (nicht ausprobiert): neuer Eintrag in `NODE_BASES` und `REPO_PATHS` sowie in `NODE_ORDER` (beide in `deploy_common.py`) und `NODE_ARCH` (in `elf_libs_manifest_lib.py`). Die Zuordnung der Dateinamen zu den Pfaden im Repository steht in `REPO_PATHS`, auch die der `.libs.json`.
 

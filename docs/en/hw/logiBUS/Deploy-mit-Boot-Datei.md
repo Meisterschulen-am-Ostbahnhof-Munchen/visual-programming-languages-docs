@@ -57,7 +57,7 @@ FORTE only reads the `.fboot` at startup. Restart the board by hand, for example
 
 ## Which nodes does the script know?
 
-The deploy script does not evaluate arguments. The nodes are fixed in `scripts_central/deploy_common.py`: `NODE_BASES` assigns its files to each node address, `NODE_ORDER` sets the order. Currently there is only the node `192.168.178.45` with `test_AX_FORTE_PC_AX.fboot` for `test_AX`. For an arbitrary trainer board under `logibus.local` this way does not work without further steps. Use the online deploy for that.
+The deploy script does not evaluate arguments. The nodes are fixed in `scripts_central/deploy_common.py`: `NODE_BASES` assigns its files to each node address, `NODE_ORDER` sets the order. Currently there is only one fixed node with `test_AX_FORTE_PC_AX.fboot` for `test_AX`. Its address depends on the respective network (for example on the DHCP assignment of the router) and is set only in the script. For an arbitrary trainer board under `logibus.local` this way does not work without further steps. Use the online deploy for that.
 
 According to the code, a new node is entered like this (not tried out): a new entry in `NODE_BASES` and `REPO_PATHS` as well as in `NODE_ORDER` (both in `deploy_common.py`) and `NODE_ARCH` (in `elf_libs_manifest_lib.py`). The mapping of file names to paths in the repository is in `REPO_PATHS`, including that of the `.libs.json`.
 

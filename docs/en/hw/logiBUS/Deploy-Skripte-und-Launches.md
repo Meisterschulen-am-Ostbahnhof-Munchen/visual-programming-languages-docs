@@ -72,7 +72,7 @@ Firmware limits: at most 64 libraries per node and at most 8 `requires` per libr
 `make_4diac_training1_elf_preload.py` copies the basic set (`PRELOAD_LIBS` in `deploy_common.py`, plus their `requires`) to `/data/elf-libs/` and creates a manifest of its own without a boot file. All other manifests and all `.fboot` files on the node are **deleted**: FORTE then starts empty but with the libraries loaded, and the exercise arrives via online deploy from the IDE.
 
     python scripts_central/make_4diac_training1_elf_preload.py                                 # logibus.local
-    python scripts_central/make_4diac_training1_elf_preload.py 192.168.178.45   # specific node
+    python scripts_central/make_4diac_training1_elf_preload.py <IP-Adresse>   # specific node
 
 `Funk`, `DataPanel`, `BlinkMarine` and `logiBUS_bosch` are not part of the basic set. The "Trainer" board has no CAN2. Here too, new files only become active after a restart of the node.
 

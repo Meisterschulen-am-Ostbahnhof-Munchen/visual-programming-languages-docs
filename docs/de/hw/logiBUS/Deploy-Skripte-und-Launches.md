@@ -17,6 +17,8 @@ Diese Seite beschreibt, wie Programme aus der 4diac IDE auf die logiBUS®-Traini
 
 Für den Online-Deploy muss der Knoten vorher mit der ELF-Grundausstattung vorbereitet sein (siehe [Knoten vorbereiten](#knoten-vorbereiten-preload)). Sonst meldet FORTE für Bausteine, deren Bibliothek fehlt, `UNSUPPORTED_TYPE`.
 
+Schritt-für-Schritt-Anleitungen: [Fehlende ELFs auf das Trainer-Board laden](ELFs-auf-das-Board-laden.md) (Online-Deploy) und [Deploy mit Boot-Datei](Deploy-mit-Boot-Datei.md) (Boot-Datei-Deploy).
+
 ## Python-Skripte in `scripts_central/`
 
 Alle Skripte sind reines Python (nur Standardbibliothek, keine `pip`-Installation nötig). Die Befehlsbeispiele auf dieser Seite sind aus dem Ordner `Ventilsteuerung/` aufzurufen. Die `.bat`-Skripte und Launches setzen das Arbeitsverzeichnis selbst.
@@ -72,7 +74,7 @@ Grenzen der Firmware: höchstens 64 Bibliotheken je Knoten und höchstens 8 `req
 `make_4diac_training1_elf_preload.py` kopiert die Grundausstattung (`PRELOAD_LIBS` in `deploy_common.py`, plus deren `requires`) nach `/data/elf-libs/` und legt ein eigenes Manifest ohne Boot-Datei an. Alle anderen Manifeste und alle `.fboot`-Dateien auf dem Knoten werden dabei **gelöscht**: FORTE startet danach leer, aber mit geladenen Bibliotheken, und die Übung kommt per Online-Deploy aus der IDE.
 
     python scripts_central/make_4diac_training1_elf_preload.py                                 # logibus.local
-    python scripts_central/make_4diac_training1_elf_preload.py 192.168.178.45   # bestimmter Knoten
+    python scripts_central/make_4diac_training1_elf_preload.py <IP-Adresse>   # bestimmter Knoten
 
 Nicht zur Grundausstattung gehören `Funk`, `DataPanel`, `BlinkMarine` und `logiBUS_bosch`. Das Board „Trainer“ hat kein CAN2. Auch hier gilt: Neue Dateien werden erst nach einem Neustart des Knotens aktiv.
 

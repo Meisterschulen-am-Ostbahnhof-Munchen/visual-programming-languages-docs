@@ -29,7 +29,10 @@ I n ──┬────────┬──── 47k ───┬───�
 | `I3`–`I8` („langsam“) | 100 nF | ca. 2 ms | ca. 81 Hz |
 
 - **Formel:** f_g = 1 / (2π · R · C) mit R = (47 kΩ ‖ 22 kΩ) + 4,7 kΩ ≈ 19,7 kΩ (Teiler bei idealer Quelle plus Längswiderstand).
-- **Teilerverhältnis:** rechnerisch 22 / (47 + 22) ≈ 0,32. Der Schaltplan nennt dagegen „2,6 V bei 12 V“; diese Abweichung ist nicht geklärt.
+- **Teilerverhältnis:** rechnerisch 22 / (47 + 22) ≈ 0,32. Der Schaltplan nennt dagegen „2,6 V bei 12 V“; diese Abweichung ist nicht geklärt. Die Messungen unten (10 V ergeben 3180 mV am Pin, also 0,318) passen zum rechnerischen Wert.
+- **Eingangswiderstand:** ca. 28 kΩ (47 kΩ parallel zu 69 kΩ, gerechnet, nicht gemessen).
+- **Messbereich:** rechnerisch bis ca. 10,3 V, wenn am Pin höchstens 3,3 V anliegen dürfen (gerechnet, nicht gemessen). Bei 10 V liegen ca. 3,19 V am Pin.
+- **Kondensator an der Klemme (33 nF) bei PNP-Sensoren:** Ein PNP-Sensor schaltet nur nach Plus. Beim Abschalten entlädt sich der 33-nF-Kondensator nur über ca. 28 kΩ, die Zeitkonstante beträgt ca. 0,9 ms. Damit ist bei etwa 200 bis 250 Hz Schluss, auch an `I1` und `I2`. Gegentakt-Sensoren sind nicht betroffen. Das ist gerechnet, nicht gemessen. Die Puls-Messung weiter unten (bis 20 kHz an `I1` und `I2`) wurde mit dem Signalgenerator FNIRSI SG-003A gemacht. Ob dessen Ausgang einem Gegentakt- oder einem PNP-Sensor entspricht, ist nicht dokumentiert, die Messung widerspricht dem Hinweis daher nicht.
 - **Bestückung:** Die Bestückungsliste (JLCPCB-Export zum Stand v107, 30.10.2026) stimmt für alle acht Eingangsstufen mit dem Schaltplan überein: gleiche Werte, nichts fehlt.
 
 ### Analoge Eingänge
@@ -88,6 +91,34 @@ Messreihe (Rechteck 0–10 V auf `I1` als AI und `I2` als PI, Torzeit 1 s; Frequ
 | 90 | 90 | 90 | 313 | TRUE |
 | 100 | 87 | 100 | 312 | FALSE |
 | 110 | 81 | 110 | 312 | FALSE |
+
+### Millivolt-Messung (`logiBUS_AI_MV`)
+
+Der Baustein [`logiBUS_AI_MV`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/de/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_MV/) liefert statt des Rohwerts die Spannung am Pin in Millivolt, aus der Kalibrierung des ADC. Auf dem APIXON Node-ISO 20 (ESP32-P4) funktioniert er: **10 V an `I1` ergeben 3180 mV**. Der ESP32-S3 und der ESP32-P4 sind kalibriert. Für den ESP32-S31 (Trainer20) sind mV-Werte noch nicht verfügbar.
+
+Aus dem mV-Wert folgt die Eingangsspannung an der Klemme über das Teilerverhältnis:
+
+```text
+Eingangsspannung = mV-Wert × 69 / 22  (Faktor ca. 3,136)
+```
+
+### Strom 4…20 mA an 500 Ω Bürde (Messung)
+
+Gemessen an `I1` (AI1) mit einer Bürde von 500 Ω:
+
+| Strom | Spannung an der Klemme | Wert in mV | Verhältnis mV / Klemme |
+|------:|-----------------------:|-----------:|-----------------------:|
+| 4 mA | 1,944 V | 621 mV | 0,3194 |
+| 20 mA | 9,02 V | 2865 mV | 0,3176 |
+
+- Spannung und mV-Wert passen zum Teiler (Sollwert 0,3188).
+- Erwartet wären bei 20 mA etwa 9,8 V, weil der Eingang die Bürde belastet (500 Ω parallel zu 28 kΩ ≈ 491 Ω). Gemessen wurden 9,02 V. Die Abweichung kommt vermutlich von der Stromquelle (verfügbare Bürdenspannung) und nicht vom Modul. Der Strom wurde nicht nachgemessen.
+
+Folgerungen (gerechnet, nicht gemessen):
+
+- **Zwei-Punkt-Abgleich** vom mV-Wert auf den Strom: I = 4 mA + 16 mA × (mV − mV₄ₘₐ) / (mV₂₀ₘₐ − mV₄ₘₐ), mit den am eigenen Aufbau gemessenen Werten für 4 mA und 20 mA.
+- **Reserve:** Mit 500 Ω liegt das Bereichsende bei gut 21 mA. Die Störmeldung nach NAMUR NE43 (über 21 mA) liegt damit an der Grenze. Mit 250 Ω Bürde gibt es mehr Reserve.
+- **Drahtbruch:** Unter 3,6 mA liegt der mV-Wert unter etwa 565 mV. Ein offener Eingang ergibt 0 mV.
 
 ### Digitale Eingänge
 

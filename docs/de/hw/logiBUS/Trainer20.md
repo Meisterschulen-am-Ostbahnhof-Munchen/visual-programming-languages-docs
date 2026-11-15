@@ -72,6 +72,8 @@ Stiftleiste des CoreBoards nicht herausgeführt.
 Messbereich in Volt werden auf der Hardware noch geprüft; die Angaben bei den
 `logiBUS_AI_*`-Bausteinen (0–4095) gelten für ESP32-P4/ESP32-S3.
 
+**Millivolt-Werte (`logiBUS_AI_MV`):** noch nicht verfügbar.
+
 ### Digitale Eingänge
 
 | Eingang: | PIN (ESP32S31) |

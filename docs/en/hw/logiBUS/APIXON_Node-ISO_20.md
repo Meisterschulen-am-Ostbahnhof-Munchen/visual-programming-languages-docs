@@ -29,7 +29,10 @@ I n ──┬────────┬──── 47k ───┬───�
 | `I3`-`I8` ("slow") | 100 nF | about 2 ms | about 81 Hz |
 
 - **Formula:** f_c = 1 / (2π · R · C) with R = (47 kΩ ‖ 22 kΩ) + 4.7 kΩ ≈ 19.7 kΩ (divider with an ideal source plus the series resistor).
-- **Divider ratio:** 22 / (47 + 22) ≈ 0.32 by calculation. The schematic states "2.6 V at 12 V" instead; this difference is not resolved.
+- **Divider ratio:** 22 / (47 + 22) ≈ 0.32 by calculation. The schematic states "2.6 V at 12 V" instead; this difference is not resolved. The measurements below (10 V give 3180 mV at the pin, so 0.318) match the calculated value.
+- **Input resistance:** about 28 kΩ (47 kΩ in parallel with 69 kΩ, calculated, not measured).
+- **Measuring range:** by calculation up to about 10.3 V if at most 3.3 V may be present at the pin (calculated, not measured). At 10 V about 3.19 V are present at the pin.
+- **Capacitor at the terminal (33 nF) with PNP sensors:** A PNP sensor only switches towards plus. When switching off, the 33 nF capacitor discharges only through about 28 kΩ, the time constant is about 0.9 ms. That limits the frequency to about 200 to 250 Hz, also on `I1` and `I2`. Push-pull sensors are not affected. This is calculated, not measured. The pulse measurement further below (up to 20 kHz on `I1` and `I2`) was made with the signal generator FNIRSI SG-003A. Whether its output corresponds to a push-pull or a PNP sensor is not documented, so the measurement does not contradict this note.
 - **Assembly:** The bill of materials (JLCPCB export for version v107, 2026-10-30) matches the schematic for all eight input stages: same values, nothing missing.
 
 ### Analog Inputs
@@ -87,6 +90,34 @@ Measurement series (square wave 0–10 V on `I1` as AI and `I2` as PI, gate time
 | 90 | 90 | 90 | 313 | TRUE |
 | 100 | 87 | 100 | 312 | FALSE |
 | 110 | 81 | 110 | 312 | FALSE |
+
+### Millivolt Measurement (`logiBUS_AI_MV`)
+
+The block [`logiBUS_AI_MV`](https://meisterschulen-am-ostbahnhof-munchen-docs.readthedocs.io/projects/4diac-library-reference-docs/en/latest/Bibliotheken/ExternalLibraries/logiBUS/io/AI/logiBUS_AI_MV/) delivers the voltage at the pin in millivolts instead of the raw value, from the calibration of the ADC. On the APIXON Node-ISO 20 (ESP32-P4) it works: **10 V at `I1` give 3180 mV**. The ESP32-S3 and the ESP32-P4 are calibrated. For the ESP32-S31 (Trainer20) mV values are not available yet.
+
+The input voltage at the terminal follows from the mV value via the divider ratio:
+
+```text
+Input voltage = mV value × 69 / 22  (factor about 3.136)
+```
+
+### Current 4…20 mA at 500 Ω Burden (Measurement)
+
+Measured at `I1` (AI1) with a 500 Ω burden:
+
+| Current | Voltage at the terminal | Value in mV | Ratio mV / terminal |
+|--------:|------------------------:|------------:|--------------------:|
+| 4 mA | 1.944 V | 621 mV | 0.3194 |
+| 20 mA | 9.02 V | 2865 mV | 0.3176 |
+
+- Voltage and mV value match the divider (target value 0.3188).
+- At 20 mA about 9.8 V would be expected, because the input loads the burden (500 Ω in parallel with 28 kΩ ≈ 491 Ω). 9.02 V were measured. The difference probably comes from the current source (available burden voltage) and not from the module. The current was not measured again.
+
+Consequences (calculated, not measured):
+
+- **Two-point calibration** from the mV value to the current: I = 4 mA + 16 mA × (mV − mV₄ₘₐ) / (mV₂₀ₘₐ − mV₄ₘₐ), with the values for 4 mA and 20 mA measured on your own setup.
+- **Reserve:** With 500 Ω the end of the range is a little above 21 mA. The fault signal according to NAMUR NE43 (above 21 mA) is therefore at the limit. With a 250 Ω burden there is more reserve.
+- **Wire break:** Below 3.6 mA the mV value is below about 565 mV. An open input gives 0 mV.
 
 ### Digital Inputs
 

@@ -70,6 +70,8 @@ They are all on ADC1; ADC2 is not routed to the CoreBoard's pin header.
 the measuring range in volts are still to be checked on hardware; the values documented for the
 `logiBUS_AI_*` blocks (0–4095) apply to ESP32-P4/ESP32-S3.
 
+**Millivolt values (`logiBUS_AI_MV`):** not available yet.
+
 ### Digital inputs
 
 | Input:   | PIN (ESP32S31) |

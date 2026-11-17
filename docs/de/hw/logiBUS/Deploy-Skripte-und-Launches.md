@@ -17,6 +17,8 @@ Diese Seite beschreibt, wie Programme aus der 4diac IDE auf die logiBUS®-Traini
 
 Für den Online-Deploy muss der Knoten vorher mit der ELF-Grundausstattung vorbereitet sein (siehe [Knoten vorbereiten](#knoten-vorbereiten-preload)). Sonst meldet FORTE für Bausteine, deren Bibliothek fehlt, `UNSUPPORTED_TYPE`.
 
+Schritt-für-Schritt-Anleitungen: [Fehlende ELFs auf das Trainer-Board laden](ELFs-auf-das-Board-laden.md) (Online-Deploy) und [Deploy mit Boot-Datei](Deploy-mit-Boot-Datei.md) (Boot-Datei-Deploy).
+
 ## Python-Skripte in `scripts_central/`
 
 Alle Skripte sind reines Python (nur Standardbibliothek, keine `pip`-Installation nötig). Die Befehlsbeispiele auf dieser Seite sind aus dem Ordner `Ventilsteuerung/` aufzurufen. Die `.bat`-Skripte und Launches setzen das Arbeitsverzeichnis selbst.

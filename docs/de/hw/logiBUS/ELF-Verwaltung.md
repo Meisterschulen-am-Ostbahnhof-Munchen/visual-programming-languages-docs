@@ -20,6 +20,14 @@ Die ELF-Verwaltung (`scripts_central/elf_manager_gui.py`) ist eine kleine grafis
 4. **Installieren:** „Angehakte installieren“. Nach einer Sicherheitsabfrage werden die angehakten Bibliotheken samt ihrer `requires` (aus `MANIFEST.MF`) aufgelöst, höchstens 64 Stück. Danach läuft derselbe Ablauf wie beim Preload: ELFs hochladen, andere Manifeste und alle `*.fboot` auf dem Knoten löschen, `elf_grundausstattung.libs.json` schreiben.
 5. **Neustart:** Wirksam wird die Änderung erst nach dem Neustart des Knotens. Der Button „Weboberfläche“ öffnet die Seite des Knotens im Browser. Im Protokollfenster unten stehen alle Ausgaben.
 
+## Füllstandsbalken
+
+Oben zeigen zwei Balken „Speicher (/data)“ und „RAM (PSRAM)“ die Belegung des Knotens. Quelle ist `GET /space/?json` (laut Firmware-Entwicklung mit den Feldern `total`, `used`, `psram_size`, `psram_free`, nicht geprüft). Ältere Firmware liefert nur die HTML-Seite `/space/` (ab b-214), den PSRAM-Wert liest das Programm dann aus `/deviceinfo/`. Fehlen Werte, steht „keine Angabe (Firmware zu alt?)“. Die Balken werden nur beim Verbinden und nach einer Installation aktualisiert, die Abfrage dauert laut Entwicklung etwa 1 s. Der RAM-Balken zählt auch FORTE und Puffer mit, nicht nur die ELFs.
+
+## Größe und Sortierung
+
+Die Liste hat zusätzlich die Spalten „Größe“ (in kB, die ELF im Repo für die Architektur des Knotens) und „% /data“ (Anteil dieser ELF am Gesamtspeicher von `/data`). Der Prozentwert erscheint nur, wenn der Knoten die Größe von `/data` gemeldet hat. Ein Klick auf eine Spaltenüberschrift sortiert die Liste, ein zweiter Klick dreht die Reihenfolge um (▲ aufsteigend, ▼ absteigend). Die Summenzeile unten zeigt die Größe der Auswahl samt Abhängigkeiten, zum Beispiel „24 angehakt (max. 64), 5711 kB = 71 % von /data“ (Beispiel aus der Beschreibung der Entwicklung).
+
 ## Status in der Spalte „Auf dem Knoten“
 
 | Status | Bedeutung |
@@ -31,6 +39,10 @@ Die ELF-Verwaltung (`scripts_central/elf_manager_gui.py`) ist eine kleine grafis
 | keine ELF im Repo | für diese Architektur gibt es keine ELF |
 
 Rot markiert sind „fehlt“, „alte Version“ und „anderer Stand“. Bibliotheken für CAN2 tragen den Zusatz „(CAN2, nicht am Trainer)“.
+
+## Häufiger Fall: UNSUPPORTED_TYPE beim Deploy
+
+Meldet die IDE beim Deploy `UNSUPPORTED_TYPE`, steht die Bibliothek meist nicht im Manifest des Knotens. Die IDE lädt keine ELFs nach. Abhilfe: in der ELF-Verwaltung die Bibliothek anhaken, installieren, Knoten neu starten. Übung 156_AX braucht laut Entwicklung zusätzlich `convert` und `logiBUS_utils`.
 
 ## Typischer Fall
 

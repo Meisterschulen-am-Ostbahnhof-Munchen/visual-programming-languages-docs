@@ -67,3 +67,5 @@ Die Meldung nennt den Bausteintyp. Dann der Reihe nach prüfen:
 
 - **Speicherplatz:** `http://logibus.local/space/` zeigt die Belegung. Ein fast volles Dateisystem kann bei weiteren Uploads beschädigt werden und wird beim nächsten Start neu formatiert. Dabei sind alle Dateien auf dem Board weg. Dann die Schritte 1 und 2 wiederholen.
 - **Nächste Übung:** Die ELFs bleiben auf dem Board. Für weitere Übungen nur Schritt 3 mit dem anderen Typ wiederholen.
+
+Einzelne Bibliotheken lassen sich auch mit der [ELF-Verwaltung](ELF-Verwaltung.md) nachinstallieren.

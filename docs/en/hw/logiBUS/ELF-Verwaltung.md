@@ -20,6 +20,14 @@ The ELF manager (`scripts_central/elf_manager_gui.py`) is a small graphical tool
 4. **Install:** "Angehakte installieren". After a confirmation, the checked libraries and their `requires` (from `MANIFEST.MF`) are resolved, at most 64. Then the same procedure as the preload runs: upload ELFs, delete other manifests and all `*.fboot` on the node, write `elf_grundausstattung.libs.json`.
 5. **Restart:** The change takes effect only after the node restarts. The "Weboberfläche" button opens the node's page in the browser. The log window at the bottom shows all output.
 
+## Fill level bars
+
+Two bars at the top, "Speicher (/data)" and "RAM (PSRAM)", show the load of the node. The source is `GET /space/?json` (according to the firmware developers with the fields `total`, `used`, `psram_size`, `psram_free`, not verified). Older firmware only delivers the HTML page `/space/` (from b-214); the program then reads the PSRAM value from `/deviceinfo/`. If values are missing, it shows "keine Angabe (Firmware zu alt?)". The bars are refreshed only when connecting and after an installation; according to the developers the query takes about 1 s. The RAM bar also counts FORTE and buffers, not only the ELFs.
+
+## Size and sorting
+
+The list has the additional columns "Größe" (in kB, the ELF in the repo for the architecture of the node) and "% /data" (share of this ELF in the total memory of `/data`). The percentage appears only if the node has reported the size of `/data`. A click on a column header sorts the list, a second click reverses the order (▲ ascending, ▼ descending). The summary line at the bottom shows the size of the selection including dependencies, for example "24 angehakt (max. 64), 5711 kB = 71 % von /data" (example from the developers' description).
+
 ## Status in the column "Auf dem Knoten"
 
 | Status | Meaning |
@@ -31,6 +39,10 @@ The ELF manager (`scripts_central/elf_manager_gui.py`) is a small graphical tool
 | keine ELF im Repo | no ELF exists for this architecture |
 
 "fehlt", "alte Version" and "anderer Stand" are shown in red. Libraries for CAN2 carry the suffix "(CAN2, nicht am Trainer)".
+
+## Common case: UNSUPPORTED_TYPE on deploy
+
+If the IDE reports `UNSUPPORTED_TYPE` on deploy, the library is usually not in the manifest of the node. The IDE does not load ELFs. Remedy: check the library in the ELF manager, install, restart the node. According to the developers, exercise 156_AX additionally needs `convert` and `logiBUS_utils`.
 
 ## Typical case
 

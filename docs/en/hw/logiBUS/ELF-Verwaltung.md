@@ -1,0 +1,42 @@
+# ELF manager (graphical interface)
+
+The ELF manager (`scripts_central/elf_manager_gui.py`) is a small graphical tool for installing single ELF libraries on a logiBUS node without repeating the complete preload. It uses only the Python standard library (tkinter). Background on the ELFs is on [Loading missing ELFs onto the trainer board](ELFs-auf-das-Board-laden.md), background on the scripts on [Deploy scripts and launches](Deploy-Skripte-und-Launches.md).
+
+> **Note:** This page describes the program as read from its source. It has not been tested on hardware.
+
+## Starting
+
+- From the 4diac IDE via External Tools or the launch `RunSkript_ElfManager_AX` (set as favorite).
+- Or in `scripts_central` with `python elf_manager_gui.py [host]`. The default host is `logibus.local`.
+- According to the developers, the TrainingsInstaller creates a shortcut "logiBUS ELF-Verwaltung" from the first release after the merge (not verified).
+
+## Procedure
+
+1. **Connect:** Enter the host and press "Verbinden / Aktualisieren". The program resolves the host, checks that it is on the internal network and reachable, and reads architecture and `FORTE_ABI` of the node. If the architecture does not fit (firmware too old or too new) it stops with a message. According to the developers `FORTE_ABI` 7 applies, i.e. firmware from b-199. `isobus_fs` and ELFs on the ESP32-S31 exist only from b-214 (developer information, not verified).
+2. **List:** All ELF libraries of the repo appear with version, state on the node and the column "Wird geladen". It shows "ja" if the library is in the active manifest. The active one is the alphabetically first `*.libs.json`, because that is the one the loader takes.
+3. **Select:** A click (or the space bar) checks (☑) or unchecks (☐) a library.
+   - "Nur Grundausstattung" checks `PRELOAD_LIBS` with their dependencies.
+   - "Aktuelles Manifest" checks what is currently loaded.
+4. **Install:** "Angehakte installieren". After a confirmation, the checked libraries and their `requires` (from `MANIFEST.MF`) are resolved, at most 64. Then the same procedure as the preload runs: upload ELFs, delete other manifests and all `*.fboot` on the node, write `elf_grundausstattung.libs.json`.
+5. **Restart:** The change takes effect only after the node restarts. The "Weboberfläche" button opens the node's page in the browser. The log window at the bottom shows all output.
+
+## Status in the column "Auf dem Knoten"
+
+| Status | Meaning |
+|---|---|
+| aktuell | SHA256 of the ELF on the node equals the one in the repo |
+| anderer Stand | same file name, different hash |
+| alte Version | another version number of the library is on the node |
+| fehlt | none of it on the node |
+| keine ELF im Repo | no ELF exists for this architecture |
+
+"fehlt", "alte Version" and "anderer Stand" are shown in red. Libraries for CAN2 carry the suffix "(CAN2, nicht am Trainer)".
+
+## Typical case
+
+The file system exercises (156/156b) need `isobus_fs`, which is not part of the base set: check `isobus_fs`, install, restart the node.
+
+## Important
+
+- The loader only loads libraries listed in the manifest. An ELF that only lies in `elf-libs/` does not exist for FORTE.
+- Installing deletes other manifests and all boot files on the node.

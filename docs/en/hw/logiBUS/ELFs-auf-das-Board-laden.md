@@ -67,3 +67,5 @@ The message names the block type. Then check in this order:
 
 - **Free space:** `http://logibus.local/space/` shows the usage. An almost full file system can be damaged by further uploads and is reformatted at the next start. All files on the board are gone then. Repeat steps 1 and 2.
 - **Next exercise:** The ELFs stay on the board. For further exercises, only repeat step 3 with the other type.
+
+Single libraries can also be installed with the [ELF manager](ELF-Verwaltung.md).

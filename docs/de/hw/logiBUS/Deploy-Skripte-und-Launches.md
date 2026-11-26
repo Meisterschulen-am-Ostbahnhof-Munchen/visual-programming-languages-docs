@@ -290,10 +290,26 @@ Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Sei
 | `PART_10` | `0` | Task-Controller-Client (ISO 11783-10) anmelden |
 | `PART_10_TC_LOGIN_DELAY` | `0` | Verzögerung des TC-Logins (Zahl 0 bis 65535, Einheit nicht geprüft) |
 | `PART_13`, `PART_14` | `0` | werden gelesen, aber nirgends ausgewertet, derzeit ohne Wirkung |
-| `PART_13_FS` | `0` | File Server (Functionality 17) ein/aus. Vorbereitet, noch ohne Funktion: Die Firmware wertet den Eintrag noch nicht aus, der File Server ist erst im Konzept |
-| `PART_13_FSC` | `0` | File-Server-Client (Functionality 18) ein/aus. Vorbereitet, noch ohne Funktion, wie `PART_13_FS` |
+| `PART_13_FS` | `0` | Eigener File Server (ISO 11783-13, Functionality 17). Reserviert, noch ohne Funktion: Der Eintrag wird nicht ausgewertet, der Server folgt erst in einer späteren Phase |
+| `PART_13_FSC` | `0` | File-Server-Client (Functionality 18). Bei `1` startet der Client, die Bausteine `isobus::fs` (`FsGet`, `FsPut`, `FsRead`, `FsWrite`) funktionieren dann, und die Functionalities-Nachricht meldet 18. Der Client ist in der Firmware ab b-214 enthalten |
 
 `PART_6`, `PART_6_AUX_INPUT` und `PART_10` wirken nur, wenn die Firmware mit der passenden Option gebaut wurde (VT-Client beziehungsweise Task-Controller-Client). Wahrheitswerte als `1` oder `0` schreiben.
+
+**Functionalities-Nachricht (PGN `0xFC8E`)**
+
+Die Nachricht, mit der das Gerät seine Funktionen meldet, richtet sich nach `functionalities.ini`. Vorher war sie fest eingestellt. Stand: Firmware b-214, LOGIBUS a6ad444f. Die Angaben stammen von der Firmware-Entwicklung, ich habe sie nicht am Quelltext geprüft und nicht auf Hardware getestet. Die Nummern stammen aus dem Data Dictionary von isobus.net und der AEF-Liste und sind hier nur genannt, nicht aus der Norm übernommen.
+
+| Bedingung | Gemeldete Functionalities |
+| --- | --- |
+| immer | 0 (Minimum Control Function) und 14 (TECU-Client) |
+| `PART_6_AUX_INPUT = 1` | 2 (UT-Client), 3 (AUX-O-Eingänge) und 5 (AUX-N-Eingänge). Das Gerät gilt als AUX-Eingabegerät, `PART_6` wird dann nicht berücksichtigt |
+| sonst `PART_6 = 1` | 2 (UT-Client), 4 (AUX-O-Funktionen) und 6 (AUX-N-Funktionen) |
+| `PART_10 = 1` | 8 (TC-BAS) und 10 (TC-GEO). 12 (TC-SC) kommt nur, wenn die DVC Sektionen enthält |
+| `PART_13_FSC = 1` | 18 (File-Server-Client) |
+
+- **AUX-O und AUX-N** werden immer beide gemeldet. Die Functionalities bestimmen, welche Tests der AEF-Teststand fährt, und der CCI-Treiber setzt AUX-N bei Bedarf auf AUX-O um.
+- **Optionsbits** (welche AUX-Typen) liest die Firmware aus dem geladenen Pool, nicht aus der ini.
+- **Booms und Sektionen** bei TC-SC kommen aus der DVC.
 
 **`device.ini`: ISOBUS-NAME**
 

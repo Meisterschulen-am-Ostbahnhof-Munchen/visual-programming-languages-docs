@@ -290,10 +290,26 @@ Deleting works via `/delete/<name>`. The deploy and preload scripts on this page
 | `PART_10` | `0` | Log in the task controller client (ISO 11783-10) |
 | `PART_10_TC_LOGIN_DELAY` | `0` | Delay of the TC login (number 0 to 65535, unit not verified) |
 | `PART_13`, `PART_14` | `0` | are read but not evaluated anywhere, currently without effect |
-| `PART_13_FS` | `0` | File server (functionality 17) on/off. Prepared, not functional yet: the firmware does not evaluate the entry yet, the file server exists only as a concept |
-| `PART_13_FSC` | `0` | File server client (functionality 18) on/off. Prepared, not functional yet, like `PART_13_FS` |
+| `PART_13_FS` | `0` | Own file server (ISO 11783-13, functionality 17). Reserved, not functional yet: the entry is not evaluated, the server follows in a later phase |
+| `PART_13_FSC` | `0` | File server client (functionality 18). With `1` the client starts, the blocks `isobus::fs` (`FsGet`, `FsPut`, `FsRead`, `FsWrite`) then work, and the functionalities message reports 18. The client is included in the firmware from b-214 |
 
 `PART_6`, `PART_6_AUX_INPUT` and `PART_10` only take effect if the firmware was built with the matching option (VT client or task controller client). Write boolean values as `1` or `0`.
+
+**Functionalities message (PGN `0xFC8E`)**
+
+The message with which the device reports its functions follows `functionalities.ini`. Before, it was fixed. State: firmware b-214, LOGIBUS a6ad444f. The statements come from the firmware development, I have not checked them against the source code and not tested them on hardware. The numbers come from the isobus.net data dictionary and the AEF list and are only named here, not taken from the standard.
+
+| Condition | Functionalities reported |
+| --- | --- |
+| always | 0 (minimum control function) and 14 (TECU client) |
+| `PART_6_AUX_INPUT = 1` | 2 (UT client), 3 (AUX-O inputs) and 5 (AUX-N inputs). The device counts as an AUX input device, `PART_6` is then not considered |
+| otherwise `PART_6 = 1` | 2 (UT client), 4 (AUX-O functions) and 6 (AUX-N functions) |
+| `PART_10 = 1` | 8 (TC-BAS) and 10 (TC-GEO). 12 (TC-SC) is only added if the DVC contains sections |
+| `PART_13_FSC = 1` | 18 (file server client) |
+
+- **AUX-O and AUX-N** are always both reported. The functionalities determine which tests the AEF test rig runs, and the CCI driver maps AUX-N to AUX-O when needed.
+- **Option bits** (which AUX types) are read by the firmware from the loaded pool, not from the ini.
+- **Booms and sections** for TC-SC come from the DVC.
 
 **`device.ini`: ISOBUS NAME**
 

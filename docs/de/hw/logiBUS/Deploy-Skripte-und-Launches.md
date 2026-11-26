@@ -290,6 +290,8 @@ Löschen geht über `/delete/<name>`. Die Deploy- und Preload-Skripte dieser Sei
 | `PART_10` | `0` | Task-Controller-Client (ISO 11783-10) anmelden |
 | `PART_10_TC_LOGIN_DELAY` | `0` | Verzögerung des TC-Logins (Zahl 0 bis 65535, Einheit nicht geprüft) |
 | `PART_13`, `PART_14` | `0` | werden gelesen, aber nirgends ausgewertet, derzeit ohne Wirkung |
+| `PART_13_FS` | `0` | File Server (Functionality 17) ein/aus. Vorbereitet, noch ohne Funktion: Die Firmware wertet den Eintrag noch nicht aus, der File Server ist erst im Konzept |
+| `PART_13_FSC` | `0` | File-Server-Client (Functionality 18) ein/aus. Vorbereitet, noch ohne Funktion, wie `PART_13_FS` |
 
 `PART_6`, `PART_6_AUX_INPUT` und `PART_10` wirken nur, wenn die Firmware mit der passenden Option gebaut wurde (VT-Client beziehungsweise Task-Controller-Client). Wahrheitswerte als `1` oder `0` schreiben.
 

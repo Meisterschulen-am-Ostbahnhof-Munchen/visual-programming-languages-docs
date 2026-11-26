@@ -290,6 +290,8 @@ Deleting works via `/delete/<name>`. The deploy and preload scripts on this page
 | `PART_10` | `0` | Log in the task controller client (ISO 11783-10) |
 | `PART_10_TC_LOGIN_DELAY` | `0` | Delay of the TC login (number 0 to 65535, unit not verified) |
 | `PART_13`, `PART_14` | `0` | are read but not evaluated anywhere, currently without effect |
+| `PART_13_FS` | `0` | File server (functionality 17) on/off. Prepared, not functional yet: the firmware does not evaluate the entry yet, the file server exists only as a concept |
+| `PART_13_FSC` | `0` | File server client (functionality 18) on/off. Prepared, not functional yet, like `PART_13_FS` |
 
 `PART_6`, `PART_6_AUX_INPUT` and `PART_10` only take effect if the firmware was built with the matching option (VT client or task controller client). Write boolean values as `1` or `0`.
 
